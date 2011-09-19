@@ -1,9 +1,0 @@
-introduction=Bićete preusmereni na Hettrik CHPP stranicu radi preuzimanja koda za autorizaciju. Ukoliko se novi prozor ne otvori, isključite blokadu pop-up prozora za HTlivesight u Firefox podešavanjima.
-insert=Ovde ubacite svoj kod za autorizaciju:
-ending=HTlivesight je sada autorizovan. Kliknite na OK da restartujete aplikaciju.
-error401=Greška 401: pristup nije autorizovan. Morate ponovo otići na autorizaciju. Kliknite na OK da nastavite.
-error404=Greška 404: traženi podaci nisu pronađeni. Ukoliko se ova greška ponovi proverite da li je CHPP server na Hettriku u funkciji.
-error0=Greška 0: niste povezani na internet.
-error=Greška
-serverON=Povezan
-serverOFF=Nepovezan

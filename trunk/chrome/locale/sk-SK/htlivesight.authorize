@@ -1,9 +1,0 @@
-introduction=Budeš presmerovaný na stránku chpp, kde ti bude udelený autorizaèný kód. Ak sa tak nestane, doèasne zakáž blokovanie vyskakovacích okien alebo ude¾ výnimku pre program HTlivesight.
-insert=sem zadaj tvoj autorizaèný kód:
-ending=HTlivesight je teraz autorizovaný. Klikni na OK pre reštartovanie aplikácie.
-error401=Chyba 401: neautorizovaný prístup. Musíš získa tvoju autorizáciu znova. Klikni na OK pre pokraèovanie.
-error404=Chyba 404: požadovaný zdroj nebol nájdený. Ak táto chyba pretrváva, skontroluj èi je chpp servis v poriadku.
-error0=Chyba 0: nie si pripojený k internetu.
-error=Chyba
-serverON=Pripojený
-serverOFF=Odpojený

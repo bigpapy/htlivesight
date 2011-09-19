@@ -1,9 +1,0 @@
-introduction=Zostaniesz przekierowany na stronę CHPP, gdzie otrzymasz kod autoryzacji. Jeśli nie, proszę wyłącz blokadę wyskakujących okienek w przeglądarce, lub dodaj HTLiveSight do listy wyjątków.
-insert=Wprowadź tutaj swój kod autoryzacji.:
-ending=Dokonano autoryzacji HTLiveSight. Kliknij OK, żeby zrestartować aplikację.
-error401=Błąd 401: błąd autoryzacji. Musisz ponownie dokonać autoryzacji. Kliknij OK, żeby przejść dalej.
-error404=Błąd 404: Zasób którego szukałeś nie został znaleziony. Jeśli ten błąd się powtarza, sprawdź w Informacjach Systemowych stan CHPP.
-error0=Błąd 0: Brak połączenia z Interneterm.
-error=Error
-serverON=Connected
-serverOFF=Disconnected

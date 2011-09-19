@@ -1,9 +1,0 @@
-introduction=Lai saòemtu pieejas kodu, Jûs tiksiet novirzîts uz CHPP lapu. Lûdzu izslçdziet uznirstoðo logu bloíçtâju vai pievienotjiet HTlivesight izòçmumu sarakstam, lai savienotos ar lapu.
-insert=Ievadiet savu pieejas kodu ðeit:
-ending=HTlivesight ir autorizçts. Spiediet OK, lai pârstartçtu programmu.
-error401=Kïûda 401: neatïauta pieeja. Jums nepiecieðams saòemt jaunu pieejas kodu. Spiediet OK, lai turpinâtu.
-error404=Kïûda 404: pieprasîtais resurss netika atrasts. Ja ðî kïûda atkârtojas, iespçjams, ka CHPP pakalpojums ðobrîd nedarbojas.
-error0=Kïûda 0: Nav interneta savienojuma.
-error=Kïûda
-serverON=Savienots
-serverOFF=Atvienots
