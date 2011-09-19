@@ -9,6 +9,8 @@
 <!ENTITY general.new_tab     "In una nuova tabella">
 <!ENTITY general.new_window  "In una nuova finestra">
 
+<!ENTITY general.server      "Inserisci server:">
+
 <!ENTITY matches.league      "Partite di campionato">
 <!ENTITY matches.get_league  "Carica le partite di campionato">
 <!ENTITY matches.played      "Se giocate entro">
