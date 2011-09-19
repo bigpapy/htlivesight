@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight Opties">
+
+<!ENTITY tab.general         "Algemeen">
+<!ENTITY tab.matches         "Wedstrijden">
+<!ENTITY tab.notifications   "Meldingen">
+<!ENTITY tab.language        "Taal">
+
+<!ENTITY general.open        "Open HTLiveSight">
+<!ENTITY general.new_tab     "In een nieuw tabblad">
+<!ENTITY general.new_window  "In een nieuw venster">
+
+<!ENTITY matches.league      "Competitiewedstrijden">
+<!ENTITY matches.get_league  "Haal competitiewedstrijden op">
+<!ENTITY matches.played      "Als ze gespeeld worden binnen">
+<!ENTITY matches.hours       "uur.">
+<!ENTITY matches.friends     "Vrienden">
+<!ENTITY matches.get_friends "Haal wedstrijden van vrienden op">
+<!ENTITY matches.scorers     "Doelpuntenmakers">
+<!ENTITY matches.list        "Laat doelpuntenmakers in de hoofding zien">
+<!ENTITY matches.window      "Venster">
+<!ENTITY matches.lines       "Regels zichtbaar in minimaal venster">
+
+<!ENTITY notify.notify       "Meldingen">
+<!ENTITY notify.enable_sound "Sta meldingen met geluid toe">
+<!ENTITY notify.only         "Alleen in geopende wedstrijden">
+<!ENTITY notify.flash        "Knipperende hoofding">
+<!ENTITY notify.status       "Statusbalk schuifvenster">
+
+<!ENTITY language.select     "Kies taal">
+<!ENTITY language.note       "PS: HTLiveSight moet worden herstart vooraleer de wijzigingen effect hebben.">
+
+<!ENTITY button.cancel       "Annuleren">
+<!ENTITY button.ok           "OK">

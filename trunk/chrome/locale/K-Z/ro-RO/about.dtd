@@ -1,0 +1,30 @@
+<!ENTITY window.title        "Despre HTLiveSight">
+
+<!ENTITY tab.programming     "Programator">
+<!ENTITY tab.art             "Grafică">
+
+<!ENTITY month.january       "Ian">
+<!ENTITY month.february      "Feb">
+<!ENTITY month.march         "Mar">
+<!ENTITY month.april         "Apr">
+<!ENTITY month.may           "Mai">
+<!ENTITY month.june          "Iun">
+<!ENTITY month.july          "Iul">
+<!ENTITY month.august        "Aug">
+<!ENTITY month.september     "Sept">
+<!ENTITY month.october       "Oct">
+<!ENTITY month.november      "Nov">
+<!ENTITY month.december      "Dec">
+
+<!ENTITY text.created_by     "Creat de">
+<!ENTITY text.developed_by   "Dezvoltat de">
+<!ENTITY text.help_of        "Cu ajutorul lui">
+<!ENTITY text.thanks_to      "Multe mulţumiri lui:">
+<!ENTITY text.images_by      "Imagini de">
+<!ENTITY text.weather        "Imagini despre vreme de la">
+<!ENTITY text.tango_icon     "Biblioteca de imagini">
+<!ENTITY text.licensed       "Licentiat sub">
+<!ENTITY text.creative       "Creatori">
+<!ENTITY text.license        "Licenţă de drept la parte comuna">
+
+<!ENTITY button.close        "Închide">

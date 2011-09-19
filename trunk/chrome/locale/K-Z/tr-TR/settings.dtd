@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight Seçenekleri">
+
+<!ENTITY tab.general         "Genel">
+<!ENTITY tab.matches         "Maçlar">
+<!ENTITY tab.notifications   "Uyarılar">
+<!ENTITY tab.language        "Dil">
+
+<!ENTITY general.open        "HTLiveSight'ı...">
+<!ENTITY general.new_tab     "Yeni sekmede aç">
+<!ENTITY general.new_window  "Yeni pencerede aç">
+
+<!ENTITY matches.league      "Lig Maçları">
+<!ENTITY matches.get_league  "Lig maçlarını yükle">
+<!ENTITY matches.played      "">
+<!ENTITY matches.hours       "saat içindekileri">
+<!ENTITY matches.friends     "Arkadaşlar">
+<!ENTITY matches.get_friends "Arkadaşların maçlarını yükle">
+<!ENTITY matches.scorers     "Goller">
+<!ENTITY matches.list        "Gol atanları başlıkta göster">
+<!ENTITY matches.window      "Pencere">
+<!ENTITY matches.lines       "Satır göster (son olayları göster modunda)>
+
+<!ENTITY notify.notify       "Uyarılar">
+<!ENTITY notify.enable_sound "Sesli uyarı">
+<!ENTITY notify.only         "Sadece açık olan maçlarda">
+<!ENTITY notify.flash        "Başlık yanıp sönsün">
+<!ENTITY notify.status       "Durum çubuğu sürgüsü">
+
+<!ENTITY language.select     "Dil seçimi">
+<!ENTITY language.note       "Not: HTLiveSight'u yeniden başlatmanız gerekir">
+
+<!ENTITY button.cancel       "Vazgeç">
+<!ENTITY button.ok           "Uygula">

@@ -1,0 +1,30 @@
+<!ENTITY window.title        "Про HTLiveSight">
+
+<!ENTITY tab.programming     "Розробка">
+<!ENTITY tab.art             "Візуалізація">
+
+<!ENTITY month.january       "Січ">
+<!ENTITY month.february      "Лют">
+<!ENTITY month.march         "Бер">
+<!ENTITY month.april         "Кві">
+<!ENTITY month.may           "Тра">
+<!ENTITY month.june          "Чер">
+<!ENTITY month.july          "Лип">
+<!ENTITY month.august        "Сер">
+<!ENTITY month.september     "Вер">
+<!ENTITY month.october       "Жов">
+<!ENTITY month.november      "Лис">
+<!ENTITY month.december      "Гру">
+
+<!ENTITY text.created_by     "Власник">
+<!ENTITY text.developed_by   "Розроблено">
+<!ENTITY text.help_of        "з допомогою">
+<!ENTITY text.thanks_to      "Велика подяка:">
+<!ENTITY text.images_by      "Автор зображень">
+<!ENTITY text.weather        "Зображення погодних умов взято з">
+<!ENTITY text.tango_icon     "Бібліотеки іконок Tango">
+<!ENTITY text.licensed       "з дозволу">
+<!ENTITY text.creative       "Creative Commons">
+<!ENTITY text.license        "ліцензія Attribution Share-Alike">
+
+<!ENTITY button.close        "Закрити">

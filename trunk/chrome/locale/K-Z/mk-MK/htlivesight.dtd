@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight">
+
+<!ENTITY menu.server         "Сервер:">
+<!ENTITY menu.disconnected   "дисконектиран">
+<!ENTITY menu.options        "Опции">
+<!ENTITY menu.reconnect      "Реконектирај се со HT">
+<!ENTITY menu.about          "За HTLiveSight">
+
+<!ENTITY login.label         "Најавување">
+<!ENTITY login.teamId        "Внеси TeamId на твојот тим">
+<!ENTITY login.username      "Корисничко име">
+<!ENTITY login.security_code "Сигурносен код">
+<!ENTITY login.remember_me   "Запамти ме">
+<!ENTITY login.button        "Најави се">
+
+<!ENTITY league.matches      "Лигашки натпревари">
+<!ENTITY league.live_table   "Табела во живо">
+<!ENTITY league.position     "#">
+<!ENTITY league.team         "Тим">
+<!ENTITY league.played       "О">
+<!ENTITY league.goals        "Г">
+<!ENTITY league.goal_diff    "ГР">
+<!ENTITY league.points       "П">
+
+<!ENTITY matches.list        "Листа со натпревари">
+<!ENTITY matches.add         "Додади натпревар">
+<!ENTITY matches.by_match    "По ИД на натпреварот">
+<!ENTITY matches.by_team     "По ИД на тимот">
+<!ENTITY matches.youth       "Младински?">
+
+<!ENTITY friends.title       "Пријатели">
+<!ENTITY friends.remove      "Отстрани">
+<!ENTITY friends.open        "Отвори">

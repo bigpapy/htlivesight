@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight Подешавања">
+
+<!ENTITY tab.general         "Општа">
+<!ENTITY tab.matches         "Мечеви">
+<!ENTITY tab.notifications   "Обавештења">
+<!ENTITY tab.language        "Језик">
+
+<!ENTITY general.open        "Отвори HTLiveSight">
+<!ENTITY general.new_tab     "У новом табу">
+<!ENTITY general.new_window  "У новом прозору">
+
+<!ENTITY matches.league      "Лигашки мечеви">
+<!ENTITY matches.get_league  "Тражи лигашке мечеве">
+<!ENTITY matches.played      "Ако се игра за">
+<!ENTITY matches.hours       "сати">
+<!ENTITY matches.friends     "Пријатељи">
+<!ENTITY matches.get_friends "Тражи мечеве пријатеља">
+<!ENTITY matches.scorers     "Стрелци">
+<!ENTITY matches.list        "Испиши стрелце у наслову">
+<!ENTITY matches.window      "Прозор">
+<!ENTITY matches.lines       "Линије за приказати у минимизираном моду">
+
+<!ENTITY notify.notify       "Обавештења">
+<!ENTITY notify.enable_sound "Омогући звучна обавештења">
+<!ENTITY notify.only         "Само на отвореним мечевима">
+<!ENTITY notify.flash        "Светлосно-блинк обавештење наслова">
+<!ENTITY notify.status       "Клизно обавештење у статус бару">
+
+<!ENTITY language.select     "Одабери језик">
+<!ENTITY language.note       "Рестартуј HTLiveSight да би ова подешавања имала ефекта.">
+
+<!ENTITY button.cancel       "Поништи">
+<!ENTITY button.ok           "ОК">

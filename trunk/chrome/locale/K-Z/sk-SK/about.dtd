@@ -1,0 +1,30 @@
+<!ENTITY window.title        "O HTLiveSighte">
+
+<!ENTITY tab.programming     "Programovanie">
+<!ENTITY tab.art             "Vzhľad">
+
+<!ENTITY month.january       "Jan">
+<!ENTITY month.february      "Feb">
+<!ENTITY month.march         "Mar">
+<!ENTITY month.april         "Apr">
+<!ENTITY month.may           "Máj">
+<!ENTITY month.june          "Jún">
+<!ENTITY month.july          "Júl">
+<!ENTITY month.august        "Aug">
+<!ENTITY month.september     "Sept">
+<!ENTITY month.october       "Okt">
+<!ENTITY month.november      "Nov">
+<!ENTITY month.december      "Dec">
+
+<!ENTITY text.created_by     "Výroba">
+<!ENTITY text.developed_by   "Vývoj">
+<!ENTITY text.help_of        "s pomocou">
+<!ENTITY text.thanks_to      "Veľká vďaka patrí">
+<!ENTITY text.images_by      "Obrázky">
+<!ENTITY text.weather        "Obrázky počasia z">
+<!ENTITY text.tango_icon     "Tango Icon Knižnice">
+<!ENTITY text.licensed       "s licenciou">
+<!ENTITY text.creative       "Creative Commons">
+<!ENTITY text.license        "Attribution Share-Alike licencia">
+
+<!ENTITY button.close        "Zatvoriť">
