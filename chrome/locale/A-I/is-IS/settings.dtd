@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight Valkostir">
+
+<!ENTITY tab.general         "Almennt">
+<!ENTITY tab.matches         "Leikir">
+<!ENTITY tab.notifications   "Tilkynningar">
+<!ENTITY tab.language        "Tungumál">
+
+<!ENTITY general.open        "Opna HTLiveSight">
+<!ENTITY general.new_tab     "Í nýjum flipa">
+<!ENTITY general.new_window  "Í nýjum glugga">
+
+<!ENTITY matches.league      "Deildaleikir">
+<!ENTITY matches.get_league  "Ná í deildaleiki">
+<!ENTITY matches.played      "Ef spilað síðustu">
+<!ENTITY matches.hours       "Klukkustundir.">
+<!ENTITY matches.friends     "Vinir">
+<!ENTITY matches.get_friends "Ná í leiki vina þinna">
+<!ENTITY matches.scorers     "Markaskorarar">
+<!ENTITY matches.list        "Sýna markaskorara á toppi">
+<!ENTITY matches.window      "Leikskýrslu gluggi">
+<!ENTITY matches.lines       "Atvik í smækkaðri leikskýrslu">
+
+<!ENTITY notify.notify       "Leik Tilkynningar">
+<!ENTITY notify.enable_sound "Virkja hljóð tilkynninga">
+<!ENTITY notify.only         "Aðeins í virkum leikjum">
+<!ENTITY notify.flash        "Blikkandi fyrirsögn">
+<!ENTITY notify.status       "Stöðu Skrunstika">
+
+<!ENTITY language.select     "Veldu tungumál">
+<!ENTITY language.note       "ATH: Endurræsa þarf HTLiveSight svo breytingar virki.">
+
+<!ENTITY button.cancel       "Hætta">
+<!ENTITY button.ok           "Í Lagi">

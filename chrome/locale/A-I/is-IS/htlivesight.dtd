@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight">
+
+<!ENTITY menu.server         "Netþjónn:">
+<!ENTITY menu.disconnected   "Ótengdur">
+<!ENTITY menu.options        "Valmöguleikar">
+<!ENTITY menu.reconnect      "Endurtengjast HT">
+<!ENTITY menu.about          "Upplýsingar um HTLiveSight">
+
+<!ENTITY login.label         "Innskráning">
+<!ENTITY login.teamId        "Sláðu inn Liðsmerki (númmer) á liðinu þínu">
+<!ENTITY login.username      "Notendanafn">
+<!ENTITY login.security_code "Öryggis kóði">
+<!ENTITY login.remember_me   "Muna eftir mér">
+<!ENTITY login.button        "Skrá inn">
+
+<!ENTITY league.matches      "Keppnisleikir">
+<!ENTITY league.live_table   "Uppfærð Tafla">
+<!ENTITY league.position     "#">
+<!ENTITY league.team         "Lið">
+<!ENTITY league.played       "L">
+<!ENTITY league.goals        "MS">
+<!ENTITY league.goal_diff    "+">
+<!ENTITY league.points       "Stig">
+
+<!ENTITY matches.list        "Leikjalisti">
+<!ENTITY matches.add         "Bæta við leik">
+<!ENTITY matches.by_match    "Leikjamerki">
+<!ENTITY matches.by_team     "Liðsmerki">
+<!ENTITY matches.youth       "Unglingaleikur?">
+
+<!ENTITY friends.title       "Vinir">
+<!ENTITY friends.remove      "Henda út">
+<!ENTITY friends.open        "Opna">

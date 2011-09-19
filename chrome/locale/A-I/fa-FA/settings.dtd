@@ -1,0 +1,33 @@
+<!ENTITY window.title "HTLiveSight تنظيمات">
+
+<!ENTITY tab.general "عمومي">
+<!ENTITY tab.matches "مسابقات">
+<!ENTITY tab.notifications "اخطار">
+<!ENTITY tab.language "زبان">
+
+<!ENTITY general.open " HTLiveSightباز کردن ">
+<!ENTITY general.new_tab "در يک زبانه ي جديد">
+<!ENTITY general.new_window "در يک پنجره ي جديد">
+
+<!ENTITY matches.league "بازي هاي ليگ">
+<!ENTITY matches.get_league "ديدن بازي هاي ليگ">
+<!ENTITY matches.played "بازي انجام شده در">
+<!ENTITY matches.hours "ساعت">
+<!ENTITY matches.friends "دوستان">
+<!ENTITY matches.get_friends "ديدن بازي هاي دوستان">
+<!ENTITY matches.scorers "گلزنان">
+<!ENTITY matches.list "ليست گلزنان در نوار عنوان">
+<!ENTITY matches.window "پنجره">
+<!ENTITY matches.lines "نشان دادن خطوط در حالت کوچک سازي شده">
+
+<!ENTITY notify.notify "اخطار">
+<!ENTITY notify.enable_sound "فعال سازي صداي اخطار">
+<!ENTITY notify.only "تنها براي بازي هاي بازشده">
+<!ENTITY notify.flash "برق زدن نوار عنوان">
+<!ENTITY notify.status "نوار حالت لغزشي">
+
+<!ENTITY language.select "انتخاب زبان">
+<!ENTITY language.note "توجه: فايرفاکس را از نو بازکنيد کنيد تا تغييرات اعمال شود">
+
+<!ENTITY button.cancel "انصراف">
+<!ENTITY button.ok "تاييد ">

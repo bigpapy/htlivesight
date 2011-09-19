@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight Beállítások">
+
+<!ENTITY tab.general         "Általános">
+<!ENTITY tab.matches         "Mérkõzések">
+<!ENTITY tab.notifications   "Jelzések">
+<!ENTITY tab.language        "Nyelvek">
+
+<!ENTITY general.open        "HTLiveSight megnyitása">
+<!ENTITY general.new_tab     "Új fülön">
+<!ENTITY general.new_window  "Új ablakban">
+
+<!ENTITY matches.league      "Bajnoki mérkõzések">
+<!ENTITY matches.get_league  "Bajnoki mérkõzések letöltése">
+<!ENTITY matches.played      "Ha elkezdõdik">
+<!ENTITY matches.hours       "órán belül">
+<!ENTITY matches.friends     "Barátok">
+<!ENTITY matches.get_friends "Barátok mérkõzéseinek letöltése">
+<!ENTITY matches.scorers     "Gólok">
+<!ENTITY matches.list        "A gólszerzõk megjelennek a fejlécben">
+<!ENTITY matches.window      "Ablak">
+<!ENTITY matches.lines       "Kis méretben megjelenítendő sorok">
+
+<!ENTITY notify.notify       "Jelzések">
+<!ENTITY notify.enable_sound "Hangjelzések bekapcsolása">
+<!ENTITY notify.only         "Csak megnyitott meccseken">
+<!ENTITY notify.flash        "Fejléc villogtatása">
+<!ENTITY notify.status       "Állapotjelzõ üzenet">
+
+<!ENTITY language.select     "Nyelvválasztás">
+<!ENTITY language.note       "Megj: A HTLiveSight újraindítása szükséges.">
+
+<!ENTITY button.cancel       "Mégse">
+<!ENTITY button.ok           "OK">

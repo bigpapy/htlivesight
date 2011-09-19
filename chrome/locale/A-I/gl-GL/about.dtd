@@ -1,0 +1,30 @@
+<!ENTITY window.title        "Acerca de HTLiveSight">
+
+<!ENTITY tab.programming     "Programación">
+<!ENTITY tab.art             "Arte">
+
+<!ENTITY month.january       "Xan">
+<!ENTITY month.february      "Feb">
+<!ENTITY month.march         "Mar">
+<!ENTITY month.april         "Abr">
+<!ENTITY month.may           "Mai">
+<!ENTITY month.june          "Xuñ">
+<!ENTITY month.july          "Xul">
+<!ENTITY month.august        "Ago">
+<!ENTITY month.september     "Set">
+<!ENTITY month.october       "Out">
+<!ENTITY month.november      "Nov">
+<!ENTITY month.december      "Dec">
+
+<!ENTITY text.created_by     "Creado por">
+<!ENTITY text.developed_by   "Desenvolvido por">
+<!ENTITY text.help_of        "coa axuda de">
+<!ENTITY text.thanks_to      "Moitas grazas a:">
+<!ENTITY text.images_by      "Imaxes por">
+<!ENTITY text.weather        "Imaxes do tempo dende">
+<!ENTITY text.tango_icon     "Tango Icon Library">
+<!ENTITY text.licensed       "licencia baixo">
+<!ENTITY text.creative       "Creative Commons">
+<!ENTITY text.license        "a condición de Recoñecemento e Compartir baixo a mesma licencia">
+
+<!ENTITY button.close        "Pechar">

@@ -1,0 +1,9 @@
+introduction=Átirányítottunk a CHPP engedélykérő oldalára. Ha nem ezt tapasztalod, akkor ideiglenesen kapcsold ki a felugró ablak blokkolódat, vagy vedd fel a HTlivesight kiegészítőt a kivételek listájára.
+insert=Az engedélyezés után kapott kódot másold ide:
+ending=A HTlivesight most már engedélyezve van. Kattints az OK-ra az alkalmazás újraindításához.
+error401=Hiba 401: illetéktelen hozzáférés. Újra engedélyt kell adnod nekünk. Folytatáshoz kattints az OK-ra!
+error404=Hiba 404: a kért erőforrás nem található. Ha a hiba újból előfordul, akkor valószínűleg a CHPP szolgáltatás nem működik.
+error0=Hiba 0: nincs internetkapcsolat.
+error=Hiba
+serverON=Kapcsolódva
+serverOFF=Nincs kapcsolat
