@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight Opsjes">
+
+<!ENTITY tab.general         "Algemien">
+<!ENTITY tab.matches         "Wedstriden">
+<!ENTITY tab.notifications   "Meldingen">
+<!ENTITY tab.language        "Taal">
+
+<!ENTITY general.open        "Iepen HTLiveSight">
+<!ENTITY general.new_tab     "Yn in nij tabblad">
+<!ENTITY general.new_window  "Yn in nij finster">
+
+<!ENTITY matches.league      "Kompetysjewedstryden">
+<!ENTITY matches.get_league  "Helje Kompetysjewedstryd  op">
+<!ENTITY matches.played      "As se spile wurden binnen">
+<!ENTITY matches.hours       "oere.">
+<!ENTITY matches.friends     "Freonen">
+<!ENTITY matches.get_friends "Helje wedstryden fan freonen op">
+<!ENTITY matches.scorers     "Doelpuntenmakkers">
+<!ENTITY matches.list        "Lit doelpuntenmakkers yn de kop sjen">
+<!ENTITY matches.window      "Finster">
+<!ENTITY matches.lines       "Rigels sichtber yn minimaal finster">
+
+<!ENTITY notify.notify       "Meldingen">
+<!ENTITY notify.enable_sound "Stean meldings mei lûd ta">
+<!ENTITY notify.only         "Allinich yn iepene wedstryden">
+<!ENTITY notify.flash        "Knipperjende kop">
+<!ENTITY notify.status       "Statusbalk skowfinster">
+
+<!ENTITY language.select     "Kieze taal">
+<!ENTITY language.note       "Noot: HTLiveSight mat op nij starte wurden foardat de wizigings effekt ha.">
+
+<!ENTITY button.cancel       "Annulearje">
+<!ENTITY button.ok           "OK">

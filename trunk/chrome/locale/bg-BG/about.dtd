@@ -1,0 +1,30 @@
+<!ENTITY window.title        "За ЛайвФокс">
+
+<!ENTITY tab.programming     "Програмист">
+<!ENTITY tab.art             "Дизайнер">
+
+<!ENTITY month.january       "Яну">
+<!ENTITY month.february      "Фев">
+<!ENTITY month.march         "Мар">
+<!ENTITY month.april         "Апр">
+<!ENTITY month.may           "Май">
+<!ENTITY month.june          "Юни">
+<!ENTITY month.july          "Юли">
+<!ENTITY month.august        "Авг">
+<!ENTITY month.september     "Сеп">
+<!ENTITY month.october       "Окт">
+<!ENTITY month.november      "Ное">
+<!ENTITY month.december      "Дек">
+
+<!ENTITY text.created_by     "Автор">
+<!ENTITY text.developed_by   "Разработен от">
+<!ENTITY text.help_of        "С помощта на">
+<!ENTITY text.thanks_to      "Благодарности на:">
+<!ENTITY text.images_by      "Икони от">
+<!ENTITY text.weather        "Икони за времето от">
+<!ENTITY text.tango_icon     "Библиотека с икони Танго">
+<!ENTITY text.licensed       "лиценз">
+<!ENTITY text.creative       "Криейтив Комънс">
+<!ENTITY text.license        "Атрибюшън Шеър-Алайк Лиценз">
+
+<!ENTITY button.close        "Затвори">

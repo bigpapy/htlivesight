@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight - Inställningar">
+
+<!ENTITY tab.general         "Allmänt">
+<!ENTITY tab.matches         "Matcher">
+<!ENTITY tab.notifications   "Meddelanden">
+<!ENTITY tab.language        "Språk">
+
+<!ENTITY general.open        "Öppna HTLiveSight">
+<!ENTITY general.new_tab     "På en ny flik">
+<!ENTITY general.new_window  "I ett nytt fönster">
+
+<!ENTITY matches.league      "Seriematcher">
+<!ENTITY matches.get_league  "Hämta mina seriematcher">
+<!ENTITY matches.played      "Om spelade inom">
+<!ENTITY matches.hours       "timmar.">
+<!ENTITY matches.friends     "Favoritlag">
+<!ENTITY matches.get_friends "Hämta matcher för mina favoritlag">
+<!ENTITY matches.scorers     "Målgörare">
+<!ENTITY matches.list        "Visa målgörare i matchens sidhuvud">
+<!ENTITY matches.window      "Fönster">
+<!ENTITY matches.lines       "Antal rader som visas i minimerat läge">
+
+<!ENTITY notify.notify       "Meddelanden">
+<!ENTITY notify.enable_sound "Spela upp ljud vid matchhändelser">
+<!ENTITY notify.only         "..endast för öppnade matcher">
+<!ENTITY notify.flash        "Blinka matchens sidhuvud vid nya matchhändelser">
+<!ENTITY notify.status       "Skjutreglage för statusfält">
+
+<!ENTITY language.select     "Välj språk">
+<!ENTITY language.note       "Obs! Firefox måste startas om för att ändringen ska börja gälla.">
+
+<!ENTITY button.cancel       "Avbryt">
+<!ENTITY button.ok           "OK">

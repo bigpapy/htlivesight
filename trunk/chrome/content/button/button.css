@@ -1,0 +1,5 @@
+#htls-button-1
+  {list-style-image: url("chrome://htlivesight/skin/24.png");}
+
+toolbar[iconsize="small"] #htls-button-1
+{list-style-image: url("chrome://htlivesight/skin/16.png");}

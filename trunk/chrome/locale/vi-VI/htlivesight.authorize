@@ -1,0 +1,9 @@
+introduction=Bạn đang được chuyển đến trang CHPP để lấy mã xác nhận. Nếu không được hãy gỡ màn hình pop up hiện tại hoặc cho HTlivesight vào danh sách loại trừ.
+insert=Điền mã ủy quyền của bạn tại đây:
+ending=HTlivesight đã được ủy quyền. Nhấn OK để khởi động lại ứng dụng.
+error401=Lỗi 401: Không truy cập ủy quyền được. Bạn có thể ủy quyền lại. nhấn ok để tiếp tục.
+error404=Lỗi 404: Không tìm thấy tài nguyên yêu cầu. Nếu lỗi này tiếp tục xuất hiện nếu dịch cụ CHPP bị ngắt.
+error0=Lỗi 0: Không có kết nối internet.
+error=Error
+serverON=Kết nối
+serverOFF=Ngắt kết nối

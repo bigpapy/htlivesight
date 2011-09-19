@@ -1,0 +1,29 @@
+<!ENTITY window.title        "Thông tin về HTLiveSight">
+
+<!ENTITY tab.programming     "Chương trình">
+<!ENTITY tab.art             "Hình ảnh">
+
+<!ENTITY month.january       "Tháng 1">
+<!ENTITY month.february      "Tháng 2">
+<!ENTITY month.march         "Tháng 3">
+<!ENTITY month.april         "Tháng 4">
+<!ENTITY month.may           "Tháng 5">
+<!ENTITY month.june          "Tháng 6">
+<!ENTITY month.july          "Tháng 7">
+<!ENTITY month.august        "Tháng 8">
+<!ENTITY month.september     "Tháng 9">
+<!ENTITY month.october       "Tháng 10">
+<!ENTITY month.november      "Tháng 11"> 
+<!ENTITY month.december      "Tháng 12">
+
+<!ENTITY text.created_by     "Tạo ra bởi">
+<!ENTITY text.developed_by   "Phát triển bởi">
+<!ENTITY text.help_of        "Với sự giúp đỡ của">
+<!ENTITY text.thanks_to      "Gửi lời cảm ơn đến:">
+<!ENTITY text.images_by      "Hình ảnh của">
+<!ENTITY text.weather        "Những hình ảnh thời tiết lấy từ:">
+<!ENTITY text.tango_icon     "Thư viện biểu tượng Tango">
+<!ENTITY text.licensed       "Được cấp giấy phép bởi">
+<!ENTITY text.creative       "Creative Commons">
+<!ENTITY text.license        "Với giấy phép Share-Alike">
+<!ENTITY button.close        "Đóng">

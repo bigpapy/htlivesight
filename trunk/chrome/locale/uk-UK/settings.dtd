@@ -1,0 +1,33 @@
+<!ENTITY window.title        "Налаштування HTLiveSight">
+
+<!ENTITY tab.general         "Загальні">
+<!ENTITY tab.matches         "Матчі">
+<!ENTITY tab.notifications   "Повідомлення">
+<!ENTITY tab.language        "Мова">
+
+<!ENTITY general.open        "Відкрити HTLiveSight">
+<!ENTITY general.new_tab     "В новій вкладці">
+<!ENTITY general.new_window  "В новому вікні">
+
+<!ENTITY matches.league      "Матчі ліги">
+<!ENTITY matches.get_league  "Завантажувати матчі ліги">
+<!ENTITY matches.played      "Якщо до матчів залишилось">
+<!ENTITY matches.hours       "годин">
+<!ENTITY matches.friends     "Друзі">
+<!ENTITY matches.get_friends "Завантажувати матчі друзів">
+<!ENTITY matches.scorers     "Автори забитих м'ячів">
+<!ENTITY matches.list        "Список авторів у заголовку">
+<!ENTITY matches.window      "Вікно">
+<!ENTITY matches.lines       "Кількість рядків для відображення в згорнутому вигляді">
+
+<!ENTITY notify.notify       "Повідомлення">
+<!ENTITY notify.enable_sound "Увімкнути звуки">
+<!ENTITY notify.only         "Лише у відкритих матчах">
+<!ENTITY notify.flash        "Мерехтіння заголовків">
+<!ENTITY notify.status       "Виринаючі повідомлення">
+
+<!ENTITY language.select     "Обрати мову">
+<!ENTITY language.note       "Потрібно перезавантажити Firefox, щоб застосувати зміни">
+
+<!ENTITY button.cancel       "Скасувати">
+<!ENTITY button.ok           "OK">

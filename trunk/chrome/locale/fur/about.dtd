@@ -1,0 +1,30 @@
+<!ENTITY window.title        "Informazions su HTLiveSight">
+
+<!ENTITY tab.programming     "Programmazion">
+<!ENTITY tab.art             "Grafiche">
+
+<!ENTITY month.january       "Zen">
+<!ENTITY month.february      "Fev">
+<!ENTITY month.march         "Mar">
+<!ENTITY month.april         "Avr">
+<!ENTITY month.may           "Mai">
+<!ENTITY month.june          "Jug">
+<!ENTITY month.july          "Lui">
+<!ENTITY month.august        "Avo">
+<!ENTITY month.september     "Set">
+<!ENTITY month.october       "Otu">
+<!ENTITY month.november      "Nov">
+<!ENTITY month.december      "Dic">
+
+<!ENTITY text.created_by     "Creât di">
+<!ENTITY text.developed_by   "Sviluppât di">
+<!ENTITY text.help_of        "Cun l'aiût di">
+<!ENTITY text.thanks_to      "Un grant ringraciament a:">
+<!ENTITY text.images_by      "Figurinis di">
+<!ENTITY text.weather        "Figurinis meteo cjapadis di">
+<!ENTITY text.tango_icon     "librerie di iconis Tango">
+<!ENTITY text.licensed       "Licence">
+<!ENTITY text.creative       "Creative Commons">
+<!ENTITY text.license        "Attribuzion de licence Share-Alike">
+
+<!ENTITY button.close        "Sierâ">

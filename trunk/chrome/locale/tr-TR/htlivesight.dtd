@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight">
+
+<!ENTITY menu.server         "Sunucu:">
+<!ENTITY menu.disconnected   "Bağlantı kesildi">
+<!ENTITY menu.options        "Seçenekler">
+<!ENTITY menu.reconnect      "Tekrar bağlan">
+<!ENTITY menu.about          "HTLiveSight Hakkında">
+
+<!ENTITY login.label         "Giriş">
+<!ENTITY login.teamId        "Insert TeamId of your team">
+<!ENTITY login.username      "Kullanıcı adı">
+<!ENTITY login.security_code "Güvenlik kodu">
+<!ENTITY login.remember_me   "Beni hatırla">
+<!ENTITY login.button        "Giriş">
+
+<!ENTITY league.matches      "Lig Maçları">
+<!ENTITY league.live_table   "Anlık Puan Tablosu">
+<!ENTITY league.position     "Sıra">
+<!ENTITY league.team         "Takım">
+<!ENTITY league.played       "O">
+<!ENTITY league.goals        "A">
+<!ENTITY league.goal_diff    "Av">
+<!ENTITY league.points       "P">
+
+<!ENTITY matches.list        "Maç Listesi">
+<!ENTITY matches.add         "Maç ekle">
+<!ENTITY matches.by_match    "Maç id'sinden">
+<!ENTITY matches.by_team     "Takım id'sinden">
+<!ENTITY matches.youth       "Paf?">
+
+<!ENTITY friends.title       "Arkadaşlar">
+<!ENTITY friends.remove      "Sil">
+<!ENTITY friends.open        "Yükle">

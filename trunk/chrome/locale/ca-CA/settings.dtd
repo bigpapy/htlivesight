@@ -1,0 +1,33 @@
+<!ENTITY window.title        "Opcions de HTLiveSight">
+
+<!ENTITY tab.general         "General">
+<!ENTITY tab.matches         "Partits">
+<!ENTITY tab.notifications   "Notificacions">
+<!ENTITY tab.language        "Idioma">
+
+<!ENTITY general.open        "Obrir HTLiveSight">
+<!ENTITY general.new_tab     "En un nou tabulador">
+<!ENTITY general.new_window  "En una nova finestra">
+
+<!ENTITY matches.league      "Partits de lliga">
+<!ENTITY matches.get_league  "Obtenir partits de llige">
+<!ENTITY matches.played      "Si jugat fa">
+<!ENTITY matches.hours       "hores.">
+<!ENTITY matches.friends     "Amics">
+<!ENTITY matches.get_friends "Obtenir partits d'amics">
+<!ENTITY matches.scorers     "Anotadors">
+<!ENTITY matches.list        "Llistar anotadors">
+<!ENTITY matches.window      "Window">
+<!ENTITY matches.lines       "Lines to display in minimize mode">
+
+<!ENTITY notify.notify       "Notificacions">
+<!ENTITY notify.enable_sound "Habil·litar notificacions sonores">
+<!ENTITY notify.only         "Només a partits oberts">
+<!ENTITY notify.flash        "Ressaltar capçaleres">
+<!ENTITY notify.status       "Barra d'estats lliscant">
+
+<!ENTITY language.select     "Seleccionar idioma">
+<!ENTITY language.note       "Nota: Reiniciar HTLiveSight per fer efectius els canvis.">
+
+<!ENTITY button.cancel       "Cancel·lar">
+<!ENTITY button.ok           "Acceptar">

@@ -1,0 +1,10 @@
+introduction=Esti redirectionat catre pagina CHPP pentru a obtine codul de autorizare. Daca nu functioneaza, te rog dezactiveaza blocajul pop-up sau adauga HTlivesight pe lista exceptiilor.
+insert=Introduceti codul de autorizare aici:
+ending=Acum HTlivesight este autorizat. Apasa OK pentru a reporni aplicatia.
+error401=Eroare 401: acces neautorizat. Trebuie sa obtii autorizarea din nou. Apasa ok pentru a continua.
+error404=Eroare 404: resursa ceruta nu a fost gasita. Daca aceasta eroare apare din nou, verifica daca serviciul CHPP nu este oprit.
+error0=Eroare 0: nu esti conectat la internet.
+error=Eroare
+serverON=Conectat
+serverOFF=Deconectat
+

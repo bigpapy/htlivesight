@@ -1,0 +1,30 @@
+<!ENTITY window.title HTLiveSight "درباره ي">
+
+<!ENTITY tab.programming "برنامه نويسي">
+<!ENTITY tab.art "گرافيکي ">
+
+<!ENTITY month.january "ژانويه">
+<!ENTITY month.february "فوريه">
+<!ENTITY month.march "مارس">
+<!ENTITY month.april "آپريل">
+<!ENTITY month.may "مي">
+<!ENTITY month.june "ژوئن">
+<!ENTITY month.july "جولاي">
+<!ENTITY month.august "آگوست">
+<!ENTITY month.september "سپتامبر">
+<!ENTITY month.october "اکتبر">
+<!ENTITY month.november "نوامبر">
+<!ENTITY month.december "دسامبر ">
+
+<!ENTITY text.created_by "ساخته شده توسط">
+<!ENTITY text.developed_by "طراحي و توسعه يافته توسط">
+<!ENTITY text.help_of "با کمک">
+<!ENTITY text.thanks_to "با سپاس فراوان از:">
+<!ENTITY text.images_by "عکس ها از">
+<!ENTITY text.weather "عکس هاي آب و هوا از">
+<!ENTITY text.tango_icon "Tango Icon Library">
+<!ENTITY text.licensed "تحت ليسانس">
+<!ENTITY text.creative "Creative Commons">
+<!ENTITY text.license "Share-Alike تحت ليسانس">
+
+<!ENTITY button.close "بستن">

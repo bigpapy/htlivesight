@@ -1,0 +1,33 @@
+<!ENTITY window.title        "Nastavení HTLiveSightu">
+
+<!ENTITY tab.general         "Obecné">
+<!ENTITY tab.matches         "Zápasy">
+<!ENTITY tab.notifications   "Upozornění na události">
+<!ENTITY tab.language        "Jazyk">
+
+<!ENTITY general.open        "Otevření HTLiveSightu">
+<!ENTITY general.new_tab     "V novém panelu">
+<!ENTITY general.new_window  "V novém okně">
+
+<!ENTITY matches.league      "Ligové zápasy">
+<!ENTITY matches.get_league  "Zobrazovat zápasy ligy">
+<!ENTITY matches.played      "Pokud budou hrány do">
+<!ENTITY matches.hours       "hodin.">
+<!ENTITY matches.friends     "Přátelé">
+<!ENTITY matches.get_friends "Zobrazovat zápasy přátel">
+<!ENTITY matches.scorers     "Střelci">
+<!ENTITY matches.list        "Seznam střelců v záhlaví">
+<!ENTITY matches.window      "Okno">
+<!ENTITY matches.lines       "Kolik řádků se má zobrazit v minimalizovaném módu">
+
+<!ENTITY notify.notify       "Upozornění na události">
+<!ENTITY notify.enable_sound "Povolit zvukové upozornění na události">
+<!ENTITY notify.only         "Pouze v otevřených zápasech">
+<!ENTITY notify.flash        "Blikající záhlaví">
+<!ENTITY notify.status       "Upozornění ve stavovém řádku">
+
+<!ENTITY language.select     "Vyber jazyk">
+<!ENTITY language.note       "Poznámka: Aby se nové nastavení projevilo, je nutné restartovat HTLiveSight.">
+
+<!ENTITY button.cancel       "Storno">
+<!ENTITY button.ok           "OK">
