@@ -1,0 +1,30 @@
+<!ENTITY window.title        "О HTLiveSight-у">
+
+<!ENTITY tab.programming     "Програмирање">
+<!ENTITY tab.art             "Арт">
+
+<!ENTITY month.january       "Јан">
+<!ENTITY month.february      "Феб">
+<!ENTITY month.march         "Мар">
+<!ENTITY month.april         "Апр">
+<!ENTITY month.may           "Мај">
+<!ENTITY month.june          "Јун">
+<!ENTITY month.july          "Јул">
+<!ENTITY month.august        "Авг">
+<!ENTITY month.september     "Сеп">
+<!ENTITY month.october       "Окт">
+<!ENTITY month.november      "Нов">
+<!ENTITY month.december      "Дец">
+
+<!ENTITY text.created_by     "Створио">
+<!ENTITY text.developed_by   "Развио">
+<!ENTITY text.help_of        "уз помоћ">
+<!ENTITY text.thanks_to      "Посебна захвалност:">
+<!ENTITY text.images_by      "Слике">
+<!ENTITY text.weather        "Слике времена са">
+<!ENTITY text.tango_icon     "Tango Icon Library">
+<!ENTITY text.licensed       "лиценца">
+<!ENTITY text.creative       "Creative Commons">
+<!ENTITY text.license        "Attribution Share-Alike license">
+
+<!ENTITY button.close        "Затвори">

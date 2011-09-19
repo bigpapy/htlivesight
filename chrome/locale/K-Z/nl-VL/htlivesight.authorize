@@ -1,0 +1,9 @@
+introduction=U word omgeleid naar de CHPP pagina om een autorisatiecode te ontvangen. Indien u niet word omgeleid, kijk dan eerst na of pop-up blokkers zijn uitgeschakeld. Als u daarna nog niet word omgeleid plaats dan HTLiveSight in de uitzonderingenlijst.
+insert=Voeg de verkregen autorisatiecode hier in:
+ending=HTLiveSight is nu geautoriseerd. Klik OK om het programma te herstarten.
+error401=Error 401: Ongeautorizeerde toegang. U dient opnieuw autorisatie te verlenen. Klik OK om verder te gaan.
+error404=Error 404: De gevraagde bron kon niet worden bereikt. Als deze foutmelding nogmaals verschijnt controleer dan of de chpp dienst op HT actief is.
+error0=Error 0:niet geconnecteerd met internet.
+error=Foutmelding
+serverON=Geconnecteerd
+serverOFF=Gedisconnecteerd

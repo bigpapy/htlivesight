@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight 选项">
+
+<!ENTITY tab.general         "全局设置">
+<!ENTITY tab.matches         "比赛设置">
+<!ENTITY tab.notifications   "提示设置">
+<!ENTITY tab.language        "语言">
+
+<!ENTITY general.open        "打开 HTLiveSight">
+<!ENTITY general.new_tab     "在新页面打开">
+<!ENTITY general.new_window  "在新窗口打开">
+
+<!ENTITY matches.league      "联赛比赛">
+<!ENTITY matches.get_league  "获取联赛比赛">
+<!ENTITY matches.played      "过去">
+<!ENTITY matches.hours       "小时以内">
+<!ENTITY matches.friends     "朋友">
+<!ENTITY matches.get_friends "获取朋友的比赛">
+<!ENTITY matches.scorers     "入球者">
+<!ENTITY matches.list        "在标题栏列出进球者">
+<!ENTITY matches.window      "窗口">
+<!ENTITY matches.lines       "在最小化模式显示行数">
+
+<!ENTITY notify.notify       "提示">
+<!ENTITY notify.enable_sound "启用声音提示">
+<!ENTITY notify.only         "仅在打开的比赛">
+<!ENTITY notify.flash        "标题闪动">
+<!ENTITY notify.status       "状态栏滚动">
+
+<!ENTITY language.select     "选择语言">
+<!ENTITY language.note       "提示: 重启HTLiveSight以保存生效.">
+
+<!ENTITY button.cancel       "取消">
+<!ENTITY button.ok           "确认">

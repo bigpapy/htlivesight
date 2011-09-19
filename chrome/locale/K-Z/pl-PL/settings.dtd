@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight - Ustawienia">
+
+<!ENTITY tab.general         "Ogólne">
+<!ENTITY tab.matches         "Mecze">
+<!ENTITY tab.notifications   "Powiadomienia">
+<!ENTITY tab.language        "Język">
+
+<!ENTITY general.open        "Otwieraj HTLiveSight">
+<!ENTITY general.new_tab     "W nowej karcie">
+<!ENTITY general.new_window  "W nowym oknie">
+
+<!ENTITY matches.league      "Mecze ligowe">
+<!ENTITY matches.get_league  "Pobieraj mecze ligowe">
+<!ENTITY matches.played      "rozgrywane w ciągu">
+<!ENTITY matches.hours       "godzin">
+<!ENTITY matches.friends     "Znajomi">
+<!ENTITY matches.get_friends "Pobieraj mecze znajomych">
+<!ENTITY matches.scorers     "Zdobywcy bramek">
+<!ENTITY matches.list        "Wyświetlaj zdobywców bramek w nagłówku">
+<!ENTITY matches.window      "Ostatnie zdarzenia">
+<!ENTITY matches.lines       "Liczba wyświetlanych ostatnich zdarzeń">
+
+<!ENTITY notify.notify       "Powiadomienia">
+<!ENTITY notify.enable_sound "Włącz powiadomienia dźwiękowe">
+<!ENTITY notify.only         "Tylko dla otwartych meczów">
+<!ENTITY notify.flash        "Włącz miganie nagłówków">
+<!ENTITY notify.status       "Włącz wysuwane powiadomienia">
+
+<!ENTITY language.select     "Wybierz język">
+<!ENTITY language.note       "Uwaga: Musisz zrestartować HTLiveSight, aby zmiany były widoczne">
+
+<!ENTITY button.cancel       "Anuluj">
+<!ENTITY button.ok           "OK">

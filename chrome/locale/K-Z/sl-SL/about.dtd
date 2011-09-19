@@ -1,0 +1,30 @@
+<!ENTITY window.title        "O HTLiveSightu">
+
+<!ENTITY tab.programming     "Programiranje">
+<!ENTITY tab.art             "Grafično oblikovanje">
+
+<!ENTITY month.january       "Jan">
+<!ENTITY month.february      "Feb">
+<!ENTITY month.march         "Mar">
+<!ENTITY month.april         "Apr">
+<!ENTITY month.may           "Maj">
+<!ENTITY month.june          "Jun">
+<!ENTITY month.july          "Jul">
+<!ENTITY month.august        "Avg">
+<!ENTITY month.september     "Sep">
+<!ENTITY month.october       "Okt">
+<!ENTITY month.november      "Nov">
+<!ENTITY month.december      "Dec">
+
+<!ENTITY text.created_by     "Ustvaril">
+<!ENTITY text.developed_by   "Razvil">
+<!ENTITY text.help_of        "S pomočjo">
+<!ENTITY text.thanks_to      "Toplo se zahvaljujemo:">
+<!ENTITY text.images_by      "Slike poskrbel">
+<!ENTITY text.weather        "Slike o vremenu iz">
+<!ENTITY text.tango_icon     "knjižnica ikon Tango">
+<!ENTITY text.licensed       "Licenca">
+<!ENTITY text.creative       "Creative Commons">
+<!ENTITY text.license        "Upošteva se licenca Share-Alike">
+
+<!ENTITY button.close        "Zapri">

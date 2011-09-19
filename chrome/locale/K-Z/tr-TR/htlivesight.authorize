@@ -1,0 +1,9 @@
+introduction=Yetki kodunu almak için chpp sayfasına yönlendirildiniz. Gerçekleşmediyse pop up engellemeyi geçici olarak devre dışı bırakın ya da HTlivesight uygulamasını engellenmeyecekler listesine alın.
+insert=Yetki kodunuzu girin:
+ending=HTlivesight onaylandı. Uygulamayı yeniden başlatmak için OK tuşuna basın.
+error401=Hata 401: Geçersiz giriş. Tekrar yetki almanız gerekiyor. Devam etmek için OK tuşuna basın.
+error404=Hata 404: Kaynağa erişilemiyor. Eğer hata tekrar ederse chpp ürünün etkin olup olmadığını kontrol edin.
+error0=Hata 0: İnternet erişimi yok.
+error=Hata
+serverON=Bağlı
+serverOFF=Bağlı değil.
