@@ -1,9 +1,0 @@
-introduction=Du sänds vidare till CHPP -sidan för att inleda din autentiseringsprocess. Väl där loggar du in med dina vanliga inloggningsuppgifter för att få din kod för att ge HTLiveSight tillstånd till ditt lags data. Om du inte kommer fram kan det bero på ngn form av pop-up blocker. Inaktivera den tillfälligt isåfall eller lägg till HTLiveSight i listan för undantag.
-insert=Klistra in din behörighetskod här:
-ending=Nu är HTLiveSight godkänt. Klicka OK för att starta om applikationen.
-error401=Error 401: Obehörig Åtkomst. Du måste fixa tillståndet igen. Klicka på OK för att fortsätta.
-error404=Error 404: Den begärda resursen kan inte hittas. Om felet visas igen kontrollera Hattricks SysInfo om CHPP är nere.
-error0=Error 0: Inte ansluten till internet.
-error=Error
-serverON=Uppkopplad
-serverOFF=Frånkopplad

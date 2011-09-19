@@ -1,9 +1,0 @@
-introduction=Vas ser redireccionado á páxina CHPP para obter o teu código de autorización. Se non eres redireccionado, detén temporalmente o bloqueador de ventanas emerxentes, ou engade HTlivesight á lista de excepcións.
-insert=introduce o teu código de autorización aquí:
-ending=Agora HTlivesight está autorizado. Pulsa OK para reiniciar a aplicación.
-error401=Error 401: acceso non autorizado. Debes volver a obter o código de autorización. Pulsa OK para continuar.
-error404=Error 404: o recurso solicitado non se atopa. Se este erro aparece de novo, comproba se o servicio CHPP está caído.
-error0=Error 0: non estás conectado á Internet.
-error=Error
-serverON=Conectado
-serverOFF=Desconectado

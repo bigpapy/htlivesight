@@ -1,9 +1,0 @@
-introduction=Jsi pøesmìrován na stránku CHPP, kde se zobrazí autorizaèní kód. Pokud ne, zkontroluj prosím, zda nemáš zakázáno automatické otevírání vyskakovacích oken. To buï doèasnì vypni, nebo pøidej HTLiveSight mezi výjimky.
-insert=zadej svùj autorizaèní kód sem:
-ending=Nyní je HTLiveSight autorizován. Klikni na OK, aby se aplikace restartovala.
-error401=Chyba 401: neautorizovaný pøístup. Musíš se autorizovat znovu. Klikni na OK k pokraèování.
-error404=Chyba 404: požadovaný zdroj nemohl být nalezen. Pokud se tato chyba zobrazí znovu, zkontroluj, jestli vývojáøi doèasnì nevypnuli CHPP rozhraní.
-error0=Chyba 0: nejsi pøipojen k internetu.
-error=Chyba
-serverON=Pøipojeno
-serverOFF=Nepøipojeno
