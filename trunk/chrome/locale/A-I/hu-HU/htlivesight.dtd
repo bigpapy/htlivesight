@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight">
+
+<!ENTITY menu.server         "Szerver:">
+<!ENTITY menu.disconnected   "Nincs kapcsolat">
+<!ENTITY menu.options        "Beállítások">
+<!ENTITY menu.reconnect      "Újracsatlakozás a HT-hoz">
+<!ENTITY menu.about          "A HTLiveSight névjegye">
+
+<!ENTITY login.label         "Bejelentkezés">
+<!ENTITY login.teamId        "Kérlek add meg a csapatazonosítód:">
+<!ENTITY login.username      "Felhasználónév">
+<!ENTITY login.security_code "Biztonsági kód">
+<!ENTITY login.remember_me   "Megjegyez">
+<!ENTITY login.button        "Bejelentkezés">
+
+<!ENTITY league.matches      "Bajnoki meccsek">
+<!ENTITY league.live_table   "Élõ tabella">
+<!ENTITY league.position     "#">
+<!ENTITY league.team         "Csapat">
+<!ENTITY league.played       "M">
+<!ENTITY league.goals        "G">
+<!ENTITY league.goal_diff    "GK">
+<!ENTITY league.points       "P">
+
+<!ENTITY matches.list        "Meccslista">
+<!ENTITY matches.add         "Meccs hozzáadása">
+<!ENTITY matches.by_match    "MeccsID alapján">
+<!ENTITY matches.by_team     "CsapatID alapján">
+<!ENTITY matches.youth       "Ifimeccs?">
+
+<!ENTITY friends.title       "Barátok">
+<!ENTITY friends.remove      "Eltávolít">
+<!ENTITY friends.open        "Megnyit">

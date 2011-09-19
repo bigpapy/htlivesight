@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight">
+
+<!ENTITY menu.server         "Servidor:">
+<!ENTITY menu.disconnected   "desconectado">
+<!ENTITY menu.options        "Opcións">
+<!ENTITY menu.reconnect      "Reconectando ó HT">
+<!ENTITY menu.about          "Acerca de HTLiveSight">
+
+<!ENTITY login.label         "Conectar">
+<!ENTITY login.teamId        "Introduce a ID do teu equipo">
+<!ENTITY login.username      "Nome de usuario">
+<!ENTITY login.security_code "Código de seguridade">
+<!ENTITY login.remember_me   "Recórdame">
+<!ENTITY login.button        "Conectar">
+
+<!ENTITY league.matches      "Encontros da Liga">
+<!ENTITY league.live_table   "Clasificación">
+<!ENTITY league.position     "#">
+<!ENTITY league.team         "Equipo">
+<!ENTITY league.played       "X">
+<!ENTITY league.goals        "G">
+<!ENTITY league.goal_diff    "GD">
+<!ENTITY league.points       "PTS">
+
+<!ENTITY matches.list        "Lista de encontros">
+<!ENTITY matches.add         "Engadir encontros">
+<!ENTITY matches.by_match    "Por ID do encontro">
+<!ENTITY matches.by_team     "Por ID do equipo">
+<!ENTITY matches.youth       "Xuvenís?">
+
+<!ENTITY friends.title       "Amigos">
+<!ENTITY friends.remove      "Eliminar">
+<!ENTITY friends.open        "Abrir">

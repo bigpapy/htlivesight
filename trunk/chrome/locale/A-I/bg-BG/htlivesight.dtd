@@ -1,0 +1,33 @@
+<!ENTITY window.title        "ЛайвФокс">
+
+<!ENTITY menu.server         "Сървър:">
+<!ENTITY menu.disconnected   "няма връзка">
+<!ENTITY menu.options        "Опции">
+<!ENTITY menu.reconnect      "Свържи се отново с ХТ">
+<!ENTITY menu.about          "За ЛайвФокс">
+
+<!ENTITY login.label         "Акаунт">
+<!ENTITY login.teamId        "Постави ID на отбора си">
+<!ENTITY login.username      "Име">
+<!ENTITY login.security_code "Код за сигурност">
+<!ENTITY login.remember_me   "Запомни ме">
+<!ENTITY login.button        "Акаунт">
+
+<!ENTITY league.matches      "Мачове в групата">
+<!ENTITY league.live_table   "Класиране при текущите резултати">
+<!ENTITY league.position     "#">
+<!ENTITY league.team         "Отбор">
+<!ENTITY league.played       "М">
+<!ENTITY league.goals        "Г">
+<!ENTITY league.goal_diff    "ГР">
+<!ENTITY league.points       "Т">
+
+<!ENTITY matches.list        "Списък с мачове">
+<!ENTITY matches.add         "Добави мач">
+<!ENTITY matches.by_match    "По номер на мач">
+<!ENTITY matches.by_team     "По номер на отбор">
+<!ENTITY matches.youth       "Младежки?">
+
+<!ENTITY friends.title       "Приятели">
+<!ENTITY friends.remove      "Изтрий">
+<!ENTITY friends.open        "Отвори">

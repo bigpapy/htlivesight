@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight">
+
+<!ENTITY menu.server         "Server:">
+<!ENTITY menu.disconnected   "Forbindelsen afbrudt">
+<!ENTITY menu.options        "Indstillinger">
+<!ENTITY menu.reconnect      "Genetabler forbindelse til HT">
+<!ENTITY menu.about          "Om HTLiveSight">
+
+<!ENTITY login.label         "Login">
+<!ENTITY login.teamId        "Indsæt dit TeamId">
+<!ENTITY login.username      "Brugernavn">
+<!ENTITY login.security_code "Sikkerhedskode">
+<!ENTITY login.remember_me   "Husk mig">
+<!ENTITY login.button        "Login">
+
+<!ENTITY league.matches      "Liga kampe">
+<!ENTITY league.live_table   "Live Table">
+<!ENTITY league.position     "#">
+<!ENTITY league.team         "Hold">
+<!ENTITY league.played       "K">
+<!ENTITY league.goals        "M">
+<!ENTITY league.goal_diff    "MF">
+<!ENTITY league.points       "PT">
+
+<!ENTITY matches.list        "Kamp liste">
+<!ENTITY matches.add         "Tilføj Kamp">
+<!ENTITY matches.by_match    "Via Kamp id">
+<!ENTITY matches.by_team     "Via Hold id">
+<!ENTITY matches.youth       "Ungdoms ?">
+
+<!ENTITY friends.title       "Venner">
+<!ENTITY friends.remove      "Fjern">
+<!ENTITY friends.open        "Åben">

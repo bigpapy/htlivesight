@@ -1,0 +1,30 @@
+<!ENTITY window.title        "Über HTLiveSight">
+
+<!ENTITY tab.programming     "Programmierung">
+<!ENTITY tab.art             "Grafik">
+
+<!ENTITY month.january       "Jan">
+<!ENTITY month.february      "Feb">
+<!ENTITY month.march         "März">
+<!ENTITY month.april         "Apr">
+<!ENTITY month.may           "Mai">
+<!ENTITY month.june          "Juni">
+<!ENTITY month.july          "Juli">
+<!ENTITY month.august        "Aug">
+<!ENTITY month.september     "Sept">
+<!ENTITY month.october       "Okt">
+<!ENTITY month.november      "Nov">
+<!ENTITY month.december      "Dez">
+
+<!ENTITY text.created_by     "Geschrieben von">
+<!ENTITY text.developed_by   "Entwickelt von">
+<!ENTITY text.help_of        "mit der Hilfe von">
+<!ENTITY text.thanks_to      "Vielen Dank an:">
+<!ENTITY text.images_by      "Bilder von">
+<!ENTITY text.weather        "Wetter-Bilder von der">
+<!ENTITY text.tango_icon     "Tango-Icon-Bibliothek">
+<!ENTITY text.licensed       "lizensiert unter der">
+<!ENTITY text.creative       "Creative Commons">
+<!ENTITY text.license        "Attribution Share-Alike license">
+
+<!ENTITY button.close        "Schließen">

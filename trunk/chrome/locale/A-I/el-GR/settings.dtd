@@ -1,0 +1,33 @@
+ <!ENTITY window.title        "HTLiveSight επιλογές">
+
+<!ENTITY tab.general         "Γενικά">
+<!ENTITY tab.matches         "Αγώνες">
+<!ENTITY tab.notifications   "Ειδοποιήσεις">
+<!ENTITY tab.language        "Γλώσσα">
+
+<!ENTITY general.open        "Ανοιγμα HTLiveSight">
+<!ENTITY general.new_tab     "Σε νέα καρτέλα">
+<!ENTITY general.new_window  "Σε νέο παράθυρο">
+
+<!ENTITY matches.league      "Αγώνες πρωταθλήματος">
+<!ENTITY matches.get_league  "Λήψη αγώνων πρωταθλήματος">
+<!ENTITY matches.played      "Εναρξη μέσα σε">
+<!ENTITY matches.hours       "ώρες">
+<!ENTITY matches.friends     "Φίλοι">
+<!ENTITY matches.get_friends "Λήψη αγώνων φίλων">
+<!ENTITY matches.scorers     "Σκόρερς">
+<!ENTITY matches.list        "Λίστα των σκόρερς στην κεφαλίδα">
+<!ENTITY matches.window      "Παράθυρο">
+<!ENTITY matches.lines       "Αριθμός γραμμών στο ελαχιστοπ.παράθυρο">
+
+<!ENTITY notify.notify       "Ειδοποιήσεις">
+<!ENTITY notify.enable_sound "Ενεργοποίηση ήχου ειδοποιήσης">
+<!ENTITY notify.only         "Μόνο στους ανοιχτούς αγώνες">
+<!ENTITY notify.flash        "Φλάς κεφαλίδα">
+<!ENTITY notify.status       "Κυλιόμενη ειδοποίηση">
+
+<!ENTITY language.select     "Διάλεξε γλώσσα">
+<!ENTITY language.note       "Σημείωση: Επανεκκίνησε το HTLiveSight για να ισχύει η αλλαγή.">
+
+<!ENTITY button.cancel       "Ακύρωση">
+<!ENTITY button.ok           "OK">

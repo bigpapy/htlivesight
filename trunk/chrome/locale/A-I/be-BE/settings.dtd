@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight Наладкі">
+
+<!ENTITY tab.general         "Агульныя">
+<!ENTITY tab.matches         "Матчы">
+<!ENTITY tab.notifications   "Апавяшчэнні">
+<!ENTITY tab.language        "Мова">
+
+<!ENTITY general.open        "Адчыніць HTLiveSight">
+<!ENTITY general.new_tab     "У новай укладцы">
+<!ENTITY general.new_window  "У новым акне">
+
+<!ENTITY matches.league      "Матчы лігі">
+<!ENTITY matches.get_league  "Атрымаць матчы лігі">
+<!ENTITY matches.played      "Калі былі згуляныя не больш за">
+<!ENTITY matches.hours       "гадзін таму.">
+<!ENTITY matches.friends     "Сябры">
+<!ENTITY matches.get_friends "Атрымаць матчы сяброў">
+<!ENTITY matches.scorers     "Аўтары галоў">
+<!ENTITY matches.list        "Спіс аўтараў галоў уверсе">
+<!ENTITY matches.window      "акно">
+<!ENTITY matches.lines       "Радкоў у мінімальным рэжыме">
+
+<!ENTITY notify.notify       "Апавяшчэнні">
+<!ENTITY notify.enable_sound "Уключыць гукавыя апавяшчэнні">
+<!ENTITY notify.only         "Толькі ў адчыненых матчах">
+<!ENTITY notify.flash        "Flash загалоўкі">
+<!ENTITY notify.status       "Status bar slider">
+
+<!ENTITY language.select     "Абярыце мову">
+<!ENTITY language.note       "Заўвага: Перазапусціце Firefox, каб убачыць эфект.">
+
+<!ENTITY button.cancel       "Адмена">
+<!ENTITY button.ok           "OK">

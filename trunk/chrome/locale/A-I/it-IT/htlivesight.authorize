@@ -1,0 +1,13 @@
+introduction=Stai per essere reindirizzato alla pagina chpp per ottenere il codice di autorizzazione. Se ciò non accade, per favore rimuovi temporaneamente il blocco pop up o inserisci HTlivesight nella lista delle eccezioni.
+insert=Inserisci il codice di autorizzazione:
+ending=Ora HTlivesight è stato autorizzato. Clicca su OK per riavviare l'applicazione.
+error401=Errore401: accesso non autorizzato. Devi ottenere di nuovo l'autorizzazione. Clicca OK per continuare.
+error404=Errore404: la risorsa richiesta non è disponibile. Se l'errore si ripete controlla se il chpp è spento.
+error0=Errore0:non sei connesso ad internet.
+error=Errore 
+serverON=Connesso
+serverOFF=Disconnesso
+
+
+
+

@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight">
+
+<!ENTITY menu.server         "Server:">
+<!ENTITY menu.disconnected   "Disconnected">
+<!ENTITY menu.options        "Options">
+<!ENTITY menu.reconnect      "Reconnect to HT">
+<!ENTITY menu.about          "About HTLiveSight">
+
+<!ENTITY login.label         "Login">
+<!ENTITY login.teamId        "Insert your Team ID">
+<!ENTITY login.username      "Username">
+<!ENTITY login.security_code "Security Code">
+<!ENTITY login.remember_me   "Remember me">
+<!ENTITY login.button        "Login">
+
+<!ENTITY league.matches      "League Matches">
+<!ENTITY league.live_table   "Live Table">
+<!ENTITY league.position     "#">
+<!ENTITY league.team         "Team">
+<!ENTITY league.played       "P">
+<!ENTITY league.goals        "G">
+<!ENTITY league.goal_diff    "GD">
+<!ENTITY league.points       "PTS">
+
+<!ENTITY matches.list        "Match List">
+<!ENTITY matches.add         "Add match">
+<!ENTITY matches.by_match    "By match ID">
+<!ENTITY matches.by_team     "By team ID">
+<!ENTITY matches.youth       "Youth?">
+
+<!ENTITY friends.title       "Friends">
+<!ENTITY friends.remove      "Remove">
+<!ENTITY friends.open        "Open">

@@ -1,0 +1,33 @@
+<!ENTITY window.title        "Опции на ЛайвФокс">
+
+<!ENTITY tab.general         "Общи">
+<!ENTITY tab.matches         "Мачове">
+<!ENTITY tab.notifications   "Известяване">
+<!ENTITY tab.language        "Език">
+
+<!ENTITY general.open        "Отвори Лайвфокс">
+<!ENTITY general.new_tab     "В нов таб">
+<!ENTITY general.new_window  "В нов прозорец">
+
+<!ENTITY matches.league      "Мачове в групата">
+<!ENTITY matches.get_league  "Свали текущите мачове">
+<!ENTITY matches.played      "Ако започват най-много след">
+<!ENTITY matches.hours       "часа.">
+<!ENTITY matches.friends     "Приятели">
+<!ENTITY matches.get_friends "Свали мачовете на приятелите">
+<!ENTITY matches.scorers     "Голмайстори">
+<!ENTITY matches.list        "Показвай голмайсторите">
+<!ENTITY matches.window      "Window">
+<!ENTITY matches.lines       "Lines to display in minimize mode">
+
+<!ENTITY notify.notify       "Известяване">
+<!ENTITY notify.enable_sound "Включи звуковото известяване">
+<!ENTITY notify.only         "Само за отворените мачове">
+<!ENTITY notify.flash        "Включи визуалното известяване">
+<!ENTITY notify.status       "Плъзгач на лентата за състояние">
+
+<!ENTITY language.select     "Избери език">
+<!ENTITY language.note       "Забележка: рестартирай ЛайвФокс след смяна на езика.">
+
+<!ENTITY button.cancel       "Откажи">
+<!ENTITY button.ok           "ОК">

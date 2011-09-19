@@ -1,0 +1,9 @@
+introduction=Sind suunatakse Hattricki CHPP lehele autoriseerimis koodi saamiseks. Selle toestamiseks lülita hüpikakende keeld ajutiselt välja või lisa HTLiveSight lubatud nimekirja.
+insert=sisesta oma autoriseerimise kood siia:
+ending=Nüüd on HTLiveSight autoriseeritud. Kliki OK, et programm taaskäivitada.
+error401=VIGA 401: autoriseerimata ligipääs. Sa pead autoriseerimise uuesti tegema. Kliki jätkamiseks OK.
+error404=VIGA 404: soovitud andmeid ei suudetud leida. Kui see viga esineb korduvalt, siis kontrolli kas CHPP süsteem töötab.
+error0=VIGA 0: interneti ühendus puudub.
+error=Viga
+serverON=Ühendus loodud
+serverOFF=Ühendus lõppenud

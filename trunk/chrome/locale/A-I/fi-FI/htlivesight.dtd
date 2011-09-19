@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight">
+
+<!ENTITY menu.server         "Palvelin:">
+<!ENTITY menu.disconnected   "ei yhteyttä">
+<!ENTITY menu.options        "Valinnat">
+<!ENTITY menu.reconnect      "Yhdistä uudelleen HT:iin">
+<!ENTITY menu.about          "Tiedot HTLiveSight">
+
+<!ENTITY login.label         "Kirjaudu">
+<!ENTITY login.teamId        "Liitä joukkueesi JoukkueId">
+<!ENTITY login.username      "Käyttäjänimi">
+<!ENTITY login.security_code "Turvakoodi">
+<!ENTITY login.remember_me   "Muista minut">
+<!ENTITY login.button        "Kirjaudu">
+
+<!ENTITY league.matches      "Sarjaottelut">
+<!ENTITY league.live_table   "Live taulukko">
+<!ENTITY league.position     "#">
+<!ENTITY league.team         "Joukkue">
+<!ENTITY league.played       "P">
+<!ENTITY league.goals        "M">
+<!ENTITY league.goal_diff    "ME">
+<!ENTITY league.points       "PIS">
+
+<!ENTITY matches.list        "Ottelulista">
+<!ENTITY matches.add         "Lisää ottelu">
+<!ENTITY matches.by_match    "Ottelu id">
+<!ENTITY matches.by_team     "Joukkue id">
+<!ENTITY matches.youth       "Juniori?">
+
+<!ENTITY friends.title       "Ystävät">
+<!ENTITY friends.remove      "Poista">
+<!ENTITY friends.open        "Avaa">
