@@ -11,7 +11,7 @@
 
 <!ENTITY matches.league      "Matchs de ligue">
 <!ENTITY matches.get_league  "Afficher les matchs de ligue">
-<!ENTITY matches.played      "Si joué dans">
+<!ENTITY matches.played      "Si joué depuis ou dans">
 <!ENTITY matches.hours       "heures.">
 <!ENTITY matches.friends     "Matchs Amicaux">
 <!ENTITY matches.get_friends "Afficher les matchs amicaux">
