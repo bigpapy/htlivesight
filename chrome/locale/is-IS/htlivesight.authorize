@@ -1,0 +1,8 @@
+introduction=Þú verður fluttur á CHPP leyfissíðuna til að slá inn aðgangs kóða. Ef ekki, vinsamlegast slökkvið tímabundið á pop-up varanum eða bætið HTlivesight á listann yfir undantekningar.
+insert=Sláið inn kóðann hér:
+ending=HTLivesight hefur nú verið virkjað. Smelltu á Í lagi til að endurræsa forritið.
+error401=Villa 401: aðgangur bannaður. Þú verður að sækja um aðganginn aftur. Smelltu á Í Lagi til að halda áfram.
+error404=Villa 404: Hérna fannst ekkert þú ert í rugli. Ef þú færð þessa villu aftur þá gæti CHPP þjónustan verið óvirk.
+error0=Villa 0: internetið er ekki tengt.
+error=VillanetþjónninnVirkur=Connected
+serverOFF=Ótengdur

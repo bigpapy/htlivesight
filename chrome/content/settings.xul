@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="settings.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://htlivesight/locale/settings.dtd">
+
+<dialog id="htlivesight-options"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="&window.title;"
+	buttonlabelcancel="&button.cancel;"
+	buttonlabelaccept="&button.ok;"
+	persist="screenX screenY"
+	onload="htlivesight.Settings.startup()"
+	resizable="yes"
+	style="max-width: 300px"
+	ondialogcancel="htlivesight.Settings.click.btnCancel();"
+	ondialogaccept="htlivesight.Settings.click.btnOk();">
+
+	<script type="application/x-javascript" src="settings.js"/>
+	<script type="application/x-javascript" src="preferences.js"/>
+	<script type="application/x-javascript" src="log.js"/>
+
+	<tabbox flex="1">
+		<tabs>
+			<tab label="&tab.general;"/>
+			<tab label="&tab.matches;"/>
+			<tab label="&tab.notifications;"/>
+		</tabs>
+		<tabpanels flex="1">
+			<tabpanel id="tab_settings_options" orient="vertical" flex="1">
+				<groupbox>
+					<caption label="&general.open;"/>
+					<radiogroup id="openin" oncommand="htlivesight.Settings.click.radopenin(this);">
+						<radio id="openin_tab" label="&general.new_tab;"/>
+						<radio id="openin_window" label="&general.new_window;"/>
+					</radiogroup>
+				</groupbox>
+				<groupbox>
+					<caption label="&language.select;"/>
+					<menulist id="lang-list" oncommand="htlivesight.Settings.click.selLang();">
+						<menupopup>
+							<menuitem value="ar-AR" label="ar-AR&#160;&#160;العربية"/>
+							<menuitem value="be-BE" label="be-BE&#160;&#160;Беларуская"/>
+							<menuitem value="bg-BG" label="bg-BG&#160;&#160;Български"/>
+							<menuitem value="ca-CA" label="ca-CA&#160;&#160;Català"/>
+							<menuitem value="cs-CZ" label="cs-CZ&#160;&#160;Česky"/>
+                            <menuitem value="da-DK" label="da-DK&#160;&#160;Danish"/>
+							<menuitem value="de-DE" label="de-DE&#160;&#160;Deutsch"/>
+							<menuitem value="el-GR" label="el-GR&#160;&#160;Ελληνικά"/>
+							<menuitem value="en-GB" label="en-GB&#160;&#160;English (British)"/>
+							<menuitem value="en-US" label="en-US&#160;&#160;English (US)"/>
+							<menuitem value="es-ES" label="es-ES&#160;&#160;Espanol"/>
+							<menuitem value="es-CA" label="es-CA&#160;&#160;Espanol Centroamericano"/>
+							<menuitem value="es-SU" label="es-SU&#160;&#160;Espanol Sudamericano"/>
+							<menuitem value="et-ET" label="et-ET&#160;&#160;Eesti"/>
+							<menuitem value="fa-FA" label="fa-FA&#160;&#160;فارسی"/>
+							<menuitem value="fr-FR" label="fr-FR&#160;&#160;Français"/>
+							<menuitem value="fur" label="fur&#160;&#160;Furlan"/>
+							<menuitem value="fy-FY" label="fy-FY&#160;&#160;Frysk"/>
+							<menuitem value="gl-GL" label="gl-GL&#160;&#160;Galego"/>
+							<menuitem value="ka-GE" label="ka-GE&#160;&#160;ქართული"/>
+							<menuitem value="he-HE" label="he-HE&#160;&#160;עברית"/>
+							<menuitem value="hr-HR" label="hr-HR&#160;&#160;Hrvatski"/>
+							<menuitem value="is-IS" label="is-IS&#160;&#160;Islenska"/>
+							<menuitem value="it-IT" label="it-IT&#160;&#160;Italiano"/>
+							<menuitem value="lv-LV" label="lv-LV&#160;&#160;Latviešu"/>
+							<menuitem value="lb-LB" label="lb-LB&#160;&#160;Lëtzebuergesch"/>
+							<menuitem value="hu-HU" label="hu-HU&#160;&#160;Magyar"/>
+							<menuitem value="mk-MK" label="mk-MK&#160;&#160;Македонски"/>
+							<menuitem value="nl-NL" label="nl-NL&#160;&#160;Nederlands"/>
+							<menuitem value="no-NO" label="no-NO&#160;&#160;Norsk (Bokmal)"/>
+							<menuitem value="pl-PL" label="pl-PL&#160;&#160;Polski"/>
+							<menuitem value="pt-BR" label="pt-BR&#160;&#160;Português (Brasil)"/>
+							<menuitem value="pt-PT" label="pt-PT&#160;&#160;Português (Portugal)"/>
+							<menuitem value="ro-RO" label="ro-RO&#160;&#160;Română"/>
+							<menuitem value="ru-RU" label="ru-RU&#160;&#160;Русский язык"/>
+							<menuitem value="sk-SK" label="sk-SK&#160;&#160;Slovenčina"/>
+							<menuitem value="sl-SL" label="sl-SL&#160;&#160;Slovenščina"/>
+							<menuitem value="sq-SQ" label="sq-SQ&#160;&#160;Albanian"/>
+							<menuitem value="sr-RS" label="sr-RS&#160;&#160;Српски"/>
+							<menuitem value="sr-SP" label="sr-SP&#160;&#160;Srpski"/>
+							<menuitem value="fi-FI" label="fi-FI&#160;&#160;Suomi"/>
+							<menuitem value="sv-SE" label="sv-SE&#160;&#160;Svenska"/>
+							<menuitem value="tr-TR" label="tr-TR&#160;&#160;Türkçe"/>
+                            <menuitem value="uk-UK" label="uk-UK&#160;&#160;Українська мова"/>
+							<menuitem value="vi-VI" label="vi-VI&#160;&#160;Tiếng Việt"/>
+							<menuitem value="nl-VL" label="nl-VL&#160;&#160;Vlaams"/>
+							<menuitem value="zn-ZN" label="zn-ZN&#160;&#160;中文（简体）"/>
+						</menupopup>
+					</menulist>
+					<separator class="thin"/>
+					<description>&language.note;</description>
+</groupbox>
+
+<!--begin: inserting new box input about server to connect to hattrick webpages.-->
+
+				<groupbox>
+					<caption label="Server setting"/>
+					<label value="Hattrick server:"/>
+					<textbox maxlength="5" size="5" id="hattrickServer" oninput="htlivesight.Settings.click.txtfixhattrickserver();"/>
+					<description>Insert hattrick server (ex. www96) you are connected with browser</description>
+				</groupbox>
+				
+<!--end: inserting new box input about server to connect to hattrick webpages.-->
+				
+			</tabpanel>
+			<tabpanel orient="vertical" flex="1">
+				<groupbox>
+					<caption label="&matches.league;"/>
+					<checkbox id="chkGetLeague" label="&matches.get_league;" oncommand="htlivesight.Settings.click.chkgetleague();"/>
+					<hbox align="center" class="indent">
+						<checkbox id="chkGetLeagueWithin" label="&matches.played;" oncommand="htlivesight.Settings.click.chkgetleaguewithin();"/>
+						<textbox maxlength="2" size="2" id="txtGetLeagueWithinHours" oninput="htlivesight.Settings.click.txtfixleaguehours();"/>
+						<label value="&matches.hours;"/>
+					</hbox>
+				</groupbox>
+				<groupbox>
+					<caption label="&matches.friends;"/>
+					<checkbox id="chkGetFriends" label="&matches.get_friends;" oncommand="htlivesight.Settings.click.chkgetfriends();"/>
+					<hbox align="center" class="indent">
+						<checkbox id="chkGetFriendsWithin" label="&matches.played;" oncommand="htlivesight.Settings.click.chkgetfriendswithin();"/>
+						<textbox maxlength="2" size="2" id="txtGetFriendsWithinHours" oninput="htlivesight.Settings.click.txtfixfriendshours();"/>
+						<label value="&matches.hours;"/>
+					</hbox>
+				</groupbox>
+				<groupbox>
+					<caption label="&matches.scorers;"/>
+					<checkbox id="chkHdrScorers" label="&matches.list;" oncommand="htlivesight.Settings.click.chkhdrscorers();"/>
+				</groupbox>
+				<groupbox>
+					<caption label="&matches.window;"/>
+					<hbox align="center">
+						<textbox maxlength="2" size="2" id="txtMatchWindowSize" oninput="htlivesight.Settings.click.txtfixwindowsize();"/>
+						<label value="&matches.lines;"/>
+					</hbox>
+				</groupbox>
+			</tabpanel>
+			<tabpanel orient="vertical" flex="1">
+				<groupbox>
+					<caption label="&notify.notify;"/>
+					<checkbox id="chkSound" label="&notify.enable_sound;" oncommand="htlivesight.Settings.click.chkSound();"/>
+					<checkbox id="chkSoundOnlyOpened" class="indent" label="&notify.only;" oncommand="htlivesight.Settings.click.chkSoundOnlyOpened();"/>
+					<checkbox id="chkFlash" label="&notify.flash;" oncommand="htlivesight.Settings.click.chkFlash();"/>
+					<checkbox id="chkSlider" label="&notify.status;" oncommand="htlivesight.Settings.click.chkSlider();"/>
+				</groupbox>
+			</tabpanel>
+		</tabpanels>
+	</tabbox>
+</dialog>
+

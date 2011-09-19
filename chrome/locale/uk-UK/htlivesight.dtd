@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight">
+
+<!ENTITY menu.server         "Сервер:">
+<!ENTITY menu.disconnected   "роз'єднано">
+<!ENTITY menu.options        "Налаштування">
+<!ENTITY menu.reconnect      "Під'єднатись до HT">
+<!ENTITY menu.about          "Про HTLiveSight">
+
+<!ENTITY login.label         "Вхід">
+<!ENTITY login.teamId        "Введіть TeamId своєї команди">
+<!ENTITY login.username      "Ім'я користувача">
+<!ENTITY login.security_code "Код безпеки">
+<!ENTITY login.remember_me   "Запам'ятати">
+<!ENTITY login.button        "Увійти">
+
+<!ENTITY league.matches      "Матчі ліги">
+<!ENTITY league.live_table   "Таблиця ліги наживо">
+<!ENTITY league.position     "#">
+<!ENTITY league.team         "Команда">
+<!ENTITY league.played       "І">
+<!ENTITY league.goals        "М">
+<!ENTITY league.goal_diff    "РМ">
+<!ENTITY league.points       "Оч">
+
+<!ENTITY matches.list        "Список матчів">
+<!ENTITY matches.add         "Додати матч">
+<!ENTITY matches.by_match    "За ID матчу">
+<!ENTITY matches.by_team     "За ID команди">
+<!ENTITY matches.youth       "ЮнАк?">
+
+<!ENTITY friends.title       "Друзі">
+<!ENTITY friends.remove      "Видалити">
+<!ENTITY friends.open        "Відкрити">

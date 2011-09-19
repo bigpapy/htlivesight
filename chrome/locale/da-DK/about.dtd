@@ -1,0 +1,30 @@
+<!ENTITY window.title        "Om HTLiveSight">
+
+<!ENTITY tab.programming     "Programmering">
+<!ENTITY tab.art             "Art">
+
+<!ENTITY month.january       "Jan">
+<!ENTITY month.february      "Feb">
+<!ENTITY month.march         "Mar">
+<!ENTITY month.april         "Apr">
+<!ENTITY month.may           "Maj">
+<!ENTITY month.june          "Juni">
+<!ENTITY month.july          "Juli">
+<!ENTITY month.august        "Aug">
+<!ENTITY month.september     "Sept">
+<!ENTITY month.october       "Okt">
+<!ENTITY month.november      "Nov">
+<!ENTITY month.december      "Dec">
+
+<!ENTITY text.created_by     "Skabt af">
+<!ENTITY text.developed_by   "Udviklet af">
+<!ENTITY text.help_of        "med hjælp fra">
+<!ENTITY text.thanks_to      "Mange tak til:">
+<!ENTITY text.images_by      "Grafik af">
+<!ENTITY text.weather        "Vejr grafik fra">
+<!ENTITY text.tango_icon     "Tango Icon bibliotek">
+<!ENTITY text.licensed       "Licens under">
+<!ENTITY text.creative       "Creative Commons">
+<!ENTITY text.license        "Attribution Share-Alike licens">
+
+<!ENTITY button.close        "Luk">

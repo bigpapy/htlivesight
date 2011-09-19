@@ -1,0 +1,9 @@
+introduction=Sinut ohjattiin chpp-sivulle saadaksesi valtuutuskoodin. Jos ei, niin poista väliaikaisesti ponnahdusikkunoiden esto tai lisää HTlivesight poikkeuslistalle.
+insert=lisää valtuutuskoodisi tähän:
+ending=HTlivesight on nyt valtuutettu. Klikkaa OK käynnistääksesi ohjelman.
+error401=Virhe 401: ei valtuutettua pääsyä. Tee valtuutus uudelleen. Klikkaa Ok jatkaaksesi.
+error404=Virhe 404: haluttua resurssia ei löytynyt. Jos virhe tulee uudelleen, tarkasta onko HT:n CHPP-palvelut poissa käytöstä.
+error0=Virhe 0: ei yhteyttä internetiin.
+error=Virhe
+serverON=Yhdistetty
+serverOFF=Ei yhdistetty

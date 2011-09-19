@@ -1,0 +1,33 @@
+<!ENTITY window.title        "Opzions di HTLiveSight">
+
+<!ENTITY tab.general         "Gjenerâl">
+<!ENTITY tab.matches         "Partidis">
+<!ENTITY tab.notifications   "Avîs">
+<!ENTITY tab.language        "Lenghe">
+
+<!ENTITY general.open        "Vierz HTLiveSight">
+<!ENTITY general.new_tab     "Intune gnove tabele">
+<!ENTITY general.new_window  "Intun gnûf barcon">
+
+<!ENTITY matches.league      "Partidis di campionât">
+<!ENTITY matches.get_league  "Cjame dome le partidis di campionât">
+<!ENTITY matches.played      "Se zuiadis jenfri">
+<!ENTITY matches.hours       "oris.">
+<!ENTITY matches.friends     "Scuadris amîs">
+<!ENTITY matches.get_friends "Cjame lis partidis de scuadris amîs">
+<!ENTITY matches.scorers     "Marcadôrs">
+<!ENTITY matches.list        "Zonte i marcadôrs te intestazions">
+<!ENTITY matches.window      "Barcon">
+<!ENTITY matches.lines       "Riis di mostrâ in modalitât minime">
+
+<!ENTITY notify.notify       "Avîs">
+<!ENTITY notify.enable_sound "Abilite i avîs sonôrs">
+<!ENTITY notify.only         "Dome te paridis viartis">
+<!ENTITY notify.flash        "Avîs flash">
+<!ENTITY notify.status       "Avîs pop-up">
+
+<!ENTITY language.select     "Sielz la lenghe">
+<!ENTITY language.note       "Atenzion: Torne tacâ Firefox par rindi efetîfs i cambiaments.">
+
+<!ENTITY button.cancel       "Scancele">
+<!ENTITY button.ok           "OK">

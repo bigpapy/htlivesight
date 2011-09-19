@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight Optiounen">
+
+<!ENTITY tab.general         "Allgemeng">
+<!ENTITY tab.matches         "Mätscher">
+<!ENTITY tab.notifications   "Matdeelungen">
+<!ENTITY tab.language        "Sprooch">
+
+<!ENTITY general.open        "HTLiveSight opmaachen">
+<!ENTITY general.new_tab     "An engem neien Tab">
+<!ENTITY general.new_window  "An enger neier Fënster">
+
+<!ENTITY matches.league      "Liga Mätscher">
+<!ENTITY matches.get_league  "Liga Mätscher kréien">
+<!ENTITY matches.played      "Wann gespillt an">
+<!ENTITY matches.hours       "Stonnen.">
+<!ENTITY matches.friends     "Frënn">
+<!ENTITY matches.get_friends "Mätscher vun Frënn kréien">
+<!ENTITY matches.scorers     "Goalgetters">
+<!ENTITY matches.list        "Bescht Goalgetters">
+<!ENTITY matches.window      "Fënster">
+<!ENTITY matches.lines       "Zeilen dei am klengen Modus gewisen ginn">
+
+<!ENTITY notify.notify       "Matdeelungen">
+<!ENTITY notify.enable_sound "Sound Matdeelungen erlaaben">
+<!ENTITY notify.only         "Just an Mätscher dei op sinn">
+<!ENTITY notify.flash        "Flash headers">
+<!ENTITY notify.status       "Status bar slider">
+
+<!ENTITY language.select     "Sprooch wiélen">
+<!ENTITY language.note       "Notiz: Start Firefox nei fir datt all d'Ännerungen antriéden.">
+
+<!ENTITY button.cancel       "Oofbriéchen">
+<!ENTITY button.ok           "OK">

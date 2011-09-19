@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight">
+
+<!ENTITY menu.server         "Server:">
+<!ENTITY menu.disconnected   "Deconectat">
+<!ENTITY menu.options        "Opţiuni">
+<!ENTITY menu.reconnect      "Reconectare la HT">
+<!ENTITY menu.about          "Despre HTLiveSight">
+
+<!ENTITY login.label         "Conectare">
+<!ENTITY login.teamId        "Introdu ID-ul echipei">
+<!ENTITY login.username      "Nume utilizator">
+<!ENTITY login.security_code "Cod de securitate">
+<!ENTITY login.remember_me   "Ţine-mă minte">
+<!ENTITY login.button        "Conectare">
+
+<!ENTITY league.matches      "Meciuri de ligă">
+<!ENTITY league.live_table   "Clasament live">
+<!ENTITY league.position     "#">
+<!ENTITY league.team         "Echipa">
+<!ENTITY league.played       "J">
+<!ENTITY league.goals        "G">
+<!ENTITY league.goal_diff    "DG">
+<!ENTITY league.points       "PCT">
+
+<!ENTITY matches.list        "Lista Meciurilor">
+<!ENTITY matches.add         "Adaugă meci">
+<!ENTITY matches.by_match    "După id meci">
+<!ENTITY matches.by_team     "După id echipă">
+<!ENTITY matches.youth       "Tineret">
+
+<!ENTITY friends.title       "Prieteni">
+<!ENTITY friends.remove      "Renuntă">
+<!ENTITY friends.open        "Deschide">

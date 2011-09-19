@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight Opsionet">
+
+<!ENTITY tab.general         "Tw pwrgjithshmet">
+<!ENTITY tab.matches         "Ndeshjet">
+<!ENTITY tab.notifications   "lajmwrimet">
+<!ENTITY tab.language        "gjuha">
+
+<!ENTITY general.open        "hap HTLiveSight">
+<!ENTITY general.new_tab     "nw njw tabelw tw re">
+<!ENTITY general.new_window  "nw njw dritare tw re">
+
+<!ENTITY matches.league      "ndeshjet e serisw">
+<!ENTITY matches.get_league  "merrni ndeshjet e serisw">
+<!ENTITY matches.played      "nw qoftw se ka luajtur nw">
+<!ENTITY matches.hours       "orwt.">
+<!ENTITY matches.friends     "shokwt">
+<!ENTITY matches.get_friends "merrni ndeshjet e shokwve">
+<!ENTITY matches.scorers     "shwnuesit">
+<!ENTITY matches.list        "listoni shwnuesit kryesorw">
+<!ENTITY matches.window      "dritare">
+<!ENTITY matches.lines       "rreshtat pwr tu shfaqur me dritare tw minimizuar">
+
+<!ENTITY notify.notify       "lajmwrimet">
+<!ENTITY notify.enable_sound "Lejo lajmwrimin me tinguj">
+<!ENTITY notify.only         "vetwm nw ndeshje te hapura">
+<!ENTITY notify.flash        "kryesuesit e rinj">
+<!ENTITY notify.status       "rrwshkitesi I statusit">
+
+<!ENTITY language.select     "zgjidh gjuhwn">
+<!ENTITY language.note       "Shwnim:Bwjini restart firefox nw mwnyrw qe ndryshimet te pranohen.">
+
+<!ENTITY button.cancel       "anullo">
+<!ENTITY button.ok           "OK">

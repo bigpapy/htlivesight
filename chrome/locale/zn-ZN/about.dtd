@@ -1,0 +1,30 @@
+<!ENTITY window.title        "关于 HTLiveSight">
+
+<!ENTITY tab.programming     "程序">
+<!ENTITY tab.art             "美工">
+
+<!ENTITY month.january       "1月">
+<!ENTITY month.february      "2月">
+<!ENTITY month.march         "3月">
+<!ENTITY month.april         "4月">
+<!ENTITY month.may           "5月">
+<!ENTITY month.june          "6月">
+<!ENTITY month.july          "7月">
+<!ENTITY month.august        "8月">
+<!ENTITY month.september     "9月">
+<!ENTITY month.october       "10月">
+<!ENTITY month.november      "11月">
+<!ENTITY month.december      "12月">
+
+<!ENTITY text.created_by     "创作者">
+<!ENTITY text.developed_by   "开发者">
+<!ENTITY text.help_of        "提供了帮助的">
+<!ENTITY text.thanks_to      "特别鸣谢:">
+<!ENTITY text.images_by      "绘图">
+<!ENTITY text.weather        "天气图象">
+<!ENTITY text.tango_icon     "探戈图标库">
+<!ENTITY text.licensed       "被授权于">
+<!ENTITY text.creative       "知识共享">
+<!ENTITY text.license        "署名-相同方式共享许可">
+
+<!ENTITY button.close        "关闭">

@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight valikud">
+
+<!ENTITY tab.general         "Üldine">
+<!ENTITY tab.matches         "Mängud">
+<!ENTITY tab.notifications   "Teavitused">
+<!ENTITY tab.language        "Keeled">
+
+<!ENTITY general.open        "HTLiveSight avamine">
+<!ENTITY general.new_tab     "Uues tabis">
+<!ENTITY general.new_window  "Uues aknas">
+
+<!ENTITY matches.league      "Liiga mängud">
+<!ENTITY matches.get_league  "Lae liiga mängud">
+<!ENTITY matches.played      "Kui mänguni on">
+<!ENTITY matches.hours       "tundi.">
+<!ENTITY matches.friends     "Sõprade mängud">
+<!ENTITY matches.get_friends "Lae sõprade mängud">
+<!ENTITY matches.scorers     "Värava lööjad">
+<!ENTITY matches.list        "Kuva värava lööjad päises">
+<!ENTITY matches.window      "Mängu aken">
+<!ENTITY matches.lines       "Ridu, mida kuvatakse minimiseeritult">
+
+<!ENTITY notify.notify       "Teavitused">
+<!ENTITY notify.enable_sound "Luba häälega teavitused">
+<!ENTITY notify.only         "Ainult avatud mängude puhul">
+<!ENTITY notify.flash        "Vilguta mängu päist">
+<!ENTITY notify.status       "Olekuriba liugur">
+
+<!ENTITY language.select     "Vali keel">
+<!ENTITY language.note       "Tähelepanu: Efekti võtmiseks pead Firefoxi taaskäivitama.">
+
+<!ENTITY button.cancel       "Tühista">
+<!ENTITY button.ok           "OK">

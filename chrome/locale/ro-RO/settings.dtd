@@ -1,0 +1,33 @@
+<!ENTITY window.title        "Opţiuni HTLiveSight">
+
+<!ENTITY tab.general         "General">
+<!ENTITY tab.matches         "Meciuri">
+<!ENTITY tab.notifications   "Notificări">
+<!ENTITY tab.language        "Limba">
+
+<!ENTITY general.open        "Deschide HTLiveSight">
+<!ENTITY general.new_tab     "Intr-o filă nouă">
+<!ENTITY general.new_window  "Intr-o fereastră nouă">
+
+<!ENTITY matches.league      "Meciuri din ligă">
+<!ENTITY matches.get_league  "Obţine meciurile din ligă">
+<!ENTITY matches.played      "Dacă se joacă în">
+<!ENTITY matches.hours       "ore.">
+<!ENTITY matches.friends     "Prieteni">
+<!ENTITY matches.get_friends "Obţine meciurile prietenilor">
+<!ENTITY matches.scorers     "Marcatori">
+<!ENTITY matches.list        "Afişează marcatorii în header">
+<!ENTITY matches.window      "Fereastră">
+<!ENTITY matches.lines       "Linii de afişat în modul minimizat">
+
+<!ENTITY notify.notify       "Notificări">
+<!ENTITY notify.enable_sound "Activează notificări sonore">
+<!ENTITY notify.only         "Doar în meciurile deschise">
+<!ENTITY notify.flash        "Flash antete">
+<!ENTITY notify.status       "Status bar cu tastatură culisantă">
+
+<!ENTITY language.select     "Selectează limba">
+<!ENTITY language.note       "Nota: Reporneşte HTLiveSight ca aceasta să aibă efect.">
+
+<!ENTITY button.cancel       "Anulare">
+<!ENTITY button.ok           "OK">

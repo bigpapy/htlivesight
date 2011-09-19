@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight">
+
+<!ENTITY menu.server         "Сервер:">
+<!ENTITY menu.disconnected   "Адлучаны">
+<!ENTITY menu.options        "Наладкі">
+<!ENTITY menu.reconnect      "Перападлучыцца да HT">
+<!ENTITY menu.about          "Пра HTLiveSight">
+
+<!ENTITY login.label         "Лагін">
+<!ENTITY login.teamId        "Увядзіце TeamId Вашае каманды">
+<!ENTITY login.username      "Імя карыстальніка">
+<!ENTITY login.security_code "Код бяспекі">
+<!ENTITY login.remember_me   "Памятаць мяне">
+<!ENTITY login.button        "Уваход">
+
+<!ENTITY league.matches      "Матчы лігі">
+<!ENTITY league.live_table   "Жывая табліца">
+<!ENTITY league.position     "#">
+<!ENTITY league.team         "Каманда">
+<!ENTITY league.played       "З">
+<!ENTITY league.goals        "Г">
+<!ENTITY league.goal_diff    "РГ">
+<!ENTITY league.points       "П">
+
+<!ENTITY matches.list        "Спіс матчаў">
+<!ENTITY matches.add         "Дадаць матч">
+<!ENTITY matches.by_match    "Па id матчу">
+<!ENTITY matches.by_team     "Па id каманды">
+<!ENTITY matches.youth       "Моладзевы?">
+
+<!ENTITY friends.title       "Сябры">
+<!ENTITY friends.remove      "Выдаліць">
+<!ENTITY friends.open        "Адчыніць">

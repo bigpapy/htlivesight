@@ -1,0 +1,9 @@
+introduction=Du bliver videresendt til en CHPP side for at få din authorization code. Hvis dette ikke sker, så prøv midlertidigt at deaktivere popup blockere eller tilføj HTlivesight til undtagelses listen.
+insert=Indsæt din authorization code her:
+ending=Nu er HTlivesight autoriseret. Klik OK for at genstarte programmet.
+error401=Fejl 401: Ikke autoriseret adgang. Du skal køre autorisationsprocessen igen. Klik OK for at fortsætte.
+error404=Fejl 404: Den ønskede kilde kunne ikke findes. Hvis denne fejl gentages, kontroller om CHPP tjenesten er aktiv.
+error0=Fejl 0: Ikke tilsluttet internettet.
+error=Fejl
+serverON=Tilsluttet
+serverOFF=Afbrudt

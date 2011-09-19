@@ -1,0 +1,30 @@
+<!ENTITY window.title        "HTLiveSight tiedot">
+
+<!ENTITY tab.programming     "Ohjelmointi">
+<!ENTITY tab.art             "Grafiikka">
+
+<!ENTITY month.january       "Tammi">
+<!ENTITY month.february      "Helmi">
+<!ENTITY month.march         "Maalis">
+<!ENTITY month.april         "Huhti">
+<!ENTITY month.may           "Touko">
+<!ENTITY month.june          "Kesä">
+<!ENTITY month.july          "Heinä">
+<!ENTITY month.august        "Elo">
+<!ENTITY month.september     "Syys">
+<!ENTITY month.october       "Loka">
+<!ENTITY month.november      "Marras">
+<!ENTITY month.december      "Joulu">
+
+<!ENTITY text.created_by     "Tekijät">
+<!ENTITY text.developed_by   "Kehittäjät">
+<!ENTITY text.help_of        "apuna">
+<!ENTITY text.thanks_to      "Suuret kiitokset:">
+<!ENTITY text.images_by      "Kuvat">
+<!ENTITY text.weather        "Sääkuvat">
+<!ENTITY text.tango_icon     "Tango Icon Kirjasto">
+<!ENTITY text.licensed       "lisensoitu">
+<!ENTITY text.creative       "Creative Commons">
+<!ENTITY text.license        "'Attribution Share-Alike' lisenssi">
+
+<!ENTITY button.close        "Sulje">

@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight خيارات">
+
+<!ENTITY tab.general         "خيارات عامة">
+<!ENTITY tab.matches         "المباريات">
+<!ENTITY tab.notifications   "التنبيهات">
+<!ENTITY tab.language        "اللغة">
+
+<!ENTITY general.open        "HTLiveSight فتح">
+<!ENTITY general.new_tab     "في مبوب جديد">
+<!ENTITY general.new_window  "في نافذة جديدة">
+
+<!ENTITY matches.league      "مباريات الدوري">
+<!ENTITY matches.get_league  "الحصول على مبريات الدوري">
+<!ENTITY matches.played      "اذا لعب في">
+<!ENTITY matches.hours       ".ساعات">
+<!ENTITY matches.friends     "الاصدقاء">
+<!ENTITY matches.get_friends "الحصول على مباريات الاصدقاء">
+<!ENTITY matches.scorers     "المسجلين">
+<!ENTITY matches.list        "قائمة المسجلين بالرأس">
+<!ENTITY matches.window      "نافذة">
+<!ENTITY matches.lines       "عدد الاسطر المرئية في الوضع المصغر">
+
+<!ENTITY notify.notify       "التنبيهات">
+<!ENTITY notify.enable_sound "تشغيل التنبيهات الصوتية">
+<!ENTITY notify.only         "فقط في المباريات المفتوحة">
+<!ENTITY notify.flash        "إضاءة متغيرة">
+<!ENTITY notify.status       "محرك شريط الحالة">
+
+<!ENTITY language.select     "اختار اللغة">
+<!ENTITY language.note       "ملحوظة: أعد تشغيل المتصفح لتطبيق التغييرات">
+
+<!ENTITY button.cancel       "الغاء">
+<!ENTITY button.ok           "نعم">

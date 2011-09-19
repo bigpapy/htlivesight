@@ -1,0 +1,30 @@
+<!ENTITY window.title        "HTLiveSight-ის შესახებ">
+
+<!ENTITY tab.programming     "პროგრამული">
+<!ENTITY tab.art             "უნარი">
+
+<!ENTITY month.january       "იან">
+<!ENTITY month.february      "თებ">
+<!ENTITY month.march         "მარ">
+<!ENTITY month.april         "აპრ">
+<!ENTITY month.may           "მაი">
+<!ENTITY month.june          "ივნ">
+<!ENTITY month.july          "ივლ">
+<!ENTITY month.august        "აგვ">
+<!ENTITY month.september     "სექ">
+<!ENTITY month.october       "ოქტ">
+<!ENTITY month.november      "ნოე">
+<!ENTITY month.december      "დეკ">
+
+<!ENTITY text.created_by     "შემქმნელები">
+<!ENTITY text.developed_by   "შეასრულა">
+<!ENTITY text.help_of        "დახმარებით:">
+<!ENTITY text.thanks_to      "დიდი მადლობა:">
+<!ENTITY text.images_by      "ნახატები">
+<!ENTITY text.weather        "ამინდის ნახატები">
+<!ENTITY text.tango_icon     "Tango Icon Library">
+<!ENTITY text.licensed       "ლიცენზია">
+<!ENTITY text.creative       "შემოქმედებითი საზოგადოება">
+<!ENTITY text.license        "Share-Alike უფლება">
+
+<!ENTITY button.close        "დახურვა">

@@ -1,0 +1,33 @@
+<!ENTITY window.title        "HTLiveSight">
+
+<!ENTITY menu.server         "Server:">
+<!ENTITY menu.disconnected   "odpojený">
+<!ENTITY menu.options        "Možnosti">
+<!ENTITY menu.reconnect      "Znovupripojiť k HT">
+<!ENTITY menu.about          "O HTLiveSighte">
+
+<!ENTITY login.label         "Prihlásenie">
+<!ENTITY login.teamId        "Sem zadaj tvoje ID tímu">
+<!ENTITY login.username      "Prihlasovacie meno">
+<!ENTITY login.security_code "Bezpečnostný kód">
+<!ENTITY login.remember_me   "Zapamätať si údaje">
+<!ENTITY login.button        "Prihlásiť">
+
+<!ENTITY league.matches      "Ligové zápasy">
+<!ENTITY league.live_table   "Live tabuľka">
+<!ENTITY league.position     "#">
+<!ENTITY league.team         "Tím">
+<!ENTITY league.played       "Z">
+<!ENTITY league.goals        "G">
+<!ENTITY league.goal_diff    "+/-">
+<!ENTITY league.points       "B">
+
+<!ENTITY matches.list        "Zoznam zápasov">
+<!ENTITY matches.add         "Pridať zápas">
+<!ENTITY matches.by_match    "Podľa id zápasu">
+<!ENTITY matches.by_team     "Podľa id tímu">
+<!ENTITY matches.youth       "Dorast?">
+
+<!ENTITY friends.title       "Priatelia">
+<!ENTITY friends.remove      "Odstrániť">
+<!ENTITY friends.open        "Otvoriť">
