@@ -22,9 +22,9 @@
 <!ENTITY text.thanks_to      "רוב תודות ל:">
 <!ENTITY text.images_by      "תמונות על ידי">
 <!ENTITY text.weather        "תמונות מזג אוויר">
-<!ENTITY text.tango_icon     "Tango Icon Library">
+<!ENTITY text.tango_icon     "סיפריית יצוגוני טנגו">
 <!ENTITY text.licensed       "מורשה על ידי">
-<!ENTITY text.creative       "Creative Commons">
+<!ENTITY text.creative       "שיתוף יצירתי">
 <!ENTITY text.license        "רישיון הפצה ושיתוף">
 
 <!ENTITY button.close        "סגור">
