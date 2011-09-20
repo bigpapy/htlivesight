@@ -19,12 +19,20 @@
 	<script type="application/x-javascript" src="settings.js"/>
 	<script type="application/x-javascript" src="preferences.js"/>
 	<script type="application/x-javascript" src="log.js"/>
+   <!-- added by bigpapy (start): necessary because reset button (in other menu) works -->
+	<script type="application/x-javascript" src="./prefs.js" />
+	<script type="application/x-javascript" src="./api-proxy.js" />
 
+  <script type="text/javascript">
+	  HtlivesightPrefs.init();
+  </script>
+   <!-- added by bigpapy (start): necessary because reset button (in other menu) works -->
 	<tabbox flex="1">
 		<tabs>
 			<tab label="&tab.general;"/>
 			<tab label="&tab.matches;"/>
 			<tab label="&tab.notifications;"/>
+      <tab label="Other"/> <!--added by Bigpapy for new tab -->
 		</tabs>
 		<tabpanels flex="1">
 			<tabpanel id="tab_settings_options" orient="vertical" flex="1">
@@ -146,6 +154,12 @@
 					<checkbox id="chkSlider" label="&notify.status;" oncommand="htlivesight.Settings.click.chkSlider();"/>
 				</groupbox>
 			</tabpanel>
+         			<tabpanel orient="vertical" flex="1"><!--added by bigpapy to have another tab option (start)-->
+			<row align = "center">
+			<label value="Click to reset token"/>
+			<button label="reset" id="button_reset" tabindex="2" onclick="htlivesight.Settings.click.resetToken();"/>
+			</row>
+			</tabpanel> <!--added by bigpapy to have another tab option (end)-->
 		</tabpanels>
 	</tabbox>
 </dialog>
