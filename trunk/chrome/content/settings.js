@@ -193,6 +193,12 @@ htlivesight.Settings = {
       var prefs = htlivesight.Settings.preferences;
       var newLang = document.getElementById("lang-list").selectedItem.value;
       prefs.language.locale = newLang;
+    },
+    resetToken: function() {
+       	teamId=htlivesight.Preferences.teamId.get();    
+    	if (teamId=="") teamId=prompt("TeamId");
+       	Htlivesight.ApiProxy.invalidateAccessToken(teamId);//delete access token
+     	alert("Reset token successfull! You have to restart HTLS or wait until next update (< 1 min.) ");
     }
   }
 };
