@@ -1,33 +1,33 @@
-<!ENTITY window.title        "Opciones HTLiveSight">
+<!ENTITY window.title        "HTLiveSight aukerak">
 
-<!ENTITY tab.general         "General">
-<!ENTITY tab.matches         "Partidos">
-<!ENTITY tab.notifications   "Notificaciones">
-<!ENTITY tab.language        "Idioma">
+<!ENTITY tab.general         "Orokorra">
+<!ENTITY tab.matches         "Partiduak">
+<!ENTITY tab.notifications   "Jakinarazpenak">
+<!ENTITY tab.language        "Hizkuntza">
 
-<!ENTITY general.open        "Abrir HTLiveSight">
-<!ENTITY general.new_tab     "En una nueva pestaña">
-<!ENTITY general.new_window  "En una nueva ventana">
+<!ENTITY general.open        "HTLiveSight ireki">
+<!ENTITY general.new_tab     "Erlaitz berri batean">
+<!ENTITY general.new_window  "Lehio berri batean">
 
-<!ENTITY matches.league      "Partidos de liga">
-<!ENTITY matches.get_league  "Bajar partidos de liga">
-<!ENTITY matches.played      "Si jugado en">
-<!ENTITY matches.hours       "horas.">
-<!ENTITY matches.friends     "Amigos">
-<!ENTITY matches.get_friends "Bajar partidos de amigo">
-<!ENTITY matches.scorers     "Goleadores">
-<!ENTITY matches.list        "Clasificación de Pichichis">
-<!ENTITY matches.window      "Ventana completa">
-<!ENTITY matches.lines       "Líneas de detalle a mostrar cuando minimizado">
+<!ENTITY matches.league      "Ligako partiduak">
+<!ENTITY matches.get_league  "Ligako partiduak deskargatu">
+<!ENTITY matches.played      "-n jokatu bada">
+<!ENTITY matches.hours       "orduak.">
+<!ENTITY matches.friends     "Lagunak">
+<!ENTITY matches.get_friends "Lagunaren partiduak deskargatu">
+<!ENTITY matches.scorers     "Goleatzaileak">
+<!ENTITY matches.list        "Goleatzaileen sailkapena">
+<!ENTITY matches.window      "Lehio osoa">
+<!ENTITY matches.lines       "Ikonotutakoan bistaratzeko xehetasun lerroak">
 
-<!ENTITY notify.notify       "Notificaciones">
-<!ENTITY notify.enable_sound "Habilitar notificaciones sonoras">
-<!ENTITY notify.only         "Sólo en partidos abiertos">
-<!ENTITY notify.flash        "Titulares rápidos">
-<!ENTITY notify.status       "Avisos en barra de estado">
+<!ENTITY notify.notify       "Jakinarazpenak">
+<!ENTITY notify.enable_sound "Soinu bidezko jakinarazpenak gaitu">
+<!ENTITY notify.only         "Irekitako partiduetan bakarrik">
+<!ENTITY notify.flash        "Izenburu azkarrak">
+<!ENTITY notify.status       "Abisuak egoera barran">
 
-<!ENTITY language.select     "Selecciona Idioma">
-<!ENTITY language.note       "Nota: Es necesario reiniciar HTLiveSight para que los cambios tengan efecto.">
+<!ENTITY language.select     "Hizkuntza hautatu">
+<!ENTITY language.note       "Oharra: Aldaketek efektu izan dezaten beharrezkoa da HTLiveSight berrabiaraztea.">
 
-<!ENTITY button.cancel       "Cancelar">
-<!ENTITY button.ok           "Aceptar">
+<!ENTITY button.cancel       "Utzi">
+<!ENTITY button.ok           "Ados">
