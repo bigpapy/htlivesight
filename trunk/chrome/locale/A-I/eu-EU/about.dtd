@@ -1,30 +1,30 @@
-<!ENTITY window.title        "Acerca de HTLiveSight">
+<!ENTITY window.title        "HTLiveSight-i buruz">
 
-<!ENTITY tab.programming     "Programación">
-<!ENTITY tab.art             "Arte">
+<!ENTITY tab.programming     "Programazioa">
+<!ENTITY tab.art             "Artea">
 
-<!ENTITY month.january       "Ene">
-<!ENTITY month.february      "Feb">
+<!ENTITY month.january       "Urt">
+<!ENTITY month.february      "Ots">
 <!ENTITY month.march         "Mar">
-<!ENTITY month.april         "Abr">
-<!ENTITY month.may           "May">
-<!ENTITY month.june          "Jun">
-<!ENTITY month.july          "Jul">
-<!ENTITY month.august        "Ago">
-<!ENTITY month.september     "Sept">
-<!ENTITY month.october       "Oct">
-<!ENTITY month.november      "Nov">
-<!ENTITY month.december      "Dic">
+<!ENTITY month.april         "Api">
+<!ENTITY month.may           "Mai">
+<!ENTITY month.june          "Eka">
+<!ENTITY month.july          "Uzt">
+<!ENTITY month.august        "Abu">
+<!ENTITY month.september     "Ira">
+<!ENTITY month.october       "Urri">
+<!ENTITY month.november      "Aza">
+<!ENTITY month.december      "Abe">
 
-<!ENTITY text.created_by     "Creado por">
-<!ENTITY text.developed_by   "Desarrollado por">
+<!ENTITY text.created_by     "Egilea">
+<!ENTITY text.developed_by   "Garatzailea">
 <!ENTITY text.help_of        "Con la ayuda de">
-<!ENTITY text.thanks_to      "Muchas gracias a:">
-<!ENTITY text.images_by      "Imágenes por">
-<!ENTITY text.weather        "Imágenes de clima de">
-<!ENTITY text.tango_icon     "Librería de iconos Tango">
+<!ENTITY text.thanks_to      "Mila esker honakoei:">
+<!ENTITY text.images_by      "Irudiak">
+<!ENTITY text.weather        "Klima irudiak">
+<!ENTITY text.tango_icon     "Tango ikono liburudenda">
 <!ENTITY text.licensed       "Bajo licencia de">
 <!ENTITY text.creative       "Creative Commons">
 <!ENTITY text.license        "Licencia Attribution Share-Alike">
 
-<!ENTITY button.close        "Cerrar">
+<!ENTITY button.close        "Itxi">
