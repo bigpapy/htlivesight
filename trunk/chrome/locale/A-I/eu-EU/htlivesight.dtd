@@ -1,33 +1,33 @@
 <!ENTITY window.title        "HTLiveSight">
 
-<!ENTITY menu.server         "Servidor:">
-<!ENTITY menu.disconnected   "Desconectado">
-<!ENTITY menu.options        "Opciones">
-<!ENTITY menu.reconnect      "Volver a conectar con HT">
-<!ENTITY menu.about          "Acerca de HTLiveSight">
+<!ENTITY menu.server         "Zerbitzaria:">
+<!ENTITY menu.disconnected   "Lineaz kanpo">
+<!ENTITY menu.options        "Aukerak">
+<!ENTITY menu.reconnect      "HT-ekin berriz konektatu">
+<!ENTITY menu.about          "HTLiveSight-i buruz">
 
-<!ENTITY login.label         "Acceso a HT">
-<!ENTITY login.teamId        "Inserta el TeamId de tu equipo">
-<!ENTITY login.username      "Usuario">
-<!ENTITY login.security_code "Código de seguridad">
-<!ENTITY login.remember_me   "Recuérdame">
-<!ENTITY login.button        "Entrar">
+<!ENTITY login.label         "HT-era sarbidea">
+<!ENTITY login.teamId        "Zure taldearen TeamId-a sartu">
+<!ENTITY login.username      "Erabiltzailea">
+<!ENTITY login.security_code "Segurtasun kodea">
+<!ENTITY login.remember_me   "Gogoratu">
+<!ENTITY login.button        "Sartu">
 
-<!ENTITY league.matches      "Partidos de liga">
-<!ENTITY league.live_table   "Clasificación en vivo">
+<!ENTITY league.matches      "Ligako partiduak">
+<!ENTITY league.live_table   "Sailkapena zuzenean">
 <!ENTITY league.position     "#">
-<!ENTITY league.team         "Equipo">
-<!ENTITY league.played       "J">
+<!ENTITY league.team         "Taldea">
+<!ENTITY league.played       "Jok">
 <!ENTITY league.goals        "G">
-<!ENTITY league.goal_diff    "DG">
-<!ENTITY league.points       "PTS">
+<!ENTITY league.goal_diff    "GA">
+<!ENTITY league.points       "Pt">
 
-<!ENTITY matches.list        "Lista de partidos">
-<!ENTITY matches.add         "Añadir partido">
-<!ENTITY matches.by_match    "Según id partido">
-<!ENTITY matches.by_team     "Según id equipo">
-<!ENTITY matches.youth       "¿Juveniles?">
+<!ENTITY matches.list        "Partiduen zerrenda">
+<!ENTITY matches.add         "Partidua gehitu">
+<!ENTITY matches.by_match    "Partiduaren id-aren arabera">
+<!ENTITY matches.by_team     "Taldearen id-aren arabera">
+<!ENTITY matches.youth       "Gazteak?">
 
-<!ENTITY friends.title       "Amigos">
-<!ENTITY friends.remove      "Eliminar">
-<!ENTITY friends.open        "Abrir">
+<!ENTITY friends.title       "Lagunak">
+<!ENTITY friends.remove      "Ezabatu">
+<!ENTITY friends.open        "Ireki">
