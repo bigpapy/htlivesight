@@ -12,18 +12,18 @@
 <!ENTITY month.july          "Uzt">
 <!ENTITY month.august        "Abu">
 <!ENTITY month.september     "Ira">
-<!ENTITY month.october       "Urri">
+<!ENTITY month.october       "Urr">
 <!ENTITY month.november      "Aza">
 <!ENTITY month.december      "Abe">
 
 <!ENTITY text.created_by     "Egilea">
 <!ENTITY text.developed_by   "Garatzailea">
-<!ENTITY text.help_of        "Con la ayuda de">
+<!ENTITY text.help_of        "Laguntzaileak">
 <!ENTITY text.thanks_to      "Mila esker honakoei:">
 <!ENTITY text.images_by      "Irudiak">
 <!ENTITY text.weather        "Klima irudiak">
-<!ENTITY text.tango_icon     "Tango ikono liburudenda">
-<!ENTITY text.licensed       "Bajo licencia de">
+<!ENTITY text.tango_icon     "Tango ikono-liburudenda">
+<!ENTITY text.licensed       "Lizentzia">
 <!ENTITY text.creative       "Creative Commons">
 <!ENTITY text.license        "Licencia Attribution Share-Alike">
 
