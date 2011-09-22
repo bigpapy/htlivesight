@@ -18,8 +18,8 @@
         <tabpanel orient="vertical" align="center" flex="1">
 		  <image class="chpp" src="chrome://htlivesight/skin/128.png"/>
           <spacer class="tab"/>
-          <label class="header" value="HTLiveSightDEV 0.2.013"/>
-          <label value="19 &month.september; 2011"/>
+          <label class="header" value="HTLiveSightDEV 0.2.032"/>
+          <label value="22 &month.september; 2011"/>
           <label value="&text.created_by; Silkevicious"/>
 		  <label value="&text.help_of; Bigpapy"/>
           <separator/>
