@@ -9,6 +9,7 @@
 <!ENTITY general.open        "Apri HTLiveSight">
 <!ENTITY general.new_tab     "In una nuova tabella">
 <!ENTITY general.new_window  "In una nuova finestra">
+<!ENTITY general.server      "Impostazioni server">
 
 <!ENTITY matches.league      "Partite di campionato">
 <!ENTITY matches.get_league  "Carica le partite di campionato">
@@ -26,6 +27,8 @@
 <!ENTITY notify.only         "Solo nelle partite aperte">
 <!ENTITY notify.flash        "Avvisi flash">
 <!ENTITY notify.status       "Avvisi pop-up">
+
+<!ENTITY other.reset         "Clicca per rimuovere l'autorizzazine">
 
 <!ENTITY language.select     "Scegli la lingua">
 <!ENTITY language.note       "Attenzione: Riavvia Firefox per rendere effettivi i cambiamenti.">
