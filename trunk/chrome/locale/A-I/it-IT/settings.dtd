@@ -4,6 +4,7 @@
 <!ENTITY tab.matches         "Partite">
 <!ENTITY tab.notifications   "Avvisi">
 <!ENTITY tab.language        "Lingua">
+<!ENTITY tab.other           "Altro">
 
 <!ENTITY general.open        "Apri HTLiveSight">
 <!ENTITY general.new_tab     "In una nuova tabella">
