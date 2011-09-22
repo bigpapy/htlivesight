@@ -156,7 +156,7 @@
 			</tabpanel>
          			<tabpanel orient="vertical" flex="1"><!--added by bigpapy to have another tab option (start)-->
 			<row align = "center">
-			<label value="Click to reset token"/>
+			<label value="&other.reset;"/>
 			<button label="reset" id="button_reset" tabindex="2" onclick="htlivesight.Settings.click.resetToken();"/>
 			</row>
 			</tabpanel> <!--added by bigpapy to have another tab option (end)-->
