@@ -7,6 +7,7 @@ error0=Errore0:non sei connesso ad internet.
 error=Errore 
 serverON=Connesso
 serverOFF=Disconnesso
+reset_token=Il codice di autorizzazione è stato cancellato. Riavvia HTLS o aspetta il prossimo aggiornamento (< 1 min).
 
 
 
