@@ -103,7 +103,7 @@
 <!--begin: inserting new box input about server to connect to hattrick webpages.-->
 
 				<groupbox>
-					<caption label="Server setting"/>
+					<caption label="&general.server;"/>
           <row align = "center">
 					<label value="Hattrick server:"/>
 					<textbox maxlength="5" size="5" id="hattrickServer" oninput="htlivesight.Settings.click.txtfixhattrickserver();"/>
