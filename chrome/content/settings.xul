@@ -32,7 +32,7 @@
 			<tab label="&tab.general;"/>
 			<tab label="&tab.matches;"/>
 			<tab label="&tab.notifications;"/>
-      <tab label="Other"/> <!--added by Bigpapy for new tab -->
+      <tab label="&tab.other;"/> <!--added by Bigpapy for new tab -->
 		</tabs>
 		<tabpanels flex="1">
 			<tabpanel id="tab_settings_options" orient="vertical" flex="1">
