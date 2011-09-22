@@ -29,7 +29,7 @@
 <!ENTITY notify.flash        "Avvisi flash">
 <!ENTITY notify.status       "Avvisi pop-up">
 
-<!ENTITY other.reset         "Clicca per rimuovere l'autorizzazine">
+<!ENTITY other.reset         "Rimuovi autorizzazione">
 
 <!ENTITY language.select     "Scegli la lingua">
 <!ENTITY language.note       "Attenzione: Riavvia Firefox per rendere effettivi i cambiamenti.">
