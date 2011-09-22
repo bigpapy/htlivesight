@@ -27,6 +27,11 @@
 	  HtlivesightPrefs.init();
   </script>
    <!-- added by bigpapy (start): necessary because reset button (in other menu) works -->
+   
+   <stringbundleset id="strbundles">
+		<stringbundle id="stringsauthorize" src="chrome://htlivesight/locale/htlivesight.authorize"/>
+	</stringbundleset>
+   
 	<tabbox flex="1">
 		<tabs>
 			<tab label="&tab.general;"/>
