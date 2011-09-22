@@ -108,7 +108,7 @@
 					<label value="Hattrick server:"/>
 					<textbox maxlength="5" size="5" id="hattrickServer" oninput="htlivesight.Settings.click.txtfixhattrickserver();"/>
           </row>
-					<description>Insert hattrick server (ex. www96) you are connected with browser</description>
+					<description>&general.note;</description>
 				</groupbox>
 				
 <!--end: inserting new box input about server to connect to hattrick webpages.-->
