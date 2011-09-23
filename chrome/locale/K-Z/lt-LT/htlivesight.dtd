@@ -18,8 +18,8 @@
 <!ENTITY league.position     "#">
 <!ENTITY league.team         "Komanda">
 <!ENTITY league.played       "R">
-<!ENTITY league.goals        "Įv.">
-<!ENTITY league.goal_diff    "+/-">
+<!ENTITY league.goals        "Įvar">
+<!ENTITY league.goal_diff    "±">
 <!ENTITY league.points       "Tšk">
 
 <!ENTITY matches.list        "Rungtynių sąrašas">
@@ -30,4 +30,4 @@
 
 <!ENTITY friends.title       "Draugai">
 <!ENTITY friends.remove      "Pašalinti">
-<!ENTITY friends.open        "Atidaryti">
+<!ENTITY friends.open        "Parsisiųsti">
