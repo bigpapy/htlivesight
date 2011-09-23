@@ -6,7 +6,7 @@
 <!ENTITY menu.reconnect      "Iš naujo jungtis prie HT">
 <!ENTITY menu.about          "Apie „HTLiveSight“">
 
-<!ENTITY login.label         "Prisijunti">
+<!ENTITY login.label         "Prisijungti">
 <!ENTITY login.teamId        "Įveskite komandos ID">
 <!ENTITY login.username      "Username">
 <!ENTITY login.security_code "Security Code">
