@@ -1,0 +1,30 @@
+<!ENTITY window.title        "Apie HTLiveSight">
+
+<!ENTITY tab.programming     "Programavimas">
+<!ENTITY tab.art             "Dizainas">
+
+<!ENTITY month.january       "Saus">
+<!ENTITY month.february      "Vas">
+<!ENTITY month.march         "Kov">
+<!ENTITY month.april         "Bal">
+<!ENTITY month.may           "Geg">
+<!ENTITY month.june          "Brž">
+<!ENTITY month.july          "Liep">
+<!ENTITY month.august        "Rgp">
+<!ENTITY month.september     "Rgs">
+<!ENTITY month.october       "Spa">
+<!ENTITY month.november      "Lap">
+<!ENTITY month.december      "Grd">
+
+<!ENTITY text.created_by     "Sukūrė">
+<!ENTITY text.developed_by   "Atnaujino">
+<!ENTITY text.help_of        "Pagelbėjo">
+<!ENTITY text.thanks_to      "Padėka:">
+<!ENTITY text.images_by      "Vaizdai">
+<!ENTITY text.weather        "Orų vaizdai">
+<!ENTITY text.tango_icon     "„Tango Icon“ biblioteka">
+<!ENTITY text.licensed       "Licencija">
+<!ENTITY text.creative       "Creative Commons">
+<!ENTITY text.license        "Attribution Share-Alike licencija">
+
+<!ENTITY button.close        "Uždaryti">
