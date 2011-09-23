@@ -1,0 +1,17 @@
+introduction=Programai reikalingas autorizavimo kodas, kurį gausite prisijungę prie „Hattrick“ atsivėrusiame lange. Jei langas neatsidaro, patikrinkite, ar naršyklė neblokuoja iškiliųjų langų, ir leiskite HTLiveSight juos atidaryti.
+
+insert=Nukopijuokite autorizacijos kodą:
+
+ending=HTLiveSight sėkmingai autorizuotas. Perkraukite įskiepį.
+
+error401=Klaida Nr. 401: neautorizuota. Bandykite dar kartą.
+
+error404=Klaida Nr. 404: nerasta. Jei klaida nepranyksta, CHPP sąsaja gali būti sutrikusi.
+
+error0=Klaida Nr. 0: nėra interneto ryšio.
+
+error=Klaida
+
+serverON=Prisijungęs
+
+serverOFF=Atsijungęs
