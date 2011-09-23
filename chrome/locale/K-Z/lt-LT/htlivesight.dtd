@@ -4,7 +4,7 @@
 <!ENTITY menu.disconnected   "Atsijungta">
 <!ENTITY menu.options        "Nustatymai">
 <!ENTITY menu.reconnect      "Iš naujo jungtis prie HT">
-<!ENTITY menu.about          "Apie HTLiveSight">
+<!ENTITY menu.about          "Apie „HTLiveSight“">
 
 <!ENTITY login.label         "Prisijunti">
 <!ENTITY login.teamId        "Įveskite komandos ID">
