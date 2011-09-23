@@ -1,0 +1,33 @@
+<!ENTITY window.title        "„HTLiveSight“ nustatymai">
+
+<!ENTITY tab.general         "Bendri">
+<!ENTITY tab.matches         "Rungtynės">
+<!ENTITY tab.notifications   "Pranešimai">
+<!ENTITY tab.language        "Kalba">
+
+<!ENTITY general.open        "Atidaryti HTLiveSight">
+<!ENTITY general.new_tab     "Naujoje kortelėje">
+<!ENTITY general.new_window  "Naujame lange">
+
+<!ENTITY matches.league      "Lygos rungtynės">
+<!ENTITY matches.get_league  "Parsisiųsti">
+<!ENTITY matches.played      "Jei žaidžiama po">
+<!ENTITY matches.hours       "valandų (ar mažiau)">
+<!ENTITY matches.friends     "Draugų rungtynės">
+<!ENTITY matches.get_friends "Parsisiųsti">
+<!ENTITY matches.scorers     "Įvarčių autoriai">
+<!ENTITY matches.list        "Rodyti antraštėje">
+<!ENTITY matches.window      "Langas">
+<!ENTITY matches.lines       "Sumažintame režime rodomų eilučių skaičius">
+
+<!ENTITY notify.notify       "Pranešimai">
+<!ENTITY notify.enable_sound "Įjungti garsinius pranešimus">
+<!ENTITY notify.only         "Tik atidarytose rungtynėse">
+<!ENTITY notify.flash        "Mirksinčios antraštės">
+<!ENTITY notify.status       "Būsenos juostos slankiklis">
+
+<!ENTITY language.select     "Pasirinkti kalbą">
+<!ENTITY language.note       "Pastaba: būtina perkrauti „HTLiveSight“.">
+
+<!ENTITY button.cancel       "Atšaukti">
+<!ENTITY button.ok           "Gerai">
