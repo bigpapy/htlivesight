@@ -17,8 +17,8 @@
 <!ENTITY league.live_table   "Lentelė gyvai">
 <!ENTITY league.position     "#">
 <!ENTITY league.team         "Komanda">
-<!ENTITY league.played       "Ž">
-<!ENTITY league.goals        "Įv">
+<!ENTITY league.played       "R">
+<!ENTITY league.goals        "Įv.">
 <!ENTITY league.goal_diff    "+/-">
 <!ENTITY league.points       "Tšk">
 
