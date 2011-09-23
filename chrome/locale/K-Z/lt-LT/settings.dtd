@@ -14,7 +14,7 @@
 <!ENTITY matches.played      "Jei žaidžiama po">
 <!ENTITY matches.hours       "valandų (ar mažiau)">
 <!ENTITY matches.friends     "Draugų rungtynės">
-<!ENTITY matches.get_friends "Parsisiųsti">
+<!ENTITY matches.get_friends "Parsisiųsti automatiškai">
 <!ENTITY matches.scorers     "Įvarčių autoriai">
 <!ENTITY matches.list        "Rodyti antraštėje">
 <!ENTITY matches.window      "Rungtynių langas">
