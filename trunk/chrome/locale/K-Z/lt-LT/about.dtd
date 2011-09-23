@@ -1,4 +1,4 @@
-<!ENTITY window.title        "Apie HTLiveSight">
+<!ENTITY window.title        "Apie „HTLiveSight“">
 
 <!ENTITY tab.programming     "Programavimas">
 <!ENTITY tab.art             "Dizainas">
@@ -25,6 +25,6 @@
 <!ENTITY text.tango_icon     "„Tango Icon“ biblioteka">
 <!ENTITY text.licensed       "Licencija">
 <!ENTITY text.creative       "Creative Commons">
-<!ENTITY text.license        "Attribution Share-Alike licencija">
+<!ENTITY text.license        "„Attribution Share-Alike“ licencija">
 
 <!ENTITY button.close        "Uždaryti">
