@@ -1,0 +1,9 @@
+introduction=You are redirected to chpp page to get authorizazion code. If not, please remove temporarely pop up block or grant HTlivesight in the exception list.
+insert=insert your authorization code here:
+ending=Now HTlivesight is authorized. Click OK to restart application.
+error401=Error 401: unauthorized access. You have to get authorization again. Click ok to continue.
+error404=Error 404: requested resource could not be found. If this error appear again control if chpp service is down.
+error0=Error 0: not connected to internet.
+error=Error
+serverON=Connected
+serverOFF=Disconnected
