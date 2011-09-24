@@ -8,6 +8,7 @@ error=Errore
 serverON=Connesso
 serverOFF=Disconnesso
 reset_token=Il codice di autorizzazione è stato cancellato. Riavvia HTLS o aspetta il prossimo aggiornamento (< 1 min).
+no_htserver=Non hai scelto il server di Hattrick a cui sei connesso con il browser, clicca col tasto destro sullo sfondo -> opzioni -> generale e imposta il server di hattrick a cui sei connesso col browser.
 
 
 
