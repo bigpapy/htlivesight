@@ -114,9 +114,12 @@ htlivesight.DOM = {
   // added by bigpapy: open new page on tab about match
   toggleLink: function(matchId, youth) {
 	  var htServer=htlivesight.prefs.general.hattrickServer;
-	  if (!htServer){ alert("You didn't choose the hattrick server. Right click on background" +
-	  		"Options->General and set hattrick server you are connected with your browser");
-	  		htServer="www";};
+	  if (!htServer){ 
+        var strbundle = document.getElementById("stringsauthorize");// internationalization: get local file content.
+         var no_htserver=strbundle.getString("no_htserver");
+         alert(no_htserver);
+        htServer="www";
+    };
 	  var matchLink="http://" + htServer + ".hattrick.org/Club/Matches/Match.aspx?matchID=" + matchId;
 	  if (youth=="True"){ matchLink=matchLink+"&isYouth=True";};
 	  matchpage=window.open(matchLink);
