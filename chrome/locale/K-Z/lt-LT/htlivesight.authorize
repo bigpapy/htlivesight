@@ -12,6 +12,6 @@ error0=Klaida Nr. 0: nėra interneto ryšio.
 
 error=Klaida
 
-serverON=Prisijungta
+serverON=prisijungta
 
-serverOFF=Atsijungta
+serverOFF=atsijungta
