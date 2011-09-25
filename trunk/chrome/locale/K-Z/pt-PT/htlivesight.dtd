@@ -7,7 +7,7 @@
 <!ENTITY menu.about          "Acerca do HTLiveSight">
 
 <!ENTITY login.label         "Login">
-<!ENTITY login.teamId        "Inserir TeamId de sua equipe">
+<!ENTITY login.teamId        "Inserir TeamId da sua equipa">
 <!ENTITY login.username      "Nome de utilizador">
 <!ENTITY login.security_code "Código de segurança">
 <!ENTITY login.remember_me   "Lembrar-se de mim">
@@ -26,7 +26,7 @@
 <!ENTITY matches.add         "Adicionar Jogo">
 <!ENTITY matches.by_match    "Por ID de jogo">
 <!ENTITY matches.by_team     "Por ID de equipa">
-<!ENTITY matches.youth       "Jogos de Equipa Júnior">
+<!ENTITY matches.youth       "Jogos da Equipa Júnior">
 
 <!ENTITY friends.title       "Amigos">
 <!ENTITY friends.remove      "Remover">
