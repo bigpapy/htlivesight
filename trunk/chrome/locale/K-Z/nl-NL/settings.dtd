@@ -27,7 +27,7 @@
 <!ENTITY notify.status       "Statusbalk schuifvenster">
 
 <!ENTITY language.select     "Kies taal">
-<!ENTITY language.note       "Noot: HTLiveSight moet worden herstart vooraleer de wijzigingen effect hebben.">
+<!ENTITY language.note       "Let op: HTLiveSight moet opnieuw worden opgestart voordat de wijzigingen effect hebben.">
 
 <!ENTITY button.cancel       "Annuleren">
 <!ENTITY button.ok           "OK">
