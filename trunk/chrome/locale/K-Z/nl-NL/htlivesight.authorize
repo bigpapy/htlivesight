@@ -1,9 +1,9 @@
-introduction=U word omgeleid naar de CHPP pagina om een autorisatiecode te ontvangen. Indien u niet word omgeleid, kijk dan eerst na of pop-up blokkers zijn uitgeschakeld. Als u daarna nog niet word omgeleid plaats dan HTLiveSight in de uitzonderingenlijst.
-insert=Voeg de verkregen autorisatiecode hier in:
-ending=HTLiveSight is nu geautoriseerd. Klik OK om de applicatie te herstarten.
-error401=Error 401: Ongeautorizeerde toegang. U dient opnieuw autorisatie te verlenen. Klik OK om verder te gaan.
-error404=Error 404: De gevraagde bron kon niet worden bereikt. Als deze foutmelding nogmaals verschijnt controleer dan of de chpp dienst op HT actief is.
-error0=Error 0:niet geconnecteerd met internet.
+introduction=Je wordt doorgestuurd naar de CHPP pagina op Hattrick om een autorisatiecode te ontvangen. Indien je niet wordt omgeleid, kijk dan eerst of er pop-up blokkers actief zijn. Schakel deze uit of maak een uitzondering voor HTLiveSight.
+insert=Type hier de verkregen autorisatiecode in:
+ending=HTLiveSight is nu geautoriseerd. Klik OK om de applicatie opnieuw op te starten.
+error401=Error 401: Ongeautoriseerde toegang. Je zult opnieuw autorisatie moeten verlenen. Klik OK om verder te gaan.
+error404=Error 404: De gevraagde bron kon niet worden bereikt. Als deze foutmelding nogmaals verschijnt, controleer dan op Hattrick of er problemen zijn met CHPP.
+error0=Error 0: Geen internettoegang.
 error=Foutmelding
-serverON=Geconnecteerd
-serverOFF=Gedisconnecteerd
+serverON=Verbonden
+serverOFF=Geen verbinding
