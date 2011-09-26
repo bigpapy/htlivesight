@@ -8,17 +8,17 @@
 <!ENTITY month.march         "Mrt">
 <!ENTITY month.april         "Apr">
 <!ENTITY month.may           "Mei">
-<!ENTITY month.june          "Juni">
-<!ENTITY month.july          "Juli">
+<!ENTITY month.june          "Jun">
+<!ENTITY month.july          "Jul">
 <!ENTITY month.august        "Aug">
-<!ENTITY month.september     "Sept">
+<!ENTITY month.september     "Sep">
 <!ENTITY month.october       "Okt">
 <!ENTITY month.november      "Nov">
 <!ENTITY month.december      "Dec">
 
 <!ENTITY text.created_by     "Ontworpen door">
 <!ENTITY text.developed_by   "Ontwikkeld door">
-<!ENTITY text.help_of        "met de hulp van">
+<!ENTITY text.help_of        "met hulp van">
 <!ENTITY text.thanks_to      "Met dank aan:">
 <!ENTITY text.images_by      "Plaatjes door">
 <!ENTITY text.weather        "Weerplaatjes uit de">
