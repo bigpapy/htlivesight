@@ -14,13 +14,13 @@
 <!ENTITY login.button        "Login">
 
 <!ENTITY league.matches      "Competitiewedstrijden">
-<!ENTITY league.live_table   "Actuele Stand">
+<!ENTITY league.live_table   "Actuele stand">
 <!ENTITY league.position     "#">
 <!ENTITY league.team         "Team">
-<!ENTITY league.played       "Gsp">
+<!ENTITY league.played       "GSP">
 <!ENTITY league.goals        "DV-DT">
 <!ENTITY league.goal_diff    "±">
-<!ENTITY league.points       "Pt">
+<!ENTITY league.points       "PT">
 
 <!ENTITY matches.list        "Wedstrijdenlijst">
 <!ENTITY matches.add         "Wedstrijd toevoegen">
@@ -30,4 +30,4 @@
 
 <!ENTITY friends.title       "Vrienden">
 <!ENTITY friends.remove      "Verwijderen">
-<!ENTITY friends.open        "Open">
+<!ENTITY friends.open        "Tonen">
