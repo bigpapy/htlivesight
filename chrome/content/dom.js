@@ -713,7 +713,12 @@ function UpdateLiveEvents(match) {
       if (ev && ev.text != "") {
         row = CreateElementRowLiveEvent(match, ev);
         row.setAttribute("id", "ev_row_"+match.id + "_" + match.youth+"_"+i );
-        rows.appendChild(row);
+        if (htlivesight.prefs.other.bottomUp){ // reverse order
+                lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-1));// get top row
+                rows.insertBefore(row,lastrow);// inserting new row at the top of the list
+        }else{
+                rows.appendChild(row);// insert at the bottom of the list.
+        }
         match.event.dom.join(row);
       }
     }
