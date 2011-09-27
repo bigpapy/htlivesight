@@ -1,20 +1,20 @@
-<!ENTITY window.title        "About HTLiveSight">
+<!ENTITY window.title        "HTLiveSight에 대하여">
 
-<!ENTITY tab.programming     "Programming">
+<!ENTITY tab.programming     "프로그래밍">
 <!ENTITY tab.art             "Art">
 
-<!ENTITY month.january       "Jan">
-<!ENTITY month.february      "Feb">
-<!ENTITY month.march         "Mar">
-<!ENTITY month.april         "Apr">
-<!ENTITY month.may           "May">
-<!ENTITY month.june          "June">
-<!ENTITY month.july          "July">
-<!ENTITY month.august        "Aug">
-<!ENTITY month.september     "Sept">
-<!ENTITY month.october       "Oct">
-<!ENTITY month.november      "Nov">
-<!ENTITY month.december      "Dec">
+<!ENTITY month.january       "1월">
+<!ENTITY month.february      "2월">
+<!ENTITY month.march         "3월">
+<!ENTITY month.april         "4월">
+<!ENTITY month.may           "5월">
+<!ENTITY month.june          "6월">
+<!ENTITY month.july          "7월">
+<!ENTITY month.august        "8월">
+<!ENTITY month.september     "9월">
+<!ENTITY month.october       "10월">
+<!ENTITY month.november      "11월">
+<!ENTITY month.december      "12월">
 
 <!ENTITY text.created_by     "Created by">
 <!ENTITY text.developed_by   "Developed by">
@@ -24,7 +24,7 @@
 <!ENTITY text.weather        "Weather images from the">
 <!ENTITY text.tango_icon     "Tango Icon Library">
 <!ENTITY text.licensed       "licenced under the">
-<!ENTITY text.creative       "Creative Commons">
+<!ENTITY text.creative       "크리에이티브 커먼즈">
 <!ENTITY text.license        "Attribution Share-Alike licence">
 
-<!ENTITY button.close        "Close">
+<!ENTITY button.close        "닫기">
