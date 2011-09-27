@@ -29,7 +29,11 @@
 <!ENTITY notify.flash        "Avvisi flash">
 <!ENTITY notify.status       "Avvisi pop-up">
 
+<!ENTITY other.authorization "Codice di autorizzazione">
 <!ENTITY other.reset         "Rimuovi autorizzazione">
+<!ENTITY other.reverse       "Eventi dal basso verso l'alto">
+<!ENTITY other.reverse.note  "Aggiorna la pagina per vedere gli effetti.">
+<!ENTITY other.events        "Ordine degli eventi">
 
 <!ENTITY language.select     "Scegli la lingua">
 <!ENTITY language.note       "Attenzione: Riavvia Firefox per rendere effettivi i cambiamenti.">
