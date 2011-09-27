@@ -1,33 +1,33 @@
-<!ENTITY window.title        "HTLiveSight Options">
+<!ENTITY window.title        "HTLiveSight 옵션">
 
 <!ENTITY tab.general         "General">
-<!ENTITY tab.matches         "Matches">
-<!ENTITY tab.notifications   "Notifications">
-<!ENTITY tab.language        "Language">
+<!ENTITY tab.matches         "경기들">
+<!ENTITY tab.notifications   "알림">
+<!ENTITY tab.language        "언어">
 
-<!ENTITY general.open        "Open HTLiveSight">
-<!ENTITY general.new_tab     "In a new tab">
-<!ENTITY general.new_window  "In a new window">
+<!ENTITY general.open        "HTLiveSight 열기">
+<!ENTITY general.new_tab     "새 탭에 열기">
+<!ENTITY general.new_window  "새 창에 열기">
 
-<!ENTITY matches.league      "League matches">
-<!ENTITY matches.get_league  "Get league matches">
+<!ENTITY matches.league      "리그경기">
+<!ENTITY matches.get_league  "리그경기 가져오기">
 <!ENTITY matches.played      "If played in">
 <!ENTITY matches.hours       "hours.">
 <!ENTITY matches.friends     "Friends">
 <!ENTITY matches.get_friends "Get friends' matches">
 <!ENTITY matches.scorers     "Scorers">
 <!ENTITY matches.list        "List scorers in header">
-<!ENTITY matches.window      "Window">
+<!ENTITY matches.window      "창">
 <!ENTITY matches.lines       "Lines to display in minimize mode">
 
-<!ENTITY notify.notify       "Notifications">
-<!ENTITY notify.enable_sound "Enable sound notifications">
+<!ENTITY notify.notify       "알림">
+<!ENTITY notify.enable_sound "소리 알림 켜기">
 <!ENTITY notify.only         "Only in opened matches">
 <!ENTITY notify.flash        "Flash headers">
 <!ENTITY notify.status       "Status bar slider">
 
-<!ENTITY language.select     "Select language">
-<!ENTITY language.note       "Note: Restart Firefox for this to take effect.">
+<!ENTITY language.select     "언어 선택">
+<!ENTITY language.note       "알림:파이어폭스를 다시 시작할때 설정이 변경됩니다.">
 
 <!ENTITY button.cancel       "Cancel">
 <!ENTITY button.ok           "OK">
