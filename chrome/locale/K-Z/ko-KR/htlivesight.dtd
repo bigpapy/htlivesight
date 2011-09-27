@@ -1,33 +1,33 @@
 <!ENTITY window.title        "HTLiveSight">
 
-<!ENTITY menu.server         "Server:">
-<!ENTITY menu.disconnected   "disconnected">
-<!ENTITY menu.options        "Options">
-<!ENTITY menu.reconnect      "Reconnect to HT">
-<!ENTITY menu.about          "About HTLiveSight">
+<!ENTITY menu.server         "서버:">
+<!ENTITY menu.disconnected   "연결 끊김">
+<!ENTITY menu.options        "옵션">
+<!ENTITY menu.reconnect      "해트트릭 사이트와 다시 연결">
+<!ENTITY menu.about          "HTLiveSight에 대하여">
 
-<!ENTITY login.label         "Login">
-<!ENTITY login.teamId        "Insert TeamId of your team">
-<!ENTITY login.username      "Username">
-<!ENTITY login.security_code "Security Code">
+<!ENTITY login.label         "로그인">
+<!ENTITY login.teamId        "팀의 ID를 입력하세요.">
+<!ENTITY login.username      "사용자 이름">
+<!ENTITY login.security_code "보안 코드">
 <!ENTITY login.remember_me   "Remember me">
-<!ENTITY login.button        "Login">
+<!ENTITY login.button        "로그인">
 
-<!ENTITY league.matches      "League Matches">
-<!ENTITY league.live_table   "Live Table">
+<!ENTITY league.matches      "리그 경기">
+<!ENTITY league.live_table   "현재 리그 순위">
 <!ENTITY league.position     "#">
-<!ENTITY league.team         "Team">
-<!ENTITY league.played       "P">
-<!ENTITY league.goals        "G">
-<!ENTITY league.goal_diff    "GD">
-<!ENTITY league.points       "PTS">
+<!ENTITY league.team         "팀">
+<!ENTITY league.played       "경기수">
+<!ENTITY league.goals        "득점">
+<!ENTITY league.goal_diff    "득실차">
+<!ENTITY league.points       "승점">
 
-<!ENTITY matches.list        "Match List">
-<!ENTITY matches.add         "Add match">
-<!ENTITY matches.by_match    "By match id">
-<!ENTITY matches.by_team     "By team id">
-<!ENTITY matches.youth       "Youth?">
+<!ENTITY matches.list        "경기 리스트">
+<!ENTITY matches.add         "경기 추가">
+<!ENTITY matches.by_match    "경기 ID로">
+<!ENTITY matches.by_team     "팀 ID로">
+<!ENTITY matches.youth       "유스">
 
-<!ENTITY friends.title       "Friends">
-<!ENTITY friends.remove      "Remove">
-<!ENTITY friends.open        "Open">
+<!ENTITY friends.title       "친구">
+<!ENTITY friends.remove      "제거">
+<!ENTITY friends.open        "열기">
