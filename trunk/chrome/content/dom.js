@@ -92,23 +92,12 @@ htlivesight.DOM = {
     htlivesight.DOM.window.repaint(matchId, youth);
   },
 //added by bigpapy: open new page on tab about match
-/*  toggleReverse: function(matchId, youth) {
-	  img.setAttribute("src", htlivesight.Image.window.reverse.down);
-	  var match = Match.List["_"+matchId+"_"+youth];
-	  var tempIndex=0;
-	  while (index>=0){
-	  index = match.event.list.last;
-	  event = match.event.list["_"+index];
-	  temp.event.list["_"+tempIndex]= event;
-	  index--; tempIndex++;
-	  };
-	  while (tempIndex>=0){
-		  match.event.list["_"+tempIndex]=temp.event.list["_"+tempIndex];
-		  tempIndex--;
-	  };
-	  Match.List["_"+matchId+"_"+youth]=match;
-	  htlivesight.DOM.window.repaint(matchId, youth);
-  },*/
+  toggleSound: function(matchId, youth) {
+      var sound = !Match.List["_"+matchId+"_"+youth].window.mute;
+      var img = document.getElementById("sound_" + matchId + "_" + youth);
+      Match.List["_"+matchId+"_"+youth].window.mute = sound;
+      img.setAttribute("src", sound ? htlivesight.Image.window.sound.off : htlivesight.Image.window.sound.on);
+  },
   // (end)added by bigpapy: open new page on tab about match
   
   // added by bigpapy: open new page on tab about match
@@ -493,15 +482,15 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box.setAttribute("align", "center");
   box.setAttribute("style", "margin-right: 20px;");
   
-// new added by bigpapy: reverse button on header
-/*  img = document.createElement("image");
+// new added by bigpapy: sound button on header
+  img = document.createElement("image");
   box.appendChild(img);
-  img.setAttribute("src", htlivesight.Image.window.reverse.down);
-  img.setAttribute("id", "reverse_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", strings.getString("tooltip.window.reverse"));
-  img.addEventListener('click',  htlivesight.Click.reverse, true);
+  img.setAttribute("src", htlivesight.Image.window.sound.on);
+  img.setAttribute("id", "sound_" + match.id + "_" + match.youth);
+  img.setAttribute("tooltiptext", strings.getString("tooltip.window.sound"));
+  img.addEventListener('click',  htlivesight.Click.sound, true);
 //new end adding by bigpapy
-*/  
+
 //added by bigpapy: link button on header
   img = document.createElement("image");
   box.appendChild(img);
@@ -714,8 +703,10 @@ function UpdateLiveEvents(match) {
         row = CreateElementRowLiveEvent(match, ev);
         row.setAttribute("id", "ev_row_"+match.id + "_" + match.youth+"_"+i );
         if (htlivesight.prefs.other.bottomUp){ // reverse order
-                lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-1));// get top row
-                rows.insertBefore(row,lastrow);// inserting new row at the top of the list
+                if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-1));// last event
+                if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-3));// last event (before two "")
+                   rows.insertBefore(row,lastrow);// inserting new row at the top of the list
+                   lastrow=row; // top row is the last one
         }else{
                 rows.appendChild(row);// insert at the bottom of the list.
         }
