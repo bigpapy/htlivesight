@@ -4,6 +4,7 @@
 <!ENTITY tab.matches         "Мечеви">
 <!ENTITY tab.notifications   "Обавештења">
 <!ENTITY tab.language        "Језик">
+<!ENTITY tab.other           "Остало">
 
 <!ENTITY general.open        "Отвори HTLiveSight">
 <!ENTITY general.new_tab     "У новом табу">
@@ -26,8 +27,14 @@
 <!ENTITY notify.flash        "Светлосно-блинк обавештење наслова">
 <!ENTITY notify.status       "Клизно обавештење у статус бару">
 
+<!ENTITY other.authorization "Код за ауторизацију">
+<!ENTITY other.reset         "Уклони ауторизацију">
+<!ENTITY other.reverse       "Приказ догађаја одоздо на горе">
+<!ENTITY other.reverse.note  "Поново учитајте страницу да видите промене.">
+<!ENTITY other.events        "Приказ догађаја">
+
 <!ENTITY language.select     "Одабери језик">
-<!ENTITY language.note       "Рестартуј HTLiveSight да би ова подешавања имала ефекта.">
+<!ENTITY language.note       "Рестартујte HTLS да би ова подешавања имала ефекта.">
 
 <!ENTITY button.cancel       "Поништи">
 <!ENTITY button.ok           "ОК">

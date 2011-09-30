@@ -4,6 +4,7 @@
 <!ENTITY tab.matches         "Matches">
 <!ENTITY tab.notifications   "Notifications">
 <!ENTITY tab.language        "Language">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Open HTLiveSight">
 <!ENTITY general.new_tab     "In a new tab">
@@ -25,6 +26,12 @@
 <!ENTITY notify.only         "Only in opened matches">
 <!ENTITY notify.flash        "Flash headers">
 <!ENTITY notify.status       "Status bar slider">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Select language">
 <!ENTITY language.note       "Note: Restart HTLiveSight for this to take effect.">
