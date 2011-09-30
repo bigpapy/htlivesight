@@ -9,6 +9,8 @@
 <!ENTITY general.open        "Otvori HTLiveSight">
 <!ENTITY general.new_tab     "U novom tabu">
 <!ENTITY general.new_window  "U novom prozoru">
+<!ENTITY general.server      "Podešavanja servera">
+<!ENTITY general.note        "Ubacite oznaku Hettrik servera na kojem ste ulogovani(npr. www96).">
 
 <!ENTITY general.server      "Podešavanja servera">
 <!ENTITY general.note        "Ubacite Hettrick server na kojem ste ulogovani(npr. www96).">
