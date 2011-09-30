@@ -1,17 +1,12 @@
 introduction=You will be redirected to the CHPP page to get an authorization code. If you are not, please temporarily remove your pop up blocker or grant HTLiveSight an exception.
 
 insert=Insert your authorization code here:
-
 ending=Now HTLiveSight is authorized. Click OK to restart application.
-
 error401=Error 401: Unauthorized access. You must get authorization again. Click OK to continue.
-
 error404=Error 404: Requested resource could not be found. If this error appears again the CHPP service is down.
-
 error0=Error 0: Not connected to internet.
-
 error=Error
-
 serverON=Connected
-
 serverOFF=Disconnected
+reset_token=Kod za autorizaciju je obrisan. Restartujte HTLS ili sacekajte naredno ažuriranje (< 1 min).
+no_htserver=Niste izabrali odgovarajuci Hettrik server na kojem ste trenutno ulogovani, kliknite desnim tasterom miša bilo gde na pozadinu pa zatim na -> opcije -> Opšta i tu podesite broj Hettrik servera.
