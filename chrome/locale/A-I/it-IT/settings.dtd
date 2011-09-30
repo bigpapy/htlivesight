@@ -10,7 +10,7 @@
 <!ENTITY general.new_tab     "In una nuova tabella">
 <!ENTITY general.new_window  "In una nuova finestra">
 <!ENTITY general.server      "Impostazioni server">
-<!ENTITY general.note        "Inseririsci il server di Hattrick (es. www96) a cui sei connesso ora con il browser.">
+<!ENTITY general.note        "Inserisci il server di Hattrick (es. www96) a cui sei connesso ora con il browser.">
 
 <!ENTITY matches.league      "Partite di campionato">
 <!ENTITY matches.get_league  "Carica le partite di campionato">

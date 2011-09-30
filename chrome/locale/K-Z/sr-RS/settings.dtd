@@ -9,6 +9,8 @@
 <!ENTITY general.open        "Отвори HTLiveSight">
 <!ENTITY general.new_tab     "У новом табу">
 <!ENTITY general.new_window  "У новом прозору">
+<!ENTITY general.server      "Подешавања сервера">
+<!ENTITY general.note        "Убаците ознаку Хеттрик сервера на којем сте улоговани(нпр. www96)">
 
 <!ENTITY matches.league      "Лигашки мечеви">
 <!ENTITY matches.get_league  "Тражи лигашке мечеве">
