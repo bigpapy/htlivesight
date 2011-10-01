@@ -66,6 +66,7 @@
 							<menuitem value="es-CA" label="es-CA&#160;&#160;Espanol Centroamericano"/>
 							<menuitem value="es-SU" label="es-SU&#160;&#160;Espanol Sudamericano"/>
 							<menuitem value="et-ET" label="et-ET&#160;&#160;Eesti"/>
+							<menuitem value="eu-EU" label="et-ET&#160;&#160;Euskara"/>
 							<menuitem value="fa-FA" label="fa-FA&#160;&#160;فارسی"/>
 							<menuitem value="fr-FR" label="fr-FR&#160;&#160;Français"/>
 							<menuitem value="fur" label="fur&#160;&#160;Furlan"/>
@@ -76,6 +77,7 @@
 							<menuitem value="hr-HR" label="hr-HR&#160;&#160;Hrvatski"/>
 							<menuitem value="is-IS" label="is-IS&#160;&#160;Islenska"/>
 							<menuitem value="it-IT" label="it-IT&#160;&#160;Italiano"/>
+							<menuitem value="ko-KR" label="ko-KR&#160;&#160;한국어"/>
 							<menuitem value="lv-LV" label="lv-LV&#160;&#160;Latviešu"/>
 							<menuitem value="lb-LB" label="lb-LB&#160;&#160;Lëtzebuergesch"/>
 							<menuitem value="hu-HU" label="hu-HU&#160;&#160;Magyar"/>
@@ -160,14 +162,19 @@
 				</groupbox>
 			</tabpanel>
       <tabpanel orient="vertical" flex="1"><!--added by bigpapy to have another tab option (start)-->
+	  <groupbox>
       <caption label="&other.authorization;"/>
            <row align = "center">
              <label value="&other.reset;"/>
              <button label="reset" id="button_reset" tabindex="2" onclick="htlivesight.Settings.click.resetToken();"/>
            </row>
+		   </groupbox>
+		   <groupbox>
            <caption label="&other.events;"/>
            <checkbox id="reverseOrder" label="&other.reverse;" oncommand="htlivesight.Settings.click.reverseOrder();"/>
-           <description>&other.reverse.note;</description>
+           <separator class="thin"/>
+		   <description>&other.reverse.note;</description>
+		   </groupbox>
 			</tabpanel> <!--added by bigpapy to have another tab option (end)-->
 		</tabpanels>
 	</tabbox>
