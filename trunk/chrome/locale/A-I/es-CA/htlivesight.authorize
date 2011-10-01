@@ -1,4 +1,4 @@
-introduction=Estás siendo redirigido a la página CHPP para obtener el código de autorización. Si no es así, por favor deshabilita temporalmente el bloqueo de ventanas emergentes o añade a HTlivesiht en la lista de excepciones.
+introduction=En un momento serás redirigido a la página CHPP para obtener el código de autorización. Si no es así, por favor deshabilita temporalmente el bloqueo de ventanas emergentes o añade a HTlivesiht en la lista de excepciones.
 insert=Inserta el código de autorización aquí:
 ending=HTlivesight ha sido autorizado. Da clic en OK para reiniciar la aplicacion.
 error401=Error 401: acceso no autorizado. Necesitas realizar el proceso de autorización de nuevo. Da clic en OK para continuar.
@@ -7,5 +7,5 @@ error0=Error 0: Sin conexión a internet.
 error=Error
 serverON=Conectado
 serverOFF=Desconectado
-reset_token=Authorization has been removed. Restart HTLS or wait the next update (< 1 min).
-no_htserver=You haven't selected the Hattrick server where you're logged into with your browser. Right click on background -> options -> general -> fill the form with your server number.
+reset_token=La autorización ha sido revocada. Reinicia HTLS o espera la próxima actualización (<1 min).
+no_htserver=No has seleccionado en que servidor de Hattrick estas conectado con tu navegador. Da clic derecho en el fondo -> Opciones -> General -> Escribe el número del servidor.
