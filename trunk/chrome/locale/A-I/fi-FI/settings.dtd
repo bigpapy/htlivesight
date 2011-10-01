@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Ottelut">
 <!ENTITY tab.notifications   "Ilmoitukset">
 <!ENTITY tab.language        "Kieli">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Avaa HTLiveSight">
 <!ENTITY general.new_tab     "Uudessa välilehdessä">
 <!ENTITY general.new_window  "Uudessa ikkunassa">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Sarjaottelut">
 <!ENTITY matches.get_league  "Hae sarjaottelut">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Vain avoinnaolevissa otteluissa">
 <!ENTITY notify.flash        "Välkytä yläpalkkia">
 <!ENTITY notify.status       "Liukuva alapalkki">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Valitse kieli">
 <!ENTITY language.note       "Huom: Käynnistä Firefox uudelleen.">

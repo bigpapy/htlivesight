@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Partiduak">
 <!ENTITY tab.notifications   "Jakinarazpenak">
 <!ENTITY tab.language        "Hizkuntza">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "HTLiveSight ireki">
 <!ENTITY general.new_tab     "Erlaitz berri batean">
 <!ENTITY general.new_window  "Lehio berri batean">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Ligako partiduak">
 <!ENTITY matches.get_league  "Ligako partiduak deskargatu">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Irekitako partiduetan bakarrik">
 <!ENTITY notify.flash        "Izenburu azkarrak">
 <!ENTITY notify.status       "Abisuak egoera barran">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Hizkuntza hautatu">
 <!ENTITY language.note       "Oharra: Aldaketek efektu izan dezaten beharrezkoa da HTLiveSight berrabiaraztea.">

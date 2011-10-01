@@ -7,3 +7,5 @@ error0=Chyba 0: nejsi pøipojen k internetu.
 error=Chyba
 serverON=Pøipojeno
 serverOFF=Nepøipojeno
+reset_token=Authorization has been removed. Restart HTLS or wait the next update (< 1 min).
+no_htserver=You haven't selected the Hattrick server where you're logged into with your browser. Right click on background -> options -> general -> fill the form with your server number.

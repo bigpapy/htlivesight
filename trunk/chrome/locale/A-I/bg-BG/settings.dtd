@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Мачове">
 <!ENTITY tab.notifications   "Известяване">
 <!ENTITY tab.language        "Език">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Отвори Лайвфокс">
 <!ENTITY general.new_tab     "В нов таб">
 <!ENTITY general.new_window  "В нов прозорец">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server (e.g. www96) at which you're connected with your browser.">
 
 <!ENTITY matches.league      "Мачове в групата">
 <!ENTITY matches.get_league  "Свали текущите мачове">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Само за отворените мачове">
 <!ENTITY notify.flash        "Включи визуалното известяване">
 <!ENTITY notify.status       "Плъзгач на лентата за състояние">
+
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Избери език">
 <!ENTITY language.note       "Забележка: рестартирай ЛайвФокс след смяна на езика.">

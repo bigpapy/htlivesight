@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Leikir">
 <!ENTITY tab.notifications   "Tilkynningar">
 <!ENTITY tab.language        "Tungumál">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Opna HTLiveSight">
 <!ENTITY general.new_tab     "Í nýjum flipa">
 <!ENTITY general.new_window  "Í nýjum glugga">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Deildaleikir">
 <!ENTITY matches.get_league  "Ná í deildaleiki">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Aðeins í virkum leikjum">
 <!ENTITY notify.flash        "Blikkandi fyrirsögn">
 <!ENTITY notify.status       "Stöðu Skrunstika">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Veldu tungumál">
 <!ENTITY language.note       "ATH: Endurræsa þarf HTLiveSight svo breytingar virki.">

@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Kampe">
 <!ENTITY tab.notifications   "Notifikationer">
 <!ENTITY tab.language        "Sprog">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Åbn HTLiveSight">
 <!ENTITY general.new_tab     "I en ny tab">
 <!ENTITY general.new_window  "I nyt vindue">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Liga kampe">
 <!ENTITY matches.get_league  "Hent liga kampe">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Kun i åbnede kampe">
 <!ENTITY notify.flash        "Flash headere">
 <!ENTITY notify.status       "Status bar slider">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Vælg sprog">
 <!ENTITY language.note       "Note: Genstart HTLiveSight for at dette kan træde i kraft.">

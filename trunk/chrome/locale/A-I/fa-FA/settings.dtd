@@ -4,10 +4,13 @@
 <!ENTITY tab.matches "مسابقات">
 <!ENTITY tab.notifications "اخطار">
 <!ENTITY tab.language "زبان">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open " HTLiveSightباز کردن ">
 <!ENTITY general.new_tab "در يک زبانه ي جديد">
 <!ENTITY general.new_window "در يک پنجره ي جديد">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league "بازي هاي ليگ">
 <!ENTITY matches.get_league "ديدن بازي هاي ليگ">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only "تنها براي بازي هاي بازشده">
 <!ENTITY notify.flash "برق زدن نوار عنوان">
 <!ENTITY notify.status "نوار حالت لغزشي">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select "انتخاب زبان">
 <!ENTITY language.note "توجه: فايرفاکس را از نو بازکنيد کنيد تا تغييرات اعمال شود">
