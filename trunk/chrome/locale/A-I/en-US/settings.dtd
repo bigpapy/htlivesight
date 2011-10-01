@@ -10,7 +10,7 @@
 <!ENTITY general.new_tab     "In a new tab">
 <!ENTITY general.new_window  "In a new window">
 <!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on to (ie. www96)">
 
 <!ENTITY matches.league      "League matches">
 <!ENTITY matches.get_league  "Get league matches">
@@ -32,11 +32,11 @@
 <!ENTITY other.authorization "Authorization code">
 <!ENTITY other.reset         "Remove authorization">
 <!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change">
 <!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Select language">
-<!ENTITY language.note       "Note: Restart HTLiveSight for this to take effect.">
+<!ENTITY language.note       "Note: Restart HTLiveSight for this to take effect">
 
 <!ENTITY button.cancel       "Cancel">
 <!ENTITY button.ok           "OK">
