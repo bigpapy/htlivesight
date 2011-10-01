@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Матчи">
 <!ENTITY tab.notifications   "Уведомления">
 <!ENTITY tab.language        "Язык">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Открыть HTLiveSight">
 <!ENTITY general.new_tab     "В новой закладке">
 <!ENTITY general.new_window  "В новом окне">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Матчи лиги">
 <!ENTITY matches.get_league  "Получать матчи лиги">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Только в открытых матчах">
 <!ENTITY notify.flash        "Мигающие заголовки">
 <!ENTITY notify.status       "Всплывающие сообщения">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Выбор языка">
 <!ENTITY language.note       "Перезапустите HTLiveSight для ввода в действие">

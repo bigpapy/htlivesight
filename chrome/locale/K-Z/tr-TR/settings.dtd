@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Maçlar">
 <!ENTITY tab.notifications   "Uyarılar">
 <!ENTITY tab.language        "Dil">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "HTLiveSight'ı...">
 <!ENTITY general.new_tab     "Yeni sekmede aç">
 <!ENTITY general.new_window  "Yeni pencerede aç">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Lig Maçları">
 <!ENTITY matches.get_league  "Lig maçlarını yükle">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Sadece açık olan maçlarda">
 <!ENTITY notify.flash        "Başlık yanıp sönsün">
 <!ENTITY notify.status       "Durum çubuğu sürgüsü">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Dil seçimi">
 <!ENTITY language.note       "Not: HTLiveSight'u yeniden başlatmanız gerekir">

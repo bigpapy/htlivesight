@@ -1,6 +1,11 @@
-introduction=Du gess elo op d'CHPP-Sait geleet fir den "autorisation code" anzeginn. Wann net, w.e.g schalt "pop-up-block" aus (steet normalweis uewen), oder erlaab einfach HTlivesight emmer den Zougang. insert= gef den Code hei an: 
+introduction=Du gess elo op d'CHPP-Sait geleet fir den "autorisation code" anzeginn. Wann net, w.e.g schalt "pop-up-block" aus (steet normalweis uewen), oder erlaab einfach HTlivesight emmer den Zougang.
+insert= gef den Code hei an: 
 ending= Elo huet HTlivesight d'Erlaabnis. Klick op OK, fir d'Applicatioun nei ze starten. 
-error401=Error 401: onerlaabten Zougang. Du muss d'Erlaabnis nach engkeier ufroen. Klick OK fir weider ze machen. error404=Error 404: D'Sait konnt net fonnt ginn. Wann des Feelermeldung nach eng Kéier optriéd, kuck op d'CHPP-Programmer fonctionnéiren. error0=Error 0: keng Connectioun zum Internet.
+error401=Error 401: onerlaabten Zougang. Du muss d'Erlaabnis nach engkeier ufroen. Klick OK fir weider ze machen.
+error404=Error 404: D'Sait konnt net fonnt ginn. Wann des Feelermeldung nach eng Kéier optriéd, kuck op d'CHPP-Programmer fonctionnéiren.
+error0=Error 0: keng Connectioun zum Internet.
 error=Error
 serverON=Connected
 serverOFF=net verbonnen zum Internet
+reset_token=Authorization code has been deleted. Restart HTLS or wait for the next update (< 1 min).
+no_htserver=You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.

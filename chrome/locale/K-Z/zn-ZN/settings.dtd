@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "比赛设置">
 <!ENTITY tab.notifications   "提示设置">
 <!ENTITY tab.language        "语言">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "打开 HTLiveSight">
 <!ENTITY general.new_tab     "在新页面打开">
 <!ENTITY general.new_window  "在新窗口打开">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "联赛比赛">
 <!ENTITY matches.get_league  "获取联赛比赛">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "仅在打开的比赛">
 <!ENTITY notify.flash        "标题闪动">
 <!ENTITY notify.status       "状态栏滚动">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "选择语言">
 <!ENTITY language.note       "提示: 重启HTLiveSight以保存生效.">

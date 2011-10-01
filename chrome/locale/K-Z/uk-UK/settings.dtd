@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Матчі">
 <!ENTITY tab.notifications   "Повідомлення">
 <!ENTITY tab.language        "Мова">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Відкрити HTLiveSight">
 <!ENTITY general.new_tab     "В новій вкладці">
 <!ENTITY general.new_window  "В новому вікні">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Матчі ліги">
 <!ENTITY matches.get_league  "Завантажувати матчі ліги">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Лише у відкритих матчах">
 <!ENTITY notify.flash        "Мерехтіння заголовків">
 <!ENTITY notify.status       "Виринаючі повідомлення">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Обрати мову">
 <!ENTITY language.note       "Потрібно перезавантажити Firefox, щоб застосувати зміни">

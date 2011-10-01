@@ -7,3 +7,5 @@ error0=შეცდომა 0: კავშირი ინტერნეტ�
 error=შეცდომა
 serverON=კავშირი დამყარებულია
 serverOFF=კავშირი გაწყვეტილია
+reset_token=Authorization code has been deleted. Restart HTLS or wait for the next update (< 1 min).
+no_htserver=You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.

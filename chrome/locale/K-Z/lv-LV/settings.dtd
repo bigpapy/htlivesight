@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Spçles">
 <!ENTITY tab.notifications   "Paziòojumi">
 <!ENTITY tab.language        "Valoda">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Atvçrt HTLiveSight">
 <!ENTITY general.new_tab     "Jaunâ cilnç">
 <!ENTITY general.new_window  "Jaunâ logâ">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Lîgas spçles">
 <!ENTITY matches.get_league  "Pievienot lîgas spçles">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Tikai atvçrtajâs spçlçs">
 <!ENTITY notify.flash        "Mirgojoðas galvenes">
 <!ENTITY notify.status       "Stâvokïa joslas slaideris">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Izvçlçties valodu">
 <!ENTITY language.note       "Piezîme: Pârstartçjiet Firefox, lai izmaiòas stâtos spçkâ.">

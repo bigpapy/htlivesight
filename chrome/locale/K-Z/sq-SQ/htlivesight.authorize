@@ -1,8 +1,11 @@
 introduction=Ju po dwrgoheni tek faqja Chpp pwr tw marrw kodin e autorizimit.Nwqoftwse jo,ju lutemi tw hiqni pwrkohwsisht Block tuaj ose ta fusni HtLiveSight nw listwn e programeve tw lejuara nga ju.
-Insert=Tani HtLiveSight wshtw I lejuar.Shtypni OK pwr tw rifilluar aplikimi.
+Insert=Tani HtLiveSight wshtw I lejuar.
+ending=Shtypni OK pwr tw rifilluar aplikimi.
 Error 401=Gabim (Error) 401:Akses I paautorizuar.Ju duhet tw merrni autorizimin swrish.Shtypni OK pwr tw vazhduar.
 Error 404=Gabim (Error) 404:Burimi I kwrkuar nuk mund tw gjendet.Nw qoftw se ky gabim (error) kontrolloni  nw qoftw se shwrbimi CHPP wshtw offline.
 Error 0=Gabim (Error) 0:Nuk keni sinjal interneti
 Error=Gabim
 serverON=Connected
 serverOFF=Disconnected
+reset_token=Authorization code has been deleted. Restart HTLS or wait for the next update (< 1 min).
+no_htserver=You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.
