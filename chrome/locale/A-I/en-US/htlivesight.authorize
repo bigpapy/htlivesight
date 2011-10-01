@@ -8,5 +8,4 @@ error0=Error 0: Not connected to internet.
 error=Error
 serverON=Connected
 serverOFF=Disconnected
-reset_token=Kod za autorizaciju je obrisan. Restartujte HTLS ili sacekajte naredno ažuriranje (< 1 min).
-no_htserver=Niste izabrali odgovarajuci Hettrik server na kojem ste trenutno ulogovani, kliknite desnim tasterom miša bilo gde na pozadinu pa zatim na -> opcije -> Opšta i tu podesite broj Hettrik servera.
+
