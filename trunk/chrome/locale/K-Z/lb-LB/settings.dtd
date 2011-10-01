@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Mätscher">
 <!ENTITY tab.notifications   "Matdeelungen">
 <!ENTITY tab.language        "Sprooch">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "HTLiveSight opmaachen">
 <!ENTITY general.new_tab     "An engem neien Tab">
 <!ENTITY general.new_window  "An enger neier Fënster">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Liga Mätscher">
 <!ENTITY matches.get_league  "Liga Mätscher kréien">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Just an Mätscher dei op sinn">
 <!ENTITY notify.flash        "Flash headers">
 <!ENTITY notify.status       "Status bar slider">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Sprooch wiélen">
 <!ENTITY language.note       "Notiz: Start Firefox nei fir datt all d'Ännerungen antriéden.">

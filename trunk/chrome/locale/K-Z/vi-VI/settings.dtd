@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Trận đấu">
 <!ENTITY tab.notifications   "Thông báo">
 <!ENTITY tab.language        "Ngôn ngữ">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Mở HTLiveSight">
 <!ENTITY general.new_tab     "Trong tab mới">
 <!ENTITY general.new_window  "trong cửa sổ mới">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Các trận đấu bảng">
 <!ENTITY matches.get_league  "Lấy các trận đấu bảng">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Chỉ trong các trận đấu đã được mở">
 <!ENTITY notify.flash        "Các dòng tít phía trên">
 <!ENTITY notify.status       "Thanh trượt trạng thái">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Chọn ngôn ngữ">
 <!ENTITY language.note       "Chú ý: Khởi động lại Firefox để kích hoạt.">

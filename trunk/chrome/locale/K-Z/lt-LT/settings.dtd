@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Rungtynės">
 <!ENTITY tab.notifications   "Pranešimai">
 <!ENTITY tab.language        "Kalba">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Atidaryti „HTLiveSight“">
 <!ENTITY general.new_tab     "Naujoje kortelėje">
 <!ENTITY general.new_window  "Naujame lange">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Lygos rungtynės">
 <!ENTITY matches.get_league  "Parsisiųsti automatiškai">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Tik atidarytose rungtynėse">
 <!ENTITY notify.flash        "Mirksinčios antraštės">
 <!ENTITY notify.status       "Būsenos juostos slankiklis">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Pasirinkti kalbą">
 <!ENTITY language.note       "Pastaba: būtina perkrauti „HTLiveSight“.">

@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "경기들">
 <!ENTITY tab.notifications   "알림">
 <!ENTITY tab.language        "언어">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "HTLiveSight 열기">
 <!ENTITY general.new_tab     "새 탭에 열기">
 <!ENTITY general.new_window  "새 창에 열기">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "리그경기">
 <!ENTITY matches.get_league  "리그경기 가져오기">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Only in opened matches">
 <!ENTITY notify.flash        "Flash headers">
 <!ENTITY notify.status       "Status bar slider">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "언어 선택">
 <!ENTITY language.note       "알림:파이어폭스를 다시 시작할때 설정이 변경됩니다.">

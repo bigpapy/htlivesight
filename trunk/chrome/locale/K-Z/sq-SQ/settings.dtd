@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Ndeshjet">
 <!ENTITY tab.notifications   "lajmwrimet">
 <!ENTITY tab.language        "gjuha">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "hap HTLiveSight">
 <!ENTITY general.new_tab     "nw njw tabelw tw re">
 <!ENTITY general.new_window  "nw njw dritare tw re">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "ndeshjet e serisw">
 <!ENTITY matches.get_league  "merrni ndeshjet e serisw">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "vetwm nw ndeshje te hapura">
 <!ENTITY notify.flash        "kryesuesit e rinj">
 <!ENTITY notify.status       "rrwshkitesi I statusit">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "zgjidh gjuhwn">
 <!ENTITY language.note       "Shwnim:Bwjini restart firefox nw mwnyrw qe ndryshimet te pranohen.">

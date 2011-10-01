@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Zápasy">
 <!ENTITY tab.notifications   "Hlásenia">
 <!ENTITY tab.language        "Jazyk">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Otvoriť HTLiveSight">
 <!ENTITY general.new_tab     "V novom paneli">
 <!ENTITY general.new_window  "V novom okne">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Ligové zápasy">
 <!ENTITY matches.get_league  "Zobraziť ligové zápasy">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Iba v sledovaných zápasoch">
 <!ENTITY notify.flash        "Flash záhlavia">
 <!ENTITY notify.status       "Upozorniť v stavovom riadku">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Vybrať jazyk">
 <!ENTITY language.note       "Poznámka: Zmeny sa prejavia po reštartovaní programu HTLiveSight.">

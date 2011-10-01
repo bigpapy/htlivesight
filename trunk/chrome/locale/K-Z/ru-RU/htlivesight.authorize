@@ -7,4 +7,5 @@ error0=Ошибка 0: Нет подключения к Интернет.
 error=Ошибка
 serverON=Подключено
 serverOFF=Отключено
-
+reset_token=Authorization code has been deleted. Restart HTLS or wait for the next update (< 1 min).
+no_htserver=You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.

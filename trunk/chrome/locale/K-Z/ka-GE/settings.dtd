@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "მატჩები">
 <!ENTITY tab.notifications   "შეტყობინებები">
 <!ENTITY tab.language        "ენა">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "HTLiveSight-ის გახსნა">
 <!ENTITY general.new_tab     "ახალ დაფაზე">
 <!ENTITY general.new_window  "ახალ ფანჯარაში">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "ლიგის მატჩები">
 <!ENTITY matches.get_league  "ლიგის მატჩების მიღება">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "მხოლოდ გახსნილ მატჩებში">
 <!ENTITY notify.flash        "Flash headers">
 <!ENTITY notify.status       "სტატუსი">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "ენის არჩევა">
 <!ENTITY language.note       "შენიშვნა: ცვლილების შეტანისთვის საჭიროა HTLiveSight  გადატვირთვა.">

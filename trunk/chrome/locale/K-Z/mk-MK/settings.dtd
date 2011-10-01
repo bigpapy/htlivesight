@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Натпревари">
 <!ENTITY tab.notifications   "Нотификации">
 <!ENTITY tab.language        "Јазик">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Отвори HTLiveSight">
 <!ENTITY general.new_tab     "Во ново јазиче">
 <!ENTITY general.new_window  "Во нов прозорец">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Лигашки натпревари">
 <!ENTITY matches.get_league  "Земи лигашки натпревари">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Само во отворени натпревари">
 <!ENTITY notify.flash        "Flash наслови">
 <!ENTITY notify.status       "Лизгач на статусна лента">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Одбери јазик">
 <!ENTITY language.note       "Потсетуваер: Рестартирај го Firefox за се случат промените.">

@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Matcher">
 <!ENTITY tab.notifications   "Meddelanden">
 <!ENTITY tab.language        "Språk">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Öppna HTLiveSight">
 <!ENTITY general.new_tab     "På en ny flik">
 <!ENTITY general.new_window  "I ett nytt fönster">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Seriematcher">
 <!ENTITY matches.get_league  "Hämta mina seriematcher">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "..endast för öppnade matcher">
 <!ENTITY notify.flash        "Blinka matchens sidhuvud vid nya matchhändelser">
 <!ENTITY notify.status       "Skjutreglage för statusfält">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Välj språk">
 <!ENTITY language.note       "Obs! Firefox måste startas om för att ändringen ska börja gälla.">
