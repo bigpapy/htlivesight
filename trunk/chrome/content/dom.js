@@ -1102,7 +1102,8 @@ htlivesight.DOM.UpdateShortBox = function(match) {
     document.getElementById("short_home_goals_" + match.id + "_" + match.youth).setAttribute("value", match.home.goals);
     document.getElementById("short_away_goals_" + match.id + "_" + match.youth).setAttribute("value", match.away.goals);
   } catch(e) {
-    alert("UpdateShortBox(): " + e);
+ //   alert("UpdateShortBox(): " + e);
+ dump("UpdateShortBox(): " + e);
   }
 };
 
