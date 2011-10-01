@@ -198,21 +198,21 @@ htlivesight.Settings = {
     },
     //added by bigpapy (begin)
     resetToken: function() {
-      teamId=htlivesight.Preferences.teamId.get();    
+       	teamId=htlivesight.Preferences.teamId.get();    
     	if (teamId=="") teamId=prompt("TeamId");
-      Htlivesight.ApiProxy.invalidateAccessToken(teamId);//delete access token
-      var strbundle = document.getElementById("stringsauthorize");// internationalization: get local file content.
-      var reset_token=strbundle.getString("reset_token");
-       alert(reset_token);
+       	Htlivesight.ApiProxy.invalidateAccessToken(teamId);//delete access token
+       	var strbundle = document.getElementById("stringsauthorize");// internationalization: get local file content.
+       	var reset_token=strbundle.getString("reset_token");
+     	alert(reset_token);
     },
-    reverseOrder: function() {
-      var prefs = htlivesight.Settings.preferences;
-      if(document.getElementById("reverseOrder").checked) {
-        prefs.other.bottomUp = true;
-      } else {
-        prefs.other.bottomUp = false;
-      };
-    }
     //added by bigpapy (end)
+    reverseOrder: function() {
+    	var prefs = htlivesight.Settings.preferences;
+        if(document.getElementById("reverseOrder").checked) {
+          prefs.other.bottomUp = true;
+        } else {
+          prefs.other.bottomUp = false;
+        };
+    }
   }
 };

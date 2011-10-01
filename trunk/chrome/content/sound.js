@@ -28,15 +28,14 @@ htlivesight.Sound.start = function() {
   
 };
 
-htlivesight.Sound.sample.frgoal = new htlivesight.Sound.sample("ovation.wav");
 htlivesight.Sound.sample.mygoal = new htlivesight.Sound.sample("cheer_8k.wav");
 htlivesight.Sound.sample.opgoal = new htlivesight.Sound.sample("cheer1.wav");
-htlivesight.Sound.sample.myboo = new htlivesight.Sound.sample("boo.wav");
+htlivesight.Sound.sample.frgoal = new htlivesight.Sound.sample("goal.wav");htlivesight.Sound.sample.opfrgoal = new htlivesight.Sound.sample("applause.wav");htlivesight.Sound.sample.otgoal = new htlivesight.Sound.sample("ovation.wav");htlivesight.Sound.sample.myboo = new htlivesight.Sound.sample("boo.wav");
 htlivesight.Sound.sample.opboo = new htlivesight.Sound.sample("OpBoo.wav");
 htlivesight.Sound.sample.miss = new htlivesight.Sound.sample("miss.wav");
 htlivesight.Sound.sample.whistle = new htlivesight.Sound.sample("whistle.wav");
 htlivesight.Sound.sample.tarzan = new htlivesight.Sound.sample("tarzan.wav");htlivesight.Sound.sample.sun = new htlivesight.Sound.sample("sun.wav");htlivesight.Sound.sample.few_clouds = new htlivesight.Sound.sample("few_clouds.wav");htlivesight.Sound.sample.overcast = new htlivesight.Sound.sample("overcast.wav");htlivesight.Sound.sample.rain = new htlivesight.Sound.sample("rain.wav");htlivesight.Sound.sample.end = new htlivesight.Sound.sample("whistle3.wav");
-htlivesight.Sound.sample.end_half = new htlivesight.Sound.sample("whistle2.wav");htlivesight.Sound.sample.beginning = new htlivesight.Sound.sample("whistle_start.wav");
+htlivesight.Sound.sample.end_half = new htlivesight.Sound.sample("whistle2.wav");htlivesight.Sound.sample.beginning = new htlivesight.Sound.sample("whistle_start.wav");
 
 /*
   netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");

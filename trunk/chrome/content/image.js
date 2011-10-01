@@ -63,7 +63,7 @@ htlivesight.Image = {
     yellow2: htlivesight.constants.IMG_PATH + "yellow2.png",
     red: htlivesight.constants.IMG_PATH + "red.png",
     pressing: htlivesight.constants.IMG_PATH + "press.png",
-    substitute: htlivesight.constants.IMG_PATH + "sub.png",
+    substitute: htlivesight.constants.IMG_PATH + "sub.png",        swap: htlivesight.constants.IMG_PATH + "swap.png",
     info: htlivesight.constants.IMG_PATH + "info.png"
   },
   transparent: htlivesight.constants.IMG_PATH + "transparent.png"

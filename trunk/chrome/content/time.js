@@ -95,7 +95,7 @@ var Time = {
     var m = minutes; // first half
     // sounds of beginning first half and second half. (added by bigpapy)
     if(m==0 || m==60){
-    	 if (htlivesight.prefs.notification.sound) {
+    	 if (htlivesight.prefs.notification.sound && !Match.List["_"+match.id+"_"+match.youth].window.mute) {
     	        if (!htlivesight.prefs.notification.soundOnlyOpened
     	            || document.getElementById("live_"+match.id+"_"+match.youth).hidden==false) {
     	        	htlivesight.Sound.sample.beginning.play();
