@@ -4,7 +4,7 @@
 <!ENTITY tab.matches         "Partidos">
 <!ENTITY tab.notifications   "Notificaciones">
 <!ENTITY tab.language        "Idioma">
-<!ENTITY tab.other           "Other">
+<!ENTITY tab.other           "Otros">
 
 <!ENTITY general.open        "Abrir HTLiveSight">
 <!ENTITY general.new_tab     "En una nueva pestaña">
@@ -29,11 +29,11 @@
 <!ENTITY notify.flash        "Titulares rápidos">
 <!ENTITY notify.status       "Avisos en barra de estado">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Order of events">
+<!ENTITY other.authorization "Código de autorización">
+<!ENTITY other.reset         "Revocar autorización">
+<!ENTITY other.reverse       "Mostrar eventos del partido de abajo hacia arriba">
+<!ENTITY other.reverse.note  "Recargar página para ver los efectos del cambio">
+<!ENTITY other.events        "Orden de eventos">
 
 <!ENTITY language.select     "Selecciona Idioma">
 <!ENTITY language.note       "Nota: Es necesario reiniciar HTLiveSight para que los cambios tengan efecto.">
