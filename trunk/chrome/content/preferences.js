@@ -59,7 +59,7 @@ htlivesight.Preferences.matches.friends = function() {
 };
 
 htlivesight.Preferences.notification = function() {
-  this.sound = false;
+  this.sound = true;
   this.soundOnlyOpened = true;
   this.flash = true;
   this.slider = true;

@@ -22,6 +22,7 @@ locale htlivesight  es          chrome/locale/A-I/es-ES/
 locale htlivesight  es-CA       chrome/locale/A-I/es-CA/
 locale htlivesight  es-SU       chrome/locale/A-I/es-SU/
 locale htlivesight  et          chrome/locale/A-I/et-ET/
+locale htlivesight  eu          chrome/locale/A-I/eu-EU/
 locale htlivesight  fa          chrome/locale/A-I/fa-FA/
 locale htlivesight  fi          chrome/locale/A-I/fi-FI/
 locale htlivesight  fr          chrome/locale/A-I/fr-FR/
@@ -34,6 +35,7 @@ locale htlivesight  hu          chrome/locale/A-I/hu-HU/
 locale htlivesight  is          chrome/locale/A-I/is-IS/
 locale htlivesight  it          chrome/locale/A-I/it-IT/
 locale htlivesight  ka          chrome/locale/K-Z/ka-GE/
+locale htlivesight  ko          chrome/locale/K-Z/ko-KR/
 locale htlivesight  lv          chrome/locale/K-Z/lv-LV/
 locale htlivesight  mk          chrome/locale/K-Z/mk-MK/
 locale htlivesight  nl          chrome/locale/K-Z/nl-NL/
