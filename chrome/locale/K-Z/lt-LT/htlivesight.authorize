@@ -16,5 +16,5 @@ serverON=prisijungta
 
 serverOFF=atsijungta
 
-reset_token=Authorization code has been deleted. Restart HTLS or wait for the next update (< 1 min).
-no_htserver=You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.
+reset_token=Autorizacijos kodas ištrintas. Perkraukite HTLS arba laukite kito atnaujinimo (< 1 min).
+no_htserver=Nepasirinkote Hattrick serverio, prie kurio esate prisijungę. Paspaudę dešinį pelės mygtuką ant fono pasirinkite „Nustatymai -> Bendri“ ir pasirinkite Hattrick serverį.
