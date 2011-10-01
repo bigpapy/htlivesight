@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Partidos">
 <!ENTITY tab.notifications   "Notificaciones">
 <!ENTITY tab.language        "Idioma">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Abrir HTLiveSight">
 <!ENTITY general.new_tab     "En una nueva pestaña">
 <!ENTITY general.new_window  "En una nueva ventana">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Partidos de liga">
 <!ENTITY matches.get_league  "Bajar partidos de liga">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Sólo en partidos abiertos">
 <!ENTITY notify.flash        "Titulares rápidos">
 <!ENTITY notify.status       "Avisos en barra de estado">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Selecciona Idioma">
 <!ENTITY language.note       "Nota: Es necesario reiniciar HTLiveSight para que los cambios tengan efecto.">

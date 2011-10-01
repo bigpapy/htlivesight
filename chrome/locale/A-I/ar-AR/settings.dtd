@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "المباريات">
 <!ENTITY tab.notifications   "التنبيهات">
 <!ENTITY tab.language        "اللغة">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "HTLiveSight فتح">
 <!ENTITY general.new_tab     "في مبوب جديد">
 <!ENTITY general.new_window  "في نافذة جديدة">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server (e.g. www96) at which you're connected with your browser.">
 
 <!ENTITY matches.league      "مباريات الدوري">
 <!ENTITY matches.get_league  "الحصول على مبريات الدوري">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "فقط في المباريات المفتوحة">
 <!ENTITY notify.flash        "إضاءة متغيرة">
 <!ENTITY notify.status       "محرك شريط الحالة">
+
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "اختار اللغة">
 <!ENTITY language.note       "ملحوظة: أعد تشغيل المتصفح لتطبيق التغييرات">

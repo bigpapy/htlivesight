@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Матчы">
 <!ENTITY tab.notifications   "Апавяшчэнні">
 <!ENTITY tab.language        "Мова">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Адчыніць HTLiveSight">
 <!ENTITY general.new_tab     "У новай укладцы">
 <!ENTITY general.new_window  "У новым акне">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server (e.g. www96) at which you're connected with your browser.">
 
 <!ENTITY matches.league      "Матчы лігі">
 <!ENTITY matches.get_league  "Атрымаць матчы лігі">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Толькі ў адчыненых матчах">
 <!ENTITY notify.flash        "Flash загалоўкі">
 <!ENTITY notify.status       "Status bar slider">
+
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Абярыце мову">
 <!ENTITY language.note       "Заўвага: Перазапусціце Firefox, каб убачыць эфект.">

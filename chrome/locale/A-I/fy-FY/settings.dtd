@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Wedstriden">
 <!ENTITY tab.notifications   "Meldingen">
 <!ENTITY tab.language        "Taal">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Iepen HTLiveSight">
 <!ENTITY general.new_tab     "Yn in nij tabblad">
 <!ENTITY general.new_window  "Yn in nij finster">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Kompetysjewedstryden">
 <!ENTITY matches.get_league  "Helje Kompetysjewedstryd  op">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Allinich yn iepene wedstryden">
 <!ENTITY notify.flash        "Knipperjende kop">
 <!ENTITY notify.status       "Statusbalk skowfinster">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Kieze taal">
 <!ENTITY language.note       "Noot: HTLiveSight mat op nij starte wurden foardat de wizigings effekt ha.">

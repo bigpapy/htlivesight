@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Zápasy">
 <!ENTITY tab.notifications   "Upozornění na události">
 <!ENTITY tab.language        "Jazyk">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Otevření HTLiveSightu">
 <!ENTITY general.new_tab     "V novém panelu">
 <!ENTITY general.new_window  "V novém okně">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Ligové zápasy">
 <!ENTITY matches.get_league  "Zobrazovat zápasy ligy">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Pouze v otevřených zápasech">
 <!ENTITY notify.flash        "Blikající záhlaví">
 <!ENTITY notify.status       "Upozornění ve stavovém řádku">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Vyber jazyk">
 <!ENTITY language.note       "Poznámka: Aby se nové nastavení projevilo, je nutné restartovat HTLiveSight.">

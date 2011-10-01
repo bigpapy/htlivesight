@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Partits">
 <!ENTITY tab.notifications   "Notificacions">
 <!ENTITY tab.language        "Idioma">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Obrir HTLiveSight">
 <!ENTITY general.new_tab     "En un nou tabulador">
 <!ENTITY general.new_window  "En una nova finestra">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Partits de lliga">
 <!ENTITY matches.get_league  "Obtenir partits de llige">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Només a partits oberts">
 <!ENTITY notify.flash        "Ressaltar capçaleres">
 <!ENTITY notify.status       "Barra d'estats lliscant">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Seleccionar idioma">
 <!ENTITY language.note       "Nota: Reiniciar HTLiveSight per fer efectius els canvis.">

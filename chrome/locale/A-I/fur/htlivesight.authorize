@@ -7,3 +7,5 @@ error0=Erôr 0:no tu sês tacât a internet.
 error=Erôr 
 serverON=Conetût
 serverOFF=Disconetût
+reset_token=Authorization has been removed. Restart HTLS or wait the next update (< 1 min).
+no_htserver=You haven't selected the Hattrick server where you're logged into with your browser. Right click on background -> options -> general -> fill the form with your server number.

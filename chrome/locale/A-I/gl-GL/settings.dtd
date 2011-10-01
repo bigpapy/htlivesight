@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Encontros">
 <!ENTITY tab.notifications   "Notificacións">
 <!ENTITY tab.language        "Lingua">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Abrir HTLiveSight">
 <!ENTITY general.new_tab     "Nunha nova pestaña">
 <!ENTITY general.new_window  "Nunha nova ventá">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Encontros de liga">
 <!ENTITY matches.get_league  "Obter encontros de liga">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Só nos encontros abertos">
 <!ENTITY notify.flash        "Cabeceiras rápidas">
 <!ENTITY notify.status       "Deslizar barra de estado">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Seleccionar lingua">
 <!ENTITY language.note       "Nota: Reinicia Firefox para que isto teña efecto.">

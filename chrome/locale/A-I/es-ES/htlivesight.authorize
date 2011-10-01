@@ -7,3 +7,5 @@ error0=Error 0: Sin conexión a internet.
 error=Error
 serverON=Conectado
 serverOFF=Desconectado
+reset_token=Authorization has been removed. Restart HTLS or wait the next update (< 1 min).
+no_htserver=You haven't selected the Hattrick server where you're logged into with your browser. Right click on background -> options -> general -> fill the form with your server number.

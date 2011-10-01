@@ -4,10 +4,13 @@
 <!ENTITY tab.matches         "Partidis">
 <!ENTITY tab.notifications   "Avîs">
 <!ENTITY tab.language        "Lenghe">
+<!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Vierz HTLiveSight">
 <!ENTITY general.new_tab     "Intune gnove tabele">
 <!ENTITY general.new_window  "Intun gnûf barcon">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
 
 <!ENTITY matches.league      "Partidis di campionât">
 <!ENTITY matches.get_league  "Cjame dome le partidis di campionât">
@@ -25,6 +28,12 @@
 <!ENTITY notify.only         "Dome te paridis viartis">
 <!ENTITY notify.flash        "Avîs flash">
 <!ENTITY notify.status       "Avîs pop-up">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Order of events">
 
 <!ENTITY language.select     "Sielz la lenghe">
 <!ENTITY language.note       "Atenzion: Torne tacâ Firefox par rindi efetîfs i cambiaments.">
