@@ -9,4 +9,4 @@ error=Error
 serverON=Connected
 serverOFF=Disconnected
 reset_token=Authorization code has been deleted. Restart HTLS or wait for the next update (< 1 min).
-no_htserver=You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.
+no_htserver=Selected Hattrick server incorrect.  Right click anywhere on background and select -> Options -> General and enter the correct Hattrick server number.
