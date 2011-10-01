@@ -118,7 +118,7 @@ htlivesight.Notify = {
                     ? matchEvent.homeAlert : matchEvent.awayAlert);            matchEvent.matchAlert = (              matchEvent.neutralAlert.id < matchEvent.matchAlert.id              ? matchEvent.neutralAlert : matchEvent.matchAlert);      
       matchEvent.matchAlertId = (
                     matchEvent.homeAlert.id < matchEvent.awayAlert.id
-                    ? matchEvent.match.home.team.id : matchEvent.match.away.team.id);            matchEvent.matchAlertId = (              matchEvent.neutralAlert.id > matchEvent.matchAlertId              ? 0 : matchEvent.matchAlertId); 
+                    ? matchEvent.match.home.team.id : matchEvent.match.away.team.id);         /*   matchEvent.matchAlertId = (              matchEvent.neutralAlert.id > matchEvent.matchAlertId              ? 0 : matchEvent.matchAlertId); */ 
 
       var alertEv = matchEvent.matchAlert; 
 
@@ -133,25 +133,24 @@ htlivesight.Notify = {
         }
       }
       
-      if (htlivesight.prefs.notification.sound) {
+      if (htlivesight.prefs.notification.sound && !Match.List["_"+match.id+"_"+match.youth].window.mute) {
         if (!htlivesight.prefs.notification.soundOnlyOpened
             || document.getElementById("live_" + matchEvent.match.id+"_"+matchEvent.match.youth).hidden==false) {//bigpapy: added sounds about beginning match and second half.
  /*       	var startTime = match.date;            var time = Time.hattrickTime - startTime;            var seconds = Math.round(time/1000); // time elapsed in seconds            var minutes = Math.round(seconds/60); // time elapsed in minutes            if (minutes==0 || minutes==60) htlivesight.Sound.sample.beginning.play(); *///bigpapy: end adding sound to beginning of match or second half.        	        	if (matchEvent.matchAlertId == Teams.myTeam.id) {
-            if (alertEv.mysound) {
-              alertEv.mysound.play();
-            }
-          } else {
-            if (alertEv.opsound) {
-              alertEv.opsound.play();
-            }
-          }
-        }
+        		if (alertEv.mysound) {
+        			alertEv.mysound.play();
+        		}
+          } else if(match.home.team.id == Teams.myTeam.id || match.away.team.id == Teams.myTeam.id){
+        	  if (alertEv.opsound) {
+        		  alertEv.opsound.play();
+        	  }
+          } else if(Friends.isFriend(matchEvent.matchAlertId, match.youth)){        	  if (alertEv.frsound) {                  alertEv.frsound.play();                }          } else if(Friends.isFriend(match.home.team.id, match.youth)||Friends.isFriend(match.away.team.id, match.youth)){        	  if (alertEv.opfrsound) {                  alertEv.opfrsound.play();                }          } else {        	  if (alertEv.otsound) {                  alertEv.otsound.play();              }          }
       }
-
+    }
       if (alertEv.color) {
         this.flashList.push(matchEvent);
       }
-    };
+    }   
     
     
     htlivesight.Log.properties(this.matchEventList, "MatchEventList:");

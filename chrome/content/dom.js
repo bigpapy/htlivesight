@@ -32,7 +32,7 @@ htlivesight.DOM = {
 	  
 	      img_file = (setmode==maximize ? img.maximize.on : img.maximize.off);
 	      document.getElementById("maximize_" + matchId + "_" + youth).setAttribute("src", img_file);
-	      
+	//      alert("htlivesight.DOM.window.set");
 	      htlivesight.DOM.window.repaint(matchId, youth);
       }
     },
@@ -40,10 +40,13 @@ htlivesight.DOM = {
       var match = Match.List["_"+matchId+"_"+youth];
       var event;
       var elem;
-      var /*first,*/ last;
+      var first, last;
+      
       var yetToShow=0, index=match.event.list.last;
       first = match.event.list.first;
+  //    alert("Repaint:first="+ match.event.list.first);
       last = match.event.list.last;
+          
       switch (match.window.mode) {
         case htlivesight.DOM.mode.shade : 
           yetToShow = -1;
@@ -51,36 +54,102 @@ htlivesight.DOM = {
         case htlivesight.DOM.mode.minimize : 
           yetToShow = htlivesight.prefs.matches.windowSize - 1;
           break;
-        case htlivesight.DOM.mode.maximize : 
+        case htlivesight.DOM.mode.maximize :
           yetToShow = last;
           break;
       }
       
-      while (yetToShow>=0 && index>=0) {
+     while (yetToShow>=0 && index>=0) {
+    
+      
         elem = document.getElementById("ev_row_"+matchId+"_"+youth+"_"+index);
         event = match.event.list["_"+index];
         if (elem == null || event == null) {
-          index--;
+        	
+         index--;	
+    
+          
           continue;
         }
         if (event.isInfo() && !match.window.tip) {
           elem.hidden=true;
+          
           index--;
+                   
           continue;
         }
         elem.hidden=false;
         index--;
+                
         yetToShow--;
-      }
+    }
 
       while (index>=0) {
+         	  
         elem = document.getElementById("ev_row_"+matchId+"_"+youth+"_"+index);
         if (elem != null)
           elem.hidden=true;
+        
         index--;
-      }
+        }
     }
   },
+  
+ /*
+  deleteLiveEvents: function(match) {
+	  alert("DeleteLiveEvents_-1");
+try {
+	alert("DeleteLiveEvents_0");
+	var i, ev, evList;
+    var row, rows;
+    alert("DeleteLiveEvents_1");
+    rows = document.getElementById("ev_rows_" + match.id + "_" + match.youth);
+    alert("DeleteLiveEvents_2");
+    evList = match.event.list;
+    alert("DeleteLiveEvents_3");
+	for (i=0; i <= evList.last; i++) {
+		ev = evList["_"+i];
+		row = CreateElementRowLiveEvent(match, ev);
+		row.setAttribute("id", "ev_row_"+match.id + "_" + match.youth+"_"+i );
+		alert("prima di rows.removeChild");
+		rows.removeChild(row);
+		alert("dopo di rows.removeChild");
+	}
+	htlivesight.DOM.window.repaint(match.id,match.youth);
+/*    var i, ev, evList;
+    var row, rows;
+    rows = document.getElementById("ev_rows_" + match.id + "_" + match.youth);
+      evList = match.event.list;
+ //   alert("match.window.topDown: "+match.window.topDown);
+    if (match.window.topDown){
+    	for (i=evList.first; i <= evList.last; i++) {
+    		// for (i=evList.last; i >= evList.first; i--) { //reverse order	
+    		ev = evList["_"+i];
+    		if (ev && ev.text != "") {
+    			row = CreateElementRowLiveEvent(match, ev);
+    			row.setAttribute("id", "ev_row_"+match.id + "_" + match.youth+"_"+i );
+    			rows.appendChild(row);
+    			match.event.dom.join(row);
+    		}
+    	}
+    }else {
+    	for (i=evList.last; i >= evList.first; i--) { //reverse order	
+    		ev = evList["_"+i];
+    		if (ev && ev.text != "") {
+    			row = CreateElementRowLiveEvent(match, ev);
+    			row.setAttribute("id", "ev_row_"+match.id + "_" + match.youth+"_"+i );
+    			rows.appendChild(row);
+    			match.event.dom.join(row);
+    		}
+    	}
+    };
+    evList.first = evList.last+1;
+  } catch(e) {
+    alert("DOM.DeleteLiveEvents\n" + e);
+  }
+
+
+  }, */
   
   toggleTip: function(matchId, youth) {
     var tip = !Match.List["_"+matchId+"_"+youth].window.tip;
@@ -93,10 +162,16 @@ htlivesight.DOM = {
   },
 //added by bigpapy: open new page on tab about match
   toggleSound: function(matchId, youth) {
-      var sound = !Match.List["_"+matchId+"_"+youth].window.mute;
-      var img = document.getElementById("sound_" + matchId + "_" + youth);
-      Match.List["_"+matchId+"_"+youth].window.mute = sound;
-      img.setAttribute("src", sound ? htlivesight.Image.window.sound.off : htlivesight.Image.window.sound.on);
+	  var sound = !Match.List["_"+matchId+"_"+youth].window.mute;
+	  var img = document.getElementById("sound_" + matchId + "_" + youth);
+//	  var match = Match.List["_"+matchId+"_"+youth];
+	  Match.List["_"+matchId+"_"+youth].window.mute = sound;
+	  img.setAttribute("src", sound ? htlivesight.Image.window.sound.off : htlivesight.Image.window.sound.on);
+//	  alert("prima di delete");
+//	  htlivesight.DOM.window.deleteLiveEvents(match);
+//	  alert("dopo di delete e prima di update");
+//	  htlivesight.DOM.UpdateLiveEvents(match);
+//	  alert("topDown= "+ topDown);
   },
   // (end)added by bigpapy: open new page on tab about match
   
@@ -104,11 +179,11 @@ htlivesight.DOM = {
   toggleLink: function(matchId, youth) {
 	  var htServer=htlivesight.prefs.general.hattrickServer;
 	  if (!htServer){ 
-        var strbundle = document.getElementById("stringsauthorize");// internationalization: get local file content.
-         var no_htserver=strbundle.getString("no_htserver");
-         alert(no_htserver);
-        htServer="www";
-    };
+		  var strbundle = document.getElementById("stringsauthorize");// internationalization: get local file content.
+       	  var no_htserver=strbundle.getString("no_htserver");
+       	  alert(no_htserver);
+       	  htServer="www";
+      };
 	  var matchLink="http://" + htServer + ".hattrick.org/Club/Matches/Match.aspx?matchID=" + matchId;
 	  if (youth=="True"){ matchLink=matchLink+"&isYouth=True";};
 	  matchpage=window.open(matchLink);
@@ -490,7 +565,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   img.setAttribute("tooltiptext", strings.getString("tooltip.window.sound"));
   img.addEventListener('click',  htlivesight.Click.sound, true);
 //new end adding by bigpapy
-
+  
 //added by bigpapy: link button on header
   img = document.createElement("image");
   box.appendChild(img);
@@ -694,30 +769,29 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 function UpdateLiveEvents(match) {
   try {
     var i, ev, evList;
-    var row, rows;
+    var row, rows, lastrow;
     rows = document.getElementById("ev_rows_" + match.id + "_" + match.youth);
     evList = match.event.list;
-    for (i=evList.first; i <= evList.last; i++) {
-      ev = evList["_"+i];
-      if (ev && ev.text != "") {
-        row = CreateElementRowLiveEvent(match, ev);
-        row.setAttribute("id", "ev_row_"+match.id + "_" + match.youth+"_"+i );
-        if (htlivesight.prefs.other.bottomUp){ // reverse order
-                if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-1));// last event
-                if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-3));// last event (before two "")
-                   rows.insertBefore(row,lastrow);// inserting new row at the top of the list
-                   lastrow=row; // top row is the last one
-        }else{
-                rows.appendChild(row);// insert at the bottom of the list.
-        }
-        match.event.dom.join(row);
-      }
-    }
-    evList.first = evList.last+1;
+    for (i=evList.first; i <= evList.last; i++) { 	
+    	ev = evList["_"+i];
+    	if (ev && ev.text != "") {
+    		row = CreateElementRowLiveEvent(match, ev);
+    		row.setAttribute("id", "ev_row_"+match.id + "_" + match.youth+"_"+i );
+    		if (htlivesight.prefs.other.bottomUp){ // reverse order
+    			if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-1));// last event
+    			if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-3));// last event (before two "")
+       			rows.insertBefore(row,lastrow);// inserting new row at the top of the list
+       			lastrow=row; // top row is the last one
+    		}else{
+    			rows.appendChild(row);// insert at the bottom of the list.
+    		}	
+    		match.event.dom.join(row);
+    	}
+    };
+  evList.first = evList.last+1;
   } catch(e) {
     alert("DOM.UpdateLiveEvents\n" + e);
   }
-    
 };
 
 /* --- create grid ---------------------------- */
