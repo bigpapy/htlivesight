@@ -7,5 +7,5 @@ error0=Error 0: Inte ansluten till internet.
 error=Error
 serverON=Uppkopplad
 serverOFF=Frånkopplad
-reset_token=Authorization code has been deleted. Restart HTLS or wait for the next update (< 1 min).
-no_htserver=You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.
+reset_token=Behörighetskoden (OAuth) har tagits bort. Starta om HTLS eller vänta på nästa uppdatering (< 1 minut).
+no_htserver=Du har ej valt korrekt Hattrickserver som du för tillfället också är inloggad på. Högerklicka i HTLS och välj -> Inställningar -> Allmänt och fyll där i korrekt Hattrickserver.
