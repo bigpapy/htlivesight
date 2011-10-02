@@ -27,7 +27,7 @@
 <!ENTITY notify.enable_sound "Spela upp ljud vid matchhändelser">
 <!ENTITY notify.only         "..endast för öppnade matcher">
 <!ENTITY notify.flash        "Blinka matchens sidhuvud vid nya matchhändelser">
-<!ENTITY notify.status       "Skjutreglage för statusfält">
+<!ENTITY notify.status       "Notis i statusfältet (popup)">
 
 <!ENTITY other.authorization "Behörighetskod (OAuth)">
 <!ENTITY other.reset         "Ta bort tillstånd">
