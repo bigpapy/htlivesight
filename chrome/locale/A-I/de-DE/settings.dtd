@@ -4,13 +4,13 @@
 <!ENTITY tab.matches         "Spiele">
 <!ENTITY tab.notifications   "Benachrichtigungen">
 <!ENTITY tab.language        "Sprache">
-<!ENTITY tab.other           "Other">
+<!ENTITY tab.other           "Anderes">
 
 <!ENTITY general.open        "HTLiveSight öffnen">
 <!ENTITY general.new_tab     "In einem neuen Tab">
 <!ENTITY general.new_window  "In einem neuen Fenster">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "Servereinstellungen">
+<!ENTITY general.note        "Tragen Sie Ihren Hattrick Server ein (z.B. www96).">
 
 <!ENTITY matches.league      "Liga-Spiele">
 <!ENTITY matches.get_league  "Hole Liga-Spiele">
@@ -29,11 +29,11 @@
 <!ENTITY notify.flash        "Blinkende Kopfzeilen">
 <!ENTITY notify.status       "Statusbox-Slider">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Order of events">
+<!ENTITY other.authorization "Autorisierungscode">
+<!ENTITY other.reset         "Autorisierung löschen">
+<!ENTITY other.reverse       "Anzeige der Spielereignisse von unten nach oben">
+<!ENTITY other.reverse.note  "Seite neu laden um die Veränderungen zu sehen.">
+<!ENTITY other.events        "Reihenfolge der Ereignisse">
 
 <!ENTITY language.select     "Sprache wählen">
 <!ENTITY language.note       "Bemerkung: Bitte HTLiveSight neu starten, um die Änderungen zu übernehmen.">
