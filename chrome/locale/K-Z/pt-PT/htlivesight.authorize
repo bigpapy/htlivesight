@@ -7,5 +7,5 @@ error0=Erro 0: não está conetado à Internet.
 error=Erro
 serverON=Ligado
 serverOFF=Desligado
-reset_token=Authorization code has been deleted. Restart HTLS or wait for the next update (< 1 min).
-no_htserver=You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.
+reset_token=O código de autorização foi apagado. Reinicia o HTLS ou aguarda pela próxima atualização (< 1 min).
+no_htserver=Não selecionaste corretamente o servidor do Hattrick ao qual estás atualmente ligado. Clica com o botão direito em qualquer lugar do fundoe clica em -> opções -> geral e coloca corretamente o número do servidor do Hattrick.
