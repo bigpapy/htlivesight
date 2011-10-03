@@ -124,14 +124,14 @@ htlivesight.Notify = {
 
       if (htlivesight.prefs.notification.slider) {
         if (alertEv.text) {
-          var strings = document.getElementById("strings");
-          this.startAlert(strings.getString(alertEv.text),
+          var strings = document.getElementById("strings");                    if (matchEvent.matchAlertId == match.home.team.id){
+        	this.startAlert(strings.getString(alertEv.text),"***"+
                             htlivesight.DOM.getTextContent(match.home.team.name)
                             + " " + match.home.goals + " : "
                             + match.away.goals + " "
                             + htlivesight.DOM.getTextContent(match.away.team.name));
-        }
-      }
+        } else if (matchEvent.matchAlertId == match.away.team.id){        	        	this.startAlert(strings.getString(alertEv.text),                    htlivesight.DOM.getTextContent(match.home.team.name)                    + " " + match.home.goals + " : "                    + match.away.goals + " "                      + htlivesight.DOM.getTextContent(match.away.team.name)+"***");        	        }
+      }            }
       
       if (htlivesight.prefs.notification.sound && !Match.List["_"+match.id+"_"+match.youth].window.mute) {
         if (!htlivesight.prefs.notification.soundOnlyOpened
