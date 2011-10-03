@@ -4,7 +4,7 @@
 <!ENTITY tab.art             "Graafika">
 
 <!ENTITY month.january       "Jan">
-<!ENTITY month.february      "veb">
+<!ENTITY month.february      "Veb">
 <!ENTITY month.march         "Mär">
 <!ENTITY month.april         "Apr">
 <!ENTITY month.may           "Mai">
@@ -18,7 +18,7 @@
 
 <!ENTITY text.created_by     "Looja">
 <!ENTITY text.developed_by   "Arendaja">
-<!ENTITY text.help_of        "abiks arendamisel">
+<!ENTITY text.help_of        "Arendaja abi">
 <!ENTITY text.thanks_to      "Suured tänud:">
 <!ENTITY text.images_by      "Graafika loonud:">
 <!ENTITY text.weather        "Ilma pildid">
