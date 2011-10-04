@@ -26,7 +26,7 @@
 <!ENTITY matches.add         "Lisa mäng">
 <!ENTITY matches.by_match    "Mängu ID järgi">
 <!ENTITY matches.by_team     "Meeskonna ID järgi">
-<!ENTITY matches.youth       "Noored?">
+<!ENTITY matches.youth       "Noortemäng?">
 
 <!ENTITY friends.title       "Sõbrad">
 <!ENTITY friends.remove      "Eemalda">
