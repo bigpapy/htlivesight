@@ -1,4 +1,4 @@
-introduction=Sind suunatakse Hattricki CHPP lehele autoriseerimis koodi saamiseks. Selle toestamiseks lülita hüpikakende keeld ajutiselt välja või lisa HTLiveSight lubatud nimekirja.
+introduction=Sind suunatakse Hattricki CHPP lehele autoriseerimise koodi saamiseks. Selle toestamiseks lülita hüpikakende keeld ajutiselt välja või lisa HTLiveSight lubatud nimekirja.
 insert=sisesta oma autoriseerimise kood siia:
 ending=Nüüd on HTLiveSight autoriseeritud. Kliki OK, et programm taaskäivitada.
 error401=VIGA 401: autoriseerimata ligipääs. Sa pead autoriseerimise uuesti tegema. Kliki jätkamiseks OK.
@@ -7,5 +7,5 @@ error0=VIGA 0: interneti ühendus puudub.
 error=Viga
 serverON=Ühendus loodud
 serverOFF=Ühendus lõppenud
-reset_token=Authorization has been removed. Restart HTLS or wait the next update (< 1 min).
-no_htserver=You haven't selected the Hattrick server where you're logged into with your browser. Right click on background -> options -> general -> fill the form with your server number.
+reset_token=Autoriseering on tühistatud. Taaskäivita HTLS või oota järgmise värskenduseni (< 1 minut).
+no_htserver=Sa ei ole sisestanud Hattrick serverit, kus kaudu oled oma brauseris sisse loginud. Parem klikk taustal -> Valikud -> Üldine -> sisesta serveri aadress.
