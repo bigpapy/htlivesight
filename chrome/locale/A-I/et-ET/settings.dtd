@@ -4,13 +4,13 @@
 <!ENTITY tab.matches         "Mängud">
 <!ENTITY tab.notifications   "Teavitused">
 <!ENTITY tab.language        "Keeled">
-<!ENTITY tab.other           "Other">
+<!ENTITY tab.other           "Muud">
 
 <!ENTITY general.open        "HTLiveSight avamine">
 <!ENTITY general.new_tab     "Uues tabis">
 <!ENTITY general.new_window  "Uues aknas">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "Serveri seaded">
+<!ENTITY general.note        "Sisesta Hattrick server, kuhu oled sisse loginud (nt. www96).">
 
 <!ENTITY matches.league      "Liiga mängud">
 <!ENTITY matches.get_league  "Lae liiga mängud">
@@ -29,11 +29,11 @@
 <!ENTITY notify.flash        "Vilguta mängu päist">
 <!ENTITY notify.status       "Olekuriba liugur">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Order of events">
+<!ENTITY other.authorization "Autoriseerimise kood">
+<!ENTITY other.reset         "Tühista autoriseering">
+<!ENTITY other.reverse       "Sündmuste järjekord tagurpidi">
+<!ENTITY other.reverse.note  "Värskenda lehte, et valikud kuvataks">
+<!ENTITY other.events        "Sündmuste järjekord">
 
 <!ENTITY language.select     "Vali keel">
 <!ENTITY language.note       "Tähelepanu: Efekti võtmiseks pead Firefoxi taaskäivitama.">
