@@ -9,7 +9,7 @@
 <!ENTITY general.open        "Ouvrir HTLiveSight">
 <!ENTITY general.new_tab     "Dans un nouvel onglet">
 <!ENTITY general.new_window  "Dans une nouvelle fenêtre">
-<!ENTITY general.server      "Server settings">
+<!ENTITY general.server      "Réglage du serveur">
 <!ENTITY general.note        "Inserer le serveur auquel vous êtes connecté à Hattrick (ex: www96).">
 
 <!ENTITY matches.league      "Matchs de ligue">
