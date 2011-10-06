@@ -4,13 +4,13 @@
 <!ENTITY tab.matches         "Meciuri">
 <!ENTITY tab.notifications   "Notificări">
 <!ENTITY tab.language        "Limba">
-<!ENTITY tab.other           "Other">
+<!ENTITY tab.other           "Altele">
 
 <!ENTITY general.open        "Deschide HTLiveSight">
 <!ENTITY general.new_tab     "Intr-o filă nouă">
 <!ENTITY general.new_window  "Intr-o fereastră nouă">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "Setările serverului">
+<!ENTITY general.note        "Inserează serverul Hattrick pe care eşti logat (ex. www96).">
 
 <!ENTITY matches.league      "Meciuri din ligă">
 <!ENTITY matches.get_league  "Obţine meciurile din ligă">
@@ -29,11 +29,11 @@
 <!ENTITY notify.flash        "Flash antete">
 <!ENTITY notify.status       "Status bar cu tastatură culisantă">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Order of events">
+<!ENTITY other.authorization "Codul de autentificare">
+<!ENTITY other.reset         "Revocă autorizarea">
+<!ENTITY other.reverse       "Inversează ordinea evenimentelor din meci">
+<!ENTITY other.reverse.note  "Reîncarcă pagina pentru a vedea efectul schimbării.">
+<!ENTITY other.events        "Ordinea evenimentelor">
 
 <!ENTITY language.select     "Selectează limba">
 <!ENTITY language.note       "Nota: Reporneşte HTLiveSight ca aceasta să aibă efect.">
