@@ -7,5 +7,5 @@ error0=Hiba 0: nincs internetkapcsolat.
 error=Hiba
 serverON=Kapcsolódva
 serverOFF=Nincs kapcsolat
-reset_token=Authorization has been removed. Restart HTLS or wait the next update (< 1 min).
-no_htserver=You haven't selected the Hattrick server where you're logged into with your browser. Right click on background -> options -> general -> fill the form with your server number.
+reset_token=Engedély eltávolítva. Indítsd újra a HTLS-t, vagy várd meg a következő frissítést (< 1 perc).
+no_htserver=Nem választottad ki azt a Hattrick szervert, ahová a böngésződdel bejelentkeztél. Jobb klikk a háttéren -> opciók -> általános -> add meg a szerverszámod a mezőben.
