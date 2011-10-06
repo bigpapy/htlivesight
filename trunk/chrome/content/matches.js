@@ -56,7 +56,7 @@ Matches.ParseGetByTeam = function(xml) {
       Friends.autoFriendCount--;
     }
   } catch(e) {
-    alert("Matches.ParseGetByTeam: " + e);
+ //   alert("Matches.ParseGetByTeam: " + e);	  dump("Matches.ParseGetByTeam: " + e);	  // relive error removed, to test again.
   }
   return null;
 };

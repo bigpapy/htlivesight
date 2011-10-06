@@ -52,6 +52,7 @@ var htlivesight = {
       document.getElementById("teamId").value=htlivesight.prefs.general.teamId;    
     //  document.getElementById("security_code").value=htlivesight.Preferences.password.get();
     }
+    document.getElementById("reLive").checked=htlivesight.prefs.other.reLive;
     
   },
   getRecommendedServer: function() {
@@ -64,7 +65,14 @@ var htlivesight = {
       htlivesight.Preferences.teamId.save(document.getElementById("teamId").value);
     /*  htlivesight.Preferences.password.save(document.getElementById("username").value,
                                         document.getElementById("security_code").value);*/
+      //var prefs = htlivesight.Settings.preferences;
     };
+    if(document.getElementById("reLive").checked) {
+    	htlivesight.prefs.other.reLive = true;
+      } else {
+    	htlivesight.prefs.other.reLive = false;
+      };
+      htlivesight.Preferences.ReLive.save(htlivesight.prefs.other.reLive);
  //   Login.HTTP();
     Login.Fakesuccess(); 
   //  alert("startup: Login: end");
@@ -99,7 +107,8 @@ var htlivesight = {
   },
   startView: function() { 
 //	  alert("startup:startview begin");
-    Live.startView();
+	  
+	  Live.startView();
  //   alert("startup:startview end");
   },
   GetMyData: function() { 

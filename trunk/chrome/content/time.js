@@ -5,10 +5,13 @@ var Time = {
   DAY: 0,
   hattrickTime: 0,
   hattrickDiffTime: 0,
+  reLiveStartTime: 0,
+  reLiveMinute: 0,
   start: function(hattrickTime) {
     var now = new Date();
     Time.hattrickTime = hattrickTime;
     Time.hattrickDiffTime = hattrickTime - now;
+//    Time.reLiveStartTime = Time.hattrickTime - Time.hattrickDiffTime; // re live by bigpapy
   },
   formatDate: function(date) {
     return date.toLocaleString();
@@ -63,11 +66,17 @@ var Time = {
    */
    
     var strings = document.getElementById("strings");
+ //   var reLive = htlivesight.prefs.other.reLive;// re live by bigpapy
+ //   alert("Time.reLiveStartTime: "+ Time.reLiveStartTime);// re live by bigpapy.
+
     if (match.isFinish) {
       return strings.getString("time.finish");
     };
   
     var startTime = match.date;
+    //if(htlivesight.prefs.other.reLive)
+    if (htlivesight.prefs.other.reLive && startTime<Time.reLiveStartTime) startTime = Time.reLiveStartTime;
+    
     var time = Time.hattrickTime - startTime; // time difference in miliseconds
   
     if (time<0) {
@@ -93,6 +102,20 @@ var Time = {
     var minutes = Math.round(seconds/60); // time elapsed in minutes
    
     var m = minutes; // first half
+    
+    // re live time added by bigpapy
+    if(htlivesight.prefs.other.reLive){
+    	var realTime = Time.hattrickTime - match.date;
+    	var realMinute = Math.round(realTime/60000);
+    	m=Math.round((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed;
+ 
+    	//try by bigpapy
+  //  	m=Time.reLiveMinute+htlivesight.prefs.other.reLiveSpeed;
+    	//try by bigpapy
+       	if (realMinute<m && realMinute>0) m=realMinute;
+      
+    };
+    // re live time end adding by bigpapy
     // sounds of beginning first half and second half. (added by bigpapy)
     if(m==0 || m==60){
     	 if (htlivesight.prefs.notification.sound && !Match.List["_"+match.id+"_"+match.youth].window.mute) {
@@ -105,7 +128,7 @@ var Time = {
     if(m <= 45) return "" + m + strings.getString("time.min") + " " + strings.getString("time.first_half");
     if(m < 59) return strings.getString("time.half_time") + ". " + strings.getString("time.second_half") + " "+ strings.getString("time.starts_in") + " " + (60-m) + " " + strings.getString("time.minutes");
     if(m == 59) return strings.getString("time.half_time") + ". " + strings.getString("time.second_half") + " "+ strings.getString("time.starts_in") + " " + (60-m) + " " + strings.getString("time.minute");
-    m = minutes-15; // second half
+    m = m-15; // second half
     if(m <= 90) return "" + m + strings.getString("time.min") + " " + strings.getString("time.second_half");
     // extra time
     if(m <= 120) return "" + m + strings.getString("time.min") + " " + strings.getString("time.extra_time");

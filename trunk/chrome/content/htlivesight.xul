@@ -93,6 +93,7 @@
 								<hbox>
 								
 									<checkbox id="save_teamId" label="&login.remember_me;" tabindex="3"/>
+									<checkbox id="reLive" label="Re-Live" tabindex="3"/>
 									<spacer flex="1"/>
 									<button label="&login.button;" id="button_login" tabindex="4"/>
 								</hbox>
