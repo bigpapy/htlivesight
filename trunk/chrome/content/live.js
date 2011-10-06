@@ -104,7 +104,7 @@ Live.ParseLive = function (response, source) {
 		  var strings = document.getElementById("strings");		  alert("Live.Parselive2 error" + response);
 		  alert(strings.getString("message.error_reading") + " " + server + ": " + errorMsg);
 	  }
-	//  alert("Live.Parselive3" + response);	  Time.hattrickTime = Time.parseFetchDate(response);	  // bigpapy adding for reLive	  if(htlivesight.prefs.other.reLive){		  if(Time.reLiveStartTime == 0) Time.reLiveStartTime = Time.hattrickTime; // adding 2 minutes to timestart match.		  elapsedTime=((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed;		  if (elapsedTime>61) elapsedTime-=15;		  if (elapsedTime>46 && elapsedTime<61) elapsedTime=45;// 	  alert("Time.reLiveStartTime: " + Time.reLiveStartTime+//			  "elapsedTime: "+ elapsedTime);	  }	  // bigpapy end adding reLive	
+	//  alert("Live.Parselive3" + response);	  Time.hattrickTime = Time.parseFetchDate(response);	  // bigpapy adding for reLive	  if(htlivesight.prefs.other.reLive){		  if(Time.reLiveStartTime == 0) Time.reLiveStartTime = Time.hattrickTime - 60000; // removing half minute to timestart match (otherwise match didn't load at first time.)		  elapsedTime=((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed;		  if (elapsedTime>61) elapsedTime-=15;		  if (elapsedTime>46 && elapsedTime<61) elapsedTime=45;// 	  alert("Time.reLiveStartTime: " + Time.reLiveStartTime+//			  "elapsedTime: "+ elapsedTime);	  }	  // bigpapy end adding reLive	
 	  regExp = new RegExp(regStr, "g");
 
 	  var count = 0;    //	  alert("Live.Parselive5" + response);	  matchNodes = response.getElementsByTagName("Match");//	  alert("Live.Parselive6");

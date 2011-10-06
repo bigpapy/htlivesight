@@ -107,7 +107,7 @@ var htlivesight = {
   },
   startView: function() { 
 //	  alert("startup:startview begin");
-	  
+	  Live.view();
 	  Live.startView();
  //   alert("startup:startview end");
   },
