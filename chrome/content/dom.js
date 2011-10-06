@@ -95,62 +95,6 @@ htlivesight.DOM = {
     }
   },
   
- /*
-  deleteLiveEvents: function(match) {
-	  alert("DeleteLiveEvents_-1");
-try {
-	alert("DeleteLiveEvents_0");
-	var i, ev, evList;
-    var row, rows;
-    alert("DeleteLiveEvents_1");
-    rows = document.getElementById("ev_rows_" + match.id + "_" + match.youth);
-    alert("DeleteLiveEvents_2");
-    evList = match.event.list;
-    alert("DeleteLiveEvents_3");
-	for (i=0; i <= evList.last; i++) {
-		ev = evList["_"+i];
-		row = CreateElementRowLiveEvent(match, ev);
-		row.setAttribute("id", "ev_row_"+match.id + "_" + match.youth+"_"+i );
-		alert("prima di rows.removeChild");
-		rows.removeChild(row);
-		alert("dopo di rows.removeChild");
-	}
-	htlivesight.DOM.window.repaint(match.id,match.youth);
-/*    var i, ev, evList;
-    var row, rows;
-    rows = document.getElementById("ev_rows_" + match.id + "_" + match.youth);
-      evList = match.event.list;
- //   alert("match.window.topDown: "+match.window.topDown);
-    if (match.window.topDown){
-    	for (i=evList.first; i <= evList.last; i++) {
-    		// for (i=evList.last; i >= evList.first; i--) { //reverse order	
-    		ev = evList["_"+i];
-    		if (ev && ev.text != "") {
-    			row = CreateElementRowLiveEvent(match, ev);
-    			row.setAttribute("id", "ev_row_"+match.id + "_" + match.youth+"_"+i );
-    			rows.appendChild(row);
-    			match.event.dom.join(row);
-    		}
-    	}
-    }else {
-    	for (i=evList.last; i >= evList.first; i--) { //reverse order	
-    		ev = evList["_"+i];
-    		if (ev && ev.text != "") {
-    			row = CreateElementRowLiveEvent(match, ev);
-    			row.setAttribute("id", "ev_row_"+match.id + "_" + match.youth+"_"+i );
-    			rows.appendChild(row);
-    			match.event.dom.join(row);
-    		}
-    	}
-    };
-    evList.first = evList.last+1;
-  } catch(e) {
-    alert("DOM.DeleteLiveEvents\n" + e);
-  }
-
-
-  }, */
-  
   toggleTip: function(matchId, youth) {
     var tip = !Match.List["_"+matchId+"_"+youth].window.tip;
     var img = document.getElementById("tip_" + matchId + "_" + youth);
@@ -1102,8 +1046,8 @@ htlivesight.DOM.UpdateShortBox = function(match) {
     document.getElementById("short_home_goals_" + match.id + "_" + match.youth).setAttribute("value", match.home.goals);
     document.getElementById("short_away_goals_" + match.id + "_" + match.youth).setAttribute("value", match.away.goals);
   } catch(e) {
- //   alert("UpdateShortBox(): " + e);
- dump("UpdateShortBox(): " + e);
+   // alert("UpdateShortBox(): " + e);
+	  dump("UpdateShortBox(): " + e);
   }
 };
 

@@ -78,7 +78,6 @@
 							<menuitem value="is-IS" label="is-IS&#160;&#160;Islenska"/>
 							<menuitem value="it-IT" label="it-IT&#160;&#160;Italiano"/>
 							<menuitem value="ko-KR" label="ko-KR&#160;&#160;한국어"/>
-							<menuitem value="lt-LT" label="lt-LT&#160;&#160;Lietuvių"/>
 							<menuitem value="lv-LV" label="lv-LV&#160;&#160;Latviešu"/>
 							<menuitem value="lb-LB" label="lb-LB&#160;&#160;Lëtzebuergesch"/>
 							<menuitem value="hu-HU" label="hu-HU&#160;&#160;Magyar"/>
@@ -175,6 +174,16 @@
            <checkbox id="reverseOrder" label="&other.reverse;" oncommand="htlivesight.Settings.click.reverseOrder();"/>
            <separator class="thin"/>
 		   <description>&other.reverse.note;</description>
+		   </groupbox>
+		  <groupbox>
+           <caption label="RE live"/>
+           <checkbox id="reLive" label="RE-live" oncommand="htlivesight.Settings.click.reLive();"/>
+           <separator class="thin"/>
+		   <description>Check the box to see matches starting with HTlivesight</description>
+		   <hbox align="center" class="indent">
+		   	<textbox maxlength="2" size="2" id="reLiveSpeed" oninput="htlivesight.Settings.click.reLiveSpeed();"/>
+			<label value="Re-Live speed multiplicator"/>
+		   </hbox>
 		   </groupbox>
 			</tabpanel> <!--added by bigpapy to have another tab option (end)-->
 		</tabpanels>

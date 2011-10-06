@@ -31,8 +31,7 @@ var Live = {
     htlivesight.Log.Label(strings.getString("progress.update")+" "+(60-Live.clockSeconds)
                       +strings.getString("progress.seconds"));
           htlivesight.Log.Meter(0);    
-    if (Live.clockSeconds==0) {
-      Live.view();
+    if (Live.clockSeconds==0) {    	      Live.view();
       htlivesight.warningShown = false;
     }
   }
@@ -97,15 +96,15 @@ Live.ParseLive = function (response, source) {
   var regStr = "(<Match>(.*?)</Match>)";
   var regExp;
   var match, XMLEventList;
-  var found;
-  try {
+  var found;    
+  try {	  var elapsedTime=0; //added by bigpapy	  
 	  var errorMsg = Live.ParseError(response);    //	  alert("Live.Parselive1" + response);
 	  if (errorMsg != null) {
 		  var server = Live.ParseServer(response);
 		  var strings = document.getElementById("strings");		  alert("Live.Parselive2 error" + response);
 		  alert(strings.getString("message.error_reading") + " " + server + ": " + errorMsg);
 	  }
-	//  alert("Live.Parselive3" + response);	  Time.hattrickTime = Time.parseFetchDate(response);	// alert("Live.Parselive4: Time.hattrickTime" + Time.hattrickTime);
+	//  alert("Live.Parselive3" + response);	  Time.hattrickTime = Time.parseFetchDate(response);	  // bigpapy adding for reLive	  if(htlivesight.prefs.other.reLive){		  if(Time.reLiveStartTime == 0) Time.reLiveStartTime = Time.hattrickTime; // adding 2 minutes to timestart match.		  elapsedTime=((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed;		  if (elapsedTime>61) elapsedTime-=15;		  if (elapsedTime>46 && elapsedTime<61) elapsedTime=45;// 	  alert("Time.reLiveStartTime: " + Time.reLiveStartTime+//			  "elapsedTime: "+ elapsedTime);	  }	  // bigpapy end adding reLive	
 	  regExp = new RegExp(regStr, "g");
 
 	  var count = 0;    //	  alert("Live.Parselive5" + response);	  matchNodes = response.getElementsByTagName("Match");//	  alert("Live.Parselive6");
@@ -122,16 +121,14 @@ Live.ParseLive = function (response, source) {
 						  Live.ParseAwayTeam(matchNode),
 						  Live.ParseAwayGoals(matchNode)
 				  ),
-				  //        new Match.events(Events.ParseList(Util.Parse("<EventList>(.*?)</EventList>", found[1]))),				  //   new Match.events(Events.ParseList(xml.getElementsByTagName("EventList")[0].textContent)),				  new Match.events(Events.ParseList(matchNode.getElementsByTagName("EventList")[0])),
+				  //        new Match.events(Events.ParseList(Util.Parse("<EventList>(.*?)</EventList>", found[1]))),				  //   new Match.events(Events.ParseList(xml.getElementsByTagName("EventList")[0].textContent)),				  new Match.events(Events.ParseList(matchNode.getElementsByTagName("EventList")[0],elapsedTime)), // Re live added elapsedTime by bigpapy.
 				  null,
 				  Live.ParseYouth(matchNode)
-		  );	//	  alert("Live.Parselive8");
-		//  alert("match.events: "+match.events);
-		  if (match.id) {	//		  alert("Live.Parselive9");		//	  alert("live_first_2: "+ match.event.list.first);
+		  );		  		  if (match.id) {	//		  alert("Live.Parselive9");		//	  alert("live_first_2: "+ match.event.list.first);
 			  match.home.team = Teams.update(match.home.team, match.youth);
 			  match.away.team = Teams.update(match.away.team, match.youth);
 			  match = Match.Update(match);			  		//	  alert("live_first_3: "+ match.event.list.first);
-		  }
+		  }		  		// bigpapy adding for reLive		  if((htlivesight.prefs.other.reLive) && (match.date <= Time.reLiveStartTime) && !(match.isFinish)){			  if (match.home.reLiveGoals==null || match.away.reLiveGoals==null)			  { 				  match.home.reLiveGoals=0;    			  match.away.reLiveGoals=0;			  };			  			 for(var i=match.event.list.first; i<=match.event.list.last; i++){				 event=match.event.list["_"+i];				 if (event.key.A==1){					 match.getSideById(event.subjectTeamId).reLiveGoals+=1;					 				 };			 };			 match.home.goals=match.home.reLiveGoals;			 match.away.goals=match.away.reLiveGoals;		 }		  // bigpapy end adding reLive
 	  }
 //	  alert("Live.Parselive10");
 	  for (matchIndex in Match.List) {//		  alert("Live.Parselive11");
