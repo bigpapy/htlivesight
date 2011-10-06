@@ -9,8 +9,8 @@
 <!ENTITY general.open        "HTLiveSight megnyitása">
 <!ENTITY general.new_tab     "Új fülön">
 <!ENTITY general.new_window  "Új ablakban">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "Szerver beállítások">
+<!ENTITY general.note        "Írd be a Hattrick szervet, ahová bejelentkeztél (pl. www98).">
 
 <!ENTITY matches.league      "Bajnoki mérkõzések">
 <!ENTITY matches.get_league  "Bajnoki mérkõzések letöltése">
@@ -29,11 +29,11 @@
 <!ENTITY notify.flash        "Fejléc villogtatása">
 <!ENTITY notify.status       "Állapotjelzõ üzenet">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Order of events">
+<!ENTITY other.authorization "Engedélyező kód">
+<!ENTITY other.reset         "Engedély megvonása">
+<!ENTITY other.reverse       "Lentről felfelé jelzi ki a mérkőzés eseményeket.">
+<!ENTITY other.reverse.note  "Frissítsd az oldalt a változások érvénybe lépéséhez.">
+<!ENTITY other.events        "Események sorrendje">
 
 <!ENTITY language.select     "Nyelvválasztás">
 <!ENTITY language.note       "Megj: A HTLiveSight újraindítása szükséges.">
