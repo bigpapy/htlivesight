@@ -4,7 +4,7 @@
 <!ENTITY tab.matches         "Mérkõzések">
 <!ENTITY tab.notifications   "Jelzések">
 <!ENTITY tab.language        "Nyelvek">
-<!ENTITY tab.other           "Other">
+<!ENTITY tab.other           "Egyéb">
 
 <!ENTITY general.open        "HTLiveSight megnyitása">
 <!ENTITY general.new_tab     "Új fülön">
