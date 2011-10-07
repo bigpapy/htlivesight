@@ -173,6 +173,14 @@ Htlivesight.ApiProxy = {
 		Htlivesight.loadXml(url, function(x, status) {
 			switch (status){
 			
+			case 0:	// error: not connected to internet
+						var serverOFF=strbundle.getString("serverOFF");//i13n: get local string
+						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
+						var error0=strbundle.getString("error0");//i13n: get local string
+						alert(error0);//show local error message
+						callback(null);
+						break;
+			
 			case 200: // no error
 						var serverON=strbundle.getString("serverON");//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverON);//update server status in menu
@@ -199,18 +207,19 @@ Htlivesight.ApiProxy = {
 						callback(null);
 						break;
 						
-			case 0:	// error: not connected to internet
-						var serverOFF=strbundle.getString("serverOFF");//i13n: get local string
-						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
-						var error0=strbundle.getString("error0");//i13n: get local string
-						alert(error0);//show local error message
-						callback(null);
-						break;
-						
+									
 			case 500:	// error: not connected to internet
 						var serverOFF=strbundle.getString("serverOFF");//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
 						var error500="Error 500: internal server error";//i13n: get local string
+						alert(error500);//show local error message
+						callback(null);
+						break;
+						
+			case 503:	// error: not connected to internet
+						var serverOFF=strbundle.getString("serverOFF");//i13n: get local string
+						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
+						var error503="Error 503: Server unavailable";//i13n: get local string
 						alert(error500);//show local error message
 						callback(null);
 						break;
