@@ -1,11 +1,11 @@
 introduction=Está a ser direcionado à página de CHPP para obter o código de autorização. Se não for, autorize as janelas de pop up ou ponha HTlivesight na lista de exceções.
 insert=coloque o seu código de autorização aqui:
-ending=Agora HTlivesight esta autorizado. Clique em OK para reiniciar a aplicação.
+ending=Agora o HTlivesight está autorizado. Clique em OK para reiniciar a aplicação.
 error401=Erro 401: acesso não autorizado. Tem que obter autorização de novo. Clique em OK para continuar.
-error404=Erro 404: recurso solicitado não foi encontrado. Se este erro aparecer de novo, controle se o serviço CHPP esta em baixo.
+error404=Erro 404: recurso solicitado não foi encontrado. Se este erro aparecer de novo, confira se o serviço CHPP está em baixo.
 error0=Erro 0: não está conetado à Internet.
 error=Erro
 serverON=Ligado
 serverOFF=Desligado
-reset_token=O código de autorização foi apagado. Reinicia o HTLS ou aguarda pela próxima atualização (< 1 min).
-no_htserver=Não selecionaste corretamente o servidor do Hattrick ao qual estás atualmente ligado. Clica com o botão direito em qualquer lugar do fundoe clica em -> opções -> geral e coloca corretamente o número do servidor do Hattrick.
+reset_token=O código de autorização foi apagado. Reinicie o HTLS ou aguarde pela próxima atualização (< 1 min).
+no_htserver=Não selecionou corretamente o servidor do Hattrick ao qual está atualmente ligado. Clique com o botão direito em qualquer lugar do fundo e clique em -> opções -> geral e coloque corretamente o número do servidor do Hattrick.
