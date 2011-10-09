@@ -211,7 +211,7 @@ Htlivesight.ApiProxy = {
 			case 500:	// error: not connected to internet
 						var serverOFF=strbundle.getString("serverOFF");//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
-						var error500="Error 500: internal server error";//i13n: get local string
+						var error500=strbundle.getString("error500");//i13n: get local string
 						alert(error500);//show local error message
 						callback(null);
 						break;
@@ -219,7 +219,7 @@ Htlivesight.ApiProxy = {
 			case 503:	// error: not connected to internet
 						var serverOFF=strbundle.getString("serverOFF");//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
-						var error503="Error 503: CHPP server unavailable (temporary overloading or maintenance)";//i13n: get local string
+						var error503=strbundle.getString("error503");//i13n: get local string
 						alert(error503);//show local error message
 						callback(null);
 						break;

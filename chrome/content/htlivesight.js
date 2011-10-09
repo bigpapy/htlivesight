@@ -53,7 +53,12 @@ var htlivesight = {
     //  document.getElementById("security_code").value=htlivesight.Preferences.password.get();
     }
     document.getElementById("reLive").checked=htlivesight.prefs.other.reLive;
-    
+    document.getElementById("reLiveSpeed").value=htlivesight.prefs.other.reLiveSpeed;
+    document.getElementById("reLiveByEvent").checked=htlivesight.prefs.other.reLiveByEvent;
+    if(!document.getElementById("reLive").checked) {
+    	document.getElementById("reLiveSpeed").disabled = true;
+      	document.getElementById("reLiveByEvent").disabled = true;
+      }
   },
   getRecommendedServer: function() {
 //	  alert("startup: getRecommendedServer");
@@ -69,10 +74,19 @@ var htlivesight = {
     };
     if(document.getElementById("reLive").checked) {
     	htlivesight.prefs.other.reLive = true;
-      } else {
+    } else {
     	htlivesight.prefs.other.reLive = false;
-      };
-      htlivesight.Preferences.ReLive.save(htlivesight.prefs.other.reLive);
+    };
+    if(document.getElementById("reLiveSpeed").value!="")
+    	htlivesight.prefs.other.reLiveSpeed=document.getElementById("reLiveSpeed").value;
+    if(document.getElementById("reLiveByEvent").checked) {
+    	htlivesight.prefs.other.reLiveByEvent = true;
+    } else {
+    	htlivesight.prefs.other.reLiveByEvent = false;
+    };
+    htlivesight.Preferences.ReLive.save(htlivesight.prefs.other.reLive,htlivesight.prefs.other.reLiveSpeed, htlivesight.prefs.other.reLiveByEvent);
+ //   htlivesight.Preferences.ReLiveSpeed.save(htlivesight.prefs.other.reLiveSpeed);
+ //   htlivesight.Preferences.ReLiveByEvent.save(htlivesight.prefs.other.reLiveByEvent);
  //   Login.HTTP();
     Login.Fakesuccess(); 
   //  alert("startup: Login: end");
@@ -107,7 +121,7 @@ var htlivesight = {
   },
   startView: function() { 
 //	  alert("startup:startview begin");
-	  Live.view();
+	  Live.view(); // added to avoid delay showing event list
 	  Live.startView();
  //   alert("startup:startview end");
   },
@@ -178,7 +192,17 @@ var htlivesight = {
 //	  alert("startup:unload: begin");
     htlivesight.Logout();
  //   alert("startup:unload: end");
-  } 
+  },
+  reLive: function() {
+  //	var prefs = htlivesight.Settings.preferences;
+      if(document.getElementById("reLive").checked) {
+    	document.getElementById("reLiveSpeed").disabled = false;
+      	document.getElementById("reLiveByEvent").disabled = false;
+      } else {
+        document.getElementById("reLiveSpeed").disabled = true;
+    	document.getElementById("reLiveByEvent").disabled = true;
+      };
+  }
 };
 
 

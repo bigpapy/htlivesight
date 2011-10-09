@@ -63,10 +63,13 @@ htlivesight.Settings = {
     document.getElementById("chkSlider").checked = prefs.notification.slider;
 
     document.getElementById("lang-list").value = prefs.language.locale;
-    
+ 
     document.getElementById("reverseOrder").checked = prefs.other.bottomUp;
-    document.getElementById("reLive").checked = prefs.other.reLive;
-    document.getElementById("reLiveSpeed").value = prefs.other.reLiveSpeed;
+    document.getElementById("printEventKey").checked = prefs.other.printEventKey;
+    
+ //   document.getElementById("reLive").checked = prefs.other.reLive;
+ //   document.getElementById("reLiveSpeed").value = prefs.other.reLiveSpeed;
+ 
     
   },
   save: function() {
@@ -217,7 +220,16 @@ htlivesight.Settings = {
           prefs.other.bottomUp = false;
         };
     },
-    reLive: function() {
+    
+    printEventKey: function() {
+    	var prefs = htlivesight.Settings.preferences;
+        if(document.getElementById("printEventKey").checked) {
+          prefs.other.printEventKey = true;
+        } else {
+          prefs.other.printEventKey = false;
+        };
+    },
+  /*  reLive: function() {
     	var prefs = htlivesight.Settings.preferences;
         if(document.getElementById("reLive").checked) {
           prefs.other.reLive = true;
@@ -230,6 +242,6 @@ htlivesight.Settings = {
         var value = document.getElementById("reLiveSpeed").value.replace(/\D/g, "");
         document.getElementById("reLiveSpeed").value = value;
         prefs.other.reLiveSpeed = value;
-    }
+    } */
   }
 };

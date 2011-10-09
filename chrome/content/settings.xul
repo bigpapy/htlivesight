@@ -166,7 +166,7 @@
       <caption label="&other.authorization;"/>
            <row align = "center">
              <label value="&other.reset;"/>
-             <button label="reset" id="button_reset" tabindex="2" onclick="htlivesight.Settings.click.resetToken();"/>
+             <button label="&other.reset_button;" id="button_reset" tabindex="2" onclick="htlivesight.Settings.click.resetToken();"/>
            </row>
 		   </groupbox>
 		   <groupbox>
@@ -176,15 +176,18 @@
 		   <description>&other.reverse.note;</description>
 		   </groupbox>
 		  <groupbox>
-           <caption label="RE live"/>
+			<caption label="&other.eventkey;"/>
+			<checkbox id="printEventKey" label="&other.eventkey.note;" oncommand="htlivesight.Settings.click.printEventKey();"/>
+
+<!--           <caption label="RE live"/>
            <checkbox id="reLive" label="RE-live" oncommand="htlivesight.Settings.click.reLive();"/>
            <separator class="thin"/>
 		   <description>Check the box to see matches starting with HTlivesight</description>
 		   <hbox align="center" class="indent">
 		   	<textbox maxlength="2" size="2" id="reLiveSpeed" oninput="htlivesight.Settings.click.reLiveSpeed();"/>
 			<label value="Re-Live speed multiplicator"/>
-		   </hbox>
-		   </groupbox>
+		   </hbox> -->
+		   </groupbox>  
 			</tabpanel> <!--added by bigpapy to have another tab option (end)-->
 		</tabpanels>
 	</tabbox>

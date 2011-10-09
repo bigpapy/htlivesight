@@ -4,8 +4,7 @@ var Live = {
   started: false,
   interval: null,
   loopValue: 0,
-  startView: function() {
-    if (Live.started==false) {
+  startView: function() {	      if (Live.started==false) {
       var e = document.getElementById("clockBox");
   e.style.width="32px";
   e.style.height="32px";
@@ -15,7 +14,7 @@ var Live = {
   },
   clockSeconds: 0,
   loop: function() {
-
+	var liveXml;
     Live.clockSeconds = ++Live.clockSeconds % 60;
     var slice = Math.floor(Live.clockSeconds/10);
     var sec = Live.clockSeconds%10;
@@ -31,9 +30,8 @@ var Live = {
     htlivesight.Log.Label(strings.getString("progress.update")+" "+(60-Live.clockSeconds)
                       +strings.getString("progress.seconds"));
           htlivesight.Log.Meter(0);    
-    if (Live.clockSeconds==0) {    	      Live.view();
-      htlivesight.warningShown = false;
-    }
+    if (Live.clockSeconds==0) {    	    	Live.view();    	      htlivesight.warningShown = false;
+    }else if(htlivesight.prefs.other.reLive &&     		(Live.clockSeconds%(60/htlivesight.prefs.other.reLiveSpeed)==0)) //added by bigpapy to show events during 60 seconds in relive    {    	//now=""+new Date();    	    	addtime = (Live.clockSeconds/60)*htlivesight.prefs.other.reLiveSpeed; //minutes to add in the relive //   	alert("addtime:"+addtime);    	    	Live.ParseLive(htlivesight.liveXml, Live.VIEW, addtime);    	  //  	alert ("eseguito!");    }
   }
   
 };
@@ -46,10 +44,9 @@ Live.view = function() {
      //               + "&actionType=viewAll"
        //             + "&version=1.4"
 
- // EventSystem.HTTPRequest(URL, Live.ParseView, "request.live");   var parameters=[["file","live"],                  ["actionType","viewAll"],                  ["version","1.3"]                  ];  Htlivesight.ApiProxy.retrieve(document, parameters, function(xml){  Live.ParseView(xml);  });};
+ // EventSystem.HTTPRequest(URL, Live.ParseView, "request.live");  var parameters=[["file","live"],                  ["actionType","viewAll"],                  ["version","1.3"]                  ];    Htlivesight.ApiProxy.retrieve(document, parameters, function(xml){  Live.ParseView(xml);  });};
 
-Live.ParseView = function (response) {
-  Live.ParseLive(response, Live.VIEW);
+Live.ParseView = function (response) {		Live.ParseLive(response, Live.VIEW, 0);	
 };
 
 /* ============================================ */
@@ -92,23 +89,23 @@ Live.ParseDeleteMatch = function (response) {
  * common Parse functions
  * ---------------------------------------------------------------- */
 
-Live.ParseLive = function (response, source) {
+Live.ParseLive = function (response, source, addtime) {
   var regStr = "(<Match>(.*?)</Match>)";
   var regExp;
   var match, XMLEventList;
   var found;    
   try {	  var elapsedTime=0; //added by bigpapy	  
-	  var errorMsg = Live.ParseError(response);    //	  alert("Live.Parselive1" + response);
+	  var errorMsg = Live.ParseError(response);    //	  alert("Live.Parselive1" + response);	  	  htlivesight.liveXml= response;
 	  if (errorMsg != null) {
 		  var server = Live.ParseServer(response);
 		  var strings = document.getElementById("strings");		  alert("Live.Parselive2 error" + response);
 		  alert(strings.getString("message.error_reading") + " " + server + ": " + errorMsg);
 	  }
-	//  alert("Live.Parselive3" + response);	  Time.hattrickTime = Time.parseFetchDate(response);	  // bigpapy adding for reLive	  if(htlivesight.prefs.other.reLive){		  if(Time.reLiveStartTime == 0) Time.reLiveStartTime = Time.hattrickTime - 60000; // removing half minute to timestart match (otherwise match didn't load at first time.)		  elapsedTime=((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed;		  if (elapsedTime>61) elapsedTime-=15;		  if (elapsedTime>46 && elapsedTime<61) elapsedTime=45;// 	  alert("Time.reLiveStartTime: " + Time.reLiveStartTime+//			  "elapsedTime: "+ elapsedTime);	  }	  // bigpapy end adding reLive	
+	//  alert("Live.Parselive3" + response);	  Time.hattrickTime = Time.parseFetchDate(response);	  	 	  	  // bigpapy adding for reLive	  if(htlivesight.prefs.other.reLive){		  if(Time.reLiveStartTime == 0) Time.reLiveStartTime = Time.hattrickTime; 		  //Used ceil because elapsedTime<= didn't work.		  elapsedTime=Math.floor((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed+1+addtime;	//	  alert("elapsedTime:"+elapsedTime);		  if (elapsedTime) Time.reLiveMinute=elapsedTime;		  if (elapsedTime>60) elapsedTime-=15;		  if (elapsedTime>45 && elapsedTime<61) elapsedTime=45;// 	  alert("Time.reLiveStartTime: " + Time.reLiveStartTime+//			  "elapsedTime: "+ elapsedTime);	  }	  // bigpapy end adding reLive	
 	  regExp = new RegExp(regStr, "g");
 
-	  var count = 0;    //	  alert("Live.Parselive5" + response);	  matchNodes = response.getElementsByTagName("Match");//	  alert("Live.Parselive6");
-	  // for(;found = regExp.exec(response);) {	  	  // modified by bigpapy	    for(var j=0;j< matchNodes.length ;j++){	  //for(var j=1;j< matchNodes.length ;j=j+2){		  htlivesight.Log.Meter(((j+1)/matchNodes.length)*100);		  matchNode = matchNodes[j];		//  alert("Live.Parselive7");		//  alert("Util.Parse MatchID" + Util.Parse("MatchID", matchNode));		//  alert("Util.Parse MatchDate" + Time.parseDate(Util.Parse("MatchDate", matchNode)));		//  alert("Live.ParseHomeTeam(matchNode) " + Live.ParseHomeTeam(matchNode));		//  alert("Live.ParseHomeGoals(matchNode)" + Live.ParseHomeGoals(matchNode));		//  alert("Live.ParseAwayTeam(matchNode)" + Live.ParseAwayTeam(matchNode));		//  alert("Live.ParseAwayGoals(matchNode)" + Live.ParseAwayGoals(matchNode));		//  alert("Events.ParseList(matchNode.getElementsByTagName(EventList))"+ Events.ParseList(matchNode.getElementsByTagName("EventList")[0]));		//  alert("Live.ParseYouth(matchNode)"+ Live.ParseYouth(matchNode));		  
+	  var count = 0;    //	  alert("Live.Parselive5" + response);	    matchNodes = response.getElementsByTagName("Match");//	  alert("Live.Parselive6");
+	  // for(;found = regExp.exec(response);) {	  	  // modified by bigpapy	    for(var j=0;j< matchNodes.length ;j++){	  //for(var j=1;j< matchNodes.length ;j=j+2){		  htlivesight.Log.Meter(((j+1)/matchNodes.length)*100);		  matchNode = matchNodes[j];		//  alert("Live.Parselive7");		//  alert("Util.Parse MatchID" + Util.Parse("MatchID", matchNode));		//  alert("Util.Parse MatchDate" + Time.parseDate(Util.Parse("MatchDate", matchNode)));		//  alert("Live.ParseHomeTeam(matchNode) " + Live.ParseHomeTeam(matchNode));		//  alert("Live.ParseHomeGoals(matchNode)" + Live.ParseHomeGoals(matchNode));		//  alert("Live.ParseAwayTeam(matchNode)" + Live.ParseAwayTeam(matchNode));		//  alert("Live.ParseAwayGoals(matchNode)" + Live.ParseAwayGoals(matchNode));		//  alert("Events.ParseList(matchNode.getElementsByTagName(EventList))"+ Events.ParseList(matchNode.getElementsByTagName("EventList")[0]));		//  alert("Live.ParseYouth(matchNode)"+ Live.ParseYouth(matchNode));		  
 		  count++;
 		  match = new Match(
 				  //     Util.Parse("<MatchID>(.*?)</MatchID>", found[1]),				  //	  xml.getElementsByTagName("MatchID")[0].textContent,				  parseInt(Util.Parse("MatchID", matchNode),10),    	        	  
