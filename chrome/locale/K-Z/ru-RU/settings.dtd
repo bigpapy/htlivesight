@@ -35,8 +35,8 @@
 <!ENTITY other.reverse       "Отображение событий матча снизу вверх">
 <!ENTITY other.reverse.note  "Обновите страницу для активации изменений.">
 <!ENTITY other.events        "Порядок событий">
-<!ENTITY other.eventkey      "Название события">
-<!ENTITY other.eventkey.note "Показывать название события в комментарии">
+<!ENTITY other.eventkey      "Номер события">
+<!ENTITY other.eventkey.note "Показывать номер события в комментарии">
 
 <!ENTITY language.select     "Выбор языка">
 <!ENTITY language.note       "Перезапустите HTLiveSight для ввода в действие">
