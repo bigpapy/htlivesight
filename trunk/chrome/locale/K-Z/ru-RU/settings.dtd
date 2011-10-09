@@ -31,9 +31,12 @@
 
 <!ENTITY other.authorization "Код авторизации">
 <!ENTITY other.reset         "Удалить авторизацию">
+<!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "Отображение событий матча снизу вверх">
 <!ENTITY other.reverse.note  "Обновите страницу для активации изменений.">
 <!ENTITY other.events        "Порядок событий">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
 
 <!ENTITY language.select     "Выбор языка">
 <!ENTITY language.note       "Перезапустите HTLiveSight для ввода в действие">

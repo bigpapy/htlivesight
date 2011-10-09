@@ -31,9 +31,12 @@
 
 <!ENTITY other.authorization "Código de autorização">
 <!ENTITY other.reset         "Revoga a autorização">
+<!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "Apresentação dos eventos de jogo de baixo para cima">
 <!ENTITY other.reverse.note  "Atualiza a página para aplicar as alterações.">
 <!ENTITY other.events        "Ordem dos eventos">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
 
 <!ENTITY language.select     "Seleccionar língua">
 <!ENTITY language.note       "Nota: Deve reiniciar o HTLiveSight para as opções terem efeito.">

@@ -31,9 +31,12 @@
 
 <!ENTITY other.authorization "קוד הרשאה">
 <!ENTITY other.reset         "הסר הרשאה">
+<!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "הצג אירועים חדשים מלמטה">
 <!ENTITY other.reverse.note  "רענן את הדף בכדי לראות את השינויים">
 <!ENTITY other.events        "סדר האירועים">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
 
 <!ENTITY language.select     "בחר שפה">
 <!ENTITY language.note       "שים לב: יש לאתחל את פיירפוקס על מנת שהשינויי יופעל">

@@ -31,9 +31,12 @@
 
 <!ENTITY other.authorization "Autorisierungscode">
 <!ENTITY other.reset         "Autorisierung löschen">
+<!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "Anzeige der Spielereignisse von unten nach oben">
 <!ENTITY other.reverse.note  "Seite neu laden um die Veränderungen zu sehen.">
 <!ENTITY other.events        "Reihenfolge der Ereignisse">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
 
 <!ENTITY language.select     "Sprache wählen">
 <!ENTITY language.note       "Bemerkung: Bitte HTLiveSight neu starten, um die Änderungen zu übernehmen.">

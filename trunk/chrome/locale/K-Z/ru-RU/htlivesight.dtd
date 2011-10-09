@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Секретный код ">
 <!ENTITY login.remember_me   "Запомнить">
 <!ENTITY login.button        "Вход">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Матчи лиги">
 <!ENTITY league.live_table   "Таблица при текущих результатах">

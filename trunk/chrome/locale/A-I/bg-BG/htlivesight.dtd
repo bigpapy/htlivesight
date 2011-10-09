@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Код за сигурност">
 <!ENTITY login.remember_me   "Запомни ме">
 <!ENTITY login.button        "Акаунт">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Мачове в групата">
 <!ENTITY league.live_table   "Класиране при текущите резултати">

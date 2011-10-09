@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Öryggis kóði">
 <!ENTITY login.remember_me   "Muna eftir mér">
 <!ENTITY login.button        "Skrá inn">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Keppnisleikir">
 <!ENTITY league.live_table   "Uppfærð Tafla">

@@ -9,3 +9,5 @@ serverON=Connecté
 serverOFF=Déconnecté
 reset_token=L'autorisation a été retirée. Redémarrez HTLS ou attendez la prochaine mise à jour (< 1 min).
 no_htserver=Vous n'avez pas sélectionné le serveur Hattrick où vous êtes connecté depuis votre navigateur. Faites un clic droit -> Options -> Général -> remplir le formulaire avec votre numéro de serveur.
+error500=Error 500: internal server error (of Hattrick)
+error503=Error 503: CHPP service unavailable (temporary overload or maintenance)

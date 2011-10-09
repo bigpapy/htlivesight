@@ -9,3 +9,5 @@ serverON=Povezan
 serverOFF=Nepovezan
 reset_token=Kod za autorizaciju je obrisan. Restartujte HTLS ili sačekajte naredno ažuriranje (< 1 min).
 no_htserver=Niste izabrali odgovarajući Hettrik server na kojem ste trenutno ulogovani, kliknite desnim tasterom miša bilo gde na pozadinu pa zatim na -> opcije -> Opšta i tu podesite broj Hettrik servera.
+error500=Error 500: internal server error (of Hattrick)
+error503=Error 503: CHPP service unavailable (temporary overload or maintenance)

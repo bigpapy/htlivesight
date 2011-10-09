@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Biztonsági kód">
 <!ENTITY login.remember_me   "Megjegyez">
 <!ENTITY login.button        "Bejelentkezés">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Bajnoki meccsek">
 <!ENTITY league.live_table   "Élõ tabella">

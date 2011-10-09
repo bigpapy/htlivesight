@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "보안 코드">
 <!ENTITY login.remember_me   "Remember me">
 <!ENTITY login.button        "로그인">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "리그 경기">
 <!ENTITY league.live_table   "현재 리그 순위">

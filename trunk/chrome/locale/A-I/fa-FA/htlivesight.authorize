@@ -1,19 +1,13 @@
 introduction=برای گرفتن کد فعال سازی، شما به صفحه ی chpp هدایت می شوید. اگر منتقل نشدید افزونه ی pop را غیرفعال کنید و یا برنامه ی HTlivesight را به لیست استثناء اضافه کنید.
-
 insert=کد فعال سازی(رمز ورود) را اینجا وارد کنید:
-
 ending=حالا برنامه ی HTlivesight آماده است. روی دکمه ی تایید کلیک کنید تا برنامه ازنو اجرا شود.
-
 error401=خطای 401: دسترسی غیرمجاز. شما باید ازنو فعال سازی کنید. برای ادامه روی دکمه تایید کلیک کنید.
-
 error404=درخواست جستجو انجام نشد. این اخطار زمانی روی میدهد که درگاه مشغول است.
-
 error0=به اینترنت متصل نیست.
-
 error=خطا
-
 serverON=وصل شده
-
 serverOFF=قطع شده
 reset_token=Authorization has been removed. Restart HTLS or wait the next update (< 1 min).
 no_htserver=You haven't selected the Hattrick server where you're logged into with your browser. Right click on background -> options -> general -> fill the form with your server number.
+error500=Error 500: internal server error (of Hattrick)
+error503=Error 503: CHPP service unavailable (temporary overload or maintenance)

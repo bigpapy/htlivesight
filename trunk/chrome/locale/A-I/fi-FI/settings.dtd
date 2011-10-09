@@ -31,9 +31,12 @@
 
 <!ENTITY other.authorization "Valtuutuskoodi">
 <!ENTITY other.reset         "Poista valtuutus">
+<!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "Ottelutapahtumien näyttö alhaalta ylös">
 <!ENTITY other.reverse.note  "Päivitä sivu muutosten päivittämiseksi.">
 <!ENTITY other.events        "Tapahtumien järjestys">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
 
 <!ENTITY language.select     "Valitse kieli">
 <!ENTITY language.note       "Huom: Käynnistä Firefox uudelleen.">

@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "უსაფრთხოების კოდი">
 <!ENTITY login.remember_me   "დამიმახსოვრე">
 <!ENTITY login.button        "შესვლა">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "ლიგის მატჩები">
 <!ENTITY league.live_table   "ცოცხალი მაგიდა">

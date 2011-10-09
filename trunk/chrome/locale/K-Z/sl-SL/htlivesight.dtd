@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Varnostna koda">
 <!ENTITY login.remember_me   "Zapomni si me">
 <!ENTITY login.button        "Prijava">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Ligaške tekme">
 <!ENTITY league.live_table   "Lestvica v živo">

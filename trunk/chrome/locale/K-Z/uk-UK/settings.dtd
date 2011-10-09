@@ -31,9 +31,12 @@
 
 <!ENTITY other.authorization "Код авторизації">
 <!ENTITY other.reset         "Видалити авторизацію">
+<!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "Відображення подій матчу знизу вгору">
 <!ENTITY other.reverse.note  "Оновіть сторінку для активації змін.">
 <!ENTITY other.events        "Порядок подій">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
 
 <!ENTITY language.select     "Обрати мову">
 <!ENTITY language.note       "Потрібно перезавантажити Firefox, щоб застосувати зміни">

@@ -9,3 +9,5 @@ serverON=Yhdistetty
 serverOFF=Ei yhdistetty
 reset_token=Valtuutus poistettu. Käynnistä HTLS uudelleen tai odota seuraavaa päivitykseen (< 1 min).
 no_htserver=Et ole valinnut palvelinta, johon olet kirjautunut HT:ssa. Klikkaa taustaa hiiren kakkosnäppäimellä -> asetukset -> yleistä -> lisää palvelimen numero.
+error500=Error 500: internal server error (of Hattrick)
+error503=Error 503: CHPP service unavailable (temporary overload or maintenance)

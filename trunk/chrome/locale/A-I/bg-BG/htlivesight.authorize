@@ -1,20 +1,13 @@
 introduction=Вие сте пренасочени към страницата на CHPP, за да получите вашият код за достъп. Ако не, моля премахнете забраната/блокадата на HTlivesight от вашия списък с изключения.
-
 insert=поставете вашият код за достъп тук:
-
 ending=Сега HTlivesight е оторизиран. Натиснете OK, за да рестартирате апликацията.
-
 error401=Error 401: неоторизиран достъп. Трябва да вземете код за достъп отново. Натисни OK, за да продължиш.
-
 error404=Error 404: Исканият ресурс не може да бъде намерен. If this error appear again control if chpp service is down.
-
 error0=Error 0: няма връзка с интернет.
-
 error=Грешка
-
 serverON=Свързан
-
 serverOFF=Изключен
-
 reset_token=Authorization has been removed. Restart HTLS or wait the next update (< 1 min).
 no_htserver=You haven't selected the Hattrick server where you're logged into with your browser. Right click on background -> options -> general -> fill the form with your server number.
+error500=Error 500: internal server error (of Hattrick)
+error503=Error 503: CHPP service unavailable (temporary overload or maintenance)

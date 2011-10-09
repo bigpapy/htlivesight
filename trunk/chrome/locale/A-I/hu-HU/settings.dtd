@@ -31,9 +31,12 @@
 
 <!ENTITY other.authorization "Engedélyező kód">
 <!ENTITY other.reset         "Engedély megvonása">
+<!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "Lentről felfelé jelzi ki a mérkőzés eseményeket.">
 <!ENTITY other.reverse.note  "Frissítsd az oldalt a változások érvénybe lépéséhez.">
 <!ENTITY other.events        "Események sorrendje">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
 
 <!ENTITY language.select     "Nyelvválasztás">
 <!ENTITY language.note       "Megj: A HTLiveSight újraindítása szükséges.">

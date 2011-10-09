@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Codi de seguretat">
 <!ENTITY login.remember_me   "Recordar-me">
 <!ENTITY login.button        "Connectar">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Partits de lliga">
 <!ENTITY league.live_table   "Taula en viu">

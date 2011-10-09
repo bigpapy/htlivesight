@@ -1,20 +1,13 @@
 introduction=Sie werden zum Autorisierungscode auf der CHPP-Seite weitergeleitet. Fall Sie nicht weitergeleitet werden, deaktivieren Sie bitte vorübergehend Ihren Pop-up-Blocker oder fügen Sie HTlivesight Ihren Ausnahmen hinzu.
-
 insert=Tragen Sie Ihren Autorisierungscode hier ein:
-
 ending=HTlivesight ist jetzt autorisiert. Klicken Sie auf OK um die Anwendung neu zu starten.
-
 error401=Error 401: nich autorisierter Zugriff. Autorisieren Sie das Produkt erneut. Klicken Sie auf OK um fortzufahren.
-
 error404=Error 404: Die angeforderte Ressource konnte nicht gefunden werden. Prüfen Sie, ob der CHPP Dienst abgeschalten ist wenn dieser Fehler wiederholt auftaucht.
-
 error0=Error 0: keine Verbindung zum Internet.
-
 error=Error
-
 serverON=Verbunden
-
 serverOFF=Nicht verbunden
-
 reset_token=Autorisierung wurde gelöscht. Starten Sie HTLS neu oder warten Sie auf das nächste Update (< 1 min).
 no_htserver=Sie sind mit ihrem Browser auf einem anderen Server eingelogged. Rechtsklick auf den Hintergrund -> Optionen -> Allgemein -> Servernummer eintragen
+error500=Error 500: internal server error (of Hattrick)
+error503=Error 503: CHPP service unavailable (temporary overload or maintenance)

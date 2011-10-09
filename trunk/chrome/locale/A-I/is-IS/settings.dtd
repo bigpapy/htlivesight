@@ -31,9 +31,12 @@
 
 <!ENTITY other.authorization "Authorization code">
 <!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "Bottom up display of match events">
 <!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Order of events">
+<!ENTITY other.events        "Sequence of events">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
 
 <!ENTITY language.select     "Veldu tungumál">
 <!ENTITY language.note       "ATH: Endurræsa þarf HTLiveSight svo breytingar virki.">

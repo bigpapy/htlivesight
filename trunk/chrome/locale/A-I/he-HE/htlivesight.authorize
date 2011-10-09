@@ -6,7 +6,8 @@ error404=שגיאה 404: המקור המבוקש לא נמצא. אם שגיאה 
 error0=.שגיאה 0: לא מחובר לאינטרנט
 error=שגיאה
 serverON=מחובר
-
 serverOFF=מנותק
 reset_token=(ההרשאה הוסרה. אנא אתחל את התוכנה, או המתן לעידכון הבא (בעוד פחות מדקה
 no_htserver=לא בחרת את שרת ההאטריק אליו אתה מחובר בדפדפן. לחץ כפתור ימני על הרקע -> אפשרויות -> כללי -> מלא את הדף עם מספר השרת
+error500=Error 500: internal server error (of Hattrick)
+error503=Error 503: CHPP service unavailable (temporary overload or maintenance)

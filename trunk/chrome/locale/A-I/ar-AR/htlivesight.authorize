@@ -1,17 +1,13 @@
 introduction=سوف يتم إعادة توجيهك الى صفحة اخرى للحصول على كود التصريح، من فضلك اغلق مانعات الظهور أو قم بمنح الاذن للبرنامج في قائمة الاستثناءات.
-
 insert=أدخل كود التصريح هنا:
-
 ending=تم الان منح التصريح للبرنامج. اضغط موافق لاعادة تشغيل البرنامج. 
-
 error401=خطأ 401: دخول غير مصرح به. عليك الحصول على كود تصريح جديد. اضغط موافق للمتابعة.
 error404= خطأ 404: لم يتم ايجاد المصدر المطلوب. اذا ظهر هذا الخطأ مجددا فإن خدمة برامج هاتريك معطلة.
-
 error0=خطأ 0: لا يوجد اتصال بالانترنت.
-
 error=Error
 serverON=Connected
 serverOFF=تم قطع الاتصال
-
 reset_token=Authorization has been removed. Restart HTLS or wait the next update (< 1 min).
 no_htserver=You haven't selected the Hattrick server where you're logged into with your browser. Right click on background -> options -> general -> fill the form with your server number.
+error500=Error 500: internal server error (of Hattrick)
+error503=Error 503: CHPP service unavailable (temporary overload or maintenance)

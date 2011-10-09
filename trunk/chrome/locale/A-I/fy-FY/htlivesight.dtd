@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Feiligenskoade">
 <!ENTITY login.remember_me   "ûnthâlde">
 <!ENTITY login.button        "Login">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Kompetysjewedstryden">
 <!ENTITY league.live_table   "Aktuele Stán">

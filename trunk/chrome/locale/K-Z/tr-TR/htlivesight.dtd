@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Güvenlik kodu">
 <!ENTITY login.remember_me   "Beni hatırla">
 <!ENTITY login.button        "Giriş">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Lig Maçları">
 <!ENTITY league.live_table   "Anlık Puan Tablosu">

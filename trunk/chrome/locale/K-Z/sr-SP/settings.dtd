@@ -33,9 +33,12 @@
 
 <!ENTITY other.authorization "Kod za autorizaciju">
 <!ENTITY other.reset         "Ukloni autorizaciju">
+<!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "Prikaz događaja odozdo na gore">
 <!ENTITY other.reverse.note  "Ponovo učitajte stranicu da vidite promene.">
 <!ENTITY other.events        "Prikaz događaja">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
 
 <!ENTITY language.select     "Odaberi jezik">
 <!ENTITY language.note       "Restartujte HTLS da bi ova podešavanja imala efekta.">
