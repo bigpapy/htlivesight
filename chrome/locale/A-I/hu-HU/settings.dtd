@@ -10,7 +10,7 @@
 <!ENTITY general.new_tab     "Új fülön">
 <!ENTITY general.new_window  "Új ablakban">
 <!ENTITY general.server      "Szerver beállítások">
-<!ENTITY general.note        "Add meg a Hattrick szervert, ahová bejelentkeztél (pl. www98).">
+<!ENTITY general.note        "Add meg a Hattrick szervert, ahová bejelentkeztél (pl. www98):">
 
 <!ENTITY matches.league      "Bajnoki mérkõzések">
 <!ENTITY matches.get_league  "Bajnoki mérkõzések letöltése">
@@ -39,7 +39,7 @@
 <!ENTITY other.eventkey.note "Eseménykód mutatása a riportban">
 
 <!ENTITY language.select     "Nyelvválasztás">
-<!ENTITY language.note       "Megj: A HTLiveSight újraindítása szükséges.">
+<!ENTITY language.note       "Megj.: A HTLiveSight újraindítása szükséges.">
 
 <!ENTITY button.cancel       "Mégse">
 <!ENTITY button.ok           "OK">
