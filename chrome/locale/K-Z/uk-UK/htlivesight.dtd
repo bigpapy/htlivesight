@@ -13,8 +13,8 @@
 <!ENTITY login.remember_me   "Запам'ятати">
 <!ENTITY login.button        "Увійти">
 <!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
-<!ENTITY login.by_event      "Per event">
+<!ENTITY login.speed         "Швидкість">
+<!ENTITY login.by_event      "За подією">
 
 <!ENTITY league.matches      "Матчі ліги">
 <!ENTITY league.live_table   "Таблиця ліги наживо">
