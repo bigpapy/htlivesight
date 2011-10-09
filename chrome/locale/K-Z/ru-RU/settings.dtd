@@ -9,8 +9,8 @@
 <!ENTITY general.open        "Открыть HTLiveSight">
 <!ENTITY general.new_tab     "В новой закладке">
 <!ENTITY general.new_window  "В новом окне">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "Настройки сервера">
+<!ENTITY general.note        "Введите сервер Hattrick, на котором вы авторизованы (например, www96).">
 
 <!ENTITY matches.league      "Матчи лиги">
 <!ENTITY matches.get_league  "Получать матчи лиги">
@@ -31,12 +31,12 @@
 
 <!ENTITY other.authorization "Код авторизации">
 <!ENTITY other.reset         "Удалить авторизацию">
-<!ENTITY other.reset_button  "Reset">
+<!ENTITY other.reset_button  "Сброс">
 <!ENTITY other.reverse       "Отображение событий матча снизу вверх">
 <!ENTITY other.reverse.note  "Обновите страницу для активации изменений.">
 <!ENTITY other.events        "Порядок событий">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey      "Название события">
+<!ENTITY other.eventkey.note "Показывать название события в комментарии">
 
 <!ENTITY language.select     "Выбор языка">
 <!ENTITY language.note       "Перезапустите HTLiveSight для ввода в действие">
