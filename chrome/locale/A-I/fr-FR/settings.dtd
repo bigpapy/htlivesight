@@ -31,12 +31,12 @@
 
 <!ENTITY other.authorization "Code d'autorisation">
 <!ENTITY other.reset         "Retirer l'autorisation">
-<!ENTITY other.reset_button  "Reset">
+<!ENTITY other.reset_button  "Réinitialiser">
 <!ENTITY other.reverse       "Inverser l'ordre des événements du match">
 <!ENTITY other.reverse.note  "Rafraîchir la page pour appliquer vos changements.">
 <!ENTITY other.events        "Ordre des événements">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey      "Codification des évènements">
+<!ENTITY other.eventkey.note "Voir la codification des évènements dans les commentaires">
 
 <!ENTITY language.select     "Choix de la langue">
 <!ENTITY language.note       "Note : Redémarrez Firefox pour appliquer vos changements.">
