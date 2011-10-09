@@ -69,7 +69,7 @@ Live.HTTPAddMatch = function (matchId, youth) {
 };
   
 Live.ParseAddMatch = function (response) {
-  Live.ParseLive(response, Live.ADD);
+  Live.ParseLive(response, Live.ADD, 0);
 };
 
 Live.HTTPDeleteMatch = function (matchId, youth) {
@@ -101,7 +101,7 @@ Live.ParseLive = function (response, source, addtime) {
 		  var strings = document.getElementById("strings");		  alert("Live.Parselive2 error" + response);
 		  alert(strings.getString("message.error_reading") + " " + server + ": " + errorMsg);
 	  }
-	//  alert("Live.Parselive3" + response);	  Time.hattrickTime = Time.parseFetchDate(response);	  	 	  	  // bigpapy adding for reLive	  if(htlivesight.prefs.other.reLive){		  if(Time.reLiveStartTime == 0) Time.reLiveStartTime = Time.hattrickTime; 		  //Used ceil because elapsedTime<= didn't work.		  elapsedTime=Math.floor((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed+1+addtime;	//	  alert("elapsedTime:"+elapsedTime);		  if (elapsedTime) Time.reLiveMinute=elapsedTime;		  if (elapsedTime>60) elapsedTime-=15;		  if (elapsedTime>45 && elapsedTime<61) elapsedTime=45;// 	  alert("Time.reLiveStartTime: " + Time.reLiveStartTime+//			  "elapsedTime: "+ elapsedTime);	  }	  // bigpapy end adding reLive	
+	//  alert("Live.Parselive3" + response);	  Time.hattrickTime = Time.parseFetchDate(response);	  	 	  	  // bigpapy adding for reLive	  if(htlivesight.prefs.other.reLive){		  if(Time.reLiveStartTime == 0) Time.reLiveStartTime = Time.hattrickTime; 		  //Used ceil because elapsedTime<= didn't work.		  elapsedTime=Math.round((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed+1+addtime;	//	  alert("elapsedTime:"+elapsedTime);		//  alert(" Time.reLiveStartTime="+Time.reLiveStartTime+" Time.hattrickTime"+Time.hattrickTime+" addtime="+addtime+" elapsedTime="+ elapsedTime);		  if (elapsedTime) Time.reLiveMinute=elapsedTime;		  if (elapsedTime>60) elapsedTime-=15;		  if (elapsedTime>45 && elapsedTime<61) elapsedTime=45;// 	  alert("Time.reLiveStartTime: " + Time.reLiveStartTime+//			  "elapsedTime: "+ elapsedTime);	  }	  // bigpapy end adding reLive	
 	  regExp = new RegExp(regStr, "g");
 
 	  var count = 0;    //	  alert("Live.Parselive5" + response);	    matchNodes = response.getElementsByTagName("Match");//	  alert("Live.Parselive6");

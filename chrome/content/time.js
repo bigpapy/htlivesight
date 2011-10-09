@@ -75,7 +75,7 @@ var Time = {
   
     var startTime = match.date;
     //if(htlivesight.prefs.other.reLive)
-    if (htlivesight.prefs.other.reLive && startTime<Time.reLiveStartTime) startTime = Time.reLiveStartTime;
+  //  if (htlivesight.prefs.other.reLive && startTime<Time.reLiveStartTime) startTime = Time.reLiveStartTime;
     
     var time = Time.hattrickTime - startTime; // time difference in miliseconds
   
@@ -108,9 +108,11 @@ var Time = {
     	var realTime = Time.hattrickTime - match.date;
     	var realMinute = Math.round(realTime/60000);
  //   	m=Math.round((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed;
-    	m= Time.reLiveMinute
-       	if (realMinute<m && realMinute>0) m=realMinute;
-      
+   // 	m= Time.reLiveMinute
+    //	alert("Time.reLiveMinute="+Time.reLiveMinute+" m="+m);
+       	if (m>Time.reLiveMinute && m>0) m=Time.reLiveMinute;
+   //    	alert("m="+m);
+            
     };
     // re live time end adding by bigpapy
     // sounds of beginning first half and second half. (added by bigpapy)
