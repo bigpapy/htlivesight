@@ -76,7 +76,7 @@
 					</hbox>
 					<vbox class="winboxcontent" id="winboxcontent_login">
 						<vbox id="contentbody_login" class="contentbody">
-							<vbox>
+							<vbox><groupbox><caption label="&login.label;"/>
 								<grid>
 									<columns>
 										<column/>
@@ -85,26 +85,34 @@
 									<rows>
 										<row align="center">
 											<label value="&login.teamId;"/>
-											<textbox maxlength="7" size="6" id="teamId" tabindex="1"/>
-											
+											<textbox maxlength="7" size="7" id="teamId" tabindex="1"/>
 										</row>
-									
+										<row>
+											<checkbox id="save_teamId" label="&login.remember_me;" tabindex="3"/>
+											<button label="&login.button;" id="button_login" tabindex="4"/>	
+										</row>
 									</rows>
 								</grid>
-								<hbox align="center">
-									<checkbox id="save_teamId" label="&login.remember_me;" tabindex="3"/>
-									<checkbox id="reLive" label="&login.re_live;" oncommand="htlivesight.reLive();" tabindex="3"/>
-									<spacer flex="1"/>
-								</hbox>
-								<hbox align="center">
-									<textbox maxlength="2" size="1" id="reLiveSpeed" />
-									<label align="center" value="&login.speed;"/>																		
-									<checkbox id="reLiveByEvent" label="&login.by_event;" tabindex="3"/>
-									
-									<spacer flex="1"/>
-									<button label="&login.button;" id="button_login" tabindex="4"/>								
-									
-								</hbox>
+								</groupbox>
+								<groupbox><caption label="&login.re_live;"/>
+								<grid>
+									<columns>
+										<column/>
+										<column/>
+										<column/>
+									</columns>
+									<rows>
+										<row align="center">									
+											<checkbox id="reLive" label="&login.re_live;" oncommand="htlivesight.reLive();" tabindex="3"/>
+										</row>
+										<row align="center">
+											<textbox maxlength="2" size="1" id="reLiveSpeed"/>
+											<label align="center" value="&login.speed;"/>																		
+											<checkbox id="reLiveByEvent" label="&login.by_event;" tabindex="3"/>
+										</row>
+									</rows>
+								</grid>
+								</groupbox>
 							</vbox>
 						</vbox>
 					</vbox>
