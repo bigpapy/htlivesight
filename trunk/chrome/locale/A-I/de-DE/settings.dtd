@@ -30,8 +30,8 @@
 <!ENTITY notify.status       "Statusbox-Slider">
 
 <!ENTITY other.authorization "Autorisierungscode">
-<!ENTITY other.reset         "Autorisierung löschen">
-<!ENTITY other.reset_button  "Reset">
+<!ENTITY other.reset         "Autorisierung zurücksetzen">
+<!ENTITY other.reset_button  "Zurücksetzen">
 <!ENTITY other.reverse       "Anzeige der Spielereignisse von unten nach oben">
 <!ENTITY other.reverse.note  "Seite neu laden um die Veränderungen zu sehen.">
 <!ENTITY other.events        "Reihenfolge der Ereignisse">
