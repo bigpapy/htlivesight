@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Turvakoodi">
 <!ENTITY login.remember_me   "Muista minut">
 <!ENTITY login.button        "Kirjaudu">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Sarjaottelut">
 <!ENTITY league.live_table   "Live taulukko">

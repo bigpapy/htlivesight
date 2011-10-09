@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Κωδικός ασφαλείας">
 <!ENTITY login.remember_me   "Να με θυμάσαι">
 <!ENTITY login.button        "Είσοδος">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Αγώνες Πρωταθλήματος">
 <!ENTITY league.live_table   "Live Βαθμολογία">

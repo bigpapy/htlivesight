@@ -31,9 +31,12 @@
 
 <!ENTITY other.authorization "Codul de autentificare">
 <!ENTITY other.reset         "Revocă autorizarea">
+<!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "Inversează ordinea evenimentelor din meci">
 <!ENTITY other.reverse.note  "Reîncarcă pagina pentru a vedea efectul schimbării.">
 <!ENTITY other.events        "Ordinea evenimentelor">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
 
 <!ENTITY language.select     "Selectează limba">
 <!ENTITY language.note       "Nota: Reporneşte HTLiveSight ca aceasta să aibă efect.">

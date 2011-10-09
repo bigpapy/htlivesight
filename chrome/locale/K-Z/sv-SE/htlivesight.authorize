@@ -9,3 +9,5 @@ serverON=Uppkopplad
 serverOFF=Frånkopplad
 reset_token=Behörighetskoden (OAuth) har tagits bort. Starta om HTLS eller vänta på nästa uppdatering (< 1 minut).
 no_htserver=Du har ej valt korrekt Hattrickserver som du för tillfället också är inloggad på. Högerklicka i HTLS och välj -> Inställningar -> Allmänt och fyll där i korrekt Hattrickserver.
+error500=Error 500: internal server error (of Hattrick)
+error503=Error 503: CHPP service unavailable (temporary overload or maintenance)

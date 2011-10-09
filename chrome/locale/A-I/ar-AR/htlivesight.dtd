@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "الكود الامني">
 <!ENTITY login.remember_me   "تذكرني">
 <!ENTITY login.button        "دخول">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "مباريات الدوري">
 <!ENTITY league.live_table   "الجدول المباشر">

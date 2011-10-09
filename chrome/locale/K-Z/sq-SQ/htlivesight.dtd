@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Kodi I sigurisw">
 <!ENTITY login.remember_me   "Mw mbaj mend">
 <!ENTITY login.button        "Login">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Ndeshjet e serisw">
 <!ENTITY league.live_table   "Ndeshjet live">

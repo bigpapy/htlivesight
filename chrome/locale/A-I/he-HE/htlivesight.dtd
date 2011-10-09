@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "קוד אבטחה">
 <!ENTITY login.remember_me   "זכור אותי">
 <!ENTITY login.button        "התחבר">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "משחקי הליגה">
 <!ENTITY league.live_table   "טבלה חיה">

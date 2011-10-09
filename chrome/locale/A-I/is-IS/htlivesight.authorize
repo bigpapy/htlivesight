@@ -4,7 +4,10 @@ ending=HTLivesight hefur nú verið virkjað. Smelltu á Í lagi til að endurr�
 error401=Villa 401: aðgangur bannaður. Þú verður að sækja um aðganginn aftur. Smelltu á Í Lagi til að halda áfram.
 error404=Villa 404: Hérna fannst ekkert þú ert í rugli. Ef þú færð þessa villu aftur þá gæti CHPP þjónustan verið óvirk.
 error0=Villa 0: internetið er ekki tengt.
-error=VillanetþjónninnVirkur=Connected
+error=Villa
+serverON=Connected
 serverOFF=Ótengdur
 reset_token=Authorization has been removed. Restart HTLS or wait the next update (< 1 min).
 no_htserver=You haven't selected the Hattrick server where you're logged into with your browser. Right click on background -> options -> general -> fill the form with your server number.
+error500=Error 500: internal server error (of Hattrick)
+error503=Error 503: CHPP service unavailable (temporary overload or maintenance)

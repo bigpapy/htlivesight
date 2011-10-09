@@ -9,3 +9,5 @@ serverON=Połączony
 serverOFF=Niepołączony
 reset_token=Kod autoryzacji został usunięty. Zrestartuj aplikację, albo poczekaj na następne uaktualnienie (normalnie mniej niż minutę).
 no_htserver=Nie wybrałeś serwera, na którym jesteś zalogowany w Hattricku. Kliknij prawym przyciskiem myszy w tle i wybierz opcje, ogólne, żeby ustalić poprawny numer serwera.
+error500=Error 500: internal server error (of Hattrick)
+error503=Error 503: CHPP service unavailable (temporary overload or maintenance)

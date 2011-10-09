@@ -31,9 +31,12 @@
 
 <!ENTITY other.authorization "Kod autoryzacji">
 <!ENTITY other.reset         "Usuń autoryzację">
+<!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "Wyświetlaj zdarzenia meczowe z dołu, do góry">
 <!ENTITY other.reverse.note  "Odśwież stronę, żeby zobaczyć efekt zmian.">
 <!ENTITY other.events        "Porządek zdarzeń">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
 
 <!ENTITY language.select     "Wybierz język">
 <!ENTITY language.note       "Uwaga: Musisz zrestartować HTLiveSight, aby zmiany były widoczne">

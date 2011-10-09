@@ -31,9 +31,12 @@
 
 <!ENTITY other.authorization "Behörighetskod (OAuth)">
 <!ENTITY other.reset         "Ta bort tillstånd">
+<!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "Ändra läsriktning">
 <!ENTITY other.reverse.note  "Uppdatera sidan för att se effekten av ändringen.">
 <!ENTITY other.events        "Händelser">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
 
 <!ENTITY language.select     "Välj språk">
 <!ENTITY language.note       "Obs! Firefox måste startas om för att ändringen ska börja gälla.">

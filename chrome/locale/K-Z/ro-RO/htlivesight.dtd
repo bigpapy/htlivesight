@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Cod de securitate">
 <!ENTITY login.remember_me   "Ţine-mă minte">
 <!ENTITY login.button        "Conectare">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Meciuri de ligă">
 <!ENTITY league.live_table   "Clasament live">

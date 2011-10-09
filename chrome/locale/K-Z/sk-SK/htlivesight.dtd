@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Bezpečnostný kód">
 <!ENTITY login.remember_me   "Zapamätať si údaje">
 <!ENTITY login.button        "Prihlásiť">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Ligové zápasy">
 <!ENTITY league.live_table   "Live tabuľka">

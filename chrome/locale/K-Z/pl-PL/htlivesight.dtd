@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Kod bezpieczeństwa">
 <!ENTITY login.remember_me   "Zapamiętaj">
 <!ENTITY login.button        "Logowanie">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Moja liga">
 <!ENTITY league.live_table   "Tabela">

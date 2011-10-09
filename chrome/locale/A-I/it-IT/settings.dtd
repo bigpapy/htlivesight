@@ -31,9 +31,12 @@
 
 <!ENTITY other.authorization "Codice di autorizzazione">
 <!ENTITY other.reset         "Rimuovi autorizzazione">
+<!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "Eventi dal basso verso l'alto">
 <!ENTITY other.reverse.note  "Aggiorna la pagina per vedere gli effetti.">
 <!ENTITY other.events        "Ordine degli eventi">
+<!ENTITY other.eventkey      "Codice evento">
+<!ENTITY other.eventkey.note "Stampa il codice evento nel testo">
 
 <!ENTITY language.select     "Scegli la lingua">
 <!ENTITY language.note       "Attenzione: Riavvia Firefox per rendere effettivi i cambiamenti.">

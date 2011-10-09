@@ -33,7 +33,9 @@
 <!ENTITY other.reset         "Remove authorization">
 <!ENTITY other.reverse       "Bottom up display of match events">
 <!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Order of events">
+<!ENTITY other.events        "Sequence of events">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
 
 <!ENTITY language.select     "Seleccionar lingua">
 <!ENTITY language.note       "Nota: Reinicia Firefox para que isto teña efecto.">

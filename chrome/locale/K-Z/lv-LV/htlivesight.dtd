@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Droðîbas kods">
 <!ENTITY login.remember_me   "Atcerçties mani!">
 <!ENTITY login.button        "Pievienoties">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Lîgas spçles">
 <!ENTITY league.live_table   "Aktîvâ grupas tabuls">

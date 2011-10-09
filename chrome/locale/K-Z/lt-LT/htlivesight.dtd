@@ -12,6 +12,9 @@
 <!ENTITY login.security_code "Security Code">
 <!ENTITY login.remember_me   "Prisiminti">
 <!ENTITY login.button        "Prisijungti">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "Lygos rungtynės">
 <!ENTITY league.live_table   "Lentelė gyvai">
