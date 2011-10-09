@@ -35,8 +35,8 @@
 <!ENTITY other.reverse       "Відображення подій матчу знизу вгору">
 <!ENTITY other.reverse.note  "Оновіть сторінку для активації змін.">
 <!ENTITY other.events        "Порядок подій">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey      "Номер події">
+<!ENTITY other.eventkey.note "Показувати номер події в коментарі">
 
 <!ENTITY language.select     "Обрати мову">
 <!ENTITY language.note       "Потрібно перезавантажити Firefox, щоб застосувати зміни">
