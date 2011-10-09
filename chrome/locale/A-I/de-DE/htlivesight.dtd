@@ -13,8 +13,8 @@
 <!ENTITY login.remember_me   "Team-ID speichern">
 <!ENTITY login.button        "Login">
 <!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
-<!ENTITY login.by_event      "Per event">
+<!ENTITY login.speed         "Geschwindigkeit">
+<!ENTITY login.by_event      "Pro Ereignis">
 
 <!ENTITY league.matches      "Liga-Spiele">
 <!ENTITY league.live_table   "Live-Tabelle">
