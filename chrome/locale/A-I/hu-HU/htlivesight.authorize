@@ -9,5 +9,5 @@ serverON=Kapcsolódva
 serverOFF=Nincs kapcsolat
 reset_token=Engedély eltávolítva. Indítsd újra a HTLS-t, vagy várd meg a következő frissítést (< 1 perc).
 no_htserver=Nem választottad ki azt a Hattrick szervert, ahová a böngésződdel bejelentkeztél. Jobb klikk a háttéren -> opciók -> általános -> add meg a szerverszámod a mezőben.
-error500=Error 500: internal server error (of Hattrick)
-error503=Error 503: CHPP service unavailable (temporary overload or maintenance)
+error500=Hiba 500: belső szerver hiba (Hattrick)
+error503=Hiba 503: CHPP szolgáltatás nem elérhető (ideiglenes túlterhelség vagy karbantartás)
