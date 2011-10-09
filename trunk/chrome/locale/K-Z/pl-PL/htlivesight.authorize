@@ -7,5 +7,5 @@ error0=Błąd 0: Brak połączenia z Interneterm.
 error=Błąd
 serverON=Połączony
 serverOFF=Niepołączony
-reset_token=Authorization code has been deleted. Restart HTLS or wait for the next update (< 1 min).
-no_htserver=You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.
+reset_token=Kod autoryzacji został usunięty. Zrestartuj aplikację, albo poczekaj na następne uaktualnienie (mniej niż minutę).
+no_htserver=Nie wybrałeś serwera, na którym jesteś zalogowany w Hattricku. Kliknij prawym przyciskiem myszy w tle i wybierz opcje, ogólne, żeby ustalić poprawny numer serwera.
