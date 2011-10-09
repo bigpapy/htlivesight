@@ -35,8 +35,8 @@
 <!ENTITY other.reverse       "Приказ догађаја одоздо на горе">
 <!ENTITY other.reverse.note  "Поново учитајте страницу да видите промене.">
 <!ENTITY other.events        "Приказ догађаја">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey      "Догађаји">
+<!ENTITY other.eventkey.note "Прикажи врсту догађаја у коментару">
 
 <!ENTITY language.select     "Одабери језик">
 <!ENTITY language.note       "Рестартујte HTLS да би ова подешавања имала ефекта.">
