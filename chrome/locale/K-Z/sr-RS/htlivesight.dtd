@@ -12,9 +12,9 @@
 <!ENTITY login.security_code "Сигурносни код">
 <!ENTITY login.remember_me   "запамти">
 <!ENTITY login.button        "Улогуј сe">
-<!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
-<!ENTITY login.by_event      "Per event">
+<!ENTITY login.re_live       "HT Re-Live">
+<!ENTITY login.speed         "Брзина">
+<!ENTITY login.by_event      "по догађају">
 
 <!ENTITY league.matches      "Лигашки мечеви">
 <!ENTITY league.live_table   "Уживо табела">
