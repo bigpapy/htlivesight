@@ -3,21 +3,21 @@
 <!ENTITY menu.server         "Servidor:">
 <!ENTITY menu.disconnected   "desligado">
 <!ENTITY menu.options        "Opções">
-<!ENTITY menu.reconnect      "Reconectar ao HT">
+<!ENTITY menu.reconnect      "Reconetar ao HT">
 <!ENTITY menu.about          "Acerca do HTLiveSight">
 
-<!ENTITY login.label         "Login">
-<!ENTITY login.teamId        "Inserir TeamId da sua equipa">
+<!ENTITY login.label         "Ligar">
+<!ENTITY login.teamId        "Inserir TeamID da sua equipa">
 <!ENTITY login.username      "Nome de utilizador">
 <!ENTITY login.security_code "Código de segurança">
 <!ENTITY login.remember_me   "Lembrar-se de mim">
-<!ENTITY login.button        "Login">
+<!ENTITY login.button        "Ligar">
 <!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
-<!ENTITY login.by_event      "Per event">
+<!ENTITY login.speed         "Velocidade">
+<!ENTITY login.by_event      "Por evento">
 
 <!ENTITY league.matches      "Jogos do Campeonato">
-<!ENTITY league.live_table   "Tabela em directo">
+<!ENTITY league.live_table   "Tabela em direto">
 <!ENTITY league.position     "Pos">
 <!ENTITY league.team         "Equipa">
 <!ENTITY league.played       "J">
