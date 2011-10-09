@@ -68,7 +68,7 @@ htlivesight.Preferences.notification = function() {
 htlivesight.Preferences.language = function() {
   this.locale = "en-US";
 };
-htlivesight.Preferences.other = function() {	this.bottomUp = false;		this.reLive = false;		this.reLiveSpeed = 1;};	
+htlivesight.Preferences.other = function() {	this.bottomUp = false;		this.reLive = false;		this.reLiveSpeed = 1;		this.reliveByEvent = false;		this.printEventKey = false;};	
 htlivesight.Preferences.start = function() {
   try {
 
@@ -113,8 +113,7 @@ htlivesight.Preferences.load = function(prefs) {
       prefs.notification.flash = service.getBoolPref("htlivesight.notification.flash");
       prefs.notification.slider = service.getBoolPref("htlivesight.notification.slider");
       
-      prefs.language.locale = service.getCharPref("general.useragent.locale");                  prefs.other.bottomUp = service.getBoolPref("htlivesight.other.bottomUp");            prefs.other.reLive = service.getBoolPref("htlivesight.other.reLive");            prefs.other.reLiveSpeed = service.getIntPref("htlivesight.other.reLiveSpeed");
-    } catch(e) {
+      prefs.language.locale = service.getCharPref("general.useragent.locale");                  prefs.other.bottomUp = service.getBoolPref("htlivesight.other.bottomUp");            prefs.other.reLive = service.getBoolPref("htlivesight.other.reLive");            prefs.other.reLiveSpeed = service.getIntPref("htlivesight.other.reLiveSpeed");            prefs.other.reLiveByEvent = service.getBoolPref("htlivesight.other.reLiveByEvent");      prefs.other.printEventKey = service.getBoolPref("htlivesight.other.printEventKey");          } catch(e) {
       htlivesight.Log.warn("Cannot load preferences: " + e);
     }
 
@@ -151,7 +150,7 @@ htlivesight.Preferences.save = function(prefs) {
     s.setBoolPref("htlivesight.notification.slider",prefs.notification.slider);
     
     s.setCharPref("general.useragent.locale", prefs.language.locale);
-    s.setBoolPref("htlivesight.other.bottomUp", prefs.other.bottomUp);        s.setBoolPref("htlivesight.other.reLive", prefs.other.reLive);        s.setIntPref("htlivesight.other.reLiveSpeed", prefs.other.reLiveSpeed);        
+    s.setBoolPref("htlivesight.other.bottomUp", prefs.other.bottomUp);        s.setBoolPref("htlivesight.other.reLive", prefs.other.reLive);        s.setIntPref("htlivesight.other.reLiveSpeed", prefs.other.reLiveSpeed);        s.setBoolPref("htlivesight.other.reLiveByEvent", prefs.other.reLiveByEvent);        s.setBoolPref("htlivesight.other.printEventKey", prefs.other.printEventKey);        
     htlivesight.Preferences.teamId.save(prefs.general.teamId);
     htlivesight.Log.trace("...done");
 
@@ -208,7 +207,7 @@ htlivesight.Preferences.teamId = {
       htlivesight.Log.warn("cannot save teamId. " + e);
     }
   }
-};// added by bigpapy to save and load Re-live htlivesight.Preferences.ReLive = {		  get: function() {		    var reLive=false;		    try {		      htlivesight.Preferences.start();		      var service = htlivesight.Preferences.service;		      reLive = service.getBoolPref("htlivesight.other.reLive");		    } catch(e) {		      htlivesight.Log.warn("cannot load teamId. " + e);		    }		    return reLive;		  		  },		  save: function(reLive) {		    try {		      htlivesight.Preferences.start();		      var service = htlivesight.Preferences.service;		      service.setBoolPref("htlivesight.other.reLive", reLive);		    } catch(e) {		      htlivesight.Log.warn("cannot save teamId. " + e);		    }		  }		};
+};// added by bigpapy to save and load Re-live htlivesight.Preferences.ReLive = {		  get: function() {		    var reLive=false;		    try {		      htlivesight.Preferences.start();		      var service = htlivesight.Preferences.service;		      reLive = service.getBoolPref("htlivesight.other.reLive");		    } catch(e) {		      htlivesight.Log.warn("cannot load ReLive options. " + e);		    }		    return reLive;		  		  },		  save: function(reLive, reLiveSpeed, reLiveByEvent) {		    try {		      htlivesight.Preferences.start();		      var service = htlivesight.Preferences.service;		      service.setBoolPref("htlivesight.other.reLive", reLive);		      		      service.setIntPref("htlivesight.other.reLiveSpeed", reLiveSpeed);		      		      service.setBoolPref("htlivesight.other.reLiveByEvent", reLiveByEvent);		    } catch(e) {		      htlivesight.Log.warn("cannot save teamId. " + e);		    }		  }		};
 // end adding by bigpapy about relive in htlivesight.js//It's highly probable this function isn't used anymore
 htlivesight.Preferences.password = {
   get: function() {

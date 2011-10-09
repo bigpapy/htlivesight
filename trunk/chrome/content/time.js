@@ -107,11 +107,8 @@ var Time = {
     if(htlivesight.prefs.other.reLive){
     	var realTime = Time.hattrickTime - match.date;
     	var realMinute = Math.round(realTime/60000);
-    	m=Math.round((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed;
- 
-    	//try by bigpapy
-  //  	m=Time.reLiveMinute+htlivesight.prefs.other.reLiveSpeed;
-    	//try by bigpapy
+ //   	m=Math.round((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed;
+    	m= Time.reLiveMinute
        	if (realMinute<m && realMinute>0) m=realMinute;
       
     };

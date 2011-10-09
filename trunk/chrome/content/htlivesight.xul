@@ -85,17 +85,25 @@
 									<rows>
 										<row align="center">
 											<label value="&login.teamId;"/>
-											<textbox id="teamId" tabindex="1"/>
+											<textbox maxlength="7" size="6" id="teamId" tabindex="1"/>
+											
 										</row>
 									
 									</rows>
 								</grid>
-								<hbox>
-								
+								<hbox align="center">
 									<checkbox id="save_teamId" label="&login.remember_me;" tabindex="3"/>
-									<checkbox id="reLive" label="Re-Live" tabindex="3"/>
+									<checkbox id="reLive" label="&login.re_live;" oncommand="htlivesight.reLive();" tabindex="3"/>
 									<spacer flex="1"/>
-									<button label="&login.button;" id="button_login" tabindex="4"/>
+								</hbox>
+								<hbox align="center">
+									<textbox maxlength="2" size="1" id="reLiveSpeed" />
+									<label align="center" value="&login.speed;"/>																		
+									<checkbox id="reLiveByEvent" label="&login.by_event;" tabindex="3"/>
+									
+									<spacer flex="1"/>
+									<button label="&login.button;" id="button_login" tabindex="4"/>								
+									
 								</hbox>
 							</vbox>
 						</vbox>
