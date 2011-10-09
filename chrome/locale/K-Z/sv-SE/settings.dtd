@@ -10,7 +10,7 @@
 <!ENTITY general.new_tab     "På en ny flik">
 <!ENTITY general.new_window  "I ett nytt fönster">
 <!ENTITY general.server      "Serverinställningar">
-<!ENTITY general.note        "Infoga Hattricks webserver som du är inloggad på (Ex. www96, www78, stage).">
+<!ENTITY general.note        "Infoga Hattricks webserver som du är inloggad på (Ex. www78, www96, stage o.s.v.).">
 
 <!ENTITY matches.league      "Seriematcher">
 <!ENTITY matches.get_league  "Hämta mina seriematcher">
@@ -31,12 +31,12 @@
 
 <!ENTITY other.authorization "Behörighetskod (OAuth)">
 <!ENTITY other.reset         "Ta bort tillstånd">
-<!ENTITY other.reset_button  "Reset">
+<!ENTITY other.reset_button  "Ok">
 <!ENTITY other.reverse       "Ändra läsriktning">
 <!ENTITY other.reverse.note  "Uppdatera sidan för att se effekten av ändringen.">
 <!ENTITY other.events        "Händelser">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey      "Händelsekod">
+<!ENTITY other.eventkey.note "Visa händelsekod i matchkommentaren">
 
 <!ENTITY language.select     "Välj språk">
 <!ENTITY language.note       "Obs! Firefox måste startas om för att ändringen ska börja gälla.">
