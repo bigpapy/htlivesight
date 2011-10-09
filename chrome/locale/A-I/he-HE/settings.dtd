@@ -35,8 +35,8 @@
 <!ENTITY other.reverse       "הצג אירועים חדשים מלמטה">
 <!ENTITY other.reverse.note  "רענן את הדף בכדי לראות את השינויים">
 <!ENTITY other.events        "סדר האירועים">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey      "קוד האירוע">
+<!ENTITY other.eventkey.note "הראה את קוד האירוע בדיווחים">
 
 <!ENTITY language.select     "בחר שפה">
 <!ENTITY language.note       "שים לב: יש לאתחל את פיירפוקס על מנת שהשינויי יופעל">
