@@ -9,5 +9,6 @@ serverON=מחובר
 serverOFF=מנותק
 reset_token=(ההרשאה הוסרה. אנא אתחל את התוכנה, או המתן לעידכון הבא (בעוד פחות מדקה
 no_htserver=לא בחרת את שרת ההאטריק אליו אתה מחובר בדפדפן. לחץ כפתור ימני על הרקע -> אפשרויות -> כללי -> מלא את הדף עם מספר השרת
-error500=Error 500: internal server error (of Hattrick)
-error503=Error 503: CHPP service unavailable (temporary overload or maintenance)
+error500=שגיאה 500: שגיאה בשרת פנימי של האטריק
+error503=שגיאה 503: תוכנות עזר של האטריק לא זמינות עקב עומס יתר או שיפוצים
+
