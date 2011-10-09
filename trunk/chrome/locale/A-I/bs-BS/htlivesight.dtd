@@ -1,0 +1,36 @@
+<!ENTITY window.title        "HTLiveSight">
+
+<!ENTITY menu.server         "Server:">
+<!ENTITY menu.disconnected   "odspojeno">
+<!ENTITY menu.options        "Opcije">
+<!ENTITY menu.reconnect      "Ponovno se spoji na HT">
+<!ENTITY menu.about          "O HTLiveSight-u">
+
+<!ENTITY login.label         "Logiranje">
+<!ENTITY login.teamId        "Umetni Idmomčadi">
+<!ENTITY login.username      "Korisničko ime">
+<!ENTITY login.security_code "Sigurnosna zaporka">
+<!ENTITY login.remember_me   "Zapamti me">
+<!ENTITY login.button        "Logiraj se">
+<!ENTITY login.re_live       "Re-Live">
+<!ENTITY login.speed         "Speed">
+<!ENTITY login.by_event      "Per event">
+
+<!ENTITY league.matches      "Ligaške utakmice">
+<!ENTITY league.live_table   "Tablica uživo">
+<!ENTITY league.position     "#">
+<!ENTITY league.team         "Momčad">
+<!ENTITY league.played       "O">
+<!ENTITY league.goals        "G">
+<!ENTITY league.goal_diff    "GR">
+<!ENTITY league.points       "BOD">
+
+<!ENTITY matches.list        "Lista utakmica">
+<!ENTITY matches.add         "Dodaj utakmicu">
+<!ENTITY matches.by_match    "Po id-u utakmice">
+<!ENTITY matches.by_team     "Po id-u momčadi">
+<!ENTITY matches.youth       "Juniori?">
+
+<!ENTITY friends.title       "Prijatelji">
+<!ENTITY friends.remove      "Odstrani">
+<!ENTITY friends.open        "Otvori">

@@ -1,0 +1,45 @@
+<!ENTITY window.title        "HTLiveSight Opcije">
+
+<!ENTITY tab.general         "Općenito">
+<!ENTITY tab.matches         "Utakmice">
+<!ENTITY tab.notifications   "Obavijesti">
+<!ENTITY tab.language        "Jezik">
+<!ENTITY tab.other           "Other">
+
+<!ENTITY general.open        "Otvori HTLiveSight">
+<!ENTITY general.new_tab     "U novom tabu">
+<!ENTITY general.new_window  "U novom prozoru">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+
+<!ENTITY matches.league      "Ligaške utakmice">
+<!ENTITY matches.get_league  "Dohvati ligaške utakmice">
+<!ENTITY matches.played      "Ako su odigrane unutar">
+<!ENTITY matches.hours       "sata.">
+<!ENTITY matches.friends     "Prijatelji">
+<!ENTITY matches.get_friends "Dohvati utakmice prijatelja">
+<!ENTITY matches.scorers     "Strijelci">
+<!ENTITY matches.list        "Lista strijelaca u zaglavlju">
+<!ENTITY matches.window      "Opcije prikaza">
+<!ENTITY matches.lines       "Broj linija u smanjenom prikazu">
+
+<!ENTITY notify.notify       "Obavijesti">
+<!ENTITY notify.enable_sound "Omogući zvučne obavijesti">
+<!ENTITY notify.only         "Samo u otvorenim utakmicama">
+<!ENTITY notify.flash        "Bljeskanje zaglavlja">
+<!ENTITY notify.status       "Obavijest iz statusne trake">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reset_button  "Reset">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Sequence of events">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+
+<!ENTITY language.select     "Odaberi jezik">
+<!ENTITY language.note       "Napomena: Ponovno pokrenite HTLiveSight radi potvrde ove promjene.">
+
+<!ENTITY button.cancel       "Poništi">
+<!ENTITY button.ok           "Potvrdi">

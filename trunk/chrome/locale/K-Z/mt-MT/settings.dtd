@@ -1,0 +1,45 @@
+<!ENTITY window.title        "HTLiveSight Options">
+
+<!ENTITY tab.general         "General">
+<!ENTITY tab.matches         "Matches">
+<!ENTITY tab.notifications   "Notifications">
+<!ENTITY tab.language        "Language">
+<!ENTITY tab.other           "Other">
+
+<!ENTITY general.open        "Open HTLiveSight">
+<!ENTITY general.new_tab     "In a new tab">
+<!ENTITY general.new_window  "In a new window">
+<!ENTITY general.server      "Server settings">
+<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+
+<!ENTITY matches.league      "League matches">
+<!ENTITY matches.get_league  "Get league matches">
+<!ENTITY matches.played      "If played in">
+<!ENTITY matches.hours       "hours.">
+<!ENTITY matches.friends     "Friends">
+<!ENTITY matches.get_friends "Get friends' matches">
+<!ENTITY matches.scorers     "Scorers">
+<!ENTITY matches.list        "List scorers in header">
+<!ENTITY matches.window      "Window">
+<!ENTITY matches.lines       "Lines to display in minimize mode">
+
+<!ENTITY notify.notify       "Notifications">
+<!ENTITY notify.enable_sound "Enable sound notifications">
+<!ENTITY notify.only         "Only in opened matches">
+<!ENTITY notify.flash        "Flash headers">
+<!ENTITY notify.status       "Status bar slider">
+
+<!ENTITY other.authorization "Authorization code">
+<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.reset_button  "Reset">
+<!ENTITY other.reverse       "Bottom up display of match events">
+<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
+<!ENTITY other.events        "Sequence of events">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+
+<!ENTITY language.select     "Select language">
+<!ENTITY language.note       "Note: Restart Firefox for this to take effect.">
+
+<!ENTITY button.cancel       "Cancel">
+<!ENTITY button.ok           "OK">
