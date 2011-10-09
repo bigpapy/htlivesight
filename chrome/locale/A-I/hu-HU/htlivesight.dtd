@@ -13,8 +13,8 @@
 <!ENTITY login.remember_me   "Megjegyez">
 <!ENTITY login.button        "Bejelentkezés">
 <!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
-<!ENTITY login.by_event      "Per event">
+<!ENTITY login.speed         "Sebesség">
+<!ENTITY login.by_event      "Eseményenként">
 
 <!ENTITY league.matches      "Bajnoki meccsek">
 <!ENTITY league.live_table   "Élõ tabella">
