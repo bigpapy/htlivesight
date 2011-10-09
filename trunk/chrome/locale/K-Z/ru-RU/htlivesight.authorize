@@ -9,5 +9,5 @@ serverON=Подключено
 serverOFF=Отключено
 reset_token=Код авторизации был удалён. Перезапустите HTLS или подождите следующего обновления (< 1 мин).
 no_htserver=Вы не выбрали правильный Hattrick сервер, на котором вы авторизованы в данный момент, правый клик где-нибудь на заднем фоне и выберите -> опции-> общие и выберите правильный номер сервера Hattrick.
-error500=Error 500: internal server error (of Hattrick)
-error503=Error 503: CHPP service unavailable (temporary overload or maintenance)
+error500=Ошибка 500: внутренняя ошибка сервера (Hattrick)
+error503=Ошибка 503: недосутпен сервис CHPP  (временная перегрузка или обслуживание)
