@@ -31,12 +31,12 @@
 
 <!ENTITY other.authorization "Код за ауторизацију">
 <!ENTITY other.reset         "Уклони ауторизацију">
-<!ENTITY other.reset_button  "Reset">
+<!ENTITY other.reset_button  "Поништи">
 <!ENTITY other.reverse       "Приказ догађаја одоздо на горе">
 <!ENTITY other.reverse.note  "Поново учитајте страницу да видите промене.">
 <!ENTITY other.events        "Приказ догађаја">
-<!ENTITY other.eventkey      "Догађаји">
-<!ENTITY other.eventkey.note "Прикажи врсту догађаја у коментару">
+<!ENTITY other.eventkey      "Шифра догађаја">
+<!ENTITY other.eventkey.note "Прикажи ХТ шифру догађаја за сваку линију у извештају са меча">
 
 <!ENTITY language.select     "Одабери језик">
 <!ENTITY language.note       "Рестартујte HTLS да би ова подешавања имала ефекта.">
