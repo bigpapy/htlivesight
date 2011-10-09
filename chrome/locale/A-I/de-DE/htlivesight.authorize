@@ -9,5 +9,5 @@ serverON=Verbunden
 serverOFF=Nicht verbunden
 reset_token=Autorisierung wurde gelöscht. Starten Sie HTLS neu oder warten Sie auf das nächste Update (< 1 min).
 no_htserver=Sie sind mit ihrem Browser auf einem anderen Server eingelogged. Rechtsklick auf den Hintergrund -> Optionen -> Allgemein -> Servernummer eintragen
-error500=Error 500: internal server error (of Hattrick)
-error503=Error 503: CHPP service unavailable (temporary overload or maintenance)
+error500=Error 500: Interner Server-Error (von Hattrick)
+error503=Error 503: CHPP-Dienst nicht erreichbar (kurzzeitige Überlastung oder Wartung)
