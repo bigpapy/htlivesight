@@ -16,15 +16,15 @@
 <!ENTITY month.november      "November">
 <!ENTITY month.december      "Desember">
 
-<!ENTITY text.created_by     "Laget av">
-<!ENTITY text.developed_by   "Utviklet av">
-<!ENTITY text.help_of        "Med hjelp av">
+<!ENTITY text.created_by     "Laga av">
+<!ENTITY text.developed_by   "Utvikla av">
+<!ENTITY text.help_of        "Med hjelp frå">
 <!ENTITY text.thanks_to      "Mange takk til:">
-<!ENTITY text.images_by      "Bilder av">
-<!ENTITY text.weather        "Værbilder fra">
+<!ENTITY text.images_by      "Bilete av">
+<!ENTITY text.weather        "Værbilete frå">
 <!ENTITY text.tango_icon     "Tango ikon">
 <!ENTITY text.licensed       "Lisensiert av">
-<!ENTITY text.creative       "Kreative likheter">
+<!ENTITY text.creative       "Kreative likheiter">
 <!ENTITY text.license        "Lisens">
 
 <!ENTITY button.close        "Lukk">
