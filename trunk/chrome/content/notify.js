@@ -18,12 +18,12 @@ htlivesight.Notify = {
     this.matchAlertId = 0;
     this.flashCounter=0;
   },
-  startTimeoutClear: function() {
-      setTimeout("htlivesight.Notify.clearImages()", 45000);
-      setTimeout("htlivesight.Notify.clearFlash()", 20000);
+  startTimeoutClear: function() {	  	  clearImagesTime = 45000;	  	  clearFlashTime = 20000;	  	  if(htlivesight.prefs.other.reLiveSpeed!=1 && htlivesight.prefs.other.reLive)	  {		  clearImagesTime = clearImagesTime/htlivesight.prefs.other.reLiveSpeed;		  		  clearFlashTime = clearFlashTime/htlivesight.prefs.other.reLiveSpeed;	  }
+      setTimeout("htlivesight.Notify.clearImages()", clearImagesTime);
+      setTimeout("htlivesight.Notify.clearFlash()", clearFlashTime);
   },
-  startAlert: function(title, text) {
-      setTimeout(htlivesight.Notify.showAlert, (this.alertTimer++)*5000, title, text);
+  startAlert: function(title, text) {	  	  startAlertTime=5000;	  	  if(htlivesight.prefs.other.reLiveSpeed!=1 && htlivesight.prefs.other.reLive)	  {		  startAlertTime=startAlertTime/htlivesight.prefs.other.reLiveSpeed;	  }
+      setTimeout(htlivesight.Notify.showAlert, (this.alertTimer++)*startAlertTime, title, text);
   },
   flash: function() {
     var className, matchEv;
@@ -33,8 +33,8 @@ htlivesight.Notify = {
         matchEv = htlivesight.Notify.flashList[i];
         className = (matchEv.flashCounter++ % 2) == 1 ? matchEv.matchAlert.color.cssClass : htlivesight.Notify.color.white.cssClass;
         document.getElementById("placardbox_"+matchEv.match.id+"_"+matchEv.match.youth).className = className;
-      }
-      setTimeout(htlivesight.Notify.flash, 750);
+      }      notifyFlashTime=750;            if(htlivesight.prefs.other.reLiveSpeed!=1 && htlivesight.prefs.other.reLive)	  {    	  notifyFlashTime=notifyFlashTime/htlivesight.prefs.other.reLiveSpeed;	  }            
+      setTimeout(htlivesight.Notify.flash, notifyFlashTime);
     } catch(e) {
       htlivesight.Log.error("Notify.flash: " + e);
     }
@@ -79,8 +79,7 @@ htlivesight.Notify = {
           matchEvent.awayAlert = ev.type;
         }
       }      else if (ev.subjectTeamId==0) {          matchEvent.neutral.push(ev);          if (ev.type.id < matchEvent.neutralAlert.id) {            matchEvent.neutralAlert = ev.type;          }        }                  
-    }
-
+    }    
     // put events's image in the match header 
     for (var matchEventName in this.matchEventList) {
       var matchEvent = this.matchEventList[matchEventName];
@@ -149,8 +148,7 @@ htlivesight.Notify = {
     }
       if (alertEv.color) {
         this.flashList.push(matchEvent);
-      }
-    }   
+      }        }   
     
     
     htlivesight.Log.properties(this.matchEventList, "MatchEventList:");

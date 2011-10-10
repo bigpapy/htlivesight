@@ -7,6 +7,8 @@ var Time = {
   hattrickDiffTime: 0,
   reLiveStartTime: 0,
   reLiveMinute: 0,
+  whistleTime: 0,
+  noWhistleTime: 60000,
   start: function(hattrickTime) {
     var now = new Date();
     Time.hattrickTime = hattrickTime;
@@ -78,7 +80,8 @@ var Time = {
   //  if (htlivesight.prefs.other.reLive && startTime<Time.reLiveStartTime) startTime = Time.reLiveStartTime;
     
     var time = Time.hattrickTime - startTime; // time difference in miliseconds
-  
+    var now = new Date();
+      
     if (time<0) {
       var seconds = Math.round(Math.abs(time)/1000); // time to go in seconds
       var minutes = Math.round(seconds/60); // time to go in minutes
@@ -107,6 +110,8 @@ var Time = {
     if(htlivesight.prefs.other.reLive){
     	var realTime = Time.hattrickTime - match.date;
     	var realMinute = Math.round(realTime/60000);
+    	//bigpapy: added that quantity because at fast speed it is too short.
+    	noWhistleTime=Time.noWhistleTime/htlivesight.prefs.other.reLiveSpeed+htlivesight.prefs.other.reLiveSpeed*100;
  //   	m=Math.round((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed;
    // 	m= Time.reLiveMinute
     //	alert("Time.reLiveMinute="+Time.reLiveMinute+" m="+m);
@@ -116,11 +121,12 @@ var Time = {
     };
     // re live time end adding by bigpapy
     // sounds of beginning first half and second half. (added by bigpapy)
-    if(m==0 || m==60){
+    if((m==0 || m==60)&&((now-Time.whistleTime)>noWhistleTime)){
     	 if (htlivesight.prefs.notification.sound && !Match.List["_"+match.id+"_"+match.youth].window.mute) {
     	        if (!htlivesight.prefs.notification.soundOnlyOpened
     	            || document.getElementById("live_"+match.id+"_"+match.youth).hidden==false) {
     	        	htlivesight.Sound.sample.beginning.play();
+    	        	Time.whistleTime=now;
     	        }
     	 }
     } // sounds of beginning first half and second half (end). (added by bigpapy)

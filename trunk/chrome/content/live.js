@@ -94,14 +94,14 @@ Live.ParseLive = function (response, source, addtime) {
   var regExp;
   var match, XMLEventList;
   var found;    
-  try {	  var elapsedTime=0; //added by bigpapy	  
+  try {	  var elapsedTime=0; //added by bigpapy	  	  var newEvent=false;	  
 	  var errorMsg = Live.ParseError(response);    //	  alert("Live.Parselive1" + response);	  	  htlivesight.liveXml= response;
 	  if (errorMsg != null) {
 		  var server = Live.ParseServer(response);
 		  var strings = document.getElementById("strings");		  alert("Live.Parselive2 error" + response);
 		  alert(strings.getString("message.error_reading") + " " + server + ": " + errorMsg);
 	  }
-	//  alert("Live.Parselive3" + response);	  Time.hattrickTime = Time.parseFetchDate(response);	  	 	  	  // bigpapy adding for reLive	  if(htlivesight.prefs.other.reLive){		  if(Time.reLiveStartTime == 0) Time.reLiveStartTime = Time.hattrickTime; 		  //Used ceil because elapsedTime<= didn't work.		  elapsedTime=Math.round((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed+1+addtime;	//	  alert("elapsedTime:"+elapsedTime);		//  alert(" Time.reLiveStartTime="+Time.reLiveStartTime+" Time.hattrickTime"+Time.hattrickTime+" addtime="+addtime+" elapsedTime="+ elapsedTime);		  if (elapsedTime) Time.reLiveMinute=elapsedTime;		  if (elapsedTime>60) elapsedTime-=15;		  if (elapsedTime>45 && elapsedTime<61) elapsedTime=45;// 	  alert("Time.reLiveStartTime: " + Time.reLiveStartTime+//			  "elapsedTime: "+ elapsedTime);	  }	  // bigpapy end adding reLive	
+	//  alert("Live.Parselive3" + response);	  Time.hattrickTime = Time.parseFetchDate(response);	  	 	  	  // bigpapy adding for reLive	  if(htlivesight.prefs.other.reLive){		  if(Time.reLiveStartTime == 0) Time.reLiveStartTime = Time.hattrickTime; 		  //Used ceil because elapsedTime<= didn't work.		  elapsedTime=Math.round((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed+addtime;	//	  alert("elapsedTime:"+elapsedTime);		//  alert(" Time.reLiveStartTime="+Time.reLiveStartTime+" Time.hattrickTime"+Time.hattrickTime+" addtime="+addtime+" elapsedTime="+ elapsedTime);		  if (elapsedTime) Time.reLiveMinute=elapsedTime;		  if (elapsedTime>60) elapsedTime-=15;		  if (elapsedTime>45 && elapsedTime<61) elapsedTime=45;// 	  alert("Time.reLiveStartTime: " + Time.reLiveStartTime+//			  "elapsedTime: "+ elapsedTime);	  }	  // bigpapy end adding reLive	
 	  regExp = new RegExp(regStr, "g");
 
 	  var count = 0;    //	  alert("Live.Parselive5" + response);	    matchNodes = response.getElementsByTagName("Match");//	  alert("Live.Parselive6");
@@ -135,9 +135,9 @@ Live.ParseLive = function (response, source, addtime) {
 	//		  alert("Live.Parselive12");
 			  if (source == Live.VIEW) {
 				  var first = match.event.list.first;
-				  var last = match.event.list.last;          	//			  alert("Live.Parselive13");				  
-				  for (var i=first; i<=last; i++) {
-					  htlivesight.Notify.add(match.event.list["_"+i]);					//  alert("i:" + match.event.list["_"+i]);
+				  var last = match.event.list.last;				  			//	  alert("first="+first+" last="+last);          	//			  alert("Live.Parselive13");				  
+				  for (var i=first; i<=last; i++) {					//  alert("before i:" + i);
+					  htlivesight.Notify.add(match.event.list["_"+i]);				    //  alert("after i:" + i);
 				  }				  //added by bigpapy: adding first and second half sound start (begin)				  				//added by bigpapy: adding first and second half sound start (end)
 			  }
 	//		  alert("Live.Parselive14");
@@ -146,8 +146,7 @@ Live.ParseLive = function (response, source, addtime) {
 
 	  }
 
-    if (source == Live.VIEW) {
-    	htlivesight.Notify.set();       //   	alert("Live.Parselive15");
+    if (source == Live.VIEW) {    	htlivesight.Notify.set();   //   	alert("Live.Parselive15");
     }
     
     
