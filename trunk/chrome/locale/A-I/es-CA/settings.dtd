@@ -9,8 +9,8 @@
 <!ENTITY general.open        "Abrir HTLiveSight">
 <!ENTITY general.new_tab     "En una nueva pestaña">
 <!ENTITY general.new_window  "En una nueva ventana">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "Configuración del servidor">
+<!ENTITY general.note        "Escribe el servidor de Hattrick en el que estas conectado (p.ej. www96).">
 
 <!ENTITY matches.league      "Partidos de liga">
 <!ENTITY matches.get_league  "Bajar partidos de liga">
@@ -31,12 +31,12 @@
 
 <!ENTITY other.authorization "Código de autorización">
 <!ENTITY other.reset         "Revocar autorización">
-<!ENTITY other.reset_button  "Reset">
+<!ENTITY other.reset_button  "Revocar">
 <!ENTITY other.reverse       "Mostrar eventos del partido de abajo hacia arriba">
 <!ENTITY other.reverse.note  "Recargar página para ver los efectos del cambio">
 <!ENTITY other.events        "Orden de eventos">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey      "Clave de evento">
+<!ENTITY other.eventkey.note "Mostrar la clave del evento en el comentario">
 
 <!ENTITY language.select     "Selecciona Idioma">
 <!ENTITY language.note       "Nota: Es necesario reiniciar HTLiveSight para que los cambios tengan efecto.">
