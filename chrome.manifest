@@ -10,6 +10,7 @@ locale htlivesight  en-US       chrome/locale/A-I/en-US/
 locale htlivesight  ar          chrome/locale/A-I/ar-AR/
 locale htlivesight  be          chrome/locale/A-I/be-BE/
 locale htlivesight  bg          chrome/locale/A-I/bg-BG/
+locale htlivesight  bs          chrome/locale/A-I/bs-BS/
 locale htlivesight  ca          chrome/locale/A-I/ca-CA/
 locale htlivesight  cs          chrome/locale/A-I/cs-CZ/
 locale htlivesight  da          chrome/locale/A-I/da-DK/
@@ -42,6 +43,7 @@ locale htlivesight  mk          chrome/locale/K-Z/mk-MK/
 locale htlivesight  nl          chrome/locale/K-Z/nl-NL/
 locale htlivesight  no          chrome/locale/K-Z/no-NO/
 locale htlivesight  nb          chrome/locale/K-Z/no-NO/
+locale htlivesight  nn          chrome/locale/K-Z/nn-NN/
 locale htlivesight  pl          chrome/locale/K-Z/pl-PL/
 locale htlivesight  pt          chrome/locale/K-Z/pt-PT/
 locale htlivesight  pt-BR       chrome/locale/K-Z/pt-BR/

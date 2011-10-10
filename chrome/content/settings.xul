@@ -55,6 +55,7 @@
 							<menuitem value="ar-AR" label="ar-AR&#160;&#160;العربية"/>
 							<menuitem value="be-BE" label="be-BE&#160;&#160;Беларуская"/>
 							<menuitem value="bg-BG" label="bg-BG&#160;&#160;Български"/>
+							<menuitem value="bs-BS" label="bs-BS&#160;&#160;Bosanski"/>
 							<menuitem value="ca-CA" label="ca-CA&#160;&#160;Català"/>
 							<menuitem value="cs-CZ" label="cs-CZ&#160;&#160;Česky"/>
                             <menuitem value="da-DK" label="da-DK&#160;&#160;Danish"/>
@@ -84,6 +85,7 @@
 							<menuitem value="mk-MK" label="mk-MK&#160;&#160;Македонски"/>
 							<menuitem value="nl-NL" label="nl-NL&#160;&#160;Nederlands"/>
 							<menuitem value="no-NO" label="no-NO&#160;&#160;Norsk (Bokmal)"/>
+							<menuitem value="nn-NN" label="nn-NN&#160;&#160;Norsk (Nynorsk)"/>
 							<menuitem value="pl-PL" label="pl-PL&#160;&#160;Polski"/>
 							<menuitem value="pt-BR" label="pt-BR&#160;&#160;Português (Brasil)"/>
 							<menuitem value="pt-PT" label="pt-PT&#160;&#160;Português (Portugal)"/>
