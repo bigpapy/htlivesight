@@ -1,0 +1,13 @@
+introduction=Du blir sendt til CHPP-siden der du får en autorisasjonskode. Hvis ikke, de-aktivér din pop-up blocker midlertidig eller legg til HTlivesight i listen for unntak. list.
+insert=Sett inn din autorisasjonskode her:
+ending=HTlivesight er nå autorisert. Trykk på OK for å starte applikasjonen på nytt.
+error401=Error 401: uautorisert tilgang. Du må hente en ny autoriseringskode. Klikk for å fortsette.
+error404=Error 404: Den forespurte ressursen kunne ikke bli funnet. Hvis dette problemet vedvarer bør du kontrollere om HT's CHPP service er utilgjengelig.
+error0=Error 0: Ikke koblet til internett.
+error=Error
+serverON=Connected
+serverOFF=Disconnected
+reset_token=Authorization code has been deleted. Restart HTLS or wait for the next update (< 1 min).
+no_htserver=You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.
+error500=Error 500: internal server error (of Hattrick)
+error503=Error 503: CHPP service unavailable (temporary overload or maintenance)
