@@ -4,13 +4,13 @@
 <!ENTITY tab.matches         "Wedstrijden">
 <!ENTITY tab.notifications   "Meldingen">
 <!ENTITY tab.language        "Taal">
-<!ENTITY tab.other           "Other">
+<!ENTITY tab.other           "Overige">
 
 <!ENTITY general.open        "Open HTLiveSight">
 <!ENTITY general.new_tab     "In een nieuw tabblad">
 <!ENTITY general.new_window  "In een nieuw venster">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "Server instellingen">
+<!ENTITY general.note        "Vul de Hattrick server in waarop je ingelogd bent (bijvoorbeeld www96).">
 
 <!ENTITY matches.league      "Competitiewedstrijden">
 <!ENTITY matches.get_league  "Haal competitiewedstrijden op">
@@ -29,14 +29,14 @@
 <!ENTITY notify.flash        "Knipperende kop">
 <!ENTITY notify.status       "Statusbalk schuifvenster">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.authorization "Autorisatiecode">
+<!ENTITY other.reset         "Verwijder autorisatie">
 <!ENTITY other.reset_button  "Reset">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Sequence of events">
+<!ENTITY other.reverse       "Wedstrijdgebeurtenissen van beneden naar boven">
+<!ENTITY other.reverse.note  "Ververs de pagina om de wijzigingen te zien.">
+<!ENTITY other.events        "Volgorde van gebeurtenissen">
 <!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey.note "Toon de eventkey in het commentaar">
 
 <!ENTITY language.select     "Kies taal">
 <!ENTITY language.note       "Let op: HTLiveSight moet opnieuw worden opgestart voordat de wijzigingen effect hebben.">
