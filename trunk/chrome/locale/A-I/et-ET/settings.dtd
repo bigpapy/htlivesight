@@ -35,8 +35,8 @@
 <!ENTITY other.reverse       "Sündmuste järjekord tagurpidi">
 <!ENTITY other.reverse.note  "Värskenda lehte, et valikud kuvataks">
 <!ENTITY other.events        "Sündmuste järjekord">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey      "Sündmuse ID">
+<!ENTITY other.eventkey.note "Kuva sündmuse ID kommentaarides">
 
 <!ENTITY language.select     "Vali keel">
 <!ENTITY language.note       "Tähelepanu: Efekti võtmiseks pead Firefoxi taaskäivitama.">
