@@ -9,5 +9,5 @@ serverON=Ühendus loodud
 serverOFF=Ühendus lõppenud
 reset_token=Autoriseering on tühistatud. Taaskäivita HTLS või oota järgmise värskenduseni (< 1 minut).
 no_htserver=Sa ei ole sisestanud Hattrick serverit, kus kaudu oled oma brauseris sisse loginud. Parem klikk taustal -> Valikud -> Üldine -> sisesta serveri aadress.
-error500=Error 500: internal server error (of Hattrick)
-error503=Error 503: CHPP service unavailable (temporary overload or maintenance)
+error500=Error 500: (Hattrick) serveri viga 
+error503=Error 503: CHPP teenus kättesaamatu (ajutine koormushäire või hooldustööd)
