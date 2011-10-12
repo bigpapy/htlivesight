@@ -12,9 +12,9 @@
 <!ENTITY login.security_code "Turvakood">
 <!ENTITY login.remember_me   "Jäta mind meelde">
 <!ENTITY login.button        "Logi sisse">
-<!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
-<!ENTITY login.by_event      "Per event">
+<!ENTITY login.re_live       "Kordus">
+<!ENTITY login.speed         "Kiirus">
+<!ENTITY login.by_event      "Sündmuse kohta">
 
 <!ENTITY league.matches      "Liiga mängud">
 <!ENTITY league.live_table   "Otse tabel">
