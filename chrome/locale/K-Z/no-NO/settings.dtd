@@ -9,8 +9,8 @@
 <!ENTITY general.open        "Åpne HTLiveSight">
 <!ENTITY general.new_tab     "I en ny fane">
 <!ENTITY general.new_window  "I et nytt vindu">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "Server settinger">
+<!ENTITY general.note        "Sett inn hvilken Hattrick-server du er logget inn på (f.eks. www96)">
 
 <!ENTITY matches.league      "Ligakamper">
 <!ENTITY matches.get_league  "Hent ligakamper">
@@ -29,15 +29,14 @@
 <!ENTITY notify.flash        "Blinkende overskrifter">
 <!ENTITY notify.status       "Statusfelt glidebryter">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
-<!ENTITY other.reset_button  "Reset">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Sequence of events">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
-
+<!ENTITY other.authorization "Autorisasjonskode">
+<!ENTITY other.reset         "Fjern autorisasjon">
+<!ENTITY other.reset_button  "Nullstill">
+<!ENTITY other.reverse       "Vis kamphendelsene fra bunnen og opp">
+<!ENTITY other.reverse.note  "Oppdatèr siden for at endringene skal tre i kraft
+<!ENTITY other.events        "Hendelses sekvenser">
+<!ENTITY other.eventkey      "Hendelsesnøkkel">
+<!ENTITY other.eventkey.note "Vis hendelsesnøkkel i kommentarfelt
 <!ENTITY language.select     "Velg språk">
 <!ENTITY language.note       "Husk: Start HTLiveSight på nytt for at endringene skal tre i kraft.">
 
