@@ -21,10 +21,10 @@
 <!ENTITY text.help_of        "Med hjelp av">
 <!ENTITY text.thanks_to      "Mange takk til:">
 <!ENTITY text.images_by      "Bilder av">
-<!ENTITY text.weather        "Værbilder fra">
-<!ENTITY text.tango_icon     "Tango ikon">
+<!ENTITY text.weather        "Vær">
+<!ENTITY text.tango_icon     "Tango-ikon">
 <!ENTITY text.licensed       "Lisensiert av">
-<!ENTITY text.creative       "Kreative likheter">
+<!ENTITY text.creative       "Kreativasjoner">
 <!ENTITY text.license        "Lisens">
 
 <!ENTITY button.close        "Lukk">
