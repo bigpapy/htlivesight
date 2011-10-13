@@ -4,7 +4,7 @@
 <!ENTITY tab.matches         "Kamper">
 <!ENTITY tab.notifications   "Påminnelser">
 <!ENTITY tab.language        "Språk">
-<!ENTITY tab.other           "Other">
+<!ENTITY tab.other           "Annet">
 
 <!ENTITY general.open        "Åpne HTLiveSight">
 <!ENTITY general.new_tab     "I en ny fane">
@@ -33,10 +33,10 @@
 <!ENTITY other.reset         "Fjern autorisasjon">
 <!ENTITY other.reset_button  "Nullstill">
 <!ENTITY other.reverse       "Vis kamphendelsene fra bunnen og opp">
-<!ENTITY other.reverse.note  "Oppdatèr siden for at endringene skal tre i kraft
+<!ENTITY other.reverse.note  "Oppdatèr siden for at endringene skal tre i kraft">
 <!ENTITY other.events        "Hendelses sekvenser">
 <!ENTITY other.eventkey      "Hendelsesnøkkel">
-<!ENTITY other.eventkey.note "Vis hendelsesnøkkel i kommentarfelt
+<!ENTITY other.eventkey.note "Vis hendelsesnøkkel i kommentarfelt">
 <!ENTITY language.select     "Velg språk">
 <!ENTITY language.note       "Husk: Start HTLiveSight på nytt for at endringene skal tre i kraft.">
 
