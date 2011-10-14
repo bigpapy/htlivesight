@@ -1,4 +1,4 @@
-introduction=Ti si prebaèen na CHPP stranicu kako bi dobili autorizacijski kod. Ako ne, molimo vas da uklonite temporarely pop-up blokiranje ili odobri HTlivesight u popis iznimki.
+introduction=Ti si prebacen na CHPP stranicu kako bi dobili autorizacijski kod. Ako ne, molimo vas da uklonite temporarely pop-up blokiranje ili odobri HTlivesight u popis iznimki.
 insert=umetnite autorizacijski kod ovdje:
 ending=Sada je HTlivesight ovlašten. Kliknite OK za ponovno pokretanje aplikacije.
 error401=Greška 401: neovlaštenog pristupa. Morate dobiti odobrenje opet. Kliknite OK za nastavak.
@@ -7,7 +7,7 @@ error0=Greška 0: nema konekcije na internet.
 error=Greška
 serverON=Povezan
 serverOFF=Nije povezan
-reset_token=Authorization has been removed. Restart HTLS or wait the next update (< 1 min).
-no_htserver=You haven't selected the Hattrick server where you're logged into with your browser. Right click on background -> options -> general -> fill the form with your server number.
-error500=Error 500: internal server error (of Hattrick)
-error503=Error 503: CHPP service unavailable (temporary overload or maintenance)
+reset_token=Autorizacija je uklonjena. Ponovo pokrenite HTLS ili pričekajte sljedeće ažuriranje (< 1 min).
+no_htserver=Niste odabrali Hattrick poslužitelja, gdje ste prijavljeni s vašim preglednikom. Desnom tipkom miša kliknite na pozadinu -> Opcije -> Općenito -> ispuniti obrazac s vašim brojem poslužitelja.
+error500=Error 500: interna pogreška poslužitelja (na Hattrick)
+error503=Error 503: CHPP servis nedostupan (privremeno preopterećenje ili održavanje)
