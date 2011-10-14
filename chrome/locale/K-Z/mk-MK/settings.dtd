@@ -10,7 +10,7 @@
 <!ENTITY general.new_tab     "Во ново јазиче">
 <!ENTITY general.new_window  "Во нов прозорец">
 <!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.note        "Внеси го Hattrick серверот на кој си најавен (на пр. www96).">
 
 <!ENTITY matches.league      "Лигашки натпревари">
 <!ENTITY matches.get_league  "Земи лигашки натпревари">
@@ -29,17 +29,17 @@
 <!ENTITY notify.flash        "Flash наслови">
 <!ENTITY notify.status       "Лизгач на статусна лента">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
-<!ENTITY other.reset_button  "Reset">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Sequence of events">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.authorization "Авторизациски код">
+<!ENTITY other.reset         "Отстрани авторизација">
+<!ENTITY other.reset_button  "Ресет">
+<!ENTITY other.reverse       "Преглед на натпревари од долу нагоре">
+<!ENTITY other.reverse.note  "Освежи ја страната за да ги видиш промените.">
+<!ENTITY other.events        "Низа на настани">
+<!ENTITY other.eventkey      "ИД на настан">
+<!ENTITY other.eventkey.note "Покажи го ИД-то на настанот во коментарот">
 
 <!ENTITY language.select     "Одбери јазик">
-<!ENTITY language.note       "Потсетуваер: Рестартирај го Firefox за се случат промените.">
+<!ENTITY language.note       "Потсетување: Рестартирај го Firefox за се случат промените.">
 
 <!ENTITY button.cancel       "Откажи">
 <!ENTITY button.ok           "ОК">
