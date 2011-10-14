@@ -4,13 +4,13 @@
 <!ENTITY tab.matches         "Zápasy">
 <!ENTITY tab.notifications   "Upozornění na události">
 <!ENTITY tab.language        "Jazyk">
-<!ENTITY tab.other           "Other">
+<!ENTITY tab.other           "Ostatní">
 
 <!ENTITY general.open        "Otevření HTLiveSightu">
 <!ENTITY general.new_tab     "V novém panelu">
 <!ENTITY general.new_window  "V novém okně">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "Nastavení serveru">
+<!ENTITY general.note        "Doplň číslo serveru, na který jsi přihlášen(a) (např. www96).">
 
 <!ENTITY matches.league      "Ligové zápasy">
 <!ENTITY matches.get_league  "Zobrazovat zápasy ligy">
@@ -29,14 +29,14 @@
 <!ENTITY notify.flash        "Blikající záhlaví">
 <!ENTITY notify.status       "Upozornění ve stavovém řádku">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.authorization "Autorizační kód">
+<!ENTITY other.reset         "Odstranit autorizaci">
 <!ENTITY other.reset_button  "Reset">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Sequence of events">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.reverse       "Nejnovější události nahoře">
+<!ENTITY other.reverse.note  "Obnovit stránku, aby byl vidět efekt provedené změny.">
+<!ENTITY other.events        "Sekvence událostí">
+<!ENTITY other.eventkey      "Vysvětlení události">
+<!ENTITY other.eventkey.note "Ukázat vysvětlení události v komentáři">
 
 <!ENTITY language.select     "Vyber jazyk">
 <!ENTITY language.note       "Poznámka: Aby se nové nastavení projevilo, je nutné restartovat HTLiveSight.">
