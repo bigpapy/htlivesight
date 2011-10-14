@@ -36,7 +36,7 @@
 <!ENTITY other.reverse.note  "Rafraîchir la page pour appliquer vos changements.">
 <!ENTITY other.events        "Ordre des événements">
 <!ENTITY other.eventkey      "Codification des évènements">
-<!ENTITY other.eventkey.note "Voir la codification des évènements dans les commentaires">
+<!ENTITY other.eventkey.note "Voir le code dans les commentaires">
 
 <!ENTITY language.select     "Choix de la langue">
 <!ENTITY language.note       "Note : Redémarrez Firefox pour appliquer vos changements.">
