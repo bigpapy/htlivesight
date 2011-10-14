@@ -1,16 +1,16 @@
 <!ENTITY window.title        "HTLiveSight Opsjes">
 
 <!ENTITY tab.general         "Algemien">
-<!ENTITY tab.matches         "Wedstriden">
-<!ENTITY tab.notifications   "Meldingen">
+<!ENTITY tab.matches         "Wedstriiden">
+<!ENTITY tab.notifications   "Meldings">
 <!ENTITY tab.language        "Taal">
 <!ENTITY tab.other           "Other">
 
 <!ENTITY general.open        "Iepen HTLiveSight">
 <!ENTITY general.new_tab     "Yn in nij tabblad">
 <!ENTITY general.new_window  "Yn in nij finster">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "Server ynstellings">
+<!ENTITY general.note        "Foegje Hattrick server yn wêrop jo ynlogge binne (lykas www96).">
 
 <!ENTITY matches.league      "Kompetysjewedstryden">
 <!ENTITY matches.get_league  "Helje Kompetysjewedstryd  op">
@@ -29,14 +29,14 @@
 <!ENTITY notify.flash        "Knipperjende kop">
 <!ENTITY notify.status       "Statusbalk skowfinster">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
-<!ENTITY other.reset_button  "Reset">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Sequence of events">
+<!ENTITY other.authorization "Autorisaasje kode">
+<!ENTITY other.reset         "Ferwyderje autorisaasje">
+<!ENTITY other.reset_button  "Ferhelje">
+<!ENTITY other.reverse       "Draai wejefte wedstriidbarren om">
+<!ENTITY other.reverse.note  "Ferfraskje side om it effekt fan de feroarings te sjen.">
+<!ENTITY other.events        "Folchoarder fan barren">
 <!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey.note "Lit eventkey yn it kommentaer sjen">
 
 <!ENTITY language.select     "Kieze taal">
 <!ENTITY language.note       "Noot: HTLiveSight mat op nij starte wurden foardat de wizigings effekt ha.">
