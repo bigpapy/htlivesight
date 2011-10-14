@@ -13,8 +13,8 @@
 <!ENTITY login.remember_me   "Να με θυμάσαι">
 <!ENTITY login.button        "Είσοδος">
 <!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
-<!ENTITY login.by_event      "Per event">
+<!ENTITY login.speed         "Tαχύτητα">
+<!ENTITY login.by_event      "Για κάθε Γεγονός">
 
 <!ENTITY league.matches      "Αγώνες Πρωταθλήματος">
 <!ENTITY league.live_table   "Live Βαθμολογία">
