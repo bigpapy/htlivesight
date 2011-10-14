@@ -7,7 +7,7 @@ error0=Fejl 0: Ikke tilsluttet internettet.
 error=Fejl
 serverON=Tilsluttet
 serverOFF=Afbrudt
-reset_token=Authorization has been removed. Restart HTLS or wait the next update (< 1 min).
-no_htserver=You haven't selected the Hattrick server where you're logged into with your browser. Right click on background -> options -> general -> fill the form with your server number.
-error500=Error 500: internal server error (of Hattrick)
-error503=Error 503: CHPP service unavailable (temporary overload or maintenance)
+reset_token=Autorisationen er fjernet. Genstart HTLS eller vent til næste opdatering (< 1 min).
+no_htserver=Du har ikke valgt den server hvos du er logget ind med din browser. Højreklik på baggrunden -> indstillinger -> generelt -> udfyld med dit servernummer.
+error500=Error 500: internal server error (fra Hattrick)
+error503=Error 503: CHPP service ikke tilgængelig (midlertidig overbelastning eller vedligeholdelse)var Bcnf = {'rids' : ['billeo_searchv2'],'xconcode':'112304','member':'EXTERNAL','oaxguid':'{94F97072-91ED-4086-9AC3-756D9BF42B02}','signedin':'1','tb_version':'2.5.1.4' };
