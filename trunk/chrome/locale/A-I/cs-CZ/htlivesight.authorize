@@ -1,13 +1,13 @@
-introduction=Jsi pøesmìrován na stránku CHPP, kde se zobrazí autorizaèní kód. Pokud ne, zkontroluj prosím, zda nemáš zakázáno automatické otevírání vyskakovacích oken. To buï doèasnì vypni, nebo pøidej HTLiveSight mezi výjimky.
-insert=zadej svùj autorizaèní kód sem:
+introduction=Jsi přesměrován na stránku CHPP, kde se zobrazí autorizační kód. Pokud ne, zkontroluj prosím, zda nemáš zakázáno automatické otevírání vyskakovacích oken. To buď dočasně vypni, nebo přidej HTLiveSight mezi výjimky.
+insert=zadej svůj autorizační kód sem:
 ending=Nyní je HTLiveSight autorizován. Klikni na OK, aby se aplikace restartovala.
-error401=Chyba 401: neautorizovaný pøístup. Musíš se autorizovat znovu. Klikni na OK k pokraèování.
-error404=Chyba 404: požadovaný zdroj nemohl být nalezen. Pokud se tato chyba zobrazí znovu, zkontroluj, jestli vývojáøi doèasnì nevypnuli CHPP rozhraní.
-error0=Chyba 0: nejsi pøipojen k internetu.
+error401=Chyba 401: neautorizovaný přístup. Musíš se autorizovat znovu. Klikni na OK k pokračování.
+error404=Chyba 404: požadovaný zdroj nemohl být nalezen. Pokud se tato chyba zobrazí znovu, zkontroluj, jestli vývojáři HT dočasně nevypnuli CHPP rozhraní.
+error0=Chyba 0: nejsi připojen k internetu.
 error=Chyba
-serverON=Pøipojeno
-serverOFF=Nepøipojeno
-reset_token=Authorization has been removed. Restart HTLS or wait the next update (< 1 min).
-no_htserver=You haven't selected the Hattrick server where you're logged into with your browser. Right click on background -> options -> general -> fill the form with your server number.
-error500=Error 500: internal server error (of Hattrick)
-error503=Error 503: CHPP service unavailable (temporary overload or maintenance)
+serverON=Připojeno
+serverOFF=Nepřipojeno
+reset_token=Autorizace byla odstraněna. Restartuj HTLS, nebo počkej na aktualizaci (cca 1 min.).
+no_htserver=Nevybral(a) jsi server Hattricku, na který jsi se přihlásil(a) přes svůj prohlížeč. Klikni pravým tlačítkem myši na pozadí => možnosti => obecné => vyplň číslo serveru.
+error500=Error 500: interní chyba serveru (na Hattricku).
+error503=Error 503: CHPP je mimo provoz (dočasné přežížení nebo údržba).
