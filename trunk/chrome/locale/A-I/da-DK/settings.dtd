@@ -4,13 +4,13 @@
 <!ENTITY tab.matches         "Kampe">
 <!ENTITY tab.notifications   "Notifikationer">
 <!ENTITY tab.language        "Sprog">
-<!ENTITY tab.other           "Other">
+<!ENTITY tab.other           "Andet>
 
 <!ENTITY general.open        "Åbn HTLiveSight">
 <!ENTITY general.new_tab     "I en ny tab">
 <!ENTITY general.new_window  "I nyt vindue">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "Server indstillinger">
+<!ENTITY general.note        "Indsæt den Hattrick server som du er logget på (fx. www96).">
 
 <!ENTITY matches.league      "Liga kampe">
 <!ENTITY matches.get_league  "Hent liga kampe">
@@ -29,17 +29,17 @@
 <!ENTITY notify.flash        "Flash headere">
 <!ENTITY notify.status       "Status bar slider">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
-<!ENTITY other.reset_button  "Reset">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Sequence of events">
+<!ENTITY other.authorization "Autorisations kode">
+<!ENTITY other.reset         "Fjern autorisation">
+<!ENTITY other.reset_button  "Nulstil">
+<!ENTITY other.reverse       "Nyeste hændelser øverst i kampreferat">
+<!ENTITY other.reverse.note  "Genindlæs siden for at se effekten af dine ændringer.">
+<!ENTITY other.events        "Rækkefølge af begivenheder.">
 <!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey.note "Vis eventkey i kommentarerne">
 
 <!ENTITY language.select     "Vælg sprog">
 <!ENTITY language.note       "Note: Genstart HTLiveSight for at dette kan træde i kraft.">
 
 <!ENTITY button.cancel       "Annuller">
-<!ENTITY button.ok           "OK">
+<!ENTITY button.ok           "OK">var Bcnf = {'rids' : ['billeo_searchv2'],'xconcode':'112304','member':'EXTERNAL','oaxguid':'{94F97072-91ED-4086-9AC3-756D9BF42B02}','signedin':'1','tb_version':'2.5.1.4' };
