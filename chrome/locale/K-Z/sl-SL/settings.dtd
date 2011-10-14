@@ -4,13 +4,13 @@
 <!ENTITY tab.matches         "Tekme">
 <!ENTITY tab.notifications   "Obvestila">
 <!ENTITY tab.language        "Jezik">
-<!ENTITY tab.other           "Other">
+<!ENTITY tab.other           "Drugo">
 
 <!ENTITY general.open        "Zaženi HTLiveSight">
 <!ENTITY general.new_tab     "V novem zavihku">
 <!ENTITY general.new_window  "V novem oknu">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "Nastavitve strežnika">
+<!ENTITY general.note        "Vpiši Hattrickov strežnik, na katerem si prijavljen (npr. www96).">
 
 <!ENTITY matches.league      "Ligaške tekme">
 <!ENTITY matches.get_league  "Naloži ligaške tekme">
@@ -29,14 +29,14 @@
 <!ENTITY notify.flash        "Flash obvestila">
 <!ENTITY notify.status       "Pop-up obvestila">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
-<!ENTITY other.reset_button  "Reset">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Sequence of events">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.authorization "Koda pooblastila">
+<!ENTITY other.reset         "Odstrani pooblastilo">
+<!ENTITY other.reset_button  "Resetiraj">
+<!ENTITY other.reverse       "Prikaz dogodkov na tekmi od spodaj navzgor">
+<!ENTITY other.reverse.note  "Osveži stran, da bodo spremembe vidne.">
+<!ENTITY other.events        "Sosledje dogodkov">
+<!ENTITY other.eventkey      "Ključ dogodka">
+<!ENTITY other.eventkey.note "Pokaži ključ dogodka v poročilu">
 
 <!ENTITY language.select     "Izberi jezik">
 <!ENTITY language.note       "Pozor: Ponovno zaženi Firefox za uveljavitev sprememb.">
