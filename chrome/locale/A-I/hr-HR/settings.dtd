@@ -29,14 +29,14 @@
 <!ENTITY notify.flash        "Bljeskanje zaglavlja">
 <!ENTITY notify.status       "Obavijest iz statusne trake">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
-<!ENTITY other.reset_button  "Reset">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Sequence of events">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.authorization "Autorizacijski kod">
+<!ENTITY other.reset         "Odstrani autorizaciju">
+<!ENTITY other.reset_button  "Resetiraj">
+<!ENTITY other.reverse       "Odozdo prema gore prikaz događaja utakmice">
+<!ENTITY other.reverse.note  "Osvježi stranicu da biste vidjeli učinak promjene.">
+<!ENTITY other.events        "Slijed događaja">
+<!ENTITY other.eventkey      "Ključni događaj">
+<!ENTITY other.eventkey.note "Prikaži ključni događaj u komentaru">
 
 <!ENTITY language.select     "Odaberi jezik">
 <!ENTITY language.note       "Napomena: Ponovno pokrenite HTLiveSight radi potvrde ove promjene.">
