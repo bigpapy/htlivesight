@@ -1,4 +1,4 @@
-introduction=Budeš presmerovaný na stránku chpp, kde ti bude udelený autorizaèný kód. Ak sa tak nestane, doèasne zakáž blokovanie vyskakovacích okien alebo ude¾ výnimku pre program HTlivesight.
+﻿introduction=Budeš presmerovaný na stránku chpp, kde ti bude udelený autorizaèný kód. Ak sa tak nestane, doèasne zakáž blokovanie vyskakovacích okien alebo ude¾ výnimku pre program HTlivesight.
 insert=sem zadaj tvoj autorizaèný kód:
 ending=HTlivesight je teraz autorizovaný. Klikni na OK pre reštartovanie aplikácie.
 error401=Chyba 401: neautorizovaný prístup. Musíš získa tvoju autorizáciu znova. Klikni na OK pre pokraèovanie.
