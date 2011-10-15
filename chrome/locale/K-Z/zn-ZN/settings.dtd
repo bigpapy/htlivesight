@@ -4,13 +4,13 @@
 <!ENTITY tab.matches         "比赛设置">
 <!ENTITY tab.notifications   "提示设置">
 <!ENTITY tab.language        "语言">
-<!ENTITY tab.other           "Other">
+<!ENTITY tab.other           "其它">
 
 <!ENTITY general.open        "打开 HTLiveSight">
 <!ENTITY general.new_tab     "在新页面打开">
 <!ENTITY general.new_window  "在新窗口打开">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "服务器设置">
+<!ENTITY general.note        "输入你希望登陆的服务器地址 (例如：www96).">
 
 <!ENTITY matches.league      "联赛比赛">
 <!ENTITY matches.get_league  "获取联赛比赛">
@@ -29,14 +29,14 @@
 <!ENTITY notify.flash        "标题闪动">
 <!ENTITY notify.status       "状态栏滚动">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
-<!ENTITY other.reset_button  "Reset">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Sequence of events">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.authorization "授权码">
+<!ENTITY other.reset         "取消授权">
+<!ENTITY other.reset_button  "重设">
+<!ENTITY other.reverse       "翻转比赛事件显示顺序">
+<!ENTITY other.reverse.note  "刷新页面后设置生效.">
+<!ENTITY other.events        "事件顺序">
+<!ENTITY other.eventkey      "关键事件">
+<!ENTITY other.eventkey.note "在评述中显示关键事件">
 
 <!ENTITY language.select     "选择语言">
 <!ENTITY language.note       "提示: 重启HTLiveSight以保存生效.">
