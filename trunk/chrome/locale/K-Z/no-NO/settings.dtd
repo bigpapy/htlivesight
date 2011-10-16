@@ -35,8 +35,8 @@
 <!ENTITY other.reverse       "Vis kamphendelsene fra bunnen og opp">
 <!ENTITY other.reverse.note  "Oppdatèr siden for at endringene skal tre i kraft">
 <!ENTITY other.events        "Hendelses sekvenser">
-<!ENTITY other.eventkey      "Hendelsesnøkkel">
-<!ENTITY other.eventkey.note "Vis hendelsesnøkkel i kommentarfelt">
+<!ENTITY other.eventkey      "Eventkey">
+<!ENTITY other.eventkey.note "Show eventkey in the commentary">
 <!ENTITY language.select     "Velg språk">
 <!ENTITY language.note       "Husk: Start HTLiveSight på nytt for at endringene skal tre i kraft.">
 
