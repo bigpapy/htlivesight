@@ -13,8 +13,8 @@
 <!ENTITY login.remember_me   "Запомни ме">
 <!ENTITY login.button        "Акаунт">
 <!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
-<!ENTITY login.by_event      "Per event">
+<!ENTITY login.speed         "Скорост">
+<!ENTITY login.by_event      "На събитие">
 
 <!ENTITY league.matches      "Мачове в групата">
 <!ENTITY league.live_table   "Класиране при текущите резултати">
