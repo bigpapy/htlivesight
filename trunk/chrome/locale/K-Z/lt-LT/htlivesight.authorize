@@ -9,5 +9,5 @@ serverON=prisijungta
 serverOFF=atsijungta
 reset_token=Autorizacijos kodas ištrintas. Perkraukite HTLS arba laukite kito atnaujinimo (< 1 min).
 no_htserver=Nepasirinkote Hattrick serverio, prie kurio esate prisijungę. Paspaudę dešinį pelės mygtuką ant fono pasirinkite „Nustatymai -> Bendri“ ir pasirinkite Hattrick serverį.
-error500=Error 500: internal server error (of Hattrick)
-error503=Error 503: CHPP service unavailable (temporary overload or maintenance)
+error500=Klaida Nr. 500: vidinė „Hattrick“ serverio klaida
+error503=Klaida Nr. 503: CHPP sąsaja nepasiekiama (perdidelė apkrova arba išjungta)
