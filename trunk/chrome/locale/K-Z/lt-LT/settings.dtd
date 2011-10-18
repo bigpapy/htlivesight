@@ -31,12 +31,12 @@
 
 <!ENTITY other.authorization "Autorizacijos kodas">
 <!ENTITY other.reset         "Nutraukti autorizaciją">
-<!ENTITY other.reset_button  "Reset">
+<!ENTITY other.reset_button  "Nutraukti">
 <!ENTITY other.reverse       "Rungtynių įvykiai rodomi iš apačios į viršų">
 <!ENTITY other.reverse.note  "Pakeitus perkrauti puslapį">
 <!ENTITY other.events        "Įvykių tvarka">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey      "Įvykių kodai">
+<!ENTITY other.eventkey.note "Rodyti įvykių kodus">
 
 <!ENTITY language.select     "Pasirinkti kalbą">
 <!ENTITY language.note       "Pastaba: būtina perkrauti „HTLiveSight“.">
