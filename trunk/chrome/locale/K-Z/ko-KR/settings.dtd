@@ -4,37 +4,37 @@
 <!ENTITY tab.matches         "경기들">
 <!ENTITY tab.notifications   "알림">
 <!ENTITY tab.language        "언어">
-<!ENTITY tab.other           "Other">
+<!ENTITY tab.other           "그 외">
 
 <!ENTITY general.open        "HTLiveSight 열기">
 <!ENTITY general.new_tab     "새 탭에 열기">
 <!ENTITY general.new_window  "새 창에 열기">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "서버 설정">
+<!ENTITY general.note        "현재 접속중인 서버 번호를 입력하십시오 (ie. www96).">
 
 <!ENTITY matches.league      "리그경기">
 <!ENTITY matches.get_league  "리그경기 가져오기">
 <!ENTITY matches.played      "If played in">
 <!ENTITY matches.hours       "hours.">
-<!ENTITY matches.friends     "Friends">
-<!ENTITY matches.get_friends "Get friends' matches">
-<!ENTITY matches.scorers     "Scorers">
+<!ENTITY matches.friends     "친구">
+<!ENTITY matches.get_friends "친구의 경기 가져오기">
+<!ENTITY matches.scorers     "득점자">
 <!ENTITY matches.list        "List scorers in header">
 <!ENTITY matches.window      "창">
 <!ENTITY matches.lines       "Lines to display in minimize mode">
 
 <!ENTITY notify.notify       "알림">
 <!ENTITY notify.enable_sound "소리 알림 켜기">
-<!ENTITY notify.only         "Only in opened matches">
+<!ENTITY notify.only         "열어 놓은 경기에서만">
 <!ENTITY notify.flash        "Flash headers">
 <!ENTITY notify.status       "Status bar slider">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
-<!ENTITY other.reset_button  "Reset">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Sequence of events">
+<!ENTITY other.authorization "인증 코드">
+<!ENTITY other.reset         "인증 코드 제거">
+<!ENTITY other.reset_button  "초기화">
+<!ENTITY other.reverse       "경기 이벤트를 아래쪽부터 뜨게 하기">
+<!ENTITY other.reverse.note  "효과를 적용하려면 페이지를 새로고침 하십시오.">
+<!ENTITY other.events        "이벤트 순서">
 <!ENTITY other.eventkey      "Eventkey">
 <!ENTITY other.eventkey.note "Show eventkey in the commentary">
 
