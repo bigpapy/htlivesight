@@ -10,10 +10,10 @@
 <!ENTITY login.teamId        "팀의 ID를 입력하세요.">
 <!ENTITY login.username      "사용자 이름">
 <!ENTITY login.security_code "보안 코드">
-<!ENTITY login.remember_me   "Remember me">
+<!ENTITY login.remember_me   "아이디 기억하기">
 <!ENTITY login.button        "로그인">
 <!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
+<!ENTITY login.speed         "속도">
 <!ENTITY login.by_event      "Per event">
 
 <!ENTITY league.matches      "리그 경기">
