@@ -115,7 +115,9 @@ var Time = {
  //   	m=Math.round((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed;
    // 	m= Time.reLiveMinute
     //	alert("Time.reLiveMinute="+Time.reLiveMinute+" m="+m);
-       	if (m>Time.reLiveMinute && m>0) m=Time.reLiveMinute;
+    	if(htlivesight.prefs.other.reLiveByEvent)
+    	Time.reliveMinute= match.event.list["_"+match.event.list.last].minute;
+    	if (m>Time.reLiveMinute && m>0) m=Time.reLiveMinute;
    //    	alert("m="+m);
             
     };

@@ -20,18 +20,22 @@ htlivesight.Settings = {
               : htlivesight.Settings.OPEN_IN.WINDOW;
     document.getElementById("openin").selectedIndex=ndx;
     document.getElementById("hattrickServer").value = prefs.general.hattrickServer;
-    if (prefs.matches.league.get) {
-      document.getElementById("chkGetLeague").checked=true;
-      if (prefs.matches.league.within) {
-        document.getElementById("txtGetLeagueWithinHours").disabled=false;
-      } else {
-        document.getElementById("txtGetLeagueWithinHours").disabled=true;
-      }
-    } else {
-      document.getElementById("chkGetLeague").checked=false;
-      document.getElementById("chkGetLeagueWithin").disabled=true;
-      document.getElementById("txtGetLeagueWithinHours").disabled=true;
+    if(prefs.other.reLive) {
+    	document.getElementById("chkGetLeague").disabled=true;
+    	prefs.matches.league.get=false;
     }
+    if (prefs.matches.league.get) {
+    	document.getElementById("chkGetLeague").checked=true;
+    	if (prefs.matches.league.within) {
+    		document.getElementById("txtGetLeagueWithinHours").disabled=false;
+    	} else {
+    		document.getElementById("txtGetLeagueWithinHours").disabled=true;
+    	}
+    } else {
+    	document.getElementById("chkGetLeague").checked=false;
+    	document.getElementById("chkGetLeagueWithin").disabled=true;
+    	document.getElementById("txtGetLeagueWithinHours").disabled=true;
+   	}
     document.getElementById("chkGetLeagueWithin").checked=prefs.matches.league.within;
     document.getElementById("txtGetLeagueWithinHours").value=prefs.matches.league.withinHours;
 
@@ -41,7 +45,7 @@ htlivesight.Settings = {
         document.getElementById("txtGetFriendsWithinHours").disabled=false;
       } else {
         document.getElementById("txtGetFriendsWithinHours").disabled=true;
-      }
+      };
     } else {
       document.getElementById("chkGetFriends").checked=false;
       document.getElementById("chkGetFriendsWithin").disabled=true;
@@ -57,7 +61,7 @@ htlivesight.Settings = {
     document.getElementById("chkSound").checked=prefs.notification.sound;
     if (!prefs.notification.sound) {
       document.getElementById("chkSoundOnlyOpened").disabled=true;
-    }
+    };
     document.getElementById("chkSoundOnlyOpened").checked = prefs.notification.soundOnlyOpened;
     document.getElementById("chkFlash").checked = prefs.notification.flash;
     document.getElementById("chkSlider").checked = prefs.notification.slider;
