@@ -12,9 +12,9 @@
 <!ENTITY login.security_code "Mã an toàn">
 <!ENTITY login.remember_me   "Ghi nhớ tôi">
 <!ENTITY login.button        "Đăng nhập">
-<!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
-<!ENTITY login.by_event      "Per event">
+<!ENTITY login.re_live       "Xem lại">
+<!ENTITY login.speed         "Tốc độ">
+<!ENTITY login.by_event      "Theo sự kiện">
 
 <!ENTITY league.matches      "Các trận đấu giải">
 <!ENTITY league.live_table   "Bảng xếp hạng hiện tại">
