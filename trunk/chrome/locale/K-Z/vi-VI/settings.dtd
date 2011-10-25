@@ -4,13 +4,13 @@
 <!ENTITY tab.matches         "Trận đấu">
 <!ENTITY tab.notifications   "Thông báo">
 <!ENTITY tab.language        "Ngôn ngữ">
-<!ENTITY tab.other           "Other">
+<!ENTITY tab.other           "Khác">
 
 <!ENTITY general.open        "Mở HTLiveSight">
 <!ENTITY general.new_tab     "Trong tab mới">
 <!ENTITY general.new_window  "trong cửa sổ mới">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "Cài đặt Server">
+<!ENTITY general.note        "Điền server Hattrick mà bạn đang đăng nhập (ví dụ. www96).">
 
 <!ENTITY matches.league      "Các trận đấu bảng">
 <!ENTITY matches.get_league  "Lấy các trận đấu bảng">
@@ -29,14 +29,14 @@
 <!ENTITY notify.flash        "Các dòng tít phía trên">
 <!ENTITY notify.status       "Thanh trượt trạng thái">
 
-<!ENTITY other.authorization "Authorization code">
-<!ENTITY other.reset         "Remove authorization">
+<!ENTITY other.authorization "Mã ủy quyền">
+<!ENTITY other.reset         "Bỏ ủy quyền">
 <!ENTITY other.reset_button  "Reset">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Sequence of events">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.reverse       "Đảo ngược hiển thị sự kiện trận đấu">
+<!ENTITY other.reverse.note  "Tải lại trang để thấy sự thay đổi.">
+<!ENTITY other.events        "Chuỗi sự kiện">
+<!ENTITY other.eventkey      "Sự kiện quan trọng">
+<!ENTITY other.eventkey.note "Đưa sự kiện quan trọng vào trong bình luận">
 
 <!ENTITY language.select     "Chọn ngôn ngữ">
 <!ENTITY language.note       "Chú ý: Khởi động lại Firefox để kích hoạt.">
