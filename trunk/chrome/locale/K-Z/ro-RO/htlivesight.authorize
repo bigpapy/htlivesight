@@ -9,5 +9,5 @@ serverON=Conectat
 serverOFF=Deconectat
 reset_token=Codul de autorizare a fost şters. Reporneşte HTLS sau aşteaptă următorul update (< 1 min).
 no_htserver=Nu ai selectat corect serverul Hattrick pe care eşti logat, click dreapta oriunde pe fundal şi click pe -> opţiuni -> general şi setează numărul corect al serverului Hattrick.
-error500=Error 500: internal server error (of Hattrick)
-error503=Error 503: CHPP service unavailable (temporary overload or maintenance)
+error500=Error 500: eroare de server intern (din Hattrick)
+error503=Error 503: Serviciul CHPP indisponibil (supraîncărcare temporara sau mententanţă)
