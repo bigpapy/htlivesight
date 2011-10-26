@@ -20,10 +20,10 @@ htlivesight.Settings = {
               : htlivesight.Settings.OPEN_IN.WINDOW;
     document.getElementById("openin").selectedIndex=ndx;
     document.getElementById("hattrickServer").value = prefs.general.hattrickServer;
-    if(prefs.other.reLive) {
+ /*   if(prefs.other.reLive) {
     	document.getElementById("chkGetLeague").disabled=true;
     	prefs.matches.league.get=false;
-    }
+    }*/
     if (prefs.matches.league.get) {
     	document.getElementById("chkGetLeague").checked=true;
     	if (prefs.matches.league.within) {
