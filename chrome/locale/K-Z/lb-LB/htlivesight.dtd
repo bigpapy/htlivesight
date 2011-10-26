@@ -7,29 +7,29 @@
 <!ENTITY menu.about          "Iwwert HTLiveSight">
 
 <!ENTITY login.label         "Aloggen">
-<!ENTITY login.teamId        "Gef d'Team-ID vun dengem Team an">
+<!ENTITY login.teamId        "Gef d'Veräins-ID vun dengem Veräin an">
 <!ENTITY login.username      "User-Numm">
 <!ENTITY login.security_code "Security Code">
 <!ENTITY login.remember_me   "Erenner mech">
-<!ENTITY login.button        "Login">
+<!ENTITY login.button        "Connectéiren">
 <!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
-<!ENTITY login.by_event      "Per event">
+<!ENTITY login.speed         "Vitesse">
+<!ENTITY login.by_event      "Pro Evénement">
 
 <!ENTITY league.matches      "Liga-Mätscher">
 <!ENTITY league.live_table   "Live Tabell">
 <!ENTITY league.position     "#">
-<!ENTITY league.team         "Team">
+<!ENTITY league.team         "Veräin">
 <!ENTITY league.played       "P">
 <!ENTITY league.goals        "G">
 <!ENTITY league.goal_diff    "GD">
-<!ENTITY league.points       "PTS">
+<!ENTITY league.points       "PKT">
 
 <!ENTITY matches.list        "Match Lescht">
 <!ENTITY matches.add         "Match dobai maachen">
 <!ENTITY matches.by_match    "durch  d'Match-Id">
-<!ENTITY matches.by_team     "durch d'Team-Id">
-<!ENTITY matches.youth       "Jugend?">
+<!ENTITY matches.by_team     "durch d'Veräins-Id">
+<!ENTITY matches.youth       "Jugendéquipe">
 
 <!ENTITY friends.title       "Frënn">
 <!ENTITY friends.remove      "weg huelen">
