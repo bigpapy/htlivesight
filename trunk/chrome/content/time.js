@@ -115,9 +115,14 @@ var Time = {
  //   	m=Math.round((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed;
    // 	m= Time.reLiveMinute
     //	alert("Time.reLiveMinute="+Time.reLiveMinute+" m="+m);
-    	if(htlivesight.prefs.other.reLiveByEvent)
-    	Time.reliveMinute= match.event.list["_"+match.event.list.last].minute;
-    	if (m>Time.reLiveMinute && m>0) m=Time.reLiveMinute;
+    	if(htlivesight.prefs.other.reLiveByEvent){
+    		Time.reLiveMinute= match.event.list["_"+match.event.list.last].minute;
+    	//	if (Time.reLiveMinute > 45 ) Time.reLiveMinute+=15;
+    	}
+    	if (m>Time.reLiveMinute && m>0)	m=Time.reLiveMinute;
+    
+    	
+    	
    //    	alert("m="+m);
             
     };
@@ -133,9 +138,9 @@ var Time = {
     	 }
     } // sounds of beginning first half and second half (end). (added by bigpapy)
     if(m <= 45) return "" + m + strings.getString("time.min") + " " + strings.getString("time.first_half");
-    if(m < 59) return strings.getString("time.half_time") + ". " + strings.getString("time.second_half") + " "+ strings.getString("time.starts_in") + " " + (60-m) + " " + strings.getString("time.minutes");
-    if(m == 59) return strings.getString("time.half_time") + ". " + strings.getString("time.second_half") + " "+ strings.getString("time.starts_in") + " " + (60-m) + " " + strings.getString("time.minute");
-    m = m-15; // second half
+    if((!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent)) && m < 59) return strings.getString("time.half_time") + ". " + strings.getString("time.second_half") + " "+ strings.getString("time.starts_in") + " " + (60-m) + " " + strings.getString("time.minutes");
+    if((!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent)) && m == 59) return strings.getString("time.half_time") + ". " + strings.getString("time.second_half") + " "+ strings.getString("time.starts_in") + " " + (60-m) + " " + strings.getString("time.minute");
+    if (!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent)) m = m-15; // second half
     if(m <= 90) return "" + m + strings.getString("time.min") + " " + strings.getString("time.second_half");
     // extra time
     if(m <= 120) return "" + m + strings.getString("time.min") + " " + strings.getString("time.extra_time");
