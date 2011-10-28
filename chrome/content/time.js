@@ -81,6 +81,7 @@ var Time = {
     
     var time = Time.hattrickTime - startTime; // time difference in miliseconds
     var now = new Date();
+ //   if(htlivesight.prefs.other.reLive) time=match.event.list["_"+match.event.list.last].minute*1000;
       
     if (time<0) {
       var seconds = Math.round(Math.abs(time)/1000); // time to go in seconds
@@ -107,36 +108,48 @@ var Time = {
     var m = minutes; // first half
     
     // re live time added by bigpapy
-    if(htlivesight.prefs.other.reLive){
-    	var realTime = Time.hattrickTime - match.date;
-    	var realMinute = Math.round(realTime/60000);
+  
+   if(htlivesight.prefs.other.reLive){
+ //   	var realTime = Time.hattrickTime - match.date;
+ //   	var realMinute = Math.round(realTime/60000);
     	//bigpapy: added that quantity because at fast speed it is too short.
     	noWhistleTime=Time.noWhistleTime/htlivesight.prefs.other.reLiveSpeed+htlivesight.prefs.other.reLiveSpeed*100;
  //   	m=Math.round((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed;
    // 	m= Time.reLiveMinute
     //	alert("Time.reLiveMinute="+Time.reLiveMinute+" m="+m);
     	if(htlivesight.prefs.other.reLiveByEvent){
-    		Time.reLiveMinute= match.event.list["_"+match.event.list.last].minute;
+    		try{
+    			Time.reLiveMinute= match.event.list["_"+match.event.list.last].minute;
+    		}catch(e){
+    			Time.reLiveMinute=0;
+    		}
     	//	if (Time.reLiveMinute > 45 ) Time.reLiveMinute+=15;
     	}
+    //	alert("m="+m+" Time.reLiveMinute="+Time.reLiveMinute);
     	if (m>Time.reLiveMinute && m>0)	m=Time.reLiveMinute;
+ //   	alert("noWhistleTime="+noWhistleTime+" Time.noWhistleTime"+Time.noWhistleTime
+  //  			+" Time.whistleTime="+Time.whistleTime);
     
     	
     	
    //    	alert("m="+m);
             
     };
+
     // re live time end adding by bigpapy
     // sounds of beginning first half and second half. (added by bigpapy)
     if((m==0 || m==60)&&((now-Time.whistleTime)>noWhistleTime)){
     	 if (htlivesight.prefs.notification.sound && !Match.List["_"+match.id+"_"+match.youth].window.mute) {
+    		 try{
     	        if (!htlivesight.prefs.notification.soundOnlyOpened
-    	            || document.getElementById("live_"+match.id+"_"+match.youth).hidden==false) {
+    	        || document.getElementById("live_"+match.id+"_"+match.youth).hidden==false) {
     	        	htlivesight.Sound.sample.beginning.play();
-    	        	Time.whistleTime=now;
-    	        }
+    	        	Time.whistleTime=0+now;
+    	        	}
+    	        }catch(e){}
     	 }
     } // sounds of beginning first half and second half (end). (added by bigpapy)
+ //   alert("before return");
     if(m <= 45) return "" + m + strings.getString("time.min") + " " + strings.getString("time.first_half");
     if((!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent)) && m < 59) return strings.getString("time.half_time") + ". " + strings.getString("time.second_half") + " "+ strings.getString("time.starts_in") + " " + (60-m) + " " + strings.getString("time.minutes");
     if((!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent)) && m == 59) return strings.getString("time.half_time") + ". " + strings.getString("time.second_half") + " "+ strings.getString("time.starts_in") + " " + (60-m) + " " + strings.getString("time.minute");
