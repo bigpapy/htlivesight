@@ -121,7 +121,7 @@ var Time = {
     		try{
     			Time.reLiveMinute= match.event.list["_"+match.event.list.last].minute;
     		}catch(e){
-    			Time.reLiveMinute=0;
+    		//	Time.reLiveMinute=0;
     		}
     	//	if (Time.reLiveMinute > 45 ) Time.reLiveMinute+=15;
     	}
