@@ -101,12 +101,12 @@ Live.ParseLive = function (response, source, addtime) {
 		  var strings = document.getElementById("strings");		  alert("Live.Parselive2 error" + response);
 		  alert(strings.getString("message.error_reading") + " " + server + ": " + errorMsg);
 	  }
-	//  alert("Live.Parselive3" + response);	  Time.hattrickTime = Time.parseFetchDate(response);	  	 	  	  // bigpapy adding for reLive	  if(htlivesight.prefs.other.reLive){		  if(Time.reLiveStartTime == 0) Time.reLiveStartTime = Time.hattrickTime; 		  //Used round because elapsedTime<= didn't work.		  elapsedTime=Math.round((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed+addtime;	//	  alert("elapsedTime:"+elapsedTime);		//  alert(" Time.reLiveStartTime="+Time.reLiveStartTime+" Time.hattrickTime"+Time.hattrickTime+" addtime="+addtime+" elapsedTime="+ elapsedTime);		  if (elapsedTime) Time.reLiveMinute=elapsedTime;		  if (elapsedTime>60) elapsedTime-=15;		  if (elapsedTime>45 && elapsedTime<61) elapsedTime=45;// 	  alert("Time.reLiveStartTime: " + Time.reLiveStartTime+//			  "elapsedTime: "+ elapsedTime);	  }	  // bigpapy end adding reLive	
+	//  alert("Live.Parselive3" + response);	  Time.hattrickTime = Time.parseFetchDate(response);	  	 	  	  // bigpapy adding for reLive	  if(htlivesight.prefs.other.reLive){		  if(Time.reLiveStartTime == 0) Time.reLiveStartTime = Time.hattrickTime; 		  //Used round because elapsedTime<= didn't work.		  elapsedTime=Math.round((Time.hattrickTime - Time.reLiveStartTime)/60000)*htlivesight.prefs.other.reLiveSpeed+addtime;	//	  alert("elapsedTime:"+elapsedTime);		//  alert(" Time.reLiveStartTime="+Time.reLiveStartTime+" Time.hattrickTime"+Time.hattrickTime+" addtime="+addtime+" elapsedTime="+ elapsedTime);		  if (elapsedTime) Time.reLiveMinute=elapsedTime;		  if (elapsedTime>60) elapsedTime-=15;		  if (elapsedTime>45 && elapsedTime<61) elapsedTime=45; //	  alert("Time.reLiveStartTime: " + Time.reLiveStartTime+//			  "elapsedTime: "+ elapsedTime);	  }	  // bigpapy end adding reLive	
 	  regExp = new RegExp(regStr, "g");
 
 	  var count = 0;    //	  alert("Live.Parselive5" + response);	    matchNodes = response.getElementsByTagName("Match");//	  alert("Live.Parselive6");
-	  // for(;found = regExp.exec(response);) {	  	  // modified by bigpapy	    for(var j=0;j< matchNodes.length ;j++){	  //for(var j=1;j< matchNodes.length ;j=j+2){		  htlivesight.Log.Meter(((j+1)/matchNodes.length)*100);		  matchNode = matchNodes[j];		//  alert("Live.Parselive7");		//  alert("Util.Parse MatchID" + Util.Parse("MatchID", matchNode));		//  alert("Util.Parse MatchDate" + Time.parseDate(Util.Parse("MatchDate", matchNode)));		//  alert("Live.ParseHomeTeam(matchNode) " + Live.ParseHomeTeam(matchNode));		//  alert("Live.ParseHomeGoals(matchNode)" + Live.ParseHomeGoals(matchNode));		//  alert("Live.ParseAwayTeam(matchNode)" + Live.ParseAwayTeam(matchNode));		//  alert("Live.ParseAwayGoals(matchNode)" + Live.ParseAwayGoals(matchNode));		//  alert("Events.ParseList(matchNode.getElementsByTagName(EventList))"+ Events.ParseList(matchNode.getElementsByTagName("EventList")[0]));		//  alert("Live.ParseYouth(matchNode)"+ Live.ParseYouth(matchNode));		  
-		  count++;
+	  // for(;found = regExp.exec(response);) {	  	  // modified by bigpapy//	    alert ("matchNodes.length: "+matchNodes.length);	    for(var j=0;j< matchNodes.length ;j++){	  //for(var j=1;j< matchNodes.length ;j=j+2){		  htlivesight.Log.Meter(((j+1)/matchNodes.length)*100);		  matchNode = matchNodes[j];		//  alert("Live.Parselive7");		//  alert("Util.Parse MatchID" + Util.Parse("MatchID", matchNode));		//  alert("Util.Parse MatchDate" + Time.parseDate(Util.Parse("MatchDate", matchNode)));		//  alert("Live.ParseHomeTeam(matchNode) " + Live.ParseHomeTeam(matchNode));		//  alert("Live.ParseHomeGoals(matchNode)" + Live.ParseHomeGoals(matchNode));		//  alert("Live.ParseAwayTeam(matchNode)" + Live.ParseAwayTeam(matchNode));		//  alert("Live.ParseAwayGoals(matchNode)" + Live.ParseAwayGoals(matchNode));		//  alert("Events.ParseList(matchNode.getElementsByTagName(EventList))"+ Events.ParseList(matchNode.getElementsByTagName("EventList")[0]));		//  alert("Live.ParseYouth(matchNode)"+ Live.ParseYouth(matchNode));		  
+		  count++;	//	  alert("j="+j);
 		  match = new Match(
 				  //     Util.Parse("<MatchID>(.*?)</MatchID>", found[1]),				  //	  xml.getElementsByTagName("MatchID")[0].textContent,				  parseInt(Util.Parse("MatchID", matchNode),10),    	        	  
 				  //       Time.parseDate(Util.Parse("<MatchDate>(.*?)</MatchDate>", found[1])),				  //	Time.parseDate(xml.getElementsByTagName("MatchDate")[0].textContent),				  Time.parseDate(Util.Parse("MatchDate", matchNode)),
@@ -121,37 +121,37 @@ Live.ParseLive = function (response, source, addtime) {
 				  //        new Match.events(Events.ParseList(Util.Parse("<EventList>(.*?)</EventList>", found[1]))),				  //   new Match.events(Events.ParseList(xml.getElementsByTagName("EventList")[0].textContent)),				  new Match.events(Events.ParseList(matchNode.getElementsByTagName("EventList")[0],elapsedTime)), // Re live added elapsedTime by bigpapy.
 				  null,
 				  Live.ParseYouth(matchNode)
-		  );		  		  if (match.id) {	//		  alert("Live.Parselive9");		//	  alert("live_first_2: "+ match.event.list.first);
+		  );	//	  alert("j="+j+" match.id:"+match.id);		  if (match.id) {	//		  alert("Live.Parselive9");		//	  alert("live_first_2: "+ match.event.list.first);
 			  match.home.team = Teams.update(match.home.team, match.youth);
 			  match.away.team = Teams.update(match.away.team, match.youth);
 			  match = Match.Update(match);			  		//	  alert("live_first_3: "+ match.event.list.first);
-		  }		  		// bigpapy adding for reLive		  if((htlivesight.prefs.other.reLive) && (match.date <= Time.reLiveStartTime) && !(match.isFinish)){			  if (match.home.reLiveGoals==null || match.away.reLiveGoals==null)			  { 				  match.home.reLiveGoals=0;    			  match.away.reLiveGoals=0;			  };			  			 for(var i=match.event.list.first; i<=match.event.list.last; i++){				 event=match.event.list["_"+i];				 if (event.key.A==1 || (event.key.A==0 &&(event.key.BC==55 ||						 event.key.BC==56 || event.key.BC==57))){					 match.getSideById(event.subjectTeamId).reLiveGoals+=1;					 				 };			 };			 match.home.goals=match.home.reLiveGoals;			 match.away.goals=match.away.reLiveGoals;		 }		  // bigpapy end adding reLive
+		  }		  		// bigpapy adding for reLive		  if((htlivesight.prefs.other.reLive) && (match.date <= Time.reLiveStartTime) && !(match.isFinish)){			  if (match.home.reLiveGoals==null || match.away.reLiveGoals==null)			  { 				  match.home.reLiveGoals=0;    			  match.away.reLiveGoals=0;  //  			  alert("match.home.reLiveGoals="+match.home.reLiveGoals  //  					  +"match.away.reLiveGoals="+match.away.reLiveGoals);			  };			  			 for(var i=match.event.list.first; i<=match.event.list.last; i++){				 event=match.event.list["_"+i];				 if (event.key.A==1 || (event.key.A==0 &&(event.key.BC==55 ||						 event.key.BC==56 || event.key.BC==57))){					 match.getSideById(event.subjectTeamId).reLiveGoals+=1;					 				 };			 };			 match.home.goals=match.home.reLiveGoals;			 match.away.goals=match.away.reLiveGoals;		 }		  // bigpapy end adding reLive
 	  }
 //	  alert("Live.Parselive10");
 	  for (matchIndex in Match.List) {//		  alert("Live.Parselive11");
 		  match = Match.List[matchIndex];		  	//	  alert("live_first_4: "+ match.event.list.first);
-		  if (match.live) {
-			  match.updateTime();
+		  if (match.live) {			  		//	  alert("matchIndex="+matchIndex+" match.live="+match.live);
+			  match.updateTime();// 27/10/2011 here there is the error with relive!!
 	//		  alert("Live.Parselive12");
 			  if (source == Live.VIEW) {
 				  var first = match.event.list.first;
-				  var last = match.event.list.last;				  			//	  alert("first="+first+" last="+last);          	//			  alert("Live.Parselive13");				  
+				  var last = match.event.list.last;				  	//			  alert("first="+first+" last="+last);          	//			  alert("Live.Parselive13");				  
 				  for (var i=first; i<=last; i++) {					//  alert("before i:" + i);
 					  htlivesight.Notify.add(match.event.list["_"+i]);				    //  alert("after i:" + i);
 				  }				  //added by bigpapy: adding first and second half sound start (begin)				  				//added by bigpapy: adding first and second half sound start (end)
 			  }
-	//		  alert("Live.Parselive14");
+		//	  alert("Live.Parselive14");
 			  htlivesight.DOM.UpdateLiveMatch(match);  
 		  }
 
 	  }
 
-    if (source == Live.VIEW) {    	htlivesight.Notify.set();   //   	alert("Live.Parselive15");
+    if (source == Live.VIEW) {    	htlivesight.Notify.set();  //    	alert("Live.Parselive15");
     }
     
     
-  } catch(e) {	  //	  alert("Live.Parselive16");
-	 // alert("Live.ParseView : " + e);	  dump("Live.ParseView : " + e);//modified by bigpapy
+  } catch(e) {	  	//  alert("Live.Parselive16");
+	  alert("Live.ParseView : " + e);	  dump("Live.ParseView : " + e);//modified by bigpapy
   }
 
 };
