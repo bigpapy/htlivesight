@@ -228,6 +228,7 @@ League.ParseFixtures = function(xml) {
     var p = htlivesight.prefs.matches.league;
     Time.hattrickTime = Time.parseFetchDate(xml);// bigpapy:this read current time
     if (
+    		!(htlivesight.prefs.other.reLive) &&
       p.get
       && (
         !p.within
