@@ -95,7 +95,7 @@ Live.ParseLive = function (response, source, addtime) {
   var match, XMLEventList;
   var found;    
   try {	  var elapsedTime=0; //added by bigpapy	  	  var newEvent=false;	  
-	  var errorMsg = Live.ParseError(response);    //	  alert("Live.Parselive1" + response);	  	  htlivesight.liveXml= response;
+	  var errorMsg = Live.ParseError(response);    //	  alert("Live.Parselive1" + response);	  	//  htlivesight.liveXml= response;
 	  if (errorMsg != null) {
 		  var server = Live.ParseServer(response);
 		  var strings = document.getElementById("strings");		  alert("Live.Parselive2 error" + response);
@@ -131,13 +131,13 @@ Live.ParseLive = function (response, source, addtime) {
 	  for (matchIndex in Match.List) {//		  alert("Live.Parselive11");
 		  match = Match.List[matchIndex];		  	//	  alert("live_first_4: "+ match.event.list.first);
 		  if (match.live) {			  		//	  alert("matchIndex="+matchIndex+" match.live="+match.live);
-			  match.updateTime();// 27/10/2011 here there is the error with relive!!
+			  match.updateTime();
 	//		  alert("Live.Parselive12");
 			  if (source == Live.VIEW) {
 				  var first = match.event.list.first;
-				  var last = match.event.list.last;				  	//			  alert("first="+first+" last="+last);          	//			  alert("Live.Parselive13");				  
+				  var last = match.event.list.last;				  	//			  alert("first="+first+" last="+last);          	//			  alert("Live.Parselive13");				  	/** Next line is used in relive mode: if there are event to process it means	 * that live.xml was loaded correctly by HTlivesightso it can be saved in a	 * variable to be used as a fake live.xml in the relive mode updating during	 * the minute.	 */			  				  if(htlivesight.prefs.other.reLive || first<=last) htlivesight.liveXml= response;				  
 				  for (var i=first; i<=last; i++) {					//  alert("before i:" + i);
-					  htlivesight.Notify.add(match.event.list["_"+i]);				    //  alert("after i:" + i);
+					  htlivesight.Notify.add(match.event.list["_"+i]);				    //  alert("after i:" + i);				//	  if(htlivesight.prefs.other.reLive) htlivesight.liveXml= response;
 				  }				  //added by bigpapy: adding first and second half sound start (begin)				  				//added by bigpapy: adding first and second half sound start (end)
 			  }
 		//	  alert("Live.Parselive14");
