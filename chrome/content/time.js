@@ -81,6 +81,7 @@ var Time = {
     
     var time = Time.hattrickTime - startTime; // time difference in miliseconds
     var now = new Date();
+    noWhistleTime=Time.noWhistleTime;
  //   if(htlivesight.prefs.other.reLive) time=match.event.list["_"+match.event.list.last].minute*1000;
       
     if (time<0) {
@@ -119,6 +120,7 @@ var Time = {
     //	alert("Time.reLiveMinute="+Time.reLiveMinute+" m="+m);
     	if(htlivesight.prefs.other.reLiveByEvent){
     		try{
+    			if (Time.reLiveMinute!=Number.MAX_VALUE)
     			Time.reLiveMinute= match.event.list["_"+match.event.list.last].minute;
     		}catch(e){
     		//	Time.reLiveMinute=0;
@@ -151,9 +153,9 @@ var Time = {
     } // sounds of beginning first half and second half (end). (added by bigpapy)
  //   alert("before return");
     if(m <= 45) return "" + m + strings.getString("time.min") + " " + strings.getString("time.first_half");
-    if((!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent)) && m < 59) return strings.getString("time.half_time") + ". " + strings.getString("time.second_half") + " "+ strings.getString("time.starts_in") + " " + (60-m) + " " + strings.getString("time.minutes");
-    if((!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent)) && m == 59) return strings.getString("time.half_time") + ". " + strings.getString("time.second_half") + " "+ strings.getString("time.starts_in") + " " + (60-m) + " " + strings.getString("time.minute");
-    if (!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent)) m = m-15; // second half
+    if(!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent && m==Time.reLiveMinute) && m < 59) return strings.getString("time.half_time") + ". " + strings.getString("time.second_half") + " "+ strings.getString("time.starts_in") + " " + (60-m) + " " + strings.getString("time.minutes");
+    if(!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent && m==Time.reLiveMinute) && m == 59) return strings.getString("time.half_time") + ". " + strings.getString("time.second_half") + " "+ strings.getString("time.starts_in") + " " + (60-m) + " " + strings.getString("time.minute");
+    if(!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent && m==Time.reLiveMinute)) m = m-15; // second half
     if(m <= 90) return "" + m + strings.getString("time.min") + " " + strings.getString("time.second_half");
     // extra time
     if(m <= 120) return "" + m + strings.getString("time.min") + " " + strings.getString("time.extra_time");
