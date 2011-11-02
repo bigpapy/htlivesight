@@ -36,7 +36,7 @@
 <!ENTITY other.reverse.note  "Odśwież stronę, żeby zobaczyć efekt zmian.">
 <!ENTITY other.events        "Porządek zdarzeń">
 <!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey.note "Pokaż eventkey w komentarzu">
 
 <!ENTITY language.select     "Wybierz język">
 <!ENTITY language.note       "Uwaga: Musisz zrestartować HTLiveSight, aby zmiany były widoczne">
