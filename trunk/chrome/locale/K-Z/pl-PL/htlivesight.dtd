@@ -1,7 +1,7 @@
 <!ENTITY window.title        "HTLiveSight">
 
 <!ENTITY menu.server         "Serwer:">
-<!ENTITY menu.disconnected   "rozłączony">
+<!ENTITY menu.disconnected   "Rozłączony">
 <!ENTITY menu.options        "Ustawienia">
 <!ENTITY menu.reconnect      "Połącz ponownie z HT">
 <!ENTITY menu.about          "O HTLiveSight">
@@ -13,8 +13,8 @@
 <!ENTITY login.remember_me   "Zapamiętaj">
 <!ENTITY login.button        "Logowanie">
 <!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
-<!ENTITY login.by_event      "Per event">
+<!ENTITY login.speed         "Prędkość">
+<!ENTITY login.by_event      "Po wydarzeniu">
 
 <!ENTITY league.matches      "Moja liga">
 <!ENTITY league.live_table   "Tabela">
