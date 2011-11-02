@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="css/jquery.ui.all.css">
 <link rel="stylesheet" href="css/demos.css">
 	<style>
-		body { font-size: 62.5%; }
+		<!--body { font-size: 62.5%; }-->
 		label, input { display:block; }
 		input.text { margin-bottom:12px; width:95%; padding: .4em; }
 		fieldset { padding:0; border:0; margin-top:25px; }
@@ -34,6 +34,7 @@
 		$( "#check" ).button();
 		$( "#check1" ).button();
 		$( "#check2" ).button();
+		$( "#check3" ).button();
 		$( "#format" ).buttonset();
 	});
 </script>
@@ -52,8 +53,8 @@
 		
 		$( "#dialog-form" ).dialog({
 			autoOpen: true,
-			height: 350,
-			width: 350,
+			height: 400,
+			width: 400,
 			modal: true,
 			buttons: {
 				"Create an account": function() {
@@ -87,11 +88,11 @@
 			}
 		});
 
-		$( "#create-user" )
+		/*$( "#create-user" )
 			.button()
 			.click(function() {
 				$( "#dialog-form" ).dialog( "open" );
-			});
+			});*/
 	});
 </script>
 </head>
@@ -103,21 +104,6 @@
 <!--<button id="create-user">Create new user</button>-->
 <div id="dialog-form" title="Create new user">
 <form>
- <!-- <fieldset>
-    <legend>Login</legend>
-	<label for="teamid">Insert your TeamID</label>
-	<input type="text" name="teamid" id="teamid" value=""/><br />
-    Save <input type="text" /><br />
-    Login <input type="text" />
-
-		
-  </fieldset>
-    <fieldset>
-    <legend>Re-Live</legend>
-    Re-Live<input type="text" /><br />
-    Speed <input type="text" /><br />
-    Per Event <input type="text" />
-  </fieldset>-->
   	<fieldset style="border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px;">
 
 	<legend>Login</legend>
@@ -136,8 +122,70 @@
 </form>
 </div>
 </div>
-<hr>
-The content of the document......
+
+
+
+<div id="match_container">
+
+<div class="match">
+
+<div class="riga1">
+<div>Data+Ora+Meteo+Stadio</div><div>Cronometro</div><div>Icone</div>
+</div>
+
+<div class="riga2">
+<div>Icone Azioni Home</div><div>Team Home</div><div>Logo Home</div><div>25-25</div><div>Logo Away</div><div>Team Away</div><div>Icone Azioni Away</div>
+</div>
+
+<div class="riga3">
+<div>Cards Home</div><div>Scorers Home</div><div>Scorers Away</div><div>Cards Away</div>
+</div>
+
+</div>
+
+</div>
+
+
+
+<div id="sidebar">
+
+<div id="leaguematches">
+<div>DateTime</div>
+<div class="riga"><div>team1</div><div>RIS</div><div>team2</div></div>
+<div>Round</div>
+</div>
+
+<div id="leaguetable">
+<div class="r1"><div>Pos</div><div>Name</div><div>Trend</div><div>G</div><div>V</div><div>N</div><div>P</div><div>GF-GS</div><div>DR</div><div>PTS</div></div>
+</div>
+
+<div id="matchlist">
+<div class="riga"><div>team1</div><div>RIS</div><div>team2</div></div>
+</div>
+
+<div id="Friendlist">
+<ul>
+<li>Name</li>
+</ul>
+<button id="removefriend">Remove Friend</button>
+<button id="openmatches">Open matches</button>
+</div>
+
+<div  class="dialog-form" title="Create new useraa"><!--id="addmatch"-->
+<input/>
+<input type="checkbox" id="check3" /><label for="check">Youth</label>
+<button id="matchid">matchid</button>
+<button id="teamid">teamid</button>
+</div>
+
+<div id="updatezone">
+<progress />
+</div>
+
+</div>
+
+
+
 </body>
 
 </html> 
