@@ -30,6 +30,7 @@
 <script src="js/jquery.ui.resizable.js"></script>
 <script src="js/jquery.ui.dialog.js"></script>
 <script src="js/jquery.effects.core.js"></script>
+<script src="js/jquery.ui.tabs.js"></script>
 <script>
 //Script per checkbox
 	$(function() {
@@ -49,6 +50,7 @@
 </script>
 <script>
 //Script per login
+$.fx.speeds._default = 1000;
 	$(function() {
 
 		$( "#dialog:ui-dialog" ).dialog( "destroy" );
@@ -57,19 +59,38 @@
 			autoOpen: true,
 			height: 400,
 			width: 400,
+			show: "blind",
+			hide: "explode",
 			modal: true,
-			close: function() {
-				allFields.val( "" ).removeClass( "ui-state-error" );
-			}
 		});
-
-		/*$( "#create-user" )
-			.button()
-			.click(function() {
-				$( "#dialog-form" ).dialog( "open" );
-			});*/
+		$( "#opener" ).click(function() {
+			$( "#dialog-form" ).dialog( "open" );
+			return false;
+		});
 	});
 </script>
+<script>
+//Script per options
+$.fx.speeds._default = 1000;
+	$(function() {
+
+		$( "#dialog:ui-dialog" ).dialog( "destroy" );
+		
+		$( "#options-form" ).dialog({
+			autoOpen: false,
+			height: 700,
+			width: 600,
+			show: "blind",
+			hide: "explode",
+			modal: true,
+		});
+		$( "#opt-opener" ).click(function() {
+			$( "#options-form" ).dialog( "open" );
+			return false;
+		});
+	});
+</script>
+
 <!-- Script per progressbar -->
 	<script>
 	$(function() {
@@ -78,13 +99,19 @@
 		});
 	});
 	</script>
+  	<script><!-- Script per tabs opzioni -->
+	$(function() {
+		$( "#tabs" ).tabs();
+	});
+	</script>
 </head>
 
 <body>
+<!--Login Box-->
 
 <div class="demo">
-<!--Login Box-->
-<!--<button id="create-user">Create new user</button>-->
+
+<button id="opener">Open Dialog</button>
 <div id="dialog-form" title="Login">
 <form>
   	<fieldset style="border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px;">
@@ -104,7 +131,7 @@
 	</fieldset>
 </form>
 </div>
-</div>
+
 
 
 
@@ -167,11 +194,80 @@
 </div>
 
 <div id="bottonbutton">
-<button id="openoptions">Options</button>
-<button id="openabout">About</button>
+
+
+<button id="opt-opener">Options</button>
+<div id="options-form" title="Options"><!--
+<form>
+  	<fieldset style="border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px;">
+
+	<legend>Options</legend>
+		<label for="name">Insert your TeamID</label>
+		<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+		<input type="checkbox" id="check" /><label for="check">Save</label>
+		<input type="submit" value="Login"/>
+		</fieldset>
+		
+		
+</form>-->
+
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">General</a></li>
+		<li><a href="#tabs-2">Matches</a></li>
+		<li><a href="#tabs-3">Alerts</a></li>
+	</ul>
+	<div id="tabs-1">
+		<p>Choose your language:</p>
+			<select>
+		<option>select</option>
+
+							<option value="ca-CA">ca-CA Català</option>
+							<option value="cs-CZ">cs-CZ Cesky</option>
+                            <option value="da-DK">da-DK Danish</option>
+							<option value="de-DE">de-DE Deutsch</option>
+
+							<option value="en-GB">en-GB English (British)</option>
+							<option value="en-US">en-US English (US)</option>
+							<option value="es-ES">es-ES Espanol</option>
+							<option value="fr-FR">fr-FR Français</option>
+
+							<option value="hr-HR">hr-HR Hrvatski</option>
+							<option value="hu-HU">hu-HU Magyar</option>
+							<option value="it-IT">it-IT Italiano</option>
+
+	</select>
+	</div>
+	<div id="tabs-2">
+		<p>League Matches</p>
+		<input type="checkbox" />Load automatically League Matches and League Table<br />
+		<input type="checkbox" />Played in <input value="24" /> hours<br />
+				<p>Friends Matches</p>
+		<input type="checkbox" />Load automatically matches of your friends<br />
+		<input type="checkbox" />Played in <input value="24" /> hours<br />
+						<p>Scorers</p>
+		<input type="checkbox" />Add scorers in header<br />
+				<p>Live Window</p>
+		<input value="3" /> Lines to show in minimized mode<br />
+	</div>
+	<div id="tabs-3">
+		<p>Alerts</p>
+		<input type="checkbox" />Sounds<br />
+		<input type="checkbox" />Only in open matches<br />
+		<input type="checkbox" />Flash<br />
+		<input type="checkbox" />Popups<br />
+	</div>
+</div>
+<div class="demo-description">
+<p>Some options need HTLiveSight to be restarted. If nothing happens, restart your browser.</p>
 </div>
 </div>
 
+
+<button id="openabout">About</button>
+</div>
+</div>
+</div>
 
 
 </body>
