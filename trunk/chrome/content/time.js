@@ -120,10 +120,17 @@ var Time = {
     //	alert("Time.reLiveMinute="+Time.reLiveMinute+" m="+m);
     	if(htlivesight.prefs.other.reLiveByEvent){
     		try{
-    			if (Time.reLiveMinute!=Number.MAX_VALUE)
-    			Time.reLiveMinute= match.event.list["_"+match.event.list.last].minute;
+    		//	alert("Time! match.reLiveByEventEnd="+match.reLiveByEventEnd);
+    			if (match.reLiveByEventEnd){
+    				Time.reLiveMinute=Number.MAX_VALUE;
+    			//	alert("Time! match.reLiveByEventEnd="+match.reLiveByEventEnd);
+    			}else {
+    				Time.reLiveMinute= match.event.list["_"+match.event.list.last].minute;
+    			//	alert("relive by event end!");
+    			}
+    			
     		}catch(e){
-    		//	Time.reLiveMinute=0;
+    		//	alert("error time!:"+ e );
     		}
     	//	if (Time.reLiveMinute > 45 ) Time.reLiveMinute+=15;
     	}

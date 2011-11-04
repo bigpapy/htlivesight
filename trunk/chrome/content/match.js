@@ -25,6 +25,7 @@ function Match(id, date, home, away, event, arena, youth) {
   this.isFinish = false;
   this.timeElapsed="";
   this.live = true;
+//  this.reLiveByEventEnd= false;
 };
 
 Match.List = new Object();
@@ -139,7 +140,15 @@ Match.Update = function (newMatch) {
         Events.translate(match, match.event.list["_"+i]);
     };
   }
-  
+  // added by bigpapy
+  if (newMatch.reLiveByEventEnd) {
+ //     if (!match.reLiveByEventEnd) {
+        match.reLiveByEventEnd=newMatch.reLiveByEventEnd;
+//      } else {
+//        match.away.goals = newMatch.away.goals;
+//      }
+    };
+ // end adding by bigpapy 
   return match;
 };
 

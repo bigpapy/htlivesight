@@ -94,8 +94,7 @@ Live.ParseLive = function (response, source, addtime) {
   var regExp;
   var match, XMLEventList;
   var found;    
-  try {	  var elapsedTime=0; //added by bigpapy	  	  var newEvent=false;	  
-	  var errorMsg = Live.ParseError(response);    //	  alert("Live.Parselive1" + response);	  	//  htlivesight.liveXml= response;
+  try {	  var elapsedTime=0; //added by bigpapy	  	  var newEvent=false;	  	  var errorMsg = Live.ParseError(response);    //	  alert("Live.Parselive1" + response);	  	//  htlivesight.liveXml= response;
 	  if (errorMsg != null) {
 		  var server = Live.ParseServer(response);
 		  var strings = document.getElementById("strings");		  alert("Live.Parselive2 error" + response);
@@ -121,7 +120,7 @@ Live.ParseLive = function (response, source, addtime) {
 				  //        new Match.events(Events.ParseList(Util.Parse("<EventList>(.*?)</EventList>", found[1]))),				  //   new Match.events(Events.ParseList(xml.getElementsByTagName("EventList")[0].textContent)),				  new Match.events(Events.ParseList(matchNode.getElementsByTagName("EventList")[0],elapsedTime)), // Re live added elapsedTime by bigpapy.
 				  null,
 				  Live.ParseYouth(matchNode)
-		  );	//	  alert("j="+j+" match.id:"+match.id);		  if (match.id) {	//		  alert("Live.Parselive9");		//	  alert("live_first_2: "+ match.event.list.first);
+		  );	//	  alert("j="+j+" match.id:"+match.id);		  if(Time.reLiveMinute==Number.MAX_VALUE){			  match.reLiveByEventEnd=true;		//	  alert("live! match.reLiveByEventEnd="+match.reLiveByEventEnd);		  }		  if (match.id) {	//		  alert("Live.Parselive9");		//	  alert("live_first_2: "+ match.event.list.first);
 			  match.home.team = Teams.update(match.home.team, match.youth);
 			  match.away.team = Teams.update(match.away.team, match.youth);
 			  match = Match.Update(match);			  		//	  alert("live_first_3: "+ match.event.list.first);
