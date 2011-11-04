@@ -13,8 +13,8 @@
 <!ENTITY login.remember_me   "Muista minut">
 <!ENTITY login.button        "Kirjaudu">
 <!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
-<!ENTITY login.by_event      "Per event">
+<!ENTITY login.speed         "Nopeus">
+<!ENTITY login.by_event      "Tapahtumittain">
 
 <!ENTITY league.matches      "Sarjaottelut">
 <!ENTITY league.live_table   "Live taulukko">
