@@ -35,8 +35,8 @@
 <!ENTITY other.reverse       "Ottelutapahtumien näyttö alhaalta ylös">
 <!ENTITY other.reverse.note  "Päivitä sivu muutosten päivittämiseksi.">
 <!ENTITY other.events        "Tapahtumien järjestys">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey      "Tapahtuma-avain">
+<!ENTITY other.eventkey.note "Näytä tapahtuma-avain kommenteissa">
 
 <!ENTITY language.select     "Valitse kieli">
 <!ENTITY language.note       "Huom: Käynnistä Firefox uudelleen.">
