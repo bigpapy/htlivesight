@@ -150,7 +150,7 @@ Live.ParseLive = function (response, source, addtime) {
     
     
   } catch(e) {	  	//  alert("Live.Parselive16");
-	  alert("Live.ParseView : " + e);	  dump("Live.ParseView : " + e);//modified by bigpapy
+//	  alert("Live.ParseView : " + e);	  dump("Live.ParseView : " + e);//modified by bigpapy
   }
 
 };
