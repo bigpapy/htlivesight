@@ -5,19 +5,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/jquery.ui.all.css">
 <link rel="stylesheet" href="css/demos.css">
-	<style>
-		body { font-size: 10pt; }
-		label, input { display:block; }
-		input.text { margin-bottom:12px; width:95%; padding: .4em; }
-		fieldset { padding:0; border:0; margin-top:25px; }
-		h1 { font-size: 1.2em; margin: .6em 0; }
-		div#users-contain { width: 350px; margin: 20px 0; }
-		div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
-		div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
-		.ui-dialog .ui-state-error { padding: .3em; }
-		.validateTips { border: 1px solid transparent; padding: 0.3em; }
-		.ui-progressbar-value { background-image: url(images/pbar-ani.gif); }
-	</style>
+<link rel="stylesheet" href="css/dim.css">
 <script src="js/jquery-1.6.2.js"></script>
 <script src="js/external/jquery.bgiframe-2.1.2.js"></script>
 <script src="js/jquery.ui.core.js"></script>
@@ -111,10 +99,10 @@ $.fx.speeds._default = 1000;
 
 <div class="demo">
 
-<button id="opener">Open Dialog</button>
+
 <div id="dialog-form" title="Login">
 <form>
-  	<fieldset style="border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px;">
+  	<fieldset>
 
 	<legend>Login</legend>
 		<label for="name">Insert your TeamID</label>
@@ -122,7 +110,7 @@ $.fx.speeds._default = 1000;
 		<input type="checkbox" id="check" /><label for="check">Save</label>
 		<input type="submit" value="Login"/>
 		</fieldset>
-  	<fieldset style="border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px;">
+  	<fieldset>
     <legend>Re-Live</legend>
 	<input type="checkbox" id="check1" /><label for="check1">Re-Live</label>
 		<label for="password">Speed</label>
@@ -195,7 +183,7 @@ $.fx.speeds._default = 1000;
 
 <div id="bottonbutton">
 
-
+<button id="opener">Login</button>
 <button id="opt-opener">Options</button>
 <div id="options-form" title="Options"><!--
 <form>
