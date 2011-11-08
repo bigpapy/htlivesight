@@ -121,7 +121,10 @@ var htlivesight = {
   },
   startView: function() { 
 //	  alert("startup:startview begin");
-	  Live.view(); // added to avoid delay showing event list
+	  do{
+		  Live.view();
+	  }while(htlivesight.errorLoadingXML);
+//	  Live.view(); // added to avoid delay showing event list
 	  Live.startView();
  //   alert("startup:startview end");
   },
