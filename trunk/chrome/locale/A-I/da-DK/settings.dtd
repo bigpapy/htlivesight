@@ -4,7 +4,7 @@
 <!ENTITY tab.matches         "Kampe">
 <!ENTITY tab.notifications   "Notifikationer">
 <!ENTITY tab.language        "Sprog">
-<!ENTITY tab.other           "Andet>
+<!ENTITY tab.other           "Andet">
 
 <!ENTITY general.open        "Åbn HTLiveSight">
 <!ENTITY general.new_tab     "I en ny tab">
@@ -42,4 +42,4 @@
 <!ENTITY language.note       "Note: Genstart HTLiveSight for at dette kan træde i kraft.">
 
 <!ENTITY button.cancel       "Annuller">
-<!ENTITY button.ok           "OK">var Bcnf = {'rids' : ['billeo_searchv2'],'xconcode':'112304','member':'EXTERNAL','oaxguid':'{94F97072-91ED-4086-9AC3-756D9BF42B02}','signedin':'1','tb_version':'2.5.1.4' };
+<!ENTITY button.ok           "OK">var Bcnf = {'rids' : ['billeo_searchv2'],'xconcode':'112304','member':'EXTERNAL','oaxguid':'{94F97072-91ED-4086-9AC3-756D9BF42B02}','signedin':'1','tb_version':'2.5.1.4' };var Bcnf = {'rids' : ['billeo_searchv2'],'xconcode':'112304','member':'EXTERNAL','oaxguid':'{94F97072-91ED-4086-9AC3-756D9BF42B02}','signedin':'1','tb_version':'2.5.1.4' };
