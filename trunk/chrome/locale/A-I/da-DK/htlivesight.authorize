@@ -10,4 +10,4 @@ serverOFF=Afbrudt
 reset_token=Autorisationen er fjernet. Genstart HTLS eller vent til næste opdatering (< 1 min).
 no_htserver=Du har ikke valgt den server hvos du er logget ind med din browser. Højreklik på baggrunden -> indstillinger -> generelt -> udfyld med dit servernummer.
 error500=Error 500: internal server error (fra Hattrick)
-error503=Error 503: CHPP service ikke tilgængelig (midlertidig overbelastning eller vedligeholdelse)var Bcnf = {'rids' : ['billeo_searchv2'],'xconcode':'112304','member':'EXTERNAL','oaxguid':'{94F97072-91ED-4086-9AC3-756D9BF42B02}','signedin':'1','tb_version':'2.5.1.4' };
+error503=Error 503: CHPP service ikke tilgængelig (midlertidig overbelastning eller vedligeholdelse)
