@@ -5,9 +5,10 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/jquery.ui.all.css">
 <link rel="stylesheet" href="css/demos.css">
-<link rel="stylesheet" href="css/dim.css">
+<link rel="stylesheet" href="css/dima.css">
 <script src="js/jquery-1.6.2.js"></script>
 <script src="js/external/jquery.bgiframe-2.1.2.js"></script>
+<script src="js/jquery.ui.accordion.js"></script>
 <script src="js/jquery.ui.core.js"></script>
 <script src="js/jquery.ui.widget.js"></script>
 <script src="js/jquery.ui.mouse.js"></script>
@@ -78,6 +79,57 @@ $.fx.speeds._default = 1000;
 		});
 	});
 </script>
+<script>
+//Script per about
+$.fx.speeds._default = 1000;
+	$(function() {
+
+		$( "#dialog:ui-dialog" ).dialog( "destroy" );
+		
+		$( "#about-form" ).dialog({
+			autoOpen: false,
+			height: 700,
+			width: 600,
+			show: "blind",
+			hide: "explode",
+			modal: true,
+		});
+		$( "#openabout" ).click(function() {
+			$( "#about-form" ).dialog( "open" );
+			return false;
+		});
+	});
+</script>
+
+<!-- Script per sidebar -->
+	<script>
+	$(function() {
+		$( "#leaguematches" ).accordion({
+			collapsible: true
+		});
+	});
+	</script>
+		<script>
+	$(function() {
+		$( "#leaguetable" ).accordion({
+			collapsible: true
+		});
+	});
+	</script>
+			<script>
+	$(function() {
+		$( "#matchlist" ).accordion({
+			collapsible: true
+		});
+	});
+	</script>
+			<script>
+	$(function() {
+		$( "#Friendlist" ).accordion({
+			collapsible: true
+		});
+	});
+	</script>
 
 <!-- Script per progressbar -->
 	<script>
@@ -127,48 +179,123 @@ $.fx.speeds._default = 1000;
 
 <div class="match">
 
-<div class="riga1">
-<div>Data+Ora+Meteo+Stadio</div><div>Cronometro</div><div>Icone</div>
+<table class="matchskeleton">
+  <tr>
+    <td colspan="2">Data+Ora+Meteo+Stadio</td>
+	<td colspan="3">Cronometro</td>
+	<td colspan="2">Icone</td>
+  </tr>
+  <tr>
+    <td>Icone Azioni Home</td>
+	<td>Team Home</td>
+	<td>Logo Home</td>
+	<td rowspan="2">25-25</td>
+	<td>Logo Away</td>
+	<td>Team Away</td>
+	<td>Icone Azioni Away</td>
+ </tr>
+
+
+
+  <tr>
+<td>Cards Home</td>
+<td colspan="2">Scorers Home</td>
+<td colspan="2">Scorers Away</td>
+<td>Cards Away</td>
+  </tr>
+
+
+</table>
+
 </div>
 
-<div class="riga2">
-<div>Icone Azioni Home</div><div>Team Home</div><div>Logo Home</div><div>25-25</div><div>Logo Away</div><div>Team Away</div><div>Icone Azioni Away</div>
 </div>
-
-<div class="riga3">
-<div>Cards Home</div><div>Scorers Home</div><div>Scorers Away</div><div>Cards Away</div>
-</div>
-
-</div>
-
-</div>
-
 
 
 <div id="sidebar">
 
 <div id="leaguematches">
-<div>DateTime</div>
-<div class="riga"><div>team1</div><div>RIS</div><div>team2</div></div>
-<div>Round</div>
+<h3><a href="#">League Matches</a></h3>
+<div>
+<table border="1" width="100%">
+<thead>
+  <tr>
+    <th colspan="3">DateTime</th>
+  </tr>
+</thead>
+<tfoot>
+  <tr>
+<td colspan="3">Round</td>
+  </tr>
+</tfoot>
+<tbody>
+  <tr>
+    <td>Team1</td>
+    <td>0:0</td>
+	<td>Team2</td>
+  </tr>
+</tbody>
+</table>
 </div>
-
+</div>
 <div id="leaguetable">
-<div class="r1"><div>Pos</div><div>Name</div><div>Trend</div><div>G</div><div>V</div><div>N</div><div>P</div><div>GF-GS</div><div>DR</div><div>PTS</div></div>
+<h3><a href="#">Live Table</a></h3>
+<div>
+<table border="1" width="100%">
+<thead>
+  <tr>
+    <th>#</th>
+	<th>Team</th>
+	<th> </th>
+	<th>R</th>
+	<th>G</th>
+	<th>DR</th>
+	<th>PTS</th>
+  </tr>
+</thead>
+
+<tbody>
+  <tr>
+    <td>1</td>
+	<td>Team1</td>
+	<td>+</td>
+	<td>1</td>
+	<td>3-0</td>
+	<td>+3</td>
+	<td>3</td>
+  </tr>
+</tbody>
+</table>
+</div>
 </div>
 
 <div id="matchlist">
-<div class="riga"><div>team1</div><div>RIS</div><div>team2</div></div>
+<h3><a href="#">Match List</a></h3>
+<div>
+<table border="1" width="100%">
+  <tr>
+    <td>Team1</td>
+    <td>0:0</td>
+	<td>Team2</td>
+  </tr>
+</table>
+</div>
 </div>
 
 <div id="Friendlist">
-<ul>
-<li>Name</li>
-</ul>
+<h3><a href="#">Friends List</a></h3>
+<div>
+<textarea>
+Tizio
+Caio
+Sempronio
+</textarea>
 <button id="removefriend">Remove Friend</button>
 <button id="openmatches">Open matches</button>
 </div>
+</div>
 
+<h3><a href="#">Add Match</a></h3>
 <div  class="dialog-form" title="Create new useraa"><!--id="addmatch"-->
 <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
 <input type="checkbox" id="check3" /><label for="check3">Youth</label>
@@ -253,8 +380,21 @@ $.fx.speeds._default = 1000;
 
 
 <button id="openabout">About</button>
+<div id="about-form" title="About HTLiveSight">
+<img src="img/chpp.png" alt="chpp" />
+<img src="img/HTML5_Logo_512.png" alt="html5" />
+<img src="img/jquery_logo.png" alt="jquery" />
+
 </div>
+
 </div>
+
+
+<!-- IL DIV DELLA SIDEBAR FINIVA QUI-->
+</div>
+
+
+
 </div>
 
 

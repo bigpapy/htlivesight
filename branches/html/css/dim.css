@@ -1,4 +1,9 @@
-body { font-size: 10pt; }
+body { font-size: 10pt;
+background-image: url(../img/bg.png);
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:bottom left;
+}
 label, input { display:block; }
 input.text { margin-bottom:12px; width:95%; padding: .4em; }
 fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin-top:25px; }
@@ -11,10 +16,21 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
 .ui-progressbar-value { background-image: url(images/pbar-ani.gif); }
 
 #match_container{
-background:#ccc;
+/*background:#ccc;*/
 width:80%;
-float:left;}
+float:left;
+text-align:center;
+}
+.matchskeleton{
+background:#ccc;
+width:99%;
+border-color:#000;
+border-width:1px;
+border-style:solid;
+text-align:center;
+}
 #sidebar{
-background:#aaa;
+/*background:#aaa;*/
 width:20%;
-float:right;}
+float:right;
+}
