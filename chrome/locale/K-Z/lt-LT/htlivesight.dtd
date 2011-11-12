@@ -14,7 +14,7 @@
 <!ENTITY login.button        "Prisijungti">
 <!ENTITY login.re_live       "Re-Live">
 <!ENTITY login.speed         "Greitis">
-<!ENTITY login.by_event      "Po 1 įvykį">
+<!ENTITY login.by_event      "Rodyti po vieną įvykį">
 
 <!ENTITY league.matches      "Lygos rungtynės">
 <!ENTITY league.live_table   "Lentelė gyvai">
