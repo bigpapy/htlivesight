@@ -1,8 +1,12 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<?xml-stylesheet href="htlivesight.css" type="text/css"?>
+<?xml-stylesheet type="text/css" rel="stylesheet" href="CSS/default.css" title="Default"?>
+<?xml-stylesheet type="text/css" rel="alternate stylesheet" href="CSS/livefox.css" title="Livefox"?>
+<?xml-stylesheet type="text/css" rel="alternate stylesheet" href="CSS/default with old icons.css" title="default with old icons"?>
 
 <!DOCTYPE window SYSTEM "chrome://htlivesight/locale/htlivesight.dtd"> 
+
+
 
 <window title="&window.title;"
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
@@ -45,7 +49,6 @@
 	<script type="application/x-javascript" src="./lib/sha1.js" />
 <!-- utilities -->
 	<script type="application/x-javascript" src="./util/misc.js" /> 
-
 <!-- run init -->
 <script type="text/javascript">
 	HtlivesightPrefs.init();

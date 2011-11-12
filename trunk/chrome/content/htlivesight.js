@@ -221,7 +221,12 @@ var htlivesight = {
         document.getElementById("reLiveSpeed").disabled = true;
     	document.getElementById("reLiveByEvent").disabled = true;
       };
-  }
+  },
+  temachange: function() {
+//	  alert("startup:unload: begin");
+	  document.getElementById(tabID).setAttribute("class", "livefox.css");;
+ //   alert("startup:unload: end");
+  },
 };
 
 
