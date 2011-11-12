@@ -37,7 +37,8 @@
 			<tab label="&tab.general;"/>
 			<tab label="&tab.matches;"/>
 			<tab label="&tab.notifications;"/>
-      <tab label="&tab.other;"/> <!--added by Bigpapy for new tab -->
+			<tab label="&tab.other;"/> <!--added by Bigpapy for new tab -->
+			<tab label="Personalizations"/> <!--added by Bigpapy for new tab -->
 		</tabs>
 		<tabpanels flex="1">
 			<tabpanel id="tab_settings_options" orient="vertical" flex="1">
@@ -80,6 +81,7 @@
 							<menuitem value="it-IT" label="it-IT&#160;&#160;Italiano"/>
 							<menuitem value="ko-KR" label="ko-KR&#160;&#160;한국어"/>
 							<menuitem value="lv-LV" label="lv-LV&#160;&#160;Latviešu"/>
+							<menuitem value="lt-LT" label="lt-LT&#160;&#160;Lietuvių"/>
 							<menuitem value="lb-LB" label="lb-LB&#160;&#160;Lëtzebuergesch"/>
 							<menuitem value="hu-HU" label="hu-HU&#160;&#160;Magyar"/>
 							<menuitem value="mk-MK" label="mk-MK&#160;&#160;Македонски"/>
@@ -191,6 +193,12 @@
 		   </hbox> -->
 		   </groupbox>  
 			</tabpanel> <!--added by bigpapy to have another tab option (end)-->
+			<tabpanel orient="vertical" flex="1">
+			<groupbox>
+				<caption label="Personalization"/>
+				<checkbox id="oldIcons" label="Livefox Icons in match window" oncommand="htlivesight.Settings.click.oldIcons();"/>
+			</groupbox>
+		</tabpanel>
 		</tabpanels>
 	</tabbox>
 </dialog>

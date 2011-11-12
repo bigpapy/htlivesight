@@ -54,5 +54,3 @@ Util.Parse = function (regStr, xml) {  try {  	  found = xml.getElementsByTagN
 /* ---------------------------------------------------
  * Other functions
  * --------------------------------------------------- */
-
-

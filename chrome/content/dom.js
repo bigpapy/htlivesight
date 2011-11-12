@@ -805,7 +805,12 @@ function CreateElementRowLiveEvent(match, event) {
     row.appendChild(l);
     img = document.createElement("image");
     l.appendChild(img);
-    img.setAttribute("src", event.type.imageSrc);
+    if(htlivesight.prefs.personalization.oldIcons && event.type.imageSrcOld){
+    	img.setAttribute("src", event.type.imageSrcOld);
+    }else{
+    	img.setAttribute("src", event.type.imageSrc);
+    }
+    //img.setAttribute("src", event.type.imageSrc);
 
 
     //l = document.createElement("label");

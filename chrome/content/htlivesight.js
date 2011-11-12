@@ -14,10 +14,17 @@ var htlivesight = {
   warningShown: false,
   strings: null,
   startup: function() {
+    // modify added by bigpapy
+    htlivesight.prefs = htlivesight.Preferences.get();
+    if (htlivesight.prefs.personalization.oldIcons){ htlivesight.Image = htlivesight.ImageOld;
+   // Events.type.SWAP= new Event.type(150, htlivesight.Image.event.swap);
+      }
+    // end modify by bigpapy
     var winboxRegister = function(wbList) {
       var winbox;
       var i, len;
       var img;
+
       for(i=0, len=wbList.length; i<len; i++) {
         winbox=wbList[i];
         img = document.getElementById("imgwinboxshade_"+winbox);
@@ -40,10 +47,13 @@ var htlivesight = {
     document.getElementById("winbox_leaguematches").collapsed=true;
     winboxRegister(["leaguematches","leaguetable","matchlist","friends","addmatch"]);
     htlivesight.Click.AddButtonListeners();
-    htlivesight.prefs = htlivesight.Preferences.get();
+ //   htlivesight.prefs = htlivesight.Preferences.get();
+
+//    if (htlivesight.prefs.personalization.oldIcons) htlivesight.Image = htlivesight.ImageOld;
+
+
     Friends.start();
     htlivesight.Sound.start();
-    
     //htlivesight.Test.start();
 
     htlivesight.Log.debug("loading username and password");
@@ -59,6 +69,12 @@ var htlivesight = {
     	document.getElementById("reLiveSpeed").disabled = true;
       	document.getElementById("reLiveByEvent").disabled = true;
       }
+/*    if (htlivesight.prefs.preferences.oldIcons) 
+	{
+	htlivesight.constants.IMG_PATH = "chrome://htlivesight/content/old_img/";
+	}else{
+	htlivesight.constants.IMG_PATH = "chrome://htlivesight/content/img/";
+	};*/	
   },
   getRecommendedServer: function() {
 //	  alert("startup: getRecommendedServer");
@@ -88,7 +104,7 @@ var htlivesight = {
  //   htlivesight.Preferences.ReLiveSpeed.save(htlivesight.prefs.other.reLiveSpeed);
  //   htlivesight.Preferences.ReLiveByEvent.save(htlivesight.prefs.other.reLiveByEvent);
  //   Login.HTTP();
-    Login.Fakesuccess(); 
+     Login.Fakesuccess(); 
   //  alert("startup: Login: end");
   },
   Logout: function() {

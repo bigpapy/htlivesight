@@ -30,7 +30,7 @@ htlivesight.Preferences.root = function() {
   this.general = new htlivesight.Preferences.general();
   this.matches = new htlivesight.Preferences.matches();
   this.notification = new htlivesight.Preferences.notification();
-  this.language = new htlivesight.Preferences.language();    this.other = new htlivesight.Preferences.other();
+  this.language = new htlivesight.Preferences.language();    this.other = new htlivesight.Preferences.other();    this.personalization = new htlivesight.Preferences.personalization();
 };
 
 htlivesight.Preferences.general = function() {
@@ -68,7 +68,7 @@ htlivesight.Preferences.notification = function() {
 htlivesight.Preferences.language = function() {
   this.locale = "en-US";
 };
-htlivesight.Preferences.other = function() {	this.bottomUp = false;		this.reLive = false;		this.reLiveSpeed = 1;		this.reliveByEvent = false;		this.printEventKey = false;};	
+htlivesight.Preferences.other = function() {	this.bottomUp = false;		this.reLive = false;		this.reLiveSpeed = 1;		this.reliveByEvent = false;		this.printEventKey = false;};	htlivesight.Preferences.personalization = function() {		this.oldIcons = false;}
 htlivesight.Preferences.start = function() {
   try {
 
@@ -113,7 +113,7 @@ htlivesight.Preferences.load = function(prefs) {
       prefs.notification.flash = service.getBoolPref("htlivesight.notification.flash");
       prefs.notification.slider = service.getBoolPref("htlivesight.notification.slider");
       
-      prefs.language.locale = service.getCharPref("general.useragent.locale");                  prefs.other.bottomUp = service.getBoolPref("htlivesight.other.bottomUp");            prefs.other.reLive = service.getBoolPref("htlivesight.other.reLive");            prefs.other.reLiveSpeed = service.getIntPref("htlivesight.other.reLiveSpeed");            prefs.other.reLiveByEvent = service.getBoolPref("htlivesight.other.reLiveByEvent");      prefs.other.printEventKey = service.getBoolPref("htlivesight.other.printEventKey");          } catch(e) {
+      prefs.language.locale = service.getCharPref("general.useragent.locale");                  prefs.other.bottomUp = service.getBoolPref("htlivesight.other.bottomUp");            prefs.other.reLive = service.getBoolPref("htlivesight.other.reLive");            prefs.other.reLiveSpeed = service.getIntPref("htlivesight.other.reLiveSpeed");            prefs.other.reLiveByEvent = service.getBoolPref("htlivesight.other.reLiveByEvent");      prefs.other.printEventKey = service.getBoolPref("htlivesight.other.printEventKey");            prefs.personalization.oldIcons = service.getBoolPref("htlivesight.personalization.oldIcons");       //     prefs.personalization.oldIcons ? htlivesight.img_name_prefix="old_" : htlivesight.img_name_prefix="";          } catch(e) {
       htlivesight.Log.warn("Cannot load preferences: " + e);
     }
 
@@ -150,7 +150,7 @@ htlivesight.Preferences.save = function(prefs) {
     s.setBoolPref("htlivesight.notification.slider",prefs.notification.slider);
     
     s.setCharPref("general.useragent.locale", prefs.language.locale);
-    s.setBoolPref("htlivesight.other.bottomUp", prefs.other.bottomUp);        s.setBoolPref("htlivesight.other.reLive", prefs.other.reLive);        s.setIntPref("htlivesight.other.reLiveSpeed", prefs.other.reLiveSpeed);        s.setBoolPref("htlivesight.other.reLiveByEvent", prefs.other.reLiveByEvent);        s.setBoolPref("htlivesight.other.printEventKey", prefs.other.printEventKey);        
+    s.setBoolPref("htlivesight.other.bottomUp", prefs.other.bottomUp);        s.setBoolPref("htlivesight.other.reLive", prefs.other.reLive);        s.setIntPref("htlivesight.other.reLiveSpeed", prefs.other.reLiveSpeed);        s.setBoolPref("htlivesight.other.reLiveByEvent", prefs.other.reLiveByEvent);        s.setBoolPref("htlivesight.other.printEventKey", prefs.other.printEventKey);        s.setBoolPref("htlivesight.personalization.oldIcons", prefs.personalization.oldIcons);        
     htlivesight.Preferences.teamId.save(prefs.general.teamId);
     htlivesight.Log.trace("...done");
 
