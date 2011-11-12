@@ -71,6 +71,7 @@ htlivesight.Settings = {
     document.getElementById("reverseOrder").checked = prefs.other.bottomUp;
     document.getElementById("printEventKey").checked = prefs.other.printEventKey;
     
+    document.getElementById("oldIcons").checked =prefs.personalization.oldIcons;
  //   document.getElementById("reLive").checked = prefs.other.reLive;
  //   document.getElementById("reLiveSpeed").value = prefs.other.reLiveSpeed;
  
@@ -233,6 +234,16 @@ htlivesight.Settings = {
           prefs.other.printEventKey = false;
         };
     },
+    
+    oldIcons: function() {
+    	var prefs = htlivesight.Settings.preferences;
+        if(document.getElementById("oldIcons").checked) {
+          prefs.personalization.oldIcons = true;
+        } else {
+          prefs.personalization.oldIcons = false;
+        };
+    },
+    
   /*  reLive: function() {
     	var prefs = htlivesight.Settings.preferences;
         if(document.getElementById("reLive").checked) {

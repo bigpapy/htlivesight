@@ -92,7 +92,7 @@ htlivesight.Notify = {
           var ev = matchEvent.home[i];
           img = document.createElement("image");
           box.appendChild(img);
-          img.setAttribute("src", ev.type.imageSrc);
+          if(htlivesight.prefs.personalization.oldIcons && ev.type.imageSrcOld){        	  img.setAttribute("src", ev.type.imageSrcOld);          }else{        	  img.setAttribute("src", ev.type.imageSrc);          }          //   img.setAttribute("src", ev.type.imageSrc);
           if (matchEvent.homeAlert.id > ev.type.id) matchEvent.homeAlert = ev.type;
         }
         this.parentList.push(box);
@@ -104,8 +104,8 @@ htlivesight.Notify = {
         for (var i=matchEvent.away.length-1; i>=0; i--) {
           var ev = matchEvent.away[i];
           img = document.createElement("image");
-          box.appendChild(img);
-          img.setAttribute("src", ev.type.imageSrc);
+          box.appendChild(img);          if(htlivesight.prefs.personalization.oldIcons && ev.type.imageSrcOld){        	  img.setAttribute("src", ev.type.imageSrcOld);          }else{        	  img.setAttribute("src", ev.type.imageSrc);          }          
+  //        img.setAttribute("src", ev.type.imageSrc);
           if (matchEvent.awayAlert.id > ev.type.id) matchEvent.awayAlert = ev.type;
         }
         this.parentList.push(box);
