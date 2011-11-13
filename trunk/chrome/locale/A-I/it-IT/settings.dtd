@@ -1,42 +1,52 @@
-<!ENTITY window.title        "Opzioni di HTLiveSight">
+<!ENTITY window.title         "Opzioni di HTLiveSight">
 
-<!ENTITY tab.general         "Generali">
-<!ENTITY tab.matches         "Partite">
-<!ENTITY tab.notifications   "Avvisi">
-<!ENTITY tab.language        "Lingua">
-<!ENTITY tab.other           "Altro">
+<!ENTITY tab.general          "Generali">
+<!ENTITY tab.matches          "Partite">
+<!ENTITY tab.notifications    "Avvisi">
+<!ENTITY tab.language         "Lingua">
+<!ENTITY tab.other            "Altro">
+<!ENTITY tab.custom           "Personalizzazione">
 
-<!ENTITY general.open        "Apri HTLiveSight">
-<!ENTITY general.new_tab     "In una nuova tabella">
-<!ENTITY general.new_window  "In una nuova finestra">
-<!ENTITY general.server      "Impostazioni server">
-<!ENTITY general.note        "Inserisci il server di Hattrick (es. www96) a cui sei connesso ora con il browser.">
+<!ENTITY general.open         "Apri HTLiveSight">
+<!ENTITY general.new_tab      "In una nuova tabella">
+<!ENTITY general.new_window   "In una nuova finestra">
+<!ENTITY general.server       "Impostazioni server">
+<!ENTITY general.note         "Inserisci il server di Hattrick (es. www96) a cui sei connesso ora con il browser.">
 
-<!ENTITY matches.league      "Partite di campionato">
-<!ENTITY matches.get_league  "Carica le partite di campionato">
-<!ENTITY matches.played      "Se giocate entro">
-<!ENTITY matches.hours       "ore.">
-<!ENTITY matches.friends     "Squadre amiche">
-<!ENTITY matches.get_friends "Carica le partite delle squadre amiche">
-<!ENTITY matches.scorers     "Marcatori">
-<!ENTITY matches.list        "Aggiungi i marcatori nelle intestazioni">
-<!ENTITY matches.window      "Finestra">
-<!ENTITY matches.lines       "Righe da mostrare in modalità minimizzata">
+<!ENTITY matches.league       "Partite di campionato">
+<!ENTITY matches.get_league   "Carica le partite di campionato">
+<!ENTITY matches.played       "Se giocate entro">
+<!ENTITY matches.hours        "ore.">
+<!ENTITY matches.friends      "Squadre amiche">
+<!ENTITY matches.get_friends  "Carica le partite delle squadre amiche">
+<!ENTITY matches.scorers      "Marcatori">
+<!ENTITY matches.list         "Aggiungi i marcatori nelle intestazioni">
+<!ENTITY matches.window       "Finestra">
+<!ENTITY matches.lines        "Righe da mostrare in modalità minimizzata">
 
-<!ENTITY notify.notify       "Avvisi">
-<!ENTITY notify.enable_sound "Abilita gli avvisi sonori">
-<!ENTITY notify.only         "Solo nelle partite aperte">
-<!ENTITY notify.flash        "Avvisi flash">
-<!ENTITY notify.status       "Avvisi pop-up">
+<!ENTITY notify.notify        "Avvisi">
+<!ENTITY notify.enable_sound  "Abilita gli avvisi sonori">
+<!ENTITY notify.only          "Solo nelle partite aperte">
+<!ENTITY notify.flash         "Avvisi flash">
+<!ENTITY notify.status        "Avvisi pop-up">
 
-<!ENTITY other.authorization "Codice di autorizzazione">
-<!ENTITY other.reset         "Rimuovi autorizzazione">
-<!ENTITY other.reset_button  "Reset">
-<!ENTITY other.reverse       "Eventi dal basso verso l'alto">
-<!ENTITY other.reverse.note  "Aggiorna la pagina per vedere gli effetti.">
-<!ENTITY other.events        "Ordine degli eventi">
-<!ENTITY other.eventkey      "Codice evento">
-<!ENTITY other.eventkey.note "Stampa il codice evento nel testo">
+<!ENTITY other.authorization  "Codice di autorizzazione">
+<!ENTITY other.reset          "Rimuovi autorizzazione">
+<!ENTITY other.reset_button   "Reset">
+<!ENTITY other.reverse        "Eventi dal basso verso l'alto">
+<!ENTITY other.reverse.note   "Aggiorna la pagina per vedere gli effetti.">
+<!ENTITY other.events         "Ordine degli eventi">
+<!ENTITY other.eventkey       "Codice evento">
+<!ENTITY other.eventkey.note  "Stampa il codice evento nel testo">
+
+<!ENTITY custom.icons          "Icone">
+<!ENTITY custom.icons.old      "Icone di Livefox nella finestra partita">
+<!ENTITY custom.sounds         "Suoni">
+<!ENTITY custom.sounds.weather "Suoni meteo a inizio partita">
+<!ENTITY custom.sounds.time    "Suoni inizio e fine tempo">
+<!ENTITY custom.sounds.SEW     "Suoni special event meteo">
+
+
 
 <!ENTITY language.select     "Scegli la lingua">
 <!ENTITY language.note       "Attenzione: Riavvia Firefox per rendere effettivi i cambiamenti.">
