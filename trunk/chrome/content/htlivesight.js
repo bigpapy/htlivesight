@@ -69,12 +69,17 @@ var htlivesight = {
     	document.getElementById("reLiveSpeed").disabled = true;
       	document.getElementById("reLiveByEvent").disabled = true;
       }
-/*    if (htlivesight.prefs.preferences.oldIcons) 
+    if (htlivesight.prefs.preferences.oldIcons) 
 	{
-	htlivesight.constants.IMG_PATH = "chrome://htlivesight/content/old_img/";
+  	  document.styleSheets[0].disabled = true;
+	  document.styleSheets[1].disabled = false;
+	  document.styleSheets[2].disabled = true;
+	//  document.styleSheets[3].disabled = true;
 	}else{
-	htlivesight.constants.IMG_PATH = "chrome://htlivesight/content/img/";
-	};*/	
+		document.styleSheets[0].disabled = true;
+		  document.styleSheets[1].disabled = true;
+		  document.styleDheets[2].disabled = false;
+	};	
   },
   getRecommendedServer: function() {
 //	  alert("startup: getRecommendedServer");
@@ -224,7 +229,10 @@ var htlivesight = {
   },
   temachange: function() {
 //	  alert("startup:unload: begin");
-	  document.getElementById(tabID).setAttribute("class", "livefox.css");;
+//	  document.getElementById(tabID).setAttribute("class", "livefox.css");
+	  document.styleSheets[0].disabled = true;
+	  document.styleSheets[1].disabled = false;
+	  document.styleSheets[2].disabled = true;
  //   alert("startup:unload: end");
   },
 };
