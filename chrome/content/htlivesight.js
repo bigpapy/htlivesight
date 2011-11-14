@@ -69,7 +69,7 @@ var htlivesight = {
     	document.getElementById("reLiveSpeed").disabled = true;
       	document.getElementById("reLiveByEvent").disabled = true;
       }
-    if (htlivesight.prefs.preferences.oldIcons) 
+ /*   if (htlivesight.prefs.preferences.oldIcons) 
 	{
   	  document.styleSheets[0].disabled = true;
 	  document.styleSheets[1].disabled = false;
@@ -79,7 +79,7 @@ var htlivesight = {
 		document.styleSheets[0].disabled = true;
 		  document.styleSheets[1].disabled = true;
 		  document.styleDheets[2].disabled = false;
-	};	
+	};	*/
   },
   getRecommendedServer: function() {
 //	  alert("startup: getRecommendedServer");
@@ -227,14 +227,14 @@ var htlivesight = {
     	document.getElementById("reLiveByEvent").disabled = true;
       };
   },
-  temachange: function() {
+/*  temachange: function() {
 //	  alert("startup:unload: begin");
 //	  document.getElementById(tabID).setAttribute("class", "livefox.css");
 	  document.styleSheets[0].disabled = true;
 	  document.styleSheets[1].disabled = false;
 	  document.styleSheets[2].disabled = true;
  //   alert("startup:unload: end");
-  },
+  },*/
 };
 
 

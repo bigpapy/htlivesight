@@ -145,7 +145,7 @@ Live.ParseLive = function (response, source, addtime) {
 	  }
 
     if (source == Live.VIEW) {    	htlivesight.Notify.set();  //    	alert("Live.Parselive15");
-    }htlivesight.errorLoadingXML=false;htlivesight.liveXml=response;
+    }htlivesight.errorLoadingXML=false;// htlivesight.liveXml=response;
  
   } catch(e) {	  	//  alert("Live.Parselive16");	//  alert("Live.ParseView : " + e);	  htlivesight.errorLoadingXML=true;	  dump("Live.ParseView : " + e);//modified by bigpapy
   }
