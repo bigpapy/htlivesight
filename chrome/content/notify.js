@@ -139,11 +139,11 @@ htlivesight.Notify = {
         		if (alertEv.mysound) {
         			alertEv.mysound.play();
         		}
-          } else if(match.home.team.id == Teams.myTeam.id || match.away.team.id == Teams.myTeam.id){
+          } else if((match.home.team.id == Teams.myTeam.id || match.away.team.id == Teams.myTeam.id)         		  && !((alertEv.key.A==1 || (alertEv.key.A==0 &&(alertEv.key.BC==55 ||        				  alertEv.key.BC==56 || alertEv.key.BC==57))) && htlivesight.prefs.personalization.noOpGoal)        		  || htlivesight.prefs.personalization.livefoxGoal){
         	  if (alertEv.opsound) {
-        		  alertEv.opsound.play();
+        		alertEv.opsound.play();
         	  }
-          } else if(Friends.isFriend(matchEvent.matchAlertId, match.youth)){        	  if (alertEv.frsound) {                  alertEv.frsound.play();                }          } else if(Friends.isFriend(match.home.team.id, match.youth)||Friends.isFriend(match.away.team.id, match.youth)){        	  if (alertEv.opfrsound) {                  alertEv.opfrsound.play();                }          } else {        	  if (alertEv.otsound) {                  alertEv.otsound.play();              }          }
+          } else if(Friends.isFriend(matchEvent.matchAlertId, match.youth)){        	  if (alertEv.frsound) {                 alertEv.frsound.play();                }          } else if(Friends.isFriend(match.home.team.id, match.youth)||Friends.isFriend(match.away.team.id, match.youth)){        	  if (alertEv.opfrsound) {                  alertEv.opfrsound.play();                }          } else {        	  if (alertEv.otsound) {                  alertEv.otsound.play();              }          }
       }
     }
       if (alertEv.color) {

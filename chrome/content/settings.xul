@@ -38,7 +38,7 @@
 			<tab label="&tab.matches;"/>
 			<tab label="&tab.notifications;"/>
 			<tab label="&tab.other;"/> <!--added by Bigpapy for new tab -->
-			<tab label="Personalizations"/> <!--added by Bigpapy for new tab -->
+			<tab label="&tab.custom;"/> <!--added by Bigpapy for new tab -->
 		</tabs>
 		<tabpanels flex="1">
 			<tabpanel id="tab_settings_options" orient="vertical" flex="1">
@@ -195,14 +195,16 @@
 			</tabpanel> <!--added by bigpapy to have another tab option (end)-->
 			<tabpanel orient="vertical" flex="1">
 			<groupbox>
-				<caption label="Icons"/>
-				<checkbox id="oldIcons" label="Livefox Icons in match window" oncommand="htlivesight.Settings.click.oldIcons();"/>
+				<caption label="&custom.icons;"/>
+				<checkbox id="oldIcons" label="&custom.icons.old;" oncommand="htlivesight.Settings.click.oldIcons();"/>
 			</groupbox>
 			<groupbox>
-				<caption label="Sounds"/>
-				<checkbox id="weather" label="Weather sounds at beginning" oncommand="htlivesight.Settings.click.weather();"/>
-				<checkbox id="whistleTime" label="Whistle at beginning/end half" oncommand="htlivesight.Settings.click.whistleTime();"/>
-				<checkbox id="weatherSE" label="Weather special event sounds" oncommand="htlivesight.Settings.click.weatherSE();"/>
+				<caption label="&custom.sounds;"/>
+				<checkbox id="weather" label="&custom.sounds.weather;" oncommand="htlivesight.Settings.click.weather();"/>
+				<checkbox id="whistleTime" label="&custom.sounds.time;" oncommand="htlivesight.Settings.click.whistleTime();"/>
+				<checkbox id="weatherSE" label="&custom.sounds.SEW;" oncommand="htlivesight.Settings.click.weatherSE();"/>
+				<checkbox id="livefoxGoal" label="&custom.sounds.goal;" oncommand="htlivesight.Settings.click.livefoxGoal();"/>
+				<checkbox id="noOpGoal" label="&custom.sounds.noOpGoal;" oncommand="htlivesight.Settings.click.noOpGoal();"/>
 			</groupbox>
 		</tabpanel>
 		</tabpanels>
