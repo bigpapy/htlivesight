@@ -75,6 +75,8 @@ htlivesight.Settings = {
     document.getElementById("weather").checked =prefs.personalization.weather;
     document.getElementById("whistleTime").checked =prefs.personalization.whistleTime;
     document.getElementById("weatherSE").checked =prefs.personalization.weatherSE;
+    document.getElementById("livefoxGoal").checked =prefs.personalization.livefoxGoal;
+    document.getElementById("noOpGoal").checked =prefs.personalization.noOpGoal;
  //   document.getElementById("reLive").checked = prefs.other.reLive;
  //   document.getElementById("reLiveSpeed").value = prefs.other.reLiveSpeed;
  
@@ -274,6 +276,22 @@ htlivesight.Settings = {
         };
     },
     
+    livefoxGoal: function() {
+    	var prefs = htlivesight.Settings.preferences;
+        if(document.getElementById("livefoxGoal").checked) {
+          prefs.personalization.livefoxGoal = true;
+        } else {
+          prefs.personalization.livefoxGoal = false;
+        };
+    },
+    noOpGoal: function() {
+    	var prefs = htlivesight.Settings.preferences;
+        if(document.getElementById("noOpGoal").checked) {
+          prefs.personalization.noOpGoal = true;
+        } else {
+          prefs.personalization.noOpGoal = false;
+        };
+    },
   /*  reLive: function() {
     	var prefs = htlivesight.Settings.preferences;
         if(document.getElementById("reLive").checked) {
