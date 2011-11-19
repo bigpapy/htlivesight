@@ -348,7 +348,7 @@ function UpdateLiveHeader(match) {
  // var headerElement = document.getElementById("box_header_"+match.id + "_" + match.youth);
   
   try {
-	  
+	
     if (match.arena.name) {
       label = document.getElementById("arena_name_" + match.id + "_" + match.youth);
       label.setAttribute("value", htlivesight.DOM.getTextContent(match.arena.name));

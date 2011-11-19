@@ -15,10 +15,10 @@ var htlivesight = {
   strings: null,
   startup: function() {
     // modify added by bigpapy
-    htlivesight.prefs = htlivesight.Preferences.get();
-    if (htlivesight.prefs.personalization.oldIcons){ htlivesight.Image = htlivesight.ImageOld;
+  //  htlivesight.prefs = htlivesight.Preferences.get();
+ //   if (htlivesight.prefs.personalization.oldIcons){ htlivesight.Image = htlivesight.ImageOld;
    // Events.type.SWAP= new Event.type(150, htlivesight.Image.event.swap);
-      }
+   //   }
     // end modify by bigpapy
     var winboxRegister = function(wbList) {
       var winbox;
@@ -47,9 +47,9 @@ var htlivesight = {
     document.getElementById("winbox_leaguematches").collapsed=true;
     winboxRegister(["leaguematches","leaguetable","matchlist","friends","addmatch"]);
     htlivesight.Click.AddButtonListeners();
- //   htlivesight.prefs = htlivesight.Preferences.get();
+    htlivesight.prefs = htlivesight.Preferences.get();
 
-//    if (htlivesight.prefs.personalization.oldIcons) htlivesight.Image = htlivesight.ImageOld;
+    if (htlivesight.prefs.personalization.oldIcons) htlivesight.Image = htlivesight.ImageOld;
 
 
     Friends.start();
@@ -69,17 +69,7 @@ var htlivesight = {
     	document.getElementById("reLiveSpeed").disabled = true;
       	document.getElementById("reLiveByEvent").disabled = true;
       }
- /*   if (htlivesight.prefs.preferences.oldIcons) 
-	{
-  	  document.styleSheets[0].disabled = true;
-	  document.styleSheets[1].disabled = false;
-	  document.styleSheets[2].disabled = true;
-	//  document.styleSheets[3].disabled = true;
-	}else{
-		document.styleSheets[0].disabled = true;
-		  document.styleSheets[1].disabled = true;
-		  document.styleDheets[2].disabled = false;
-	};	*/
+ 
   },
   getRecommendedServer: function() {
 //	  alert("startup: getRecommendedServer");

@@ -77,6 +77,9 @@ htlivesight.Settings = {
     document.getElementById("weatherSE").checked =prefs.personalization.weatherSE;
     document.getElementById("livefoxGoal").checked =prefs.personalization.livefoxGoal;
     document.getElementById("noOpGoal").checked =prefs.personalization.noOpGoal;
+    document.getElementById("opGoalSound").value = prefs.personalization.opGoalSound;
+ //   htlivesight.Sound.sample.opgoal = new htlivesight.Sound.sample("chrome://htlivesight/content/sound/sun.wav");
+    //   htlivesight.Sound.sample.opgoal.url.spec= "/home/lelone/Scrivania/sun.wav";
  //   document.getElementById("reLive").checked = prefs.other.reLive;
  //   document.getElementById("reLiveSpeed").value = prefs.other.reLiveSpeed;
  
@@ -292,6 +295,13 @@ htlivesight.Settings = {
           prefs.personalization.noOpGoal = false;
         };
     },
+    
+    opGoalSound: function() {
+        var prefs = htlivesight.Settings.preferences;
+    //  var value = document.getElementById("opGoalSound").value.replace(/\D/g, "");
+    //    document.getElementById("opGoalSound").value;
+        prefs.personalization.opGoalSound = document.getElementById("opGoalSound").value;
+      },
   /*  reLive: function() {
     	var prefs = htlivesight.Settings.preferences;
         if(document.getElementById("reLive").checked) {
