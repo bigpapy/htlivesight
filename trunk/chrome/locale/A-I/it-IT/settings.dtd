@@ -39,14 +39,14 @@
 <!ENTITY other.eventkey       "Codice evento">
 <!ENTITY other.eventkey.note  "Stampa il codice evento nel testo">
 
-<!ENTITY custom.icons          "Icone">
-<!ENTITY custom.icons.old      "Icone di Livefox nella finestra partita">
-<!ENTITY custom.sounds         "Suoni">
-<!ENTITY custom.sounds.weather "Suoni meteo a inizio partita">
-<!ENTITY custom.sounds.time    "Suoni inizio e fine tempo">
-<!ENTITY custom.sounds.SEW     "Suoni special event meteo">
-
-
+<!ENTITY custom.icons           "Icone">
+<!ENTITY custom.icons.old       "Icone di Livefox nella finestra partita">
+<!ENTITY custom.sounds          "Suoni">
+<!ENTITY custom.sounds.weather  "Suoni meteo a inizio partita">
+<!ENTITY custom.sounds.time     "Suoni inizio e fine tempo">
+<!ENTITY custom.sounds.SEW      "Suoni special event meteo">
+<!ENTITY custom.sounds.goal     "Suoni goal livefox">
+<!ENTITY custom.sounds.noOpGoal "Rimuove suono goal avversario">
 
 <!ENTITY language.select     "Scegli la lingua">
 <!ENTITY language.note       "Attenzione: Riavvia Firefox per rendere effettivi i cambiamenti.">
