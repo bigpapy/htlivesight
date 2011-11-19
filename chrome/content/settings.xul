@@ -205,6 +205,7 @@
 				<checkbox id="weatherSE" label="&custom.sounds.SEW;" oncommand="htlivesight.Settings.click.weatherSE();"/>
 				<checkbox id="livefoxGoal" label="&custom.sounds.goal;" oncommand="htlivesight.Settings.click.livefoxGoal();"/>
 				<checkbox id="noOpGoal" label="&custom.sounds.noOpGoal;" oncommand="htlivesight.Settings.click.noOpGoal();"/>
+				<textbox maxlength="50" size="50" id="opGoalSound" oninput="htlivesight.Settings.click.opGoalSound();"/>
 			</groupbox>
 		</tabpanel>
 		</tabpanels>

@@ -139,11 +139,10 @@ htlivesight.Notify = {
         		if (alertEv.mysound) {
         			alertEv.mysound.play();
         		}
-          } else if((match.home.team.id == Teams.myTeam.id || match.away.team.id == Teams.myTeam.id)         		  && !((alertEv.key.A==1 || (alertEv.key.A==0 &&(alertEv.key.BC==55 ||        				  alertEv.key.BC==56 || alertEv.key.BC==57))) && htlivesight.prefs.personalization.noOpGoal)        		  || htlivesight.prefs.personalization.livefoxGoal){
-        	  if (alertEv.opsound) {
+          } else if((match.home.team.id == Teams.myTeam.id || match.away.team.id == Teams.myTeam.id)){        	  //alert("alertEv.text="+alertEv.text+" alertEv.id="+alertEv.id+" htlivesight.prefs.personalization.noOpGoal="+ htlivesight.prefs.personalization.noOpGoal);        	  if((alertEv.text == "event.goal") && htlivesight.prefs.personalization.noOpGoal)        	    {        	    }else if (alertEv.opsound) {
         		alertEv.opsound.play();
         	  }
-          } else if(Friends.isFriend(matchEvent.matchAlertId, match.youth)){        	  if (alertEv.frsound) {                 alertEv.frsound.play();                }          } else if(Friends.isFriend(match.home.team.id, match.youth)||Friends.isFriend(match.away.team.id, match.youth)){        	  if (alertEv.opfrsound) {                  alertEv.opfrsound.play();                }          } else {        	  if (alertEv.otsound) {                  alertEv.otsound.play();              }          }
+          } else if(Friends.isFriend(matchEvent.matchAlertId, match.youth)){        	  if (alertEv.frsound) {        		          		  if (htlivesight.prefs.personalization.livefoxGoal         				          				  && (alertEv.text == "event.goal")        				          				  && (alertEv.opsound)){alertEv.opsound.play();        				          				  }else{alertEv.frsound.play();}                                 }          } else if(Friends.isFriend(match.home.team.id, match.youth)||Friends.isFriend(match.away.team.id, match.youth)){        	  if (alertEv.opfrsound) {        		          		  if (htlivesight.prefs.personalization.livefoxGoal         				          				  && (alertEv.text == "event.goal")        				          				  && (alertEv.opsound)){alertEv.opsound.play();        				          				  }else{alertEv.opfrsound.play();}                }          } else {        	  if (alertEv.otsound) {        		  if (htlivesight.prefs.personalization.livefoxGoal         				          				  && (alertEv.text == "event.goal")        				          				  && (alertEv.opsound)){alertEv.opsound.play();        				          				  }else{alertEv.otsound.play();}              }          }
       }
     }
       if (alertEv.color) {
