@@ -5,6 +5,7 @@
 <!ENTITY tab.notifications   "Obaveštenja">
 <!ENTITY tab.language        "Jezik">
 <!ENTITY tab.other           "Ostalo">
+<!ENTITY tab.custom          "Obaveštenja">
 
 <!ENTITY general.open        "Otvori HTLiveSight">
 <!ENTITY general.new_tab     "U novom tabu">
