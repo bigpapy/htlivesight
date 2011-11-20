@@ -43,7 +43,7 @@
 <!ENTITY custom.icons.old       "Original Livefox icons in match window">
 <!ENTITY custom.sounds          "Sounds">
 <!ENTITY custom.sounds.weather  "Weather sound on the match start">
-<!ENTITY custom.sounds.time     "Weather sound for the halfite start and and the end">
+<!ENTITY custom.sounds.time     "Weather sound for the halftime start and the end">
 <!ENTITY custom.sounds.SEW      "Sound for Weather Special Event">
 <!ENTITY custom.sounds.goal     "Original Livefox sounds">
 <!ENTITY custom.sounds.noOpGoal "No sounds for opponent goals">
