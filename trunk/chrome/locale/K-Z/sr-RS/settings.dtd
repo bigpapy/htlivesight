@@ -38,6 +38,15 @@
 <!ENTITY other.eventkey      "Шифра догађаја">
 <!ENTITY other.eventkey.note "Прикажи ХТ шифру догађаја за сваку линију у извештају са меча">
 
+<!ENTITY custom.icons           "Иконице">
+<!ENTITY custom.icons.old       "Оригиналне Ливефокс иконице у прозору за мечеве">
+<!ENTITY custom.sounds          "Звуци">
+<!ENTITY custom.sounds.weather  "Звук за време на почетку утакмице">
+<!ENTITY custom.sounds.time     "Звук за почетак и крај полувремена">
+<!ENTITY custom.sounds.SEW      "Звук за специјалне догађаје у вези са временом">
+<!ENTITY custom.sounds.goal     "Оригинални Ливефокс звуци">
+<!ENTITY custom.sounds.noOpGoal "Уклони звук за противникове голове">
+
 <!ENTITY language.select     "Одабери језик">
 <!ENTITY language.note       "Рестартујte HTLS да би ова подешавања имала ефекта.">
 
