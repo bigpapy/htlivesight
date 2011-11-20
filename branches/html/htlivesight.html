@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/jquery.ui.all.css">
 <link rel="stylesheet" href="css/demos.css">
-<link rel="stylesheet" href="css/dima.css">
+<link rel="stylesheet" href="css/dim.css">
 <script src="js/jquery-1.6.2.js"></script>
 <script src="js/external/jquery.bgiframe-2.1.2.js"></script>
 <script src="js/jquery.ui.accordion.js"></script>
@@ -39,7 +39,7 @@
 </script>
 <script>
 //Script per login
-$.fx.speeds._default = 1000;
+$.fx.speeds._default = 500;
 	$(function() {
 
 		$( "#dialog:ui-dialog" ).dialog( "destroy" );
@@ -175,6 +175,98 @@ $.fx.speeds._default = 1000;
 
 
 
+
+
+
+<div id="topbar">
+<div id="leftzone">
+Check out the latest news and releases of HTLS: <a href="http://htlivesight.sourceforge.net/">http://htlivesight.sourceforge.net/</a>
+</div>
+<div id="rightzone">
+Logged in as TEAM NAME - TEAM LOGO
+<button id="opener">Login</button>
+<button id="opt-opener">Options</button>
+<div id="options-form" title="Options">
+<form>
+  	<fieldset style="border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px;">
+
+	<legend>Options</legend>
+		<label for="name">Insert your TeamID</label>
+		<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+		<input type="checkbox" id="check" /><label for="check">Save</label>
+		<input type="submit" value="Login"/>
+		</fieldset>
+		
+		
+</form>
+
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">General</a></li>
+		<li><a href="#tabs-2">Matches</a></li>
+		<li><a href="#tabs-3">Alerts</a></li>
+	</ul>
+	<div id="tabs-1">
+		<p>Choose your language:</p>
+			<select>
+		<option>select</option>
+
+							<option value="ca-CA">ca-CA Català</option>
+							<option value="cs-CZ">cs-CZ Cesky</option>
+                            <option value="da-DK">da-DK Danish</option>
+							<option value="de-DE">de-DE Deutsch</option>
+
+							<option value="en-GB">en-GB English (British)</option>
+							<option value="en-US">en-US English (US)</option>
+							<option value="es-ES">es-ES Espanol</option>
+							<option value="fr-FR">fr-FR Français</option>
+
+							<option value="hr-HR">hr-HR Hrvatski</option>
+							<option value="hu-HU">hu-HU Magyar</option>
+							<option value="it-IT">it-IT Italiano</option>
+
+	</select>
+	</div>
+	<div id="tabs-2">
+		<p>League Matches</p>
+		<input type="checkbox" />Load automatically League Matches and League Table<br />
+		<input type="checkbox" />Played in <input value="24" /> hours<br />
+				<p>Friends Matches</p>
+		<input type="checkbox" />Load automatically matches of your friends<br />
+		<input type="checkbox" />Played in <input value="24" /> hours<br />
+						<p>Scorers</p>
+		<input type="checkbox" />Add scorers in header<br />
+				<p>Live Window</p>
+		<input value="3" /> Lines to show in minimized mode<br />
+	</div>
+	<div id="tabs-3">
+		<p>Alerts</p>
+		<input type="checkbox" />Sounds<br />
+		<input type="checkbox" />Only in open matches<br />
+		<input type="checkbox" />Flash<br />
+		<input type="checkbox" />Popups<br />
+	</div>
+</div>
+<div class="demo-description">
+<p>Some options need HTLiveSight to be restarted. If nothing happens, restart your browser.</p>
+</div>
+</div>
+
+<button id="openabout">About</button>
+<div id="about-form" title="About HTLiveSight">
+<img src="img/chpp.png" alt="chpp" />
+<img src="img/HTML5_Logo_512.png" alt="html5" />
+<img src="img/jquery_logo.png" alt="jquery" />
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
 <div id="match_container">
 
 <div class="match">
@@ -295,7 +387,7 @@ Sempronio
 </div>
 </div>
 
-<h3><a href="#">Add Match</a></h3>
+<h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-state-active ui-corner-top"><a href="#">Add Match</a></h3>
 <div  class="dialog-form" title="Create new useraa"><!--id="addmatch"-->
 <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
 <input type="checkbox" id="check3" /><label for="check3">Youth</label>
@@ -307,88 +399,6 @@ Sempronio
 <p>...Update in XX seconds...</p>
 <div id="progressbar"></div>
 </div>
-
-<div id="bottonbutton">
-
-<button id="opener">Login</button>
-<button id="opt-opener">Options</button>
-<div id="options-form" title="Options"><!--
-<form>
-  	<fieldset style="border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px;">
-
-	<legend>Options</legend>
-		<label for="name">Insert your TeamID</label>
-		<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
-		<input type="checkbox" id="check" /><label for="check">Save</label>
-		<input type="submit" value="Login"/>
-		</fieldset>
-		
-		
-</form>-->
-
-<div id="tabs">
-	<ul>
-		<li><a href="#tabs-1">General</a></li>
-		<li><a href="#tabs-2">Matches</a></li>
-		<li><a href="#tabs-3">Alerts</a></li>
-	</ul>
-	<div id="tabs-1">
-		<p>Choose your language:</p>
-			<select>
-		<option>select</option>
-
-							<option value="ca-CA">ca-CA Català</option>
-							<option value="cs-CZ">cs-CZ Cesky</option>
-                            <option value="da-DK">da-DK Danish</option>
-							<option value="de-DE">de-DE Deutsch</option>
-
-							<option value="en-GB">en-GB English (British)</option>
-							<option value="en-US">en-US English (US)</option>
-							<option value="es-ES">es-ES Espanol</option>
-							<option value="fr-FR">fr-FR Français</option>
-
-							<option value="hr-HR">hr-HR Hrvatski</option>
-							<option value="hu-HU">hu-HU Magyar</option>
-							<option value="it-IT">it-IT Italiano</option>
-
-	</select>
-	</div>
-	<div id="tabs-2">
-		<p>League Matches</p>
-		<input type="checkbox" />Load automatically League Matches and League Table<br />
-		<input type="checkbox" />Played in <input value="24" /> hours<br />
-				<p>Friends Matches</p>
-		<input type="checkbox" />Load automatically matches of your friends<br />
-		<input type="checkbox" />Played in <input value="24" /> hours<br />
-						<p>Scorers</p>
-		<input type="checkbox" />Add scorers in header<br />
-				<p>Live Window</p>
-		<input value="3" /> Lines to show in minimized mode<br />
-	</div>
-	<div id="tabs-3">
-		<p>Alerts</p>
-		<input type="checkbox" />Sounds<br />
-		<input type="checkbox" />Only in open matches<br />
-		<input type="checkbox" />Flash<br />
-		<input type="checkbox" />Popups<br />
-	</div>
-</div>
-<div class="demo-description">
-<p>Some options need HTLiveSight to be restarted. If nothing happens, restart your browser.</p>
-</div>
-</div>
-
-
-<button id="openabout">About</button>
-<div id="about-form" title="About HTLiveSight">
-<img src="img/chpp.png" alt="chpp" />
-<img src="img/HTML5_Logo_512.png" alt="html5" />
-<img src="img/jquery_logo.png" alt="jquery" />
-
-</div>
-
-</div>
-
 
 <!-- IL DIV DELLA SIDEBAR FINIVA QUI-->
 </div>

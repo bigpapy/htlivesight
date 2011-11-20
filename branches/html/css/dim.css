@@ -1,4 +1,4 @@
-body { font-size: 10pt;
+body { 
 background-image: url(../img/bg.png);
 background-repeat:no-repeat;
 background-attachment:fixed;
@@ -30,7 +30,22 @@ border-style:solid;
 text-align:center;
 }
 #sidebar{
-/*background:#aaa;*/
+background:#aaa;
 width:20%;
+float:right;
+}
+#topbar{
+background:#000;
+color:white;
+border-color:#000;
+border-width:1px;
+border-style:solid;
+height:30px;
+margin-bottom:10px;
+}
+#leftzone{
+float:left;
+}
+#rightzone{
 float:right;
 }
