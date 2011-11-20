@@ -40,6 +40,15 @@
 <!ENTITY other.eventkey      "Šifra događaja">
 <!ENTITY other.eventkey.note "Prikaži HT šifru događaja za svaku liniju u izveštaju sa meča">
 
+<!ENTITY custom.icons           "Ikonice">
+<!ENTITY custom.icons.old       "Originalne Livefox ikonice u prozoru za mečeve">
+<!ENTITY custom.sounds          "Zvuci">
+<!ENTITY custom.sounds.weather  "Zvuk za vreme na početku utakmice">
+<!ENTITY custom.sounds.time     "Zvuk za početak i kraj poluvremena">
+<!ENTITY custom.sounds.SEW      "Zvuk za specijalni događaj u vezi sa vremenom">
+<!ENTITY custom.sounds.goal     "Originalni Livefox zvuci">
+<!ENTITY custom.sounds.noOpGoal "Ukloni zvuk za protivnikove golove">
+
 <!ENTITY language.select     "Odaberi jezik">
 <!ENTITY language.note       "Restartujte HTLS da bi ova podešavanja imala efekta.">
 
