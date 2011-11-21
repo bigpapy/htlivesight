@@ -1,4 +1,4 @@
-<!ENTITY window.title         "Opzioni di HTLiveSight">
+<!ENTITY window.title             "Opzioni di HTLiveSight">
 
 <!ENTITY tab.general          "Generali">
 <!ENTITY tab.matches          "Partite">
@@ -6,6 +6,9 @@
 <!ENTITY tab.language         "Lingua">
 <!ENTITY tab.other            "Altro">
 <!ENTITY tab.custom           "Personalizzazione">
+<!ENTITY tab.goalSound        "Suoni goal">
+<!ENTITY tab.wheatherSound    "Suoni meteo/infortuni">
+<!ENTITY tab.whistleSound     "Suoni fischio/hattrick">
 
 <!ENTITY general.open         "Apri HTLiveSight">
 <!ENTITY general.new_tab      "In una nuova tabella">
@@ -47,6 +50,24 @@
 <!ENTITY custom.sounds.SEW      "Suoni special event meteo">
 <!ENTITY custom.sounds.goal     "Suoni goal livefox">
 <!ENTITY custom.sounds.noOpGoal "Rimuove suono goal avversario">
+
+<!ENTITY path.sounds.myGoal       "Suono gol della mia squadra">
+<!ENTITY path.sounds.opGoal       "Suono gol della squadra avversaria">
+<!ENTITY path.sounds.frGoal       "Suono gol delle squadre amiche">
+<!ENTITY path.sounds.opfrGoal     "Suono gol degli avversari delle squadre amiche">
+<!ENTITY path.sounds.otGoal       "Suono gol di altre squadre">
+<!ENTITY path.sounds.miss         "Suono gol mancato">
+<!ENTITY path.sounds.sun          "Suono meteo sole">
+<!ENTITY path.sounds.rain         "Suono meteo pioggia">
+<!ENTITY path.sounds.overcast     "Suono meteo coperto">
+<!ENTITY path.sounds.fewClouds    "Suono meteo poco nuvoloso">
+<!ENTITY path.sounds.myBoo        "Suono infortunio della mia squadra">
+<!ENTITY path.sounds.opBoo        "Suono infortunio della squadra avversaria">
+<!ENTITY path.sounds.whistleStart "Suono inizio 1° e 2° tempo">
+<!ENTITY path.sounds.whistle2     "Suono fine primo tempo">
+<!ENTITY path.sounds.whistle3     "Suono fine partita">
+<!ENTITY path.sounds.whistle      "Suono ammonizione/espulsione">
+<!ENTITY path.sounds.hattrick     "Suono hattrick">
 
 <!ENTITY language.select     "Scegli la lingua">
 <!ENTITY language.note       "Attenzione: Riavvia Firefox per rendere effettivi i cambiamenti.">
