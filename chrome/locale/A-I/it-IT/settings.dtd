@@ -7,8 +7,8 @@
 <!ENTITY tab.other            "Altro">
 <!ENTITY tab.custom           "Personalizzazione">
 <!ENTITY tab.goalSound        "Suoni goal">
-<!ENTITY tab.wheatherSound    "Suoni meteo/infortuni">
-<!ENTITY tab.whistleSound     "Suoni fischio/hattrick">
+<!ENTITY tab.wheatherSound    "Suoni meteo e infortuni">
+<!ENTITY tab.whistleSound     "Fischi arbitro e hattrick">
 
 <!ENTITY general.open         "Apri HTLiveSight">
 <!ENTITY general.new_tab      "In una nuova tabella">
