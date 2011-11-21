@@ -5,7 +5,10 @@
 <!ENTITY tab.notifications   "Obaveštenja">
 <!ENTITY tab.language        "Jezik">
 <!ENTITY tab.other           "Ostalo">
-<!ENTITY tab.custom          "Obaveštenja">
+<!ENTITY tab.custom          "Customizations">
+<!ENTITY tab.goalSound        "Goals sounds">
+<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
+<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
 
 <!ENTITY general.open        "Otvori HTLiveSight">
 <!ENTITY general.new_tab     "U novom tabu">
@@ -13,8 +16,6 @@
 <!ENTITY general.server      "Podešavanja servera">
 <!ENTITY general.note        "Ubacite oznaku Hettrik servera na kojem ste ulogovani(npr. www96).">
 
-<!ENTITY general.server      "Podešavanja servera">
-<!ENTITY general.note        "Ubacite Hettrick server na kojem ste ulogovani(npr. www96).">
 <!ENTITY matches.league      "Ligaški mečevi">
 <!ENTITY matches.get_league  "Traži ligaške mečeve">
 <!ENTITY matches.played      "Ako se igra za">
@@ -49,6 +50,24 @@
 <!ENTITY custom.sounds.SEW      "Zvuk za specijalni događaj u vezi sa vremenom">
 <!ENTITY custom.sounds.goal     "Originalni Livefox zvuci">
 <!ENTITY custom.sounds.noOpGoal "Ukloni zvuk za protivnikove golove">
+
+<!ENTITY path.sounds.myGoal       "Sound for own goal">
+<!ENTITY path.sounds.opGoal       "Sound for goal of my opponent">
+<!ENTITY path.sounds.frGoal       "Sound for goal of friend's">
+<!ENTITY path.sounds.opfrGoal     "Sound for goal of friend's opponent">
+<!ENTITY path.sounds.otGoal       "Other team goal sound">
+<!ENTITY path.sounds.miss         "Missed goal sound">
+<!ENTITY path.sounds.sun          "Sound for sunny weather">
+<!ENTITY path.sounds.rain         "Sound for rainy weather">
+<!ENTITY path.sounds.overcast     "Sound for overcast weather">
+<!ENTITY path.sounds.fewClouds    "Sound for few clouds weather">
+<!ENTITY path.sounds.myBoo        "Sound for own team injury">
+<!ENTITY path.sounds.opBoo        "Sound for opponent team injury">
+<!ENTITY path.sounds.whistleStart "Start of 1st/2nd half whistle">
+<!ENTITY path.sounds.whistle2     "End of 1st half whistle">
+<!ENTITY path.sounds.whistle3     "End of match whistle">
+<!ENTITY path.sounds.whistle      "Yellow/Red card sound">
+<!ENTITY path.sounds.hattrick     "Hattrick sound">
 
 <!ENTITY language.select     "Odaberi jezik">
 <!ENTITY language.note       "Restartujte HTLS da bi ova podešavanja imala efekta.">

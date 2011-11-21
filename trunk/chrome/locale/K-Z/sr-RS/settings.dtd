@@ -5,8 +5,10 @@
 <!ENTITY tab.notifications   "Обавештења">
 <!ENTITY tab.language        "Језик">
 <!ENTITY tab.other           "Остало">
-<!ENTITY tab.custom          "Обавештења">
-
+<!ENTITY tab.custom          "Customizations">
+<!ENTITY tab.goalSound        "Goals sounds">
+<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
+<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
 
 <!ENTITY general.open        "Отвори HTLiveSight">
 <!ENTITY general.new_tab     "У новом табу">
@@ -48,6 +50,24 @@
 <!ENTITY custom.sounds.SEW      "Звук за специјалне догађаје у вези са временом">
 <!ENTITY custom.sounds.goal     "Оригинални Ливефокс звуци">
 <!ENTITY custom.sounds.noOpGoal "Уклони звук за противникове голове">
+
+<!ENTITY path.sounds.myGoal       "Sound for own goal">
+<!ENTITY path.sounds.opGoal       "Sound for goal of my opponent">
+<!ENTITY path.sounds.frGoal       "Sound for goal of friend's">
+<!ENTITY path.sounds.opfrGoal     "Sound for goal of friend's opponent">
+<!ENTITY path.sounds.otGoal       "Other team goal sound">
+<!ENTITY path.sounds.miss         "Missed goal sound">
+<!ENTITY path.sounds.sun          "Sound for sunny weather">
+<!ENTITY path.sounds.rain         "Sound for rainy weather">
+<!ENTITY path.sounds.overcast     "Sound for overcast weather">
+<!ENTITY path.sounds.fewClouds    "Sound for few clouds weather">
+<!ENTITY path.sounds.myBoo        "Sound for own team injury">
+<!ENTITY path.sounds.opBoo        "Sound for opponent team injury">
+<!ENTITY path.sounds.whistleStart "Start of 1st/2nd half whistle">
+<!ENTITY path.sounds.whistle2     "End of 1st half whistle">
+<!ENTITY path.sounds.whistle3     "End of match whistle">
+<!ENTITY path.sounds.whistle      "Yellow/Red card sound">
+<!ENTITY path.sounds.hattrick     "Hattrick sound">
 
 <!ENTITY language.select     "Одабери језик">
 <!ENTITY language.note       "Рестартујte HTLS да би ова подешавања имала ефекта.">
