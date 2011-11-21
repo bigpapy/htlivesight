@@ -39,6 +39,9 @@
 			<tab label="&tab.notifications;"/>
 			<tab label="&tab.other;"/> <!--added by Bigpapy for new tab -->
 			<tab label="&tab.custom;"/> <!--added by Bigpapy for new tab -->
+			<tab label="&tab.goalSound;"/> <!--added by Bigpapy for new tab -->
+			<tab label="&tab.wheatherSound;"/> <!--added by Bigpapy for new tab -->
+			<tab label="&tab.whistleSound;"/> <!--added by Bigpapy for new tab -->
 		</tabs>
 		<tabpanels flex="1">
 			<tabpanel id="tab_settings_options" orient="vertical" flex="1">
@@ -205,9 +208,56 @@
 				<checkbox id="weatherSE" label="&custom.sounds.SEW;" oncommand="htlivesight.Settings.click.weatherSE();"/>
 				<checkbox id="livefoxGoal" label="&custom.sounds.goal;" oncommand="htlivesight.Settings.click.livefoxGoal();"/>
 				<checkbox id="noOpGoal" label="&custom.sounds.noOpGoal;" oncommand="htlivesight.Settings.click.noOpGoal();"/>
-				<textbox maxlength="50" size="50" id="opGoalSound" oninput="htlivesight.Settings.click.opGoalSound();"/>
+			</groupbox>
+			
+		</tabpanel>
+		<tabpanel orient="vertical" flex="1">
+			<groupbox>
+				<description>&path.sounds.myGoal;</description>
+				<textbox maxlength="50" size="50" id="myGoalSoundPath" oninput="htlivesight.Settings.click.myGoalSound();"/>
+				<description>&path.sounds.opGoal;</description>
+				<textbox maxlength="50" size="50" id="opGoalSoundPath" oninput="htlivesight.Settings.click.opGoalSound();"/>
+				<description>&path.sounds.frGoal;</description>
+				<textbox maxlength="50" size="50" id="frGoalSoundPath" oninput="htlivesight.Settings.click.frGoalSound();"/>
+				<description>&path.sounds.opfrGoal;</description>
+				<textbox maxlength="50" size="50" id="opfrGoalSoundPath" oninput="htlivesight.Settings.click.opfrGoalSound();"/>
+				<description>&path.sounds.otGoal;</description>
+				<textbox maxlength="50" size="50" id="otGoalSoundPath" oninput="htlivesight.Settings.click.otGoalSound();"/>
+				<description>&path.sounds.miss;</description>
+				<textbox maxlength="50" size="50" id="missGoalSoundPath" oninput="htlivesight.Settings.click.missGoalSound();"/>
+				
 			</groupbox>
 		</tabpanel>
+		<tabpanel orient="vertical" flex="1">
+		<groupbox>
+			<description>&path.sounds.sun;</description>
+			<textbox maxlength="50" size="50" id="sunSoundPath" oninput="htlivesight.Settings.click.sunSound();"/>
+			<description>&path.sounds.rain;</description>
+			<textbox maxlength="50" size="50" id="rainSoundPath" oninput="htlivesight.Settings.click.rainSound();"/>
+			<description>&path.sounds.overcast;</description>
+			<textbox maxlength="50" size="50" id="overcastSoundPath" oninput="htlivesight.Settings.click.overcastSound();"/>
+			<description>&path.sounds.fewClouds;</description>
+			<textbox maxlength="50" size="50" id="fewCloudsSoundPath" oninput="htlivesight.Settings.click.fewCloudSound();"/>
+			<description>&path.sounds.myBoo;</description>
+			<textbox maxlength="50" size="50" id="myBooSoundPath" oninput="htlivesight.Settings.click.myBooSound();"/>
+			<description>&path.sounds.opBoo;</description>
+			<textbox maxlength="50" size="50" id="opBooSoundPath" oninput="htlivesight.Settings.click.opBooSound();"/>
+		</groupbox>
+	</tabpanel>
+	<tabpanel orient="vertical" flex="1">
+	<groupbox>
+		<description>&path.sounds.whistleStart;</description>
+		<textbox maxlength="50" size="50" id="whistleStartSoundPath" oninput="htlivesight.Settings.click.whistleStartSound();"/>
+		<description>&path.sounds.whistle2;</description>
+		<textbox maxlength="50" size="50" id="whistle2SoundPath" oninput="htlivesight.Settings.click.whistle2Sound();"/>
+		<description>&path.sounds.whistle3;</description>
+		<textbox maxlength="50" size="50" id="whistle3SoundPath" oninput="htlivesight.Settings.click.whistle3Sound();"/>
+		<description>&path.sounds.whistle;</description>
+		<textbox maxlength="50" size="50" id="whistleSoundPath" oninput="htlivesight.Settings.click.whistleSound();"/>
+		<description>&path.sounds.hattrick;</description>
+		<textbox maxlength="50" size="50" id="hattrickSoundPath" oninput="htlivesight.Settings.click.hattrickSound();"/>
+	</groupbox>
+</tabpanel>
 		</tabpanels>
 	</tabbox>
 </dialog>

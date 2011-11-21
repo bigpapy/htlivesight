@@ -77,7 +77,25 @@ htlivesight.Settings = {
     document.getElementById("weatherSE").checked =prefs.personalization.weatherSE;
     document.getElementById("livefoxGoal").checked =prefs.personalization.livefoxGoal;
     document.getElementById("noOpGoal").checked =prefs.personalization.noOpGoal;
-    document.getElementById("opGoalSound").value = prefs.personalization.opGoalSound;
+    
+    document.getElementById("myGoalSoundPath").value = prefs.personalization.myGoalSoundPath;
+    document.getElementById("opGoalSoundPath").value = prefs.personalization.opGoalSoundPath;
+    document.getElementById("frGoalSoundPath").value = prefs.personalization.frGoalSoundPath;
+    document.getElementById("opfrGoalSoundPath").value = prefs.personalization.opfrGoalSoundPath;
+    document.getElementById("otGoalSoundPath").value = prefs.personalization.otGoalSoundPath;
+    document.getElementById("missGoalSoundPath").value = prefs.personalization.missGoalSoundPath;
+    document.getElementById("sunSoundPath").value = prefs.personalization.sunSoundPath;
+    document.getElementById("rainSoundPath").value = prefs.personalization.rainSoundPath;
+    document.getElementById("overcastSoundPath").value = prefs.personalization.overcastSoundPath;
+    document.getElementById("fewCloudsSoundPath").value = prefs.personalization.fewCloudsSoundPath;
+    document.getElementById("myBooSoundPath").value = prefs.personalization.myBooSoundPath;
+    document.getElementById("opBooSoundPath").value = prefs.personalization.opBooSoundPath;
+    document.getElementById("whistleStartSoundPath").value = prefs.personalization.whistleStartSoundPath;
+    document.getElementById("whistle2SoundPath").value = prefs.personalization.whistle2SoundPath;
+    document.getElementById("whistle3SoundPath").value = prefs.personalization.whistle3SoundPath;
+    document.getElementById("whistleSoundPath").value = prefs.personalization.whistleSoundPath;
+    document.getElementById("hattrickSoundPath").value = prefs.personalization.hattrickSoundPath;
+    
  //   htlivesight.Sound.sample.opgoal = new htlivesight.Sound.sample("chrome://htlivesight/content/sound/sun.wav");
     //   htlivesight.Sound.sample.opgoal.url.spec= "/home/lelone/Scrivania/sun.wav";
  //   document.getElementById("reLive").checked = prefs.other.reLive;
@@ -296,25 +314,90 @@ htlivesight.Settings = {
         };
     },
     
-    opGoalSound: function() {
+    myGoalSound: function() {
         var prefs = htlivesight.Settings.preferences;
-    //  var value = document.getElementById("opGoalSound").value.replace(/\D/g, "");
-    //    document.getElementById("opGoalSound").value;
-        prefs.personalization.opGoalSound = document.getElementById("opGoalSound").value;
+        prefs.personalization.myGoalSoundPath = document.getElementById("myGoalSoundPath").value;
       },
-  /*  reLive: function() {
-    	var prefs = htlivesight.Settings.preferences;
-        if(document.getElementById("reLive").checked) {
-          prefs.other.reLive = true;
-        } else {
-          prefs.other.reLive = false;
-        };
-    },     
-   reLiveSpeed: function() {
-        var prefs = htlivesight.Settings.preferences;
-        var value = document.getElementById("reLiveSpeed").value.replace(/\D/g, "");
-        document.getElementById("reLiveSpeed").value = value;
-        prefs.other.reLiveSpeed = value;
-    } */
+
+    opGoalSound: function() {
+          var prefs = htlivesight.Settings.preferences;
+          prefs.personalization.opGoalSoundPath = document.getElementById("opGoalSoundPath").value;
+        },
+
+    frGoalSound: function() {
+     var prefs = htlivesight.Settings.preferences;
+     prefs.personalization.frGoalSoundPath = document.getElementById("frGoalSoundPath").value;
+   },
+
+    opfrGoalSound: function() {
+      var prefs = htlivesight.Settings.preferences;
+      prefs.personalization.opfrGoalSoundPath = document.getElementById("opfrGoalSoundPath").value;
+    },
+
+    otGoalSound: function() {
+      var prefs = htlivesight.Settings.preferences;
+      prefs.personalization.otGoalSoundPath = document.getElementById("otGoalSoundPath").value;
+    },
+
+    missGoalSound: function() {
+      var prefs = htlivesight.Settings.preferences;
+      prefs.personalization.missGoalSoundPath = document.getElementById("missGoalSoundPath").value;
+    },
+
+    sunSound: function() {
+      var prefs = htlivesight.Settings.preferences;
+      prefs.personalization.sunSoundPath = document.getElementById("sunSoundPath").value;
+    },
+
+    rainSound: function() {
+      var prefs = htlivesight.Settings.preferences;
+      prefs.personalization.rainSoundPath = document.getElementById("rainSoundPath").value;
+    },
+
+    overcastSound: function() {
+      var prefs = htlivesight.Settings.preferences;
+      prefs.personalization.overcastSoundPath = document.getElementById("overcastSoundPath").value;
+    },
+
+    fewCloudSound: function() {
+      var prefs = htlivesight.Settings.preferences;
+      prefs.personalization.fewCloudsSoundPath = document.getElementById("fewCloudsSoundPath").value;
+    },
+
+    myBooSound: function() {
+      var prefs = htlivesight.Settings.preferences;
+      prefs.personalization.myBooSoundPath = document.getElementById("myBooSoundPath").value;
+    },
+
+    opBooSound: function() {
+      var prefs = htlivesight.Settings.preferences;
+      prefs.personalization.opBooSoundPath = document.getElementById("opBooSoundPath").value;
+    },
+
+    whistleStartSound: function() {
+      var prefs = htlivesight.Settings.preferences;
+      prefs.personalization.whistleStartSoundPath = document.getElementById("whistleStartSoundPath").value;
+    },
+
+    whistle2Sound: function() {
+      var prefs = htlivesight.Settings.preferences;
+      prefs.personalization.whistle2SoundPath = document.getElementById("whistle2SoundPath").value;
+    },
+
+   whistle3Sound: function() {
+     var prefs = htlivesight.Settings.preferences;
+     prefs.personalization.whistle3SoundPath = document.getElementById("whistle3SoundPath").value;
+   },
+
+   whistleSound: function() {
+     var prefs = htlivesight.Settings.preferences;
+     prefs.personalization.whistleSoundPath = document.getElementById("whistleSoundPath").value;
+   },
+
+   hattrickSound: function() {
+     var prefs = htlivesight.Settings.preferences;
+     prefs.personalization.hattrickSoundPath= document.getElementById("hattrickSoundPath").value;
+   },
+
   }
 };
