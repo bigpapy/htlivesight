@@ -12,9 +12,9 @@
 <!ENTITY login.security_code "Sigurnosna zaporka">
 <!ENTITY login.remember_me   "Zapamti me">
 <!ENTITY login.button        "Logiraj se">
-<!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
-<!ENTITY login.by_event      "Per event">
+<!ENTITY login.re_live       "Snimka">
+<!ENTITY login.speed         "Brzina">
+<!ENTITY login.by_event      "Po događaju">
 
 <!ENTITY league.matches      "Ligaške utakmice">
 <!ENTITY league.live_table   "Tablica uživo">
