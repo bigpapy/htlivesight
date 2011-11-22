@@ -56,7 +56,7 @@
 <!ENTITY path.sounds.frGoal       "Звук для гола моего друга">
 <!ENTITY path.sounds.opfrGoal     "Звук для гола соперника моего друга">
 <!ENTITY path.sounds.otGoal       "Звук для гола другой команды">
-<!ENTITY path.sounds.miss         "Missed goal sound">
+<!ENTITY path.sounds.miss         "Звук для незабитого гола">
 <!ENTITY path.sounds.sun          "Звук для солнечной погоды">
 <!ENTITY path.sounds.rain         "Звук для дождливой погоды">
 <!ENTITY path.sounds.overcast     "Звук для пасмурной погоды">
