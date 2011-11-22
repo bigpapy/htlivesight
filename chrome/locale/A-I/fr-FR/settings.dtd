@@ -5,7 +5,7 @@
 <!ENTITY tab.notifications   "Alertes">
 <!ENTITY tab.language        "Langues">
 <!ENTITY tab.other           "Autres">
-<!ENTITY tab.custom          "Customisations">
+<!ENTITY tab.custom          "Personnalisations">
 <!ENTITY tab.goalSound        "Sons des buts">
 <!ENTITY tab.wheatherSound    "Sons de la météo et des blessures">
 <!ENTITY tab.whistleSound     "Sons des coups de sifflets et du coup du chapeau">
