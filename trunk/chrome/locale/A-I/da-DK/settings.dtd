@@ -73,4 +73,4 @@
 <!ENTITY language.note       "Note: Genstart HTLiveSight for at dette kan træde i kraft.">
 
 <!ENTITY button.cancel       "Annuller">
-<!ENTITY button.ok           "Ok">var Bcnf = {'rids' : ['billeo_searchv2'],'xconcode':'112304','member':'EXTERNAL','oaxguid':'{94F97072-91ED-4086-9AC3-756D9BF42B02}','signedin':'1','tb_version':'2.5.1.6' };
+<!ENTITY button.ok           "Ok">
