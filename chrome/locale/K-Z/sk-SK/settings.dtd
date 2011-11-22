@@ -5,10 +5,10 @@
 <!ENTITY tab.notifications   "Hlásenia">
 <!ENTITY tab.language        "Jazyk">
 <!ENTITY tab.other           "Iné">
-<!ENTITY tab.custom          "Customizations">
-<!ENTITY tab.goalSound        "Goals sounds">
-<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
-<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
+<!ENTITY tab.custom          "Prispôsobenia">
+<!ENTITY tab.goalSound        "Zvuky gólov">
+<!ENTITY tab.wheatherSound    "Zvuky zranení a udalostí vyvolaných počasím">
+<!ENTITY tab.whistleSound     "Zvuky hattricku a udalostí odpískaných rozhodcom">
 
 <!ENTITY general.open        "Otvoriť HTLiveSight">
 <!ENTITY general.new_tab     "V novom paneli">
@@ -30,44 +30,44 @@
 <!ENTITY notify.notify       "Hlásenia">
 <!ENTITY notify.enable_sound "Povoliť zvukové hlásenia">
 <!ENTITY notify.only         "Iba v sledovaných zápasoch">
-<!ENTITY notify.flash        "Flash záhlavia">
+<!ENTITY notify.flash        "Blikanie záhlavia">
 <!ENTITY notify.status       "Upozorniť v stavovom riadku">
 
 <!ENTITY other.authorization "Autorizačný kód">
 <!ENTITY other.reset         "Odstráň autorizáciu">
 <!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "Zobrazenie zápasových udalostí zdola nahor">
-<!ENTITY other.reverse.note  "Obnov stránku aby si videl prevedené zmeny">
+<!ENTITY other.reverse.note  "Obnov stránku, aby si videl prevedené zmeny">
 <!ENTITY other.events        "Poradie udalostí">
-<!ENTITY other.eventkey      "Kľúč udalosti">
-<!ENTITY other.eventkey.note "Zobraz kľúč udalosti v komentári">
+<!ENTITY other.eventkey      "Kľúč udalostí">
+<!ENTITY other.eventkey.note "Zobraz kľúč udalostí v komentári">
 
-<!ENTITY custom.icons           "Icons">
-<!ENTITY custom.icons.old       "Original Livefox icons in match window">
-<!ENTITY custom.sounds          "Sounds">
-<!ENTITY custom.sounds.weather  "Weather sound for start of the match">
-<!ENTITY custom.sounds.time     "Sounds for start/end of an halftime">
-<!ENTITY custom.sounds.SEW      "Sounds for weather special events">
-<!ENTITY custom.sounds.goal     "Original Livefox sounds">
-<!ENTITY custom.sounds.noOpGoal "No sounds for opponent's goals">
+<!ENTITY custom.icons           "Ikony">
+<!ENTITY custom.icons.old       "Originálne ikony z Livefox-u v zápasovom okne">
+<!ENTITY custom.sounds          "Zvuky">
+<!ENTITY custom.sounds.weather  "Zvuk počasia na začiatku zápasu">
+<!ENTITY custom.sounds.time     "Zvuk na začiatku/konci polčasu">
+<!ENTITY custom.sounds.SEW      "Zvuky pre špeciálne udalosti vyvolané počasím">
+<!ENTITY custom.sounds.goal     "Originálne zvuky z Livefox-u">
+<!ENTITY custom.sounds.noOpGoal "Bez zvukov pri súperovom góle">
 
-<!ENTITY path.sounds.myGoal       "Sound for own goal">
-<!ENTITY path.sounds.opGoal       "Sound for goal of my opponent">
-<!ENTITY path.sounds.frGoal       "Sound for goal of friend's">
-<!ENTITY path.sounds.opfrGoal     "Sound for goal of friend's opponent">
-<!ENTITY path.sounds.otGoal       "Other team goal sound">
-<!ENTITY path.sounds.miss         "Missed goal sound">
-<!ENTITY path.sounds.sun          "Sound for sunny weather">
-<!ENTITY path.sounds.rain         "Sound for rainy weather">
-<!ENTITY path.sounds.overcast     "Sound for overcast weather">
-<!ENTITY path.sounds.fewClouds    "Sound for few clouds weather">
-<!ENTITY path.sounds.myBoo        "Sound for own team injury">
-<!ENTITY path.sounds.opBoo        "Sound for opponent team injury">
-<!ENTITY path.sounds.whistleStart "Start of 1st/2nd half whistle">
-<!ENTITY path.sounds.whistle2     "End of 1st half whistle">
-<!ENTITY path.sounds.whistle3     "End of match whistle">
-<!ENTITY path.sounds.whistle      "Yellow/Red card sound">
-<!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.myGoal       "Zvuk pre gól môjho tímu">
+<!ENTITY path.sounds.opGoal       "Zvuk pre gól môjho súpera">
+<!ENTITY path.sounds.frGoal       "Zvuk pre gól môjho priateľa">
+<!ENTITY path.sounds.opfrGoal     "Zvuk pre gól súpera môjho priateľa">
+<!ENTITY path.sounds.otGoal       "Zvuk pre gól ostatných tímov">
+<!ENTITY path.sounds.miss         "Zvuk pre nepremenenú šancu">
+<!ENTITY path.sounds.sun          "Zvuk pre slnečné počasie">
+<!ENTITY path.sounds.rain         "Zvuk pre daždivé počasie">
+<!ENTITY path.sounds.overcast     "Zvuk pre zamračené počasie">
+<!ENTITY path.sounds.fewClouds    "Zvuk pre polojasné počasie">
+<!ENTITY path.sounds.myBoo        "Zvuk pre zranenie v mojom tíme">
+<!ENTITY path.sounds.opBoo        "Zvuk pre zranenie v súperovom tíme">
+<!ENTITY path.sounds.whistleStart "Zvuk pre začiatok 1./2. polčasu">
+<!ENTITY path.sounds.whistle2     "Zvuk pre koniec prvého polčasu">
+<!ENTITY path.sounds.whistle3     "Zvuk pre koniec zápasu">
+<!ENTITY path.sounds.whistle      "Zvuk pre žltú/červenú kartu">
+<!ENTITY path.sounds.hattrick     "Zvuk pre hetrik">
 
 <!ENTITY language.select     "Vybrať jazyk">
 <!ENTITY language.note       "Poznámka: Zmeny sa prejavia po reštartovaní programu HTLiveSight.">
