@@ -42,32 +42,32 @@
 <!ENTITY other.eventkey      "Номер події">
 <!ENTITY other.eventkey.note "Показувати номер події в коментарі">
 
-<!ENTITY custom.icons           "Icons">
-<!ENTITY custom.icons.old       "Original Livefox icons in match window">
-<!ENTITY custom.sounds          "Sounds">
-<!ENTITY custom.sounds.weather  "Weather sound for start of the match">
-<!ENTITY custom.sounds.time     "Sounds for start/end of an halftime">
-<!ENTITY custom.sounds.SEW      "Sounds for weather special events">
-<!ENTITY custom.sounds.goal     "Original Livefox sounds">
-<!ENTITY custom.sounds.noOpGoal "No sounds for opponent's goals">
+<!ENTITY custom.icons           "Іконки">
+<!ENTITY custom.icons.old       "Оригінальні іконки Livefox у вікні матчу">
+<!ENTITY custom.sounds          "Звуки">
+<!ENTITY custom.sounds.weather  "Звуки погоди на початку матчу">
+<!ENTITY custom.sounds.time     "Звуки для початку/кінця перерви">
+<!ENTITY custom.sounds.SEW      "Звуки для погодних спеціальних подій">
+<!ENTITY custom.sounds.goal     "Оригінальні звуки Livefox">
+<!ENTITY custom.sounds.noOpGoal "Голи суперника без звуку">
 
-<!ENTITY path.sounds.myGoal       "Sound for own goal">
-<!ENTITY path.sounds.opGoal       "Sound for goal of my opponent">
-<!ENTITY path.sounds.frGoal       "Sound for goal of friend's">
-<!ENTITY path.sounds.opfrGoal     "Sound for goal of friend's opponent">
-<!ENTITY path.sounds.otGoal       "Other team goal sound">
-<!ENTITY path.sounds.miss         "Missed goal sound">
-<!ENTITY path.sounds.sun          "Sound for sunny weather">
-<!ENTITY path.sounds.rain         "Sound for rainy weather">
-<!ENTITY path.sounds.overcast     "Sound for overcast weather">
-<!ENTITY path.sounds.fewClouds    "Sound for few clouds weather">
-<!ENTITY path.sounds.myBoo        "Sound for own team injury">
-<!ENTITY path.sounds.opBoo        "Sound for opponent team injury">
-<!ENTITY path.sounds.whistleStart "Start of 1st/2nd half whistle">
-<!ENTITY path.sounds.whistle2     "End of 1st half whistle">
-<!ENTITY path.sounds.whistle3     "End of match whistle">
-<!ENTITY path.sounds.whistle      "Yellow/Red card sound">
-<!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.myGoal       "Звук для свого гола">
+<!ENTITY path.sounds.opGoal       "Звук для гола мого суперника">
+<!ENTITY path.sounds.frGoal       "Звук для гола мого друга">
+<!ENTITY path.sounds.opfrGoal     "Звук для гола суперника мого друга">
+<!ENTITY path.sounds.otGoal       "Звук для гола іншої команди">
+<!ENTITY path.sounds.miss         "Звук для незабитого гола">
+<!ENTITY path.sounds.sun          "Звук для сонячної погоди">
+<!ENTITY path.sounds.rain         "Звук для дощової погоди">
+<!ENTITY path.sounds.overcast     "Звук для хмарної погоди">
+<!ENTITY path.sounds.fewClouds    "Звук для малохмарної погоди">
+<!ENTITY path.sounds.myBoo        "Звук для травми в моїй команді">
+<!ENTITY path.sounds.opBoo        "Звук для травми в команді суперника">
+<!ENTITY path.sounds.whistleStart "Свисток для початку таймів">
+<!ENTITY path.sounds.whistle2     "Свисток для закінчення першого тайму">
+<!ENTITY path.sounds.whistle3     "Фінальний свисток">
+<!ENTITY path.sounds.whistle      "Звук для жовтої/червоної картки">
+<!ENTITY path.sounds.hattrick     "Звук для хеттріка">
 
 <!ENTITY language.select     "Обрати мову">
 <!ENTITY language.note       "Потрібно перезавантажити Firefox, щоб застосувати зміни">
