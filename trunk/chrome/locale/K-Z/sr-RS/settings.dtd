@@ -5,16 +5,14 @@
 <!ENTITY tab.notifications   "Обавештења">
 <!ENTITY tab.language        "Језик">
 <!ENTITY tab.other           "Остало">
-<!ENTITY tab.custom          "Customizations">
-<!ENTITY tab.goalSound        "Goals sounds">
-<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
-<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
+<!ENTITY tab.custom          "Подешавања">
+<!ENTITY tab.goalSound        "Звуци за голове">
+<!ENTITY tab.wheatherSound    "Звуци за повреде и метеоролошке догађаје">
+<!ENTITY tab.whistleSound     "Звиждуци судије и хет-трик звук">
 
 <!ENTITY general.open        "Отвори HTLiveSight">
 <!ENTITY general.new_tab     "У новом табу">
 <!ENTITY general.new_window  "У новом прозору">
-<!ENTITY general.server      "Подешавања сервера">
-<!ENTITY general.note        "Убаците ознаку Хеттрик сервера на којем сте улоговани(нпр. www96)">
 
 <!ENTITY matches.league      "Лигашки мечеви">
 <!ENTITY matches.get_league  "Тражи лигашке мечеве">
@@ -51,23 +49,23 @@
 <!ENTITY custom.sounds.goal     "Оригинални Ливефокс звуци">
 <!ENTITY custom.sounds.noOpGoal "Уклони звук за противникове голове">
 
-<!ENTITY path.sounds.myGoal       "Sound for own goal">
-<!ENTITY path.sounds.opGoal       "Sound for goal of my opponent">
-<!ENTITY path.sounds.frGoal       "Sound for goal of friend's">
-<!ENTITY path.sounds.opfrGoal     "Sound for goal of friend's opponent">
-<!ENTITY path.sounds.otGoal       "Other team goal sound">
-<!ENTITY path.sounds.miss         "Missed goal sound">
-<!ENTITY path.sounds.sun          "Sound for sunny weather">
-<!ENTITY path.sounds.rain         "Sound for rainy weather">
-<!ENTITY path.sounds.overcast     "Sound for overcast weather">
-<!ENTITY path.sounds.fewClouds    "Sound for few clouds weather">
-<!ENTITY path.sounds.myBoo        "Sound for own team injury">
-<!ENTITY path.sounds.opBoo        "Sound for opponent team injury">
-<!ENTITY path.sounds.whistleStart "Start of 1st/2nd half whistle">
-<!ENTITY path.sounds.whistle2     "End of 1st half whistle">
-<!ENTITY path.sounds.whistle3     "End of match whistle">
-<!ENTITY path.sounds.whistle      "Yellow/Red card sound">
-<!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.myGoal       "Звук за моје голове">
+<!ENTITY path.sounds.opGoal       "Звук за голове мог противника">
+<!ENTITY path.sounds.frGoal       "Звук за голове пријатеља">
+<!ENTITY path.sounds.opfrGoal     "Звук за голове противника мојих пријатеља">
+<!ENTITY path.sounds.otGoal       "Звук за голове других тимова">
+<!ENTITY path.sounds.miss         "Звук за промашену шансу">
+<!ENTITY path.sounds.sun          "Звук за сунчано време">
+<!ENTITY path.sounds.rain         "Звук за кишовито време">
+<!ENTITY path.sounds.overcast     "Звук за тмурно време">
+<!ENTITY path.sounds.fewClouds    "Звук за мало до умерено облачно време">
+<!ENTITY path.sounds.myBoo        "Звук за повреде мојих играча">
+<!ENTITY path.sounds.opBoo        "Звук за повреде противничких играча">
+<!ENTITY path.sounds.whistleStart "Звиждук за почетак првог и другог полувремена">
+<!ENTITY path.sounds.whistle2     "Звиждук за крај првог полувремена">
+<!ENTITY path.sounds.whistle3     "Звиждук за крај меча">
+<!ENTITY path.sounds.whistle      "Звук за жуте и црвене картоне">
+<!ENTITY path.sounds.hattrick     "Звук за хет-трик">
 
 <!ENTITY language.select     "Одабери језик">
 <!ENTITY language.note       "Рестартујte HTLS да би ова подешавања имала ефекта.">
