@@ -5,10 +5,10 @@
 <!ENTITY tab.notifications   "Notificaciones">
 <!ENTITY tab.language        "Idioma">
 <!ENTITY tab.other           "Otros">
-<!ENTITY tab.custom          "Customizations">
-<!ENTITY tab.goalSound        "Goals sounds">
-<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
-<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
+<!ENTITY tab.custom          "Personalizar">
+<!ENTITY tab.goalSound        "Sonidos de gol">
+<!ENTITY tab.wheatherSound    "Sonidos de eventos climáticos y lesiones">
+<!ENTITY tab.whistleSound     "Sonidos de hattrick y silbidos del árbitro">
 
 <!ENTITY general.open        "Abrir HTLiveSight">
 <!ENTITY general.new_tab     "En una nueva pestaña">
@@ -42,32 +42,32 @@
 <!ENTITY other.eventkey      "Clave de evento">
 <!ENTITY other.eventkey.note "Mostrar la clave del evento en el comentario">
 
-<!ENTITY custom.icons           "Icons">
-<!ENTITY custom.icons.old       "Original Livefox icons in match window">
-<!ENTITY custom.sounds          "Sounds">
-<!ENTITY custom.sounds.weather  "Weather sound for start of the match">
-<!ENTITY custom.sounds.time     "Sounds for start/end of an halftime">
-<!ENTITY custom.sounds.SEW      "Sounds for weather special events">
-<!ENTITY custom.sounds.goal     "Original Livefox sounds">
-<!ENTITY custom.sounds.noOpGoal "No sounds for opponent's goals">
+<!ENTITY custom.icons           "Iconos">
+<!ENTITY custom.icons.old       "Iconos originales de Livefox en la ventana del partido">
+<!ENTITY custom.sounds          "Sonidos">
+<!ENTITY custom.sounds.weather  "Sonido de clima al empezar el partido">
+<!ENTITY custom.sounds.time     "Sonidos para el inicio/fin del medio tiempo">
+<!ENTITY custom.sounds.SEW      "Sonidos para eventos especiales climático">
+<!ENTITY custom.sounds.goal     "Sonidos originales de Livefox">
+<!ENTITY custom.sounds.noOpGoal "Sin sonido para goles del rival">
 
-<!ENTITY path.sounds.myGoal       "Sound for own goal">
-<!ENTITY path.sounds.opGoal       "Sound for goal of my opponent">
-<!ENTITY path.sounds.frGoal       "Sound for goal of friend's">
-<!ENTITY path.sounds.opfrGoal     "Sound for goal of friend's opponent">
-<!ENTITY path.sounds.otGoal       "Other team goal sound">
-<!ENTITY path.sounds.miss         "Missed goal sound">
-<!ENTITY path.sounds.sun          "Sound for sunny weather">
-<!ENTITY path.sounds.rain         "Sound for rainy weather">
-<!ENTITY path.sounds.overcast     "Sound for overcast weather">
-<!ENTITY path.sounds.fewClouds    "Sound for few clouds weather">
-<!ENTITY path.sounds.myBoo        "Sound for own team injury">
-<!ENTITY path.sounds.opBoo        "Sound for opponent team injury">
-<!ENTITY path.sounds.whistleStart "Start of 1st/2nd half whistle">
-<!ENTITY path.sounds.whistle2     "End of 1st half whistle">
-<!ENTITY path.sounds.whistle3     "End of match whistle">
-<!ENTITY path.sounds.whistle      "Yellow/Red card sound">
-<!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.myGoal       "Sonido para gol del equipo">
+<!ENTITY path.sounds.opGoal       "Sonido para gol del rival">
+<!ENTITY path.sounds.frGoal       "Sonido para gol de los Amigos">
+<!ENTITY path.sounds.opfrGoal     "Sonido para gol de rivales de Amigos">
+<!ENTITY path.sounds.otGoal       "Sonido para gol de otros equipos">
+<!ENTITY path.sounds.miss         "Sonido de ocasión fallada">
+<!ENTITY path.sounds.sun          "Sonido para clima soleado">
+<!ENTITY path.sounds.rain         "Sonido para clima lluvioso">
+<!ENTITY path.sounds.overcast     "Sonido para clima nublado">
+<!ENTITY path.sounds.fewClouds    "Sound para clima parcialmente nublado">
+<!ENTITY path.sounds.myBoo        "Sonido para lesión del equipo">
+<!ENTITY path.sounds.opBoo        "Sonido para lesión del rival">
+<!ENTITY path.sounds.whistleStart "Silbido para el inicio de la 1ra/2da mitad">
+<!ENTITY path.sounds.whistle2     "Sildido para el fin de la 1ra mitad">
+<!ENTITY path.sounds.whistle3     "Silbido para el fin del partido">
+<!ENTITY path.sounds.whistle      "Sonido para tarjeta Amarilla/Roja">
+<!ENTITY path.sounds.hattrick     "Sonido de Hattrick">
 
 <!ENTITY language.select     "Selecciona Idioma">
 <!ENTITY language.note       "Nota: Es necesario reiniciar HTLiveSight para que los cambios tengan efecto.">
