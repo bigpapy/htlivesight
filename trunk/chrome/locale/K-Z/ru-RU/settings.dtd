@@ -52,7 +52,7 @@
 <!ENTITY custom.sounds.noOpGoal "Голы соперника без звука">
 
 <!ENTITY path.sounds.myGoal       "Звук для своего гола">
-<!ENTITY path.sounds.opGoal       "Звука для гола моего соперника">
+<!ENTITY path.sounds.opGoal       "Звук для гола моего соперника">
 <!ENTITY path.sounds.frGoal       "Звук для гола моего друга">
 <!ENTITY path.sounds.opfrGoal     "Звук для гола соперника моего друга">
 <!ENTITY path.sounds.otGoal       "Звук для гола другой команды">
