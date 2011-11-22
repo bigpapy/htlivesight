@@ -61,7 +61,7 @@
 <!ENTITY path.sounds.rain         "Hljóð fyrir rigningu">
 <!ENTITY path.sounds.overcast     "Hljóð fyrir skýjað">
 <!ENTITY path.sounds.fewClouds    "Hljóð fyrir létt skýjað">
-<!ENTITY path.sounds.myBoo        "Hljóð fyrir meiðsli hjá emínu liði">
+<!ENTITY path.sounds.myBoo        "Hljóð fyrir meiðsli hjá mínu liði">
 <!ENTITY path.sounds.opBoo        "Hljóð fyrir meiðsli hjá mótherjunum">
 <!ENTITY path.sounds.whistleStart "Flautað til leiks byrjun/hálfleik">
 <!ENTITY path.sounds.whistle2     "Flautað til loka fyrri hálfleiks">
