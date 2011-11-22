@@ -5,10 +5,10 @@
 <!ENTITY tab.notifications   "Tilkynningar">
 <!ENTITY tab.language        "Tungumál">
 <!ENTITY tab.other           "Annað">
-<!ENTITY tab.custom          "Customizations">
-<!ENTITY tab.goalSound        "Goals sounds">
-<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
-<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
+<!ENTITY tab.custom          "Sérsníða">
+<!ENTITY tab.goalSound        "Hljóð fyrir mark">
+<!ENTITY tab.wheatherSound    "Veðuratburðir og meiðsla hljóð">
+<!ENTITY tab.whistleSound     "Dómaraflauta og hattrick hljóð">
 
 <!ENTITY general.open        "Opna HTLiveSight">
 <!ENTITY general.new_tab     "Í nýjum flipa">
@@ -42,32 +42,32 @@
 <!ENTITY other.eventkey      "Atvika glósur">
 <!ENTITY other.eventkey.note "Sýna atvika glósur í leik lýsingu">
 
-<!ENTITY custom.icons           "Icons">
-<!ENTITY custom.icons.old       "Original Livefox icons in match window">
-<!ENTITY custom.sounds          "Sounds">
-<!ENTITY custom.sounds.weather  "Weather sound for start of the match">
-<!ENTITY custom.sounds.time     "Sounds for start/end of an halftime">
-<!ENTITY custom.sounds.SEW      "Sounds for weather special events">
-<!ENTITY custom.sounds.goal     "Original Livefox sounds">
-<!ENTITY custom.sounds.noOpGoal "No sounds for opponent's goals">
+<!ENTITY custom.icons           "Tákn">
+<!ENTITY custom.icons.old       "Upprunalegu Livefox táknin í leikjaglugganum">
+<!ENTITY custom.sounds          "Hljóð">
+<!ENTITY custom.sounds.weather  "Veðra hljóð í byrjun leiksins">
+<!ENTITY custom.sounds.time     "Hljóð fyrir byrjun og endir á hálfleik">
+<!ENTITY custom.sounds.SEW      "Hljóð fyrir verðuratburði og sérstaka atburði">
+<!ENTITY custom.sounds.goal     "Upprunalega Livefox hljóðið">
+<!ENTITY custom.sounds.noOpGoal "Ekkert hljóð þegar mótherjin skorar mark">
 
-<!ENTITY path.sounds.myGoal       "Sound for own goal">
-<!ENTITY path.sounds.opGoal       "Sound for goal of my opponent">
-<!ENTITY path.sounds.frGoal       "Sound for goal of friend's">
-<!ENTITY path.sounds.opfrGoal     "Sound for goal of friend's opponent">
-<!ENTITY path.sounds.otGoal       "Other team goal sound">
-<!ENTITY path.sounds.miss         "Missed goal sound">
-<!ENTITY path.sounds.sun          "Sound for sunny weather">
-<!ENTITY path.sounds.rain         "Sound for rainy weather">
-<!ENTITY path.sounds.overcast     "Sound for overcast weather">
-<!ENTITY path.sounds.fewClouds    "Sound for few clouds weather">
-<!ENTITY path.sounds.myBoo        "Sound for own team injury">
-<!ENTITY path.sounds.opBoo        "Sound for opponent team injury">
-<!ENTITY path.sounds.whistleStart "Start of 1st/2nd half whistle">
-<!ENTITY path.sounds.whistle2     "End of 1st half whistle">
-<!ENTITY path.sounds.whistle3     "End of match whistle">
-<!ENTITY path.sounds.whistle      "Yellow/Red card sound">
-<!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.myGoal       "Hljóð fyrir sjálfsmark">
+<!ENTITY path.sounds.opGoal       "Hljóð fyrir mark mótherjans">
+<!ENTITY path.sounds.frGoal       "Hljóð fyrir mark hjá vini mínum">
+<!ENTITY path.sounds.opfrGoal     "Hljóð fyrir mark hjá mótherja vinar míns">
+<!ENTITY path.sounds.otGoal       "Önnur hljóð fyrir skoruð mörk">
+<!ENTITY path.sounds.miss         "Hljóð fyrir glötuð færi">
+<!ENTITY path.sounds.sun          "Hljóð fyrir sól">
+<!ENTITY path.sounds.rain         "Hljóð fyrir rigningu">
+<!ENTITY path.sounds.overcast     "Hljóð fyrir skýjað">
+<!ENTITY path.sounds.fewClouds    "Hljóð fyrir létt skýjað">
+<!ENTITY path.sounds.myBoo        "Hljóð fyrir meiðsli hjá emínu liði">
+<!ENTITY path.sounds.opBoo        "Hljóð fyrir meiðsli hjá mótherjunum">
+<!ENTITY path.sounds.whistleStart "Flautað til leiks byrjun/hálfleik">
+<!ENTITY path.sounds.whistle2     "Flautað til loka fyrri hálfleiks">
+<!ENTITY path.sounds.whistle3     "Flautað til lok leiks">
+<!ENTITY path.sounds.whistle      "Hljóð fyrir Gul/Rauð spjöld">
+<!ENTITY path.sounds.hattrick     "Hattrick hljóð">
 
 <!ENTITY language.select     "Veldu tungumál">
 <!ENTITY language.note       "ATH: Endurræsa þarf HTLiveSight svo breytingar virki.">
