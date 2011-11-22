@@ -10,6 +10,8 @@
 <!ENTITY tab.wheatherSound    "Звуци за повреде и метеоролошке догађаје">
 <!ENTITY tab.whistleSound     "Звиждуци судије и хет-трик звук">
 
+<!ENTITY general.server      "Подешавања сервера">
+<!ENTITY general.note        "Убаците ознаку Хеттрик сервера на којем сте улоговани(нпр. www96)">
 <!ENTITY general.open        "Отвори HTLiveSight">
 <!ENTITY general.new_tab     "У новом табу">
 <!ENTITY general.new_window  "У новом прозору">
