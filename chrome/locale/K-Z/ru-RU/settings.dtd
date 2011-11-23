@@ -5,10 +5,10 @@
 <!ENTITY tab.notifications   "Уведомления">
 <!ENTITY tab.language        "Язык">
 <!ENTITY tab.other           "Other">
-<!ENTITY tab.custom          "Customizations">
-<!ENTITY tab.goalSound        "Goals sounds">
-<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
-<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
+<!ENTITY tab.custom          "Настройки">
+<!ENTITY tab.goalSound        "Звуки голов">
+<!ENTITY tab.wheatherSound    "Звуки погодных событий и травм">
+<!ENTITY tab.whistleSound     "Звуки свистков арбитра и хеттриков">
 
 <!ENTITY general.open        "Открыть HTLiveSight">
 <!ENTITY general.new_tab     "В новой закладке">
