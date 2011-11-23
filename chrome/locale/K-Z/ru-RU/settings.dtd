@@ -4,7 +4,7 @@
 <!ENTITY tab.matches         "Матчи">
 <!ENTITY tab.notifications   "Уведомления">
 <!ENTITY tab.language        "Язык">
-<!ENTITY tab.other           "Other">
+<!ENTITY tab.other           "Прочее">
 <!ENTITY tab.custom          "Настройки">
 <!ENTITY tab.goalSound        "Звуки голов">
 <!ENTITY tab.wheatherSound    "Звуки погодных событий и травм">
