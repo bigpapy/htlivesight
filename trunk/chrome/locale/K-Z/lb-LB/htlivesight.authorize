@@ -9,5 +9,5 @@ serverON=Verbonnen
 serverOFF=net verbonnen zum Internet
 reset_token=Autorisatiouns-Code gouf geläscht. Start den HTLS nei oder ward op de nächsten Update (< 1 Min).
 no_htserver=Du hues de falschen Hattrick Server gewielt, riets-Klick egal wou --> Optiounen --> Allgemeng an gef dei richteg Hattrick-Server-Nummer an. 
-error500=Error 500: internal server error (of Hattrick)
-error503=Error 503: CHPP service unavailable (temporary overload or maintenance)
+error500=Error 500: internal server error (vun Hattrick)
+error503=Error 503: CHPP service unavailable (kurzfristeg Iwerlaschtung oder Maintenance-Aarbescht)
