@@ -5,10 +5,10 @@
 <!ENTITY tab.notifications   "Jelzések">
 <!ENTITY tab.language        "Nyelvek">
 <!ENTITY tab.other           "Egyéb">
-<!ENTITY tab.custom          "Customizations">
-<!ENTITY tab.goalSound        "Goals sounds">
-<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
-<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
+<!ENTITY tab.custom          "Testreszabások">
+<!ENTITY tab.goalSound        "Gólok hangjelzései">
+<!ENTITY tab.wheatherSound    "Időjárás események és sérülések hangjelzései">
+<!ENTITY tab.whistleSound     "Játékvezetői sípszók és mesterhármas hangjelzések">
 
 <!ENTITY general.open        "HTLiveSight megnyitása">
 <!ENTITY general.new_tab     "Új fülön">
@@ -51,23 +51,23 @@
 <!ENTITY custom.sounds.goal     "Eredeti Livefox hangok">
 <!ENTITY custom.sounds.noOpGoal "Az ellenfelek góljainál nincsenek hangok">
 
-<!ENTITY path.sounds.myGoal       "Hang lejátszása saját gólnál">
-<!ENTITY path.sounds.opGoal       "Hang lejátszása az ellenfél góljánál">
-<!ENTITY path.sounds.frGoal       "Hang lejátszása a barSound for goal of friend's">
-<!ENTITY path.sounds.opfrGoal     "Hang lejátszása a barátok góljainál">
-<!ENTITY path.sounds.otGoal       "Hangok lejátszása egyéb csapatok góljainál">
-<!ENTITY path.sounds.miss         "Hang lejátszása kihagyott helyzetnél">
-<!ENTITY path.sounds.sun          "Sound for sunny weather">
-<!ENTITY path.sounds.rain         "Sound for rainy weather">
-<!ENTITY path.sounds.overcast     "Sound for overcast weather">
-<!ENTITY path.sounds.fewClouds    "Sound for few clouds weather">
-<!ENTITY path.sounds.myBoo        "Sound for own team injury">
-<!ENTITY path.sounds.opBoo        "Sound for opponent team injury">
-<!ENTITY path.sounds.whistleStart "Start of 1st/2nd half whistle">
-<!ENTITY path.sounds.whistle2     "End of 1st half whistle">
-<!ENTITY path.sounds.whistle3     "End of match whistle">
-<!ENTITY path.sounds.whistle      "Yellow/Red card sound">
-<!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.myGoal       "Hangjelzés saját gólnál">
+<!ENTITY path.sounds.opGoal       "Hangjelzés az ellenfél góljánál">
+<!ENTITY path.sounds.frGoal       "Hangjelzés a barátaid góljainál">
+<!ENTITY path.sounds.opfrGoal     "Hangjelzés a barátaid ellenfeleinek góljánál">
+<!ENTITY path.sounds.otGoal       "Hangjelzés egyéb csapatok góljainál">
+<!ENTITY path.sounds.miss         "Hangjelzés kihagyott helyzetnél">
+<!ENTITY path.sounds.sun          "Hangjelzés napsütéses időben">
+<!ENTITY path.sounds.rain         "Hangjelzés esős időben">
+<!ENTITY path.sounds.overcast     "Hangjelzés borult időben">
+<!ENTITY path.sounds.fewClouds    "Hangjelzés részben felhős időben">
+<!ENTITY path.sounds.myBoo        "Hangjelzés saját csapat sérülésénél">
+<!ENTITY path.sounds.opBoo        "Hangjelzés ellenfél játékosának sérülésénél">
+<!ENTITY path.sounds.whistleStart "Sípszó első/második félidő kezdésnél">
+<!ENTITY path.sounds.whistle2     "Sípszó az első félidő végén">
+<!ENTITY path.sounds.whistle3     "Sípszó a mérkőzés végén">
+<!ENTITY path.sounds.whistle      "Hangjelzés sárga/piros lapnál">
+<!ENTITY path.sounds.hattrick     "Hattrick hangjelzés">
 
 <!ENTITY language.select     "Nyelvválasztás">
 <!ENTITY language.note       "Megj.: A HTLiveSight újraindítása szükséges.">
