@@ -4,17 +4,17 @@
 <!ENTITY tab.matches         "Матчі">
 <!ENTITY tab.notifications   "Повідомлення">
 <!ENTITY tab.language        "Мова">
-<!ENTITY tab.other           "Other">
-<!ENTITY tab.custom          "Customizations">
-<!ENTITY tab.goalSound        "Goals sounds">
-<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
-<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
+<!ENTITY tab.other           "Інше">
+<!ENTITY tab.custom          "Установки">
+<!ENTITY tab.goalSound        "Звуки голів">
+<!ENTITY tab.wheatherSound    "Звуки погодних подій і травм">
+<!ENTITY tab.whistleSound     "Звуки свистків арбітра та хеттриків">
 
 <!ENTITY general.open        "Відкрити HTLiveSight">
 <!ENTITY general.new_tab     "В новій вкладці">
 <!ENTITY general.new_window  "В новому вікні">
-<!ENTITY general.server      "Server settings">
-<!ENTITY general.note        "Insert Hattrick server that you are logged on (ie. www96).">
+<!ENTITY general.server      "Установки серверу">
+<!ENTITY general.note        "Введіть сервер Hattrick, на якому ви авторизовані (наприклад, www96).">
 
 <!ENTITY matches.league      "Матчі ліги">
 <!ENTITY matches.get_league  "Завантажувати матчі ліги">
@@ -35,7 +35,7 @@
 
 <!ENTITY other.authorization "Код авторизації">
 <!ENTITY other.reset         "Видалити авторизацію">
-<!ENTITY other.reset_button  "Reset">
+<!ENTITY other.reset_button  "Скинути">
 <!ENTITY other.reverse       "Відображення подій матчу знизу вгору">
 <!ENTITY other.reverse.note  "Оновіть сторінку для активації змін.">
 <!ENTITY other.events        "Порядок подій">
