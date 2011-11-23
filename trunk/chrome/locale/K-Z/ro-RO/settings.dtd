@@ -5,14 +5,14 @@
 <!ENTITY tab.notifications   "Notificări">
 <!ENTITY tab.language        "Limba">
 <!ENTITY tab.other           "Altele">
-<!ENTITY tab.custom          "Customizations">
-<!ENTITY tab.goalSound        "Goals sounds">
-<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
-<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
+<!ENTITY tab.custom          "Personalizare">
+<!ENTITY tab.goalSound        "Sunete pentru goluri">
+<!ENTITY tab.wheatherSound    "Sunete pentru evenimente de vreme şi accidentari">
+<!ENTITY tab.whistleSound     "Sunete pentru hattrick şi fluierul arbitrului">
 
 <!ENTITY general.open        "Deschide HTLiveSight">
-<!ENTITY general.new_tab     "Intr-o filă nouă">
-<!ENTITY general.new_window  "Intr-o fereastră nouă">
+<!ENTITY general.new_tab     "Într-o filă nouă">
+<!ENTITY general.new_window  "Într-o fereastră nouă">
 <!ENTITY general.server      "Setările serverului">
 <!ENTITY general.note        "Inserează serverul Hattrick pe care eşti logat (ex. www96).">
 
@@ -39,35 +39,35 @@
 <!ENTITY other.reverse       "Inversează ordinea evenimentelor din meci">
 <!ENTITY other.reverse.note  "Reîncarcă pagina pentru a vedea efectul schimbării.">
 <!ENTITY other.events        "Ordinea evenimentelor">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey      "Cod de event">
+<!ENTITY other.eventkey.note "Arata codul eventului în comentariu">
 
-<!ENTITY custom.icons           "Icons">
-<!ENTITY custom.icons.old       "Original Livefox icons in match window">
-<!ENTITY custom.sounds          "Sounds">
-<!ENTITY custom.sounds.weather  "Weather sound for start of the match">
-<!ENTITY custom.sounds.time     "Sounds for start/end of an halftime">
-<!ENTITY custom.sounds.SEW      "Sounds for weather special events">
-<!ENTITY custom.sounds.goal     "Original Livefox sounds">
-<!ENTITY custom.sounds.noOpGoal "No sounds for opponent's goals">
+<!ENTITY custom.icons           "Iconuri">
+<!ENTITY custom.icons.old       "Iconurile originale Livefox în fereastra de meci">
+<!ENTITY custom.sounds          "Sunete">
+<!ENTITY custom.sounds.weather  "Sunete pentru vreme la începutul meciului">
+<!ENTITY custom.sounds.time     "Sunete pentru începutul/sfârşitul pauzei">
+<!ENTITY custom.sounds.SEW      "Sunete pentru eventurile de vreme">
+<!ENTITY custom.sounds.goal     "Sunete originale Livefox">
+<!ENTITY custom.sounds.noOpGoal "Fără sunet la golurile adversarului">
 
-<!ENTITY path.sounds.myGoal       "Sound for own goal">
-<!ENTITY path.sounds.opGoal       "Sound for goal of my opponent">
-<!ENTITY path.sounds.frGoal       "Sound for goal of friend's">
-<!ENTITY path.sounds.opfrGoal     "Sound for goal of friend's opponent">
-<!ENTITY path.sounds.otGoal       "Other team goal sound">
-<!ENTITY path.sounds.miss         "Missed goal sound">
-<!ENTITY path.sounds.sun          "Sound for sunny weather">
-<!ENTITY path.sounds.rain         "Sound for rainy weather">
-<!ENTITY path.sounds.overcast     "Sound for overcast weather">
-<!ENTITY path.sounds.fewClouds    "Sound for few clouds weather">
-<!ENTITY path.sounds.myBoo        "Sound for own team injury">
-<!ENTITY path.sounds.opBoo        "Sound for opponent team injury">
-<!ENTITY path.sounds.whistleStart "Start of 1st/2nd half whistle">
-<!ENTITY path.sounds.whistle2     "End of 1st half whistle">
-<!ENTITY path.sounds.whistle3     "End of match whistle">
-<!ENTITY path.sounds.whistle      "Yellow/Red card sound">
-<!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.myGoal       "Sunet pentru autogol">
+<!ENTITY path.sounds.opGoal       "Sunet pentru golul adversarului meu">
+<!ENTITY path.sounds.frGoal       "Sunet pentru golul prietenului meu">
+<!ENTITY path.sounds.opfrGoal     "Sunet pentru gol al adversarului prietenului meu">
+<!ENTITY path.sounds.otGoal       "Sunet pentru gol al altei echipe">
+<!ENTITY path.sounds.miss         "Sunet pentru ratare">
+<!ENTITY path.sounds.sun          "Sunet pentru vreme însorită">
+<!ENTITY path.sounds.rain         "Sunet pentru vreme ploioasă">
+<!ENTITY path.sounds.overcast     "Sunet pentru vreme noroasă">
+<!ENTITY path.sounds.fewClouds    "Sunet pentru vreme parţial noroasă">
+<!ENTITY path.sounds.myBoo        "Sunet pentru accidentare a propriului jucător">
+<!ENTITY path.sounds.opBoo        "Sunet pentru accidentare a jucătorului advers">
+<!ENTITY path.sounds.whistleStart "Fluier pentru începutul primei/celei de-a doua reprize">
+<!ENTITY path.sounds.whistle2     "Fluier de final al primei reprize">
+<!ENTITY path.sounds.whistle3     "Fluierul de final al meciului">
+<!ENTITY path.sounds.whistle      "Sunet pentru cartonaş galben/roşu">
+<!ENTITY path.sounds.hattrick     "Sunet hattrick">
 
 <!ENTITY language.select     "Selectează limba">
 <!ENTITY language.note       "Nota: Reporneşte HTLiveSight ca aceasta să aibă efect.">
