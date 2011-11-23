@@ -5,10 +5,10 @@
 <!ENTITY tab.notifications   "Jelzések">
 <!ENTITY tab.language        "Nyelvek">
 <!ENTITY tab.other           "Egyéb">
-<!ENTITY tab.custom          "Testreszabások">
+<!ENTITY tab.custom          "Testreszabás">
 <!ENTITY tab.goalSound        "Gólok hangjelzései">
 <!ENTITY tab.wheatherSound    "Időjárás események és sérülések hangjelzései">
-<!ENTITY tab.whistleSound     "Játékvezetői sípszók és mesterhármas hangjelzések">
+<!ENTITY tab.whistleSound     "Játékvezetői sípszók és mesterhármas hangjelzés">
 
 <!ENTITY general.open        "HTLiveSight megnyitása">
 <!ENTITY general.new_tab     "Új fülön">
@@ -36,8 +36,8 @@
 <!ENTITY other.authorization "Engedélyező kód">
 <!ENTITY other.reset         "Engedély megvonása">
 <!ENTITY other.reset_button  "Visszaállítás">
-<!ENTITY other.reverse       "Lentről felfelé jelzi ki a mérkőzés eseményeit.">
-<!ENTITY other.reverse.note  "Frissítsd az oldalt a változások érvénybe lépéséhez.">
+<!ENTITY other.reverse       "Lentről felfelé jelzi ki a mérkőzés eseményeit">
+<!ENTITY other.reverse.note  "Frissítsd az oldalt a változások érvénybe lépéséhez!">
 <!ENTITY other.events        "Események sorrendje">
 <!ENTITY other.eventkey      "Eseménykód">
 <!ENTITY other.eventkey.note "Eseménykód mutatása a riportban">
@@ -46,10 +46,10 @@
 <!ENTITY custom.icons.old       "Eredeti Livefox ikonok a mérkőzések ablakban">
 <!ENTITY custom.sounds          "Hangok">
 <!ENTITY custom.sounds.weather  "Időjárásjelző hangok a mérkőzés elején">
-<!ENTITY custom.sounds.time     "Hangok a félidő elején/végén">
-<!ENTITY custom.sounds.SEW      "Hangok az időjárási különleges eseményekhez">
+<!ENTITY custom.sounds.time     "Hangjelzések a félidő elején/végén">
+<!ENTITY custom.sounds.SEW      "Hangjelzések az időjárás különleges eseményekhez">
 <!ENTITY custom.sounds.goal     "Eredeti Livefox hangok">
-<!ENTITY custom.sounds.noOpGoal "Az ellenfelek góljainál nincsenek hangok">
+<!ENTITY custom.sounds.noOpGoal "Az ellenfelek góljainál nincsenek hangjelzések">
 
 <!ENTITY path.sounds.myGoal       "Hangjelzés saját gólnál">
 <!ENTITY path.sounds.opGoal       "Hangjelzés az ellenfél góljánál">
