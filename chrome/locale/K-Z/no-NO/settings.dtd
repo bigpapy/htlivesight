@@ -40,34 +40,34 @@
 <!ENTITY other.reverse.note  "Oppdatèr siden for at endringene skal tre i kraft">
 <!ENTITY other.events        "Hendelses sekvenser">
 <!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.eventkey.note "Vis eventkey i kommentaren">
 
-<!ENTITY custom.icons           "Icons">
-<!ENTITY custom.icons.old       "Original Livefox icons in match window">
-<!ENTITY custom.sounds          "Sounds">
-<!ENTITY custom.sounds.weather  "Weather sound for start of the match">
-<!ENTITY custom.sounds.time     "Sounds for start/end of an halftime">
-<!ENTITY custom.sounds.SEW      "Sounds for weather special events">
-<!ENTITY custom.sounds.goal     "Original Livefox sounds">
-<!ENTITY custom.sounds.noOpGoal "No sounds for opponent's goals">
+<!ENTITY custom.icons           "Ikoner">
+<!ENTITY custom.icons.old       "Originale Livefox-ikoner i kampvindu">
+<!ENTITY custom.sounds          "Lyder">
+<!ENTITY custom.sounds.weather  "Vær-lyd idèt kampen starter">
+<!ENTITY custom.sounds.time     "Lyder når 1. omgang er ferdig, og når 2. omgang starter">
+<!ENTITY custom.sounds.SEW      "Lyder for vær-SEèr">
+<!ENTITY custom.sounds.goal     "Originale Livefoxlyder">
+<!ENTITY custom.sounds.noOpGoal "Ingen lyd hvis motstanderen scorer">
 
-<!ENTITY path.sounds.myGoal       "Sound for own goal">
-<!ENTITY path.sounds.opGoal       "Sound for goal of my opponent">
-<!ENTITY path.sounds.frGoal       "Sound for goal of friend's">
-<!ENTITY path.sounds.opfrGoal     "Sound for goal of friend's opponent">
-<!ENTITY path.sounds.otGoal       "Other team goal sound">
-<!ENTITY path.sounds.miss         "Missed goal sound">
-<!ENTITY path.sounds.sun          "Sound for sunny weather">
-<!ENTITY path.sounds.rain         "Sound for rainy weather">
-<!ENTITY path.sounds.overcast     "Sound for overcast weather">
-<!ENTITY path.sounds.fewClouds    "Sound for few clouds weather">
-<!ENTITY path.sounds.myBoo        "Sound for own team injury">
-<!ENTITY path.sounds.opBoo        "Sound for opponent team injury">
-<!ENTITY path.sounds.whistleStart "Start of 1st/2nd half whistle">
-<!ENTITY path.sounds.whistle2     "End of 1st half whistle">
-<!ENTITY path.sounds.whistle3     "End of match whistle">
-<!ENTITY path.sounds.whistle      "Yellow/Red card sound">
-<!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.myGoal       "Lyd for eget mål">
+<!ENTITY path.sounds.opGoal       "Lyd for mål til motstander">
+<!ENTITY path.sounds.frGoal       "Lyd for mål i venners kamper">
+<!ENTITY path.sounds.opfrGoal     "Lyd for mål til venners motstander">
+<!ENTITY path.sounds.otGoal       "Lyd for mål til andre lag">
+<!ENTITY path.sounds.miss         "Lyd for nesten-mål">
+<!ENTITY path.sounds.sun          "Lyd for sol">
+<!ENTITY path.sounds.rain         "Lyd for regn">
+<!ENTITY path.sounds.overcast     "Lyd for overskyet">
+<!ENTITY path.sounds.fewClouds    "Lyd for lett skyet">
+<!ENTITY path.sounds.myBoo        "Lyd for skade til eget lag">
+<!ENTITY path.sounds.opBoo        "Lyd for skade til motstanderen">
+<!ENTITY path.sounds.whistleStart "Lyd for start av 1. og 2. omgang">
+<!ENTITY path.sounds.whistle2     "Lyd for slutt på 1. omgang">
+<!ENTITY path.sounds.whistle3     "Lyd for kampen slutt">
+<!ENTITY path.sounds.whistle      "Lyd for gult og/eller rødt kort">
+<!ENTITY path.sounds.hattrick     "Hattrick-lyd">
 
 <!ENTITY language.select     "Velg språk">
 <!ENTITY language.note       "Husk: Start HTLiveSight på nytt for at endringene skal tre i kraft.">
