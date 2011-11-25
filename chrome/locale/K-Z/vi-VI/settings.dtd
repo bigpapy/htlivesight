@@ -5,10 +5,10 @@
 <!ENTITY tab.notifications   "Thông báo">
 <!ENTITY tab.language        "Ngôn ngữ">
 <!ENTITY tab.other           "Khác">
-<!ENTITY tab.custom          "Customizations">
-<!ENTITY tab.goalSound        "Goals sounds">
-<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
-<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
+<!ENTITY tab.custom          "Tùy chọn">
+<!ENTITY tab.goalSound        "Tiếng hô khi có bàn thắng">
+<!ENTITY tab.wheatherSound    "Âm thanh khi có sự kiện thời tiết hoặc chấn thương">
+<!ENTITY tab.whistleSound     "Tiếng còi của trọng tài và âm thanh của Hattrick">
 
 <!ENTITY general.open        "Mở HTLiveSight">
 <!ENTITY general.new_tab     "Trong tab mới">
@@ -42,32 +42,32 @@
 <!ENTITY other.eventkey      "Sự kiện quan trọng">
 <!ENTITY other.eventkey.note "Đưa sự kiện quan trọng vào trong bình luận">
 
-<!ENTITY custom.icons           "Icons">
-<!ENTITY custom.icons.old       "Original Livefox icons in match window">
-<!ENTITY custom.sounds          "Sounds">
-<!ENTITY custom.sounds.weather  "Weather sound for start of the match">
-<!ENTITY custom.sounds.time     "Sounds for start/end of an halftime">
-<!ENTITY custom.sounds.SEW      "Sounds for weather special events">
-<!ENTITY custom.sounds.goal     "Original Livefox sounds">
-<!ENTITY custom.sounds.noOpGoal "No sounds for opponent's goals">
+<!ENTITY custom.icons           "Các biểu tượng">
+<!ENTITY custom.icons.old       "Biểu tượng nguyên bản của Livefox trong cửa sổ trận đấu">
+<!ENTITY custom.sounds          "Âm thanh">
+<!ENTITY custom.sounds.weather  "Âm thanh của thời tiết khi bắt đầu trận đấu">
+<!ENTITY custom.sounds.time     "Âm thanh bắt đầu/kết thúc của mỗi hiệp">
+<!ENTITY custom.sounds.SEW      "Âm thanh của sự kiện đặc biệt thời tiết">
+<!ENTITY custom.sounds.goal     "Âm thanh của Livefox">
+<!ENTITY custom.sounds.noOpGoal "Sự im lặng khi đối thủ ghi bàn">
 
-<!ENTITY path.sounds.myGoal       "Sound for own goal">
-<!ENTITY path.sounds.opGoal       "Sound for goal of my opponent">
-<!ENTITY path.sounds.frGoal       "Sound for goal of friend's">
-<!ENTITY path.sounds.opfrGoal     "Sound for goal of friend's opponent">
-<!ENTITY path.sounds.otGoal       "Other team goal sound">
-<!ENTITY path.sounds.miss         "Missed goal sound">
-<!ENTITY path.sounds.sun          "Sound for sunny weather">
-<!ENTITY path.sounds.rain         "Sound for rainy weather">
-<!ENTITY path.sounds.overcast     "Sound for overcast weather">
-<!ENTITY path.sounds.fewClouds    "Sound for few clouds weather">
-<!ENTITY path.sounds.myBoo        "Sound for own team injury">
-<!ENTITY path.sounds.opBoo        "Sound for opponent team injury">
-<!ENTITY path.sounds.whistleStart "Start of 1st/2nd half whistle">
-<!ENTITY path.sounds.whistle2     "End of 1st half whistle">
-<!ENTITY path.sounds.whistle3     "End of match whistle">
-<!ENTITY path.sounds.whistle      "Yellow/Red card sound">
-<!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.myGoal       "Tiếng la hét khi đá phản lưới nhà">
+<!ENTITY path.sounds.opGoal       "Tiếng la khi đối thủ ghi bàn">
+<!ENTITY path.sounds.frGoal       "La mừng khi đội bạn mình ghi bàn">
+<!ENTITY path.sounds.opfrGoal     "Âm thanh khi đối thủ của bạn mình ghi bàn">
+<!ENTITY path.sounds.otGoal       "Âm thanh khi các đội khác ghi bàn">
+<!ENTITY path.sounds.miss         "Âm thanh khi bỏ lỡ cơ hội">
+<!ENTITY path.sounds.sun          "Âm thanh khi trời nắng">
+<!ENTITY path.sounds.rain         "Âm thanh khi trời mưa">
+<!ENTITY path.sounds.overcast     "Âm thanh khi trời âm u">
+<!ENTITY path.sounds.fewClouds    "Âm thanh khi trời có mây">
+<!ENTITY path.sounds.myBoo        "Âm thanh khi đội nhà chấn thương">
+<!ENTITY path.sounds.opBoo        "Âm thanh khi đối thủ chấn thương">
+<!ENTITY path.sounds.whistleStart "Tiếng còi bắt đầu hiệp 1/2 của trận đấu">
+<!ENTITY path.sounds.whistle2     "Tiếng còi kết thúc hiệp 1">
+<!ENTITY path.sounds.whistle3     "Tiếng còi kết thúc trận đấu">
+<!ENTITY path.sounds.whistle      "Âm thanh khi thẻ đỏ/thẻ vàng">
+<!ENTITY path.sounds.hattrick     "Âm thanh Hattrick">
 
 <!ENTITY language.select     "Chọn ngôn ngữ">
 <!ENTITY language.note       "Chú ý: Khởi động lại Firefox để kích hoạt.">
