@@ -5,10 +5,10 @@
 <!ENTITY tab.notifications   "Pranešimai">
 <!ENTITY tab.language        "Kalba">
 <!ENTITY tab.other           "Kita">
-<!ENTITY tab.custom          "Customizations">
-<!ENTITY tab.goalSound        "Goals sounds">
-<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
-<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
+<!ENTITY tab.custom          "Individualizavimas">
+<!ENTITY tab.goalSound        "Įvarčių garsai">
+<!ENTITY tab.wheatherSound    "Oro įvykių ir traumų garsai">
+<!ENTITY tab.whistleSound     "Teisėjo švilpuko ir hatriko garsai">
 
 <!ENTITY general.open        "Atidaryti „HTLiveSight“">
 <!ENTITY general.new_tab     "Naujoje kortelėje">
@@ -42,32 +42,32 @@
 <!ENTITY other.eventkey      "Įvykių kodai">
 <!ENTITY other.eventkey.note "Rodyti įvykių kodus">
 
-<!ENTITY custom.icons           "Icons">
-<!ENTITY custom.icons.old       "Original Livefox icons in match window">
-<!ENTITY custom.sounds          "Sounds">
-<!ENTITY custom.sounds.weather  "Weather sound for start of the match">
-<!ENTITY custom.sounds.time     "Sounds for start/end of an halftime">
-<!ENTITY custom.sounds.SEW      "Sounds for weather special events">
-<!ENTITY custom.sounds.goal     "Original Livefox sounds">
-<!ENTITY custom.sounds.noOpGoal "No sounds for opponent's goals">
+<!ENTITY custom.icons           "Ikonos">
+<!ENTITY custom.icons.old       "Senosios „Livefox“ ikonos rungtynių lange">
+<!ENTITY custom.sounds          "Garsai">
+<!ENTITY custom.sounds.weather  "Oro garsai rungtynių pradžioje">
+<!ENTITY custom.sounds.time     "Rungtynių pertraukos pradžios ir pabaigos garsai">
+<!ENTITY custom.sounds.SEW      "Ypatingųjų oro įvykių garsai">
+<!ENTITY custom.sounds.goal     "Senieji „Livefox“ garsai">
+<!ENTITY custom.sounds.noOpGoal "Jokių varžovo įvarčių garsų">
 
-<!ENTITY path.sounds.myGoal       "Sound for own goal">
-<!ENTITY path.sounds.opGoal       "Sound for goal of my opponent">
-<!ENTITY path.sounds.frGoal       "Sound for goal of friend's">
-<!ENTITY path.sounds.opfrGoal     "Sound for goal of friend's opponent">
-<!ENTITY path.sounds.otGoal       "Other team goal sound">
-<!ENTITY path.sounds.miss         "Missed goal sound">
-<!ENTITY path.sounds.sun          "Sound for sunny weather">
-<!ENTITY path.sounds.rain         "Sound for rainy weather">
-<!ENTITY path.sounds.overcast     "Sound for overcast weather">
-<!ENTITY path.sounds.fewClouds    "Sound for few clouds weather">
-<!ENTITY path.sounds.myBoo        "Sound for own team injury">
-<!ENTITY path.sounds.opBoo        "Sound for opponent team injury">
-<!ENTITY path.sounds.whistleStart "Start of 1st/2nd half whistle">
-<!ENTITY path.sounds.whistle2     "End of 1st half whistle">
-<!ENTITY path.sounds.whistle3     "End of match whistle">
-<!ENTITY path.sounds.whistle      "Yellow/Red card sound">
-<!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.myGoal       "Mano įvartis">
+<!ENTITY path.sounds.opGoal       "Varžovo įvartis">
+<!ENTITY path.sounds.frGoal       "Draugo įvartis">
+<!ENTITY path.sounds.opfrGoal     "Draugo varžovo įvartis">
+<!ENTITY path.sounds.otGoal       "Kitos komandos įvartis">
+<!ENTITY path.sounds.miss         "Neįmuštas įvartis">
+<!ENTITY path.sounds.sun          "Saulėta">
+<!ENTITY path.sounds.rain         "Lyja">
+<!ENTITY path.sounds.overcast     "Apsiniaukę">
+<!ENTITY path.sounds.fewClouds    "Debesuota">
+<!ENTITY path.sounds.myBoo        "Mano žaidėjo trauma">
+<!ENTITY path.sounds.opBoo        "Varžovo žaidėjo trauma">
+<!ENTITY path.sounds.whistleStart "Kėlinio pradžia">
+<!ENTITY path.sounds.whistle2     "Pirmo kėlinio pabaiga">
+<!ENTITY path.sounds.whistle3     "Rungtynių pabaiga">
+<!ENTITY path.sounds.whistle      "Gauta kortelė">
+<!ENTITY path.sounds.hattrick     "Hatrikas">
 
 <!ENTITY language.select     "Pasirinkti kalbą">
 <!ENTITY language.note       "Pastaba: būtina perkrauti „HTLiveSight“.">
