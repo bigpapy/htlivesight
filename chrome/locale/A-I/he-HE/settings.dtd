@@ -5,10 +5,10 @@
 <!ENTITY tab.notifications   "התראות">
 <!ENTITY tab.language        "שפה">
 <!ENTITY tab.other           "אחר">
-<!ENTITY tab.custom          "Customizations">
-<!ENTITY tab.goalSound        "Goals sounds">
-<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
-<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
+<!ENTITY tab.custom          "התאמה אישית">
+<!ENTITY tab.goalSound        "צלילי שערים">
+<!ENTITY tab.wheatherSound    "צלילי מזג אוויר ופציעות">
+<!ENTITY tab.whistleSound     "צלילי שופט ושלושער">
 
 <!ENTITY general.open        "HTLiveSight פתח את">
 <!ENTITY general.new_tab     "בלשונית חדשה">
@@ -35,39 +35,39 @@
 
 <!ENTITY other.authorization "קוד הרשאה">
 <!ENTITY other.reset         "הסר הרשאה">
-<!ENTITY other.reset_button  "Reset">
+<!ENTITY other.reset_button  "אפס">
 <!ENTITY other.reverse       "הצג אירועים חדשים מלמטה">
 <!ENTITY other.reverse.note  "רענן את הדף בכדי לראות את השינויים">
 <!ENTITY other.events        "סדר האירועים">
 <!ENTITY other.eventkey      "קוד האירוע">
 <!ENTITY other.eventkey.note "הראה את קוד האירוע בדיווחים">
 
-<!ENTITY custom.icons           "Icons">
-<!ENTITY custom.icons.old       "Original Livefox icons in match window">
-<!ENTITY custom.sounds          "Sounds">
-<!ENTITY custom.sounds.weather  "Weather sound for start of the match">
-<!ENTITY custom.sounds.time     "Sounds for start/end of an halftime">
-<!ENTITY custom.sounds.SEW      "Sounds for weather special events">
-<!ENTITY custom.sounds.goal     "Original Livefox sounds">
-<!ENTITY custom.sounds.noOpGoal "No sounds for opponent's goals">
+<!ENTITY custom.icons           "אייקונים">
+<!ENTITY custom.icons.old       "אייקונים מקוריים של לייב-פוקס בחלון המשחק">
+<!ENTITY custom.sounds          "צלילים">
+<!ENTITY custom.sounds.weather  "צליל מזג אוויר בתחילת המשחק">
+<!ENTITY custom.sounds.time     "צלילים להתחלה\סיום מחצית">
+<!ENTITY custom.sounds.SEW      "צלילים לאירועי מזג אוויר">
+<!ENTITY custom.sounds.goal     "צלילי לייב-פוקס המקוריים">
+<!ENTITY custom.sounds.noOpGoal "ללא צלילים לשערי היריבה">
 
-<!ENTITY path.sounds.myGoal       "Sound for own goal">
-<!ENTITY path.sounds.opGoal       "Sound for goal of my opponent">
-<!ENTITY path.sounds.frGoal       "Sound for goal of friend's">
-<!ENTITY path.sounds.opfrGoal     "Sound for goal of friend's opponent">
-<!ENTITY path.sounds.otGoal       "Other team goal sound">
-<!ENTITY path.sounds.miss         "Missed goal sound">
-<!ENTITY path.sounds.sun          "Sound for sunny weather">
-<!ENTITY path.sounds.rain         "Sound for rainy weather">
-<!ENTITY path.sounds.overcast     "Sound for overcast weather">
-<!ENTITY path.sounds.fewClouds    "Sound for few clouds weather">
-<!ENTITY path.sounds.myBoo        "Sound for own team injury">
-<!ENTITY path.sounds.opBoo        "Sound for opponent team injury">
-<!ENTITY path.sounds.whistleStart "Start of 1st/2nd half whistle">
-<!ENTITY path.sounds.whistle2     "End of 1st half whistle">
-<!ENTITY path.sounds.whistle3     "End of match whistle">
-<!ENTITY path.sounds.whistle      "Yellow/Red card sound">
-<!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.myGoal       "צליל לשער שלי">
+<!ENTITY path.sounds.opGoal       "צליל לשער של היריבה">
+<!ENTITY path.sounds.frGoal       "צליל לשער של חבר">
+<!ENTITY path.sounds.opfrGoal     "צליל לשער של היריבה של חבר">
+<!ENTITY path.sounds.otGoal       "צליל לשערי קבוצות אחרות">
+<!ENTITY path.sounds.miss         "צליל להחמצה">
+<!ENTITY path.sounds.sun          "צליל למזג אוויר בהיר">
+<!ENTITY path.sounds.rain         "צליל למזג אוויר גשום">
+<!ENTITY path.sounds.overcast     "צליל למזג אוויר מעונן">
+<!ENTITY path.sounds.fewClouds    "צליל למזג אוויר מעונן חלקית">
+<!ENTITY path.sounds.myBoo        "צליל לפציעה של שחקן שלי">
+<!ENTITY path.sounds.opBoo        "צליל לפציעה של שחקן היריבה">
+<!ENTITY path.sounds.whistleStart "שריקה להתחלת מחצית ראשונה או שנייה">
+<!ENTITY path.sounds.whistle2     "שריקה לסיום המחצית הראשונה">
+<!ENTITY path.sounds.whistle3     "שריקה לסיום המשחק">
+<!ENTITY path.sounds.whistle      "צליל לכרטיס צהוב או אדום">
+<!ENTITY path.sounds.hattrick     "צליל לשלושער">
 
 <!ENTITY language.select     "בחר שפה">
 <!ENTITY language.note       "שים לב: יש לאתחל את פיירפוקס על מנת שהשינויי יופעל">
