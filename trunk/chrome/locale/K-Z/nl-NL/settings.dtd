@@ -5,10 +5,10 @@
 <!ENTITY tab.notifications   "Meldingen">
 <!ENTITY tab.language        "Taal">
 <!ENTITY tab.other           "Overige">
-<!ENTITY tab.custom          "Customizations">
-<!ENTITY tab.goalSound        "Goals sounds">
-<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
-<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
+<!ENTITY tab.custom          "Aanpassingen">
+<!ENTITY tab.goalSound        "Geluid bij doelpunten">
+<!ENTITY tab.wheatherSound    "Geluid bij weersgebeurtenissen en blesures">
+<!ENTITY tab.whistleSound     "Fluitsignalen en Hattrick geluiden">
 
 <!ENTITY general.open        "Open HTLiveSight">
 <!ENTITY general.new_tab     "In een nieuw tabblad">
