@@ -213,49 +213,116 @@
 		</tabpanel>
 		<tabpanel orient="vertical" flex="1">
 			<groupbox>
-				<description>&path.sounds.myGoal;</description>
-				<textbox maxlength="50" size="50" id="myGoalSoundPath" oninput="htlivesight.Settings.click.myGoalSound();"/>
-				<description>&path.sounds.opGoal;</description>
-				<textbox maxlength="50" size="50" id="opGoalSoundPath" oninput="htlivesight.Settings.click.opGoalSound();"/>
-				<description>&path.sounds.frGoal;</description>
-				<textbox maxlength="50" size="50" id="frGoalSoundPath" oninput="htlivesight.Settings.click.frGoalSound();"/>
-				<description>&path.sounds.opfrGoal;</description>
-				<textbox maxlength="50" size="50" id="opfrGoalSoundPath" oninput="htlivesight.Settings.click.opfrGoalSound();"/>
-				<description>&path.sounds.otGoal;</description>
-				<textbox maxlength="50" size="50" id="otGoalSoundPath" oninput="htlivesight.Settings.click.otGoalSound();"/>
-				<description>&path.sounds.miss;</description>
-				<textbox maxlength="50" size="50" id="missGoalSoundPath" oninput="htlivesight.Settings.click.missGoalSound();"/>
+				<row>
+			    <checkbox id="myGoalCheck" label="&path.sounds.myGoal;" oncommand="htlivesight.Settings.click.myGoalSound();"/>
+			    <button label="&other.reset_button;" id="myGoalButton_reset" tabindex="2" onclick="htlivesight.Settings.click.myGoalReset();"/>
+				</row>
+				<textbox maxlength="70" size="70" id="myGoalSoundPath" oninput="htlivesight.Settings.click.myGoalSound();"/>
+		  		
+				<row>
+		  		<checkbox id="opGoalCheck" label="&path.sounds.opGoal;" oncommand="htlivesight.Settings.click.opGoalSound();"/>
+		  		<button label="&other.reset_button;" id="opGoalButton_reset" tabindex="2" onclick="htlivesight.Settings.click.opGoalReset();"/>
+		  		</row>
+		  		<textbox maxlength="70" size="70" id="opGoalSoundPath" oninput="htlivesight.Settings.click.opGoalSound();"/>
+				
+		  		<row>
+				<checkbox id="frGoalCheck" label="&path.sounds.frGoal;" oncommand="htlivesight.Settings.click.frGoalSound();"/>
+				<button label="&other.reset_button;" id="frGoalButton_reset" tabindex="2" onclick="htlivesight.Settings.click.frGoalReset();"/>
+				</row>
+				<textbox maxlength="70" size="70" id="frGoalSoundPath" oninput="htlivesight.Settings.click.frGoalSound();"/>
+				
+				<row>
+				<checkbox id="opfrGoalCheck" label="&path.sounds.opfrGoal;" oncommand="htlivesight.Settings.click.opfrGoalSound();"/>
+				<button label="&other.reset_button;" id="opfrGoalButton_reset" tabindex="2" onclick="htlivesight.Settings.click.opfrGoalReset();"/>
+				</row>
+				<textbox maxlength="70" size="70" id="opfrGoalSoundPath" oninput="htlivesight.Settings.click.opfrGoalSound();"/>
+				
+				<row>
+				<checkbox id="otGoalCheck" label="&path.sounds.otGoal;" oncommand="htlivesight.Settings.click.otGoalSound();"/>
+				<button label="&other.reset_button;" id="otGoalButton_reset" tabindex="2" onclick="htlivesight.Settings.click.otGoalReset();"/>
+				</row>
+				<textbox maxlength="70" size="70" id="otGoalSoundPath" oninput="htlivesight.Settings.click.otGoalSound();"/>
+				
+				<row>
+				<checkbox id="missGoalCheck" label="&path.sounds.miss;" oncommand="htlivesight.Settings.click.missGoalSound();"/>
+				<button label="&other.reset_button;" id="missGoalButton_reset" tabindex="2" onclick="htlivesight.Settings.click.missGoalReset();"/>
+				</row>
+				<textbox maxlength="70" size="70" id="missGoalSoundPath" oninput="htlivesight.Settings.click.missGoalSound();"/>
 				
 			</groupbox>
 		</tabpanel>
 		<tabpanel orient="vertical" flex="1">
 		<groupbox>
-			<description>&path.sounds.sun;</description>
-			<textbox maxlength="50" size="50" id="sunSoundPath" oninput="htlivesight.Settings.click.sunSound();"/>
-			<description>&path.sounds.rain;</description>
-			<textbox maxlength="50" size="50" id="rainSoundPath" oninput="htlivesight.Settings.click.rainSound();"/>
-			<description>&path.sounds.overcast;</description>
-			<textbox maxlength="50" size="50" id="overcastSoundPath" oninput="htlivesight.Settings.click.overcastSound();"/>
-			<description>&path.sounds.fewClouds;</description>
-			<textbox maxlength="50" size="50" id="fewCloudsSoundPath" oninput="htlivesight.Settings.click.fewCloudSound();"/>
-			<description>&path.sounds.myBoo;</description>
-			<textbox maxlength="50" size="50" id="myBooSoundPath" oninput="htlivesight.Settings.click.myBooSound();"/>
-			<description>&path.sounds.opBoo;</description>
-			<textbox maxlength="50" size="50" id="opBooSoundPath" oninput="htlivesight.Settings.click.opBooSound();"/>
+		
+			<row>
+			<checkbox id="sunCheck" label="&path.sounds.sun;" oncommand="htlivesight.Settings.click.sunSound();"/>
+			<button label="&other.reset_button;" id="sunButton_reset" tabindex="2" onclick="htlivesight.Settings.click.sunReset();"/>
+			</row>
+			<textbox maxlength="70" size="70" id="sunSoundPath" oninput="htlivesight.Settings.click.sunSound();"/>
+			
+			<row>
+			<checkbox id="rainCheck" label="&path.sounds.rain;" oncommand="htlivesight.Settings.click.rainSound();"/>
+			<button label="&other.reset_button;" id="rainButton_reset" tabindex="2" onclick="htlivesight.Settings.click.rainReset();"/>
+			</row>
+			<textbox maxlength="70" size="70" id="rainSoundPath" oninput="htlivesight.Settings.click.rainSound();"/>
+			
+			<row>
+			<checkbox id="overcastCheck" label="&path.sounds.overcast;" oncommand="htlivesight.Settings.click.overcastSound();"/>
+			<button label="&other.reset_button;" id="overcastButton_reset" tabindex="2" onclick="htlivesight.Settings.click.overcastReset();"/>
+			</row>
+			<textbox maxlength="70" size="70" id="overcastSoundPath" oninput="htlivesight.Settings.click.overcastSound();"/>
+			
+			<row>
+			<checkbox id="fewCloudsCheck" label="&path.sounds.fewClouds;" oncommand="htlivesight.Settings.click.fewCloudSound();"/>
+			<button label="&other.reset_button;" id="fewCloudsButton_reset" tabindex="2" onclick="htlivesight.Settings.click.fewCloudReset();"/>
+			</row>
+			<textbox maxlength="70" size="70" id="fewCloudsSoundPath" oninput="htlivesight.Settings.click.fewCloudSound();"/>
+			
+			<row>
+			<checkbox id="myBooCheck" label="&path.sounds.myBoo;" oncommand="htlivesight.Settings.click.myBooSound();"/>
+			<button label="&other.reset_button;" id="myBooButton_reset" tabindex="2" onclick="htlivesight.Settings.click.myBooReset();"/>
+			</row>
+			<textbox maxlength="70" size="70" id="myBooSoundPath" oninput="htlivesight.Settings.click.myBooSound();"/>
+			
+			<row>
+			<checkbox id="opBooCheck" label="&path.sounds.opBoo;" oncommand="htlivesight.Settings.click.opBooSound();"/>
+			<button label="&other.reset_button;" id="opBooButton_reset" tabindex="2" onclick="htlivesight.Settings.click.opBooReset();"/>
+			</row>
+			<textbox maxlength="70" size="70" id="opBooSoundPath" oninput="htlivesight.Settings.click.opBooSound();"/>
 		</groupbox>
 	</tabpanel>
 	<tabpanel orient="vertical" flex="1">
 	<groupbox>
-		<description>&path.sounds.whistleStart;</description>
-		<textbox maxlength="50" size="50" id="whistleStartSoundPath" oninput="htlivesight.Settings.click.whistleStartSound();"/>
-		<description>&path.sounds.whistle2;</description>
-		<textbox maxlength="50" size="50" id="whistle2SoundPath" oninput="htlivesight.Settings.click.whistle2Sound();"/>
-		<description>&path.sounds.whistle3;</description>
-		<textbox maxlength="50" size="50" id="whistle3SoundPath" oninput="htlivesight.Settings.click.whistle3Sound();"/>
-		<description>&path.sounds.whistle;</description>
-		<textbox maxlength="50" size="50" id="whistleSoundPath" oninput="htlivesight.Settings.click.whistleSound();"/>
-		<description>&path.sounds.hattrick;</description>
-		<textbox maxlength="50" size="50" id="hattrickSoundPath" oninput="htlivesight.Settings.click.hattrickSound();"/>
+		
+		<row>
+	    <checkbox id="whistleStartCheck" label="&path.sounds.whistleStart;" oncommand="htlivesight.Settings.click.whistleStartSound();"/>
+	    <button label="&other.reset_button;" id="whistleStartButton_reset" tabindex="2" onclick="htlivesight.Settings.click.whistleStartReset();"/>
+	    </row>
+	    <textbox maxlength="70" size="70" id="whistleStartSoundPath" oninput="htlivesight.Settings.click.whistleStartSound();"/>
+
+		<row>
+		<checkbox id="whistle2Check" label="&path.sounds.whistle2;" oncommand="htlivesight.Settings.click.whistle2Sound();"/>
+		<button label="&other.reset_button;" id="whistle2Button_reset" tabindex="2" onclick="htlivesight.Settings.click.whistle2Reset();"/>
+		</row>
+		<textbox maxlength="70" size="70" id="whistle2SoundPath" oninput="htlivesight.Settings.click.whistle2Sound();"/>
+		
+		<row>
+		<checkbox id="whistle3Check" label="&path.sounds.whistle3;" oncommand="htlivesight.Settings.click.whistle3Sound();"/>
+		<button label="&other.reset_button;" id="whistle3Button_reset" tabindex="2" onclick="htlivesight.Settings.click.whistle3Reset();"/>
+		</row>
+		<textbox maxlength="70" size="70" id="whistle3SoundPath" oninput="htlivesight.Settings.click.whistle3Sound();"/>
+
+		<row>
+		<checkbox id="whistleCheck" label="&path.sounds.whistle;" oncommand="htlivesight.Settings.click.whistleSound();"/>
+		<button label="&other.reset_button;" id="whistleButton_reset" tabindex="2" onclick="htlivesight.Settings.click.whistleReset();"/>
+		</row>
+		<textbox maxlength="70" size="70" id="whistleSoundPath" oninput="htlivesight.Settings.click.whistleSound();"/>
+		
+		<row>
+		<checkbox id="hattrickCheck" label="&path.sounds.hattrick;" oncommand="htlivesight.Settings.click.hattrickSound();"/>
+		<button label="&other.reset_button;" id="hattrickButton_reset" tabindex="2" onclick="htlivesight.Settings.click.hattrickReset();"/>
+		</row>
+		<textbox maxlength="70" size="70" id="hattrickSoundPath" oninput="htlivesight.Settings.click.hattrickSound();"/>
 	</groupbox>
 </tabpanel>
 		</tabpanels>
