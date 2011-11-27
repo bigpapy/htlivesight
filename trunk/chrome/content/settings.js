@@ -424,7 +424,7 @@ htlivesight.Settings = {
    frGoalReset: function() {
    	  var prefs = htlivesight.Settings.preferences;
    	  document.getElementById("frGoalSoundPath").value="chrome://htlivesight/content/sound/goal.wav";
-   	  prefs.personalization.frpGoalSoundPath = document.getElementById("frGoalSoundPath").value;
+   	  prefs.personalization.frGoalSoundPath = document.getElementById("frGoalSoundPath").value;
      },
 
     opfrGoalSound: function() {

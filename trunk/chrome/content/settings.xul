@@ -249,6 +249,8 @@
 				</row>
 				<textbox maxlength="70" size="70" id="missGoalSoundPath" oninput="htlivesight.Settings.click.missGoalSound();"/>
 				
+
+				
 			</groupbox>
 		</tabpanel>
 		<tabpanel orient="vertical" flex="1">
