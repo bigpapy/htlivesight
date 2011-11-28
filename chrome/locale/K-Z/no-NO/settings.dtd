@@ -5,10 +5,10 @@
 <!ENTITY tab.notifications   "Påminnelser">
 <!ENTITY tab.language        "Språk">
 <!ENTITY tab.other           "Annet">
-<!ENTITY tab.custom          "Customizations">
-<!ENTITY tab.goalSound        "Goals sounds">
-<!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
-<!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
+<!ENTITY tab.custom          "Tilpasninger">
+<!ENTITY tab.goalSound       "Scoringslyder">
+<!ENTITY tab.wheatherSound   "Lyder for vær-SE og skader">
+<!ENTITY tab.whistleSound    "Dommerens fløyte og Hattricklyder">
 
 <!ENTITY general.open        "Åpne HTLiveSight">
 <!ENTITY general.new_tab     "I en ny fane">
