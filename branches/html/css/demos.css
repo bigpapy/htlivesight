@@ -1,12 +1,12 @@
 body {
-	font-size: 75%;
+	font-size: 62.5%;
 }
-/*
+
 table {
 	font-size: 1em;
 }
 
- Site
+/* Site
    -------------------------------- */
 
 body {
@@ -187,7 +187,7 @@ code, pre { padding:8px 0 8px 20px ; font-size: 1.2em; line-height:130%;  }
 #demo-source a.source-closed:active { background-image: url(images/demo-spindown-closed.gif); }
 
 div.demo {
-	/*padding:12px;*/
+	padding:0px;
 	font-family: "Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif";
 }
 

@@ -20,6 +20,17 @@
 <script src="js/jquery.ui.dialog.js"></script>
 <script src="js/jquery.effects.core.js"></script>
 <script src="js/jquery.ui.tabs.js"></script>
+	<script src="js/jquery.effects.blind.js"></script>
+	<script src="js/jquery.effects.bounce.js"></script>
+	<script src="js/jquery.effects.clip.js"></script>
+	<script src="js/jquery.effects.drop.js"></script>
+	<script src="js/jquery.effects.explode.js"></script>
+	<script src="js/jquery.effects.fold.js"></script>
+	<script src="js/jquery.effects.highlight.js"></script>
+	<script src="js/jquery.effects.pulsate.js"></script>
+	<script src="js/jquery.effects.scale.js"></script>
+	<script src="js/jquery.effects.shake.js"></script>
+	<script src="js/jquery.effects.slide.js"></script>
 <script>$(function() {
 	
 //Script per checkbox
@@ -42,8 +53,8 @@ $( "#dialog:ui-dialog" ).dialog( "destroy" );
 			autoOpen: true,
 			height: 400,
 			width: 400,
-			show: "blind",
-			hide: "explode",
+			show: "slide",
+			hide: "slide",
 			modal: true,
 		});
 		$( "#opener" ).click(function() {
@@ -80,20 +91,20 @@ $( "#dialog:ui-dialog" ).dialog( "destroy" );
 		});
 
 //Script per accordion-sidebar
-		/*$( "#leaguematches" ).accordion({
-			collapsible: true
-		});
-
+		$( "#leaguematches" ).accordion(
+			//collapsible: true
+		);
+/*
 		$( "#leaguetable" ).accordion({
-			collapsible: true
+			//collapsible: true
 		});
 
 		$( "#matchlist" ).accordion({
-			collapsible: true
+			//collapsible: true
 		});
 
 		$( "#Friendlist" ).accordion({
-			collapsible: true
+			//collapsible: true
 		});*/
 
 //Script per progressbar

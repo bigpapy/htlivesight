@@ -3,7 +3,7 @@ background-image: url(../img/bg.png);
 background-repeat:no-repeat;
 background-attachment:fixed;
 background-position:bottom left;
-padding: 0 0 0 0;
+padding: 0 0 0 0 !important;
 margin: 0 0 0 0;
 }
 label, input { display:block; }
