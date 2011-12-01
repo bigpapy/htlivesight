@@ -1,8 +1,8 @@
 image.chpp {
   list-style-image: url("chrome://htlivesight/content/img/chpp.png");
 }
-
- 
+#htlivesight-options{width: 480px; height: 640px;max-height:640px;
+ }
 #htlivesight-settings > hbox {
   padding: 1em;
 }
