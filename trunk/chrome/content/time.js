@@ -13,6 +13,7 @@ var Time = {
     var now = new Date();
     Time.hattrickTime = hattrickTime;
     Time.hattrickDiffTime = hattrickTime - now;
+  //  alert("Timediff: "+Time.hattrickDiffTime);
 //    Time.reLiveStartTime = Time.hattrickTime - Time.hattrickDiffTime; // re live by bigpapy
   },
   formatDate: function(date) {
