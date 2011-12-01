@@ -12,7 +12,6 @@
 	persist="screenX screenY"
 	onload="htlivesight.Settings.startup()"
 	resizable="yes"
-	style="max-width: 300px"
 	ondialogcancel="htlivesight.Settings.click.btnCancel();"
 	ondialogaccept="htlivesight.Settings.click.btnOk();">
 
@@ -39,9 +38,6 @@
 			<tab label="&tab.notifications;"/>
 			<tab label="&tab.other;"/> <!--added by Bigpapy for new tab -->
 			<tab label="&tab.custom;"/> <!--added by Bigpapy for new tab -->
-			<tab label="&tab.goalSound;"/> <!--added by Bigpapy for new tab -->
-			<tab label="&tab.wheatherSound;"/> <!--added by Bigpapy for new tab -->
-			<tab label="&tab.whistleSound;"/> <!--added by Bigpapy for new tab -->
 		</tabs>
 		<tabpanels flex="1">
 			<tabpanel id="tab_settings_options" orient="vertical" flex="1">
@@ -197,6 +193,7 @@
 		   </groupbox>  
 			</tabpanel> <!--added by bigpapy to have another tab option (end)-->
 			<tabpanel orient="vertical" flex="1">
+<arrowscrollbox orient="vertical" flex="1">
 			<groupbox>
 				<caption label="&custom.icons;"/>
 				<checkbox id="oldIcons" label="&custom.icons.old;" oncommand="htlivesight.Settings.click.oldIcons();"/>
@@ -210,9 +207,8 @@
 				<checkbox id="noOpGoal" label="&custom.sounds.noOpGoal;" oncommand="htlivesight.Settings.click.noOpGoal();"/>
 			</groupbox>
 			
-		</tabpanel>
-		<tabpanel orient="vertical" flex="1">
 			<groupbox>
+			<caption label="&tab.goalSound;"/>
 				<row>
 			    <checkbox id="myGoalCheck" label="&path.sounds.myGoal;" oncommand="htlivesight.Settings.click.myGoalSound();"/>
 			    <button label="&other.reset_button;" id="myGoalButton_reset" tabindex="2" onclick="htlivesight.Settings.click.myGoalReset();"/>
@@ -249,12 +245,11 @@
 				</row>
 				<textbox maxlength="70" size="70" id="missGoalSoundPath" oninput="htlivesight.Settings.click.missGoalSound();"/>
 				
-
-				
 			</groupbox>
-		</tabpanel>
-		<tabpanel orient="vertical" flex="1">
+
+
 		<groupbox>
+		<caption label="&tab.wheatherSound;"/>
 		
 			<row>
 			<checkbox id="sunCheck" label="&path.sounds.sun;" oncommand="htlivesight.Settings.click.sunSound();"/>
@@ -292,9 +287,9 @@
 			</row>
 			<textbox maxlength="70" size="70" id="opBooSoundPath" oninput="htlivesight.Settings.click.opBooSound();"/>
 		</groupbox>
-	</tabpanel>
-	<tabpanel orient="vertical" flex="1">
+
 	<groupbox>
+	<caption label="&tab.whistleSound;"/>
 		
 		<row>
 	    <checkbox id="whistleStartCheck" label="&path.sounds.whistleStart;" oncommand="htlivesight.Settings.click.whistleStartSound();"/>
@@ -325,7 +320,7 @@
 		<button label="&other.reset_button;" id="hattrickButton_reset" tabindex="2" onclick="htlivesight.Settings.click.hattrickReset();"/>
 		</row>
 		<textbox maxlength="70" size="70" id="hattrickSoundPath" oninput="htlivesight.Settings.click.hattrickSound();"/>
-	</groupbox>
+	</groupbox></arrowscrollbox>
 </tabpanel>
 		</tabpanels>
 	</tabbox>
