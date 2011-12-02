@@ -1,36 +1,36 @@
 <!ENTITY window.title        "HTLiveSight">
 
 <!ENTITY menu.server         "Server:">
-<!ENTITY menu.disconnected   "disconnected">
-<!ENTITY menu.options        "Options">
-<!ENTITY menu.reconnect      "Reconnect to HT">
-<!ENTITY menu.about          "About HTLiveSight">
+<!ENTITY menu.disconnected   "terputus">
+<!ENTITY menu.options        "Opsi">
+<!ENTITY menu.reconnect      "Hubungkan ulang ke HT">
+<!ENTITY menu.about          "Tentang HTLiveSight">
 
-<!ENTITY login.label         "Login">
-<!ENTITY login.teamId        "Insert TeamId of your team">
-<!ENTITY login.username      "Username">
-<!ENTITY login.security_code "Security Code">
-<!ENTITY login.remember_me   "Remember me">
-<!ENTITY login.button        "Login">
-<!ENTITY login.re_live       "Re-Live">
-<!ENTITY login.speed         "Speed">
+<!ENTITY login.label         "Masuk">
+<!ENTITY login.teamId        "Masukkan Id timmu">
+<!ENTITY login.username      "Nama pengguna ">
+<!ENTITY login.security_code "Kode keamanan">
+<!ENTITY login.remember_me   "Ingat saya">
+<!ENTITY login.button        "Masuk">
+<!ENTITY login.re_live       "Live ulang">
+<!ENTITY login.speed         "Kecepatan">
 <!ENTITY login.by_event      "Per event">
 
-<!ENTITY league.matches      "League Matches">
-<!ENTITY league.live_table   "Live Table">
+<!ENTITY league.matches      "Pertandingan Liga">
+<!ENTITY league.live_table   "Tabel Live">
 <!ENTITY league.position     "#">
-<!ENTITY league.team         "Team">
-<!ENTITY league.played       "P">
+<!ENTITY league.team         "Tim">
+<!ENTITY league.played       "Mn">
 <!ENTITY league.goals        "G">
-<!ENTITY league.goal_diff    "GD">
+<!ENTITY league.goal_diff    "SG">
 <!ENTITY league.points       "PTS">
 
-<!ENTITY matches.list        "Match List">
-<!ENTITY matches.add         "Add match">
-<!ENTITY matches.by_match    "By match id">
-<!ENTITY matches.by_team     "By team id">
+<!ENTITY matches.list        "Daftar Pertandingan">
+<!ENTITY matches.add         "Tambahkan pertandingan">
+<!ENTITY matches.by_match    "Berdasarkan id pertandingan">
+<!ENTITY matches.by_team     "Berdasarkan id tim">
 <!ENTITY matches.youth       "Youth?">
 
-<!ENTITY friends.title       "Friends">
-<!ENTITY friends.remove      "Remove">
-<!ENTITY friends.open        "Open">
+<!ENTITY friends.title       "Teman">
+<!ENTITY friends.remove      "Hapus">
+<!ENTITY friends.open        "Buka">
