@@ -46,7 +46,7 @@
 <!ENTITY custom.icons.old       "Ícones originais do Livefox na janela de jogo">
 <!ENTITY custom.sounds          "Sons">
 <!ENTITY custom.sounds.weather  "Som de Tempo para o início do jogo">
-<!ENTITY custom.sounds.time     "Sons para o início/fim de uma das partes">
+<!ENTITY custom.sounds.time     "Sons para o início/fim de cada uma das partes">
 <!ENTITY custom.sounds.SEW      "Sons para eventos de tempo">
 <!ENTITY custom.sounds.goal     "Sons originais do Livefox">
 <!ENTITY custom.sounds.noOpGoal "Sem sons para golos do adversário">
@@ -61,15 +61,15 @@
 <!ENTITY path.sounds.rain         "Som para dia de chuva">
 <!ENTITY path.sounds.overcast     "Som para tempo muito nublado">
 <!ENTITY path.sounds.fewClouds    "Som para tempo pouco nublado">
-<!ENTITY path.sounds.myBoo        "Som para lesão da nossa equipa">
+<!ENTITY path.sounds.myBoo        "Som para lesão de nosso jogador">
 <!ENTITY path.sounds.opBoo        "Som para lesão de adversário">
 <!ENTITY path.sounds.whistleStart "Apito para início da 1ª/2ª parte">
 <!ENTITY path.sounds.whistle2     "Apito para o fim da 1ª parte">
 <!ENTITY path.sounds.whistle3     "Apito para o fim do jogo">
 <!ENTITY path.sounds.whistle      "Som para cartão Amarelo/Vermelho">
-<!ENTITY path.sounds.hattrick     "Som do Hattrick">
+<!ENTITY path.sounds.hattrick     "Som de hattrick">
 
-<!ENTITY language.select     "Seleccionar língua">
+<!ENTITY language.select     "Seleccionar idioma">
 <!ENTITY language.note       "Nota: Deve reiniciar o HTLiveSight para as opções terem efeito.">
 
 <!ENTITY button.cancel       "Cancelar">
