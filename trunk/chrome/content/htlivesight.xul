@@ -1,4 +1,5 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml version="1.0"?>-->
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <?xml-stylesheet type="text/css" rel="stylesheet" href="CSS/default.css" title="Default"?>
 <?xml-stylesheet type="text/css" rel="stylesheet" href="CSS/livefox.css" title="Livefox"?>
