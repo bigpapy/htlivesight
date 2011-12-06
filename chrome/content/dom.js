@@ -238,7 +238,11 @@ htlivesight.DOM = {
     return null;
   },
   createTextEventElement: function(event) {
-  	var cleanedText = Util.cleanTags(event.text);
+	var cleanedText = Util.cleanTags(event.text);
+//	alert("Util.cleanTags(cleanedText) = "+ cleanedText);
+	cleanedText= Util.CleanText2(cleanedText);//added by bigpapy
+//	alert("Util.CleanText(cleanedText) = "+ cleanedText);
+  	
     var resultDoc = htlivesight.DOM.parser.parseFromString("<root>" + cleanedText + "</root>","text/xml");
     var nodeList = resultDoc.documentElement.childNodes;
     

@@ -25,14 +25,14 @@ function Match(id, date, home, away, event, arena, youth) {
   this.isFinish = false;
   this.timeElapsed="";
   this.live = true;
-//  this.reLiveByEventEnd= false;
+  this.lastShownEventIndex= -1;
 };
 
 Match.List = new Object();
 
 Match.Team = function (id, name) {
   this.id = id;
-  this.name = name;
+  this.name = Util.RemoveAmpersand(name);
 };
 
 Match.side = function(team, goals, formation, tactic) {
@@ -141,13 +141,13 @@ Match.Update = function (newMatch) {
     };
   }
   // added by bigpapy
-  if (newMatch.reLiveByEventEnd) {
- //     if (!match.reLiveByEventEnd) {
-        match.reLiveByEventEnd=newMatch.reLiveByEventEnd;
-//      } else {
-//        match.away.goals = newMatch.away.goals;
-//      }
+  
+  if (newMatch.lastShownEventIndex) {
+      if (!match.lastShownEventIndex) {
+        match.lastShownEventIndex=newMatch.lastShownEventIndex;
+      } 
     };
+  
  // end adding by bigpapy 
   return match;
 };
