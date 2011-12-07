@@ -35,7 +35,7 @@
 
 <!ENTITY other.authorization "Autorizacijos kodas">
 <!ENTITY other.reset         "Nutraukti autorizaciją">
-<!ENTITY other.reset_button  "Nutraukti">
+<!ENTITY other.reset_button  "Atstatyti">
 <!ENTITY other.reverse       "Rungtynių įvykiai rodomi iš apačios į viršų">
 <!ENTITY other.reverse.note  "Pakeitus perkrauti puslapį">
 <!ENTITY other.events        "Įvykių tvarka">
