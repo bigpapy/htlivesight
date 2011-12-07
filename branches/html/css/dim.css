@@ -19,19 +19,14 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
 .validateTips { border: 1px solid transparent; padding: 0.3em; }
 .ui-progressbar-value { background-image: url(images/pbar-ani.gif); }
 
-#opt-opener{
-background:yellow !important;
-}
 #match_container{
-font-family:Arial,sans-serif;
-font-size:13px;
-/*background:#ccc;*/
 width:80%;
 float:left;
 text-align:center;
 }
 .matchskeleton{
-background:#ccc;
+background:black;
+color:white;
 width:99%;
 border-color:#000;
 border-width:1px;
@@ -39,16 +34,12 @@ border-style:solid;
 text-align:center;
 }
 #sidebar{
-font-family:Arial,sans-serif;
-font-size:13px;
-background:#aaa;
 width:20%;
 float:right;
 }
 #Select1{padding:0 5% 0 0}
 #topbar{
-font-family:Arial,sans-serif;
-font-size:13px;
+
 background:#000;
 color:white;
 border-color:#000;
@@ -62,4 +53,6 @@ float:left;
 }
 #rightzone{
 float:right;
+}
+#about-form{text-align:center;
 }

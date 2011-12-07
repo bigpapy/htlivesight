@@ -91,10 +91,10 @@ $( "#dialog:ui-dialog" ).dialog( "destroy" );
 		});
 
 //Script per accordion-sidebar
-		$( "#leaguematches" ).accordion(
+/*		$( "#leaguematches" ).accordion(
 			//collapsible: true
 		);
-/*
+
 		$( "#leaguetable" ).accordion({
 			//collapsible: true
 		});
@@ -157,79 +157,174 @@ Check out the latest news and releases of HTLS: <a href="http://htlivesight.sour
 <div id="rightzone">
 Logged in as TEAM NAME - TEAM LOGO
 <button id="opener">Login</button>
-<button id="opt-opener">Options</button><!--
+<button id="opt-opener">Options</button>
 <div id="options-form" title="Options">
-<form>
-  	<fieldset style="border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px;">
-
-	<legend>Options</legend>
-		<label for="name">Insert your TeamID</label>
-		<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
-		<input type="checkbox" id="check" /><label for="check">Save</label>
-		<input type="submit" value="Login"/>
-		</fieldset>
-		
-		
-</form>
-
 <div id="tabs">
 	<ul>
 		<li><a href="#tabs-1">General</a></li>
 		<li><a href="#tabs-2">Matches</a></li>
-		<li><a href="#tabs-3">Alerts</a></li>
+		<li><a href="#tabs-3">Notifications</a></li>
+		<li><a href="#tabs-4">Other</a></li>
+		<li><a href="#tabs-5">Customizations</a></li>
 	</ul>
 	<div id="tabs-1">
-		<p>Choose your language:</p>
-			<select>
-		<option>select</option>
-
-							<option value="ca-CA">ca-CA Català</option>
-							<option value="cs-CZ">cs-CZ Cesky</option>
-                            <option value="da-DK">da-DK Danish</option>
-							<option value="de-DE">de-DE Deutsch</option>
-
-							<option value="en-GB">en-GB English (British)</option>
-							<option value="en-US">en-US English (US)</option>
-							<option value="es-ES">es-ES Espanol</option>
-							<option value="fr-FR">fr-FR Français</option>
-
-							<option value="hr-HR">hr-HR Hrvatski</option>
-							<option value="hu-HU">hu-HU Magyar</option>
-							<option value="it-IT">it-IT Italiano</option>
-
-	</select>
+	
+	<fieldset>
+	<legend>Select language</legend>
+		<select>
+		<option>Select language</option>
+		<option value="ara">[ara] العربية</option>
+		<option value="bel">[bel] Беларуская</option>
+		<option value="bul">[bul] Български</option>
+		<option value="bos">[bos] Bosanski</option>
+		<option value="cat">[cat] Català</option>
+		<option value="ces">[ces] Čeština</option>
+		<option value="dan">[dan] Dansk</option>
+		<option value="ger">[ger] Deutsch</option>
+		<option value="eng">[eng] English</option>
+		<option value="en-us">[en-us] American</option>
+		<option value="ell">[ell] Ελληνικά</option>
+		<option value="spa">[spa] Español</option>
+		<option value="es-ca">[es-ca] Centroamericano</option>
+		<option value="es-su">[es-su] Sudamericano</option>
+		<option value="est">[est] Eesti</option>
+		<option value="eus">[eus] Euskara</option>
+		<option value="fas">[fas] فارسی</option>
+		<option value="fin">[fin] Suomi</option>
+		<option value="fra">[fra] Français</option>
+		<option value="fry">[fry] Frysk</option>
+		<option value="fur">[fur] Furlan</option>
+		<option value="glg">[glg] Galego</option>
+		<option value="heb">[heb] עברית</option>
+		<option value="hrv">[hrv] Hrvatski</option>
+		<option value="hun">[hun] Magyar</option>
+		<option value="ind">[ind] Bahasa Indonesia</option>
+		<option value="isl">[isl] Islenska</option>
+		<option value="ita">[ita] Italiano</option>
+		<option value="jpn">[jpn] 日本語</option>
+		<option value="kat">[kat] Georgian</option>
+		<option value="kor">[kor] 한국어</option>
+		<option value="ltz">[ltz] Lëtzebuergesch</option>
+		<option value="lit">[lit] Lietuvių</option>
+		<option value="lav">[lav] Latviešu</option>
+		<option value="mkd">[mkd] Македонски</option>
+		<option value="mlt">[mlt] Malti</option>
+		<option value="nld">[nld] Nederlands</option>
+		<option value="nob">[nob] Norsk-Bokmål</option>
+		<option value="nno">[nno] Norsk-Nynorsk</option>
+		<option value="pol">[pol] Polski</option>
+		<option value="por">[por] Português</option>
+		<option value="pt-br">[pt-br] Brasileiro</option>
+		<option value="ron">[ron] Română</option>
+		<option value="rus">[rus] Русский</option>
+		<option value="slk">[slk] Slovenčina</option>
+		<option value="slv">[slv] Slovenščina</option>
+		<option value="alb">[alb] Albanian</option>
+		<option value="srp">[srp] Српски</option>
+		<option value="srp-lat">[srp-lat] Srpski</option>
+		<option value="swe">[swe] Svenska</option>
+		<option value="tur">[tur] Türkçe</option>
+		<option value="vie">[vie] Tiếng Việt</option>
+		<option value="vls">[vls] Vlaams</option>
+		<option value="ukr">[ukr] Українська</option>
+		<option value="zho">[zho] 中文（简体）</option>
+		</select>
+	</fieldset>
+	
+	<fieldset>
+	<legend>Server settings</legend>
+		Insert Hattrick server that you are logged on (ie. www96).
+		<label for="name">Hattrick server:</label>
+		<input type="text" name="hattrickserver" id="hattrickserver" />
+		</fieldset>
+	
 	</div>
+	
 	<div id="tabs-2">
-		<p>League Matches</p>
+	<fieldset>
+	<legend>League Matches</legend>
 		<input type="checkbox" />Load automatically League Matches and League Table<br />
 		<input type="checkbox" />Played in <input value="24" /> hours<br />
-				<p>Friends Matches</p>
+	</fieldset>
+	<fieldset>
+	<legend>Friends Matches</legend>
 		<input type="checkbox" />Load automatically matches of your friends<br />
 		<input type="checkbox" />Played in <input value="24" /> hours<br />
-						<p>Scorers</p>
+	</fieldset>
+	<fieldset>
+	<legend>Scorers</legend>
 		<input type="checkbox" />Add scorers in header<br />
-				<p>Live Window</p>
+	</fieldset>
+	<fieldset>
+	<legend>Live Window</legend>
 		<input value="3" /> Lines to show in minimized mode<br />
+	</fieldset>
+	
 	</div>
+	
 	<div id="tabs-3">
-		<p>Alerts</p>
-		<input type="checkbox" />Sounds<br />
-		<input type="checkbox" />Only in open matches<br />
-		<input type="checkbox" />Flash<br />
-		<input type="checkbox" />Popups<br />
+	<fieldset>
+	<legend>Notifications</legend>
+		<input type="checkbox" />Enable sound notifications<br />
+		<input type="checkbox" />Only in opened matches<br />
+		<input type="checkbox" />Flash headers<br />
+		<input type="checkbox" />Status bar slider<br />
+	</fieldset>
+	
+	</div>
+	
+	<div id="tabs-4">
+	<fieldset>
+	<legend>Authorization code</legend>
+		Remove authorization	 <button id="removeauth">Reset</button>
+	</fieldset>
+	<fieldset>
+	<legend>Sequence of events</legend>
+		<input type="checkbox" />Bottom up display of match events<br />
+	</fieldset>
+	<fieldset>
+	<legend>Eventkey</legend>
+		<input type="checkbox" />Show eventkey in the commentary<br />
+	</fieldset>
+	
+	</div>
+	
+	<div id="tabs-5">
+	<fieldset>
+	<legend>Icons</legend>
+		<input type="checkbox" />Original Livefox icons in match window<br />
+	</fieldset>
+	<fieldset>
+	<legend>Sounds</legend>
+		<input type="checkbox" />Weather sound for start of the match<br />
+		<input type="checkbox" />Sound for start/end of an halftime<br />
+		<input type="checkbox" />Sound for weather special events<br />
+		<input type="checkbox" />Original Livefox sounds<br />
+		<input type="checkbox" />No sounds for opponent's goals<br />
+	</fieldset>
+	<fieldset>
+	<legend>Goals sounds</legend>
+		<input type="checkbox" />Sound for own goal <button id="removeauth">Reset</button>
+		<input value="chrome://htlivesight/content/sound/cheer_8k.wav" class="text ui-widget-content ui-corner-all"/>
+	</fieldset>
+	
 	</div>
 </div>
-<div class="demo-description">
-<p>Some options need HTLiveSight to be restarted. If nothing happens, restart your browser.</p>
+<div class="ui-state-highlight ui-corner-all">
+<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span> Some options need HTLiveSight to be restarted. If nothing happens, restart your browser.</p>
 </div>
-</div>-->
+</div>
 
 <button id="openabout">About</button>
-<!--<div id="about-form" title="About HTLiveSight">
-<img src="img/chpp.png" alt="chpp" />
-<img src="img/HTML5_Logo_512.png" alt="html5" />
-<img src="img/jquery_logo.png" alt="jquery" />
-</div>-->
+<div id="about-form" title="About HTLiveSight">
+<img src="img/t2.png" alt="htlslogo" /><br />
+<h1>HTLiveSightNext</h1>6 Dec 2011<br />Created by Silkevicious and Bigpapy<hr>
+<img src="img/chpp.png" alt="chpp" /><img src="img/oauth.png" alt="oauth" width="128" height="128"/><br />
+Hattrick Certified Application<hr>Powered by:<br />
+<img src="img/HTML5_Logo_512.png" alt="html5" width="256" height="256"/>
+<img src="img/jqueryui.jpg" alt="jqueryui" width="256" height="128"/>
+
+</div>
 </div>
 
 </div>
@@ -347,7 +442,7 @@ Logged in as TEAM NAME - TEAM LOGO
 </div>
 
 <div id="Friendlist">
-<h3><a href="#">Friends List</a></h3>
+<h3>Friends List</h3>
 <div>
 <select name="drop1" id="Select1" size="5" multiple="multiple">
     <option value="1">item 1</option>
