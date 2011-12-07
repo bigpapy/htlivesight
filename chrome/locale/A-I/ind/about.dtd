@@ -1,4 +1,4 @@
-<!ENTITY window.title        "About HTLiveSight">
+<!ENTITY window.title        "Tentang HTLiveSight">
 
 <!ENTITY tab.programming     "Pemrograman">
 <!ENTITY tab.art             "Art">
@@ -8,10 +8,10 @@
 <!ENTITY month.march         "Mar">
 <!ENTITY month.april         "Apr">
 <!ENTITY month.may           "Mei">
-<!ENTITY month.june          "Juni">
-<!ENTITY month.july          "Juli">
-<!ENTITY month.august        "Ags">
-<!ENTITY month.september     "Sept">
+<!ENTITY month.june          "Jun">
+<!ENTITY month.july          "Jul">
+<!ENTITY month.august        "Agu">
+<!ENTITY month.september     "Sep">
 <!ENTITY month.october       "Okt">
 <!ENTITY month.november      "Nov">
 <!ENTITY month.december      "Des">
@@ -22,8 +22,8 @@
 <!ENTITY text.thanks_to      "Terima kasih banyak kepada:">
 <!ENTITY text.images_by      "Gambar oleh">
 <!ENTITY text.weather        "Gambar cuaca dari">
-<!ENTITY text.tango_icon     "Tango Icon Library">
-<!ENTITY text.licensed       "licenced under the">
+<!ENTITY text.tango_icon     "Perpustakaan Ikon Tango">
+<!ENTITY text.licensed       "dilisensi di bawah">
 <!ENTITY text.creative       "Creative Commons">
 <!ENTITY text.license        "Attribution Share-Alike licence">
 
