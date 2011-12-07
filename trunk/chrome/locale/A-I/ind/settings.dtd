@@ -27,50 +27,50 @@
 <!ENTITY matches.window      "Jendela">
 <!ENTITY matches.lines       "Baris yang ditampilkan pada mode minimal">
 
-<!ENTITY notify.notify       "Notifikasi">
-<!ENTITY notify.enable_sound "Nyalakan suara notifikasi">
-<!ENTITY notify.only         "Hanya pertandingan yang dibuka">
-<!ENTITY notify.flash        "Flash headers">
-<!ENTITY notify.status       "Status bar slider">
+<!ENTITY notify.notify       "Pemberitahuan">
+<!ENTITY notify.enable_sound "Aktifkan pemberitahuan suara">
+<!ENTITY notify.only         "Hanya pada pertandingan yang dibuka">
+<!ENTITY notify.flash        "Atasan menyala">
+<!ENTITY notify.status       "Batang status geser">
 
 <!ENTITY other.authorization "Kode otorisasi">
 <!ENTITY other.reset         "Hapus otorisasi">
 <!ENTITY other.reset_button  "Reset">
-<!ENTITY other.reverse       "Bottom up display of match events">
-<!ENTITY other.reverse.note  "Refresh page to see the effect of change.">
-<!ENTITY other.events        "Sequence of events">
-<!ENTITY other.eventkey      "Eventkey">
-<!ENTITY other.eventkey.note "Show eventkey in the commentary">
+<!ENTITY other.reverse       "Tampilan bawah ke atas untuk event pertandingan">
+<!ENTITY other.reverse.note  "Segarkan halaman untuk melihat efek perubahan.">
+<!ENTITY other.events        "Event lanjutan">
+<!ENTITY other.eventkey      "Simbol-event">
+<!ENTITY other.eventkey.note "Tampilkan simbol-event pada komentar">
 
 <!ENTITY custom.icons           "Ikon">
-<!ENTITY custom.icons.old       "Original Livefox icons in match window">
-<!ENTITY custom.sounds          "Sounds">
-<!ENTITY custom.sounds.weather  "Weather sound for start of the match">
-<!ENTITY custom.sounds.time     "Sounds for start/end of an halftime">
-<!ENTITY custom.sounds.SEW      "Sounds for weather special events">
-<!ENTITY custom.sounds.goal     "Original Livefox sounds">
-<!ENTITY custom.sounds.noOpGoal "No sounds for opponent's goals">
+<!ENTITY custom.icons.old       "Ikon asli Livefox di jendela pertandingan">
+<!ENTITY custom.sounds          "Suara">
+<!ENTITY custom.sounds.weather  "Suara cuaca ketika pertandingan mulai">
+<!ENTITY custom.sounds.time     "Suara ketika mulai/berakhir babak pertama">
+<!ENTITY custom.sounds.SEW      "Suara untuk event spesial cuaca">
+<!ENTITY custom.sounds.goal     "Suara asli Livefox">
+<!ENTITY custom.sounds.noOpGoal "Tanpa suara untuk gol lawan">
 
-<!ENTITY path.sounds.myGoal       "Sound for own goal">
-<!ENTITY path.sounds.opGoal       "Sound for goal of my opponent">
-<!ENTITY path.sounds.frGoal       "Sound for goal of friend's">
-<!ENTITY path.sounds.opfrGoal     "Sound for goal of friend's opponent">
-<!ENTITY path.sounds.otGoal       "Other team goal sound">
-<!ENTITY path.sounds.miss         "Missed goal sound">
-<!ENTITY path.sounds.sun          "Sound for sunny weather">
-<!ENTITY path.sounds.rain         "Sound for rainy weather">
-<!ENTITY path.sounds.overcast     "Sound for overcast weather">
-<!ENTITY path.sounds.fewClouds    "Sound for few clouds weather">
-<!ENTITY path.sounds.myBoo        "Sound for own team injury">
-<!ENTITY path.sounds.opBoo        "Sound for opponent team injury">
-<!ENTITY path.sounds.whistleStart "Start of 1st/2nd half whistle">
-<!ENTITY path.sounds.whistle2     "End of 1st half whistle">
-<!ENTITY path.sounds.whistle3     "End of match whistle">
-<!ENTITY path.sounds.whistle      "Yellow/Red card sound">
-<!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.myGoal       "Suara gol sendiri">
+<!ENTITY path.sounds.opGoal       "Suara gol lawanku">
+<!ENTITY path.sounds.frGoal       "Suara gol teman">
+<!ENTITY path.sounds.opfrGoal     "Suara gol lawannya teman">
+<!ENTITY path.sounds.otGoal       "Suara gol tim lain">
+<!ENTITY path.sounds.miss         "Suara gol meleset">
+<!ENTITY path.sounds.sun          "Suara cuaca cerah">
+<!ENTITY path.sounds.rain         "Suara cuaca hujan">
+<!ENTITY path.sounds.overcast     "Suara cuaca mendung">
+<!ENTITY path.sounds.fewClouds    "Suara cuaca berawan">
+<!ENTITY path.sounds.myBoo        "Suara tim sendiri cedera">
+<!ENTITY path.sounds.opBoo        "Suara tim lawan cedera">
+<!ENTITY path.sounds.whistleStart "Peluit mulai babak pertama/kedua">
+<!ENTITY path.sounds.whistle2     "Peluit akhir babak pertama">
+<!ENTITY path.sounds.whistle3     "Peluit akhir pertandingan">
+<!ENTITY path.sounds.whistle      "Suara kartu kuning/merah">
+<!ENTITY path.sounds.hattrick     "Suara Hattrick">
 
-<!ENTITY language.select     "Select language">
-<!ENTITY language.note       "Note: Restart Firefox for this to take effect.">
+<!ENTITY language.select     "Pilih bahasa">
+<!ENTITY language.note       "Catatan: Hidupkan ulang Firefox untuk memberlakukan perubahan.">
 
-<!ENTITY button.cancel       "Cancel">
+<!ENTITY button.cancel       "Batal">
 <!ENTITY button.ok           "OK">
