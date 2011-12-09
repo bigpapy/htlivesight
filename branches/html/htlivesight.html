@@ -31,21 +31,42 @@
 	<script src="js/jquery.effects.scale.js"></script>
 	<script src="js/jquery.effects.shake.js"></script>
 	<script src="js/jquery.effects.slide.js"></script>
-<script>$(function() {
+	<script>$(function() {
+	
+//<input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all" />
+//<input type="checkbox" id="chkbyev" /><label for="chkbyev">Per Event</label>
 	
 //Script per checkbox
-		$( "#check" ).button();
-		$( "#check1" ).button();
-		$( "#check2" ).button();
-		$( "#check3" ).button();
-		$( "#format" ).buttonset();
+		$( "#saveteam" ).button();
+		$( "#chkrelive" ).button();
+		$( "#chkbyev" ).button();
+		$( "#loadleague" ).button();
+		$( "#leagueplayed" ).button();
+		$( "#loadfriends" ).button();
+		$( "#friendsplayed" ).button();
+		$( "#shwscorers" ).button();
+		$( "#sndnot" ).button();
+		$( "#onlyopn" ).button();
+		$( "#flashhead" ).button();
+		$( "#statsbar" ).button();
+		$( "#seqev" ).button();
+		$( "#evkeys" ).button();
+		$( "#oldicons" ).button();
+		$( "#weatsnd" ).button();
+		$( "#startsnd" ).button();
+		$( "#wsesnd" ).button();
+		$( "#oldsnd" ).button();
+		$( "#nosndopp" ).button();
+		$( "#sndowngoal" ).button();
+		$( "#isyouth" ).button();
+		//$( "#format" ).buttonset();
 
 //Script per submit login
 		$( "input:submit, a, button", ".demo" ).button();
 		$( "a", ".demo" ).click(function() { return false; });
 
 //Script per box a comparsa
-$.fx.speeds._default = 500;
+$.fx.speeds._default = 750;
 $( "#dialog:ui-dialog" ).dialog( "destroy" );
 
 //Script per login	
@@ -67,7 +88,7 @@ $( "#dialog:ui-dialog" ).dialog( "destroy" );
 			autoOpen: false,
 			height: 700,
 			width: 600,
-			show: "blind",
+			show: "bounce",
 			hide: "explode",
 			modal: true,
 		});
@@ -89,23 +110,6 @@ $( "#dialog:ui-dialog" ).dialog( "destroy" );
 			$( "#about-form" ).dialog( "open" );
 			return false;
 		});
-
-//Script per accordion-sidebar
-/*		$( "#leaguematches" ).accordion(
-			//collapsible: true
-		);
-
-		$( "#leaguetable" ).accordion({
-			//collapsible: true
-		});
-
-		$( "#matchlist" ).accordion({
-			//collapsible: true
-		});
-
-		$( "#Friendlist" ).accordion({
-			//collapsible: true
-		});*/
 
 //Script per progressbar
 		$( "#progressbar" ).progressbar({
@@ -130,16 +134,16 @@ $( "#dialog:ui-dialog" ).dialog( "destroy" );
 
 	<legend>Login</legend>
 		<label for="name">Insert your TeamID</label>
-		<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
-		<input type="checkbox" id="check" /><label for="check">Save</label>
+		<input type="text" name="teamid" id="teamid" class="text ui-widget-content ui-corner-all" />
+		<input type="checkbox" id="saveteam" /><label for="saveteam"></label>Save
 		<input type="submit" value="Login"/>
 		</fieldset>
   	<fieldset>
     <legend>Re-Live</legend>
-	<input type="checkbox" id="check1" /><label for="check1">Re-Live</label>
-		<label for="password">Speed</label>
-		<input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all" />
-		<input type="checkbox" id="check2" /><label for="check2">Per Event</label>
+	<input type="checkbox" id="chkrelive" /><label for="chkrelive"></label>Re-Live
+		<label for="rlspd">Speed</label>
+		<input type="text" name="rlspd" id="rlspd" value="" class="text ui-widget-content ui-corner-all" />
+		<input type="checkbox" id="chkbyev" /><label for="chkbyev"></label>Per Event
 	</fieldset>
 </form>
 </div>
@@ -151,8 +155,7 @@ $( "#dialog:ui-dialog" ).dialog( "destroy" );
 
 
 <div id="topbar">
-<div id="leftzone">
-Check out the latest news and releases of HTLS: <a href="http://htlivesight.sourceforge.net/">http://htlivesight.sourceforge.net/</a>
+<div id="leftzone"><code></code>Check out the latest news and releases of HTLS: <a href="http://htlivesight.sourceforge.net/">http://htlivesight.sourceforge.net/</a>
 </div>
 <div id="rightzone">
 Logged in as TEAM NAME - TEAM LOGO
@@ -235,7 +238,7 @@ Logged in as TEAM NAME - TEAM LOGO
 	<legend>Server settings</legend>
 		Insert Hattrick server that you are logged on (ie. www96).
 		<label for="name">Hattrick server:</label>
-		<input type="text" name="hattrickserver" id="hattrickserver" />
+		<input type="text" name="hattrickserver" id="hattrickserver" class="text ui-widget-content ui-corner-all"/>
 		</fieldset>
 	
 	</div>
@@ -243,21 +246,21 @@ Logged in as TEAM NAME - TEAM LOGO
 	<div id="tabs-2">
 	<fieldset>
 	<legend>League Matches</legend>
-		<input type="checkbox" />Load automatically League Matches and League Table<br />
-		<input type="checkbox" />Played in <input value="24" /> hours<br />
+		<input type="checkbox" id="loadleague"/><label for="loadleague"></label>Load automatically League Matches and League Table<br />
+		<input type="checkbox" id="leagueplayed"/><label for="leagueplayed"></label>Played in <input value="24" class="text ui-widget-content ui-corner-all"/> hours<br />
 	</fieldset>
 	<fieldset>
 	<legend>Friends Matches</legend>
-		<input type="checkbox" />Load automatically matches of your friends<br />
-		<input type="checkbox" />Played in <input value="24" /> hours<br />
+		<input type="checkbox" id="loadfriends"/><label for="loadfriends"></label>Load automatically matches of your friends<br />
+		<input type="checkbox" id="friendsplayed"/><label for="friendsplayed"></label>Played in <input value="24" class="text ui-widget-content ui-corner-all" /> hours<br />
 	</fieldset>
 	<fieldset>
 	<legend>Scorers</legend>
-		<input type="checkbox" />Add scorers in header<br />
+		<input type="checkbox" id="shwscorers"/><label for="shwscorers"></label>Add scorers in header<br />
 	</fieldset>
 	<fieldset>
 	<legend>Live Window</legend>
-		<input value="3" /> Lines to show in minimized mode<br />
+		<input value="3" class="text ui-widget-content ui-corner-all"/> Lines to show in minimized mode<br />
 	</fieldset>
 	
 	</div>
@@ -265,10 +268,10 @@ Logged in as TEAM NAME - TEAM LOGO
 	<div id="tabs-3">
 	<fieldset>
 	<legend>Notifications</legend>
-		<input type="checkbox" />Enable sound notifications<br />
-		<input type="checkbox" />Only in opened matches<br />
-		<input type="checkbox" />Flash headers<br />
-		<input type="checkbox" />Status bar slider<br />
+		<input type="checkbox" id="sndnot"/><label for="sndnot"></label>Enable sound notifications<br />
+		<input type="checkbox" id="onlyopn"/><label for="onlyopn"></label>Only in opened matches<br />
+		<input type="checkbox" id="flashhead"/><label for="flashhead"></label>Flash headers<br />
+		<input type="checkbox" id="statsbar"/><label for="statsbar"></label>Status bar slider<br />
 	</fieldset>
 	
 	</div>
@@ -280,11 +283,11 @@ Logged in as TEAM NAME - TEAM LOGO
 	</fieldset>
 	<fieldset>
 	<legend>Sequence of events</legend>
-		<input type="checkbox" />Bottom up display of match events<br />
+		<input type="checkbox" id="seqev"/><label for="seqev"></label>Bottom up display of match events<br />
 	</fieldset>
 	<fieldset>
 	<legend>Eventkey</legend>
-		<input type="checkbox" />Show eventkey in the commentary<br />
+		<input type="checkbox" id="evkeys"/><label for="evkeys"></label>Show eventkey in the commentary<br />
 	</fieldset>
 	
 	</div>
@@ -292,24 +295,25 @@ Logged in as TEAM NAME - TEAM LOGO
 	<div id="tabs-5">
 	<fieldset>
 	<legend>Icons</legend>
-		<input type="checkbox" />Original Livefox icons in match window<br />
+		<input type="checkbox" id="oldicons"/><label for="oldicons"></label>Original Livefox icons in match window<br />
 	</fieldset>
 	<fieldset>
 	<legend>Sounds</legend>
-		<input type="checkbox" />Weather sound for start of the match<br />
-		<input type="checkbox" />Sound for start/end of an halftime<br />
-		<input type="checkbox" />Sound for weather special events<br />
-		<input type="checkbox" />Original Livefox sounds<br />
-		<input type="checkbox" />No sounds for opponent's goals<br />
+		<input type="checkbox" id="weatsnd"/><label for="weatsnd"></label>Weather sound for start of the match<br />
+		<input type="checkbox" id="startsnd"/><label for="startsnd"></label>Sound for start/end of an halftime<br />
+		<input type="checkbox" id="wsesnd"/><label for="wsesnd"></label>Sound for weather special events<br />
+		<input type="checkbox" id="oldsnd"/><label for="oldsnd"></label>Original Livefox sounds<br />
+		<input type="checkbox" id="nosndopp"/><label for="nosndopp"></label>No sounds for opponent's goals<br />
 	</fieldset>
 	<fieldset>
 	<legend>Goals sounds</legend>
-		<input type="checkbox" />Sound for own goal <button id="removeauth">Reset</button>
-		<input value="chrome://htlivesight/content/sound/cheer_8k.wav" class="text ui-widget-content ui-corner-all"/>
+		<input type="checkbox" id="sndowngoal"/><label for="sndowngoal"></label>Sound for own goal <button id="removeauth">Reset</button>
+		<input value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/>
 	</fieldset>
 	
 	</div>
 </div>
+<br />
 <div class="ui-state-highlight ui-corner-all">
 <p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span> Some options need HTLiveSight to be restarted. If nothing happens, restart your browser.</p>
 </div>
@@ -374,7 +378,7 @@ Hattrick Certified Application<hr>Powered by:<br />
 <div id="sidebar">
 
 <div id="leaguematches">
-<h3><a href="#">League Matches</a></h3>
+<h3>League Matches</h3>
 <div>
 <table border="1" width="100%">
 <thead>
@@ -398,7 +402,7 @@ Hattrick Certified Application<hr>Powered by:<br />
 </div>
 </div>
 <div id="leaguetable">
-<h3><a href="#">Live Table</a></h3>
+<h3>Live Table</h3>
 <div>
 <table border="1" width="100%">
 <thead>
@@ -429,7 +433,7 @@ Hattrick Certified Application<hr>Powered by:<br />
 </div>
 
 <div id="matchlist">
-<h3><a href="#">Match List</a></h3>
+<h3>Match List</h3>
 <div>
 <table border="1" width="100%">
   <tr>
@@ -451,17 +455,17 @@ Hattrick Certified Application<hr>Powered by:<br />
     <option value="4">item 4</option>
     <option value="0">All</option>
 </select>
-<div>
+<div><br />
 <button id="removefriend">Remove Friend</button>
 <button id="openmatches">Open matches</button>
 </div>
 </div>
 </div>
 
-<h3><a href="#">Add Match</a></h3>
-<div  class="dialog-form" title="Create new useraa"><!--id="addmatch"-->
+<h3>Add Match</h3>
+<div  class="addmatch" title="addmatch">
 <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
-<input type="checkbox" id="check3" /><label for="check3">Youth</label>
+<input type="checkbox" id="isyouth" /><label for="isyouth"></label>Youth
 <button id="matchid">matchid</button>
 <button id="teamid">teamid</button>
 </div>
