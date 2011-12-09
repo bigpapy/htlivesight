@@ -76,14 +76,17 @@
 							<menuitem value="ka-GE" label="ka-GE&#160;&#160;ქართული"/>
 							<menuitem value="he-HE" label="he-HE&#160;&#160;עברית"/>
 							<menuitem value="hr-HR" label="hr-HR&#160;&#160;Hrvatski"/>
+							<menuitem value="ind" label="ind&#160;&#160;Bahasa Indonesia"/>
 							<menuitem value="is-IS" label="is-IS&#160;&#160;Islenska"/>
 							<menuitem value="it-IT" label="it-IT&#160;&#160;Italiano"/>
+							<menuitem value="jpn" label="jpn&#160;&#160;日本語"/>
 							<menuitem value="ko-KR" label="ko-KR&#160;&#160;한국어"/>
 							<menuitem value="lv-LV" label="lv-LV&#160;&#160;Latviešu"/>
 							<menuitem value="lt-LT" label="lt-LT&#160;&#160;Lietuvių"/>
 							<menuitem value="lb-LB" label="lb-LB&#160;&#160;Lëtzebuergesch"/>
 							<menuitem value="hu-HU" label="hu-HU&#160;&#160;Magyar"/>
 							<menuitem value="mk-MK" label="mk-MK&#160;&#160;Македонски"/>
+							<menuitem value="mlt" label="mlt&#160;&#160;Malti"/>
 							<menuitem value="nl-NL" label="nl-NL&#160;&#160;Nederlands"/>
 							<menuitem value="no-NO" label="no-NO&#160;&#160;Norsk (Bokmal)"/>
 							<menuitem value="nn-NN" label="nn-NN&#160;&#160;Norsk (Nynorsk)"/>

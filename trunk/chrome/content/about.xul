@@ -18,8 +18,8 @@
         <tabpanel orient="vertical" align="center" flex="1">
 		  <image class="chpp" src="chrome://htlivesight/skin/128.png"/>
           <spacer class="tab"/>
-          <label class="header" value="HTLiveSightDEV 0.3.497"/>
-          <label value="1 &month.december; 2011"/>
+          <label class="header" value="HTLiveSightDEV 0.3.513"/>
+          <label value="9 &month.december; 2011"/>
           <label value="&text.created_by; Silkevicious and Bigpapy"/>
           <separator/>
 		  <label value="Based on HattrickLiveFox"/>
