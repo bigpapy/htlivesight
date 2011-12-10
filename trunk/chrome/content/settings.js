@@ -384,6 +384,15 @@ htlivesight.Settings = {
     	  document.getElementById("myGoalSoundPath").value="chrome://htlivesight/content/sound/cheer_8k.wav";
     	  prefs.personalization.myGoalSoundPath = document.getElementById("myGoalSoundPath").value;
       },
+      
+      myGoalPlay: function() {
+    	  try {
+    			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+    			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+    			soundService.play(ioService.newURI(document.getElementById("myGoalSoundPath").value, null, null));
+    			return;
+    		} catch(e) {}
+      },
 
     opGoalSound: function() {
           var prefs = htlivesight.Settings.preferences;
@@ -404,6 +413,15 @@ htlivesight.Settings = {
       	  var prefs = htlivesight.Settings.preferences;
       	  document.getElementById("opGoalSoundPath").value="chrome://htlivesight/content/sound/cheer1.wav";
       	  prefs.personalization.opGoalSoundPath = document.getElementById("opGoalSoundPath").value;
+        },
+
+        opGoalPlay: function() {
+      	  try {
+      			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+      			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+      			soundService.play(ioService.newURI(document.getElementById("opGoalSoundPath").value, null, null));
+      			return;
+      		} catch(e) {}
         },
 
     frGoalSound: function() {
@@ -427,7 +445,16 @@ htlivesight.Settings = {
    	  prefs.personalization.frGoalSoundPath = document.getElementById("frGoalSoundPath").value;
      },
 
-    opfrGoalSound: function() {
+     frGoalPlay: function() {
+     	  try {
+     			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+     			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+     			soundService.play(ioService.newURI(document.getElementById("frGoalSoundPath").value, null, null));
+     			return;
+     		} catch(e) {}
+       },
+     
+     opfrGoalSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("opfrGoalCheck").checked) {
           document.getElementById("opfrGoalSoundPath").disabled = false;
@@ -448,6 +475,15 @@ htlivesight.Settings = {
      	  prefs.personalization.opfrGoalSoundPath = document.getElementById("opfrGoalSoundPath").value;
        },
 
+    opfrGoalPlay: function() {
+      	  try {
+      			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+      			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+      			soundService.play(ioService.newURI(document.getElementById("opfrGoalSoundPath").value, null, null));
+      			return;
+      		} catch(e) {}
+        },
+       
     otGoalSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("otGoalCheck").checked) {
@@ -469,6 +505,15 @@ htlivesight.Settings = {
    	  prefs.personalization.otGoalSoundPath = document.getElementById("otGoalSoundPath").value;
      },
 
+     otGoalPlay: function() {
+     	  try {
+     			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+     			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+     			soundService.play(ioService.newURI(document.getElementById("otGoalSoundPath").value, null, null));
+     			return;
+     		} catch(e) {}
+       },
+     
     missGoalSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("missGoalCheck").checked) {
@@ -490,6 +535,15 @@ htlivesight.Settings = {
      	  prefs.personalization.missGoalSoundPath = document.getElementById("missGoalSoundPath").value;
        },
 
+    missGoalPlay: function() {
+      	  try {
+      			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+      			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+      			soundService.play(ioService.newURI(document.getElementById("missGoalSoundPath").value, null, null));
+      			return;
+      		} catch(e) {}
+        },
+       
     sunSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("sunCheck").checked) {
@@ -511,6 +565,15 @@ htlivesight.Settings = {
    	  prefs.personalization.sunSoundPath = document.getElementById("sunSoundPath").value;
      },
 
+     sunPlay: function() {
+     	  try {
+     			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+     			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+     			soundService.play(ioService.newURI(document.getElementById("sunSoundPath").value, null, null));
+     			return;
+     		} catch(e) {}
+       },     
+     
     rainSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("rainCheck").checked) {
@@ -532,6 +595,15 @@ htlivesight.Settings = {
      	  prefs.personalization.rainSoundPath = document.getElementById("rainSoundPath").value;
        },
 
+    rainPlay: function() {
+      	  try {
+      			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+      			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+      			soundService.play(ioService.newURI(document.getElementById("rainSoundPath").value, null, null));
+      			return;
+      		} catch(e) {}
+        },
+       
     overcastSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("overcastCheck").checked) {
@@ -553,6 +625,15 @@ htlivesight.Settings = {
    	  prefs.personalization.overcastSoundPath = document.getElementById("overcastSoundPath").value;
      },
 
+    overcastPlay: function() {
+     	  try {
+     			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+     			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+     			soundService.play(ioService.newURI(document.getElementById("overcastSoundPath").value, null, null));
+     			return;
+     		} catch(e) {}
+       },
+     
     fewCloudSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("fewCloudsCheck").checked) {
@@ -570,11 +651,20 @@ htlivesight.Settings = {
     
     fewCloudReset: function() {
      	  var prefs = htlivesight.Settings.preferences;
-     	  document.getElementById("fewCloudsSoundPath").value="chrome://htlivesight/content/sound/fewClouds.wav";
+     	  document.getElementById("fewCloudsSoundPath").value="chrome://htlivesight/content/sound/few_clouds.wav";
      	  prefs.personalization.fewCloudsSoundPath = document.getElementById("fewCloudsSoundPath").value;
        },
 
-    myBooSound: function() {
+   fewCloudPlay: function() {
+      	  try {
+      			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+      			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+      			soundService.play(ioService.newURI(document.getElementById("fewCloudsSoundPath").value, null, null));
+      			return;
+      		} catch(e) {}
+        },
+       
+       myBooSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("myBooCheck").checked) {
           document.getElementById("myBooSoundPath").disabled = false;
@@ -595,6 +685,15 @@ htlivesight.Settings = {
    	  prefs.personalization.myBooSoundPath = document.getElementById("myBooSoundPath").value;
      },
 
+     myBooPlay: function() {
+     	  try {
+     			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+     			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+     			soundService.play(ioService.newURI(document.getElementById("myBooSoundPath").value, null, null));
+     			return;
+     		} catch(e) {}
+       },
+     
     opBooSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("opBooCheck").checked) {
@@ -616,6 +715,15 @@ htlivesight.Settings = {
      	  prefs.personalization.opBooSoundPath = document.getElementById("opBooSoundPath").value;
        },
 
+    opBooPlay: function() {
+      	  try {
+      			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+      			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+      			soundService.play(ioService.newURI(document.getElementById("opBooSoundPath").value, null, null));
+      			return;
+      		} catch(e) {}
+        },
+       
     whistleStartSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("whistleStartCheck").checked) {
@@ -637,6 +745,15 @@ htlivesight.Settings = {
    	  prefs.personalization.whistleStartSoundPath = document.getElementById("whistleStartSoundPath").value;
      },
 
+     whistleStartPlay: function() {
+     	  try {
+     			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+     			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+     			soundService.play(ioService.newURI(document.getElementById("whistleStartSoundPath").value, null, null));
+     			return;
+     		} catch(e) {}
+       },
+     
     whistle2Sound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("whistle2Check").checked) {
@@ -658,6 +775,15 @@ htlivesight.Settings = {
      	  prefs.personalization.whistle2SoundPath = document.getElementById("whistle2SoundPath").value;
        },
 
+       whistle2Play: function() {
+      	  try {
+      			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+      			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+      			soundService.play(ioService.newURI(document.getElementById("whistle2SoundPath").value, null, null));
+      			return;
+      		} catch(e) {}
+        },
+       
    whistle3Sound: function() {
      var prefs = htlivesight.Settings.preferences;
      if(document.getElementById("whistle3Check").checked) {
@@ -679,6 +805,15 @@ htlivesight.Settings = {
   	  prefs.personalization.whistle3SoundPath = document.getElementById("whistle3SoundPath").value;
     },
 
+    whistle3Play: function() {
+    	  try {
+    			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+    			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+    			soundService.play(ioService.newURI(document.getElementById("whistle3SoundPath").value, null, null));
+    			return;
+    		} catch(e) {}
+      },
+    
    whistleSound: function() {
      var prefs = htlivesight.Settings.preferences;
      if(document.getElementById("whistleCheck").checked) {
@@ -700,6 +835,15 @@ htlivesight.Settings = {
 	  	  prefs.personalization.whistleSoundPath = document.getElementById("whistleSoundPath").value;
 	    },
 
+	whistlePlay: function() {
+	    	  try {
+	    			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+	    			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+	    			soundService.play(ioService.newURI(document.getElementById("whistleSoundPath").value, null, null));
+	    			return;
+	    		} catch(e) {}
+	      },
+	    
    hattrickSound: function() {
      var prefs = htlivesight.Settings.preferences;
      if(document.getElementById("hattrickCheck").checked) {
@@ -721,5 +865,14 @@ htlivesight.Settings = {
 	  	  prefs.personalization.hattrickSoundPath = document.getElementById("hattrickSoundPath").value;
 	    },
 
+	hattrickPlay: function() {
+	    	  try {
+	    			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
+	    			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+	    			soundService.play(ioService.newURI(document.getElementById("hattrickSoundPath").value, null, null));
+	    			return;
+	    		} catch(e) {}
+	      },
+	    
   }
 };
