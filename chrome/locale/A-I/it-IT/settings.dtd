@@ -68,6 +68,9 @@
 <!ENTITY path.sounds.whistle3     "Suono fine partita">
 <!ENTITY path.sounds.whistle      "Suono ammonizione/espulsione">
 <!ENTITY path.sounds.hattrick     "Suono hattrick">
+<!ENTITY path.sounds.restore      "Ripristina">
+<!ENTITY path.sounds.play         "Suona">
+
 
 <!ENTITY language.select     "Scegli la lingua">
 <!ENTITY language.note       "Attenzione: Riavvia Firefox per rendere effettivi i cambiamenti.">
