@@ -70,7 +70,7 @@
 <!ENTITY path.sounds.hattrick     "Hatrikas">
 
 <!ENTITY language.select     "Pasirinkti kalbą">
-<!ENTITY language.note       "Pastaba: būtina perkrauti „HTLiveSight“.">
+<!ENTITY language.note       "Pastaba: pakeitus būtina perkrauti „HTLiveSight“.">
 
 <!ENTITY button.cancel       "Atšaukti">
 <!ENTITY button.ok           "Gerai">
