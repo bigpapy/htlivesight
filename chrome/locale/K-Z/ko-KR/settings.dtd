@@ -68,6 +68,10 @@
 <!ENTITY path.sounds.whistle3     "End of match whistle">
 <!ENTITY path.sounds.whistle      "Yellow/Red card sound">
 <!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.restore      "Restore">
+<!ENTITY path.sounds.play         "Play">
+<!ENTITY path.sounds.note1			"Insert file:// before the path of the sound in .wav format">
+<!ENTITY path.sounds.note2			"Example: file://c:\\path\to\the\sound.wav">
 
 <!ENTITY language.select     "언어 선택">
 <!ENTITY language.note       "알림:파이어폭스를 다시 시작할때 설정이 변경됩니다.">

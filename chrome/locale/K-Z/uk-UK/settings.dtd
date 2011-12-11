@@ -68,6 +68,10 @@
 <!ENTITY path.sounds.whistle3     "Фінальний свисток">
 <!ENTITY path.sounds.whistle      "Звук для жовтої/червоної картки">
 <!ENTITY path.sounds.hattrick     "Звук для хеттріка">
+<!ENTITY path.sounds.restore      "Restore">
+<!ENTITY path.sounds.play         "Play">
+<!ENTITY path.sounds.note1			"Insert file:// before the path of the sound in .wav format">
+<!ENTITY path.sounds.note2			"Example: file://c:\\path\to\the\sound.wav">
 
 <!ENTITY language.select     "Обрати мову">
 <!ENTITY language.note       "Потрібно перезавантажити Firefox, щоб застосувати зміни">

@@ -68,6 +68,10 @@
 <!ENTITY path.sounds.whistle3     "Schluss vum Match-Toun">
 <!ENTITY path.sounds.whistle      "Toun fir giel/roud Kaart">
 <!ENTITY path.sounds.hattrick     "Hattrick Toun">
+<!ENTITY path.sounds.restore      "Restore">
+<!ENTITY path.sounds.play         "Play">
+<!ENTITY path.sounds.note1			"Insert file:// before the path of the sound in .wav format">
+<!ENTITY path.sounds.note2			"Example: file://c:\\path\to\the\sound.wav">
 
 <!ENTITY language.select     "Sprooch wiélen">
 <!ENTITY language.note       "Notiz: Start Firefox nei fir datt all d'Ännerungen antriéden.">

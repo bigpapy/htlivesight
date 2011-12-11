@@ -35,6 +35,7 @@
 
 <!ENTITY other.authorization "Código de autorización">
 <!ENTITY other.reset         "Revogar autorización">
+<!ENTITY other.reset_button  "Reset">
 <!ENTITY other.reverse       "Exhibición dos eventos de abaixo a arriba">
 <!ENTITY other.reverse.note  "Actualiza a páxina para ver os efectos do cambio.">
 <!ENTITY other.events        "Secuencia de eventos">
@@ -67,6 +68,10 @@
 <!ENTITY path.sounds.whistle3     "Asubío do final do encontro">
 <!ENTITY path.sounds.whistle      "Son de cartón amarelo/vermello">
 <!ENTITY path.sounds.hattrick     "Son de Hattrick">
+<!ENTITY path.sounds.restore      "Restore">
+<!ENTITY path.sounds.play         "Play">
+<!ENTITY path.sounds.note1			"Insert file:// before the path of the sound in .wav format">
+<!ENTITY path.sounds.note2			"Example: file://c:\\path\to\the\sound.wav">
 
 <!ENTITY language.select     "Seleccionar lingua">
 <!ENTITY language.note       "Nota: Reinicia Firefox para que teña efecto.">

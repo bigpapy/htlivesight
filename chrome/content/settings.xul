@@ -207,6 +207,11 @@
 				<checkbox id="noOpGoal" label="&custom.sounds.noOpGoal;" oncommand="htlivesight.Settings.click.noOpGoal();"/>
 			</groupbox>
 			
+			<separator class="thin"/>
+					<description>&path.sounds.note1;</description>
+					<description>&path.sounds.note2;</description>
+			<separator class="thin"/>
+					
 			<groupbox>
 			<caption label="&tab.goalSound;"/>
 				<row>

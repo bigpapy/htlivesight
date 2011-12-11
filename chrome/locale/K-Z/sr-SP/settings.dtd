@@ -68,6 +68,10 @@
 <!ENTITY path.sounds.whistle3     "Zvižduk za kraj utakmice">
 <!ENTITY path.sounds.whistle      "Zvuk za žute i crvene kartone">
 <!ENTITY path.sounds.hattrick     "Zvuk za het-trik">
+<!ENTITY path.sounds.restore      "Restore">
+<!ENTITY path.sounds.play         "Play">
+<!ENTITY path.sounds.note1			"Insert file:// before the path of the sound in .wav format">
+<!ENTITY path.sounds.note2			"Example: file://c:\\path\to\the\sound.wav">
 
 <!ENTITY language.select     "Odaberi jezik">
 <!ENTITY language.note       "Restartujte HTLS da bi ova podešavanja imala efekta.">
