@@ -68,6 +68,10 @@
 <!ENTITY path.sounds.whistle3     "Tiếng còi kết thúc trận đấu">
 <!ENTITY path.sounds.whistle      "Âm thanh khi thẻ đỏ/thẻ vàng">
 <!ENTITY path.sounds.hattrick     "Âm thanh Hattrick">
+<!ENTITY path.sounds.restore      "Restore">
+<!ENTITY path.sounds.play         "Play">
+<!ENTITY path.sounds.note1			"Insert file:// before the path of the sound in .wav format">
+<!ENTITY path.sounds.note2			"Example: file://c:\\path\to\the\sound.wav">
 
 <!ENTITY language.select     "Chọn ngôn ngữ">
 <!ENTITY language.note       "Chú ý: Khởi động lại Firefox để kích hoạt.">

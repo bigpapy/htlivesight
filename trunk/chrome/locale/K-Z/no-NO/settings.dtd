@@ -68,6 +68,10 @@
 <!ENTITY path.sounds.whistle3     "Lyd for kampen slutt">
 <!ENTITY path.sounds.whistle      "Lyd for gult og/eller rødt kort">
 <!ENTITY path.sounds.hattrick     "Hattrick-lyd">
+<!ENTITY path.sounds.restore      "Restore">
+<!ENTITY path.sounds.play         "Play">
+<!ENTITY path.sounds.note1			"Insert file:// before the path of the sound in .wav format">
+<!ENTITY path.sounds.note2			"Example: file://c:\\path\to\the\sound.wav">
 
 <!ENTITY language.select     "Velg språk">
 <!ENTITY language.note       "Husk: Start HTLiveSight på nytt for at endringene skal tre i kraft.">

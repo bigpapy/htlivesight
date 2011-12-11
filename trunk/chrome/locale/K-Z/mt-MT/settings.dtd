@@ -68,6 +68,10 @@
 <!ENTITY path.sounds.whistle3     "End of match whistle">
 <!ENTITY path.sounds.whistle      "Yellow/Red card sound">
 <!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.restore      "Restore">
+<!ENTITY path.sounds.play         "Play">
+<!ENTITY path.sounds.note1			"Insert file:// before the path of the sound in .wav format">
+<!ENTITY path.sounds.note2			"Example: file://c:\\path\to\the\sound.wav">
 
 <!ENTITY language.select     "Select language">
 <!ENTITY language.note       "Note: Restart Firefox for this to take effect.">

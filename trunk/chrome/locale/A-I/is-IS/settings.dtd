@@ -68,6 +68,10 @@
 <!ENTITY path.sounds.whistle3     "Flautað til lok leiks">
 <!ENTITY path.sounds.whistle      "Hljóð fyrir Gul/Rauð spjöld">
 <!ENTITY path.sounds.hattrick     "Hattrick hljóð">
+<!ENTITY path.sounds.restore      "Restore">
+<!ENTITY path.sounds.play         "Play">
+<!ENTITY path.sounds.note1			"Insert file:// before the path of the sound in .wav format">
+<!ENTITY path.sounds.note2			"Example: file://c:\\path\to\the\sound.wav">
 
 <!ENTITY language.select     "Veldu tungumál">
 <!ENTITY language.note       "ATH: Endurræsa þarf HTLiveSight svo breytingar virki.">

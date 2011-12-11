@@ -10,7 +10,7 @@
 <!ENTITY tab.wheatherSound    "Weather events and injuries sounds">
 <!ENTITY tab.whistleSound     "Referee whistles and hattrick sounds">
 
-<!ENTITY general.open        "HTLiveSight'ı...">
+<!ENTITY general.open        "Open HTLiveSight">
 <!ENTITY general.new_tab     "Yeni sekmede aç">
 <!ENTITY general.new_window  "Yeni pencerede aç">
 <!ENTITY general.server      "Server settings">
@@ -18,7 +18,7 @@
 
 <!ENTITY matches.league      "Lig Maçları">
 <!ENTITY matches.get_league  "Lig maçlarını yükle">
-<!ENTITY matches.played      "">
+<!ENTITY matches.played      "If played in">
 <!ENTITY matches.hours       "saat içindekileri">
 <!ENTITY matches.friends     "Arkadaşlar">
 <!ENTITY matches.get_friends "Arkadaşların maçlarını yükle">
@@ -68,6 +68,10 @@
 <!ENTITY path.sounds.whistle3     "End of match whistle">
 <!ENTITY path.sounds.whistle      "Yellow/Red card sound">
 <!ENTITY path.sounds.hattrick     "Hattrick sound">
+<!ENTITY path.sounds.restore      "Restore">
+<!ENTITY path.sounds.play         "Play">
+<!ENTITY path.sounds.note1			"Insert file:// before the path of the sound in .wav format">
+<!ENTITY path.sounds.note2			"Example: file://c:\\path\to\the\sound.wav">
 
 <!ENTITY language.select     "Dil seçimi">
 <!ENTITY language.note       "Not: HTLiveSight'u yeniden başlatmanız gerekir">

@@ -68,6 +68,10 @@
 <!ENTITY path.sounds.whistle3     "Zvuk pre koniec zápasu">
 <!ENTITY path.sounds.whistle      "Zvuk pre žltú/červenú kartu">
 <!ENTITY path.sounds.hattrick     "Zvuk pre hetrik">
+<!ENTITY path.sounds.restore      "Restore">
+<!ENTITY path.sounds.play         "Play">
+<!ENTITY path.sounds.note1			"Insert file:// before the path of the sound in .wav format">
+<!ENTITY path.sounds.note2			"Example: file://c:\\path\to\the\sound.wav">
 
 <!ENTITY language.select     "Vybrať jazyk">
 <!ENTITY language.note       "Poznámka: Zmeny sa prejavia po reštartovaní programu HTLiveSight.">

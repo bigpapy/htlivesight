@@ -70,7 +70,8 @@
 <!ENTITY path.sounds.hattrick     "Suono hattrick">
 <!ENTITY path.sounds.restore      "Ripristina">
 <!ENTITY path.sounds.play         "Suona">
-
+<!ENTITY path.sounds.note1			"Inserisci file:// prima dell'indirizzo del file audio in formato .wav">
+<!ENTITY path.sounds.note2			"Esempio: file://c:\\cartella\contenente\il\suono.wav">
 
 <!ENTITY language.select     "Scegli la lingua">
 <!ENTITY language.note       "Attenzione: Riavvia Firefox per rendere effettivi i cambiamenti.">
