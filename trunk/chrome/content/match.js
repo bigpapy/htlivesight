@@ -109,7 +109,7 @@ Match.Update = function (newMatch) {
       if (!match.home) {
         match.home=newMatch.home;
       } else {
-        match.home.goals = newMatch.home.goals;
+        if(match.home.goals < newMatch.home.goals) match.home.goals = newMatch.home.goals;
       }
     };
 
@@ -117,7 +117,7 @@ Match.Update = function (newMatch) {
       if (!match.away) {
         match.away=newMatch.away;
       } else {
-        match.away.goals = newMatch.away.goals;
+    	  if(match.away.goals < newMatch.away.goals)  match.away.goals = newMatch.away.goals;
       }
     };
     
@@ -143,10 +143,8 @@ Match.Update = function (newMatch) {
   // added by bigpapy
   
   if (newMatch.lastShownEventIndex) {
-      if (!match.lastShownEventIndex) {
-        match.lastShownEventIndex=newMatch.lastShownEventIndex;
-      } 
-    };
+      match.lastShownEventIndex=newMatch.lastShownEventIndex;
+     };
   
  // end adding by bigpapy 
   return match;

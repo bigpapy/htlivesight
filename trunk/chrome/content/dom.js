@@ -240,8 +240,9 @@ htlivesight.DOM = {
   createTextEventElement: function(event) {
 	var cleanedText = Util.cleanTags(event.text);
 //	alert("Util.cleanTags(cleanedText) = "+ cleanedText);
+//	console.log(cleanedText);
 	cleanedText= Util.CleanText2(cleanedText);//added by bigpapy
-//	alert("Util.CleanText(cleanedText) = "+ cleanedText);
+//	console.log(cleanedText);
   	
     var resultDoc = htlivesight.DOM.parser.parseFromString("<root>" + cleanedText + "</root>","text/xml");
     var nodeList = resultDoc.documentElement.childNodes;
