@@ -49,7 +49,7 @@ Util.RemoveSpecialChar = function(text) {	  var t = text;	  t = t.replace(/&am
  * Parse functions
  * --------------------------------------------------- */
 	// Function modified by bigpapy
-Util.Parse = function (regStr, xml) {  try {  	  found = xml.getElementsByTagName(regStr)[0].textContent;    if (found) {      	return Util.RemoveAmpersand(found);    }  } catch(e) {	  console.log("Util.Parse error: "+regStr+" = " + e);  }  return null;};
+Util.Parse = function (regStr, xml) {  try {  	  found = xml.getElementsByTagName(regStr)[0].textContent;    if (found) {      	return Util.RemoveAmpersand(found);    }  } catch(e) {	 // console.log("Util.Parse error: "+regStr+" = " + e);  }  return null;};
 /* ---------------------------------------------------
  * Other functions
  * --------------------------------------------------- */
