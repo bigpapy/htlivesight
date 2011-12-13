@@ -245,5 +245,5 @@
 .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px; }
 
 /* Overlays */
-.ui-widget-overlay { background: #000000 url(images/ui-bg_diagonals-thick_33_000000_40x40.png) 50% 50% repeat; opacity: .66;filter:Alpha(Opacity=66); }
+.ui-widget-overlay { background: #000000 url(images/ui-bg_flat_100_000000_40x100.png) 50% 50% repeat; opacity: .66;filter:Alpha(Opacity=66); }
 .ui-widget-shadow { margin: -7px 0 0 -7px; padding: 7px; background: #cccccc url(images/ui-bg_flat_33_cccccc_40x100.png) 50% 50% repeat-x; opacity: .66;filter:Alpha(Opacity=66); -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
