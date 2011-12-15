@@ -368,28 +368,46 @@ htlivesight.Settings = {
         var prefs = htlivesight.Settings.preferences;
         if(document.getElementById("myGoalCheck").checked) {
         document.getElementById("myGoalSoundPath").disabled = false;
-        prefs.personalization.myGoalSoundPath = document.getElementById("myGoalSoundPath").value.replace("@","");
+        prefs.personalization.myGoalSoundPath = document.getElementById("myGoalSoundPath").value.replace(/@/g,"");
         document.getElementById("myGoalSoundPath").value=prefs.personalization.myGoalSoundPath;
-        //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
         prefs.personalization.myGoalCheck=true;
+        //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
         } else {
         	prefs.personalization.myGoalSoundPath = "@"+document.getElementById("myGoalSoundPath").value;
+        	document.getElementById("myGoalSoundPath").value="@"+document.getElementById("myGoalSoundPath").value;
         	document.getElementById("myGoalSoundPath").disabled = true;
         	prefs.personalization.myGoalCheck=false;
           };
+       
       },
       
       myGoalReset: function() {
+    	  var prefix="@";
+    	  if(document.getElementById("myGoalCheck").checked) prefix="";
     	  var prefs = htlivesight.Settings.preferences;
-    	  document.getElementById("myGoalSoundPath").value="chrome://htlivesight/content/sound/cheer_8k.wav";
+    	  document.getElementById("myGoalSoundPath").value=prefix+"chrome://htlivesight/content/sound/cheer_8k.wav";
     	  prefs.personalization.myGoalSoundPath = document.getElementById("myGoalSoundPath").value;
+    	 
       },
+      
+      myGoalSoundFile: function() {
+    	  var prefs = htlivesight.Settings.preferences;
+    	  soundPath=document.getElementById("myGoalSoundPath").value;
+  			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+  			document.getElementById("myGoalSoundPath").value=soundPath;
+  			prefs.personalization.myGoalSoundPath = soundPath;
+  		  },
+    	
+    	  
+      
       
       myGoalPlay: function() {
     	  try {
     			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
     			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
-    			soundService.play(ioService.newURI(document.getElementById("myGoalSoundPath").value, null, null));
+    			soundPath=document.getElementById("myGoalSoundPath").value;
+    		//	if (soundPath.search("chrome:")==-1) soundPath="file://"+soundPath;
+    			soundService.play(ioService.newURI(soundPath, null, null));
     			return;
     		} catch(e) {}
       },
@@ -398,20 +416,23 @@ htlivesight.Settings = {
           var prefs = htlivesight.Settings.preferences;
           if(document.getElementById("opGoalCheck").checked) {
               document.getElementById("opGoalSoundPath").disabled = false;
-              prefs.personalization.opGoalSoundPath = document.getElementById("opGoalSoundPath").value.replace("@","");
+              prefs.personalization.opGoalSoundPath = document.getElementById("opGoalSoundPath").value.replace(/@/g,"");
               document.getElementById("opGoalSoundPath").value=prefs.personalization.opGoalSoundPath;
               //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
               prefs.personalization.opGoalCheck=true;
               } else {
               	prefs.personalization.opGoalSoundPath = "@"+document.getElementById("opGoalSoundPath").value;
+              	document.getElementById("opGoalSoundPath").value = "@"+document.getElementById("opGoalSoundPath").value;
               	document.getElementById("opGoalSoundPath").disabled = true;
               	prefs.personalization.opGoalCheck=false;
                 };
         },
     
         opGoalReset: function() {
+      	  var prefix="@";
+    	  if(document.getElementById("opGoalCheck").checked) prefix="";
       	  var prefs = htlivesight.Settings.preferences;
-      	  document.getElementById("opGoalSoundPath").value="chrome://htlivesight/content/sound/cheer1.wav";
+      	  document.getElementById("opGoalSoundPath").value=prefix+"chrome://htlivesight/content/sound/cheer1.wav";
       	  prefs.personalization.opGoalSoundPath = document.getElementById("opGoalSoundPath").value;
         },
 
@@ -424,24 +445,36 @@ htlivesight.Settings = {
       		} catch(e) {}
         },
 
-    frGoalSound: function() {
+        opGoalSoundFile: function() {
+      	  var prefs = htlivesight.Settings.preferences;
+      	  soundPath=document.getElementById("opGoalSoundPath").value;
+    			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+    			document.getElementById("opGoalSoundPath").value=soundPath;
+    			prefs.personalization.opGoalSoundPath = soundPath;
+    		  },
+
+        
+        frGoalSound: function() {
      var prefs = htlivesight.Settings.preferences;
      if(document.getElementById("frGoalCheck").checked) {
          document.getElementById("frGoalSoundPath").disabled = false;
-         prefs.personalization.frGoalSoundPath = document.getElementById("frGoalSoundPath").value.replace("@","");
+         prefs.personalization.frGoalSoundPath = document.getElementById("frGoalSoundPath").value.replace(/@/g,"");
          document.getElementById("frGoalSoundPath").value=prefs.personalization.frGoalSoundPath;
          //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
          prefs.personalization.frGoalCheck=true;
          } else {
          	prefs.personalization.frGoalSoundPath = "@"+document.getElementById("frGoalSoundPath").value;
+         	document.getElementById("frGoalSoundPath").value = "@"+document.getElementById("frGoalSoundPath").value;
          	document.getElementById("frGoalSoundPath").disabled = true;
          	prefs.personalization.frGoalCheck=false;
            };
    },
    
    frGoalReset: function() {
+ 	  var prefix="@";
+	  if(document.getElementById("frGoalCheck").checked) prefix="";
    	  var prefs = htlivesight.Settings.preferences;
-   	  document.getElementById("frGoalSoundPath").value="chrome://htlivesight/content/sound/goal.wav";
+   	  document.getElementById("frGoalSoundPath").value=prefix+"chrome://htlivesight/content/sound/goal.wav";
    	  prefs.personalization.frGoalSoundPath = document.getElementById("frGoalSoundPath").value;
      },
 
@@ -453,25 +486,37 @@ htlivesight.Settings = {
      			return;
      		} catch(e) {}
        },
+       
+       frGoalSoundFile: function() {
+       	  var prefs = htlivesight.Settings.preferences;
+       	  soundPath=document.getElementById("frGoalSoundPath").value;
+     			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+     			document.getElementById("frGoalSoundPath").value=soundPath;
+     			prefs.personalization.frGoalSoundPath = soundPath;
+     		  },
+
      
      opfrGoalSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("opfrGoalCheck").checked) {
           document.getElementById("opfrGoalSoundPath").disabled = false;
-          prefs.personalization.opfrGoalSoundPath = document.getElementById("opfrGoalSoundPath").value.replace("@","");
+          prefs.personalization.opfrGoalSoundPath = document.getElementById("opfrGoalSoundPath").value.replace(/@/g,"");
           document.getElementById("opfrGoalSoundPath").value=prefs.personalization.opfrGoalSoundPath;
           //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
           prefs.personalization.opfrGoalCheck=true;
           } else {
           	prefs.personalization.opfrGoalSoundPath = "@"+document.getElementById("opfrGoalSoundPath").value;
+          	document.getElementById("opfrGoalSoundPath").value="@"+document.getElementById("opfrGoalSoundPath").value;
           	document.getElementById("opfrGoalSoundPath").disabled = true;
           	prefs.personalization.opfrGoalCheck=false;
             };
     },
     
     opfrGoalReset: function() {
+  	  var prefix="@";
+	  if(document.getElementById("opfrGoalCheck").checked) prefix="";
      	  var prefs = htlivesight.Settings.preferences;
-     	  document.getElementById("opfrGoalSoundPath").value="chrome://htlivesight/content/sound/applause.wav";
+     	  document.getElementById("opfrGoalSoundPath").value=prefix+"chrome://htlivesight/content/sound/applause.wav";
      	  prefs.personalization.opfrGoalSoundPath = document.getElementById("opfrGoalSoundPath").value;
        },
 
@@ -483,25 +528,36 @@ htlivesight.Settings = {
       			return;
       		} catch(e) {}
         },
+        
+        opfrGoalSoundFile: function() {
+         	  var prefs = htlivesight.Settings.preferences;
+         	  soundPath=document.getElementById("opfrGoalSoundPath").value;
+       			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+       			document.getElementById("opfrGoalSoundPath").value=soundPath;
+       			prefs.personalization.opfrGoalSoundPath = soundPath;
+       		  },
        
     otGoalSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("otGoalCheck").checked) {
           document.getElementById("otGoalSoundPath").disabled = false;
-          prefs.personalization.otGoalSoundPath = document.getElementById("otGoalSoundPath").value.replace("@","");
+          prefs.personalization.otGoalSoundPath = document.getElementById("otGoalSoundPath").value.replace(/@/g,"");
           document.getElementById("otGoalSoundPath").value=prefs.personalization.otGoalSoundPath;
           //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
           prefs.personalization.otGoalCheck=true;
           } else {
           	prefs.personalization.otGoalSoundPath = "@"+document.getElementById("otGoalSoundPath").value;
+          	document.getElementById("otGoalSoundPath").value = "@"+document.getElementById("otGoalSoundPath").value;
           	document.getElementById("otGoalSoundPath").disabled = true;
           	prefs.personalization.otGoalCheck=false;
             };
     },
     
     otGoalReset: function() {
+  	  var prefix="@";
+	  if(document.getElementById("otGoalCheck").checked) prefix="";
    	  var prefs = htlivesight.Settings.preferences;
-   	  document.getElementById("otGoalSoundPath").value="chrome://htlivesight/content/sound/ovation.wav";
+   	  document.getElementById("otGoalSoundPath").value=prefix+"chrome://htlivesight/content/sound/ovation.wav";
    	  prefs.personalization.otGoalSoundPath = document.getElementById("otGoalSoundPath").value;
      },
 
@@ -513,25 +569,37 @@ htlivesight.Settings = {
      			return;
      		} catch(e) {}
        },
+       
+       otGoalSoundFile: function() {
+      	  var prefs = htlivesight.Settings.preferences;
+      	  soundPath=document.getElementById("otGoalSoundPath").value;
+    			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+    			document.getElementById("otGoalSoundPath").value=soundPath;
+    			prefs.personalization.otGoalSoundPath = soundPath;
+    		  },
+
      
     missGoalSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("missGoalCheck").checked) {
           document.getElementById("missGoalSoundPath").disabled = false;
-          prefs.personalization.missGoalSoundPath = document.getElementById("missGoalSoundPath").value.replace("@","");
+          prefs.personalization.missGoalSoundPath = document.getElementById("missGoalSoundPath").value.replace(/@/g,"");
           document.getElementById("missGoalSoundPath").value=prefs.personalization.missGoalSoundPath;
           //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
           prefs.personalization.missGoalCheck=true;
           } else {
           	prefs.personalization.missGoalSoundPath = "@"+document.getElementById("missGoalSoundPath").value;
+          	document.getElementById("missGoalSoundPath").value = "@"+document.getElementById("missGoalSoundPath").value;
           	document.getElementById("missGoalSoundPath").disabled = true;
           	prefs.personalization.missGoalCheck=false;
             };
     },
     
     missGoalReset: function() {
+  	  var prefix="@";
+	  if(document.getElementById("missGoalCheck").checked) prefix="";
      	  var prefs = htlivesight.Settings.preferences;
-     	  document.getElementById("missGoalSoundPath").value="chrome://htlivesight/content/sound/miss.wav";
+     	  document.getElementById("missGoalSoundPath").value=prefix+"chrome://htlivesight/content/sound/miss.wav";
      	  prefs.personalization.missGoalSoundPath = document.getElementById("missGoalSoundPath").value;
        },
 
@@ -543,25 +611,36 @@ htlivesight.Settings = {
       			return;
       		} catch(e) {}
         },
+        
+        missGoalSoundFile: function() {
+        	  var prefs = htlivesight.Settings.preferences;
+        	  soundPath=document.getElementById("missGoalSoundPath").value;
+      			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+      			document.getElementById("missGoalSoundPath").value=soundPath;
+      			prefs.personalization.missGoalSoundPath = soundPath;
+      		  },
        
     sunSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("sunCheck").checked) {
           document.getElementById("sunSoundPath").disabled = false;
-          prefs.personalization.sunSoundPath = document.getElementById("sunSoundPath").value.replace("@","");
+          prefs.personalization.sunSoundPath = document.getElementById("sunSoundPath").value.replace(/@/g,"");
           document.getElementById("sunSoundPath").value=prefs.personalization.sunSoundPath;
           //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
           prefs.personalization.sunCheck=true;
           } else {
           	prefs.personalization.sunSoundPath = "@"+document.getElementById("sunSoundPath").value;
+          	document.getElementById("sunSoundPath").value = "@"+document.getElementById("sunSoundPath").value;
           	document.getElementById("sunSoundPath").disabled = true;
           	prefs.personalization.sunCheck=false;
             };
     },
     
     sunReset: function() {
+  	  var prefix="@";
+	  if(document.getElementById("sunCheck").checked) prefix="";
    	  var prefs = htlivesight.Settings.preferences;
-   	  document.getElementById("sunSoundPath").value="chrome://htlivesight/content/sound/sun.wav";
+   	  document.getElementById("sunSoundPath").value=prefix+"chrome://htlivesight/content/sound/sun.wav";
    	  prefs.personalization.sunSoundPath = document.getElementById("sunSoundPath").value;
      },
 
@@ -573,25 +652,36 @@ htlivesight.Settings = {
      			return;
      		} catch(e) {}
        },     
+       
+       sunSoundFile: function() {
+     	  var prefs = htlivesight.Settings.preferences;
+     	  soundPath=document.getElementById("sunSoundPath").value;
+   			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+   			document.getElementById("sunSoundPath").value=soundPath;
+   			prefs.personalization.sunSoundPath = soundPath;
+   		  },
      
     rainSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("rainCheck").checked) {
           document.getElementById("rainSoundPath").disabled = false;
-          prefs.personalization.rainSoundPath = document.getElementById("rainSoundPath").value.replace("@","");
+          prefs.personalization.rainSoundPath = document.getElementById("rainSoundPath").value.replace(/@/g,"");
           document.getElementById("rainSoundPath").value=prefs.personalization.rainSoundPath;
           //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
           prefs.personalization.rainCheck=true;
           } else {
           	prefs.personalization.rainSoundPath = "@"+document.getElementById("rainSoundPath").value;
+          	document.getElementById("rainSoundPath").value= "@"+document.getElementById("rainSoundPath").value;
           	document.getElementById("rainSoundPath").disabled = true;
           	prefs.personalization.rainCheck=false;
             };
     },
     
     rainReset: function() {
+  	  var prefix="@";
+	  if(document.getElementById("rainCheck").checked) prefix="";
      	  var prefs = htlivesight.Settings.preferences;
-     	  document.getElementById("rainSoundPath").value="chrome://htlivesight/content/sound/rain.wav";
+     	  document.getElementById("rainSoundPath").value=prefix+"chrome://htlivesight/content/sound/rain.wav";
      	  prefs.personalization.rainSoundPath = document.getElementById("rainSoundPath").value;
        },
 
@@ -604,24 +694,35 @@ htlivesight.Settings = {
       		} catch(e) {}
         },
        
+        rainSoundFile: function() {
+       	  var prefs = htlivesight.Settings.preferences;
+       	  soundPath=document.getElementById("rainSoundPath").value;
+     			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+     			document.getElementById("rainSoundPath").value=soundPath;
+     			prefs.personalization.rainSoundPath = soundPath;
+     		  },
+        
     overcastSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("overcastCheck").checked) {
           document.getElementById("overcastSoundPath").disabled = false;
-          prefs.personalization.overcastSoundPath = document.getElementById("overcastSoundPath").value.replace("@","");
+          prefs.personalization.overcastSoundPath = document.getElementById("overcastSoundPath").value.replace(/@/g,"");
           document.getElementById("overcastSoundPath").value=prefs.personalization.overcastSoundPath;
           //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
           prefs.personalization.overcastCheck=true;
           } else {
           	prefs.personalization.overcastSoundPath = "@"+document.getElementById("overcastSoundPath").value;
+          	document.getElementById("overcastSoundPath").value = "@"+document.getElementById("overcastSoundPath").value;
           	document.getElementById("overcastSoundPath").disabled = true;
           	prefs.personalization.overcastCheck=false;
             };
     },
     
     overcastReset: function() {
+  	  var prefix="@";
+	  if(document.getElementById("overcastCheck").checked) prefix="";
    	  var prefs = htlivesight.Settings.preferences;
-   	  document.getElementById("overcastSoundPath").value="chrome://htlivesight/content/sound/overcast.wav";
+   	  document.getElementById("overcastSoundPath").value=prefix+"chrome://htlivesight/content/sound/overcast.wav";
    	  prefs.personalization.overcastSoundPath = document.getElementById("overcastSoundPath").value;
      },
 
@@ -634,24 +735,35 @@ htlivesight.Settings = {
      		} catch(e) {}
        },
      
+       overcastSoundFile: function() {
+        	  var prefs = htlivesight.Settings.preferences;
+        	  soundPath=document.getElementById("overcastSoundPath").value;
+      			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+      			document.getElementById("overcastSoundPath").value=soundPath;
+      			prefs.personalization.overcastSoundPath = soundPath;
+      		  },
+       
     fewCloudSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("fewCloudsCheck").checked) {
           document.getElementById("fewCloudsSoundPath").disabled = false;
-          prefs.personalization.fewCloudsSoundPath = document.getElementById("fewCloudsSoundPath").value.replace("@","");
+          prefs.personalization.fewCloudsSoundPath = document.getElementById("fewCloudsSoundPath").value.replace(/@/g,"");
           document.getElementById("fewCloudsSoundPath").value=prefs.personalization.fewCloudsSoundPath;
           //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
           prefs.personalization.fewCloudsCheck=true;
           } else {
           	prefs.personalization.fewCloudsSoundPath = "@"+document.getElementById("fewCloudsSoundPath").value;
+          	document.getElementById("fewCloudsSoundPath").value = "@"+document.getElementById("fewCloudsSoundPath").value;
           	document.getElementById("fewCloudsSoundPath").disabled = true;
           	prefs.personalization.fewCloudsCheck=false;
             };
     },
     
     fewCloudReset: function() {
+  	  var prefix="@";
+	  if(document.getElementById("fewCloudsCheck").checked) prefix="";
      	  var prefs = htlivesight.Settings.preferences;
-     	  document.getElementById("fewCloudsSoundPath").value="chrome://htlivesight/content/sound/few_clouds.wav";
+     	  document.getElementById("fewCloudsSoundPath").value=prefix+"chrome://htlivesight/content/sound/few_clouds.wav";
      	  prefs.personalization.fewCloudsSoundPath = document.getElementById("fewCloudsSoundPath").value;
        },
 
@@ -663,25 +775,36 @@ htlivesight.Settings = {
       			return;
       		} catch(e) {}
         },
-       
+
+        fewCloudSoundFile: function() {
+      	  var prefs = htlivesight.Settings.preferences;
+      	  soundPath=document.getElementById("fewCloudsSoundPath").value;
+    			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+    			document.getElementById("fewCloudsSoundPath").value=soundPath;
+    			prefs.personalization.fewCloudsSoundPath = soundPath;
+    		  },
+        
        myBooSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("myBooCheck").checked) {
           document.getElementById("myBooSoundPath").disabled = false;
-          prefs.personalization.myBooSoundPath = document.getElementById("myBooSoundPath").value.replace("@","");
+          prefs.personalization.myBooSoundPath = document.getElementById("myBooSoundPath").value.replace(/@/g,"");
           document.getElementById("myBooSoundPath").value=prefs.personalization.myBooSoundPath;
           //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
           prefs.personalization.myBooCheck=true;
           } else {
           	prefs.personalization.myBooSoundPath = "@"+document.getElementById("myBooSoundPath").value;
+          	document.getElementById("myBooSoundPath").value="@"+document.getElementById("myBooSoundPath").value;
           	document.getElementById("myBooSoundPath").disabled = true;
           	prefs.personalization.myBooCheck=false;
             };
     },
     
     myBooReset: function() {
+  	  var prefix="@";
+	  if(document.getElementById("myBooCheck").checked) prefix="";
    	  var prefs = htlivesight.Settings.preferences;
-   	  document.getElementById("myBooSoundPath").value="chrome://htlivesight/content/sound/boo.wav";
+   	  document.getElementById("myBooSoundPath").value=prefix+"chrome://htlivesight/content/sound/boo.wav";
    	  prefs.personalization.myBooSoundPath = document.getElementById("myBooSoundPath").value;
      },
 
@@ -693,25 +816,36 @@ htlivesight.Settings = {
      			return;
      		} catch(e) {}
        },
-     
+
+       myBooSoundFile: function() {
+       	  var prefs = htlivesight.Settings.preferences;
+       	  soundPath=document.getElementById("myBooSoundPath").value;
+     			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+     			document.getElementById("myBooSoundPath").value=soundPath;
+     			prefs.personalization.myBooSoundPath = soundPath;
+     		  },
+       
     opBooSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("opBooCheck").checked) {
           document.getElementById("opBooSoundPath").disabled = false;
-          prefs.personalization.opBooSoundPath = document.getElementById("opBooSoundPath").value.replace("@","");
-          document.getElementById("opBooSoundPath").value=prefs.personalization.myBooSoundPath;
+          prefs.personalization.opBooSoundPath = document.getElementById("opBooSoundPath").value.replace(/@/g,"");
+          document.getElementById("opBooSoundPath").value=prefs.personalization.opBooSoundPath;
           //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
           prefs.personalization.opBooCheck=true;
           } else {
           	prefs.personalization.opBooSoundPath = "@"+document.getElementById("opBooSoundPath").value;
+          	document.getElementById("opBooSoundPath").value= "@"+document.getElementById("opBooSoundPath").value;
           	document.getElementById("opBooSoundPath").disabled = true;
           	prefs.personalization.opBooCheck=false;
             };
     },
     
     opBooReset: function() {
+  	  var prefix="@";
+	  if(document.getElementById("opBooCheck").checked) prefix="";
      	  var prefs = htlivesight.Settings.preferences;
-     	  document.getElementById("opBooSoundPath").value="chrome://htlivesight/content/sound/OpBoo.wav";
+     	  document.getElementById("opBooSoundPath").value=prefix+"chrome://htlivesight/content/sound/OpBoo.wav";
      	  prefs.personalization.opBooSoundPath = document.getElementById("opBooSoundPath").value;
        },
 
@@ -723,25 +857,36 @@ htlivesight.Settings = {
       			return;
       		} catch(e) {}
         },
-       
+
+        opBooSoundFile: function() {
+         	  var prefs = htlivesight.Settings.preferences;
+         	  soundPath=document.getElementById("opBooSoundPath").value;
+       			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+       			document.getElementById("opBooSoundPath").value=soundPath;
+       			prefs.personalization.opBooSoundPath = soundPath;
+       		  },
+        
     whistleStartSound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("whistleStartCheck").checked) {
           document.getElementById("whistleStartSoundPath").disabled = false;
-          prefs.personalization.whistleStartSoundPath = document.getElementById("whistleStartSoundPath").value.replace("@","");
+          prefs.personalization.whistleStartSoundPath = document.getElementById("whistleStartSoundPath").value.replace(/@/g,"");
           document.getElementById("whistleStartSoundPath").value=prefs.personalization.whistleStartSoundPath;
           //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
           prefs.personalization.whistleStartCheck=true;
           } else {
           	prefs.personalization.whistleStartSoundPath = "@"+document.getElementById("whistleStartSoundPath").value;
+          	document.getElementById("whistleStartSoundPath").value="@"+document.getElementById("whistleStartSoundPath").value;
           	document.getElementById("whistleStartSoundPath").disabled = true;
           	prefs.personalization.whistleStartCheck=false;
             };
     },
     
     whistleStartReset: function() {
+  	  var prefix="@";
+	  if(document.getElementById("whistleStartCheck").checked) prefix="";
    	  var prefs = htlivesight.Settings.preferences;
-   	  document.getElementById("whistleStartSoundPath").value="chrome://htlivesight/content/sound/whistle_start.wav";
+   	  document.getElementById("whistleStartSoundPath").value=prefix+"chrome://htlivesight/content/sound/whistle_start.wav";
    	  prefs.personalization.whistleStartSoundPath = document.getElementById("whistleStartSoundPath").value;
      },
 
@@ -753,25 +898,36 @@ htlivesight.Settings = {
      			return;
      		} catch(e) {}
        },
-     
+
+       whistleStartSoundFile: function() {
+      	  var prefs = htlivesight.Settings.preferences;
+      	  soundPath=document.getElementById("whistleStartSoundPath").value;
+    			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+    			document.getElementById("whistleStartSoundPath").value=soundPath;
+    			prefs.personalization.whistleStartSoundPath = soundPath;
+    		  },
+       
     whistle2Sound: function() {
       var prefs = htlivesight.Settings.preferences;
       if(document.getElementById("whistle2Check").checked) {
           document.getElementById("whistle2SoundPath").disabled = false;
-          prefs.personalization.whistle2SoundPath = document.getElementById("whistle2SoundPath").value.replace("@","");
+          prefs.personalization.whistle2SoundPath = document.getElementById("whistle2SoundPath").value.replace(/@/g,"");
           document.getElementById("whistle2SoundPath").value=prefs.personalization.whistle2SoundPath;
           //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
           prefs.personalization.whistle2Check=true;
           } else {
           	prefs.personalization.whistle2SoundPath = "@"+document.getElementById("whistle2SoundPath").value;
+          	document.getElementById("whistle2SoundPath").value="@"+document.getElementById("whistle2SoundPath").value;
           	document.getElementById("whistle2SoundPath").disabled = true;
           	prefs.personalization.whistle2Check=false;
             };
     },
     
     whistle2Reset: function() {
+  	  var prefix="@";
+	  if(document.getElementById("whistle2Check").checked) prefix="";
      	  var prefs = htlivesight.Settings.preferences;
-     	  document.getElementById("whistle2SoundPath").value="chrome://htlivesight/content/sound/whistle2.wav";
+     	  document.getElementById("whistle2SoundPath").value=prefix+"chrome://htlivesight/content/sound/whistle2.wav";
      	  prefs.personalization.whistle2SoundPath = document.getElementById("whistle2SoundPath").value;
        },
 
@@ -783,25 +939,36 @@ htlivesight.Settings = {
       			return;
       		} catch(e) {}
         },
+        
+        whistle2SoundFile: function() {
+        	  var prefs = htlivesight.Settings.preferences;
+        	  soundPath=document.getElementById("whistle2SoundPath").value;
+      			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+      			document.getElementById("whistle2SoundPath").value=soundPath;
+      			prefs.personalization.whistle2SoundPath = soundPath;
+      		  },
        
    whistle3Sound: function() {
      var prefs = htlivesight.Settings.preferences;
      if(document.getElementById("whistle3Check").checked) {
          document.getElementById("whistle3SoundPath").disabled = false;
-         prefs.personalization.whistle3SoundPath = document.getElementById("whistle3SoundPath").value.replace("@","");
+         prefs.personalization.whistle3SoundPath = document.getElementById("whistle3SoundPath").value.replace(/@/g,"");
          document.getElementById("whistle3SoundPath").value=prefs.personalization.whistle3SoundPath;
          //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
          prefs.personalization.whistle3Check=true;
          } else {
          	prefs.personalization.whistle3SoundPath = "@"+document.getElementById("whistle3SoundPath").value;
+         	document.getElementById("whistle3SoundPath").value= "@"+document.getElementById("whistle3SoundPath").value;
          	document.getElementById("whistle3SoundPath").disabled = true;
          	prefs.personalization.whistle3Check=false;
            };
    },
    
    whistle3Reset: function() {
+ 	  var prefix="@";
+	  if(document.getElementById("whistle3Check").checked) prefix="";
   	  var prefs = htlivesight.Settings.preferences;
-  	  document.getElementById("whistle3SoundPath").value="chrome://htlivesight/content/sound/whistle3.wav";
+  	  document.getElementById("whistle3SoundPath").value=prefix+"chrome://htlivesight/content/sound/whistle3.wav";
   	  prefs.personalization.whistle3SoundPath = document.getElementById("whistle3SoundPath").value;
     },
 
@@ -813,25 +980,36 @@ htlivesight.Settings = {
     			return;
     		} catch(e) {}
       },
+      
+      whistle3SoundFile: function() {
+    	  var prefs = htlivesight.Settings.preferences;
+    	  soundPath=document.getElementById("whistle3SoundPath").value;
+  			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+  			document.getElementById("whistle3SoundPath").value=soundPath;
+  			prefs.personalization.whistle3SoundPath = soundPath;
+  		  },
     
    whistleSound: function() {
      var prefs = htlivesight.Settings.preferences;
      if(document.getElementById("whistleCheck").checked) {
          document.getElementById("whistleSoundPath").disabled = false;
-         prefs.personalization.whistleSoundPath = document.getElementById("whistleSoundPath").value.replace("@","");
+         prefs.personalization.whistleSoundPath = document.getElementById("whistleSoundPath").value.replace(/@/g,"");
          document.getElementById("whistleSoundPath").value=prefs.personalization.whistleSoundPath;
          //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
          prefs.personalization.whistleCheck=true;
          } else {
          	prefs.personalization.whistleSoundPath = "@"+document.getElementById("whistleSoundPath").value;
+         	document.getElementById("whistleSoundPath").value="@"+document.getElementById("whistleSoundPath").value;
          	document.getElementById("whistleSoundPath").disabled = true;
          	prefs.personalization.whistleCheck=false;
            };
    },
    
    whistleReset: function() {
+ 	  var prefix="@";
+	  if(document.getElementById("whistleCheck").checked) prefix="";
 	  	  var prefs = htlivesight.Settings.preferences;
-	  	  document.getElementById("whistleSoundPath").value="chrome://htlivesight/content/sound/whistle.wav";
+	  	  document.getElementById("whistleSoundPath").value=prefix+"chrome://htlivesight/content/sound/whistle.wav";
 	  	  prefs.personalization.whistleSoundPath = document.getElementById("whistleSoundPath").value;
 	    },
 
@@ -843,25 +1021,36 @@ htlivesight.Settings = {
 	    			return;
 	    		} catch(e) {}
 	      },
+	      
+	      whistleSoundFile: function() {
+        	  var prefs = htlivesight.Settings.preferences;
+        	  soundPath=document.getElementById("whistleSoundPath").value;
+      			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+      			document.getElementById("whistleSoundPath").value=soundPath;
+      			prefs.personalization.whistleSoundPath = soundPath;
+      		  },
 	    
    hattrickSound: function() {
      var prefs = htlivesight.Settings.preferences;
      if(document.getElementById("hattrickCheck").checked) {
          document.getElementById("hattrickSoundPath").disabled = false;
-         prefs.personalization.hattrickSoundPath = document.getElementById("hattrickSoundPath").value.replace("@","");
+         prefs.personalization.hattrickSoundPath = document.getElementById("hattrickSoundPath").value.replace(/@/g,"");
          document.getElementById("hattrickSoundPath").value=prefs.personalization.hattrickSoundPath;
          //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
          prefs.personalization.hattrickCheck=true;
          } else {
          	prefs.personalization.hattrickSoundPath = "@"+document.getElementById("hattrickSoundPath").value;
+         	document.getElementById("hattrickSoundPath").value = "@"+document.getElementById("hattrickSoundPath").value;
          	document.getElementById("hattrickSoundPath").disabled = true;
          	prefs.personalization.hattrickCheck=false;
            };
    },
 
    hattrickReset: function() {
+ 	  var prefix="@";
+	  if(document.getElementById("hattrickCheck").checked) prefix="";
 	  	  var prefs = htlivesight.Settings.preferences;
-	  	  document.getElementById("hattrickSoundPath").value="chrome://htlivesight/content/sound/tarzan.wav";
+	  	  document.getElementById("hattrickSoundPath").value=prefix+"chrome://htlivesight/content/sound/tarzan.wav";
 	  	  prefs.personalization.hattrickSoundPath = document.getElementById("hattrickSoundPath").value;
 	    },
 
@@ -874,5 +1063,13 @@ htlivesight.Settings = {
 	    		} catch(e) {}
 	      },
 	    
+	      hattrickSoundFile: function() {
+        	  var prefs = htlivesight.Settings.preferences;
+        	  soundPath=document.getElementById("hattrickSoundPath").value;
+      			if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file://"+soundPath;
+      			document.getElementById("hattrickSoundPath").value=soundPath;
+      			prefs.personalization.hattrickSoundPath = soundPath;
+      		  },
+	      
   }
 };
