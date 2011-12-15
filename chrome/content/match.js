@@ -145,6 +145,12 @@ Match.Update = function (newMatch) {
   if (newMatch.lastShownEventIndex) {
       match.lastShownEventIndex=newMatch.lastShownEventIndex;
      };
+     
+     if (newMatch.reLiveByEventEnd) {
+         match.reLiveByEventEnd=newMatch.reLiveByEventEnd;
+        }else if(match.reLiveByEventEnd){
+        	newMatch.reLiveByEventEnd=match.reLiveByEventEnd;
+         }
   
  // end adding by bigpapy 
   return match;
