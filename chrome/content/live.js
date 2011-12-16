@@ -141,7 +141,7 @@ Live.ParseLive = function (response, source) {
 	  }	  if (newLastShownIndexes!="")
 	  Live.lastShownIndexes="{\n\"matches\": [ "+newLastShownIndexes+" ]\n }";	//  console.log("Live.lastShownIndexes = "+Live.lastShownIndexes);
     if (source == Live.VIEW) {    	htlivesight.Notify.set();  //    	alert("Live.Parselive15");
-    }        htlivesight.errorLoadingXML=false;//alert ("Live.clockSeconds"+Live.clockSeconds);//if (Live.clockSeconds==0) htlivesight.liveXml=response;// synchronization with hattrick server clockif (!htlivesight.prefs.other.reLive){ now=new Date();       Live.clockSeconds=Math.abs(Math.ceil((now/1000)%60+(Time.hattrickDiffTime/1000)%60+1))%60;}// end synchronization with hattrick server clock
+    }        htlivesight.errorLoadingXML=false;//alert ("Live.clockSeconds"+Live.clockSeconds);//if (Live.clockSeconds==0) htlivesight.liveXml=response;// synchronization with hattrick server clockif (!htlivesight.prefs.other.reLive){ now=new Date();       Live.clockSeconds=Math.abs(Math.ceil((now/1000)%60+(Time.hattrickDiffTime/1000)%60+1))%60;}// end synchronization with hattrick server clock
   } catch(e) {	  	//  alert("Live.Parselive16");//	  alert("Live.ParseView : " + e);	  htlivesight.errorLoadingXML=true;	//  console.log("Live.ParseView : " + e);//modified by bigpapy
   }
 
