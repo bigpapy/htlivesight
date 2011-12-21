@@ -12,7 +12,7 @@ var Live = {
       Live.started = true; 
     }
   },
-  clockSeconds: 0,    nextEventTime: 0,    addTime: 0,    updating: true,    lastShownIndexes: "",    loop: function() {
+  clockSeconds: 0,    nextEventTime: 0,    addTime: 0,    updating: true,    lastShownIndexes: "",    safeLiveVersionEnabled: false,    loop: function() {
 //	var liveXml="";	  		Live.clockSeconds = ++Live.clockSeconds % 60;
     var slice = Math.floor(Live.clockSeconds/10);
     var sec = Live.clockSeconds%10;
@@ -41,7 +41,7 @@ Live.view = function() {
      //               + "&actionType=viewAll"
        //             + "&version=1.4"
 
- // EventSystem.HTTPRequest(URL, Live.ParseView, "request.live");	  	 try{	 	 if (Live.lastShownIndexes !=""){  parameters=[["file","live"],              ["actionType","viewNew"],              ["version","1.6"],              ["lastShownIndexes",Live.lastShownIndexes],              ]; // alert("Live.lastShownIndexes/parameter"+ Live.lastShownIndexes);	 } else { parameters=[["file","live"],	             ["actionType","viewAll"],	             ["version","1.6"]	             ];     } }catch(e){	 alert("errore"+ e);	parameters=[["file","live"],	             ["actionType","viewAll"],	             ["version","1.6"]	             ]; }  Htlivesight.ApiProxy.retrieve(document, parameters, function(xml){  Live.ParseView(xml);  });};
+ // EventSystem.HTTPRequest(URL, Live.ParseView, "request.live");	  	 try{	 	 if (Live.lastShownIndexes !=""){  parameters=[["file","live"],              ["actionType","viewNew"],              ["version","1.6"],              ["lastShownIndexes",Live.lastShownIndexes],              ]; // alert("Live.lastShownIndexes/parameter"+ Live.lastShownIndexes);	 } else { parameters=[["file","live"],	             ["actionType","viewAll"],	             ["version","1.6"]	             ];     };	 if (Live.safeLiveVersionEnabled){		 parameters=[["file","live"],		             ["actionType","viewAll"],		             ["version","1.5"]		             ];	 } }catch(e){	 alert("errore"+ e);	parameters=[["file","live"],	             ["actionType","viewAll"],	             ["version","1.6"]	             ]; }  Htlivesight.ApiProxy.retrieve(document, parameters, function(xml){  Live.ParseView(xml);  });};
 
 Live.ParseView = function (response) {		Live.ParseLive(response, Live.VIEW);	
 };
@@ -148,11 +148,11 @@ Live.ParseLive = function (response, source) {
 };
  
 Live.ParseHomeTeam = function (xml) {
-  return new Team(Live.ParseHomeTeamId(xml), Live.ParseHomeTeamName(xml), null, (Live.ParseYouth(xml)?Live.ParseYouth(xml):"False"));
+  return new Team(Live.ParseHomeTeamId(xml), Live.ParseHomeTeamName(xml), Live.ParseHomeTeamShortName(xml), (Live.ParseYouth(xml)?Live.ParseYouth(xml):"False"));
 };
 
 Live.ParseAwayTeam = function (xml) {
-  return new Team(Live.ParseAwayTeamId(xml), Live.ParseAwayTeamName(xml), null, (Live.ParseYouth(xml)?Live.ParseYouth(xml):"False"));
+  return new Team(Live.ParseAwayTeamId(xml), Live.ParseAwayTeamName(xml), Live.ParseAwayTeamShortName(xml), (Live.ParseYouth(xml)?Live.ParseYouth(xml):"False"));
 };
 
 Live.ParseHomeTeamId = function (xml) {
@@ -161,7 +161,7 @@ Live.ParseHomeTeamId = function (xml) {
 
 Live.ParseHomeTeamName = function (xml) {
 //  return Util.Parse("<HomeTeamName>(.*?)</HomeTeamName>", xml);	return Util.Parse("HomeTeamName", xml);
-};
+};Live.ParseHomeTeamShortName = function (xml) {//  return Util.Parse("<HomeTeamName>(.*?)</HomeTeamName>", xml);	return Util.Parse("HomeTeamShortName", xml);};
 
 Live.ParseAwayTeamId = function (xml) {
 //  return Util.Parse("<AwayTeamID>(.*?)</AwayTeamID>", xml);	return parseInt(Util.Parse("AwayTeamID", xml),10);
@@ -169,7 +169,7 @@ Live.ParseAwayTeamId = function (xml) {
 
 Live.ParseAwayTeamName = function (xml) {
 //  return Util.Parse("<AwayTeamName>(.*?)</AwayTeamName>", xml);	return Util.Parse("AwayTeamName", xml);
-};
+};Live.ParseAwayTeamShortName = function (xml) {//  return Util.Parse("<AwayTeamName>(.*?)</AwayTeamName>", xml);	return Util.Parse("AwayTeamShortName", xml);};
 
 Live.ParseHomeGoals = function (xml) {
 //  return Util.Parse("<HomeGoals>(.*?)</HomeGoals>", xml);	return parseInt(Util.Parse("HomeGoals", xml),10);

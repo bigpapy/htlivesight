@@ -1074,9 +1074,16 @@ function CreateElementRowShortGame(match) {
   hbox.setAttribute("pack", "end");
   l = document.createElement("label");
   hbox.appendChild(l);
-  l.setAttribute("value", htlivesight.DOM.getTextContent(match.home.team.name));
+  
+  /* change done by bigpapy in order to switch from long to short name in right box).*/
+  //l.setAttribute("value", htlivesight.DOM.getTextContent(match.home.team.name));
+
+  l.setAttribute("value", htlivesight.DOM.getTextContent(match.home.team.shortName));
   l.setAttribute("contextmenu", match.home.team.addTeamToFriendsPopup.getAttribute("id"));
   l.setAttribute("id", "short_home_name_" + match.id + "_" + match.youth);
+  
+//adding bold style to friend team
+  if(Friends.isFriend(match.home.team.id,match.youth)) l.setAttribute("style", "font-weight: bold;");
 
   l = document.createElement("label");
   row.appendChild(l);
@@ -1095,11 +1102,18 @@ function CreateElementRowShortGame(match) {
 
   l = document.createElement("label");
   row.appendChild(l);
-  l.setAttribute("value", htlivesight.DOM.getTextContent(match.away.team.name));
+  
+  /* change done by bigpapy in order to switch from long to short name in right box).*/
+//  l.setAttribute("value", htlivesight.DOM.getTextContent(match.away.team.name));
+  // try://document.getElementById("leaguetable_"+League.teams[i].livePosition).setAttribute("style", document.getElementById("leaguetable_"+League.teams[i].livePosition).getAttribute("style")+" font-weight: bold;");
+  l.setAttribute("value", htlivesight.DOM.getTextContent(match.away.team.shortName));
   //l.appendChild(createTextElement(match.away.team.name));
   l.setAttribute("contextmenu", match.away.team.addTeamToFriendsPopup.getAttribute("id"));
   l.setAttribute("id", "short_away_name_" + match.id + "_" + match.youth);
-
+// adding bold style to friend team
+  if(Friends.isFriend(match.away.team.id,match.youth)) l.setAttribute("style", "font-weight: bold;");
+  
+  
   image = document.createElement("image");
   row.appendChild(image);
   image.setAttribute("id", "short_liveimage_" + match.id + "_" + match.youth);
