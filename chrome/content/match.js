@@ -30,9 +30,10 @@ function Match(id, date, home, away, event, arena, youth) {
 
 Match.List = new Object();
 
-Match.Team = function (id, name) {
+Match.Team = function (id, name, shortName) {
   this.id = id;
   this.name = Util.RemoveAmpersand(name);
+  this.shortName = Util.RemoveAmpersand(shortName);
 };
 
 Match.side = function(team, goals, formation, tactic) {

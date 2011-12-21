@@ -204,6 +204,7 @@ Htlivesight.ApiProxy = {
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
 						var error404=strbundle.getString("error404");//i13n: get local string
 						alert(error404);//show local error message
+						Live.safeLiveVersionEnabled=true;
 						callback(null);
 						break;
 						
@@ -213,6 +214,7 @@ Htlivesight.ApiProxy = {
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
 						var error500=strbundle.getString("error500");//i13n: get local string
 						alert(error500);//show local error message
+						Live.safeLiveVersionEnabled=true;
 						callback(null);
 						break;
 						
@@ -221,6 +223,7 @@ Htlivesight.ApiProxy = {
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
 						var error503=strbundle.getString("error503");//i13n: get local string
 						alert(error503);//show local error message
+						Live.safeLiveVersionEnabled=true;
 						callback(null);
 						break;
 						
@@ -230,6 +233,7 @@ Htlivesight.ApiProxy = {
 						htlivesight.DOM.addServerToPopup(serverOFF); //update server status in menu
 						var error=strbundle.getString("error");//i13n: get local string
 						alert(error+":"+status);//show local error message
+						Live.safeLiveVersionEnabled=true;
 						callback(null);
 			
 						}
