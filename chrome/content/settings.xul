@@ -52,8 +52,8 @@
 					</radiogroup>
 				</groupbox>
 				<groupbox>
-					<caption label="&language.select;"/>
-					<menulist id="lang-list" oncommand="htlivesight.Settings.click.selLang();">
+					<caption label="&language.select;" style="display:none"/>
+					<menulist id="lang-list" oncommand="htlivesight.Settings.click.selLang();" style="display:none">
 						<menupopup>
 							<menuitem value="ar-AR" label="ar-AR&#160;&#160;العربية"/>
 							<menuitem value="be-BE" label="be-BE&#160;&#160;Беларуская"/>
@@ -110,7 +110,7 @@
 						</menupopup>
 					</menulist>
 					<separator class="thin"/>
-					<description>&language.note;</description>
+		<!--			<description>&language.note;</description> -->
 </groupbox>
 
 <!--begin: inserting new box input about server to connect to hattrick webpages.-->
