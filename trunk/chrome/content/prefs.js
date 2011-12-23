@@ -41,4 +41,26 @@ var HtlivesightPrefs = {
 			HtlivesightPrefs._pref_branch.setComplexValue(encodeURI(key),
 				Components.interfaces.nsISupportsString, str);
 	},
+	
+	// adding by bigpapy, it's a try to remove if it didn't work
+	getBool : function(key) {
+			var value;
+			try {
+				value = HtlivesightPrefs._pref_branch.getBoolPref(encodeURI(key));
+			}
+			catch (e) {
+				try {
+					value = HtlivesightPrefs._pref_branch.getBoolPref(key);
+				}
+				catch (e) {
+					value = null;
+				}
+			}
+			return value;
+	},
+
+	setBool : function(key, value) {
+			HtlivesightPrefs._pref_branch.setBoolPref(encodeURI(key), value);
+	},
+// end adding by bigpapy (it's a try).
 };
