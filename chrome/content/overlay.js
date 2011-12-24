@@ -33,6 +33,6 @@ var htlivesight = {
     toOpenWindowByType('mozilla:htlivesight', 'chrome://htlivesight/content/htlivesight.xul');
       //window.open("chrome://htlivesight/content/htlivesight.xul", "trtretre", "chrome,resizable");
     }
-  }
+  },    installButton: function() {		// to add HTlivesight button on the navigation bar by default		HtlivesightPrefs.init();				if (!HtlivesightPrefs.getBool("HtlsToolbarInited")) {						var buttonId = "htls-button-1"; // ID of HTlivesight button						var afterId = "search-container"; // insert after search box						var navBar = document.getElementById("nav-bar");						var curSet = navBar.currentSet.split(",");						if (curSet.indexOf(buttonId) == -1) {								var pos = curSet.indexOf(afterId) + 1 || curSet.length;								var set = curSet.slice(0, pos).concat(buttonId).concat(curSet.slice(pos));								navBar.setAttribute("currentset", set.join(","));								navBar.currentSet = set.join(",");								document.persist(navBar.id, "currentset");								try {										BrowserToolboxCustomizeDone(true);									}				catch (e) {}			}						HtlivesightPrefs.setBool("HtlsToolbarInited",true);					};	  },	  
 };
 
