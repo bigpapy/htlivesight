@@ -70,8 +70,8 @@
 <!ENTITY path.sounds.hattrick     "Dźwięki Hattricka">
 <!ENTITY path.sounds.restore      "Restore">
 <!ENTITY path.sounds.play         "Play">
-<!ENTITY path.sounds.note1			"Insert file:// before the path of the sound in .wav format">
-<!ENTITY path.sounds.note2			"Example: file://c:\\path\to\the\sound.wav">
+<!ENTITY path.sounds.note1			"Dodaj file:// przed lokalizacją pliku w formacie .wav">
+<!ENTITY path.sounds.note2			"Na przykład: file://c:\\ścieżka\do\dźwięku.wav">
 
 <!ENTITY language.select     "Wybierz język">
 <!ENTITY language.note       "Uwaga: Musisz zrestartować HTLiveSight, aby zmiany były widoczne">
