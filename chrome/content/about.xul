@@ -14,12 +14,17 @@
 
   <hbox>
     <tabbox>
+		<tabs>
+			<tab label="TabInfo"/>
+			<tab label="TabTranslators"/>
+			<tab label="TabCredits"/>
+		</tabs>
       <tabpanels>
         <tabpanel orient="vertical" align="center" flex="1">
 		  <image class="chpp" src="chrome://htlivesight/skin/128.png"/>
           <spacer class="tab"/>
-          <label class="header" value="HTLiveSightDEV 0.3.523"/>
-          <label value="11 &month.december; 2011"/>
+          <label class="header" value="HTLiveSightDEV 0.3.544"/>
+          <label value="1 &month.january; 2012"/>
           <label value="&text.created_by; Silkevicious and Bigpapy"/>
           <separator/>
 		  <label value="Based on HattrickLiveFox"/>
@@ -30,6 +35,12 @@
 		  <label value="for hosting our project!"/>
 		  <label value="http://www.sourceforge.net/projects/htlivesight" class="text-link" href="http://www.sourceforge.net/projects/htlivesight"/>
         </tabpanel>
+		<tabpanel orient="vertical" align="center" flex="1">
+		<label class="header" value="Thanks to"/>
+		</tabpanel>
+		<tabpanel orient="vertical" align="center" flex="1">
+		<label class="header" value="Thanks to"/>
+		</tabpanel>
       </tabpanels>
     </tabbox>
     <spacer width="10px"/>
