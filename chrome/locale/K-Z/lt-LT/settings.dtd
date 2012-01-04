@@ -35,7 +35,7 @@
 
 <!ENTITY other.authorization "Autorizacijos kodas">
 <!ENTITY other.reset         "Nutraukti autorizaciją">
-<!ENTITY other.reset_button  "Atstatyti">
+<!ENTITY other.reset_button  "Nutraukti">
 <!ENTITY other.reverse       "Rungtynių įvykiai rodomi iš apačios į viršų">
 <!ENTITY other.reverse.note  "Pakeitus perkrauti puslapį">
 <!ENTITY other.events        "Įvykių tvarka">
@@ -64,14 +64,14 @@
 <!ENTITY path.sounds.myBoo        "Mano žaidėjo trauma">
 <!ENTITY path.sounds.opBoo        "Varžovo žaidėjo trauma">
 <!ENTITY path.sounds.whistleStart "Kėlinio pradžia">
-<!ENTITY path.sounds.whistle2     "Pirmo kėlinio pabaiga">
+<!ENTITY path.sounds.whistle2     "Pirmojo kėlinio pabaiga">
 <!ENTITY path.sounds.whistle3     "Rungtynių pabaiga">
 <!ENTITY path.sounds.whistle      "Gauta kortelė">
-<!ENTITY path.sounds.hattrick     "Hatrikas">
-<!ENTITY path.sounds.restore      "Restore">
-<!ENTITY path.sounds.play         "Play">
-<!ENTITY path.sounds.note1			"Insert file:// before the path of the sound in .wav format">
-<!ENTITY path.sounds.note2			"Example: file://c:\\path\to\the\sound.wav">
+<!ENTITY path.sounds.hattrick     "Hat-trick'as">
+<!ENTITY path.sounds.restore      "Atstatyti">
+<!ENTITY path.sounds.play         "Groti">
+<!ENTITY path.sounds.note1			"Pridėkite „file://“ prieš .wav rinkmenos adresą">
+<!ENTITY path.sounds.note2			"Pavyzdžiui: file://c:\\kelias\iki\garso.wav">
 
 <!ENTITY language.select     "Pasirinkti kalbą">
 <!ENTITY language.note       "Pastaba: pakeitus būtina perkrauti „HTLiveSight“.">
