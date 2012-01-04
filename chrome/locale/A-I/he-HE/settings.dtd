@@ -68,10 +68,10 @@
 <!ENTITY path.sounds.whistle3     "שריקה לסיום המשחק">
 <!ENTITY path.sounds.whistle      "צליל לכרטיס צהוב או אדום">
 <!ENTITY path.sounds.hattrick     "צליל לשלושער">
-<!ENTITY path.sounds.restore      "Restore">
-<!ENTITY path.sounds.play         "Play">
-<!ENTITY path.sounds.note1			"Insert file:// before the path of the sound in .wav format">
-<!ENTITY path.sounds.note2			"Example: file://c:\\path\to\the\sound.wav">
+<!ENTITY path.sounds.restore      "שחזר">
+<!ENTITY path.sounds.play         "השמע">
+<!ENTITY path.sounds.note1			".wav לפני מיקום קובץ השמע בפורמט file:// הכנס">
+<!ENTITY path.sounds.note2			"file://c:\\path\to\the\sound.wav :דוגמה">
 
 <!ENTITY language.select     "בחר שפה">
 <!ENTITY language.note       "שים לב: יש לאתחל את פיירפוקס על מנת שהשינויי יופעל">
