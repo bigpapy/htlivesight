@@ -58,6 +58,7 @@
 					<menulist id="lang-list" oncommand="htlivesight.Settings.click.selLang();" >
 						<menupopup>
 							<menuitem value="A-I/ara" label="[ara] العربية"/>
+							<menuitem value="A-I/ind" label="[ind] Bahasa Indonesia"/>
 							<menuitem value="A-I/bel" label="[bel] Беларуская"/>
 							<menuitem value="A-I/bul" label="[bul] Български"/>
 							<menuitem value="A-I/bos" label="[bos] Bosanski"/>
