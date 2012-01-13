@@ -16,7 +16,7 @@ var HTTP = {
 
 HTTP.getRecommendedServer = function() {
 //    var URL = HTTP.hattrickServer + "/Common/chppxml.axd?file=servers";  
-//    EventSystem.HTTPRequest(URL, HTTP.ParseRecommendedServer, "request.server");/* Following row is copied from HTTP.ParseRecommendedServer because * it let software goes on (look at file eventsystem line 31))*/		EventSystem.Declare(EventSystem.ev.GET_SERVER);
+//    EventSystem.HTTPRequest(URL, HTTP.ParseRecommendedServer, "request.server");/* Following row is copied from HTTP.ParseRecommendedServer because * it let software goes on (look at file eventsystem line 31))*/		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.GET_SERVER);
 };
 
 HTTP.ParseRecommendedServer = function (response) {

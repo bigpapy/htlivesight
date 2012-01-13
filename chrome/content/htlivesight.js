@@ -29,12 +29,12 @@ var htlivesight = {
         winbox=wbList[i];
         img = document.getElementById("imgwinboxshade_"+winbox);
         img.addEventListener('click',  htlivesight.Click.winboxShade, true);
-        img.setAttribute("tooltiptext", strings.getString("tooltip.window.shade"));
+        img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.shade")*/Util.Parse("TooltipWindowShade",htlivesight.data[0]));
         img.collapsed=false;
 
         img = document.getElementById("imgwinboxopen_"+winbox);
         img.addEventListener('click',  htlivesight.Click.winboxOpen, true);
-        img.setAttribute("tooltiptext", strings.getString("tooltip.window.open"));
+        img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.open")*/Util.Parse("TooltipWindowOpen",htlivesight.data[0]));
         img.collapsed=true;
 
         document.getElementById("winboxcontent_"+winbox).hidden=false;
@@ -42,34 +42,45 @@ var htlivesight = {
       }
     };
     htlivesight.Log.start();
-    netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
-    strings = document.getElementById("strings");
+ //   netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
+ //   strings = document.getElementById("strings");
+ //   alert("1");
     document.getElementById("winbox_leaguematches").collapsed=true;
+ //   alert("2");
     winboxRegister(["leaguematches","leaguetable","matchlist","friends","addmatch"]);
+ //   alert("3");
     htlivesight.Click.AddButtonListeners();
+ //   alert("4");
     htlivesight.prefs = htlivesight.Preferences.get();
-
+//    alert("5");
     if (htlivesight.prefs.personalization.oldIcons) htlivesight.Image = htlivesight.ImageOld;
+ //   alert("6");
 
-
-    Friends.start();
+    htlivesight.Friends.start();
+ //   alert("7");
     htlivesight.Sound.start();
     //htlivesight.Test.start();
-
+ //   alert("8");
     htlivesight.Log.debug("loading username and password");
+ //   alert("9");
     htlivesight.Log.debug("teamId: " + htlivesight.prefs.general.teamId);
+ //   alert("9.5");
     if (htlivesight.prefs.general.teamId != "") {
       document.getElementById("teamId").value=htlivesight.prefs.general.teamId;    
     //  document.getElementById("security_code").value=htlivesight.Preferences.password.get();
     }
+ //   alert("10");
     document.getElementById("reLive").checked=htlivesight.prefs.other.reLive;
+ //   alert("11");
     document.getElementById("reLiveSpeed").value=htlivesight.prefs.other.reLiveSpeed;
+ //   alert("12");
     document.getElementById("reLiveByEvent").checked=htlivesight.prefs.other.reLiveByEvent;
+ //   alert("13");
     if(!document.getElementById("reLive").checked) {
     	document.getElementById("reLiveSpeed").disabled = true;
       	document.getElementById("reLiveByEvent").disabled = true;
       }
- 
+ //   alert("14");
   },
   getRecommendedServer: function() {
 //	  alert("startup: getRecommendedServer");
@@ -141,22 +152,22 @@ var htlivesight = {
   },
   GetMyData: function() { 
 //	  alert("startup:GetMyData begin");
-	  Team.HTTPGetMyData();
+	  htlivesight.Team.HTTPGetMyData();
 //	  alert("startup:GetMyData end");
   },
   GetLeague: function() {
 //	  alert("startup:GetLeague begin");
-    League.HTTPGet();
+    htlivesight.League.HTTPGet();
  //   alert("startup:GetLeague end");
   },
   GetLeagueMatches: function() {
 //	  alert("startup:GetLeagueMatches begin");  
-    League.HTTPFixtures();
+    htlivesight.League.HTTPFixtures();
  //   alert("startup:GetLeagueMatches end");
   },
   GetMyMatch: function() { 
 //	  alert("startup:GetMyMatch begin: id "/*+ Teams.myTeam.id +" youth " + Teams.myTeam.youth*/ );
-    Matches.HTTPGetByTeam(Teams.myTeam.id, Teams.myTeam.youth);
+    htlivesight.Matches.HTTPGetByTeam(htlivesight.Teams.myTeam.id, htlivesight.Teams.myTeam.youth);
  //   alert("startup:GetMyMatch end");
   },
   winboxOpenByName: function(name) {
@@ -176,18 +187,18 @@ var htlivesight = {
   AddLiveMatch: function(matchId, youth) {
 //	  alert("startup:winboxShadeByName begin");
     if (htlivesight.liveCount >= 20) {
-       var message=document.getElementById("strings").getString("matches.maximum");
+       var message=/*document.getElementById("strings").getString("matches.maximum")*/Util.Parse("MatchesMaximum",data[0]);
        alert(message);
        htlivesight.warningShown = true;
        return;
     }
-    if (typeof(Match.List["_"+matchId+"_"+youth]) == 'undefined')
+    if (typeof(htlivesight.Match.List["_"+matchId+"_"+youth]) == 'undefined')
     {
       htlivesight.liveCount++;
       Live.HTTPAddMatch(matchId, youth);
       htlivesight.GetMatchDetails(matchId, youth);
     } else {
-      if (Match.List["_"+matchId+"_"+youth].live == false)
+      if (htlivesight.Match.List["_"+matchId+"_"+youth].live == false)
         htlivesight.liveCount++;
       Live.HTTPAddMatch(matchId, youth);
       htlivesight.GetMatchDetails(matchId, youth);
@@ -217,6 +228,99 @@ var htlivesight = {
     	document.getElementById("reLiveByEvent").disabled = true;
       };
   },
+
+  localization: function() {
+//	  alert("startup:unload: begin");
+//	  alert("begin");
+
+		//prefs = htlivesight.Settings.preferences;
+		htlivesight.prefs=htlivesight.Preferences.get();
+
+//		alert("prefs.language.locale= "+ htlivesight.prefs.language.locale);
+		htlivesight.url = "chrome://htlivesight/content/locale/"+ htlivesight.prefs.language.locale +".xml";
+//		alert("url"+ htlivesight.url);
+		htlivesight.languageXML = Htlivesight.loadXml(htlivesight.url);
+
+		htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
+
+		
+
+		document.getElementById("htlivesight-window").attributes.getNamedItem("title").value=Util.Parse("WindowMainTitle",htlivesight.data[0]);
+
+		document.getElementById("server").attributes.getNamedItem("label").value=Util.Parse("MenuServer",htlivesight.data[0]);
+		document.getElementById("server").attributes.getNamedItem("label").value+=Util.Parse("MenuDisconnected",htlivesight.data[0]);
+		document.getElementById("menuOptions").attributes.getNamedItem("label").value=Util.Parse("MenuOptions",htlivesight.data[0]);
+		document.getElementById("menuAbout").attributes.getNamedItem("label").value=Util.Parse("MenuAbout",htlivesight.data[0]);
+		
+		document.getElementById("LoginLabel").value=Util.Parse("LoginLabel",htlivesight.data[0]);
+		document.getElementById("LoginLabel2").attributes.getNamedItem("label").value=Util.Parse("LoginLabel",htlivesight.data[0]);
+		document.getElementById("LoginTeamId").value=Util.Parse("LoginTeamId",htlivesight.data[0]);
+		document.getElementById("save_teamId").attributes.getNamedItem("label").value=Util.Parse("LoginRememberMe",htlivesight.data[0]);
+		document.getElementById("button_login").attributes.getNamedItem("label").value=Util.Parse("LoginButton",htlivesight.data[0]);
+		document.getElementById("LoginReLive").attributes.getNamedItem("label").value=Util.Parse("LoginReLive",htlivesight.data[0]);
+		document.getElementById("reLive").attributes.getNamedItem("label").value=Util.Parse("LoginReLive",htlivesight.data[0]);
+		document.getElementById("LoginSpeed").value=Util.Parse("LoginSpeed",htlivesight.data[0]);
+		document.getElementById("reLiveByEvent").attributes.getNamedItem("label").value=Util.Parse("LoginByEvent",htlivesight.data[0]);
+		
+		document.getElementById("LeagueMatches").value=Util.Parse("LeagueMatches",htlivesight.data[0]);
+
+		document.getElementById("leaguetable_name").value=Util.Parse("LeagueLiveTable",htlivesight.data[0]);
+
+		document.getElementById("LeaguePosition").value=Util.Parse("LeaguePosition",htlivesight.data[0]);
+
+		document.getElementById("LeagueTeam").value=Util.Parse("LeagueTeam",htlivesight.data[0]);
+
+		document.getElementById("LeaguePlayed").value=Util.Parse("LeaguePlayed",htlivesight.data[0]);
+
+		document.getElementById("LeagueGoals").value=Util.Parse("LeagueGoals",htlivesight.data[0]);
+
+		document.getElementById("LeagueGoalDiff").value=Util.Parse("LeagueGoalDiff",htlivesight.data[0]);
+
+		document.getElementById("LeaguePoints").value=Util.Parse("LeaguePoints",htlivesight.data[0]);
+
+		document.getElementById("MatchesList").value=Util.Parse("MatchesList",htlivesight.data[0]);
+
+		document.getElementById("MatchesList").value=Util.Parse("MatchesList",htlivesight.data[0]);
+
+		document.getElementById("FriendsTitle").value=Util.Parse("FriendsTitle",htlivesight.data[0]);
+
+		document.getElementById("btnfriend_remove").attributes.getNamedItem("label").value=Util.Parse("FriendsRemove",htlivesight.data[0]);
+
+		document.getElementById("btnfriend_addmatch").attributes.getNamedItem("label").value=Util.Parse("FriendsOpen",htlivesight.data[0]);
+
+		document.getElementById("MatchesAdd").value=Util.Parse("MatchesAdd",htlivesight.data[0]);
+
+		document.getElementById("MatchesAdd").value=Util.Parse("MatchesAdd",htlivesight.data[0]);
+
+		document.getElementById("boxaddyouth").attributes.getNamedItem("label").value=Util.Parse("MatchesYouth",htlivesight.data[0]);
+
+		document.getElementById("buttonAddMatch").attributes.getNamedItem("label").value=Util.Parse("MatchesByMatch",htlivesight.data[0]);
+
+		document.getElementById("buttonAddTeam").attributes.getNamedItem("label").value=Util.Parse("MatchesByTeam",htlivesight.data[0]);
+
+		if (!HtlivesightPrefs.getBool("HtlsFirstStart")){
+		//	alert("1");
+			var optionsPage=window.open("chrome://htlivesight/content/settings.xul","_blank");
+		//	alert("2");
+		//	optionsPage.onfocus();
+		
+			
+			HtlivesightPrefs.setBool("HtlsFirstStart",true);
+
+
+			//	htlivesight.Settings.save();
+			//	alert("5");
+				
+			//	alert("5.5");
+			//	document.location.assign("chrome://htlivesight/content/htlivesight.xul");//reload HTLS
+			//	alert("6");
+
+		//	alert("7");
+		};
+//		alert("end");
+
+ //   alert("startup:unload: end");
+  },  
 /*  temachange: function() {
 //	  alert("startup:unload: begin");
 //	  document.getElementById(tabID).setAttribute("class", "livefox.css");

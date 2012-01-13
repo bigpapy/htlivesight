@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Htlivesight>
+
+<!--Overlay-->
+<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuStart>Start</MenuStart>
+<MenuOptions>Options</MenuOptions>
+<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+
+<!--Main-->
+<WindowMainTitle>HTLiveSight</WindowMainTitle>
+<MenuServer>服务器:</MenuServer>
+<MenuDisconnected>未连接</MenuDisconnected>
+<MenuOptions>选项</MenuOptions>
+<MenuAbout>关于 HTLiveSight</MenuAbout>
+<LoginLabel>登陆</LoginLabel>
+<LoginTeamId>输入您的球队的Id</LoginTeamId>
+<LoginUsername>用户名</LoginUsername>
+<LoginRememberMe>记住用户名</LoginRememberMe>
+<LoginButton>登陆</LoginButton>
+<LoginReLive>Re-Live</LoginReLive>
+<LoginSpeed>Speed</LoginSpeed>
+<LoginByEvent>Per event</LoginByEvent>
+<LeagueMatches>联赛比赛</LeagueMatches>
+<LeagueLiveTable>实时积分榜</LeagueLiveTable>
+<LeaguePosition>名次</LeaguePosition>
+<LeagueTeam>队名</LeagueTeam>
+<LeaguePlayed>场次</LeaguePlayed>
+<LeagueGoals>得失球</LeagueGoals>
+<LeagueGoalDiff>净胜球</LeagueGoalDiff>
+<LeaguePoints>积分</LeaguePoints>
+<MatchesList>比赛列表</MatchesList>
+<MatchesAdd>添加比赛</MatchesAdd>
+<MatchesByMatch>按比赛ID</MatchesByMatch>
+<MatchesByTeam>按队名</MatchesByTeam>
+<MatchesYouth>青年队比赛</MatchesYouth>
+<FriendsTitle>朋友</FriendsTitle>
+<FriendsRemove>移除</FriendsRemove>
+<FriendsOpen>打开</FriendsOpen>
+
+<!--Authorize-->
+<Introduction>你正被重新转接到chpp网页获取授权码。如未成功，请暂时关闭屏蔽弹出窗口设置或将HTlivesight加入信任列表。</Introduction>
+<Insert>在此输入您的授权码:</Insert>
+<Ending>现在HTlivesight已被授权。点击确认重启程序。</Ending>
+<Error401>错误401: 未授权。 您必须再次取得授权。点击确认继续。</Error401>
+<Error404>错误404: 未找到要求的资源。如果此错误再次出现，请确认chpp服务是否暂停。</Error404>
+<Error0>错误0: 未连接到互联网。</Error0>
+<Error>错误</Error>
+<ServerON>已连接</ServerON>
+<ServerOFF>连接断开</ServerOFF>
+<ResetToken>授权码已被删除. 重启 HTLS 或等候下次更新 (1分钟以内).</ResetToken>
+<NoHTServer>你没有选取与你当前登陆一致的 Hattrick 服务器, 右键点击选取 -> 选项 -> 总体设置 然后设置正确的 Hattrick 服务器号码</NoHTServer>
+<Error500>错误500: 内部服务器错误 (Hattrick)</Error500>
+<Error503>错误503: CHPP 服务不可用 (暂时过载 或 维护中)</Error503>
+
+<!--Properties-->
+<MatchesMaximum>最多可观看20场比赛!</MatchesMaximum>
+<LeagueLiveTable>实时积分榜</LeagueLiveTable>
+<LeagueRound>轮次</LeagueRound>
+<MessageHattrickError>Hattrick服务器反馈错误.</MessageHattrickError>
+<MessageAlreadyFriend>已添加朋友!</MessageAlreadyFriend>
+<MessageErrorReading>数据读取错误</MessageErrorReading>
+<MessageLoginNotSuccessful>成功登出.</MessageLoginNotSuccessful>
+<TacticPressing>全场紧逼</TacticPressing>
+<TacticCA>防守反击</TacticCA>
+<TacticAIM>中路进攻</TacticAIM>
+<TacticAOW>边路进攻</TacticAOW>
+<TacticPlayCreative>无限创意</TacticPlayCreative>
+<TacticLongShots>远射</TacticLongShots>
+<TimeFirstHalf>上半场</TimeFirstHalf>
+<TimeHalfTime>中场休息</TimeHalfTime>
+<TimeSecondHalf>下半场</TimeSecondHalf>
+<TimeExtraTime>加时赛</TimeExtraTime>
+<TimePenalties>点球</TimePenalties>
+<TimeFinish>终场</TimeFinish>
+<TimeStartsIn>开始</TimeStartsIn>
+<TimeDays>日</TimeDays>
+<TimeHours>时</TimeHours>
+<TimeMinutes>分</TimeMinutes>
+<TimeDay>日</TimeDay>
+<TimeHour>时</TimeHour>
+<TimeMinute>分</TimeMinute>
+<TimeMin>'</TimeMin>
+<TooltipWindowSound>Activate or deactivate sounds for the match</TooltipWindowSound>
+<TooltipWindowLink>Link to Match Page on Hattrick</TooltipWindowLink>
+<TooltipWindowInfo>切换事件信息</TooltipWindowInfo>
+<TooltipWindowMaximize>最大化窗口</TooltipWindowMaximize>
+<TooltipWindowMinimize>最小化窗口</TooltipWindowMinimize>
+<TooltipWindowShade>隐藏窗口</TooltipWindowShade>
+<TooltipWindowClose>关闭窗口</TooltipWindowClose>
+<TooltipWindowOpen>打开窗口</TooltipWindowOpen>
+<TooltipWindowMoveUp>上移此窗口</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>下移此窗口</TooltipWindowMoveDown>
+<TooltipFriendRemove>移除朋友</TooltipFriendRemove>
+<TooltipFriendMoveUp>上移朋友</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>下移朋友</TooltipFriendMoveDown>
+<MenuAddFriend>朋友</MenuAddFriend>
+<MenuServer>服务器:</MenuServer>
+<EventGoal>进球</EventGoal>
+<EventPenaltyGoal>点球罚进</EventPenaltyGoal>
+<EventPenaltyMiss>点球罚丢</EventPenaltyMiss>
+<EventInjury>受伤</EventInjury>
+<EventRed>红牌</EventRed>
+<EventYellow2>第二张黄牌</EventYellow2>
+<EventSideLeft>左路</EventSideLeft>
+<EventSideRight>右路</EventSideRight>
+<EventSideCenter>中路</EventSideCenter>
+<EventSideFreeKick>定位球</EventSideFreeKick>
+<EventSidePenalty>点球</EventSidePenalty>
+<EventSpecialUnpredictable>SE 不可预料</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE 远射</EventSpecialLongShot>
+<EventSpecialQuick>SE 敏捷</EventSpecialQuick>
+<EventSpecialLowStamina>后劲不足</EventSpecialLowStamina>
+<EventSpecialSetPieces>定位球</EventSpecialSetPieces>
+<EventSpecialHead>头球</EventSpecialHead>
+<EventSpecialExperience>丰富经验</EventSpecialExperience>
+<EventSpecialLowExperience>经验不足</EventSpecialLowExperience>
+<EventSpecialWinger>+ 边锋</EventSpecialWinger>
+<EventSpecialTechnical>技术</EventSpecialTechnical>
+<EventSpecialCounterAttack>防守反击</EventSpecialCounterAttack>
+<EventSpecialCornerKick>角球</EventSpecialCornerKick>
+<EventSpecialIndirect>间接定位球</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ 不可预料: 长传</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ 不可预料: 射门</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ 不可预料: 特殊动作</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- 不可预料: 失误</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- 不可预料: 乌龙球</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ 速度: 依靠速度突破得分</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ 速度: 依靠速度突破分球</EventSpecialQuickAssist>
+<Pullback>回撤</Pullback>
+<Underestimation>过于自信</Underestimation>
+<UnderestimationRemove>过于自信 消除</UnderestimationRemove>
+<UnderestimationReduceDouble>过于自信减少 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>过于自信减少 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>混乱</OrganizationBreaks>
+<Reorganize>重整旗鼓</Reorganize>
+<NervesImportantThrillingGame>比赛非常紧张</NervesImportantThrillingGame>
+<Bruised>淤伤</Bruised>
+<Injuried>受伤</Injuried>
+<ModeratelyInjuried>中度受伤</ModeratelyInjuried>
+<BadlyInjuried>严重受伤</BadlyInjuried>
+<ByHimself>自己导致</ByHimself>
+<ByFoul>被犯规</ByFoul>
+<ExperiencedForward>有经验的前锋</ExperiencedForward>
+<InexperiencedDefender>经验不足的后卫</InexperiencedDefender>
+<WingerHead>边锋: 给有头球特长的球员传中</WingerHead>
+<EventSpecialLongShotDefended>=远射被封堵</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>速度与速度较量</EventSpecialQuickVsQuick>
+<LongShot>远射</LongShot>
+<MeteoSpecialTechnicalRain>-技术 (-得分能力 -组织能力)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+力量 (+得分能力 +防守能力 +组织能力)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+技术 (+得分能力 +组织能力)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>-力量 (-得分能力 -耐力)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>-速度 (-防守能力)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>-速度 (-防守能力 -得分能力)</MeteoSpecialQuickRain>
+<YellowNastyPlay>因动作肮脏得到黄牌</YellowNastyPlay>
+<YellowCheating>因假摔得到黄牌</YellowCheating>
+<ProgressUpdate>下一更新:</ProgressUpdate>
+<ProgressSeconds>秒</ProgressSeconds>
+<RequestServer>获取建议的服务器</RequestServer>
+<RequestLeagueData>获取联赛数据</RequestLeagueData>
+<RequestLeagueGames>获取联赛比赛</RequestLeagueGames>
+<RequestLive>实时更新</RequestLive>
+<RequestAdd>添加比赛</RequestAdd>
+<RequestDelete>删除比赛</RequestDelete>
+<RequestLogin>登陆</RequestLogin>
+<RequestDetails>获取比赛细节</RequestDetails>
+<RequestTeam>按队伍获取比赛</RequestTeam>
+<RequestTeamData>获取队伍数据</RequestTeamData>
+
+<!--Settings-->
+<WindowTitle>HTLiveSight 选项</WindowTitle>
+<TabGeneral>全局设置</TabGeneral>
+<TabMatches>比赛设置</TabMatches>
+<TabNotifications>提示设置</TabNotifications>
+<TabLanguage>语言</TabLanguage>
+<TabOther>其它</TabOther>
+<TabCustom>Customizations</TabCustom>
+<TabGoalSound>Goals sounds</TabGoalSound>
+<TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
+<TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
+<GeneralOpen>打开 HTLiveSight</GeneralOpen>
+<GeneralNewTab>在新页面打开</GeneralNewTab>
+<GeneralNewWindow>在新窗口打开</GeneralNewWindow>
+<GeneralServer>服务器设置</GeneralServer>
+<GeneralNote>输入你希望登陆的服务器地址 (例如：www96).</GeneralNote>
+<MatchesLeague>联赛比赛</MatchesLeague>
+<MatchesGetLeague>获取联赛比赛</MatchesGetLeague>
+<MatchesPlayed>过去</MatchesPlayed>
+<MatchesHours>小时以内.</MatchesHours>
+<MatchesFriends>朋友</MatchesFriends>
+<MatchesGetFriends>获取朋友的比赛</MatchesGetFriends>
+<MatchesScorers>入球者</MatchesScorers>
+<ScorersList>在标题栏列出进球者</ScorersList>
+<MatchesWindow>窗口</MatchesWindow>
+<MatchesLines>在最小化模式显示行数</MatchesLines>
+<NotifyNotify>提示</NotifyNotify>
+<NotifyEnableSound>启用声音提示</NotifyEnableSound>
+<NotifyOnly>仅在打开的比赛</NotifyOnly>
+<NotifyFlash>标题闪动</NotifyFlash>
+<NotifyStatus>状态栏滚动</NotifyStatus>
+<OtherAuthorization>授权码</OtherAuthorization>
+<OtherReset>取消授权</OtherReset>
+<OtherResetButton>重设</OtherResetButton>
+<OtherReverse>翻转比赛事件显示顺序</OtherReverse>
+<OtherReverseNote>刷新页面后设置生效.</OtherReverseNote>
+<OtherEvents>事件顺序</OtherEvents>
+<OtherEventKey>关键事件</OtherEventKey>
+<OtherEventKeyNote>在评述中显示关键事件</OtherEventKeyNote>
+<CustomIcons>Icons</CustomIcons>
+<CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
+<CustomSounds>Sounds</CustomSounds>
+<CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
+<CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
+<CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
+<CustomSoundsGoal>Original Livefox sounds</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>No sounds for opponent's goals</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Sound for own goal</PathSoundsMyGoal>
+<PathSoundsOpGoal>Sound for goal of my opponent</PathSoundsOpGoal>
+<PathSoundsFrGoal>Sound for goal of friend's</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
+<PathSoundsMiss>Missed goal sound</PathSoundsMiss>
+<PathSoundsSun>Sound for sunny weather</PathSoundsSun>
+<PathSoundsRain>Sound for rainy weather</PathSoundsRain>
+<PathSoundsOvercast>Sound for overcast weather</PathSoundsOvercast>
+<PathSoundsFewClouds>Sound for few clouds weather</PathSoundsFewClouds>
+<PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
+<PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
+<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
+<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
+<PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
+<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
+<PathSoundsRestore>Restore</PathSoundsRestore>
+<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
+<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<LanguageSelect>选择语言</LanguageSelect>
+<LanguageNote>提示: 重启HTLiveSight以保存生效.</LanguageNote>
+<ButtonCancel>取消</ButtonCancel>
+<ButtonOk>确认</ButtonOk>
+
+<!--About-->
+<WindowAboutTitle>关于 HTLiveSight</WindowAboutTitle>
+<TabInfo>Info</TabInfo>
+<TabTranslators>Translators</TabTranslators>
+<TabCredits>Credits</TabCredits>
+<MonthJanuary>1月</MonthJanuary>
+<MonthFebruary>2月</MonthFebruary>
+<MonthMarch>3月</MonthMarch>
+<MonthApril>4月</MonthApril>
+<MonthMay>5月</MonthMay>
+<MonthJune>6月</MonthJune>
+<MonthJuly>7月</MonthJuly>
+<MonthAugust>8月</MonthAugust>
+<MonthSeptember>9月</MonthSeptember>
+<MonthOctober>10月</MonthOctober>
+<MonthNovember>11月</MonthNovember>
+<MonthDecember>12月</MonthDecember>
+<TextCreatedBy>创作者</TextCreatedBy>
+<TextDevelopedBy>开发者</TextDevelopedBy>
+<TextHelpOf>提供了帮助的</TextHelpOf>
+<TextThanksTo>特别鸣谢:</TextThanksTo>
+<ButtonClose>关闭</ButtonClose>
+
+</Htlivesight>

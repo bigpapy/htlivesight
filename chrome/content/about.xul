@@ -5,27 +5,27 @@
 
 <dialog id="htlivesight-about"
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-  title="&window.title;"
+  title="window.title"
   persist="screenX screenY"
   resizable="yes"
   buttons="accept"
-  buttonlabelaccept="&button.close;"
   ondialogaccept="window.close();">
+
+	<script type="application/x-javascript" src="./about.js" />  
+   	<script type="application/x-javascript" src="preferences.js"/>
+  	<script type="application/x-javascript" src="./util/misc.js" />
+	<script type="application/x-javascript" src="./util.js" />
+  
 
   <hbox>
     <tabbox>
-		<tabs>
-			<tab label="TabInfo"/>
-			<tab label="TabTranslators"/>
-			<tab label="TabCredits"/>
-		</tabs>
       <tabpanels>
         <tabpanel orient="vertical" align="center" flex="1">
 		  <image class="chpp" src="chrome://htlivesight/skin/128.png"/>
           <spacer class="tab"/>
-          <label class="header" value="HTLiveSightDEV 0.3.544"/>
-          <label value="1 &month.january; 2012"/>
-          <label value="&text.created_by; Silkevicious and Bigpapy"/>
+          <label class="header" value="HTLiveSightDEV 0.3.552"/>
+          <label id= "creationDate" value=""/>
+          <label id="createdBy" value=""/>
           <separator/>
 		  <label value="Based on HattrickLiveFox"/>
           <label value="http://hattricklivefox.mozdev.org/" class="text-link" href="http://hattricklivefox.mozdev.org/"/>
@@ -35,12 +35,6 @@
 		  <label value="for hosting our project!"/>
 		  <label value="http://www.sourceforge.net/projects/htlivesight" class="text-link" href="http://www.sourceforge.net/projects/htlivesight"/>
         </tabpanel>
-		<tabpanel orient="vertical" align="center" flex="1">
-		<label class="header" value="Thanks to"/>
-		</tabpanel>
-		<tabpanel orient="vertical" align="center" flex="1">
-		<label class="header" value="Thanks to"/>
-		</tabpanel>
       </tabpanels>
     </tabbox>
     <spacer width="10px"/>
@@ -50,5 +44,11 @@
 	  <image class="chpp" src="chrome://htlivesight/skin/oauth.png"/>
     </vbox>
   </hbox>
+  
+  	<script type="text/javascript">
+// localization part!	
+    htlivesight.About.localization();
+ 	</script>	
+  
 </dialog>
 

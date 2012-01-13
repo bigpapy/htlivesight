@@ -22,22 +22,22 @@ htlivesight.DOM = {
 	        return;
 	      }
 	        
-	      Match.List["_"+matchId+"_"+youth].window.mode = setmode;
+	      htlivesight.Match.List["_"+matchId+"_"+youth].window.mode = setmode;
 	
-	      img_file = (setmode == shade ? img.shade.on : img.shade.off); 
+	      img_file = (setmode == shade ? img.shade.ON : img.shade.OFF); 
 	      document.getElementById("shade_" + matchId + "_" + youth).setAttribute("src",img_file);
 	      
-	      img_file = (setmode==minimize ? img.minimize.on : img.minimize.off);
+	      img_file = (setmode==minimize ? img.minimize.ON : img.minimize.OFF);
 	      document.getElementById("minimize_" + matchId + "_" + youth).setAttribute("src", img_file);
 	  
-	      img_file = (setmode==maximize ? img.maximize.on : img.maximize.off);
+	      img_file = (setmode==maximize ? img.maximize.ON : img.maximize.OFF);
 	      document.getElementById("maximize_" + matchId + "_" + youth).setAttribute("src", img_file);
 	//      alert("htlivesight.DOM.window.set");
 	      htlivesight.DOM.window.repaint(matchId, youth);
       }
     },
     repaint: function(matchId, youth) {
-      var match = Match.List["_"+matchId+"_"+youth];
+      var match = htlivesight.Match.List["_"+matchId+"_"+youth];
       var event;
       var elem;
       var first, last;
@@ -96,21 +96,21 @@ htlivesight.DOM = {
   },
   
   toggleTip: function(matchId, youth) {
-    var tip = !Match.List["_"+matchId+"_"+youth].window.tip;
+    var tip = !htlivesight.Match.List["_"+matchId+"_"+youth].window.tip;
     var img = document.getElementById("tip_" + matchId + "_" + youth);
     
-    Match.List["_"+matchId+"_"+youth].window.tip = tip;
-    img.setAttribute("src", tip ? htlivesight.Image.window.info.on : htlivesight.Image.window.info.off);
+    htlivesight.Match.List["_"+matchId+"_"+youth].window.tip = tip;
+    img.setAttribute("src", tip ? htlivesight.Image.window.info.ON : htlivesight.Image.window.info.OFF);
     
     htlivesight.DOM.window.repaint(matchId, youth);
   },
 //added by bigpapy: open new page on tab about match
   toggleSound: function(matchId, youth) {
-	  var sound = !Match.List["_"+matchId+"_"+youth].window.mute;
+	  var sound = !htlivesight.Match.List["_"+matchId+"_"+youth].window.mute;
 	  var img = document.getElementById("sound_" + matchId + "_" + youth);
 //	  var match = Match.List["_"+matchId+"_"+youth];
-	  Match.List["_"+matchId+"_"+youth].window.mute = sound;
-	  img.setAttribute("src", sound ? htlivesight.Image.window.sound.off : htlivesight.Image.window.sound.on);
+	  htlivesight.Match.List["_"+matchId+"_"+youth].window.mute = sound;
+	  img.setAttribute("src", sound ? htlivesight.Image.window.sound.OFF : htlivesight.Image.window.sound.ON);
 //	  alert("prima di delete");
 //	  htlivesight.DOM.window.deleteLiveEvents(match);
 //	  alert("dopo di delete e prima di update");
@@ -123,14 +123,14 @@ htlivesight.DOM = {
   toggleLink: function(matchId, youth) {
 	  var htServer=htlivesight.prefs.general.hattrickServer;
 	  if (!htServer){ 
-		  var strbundle = document.getElementById("stringsauthorize");// internationalization: get local file content.
-       	  var no_htserver=strbundle.getString("no_htserver");
+	//	  var strbundle = document.getElementById("stringsauthorize");// internationalization: get local file content.
+       	  var no_htserver=/*strbundle.getString("no_htserver")*/Util.Parse("NoHTServer",data[0]);
        	  alert(no_htserver);
        	  htServer="www";
       };
 	  var matchLink="http://" + htServer + ".hattrick.org/Club/Matches/Match.aspx?matchID=" + matchId;
 	  if (youth=="True"){ matchLink=matchLink+"&isYouth=True";};
-	  matchpage=window.open(matchLink);
+	 var matchpage=window.open(matchLink);
 	  },
 	  // (end)added by bigpapy: open new page on tab about match
 	  
@@ -154,7 +154,7 @@ htlivesight.DOM = {
       htlivesight.DOM.window.repaint(matchId, youth);
     } else {      
       box.hidden = true;
-      //img.setAttribute("src", htlivesight.Image.live.off);
+      //img.setAttribute("src", htlivesight.Image.live.OFF);
       img.setAttribute("class", "imgwinboxopen");
 
       var curr=box;
@@ -173,7 +173,7 @@ htlivesight.DOM = {
     
     box.hidden = true;
     img.setAttribute("class", "imgwinboxopen");
-    Match.List["_" + matchId + "_" + youth].live = false;
+    htlivesight.Match.List["_" + matchId + "_" + youth].live = false;
     htlivesight.liveCount--;
 
     document.getElementById("short_" + matchId + "_" + youth).hidden = true;
@@ -202,7 +202,7 @@ htlivesight.DOM = {
     return popup;
   },
   createAddTeamToFriendsPopup: function(team) {
-    var strings = document.getElementById("strings");
+ //   var strings = document.getElementById("strings");
     var popupset = document.getElementById("popup_set");
     var popup = document.createElement("popup");
     popup.setAttribute("id", "add_team_" +team.id);
@@ -210,17 +210,18 @@ htlivesight.DOM = {
     popupset.appendChild(popup);
     var menuitem = document.createElement("menuitem");
     popup.appendChild(menuitem);
-    menuitem.setAttribute("label", strings.getString("menu.add_friend") + ": " + team.name);  
-    menuitem.setAttribute("image", htlivesight.Image.friend.add.on);
+    menuitem.setAttribute("label", /*strings.getString("menu.add_friend")*/Util.Parse("MenuAddFriend",data[0]) + ": " + team.name);  
+    menuitem.setAttribute("image", htlivesight.Image.friend.add.ON);
     menuitem.setAttribute("class", "menuitem-iconic");
-    menuitem.setAttribute("oncommand", "htlivesight.Click.addTeamToFriendsList("+team.id+",'"+team.youth+"')");  
+//    menuitem.setAttribute("oncommand", "htlivesight.Click.addTeamToFriendsList("+team.id+",'"+team.youth+"')");
+    menuitem.addEventListener("command", function(){htlivesight.Click.addTeamToFriendsList(team.id,team.youth);},false);
     return popup;
   },
   addServerToPopup: function(server) {
-    var strings = document.getElementById("strings");
+ //   var strings = document.getElementById("strings");
     var serverString = document.getElementById("server");
   //  serverString.setAttribute("label", strings.getString("menu.server") + " " + server.substring(7));
-    serverString.setAttribute("label", strings.getString("menu.server") + " " + server);
+    serverString.setAttribute("label", /*strings.getString("menu.server")*/Util.Parse("MenuServer",data[0]) + " " + server);
   },
   createTextElement: function (text, doClean) {
     //var d = document.createElementNS('http://www.w3.org/1999/xhtml', 'html:div');    
@@ -296,15 +297,15 @@ htlivesight.DOM.UpdateLiveMatch = function(match) {
 htlivesight.DOM.UpdateLiveBox = function(match) {
   try {
     var box = document.getElementById("live_" + match.id + "_" + match.youth);
-    if (!box) CreateElementLiveBox(match);
-    UpdateLiveHeader(match);
-    UpdateLiveEvents(match);
+    if (!box) htlivesight.DOM.CreateElementLiveBox(match);
+    htlivesight.DOM.UpdateLiveHeader(match);
+    htlivesight.DOM.UpdateLiveEvents(match);
   } catch(e) {
     alert("DOM.UpdateLiveBox\n" + e);
   }
 
 };
-function CreateElementLiveBox(match) {
+ htlivesight.DOM.CreateElementLiveBox= function(match) {
   var livebox, hbox, vbox, child;
 
   livebox = document.getElementById("live_box");
@@ -318,11 +319,11 @@ function CreateElementLiveBox(match) {
   vbox = document.createElement("vbox");
   hbox.appendChild(vbox);
   vbox.setAttribute("flex", "1");
-  child = CreateElementGroupboxLiveMatch(match);
+  child = htlivesight.DOM.CreateElementGroupboxLiveMatch(match);
   vbox.appendChild(child);
 }
 
-function CreateElementGroupboxLiveMatch(match) {
+ htlivesight.DOM.CreateElementGroupboxLiveMatch=function(match) {
   var box, /*caption,*/ header, events;
   
   //box = document.createElement("groupbox");
@@ -337,7 +338,7 @@ function CreateElementGroupboxLiveMatch(match) {
   header = htlivesight.DOM.createElementBoxLiveMatchHeader(match);
   box.appendChild(header);
 
-  events = CreateElementGridLiveMatchEvents(match);
+  events = htlivesight.DOM.CreateElementGridLiveMatchEvents(match);
   box.appendChild(events);
 
   return box;
@@ -348,7 +349,7 @@ function CreateElementGroupboxLiveMatch(match) {
  * ----------------------------------------------------------- */
 
 /* --- update header -------- */
-function UpdateLiveHeader(match) {
+ htlivesight.DOM.UpdateLiveHeader= function(match) {
   var label/*, attr*/;
  // var headerElement = document.getElementById("box_header_"+match.id + "_" + match.youth);
   
@@ -456,7 +457,7 @@ function UpdateLiveHeader(match) {
 /* --- Create Header -------------------------- */
 htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   var header, placardbox, box, hbox, vbox, label, /*spacer,*/img;
-  var strings = document.getElementById("strings");
+//  var strings = document.getElementById("strings");
   header = document.createElement("vbox");
   header.setAttribute("class", "box_header");
   header.setAttribute("id", "box_header_"+match.id + "_" + match.youth);
@@ -509,79 +510,79 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 // new added by bigpapy: sound button on header
   img = document.createElement("image");
   box.appendChild(img);
-  img.setAttribute("src", htlivesight.Image.window.sound.on);
+  img.setAttribute("src", htlivesight.Image.window.sound.ON);
   img.setAttribute("id", "sound_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", strings.getString("tooltip.window.sound"));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.sound")*/Util.Parse("TooltipWindowSound",data[0]));
   img.addEventListener('click',  htlivesight.Click.sound, true);
 //new end adding by bigpapy
   
 //added by bigpapy: link button on header
   img = document.createElement("image");
   box.appendChild(img);
-  img.setAttribute("src", htlivesight.Image.window.link.off);
+  img.setAttribute("src", htlivesight.Image.window.link.OFF);
   img.setAttribute("id", "link_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", strings.getString("tooltip.window.link"));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.link")*/Util.Parse("TooltipWindowLink",data[0]));
   img.addEventListener('click',  htlivesight.Click.link, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
 // end adding by bigpapy  
   img = document.createElement("image");
   box.appendChild(img);
-  img.setAttribute("src", htlivesight.Image.window.info.on);
+  img.setAttribute("src", htlivesight.Image.window.info.ON);
   img.setAttribute("id", "tip_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", strings.getString("tooltip.window.info"));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.info")*/Util.Parse("TooltipWindowInfo",data[0]));
   img.addEventListener('click',  htlivesight.Click.tip, true);
 
   img = document.createElement("image");
   hboxR.appendChild(img);
-  img.setAttribute("src", htlivesight.Image.window.maximize.off);
+  img.setAttribute("src", htlivesight.Image.window.maximize.OFF);
   img.setAttribute("id", "maximize_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", strings.getString("tooltip.window.maximize"));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.maximize")*/Util.Parse("TooltipWindowMaximize",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
   
   img = document.createElement("image");
   hboxR.appendChild(img);
-  img.setAttribute("src", htlivesight.Image.window.minimize.on);
+  img.setAttribute("src", htlivesight.Image.window.minimize.ON);
   img.setAttribute("id", "minimize_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", strings.getString("tooltip.window.minimize"));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.minimize")*/Util.Parse("TooltipWindowMinimize",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
 
   img = document.createElement("image");
   hboxR.appendChild(img);
-  img.setAttribute("src", htlivesight.Image.window.shade.off);
+  img.setAttribute("src", htlivesight.Image.window.shade.OFF);
   img.setAttribute("id", "shade_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", strings.getString("tooltip.window.shade"));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.shade")*/Util.Parse("TooltipWindowShade",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
 
   img = document.createElement("image");
   hboxR.appendChild(img);
-  img.setAttribute("src", htlivesight.Image.window.close.off);
+  img.setAttribute("src", htlivesight.Image.window.close.OFF);
   img.setAttribute("id", "close_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", strings.getString("tooltip.window.close"));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.close")*/Util.Parse("TooltipWindowClose",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
 
   img = document.createElement("image");
   hboxR.appendChild(img);
-  img.setAttribute("src", htlivesight.Image.window.up.off);
+  img.setAttribute("src", htlivesight.Image.window.up.OFF);
   img.setAttribute("id", "moveup_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", strings.getString("tooltip.window.move_up"));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.move_up")*/Util.Parse("TooltipWindowMoveUp",data[0]));
   img.addEventListener('click',  htlivesight.Click.moveUp, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
 
   img = document.createElement("image");
   hboxR.appendChild(img);
-  img.setAttribute("src", htlivesight.Image.window.down.off);
+  img.setAttribute("src", htlivesight.Image.window.down.OFF);
   img.setAttribute("id", "movedown_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", strings.getString("tooltip.window.move_down"));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.move_down")*/Util.Parse("TooltipWindowMoveDown",data[0]));
   img.addEventListener('click',  htlivesight.Click.moveDown, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -715,7 +716,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
  * ----------------------------------------------------------- */
 
 /* --- update events ---------------------------------------- */
-function UpdateLiveEvents(match) {
+ htlivesight.DOM.UpdateLiveEvents=function(match) {
   try {
     var i, ev, evList;
     var row, rows, lastrow;
@@ -724,7 +725,7 @@ function UpdateLiveEvents(match) {
     for (i=evList.first; i <= evList.last; i++) { 	
     	ev = evList["_"+i];
     	if (ev && ev.text != "") {
-    		row = CreateElementRowLiveEvent(match, ev);
+    		row = htlivesight.DOM.CreateElementRowLiveEvent(match, ev);
     		row.setAttribute("id", "ev_row_"+match.id + "_" + match.youth+"_"+i );
     		if (htlivesight.prefs.other.bottomUp){ // reverse order
     			if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-1));// last event
@@ -744,7 +745,7 @@ function UpdateLiveEvents(match) {
 };
 
 /* --- create grid ---------------------------- */
-function CreateElementGridLiveMatchEvents(match) {
+ htlivesight.DOM.CreateElementGridLiveMatchEvents= function(match) {
   try {
     var grid, cols, col, rows/*, row*/;
   
@@ -772,13 +773,13 @@ function CreateElementGridLiveMatchEvents(match) {
 }
 
 /* --- create event row ---------------------------- */
-function CreateElementRowLiveEvent(match, event) {
+ htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
   try {
     var row, l, img, t/*, b*/;
     row = document.createElement("row");
     if (event.subjectTeamId != 0) {
       var isF;
-      isF = Friends.isFriend(event.subjectTeamId, match.youth, !Friends.STRICT);
+      isF = htlivesight.Friends.isFriend(event.subjectTeamId, match.youth, !htlivesight.Friends.STRICT);
       var isHome = match.isHomeTeam(event.subjectTeamId);
       if (isF && isHome) {
         row.setAttribute("class", "friend_home");
@@ -854,20 +855,20 @@ function CreateElementRowLiveEvent(match, event) {
  * Live Match Highlights
  * ----------------------------------------------------------- */
 
-function CreateElementGroupboxHighlights(gameId) {
+ htlivesight.DOM.CreateElementGroupboxHighlights=function(gameId) {
   var groupbox, caption, grid;
   groupbox = document.createElement("groupbox");
   groupbox.setAttribute("class", "highlights");
   caption = document.createElement("caption");
   caption.setAttribute("label", "Highlights");
   groupbox.appendChild(caption);
-  grid = CreateElementGridHighlights(gameId);
+  grid = htlivesight.DOM.CreateElementGridHighlights(gameId);
   groupbox.appendChild(grid);
 
   return groupbox;
 }
 
-function CreateElementGridHighlights(gameId) {
+ htlivesight.DOM.CreateElementGridHighlights=function(gameId) {
   var grid, cols, col, rows, row;
   grid = document.createElement("grid");
   cols = document.createElement("columns");
@@ -885,13 +886,13 @@ function CreateElementGridHighlights(gameId) {
   rows.setAttribute("id", "hl_rows_" + gameId);
   grid.appendChild(rows);
 
-  row = CreateElementRowHighlightEvent();
+  row = htlivesight.DOM.CreateElementRowHighlightEvent();
   rows.appendChild(row);
 
   return grid;
 }
 
-function CreateElementRowHighlightEvent(event) {
+ htlivesight.DOM.CreateElementRowHighlightEvent=function(event) {
   var row, l;
   row = document.createElement("row");
   l = document.createElement("label");
@@ -914,58 +915,59 @@ function CreateElementRowHighlightEvent(event) {
  * ----------------------------------------------------------- */
 
 // Gonzo
-function UpdateElementBoxLeagueTable(league) {
-  var strings = document.getElementById("strings");
-  if (Time.hattrickTime > League.currentRound.date) {matchLeagueStarted = true; 
+ htlivesight.DOM.UpdateElementBoxLeagueTable=function(league) {
+	 var matchLeagueStarted;
+//  var strings = document.getElementById("strings");
+  if (htlivesight.Time.hattrickTime > htlivesight.League.currentRound.date) {matchLeagueStarted = true; 
 	//alert("matchLeagueStarted: "+ matchLeagueStarted + " Time.hattrickTime:"+ Time.hattrickTime + " League.currentRound.date: " + League.currentRound.date);
 }
 else {matchLeagueStarted = false;
 //alert("matchLeagueStarted: "+ matchLeagueStarted + " Time.hattrickTime:"+ Time.hattrickTime + " League.currentRound.date: " + League.currentRound.date);
 }
-  for(var matchid in Match.List){
-    var myMatch = Match.List[matchid];
+  for(var matchid in htlivesight.Match.List){
+    var myMatch = htlivesight.Match.List[matchid];
     if(league.currentRound.id.has(myMatch.id) 
-        && League.currentRound.number > League.teams[Teams.myTeam.id]
+        && htlivesight.League.currentRound.number > htlivesight.League.teams[htlivesight.Teams.myTeam.id]
         && htlivesight.showLeague
-        && League.teams[myMatch.home.team.id]
-        && League.teams[myMatch.away.team.id]){
+        && htlivesight.League.teams[myMatch.home.team.id]
+        && htlivesight.League.teams[myMatch.away.team.id]){
       var homeId = myMatch.home.team.id;
       var awayId = myMatch.away.team.id;
       if (matchLeagueStarted){// if match started take the current round leauge
-      League.teams[homeId].liveMatches = League.currentRound.number;
-      League.teams[awayId].liveMatches = League.currentRound.number;
+      htlivesight.League.teams[homeId].liveMatches = htlivesight.League.currentRound.number;
+      htlivesight.League.teams[awayId].liveMatches = htlivesight.League.currentRound.number;
       } else {// if not take the last current round league
-          League.teams[homeId].liveMatches = League.currentRound.number-1;
-          League.teams[awayId].liveMatches = League.currentRound.number-1;
+          htlivesight.League.teams[homeId].liveMatches = htlivesight.League.currentRound.number-1;
+          htlivesight.League.teams[awayId].liveMatches = htlivesight.League.currentRound.number-1;
       };
-      League.teams[homeId].liveGoalsFor = League.teams[homeId].goalsFor + parseInt(myMatch.home.goals, 10);
-      League.teams[homeId].liveGoalsAgainst = League.teams[homeId].goalsAgainst + parseInt(myMatch.away.goals, 10);
-      League.teams[awayId].liveGoalsFor = League.teams[awayId].goalsFor + parseInt(myMatch.away.goals, 10);
-      League.teams[awayId].liveGoalsAgainst = League.teams[awayId].goalsAgainst + parseInt(myMatch.home.goals, 10);
+      htlivesight.League.teams[homeId].liveGoalsFor = htlivesight.League.teams[homeId].goalsFor + parseInt(myMatch.home.goals, 10);
+      htlivesight.League.teams[homeId].liveGoalsAgainst = htlivesight.League.teams[homeId].goalsAgainst + parseInt(myMatch.away.goals, 10);
+      htlivesight.League.teams[awayId].liveGoalsFor = htlivesight.League.teams[awayId].goalsFor + parseInt(myMatch.away.goals, 10);
+      htlivesight.League.teams[awayId].liveGoalsAgainst = htlivesight.League.teams[awayId].goalsAgainst + parseInt(myMatch.home.goals, 10);
       if(myMatch.home.goals > myMatch.away.goals){
-        League.teams[homeId].livePoints = League.teams[homeId].points + 3;
-        League.teams[awayId].livePoints = League.teams[awayId].points;
+        htlivesight.League.teams[homeId].livePoints = htlivesight.League.teams[homeId].points + 3;
+        htlivesight.League.teams[awayId].livePoints = htlivesight.League.teams[awayId].points;
       }
       else if(myMatch.home.goals < myMatch.away.goals){
-        League.teams[awayId].livePoints = League.teams[awayId].points + 3;
-        League.teams[homeId].livePoints = League.teams[homeId].points;
+        htlivesight.League.teams[awayId].livePoints = htlivesight.League.teams[awayId].points + 3;
+        htlivesight.League.teams[homeId].livePoints = htlivesight.League.teams[homeId].points;
       }
       else if (matchLeagueStarted){// add one point only if matches are started
-        League.teams[homeId].livePoints = League.teams[homeId].points + 1;
-        League.teams[awayId].livePoints = League.teams[awayId].points + 1;
+        htlivesight.League.teams[homeId].livePoints = htlivesight.League.teams[homeId].points + 1;
+        htlivesight.League.teams[awayId].livePoints = htlivesight.League.teams[awayId].points + 1;
       }
     }
   }
-  League.sortTable();
-  for(var id in League.teams){
-    if(League.teams[id].livePosition > League.teams[id].position) League.teams[id].change = "leaguetable_down";
-    else if(League.teams[id].livePosition < League.teams[id].position) League.teams[id].change = "leaguetable_up";
-    else League.teams[id].change = "leaguetable_equal";
+  htlivesight.League.sortTable();
+  for(var id in htlivesight.League.teams){
+    if(htlivesight.League.teams[id].livePosition > htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "leaguetable_down";
+    else if(htlivesight.League.teams[id].livePosition < htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "leaguetable_up";
+    else htlivesight.League.teams[id].change = "leaguetable_equal";
   }
   for(var j=1; j<=8; j++){
     document.getElementById("leaguetable_"+j).setAttribute("style", "");
   }
-  document.getElementById("leaguetable_name").setAttribute("value", strings.getString("league.live_table")+" ("+league.levelUnitName+")");
+  document.getElementById("leaguetable_name").setAttribute("value", /*strings.getString("league.live_table")*/Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")");
   if(league.level == 1){
     document.getElementById("leaguetable_1").setAttribute("style", "background-color: #dfd;");
   }
@@ -984,30 +986,30 @@ else {matchLeagueStarted = false;
     document.getElementById("leaguetable_5").setAttribute("style", "background-color: #ffb;");
     document.getElementById("leaguetable_6").setAttribute("style", "background-color: #ffb;");
   }
-  for(var i in League.teams){
-    if(League.teams[i].livePosition >= 1 && League.teams[i].livePosition <= 8){
-      if(i == Teams.myTeam.id){
-        document.getElementById("leaguetable_"+League.teams[i].livePosition).setAttribute("style", document.getElementById("leaguetable_"+League.teams[i].livePosition).getAttribute("style")+" font-weight: bold;");
+  for(var i in htlivesight.League.teams){
+    if(htlivesight.League.teams[i].livePosition >= 1 && htlivesight.League.teams[i].livePosition <= 8){
+      if(i == htlivesight.Teams.myTeam.id){
+        document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition).setAttribute("style", document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition).getAttribute("style")+" font-weight: bold;");
       }
-      document.getElementById("leaguetable_"+League.teams[i].livePosition+"_name").setAttribute("value", htlivesight.DOM.getTextContent(League.teams[i].name));
-      document.getElementById("leaguetable_"+League.teams[i].livePosition+"_change").setAttribute("class", League.teams[i].change);
-      document.getElementById("leaguetable_"+League.teams[i].livePosition+"_matches").setAttribute("value", League.teams[i].liveMatches);
-      var goals = League.teams[i].liveGoalsFor+"-"+League.teams[i].liveGoalsAgainst;
-      document.getElementById("leaguetable_"+League.teams[i].livePosition+"_goals").setAttribute("value", goals);
-      var diff = League.teams[i].liveGoalsFor - League.teams[i].liveGoalsAgainst;
+      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_name").setAttribute("value", htlivesight.DOM.getTextContent(htlivesight.League.teams[i].name));
+      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_change").setAttribute("class", htlivesight.League.teams[i].change);
+      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_matches").setAttribute("value", htlivesight.League.teams[i].liveMatches);
+      var goals = htlivesight.League.teams[i].liveGoalsFor+"-"+htlivesight.League.teams[i].liveGoalsAgainst;
+      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goals").setAttribute("value", goals);
+      var diff = htlivesight.League.teams[i].liveGoalsFor - htlivesight.League.teams[i].liveGoalsAgainst;
       if(diff >= 0) diff = "+"+diff;
-      document.getElementById("leaguetable_"+League.teams[i].livePosition+"_goaldif").setAttribute("value", diff);
-      document.getElementById("leaguetable_"+League.teams[i].livePosition+"_points").setAttribute("value", League.teams[i].livePoints);
+      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goaldif").setAttribute("value", diff);
+      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_points").setAttribute("value", htlivesight.League.teams[i].livePoints);
     }
   }
 };
 // End
 
-function UpdateElementBoxLeague(league) {
-  var strings = document.getElementById("strings");
+ htlivesight.DOM.UpdateElementBoxLeague=function(league) {
+//  var strings = document.getElementById("strings");
   document.getElementById("winbox_leaguematches").collapsed=false;
-  var number = strings.getString("league.round") + " " + league.currentRound.number;
-  var date = Time.formatDate(league.currentRound.date);
+  var number = /*strings.getString("league.round")*/Util.Parse("LeagueRound",data[0]) + " " + league.currentRound.number;
+  var date = htlivesight.Time.formatDate(league.currentRound.date);
 
   document.getElementById("league_round_number").setAttribute("value", number);
   document.getElementById("league_round_date").setAttribute("value", date);
@@ -1016,11 +1018,11 @@ function UpdateElementBoxLeague(league) {
 };
 
 
-function CreateElementRowLeagueGame(gameId) {
+ htlivesight.DOM.CreateElementRowLeagueGame=function(gameId) {
   var rows, row;
   
   rows = document.getElementById("league_grid_rows");
-  row = CreateElementRowShortGame(gameId);
+  row = htlivesight.DOM.CreateElementRowShortGame(gameId);
   rows.appendChild(row);
 
 }
@@ -1031,9 +1033,9 @@ htlivesight.DOM.UpdateShortBox = function(match) {
     
     elem = document.getElementById("short_" + match.id + "_" + match.youth);
     if (!elem) {
-      elem = CreateElementRowShortGame(match);
-      if (League.currentRound.id.has(match.id) && htlivesight.showLeague) {
-        if (match.getTeamById(Teams.myTeam.id)) {
+      elem = htlivesight.DOM.CreateElementRowShortGame(match);
+      if (htlivesight.League.currentRound.id.has(match.id) && htlivesight.showLeague) {
+        if (match.getTeamById(htlivesight.Teams.myTeam.id)) {
           elem.setAttribute("myLeagueMatch", "true");
         }
         document.getElementById("league_grid_rows").appendChild(elem);
@@ -1047,8 +1049,8 @@ htlivesight.DOM.UpdateShortBox = function(match) {
       label = document.getElementById("league_round_time");
       label.setAttribute("value", match.timeElapsed);
       // Gonzo
-      if(League.currentRound.number > League.teams[Teams.myTeam.id].matches){
-        UpdateElementBoxLeagueTable(League);
+      if(htlivesight.League.currentRound.number > htlivesight.League.teams[htlivesight.Teams.myTeam.id].matches){
+        htlivesight.DOM.UpdateElementBoxLeagueTable(htlivesight.League);
       }
       // End
     }
@@ -1062,7 +1064,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 };
 
 
-function CreateElementRowShortGame(match) {
+ htlivesight.DOM.CreateElementRowShortGame=function(match) {
   var row, l, hbox, /*vbox,*/ image;
 
   row = document.createElement("row");
@@ -1083,7 +1085,7 @@ function CreateElementRowShortGame(match) {
   l.setAttribute("id", "short_home_name_" + match.id + "_" + match.youth);
   
 //adding bold style to friend team
-  if(Friends.isFriend(match.home.team.id,match.youth)) l.setAttribute("style", "font-weight: bold;");
+  if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)) l.setAttribute("style", "font-weight: bold;");
 
   l = document.createElement("label");
   row.appendChild(l);
@@ -1111,13 +1113,13 @@ function CreateElementRowShortGame(match) {
   l.setAttribute("contextmenu", match.away.team.addTeamToFriendsPopup.getAttribute("id"));
   l.setAttribute("id", "short_away_name_" + match.id + "_" + match.youth);
 // adding bold style to friend team
-  if(Friends.isFriend(match.away.team.id,match.youth)) l.setAttribute("style", "font-weight: bold;");
+  if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)) l.setAttribute("style", "font-weight: bold;");
   
   
   image = document.createElement("image");
   row.appendChild(image);
   image.setAttribute("id", "short_liveimage_" + match.id + "_" + match.youth);
-  //image.setAttribute("src", htlivesight.Image.live.off);
+  //image.setAttribute("src", htlivesight.Image.live.OFF);
   image.setAttribute("class", "imgwinboxopen");
   image.setAttribute("match_id", match.id + "_" + match.youth);
   image.addEventListener('click',  htlivesight.Click.ToggleMatch, true);
@@ -1130,7 +1132,7 @@ function CreateElementRowShortGame(match) {
   image.addEventListener('click',  htlivesight.Click.DeleteMatch, true);
   
   return row;
-}
+};
 
 
 

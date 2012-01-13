@@ -2,7 +2,7 @@ htlivesight.Click = {
   Test: function (event) {
     try {
 
-      netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+   //   netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
       var url = Components.classes["@mozilla.org/network/standard-url;1"].createInstance();
       url = url.QueryInterface(Components.interfaces.nsIURL);
       url.spec = "chrome://htlivesight/content/sound/wav.wav";
@@ -35,7 +35,7 @@ htlivesight.Click = {
     var teamId = parseInt(document.getElementById("boxaddmatch").value, 10);
     var youth = (document.getElementById("boxaddyouth").checked?"True":"False");
     if(teamId) {
-      Matches.HTTPGetByTeam(teamId, youth);
+      htlivesight.Matches.HTTPGetByTeam(teamId, youth);
     }
   },
   ClearLog: function() {
@@ -54,65 +54,65 @@ htlivesight.Click = {
     if (next != null && next.hidden == false)
       next = next.nextSibling;
     window.parentNode.insertBefore(window, next);
-    this.setAttribute("src", htlivesight.Image.window.down.off);
+    this.setAttribute("src", htlivesight.Image.window.down.OFF);
   },
   moveUp: function() {
     var id=this.getAttribute("id").split("_");
     var window=document.getElementById("live_"+id[1]+"_"+id[2]);
     var prev=window.previousSibling;
     window.parentNode.insertBefore(window, prev);
-    this.setAttribute("src", htlivesight.Image.window.up.off);
+    this.setAttribute("src", htlivesight.Image.window.up.OFF);
   },
   over: function() {
     var id=this.getAttribute("id").split("_");
-    var windowmode=Match.List["_"+id[1]+"_"+id[2]].window.mode;
+    var windowmode=htlivesight.Match.List["_"+id[1]+"_"+id[2]].window.mode;
     var mode = htlivesight.DOM.mode[id[0]];
     if (mode == windowmode) return;
     switch (mode) {
       case htlivesight.DOM.mode.close:
-        this.setAttribute("src", htlivesight.Image.window.close.on);
+        this.setAttribute("src", htlivesight.Image.window.close.ON);
         break;
       case htlivesight.DOM.mode.shade:
-        this.setAttribute("src", htlivesight.Image.window.shade.on);
+        this.setAttribute("src", htlivesight.Image.window.shade.ON);
         break;
       case htlivesight.DOM.mode.minimize:
-        this.setAttribute("src", htlivesight.Image.window.minimize.on);
+        this.setAttribute("src", htlivesight.Image.window.minimize.ON);
         break;
       case htlivesight.DOM.mode.maximize:
-        this.setAttribute("src", htlivesight.Image.window.maximize.on);
+        this.setAttribute("src", htlivesight.Image.window.maximize.ON);
         break;
       case htlivesight.DOM.mode.moveup:
-        this.setAttribute("src", htlivesight.Image.window.up.on);
+        this.setAttribute("src", htlivesight.Image.window.up.ON);
         break;
       case htlivesight.DOM.mode.movedown:
-        this.setAttribute("src", htlivesight.Image.window.down.on);
+        this.setAttribute("src", htlivesight.Image.window.down.ON);
         break;
-      case htlivesight.DOM.mode.link:          this.setAttribute("src", htlivesight.Image.window.link.on);          break;        }
+      case htlivesight.DOM.mode.link:          this.setAttribute("src", htlivesight.Image.window.link.ON);          break;        }
   },
   out: function() {
     var id=this.getAttribute("id").split("_");
-    var windowmode=Match.List["_"+id[1]+"_"+id[2]].window.mode;
+    var windowmode=htlivesight.Match.List["_"+id[1]+"_"+id[2]].window.mode;
     var mode = htlivesight.DOM.mode[id[0]];
     if (mode == windowmode) return;
     switch (mode) {
       case htlivesight.DOM.mode.close:
-        this.setAttribute("src", htlivesight.Image.window.close.off);
+        this.setAttribute("src", htlivesight.Image.window.close.OFF);
         break;
       case htlivesight.DOM.mode.shade:
-        this.setAttribute("src", htlivesight.Image.window.shade.off);
+        this.setAttribute("src", htlivesight.Image.window.shade.OFF);
         break;
       case htlivesight.DOM.mode.minimize:
-        this.setAttribute("src", htlivesight.Image.window.minimize.off);
+        this.setAttribute("src", htlivesight.Image.window.minimize.OFF);
         break;
       case htlivesight.DOM.mode.maximize:
-        this.setAttribute("src", htlivesight.Image.window.maximize.off);
+        this.setAttribute("src", htlivesight.Image.window.maximize.OFF);
         break;
       case htlivesight.DOM.mode.moveup:
-        this.setAttribute("src", htlivesight.Image.window.up.off);
+        this.setAttribute("src", htlivesight.Image.window.up.OFF);
         break;
       case htlivesight.DOM.mode.movedown:
-        this.setAttribute("src", htlivesight.Image.window.down.off);
-        break;      case htlivesight.DOM.mode.link:          this.setAttribute("src", htlivesight.Image.window.link.off);          break;        
+        this.setAttribute("src", htlivesight.Image.window.down.OFF);
+        break;      case htlivesight.DOM.mode.link:          this.setAttribute("src", htlivesight.Image.window.link.OFF);          break;        
     }
   },  tip: function() {
     var id=this.getAttribute("id").split("_");
@@ -127,7 +127,7 @@ htlivesight.Click = {
     htlivesight.DOM.deleteView(id[2], id[3]);
   },
   addTeamToFriendsList: function(teamId, youth) {
-    Friends.add(teamId, youth);
+    htlivesight.Friends.add(teamId, youth);
   },
   AddButtonListeners: function() {
     var elem;
@@ -158,16 +158,16 @@ htlivesight.Click = {
      document.getElementById("button_login").disabled=true;
   },
   removeFriend: function() {
-    Friends.remove();
+    htlivesight.Friends.remove();
   },
   addFriendMatch: function() {
-    Friends.addMatch();
+    htlivesight.Friends.addMatch();
   },
   moveUpFriend: function() {
-    Friends.moveUp();
+    htlivesight.Friends.moveUp();
   },
   moveDownFriend: function() {
-    Friends.moveDown();
+    htlivesight.Friends.moveDown();
   }
 };
 

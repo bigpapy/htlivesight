@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Htlivesight>
+
+<!--Overlay-->
+<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuStart>Start</MenuStart>
+<MenuOptions>Options</MenuOptions>
+<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+
+<!--Main-->
+<WindowMainTitle>HTLiveSight</WindowMainTitle>
+<MenuServer>Server:</MenuServer>
+<MenuDisconnected>nepřipojen</MenuDisconnected>
+<MenuOptions>Nastavení</MenuOptions>
+<MenuAbout>O HTLiveSightu</MenuAbout>
+<LoginLabel>Přihlášení</LoginLabel>
+<LoginTeamId>Zadej ID tvého týmu</LoginTeamId>
+<LoginUsername>Uživatelské jméno</LoginUsername>
+<LoginRememberMe>Zapamatovat</LoginRememberMe>
+<LoginButton>Přihlásit</LoginButton>
+<LoginReLive>Re-Live</LoginReLive>
+<LoginSpeed>Rychlost</LoginSpeed>
+<LoginByEvent>Po události</LoginByEvent>
+<LeagueMatches>Ligové zápasy</LeagueMatches>
+<LeagueLiveTable>Průběžná tabulka</LeagueLiveTable>
+<LeaguePosition>#</LeaguePosition>
+<LeagueTeam>Tým</LeagueTeam>
+<LeaguePlayed>Z</LeaguePlayed>
+<LeagueGoals>G</LeagueGoals>
+<LeagueGoalDiff>+/-</LeagueGoalDiff>
+<LeaguePoints>B</LeaguePoints>
+<MatchesList>Seznam zápasů</MatchesList>
+<MatchesAdd>Přidat zápas</MatchesAdd>
+<MatchesByMatch>Podle ID zápasu</MatchesByMatch>
+<MatchesByTeam>Podle ID týmu</MatchesByTeam>
+<MatchesYouth>Dorostenecký?</MatchesYouth>
+<FriendsTitle>Přátelé</FriendsTitle>
+<FriendsRemove>Smazat</FriendsRemove>
+<FriendsOpen>Otevřít</FriendsOpen>
+
+<!--Authorize-->
+<Introduction>Jsi přesměrován na stránku CHPP, kde se zobrazí autorizační kód. Pokud ne, zkontroluj prosím, zda nemáš zakázáno automatické otevírání vyskakovacích oken. To buď dočasně vypni, nebo přidej HTLiveSight mezi výjimky.</Introduction>
+<Insert>zadej svůj autorizační kód sem:</Insert>
+<Ending>Nyní je HTLiveSight autorizován. Klikni na OK, aby se aplikace restartovala.</Ending>
+<Error401>Chyba 401: neautorizovaný přístup. Musíš se autorizovat znovu. Klikni na OK k pokračování.</Error401>
+<Error404>Chyba 404: požadovaný zdroj nemohl být nalezen. Pokud se tato chyba zobrazí znovu, zkontroluj, jestli vývojáři HT dočasně nevypnuli CHPP rozhraní.</Error404>
+<Error0>Chyba 0: nejsi připojen k internetu.</Error0>
+<Error>Chyba</Error>
+<ServerON>Připojeno</ServerON>
+<ServerOFF>Nepřipojeno</ServerOFF>
+<ResetToken>Autorizace byla odstraněna. Restartuj HTLS, nebo počkej na aktualizaci (cca 1 min.).</ResetToken>
+<NoHTServer>Nevybral(a) jsi server Hattricku, na který jsi se přihlásil(a) přes svůj prohlížeč. Klikni pravým tlačítkem myši na pozadí => možnosti => obecné => vyplň číslo serveru.</NoHTServer>
+<Error500>Chyba 500: interní chyba serveru (na Hattricku).</Error500>
+<Error503>Chyba 503: CHPP je mimo provoz (dočasné přežížení nebo údržba).</Error503>
+
+<!--Properties-->
+<MatchesMaximum>Nemůžeš sledovat více než 20 zápasů!</MatchesMaximum>
+<LeagueLiveTable>Průběžná tabulka</LeagueLiveTable>
+<LeagueRound>Kolo</LeagueRound>
+<MessageHattrickError>Server Hattricku hlásí chybu.</MessageHattrickError>
+<MessageAlreadyFriend>Již se nachází v přátelích.</MessageAlreadyFriend>
+<MessageErrorReading>Chyba při čtení dat z</MessageErrorReading>
+<MessageLoginNotSuccessful>Přihlášení se nezdařilo.</MessageLoginNotSuccessful>
+<TacticPressing>nátlaková hra</TacticPressing>
+<TacticCA>protiútoky</TacticCA>
+<TacticAIM>útok středem</TacticAIM>
+<TacticAOW>útok po křídlech</TacticAOW>
+<TacticPlayCreative>nápaditá hra</TacticPlayCreative>
+<TacticLongShots>střelba z dálky</TacticLongShots>
+<TimeFirstHalf>1. poločas</TimeFirstHalf>
+<TimeHalfTime>poločasová přestávka</TimeHalfTime>
+<TimeSecondHalf>2. poločas</TimeSecondHalf>
+<TimeExtraTime>prodloužení</TimeExtraTime>
+<TimePenalties>penalty</TimePenalties>
+<TimeFinish>dohráno</TimeFinish>
+<TimeStartsIn>začíná za</TimeStartsIn>
+<TimeDays>dní</TimeDays>
+<TimeHours>hodiny</TimeHours>
+<TimeMinutes>minuty</TimeMinutes>
+<TimeDay>den</TimeDay>
+<TimeHour>hodinu</TimeHour>
+<TimeMinute>minutu</TimeMinute>
+<TimeMin>'</TimeMin>
+<TooltipWindowSound>Aktivovat nebo deaktivovat zvuky pro zápas</TooltipWindowSound>
+<TooltipWindowLink>Odkaz na stránku se zápasem na Hattricku</TooltipWindowLink>
+<TooltipWindowInfo>Zobrazit/skrýt doplňkové události</TooltipWindowInfo>
+<TooltipWindowMaximize>Maximalizovat okno</TooltipWindowMaximize>
+<TooltipWindowMinimize>Minimalizuj okno</TooltipWindowMinimize>
+<TooltipWindowShade>Ukrýt okno</TooltipWindowShade>
+<TooltipWindowClose>Zavřít okno</TooltipWindowClose>
+<TooltipWindowOpen>Otevřít okno</TooltipWindowOpen>
+<TooltipWindowMoveUp>Přesunout toto okno nahoru</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>Přesunout toto okno dolu</TooltipWindowMoveDown>
+<TooltipFriendRemove>Odstranit přítele ze seznamu</TooltipFriendRemove>
+<TooltipFriendMoveUp>Přesunout přítele nahoru</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>Přesunout přítele dolu</TooltipFriendMoveDown>
+<MenuAddFriend>Přítel</MenuAddFriend>
+<MenuServer>Server:</MenuServer>
+<EventGoal>GÓL</EventGoal>
+<EventPenaltyGoal>Penalta: GÓL</EventPenaltyGoal>
+<EventPenaltyMiss>Penalta: MINUL</EventPenaltyMiss>
+<EventInjury>Zranění</EventInjury>
+<EventRed>Červená karta</EventRed>
+<EventYellow2>Druhá žlutá karta</EventYellow2>
+<EventSideLeft>levá strana</EventSideLeft>
+<EventSideRight>pravá strana</EventSideRight>
+<EventSideCenter>střed</EventSideCenter>
+<EventSideFreeKick>volný kop</EventSideFreeKick>
+<EventSidePenalty>penalta</EventSidePenalty>
+<EventSpecialUnpredictable>SE nepředvídatelný</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE střela z dálky</EventSpecialLongShot>
+<EventSpecialQuick>SE rychlý</EventSpecialQuick>
+<EventSpecialLowStamina>nízká kondice</EventSpecialLowStamina>
+<EventSpecialSetPieces>standardky</EventSpecialSetPieces>
+<EventSpecialHead>hlavičkář</EventSpecialHead>
+<EventSpecialExperience>zkušenost</EventSpecialExperience>
+<EventSpecialLowExperience>nízká zkušenost</EventSpecialLowExperience>
+<EventSpecialWinger>+ křídlo</EventSpecialWinger>
+<EventSpecialTechnical>technický</EventSpecialTechnical>
+<EventSpecialCounterAttack>protiútok</EventSpecialCounterAttack>
+<EventSpecialCornerKick>rohový kop</EventSpecialCornerKick>
+<EventSpecialIndirect>nepřímý volný kop</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ nepředvídatelný: dlouhá přihrávka</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ nepředvídatelný: střela</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ nepředvídatelný: speciální akce</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- nepředvídatelný: chyba</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- nepředvídatelný: vlastní gól</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ rychlý: běh a gól</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ rychlý: běh a asistence</EventSpecialQuickAssist>
+<Pullback>zaměření na obranou činnost</Pullback>
+<Underestimation>podcenění</Underestimation>
+<UnderestimationRemove>podcenění zmizelo</UnderestimationRemove>
+<UnderestimationReduceDouble>podcenění sníženo o dvě třetiny</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>podcenění sníženo o třetinu</UnderestimationReduceOnce>
+<OrganizationBreaks>zmatení</OrganizationBreaks>
+<Reorganize>zmatení sníženo</Reorganize>
+<NervesImportantThrillingGame>nezkušenost s velmi důležitými zápasy</NervesImportantThrillingGame>
+<Bruised>náplast</Bruised>
+<Injuried>zranění</Injuried>
+<ModeratelyInjuried>středně těžké zranění</ModeratelyInjuried>
+<BadlyInjuried>těžké zranění</BadlyInjuried>
+<ByHimself>samozranění</ByHimself>
+<ByFoul>po faulu</ByFoul>
+<ExperiencedForward>zkušený útočník</ExperiencedForward>
+<InexperiencedDefender>nezkušený obránce</InexperiencedDefender>
+<WingerHead>křídlo: centr pro hlavičkáře</WingerHead>
+<EventSpecialLongShotDefended>střela z dálky zastavena</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>rychlý vs. rychlý</EventSpecialQuickVsQuick>
+<LongShot>střela z dálky</LongShot>
+<MeteoSpecialTechnicalRain>- technický (-zakončování -tvorba hry)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+ silový (+zakončování +bránění +tvorba hry)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+ technický (+zakončování +tvorba hry)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>- silový (-zakončování -kondice)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>- rychlý (-bránění)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>- rychlý (-bránění -zakončování)</MeteoSpecialQuickRain>
+<YellowNastyPlay>tvrdý faul</YellowNastyPlay>
+<YellowCheating>faul</YellowCheating>
+<ProgressUpdate>Příští aktualizace:</ProgressUpdate>
+<ProgressSeconds>s</ProgressSeconds>
+<RequestServer>Zobrazit doporučený server</RequestServer>
+<RequestLeagueData>Zobrazit ligová data</RequestLeagueData>
+<RequestLeagueGames>Zobrazit ligové zápasy</RequestLeagueGames>
+<RequestLive>Pruběžná aktualizace</RequestLive>
+<RequestAdd>Přidat zápas</RequestAdd>
+<RequestDelete>Smazat zápas</RequestDelete>
+<RequestLogin>Přihlášení</RequestLogin>
+<RequestDetails>Zobrazit detaily zápasu</RequestDetails>
+<RequestTeam>Zobrazit zápas podle týmu</RequestTeam>
+<RequestTeamData>Zobrazit týmová data</RequestTeamData>
+
+<!--Settings-->
+<WindowTitle>Nastavení HTLiveSight</WindowTitle>
+<TabGeneral>Obecné</TabGeneral>
+<TabMatches>Zápasy</TabMatches>
+<TabNotifications>Upozornění na události</TabNotifications>
+<TabLanguage>Jazyk</TabLanguage>
+<TabOther>Ostatní</TabOther>
+<TabCustom>Vzhled a zvuky</TabCustom>
+<TabGoalSound>Zvuky gólů</TabGoalSound>
+<TabWheatherSound>Zvuky počasových událostí a zranění</TabWheatherSound>
+<TabWhistleSound>Zvuky píšťalky rozhodčího a vstřeleného hattricku</TabWhistleSound>
+<GeneralOpen>Otevření HTLiveSightu</GeneralOpen>
+<GeneralNewTab>V novém panelu</GeneralNewTab>
+<GeneralNewWindow>V novém okně</GeneralNewWindow>
+<GeneralServer>Nastavení serveru</GeneralServer>
+<GeneralNote>Doplň číslo serveru, na který jsi přihlášen(a) (např. www96).</GeneralNote>
+<MatchesLeague>Ligové zápasy</MatchesLeague>
+<MatchesGetLeague>Zobrazovat zápasy ligy</MatchesGetLeague>
+<MatchesPlayed>Pokud budou hrány do</MatchesPlayed>
+<MatchesHours>hodin.</MatchesHours>
+<MatchesFriends>Přátelé</MatchesFriends>
+<MatchesGetFriends>Zobrazovat zápasy přátel</MatchesGetFriends>
+<MatchesScorers>Střelci</MatchesScorers>
+<ScorersList>Seznam střelců v záhlaví</ScorersList>
+<MatchesWindow>Okno</MatchesWindow>
+<MatchesLines>Kolik řádků se má zobrazit v minimalizovaném módu</MatchesLines>
+<NotifyNotify>Upozornění na události</NotifyNotify>
+<NotifyEnableSound>Povolit zvukové upozornění na události</NotifyEnableSound>
+<NotifyOnly>Pouze v otevřených zápasech</NotifyOnly>
+<NotifyFlash>Blikající záhlaví</NotifyFlash>
+<NotifyStatus>Upozornění ve stavovém řádku</NotifyStatus>
+<OtherAuthorization>Autorizační kód</OtherAuthorization>
+<OtherReset>Odstranit autorizaci</OtherReset>
+<OtherResetButton>Reset</OtherResetButton>
+<OtherReverse>Nejnovější události nahoře</OtherReverse>
+<OtherReverseNote>Pozn. Obnovte stránku, aby byl vidět efekt provedené změny.</OtherReverseNote>
+<OtherEvents>Sekvence událostí</OtherEvents>
+<OtherEventKey>Vysvětlení události</OtherEventKey>
+<OtherEventKeyNote>Ukázat vysvětlení události v komentáři</OtherEventKeyNote>
+<CustomIcons>Ikony</CustomIcons>
+<CustomIconsOld>Originální ikony z Livefoxu</CustomIconsOld>
+<CustomSounds>Zvuky</CustomSounds>
+<CustomSoundsWeather>Zvuk k počasí na začátku zápasu</CustomSoundsWeather>
+<CustomSoundsTime>Zvuky pro začátek a konec poločasové přestávky</CustomSoundsTime>
+<CustomSoundsSEW>Zvuky pro speciální události zapříčiněné počasím</CustomSoundsSEW>
+<CustomSoundsGoal>Originální zvuky z Livefoxu</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>Žádné zvuky ke gólům tvého soupeře</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Zvuk při gólu tvého týmu</PathSoundsMyGoal>
+<PathSoundsOpGoal>Zvuk při gólu tvého soupeře</PathSoundsOpGoal>
+<PathSoundsFrGoal>Zvuk při gólu týmu, který máš v přátelích</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Zvuk při gólu soupeře týmu, který máš v přátelích</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Zvuk gólu ostatních týmů</PathSoundsOtGoal>
+<PathSoundsMiss>Zvuk neproměněné šance</PathSoundsMiss>
+<PathSoundsSun>Zvuk jasného počasí</PathSoundsSun>
+<PathSoundsRain>Zvuk deštivého počasí</PathSoundsRain>
+<PathSoundsOvercast>Zvuk zataženého počasí</PathSoundsOvercast>
+<PathSoundsFewClouds>Zvuk polojasného počasí</PathSoundsFewClouds>
+<PathSoundsMyBoo>Zvuk zranění tvého hráče</PathSoundsMyBoo>
+<PathSoundsOpBoo>Zvuk zranění hráče soupeře</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Zvuk pro začátek poločasu</PathSoundsWhistleStart>
+<PathSoundsWhistle2>Zvuk pro konec 1. poločasu</PathSoundsWhistle2>
+<PathSoundsWhistle3>Zvuk pro konec zápasu</PathSoundsWhistle3>
+<PathSoundsWhistle>Zvuk žluté či červené karty</PathSoundsWhistle>
+<PathSoundsHattrick>Zvuk vstřeleného hattricku</PathSoundsHattrick>
+<PathSoundsRestore>Restore</PathSoundsRestore>
+<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
+<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<LanguageSelect>Vyber jazyk</LanguageSelect>
+<LanguageNote>Poznámka: Aby se nové nastavení projevilo, je nutné restartovat HTLiveSight.</LanguageNote>
+<ButtonCancel>Storno</ButtonCancel>
+<ButtonOk>OK</ButtonOk>
+
+<!--About-->
+<WindowAboutTitle>O HTLiveSightu</WindowAboutTitle>
+<TabInfo>Info</TabInfo>
+<TabTranslators>Translators</TabTranslators>
+<TabCredits>Credits</TabCredits>
+<MonthJanuary>Led</MonthJanuary>
+<MonthFebruary>Úno</MonthFebruary>
+<MonthMarch>Bře</MonthMarch>
+<MonthApril>Dub</MonthApril>
+<MonthMay>Kvě</MonthMay>
+<MonthJune>Čer</MonthJune>
+<MonthJuly>Čec</MonthJuly>
+<MonthAugust>Srp</MonthAugust>
+<MonthSeptember>Zář</MonthSeptember>
+<MonthOctober>Říj</MonthOctober>
+<MonthNovember>Lis</MonthNovember>
+<MonthDecember>Pro</MonthDecember>
+<TextCreatedBy>Vytvořil uživatel</TextCreatedBy>
+<TextDevelopedBy>Vyvinuto</TextDevelopedBy>
+<TextHelpOf>s pomocí</TextHelpOf>
+<TextThanksTo>Mnohokrát díky:</TextThanksTo>
+<ButtonClose>Zavřít</ButtonClose>
+
+</Htlivesight>

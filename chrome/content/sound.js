@@ -16,7 +16,7 @@ htlivesight.Sound.sample.prototype.play = function() {
 
 
 htlivesight.Sound.start = function() {
-  netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+//  netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
 
   
   //htlivesight.Sound.urlQueryInterface.spec = "chrome://htlivesight/content/sound/wav.wav";

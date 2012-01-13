@@ -1,4 +1,6 @@
-function Team(id, name, shortName, youth) {
+if (!htlivesight) var htlivesight = {};
+
+htlivesight.Team = function Team(id, name, shortName, youth) {
   this.id = id;
   this.name = name;
   this.shortName = shortName;
@@ -6,19 +8,21 @@ function Team(id, name, shortName, youth) {
   this.addTeamToFriendsPopup=null;
 };
 
-var Teams = {
+
+htlivesight.Teams = {
   myTeam: null,
-  list: new Object()
+  list: new Object(),
 };
 
-Teams.update = function(newTeam) {
-  var team = Teams.list["_"+newTeam.id+"_"+newTeam.youth]; 
+
+htlivesight.Teams.update = function(newTeam) {
+  var team = htlivesight.Teams.list["_"+newTeam.id+"_"+newTeam.youth]; 
   if (!team) {
     team=newTeam;
-    Teams.list["_"+team.id+"_"+team.youth] = team;
+    htlivesight.Teams.list["_"+team.id+"_"+team.youth] = team;
     team.addTeamToFriendsPopup = htlivesight.DOM.createAddTeamToFriendsPopup(team);
-    if (Friends.isFriend(team.id, team.youth, !Friends.STRICT)) {
-      Friends.update(team.id, team.name);
+    if (htlivesight.Friends.isFriend(team.id, team.youth, !htlivesight.Friends.STRICT)) {
+      htlivesight.Friends.update(team.id, team.name);
     };
   } else {
     if (!team.name) team.name=newTeam.name;
@@ -27,55 +31,55 @@ Teams.update = function(newTeam) {
   return team;
 };
 
-Team.HTTPGetMyData = function () {
+htlivesight.Team.HTTPGetMyData = function () {
  
     var parameters=[["file","teamdetails"],
                      ["teamID", document.getElementById("teamId").value]
     				];
     
-    Htlivesight.ApiProxy.retrieve(document, parameters, function (xml){Team.ParseMyData(xml);}); 
+    Htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Team.ParseMyData(xml);}); 
 };
 
-Team.ParseMyData = function (xml) {
+htlivesight.Team.ParseMyData = function (xml) {
 
   var myTeam;
 
   try {
     if (xml) {
-      myTeam = Team.ParseTeamData(xml); // return team
-      Teams.myTeam = myTeam;
-      Teams.update(myTeam);
+      myTeam = htlivesight.Team.ParseTeamData(xml); // return team
+      htlivesight.Teams.myTeam = myTeam;
+      htlivesight.Teams.update(myTeam);
     } else {
     	// without this if during authorization you get this error message.
     	if (Htlivesight.ApiProxy.authorized(document.getElementById("teamId").value)) alert("team data not found");
       return;
-    }
+    };
   } catch(e) {
     alert("ParseMyData: " + e);
   }
-  EventSystem.Declare(EventSystem.ev.MY_TEAM);
+  htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TEAM);
 
 };
 
-Team.ParseMyUserData = function (xml) {
-  // nothing to do yet
+htlivesight.Team.ParseMyUserData = function (xml) {
+  ;// nothing to do yet
 };
 
-Team.ParseTeamData = function (xml) {
+htlivesight.Team.ParseTeamData = function (xml) {
   try {
-    var id = Team.ParseTeamId(xml);
+    var id = htlivesight.Team.ParseTeamId(xml);
  //   alert("id: " + id);
-    var name = Team.ParseTeamName(xml);
+    var name = htlivesight.Team.ParseTeamName(xml);
 //    alert("name: "+ name);
-    var shortName = Team.ParseShortTeamName(xml);
+    var shortName = htlivesight.Team.ParseShortTeamName(xml);
  //   alert("Shortname: " + shortName);
-    var youth = Team.ParseYouth(xml);
+    var youth = htlivesight.Team.ParseYouth(xml);
  //   alert("youth: " + youth);
-    team = new Team(id, name, shortName, youth);
+    team = new htlivesight.Team(id, name, shortName, youth);
 
    // team.arena = Team.ParseArena(xml); 
   //  team.country = Team.ParseCountry(xml);
-    team.league = Team.ParseLeague(xml); //Team.ParseLeague return league
+    team.league = htlivesight.Team.ParseLeague(xml); //Team.ParseLeague return league
 
     return team;
   } catch(e) {
@@ -84,25 +88,25 @@ Team.ParseTeamData = function (xml) {
   return null;
 };
 
-Team.ParseTeamId = function (xml) {
+htlivesight.Team.ParseTeamId = function (xml) {
 	return parseInt(Util.Parse("TeamID", xml), 10);
 };
 
-Team.ParseTeamName = function (xml) {
+htlivesight.Team.ParseTeamName = function (xml) {
 	return Util.Parse("TeamName", xml);
 };
 
-Team.ParseShortTeamName = function (xml) {
+htlivesight.Team.ParseShortTeamName = function (xml) {
 	return Util.Parse("ShortTeamName", xml);
 };
 
-Team.ParseYouth = function (xml) {
+htlivesight.Team.ParseYouth = function (xml) {
 	return "False";
 };
 
 
 // this function is never used
-Team.ParseArena = function (xml) {
+htlivesight.Team.ParseArena = function (xml) {
   var id, name;
   try {
  
@@ -121,7 +125,7 @@ Team.ParseArena = function (xml) {
 
 
 // this function is never used.
-Team.ParseCountry = function (xml) {
+htlivesight.Team.ParseCountry = function (xml) {
   var id, name;
   try {
 	  
@@ -138,7 +142,7 @@ Team.ParseCountry = function (xml) {
   return null;
 };
 
-Team.ParseLeague = function (xml) {
+htlivesight.Team.ParseLeague = function (xml) {
   var id, name, level;
   try {
 	  
@@ -151,7 +155,7 @@ Team.ParseLeague = function (xml) {
      level = parseInt(Util.Parse("LeagueLevel",xml),10);
 //    alert("LeagueLevel: " + level);
     
-    var league = new League(id, name, level);
+    var league = new htlivesight.League(id, name, level);
     return league;
   } catch(e) {
     alert("Team.ParseLeague: " + e);

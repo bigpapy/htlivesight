@@ -68,9 +68,23 @@ Htlivesight.ApiProxy = {
 				var requestTokenSecret = text.split(/&/)[1].split(/=/)[1];
 				
 				// internationalization: get local file content.
-				var strbundle = document.getElementById("stringsauthorize");
+			//	var strbundle = document.getElementById("stringsauthorize");
+				// new localization begin
+	//			alert("before prefs (authorize)");
+				  prefs=htlivesight.Preferences.get();
+			//		alert("prefs.language.locale= "+ prefs.language.locale);
+					url = "chrome://htlivesight/content/locale/"+ prefs.language.locale +".xml";
+			//		alert("url"+ url);
+
+
+				languageXML = Htlivesight.loadXml(url);
+
+				data=languageXML.getElementsByTagName("Htlivesight");
+
+				// new localization end
+				
 				// get introduction message
-				var introduction=strbundle.getString("introduction");
+				var introduction=/*strbundle.getString("introduction")*/Util.Parse("Introduction",data[0]);
 				// show it
 				alert(introduction);
 
@@ -82,7 +96,7 @@ Htlivesight.ApiProxy = {
 					
 					//ask the auth code to user and get it only once
 					if (firstTime){				
-						var insert=strbundle.getString("insert");
+						var insert=/*strbundle.getString("insert")*/Util.Parse("Insert",data[0]);
 						var oauthVerifier = prompt(insert,"");
 						firstTime=false;
 					};
@@ -108,24 +122,28 @@ Htlivesight.ApiProxy = {
 					var query = Htlivesight.OAuth.formEncode(msg.parameters);
 					var accessTokenUrl = Htlivesight.ApiProxy.accessTokenUrl + "?" + query;
 					dump("Requesting access token at: " + accessTokenUrl + "\n");
+					
 					Htlivesight.load(accessTokenUrl, function(text) {
-						var accessToken = text.split(/&/)[0].split(/=/)[1];
-						var accessTokenSecret = text.split(/&/)[1].split(/=/)[1];
 						
-						// save access Token
-						Htlivesight.ApiProxy.setAccessToken(accessToken,teamId);
+						try{// added because of error not influent to the target of the function
+							var accessToken = text.split(/&/)[0].split(/=/)[1];
+							var accessTokenSecret = text.split(/&/)[1].split(/=/)[1];
+						
+							// save access Token
+							Htlivesight.ApiProxy.setAccessToken(accessToken,teamId);
 
-						// save access Token Secret
-						Htlivesight.ApiProxy.setAccessTokenSecret(accessTokenSecret,teamId);
+							// save access Token Secret
+							Htlivesight.ApiProxy.setAccessTokenSecret(accessTokenSecret,teamId);
 
-						//internationalization: get string for ending authorization
-						var ending=strbundle.getString("ending");
+							//internationalization: get string for ending authorization
+							var ending=/*strbundle.getString("ending")*/Util.Parse("Ending",data[0]);;
 						
-						// showing ending message
-						alert(ending);
+							// showing ending message
+							alert(ending);
 						
-						chppPage.close();// close CHPP pages
-						document.location.reload();//reload HTLS
+							chppPage.close();// close CHPP pages
+							document.location.reload();//reload HTLS
+						}catch(e){};
 						}, true);
 				}, false);
 
@@ -141,7 +159,19 @@ Htlivesight.ApiProxy = {
 	
 	retrieve : function(doc, parameters, callback) {
 		dump("ApiProxy: attempting to retrieve: " + parameters + "…\n");
-		var strbundle = document.getElementById("stringsauthorize");
+	//	var strbundle = document.getElementById("stringsauthorize");
+		// adding new localization file
+	//	alert("before prefs retrieve");
+		  prefs=htlivesight.Preferences.get();
+		//	alert("prefs.language.locale= "+ prefs.language.locale);
+			url = "chrome://htlivesight/content/locale/"+ prefs.language.locale +".xml";
+		//	alert("url"+ url);
+
+		languageXML = Htlivesight.loadXml(url);
+
+		data=languageXML.getElementsByTagName("Htlivesight");
+		// end adding new localization files
+		
 		var teamId = document.getElementById("teamId").value;
 		if (!Htlivesight.ApiProxy.authorized(teamId)) { // if not authorized...
 			dump("ApiProxy: unauthorized.\n");
@@ -174,25 +204,25 @@ Htlivesight.ApiProxy = {
 			switch (status){
 			
 			case 0:	// error: not connected to internet
-						var serverOFF=strbundle.getString("serverOFF");//i13n: get local string
+						var serverOFF=/*strbundle.getString("serverOFF")*/Util.Parse("ServerOFF",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
-						var error0=strbundle.getString("error0");//i13n: get local string
+						var error0=/*strbundle.getString("error0")*/Util.Parse("Error0",data[0]);//i13n: get local string
 						alert(error0);//show local error message
 						callback(null);
 						break;
 			
 			case 200: // no error
-						var serverON=strbundle.getString("serverON");//i13n: get local string
+						var serverON=/*strbundle.getString("serverON");*/Util.Parse("ServerON",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverON);//update server status in menu
 						callback(x);
 						break;
 
 			case 401: // error: not authorized	
-						dump("ApiProxy: error 401, unauthorized. Arguments: " + parameters + ".\n");
-						var error401=strbundle.getString("error401"); //i13n: get local string
+					//	dump("ApiProxy: error 401, unauthorized. Arguments: " + parameters + ".\n");
+						var error401=/*strbundle.getString("error401")*/Util.Parse("Error401",data[0]); //i13n: get local string
 						alert(error401);// show local error message
 						Htlivesight.ApiProxy.invalidateAccessToken(teamId);//delete access token
-						var serverOFF=strbundle.getString("serverOFF");//i13n: get local string
+						var serverOFF=/*strbundle.getString("serverOFF")*/Util.Parse("ServerOFF",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF); //update server status in menu
 						Htlivesight.ApiProxy.authorize(doc);// start authorize
 						callback(null);
@@ -200,9 +230,9 @@ Htlivesight.ApiProxy = {
 		
 			
 			case 404: // error: requested resource not found
-						var serverOFF=strbundle.getString("serverOFF");//i13n: get local string
+						var serverOFF=/*strbundle.getString("serverOFF")*/Util.Parse("ServerOFF",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
-						var error404=strbundle.getString("error404");//i13n: get local string
+						var error404=/*strbundle.getString("error404")*/Util.Parse("Error404",data[0]);//i13n: get local string
 						alert(error404);//show local error message
 						Live.safeLiveVersionEnabled=true;
 						callback(null);
@@ -210,28 +240,28 @@ Htlivesight.ApiProxy = {
 						
 									
 			case 500:	// error: not connected to internet
-						var serverOFF=strbundle.getString("serverOFF");//i13n: get local string
+						var serverOFF=/*strbundle.getString("serverOFF")*/Util.Parse("ServerOFF",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
-						var error500=strbundle.getString("error500");//i13n: get local string
+						var error500=/*strbundle.getString("error500")*/Util.Parse("Error500",data[0]);//i13n: get local string
 						alert(error500);//show local error message
 						Live.safeLiveVersionEnabled=true;
 						callback(null);
 						break;
 						
 			case 503:	// error: not connected to internet
-						var serverOFF=strbundle.getString("serverOFF");//i13n: get local string
+						var serverOFF=/*strbundle.getString("serverOFF")*/Util.Parse("ServerOFF",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
-						var error503=strbundle.getString("error503");//i13n: get local string
+						var error503=/*strbundle.getString("error503")*/Util.Parse("Error503",data[0]);//i13n: get local string
 						alert(error503);//show local error message
 						Live.safeLiveVersionEnabled=true;
 						callback(null);
 						break;
 						
 			default	:	// all the others errors.
-						dump("ApiProxy: error " + status + ". Arguments: " + parameters + "\n");
-						var serverOFF=strbundle.getString("serverOFF");//i13n: get local string
+				//		dump("ApiProxy: error " + status + ". Arguments: " + parameters + "\n");
+						var serverOFF=/*strbundle.getString("serverOFF")*/Util.Parse("ServerOFF",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF); //update server status in menu
-						var error=strbundle.getString("error");//i13n: get local string
+						var error=/*strbundle.getString("error")*/Util.Parse("Error",data[0]);//i13n: get local string
 						alert(error+":"+status);//show local error message
 						Live.safeLiveVersionEnabled=true;
 						callback(null);
