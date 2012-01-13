@@ -365,7 +365,7 @@ Htlivesight.OAuth.declareClass = function declareClass(parent, name, newConstruc
         }
     }
     return newConstructor;
-}
+};
 
 /** An abstract algorithm for signing messages. */
 Htlivesight.OAuth.declareClass(Htlivesight.OAuth, "SignatureMethod", function OAuthSignatureMethod(){});

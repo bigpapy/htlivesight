@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Htlivesight>
+
+<!--Overlay-->
+<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuStart>Start</MenuStart>
+<MenuOptions>Options</MenuOptions>
+<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+
+<!--Main-->
+<WindowMainTitle>HTLiveSight</WindowMainTitle>
+<MenuServer>Server:</MenuServer>
+<MenuDisconnected>Forbindelsen afbrudt</MenuDisconnected>
+<MenuOptions>Indstillinger</MenuOptions>
+<MenuAbout>Om HTLiveSight</MenuAbout>
+<LoginLabel>Login</LoginLabel>
+<LoginTeamId>Indsæt dit TeamId</LoginTeamId>
+<LoginUsername>Brugernavn</LoginUsername>
+<LoginRememberMe>Husk mig</LoginRememberMe>
+<LoginButton>Login</LoginButton>
+<LoginReLive>Re-Live</LoginReLive>
+<LoginSpeed>Speed</LoginSpeed>
+<LoginByEvent>Per event</LoginByEvent>
+<LeagueMatches>Liga kampe</LeagueMatches>
+<LeagueLiveTable>Live Table</LeagueLiveTable>
+<LeaguePosition>#</LeaguePosition>
+<LeagueTeam>Hold</LeagueTeam>
+<LeaguePlayed>K</LeaguePlayed>
+<LeagueGoals>M</LeagueGoals>
+<LeagueGoalDiff>MF</LeagueGoalDiff>
+<LeaguePoints>PT</LeaguePoints>
+<MatchesList>Kamp liste</MatchesList>
+<MatchesAdd>Tilføj Kamp</MatchesAdd>
+<MatchesByMatch>Via Kamp id</MatchesByMatch>
+<MatchesByTeam>Via Hold id</MatchesByTeam>
+<MatchesYouth>Ungdoms?</MatchesYouth>
+<FriendsTitle>Venner</FriendsTitle>
+<FriendsRemove>Fjern</FriendsRemove>
+<FriendsOpen>Åben</FriendsOpen>
+
+<!--Authorize-->
+<Introduction>Du bliver videresendt til en CHPP side for at få din authorization code. Hvis dette ikke sker, så prøv midlertidigt at deaktivere popup blockere eller tilføj HTlivesight til undtagelses listen.</Introduction>
+<Insert>Indsæt din authorization code her:</Insert>
+<Ending>Nu er HTlivesight autoriseret. Klik OK for at genstarte programmet.</Ending>
+<Error401>Fejl 401: Ikke autoriseret adgang. Du skal køre autorisationsprocessen igen. Klik OK for at fortsætte.</Error401>
+<Error404>Fejl 404: Den ønskede kilde kunne ikke findes. Hvis denne fejl gentages, kontroller om CHPP tjenesten er aktiv.</Error404>
+<Error0>Fejl 0: Ikke tilsluttet internettet.</Error0>
+<Error>Fejl</Error>
+<ServerON>Tilsluttet</ServerON>
+<ServerOFF>Afbrudt</ServerOFF>
+<ResetToken>Autorisationen er fjernet. Genstart HTLS eller vent til næste opdatering (less than 1 minute).</ResetToken>
+<NoHTServer>Du har ikke valgt den server hvos du er logget ind med din browser. Højreklik på baggrunden -> indstillinger -> generelt -> udfyld med dit servernummer.</NoHTServer>
+<Error500>Error 500: internal server error (fra Hattrick)</Error500>
+<Error503>Error 503: CHPP service ikke tilgængelig (midlertidig overbelastning eller vedligeholdelse)</Error503>
+
+<!--Properties-->
+<MatchesMaximum>Kan ikke vise mere end 20 kampe!</MatchesMaximum>
+<LeagueLiveTable>Live stilling</LeagueLiveTable>
+<LeagueRound>Runde</LeagueRound>
+<MessageHattrickError>Hattrick server returnerede en fejl.</MessageHattrickError>
+<MessageAlreadyFriend>Allerede din ven.</MessageAlreadyFriend>
+<MessageErrorReading>Fejl i datalæsning fra.</MessageErrorReading>
+<MessageLoginNotSuccessful>Login lykkedes.</MessageLoginNotSuccessful>
+<TacticPressing>Presspil</TacticPressing>
+<TacticCA>Kontra</TacticCA>
+<TacticAIM>Angrib over midten</TacticAIM>
+<TacticAOW>Angrib via fløjene</TacticAOW>
+<TacticPlayCreative>Spil kreativt</TacticPlayCreative>
+<TacticLongShots>Langskud</TacticLongShots>
+<TimeFirstHalf>Første Halvleg</TimeFirstHalf>
+<TimeHalfTime>Pause</TimeHalfTime>
+<TimeSecondHalf>Anden Halvleg</TimeSecondHalf>
+<TimeExtraTime>Forlænget spilletid</TimeExtraTime>
+<TimePenalties>Straffespark</TimePenalties>
+<TimeFinish>Slut</TimeFinish>
+<TimeStartsIn>Starter om</TimeStartsIn>
+<TimeDays>Dage</TimeDays>
+<TimeHours>Timer</TimeHours>
+<TimeMinutes>Minutter</TimeMinutes>
+<TimeDay>Dag</TimeDay>
+<TimeHour>Time</TimeHour>
+<TimeMinute>Minut</TimeMinute>
+<TimeMin>'</TimeMin>
+<TooltipWindowSound>Aktiver eller deaktiver lyde for kampen</TooltipWindowSound>
+<TooltipWindowLink>Link til kamp siden på Hattrick</TooltipWindowLink>
+<TooltipWindowInfo>Skift information hændelse besked</TooltipWindowInfo>
+<TooltipWindowMaximize>Maximer vindue</TooltipWindowMaximize>
+<TooltipWindowMinimize>Minimer vindue</TooltipWindowMinimize>
+<TooltipWindowShade>Shade vindue</TooltipWindowShade>
+<TooltipWindowClose>Luk vindue</TooltipWindowClose>
+<TooltipWindowOpen>Åbn vindue</TooltipWindowOpen>
+<TooltipWindowMoveUp>Flyt dette vindue op</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>Flyt dette vindue ned</TooltipWindowMoveDown>
+<TooltipFriendRemove>Fjern ven fra liste</TooltipFriendRemove>
+<TooltipFriendMoveUp>Flyt ven op</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>Flyt ven ned</TooltipFriendMoveDown>
+<MenuAddFriend>Ven</MenuAddFriend>
+<MenuServer>Server:</MenuServer>
+<EventGoal>MÅL</EventGoal>
+<EventPenaltyGoal>Straffe: MÅL</EventPenaltyGoal>
+<EventPenaltyMiss>Straffe: MIS</EventPenaltyMiss>
+<EventInjury>Skade</EventInjury>
+<EventRed>Rødt kort</EventRed>
+<EventYellow2>Andet gule kort</EventYellow2>
+<EventSideLeft>venstre</EventSideLeft>
+<EventSideRight>højre</EventSideRight>
+<EventSideCenter>midtfor</EventSideCenter>
+<EventSideFreeKick>frispark</EventSideFreeKick>
+<EventSidePenalty>straffe</EventSidePenalty>
+<EventSpecialUnpredictable>SE uberegnelig</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE langskud</EventSpecialLongShot>
+<EventSpecialQuick>SE hurtig</EventSpecialQuick>
+<EventSpecialLowStamina>lav kondi</EventSpecialLowStamina>
+<EventSpecialSetPieces>dødbold</EventSpecialSetPieces>
+<EventSpecialHead>hovedstød</EventSpecialHead>
+<EventSpecialExperience>+ rutine</EventSpecialExperience>
+<EventSpecialLowExperience>- rutine</EventSpecialLowExperience>
+<EventSpecialWinger>+ fløj</EventSpecialWinger>
+<EventSpecialTechnical>tekniker</EventSpecialTechnical>
+<EventSpecialCounterAttack>kontra</EventSpecialCounterAttack>
+<EventSpecialCornerKick>hjørnespark</EventSpecialCornerKick>
+<EventSpecialIndirect>indirekte frispark</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ uberegnelig: lang aflevering</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ uberegnelig: skud</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ uberegnelig: uventet træk</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- uberegnelig: fejl</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- uberegnelig: selvmål</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ hurtig: løb og scoring</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ hurtig: løb og assist</EventSpecialQuickAssist>
+<Pullback>tilbagetrækning</Pullback>
+<Underestimation>undervurdering</Underestimation>
+<UnderestimationRemove>undervurdering fjernet</UnderestimationRemove>
+<UnderestimationReduceDouble>undervurdering reduceret med 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>undervurdering reduceret med 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>forvirring</OrganizationBreaks>
+<Reorganize>taktisk opfriskning</Reorganize>
+<NervesImportantThrillingGame>nerver i vigtig medrivende kamp</NervesImportantThrillingGame>
+<Bruised>mærket</Bruised>
+<Injuried>skadet</Injuried>
+<ModeratelyInjuried>moderat skade</ModeratelyInjuried>
+<BadlyInjuried>slem skade</BadlyInjuried>
+<ByHimself>selvforskyldt</ByHimself>
+<ByFoul>grundet frispark</ByFoul>
+<ExperiencedForward>rutineret angriber</ExperiencedForward>
+<InexperiencedDefender>urutineret forsvarsspiller</InexperiencedDefender>
+<WingerHead>fløj: indlæg til hovedstødsspecialist</WingerHead>
+<EventSpecialLongShotDefended>langskud afværget</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>hurtig vs hurtig</EventSpecialQuickVsQuick>
+<LongShot>langskud</LongShot>
+<MeteoSpecialTechnicalRain>- tekniker (-målscoring -spilfordeling)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+ kraftfuld (+målscoring +forsvarsspil +spilfordeling)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+ tekniker (+målscoring +spilfordeling)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>- kraftfuld (-målscoring -kondi)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>- hurtig (-forsvarsspil)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>- hurtig (-forsvarsspil -målscoring)</MeteoSpecialQuickRain>
+<YellowNastyPlay>voldsomt spil</YellowNastyPlay>
+<YellowCheating>usportslig opførsel</YellowCheating>
+<ProgressUpdate>Næste opdatering:</ProgressUpdate>
+<ProgressSeconds>s</ProgressSeconds>
+<RequestServer>Få anbefalet server</RequestServer>
+<RequestLeagueData>Hent Liga data</RequestLeagueData>
+<RequestLeagueGames>Hent Liga kampe</RequestLeagueGames>
+<RequestLive>Live opdatering</RequestLive>
+<RequestAdd>Tilføj kamp</RequestAdd>
+<RequestDelete>Slet kamp</RequestDelete>
+<RequestLogin>Login</RequestLogin>
+<RequestDetails>Hent kamp detaljer</RequestDetails>
+<RequestTeam>Hent kamp via Hold</RequestTeam>
+<RequestTeamData>Hent Hold data</RequestTeamData>
+
+<!--Settings-->
+<WindowTitle>HTLiveSight indstillinger</WindowTitle>
+<TabGeneral>Generelt</TabGeneral>
+<TabMatches>Kampe</TabMatches>
+<TabNotifications>Notifikationer</TabNotifications>
+<TabLanguage>Sprog</TabLanguage>
+<TabOther>Andet</TabOther>
+<TabCustom>Tilpasninger</TabCustom>
+<TabGoalSound>Mål lyde</TabGoalSound>
+<TabWheatherSound>Vejrbegivenheder og skader</TabWheatherSound>
+<TabWhistleSound>Dommer lyde og scoret hattrick</TabWhistleSound>
+<GeneralOpen>Åbn HTLiveSight</GeneralOpen>
+<GeneralNewTab>I en ny tab</GeneralNewTab>
+<GeneralNewWindow>I nyt vindue</GeneralNewWindow>
+<GeneralServer>Server indstillinger</GeneralServer>
+<GeneralNote>Indsæt den Hattrick server som du er logget på (fx. www96).</GeneralNote>
+<MatchesLeague>Liga kampe</MatchesLeague>
+<MatchesGetLeague>Hent liga kampe</MatchesGetLeague>
+<MatchesPlayed>Hvis der spilles i</MatchesPlayed>
+<MatchesHours>Timer</MatchesHours>
+<MatchesFriends>Venner</MatchesFriends>
+<MatchesGetFriends>Hent venners kampe</MatchesGetFriends>
+<MatchesScorers>score</MatchesScorers>
+<ScorersList>List score i header</ScorersList>
+<MatchesWindow>Vindue</MatchesWindow>
+<MatchesLines>Linier vises i minimeret mode</MatchesLines>
+<NotifyNotify>Notifikationer</NotifyNotify>
+<NotifyEnableSound>Aktiver lyd notifikationer</NotifyEnableSound>
+<NotifyOnly>Kun i åbnede kampe</NotifyOnly>
+<NotifyFlash>Flash headere</NotifyFlash>
+<NotifyStatus>Status bar slider</NotifyStatus>
+<OtherAuthorization>Autorisations kode</OtherAuthorization>
+<OtherReset>Fjern autorisation</OtherReset>
+<OtherResetButton>Nulstil</OtherResetButton>
+<OtherReverse>Nyeste hændelser øverst i kampreferat</OtherReverse>
+<OtherReverseNote>Genindlæs siden for at se effekten af dine ændringer.</OtherReverseNote>
+<OtherEvents>Rækkefølge af begivenheder.</OtherEvents>
+<OtherEventKey>Eventkey</OtherEventKey>
+<OtherEventKeyNote>Vis eventkey i kommentarerne</OtherEventKeyNote>
+<CustomIcons>Ikoner</CustomIcons>
+<CustomIconsOld>Originale Livefox ikoner i kamp vinduet</CustomIconsOld>
+<CustomSounds>Lyde</CustomSounds>
+<CustomSoundsWeather>Vejrlyd ved kampstart</CustomSoundsWeather>
+<CustomSoundsTime>Lyde for halvlege</CustomSoundsTime>
+<CustomSoundsSEW>Lyde for vejrbegivenheder</CustomSoundsSEW>
+<CustomSoundsGoal>Originale Livefox lyde</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>Ingen lyd for modstanders scoring</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Lyd ved selvmål</PathSoundsMyGoal>
+<PathSoundsOpGoal>Lyd for modstanderscoring</PathSoundsOpGoal>
+<PathSoundsFrGoal>Lyd for scoring af venner</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Lyd for scoring af venners modstander</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Lyd for andre holdscoringer</PathSoundsOtGoal>
+<PathSoundsMiss>Lyd for brændt chance</PathSoundsMiss>
+<PathSoundsSun>Lyd for solskin</PathSoundsSun>
+<PathSoundsRain>Lyd for regnvejr</PathSoundsRain>
+<PathSoundsOvercast>Lyd for overskyet</PathSoundsOvercast>
+<PathSoundsFewClouds>Lyd for let skyet vejr</PathSoundsFewClouds>
+<PathSoundsMyBoo>Lyd for skade på eget hold</PathSoundsMyBoo>
+<PathSoundsOpBoo>Lyd for skade hos modstander</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Fløjte for kickoff 1. og 2. halvleg</PathSoundsWhistleStart>
+<PathSoundsWhistle2>Pausefløjt</PathSoundsWhistle2>
+<PathSoundsWhistle3>Slutfløjt</PathSoundsWhistle3>
+<PathSoundsWhistle>Lyd for gult/rødt kort</PathSoundsWhistle>
+<PathSoundsHattrick>Lyd for hattrick scoring</PathSoundsHattrick>
+<PathSoundsRestore>Restore</PathSoundsRestore>
+<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
+<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<LanguageSelect>Vælg sprog</LanguageSelect>
+<LanguageNote>Note: Genstart HTLiveSight for at dette kan træde i kraft.</LanguageNote>
+<ButtonCancel>Annuller</ButtonCancel>
+<ButtonOk>OK</ButtonOk>
+
+<!--About-->
+<WindowAboutTitle>Om HTLiveSight</WindowAboutTitle>
+<TabInfo>Info</TabInfo>
+<TabTranslators>Translators</TabTranslators>
+<TabCredits>Credits</TabCredits>
+<MonthJanuary>Jan</MonthJanuary>
+<MonthFebruary>Feb</MonthFebruary>
+<MonthMarch>Mar</MonthMarch>
+<MonthApril>Apr</MonthApril>
+<MonthMay>Maj</MonthMay>
+<MonthJune>Jun</MonthJune>
+<MonthJuly>Jul</MonthJuly>
+<MonthAugust>Aug</MonthAugust>
+<MonthSeptember>Sep</MonthSeptember>
+<MonthOctober>Okt</MonthOctober>
+<MonthNovember>Nov</MonthNovember>
+<MonthDecember>Dec</MonthDecember>
+<TextCreatedBy>Skabt af</TextCreatedBy>
+<TextDevelopedBy>Udviklet af</TextDevelopedBy>
+<TextHelpOf>med hjælp fra</TextHelpOf>
+<TextThanksTo>Mange tak til:</TextThanksTo>
+<ButtonClose>Luk</ButtonClose>
+
+</Htlivesight>

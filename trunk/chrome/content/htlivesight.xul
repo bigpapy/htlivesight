@@ -10,7 +10,7 @@
 
 
 
-<window title="&window.title;"
+<window title="window.title"
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 	xmlns:html="http://www.w3.org/1999/xhtml"
 	id="htlivesight-window"
@@ -56,17 +56,17 @@
 	HtlivesightPrefs.init();
 </script>
 
-	<stringbundleset id="strbundles">
-		<stringbundle id="strings" src="chrome://htlivesight/locale/htlivesight.properties"/>
-		<stringbundle id="stringsauthorize" src="chrome://htlivesight/locale/htlivesight.authorize"/>
-	</stringbundleset>
+<!--	<stringbundleset id="strbundles"> -->
+<!--		<stringbundle id="strings" src="chrome://htlivesight/locale/htlivesight.properties"/>  -->
+<!--		<stringbundle id="stringsauthorize" src="chrome://htlivesight/locale/htlivesight.authorize"/> -->
+<!--	</stringbundleset> -->
 
 	<popupset id="popup_set">
 		<popup id="main_popup">
-			<menuitem id="server" label="&menu.server; &menu.disconnected;"/>
+			<menuitem id="server" label="menu.server menu.disconnected"/>
 			<menuseparator/>
-			<menuitem label="&menu.options;" class="menuitem-iconic" oncommand="htlivesight.Options();"/>
-			<menuitem label="&menu.about;" class="menuitem-iconic" oncommand="htlivesight.About();"/>
+			<menuitem id="menuOptions" label="menu.options" class="menuitem-iconic" oncommand="htlivesight.Options();"/>
+			<menuitem id="menuAbout" label="menu.about" class="menuitem-iconic" oncommand="htlivesight.About();"/>
 		</popup>
 	</popupset>
 	
@@ -75,13 +75,13 @@
 			<vbox id="login_box" flex="1" pack="center" align="center">
 				<vbox id="winbox_login" class="winbox">
 					<hbox	class="winboxheader" id="winboxheader_login">
-						<label value="&login.label;"/>
+						<label id="LoginLabel" value="login.label"/>
 						<spacer flex="1"/>
 						<image id="close_login" class="imgwinboxclose"/>
 					</hbox>
 					<vbox class="winboxcontent" id="winboxcontent_login">
 						<vbox id="contentbody_login" class="contentbody">
-							<vbox><groupbox><caption label="&login.label;"/>
+							<vbox><groupbox><caption id="LoginLabel2" label="login.label"/>
 								<grid>
 									<columns>
 										<column/>
@@ -89,17 +89,17 @@
 									</columns>
 									<rows>
 										<row align="center">
-											<label value="&login.teamId;"/>
+											<label id="LoginTeamId" value="login.teamId"/>
 											<textbox maxlength="7" size="7" id="teamId" tabindex="1"/>
 										</row>
 										<row>
-											<checkbox id="save_teamId" label="&login.remember_me;" tabindex="3"/>
-											<button label="&login.button;" id="button_login" tabindex="4"/>	
+											<checkbox id="save_teamId" label="login.remember_me" tabindex="3"/>
+											<button label="login.button" id="button_login" tabindex="4"/>	
 										</row>
 									</rows>
 								</grid>
 								</groupbox>
-								<groupbox><caption label="&login.re_live;"/>
+								<groupbox><caption id="LoginReLive" label="login.re_live"/>
 								<grid>
 									<columns>
 										<column/>
@@ -108,12 +108,12 @@
 									</columns>
 									<rows>
 										<row align="center">									
-											<checkbox id="reLive" label="&login.re_live;" oncommand="htlivesight.reLive();" tabindex="3"/>
+											<checkbox id="reLive" label="login.re_live" oncommand="htlivesight.reLive();" tabindex="3"/>
 										</row>
 										<row align="center">
 											<textbox maxlength="2" size="1" id="reLiveSpeed"/>
-											<label align="center" value="&login.speed;"/>																		
-											<checkbox id="reLiveByEvent" label="&login.by_event;" tabindex="3"/>
+											<label align="center" id="LoginSpeed" value="login.speed"/>																		
+											<checkbox id="reLiveByEvent" label="login.by_event" tabindex="3"/>
 										</row>
 									</rows>
 								</grid>
@@ -130,7 +130,7 @@
 		<vbox id="rightbox" style="overflow: auto;">
 			<vbox id="winbox_leaguematches" class="winbox">
 				<hbox id="winboxheader_leaguematches" class="winboxheader">
-					<label value="&league.matches;"/>
+					<label id="LeagueMatches" value="league.matches"/>
 					<spacer flex="1"/>
 					<image id="imgwinboxopen_leaguematches" class="imgwinboxopen"/>
 					<image id="imgwinboxshade_leaguematches" class="imgwinboxshade"/>
@@ -165,7 +165,7 @@
 			</vbox>
 			<vbox id="winbox_leaguetable" class="winbox" hidden="true">
 				<hbox	class="winboxheader" id="winboxheader_leaguetable">
-					<label id="leaguetable_name" value="&league.live_table;"/>
+					<label id="leaguetable_name" value="league.live_table"/>
 					<spacer flex="1"/>
 					<image id="imgwinboxopen_leaguetable" class="imgwinboxopen"/>
 					<image id="imgwinboxshade_leaguetable" class="imgwinboxshade"/>
@@ -184,13 +184,13 @@
 							</columns>
 							<rows id="leaguetable_grid_rows">
 								<row style="background-color: #ddd; border-bottom-width: 2px; border-bottom-color: black; font-weight: bold;">
-									<label value="&league.position;"/>
-									<label value="&league.team;"/>
+									<label id="LeaguePosition" value="league.position"/>
+									<label id="LeagueTeam" value="league.team"/>
 									<label value=""/>
-									<label value="&league.played;"/>
-									<label value="&league.goals;" style="text-align: center;"/>
-									<label value="&league.goal_diff;"/>
-									<label value="&league.points;"/>
+									<label id="LeaguePlayed" value="league.played"/>
+									<label id="LeagueGoals" value="league.goals" style="text-align: center;"/>
+									<label id="LeagueGoalDiff" value="league.goal_diff"/>
+									<label id="LeaguePoints" value="league.points"/>
 								</row>
 								<row id="leaguetable_1">
 									<label value="1."/>
@@ -271,7 +271,7 @@
 			</vbox>
 			<vbox id="winbox_matchlist" class="winbox">
 				<hbox	class="winboxheader" id="winboxheader_matchlist">
-					<label value="&matches.list;"/>
+					<label id="MatchesList" value="matches.list"/>
 					<spacer flex="1"/>
 					<image id="imgwinboxopen_matchlist" class="imgwinboxopen"/>
 					<image id="imgwinboxshade_matchlist" class="imgwinboxshade"/>
@@ -296,7 +296,7 @@
 			<spacer flex="1"/>
 			<vbox id="winbox_friends" class="winbox">
 				<hbox id="winboxheader_friends" class="winboxheader">
-					<label value="&friends.title;"/>
+					<label id="FriendsTitle" value="friends.title"/>
 					<spacer flex="1"/>
 					<image id="imgwinboxopen_friends" class="imgwinboxopen"/>
 					<image id="imgwinboxshade_friends" class="imgwinboxshade"/>
@@ -307,9 +307,9 @@
 							<vbox>
 								<listbox rows="5" id="listbox_friends"/>
 								<hbox>
-									<button image="img/remove1.png" label=" &friends.remove;" id="btnfriend_remove"/>
+									<button image="img/remove1.png" label=" friends.remove" id="btnfriend_remove"/>
 									<spacer flex="1" collapsed="false"/>
-									<button image="img/next1.png" label=" &friends.open;" id="btnfriend_addmatch" collapsed="false"/>
+									<button image="img/next1.png" label=" friends.open" id="btnfriend_addmatch" collapsed="false"/>
 								</hbox>
 							</vbox>
 							<vbox>
@@ -323,7 +323,7 @@
 			</vbox>
 			<vbox id="winbox_addmatch" class="winbox">
 				<hbox id="winboxheader_addmatch" class="winboxheader">
-					<label value="&matches.add;"/>
+					<label id="MatchesAdd" value="matches.add"/>
 					<spacer flex="1"/>
 					<image id="imgwinboxopen_addmatch" class="imgwinboxopen"/>
 					<image id="imgwinboxshade_addmatch" class="imgwinboxshade"/>
@@ -333,11 +333,11 @@
 						<vbox>
 							<hbox pack="center">
 								<textbox maxlength="10" id="boxaddmatch" readonly="true" tabindex="5"/>
-								<checkbox id="boxaddyouth" label="&matches.youth;" checked="false" tabindex="6"/>
+								<checkbox id="boxaddyouth" label="matches.youth" checked="false" tabindex="6"/>
 							</hbox>
 							<hbox pack="center">
-								<button label="&matches.by_match;" id="buttonAddMatch" tabindex="7"/>
-								<button label="&matches.by_team;" id="buttonAddTeam" tabindex="8"/>
+								<button label="matches.by_match" id="buttonAddMatch" tabindex="7"/>
+								<button label="matches.by_team" id="buttonAddTeam" tabindex="8"/>
 							</hbox>
 						</vbox>
 					</hbox>
@@ -354,4 +354,11 @@
 			</hbox>
 		</vbox>
 	</box>
+
+	<script type="text/javascript">
+
+	// Localization function.
+	htlivesight.localization();
+		</script>
+
 </window>

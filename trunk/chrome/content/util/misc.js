@@ -8,7 +8,10 @@ Htlivesight.load = function(url, callback, crossSite) {
 		var req = new XMLHttpRequest();
 		if (!callback) {
 			req.open("GET", url, false);
-			req.send(null);
+			if (typeof(req.overrideMimeType) == "function")
+				req.overrideMimeType("text/plain");
+			try
+			{req.send(null);}catch(e){alert(e);}
 			var response = req.responseText;
 			return response;
 		}
@@ -20,7 +23,7 @@ Htlivesight.load = function(url, callback, crossSite) {
 						callback(req.responseText, req.status);
 					}
 					catch (e) {
-						dump("Uncaught callback error:"+ e);
+						alert("Uncaught callback error:"+ e);
 					}
 				}
 			};
@@ -53,9 +56,10 @@ Htlivesight.loadXml = function(url, callback, crossSite) {
 			var parser = new DOMParser();
 			var xml = parser.parseFromString(text, "text/xml");
 			return xml;
+
 		}
 		catch (e) {
-			dump("Cannot parse XML:\n" + text + "\n"+ e);
+			alert("Cannot parse XML:\n" + text + "\n"+ e);
 			return null;
 		}
 	}

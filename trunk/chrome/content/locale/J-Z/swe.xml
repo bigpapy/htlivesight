@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Htlivesight>
+
+<!--Overlay-->
+<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuStart>Start</MenuStart>
+<MenuOptions>Options</MenuOptions>
+<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+
+<!--Main-->
+<WindowMainTitle>HTLiveSight</WindowMainTitle>
+<MenuServer>Server:</MenuServer>
+<MenuDisconnected>frånkopplad</MenuDisconnected>
+<MenuOptions>Inställningar</MenuOptions>
+<MenuAbout>Om HTLiveSight</MenuAbout>
+<LoginLabel>Inloggning</LoginLabel>
+<LoginTeamId>Ditt lagID</LoginTeamId>
+<LoginUsername>Användarnamn</LoginUsername>
+<LoginRememberMe>Kom ihåg mig</LoginRememberMe>
+<LoginButton>Logga in</LoginButton>
+<LoginReLive>Re-Live</LoginReLive>
+<LoginSpeed>Hastighet</LoginSpeed>
+<LoginByEvent>Per händelse</LoginByEvent>
+<LeagueMatches>Min serie</LeagueMatches>
+<LeagueLiveTable>Live-tabell</LeagueLiveTable>
+<LeaguePosition>#</LeaguePosition>
+<LeagueTeam>Lag</LeagueTeam>
+<LeaguePlayed>S</LeaguePlayed>
+<LeagueGoals>M</LeagueGoals>
+<LeagueGoalDiff>MS</LeagueGoalDiff>
+<LeaguePoints>P</LeaguePoints>
+<MatchesList>Matchlista</MatchesList>
+<MatchesAdd>Lägg till match</MatchesAdd>
+<MatchesByMatch>Med MatchID</MatchesByMatch>
+<MatchesByTeam>Med lagID</MatchesByTeam>
+<MatchesYouth>Junior?</MatchesYouth>
+<FriendsTitle>Favoritlag</FriendsTitle>
+<FriendsRemove>Ta bort</FriendsRemove>
+<FriendsOpen>Öppna</FriendsOpen>
+
+<!--Authorize-->
+<Introduction>Du sänds vidare till CHPP -sidan för att inleda din autentiseringsprocess. Väl där loggar du in med dina vanliga inloggningsuppgifter för att få din kod för att ge HTLiveSight tillstånd till ditt lags data. Om du inte kommer fram kan det bero på ngn form av pop-up blocker. Inaktivera den tillfälligt isåfall eller lägg till HTLiveSight i listan för undantag.</Introduction>
+<Insert>Klistra in din behörighetskod här:</Insert>
+<Ending>Nu är HTLiveSight godkänt. Klicka OK för att starta om applikationen.</Ending>
+<Error401>Error 401: Obehörig Åtkomst. Du måste fixa tillståndet igen. Klicka på OK för att fortsätta.</Error401>
+<Error404>Error 404: Den begärda resursen kan inte hittas. Om felet visas igen kontrollera Hattricks SysInfo om CHPP är nere.</Error404>
+<Error0>Error 0: Inte ansluten till internet.</Error0>
+<Error>Error</Error>
+<ServerON>Uppkopplad</ServerON>
+<ServerOFF>Frånkopplad</ServerOFF>
+<ResetToken>Behörighetskoden (OAuth) har tagits bort. Starta om HTLS eller vänta på nästa uppdatering (less than 1 minute).</ResetToken>
+<NoHTServer>Du har ej valt korrekt Hattrickserver som du för tillfället också är inloggad på. Högerklicka i HTLS och välj -> Inställningar -> Allmänt och fyll där i korrekt Hattrickserver.</NoHTServer>
+<Error500>Error 500: Internal Server Error (Internt fel på själva webbservern)</Error500>
+<Error503>Error 503: CHPP Service Unavailable (Tillfälligt avbrott/Överbelastning/Underhåll)</Error503>
+
+<!--Properties-->
+<MatchesMaximum>Det går inte att följa fler än tjugo (20) matcher!</MatchesMaximum>
+<LeagueLiveTable>Live-tabell</LeagueLiveTable>
+<LeagueRound>Omgång</LeagueRound>
+<MessageHattrickError>Ett fel returnerades av Hattricks server.</MessageHattrickError>
+<MessageAlreadyFriend>Ingår redan bland dina favoritlag.</MessageAlreadyFriend>
+<MessageErrorReading>Ett fel uppstod när data lästes från</MessageErrorReading>
+<MessageLoginNotSuccessful>Inloggningen misslyckades.</MessageLoginNotSuccessful>
+<TacticPressing>Press</TacticPressing>
+<TacticCA>Kontringsspel</TacticCA>
+<TacticAIM>Anfall i mitten</TacticAIM>
+<TacticAOW>Anfall på kanterna</TacticAOW>
+<TacticPlayCreative>Spela kreativt</TacticPlayCreative>
+<TacticLongShots>Långskott</TacticLongShots>
+<TimeFirstHalf>1:a</TimeFirstHalf>
+<TimeHalfTime>Halvtid</TimeHalfTime>
+<TimeSecondHalf>2:a</TimeSecondHalf>
+<TimeExtraTime>Stopptid</TimeExtraTime>
+<TimePenalties>Straffar</TimePenalties>
+<TimeFinish>Färdigspelad</TimeFinish>
+<TimeStartsIn>Avspark om </TimeStartsIn>
+<TimeDays>dagar</TimeDays>
+<TimeHours>timmar</TimeHours>
+<TimeMinutes>minuter</TimeMinutes>
+<TimeDay>dag</TimeDay>
+<TimeHour>timme</TimeHour>
+<TimeMinute>minut</TimeMinute>
+<TimeMin>'</TimeMin>
+<TooltipWindowSound>Aktivera eller inaktivera ljud för den här matchen</TooltipWindowSound>
+<TooltipWindowLink>Direktlänk till matchsidan på Hattrick</TooltipWindowLink>
+<TooltipWindowInfo>Visa/dölj informationshändelser</TooltipWindowInfo>
+<TooltipWindowMaximize>Visa alla händelser</TooltipWindowMaximize>
+<TooltipWindowMinimize>Visa valt antal rader</TooltipWindowMinimize>
+<TooltipWindowShade>Visa endast matchhuvudet</TooltipWindowShade>
+<TooltipWindowClose>Stäng fönstret</TooltipWindowClose>
+<TooltipWindowOpen>Öppna fönstret</TooltipWindowOpen>
+<TooltipWindowMoveUp>Flytta upp det här fönstret</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>Flytta ner det här fönstret</TooltipWindowMoveDown>
+<TooltipFriendRemove>Ta bort favoritlag från listan</TooltipFriendRemove>
+<TooltipFriendMoveUp>Flytta upp favoritlag</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>Flytta ner favoritlag</TooltipFriendMoveDown>
+<MenuAddFriend>Lägg till favoritlag</MenuAddFriend>
+<MenuServer>Server:</MenuServer>
+<EventGoal>MÅL</EventGoal>
+<EventPenaltyGoal>Straff: MÅL</EventPenaltyGoal>
+<EventPenaltyMiss>Straff: MISS</EventPenaltyMiss>
+<EventInjury>Skada</EventInjury>
+<EventRed>Rött kort</EventRed>
+<EventYellow2>Gult kort (nr.2)</EventYellow2>
+<EventSideLeft>vänster</EventSideLeft>
+<EventSideRight>höger</EventSideRight>
+<EventSideCenter>mitten</EventSideCenter>
+<EventSideFreeKick>frispark</EventSideFreeKick>
+<EventSidePenalty>straff</EventSidePenalty>
+<EventSpecialUnpredictable>SE oförutsägbar</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE långskott</EventSpecialLongShot>
+<EventSpecialQuick>SE snabb</EventSpecialQuick>
+<EventSpecialLowStamina>dålig kondition</EventSpecialLowStamina>
+<EventSpecialSetPieces>fast situation</EventSpecialSetPieces>
+<EventSpecialHead>nickskicklig</EventSpecialHead>
+<EventSpecialExperience>rutin</EventSpecialExperience>
+<EventSpecialLowExperience>bristande rutin</EventSpecialLowExperience>
+<EventSpecialWinger>+ ytter</EventSpecialWinger>
+<EventSpecialTechnical>teknisk</EventSpecialTechnical>
+<EventSpecialCounterAttack>kontring</EventSpecialCounterAttack>
+<EventSpecialCornerKick>hörna</EventSpecialCornerKick>
+<EventSpecialIndirect>indirekt frispark</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ oförutsägbar: long pass</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ oförutsägbar: shot</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ oförutsägbar: special action</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- oförutsägbar: mistake</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- oförutsägbar: own goal</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ snabb: rush and score</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ snabb: rush and assist</EventSpecialQuickAssist>
+<Pullback>tillbakadragning</Pullback>
+<Underestimation>underskattning</Underestimation>
+<UnderestimationRemove>underskattning borta</UnderestimationRemove>
+<UnderestimationReduceDouble>underskattning reducerad 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>underskattning reducerad 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>förvirring</OrganizationBreaks>
+<Reorganize>omorganisation</Reorganize>
+<NervesImportantThrillingGame>nerver</NervesImportantThrillingGame>
+<Bruised>omplåstrad</Bruised>
+<Injuried>skadad</Injuried>
+<ModeratelyInjuried>lätt skada</ModeratelyInjuried>
+<BadlyInjuried>svår skada</BadlyInjuried>
+<ByHimself>på eget grepp</ByHimself>
+<ByFoul>pga fult spel</ByFoul>
+<ExperiencedForward>rutinerad forward</ExperiencedForward>
+<InexperiencedDefender>orutinerad försvarare</InexperiencedDefender>
+<WingerHead>ytter, nickskicklig</WingerHead>
+<EventSpecialLongShotDefended>stoppat långskott</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>snabb vs snabb</EventSpecialQuickVsQuick>
+<LongShot>långskott</LongShot>
+<MeteoSpecialTechnicalRain>- teknisk (-målgörare -spelupplägg)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+ kraftfull (+målgörare +försvar +spelupplägg)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+ teknisk (+målgörare +spelupplägg)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>- kraftfull (-målgörare -kondition)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>- snabb (-försvar)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>- snabb (-försvar -målgörare)</MeteoSpecialQuickRain>
+<YellowNastyPlay>fult spel</YellowNastyPlay>
+<YellowCheating>osportslig</YellowCheating>
+<ProgressUpdate>Uppdateras om:</ProgressUpdate>
+<ProgressSeconds>s</ProgressSeconds>
+<RequestServer>Hämta rekommenderad server</RequestServer>
+<RequestLeagueData>Hämta seriedata</RequestLeagueData>
+<RequestLeagueGames>Hämta seriematcher</RequestLeagueGames>
+<RequestLive>Live-uppdatering</RequestLive>
+<RequestAdd>Lägg till match</RequestAdd>
+<RequestDelete>Ta bort match</RequestDelete>
+<RequestLogin>Inloggning</RequestLogin>
+<RequestDetails>Hämta matchinformation</RequestDetails>
+<RequestTeam>Hämta match efter lag</RequestTeam>
+<RequestTeamData>Hämta lagdata</RequestTeamData>
+
+<!--Settings-->
+<WindowTitle>HTLiveSight - Inställningar</WindowTitle>
+<TabGeneral>Allmänt</TabGeneral>
+<TabMatches>Matcher</TabMatches>
+<TabNotifications>Meddelanden</TabNotifications>
+<TabLanguage>Språk</TabLanguage>
+<TabOther>Övrigt</TabOther>
+<TabCustom>Customizations</TabCustom>
+<TabGoalSound>Goals sounds</TabGoalSound>
+<TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
+<TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
+<GeneralOpen>Öppna HTLiveSight</GeneralOpen>
+<GeneralNewTab>På en ny flik</GeneralNewTab>
+<GeneralNewWindow>I ett nytt fönster</GeneralNewWindow>
+<GeneralServer>Serverinställningar</GeneralServer>
+<GeneralNote>Infoga Hattricks webserver som du är inloggad på (Ex. www78, www96, stage o.s.v.).</GeneralNote>
+<MatchesLeague>Seriematcher</MatchesLeague>
+<MatchesGetLeague>Hämta mina seriematcher</MatchesGetLeague>
+<MatchesPlayed>Om spelade inom</MatchesPlayed>
+<MatchesHours>timmar.</MatchesHours>
+<MatchesFriends>Favoritlag</MatchesFriends>
+<MatchesGetFriends>Hämta matcher för mina favoritlag</MatchesGetFriends>
+<MatchesScorers>Målgörare</MatchesScorers>
+<ScorersList>Visa målgörare i matchens sidhuvud</ScorersList>
+<MatchesWindow>Fönster</MatchesWindow>
+<MatchesLines>Antal rader som visas i minimerat läge</MatchesLines>
+<NotifyNotify>Meddelanden</NotifyNotify>
+<NotifyEnableSound>Spela upp ljud vid matchhändelser</NotifyEnableSound>
+<NotifyOnly>..endast för öppnade matcher</NotifyOnly>
+<NotifyFlash>Blinka matchens sidhuvud vid nya matchhändelser</NotifyFlash>
+<NotifyStatus>Notis i statusfältet (popup)</NotifyStatus>
+<OtherAuthorization>Behörighetskod (OAuth)</OtherAuthorization>
+<OtherReset>Ta bort tillstånd</OtherReset>
+<OtherResetButton>Reset</OtherResetButton>
+<OtherReverse>Ändra läsriktning</OtherReverse>
+<OtherReverseNote>Uppdatera sidan för att se effekten av ändringen.</OtherReverseNote>
+<OtherEvents>Händelser</OtherEvents>
+<OtherEventKey>Händelsekod</OtherEventKey>
+<OtherEventKeyNote>Visa händelsekod i matchkommentaren</OtherEventKeyNote>
+<CustomIcons>Icons</CustomIcons>
+<CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
+<CustomSounds>Sounds</CustomSounds>
+<CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
+<CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
+<CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
+<CustomSoundsGoal>Original Livefox sounds</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>No sounds for opponent's goals</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Sound for own goal</PathSoundsMyGoal>
+<PathSoundsOpGoal>Sound for goal of my opponent</PathSoundsOpGoal>
+<PathSoundsFrGoal>Sound for goal of friend's</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
+<PathSoundsMiss>Missed goal sound</PathSoundsMiss>
+<PathSoundsSun>Sound for sunny weather</PathSoundsSun>
+<PathSoundsRain>Sound for rainy weather</PathSoundsRain>
+<PathSoundsOvercast>Sound for overcast weather</PathSoundsOvercast>
+<PathSoundsFewClouds>Sound for few clouds weather</PathSoundsFewClouds>
+<PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
+<PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
+<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
+<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
+<PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
+<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
+<PathSoundsRestore>Restore</PathSoundsRestore>
+<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
+<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<LanguageSelect>Välj språk</LanguageSelect>
+<LanguageNote>Obs! Firefox måste startas om för att ändringen ska börja gälla.</LanguageNote>
+<ButtonCancel>Avbryt</ButtonCancel>
+<ButtonOk>OK</ButtonOk>
+
+<!--About-->
+<WindowAboutTitle>Om HTLiveSight</WindowAboutTitle>
+<TabInfo>Info</TabInfo>
+<TabTranslators>Translators</TabTranslators>
+<TabCredits>Credits</TabCredits>
+<MonthJanuary>Jan</MonthJanuary>
+<MonthFebruary>Feb</MonthFebruary>
+<MonthMarch>Mar</MonthMarch>
+<MonthApril>Apr</MonthApril>
+<MonthMay>Maj</MonthMay>
+<MonthJune>Jun</MonthJune>
+<MonthJuly>Jul</MonthJuly>
+<MonthAugust>Aug</MonthAugust>
+<MonthSeptember>Sep</MonthSeptember>
+<MonthOctober>Okt</MonthOctober>
+<MonthNovember>Nov</MonthNovember>
+<MonthDecember>Dec</MonthDecember>
+<TextCreatedBy>Skapat av</TextCreatedBy>
+<TextDevelopedBy>Utvecklat av</TextDevelopedBy>
+<TextHelpOf>med hjälp av</TextHelpOf>
+<TextThanksTo>Stort tack till:</TextThanksTo>
+<ButtonClose>Stäng</ButtonClose>
+
+</Htlivesight>

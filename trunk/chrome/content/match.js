@@ -2,8 +2,9 @@
  * Match
  *   constructor and methods        
  * ---------------------------------------------------------------- */
+if (!htlivesight) var htlivesight = {};
 
-function Match(id, date, home, away, event, arena, youth) {
+htlivesight.Match= function(id, date, home, away, event, arena, youth) {
   this.id = id;
   this.date = date;
   this.home = home;
@@ -26,17 +27,18 @@ function Match(id, date, home, away, event, arena, youth) {
   this.timeElapsed="";
   this.live = true;
   this.lastShownEventIndex= -1;
+  this.nextEventTime= 0;
 };
 
-Match.List = new Object();
+htlivesight.Match.List = new Object();
 
-Match.Team = function (id, name, shortName) {
+htlivesight.Match.Team = function (id, name, shortName) {
   this.id = id;
   this.name = Util.RemoveAmpersand(name);
   this.shortName = Util.RemoveAmpersand(shortName);
 };
 
-Match.side = function(team, goals, formation, tactic) {
+htlivesight.Match.side = function(team, goals, formation, tactic) {
   this.team = team;
   this.goals = goals;
   this.formation = formation;
@@ -44,16 +46,16 @@ Match.side = function(team, goals, formation, tactic) {
   this.scorers = null;
 };
 
-Match.events = function(evList) {
+htlivesight.Match.events = function(evList) {
   this.list = evList;
   this.dom = new Array();
 };
 
-Match.prototype.updateTime = function() {
-  this.timeElapsed = Time.getMatchTime(this);
+htlivesight.Match.prototype.updateTime = function() {
+  this.timeElapsed = htlivesight.Time.getMatchTime(this);
 };
 
-Match.prototype.getTeamById = function(teamId) {
+htlivesight.Match.prototype.getTeamById = function(teamId) {
   if (this.home.team.id==teamId) {
     return this.home.team;
   } else if (this.away.team.id==teamId){
@@ -62,7 +64,7 @@ Match.prototype.getTeamById = function(teamId) {
   return null;
 };
 
-Match.prototype.getSideById = function(teamId) {
+htlivesight.Match.prototype.getSideById = function(teamId) {
   if (this.home.team.id==teamId) {
     return this.home;
   } else if (this.away.team.id==teamId){
@@ -71,27 +73,27 @@ Match.prototype.getSideById = function(teamId) {
   return null;
 };
 
-Match.prototype.isHomeTeam = function(teamId) {
+htlivesight.Match.prototype.isHomeTeam = function(teamId) {
   if (this.home.team.id==teamId) {
     return true;
   }
   return false;
 };
 
-Match.prototype.isAwayTeam = function(teamId) {
+htlivesight.Match.prototype.isAwayTeam = function(teamId) {
   if (this.away.team.id==teamId) {
     return true;
   }
   return false;
 };
 
-Match.Update = function (newMatch) {
-  var match = Match.List["_"+newMatch.id+"_"+newMatch.youth];
+htlivesight.Match.Update = function (newMatch) {
+  var match = htlivesight.Match.List["_"+newMatch.id+"_"+newMatch.youth];
   if (!match) {
     // new match!
     // add match to match list
     match = newMatch;
-    Match.List["_"+match.id+"_"+match.youth] = match;
+    htlivesight.Match.List["_"+match.id+"_"+match.youth] = match;
   } else {
     if (newMatch.arena) {
       if (!match.arena) {
@@ -152,8 +154,14 @@ Match.Update = function (newMatch) {
         }else if(match.reLiveByEventEnd){
         	newMatch.reLiveByEventEnd=match.reLiveByEventEnd;
          }
-  
- // end adding by bigpapy 
+  // end adding by bigpapy
+     
+     // new adding by bigpapy (nexteventtime)
+     if (newMatch.nextEventTime) {
+         match.nextEventTime=newMatch.nextEventTime;
+        };
+               
+     // end adding by bigpapy (nexteventtime)
   return match;
 };
 

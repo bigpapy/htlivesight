@@ -1,14 +1,16 @@
-function League() {
+if (!htlivesight) var htlivesight = {};
+
+htlivesight.League= function League() {
 };
 
-var Round = function(number, date) {
+htlivesight.League.Round = function(number, date) {
     this.number = number;
     this.date = date;
     this.id = new Array(0);
     this.elapsedTime=null;
   };
 
-Round.prototype.ElapsedTime = function(now) {
+htlivesight.League.Round.prototype.ElapsedTime = function(now) {
 	var f = now - this.date;
 	if (f > 0) {
 	  this.diff="finish.";
@@ -36,50 +38,50 @@ Round.prototype.ElapsedTime = function(now) {
 /* ----------------------------------------------
  * Get League data
  * ---------------------------------------------- */
-League.HTTPGet = function () {
+htlivesight.League.HTTPGet = function () {
  // var URL = HTTP.hattrickServer
  //                     + "/Common/chppxml.axd?file=leaguedetails";
  // EventSystem.HTTPRequest(URL, League.ParseGet, "request.league_data");
 //	alert("League.HTTPGet()");
   var parameters=[["file","leaguedetails"]];
 //  alert("League.HTTPGet(): prima di api proxy");
-  Htlivesight.ApiProxy.retrieve(document, parameters, function(xml){League.ParseGet(xml);});
+  Htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.League.ParseGet(xml);});
 };
 
-League.ParseGet = function(xml) {
-  League.countryId =  parseInt(Util.Parse("LeagueID", xml), 10);
+htlivesight.League.ParseGet = function(xml) {
+  htlivesight.League.countryId =  parseInt(Util.Parse("LeagueID", xml), 10);
   //  parseInt(Util.Parse("<LeagueID>(.*?)</LeagueID>", xml), 10);
 //  alert("LegueID " +League.countryId);
 
-  League.countryName = Util.Parse("LeagueName", xml);
+  htlivesight.League.countryName = Util.Parse("LeagueName", xml);
   //  Util.Parse("<LeagueName>(.*?)</LeagueName>", xml);
 //  alert("LegueName " +League.countryName);
 
-  League.level = parseInt(Util.Parse("LeagueLevel", xml), 10);
+  htlivesight.League.level = parseInt(Util.Parse("LeagueLevel", xml), 10);
   //  parseInt(Util.Parse("<LeagueLevel>(.*?)</LeagueLevel>", xml), 10);
 //  alert("LegueLevel " +League.level);
   
-  League.maxLevel = parseInt(Util.Parse("MaxLevel", xml), 10);
+  htlivesight.League.maxLevel = parseInt(Util.Parse("MaxLevel", xml), 10);
   //  parseInt(Util.Parse("<MaxLevel>(.*?)</MaxLevel>", xml), 10);
 //  alert("MaxLevel " +League.maxLevel);
 
-  League.levelUnitId = parseInt(Util.Parse("LeagueLevelUnitID", xml), 10);
+  htlivesight.League.levelUnitId = parseInt(Util.Parse("LeagueLevelUnitID", xml), 10);
   //  parseInt(Util.Parse("<LeagueLevelUnitID>(.*?)</LeagueLevelUnitID>", xml), 10);
 //  alert("LeagueLevelUnitID " +League.levelUnitId);
   
-  League.levelUnitName = Util.Parse("LeagueLevelUnitName", xml);
+  htlivesight.League.levelUnitName = Util.Parse("LeagueLevelUnitName", xml);
   //  Util.Parse("<LeagueLevelUnitName>(.*?)</LeagueLevelUnitName>", xml);
 //  alert("LeagueLevelUnitName " +League.levelUnitName);
 
-  League.teams = League.ParseTeams(xml);
-  EventSystem.Declare(EventSystem.ev.MY_LEAGUE);
+  htlivesight.League.teams = htlivesight.League.ParseTeams(xml);
+  htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE);
 };
 
-League.ParseTeams = function(xml) {
+htlivesight.League.ParseTeams = function(xml) {
   //var regStr = "(<Team\\s(?:.*?)</Team>)";
  /* var regStr = "(<Team>(.*?)</Team>)";
-  var regExp, found;
-  var teamXml, teams=null;*/
+  var regExp, found;*/
+  var teamXml, teams=null;
   try {
 	//  alert("before leagueTeams = xml.getElementsByTagName(Team)");
 	  var leagueTeams = xml.getElementsByTagName("Team");
@@ -88,7 +90,7 @@ League.ParseTeams = function(xml) {
  //   regExp = new RegExp(regStr, "g");
     teams = new Array(0);
     	for(var j=0;j< leagueTeams.length ;++j){
-    		leagueTeam = leagueTeams[j];
+    		var leagueTeam = leagueTeams[j];
     // for(;found = regExp.exec(xml);) {
 //    	teamXml = found[1];
       // Gonzo remove: teams[teams.length] = Util.Parse("<TeamID>(.*?)</TeamID>", teamXml);
@@ -143,7 +145,7 @@ League.ParseTeams = function(xml) {
     		// End
     }
   } catch(e) {
-    alert("League.ParseGet: " + e);
+    alert("htlivesight.League.ParseGet: " + e);
   }
   return teams;
 
@@ -153,39 +155,39 @@ League.ParseTeams = function(xml) {
  * Get League games
  * ---------------------------------------------- */
 
-League.HTTPFixtures = function () {
+htlivesight.League.HTTPFixtures = function () {
    // var URL = HTTP.hattrickServer
    //                   + "/Common/chppxml.axd?file=leaguefixtures";
                       
- // EventSystem.HTTPRequest(URL, League.ParseFixtures, "request.league_games");
+ // EventSystem.HTTPRequest(URL, htlivesight.League.ParseFixtures, "request.league_games");
     var parameters=[["file","leaguefixtures"]];
-    Htlivesight.ApiProxy.retrieve(document, parameters, function(xml){League.ParseFixtures(xml);});
+    Htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.League.ParseFixtures(xml);});
 };
 
-League.ParseFixtures = function(xml) {
-  var fetchDate = Time.parseFetchDate(xml);
+htlivesight.League.ParseFixtures = function(xml) {
+  var fetchDate = htlivesight.Time.parseFetchDate(xml);
   //var regStr = "(<Match\\s(?:.*?)</Match>)";
-  var regStr = "(<Match>(.*?)</Match>)";
+//  var regStr = "(<Match>(.*?)</Match>)";
 //  var regExp, found;
   try {
 	  var leagueMatches = xml.getElementsByTagName("Match");
-    regExp = new RegExp(regStr, "g");
+//    regExp = new RegExp(regStr, "g");
     var rounds = new Array();  // punto d'inizio della copia
-    var id, round, date/*, home, away*/;
+    var id, round, date, home, away;
     var firstRound=Number.MAX_VALUE, lastRound=Number.MIN_VALUE;
 
     // get all league games from hattrick
     
     for(var j=0;j< leagueMatches.length ;++j){
-		leagueMatch = leagueMatches[j];
+	var	leagueMatch = leagueMatches[j];
     
-      id = League.ParseMatchId(/*found[1]*/leagueMatch);
+      id = htlivesight.League.ParseMatchId(/*found[1]*/leagueMatch);
   //    alert("id " +id);
       
-      round = League.ParseMatchRound(/*found[1]*/leagueMatch);
+      round = htlivesight.League.ParseMatchRound(/*found[1]*/leagueMatch);
   //    alert("round " +round);
       
-      date = League.ParseMatchDate(/*found[1]*/leagueMatch);
+      date = htlivesight.League.ParseMatchDate(/*found[1]*/leagueMatch);
    //   alert("date " +date);
       home = Live.ParseHomeTeam(/*found[1]*/leagueMatch);
   //    alert("home " +home);
@@ -197,7 +199,7 @@ League.ParseFixtures = function(xml) {
       if (round<firstRound) firstRound=round;
 
       if (!rounds[round]) {
-        rounds[round] = new Round(round, date);
+        rounds[round] = new htlivesight.League.Round(round, date);
       }
       rounds[round].id[rounds[round].id.length] = id;
     }
@@ -218,21 +220,21 @@ League.ParseFixtures = function(xml) {
       }
     }
   } catch(e) {
-    alert("League.ParseFixtures (get info): " + e);
+    alert("htlivesight.League.ParseFixtures (get info): " + e);
   }
   try {
     var /*g, h,*/ matchId;
 
-    League.rounds = rounds;
-    League.currentRound = rounds[currentRound];
+    htlivesight.League.rounds = rounds;
+    htlivesight.League.currentRound = rounds[currentRound];
     var p = htlivesight.prefs.matches.league;
-    Time.hattrickTime = Time.parseFetchDate(xml);// bigpapy:this read current time
+    htlivesight.Time.hattrickTime = htlivesight.Time.parseFetchDate(xml);// bigpapy:this read current time
     if (
     		!(htlivesight.prefs.other.reLive) &&
       p.get
       && (
         !p.within
-        || Math.abs(League.currentRound.date-Time.hattrickTime) < p.withinHours*Time.HOUR 
+        || Math.abs(htlivesight.League.currentRound.date-htlivesight.Time.hattrickTime) < p.withinHours*htlivesight.Time.HOUR 
       )
     ) {
       htlivesight.showLeague= true;
@@ -244,32 +246,32 @@ League.ParseFixtures = function(xml) {
     	// Gonzo
       document.getElementById("winbox_leaguetable").hidden = false;
     
-    	  UpdateElementBoxLeagueTable(League);
+    	  htlivesight.DOM.UpdateElementBoxLeagueTable(htlivesight.League);
       // End 
-    	  UpdateElementBoxLeague(League);
+    	  htlivesight.DOM.UpdateElementBoxLeague(htlivesight.League);
  
-      for (i=0; i<rounds[currentRound].id.length; i++) {
+      for (var i=0; i<rounds[currentRound].id.length; i++) {
         matchId = rounds[currentRound].id[i];
         htlivesight.AddLiveMatch(matchId, "False");
       }
     }
   } catch(e) {
-    alert("League.ParseFixtures (set info): " + e);
+    alert("htlivesight.League.ParseFixtures (set info): " + e);
   }
-  EventSystem.Declare(EventSystem.ev.MY_LEAGUE_MATCHES); // punto di fine della copia
+  htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES); // punto di fine della copia
 };
 
 // Gonzo
-League.sortTable = function(){
+htlivesight.League.sortTable = function(){
   var tmp = Array();
-  for(var id in League.teams){
-    tmp[League.teams[id].livePosition] = League.teams[id];
+  for(var id in htlivesight.League.teams){
+    tmp[htlivesight.League.teams[id].livePosition] = htlivesight.League.teams[id];
   }
   var change = true;
   while(change){
     change = false;
     for(var i=1; i<8; i++){
-      if(League.compareTeams(tmp[i], tmp[i+1]) < 0){
+      if(htlivesight.League.compareTeams(tmp[i], tmp[i+1]) < 0){
         var tmpTeam = tmp[i];
         tmp[i] = tmp[i+1];
         tmp[i+1] = tmpTeam;
@@ -278,11 +280,11 @@ League.sortTable = function(){
     }
   }
   for(var j=1; j<=8; j++){
-    League.teams[tmp[j].id].livePosition = j;
+    htlivesight.League.teams[tmp[j].id].livePosition = j;
   }
 };
 
-League.compareTeams = function(team1, team2){
+htlivesight.League.compareTeams = function(team1, team2){
   if(team1.livePoints > team2.livePoints) return 1;
   else{
     if(team1.livePoints < team2.livePoints) return -1;
@@ -309,26 +311,26 @@ League.compareTeams = function(team1, team2){
  * common Parse functions
  * ---------------------------------------------------------------- */
 
-League.ParseMatchId = function(xml) {
+htlivesight.League.ParseMatchId = function(xml) {
 //	return Util.Parse("<MatchID>(.*?)</MatchID>", xml);
 	return parseInt(Util.Parse("MatchID", xml), 10);
 };
 
-League.ParseMatchRound = function(xml) {
+htlivesight.League.ParseMatchRound = function(xml) {
 //  return parseInt(Util.Parse("<MatchRound>(.*?)</MatchRound>", xml), 10);
 	return parseInt(Util.Parse("MatchRound", xml), 10);
 };
 
-League.ParseMatchDate = function(xml) {
+htlivesight.League.ParseMatchDate = function(xml) {
 //  return Time.parseDate(Util.Parse("<MatchDate>(.*?)</MatchDate>", xml));
-	return Time.parseDate(Util.Parse("MatchDate", xml));
+	return htlivesight.Time.parseDate(Util.Parse("MatchDate", xml));
 };
 
-League.parseHomeTeam = function(xml) {
+htlivesight.League.parseHomeTeam = function(xml) {
 //  return Time.parseDate(Util.Parse("<MatchDate>(.*?)</MatchDate>", xml));
 	return Util.Parse("HomeTeam", xml);
 };
-League.parseAwayTeam = function(xml) {
+htlivesight.League.parseAwayTeam = function(xml) {
 //  return Time.parseDate(Util.Parse("<MatchDate>(.*?)</MatchDate>", xml));
   return Util.Parse("AwayTeam", xml);
 };

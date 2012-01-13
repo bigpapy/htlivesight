@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Htlivesight>
+
+<!--Overlay-->
+<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuStart>Start</MenuStart>
+<MenuOptions>Options</MenuOptions>
+<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+
+<!--Main-->
+<WindowMainTitle>HTLiveSight</WindowMainTitle>
+<MenuServer>Servidor:</MenuServer>
+<MenuDisconnected>desconnectat</MenuDisconnected>
+<MenuOptions>Opcions</MenuOptions>
+<MenuAbout>Sobre HTLiveSight</MenuAbout>
+<LoginLabel>Connexió</LoginLabel>
+<LoginTeamId>Introdueix el TeamID del teu equip</LoginTeamId>
+<LoginUsername>Nom d'usuari</LoginUsername>
+<LoginRememberMe>Recordar-me</LoginRememberMe>
+<LoginButton>Connectar</LoginButton>
+<LoginReLive>Re-Live</LoginReLive>
+<LoginSpeed>Speed</LoginSpeed>
+<LoginByEvent>Per event</LoginByEvent>
+<LeagueMatches>Partits de lliga</LeagueMatches>
+<LeagueLiveTable>Taula en viu</LeagueLiveTable>
+<LeaguePosition>#</LeaguePosition>
+<LeagueTeam>Equip</LeagueTeam>
+<LeaguePlayed>J</LeaguePlayed>
+<LeagueGoals>GF</LeagueGoals>
+<LeagueGoalDiff>GD</LeagueGoalDiff>
+<LeaguePoints>PTS</LeaguePoints>
+<MatchesList>Llista de partits</MatchesList>
+<MatchesAdd>Afegir partit</MatchesAdd>
+<MatchesByMatch>Per ID de partit</MatchesByMatch>
+<MatchesByTeam>Per ID d'equip</MatchesByTeam>
+<MatchesYouth>Juvenil?</MatchesYouth>
+<FriendsTitle>Amics</FriendsTitle>
+<FriendsRemove>El·liminar</FriendsRemove>
+<FriendsOpen>Obrir</FriendsOpen>
+
+<!--Authorize-->
+<Introduction>Se't redirigeix a la pàgina CHPP per tal d'obtenir el codi d'autorització. Si no fos el cas, desactiva momentàniament el bloqueig dels "pop-up" o posa l'HTlivesight a la llista d'excepcions.</Introduction>
+<Insert>Introdueix el codi d'autorització aquí:</Insert>
+<Ending>L'HTlivesight ja està autoritzat. Clica OK per reiniciar l'aplicació.</Ending>
+<Error401>Error 401: Accés no autoritzat. Has d'obtenir el codi d'autorització un altre cop. Clica OK per continuar.</Error401>
+<Error404>Error 404: El recurs demanat no s'ha pogut trobar. Si aquest error torna a aparèixer assegura't que el servei de CHPP funciona correctament.</Error404>
+<Error0>Error 0: no estàs connectat a internet.</Error0>
+<Error>Error</Error>
+<ServerON>Connectat</ServerON>
+<ServerOFF>Desconnectat</ServerOFF>
+<ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
+<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.</NoHTServer>
+<Error500>Error 500: internal server error (of Hattrick)</Error500>
+<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
+
+<!--Properties-->
+<MatchesMaximum>No es poden seguir mÃ©s de 20 partits!</MatchesMaximum>
+<LeagueLiveTable>Taula en viu</LeagueLiveTable>
+<LeagueRound>Ronda</LeagueRound>
+<MessageHattrickError>El servidor Hattrick ha retornat un error.</MessageHattrickError>
+<MessageAlreadyFriend>Already your friend!</MessageAlreadyFriend>
+<MessageErrorReading>Error en llegir les dades de</MessageErrorReading>
+<MessageLoginNotSuccessful>Login not successful.</MessageLoginNotSuccessful>
+<TacticPressing>polsar</TacticPressing>
+<TacticCA>contraatacs</TacticCA>
+<TacticAIM>atac pel centre</TacticAIM>
+<TacticAOW>atac per les bandes</TacticAOW>
+<TacticPlayCreative>joc d'especialitats</TacticPlayCreative>
+<TacticLongShots>Long shots</TacticLongShots>
+<TimeFirstHalf>1a part</TimeFirstHalf>
+<TimeHalfTime>mitja part</TimeHalfTime>
+<TimeSecondHalf>2a part</TimeSecondHalf>
+<TimeExtraTime>Prorroga</TimeExtraTime>
+<TimePenalties>Penals</TimePenalties>
+<TimeFinish>Acaba</TimeFinish>
+<TimeStartsIn>Starts in</TimeStartsIn>
+<TimeDays>dies</TimeDays>
+<TimeHours>hores</TimeHours>
+<TimeMinutes>minut</TimeMinutes>
+<TimeDay>dia</TimeDay>
+<TimeHour>hora</TimeHour>
+<TimeMinute>minut</TimeMinute>
+<TimeMin>'</TimeMin>
+<TooltipWindowSound>Activate or deactivate sounds for the match</TooltipWindowSound>
+<TooltipWindowLink>Link to Match Page on Hattrick</TooltipWindowLink>
+<TooltipWindowInfo>Toggle information event messages</TooltipWindowInfo>
+<TooltipWindowMaximize>Maximitzar finestra</TooltipWindowMaximize>
+<TooltipWindowMinimize>Minimize window</TooltipWindowMinimize>
+<TooltipWindowShade>Ressaltar finestra</TooltipWindowShade>
+<TooltipWindowClose>Tancar finestra</TooltipWindowClose>
+<TooltipWindowOpen>Obrir finestra</TooltipWindowOpen>
+<TooltipWindowMoveUp>Move this window up</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>Move this window down</TooltipWindowMoveDown>
+<TooltipFriendRemove>Remove friend from list</TooltipFriendRemove>
+<TooltipFriendMoveUp>Pujar amic</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>Baixar amic</TooltipFriendMoveDown>
+<MenuAddFriend>Amic</MenuAddFriend>
+<MenuServer>Servidor:</MenuServer>
+<EventGoal>GOL</EventGoal>
+<EventPenaltyGoal>Penal: GOL</EventPenaltyGoal>
+<EventPenaltyMiss>Penal: ERRADA</EventPenaltyMiss>
+<EventInjury>Injury</EventInjury>
+<EventRed>Tarjeta vermella</EventRed>
+<EventYellow2>Segona tarjeta groga</EventYellow2>
+<EventSideLeft>esquerra</EventSideLeft>
+<EventSideRight>dreta</EventSideRight>
+<EventSideCenter>centre</EventSideCenter>
+<EventSideFreeKick>falta</EventSideFreeKick>
+<EventSidePenalty>penal</EventSidePenalty>
+<EventSpecialUnpredictable>SE imprevisible</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE tir llunya </EventSpecialLongShot>
+<EventSpecialQuick>SE rapid</EventSpecialQuick>
+<EventSpecialLowStamina>baixa resistencia</EventSpecialLowStamina>
+<EventSpecialSetPieces>pilota aturada</EventSpecialSetPieces>
+<EventSpecialHead>joc aeri</EventSpecialHead>
+<EventSpecialExperience>experiencia</EventSpecialExperience>
+<EventSpecialLowExperience>inexperiencia</EventSpecialLowExperience>
+<EventSpecialWinger>+ lateral</EventSpecialWinger>
+<EventSpecialTechnical>tecnic</EventSpecialTechnical>
+<EventSpecialCounterAttack>contraatac</EventSpecialCounterAttack>
+<EventSpecialCornerKick>llençament de cantonada</EventSpecialCornerKick>
+<EventSpecialIndirect>falta indirecta</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ imprevisible: passada llarga</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ imprevisible: tir</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ imprevisible: accio especial</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- imprevisible: falla</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- imprevisible: gol en propia</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ rapid: sprint i gol</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ rapid: sprint i assistencia</EventSpecialQuickAssist>
+<Pullback>Pullback</Pullback>
+<Underestimation>sobreconfiança</Underestimation>
+<UnderestimationRemove>sense sobreconfiança</UnderestimationRemove>
+<UnderestimationReduceDouble>sobreconfiança reduïda en 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>sobreconfiança reduïda en 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>confusió</OrganizationBreaks>
+<Reorganize>reorganizatió</Reorganize>
+<NervesImportantThrillingGame>nervis en partit important</NervesImportantThrillingGame>
+<Bruised>tocat</Bruised>
+<Injuried>lesionat</Injuried>
+<ModeratelyInjuried>lesió lleu</ModeratelyInjuried>
+<BadlyInjuried>lesió greu</BadlyInjuried>
+<ByHimself>per ell mateix</ByHimself>
+<ByFoul>per falta</ByFoul>
+<ExperiencedForward>davanter expert</ExperiencedForward>
+<InexperiencedDefender>defensa inexpert</InexperiencedDefender>
+<WingerHead>extrem: passada a especialista en joc aeri</WingerHead>
+<EventSpecialLongShotDefended>tir llunya aturat</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>rapid vs rapid</EventSpecialQuickVsQuick>
+<LongShot>tir llunya</LongShot>
+<MeteoSpecialTechnicalRain>-tecnic (-Scoring -Playmaking)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+potent (+Scoring +Defending + Playmaking)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+tecnic (+Scoring +Playmaking)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>-potent (-Scoring -Stamina)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>-rapid (-Defending)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>-rapid (-Defending -Scoring)</MeteoSpecialQuickRain>
+<YellowNastyPlay>joc brut</YellowNastyPlay>
+<YellowCheating>mal comportament</YellowCheating>
+<ProgressUpdate>Next update:</ProgressUpdate>
+<ProgressSeconds>s</ProgressSeconds>
+<RequestServer>Obtenir servidor recomanat</RequestServer>
+<RequestLeagueData>Obtenir dades de la lliga</RequestLeagueData>
+<RequestLeagueGames>Obtenir partits de la lliga</RequestLeagueGames>
+<RequestLive>Actualitzar</RequestLive>
+<RequestAdd>Afegir partit</RequestAdd>
+<RequestDelete>Delete Match</RequestDelete>
+<RequestLogin>Connectar</RequestLogin>
+<RequestDetails>Obtenir detalls del partit</RequestDetails>
+<RequestTeam>Obtenir partit per equip</RequestTeam>
+<RequestTeamData>Obtenir dades de l'equip</RequestTeamData>
+
+<!--Settings-->
+<WindowTitle>Opcions de HTLiveSight</WindowTitle>
+<TabGeneral>General</TabGeneral>
+<TabMatches>Partits</TabMatches>
+<TabNotifications>Notificacions</TabNotifications>
+<TabLanguage>Idioma</TabLanguage>
+<TabOther>Other</TabOther>
+<TabCustom>Customizations</TabCustom>
+<TabGoalSound>Goals sounds</TabGoalSound>
+<TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
+<TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
+<GeneralOpen>Obrir HTLiveSight</GeneralOpen>
+<GeneralNewTab>En un nou tabulador</GeneralNewTab>
+<GeneralNewWindow>En una nova finestra</GeneralNewWindow>
+<GeneralServer>Server settings</GeneralServer>
+<GeneralNote>Insert Hattrick server that you are logged on (ie. www96).</GeneralNote>
+<MatchesLeague>Partits de lliga</MatchesLeague>
+<MatchesGetLeague>Obtenir partits de llige</MatchesGetLeague>
+<MatchesPlayed>Si jugat fa</MatchesPlayed>
+<MatchesHours>hores.</MatchesHours>
+<MatchesFriends>Amics</MatchesFriends>
+<MatchesGetFriends>Obtenir partits d'amics</MatchesGetFriends>
+<MatchesScorers>Anotadors</MatchesScorers>
+<ScorersList>Llistar anotadors</ScorersList>
+<MatchesWindow>Window</MatchesWindow>
+<MatchesLines>Lines to display in minimize mode</MatchesLines>
+<NotifyNotify>Notificacions</NotifyNotify>
+<NotifyEnableSound>Habil·litar notificacions sonores</NotifyEnableSound>
+<NotifyOnly>Només a partits oberts</NotifyOnly>
+<NotifyFlash>Ressaltar capçaleres</NotifyFlash>
+<NotifyStatus>Barra d'estats lliscant</NotifyStatus>
+<OtherAuthorization>Authorization code</OtherAuthorization>
+<OtherReset>Remove authorization</OtherReset>
+<OtherResetButton>Reset</OtherResetButton>
+<OtherReverse>Bottom up display of match events</OtherReverse>
+<OtherReverseNote>Refresh page to see the effect of change.</OtherReverseNote>
+<OtherEvents>Sequence of events</OtherEvents>
+<OtherEventKey>Eventkey</OtherEventKey>
+<OtherEventKeyNote>Show eventkey in the commentary</OtherEventKeyNote>
+<CustomIcons>Icons</CustomIcons>
+<CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
+<CustomSounds>Sounds</CustomSounds>
+<CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
+<CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
+<CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
+<CustomSoundsGoal>Original Livefox sounds</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>No sounds for opponent's goals</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Sound for own goal</PathSoundsMyGoal>
+<PathSoundsOpGoal>Sound for goal of my opponent</PathSoundsOpGoal>
+<PathSoundsFrGoal>Sound for goal of friend's</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
+<PathSoundsMiss>Missed goal sound</PathSoundsMiss>
+<PathSoundsSun>Sound for sunny weather</PathSoundsSun>
+<PathSoundsRain>Sound for rainy weather</PathSoundsRain>
+<PathSoundsOvercast>Sound for overcast weather</PathSoundsOvercast>
+<PathSoundsFewClouds>Sound for few clouds weather</PathSoundsFewClouds>
+<PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
+<PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
+<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
+<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
+<PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
+<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
+<PathSoundsRestore>Restore</PathSoundsRestore>
+<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
+<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<LanguageSelect>Seleccionar idioma</LanguageSelect>
+<LanguageNote>Nota: Reiniciar HTLiveSight per fer efectius els canvis.</LanguageNote>
+<ButtonCancel>Cancel·lar</ButtonCancel>
+<ButtonOk>Acceptar</ButtonOk>
+
+<!--About-->
+<WindowAboutTitle>Sobre HTLiveSight</WindowAboutTitle>
+<TabInfo>Info</TabInfo>
+<TabTranslators>Translators</TabTranslators>
+<TabCredits>Credits</TabCredits>
+<MonthJanuary>Jan</MonthJanuary>
+<MonthFebruary>Feb</MonthFebruary>
+<MonthMarch>Mar</MonthMarch>
+<MonthApril>Abr</MonthApril>
+<MonthMay>Mai</MonthMay>
+<MonthJune>Jun</MonthJune>
+<MonthJuly>Jul</MonthJuly>
+<MonthAugust>Aug</MonthAugust>
+<MonthSeptember>Sep</MonthSeptember>
+<MonthOctober>Oct</MonthOctober>
+<MonthNovember>Nov</MonthNovember>
+<MonthDecember>Dec</MonthDecember>
+<TextCreatedBy>Creat per</TextCreatedBy>
+<TextDevelopedBy>Desenvolupat per</TextDevelopedBy>
+<TextHelpOf>amb l'ajuda de</TextHelpOf>
+<TextThanksTo>Moltes gràcies a:</TextThanksTo>
+<ButtonClose>Tancar</ButtonClose>
+
+</Htlivesight>
