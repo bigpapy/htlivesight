@@ -3,9 +3,9 @@
 
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuStart>Начало</MenuStart>
+<MenuOptions>Опции</MenuOptions>
+<TooltipButton>Нажмите, чтобы открыть меню HTLiveSight</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -234,8 +234,8 @@
 <PathSoundsHattrick>Звук для хеттрика</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<PathSoundsNote1>Введите file:/// перед путём к звуку в формате .wav</PathSoundsNote1>
+<PathSoundsNote2>Например: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Выбор языка</LanguageSelect>
 <LanguageNote>Перезапустите HTLiveSight для ввода в действие</LanguageNote>
 <ButtonCancel>Отмена</ButtonCancel>
@@ -243,9 +243,9 @@
 
 <!--About-->
 <WindowAboutTitle>О HTLiveSight</WindowAboutTitle>
-<TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabInfo>Инфо</TabInfo>
+<TabTranslators>Переводчики</TabTranslators>
+<TabCredits>Разработчики</TabCredits>
 <MonthJanuary>Янв</MonthJanuary>
 <MonthFebruary>Фев</MonthFebruary>
 <MonthMarch>Мар</MonthMarch>
