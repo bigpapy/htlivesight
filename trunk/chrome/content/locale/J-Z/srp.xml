@@ -3,9 +3,9 @@
 
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuStart>Покрени</MenuStart>
+<MenuOptions>Опције</MenuOptions>
+<TooltipButton>Кликни да отвориш HTLiveSight мени</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
