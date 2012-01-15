@@ -4,8 +4,8 @@
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuOptions>Opties</MenuOptions>
+<TooltipButton>Open HTLiveSight menu</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -232,10 +232,10 @@
 <PathSoundsWhistle3>Fluitsignaal einde wedstrijd</PathSoundsWhistle3>
 <PathSoundsWhistle>Geluid bij gele/rode kaart</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick geluid</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<PathSoundsRestore>Herstellen</PathSoundsRestore>
+<PathSoundsPlay>Afspelen</PathSoundsPlay>
+<PathSoundsNote1>Voeg bestand toe:/// voor het pad naar het geluid in .wav formaat</PathSoundsNote1>
+<PathSoundsNote2>Voorbeeld: file:///c:\\pad\naar\het\geluid.wav</PathSoundsNote2>
 <LanguageSelect>Kies taal</LanguageSelect>
 <LanguageNote>Let op: HTLiveSight moet opnieuw worden opgestart voordat de wijzigingen effect hebben.</LanguageNote>
 <ButtonCancel>Annuleren</ButtonCancel>
@@ -244,7 +244,7 @@
 <!--About-->
 <WindowAboutTitle>Over HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
+<TabTranslators>Vertalers</TabTranslators>
 <TabCredits>Credits</TabCredits>
 <MonthJanuary>Jan</MonthJanuary>
 <MonthFebruary>Feb</MonthFebruary>
