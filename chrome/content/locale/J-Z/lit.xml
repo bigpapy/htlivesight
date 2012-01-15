@@ -3,9 +3,9 @@
 
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuStart>Paleisti</MenuStart>
+<MenuOptions>Nustatymai</MenuOptions>
+<TooltipButton>Spustelėjus atsidaro „HTLiveSight“ meniu</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -15,7 +15,7 @@
 <MenuAbout>Apie „HTLiveSight“</MenuAbout>
 <LoginLabel>Prisijungti</LoginLabel>
 <LoginTeamId>Įveskite komandos ID</LoginTeamId>
-<LoginUsername>Username</LoginUsername>
+<LoginUsername>Vartotojo vardas</LoginUsername>
 <LoginRememberMe>Prisiminti</LoginRememberMe>
 <LoginButton>Prisijungti</LoginButton>
 <LoginReLive>Re-Live</LoginReLive>
@@ -39,7 +39,7 @@
 <FriendsOpen>Parsisiųsti</FriendsOpen>
 
 <!--Authorize-->
-<Introduction>Programai reikalingas autorizavimo kodas, kurį gausite prisijungę prie „Hattrick“ atsivėrusiame lange. Jei langas neatsidaro, patikrinkite, ar naršyklė neblokuoja iškiliųjų langų, ir leiskite „HTLiveSight“ juos atidaryti.</Introduction>
+<Introduction>Programai reikalingas autorizavimo kodas, kurį gausite prisijungę prie Hattrick atsivėrusiame lange. Jei langas neatsidaro, patikrinkite, ar naršyklė neblokuoja iškiliųjų langų, ir leiskite „HTLiveSight“ juos atidaryti.</Introduction>
 <Insert>Nukopijuokite autorizacijos kodą:</Insert>
 <Ending>HTLiveSight sėkmingai autorizuotas. Perkraukite įskiepį.</Ending>
 <Error401>Klaida Nr. 401: neautorizuota. Bandykite dar kartą.</Error401>
@@ -48,16 +48,16 @@
 <Error>Klaida</Error>
 <ServerON>prisijungta</ServerON>
 <ServerOFF>atsijungta</ServerOFF>
-<ResetToken>Autorizacijos kodas ištrintas. Perkraukite HTLS arba laukite kito atnaujinimo (less than 1 minute).</ResetToken>
-<NoHTServer>Nepasirinkote Hattrick serverio, prie kurio esate prisijungę. Paspaudę dešinį pelės mygtuką ant fono pasirinkite „Nustatymai -> Bendri“ ir pasirinkite Hattrick serverį.</NoHTServer>
-<Error500>Klaida Nr. 500: vidinė „Hattrick“ serverio klaida</Error500>
+<ResetToken>Autorizacijos kodas ištrintas. Perkraukite HTLS arba laukite kito atnaujinimo (greičiau nei po minutės).</ResetToken>
+<NoHTServer>Nepasirinkote Hattrick serverio, prie kurio esate prisijungę. Paspaudę dešinį pelės mygtuką ant fono pasirinkite „Nustatymai -> Bendri“ ir įveskite Hattrick serverį.</NoHTServer>
+<Error500>Klaida Nr. 500: vidinė Hattrick serverio klaida</Error500>
 <Error503>Klaida Nr. 503: CHPP sąsaja nepasiekiama (perdidelė apkrova arba išjungta)</Error503>
 
 <!--Properties-->
 <MatchesMaximum>Negalima stebėti daugiau nei 20 rungtynių!</MatchesMaximum>
 <LeagueLiveTable>Lentelė gyvai</LeagueLiveTable>
 <LeagueRound>Turas:</LeagueRound>
-<MessageHattrickError>„Hattrick“ serveryje įvyko klaida</MessageHattrickError>
+<MessageHattrickError>Hattrick serveryje įvyko klaida</MessageHattrickError>
 <MessageAlreadyFriend>jau draugų sąraše!</MessageAlreadyFriend>
 <MessageErrorReading>Klaida skaitant duomenis iš</MessageErrorReading>
 <MessageLoginNotSuccessful>Prisijungimas nepavyko.</MessageLoginNotSuccessful>
@@ -80,10 +80,10 @@
 <TimeDay>dienos</TimeDay>
 <TimeHour>valandos</TimeHour>
 <TimeMinute>minutės</TimeMinute>
-<TimeMin>'</TimeMin>
-<TooltipWindowSound>Įjungti/išjungti šių rungtynių garsus</TooltipWindowSound>
-<TooltipWindowLink>Nuoroda į „Hattrick“ rungtynių puslapį</TooltipWindowLink>
-<TooltipWindowInfo>Rodyti/slėpti informacines įvykių žinutes</TooltipWindowInfo>
+<TimeMin>-oji minutė:</TimeMin>
+<TooltipWindowSound>Įjungti ar išjungti šių rungtynių garsus</TooltipWindowSound>
+<TooltipWindowLink>Nuoroda į Hattrick rungtynių puslapį</TooltipWindowLink>
+<TooltipWindowInfo>Rodyti ar slėpti informacines įvykių žinutes</TooltipWindowInfo>
 <TooltipWindowMaximize>Išdidinti</TooltipWindowMaximize>
 <TooltipWindowMinimize>Sumažinti</TooltipWindowMinimize>
 <TooltipWindowShade>Sutraukti</TooltipWindowShade>
@@ -107,15 +107,15 @@
 <EventSideCenter>Centras</EventSideCenter>
 <EventSideFreeKick>Laisvas smūgis</EventSideFreeKick>
 <EventSidePenalty>Baudinys</EventSidePenalty>
-<EventSpecialUnpredictable>Ypat. įvykis: Nenuspėjamas</EventSpecialUnpredictable>
+<EventSpecialUnpredictable>Ypat. įvykis: nenuspėjamas</EventSpecialUnpredictable>
 <EventSpecialLongShot>Ypat. įvykis: tolimasis smūgis</EventSpecialLongShot>
-<EventSpecialQuick>Ypat. įvykis: Greitas</EventSpecialQuick>
+<EventSpecialQuick>Ypat. įvykis: greitas</EventSpecialQuick>
 <EventSpecialLowStamina>Neištvermingas</EventSpecialLowStamina>
 <EventSpecialSetPieces>Stand. padėtys</EventSpecialSetPieces>
 <EventSpecialHead>Aukštas</EventSpecialHead>
 <EventSpecialExperience>Patyręs</EventSpecialExperience>
 <EventSpecialLowExperience>Nepatyręs</EventSpecialLowExperience>
-<EventSpecialWinger>+ Krašto saugo įgūdžiai</EventSpecialWinger>
+<EventSpecialWinger>Geri krašto saugo įgūdžiai</EventSpecialWinger>
 <EventSpecialTechnical>Techniškas</EventSpecialTechnical>
 <EventSpecialCounterAttack>Kontrataka</EventSpecialCounterAttack>
 <EventSpecialCornerKick>Kampinis</EventSpecialCornerKick>
@@ -157,7 +157,7 @@
 <YellowCheating>Sukčiavimas</YellowCheating>
 <ProgressUpdate>Kitas atnaujinimas po:</ProgressUpdate>
 <ProgressSeconds>s</ProgressSeconds>
-<RequestServer>Get Recommended Server</RequestServer>
+<RequestServer>Gauti rekomenduojamą serverį</RequestServer>
 <RequestLeagueData>Parsisiųsti lygos duomenis</RequestLeagueData>
 <RequestLeagueGames>Parsisiųsti lygos rungtynes</RequestLeagueGames>
 <RequestLive>Atnaujinimai gyvai</RequestLive>
@@ -178,12 +178,12 @@
 <TabCustom>Individualizavimas</TabCustom>
 <TabGoalSound>Įvarčių garsai</TabGoalSound>
 <TabWheatherSound>Oro įvykių ir traumų garsai</TabWheatherSound>
-<TabWhistleSound>Teisėjo švilpuko ir hatriko garsai</TabWhistleSound>
+<TabWhistleSound>Teisėjo švilpuko ir hat-trick'o garsai</TabWhistleSound>
 <GeneralOpen>Atidaryti „HTLiveSight“</GeneralOpen>
 <GeneralNewTab>Naujoje kortelėje</GeneralNewTab>
 <GeneralNewWindow>Naujame lange</GeneralNewWindow>
 <GeneralServer>Serverio nustatymai</GeneralServer>
-<GeneralNote>Pasirinkite Hattrick serverį, prie kurio prisijungėte (pvz. „www96“).</GeneralNote>
+<GeneralNote>Pasirinkite Hattrick serverį, prie kurio prisijungėte, pvz.: „www96“.</GeneralNote>
 <MatchesLeague>Lygos rungtynės</MatchesLeague>
 <MatchesGetLeague>Parsisiųsti automatiškai</MatchesGetLeague>
 <MatchesPlayed>Jei žaidžiama po</MatchesPlayed>
@@ -210,9 +210,9 @@
 <CustomIcons>Ikonos</CustomIcons>
 <CustomIconsOld>Senosios „Livefox“ ikonos rungtynių lange</CustomIconsOld>
 <CustomSounds>Garsai</CustomSounds>
-<CustomSoundsWeather>Oro garsai rungtynių pradžioje</CustomSoundsWeather>
+<CustomSoundsWeather>Orų garsai rungtynių pradžioje</CustomSoundsWeather>
 <CustomSoundsTime>Rungtynių pertraukos pradžios ir pabaigos garsai</CustomSoundsTime>
-<CustomSoundsSEW>Ypatingųjų oro įvykių garsai</CustomSoundsSEW>
+<CustomSoundsSEW>Ypatingųjų orų įvykių garsai</CustomSoundsSEW>
 <CustomSoundsGoal>Senieji „Livefox“ garsai</CustomSoundsGoal>
 <CustomSoundsNoOpGoal>Jokių varžovo įvarčių garsų</CustomSoundsNoOpGoal>
 <PathSoundsMyGoal>Mano įvartis</PathSoundsMyGoal>
@@ -243,9 +243,9 @@
 
 <!--About-->
 <WindowAboutTitle>Apie „HTLiveSight“</WindowAboutTitle>
-<TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabInfo>Apie</TabInfo>
+<TabTranslators>Vertėjai</TabTranslators>
+<TabCredits>Komanda</TabCredits>
 <MonthJanuary>Sau</MonthJanuary>
 <MonthFebruary>Vas</MonthFebruary>
 <MonthMarch>Kov</MonthMarch>
