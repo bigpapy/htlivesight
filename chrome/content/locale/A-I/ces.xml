@@ -4,8 +4,8 @@
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuOptions>Možnosti</MenuOptions>
+<TooltipButton>Klikni k otevření menu HTLiveSightu</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -51,7 +51,7 @@
 <ResetToken>Autorizace byla odstraněna. Restartuj HTLS, nebo počkej na aktualizaci (cca 1 min.).</ResetToken>
 <NoHTServer>Nevybral(a) jsi server Hattricku, na který jsi se přihlásil(a) přes svůj prohlížeč. Klikni pravým tlačítkem myši na pozadí => možnosti => obecné => vyplň číslo serveru.</NoHTServer>
 <Error500>Chyba 500: interní chyba serveru (na Hattricku).</Error500>
-<Error503>Chyba 503: CHPP je mimo provoz (dočasné přežížení nebo údržba).</Error503>
+<Error503>Chyba 503: CHPP je mimo provoz (dočasné přetížení nebo údržba).</Error503>
 
 <!--Properties-->
 <MatchesMaximum>Nemůžeš sledovat více než 20 zápasů!</MatchesMaximum>
@@ -232,10 +232,10 @@
 <PathSoundsWhistle3>Zvuk pro konec zápasu</PathSoundsWhistle3>
 <PathSoundsWhistle>Zvuk žluté či červené karty</PathSoundsWhistle>
 <PathSoundsHattrick>Zvuk vstřeleného hattricku</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<PathSoundsRestore>Vrátit zpět</PathSoundsRestore>
+<PathSoundsPlay>Přehrát</PathSoundsPlay>
+<PathSoundsNote1>Vlož file:/// před každou adresu souboru ve formátu .wav</PathSoundsNote1>
+<PathSoundsNote2>Příklad: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Vyber jazyk</LanguageSelect>
 <LanguageNote>Poznámka: Aby se nové nastavení projevilo, je nutné restartovat HTLiveSight.</LanguageNote>
 <ButtonCancel>Storno</ButtonCancel>
@@ -244,8 +244,8 @@
 <!--About-->
 <WindowAboutTitle>O HTLiveSightu</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabTranslators>Překladatelé</TabTranslators>
+<TabCredits>Autoři</TabCredits>
 <MonthJanuary>Led</MonthJanuary>
 <MonthFebruary>Úno</MonthFebruary>
 <MonthMarch>Bře</MonthMarch>
