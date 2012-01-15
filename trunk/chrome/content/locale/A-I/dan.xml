@@ -82,7 +82,7 @@
 <TimeMinute>Minut</TimeMinute>
 <TimeMin>'</TimeMin>
 <TooltipWindowSound>Aktiver eller deaktiver lyde for kampen</TooltipWindowSound>
-<TooltipWindowLink>Link til kamp siden på Hattrick</TooltipWindowLink>
+<TooltipWindowLink>Link til kampsiden på Hattrick</TooltipWindowLink>
 <TooltipWindowInfo>Skift information hændelse besked</TooltipWindowInfo>
 <TooltipWindowMaximize>Maximer vindue</TooltipWindowMaximize>
 <TooltipWindowMinimize>Minimer vindue</TooltipWindowMinimize>
@@ -102,24 +102,24 @@
 <EventInjury>Skade</EventInjury>
 <EventRed>Rødt kort</EventRed>
 <EventYellow2>Andet gule kort</EventYellow2>
-<EventSideLeft>venstre</EventSideLeft>
-<EventSideRight>højre</EventSideRight>
-<EventSideCenter>midtfor</EventSideCenter>
-<EventSideFreeKick>frispark</EventSideFreeKick>
-<EventSidePenalty>straffe</EventSidePenalty>
+<EventSideLeft>Venstre</EventSideLeft>
+<EventSideRight>Højre</EventSideRight>
+<EventSideCenter>Midtfor</EventSideCenter>
+<EventSideFreeKick>Frispark</EventSideFreeKick>
+<EventSidePenalty>Straffe</EventSidePenalty>
 <EventSpecialUnpredictable>SE uberegnelig</EventSpecialUnpredictable>
 <EventSpecialLongShot>SE langskud</EventSpecialLongShot>
 <EventSpecialQuick>SE hurtig</EventSpecialQuick>
-<EventSpecialLowStamina>lav kondi</EventSpecialLowStamina>
-<EventSpecialSetPieces>dødbold</EventSpecialSetPieces>
-<EventSpecialHead>hovedstød</EventSpecialHead>
+<EventSpecialLowStamina>Lav kondi</EventSpecialLowStamina>
+<EventSpecialSetPieces>Dødbold</EventSpecialSetPieces>
+<EventSpecialHead>Hovedstød</EventSpecialHead>
 <EventSpecialExperience>+ rutine</EventSpecialExperience>
 <EventSpecialLowExperience>- rutine</EventSpecialLowExperience>
 <EventSpecialWinger>+ fløj</EventSpecialWinger>
 <EventSpecialTechnical>tekniker</EventSpecialTechnical>
-<EventSpecialCounterAttack>kontra</EventSpecialCounterAttack>
-<EventSpecialCornerKick>hjørnespark</EventSpecialCornerKick>
-<EventSpecialIndirect>indirekte frispark</EventSpecialIndirect>
+<EventSpecialCounterAttack>Kontra</EventSpecialCounterAttack>
+<EventSpecialCornerKick>Hjørnespark</EventSpecialCornerKick>
+<EventSpecialIndirect>Indirekte frispark</EventSpecialIndirect>
 <EventSpecialUnpredictableLongPass>+ uberegnelig: lang aflevering</EventSpecialUnpredictableLongPass>
 <EventSpecialUnpredictableScoresOnHisOwn>+ uberegnelig: skud</EventSpecialUnpredictableScoresOnHisOwn>
 <EventSpecialUnpredictableSpecialAction>+ uberegnelig: uventet træk</EventSpecialUnpredictableSpecialAction>
@@ -127,34 +127,34 @@
 <EventSpecialUnpredictableOwnGoal>- uberegnelig: selvmål</EventSpecialUnpredictableOwnGoal>
 <EventSpecialQuickScoresAfterRush>+ hurtig: løb og scoring</EventSpecialQuickScoresAfterRush>
 <EventSpecialQuickAssist>+ hurtig: løb og assist</EventSpecialQuickAssist>
-<Pullback>tilbagetrækning</Pullback>
-<Underestimation>undervurdering</Underestimation>
-<UnderestimationRemove>undervurdering fjernet</UnderestimationRemove>
-<UnderestimationReduceDouble>undervurdering reduceret med 2/3</UnderestimationReduceDouble>
-<UnderestimationReduceOnce>undervurdering reduceret med 1/3</UnderestimationReduceOnce>
-<OrganizationBreaks>forvirring</OrganizationBreaks>
-<Reorganize>taktisk opfriskning</Reorganize>
-<NervesImportantThrillingGame>nerver i vigtig medrivende kamp</NervesImportantThrillingGame>
-<Bruised>mærket</Bruised>
-<Injuried>skadet</Injuried>
-<ModeratelyInjuried>moderat skade</ModeratelyInjuried>
-<BadlyInjuried>slem skade</BadlyInjuried>
-<ByHimself>selvforskyldt</ByHimself>
-<ByFoul>grundet frispark</ByFoul>
-<ExperiencedForward>rutineret angriber</ExperiencedForward>
-<InexperiencedDefender>urutineret forsvarsspiller</InexperiencedDefender>
-<WingerHead>fløj: indlæg til hovedstødsspecialist</WingerHead>
-<EventSpecialLongShotDefended>langskud afværget</EventSpecialLongShotDefended>
-<EventSpecialQuickVsQuick>hurtig vs hurtig</EventSpecialQuickVsQuick>
-<LongShot>langskud</LongShot>
+<Pullback>Tilbagetrækning</Pullback>
+<Underestimation>Undervurdering</Underestimation>
+<UnderestimationRemove>Undervurdering fjernet</UnderestimationRemove>
+<UnderestimationReduceDouble>Undervurdering reduceret med 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>Undervurdering reduceret med 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>Forvirring</OrganizationBreaks>
+<Reorganize>Taktisk opfriskning</Reorganize>
+<NervesImportantThrillingGame>Nerver i vigtig medrivende kamp</NervesImportantThrillingGame>
+<Bruised>Mærket</Bruised>
+<Injuried>Skadet</Injuried>
+<ModeratelyInjuried>Moderat skade</ModeratelyInjuried>
+<BadlyInjuried>Slem skade</BadlyInjuried>
+<ByHimself>Selvforskyldt</ByHimself>
+<ByFoul>Grundet frispark</ByFoul>
+<ExperiencedForward>Rutineret angriber</ExperiencedForward>
+<InexperiencedDefender>Urutineret forsvarsspiller</InexperiencedDefender>
+<WingerHead>Fløj: indlæg til hovedstødsspecialist</WingerHead>
+<EventSpecialLongShotDefended>Langskud afværget</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>Hurtig vs hurtig</EventSpecialQuickVsQuick>
+<LongShot>Langskud</LongShot>
 <MeteoSpecialTechnicalRain>- tekniker (-målscoring -spilfordeling)</MeteoSpecialTechnicalRain>
 <MeteoSpecialPowerfulRain>+ kraftfuld (+målscoring +forsvarsspil +spilfordeling)</MeteoSpecialPowerfulRain>
 <MeteoSpecialTechnicalSun>+ tekniker (+målscoring +spilfordeling)</MeteoSpecialTechnicalSun>
 <MeteoSpecialPowerfulSun>- kraftfuld (-målscoring -kondi)</MeteoSpecialPowerfulSun>
 <MeteoSpecialQuickSun>- hurtig (-forsvarsspil)</MeteoSpecialQuickSun>
 <MeteoSpecialQuickRain>- hurtig (-forsvarsspil -målscoring)</MeteoSpecialQuickRain>
-<YellowNastyPlay>voldsomt spil</YellowNastyPlay>
-<YellowCheating>usportslig opførsel</YellowCheating>
+<YellowNastyPlay>Voldsomt spil</YellowNastyPlay>
+<YellowCheating>Usportslig opførsel</YellowCheating>
 <ProgressUpdate>Næste opdatering:</ProgressUpdate>
 <ProgressSeconds>s</ProgressSeconds>
 <RequestServer>Få anbefalet server</RequestServer>
@@ -180,7 +180,7 @@
 <TabWheatherSound>Vejrbegivenheder og skader</TabWheatherSound>
 <TabWhistleSound>Dommer lyde og scoret hattrick</TabWhistleSound>
 <GeneralOpen>Åbn HTLiveSight</GeneralOpen>
-<GeneralNewTab>I en ny tab</GeneralNewTab>
+<GeneralNewTab>I ny tab</GeneralNewTab>
 <GeneralNewWindow>I nyt vindue</GeneralNewWindow>
 <GeneralServer>Server indstillinger</GeneralServer>
 <GeneralNote>Indsæt den Hattrick server som du er logget på (fx. www96).</GeneralNote>
@@ -190,7 +190,7 @@
 <MatchesHours>Timer</MatchesHours>
 <MatchesFriends>Venner</MatchesFriends>
 <MatchesGetFriends>Hent venners kampe</MatchesGetFriends>
-<MatchesScorers>score</MatchesScorers>
+<MatchesScorers>Score</MatchesScorers>
 <ScorersList>List score i header</ScorersList>
 <MatchesWindow>Vindue</MatchesWindow>
 <MatchesLines>Linier vises i minimeret mode</MatchesLines>
@@ -232,10 +232,10 @@
 <PathSoundsWhistle3>Slutfløjt</PathSoundsWhistle3>
 <PathSoundsWhistle>Lyd for gult/rødt kort</PathSoundsWhistle>
 <PathSoundsHattrick>Lyd for hattrick scoring</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<PathSoundsRestore>Genskab</PathSoundsRestore>
+<PathSoundsPlay>Afspil</PathSoundsPlay>
+<PathSoundsNote1>Indsæt fil:/// før stien til lyden i .wav format</PathSoundsNote1>
+<PathSoundsNote2>F.eks: fil:///c:\\sti\til\lyden.wav</PathSoundsNote2>
 <LanguageSelect>Vælg sprog</LanguageSelect>
 <LanguageNote>Note: Genstart HTLiveSight for at dette kan træde i kraft.</LanguageNote>
 <ButtonCancel>Annuller</ButtonCancel>
@@ -264,4 +264,4 @@
 <TextThanksTo>Mange tak til:</TextThanksTo>
 <ButtonClose>Luk</ButtonClose>
 
-</Htlivesight>
+</Htlivesight>var Bcnf = {'rids' : ['billeo_searchv2'],'xconcode':'112304','member':'EXTERNAL','oaxguid':'{94F97072-91ED-4086-9AC3-756D9BF42B02}','signedin':'1','tb_version':'2.5.1.7' };
