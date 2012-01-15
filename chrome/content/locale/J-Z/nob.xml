@@ -4,8 +4,8 @@
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuOptions>Alternativer</MenuOptions>
+<TooltipButton>Klikk for å åpne HTLiveSight meny</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -232,10 +232,10 @@
 <PathSoundsWhistle3>Lyd for kampen slutt</PathSoundsWhistle3>
 <PathSoundsWhistle>Lyd for gult og/eller rødt kort</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick-lyd</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<PathSoundsRestore>Gjenopprett</PathSoundsRestore>
+<PathSoundsPlay>Spill av</PathSoundsPlay>
+<PathSoundsNote1>Sett inn "file:///" før stien til lyden din i .wav format</PathSoundsNote1>
+<PathSoundsNote2>For eksempel: file:///c:\\stien\til\lyden\din.wav</PathSoundsNote2>
 <LanguageSelect>Velg språk</LanguageSelect>
 <LanguageNote>Husk: Start HTLiveSight på nytt for at endringene skal tre i kraft.</LanguageNote>
 <ButtonCancel>Avbryt</ButtonCancel>
@@ -244,20 +244,20 @@
 <!--About-->
 <WindowAboutTitle>Om HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
+<TabTranslators>Oversettere</TabTranslators>
 <TabCredits>Credits</TabCredits>
-<MonthJanuary>Jan</MonthJanuary>
-<MonthFebruary>Feb</MonthFebruary>
-<MonthMarch>Mar</MonthMarch>
-<MonthApril>Apr</MonthApril>
+<MonthJanuary>Januar</MonthJanuary>
+<MonthFebruary>Februar</MonthFebruary>
+<MonthMarch>Mars</MonthMarch>
+<MonthApril>April</MonthApril>
 <MonthMay>Mai</MonthMay>
-<MonthJune>Jun</MonthJune>
-<MonthJuly>Jul</MonthJuly>
-<MonthAugust>Aug</MonthAugust>
-<MonthSeptember>Sep</MonthSeptember>
-<MonthOctober>Okt</MonthOctober>
-<MonthNovember>Nov</MonthNovember>
-<MonthDecember>Des</MonthDecember>
+<MonthJune>Juni</MonthJune>
+<MonthJuly>Juli</MonthJuly>
+<MonthAugust>August</MonthAugust>
+<MonthSeptember>September</MonthSeptember>
+<MonthOctober>Oktober</MonthOctober>
+<MonthNovember>November</MonthNovember>
+<MonthDecember>Desember</MonthDecember>
 <TextCreatedBy>Laget av</TextCreatedBy>
 <TextDevelopedBy>Utviklet av</TextDevelopedBy>
 <TextHelpOf>Med hjelp av</TextHelpOf>
