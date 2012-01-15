@@ -4,8 +4,8 @@
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuOptions>Opcje</MenuOptions>
+<TooltipButton>Otwórz menu HTLiveSight</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -147,12 +147,12 @@
 <EventSpecialLongShotDefended>zablokowany strzał z dystansu</EventSpecialLongShotDefended>
 <EventSpecialQuickVsQuick>szybki kontra szybki</EventSpecialQuickVsQuick>
 <LongShot>strzał z dystansu</LongShot>
-<MeteoSpecialTechnicalRain>-techniczny (-Scoring -Playmaking)</MeteoSpecialTechnicalRain>
-<MeteoSpecialPowerfulRain>+atleta (+Scoring +Defending + Playmaking)</MeteoSpecialPowerfulRain>
-<MeteoSpecialTechnicalSun>+techniczny (+Scoring +Playmaking)</MeteoSpecialTechnicalSun>
-<MeteoSpecialPowerfulSun>-atleta (-Scoring -Stamina)</MeteoSpecialPowerfulSun>
-<MeteoSpecialQuickSun>-szybki (-Defending)</MeteoSpecialQuickSun>
-<MeteoSpecialQuickRain>-szybki (-Defending -Scoring)</MeteoSpecialQuickRain>
+<MeteoSpecialTechnicalRain>-techniczny (-skuteczność -rozgrywanie)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+atleta (+skuteczność +defensywa + rozgrywanie)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+techniczny (+skuteczność +rozgrywanie)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>-atleta (-skuteczność -kondycja)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>-szybki (-defensywa)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>-szybki (-defensywa -skuteczność)</MeteoSpecialQuickRain>
 <YellowNastyPlay>brzydkie zagranie</YellowNastyPlay>
 <YellowCheating>oszukiwanie</YellowCheating>
 <ProgressUpdate>Następna aktualizacja:</ProgressUpdate>
@@ -243,8 +243,8 @@
 
 <!--About-->
 <WindowAboutTitle>O HTLiveSight</WindowAboutTitle>
-<TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
+<TabInfo>Informajce</TabInfo>
+<TabTranslators>Tłumacze</TabTranslators>
 <TabCredits>Credits</TabCredits>
 <MonthJanuary>Sty</MonthJanuary>
 <MonthFebruary>Lut</MonthFebruary>
