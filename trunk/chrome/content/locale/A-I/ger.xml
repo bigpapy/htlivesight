@@ -4,8 +4,8 @@
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuOptions>Optionen</MenuOptions>
+<TooltipButton>Klicken um das HTLiveSight Menü zu öffnen</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -33,7 +33,7 @@
 <MatchesAdd>Spiel hinzufügen</MatchesAdd>
 <MatchesByMatch>Nach Match-ID</MatchesByMatch>
 <MatchesByTeam>Nach Team-ID</MatchesByTeam>
-<MatchesYouth>Jugend?</MatchesYouth>
+<MatchesYouth>Jugend</MatchesYouth>
 <FriendsTitle>Freunde</FriendsTitle>
 <FriendsRemove>Entfernen</FriendsRemove>
 <FriendsOpen>Öffnen</FriendsOpen>
