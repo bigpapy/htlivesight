@@ -3,9 +3,9 @@
 
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuStart>Запуск</MenuStart>
+<MenuOptions>Опції</MenuOptions>
+<TooltipButton>Натисніть, щоб відкрити меню HTLiveSight</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -232,10 +232,10 @@
 <PathSoundsWhistle3>Фінальний свисток</PathSoundsWhistle3>
 <PathSoundsWhistle>Звук для жовтої/червоної картки</PathSoundsWhistle>
 <PathSoundsHattrick>Звук для хеттріка</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<PathSoundsRestore>Відновити</PathSoundsRestore>
+<PathSoundsPlay>Програти</PathSoundsPlay>
+<PathSoundsNote1>Введіть file:/// перед шляхом до звуку у форматі .wav</PathSoundsNote1>
+<PathSoundsNote2>Наприклад: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Обрати мову</LanguageSelect>
 <LanguageNote>Потрібно перезавантажити Firefox, щоб застосувати зміни</LanguageNote>
 <ButtonCancel>Скасувати</ButtonCancel>
@@ -243,9 +243,9 @@
 
 <!--About-->
 <WindowAboutTitle>Про HTLiveSight</WindowAboutTitle>
-<TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabInfo>Инфо</TabInfo>
+<TabTranslators>Перекладачі</TabTranslators>
+<TabCredits>Розробники</TabCredits>
 <MonthJanuary>Січ</MonthJanuary>
 <MonthFebruary>Лют</MonthFebruary>
 <MonthMarch>Бер</MonthMarch>
