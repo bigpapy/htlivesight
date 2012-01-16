@@ -3,9 +3,9 @@
 
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuStart>Inicio</MenuStart>
+<MenuOptions>Opcións</MenuOptions>
+<TooltipButton>Pulsa para abrir o menú de HTLiveSight</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -27,7 +27,7 @@
 <LeagueTeam>Equipo</LeagueTeam>
 <LeaguePlayed>X</LeaguePlayed>
 <LeagueGoals>G</LeagueGoals>
-<LeagueGoalDiff>GD</LeagueGoalDiff>
+<LeagueGoalDiff>DG</LeagueGoalDiff>
 <LeaguePoints>P</LeaguePoints>
 <MatchesList>Lista de encontros</MatchesList>
 <MatchesAdd>Engadir encontros</MatchesAdd>
@@ -39,16 +39,16 @@
 <FriendsOpen>Abrir</FriendsOpen>
 
 <!--Authorize-->
-<Introduction>Vas ser redireccionado á páxina CHPP para obter o teu código de autorización. Se non eres redireccionado, detén temporalmente o bloqueador de ventanas emerxentes, ou engade HTlivesight á lista de excepcións.</Introduction>
-<Insert>introduce o teu código de autorización aquí:</Insert>
-<Ending>Agora HTlivesight está autorizado. Pulsa Aceptar para reiniciar a aplicación.</Ending>
+<Introduction>Vas ser redireccionado á páxina CHPP para obter o teu código de autorización. Se non eres redireccionado, detén temporalmente o bloqueador de ventanas emerxentes, ou engade HTLiveSight á lista de excepcións.</Introduction>
+<Insert>Introduce o teu código de autorización aquí:</Insert>
+<Ending>Agora HTLiveSight está autorizado. Pulsa Aceptar para reiniciar a aplicación.</Ending>
 <Error401>Erro 401: acceso non autorizado. Debes volver a obter o código de autorización. Pulsa Aceptar para continuar.</Error401>
 <Error404>Erro 404: o recurso solicitado non se atopa. Se este erro aparece de novo, comproba se o servicio CHPP está caído.</Error404>
 <Error0>Erro 0: non estás conectado a Internet.</Error0>
 <Error>Erro</Error>
 <ServerON>Conectado</ServerON>
 <ServerOFF>Desconectado</ServerOFF>
-<ResetToken>A autorización foi borrada. Reinicia HTLS ou agarda a próxima actualización (less than 1 minute).</ResetToken>
+<ResetToken>A autorización foi borrada. Reinicia HTLS ou agarda a próxima actualización (menos de 1 minuto).</ResetToken>
 <NoHTServer>Non seleccionaches o servidor de Hattrick no que estás logueado no teu navegador. Clica co botón dereito no fondo -> opcións -> xeral -> coloca o número do teu servidor no formulario.</NoHTServer>
 <Error500>Erro 500: error interno do servidor (de Hattrick)</Error500>
 <Error503>Erro 503: servicio CHPP non dispoñible (parada temporal ou en mantemento)</Error503>
@@ -97,8 +97,8 @@
 <MenuAddFriend>Amigo</MenuAddFriend>
 <MenuServer>Servidor:</MenuServer>
 <EventGoal>GOL</EventGoal>
-<EventPenaltyGoal>Penalty: GOL</EventPenaltyGoal>
-<EventPenaltyMiss>Penalty: FALLO</EventPenaltyMiss>
+<EventPenaltyGoal>Penalti: GOL</EventPenaltyGoal>
+<EventPenaltyMiss>Penalti: FALLO</EventPenaltyMiss>
 <EventInjury>Lesión</EventInjury>
 <EventRed>Cartón vermello</EventRed>
 <EventYellow2>Segundo cartón amarelo</EventYellow2>
@@ -208,7 +208,7 @@
 <OtherEventKey>Código do evento</OtherEventKey>
 <OtherEventKeyNote>Amosa o código do evento no comentario</OtherEventKeyNote>
 <CustomIcons>Iconos</CustomIcons>
-<CustomIconsOld>Iconos Orixinais de Livefox na ventá de encontros</CustomIconsOld>
+<CustomIconsOld>Iconos orixinais de Livefox na ventá de encontros</CustomIconsOld>
 <CustomSounds>Sons</CustomSounds>
 <CustomSoundsWeather>Sons da climatoloxía ó inicio do encontro</CustomSoundsWeather>
 <CustomSoundsTime>Sons para inicio/fin do descanso</CustomSoundsTime>
@@ -244,8 +244,8 @@
 <!--About-->
 <WindowAboutTitle>Acerca de HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabTranslators>Traductores</TabTranslators>
+<TabCredits>Créditos</TabCredits>
 <MonthJanuary>Xan</MonthJanuary>
 <MonthFebruary>Feb</MonthFebruary>
 <MonthMarch>Mar</MonthMarch>
