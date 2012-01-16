@@ -3,7 +3,7 @@
 
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Начало</MenuStart>
+<MenuStart>Запуск</MenuStart>
 <MenuOptions>Опции</MenuOptions>
 <TooltipButton>Нажмите, чтобы открыть меню HTLiveSight</TooltipButton>
 
@@ -232,9 +232,9 @@
 <PathSoundsWhistle3>Финальный свисток</PathSoundsWhistle3>
 <PathSoundsWhistle>Звук для жёлтой/красной карточки</PathSoundsWhistle>
 <PathSoundsHattrick>Звук для хеттрика</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Введите file:/// перед путём к звуку в формате .wav</PathSoundsNote1>
+<PathSoundsRestore>Восстановить</PathSoundsRestore>
+<PathSoundsPlay>Проиграть</PathSoundsPlay>
+<PathSoundsNote1>Введите file:/// перед путём к звуковому файлу в формате .wav</PathSoundsNote1>
 <PathSoundsNote2>Например: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Выбор языка</LanguageSelect>
 <LanguageNote>Перезапустите HTLiveSight для ввода в действие</LanguageNote>
