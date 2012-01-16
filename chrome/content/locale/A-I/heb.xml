@@ -3,9 +3,9 @@
 
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuStart>התחלה</MenuStart>
+<MenuOptions>אפשרויות</MenuOptions>
+<TooltipButton>HTLiveSight לחץ לפתיחת תפריט</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -243,9 +243,9 @@
 
 <!--About-->
 <WindowAboutTitle>HTLiveSight אודות</WindowAboutTitle>
-<TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabInfo>מידע</TabInfo>
+<TabTranslators>מתרגמים</TabTranslators>
+<TabCredits>קרדיט</TabCredits>
 <MonthJanuary>ינואר</MonthJanuary>
 <MonthFebruary>פברואר</MonthFebruary>
 <MonthMarch>מרץ</MonthMarch>
