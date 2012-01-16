@@ -4,8 +4,8 @@
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuOptions>Možnosti</MenuOptions>
+<TooltipButton>Klikni pre otvorenie HTLiveSight menu</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -232,10 +232,10 @@
 <PathSoundsWhistle3>Zvuk pre koniec zápasu</PathSoundsWhistle3>
 <PathSoundsWhistle>Zvuk pre žltú/červenú kartu</PathSoundsWhistle>
 <PathSoundsHattrick>Zvuk pre hetrik</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<PathSoundsRestore>Obnov</PathSoundsRestore>
+<PathSoundsPlay>Prehraj</PathSoundsPlay>
+<PathSoundsNote1>Vlož file:/// pred cestu zvuku vo formáte .wav</PathSoundsNote1>
+<PathSoundsNote2>Príklad: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Vybrať jazyk</LanguageSelect>
 <LanguageNote>Poznámka: Zmeny sa prejavia po reštartovaní programu HTLiveSight.</LanguageNote>
 <ButtonCancel>Zruš</ButtonCancel>
@@ -244,7 +244,7 @@
 <!--About-->
 <WindowAboutTitle>O HTLiveSighte</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
+<TabTranslators>Prekladatelia</TabTranslators>
 <TabCredits>Credits</TabCredits>
 <MonthJanuary>Jan</MonthJanuary>
 <MonthFebruary>Feb</MonthFebruary>
