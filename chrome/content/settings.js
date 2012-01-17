@@ -447,9 +447,18 @@ htlivesight.Settings = {
     	if (teamId=="") teamId=prompt("TeamId");
        	htlivesight.ApiProxy.invalidateAccessToken(teamId);//delete access token
      //  	var strbundle = document.getElementById("stringsauthorize");// internationalization: get local file content.
-       	alert("before reset token");
+       	var  prefs=htlivesight.Preferences.get();
+ //   	alert("1");
+//    		alert("prefs.language.locale= "+ prefs.language.locale);
+    	var	url = "chrome://htlivesight/content/locale/"+ prefs.language.locale +".xml";
+//    		alert("url"+ url);
+//    	alert("2");
+    	var languageXML = htlivesight.loadXml(url);
+//    	alert("3");
+    	var data=languageXML.getElementsByTagName("Htlivesight");
+ //      	alert("before reset token");
        	var reset_token=htlivesight.Util.Parse("ResetToken",data[0]);
-       	alert("after reset token");
+ //      	alert("after reset token");
      	alert(reset_token);
     },
     //added by bigpapy (end)
