@@ -1,9 +1,9 @@
 /**
  * pref.js
- * Htlivesight preferences service for oauth codes.
+ * htlivesight preferences service for oauth codes.
  */
 
-var HtlivesightPrefs = {
+var htlivesightPrefs = {
 	_pref_branch : null,
 	pref_default:'',
 
@@ -12,18 +12,18 @@ var HtlivesightPrefs = {
 			var prefs = Components
 				.classes["@mozilla.org/preferences-service;1"]
 				.getService(Components.interfaces.nsIPrefService);
-			HtlivesightPrefs._pref_branch = prefs.getBranch("extensions.Htlivesight.prefs.");
+			htlivesightPrefs._pref_branch = prefs.getBranch("extensions.Htlivesight.prefs.");
 	},
 
 	getString : function(key) {
 			var str;
 			try {
-				str = HtlivesightPrefs._pref_branch.getComplexValue(encodeURI(key),
+				str = htlivesightPrefs._pref_branch.getComplexValue(encodeURI(key),
 					Components.interfaces.nsISupportsString).data;
 			}
 			catch (e) {
 				try {
-					str = HtlivesightPrefs._pref_branch.getComplexValue(pref_name,
+					str = htlivesightPrefs._pref_branch.getComplexValue(pref_name,
 						Components.interfaces.nsISupportsString).data;
 	 			}
 	 			catch (e) {
@@ -38,7 +38,7 @@ var HtlivesightPrefs = {
 				.classes["@mozilla.org/supports-string;1"]
 				.createInstance(Components.interfaces.nsISupportsString);
 			str.data = value;
-			HtlivesightPrefs._pref_branch.setComplexValue(encodeURI(key),
+			htlivesightPrefs._pref_branch.setComplexValue(encodeURI(key),
 				Components.interfaces.nsISupportsString, str);
 	},
 	
@@ -46,11 +46,11 @@ var HtlivesightPrefs = {
 	getBool : function(key) {
 			var value;
 			try {
-				value = HtlivesightPrefs._pref_branch.getBoolPref(encodeURI(key));
+				value = htlivesightPrefs._pref_branch.getBoolPref(encodeURI(key));
 			}
 			catch (e) {
 				try {
-					value = HtlivesightPrefs._pref_branch.getBoolPref(key);
+					value = htlivesightPrefs._pref_branch.getBoolPref(key);
 				}
 				catch (e) {
 					value = null;
@@ -60,7 +60,7 @@ var HtlivesightPrefs = {
 	},
 
 	setBool : function(key, value) {
-			HtlivesightPrefs._pref_branch.setBoolPref(encodeURI(key), value);
+			htlivesightPrefs._pref_branch.setBoolPref(encodeURI(key), value);
 	},
 // end adding by bigpapy (it's a try).
 };

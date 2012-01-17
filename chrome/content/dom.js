@@ -124,7 +124,7 @@ htlivesight.DOM = {
 	  var htServer=htlivesight.prefs.general.hattrickServer;
 	  if (!htServer){ 
 	//	  var strbundle = document.getElementById("stringsauthorize");// internationalization: get local file content.
-       	  var no_htserver=/*strbundle.getString("no_htserver")*/Util.Parse("NoHTServer",data[0]);
+       	  var no_htserver=/*strbundle.getString("no_htserver")*/htlivesight.Util.Parse("NoHTServer",data[0]);
        	  alert(no_htserver);
        	  htServer="www";
       };
@@ -167,7 +167,7 @@ htlivesight.DOM = {
     }
   },
   deleteView: function(matchId, youth) {
-    Live.HTTPDeleteMatch(matchId, youth);
+    htlivesight.Live.HTTPDeleteMatch(matchId, youth);
     var box = document.getElementById("live_" + matchId + "_" + youth);
     var img = document.getElementById("short_liveimage_" + matchId + "_" + youth);
     
@@ -210,7 +210,7 @@ htlivesight.DOM = {
     popupset.appendChild(popup);
     var menuitem = document.createElement("menuitem");
     popup.appendChild(menuitem);
-    menuitem.setAttribute("label", /*strings.getString("menu.add_friend")*/Util.Parse("MenuAddFriend",data[0]) + ": " + team.name);  
+    menuitem.setAttribute("label", /*strings.getString("menu.add_friend")*/htlivesight.Util.Parse("MenuAddFriend",data[0]) + ": " + team.name);  
     menuitem.setAttribute("image", htlivesight.Image.friend.add.ON);
     menuitem.setAttribute("class", "menuitem-iconic");
 //    menuitem.setAttribute("oncommand", "htlivesight.Click.addTeamToFriendsList("+team.id+",'"+team.youth+"')");
@@ -221,11 +221,11 @@ htlivesight.DOM = {
  //   var strings = document.getElementById("strings");
     var serverString = document.getElementById("server");
   //  serverString.setAttribute("label", strings.getString("menu.server") + " " + server.substring(7));
-    serverString.setAttribute("label", /*strings.getString("menu.server")*/Util.Parse("MenuServer",data[0]) + " " + server);
+    serverString.setAttribute("label", /*strings.getString("menu.server")*/htlivesight.Util.Parse("MenuServer",data[0]) + " " + server);
   },
   createTextElement: function (text, doClean) {
     //var d = document.createElementNS('http://www.w3.org/1999/xhtml', 'html:div');    
-    var resultDoc = htlivesight.DOM.parser.parseFromString("<label>" + (doClean ? Util.CleanText(text) : text)+ "</label>","text/xml");
+    var resultDoc = htlivesight.DOM.parser.parseFromString("<label>" + (doClean ? htlivesight.Util.CleanText(text) : text)+ "</label>","text/xml");
     var d = resultDoc.documentElement;  
     return d.firstChild;
   },
@@ -239,10 +239,10 @@ htlivesight.DOM = {
     return null;
   },
   createTextEventElement: function(event) {
-	var cleanedText = Util.cleanTags(event.text);
+	var cleanedText = htlivesight.Util.cleanTags(event.text);
 //	alert("Util.cleanTags(cleanedText) = "+ cleanedText);
 //	console.log(cleanedText);
-	cleanedText= Util.CleanText2(cleanedText);//added by bigpapy
+	cleanedText= htlivesight.Util.CleanText2(cleanedText);//added by bigpapy
 //	console.log(cleanedText);
   	
     var resultDoc = htlivesight.DOM.parser.parseFromString("<root>" + cleanedText + "</root>","text/xml");
@@ -512,7 +512,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.sound.ON);
   img.setAttribute("id", "sound_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.sound")*/Util.Parse("TooltipWindowSound",data[0]));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.sound")*/htlivesight.Util.Parse("TooltipWindowSound",data[0]));
   img.addEventListener('click',  htlivesight.Click.sound, true);
 //new end adding by bigpapy
   
@@ -521,7 +521,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.link.OFF);
   img.setAttribute("id", "link_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.link")*/Util.Parse("TooltipWindowLink",data[0]));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.link")*/htlivesight.Util.Parse("TooltipWindowLink",data[0]));
   img.addEventListener('click',  htlivesight.Click.link, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -530,14 +530,14 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.info.ON);
   img.setAttribute("id", "tip_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.info")*/Util.Parse("TooltipWindowInfo",data[0]));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.info")*/htlivesight.Util.Parse("TooltipWindowInfo",data[0]));
   img.addEventListener('click',  htlivesight.Click.tip, true);
 
   img = document.createElement("image");
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.maximize.OFF);
   img.setAttribute("id", "maximize_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.maximize")*/Util.Parse("TooltipWindowMaximize",data[0]));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.maximize")*/htlivesight.Util.Parse("TooltipWindowMaximize",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -546,7 +546,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.minimize.ON);
   img.setAttribute("id", "minimize_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.minimize")*/Util.Parse("TooltipWindowMinimize",data[0]));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.minimize")*/htlivesight.Util.Parse("TooltipWindowMinimize",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -555,7 +555,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.shade.OFF);
   img.setAttribute("id", "shade_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.shade")*/Util.Parse("TooltipWindowShade",data[0]));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.shade")*/htlivesight.Util.Parse("TooltipWindowShade",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -564,7 +564,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.close.OFF);
   img.setAttribute("id", "close_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.close")*/Util.Parse("TooltipWindowClose",data[0]));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.close")*/htlivesight.Util.Parse("TooltipWindowClose",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -573,7 +573,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.up.OFF);
   img.setAttribute("id", "moveup_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.move_up")*/Util.Parse("TooltipWindowMoveUp",data[0]));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.move_up")*/htlivesight.Util.Parse("TooltipWindowMoveUp",data[0]));
   img.addEventListener('click',  htlivesight.Click.moveUp, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -582,7 +582,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.down.OFF);
   img.setAttribute("id", "movedown_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.move_down")*/Util.Parse("TooltipWindowMoveDown",data[0]));
+  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.move_down")*/htlivesight.Util.Parse("TooltipWindowMoveDown",data[0]));
   img.addEventListener('click',  htlivesight.Click.moveDown, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -967,7 +967,7 @@ else {matchLeagueStarted = false;
   for(var j=1; j<=8; j++){
     document.getElementById("leaguetable_"+j).setAttribute("style", "");
   }
-  document.getElementById("leaguetable_name").setAttribute("value", /*strings.getString("league.live_table")*/Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")");
+  document.getElementById("leaguetable_name").setAttribute("value", /*strings.getString("league.live_table")*/htlivesight.Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")");
   if(league.level == 1){
     document.getElementById("leaguetable_1").setAttribute("style", "background-color: #dfd;");
   }
@@ -1008,7 +1008,7 @@ else {matchLeagueStarted = false;
  htlivesight.DOM.UpdateElementBoxLeague=function(league) {
 //  var strings = document.getElementById("strings");
   document.getElementById("winbox_leaguematches").collapsed=false;
-  var number = /*strings.getString("league.round")*/Util.Parse("LeagueRound",data[0]) + " " + league.currentRound.number;
+  var number = /*strings.getString("league.round")*/htlivesight.Util.Parse("LeagueRound",data[0]) + " " + league.currentRound.number;
   var date = htlivesight.Time.formatDate(league.currentRound.date);
 
   document.getElementById("league_round_number").setAttribute("value", number);

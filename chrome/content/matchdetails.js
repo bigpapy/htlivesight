@@ -23,7 +23,7 @@ htlivesight.matchDetails.HTTPGet = function (matchId, youth) {
         + "&matchID=" + matchId
 	+ "&isYouth=" + youth;*/
 
- //   EventSystem.HTTPRequest(URL, matchDetails.ParseGet, "request.details");    	var parameters=[["file","matchdetails"],                    ["matchID",matchId],                    ["isYouth",youth],                           ];    Htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.matchDetails.ParseGet(xml);});
+ //   EventSystem.HTTPRequest(URL, matchDetails.ParseGet, "request.details");    	var parameters=[["file","matchdetails"],                    ["matchID",matchId],                    ["isYouth",youth],                           ];    htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.matchDetails.ParseGet(xml);});
 };
 
 htlivesight.matchDetails.ParseGet = function(xml) {
@@ -37,7 +37,7 @@ htlivesight.matchDetails.ParseGet = function(xml) {
       regExp = new RegExp(regArenaStr);
   //    found = regExp.exec(xml);  //   xmlArena = xml.getElementsByTagName("Arena")[0];
       arena = htlivesight.matchDetails.parseArena(/*found[1]*/xml);  //    alert("arena = matchDetails.parseArena(/*found[1]*/xml): " +arena.name);
-      htlivesight.matchDetails.youth = Live.ParseYouth(xml);
+      htlivesight.matchDetails.youth = htlivesight.Live.ParseYouth(xml);
       match = new htlivesight.Match(matchId, null, null, null, null, arena, htlivesight.matchDetails.youth);
       if (htlivesight.Match.List["_"+matchId+"_"+htlivesight.matchDetails.youth] != null &&
           htlivesight.Match.List["_"+matchId+"_"+htlivesight.matchDetails.youth].home != null) {
@@ -53,7 +53,7 @@ htlivesight.matchDetails.ParseGet = function(xml) {
 };
 
 htlivesight.matchDetails.parseMatchId = function(xml) {
-//  return parseInt(Util.Parse("<MatchID>(.*?)</MatchID>", xml), 10);	return parseInt(Util.Parse("MatchID", xml), 10);
+//  return parseInt(htlivesight.Util.Parse("<MatchID>(.*?)</MatchID>", xml), 10);	return parseInt(htlivesight.Util.Parse("MatchID", xml), 10);
 };
 
 htlivesight.matchDetails.parseArena = function(xml) {	//	alert("matchDetails.parseArenaName(xml): "+ matchDetails.parseArenaName(xml));
@@ -65,16 +65,16 @@ htlivesight.matchDetails.parseArena = function(xml) {	//	alert("matchDetails.p
 };
 
 htlivesight.matchDetails.parseArenaId = function (xml) {
-//  return Util.Parse("<ArenaID>(.*?)</ArenaID>", xml);	return parseInt(Util.Parse("ArenaID", xml), 10);
+//  return htlivesight.Util.Parse("<ArenaID>(.*?)</ArenaID>", xml);	return parseInt(htlivesight.Util.Parse("ArenaID", xml), 10);
 };
-htlivesight.matchDetails.parseArenaName = function (xml) {//alert ("Util.Parse(ArenaName, xml):"+ Util.Parse("ArenaName", xml));
- // return Util.Parse("<ArenaName>(.*?)</ArenaName>", xml);	 return Util.Parse("ArenaName", xml);
+htlivesight.matchDetails.parseArenaName = function (xml) {//alert ("htlivesight.Util.Parse(ArenaName, xml):"+ htlivesight.Util.Parse("ArenaName", xml));
+ // return htlivesight.Util.Parse("<ArenaName>(.*?)</ArenaName>", xml);	 return htlivesight.Util.Parse("ArenaName", xml);
 };
 htlivesight.matchDetails.parseWeatherId = function (xml) {
-//  return Util.Parse("<WeatherID>(.*?)</WeatherID>", xml);	return parseInt(Util.Parse("WeatherID", xml),10);
+//  return htlivesight.Util.Parse("<WeatherID>(.*?)</WeatherID>", xml);	return parseInt(htlivesight.Util.Parse("WeatherID", xml),10);
 };
 htlivesight.matchDetails.parseSoldTotal = function (xml) {
- // return Util.Parse("<SoldTotal>(.*?)</SoldTotal>", xml);	return /*parseInt(*/Util.Parse("SoldTotal", xml)/*,10)*/;// with parseInt it gives error even if sold tickets is a number!
+ // return htlivesight.Util.Parse("<SoldTotal>(.*?)</SoldTotal>", xml);	return /*parseInt(*/htlivesight.Util.Parse("SoldTotal", xml)/*,10)*/;// with parseInt it gives error even if sold tickets is a number!
 };
 
 

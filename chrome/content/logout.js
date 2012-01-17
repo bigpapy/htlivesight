@@ -1,7 +1,7 @@
-function Logout() {
+ htlivesight.LogOut = function() {
 };
 
-Logout.HTTP = function () {
+htlivesight.LogOut.HTTP = function () {
 /*  var URL = HTTP.hattrickServer
           + "/Common/chppxml.axd?file=login"
           + "&actionType=logout";*/
@@ -11,9 +11,9 @@ Logout.HTTP = function () {
   //request.open('GET', URL, false);
   //request.setRequestHeader("User-Agent", HTTP.userAgent)
   //request.send(null);
-  Live.started = false;
-  clearInterval(Live.interval);
-  Live.interval = null;
+  htlivesight.Live.started = false;
+  clearInterval(htlivesight.Live.interval);
+  htlivesight.Live.interval = null;
   //HTTP.ClearSessionCookie();
   htlivesight.Log.trace("htlivesight out. Goodbye.");
 };

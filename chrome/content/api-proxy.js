@@ -3,9 +3,9 @@
  * Contains function to get authorization and XML data from Hattrick
  */
 
-if (!Htlivesight) var Htlivesight = {};
+if (!htlivesight) var htlivesight = {};
 
-Htlivesight.ApiProxy = {
+htlivesight.ApiProxy = {
 
 
 	consumerKey   : "vALLKFL56ChUPnJhUAUzPs",
@@ -24,8 +24,8 @@ Htlivesight.ApiProxy = {
 	 */
 	
 	authorized : function(teamId) { 
-		return Htlivesight.ApiProxy.getAccessToken(teamId)
-			&& Htlivesight.ApiProxy.getAccessTokenSecret(teamId);
+		return htlivesight.ApiProxy.getAccessToken(teamId)
+			&& htlivesight.ApiProxy.getAccessTokenSecret(teamId);
 	},
 
 	
@@ -39,26 +39,26 @@ Htlivesight.ApiProxy = {
 		var firstTime = true;
 		var teamId =""+document.getElementById("teamId").value;// get teamId from initial form
 		var accessor = {
-			consumerSecret : Htlivesight.ApiProxy.consumerSecret,
+			consumerSecret : htlivesight.ApiProxy.consumerSecret,
 			tokenSecret : null
 		};
 		var msg = {
-			action : Htlivesight.ApiProxy.requestTokenUrl,
+			action : htlivesight.ApiProxy.requestTokenUrl,
 			method : "get",
 			parameters : [
-				["oauth_consumer_key", Htlivesight.ApiProxy.consumerKey],
-				["oauth_signature_method", Htlivesight.ApiProxy.signatureMethod],
+				["oauth_consumer_key", htlivesight.ApiProxy.consumerKey],
+				["oauth_signature_method", htlivesight.ApiProxy.signatureMethod],
 				["oauth_signature", ""],
 				["oauth_timestamp", ""],
 				["oauth_nonce", ""],
 				["oauth_callback", "oob"] // no callback
 			]
 		};
-		Htlivesight.OAuth.setTimestampAndNonce(msg);
-		Htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
-		var requestTokenUrl = Htlivesight.OAuth.addToURL(Htlivesight.ApiProxy.requestTokenUrl, msg.parameters);
+		htlivesight.OAuth.setTimestampAndNonce(msg);
+		htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
+		var requestTokenUrl = htlivesight.OAuth.addToURL(htlivesight.ApiProxy.requestTokenUrl, msg.parameters);
 		dump("Requesting token at: " + requestTokenUrl + "\n");
-		Htlivesight.load(requestTokenUrl, function(text, status) {
+		htlivesight.load(requestTokenUrl, function(text, status) {
 				if (status != 200) {
 					// failed to fetch link
 					alert("status: "+ status);
@@ -77,66 +77,66 @@ Htlivesight.ApiProxy = {
 			//		alert("url"+ url);
 
 
-				languageXML = Htlivesight.loadXml(url);
+				languageXML = htlivesight.loadXml(url);
 
 				data=languageXML.getElementsByTagName("Htlivesight");
 
 				// new localization end
 				
 				// get introduction message
-				var introduction=/*strbundle.getString("introduction")*/Util.Parse("Introduction",data[0]);
+				var introduction=/*strbundle.getString("introduction")*/htlivesight.Util.Parse("Introduction",data[0]);
 				// show it
 				alert(introduction);
 
 				// open a new tab of the chpp page to get the authorization code
-				chppPage=window.open(Htlivesight.ApiProxy.authorizeUrl + "?" + text );
+				chppPage=window.open(htlivesight.ApiProxy.authorizeUrl + "?" + text );
 				
 				// when clicking on this tab continue
 				window.addEventListener("focus", function(ev) {
 					
 					//ask the auth code to user and get it only once
 					if (firstTime){				
-						var insert=/*strbundle.getString("insert")*/Util.Parse("Insert",data[0]);
+						var insert=/*strbundle.getString("insert")*/htlivesight.Util.Parse("Insert",data[0]);
 						var oauthVerifier = prompt(insert,"");
 						firstTime=false;
 					};
 					var accessor = {
-						consumerSecret : Htlivesight.ApiProxy.consumerSecret,
+						consumerSecret : htlivesight.ApiProxy.consumerSecret,
 						tokenSecret : requestTokenSecret
 					};
 					var msg = {
-						action : Htlivesight.ApiProxy.accessTokenUrl,
+						action : htlivesight.ApiProxy.accessTokenUrl,
 						method : "get",
 						parameters : [
-							["oauth_consumer_key", Htlivesight.ApiProxy.consumerKey],
+							["oauth_consumer_key", htlivesight.ApiProxy.consumerKey],
 							["oauth_token", requestToken],
-							["oauth_signature_method", Htlivesight.ApiProxy.signatureMethod],
+							["oauth_signature_method", htlivesight.ApiProxy.signatureMethod],
 							["oauth_signature", ""],
 							["oauth_timestamp", ""],
 							["oauth_nonce", ""],
 							["oauth_verifier", oauthVerifier]
 						]
 					};
-					Htlivesight.OAuth.setTimestampAndNonce(msg);
-					Htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
-					var query = Htlivesight.OAuth.formEncode(msg.parameters);
-					var accessTokenUrl = Htlivesight.ApiProxy.accessTokenUrl + "?" + query;
+					htlivesight.OAuth.setTimestampAndNonce(msg);
+					htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
+					var query = htlivesight.OAuth.formEncode(msg.parameters);
+					var accessTokenUrl = htlivesight.ApiProxy.accessTokenUrl + "?" + query;
 					dump("Requesting access token at: " + accessTokenUrl + "\n");
 					
-					Htlivesight.load(accessTokenUrl, function(text) {
+					htlivesight.load(accessTokenUrl, function(text) {
 						
 						try{// added because of error not influent to the target of the function
 							var accessToken = text.split(/&/)[0].split(/=/)[1];
 							var accessTokenSecret = text.split(/&/)[1].split(/=/)[1];
 						
 							// save access Token
-							Htlivesight.ApiProxy.setAccessToken(accessToken,teamId);
+							htlivesight.ApiProxy.setAccessToken(accessToken,teamId);
 
 							// save access Token Secret
-							Htlivesight.ApiProxy.setAccessTokenSecret(accessTokenSecret,teamId);
+							htlivesight.ApiProxy.setAccessTokenSecret(accessTokenSecret,teamId);
 
 							//internationalization: get string for ending authorization
-							var ending=/*strbundle.getString("ending")*/Util.Parse("Ending",data[0]);;
+							var ending=/*strbundle.getString("ending")*/htlivesight.Util.Parse("Ending",data[0]);;
 						
 							// showing ending message
 							alert(ending);
@@ -167,72 +167,72 @@ Htlivesight.ApiProxy = {
 			url = "chrome://htlivesight/content/locale/"+ prefs.language.locale +".xml";
 		//	alert("url"+ url);
 
-		languageXML = Htlivesight.loadXml(url);
+		languageXML = htlivesight.loadXml(url);
 
 		data=languageXML.getElementsByTagName("Htlivesight");
 		// end adding new localization files
 		
 		var teamId = document.getElementById("teamId").value;
-		if (!Htlivesight.ApiProxy.authorized(teamId)) { // if not authorized...
+		if (!htlivesight.ApiProxy.authorized(teamId)) { // if not authorized...
 			dump("ApiProxy: unauthorized.\n");
-			Htlivesight.ApiProxy.authorize(doc); // ...get authorization
+			htlivesight.ApiProxy.authorize(doc); // ...get authorization
 			callback(null);
 			return;
 		}
 		var accessor = {
-			consumerSecret : Htlivesight.ApiProxy.consumerSecret,
-			tokenSecret : Htlivesight.ApiProxy.getAccessTokenSecret(teamId)
+			consumerSecret : htlivesight.ApiProxy.consumerSecret,
+			tokenSecret : htlivesight.ApiProxy.getAccessTokenSecret(teamId)
 		};
 		var msg = {
-			action : Htlivesight.ApiProxy.resourceUrl,
+			action : htlivesight.ApiProxy.resourceUrl,
 			method : "get",
 			parameters : parameters
 		};
-		Htlivesight.OAuth.setParameters(msg, [
-			["oauth_consumer_key", Htlivesight.ApiProxy.consumerKey],
-			["oauth_token", Htlivesight.ApiProxy.getAccessToken(teamId)],
-			["oauth_signature_method", Htlivesight.ApiProxy.signatureMethod],
+		htlivesight.OAuth.setParameters(msg, [
+			["oauth_consumer_key", htlivesight.ApiProxy.consumerKey],
+			["oauth_token", htlivesight.ApiProxy.getAccessToken(teamId)],
+			["oauth_signature_method", htlivesight.ApiProxy.signatureMethod],
 			["oauth_signature", ""],
 			["oauth_timestamp", ""],
 			["oauth_nonce", ""],
 		]);
-		Htlivesight.OAuth.setTimestampAndNonce(msg);
-		Htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
-		var url = Htlivesight.OAuth.addToURL(Htlivesight.ApiProxy.resourceUrl, msg.parameters);
+		htlivesight.OAuth.setTimestampAndNonce(msg);
+		htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
+		var url = htlivesight.OAuth.addToURL(htlivesight.ApiProxy.resourceUrl, msg.parameters);
 		dump("Fetching XML data from " + url + "\n");
-		Htlivesight.loadXml(url, function(x, status) {
+		htlivesight.loadXml(url, function(x, status) {
 			switch (status){
 			
 			case 0:	// error: not connected to internet
-						var serverOFF=/*strbundle.getString("serverOFF")*/Util.Parse("ServerOFF",data[0]);//i13n: get local string
+						var serverOFF=/*strbundle.getString("serverOFF")*/htlivesight.Util.Parse("ServerOFF",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
-						var error0=/*strbundle.getString("error0")*/Util.Parse("Error0",data[0]);//i13n: get local string
+						var error0=/*strbundle.getString("error0")*/htlivesight.Util.Parse("Error0",data[0]);//i13n: get local string
 						alert(error0);//show local error message
 						callback(null);
 						break;
 			
 			case 200: // no error
-						var serverON=/*strbundle.getString("serverON");*/Util.Parse("ServerON",data[0]);//i13n: get local string
+						var serverON=/*strbundle.getString("serverON");*/htlivesight.Util.Parse("ServerON",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverON);//update server status in menu
 						callback(x);
 						break;
 
 			case 401: // error: not authorized	
 					//	dump("ApiProxy: error 401, unauthorized. Arguments: " + parameters + ".\n");
-						var error401=/*strbundle.getString("error401")*/Util.Parse("Error401",data[0]); //i13n: get local string
+						var error401=/*strbundle.getString("error401")*/htlivesight.Util.Parse("Error401",data[0]); //i13n: get local string
 						alert(error401);// show local error message
-						Htlivesight.ApiProxy.invalidateAccessToken(teamId);//delete access token
-						var serverOFF=/*strbundle.getString("serverOFF")*/Util.Parse("ServerOFF",data[0]);//i13n: get local string
+						htlivesight.ApiProxy.invalidateAccessToken(teamId);//delete access token
+						var serverOFF=/*strbundle.getString("serverOFF")*/htlivesight.Util.Parse("ServerOFF",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF); //update server status in menu
-						Htlivesight.ApiProxy.authorize(doc);// start authorize
+						htlivesight.ApiProxy.authorize(doc);// start authorize
 						callback(null);
 						break;
 		
 			
 			case 404: // error: requested resource not found
-						var serverOFF=/*strbundle.getString("serverOFF")*/Util.Parse("ServerOFF",data[0]);//i13n: get local string
+						var serverOFF=/*strbundle.getString("serverOFF")*/htlivesight.Util.Parse("ServerOFF",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
-						var error404=/*strbundle.getString("error404")*/Util.Parse("Error404",data[0]);//i13n: get local string
+						var error404=/*strbundle.getString("error404")*/htlivesight.Util.Parse("Error404",data[0]);//i13n: get local string
 						alert(error404);//show local error message
 						Live.safeLiveVersionEnabled=true;
 						callback(null);
@@ -240,18 +240,18 @@ Htlivesight.ApiProxy = {
 						
 									
 			case 500:	// error: not connected to internet
-						var serverOFF=/*strbundle.getString("serverOFF")*/Util.Parse("ServerOFF",data[0]);//i13n: get local string
+						var serverOFF=/*strbundle.getString("serverOFF")*/htlivesight.Util.Parse("ServerOFF",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
-						var error500=/*strbundle.getString("error500")*/Util.Parse("Error500",data[0]);//i13n: get local string
+						var error500=/*strbundle.getString("error500")*/htlivesight.Util.Parse("Error500",data[0]);//i13n: get local string
 						alert(error500);//show local error message
 						Live.safeLiveVersionEnabled=true;
 						callback(null);
 						break;
 						
 			case 503:	// error: not connected to internet
-						var serverOFF=/*strbundle.getString("serverOFF")*/Util.Parse("ServerOFF",data[0]);//i13n: get local string
+						var serverOFF=/*strbundle.getString("serverOFF")*/htlivesight.Util.Parse("ServerOFF",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
-						var error503=/*strbundle.getString("error503")*/Util.Parse("Error503",data[0]);//i13n: get local string
+						var error503=/*strbundle.getString("error503")*/htlivesight.Util.Parse("Error503",data[0]);//i13n: get local string
 						alert(error503);//show local error message
 						Live.safeLiveVersionEnabled=true;
 						callback(null);
@@ -259,9 +259,9 @@ Htlivesight.ApiProxy = {
 						
 			default	:	// all the others errors.
 				//		dump("ApiProxy: error " + status + ". Arguments: " + parameters + "\n");
-						var serverOFF=/*strbundle.getString("serverOFF")*/Util.Parse("ServerOFF",data[0]);//i13n: get local string
+						var serverOFF=/*strbundle.getString("serverOFF")*/htlivesight.Util.Parse("ServerOFF",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF); //update server status in menu
-						var error=/*strbundle.getString("error")*/Util.Parse("Error",data[0]);//i13n: get local string
+						var error=/*strbundle.getString("error")*/htlivesight.Util.Parse("Error",data[0]);//i13n: get local string
 						alert(error+":"+status);//show local error message
 						Live.safeLiveVersionEnabled=true;
 						callback(null);
@@ -271,23 +271,23 @@ Htlivesight.ApiProxy = {
 	},
 
 	invalidateAccessToken : function(teamId) { // cancel access token and access token secret
-		Htlivesight.ApiProxy.setAccessToken("",teamId);
-		Htlivesight.ApiProxy.setAccessTokenSecret("",teamId);
+		htlivesight.ApiProxy.setAccessToken("",teamId);
+		htlivesight.ApiProxy.setAccessTokenSecret("",teamId);
 	},
 
 	getAccessToken : function(teamId) { // load access token 
-		return HtlivesightPrefs.getString("oauth." + teamId + ".accessToken");
+		return htlivesightPrefs.getString("oauth." + teamId + ".accessToken");
 	},
 
 	setAccessToken : function(token,teamId) { // save access token
-		HtlivesightPrefs.setString("oauth." + teamId + ".accessToken", token);
+		htlivesightPrefs.setString("oauth." + teamId + ".accessToken", token);
 	},
 
 	getAccessTokenSecret : function(teamId) { // load access token secret
-		return HtlivesightPrefs.getString("oauth." + teamId + ".accessTokenSecret");
+		return htlivesightPrefs.getString("oauth." + teamId + ".accessTokenSecret");
 	},
 
 	setAccessTokenSecret : function(secret,teamId) { // save access token secret
-	HtlivesightPrefs.setString("oauth." + teamId + ".accessTokenSecret", secret);
+	htlivesightPrefs.setString("oauth." + teamId + ".accessTokenSecret", secret);
 	},
 };

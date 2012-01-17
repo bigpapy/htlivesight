@@ -9,6 +9,7 @@ var htlivesight = {
     username: "",
     friends: ""
   },*/
+  Settings: null,
   showLeague: false,
   liveCount: 0,
   warningShown: false,
@@ -29,12 +30,12 @@ var htlivesight = {
         winbox=wbList[i];
         img = document.getElementById("imgwinboxshade_"+winbox);
         img.addEventListener('click',  htlivesight.Click.winboxShade, true);
-        img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.shade")*/Util.Parse("TooltipWindowShade",htlivesight.data[0]));
+        img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.shade")*/htlivesight.Util.Parse("TooltipWindowShade",htlivesight.data[0]));
         img.collapsed=false;
 
         img = document.getElementById("imgwinboxopen_"+winbox);
         img.addEventListener('click',  htlivesight.Click.winboxOpen, true);
-        img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.open")*/Util.Parse("TooltipWindowOpen",htlivesight.data[0]));
+        img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.open")*/htlivesight.Util.Parse("TooltipWindowOpen",htlivesight.data[0]));
         img.collapsed=true;
 
         document.getElementById("winboxcontent_"+winbox).hidden=false;
@@ -84,10 +85,11 @@ var htlivesight = {
   },
   getRecommendedServer: function() {
 //	  alert("startup: getRecommendedServer");
-    HTTP.getRecommendedServer();
+    htlivesight.HTTP.getRecommendedServer();
   },
   Login: function(username, securitycode){// changed
 //	  alert("startup: Login: begin");
+	 
     if(document.getElementById("save_teamId").checked) {
       htlivesight.Preferences.teamId.save(document.getElementById("teamId").value);
     /*  htlivesight.Preferences.password.save(document.getElementById("username").value,
@@ -110,13 +112,14 @@ var htlivesight = {
  //   htlivesight.Preferences.ReLiveSpeed.save(htlivesight.prefs.other.reLiveSpeed);
  //   htlivesight.Preferences.ReLiveByEvent.save(htlivesight.prefs.other.reLiveByEvent);
  //   Login.HTTP();
-     Login.Fakesuccess(); 
+     htlivesight.LogIn.Fakesuccess();
+
   //  alert("startup: Login: end");
   },
   Logout: function() {
 //	  alert("startup: Logout begin");
-    if (Login.login) {
-      Logout.HTTP();
+    if (htlivesight.LogIn.login) {
+      htlivesight.LogOut.HTTP();
     }
  //   alert("startup: Logout end");
   },
@@ -144,10 +147,10 @@ var htlivesight = {
   startView: function() { 
 //	  alert("startup:startview begin");
 	  do{
-		  Live.view();
+		  htlivesight.Live.view();
 	  }while(htlivesight.errorLoadingXML);
-//	  Live.view(); // added to avoid delay showing event list
-	  Live.startView();
+//	  htlivesight.Live.view(); // added to avoid delay showing event list
+	  htlivesight.Live.startView();
  //   alert("startup:startview end");
   },
   GetMyData: function() { 
@@ -187,7 +190,7 @@ var htlivesight = {
   AddLiveMatch: function(matchId, youth) {
 //	  alert("startup:winboxShadeByName begin");
     if (htlivesight.liveCount >= 20) {
-       var message=/*document.getElementById("strings").getString("matches.maximum")*/Util.Parse("MatchesMaximum",data[0]);
+       var message=/*document.getElementById("strings").getString("matches.maximum")*/htlivesight.Util.Parse("MatchesMaximum",data[0]);
        alert(message);
        htlivesight.warningShown = true;
        return;
@@ -195,12 +198,12 @@ var htlivesight = {
     if (typeof(htlivesight.Match.List["_"+matchId+"_"+youth]) == 'undefined')
     {
       htlivesight.liveCount++;
-      Live.HTTPAddMatch(matchId, youth);
+      htlivesight.Live.HTTPAddMatch(matchId, youth);
       htlivesight.GetMatchDetails(matchId, youth);
     } else {
       if (htlivesight.Match.List["_"+matchId+"_"+youth].live == false)
         htlivesight.liveCount++;
-      Live.HTTPAddMatch(matchId, youth);
+      htlivesight.Live.HTTPAddMatch(matchId, youth);
       htlivesight.GetMatchDetails(matchId, youth);
     }
  //   alert("startup:winboxShadeByName end");
@@ -231,7 +234,7 @@ var htlivesight = {
 
   localization: function() {
 //	  alert("startup:unload: begin");
-//	  alert("begin");
+	//  alert("begin");
 
 		//prefs = htlivesight.Settings.preferences;
 		htlivesight.prefs=htlivesight.Preferences.get();
@@ -239,73 +242,74 @@ var htlivesight = {
 //		alert("prefs.language.locale= "+ htlivesight.prefs.language.locale);
 		htlivesight.url = "chrome://htlivesight/content/locale/"+ htlivesight.prefs.language.locale +".xml";
 //		alert("url"+ htlivesight.url);
-		htlivesight.languageXML = Htlivesight.loadXml(htlivesight.url);
+		htlivesight.languageXML = htlivesight.loadXml(htlivesight.url);
 
 		htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
 
 		
+//		alert("1");
+		document.getElementById("htlivesight-window").attributes.getNamedItem("title").value=htlivesight.Util.Parse("WindowMainTitle",htlivesight.data[0]);
+	//	alert("2");
+		document.getElementById("server").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MenuServer",htlivesight.data[0]);
+//		alert("2.1");
+		document.getElementById("server").attributes.getNamedItem("label").value+=htlivesight.Util.Parse("MenuDisconnected",htlivesight.data[0]);
+		document.getElementById("menuOptions").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MenuOptions",htlivesight.data[0]);
+		document.getElementById("menuAbout").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MenuAbout",htlivesight.data[0]);
+//		alert("3");
+		document.getElementById("LoginLabel").value=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);
+		document.getElementById("LoginLabel2").attributes.getNamedItem("label").value=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);
+		document.getElementById("LoginTeamId").value=htlivesight.Util.Parse("LoginTeamId",htlivesight.data[0]);
+		document.getElementById("save_teamId").attributes.getNamedItem("label").value=htlivesight.Util.Parse("LoginRememberMe",htlivesight.data[0]);
+		document.getElementById("button_login").attributes.getNamedItem("label").value=htlivesight.Util.Parse("LoginButton",htlivesight.data[0]);
+		document.getElementById("LoginReLive").attributes.getNamedItem("label").value=htlivesight.Util.Parse("LoginReLive",htlivesight.data[0]);
+		document.getElementById("reLive").attributes.getNamedItem("label").value=htlivesight.Util.Parse("LoginReLive",htlivesight.data[0]);
+		document.getElementById("LoginSpeed").value=htlivesight.Util.Parse("LoginSpeed",htlivesight.data[0]);
+		document.getElementById("reLiveByEvent").attributes.getNamedItem("label").value=htlivesight.Util.Parse("LoginByEvent",htlivesight.data[0]);
+//		alert("4");
+		document.getElementById("LeagueMatches").value=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);
 
-		document.getElementById("htlivesight-window").attributes.getNamedItem("title").value=Util.Parse("WindowMainTitle",htlivesight.data[0]);
+		document.getElementById("leaguetable_name").value=htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0]);
 
-		document.getElementById("server").attributes.getNamedItem("label").value=Util.Parse("MenuServer",htlivesight.data[0]);
-		document.getElementById("server").attributes.getNamedItem("label").value+=Util.Parse("MenuDisconnected",htlivesight.data[0]);
-		document.getElementById("menuOptions").attributes.getNamedItem("label").value=Util.Parse("MenuOptions",htlivesight.data[0]);
-		document.getElementById("menuAbout").attributes.getNamedItem("label").value=Util.Parse("MenuAbout",htlivesight.data[0]);
-		
-		document.getElementById("LoginLabel").value=Util.Parse("LoginLabel",htlivesight.data[0]);
-		document.getElementById("LoginLabel2").attributes.getNamedItem("label").value=Util.Parse("LoginLabel",htlivesight.data[0]);
-		document.getElementById("LoginTeamId").value=Util.Parse("LoginTeamId",htlivesight.data[0]);
-		document.getElementById("save_teamId").attributes.getNamedItem("label").value=Util.Parse("LoginRememberMe",htlivesight.data[0]);
-		document.getElementById("button_login").attributes.getNamedItem("label").value=Util.Parse("LoginButton",htlivesight.data[0]);
-		document.getElementById("LoginReLive").attributes.getNamedItem("label").value=Util.Parse("LoginReLive",htlivesight.data[0]);
-		document.getElementById("reLive").attributes.getNamedItem("label").value=Util.Parse("LoginReLive",htlivesight.data[0]);
-		document.getElementById("LoginSpeed").value=Util.Parse("LoginSpeed",htlivesight.data[0]);
-		document.getElementById("reLiveByEvent").attributes.getNamedItem("label").value=Util.Parse("LoginByEvent",htlivesight.data[0]);
-		
-		document.getElementById("LeagueMatches").value=Util.Parse("LeagueMatches",htlivesight.data[0]);
+		document.getElementById("LeaguePosition").value=htlivesight.Util.Parse("LeaguePosition",htlivesight.data[0]);
 
-		document.getElementById("leaguetable_name").value=Util.Parse("LeagueLiveTable",htlivesight.data[0]);
+		document.getElementById("LeagueTeam").value=htlivesight.Util.Parse("LeagueTeam",htlivesight.data[0]);
 
-		document.getElementById("LeaguePosition").value=Util.Parse("LeaguePosition",htlivesight.data[0]);
+		document.getElementById("LeaguePlayed").value=htlivesight.Util.Parse("LeaguePlayed",htlivesight.data[0]);
+//		alert("5");
+		document.getElementById("LeagueGoals").value=htlivesight.Util.Parse("LeagueGoals",htlivesight.data[0]);
 
-		document.getElementById("LeagueTeam").value=Util.Parse("LeagueTeam",htlivesight.data[0]);
+		document.getElementById("LeagueGoalDiff").value=htlivesight.Util.Parse("LeagueGoalDiff",htlivesight.data[0]);
 
-		document.getElementById("LeaguePlayed").value=Util.Parse("LeaguePlayed",htlivesight.data[0]);
+		document.getElementById("LeaguePoints").value=htlivesight.Util.Parse("LeaguePoints",htlivesight.data[0]);
 
-		document.getElementById("LeagueGoals").value=Util.Parse("LeagueGoals",htlivesight.data[0]);
+		document.getElementById("MatchesList").value=htlivesight.Util.Parse("MatchesList",htlivesight.data[0]);
 
-		document.getElementById("LeagueGoalDiff").value=Util.Parse("LeagueGoalDiff",htlivesight.data[0]);
+		document.getElementById("MatchesList").value=htlivesight.Util.Parse("MatchesList",htlivesight.data[0]);
+//		alert("6");
+		document.getElementById("FriendsTitle").value=htlivesight.Util.Parse("FriendsTitle",htlivesight.data[0]);
 
-		document.getElementById("LeaguePoints").value=Util.Parse("LeaguePoints",htlivesight.data[0]);
+		document.getElementById("btnfriend_remove").attributes.getNamedItem("label").value=htlivesight.Util.Parse("FriendsRemove",htlivesight.data[0]);
 
-		document.getElementById("MatchesList").value=Util.Parse("MatchesList",htlivesight.data[0]);
+		document.getElementById("btnfriend_addmatch").attributes.getNamedItem("label").value=htlivesight.Util.Parse("FriendsOpen",htlivesight.data[0]);
 
-		document.getElementById("MatchesList").value=Util.Parse("MatchesList",htlivesight.data[0]);
+		document.getElementById("MatchesAdd").value=htlivesight.Util.Parse("MatchesAdd",htlivesight.data[0]);
 
-		document.getElementById("FriendsTitle").value=Util.Parse("FriendsTitle",htlivesight.data[0]);
+		document.getElementById("MatchesAdd").value=htlivesight.Util.Parse("MatchesAdd",htlivesight.data[0]);
+//		alert("7");
+		document.getElementById("boxaddyouth").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesYouth",htlivesight.data[0]);
 
-		document.getElementById("btnfriend_remove").attributes.getNamedItem("label").value=Util.Parse("FriendsRemove",htlivesight.data[0]);
+		document.getElementById("buttonAddMatch").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesByMatch",htlivesight.data[0]);
 
-		document.getElementById("btnfriend_addmatch").attributes.getNamedItem("label").value=Util.Parse("FriendsOpen",htlivesight.data[0]);
-
-		document.getElementById("MatchesAdd").value=Util.Parse("MatchesAdd",htlivesight.data[0]);
-
-		document.getElementById("MatchesAdd").value=Util.Parse("MatchesAdd",htlivesight.data[0]);
-
-		document.getElementById("boxaddyouth").attributes.getNamedItem("label").value=Util.Parse("MatchesYouth",htlivesight.data[0]);
-
-		document.getElementById("buttonAddMatch").attributes.getNamedItem("label").value=Util.Parse("MatchesByMatch",htlivesight.data[0]);
-
-		document.getElementById("buttonAddTeam").attributes.getNamedItem("label").value=Util.Parse("MatchesByTeam",htlivesight.data[0]);
-
-		if (!HtlivesightPrefs.getBool("HtlsFirstStart")){
+		document.getElementById("buttonAddTeam").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesByTeam",htlivesight.data[0]);
+//		alert("8");
+		if (!htlivesightPrefs.getBool("HtlsFirstStart")){
 		//	alert("1");
 			var optionsPage=window.open("chrome://htlivesight/content/settings.xul","_blank");
 		//	alert("2");
 		//	optionsPage.onfocus();
 		
 			
-			HtlivesightPrefs.setBool("HtlsFirstStart",true);
+			htlivesightPrefs.setBool("HtlsFirstStart",true);
 
 
 			//	htlivesight.Settings.save();

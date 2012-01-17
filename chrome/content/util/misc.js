@@ -3,8 +3,8 @@
  * Miscellaneous utilities
  */
 
-if (!Htlivesight) var Htlivesight = {};
-Htlivesight.load = function(url, callback, crossSite) {
+if (!htlivesight) var htlivesight = {};
+htlivesight.load = function(url, callback, crossSite) {
 		var req = new XMLHttpRequest();
 		if (!callback) {
 			req.open("GET", url, false);
@@ -31,9 +31,9 @@ Htlivesight.load = function(url, callback, crossSite) {
 		}
 };
 
-Htlivesight.loadXml = function(url, callback, crossSite) {
+htlivesight.loadXml = function(url, callback, crossSite) {
 	if (callback) {
-		Htlivesight.load(url, function(text, status) {
+		htlivesight.load(url, function(text, status) {
 			try {
 				var parser = new DOMParser();
 				var xml = parser.parseFromString(text, "text/xml");
@@ -52,7 +52,7 @@ Htlivesight.loadXml = function(url, callback, crossSite) {
 	}
 	else {
 		try {
-			var text = Htlivesight.load(url);
+			var text = htlivesight.load(url);
 			var parser = new DOMParser();
 			var xml = parser.parseFromString(text, "text/xml");
 			return xml;
