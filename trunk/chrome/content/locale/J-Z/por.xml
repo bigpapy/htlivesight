@@ -3,9 +3,9 @@
 
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuStart>Iniciar</MenuStart>
+<MenuOptions>Opções</MenuOptions>
+<TooltipButton>Clique para abrir o menu do HTLiveSight</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -39,7 +39,7 @@
 <FriendsOpen>Abrir</FriendsOpen>
 
 <!--Authorize-->
-<Introduction>Está a ser direcionado à página de CHPP para obter o código de autorização. Se não der, autorize as janelas de pop up ou ponha o HTlivesight na lista de exceções.</Introduction>
+<Introduction>Está a ser direcionado à página de CHPP para obter o código de autorização. Se não conseguir, autorize as janelas de pop up ou ponha o HTlivesight na lista de exceções.</Introduction>
 <Insert>coloque o seu código de autorização aqui:</Insert>
 <Ending>Agora o HTlivesight está autorizado. Clique em OK para reiniciar a aplicação.</Ending>
 <Error401>Erro 401: acesso não autorizado. Tem que obter autorização de novo. Clique em OK para continuar.</Error401>
@@ -244,8 +244,8 @@
 <!--About-->
 <WindowAboutTitle>Acerca do HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabTranslators>Tradutores</TabTranslators>
+<TabCredits>Créditos</TabCredits>
 <MonthJanuary>Jan</MonthJanuary>
 <MonthFebruary>Fev</MonthFebruary>
 <MonthMarch>Mar</MonthMarch>
@@ -253,8 +253,8 @@
 <MonthMay>Mai</MonthMay>
 <MonthJune>Jun</MonthJune>
 <MonthJuly>Jul</MonthJuly>
-<MonthAugust>Aug</MonthAugust>
-<MonthSeptember>Sep</MonthSeptember>
+<MonthAugust>Ago</MonthAugust>
+<MonthSeptember>Set</MonthSeptember>
 <MonthOctober>Out</MonthOctober>
 <MonthNovember>Nov</MonthNovember>
 <MonthDecember>Dez</MonthDecember>
