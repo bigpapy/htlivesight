@@ -9,21 +9,21 @@
 
 /* Change Log
  * 
- * 2011-04-22 Ryan Li <ryan@ryanium.com>
- *   * Wrap functions in Htlivesight.SHA1 and remove unneeded ones to prevent
+ * 2011-08-12 Bigpapy
+ *   * Wrap functions in htlivesight.SHA1 and remove unneeded ones to prevent
  *     namespace conflicts in Firefox.
  */
 
-if (!Htlivesight)
-	var Htlivesight = {};
+if (!htlivesight)
+	var htlivesight = {};
 
-Htlivesight.SHA1 = {
+htlivesight.SHA1 = {
 	/*
 	 * Configurable variables. You may need to tweak these to be compatible with
 	 * the server-side, but the defaults work in most cases.
 	 */
 
-	/* FIXME - should make Htlivesight.SHA1 as a function receiving these
+	/* FIXME - should make htlivesight.SHA1 as a function receiving these
 	 * as parameters.
 	 */
 	b64pad : "", /* base-64 pad character. "=" for strict RFC compliance   */
@@ -34,7 +34,7 @@ Htlivesight.SHA1 = {
 	 * They take string arguments and return either hex or base-64 encoded strings
 	 */
 	b64_hmac_sha1 : function(key, data) {
-		var b64pad = Htlivesight.SHA1.b64pad;
+		var b64pad = htlivesight.SHA1.b64pad;
 		/*
 		 * Convert an array of big-endian words to a base-64 string
 		 */

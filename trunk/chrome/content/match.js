@@ -34,8 +34,8 @@ htlivesight.Match.List = new Object();
 
 htlivesight.Match.Team = function (id, name, shortName) {
   this.id = id;
-  this.name = Util.RemoveAmpersand(name);
-  this.shortName = Util.RemoveAmpersand(shortName);
+  this.name = htlivesight.Util.RemoveAmpersand(name);
+  this.shortName = htlivesight.Util.RemoveAmpersand(shortName);
 };
 
 htlivesight.Match.side = function(team, goals, formation, tactic) {
@@ -140,7 +140,7 @@ htlivesight.Match.Update = function (newMatch) {
   if (match.event && match.event.list) {
     for (i=match.event.list.first; i <= match.event.list.last; i++) {
       if (match.event.list["_"+i])
-        Events.translate(match, match.event.list["_"+i]);
+        htlivesight.Events.translate(match, match.event.list["_"+i]);
     };
   }
   // added by bigpapy

@@ -1,6 +1,6 @@
-function htlivesight() {
-};
-
+//htlivesight.Settings= function () {
+//};
+if (!htlivesight) var htlivesight = {};
 
 htlivesight.Settings = {
   preferences: null,
@@ -9,21 +9,26 @@ htlivesight.Settings = {
     WINDOW: 1
   },
   startup: function() {
+//	  alert("startup1");
     htlivesight.Settings.self = this;
+ //   alert("startup2");
     this.preferences = htlivesight.Preferences.get();
+ //   alert("startup3");
     htlivesight.Settings.load();
-  },
+ //   alert("startup4");
+  }, 
   load: function() {
+//	  alert("load");
     var prefs = htlivesight.Settings.preferences;
     var ndx = prefs.general.openInTab 
               ? htlivesight.Settings.OPEN_IN.TAB
               : htlivesight.Settings.OPEN_IN.WINDOW;
     document.getElementById("openin").selectedIndex=ndx;
     document.getElementById("hattrickServer").value = prefs.general.hattrickServer;
- /*   if(prefs.other.reLive) {
-    	document.getElementById("chkGetLeague").disabled=true;
-    	prefs.matches.league.get=false;
-    }*/
+//    if(prefs.other.reLive) {
+//    	document.getElementById("chkGetLeague").disabled=true;
+//    	prefs.matches.league.get=false;
+//    }
     if (prefs.matches.league.get) {
     	document.getElementById("chkGetLeague").checked=true;
     	if (prefs.matches.league.within) {
@@ -159,150 +164,154 @@ htlivesight.Settings = {
   },
   // new localization part added by bigpapy (start)
   localization: function () {
-	  prefs=htlivesight.Preferences.get();
-//		alert("prefs.language.locale= "+ prefs.language.locale);
-		url = "chrome://htlivesight/content/locale/"+ prefs.language.locale +".xml";
-//		alert("url"+ url);
-
-	languageXML = Htlivesight.loadXml(url);
-
-	data=languageXML.getElementsByTagName("Htlivesight");
-
-	document.getElementById("htlivesight-options").attributes.getNamedItem("title").value=Util.Parse("WindowMainTitle",data[0]);
-//these two instructions are not working!! They do nothing even if they are correct. (Bigpapy)
-//	document.getElementById("htlivesight-options").attributes.getNamedItem("buttonlabelcancel").value=Util.Parse("ButtonCancel",data[0]);
-//	document.getElementById("htlivesight-options").attributes.getNamedItem("buttonlabelaccept").value=Util.Parse("ButtonOk",data[0]);
-//	optionButton=document.getElementById("htlivesight-options");
-//	optionButton.buttonlabelcancel=Util.Parse("ButtonCancel",data[0]);
-//	optionButton.buttonlabelaccept=Util.Parse("ButtonOk",data[0]);
+	//  alert("begin");
 	
-	document.getElementById("TabGeneral").attributes.getNamedItem("label").value=Util.Parse("TabGeneral",data[0]);
-	document.getElementById("TabMatches").attributes.getNamedItem("label").value=Util.Parse("TabMatches",data[0]);
-	document.getElementById("TabNotifications").attributes.getNamedItem("label").value=Util.Parse("TabNotifications",data[0]);
-	document.getElementById("TabOther").attributes.getNamedItem("label").value=Util.Parse("TabOther",data[0]);
-	document.getElementById("TabCustom").attributes.getNamedItem("label").value=Util.Parse("TabCustom",data[0]);
-	document.getElementById("GeneralOpen").attributes.getNamedItem("label").value=Util.Parse("GeneralOpen",data[0]);
-	document.getElementById("openin_tab").attributes.getNamedItem("label").value=Util.Parse("GeneralNewTab",data[0]);
-	document.getElementById("openin_window").attributes.getNamedItem("label").value=Util.Parse("GeneralNewWindow",data[0]);
-	document.getElementById("LanguageSelect").attributes.getNamedItem("label").value=Util.Parse("LanguageSelect",data[0]);
-	document.getElementById("LanguageNote").value=Util.Parse("LanguageNote",data[0]);
-	document.getElementById("GeneralServer").attributes.getNamedItem("label").value=Util.Parse("GeneralServer",data[0]);
-	document.getElementById("GeneralNote").value=Util.Parse("GeneralNote",data[0]);
+	var  prefs=htlivesight.Preferences.get();
+//	alert("1");
+//		alert("prefs.language.locale= "+ prefs.language.locale);
+	var	url = "chrome://htlivesight/content/locale/"+ prefs.language.locale +".xml";
+//		alert("url"+ url);
+//	alert("2");
+	var languageXML = htlivesight.loadXml(url);
+//	alert("3");
+	var data=languageXML.getElementsByTagName("Htlivesight");
+//	alert("4");
+	document.getElementById("htlivesight-options").attributes.getNamedItem("title").value=htlivesight.Util.Parse("WindowMainTitle",data[0]);
+//	alert("5");
+//these two instructions are not working!! They do nothing even if they are correct. (Bigpapy)
+//	document.getElementById("htlivesight-options").attributes.getNamedItem("buttonlabelcancel").value=htlivesight.Util.Parse("ButtonCancel",data[0]);
+//	document.getElementById("htlivesight-options").attributes.getNamedItem("buttonlabelaccept").value=htlivesight.Util.Parse("ButtonOk",data[0]);
+//	optionButton=document.getElementById("htlivesight-options");
+//	optionButton.buttonlabelcancel=htlivesight.Util.Parse("ButtonCancel",data[0]);
+//	optionButton.buttonlabelaccept=htlivesight.Util.Parse("ButtonOk",data[0]);
+	
+	document.getElementById("TabGeneral").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabGeneral",data[0]);
+	document.getElementById("TabMatches").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabMatches",data[0]);
+	document.getElementById("TabNotifications").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabNotifications",data[0]);
+	document.getElementById("TabOther").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabOther",data[0]);
+	document.getElementById("TabCustom").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabCustom",data[0]);
+	document.getElementById("GeneralOpen").attributes.getNamedItem("label").value=htlivesight.Util.Parse("GeneralOpen",data[0]);
+	document.getElementById("openin_tab").attributes.getNamedItem("label").value=htlivesight.Util.Parse("GeneralNewTab",data[0]);
+	document.getElementById("openin_window").attributes.getNamedItem("label").value=htlivesight.Util.Parse("GeneralNewWindow",data[0]);
+	document.getElementById("LanguageSelect").attributes.getNamedItem("label").value=htlivesight.Util.Parse("LanguageSelect",data[0]);
+	document.getElementById("LanguageNote").value=htlivesight.Util.Parse("LanguageNote",data[0]);
+	document.getElementById("GeneralServer").attributes.getNamedItem("label").value=htlivesight.Util.Parse("GeneralServer",data[0]);
+	document.getElementById("GeneralNote").value=htlivesight.Util.Parse("GeneralNote",data[0]);
 //matches
-	document.getElementById("MatchesLeague").attributes.getNamedItem("label").value=Util.Parse("MatchesLeague",data[0]);
-	document.getElementById("chkGetLeague").attributes.getNamedItem("label").value=Util.Parse("MatchesGetLeague",data[0]);
-	document.getElementById("chkGetLeagueWithin").attributes.getNamedItem("label").value=Util.Parse("MatchesPlayed",data[0]);
-	document.getElementById("MatchesHours").value=Util.Parse("MatchesHours",data[0]);
-	document.getElementById("MatchesFriends").attributes.getNamedItem("label").value=Util.Parse("MatchesFriends",data[0]);
-	document.getElementById("chkGetFriends").attributes.getNamedItem("label").value=Util.Parse("MatchesGetFriends",data[0]);
-	document.getElementById("chkGetFriendsWithin").attributes.getNamedItem("label").value=Util.Parse("MatchesPlayed",data[0]);
-	document.getElementById("MatchesHours2").value=Util.Parse("MatchesHours",data[0]);
-	document.getElementById("MatchesScorers").attributes.getNamedItem("label").value=Util.Parse("MatchesScorers",data[0]);
-	document.getElementById("chkHdrScorers").attributes.getNamedItem("label").value=Util.Parse("ScorersList",data[0]);
-	document.getElementById("MatchesWindow").attributes.getNamedItem("label").value=Util.Parse("MatchesWindow",data[0]);
-	document.getElementById("MatchesLines").value=Util.Parse("MatchesLines",data[0]);
+	document.getElementById("MatchesLeague").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesLeague",data[0]);
+	document.getElementById("chkGetLeague").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesGetLeague",data[0]);
+	document.getElementById("chkGetLeagueWithin").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesPlayed",data[0]);
+	document.getElementById("MatchesHours").value=htlivesight.Util.Parse("MatchesHours",data[0]);
+	document.getElementById("MatchesFriends").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesFriends",data[0]);
+	document.getElementById("chkGetFriends").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesGetFriends",data[0]);
+	document.getElementById("chkGetFriendsWithin").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesPlayed",data[0]);
+	document.getElementById("MatchesHours2").value=htlivesight.Util.Parse("MatchesHours",data[0]);
+	document.getElementById("MatchesScorers").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesScorers",data[0]);
+	document.getElementById("chkHdrScorers").attributes.getNamedItem("label").value=htlivesight.Util.Parse("ScorersList",data[0]);
+	document.getElementById("MatchesWindow").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesWindow",data[0]);
+	document.getElementById("MatchesLines").value=htlivesight.Util.Parse("MatchesLines",data[0]);
 	//notify
-	document.getElementById("NotifyNotify").attributes.getNamedItem("label").value=Util.Parse("NotifyNotify",data[0]);
-	document.getElementById("chkSound").attributes.getNamedItem("label").value=Util.Parse("NotifyEnableSound",data[0]);
-	document.getElementById("chkSoundOnlyOpened").attributes.getNamedItem("label").value=Util.Parse("NotifyOnly",data[0]);
-	document.getElementById("chkFlash").attributes.getNamedItem("label").value=Util.Parse("NotifyFlash",data[0]);
-	document.getElementById("chkSlider").attributes.getNamedItem("label").value=Util.Parse("NotifyStatus",data[0]);
+	document.getElementById("NotifyNotify").attributes.getNamedItem("label").value=htlivesight.Util.Parse("NotifyNotify",data[0]);
+	document.getElementById("chkSound").attributes.getNamedItem("label").value=htlivesight.Util.Parse("NotifyEnableSound",data[0]);
+	document.getElementById("chkSoundOnlyOpened").attributes.getNamedItem("label").value=htlivesight.Util.Parse("NotifyOnly",data[0]);
+	document.getElementById("chkFlash").attributes.getNamedItem("label").value=htlivesight.Util.Parse("NotifyFlash",data[0]);
+	document.getElementById("chkSlider").attributes.getNamedItem("label").value=htlivesight.Util.Parse("NotifyStatus",data[0]);
 	//other
-	document.getElementById("OtherAuthorization").attributes.getNamedItem("label").value=Util.Parse("OtherAuthorization",data[0]);
-	document.getElementById("OtherReset").value=Util.Parse("OtherReset",data[0]);
-	document.getElementById("button_reset").attributes.getNamedItem("label").value=Util.Parse("OtherResetButton",data[0]);
-	document.getElementById("OtherEvents").attributes.getNamedItem("label").value=Util.Parse("OtherEvents",data[0]);
-	document.getElementById("reverseOrder").attributes.getNamedItem("label").value=Util.Parse("OtherReverse",data[0]);
-	document.getElementById("OtherReverseNote").value=Util.Parse("OtherReverseNote",data[0]);
-	document.getElementById("OtherEventKey").attributes.getNamedItem("label").value=Util.Parse("OtherEventKey",data[0]);
-	document.getElementById("printEventKey").attributes.getNamedItem("label").value=Util.Parse("OtherEventKeyNote",data[0]);
+	document.getElementById("OtherAuthorization").attributes.getNamedItem("label").value=htlivesight.Util.Parse("OtherAuthorization",data[0]);
+	document.getElementById("OtherReset").value=htlivesight.Util.Parse("OtherReset",data[0]);
+	document.getElementById("button_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("OtherResetButton",data[0]);
+	document.getElementById("OtherEvents").attributes.getNamedItem("label").value=htlivesight.Util.Parse("OtherEvents",data[0]);
+	document.getElementById("reverseOrder").attributes.getNamedItem("label").value=htlivesight.Util.Parse("OtherReverse",data[0]);
+	document.getElementById("OtherReverseNote").value=htlivesight.Util.Parse("OtherReverseNote",data[0]);
+	document.getElementById("OtherEventKey").attributes.getNamedItem("label").value=htlivesight.Util.Parse("OtherEventKey",data[0]);
+	document.getElementById("printEventKey").attributes.getNamedItem("label").value=htlivesight.Util.Parse("OtherEventKeyNote",data[0]);
 	// customization
-	document.getElementById("CustomIcons").attributes.getNamedItem("label").value=Util.Parse("CustomIcons",data[0]);
-	document.getElementById("oldIcons").attributes.getNamedItem("label").value=Util.Parse("CustomIconsOld",data[0]);
-	document.getElementById("CustomSounds").attributes.getNamedItem("label").value=Util.Parse("CustomSounds",data[0]);
-	document.getElementById("weather").attributes.getNamedItem("label").value=Util.Parse("CustomSoundsWeather",data[0]);
-	document.getElementById("whistleTime").attributes.getNamedItem("label").value=Util.Parse("CustomSoundsTime",data[0]);
-	document.getElementById("weatherSE").attributes.getNamedItem("label").value=Util.Parse("CustomSoundsSEW",data[0]);
-	document.getElementById("livefoxGoal").attributes.getNamedItem("label").value=Util.Parse("CustomSoundsGoal",data[0]);
-	document.getElementById("noOpGoal").attributes.getNamedItem("label").value=Util.Parse("CustomSoundsNoOpGoal",data[0]);
-	document.getElementById("PathSoundsNote1").value=Util.Parse("PathSoundsNote1",data[0]);
-	document.getElementById("PathSoundsNote2").value=Util.Parse("PathSoundsNote2",data[0]);
+	document.getElementById("CustomIcons").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomIcons",data[0]);
+	document.getElementById("oldIcons").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomIconsOld",data[0]);
+	document.getElementById("CustomSounds").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomSounds",data[0]);
+	document.getElementById("weather").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomSoundsWeather",data[0]);
+	document.getElementById("whistleTime").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomSoundsTime",data[0]);
+	document.getElementById("weatherSE").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomSoundsSEW",data[0]);
+	document.getElementById("livefoxGoal").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomSoundsGoal",data[0]);
+	document.getElementById("noOpGoal").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomSoundsNoOpGoal",data[0]);
+	document.getElementById("PathSoundsNote1").value=htlivesight.Util.Parse("PathSoundsNote1",data[0]);
+	document.getElementById("PathSoundsNote2").value=htlivesight.Util.Parse("PathSoundsNote2",data[0]);
 //goalsounds
-	document.getElementById("TabGoalSound").attributes.getNamedItem("label").value=Util.Parse("TabGoalSound",data[0]);
+	document.getElementById("TabGoalSound").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabGoalSound",data[0]);
 	// my goals sound labels
-	document.getElementById("myGoalCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsMyGoal",data[0]);
-	document.getElementById("myGoalButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("myGoalButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("myGoalCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsMyGoal",data[0]);
+	document.getElementById("myGoalButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("myGoalButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// op goals sound labels
-	document.getElementById("opGoalCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsOpGoal",data[0]);
-	document.getElementById("opGoalButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("opGoalButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("opGoalCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsOpGoal",data[0]);
+	document.getElementById("opGoalButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("opGoalButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// friends goal sound labels
-	document.getElementById("frGoalCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsFrGoal",data[0]);
-	document.getElementById("frGoalButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("frGoalButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("frGoalCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsFrGoal",data[0]);
+	document.getElementById("frGoalButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("frGoalButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// opponent friends goal sound labes
-	document.getElementById("opfrGoalCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsOpFrGoal",data[0]);
-	document.getElementById("opfrGoalButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("opfrGoalButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("opfrGoalCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsOpFrGoal",data[0]);
+	document.getElementById("opfrGoalButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("opfrGoalButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// other goals sound labels
-	document.getElementById("otGoalCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsOtGoal",data[0]);
-	document.getElementById("otGoalButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("otGoalButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("otGoalCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsOtGoal",data[0]);
+	document.getElementById("otGoalButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("otGoalButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// miss goals sound labels
-	document.getElementById("missGoalCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsMiss",data[0]);
-	document.getElementById("missGoalButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("missGoalButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("missGoalCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsMiss",data[0]);
+	document.getElementById("missGoalButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("missGoalButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 //meteo and injury sounds
-	document.getElementById("TabWheatherSound").attributes.getNamedItem("label").value=Util.Parse("TabWheatherSound",data[0]);
+	document.getElementById("TabWheatherSound").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabWheatherSound",data[0]);
 	// sun sound
-	document.getElementById("sunCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsSun",data[0]);
-	document.getElementById("sunButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("sunButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("sunCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsSun",data[0]);
+	document.getElementById("sunButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("sunButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// rain sound
-	document.getElementById("rainCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRain",data[0]);
-	document.getElementById("rainButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("rainButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("rainCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRain",data[0]);
+	document.getElementById("rainButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("rainButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// overcast sound
-	document.getElementById("overcastCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsOvercast",data[0]);
-	document.getElementById("overcastButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("overcastButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("overcastCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsOvercast",data[0]);
+	document.getElementById("overcastButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("overcastButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// few clouds sound
-	document.getElementById("fewCloudsCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsFewClouds",data[0]);
-	document.getElementById("fewCloudsButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("fewCloudsButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("fewCloudsCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsFewClouds",data[0]);
+	document.getElementById("fewCloudsButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("fewCloudsButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// My injury sound
-	document.getElementById("myBooCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsMyBoo",data[0]);
-	document.getElementById("myBooButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("myBooButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("myBooCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsMyBoo",data[0]);
+	document.getElementById("myBooButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("myBooButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// Opponent and other injury sound
-	document.getElementById("opBooCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsOpBoo",data[0]);
-	document.getElementById("opBooButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("opBooButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("opBooCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsOpBoo",data[0]);
+	document.getElementById("opBooButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("opBooButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 //begin/end half and booking sounds
-	document.getElementById("TabWhistleSound").attributes.getNamedItem("label").value=Util.Parse("TabWhistleSound",data[0]);
+	document.getElementById("TabWhistleSound").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabWhistleSound",data[0]);
 	// Whistle start sound
-	document.getElementById("whistleStartCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsWhistleStart",data[0]);
-	document.getElementById("whistleStartButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("whistleStartButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("whistleStartCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsWhistleStart",data[0]);
+	document.getElementById("whistleStartButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("whistleStartButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// Whistle2 sound
-	document.getElementById("whistle2Check").attributes.getNamedItem("label").value=Util.Parse("PathSoundsWhistle2",data[0]);
-	document.getElementById("whistle2Button_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("whistle2Button_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("whistle2Check").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsWhistle2",data[0]);
+	document.getElementById("whistle2Button_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("whistle2Button_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// Whistle3 sound
-	document.getElementById("whistle3Check").attributes.getNamedItem("label").value=Util.Parse("PathSoundsWhistle3",data[0]);
-	document.getElementById("whistle3Button_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("whistle3Button_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("whistle3Check").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsWhistle3",data[0]);
+	document.getElementById("whistle3Button_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("whistle3Button_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// Whistle sound
-	document.getElementById("whistleCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsWhistle",data[0]);
-	document.getElementById("whistleButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("whistleButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("whistleCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsWhistle",data[0]);
+	document.getElementById("whistleButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("whistleButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// Hattrick sound
-	document.getElementById("hattrickCheck").attributes.getNamedItem("label").value=Util.Parse("PathSoundsHattrick",data[0]);
-	document.getElementById("hattrickButton_reset").attributes.getNamedItem("label").value=Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("hattrickButton_play").attributes.getNamedItem("label").value=Util.Parse("PathSoundsPlay",data[0]);
-  
-  },
+	document.getElementById("hattrickCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsHattrick",data[0]);
+	document.getElementById("hattrickButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("hattrickButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+
+  }, 
   //  new localization part added by bigpapy (start)
   
   click: {
@@ -436,9 +445,11 @@ htlivesight.Settings = {
     resetToken: function() {
        	teamId=htlivesight.Preferences.teamId.get();    
     	if (teamId=="") teamId=prompt("TeamId");
-       	Htlivesight.ApiProxy.invalidateAccessToken(teamId);//delete access token
+       	htlivesight.ApiProxy.invalidateAccessToken(teamId);//delete access token
      //  	var strbundle = document.getElementById("stringsauthorize");// internationalization: get local file content.
-       	var reset_token=/*strbundle.getString("reset_token")*/Util.Parse("ResetToken",data[0]);
+       	alert("before reset token");
+       	var reset_token=htlivesight.Util.Parse("ResetToken",data[0]);
+       	alert("after reset token");
      	alert(reset_token);
     },
     //added by bigpapy (end)
@@ -558,14 +569,7 @@ htlivesight.Settings = {
     			return;
     		} catch(e) {}
       },
-      
-   /*   prova: function() {
-    	  alert("works!");
-    	  document.getElementById("myGoalSoundPathHidden").focus();
-    	  alert("works2!");
-    	  document.getElementById("myGoalSoundPath").value=document.getElementById("myGoalSoundPathHidden").value;
-      },*/
-
+       
     opGoalSound: function() {
           var prefs = htlivesight.Settings.preferences;
           if(document.getElementById("opGoalCheck").checked) {
@@ -1241,5 +1245,5 @@ htlivesight.Settings = {
       			prefs.personalization.hattrickSoundPath = soundPath;
       		  },
 	      
-  }
+  },  
 };

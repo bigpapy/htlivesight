@@ -22,7 +22,7 @@
   },
   parseFetchDate: function (response) {
    //   return Time.parseDate(Util.Parse("<FetchedDate>(.*?)</FetchedDate>", response));
-	  return htlivesight.Time.parseDate(Util.Parse("FetchedDate", response));
+	  return htlivesight.Time.parseDate(htlivesight.Util.Parse("FetchedDate", response));
   },
   parseDate: function(str) {
     // str is a date string in the form "yyyy-mm-dd hh:mm:ss" (Ex: "2005-12-03 22:00:00")
@@ -81,7 +81,7 @@
     	match.nextEventTime.setDate(match.nextEventTime.getDate()+7);
   //  	console.log("match.nextEventTime= "+match.nextEventTime);
         // end next event time (next update).
-      return /*strings.getString("time.finish")*/Util.Parse("TimeFinish",data[0]);
+      return /*strings.getString("time.finish")*/htlivesight.Util.Parse("TimeFinish",data[0]);
     };
   
     var startTime = match.date;
@@ -103,16 +103,16 @@
       match.nextEventTime= new Date(match.date);
        
       if (days > 1) 
-        return /*strings.getString("time.starts_in")*/Util.Parse("TimeStartsIn",data[0]) + " " + days + " " + /*strings.getString("time.days")*/Util.Parse("TimeDays",data[0]); 
+        return /*strings.getString("time.starts_in")*/htlivesight.Util.Parse("TimeStartsIn",data[0]) + " " + days + " " + /*strings.getString("time.days")*/htlivesight.Util.Parse("TimeDays",data[0]); 
       if (days > 0) 
-        return /*strings.getString("time.starts_in")*/Util.Parse("TimeStartsIn",data[0]) + " " + days + " " + /*strings.getString("time.day")*/Util.Parse("TimeDay",data[0]); 
+        return /*strings.getString("time.starts_in")*/htlivesight.Util.Parse("TimeStartsIn",data[0]) + " " + days + " " + /*strings.getString("time.day")*/htlivesight.Util.Parse("TimeDay",data[0]); 
       if (hours > 1)
-        return /*strings.getString("time.starts_in")*/Util.Parse("TimeStartsIn",data[0]) + " " + hours + " " + /*strings.getString("time.hours")*/Util.Parse("TimeHours",data[0]); 
+        return /*strings.getString("time.starts_in")*/htlivesight.Util.Parse("TimeStartsIn",data[0]) + " " + hours + " " + /*strings.getString("time.hours")*/htlivesight.Util.Parse("TimeHours",data[0]); 
       if (hours > 0)
-        return /*strings.getString("time.starts_in")*/Util.Parse("TimeStartsIn",data[0]) + " " + hours + " " + /*strings.getString("time.hour")*/Util.Parse("TimeHour",data[0]); 
+        return /*strings.getString("time.starts_in")*/htlivesight.Util.Parse("TimeStartsIn",data[0]) + " " + hours + " " + /*strings.getString("time.hour")*/htlivesight.Util.Parse("TimeHour",data[0]); 
       if (minutes > 1)
-        return /*strings.getString("time.starts_in")*/Util.Parse("TimeStartsIn",data[0]) + " " + minutes + " " + /*strings.getString("time.minutes")*/Util.Parse("TimeMinutes",data[0]); 
-      return /*strings.getString("time.starts_in")*/Util.Parse("TimeStartsIn",data[0]) + " " + minutes + " " + /*strings.getString("time.minute")*/Util.Parse("TimeMinute",data[0]); 
+        return /*strings.getString("time.starts_in")*/htlivesight.Util.Parse("TimeStartsIn",data[0]) + " " + minutes + " " + /*strings.getString("time.minutes")*/htlivesight.Util.Parse("TimeMinutes",data[0]); 
+      return /*strings.getString("time.starts_in")*/htlivesight.Util.Parse("TimeStartsIn",data[0]) + " " + minutes + " " + /*strings.getString("time.minute")*/htlivesight.Util.Parse("TimeMinute",data[0]); 
     };
       
     var seconds = Math.round(time/1000); // time elapsed in seconds
@@ -173,14 +173,14 @@
     	 }
     } // sounds of beginning first half and second half (end). (added by bigpapy)
  //   alert("before return");
-    if(m <= 45) return "" + m + /*strings.getString("time.min")*/Util.Parse("TimeMin",data[0]) + " " + /*strings.getString("time.first_half")*/Util.Parse("TimeFirstHalf",data[0]);
-    if(!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent && m==htlivesight.Time.reLiveMinute) && m < 59) return /*strings.getString("time.half_time")*/Util.Parse("TimeHalfTime",data[0]) + ". " + /*strings.getString("time.second_half")*/Util.Parse("TimeSecondHalf",data[0]) + " "+ /*strings.getString("time.starts_in")*/Util.Parse("TimeStartsIn",data[0]) + " " + (60-m) + " " + /*strings.getString("time.minutes")*/Util.Parse("TimeMinutes",data[0]);
-    if(!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent && m==htlivesight.Time.reLiveMinute) && m == 59) return /*strings.getString("time.half_time")*/Util.Parse("TimeHalfTime",data[0]) + ". " + /*strings.getString("time.second_half")*/Util.Parse("TimeSecondHalf",data[0]) + " "+ /*strings.getString("time.starts_in")*/Util.Parse("TimeStartsIn",data[0]) + " " + (60-m) + " " + /*strings.getString("time.minute")*/Util.Parse("TimeMinute",data[0]);
+    if(m <= 45) return "" + m + /*strings.getString("time.min")*/htlivesight.Util.Parse("TimeMin",data[0]) + " " + /*strings.getString("time.first_half")*/htlivesight.Util.Parse("TimeFirstHalf",data[0]);
+    if(!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent && m==htlivesight.Time.reLiveMinute) && m < 59) return /*strings.getString("time.half_time")*/htlivesight.Util.Parse("TimeHalfTime",data[0]) + ". " + /*strings.getString("time.second_half")*/htlivesight.Util.Parse("TimeSecondHalf",data[0]) + " "+ /*strings.getString("time.starts_in")*/htlivesight.Util.Parse("TimeStartsIn",data[0]) + " " + (60-m) + " " + /*strings.getString("time.minutes")*/htlivesight.Util.Parse("TimeMinutes",data[0]);
+    if(!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent && m==htlivesight.Time.reLiveMinute) && m == 59) return /*strings.getString("time.half_time")*/htlivesight.Util.Parse("TimeHalfTime",data[0]) + ". " + /*strings.getString("time.second_half")*/htlivesight.Util.Parse("TimeSecondHalf",data[0]) + " "+ /*strings.getString("time.starts_in")*/htlivesight.Util.Parse("TimeStartsIn",data[0]) + " " + (60-m) + " " + /*strings.getString("time.minute")*/htlivesight.Util.Parse("TimeMinute",data[0]);
     if(!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent && m==htlivesight.Time.reLiveMinute)) m = m-15; // second half
-    if(m <= 90) return "" + m + /*strings.getString("time.min")*/Util.Parse("TimeMin",data[0]) + " " + /*strings.getString("time.second_half")*/Util.Parse("TimeSecondHalf",data[0]);
+    if(m <= 90) return "" + m + /*strings.getString("time.min")*/htlivesight.Util.Parse("TimeMin",data[0]) + " " + /*strings.getString("time.second_half")*/htlivesight.Util.Parse("TimeSecondHalf",data[0]);
     // extra time
-    if(m <= 120) return "" + m + /*strings.getString("time.min")*/Util.Parse("TimeMin",data[0]) + " " + /*strings.getString("time.extra_time")*/Util.Parse("TimeExtraTime",data[0]);
-    return /*strings.getString("time.penalties")*/Util.Parse("TimePenalties",data[0]);
+    if(m <= 120) return "" + m + /*strings.getString("time.min")*/htlivesight.Util.Parse("TimeMin",data[0]) + " " + /*strings.getString("time.extra_time")*/htlivesight.Util.Parse("TimeExtraTime",data[0]);
+    return /*strings.getString("time.penalties")*/htlivesight.Util.Parse("TimePenalties",data[0]);
   }
 };
 

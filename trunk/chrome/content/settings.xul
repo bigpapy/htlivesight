@@ -2,7 +2,7 @@
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <?xml-stylesheet href="settings.css" type="text/css"?>
 
-<!DOCTYPE dialog SYSTEM "chrome://htlivesight/locale/settings.dtd">
+<!--<!DOCTYPE dialog SYSTEM "chrome://htlivesight/locale/settings.dtd">-->
 
 <dialog id="htlivesight-options"
 	
@@ -11,9 +11,9 @@
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 	title="window.title"
 	persist="screenX screenY"
-	onload="htlivesight.Settings.startup()"
+	onload="htlivesight.Settings.startup();"
 	resizable="yes"
-	ondialogcancel="htlivesight.Settings.click.btnCancel();"
+	ondialogcancel="try{htlivesight.Settings.click.btnCancel()}catch(e){alert(e)};"
 	ondialogaccept="htlivesight.Settings.click.btnOk();">
 
 	<script type="application/x-javascript" src="settings.js"/>
@@ -27,7 +27,7 @@
 	
 
   <script type="text/javascript">
-	  HtlivesightPrefs.init();
+	  htlivesightPrefs.init();
   </script>
   
    <!-- added by bigpapy (start): necessary because reset button (in other menu) works -->

@@ -22,11 +22,11 @@ htlivesight.Click = {
       htlivesight.AddLiveMatch(matchId, youth);
     }
   },
-  Login: function (event) {
-    Login.teamId = document.getElementById("teamId").value;        if (Login.teamId == ""){
+  Login: function (event) {//	  alert("login1");
+    htlivesight.Login.teamId = document.getElementById("teamId").value;     //   alert("login2");    if (htlivesight.Login.teamId == ""){ //   	alert("login3");
       return;
-    };
-    document.getElementById("button_login").disabled=true;       htlivesight.getRecommendedServer();
+    }; //   alert("login4");
+    document.getElementById("button_login").disabled=true; //   alert("login5");   htlivesight.getRecommendedServer(); //  alert("login6");
   },
   Logout: function (event) {
     htlivesight.Logout();
