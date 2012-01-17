@@ -3,9 +3,9 @@
 
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuStart>Käivita</MenuStart>
+<MenuOptions>Valikud</MenuOptions>
+<TooltipButton>Kliki HTLiveSight menüü avamiseks</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -232,10 +232,10 @@
 <PathSoundsWhistle3>Mängu lõpuvile heli</PathSoundsWhistle3>
 <PathSoundsWhistle>Punase/kollase kaardi heli</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick heli</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<PathSoundsRestore>Taasta</PathSoundsRestore>
+<PathSoundsPlay>Mängi</PathSoundsPlay>
+<PathSoundsNote1>Sisesta file:/// enne teed .wav formaadis helifailini.</PathSoundsNote1>
+<PathSoundsNote2>Näiteks: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Vali keel</LanguageSelect>
 <LanguageNote>Tähelepanu: Efekti võtmiseks pead Firefoxi taaskäivitama.</LanguageNote>
 <ButtonCancel>Tühista</ButtonCancel>
@@ -244,7 +244,7 @@
 <!--About-->
 <WindowAboutTitle>HTLiveSight programmist</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
+<TabTranslators>Tõlkijad</TabTranslators>
 <TabCredits>Credits</TabCredits>
 <MonthJanuary>Jan</MonthJanuary>
 <MonthFebruary>Veb</MonthFebruary>
