@@ -728,8 +728,11 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     		row = htlivesight.DOM.CreateElementRowLiveEvent(match, ev);
     		row.setAttribute("id", "ev_row_"+match.id + "_" + match.youth+"_"+i );
     		if (htlivesight.prefs.other.bottomUp){ // reverse order
+    			var countBack=0;
+ 				if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i));// last event
     			if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-1));// last event
-    			if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-3));// last event (before two "")
+    			if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-2));// last event
+    			if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-3));// last event (before two "")*/
        			rows.insertBefore(row,lastrow);// inserting new row at the top of the list
        			lastrow=row; // top row is the last one
     		}else{
