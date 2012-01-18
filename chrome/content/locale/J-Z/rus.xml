@@ -4,7 +4,7 @@
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Запуск</MenuStart>
-<MenuOptions>Опции</MenuOptions>
+<MenuOptions>Настройки</MenuOptions>
 <TooltipButton>Нажмите, чтобы открыть меню HTLiveSight</TooltipButton>
 
 <!--Main-->
