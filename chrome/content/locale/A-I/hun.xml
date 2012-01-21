@@ -107,26 +107,26 @@
 <EventSideCenter>közép</EventSideCenter>
 <EventSideFreeKick>szabadrúgás</EventSideFreeKick>
 <EventSidePenalty>büntetõ</EventSidePenalty>
-<EventSpecialUnpredictable>Kiszámíthatatlan SE</EventSpecialUnpredictable>
-<EventSpecialLongShot>Távoli lövés SE</EventSpecialLongShot>
-<EventSpecialQuick>Gyors SE</EventSpecialQuick>
+<EventSpecialUnpredictable>kiszámíthatatlan SE</EventSpecialUnpredictable>
+<EventSpecialLongShot>távoli lövés SE</EventSpecialLongShot>
+<EventSpecialQuick>gyors SE</EventSpecialQuick>
 <EventSpecialLowStamina>alacsony erõnlét</EventSpecialLowStamina>
 <EventSpecialSetPieces>pontrúgás</EventSpecialSetPieces>
-<EventSpecialHead>jól fejelõ</EventSpecialHead>
+<EventSpecialHead>jól fejelõ SE</EventSpecialHead>
 <EventSpecialExperience>tapasztalat</EventSpecialExperience>
 <EventSpecialLowExperience>alacsony tapasztalat</EventSpecialLowExperience>
 <EventSpecialWinger>szélsõ +</EventSpecialWinger>
-<EventSpecialTechnical>technikás</EventSpecialTechnical>
+<EventSpecialTechnical>technikás SE</EventSpecialTechnical>
 <EventSpecialCounterAttack>ellentámadás</EventSpecialCounterAttack>
 <EventSpecialCornerKick>szöglet</EventSpecialCornerKick>
 <EventSpecialIndirect>közvetett szabadrúgás</EventSpecialIndirect>
-<EventSpecialUnpredictableLongPass>kiszámíthatatlan +: hosszú átadás</EventSpecialUnpredictableLongPass>
-<EventSpecialUnpredictableScoresOnHisOwn>kiszámíthatatlan +: váratlan lövés</EventSpecialUnpredictableScoresOnHisOwn>
-<EventSpecialUnpredictableSpecialAction>kiszámíthatatlan +: különleges akció</EventSpecialUnpredictableSpecialAction>
-<EventSpecialUnpredictableMistake>kiszámíthatatlan -: labdavesztés</EventSpecialUnpredictableMistake>
-<EventSpecialUnpredictableOwnGoal>kiszámíthatatlan -: öngól</EventSpecialUnpredictableOwnGoal>
-<EventSpecialQuickScoresAfterRush>gyors +: elfutás</EventSpecialQuickScoresAfterRush>
-<EventSpecialQuickAssist>gyors +: elfutás és átadás</EventSpecialQuickAssist>
+<EventSpecialUnpredictableLongPass>kiszámíthatatlan + (hosszú átadás)</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>kiszámíthatatlan + (váratlan lövés)</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>kiszámíthatatlan + (különleges akció)</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>kiszámíthatatlan - (labdavesztés)</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>kiszámíthatatlan - (öngól)</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>gyors + (elfutás)</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>gyors + (elfutás és átadás)</EventSpecialQuickAssist>
 <Pullback>visszahúzódás</Pullback>
 <Underestimation>túlzott önbizalom</Underestimation>
 <UnderestimationRemove>túlzott önbizalom visszaállt</UnderestimationRemove>
