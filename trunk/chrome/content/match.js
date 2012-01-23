@@ -44,6 +44,7 @@ htlivesight.Match.side = function(team, goals, formation, tactic) {
   this.formation = formation;
   this.tactic = tactic;
   this.scorers = null;
+  this.realGoals=0;
 };
 
 htlivesight.Match.events = function(evList) {
@@ -111,16 +112,20 @@ htlivesight.Match.Update = function (newMatch) {
     if (newMatch.home) {
       if (!match.home) {
         match.home=newMatch.home;
+        match.home.realGoals=newMatch.home.realGoals;
       } else {
         if(match.home.goals < newMatch.home.goals) match.home.goals = newMatch.home.goals;
+        if(match.home.realGoals < newMatch.home.realGoals) match.home.realGoals = newMatch.home.realGoals;
       }
     };
 
     if (newMatch.away) {
       if (!match.away) {
         match.away=newMatch.away;
+        match.away.realGoals=newMatch.away.realGoals;
       } else {
     	  if(match.away.goals < newMatch.away.goals)  match.away.goals = newMatch.away.goals;
+    	  if(match.away.realGoals < newMatch.away.realGoals) match.away.realGoals = newMatch.away.realGoals;
       }
     };
     

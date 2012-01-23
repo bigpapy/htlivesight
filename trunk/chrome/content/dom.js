@@ -920,6 +920,12 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 // Gonzo
  htlivesight.DOM.UpdateElementBoxLeagueTable=function(league) {
 	 var matchLeagueStarted;
+	 
+	 // added by bigpapy: relive table (begin)
+	//  alert("htlivesight.League.currentRound.number "+htlivesight.League.currentRound.number+" htlivesight.League.teams[htlivesight.Teams.myTeam.id] "+ htlivesight.League.teams[htlivesight.Teams.myTeam.id]);
+	//  alert("league.currentRound.id.has(myMatch.id) "+ league.currentRound.id.has(350625970));
+	//added by bigpapy: relive table (end)
+	 
 //  var strings = document.getElementById("strings");
   if (htlivesight.Time.hattrickTime > htlivesight.League.currentRound.date) {matchLeagueStarted = true; 
 	//alert("matchLeagueStarted: "+ matchLeagueStarted + " Time.hattrickTime:"+ Time.hattrickTime + " League.currentRound.date: " + League.currentRound.date);
@@ -927,9 +933,10 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 else {matchLeagueStarted = false;
 //alert("matchLeagueStarted: "+ matchLeagueStarted + " Time.hattrickTime:"+ Time.hattrickTime + " League.currentRound.date: " + League.currentRound.date);
 }
+   
   for(var matchid in htlivesight.Match.List){
     var myMatch = htlivesight.Match.List[matchid];
-    if(league.currentRound.id.has(myMatch.id) 
+    if(league.currentRound.id.has(myMatch.id)
         && htlivesight.League.currentRound.number > htlivesight.League.teams[htlivesight.Teams.myTeam.id]
         && htlivesight.showLeague
         && htlivesight.League.teams[myMatch.home.team.id]
@@ -943,10 +950,27 @@ else {matchLeagueStarted = false;
           htlivesight.League.teams[homeId].liveMatches = htlivesight.League.currentRound.number-1;
           htlivesight.League.teams[awayId].liveMatches = htlivesight.League.currentRound.number-1;
       };
-      htlivesight.League.teams[homeId].liveGoalsFor = htlivesight.League.teams[homeId].goalsFor + parseInt(myMatch.home.goals, 10);
-      htlivesight.League.teams[homeId].liveGoalsAgainst = htlivesight.League.teams[homeId].goalsAgainst + parseInt(myMatch.away.goals, 10);
-      htlivesight.League.teams[awayId].liveGoalsFor = htlivesight.League.teams[awayId].goalsFor + parseInt(myMatch.away.goals, 10);
-      htlivesight.League.teams[awayId].liveGoalsAgainst = htlivesight.League.teams[awayId].goalsAgainst + parseInt(myMatch.home.goals, 10);
+      
+      // if HTLS works in relive mode and last round is ended and lastRound wasn't removed from table remove it from table.
+      if((htlivesight.prefs.other.reLive && (htlivesight.League.currentRound.number = htlivesight.League.teams[htlivesight.Teams.myTeam.id].matches)) && (!htlivesight.Live.removedLastRoundFromTable)){      
+          if(myMatch.home.realGoals > myMatch.away.realGoals){
+          	htlivesight.League.teams[homeId].points -=  3;
+      //      htlivesight.League.teams[awayId].livePoints = htlivesight.League.teams[awayId].points;
+            }
+            else if(myMatch.home.realGoals < myMatch.away.realGoals){
+          	  htlivesight.League.teams[awayId].points -= 3;
+      //        htlivesight.League.teams[homeId].livePoints = htlivesight.League.teams[homeId].points;
+            }
+            else if (myMatch.home.realGoals == myMatch.away.realGoals){// add one point only if matches are started
+          	htlivesight.League.teams[homeId].points -= 1;
+              htlivesight.League.teams[awayId].points -= 1;
+            }
+          };
+      
+      htlivesight.League.teams[homeId].liveGoalsFor = htlivesight.League.teams[homeId].goalsFor + parseInt(myMatch.home.goals, 10)- parseInt(myMatch.home.realGoals, 10);
+      htlivesight.League.teams[homeId].liveGoalsAgainst = htlivesight.League.teams[homeId].goalsAgainst + parseInt(myMatch.away.goals, 10)- parseInt(myMatch.away.realGoals, 10);
+      htlivesight.League.teams[awayId].liveGoalsFor = htlivesight.League.teams[awayId].goalsFor + parseInt(myMatch.away.goals, 10)- parseInt(myMatch.away.realGoals, 10);
+      htlivesight.League.teams[awayId].liveGoalsAgainst = htlivesight.League.teams[awayId].goalsAgainst + parseInt(myMatch.home.goals, 10)- parseInt(myMatch.home.realGoals, 10);
       if(myMatch.home.goals > myMatch.away.goals){
         htlivesight.League.teams[homeId].livePoints = htlivesight.League.teams[homeId].points + 3;
         htlivesight.League.teams[awayId].livePoints = htlivesight.League.teams[awayId].points;
@@ -963,6 +987,13 @@ else {matchLeagueStarted = false;
   }
   htlivesight.League.sortTable();
   for(var id in htlivesight.League.teams){
+	  
+	  // restoring relive table position to last round and not actual one deleting it and getting position after first call of the function
+	  if((htlivesight.prefs.other.reLive && (htlivesight.League.currentRound.number = htlivesight.League.teams[htlivesight.Teams.myTeam.id].matches)) && (!htlivesight.Live.removedLastRoundFromTable)){      
+		  htlivesight.League.teams[id].position=htlivesight.League.teams[id].livePosition;
+	  };
+	  // end part of restoring relive table position to last round and not actual one deleting it and getting position after first call of the function.
+	  
     if(htlivesight.League.teams[id].livePosition > htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "leaguetable_down";
     else if(htlivesight.League.teams[id].livePosition < htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "leaguetable_up";
     else htlivesight.League.teams[id].change = "leaguetable_equal";
@@ -1055,6 +1086,12 @@ htlivesight.DOM.UpdateShortBox = function(match) {
       if(htlivesight.League.currentRound.number > htlivesight.League.teams[htlivesight.Teams.myTeam.id].matches){
         htlivesight.DOM.UpdateElementBoxLeagueTable(htlivesight.League);
       }
+      // added by bigpapy in order to have relive table updated.
+      if(htlivesight.prefs.other.reLive && (htlivesight.League.currentRound.number = htlivesight.League.teams[htlivesight.Teams.myTeam.id].matches)){
+    	htlivesight.DOM.UpdateElementBoxLeagueTable(htlivesight.League);
+    	if(!htlivesight.Live.removedLastRoundFromTable)  htlivesight.Live.removedLastRoundFromTable=true;
+        }
+      // end adding by bigpapy in order to have relive table updated.
       // End
     }
   

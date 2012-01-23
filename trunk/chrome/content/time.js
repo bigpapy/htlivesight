@@ -13,7 +13,8 @@
   start: function(hattrickTime) {
     var now = new Date();
     htlivesight.Time.hattrickTime = hattrickTime;
-    htlivesight.Time.hattrickDiffTime = hattrickTime - now;
+    htlivesight.Time.hattrickDiffTime = hattrickTime - now /*+ now.getTimezoneOffset()*60000*/;
+  //  alert(htlivesight.Time.hattrickDiffTime);
   //  alert("Timediff: "+Time.hattrickDiffTime);
 //    Time.reLiveStartTime = Time.hattrickTime - Time.hattrickDiffTime; // re live by bigpapy
   },
