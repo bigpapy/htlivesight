@@ -230,7 +230,7 @@ htlivesight.League.ParseFixtures = function(xml) {
     var p = htlivesight.prefs.matches.league;
     htlivesight.Time.hattrickTime = htlivesight.Time.parseFetchDate(xml);// bigpapy:this read current time
     if (
-    		!(htlivesight.prefs.other.reLive) &&
+    //		!(htlivesight.prefs.other.reLive) && //bigpapy: this remove table from relive mode.
       p.get
       && (
         !p.within

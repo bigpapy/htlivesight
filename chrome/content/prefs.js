@@ -42,7 +42,7 @@ var htlivesightPrefs = {
 				Components.interfaces.nsISupportsString, str);
 	},
 	
-	// adding by bigpapy, it's a try to remove if it didn't work
+	
 	getBool : function(key) {
 			var value;
 			try {
@@ -62,5 +62,19 @@ var htlivesightPrefs = {
 	setBool : function(key, value) {
 			htlivesightPrefs._pref_branch.setBoolPref(encodeURI(key), value);
 	},
+// begin adding by bigpapy (it's a try)*** to be tested, only inserted. ***
+	
+	getInt : function(key) {
+		try {
+			return htlivesightPrefs._pref_branch.getIntPref(encodeURI(key));
+		} catch(e) {
+			return null;
+		}
+	},
+
+	setInt : function(key, value) {
+			htlivesightPrefs._pref_branch.setIntPref(encodeURI(key), value);
+	},
+	
 // end adding by bigpapy (it's a try).
 };
