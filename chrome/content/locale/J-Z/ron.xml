@@ -4,8 +4,8 @@
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuOptions>Setări</MenuOptions>
+<TooltipButton>Click să deschizi meniul HTLiveSight</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -19,7 +19,7 @@
 <LoginRememberMe>Ţine-mă minte</LoginRememberMe>
 <LoginButton>Conectare</LoginButton>
 <LoginReLive>Re-Live</LoginReLive>
-<LoginSpeed>Speed</LoginSpeed>
+<LoginSpeed>Viteză</LoginSpeed>
 <LoginByEvent>Per event</LoginByEvent>
 <LeagueMatches>Meciuri de ligă</LeagueMatches>
 <LeagueLiveTable>Clasament live</LeagueLiveTable>
@@ -33,9 +33,9 @@
 <MatchesAdd>Adaugă meci</MatchesAdd>
 <MatchesByMatch>După id meci</MatchesByMatch>
 <MatchesByTeam>După id echipă</MatchesByTeam>
-<MatchesYouth>Tineret?</MatchesYouth>
+<MatchesYouth>Tineret</MatchesYouth>
 <FriendsTitle>Prieteni</FriendsTitle>
-<FriendsRemove>Renuntă</FriendsRemove>
+<FriendsRemove>Renunţă</FriendsRemove>
 <FriendsOpen>Deschide</FriendsOpen>
 
 <!--Authorize-->
@@ -60,7 +60,7 @@
 <MessageHattrickError>serverul Hattrick a produs o eroare.</MessageHattrickError>
 <MessageAlreadyFriend>Este deja prietenul tau.</MessageAlreadyFriend>
 <MessageErrorReading>Eroare la citirea datelor din</MessageErrorReading>
-<MessageLoginNotSuccessful>Conectare nereusită.</MessageLoginNotSuccessful>
+<MessageLoginNotSuccessful>Conectare nereuşită.</MessageLoginNotSuccessful>
 <TacticPressing>presing</TacticPressing>
 <TacticCA>contra-atac</TacticCA>
 <TacticAIM>atac pe centru</TacticAIM>
@@ -234,8 +234,8 @@
 <PathSoundsHattrick>Sunet hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<PathSoundsNote1>Inserează fişierul:/// înaintea căii sunetului în format .wav</PathSoundsNote1>
+<PathSoundsNote2>Exemplu: fişier:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Selectează limba</LanguageSelect>
 <LanguageNote>Nota: Reporneşte HTLiveSight ca aceasta să aibă efect.</LanguageNote>
 <ButtonCancel>Anulare</ButtonCancel>
@@ -244,7 +244,7 @@
 <!--About-->
 <WindowAboutTitle>Despre HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
+<TabTranslators>Translatori</TabTranslators>
 <TabCredits>Credits</TabCredits>
 <MonthJanuary>Ian</MonthJanuary>
 <MonthFebruary>Feb</MonthFebruary>
