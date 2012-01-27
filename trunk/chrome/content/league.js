@@ -252,7 +252,7 @@ htlivesight.League.ParseFixtures = function(xml) {
  
       for (var i=0; i<rounds[currentRound].id.length; i++) {
         matchId = rounds[currentRound].id[i];
-        htlivesight.AddLiveMatch(matchId, "False");
+      //  htlivesight.AddLiveMatch(matchId, "False");
       }
     }
   } catch(e) {
