@@ -3,9 +3,9 @@
 
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuStart>Bắt đầu</MenuStart>
+<MenuOptions>Lựa chọn</MenuOptions>
+<TooltipButton>Nhấn để mở HTLiveSight menu</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -34,7 +34,7 @@
 <MatchesByMatch>Theo mã trận đấu</MatchesByMatch>
 <MatchesByTeam>Theo mã đội</MatchesByTeam>
 <MatchesYouth>Đội trẻ?</MatchesYouth>
-<FriendsTitle>Bạn</FriendsTitle>
+<FriendsTitle>Bạn bè</FriendsTitle>
 <FriendsRemove>Xóa bỏ</FriendsRemove>
 <FriendsOpen>Mở</FriendsOpen>
 
@@ -176,7 +176,7 @@
 <TabLanguage>Ngôn ngữ</TabLanguage>
 <TabOther>Khác</TabOther>
 <TabCustom>Tùy chọn</TabCustom>
-<TabGoalSound>Tiếng hô khi có bàn thắng</TabGoalSound>
+<TabGoalSound>Âm thanh khi có bàn thắng</TabGoalSound>
 <TabWheatherSound>Âm thanh khi có sự kiện thời tiết hoặc chấn thương</TabWheatherSound>
 <TabWhistleSound>Tiếng còi của trọng tài và âm thanh của Hattrick</TabWhistleSound>
 <GeneralOpen>Mở HTLiveSight</GeneralOpen>
@@ -232,10 +232,10 @@
 <PathSoundsWhistle3>Tiếng còi kết thúc trận đấu</PathSoundsWhistle3>
 <PathSoundsWhistle>Âm thanh khi thẻ đỏ/thẻ vàng</PathSoundsWhistle>
 <PathSoundsHattrick>Âm thanh Hattrick</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
+<PathSoundsRestore>Khôi phục</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<PathSoundsNote1>Điền file:/// trước đường dẫn file âm thanh có đuôi .wav</PathSoundsNote1>
+<PathSoundsNote2>Ví dụ: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Chọn ngôn ngữ</LanguageSelect>
 <LanguageNote>Chú ý: Khởi động lại Firefox để kích hoạt.</LanguageNote>
 <ButtonCancel>Hủy</ButtonCancel>
@@ -244,8 +244,8 @@
 <!--About-->
 <WindowAboutTitle>Thông tin về HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabTranslators>Người dịch</TabTranslators>
+<TabCredits>Tín dụng</TabCredits>
 <MonthJanuary>Tháng 1</MonthJanuary>
 <MonthFebruary>Tháng 2</MonthFebruary>
 <MonthMarch>Tháng 3</MonthMarch>
