@@ -234,7 +234,7 @@ htlivesight.ApiProxy = {
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
 						var error404=/*strbundle.getString("error404")*/htlivesight.Util.Parse("Error404",data[0]);//i13n: get local string
 						alert(error404);//show local error message
-						Live.safeLiveVersionEnabled=true;
+						htlivesight.Live.safeLiveVersionEnabled=true;
 						callback(null);
 						break;
 						
@@ -244,7 +244,7 @@ htlivesight.ApiProxy = {
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
 						var error500=/*strbundle.getString("error500")*/htlivesight.Util.Parse("Error500",data[0]);//i13n: get local string
 						alert(error500);//show local error message
-						Live.safeLiveVersionEnabled=true;
+						htlivesight.Live.safeLiveVersionEnabled=true;
 						callback(null);
 						break;
 						
@@ -253,7 +253,7 @@ htlivesight.ApiProxy = {
 						htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
 						var error503=/*strbundle.getString("error503")*/htlivesight.Util.Parse("Error503",data[0]);//i13n: get local string
 						alert(error503);//show local error message
-						Live.safeLiveVersionEnabled=true;
+						htlivesight.Live.safeLiveVersionEnabled=true;
 						callback(null);
 						break;
 						
@@ -263,7 +263,7 @@ htlivesight.ApiProxy = {
 						htlivesight.DOM.addServerToPopup(serverOFF); //update server status in menu
 						var error=/*strbundle.getString("error")*/htlivesight.Util.Parse("Error",data[0]);//i13n: get local string
 						alert(error+":"+status);//show local error message
-						Live.safeLiveVersionEnabled=true;
+						htlivesight.Live.safeLiveVersionEnabled=true;
 						callback(null);
 			
 						}

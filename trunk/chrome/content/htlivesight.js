@@ -189,23 +189,37 @@ var htlivesight = {
   },
   AddLiveMatch: function(matchId, youth) {
 //	  alert("startup:winboxShadeByName begin");
+//	  alert("1");
     if (htlivesight.liveCount >= 20) {
+  //  	alert("2");
        var message=/*document.getElementById("strings").getString("matches.maximum")*/htlivesight.Util.Parse("MatchesMaximum",data[0]);
+  //     alert("3");
        alert(message);
+ //      alert("4");
        htlivesight.warningShown = true;
+ //      alert("5");
        return;
     }
-    if (typeof(htlivesight.Match.List["_"+matchId+"_"+youth]) == 'undefined')
+ //   alert("6");
+ /*   if (typeof(htlivesight.Match.List["_"+matchId+"_"+youth]) == 'undefined')
     {
+      alert("7:  htlivesight.liveCount: "+ htlivesight.liveCount);
       htlivesight.liveCount++;
+      alert("8");
       htlivesight.Live.HTTPAddMatch(matchId, youth);
+      alert("9");
       htlivesight.GetMatchDetails(matchId, youth);
-    } else {
-      if (htlivesight.Match.List["_"+matchId+"_"+youth].live == false)
-        htlivesight.liveCount++;
+      alert("10");
+    } else { */
+  //  	alert("11");
+ //     if (htlivesight.Match.List["_"+matchId+"_"+youth].live == false)
+      htlivesight.liveCount++;
+ //     alert("12: htlivesight.liveCount: "+ htlivesight.liveCount);
       htlivesight.Live.HTTPAddMatch(matchId, youth);
+ //     alert("13");
       htlivesight.GetMatchDetails(matchId, youth);
-    }
+  //    alert("14");
+ //   }
  //   alert("startup:winboxShadeByName end");
   },
   GetMatchDetails: function(matchId, youth) { 
