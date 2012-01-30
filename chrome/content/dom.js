@@ -724,7 +724,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     evList = match.event.list;
     for (i=evList.first; i <= evList.last; i++) { 	
     	ev = evList["_"+i];
-    	if (ev && ev.text != "") {
+    	if (ev && ev.text != "" && !(document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i)))) {
     		row = htlivesight.DOM.CreateElementRowLiveEvent(match, ev);
     		row.setAttribute("id", "ev_row_"+match.id + "_" + match.youth+"_"+i );
     		if (htlivesight.prefs.other.bottomUp){ // reverse order
