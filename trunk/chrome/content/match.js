@@ -26,7 +26,7 @@ htlivesight.Match= function(id, date, home, away, event, arena, youth) {
   this.isFinish = false;
   this.timeElapsed="";
   this.live = true;
-  this.lastShownEventIndex= -1;
+  this.lastShownEventIndex= [-1,-1];
   this.nextEventTime= 0;
 };
 
