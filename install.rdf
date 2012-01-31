@@ -4,13 +4,15 @@
 	xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 	<Description about="urn:mozilla:install-manifest">
 		<em:id>{469b7d40-de9a-11e0-9572-0800200c9a66}</em:id>
+		<em:unpack>true</em:unpack>
 		<em:type>2</em:type>
 		<em:name>HTLiveSightDEV</em:name>
-		<em:version>0.3.556</em:version>
+		<em:version>0.3.597</em:version>
 		<em:description>Hattrick Match Viewer based on HattrickLiveFox</em:description>
 		
 		<em:creator>Silkevicious</em:creator>
-		<em:contributor>Bigpapy</em:contributor>
+		<em:developer>Bigpapy</em:developer>
+		<em:contributor>Davidatorus</em:contributor>
 
 		<em:homepageURL>http://htlivesight.sourceforge.net/</em:homepageURL>
 		<em:iconURL>chrome://htlivesight/skin/32.png</em:iconURL>
