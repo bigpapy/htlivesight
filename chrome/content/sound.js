@@ -10,10 +10,10 @@ htlivesight.Sound.sample = function(file) {
   this.url.spec = htlivesight.Sound.samplePath + file;  
 };
 
-htlivesight.Sound.sample.prototype.play = function() {
- // htlivesight.Sound.sampleQueryInterface.play(this.url);  // new implementatio sound by foxtrick	try {		var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);		var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);		soundService.play(ioService.newURI(this.url.spec, null, null));		return;	} catch(e) {}
+htlivesight.Sound.sample.prototype.play = function() {		htlivesight.Sound.play(this.url.spec);
+ // htlivesight.Sound.sampleQueryInterface.play(this.url);  // new implementation sound by foxtrick/*	try {		var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);		var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);		soundService.play(ioService.newURI(this.url.spec, null, null));		return;	} catch(e) {}*/
 };
-
+//added by bigpapy in order to have only one play function:htlivesight.Sound.play = function(pathFile) {	 // htlivesight.Sound.sampleQueryInterface.play(this.url);	  // new implementation sound by foxtrick		try {			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);			soundService.play(ioService.newURI(pathFile, null, null));			return;		} catch(e) {}	};	// end adding by Bigpapy in order to have only one function.
 
 htlivesight.Sound.start = function() {
 //  netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
