@@ -11,10 +11,13 @@
   buttons="accept"
   ondialogaccept="window.close();">
 
-	<script type="application/x-javascript" src="./about.js" />  
+
+	<script type="application/x-javascript" src="./about.js" />
+	<script type="application/x-javascript" src="prefs.js"/>  
    	<script type="application/x-javascript" src="preferences.js"/>
   	<script type="application/x-javascript" src="./util/misc.js" />
 	<script type="application/x-javascript" src="./util.js" />
+	<script type="application/x-javascript" src="./log.js" />
   
 
   <hbox>
@@ -23,7 +26,7 @@
         <tabpanel orient="vertical" align="center" flex="1">
 		  <image class="chpp" src="chrome://htlivesight/skin/128.png"/>
           <spacer class="tab"/>
-          <label class="header" value="HTLiveSightDEV 0.4.598"/>
+          <label class="header" value="HTLiveSightDEV 0.3.552"/>
           <label id= "creationDate" value=""/>
           <label id="createdBy" value=""/>
           <separator/>
@@ -46,7 +49,8 @@
   </hbox>
   
   	<script type="text/javascript">
-// localization part!	
+    htlivesightPrefs.init();	
+// localization part!
     htlivesight.About.localization();
  	</script>	
   
