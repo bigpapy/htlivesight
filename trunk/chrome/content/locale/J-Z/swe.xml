@@ -4,8 +4,8 @@
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuOptions>Inställningar</MenuOptions>
+<TooltipButton>Klicka för att öppna HTLiveSight -menyn</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -120,13 +120,13 @@
 <EventSpecialCounterAttack>kontring</EventSpecialCounterAttack>
 <EventSpecialCornerKick>hörna</EventSpecialCornerKick>
 <EventSpecialIndirect>indirekt frispark</EventSpecialIndirect>
-<EventSpecialUnpredictableLongPass>+ oförutsägbar: long pass</EventSpecialUnpredictableLongPass>
-<EventSpecialUnpredictableScoresOnHisOwn>+ oförutsägbar: shot</EventSpecialUnpredictableScoresOnHisOwn>
-<EventSpecialUnpredictableSpecialAction>+ oförutsägbar: special action</EventSpecialUnpredictableSpecialAction>
-<EventSpecialUnpredictableMistake>- oförutsägbar: mistake</EventSpecialUnpredictableMistake>
-<EventSpecialUnpredictableOwnGoal>- oförutsägbar: own goal</EventSpecialUnpredictableOwnGoal>
-<EventSpecialQuickScoresAfterRush>+ snabb: rush and score</EventSpecialQuickScoresAfterRush>
-<EventSpecialQuickAssist>+ snabb: rush and assist</EventSpecialQuickAssist>
+<EventSpecialUnpredictableLongPass>+ oförutsägbar: långpassning</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ oförutsägbar: skott</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ oförutsägbar: special</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- oförutsägbar: misstag</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- oförutsägbar: självmål</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ snabb: löpning och mål</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ snabb: löpning och passning</EventSpecialQuickAssist>
 <Pullback>tillbakadragning</Pullback>
 <Underestimation>underskattning</Underestimation>
 <UnderestimationRemove>underskattning borta</UnderestimationRemove>
@@ -134,7 +134,7 @@
 <UnderestimationReduceOnce>underskattning reducerad 1/3</UnderestimationReduceOnce>
 <OrganizationBreaks>förvirring</OrganizationBreaks>
 <Reorganize>omorganisation</Reorganize>
-<NervesImportantThrillingGame>nerver</NervesImportantThrillingGame>
+<NervesImportantThrillingGame>nervositet</NervesImportantThrillingGame>
 <Bruised>omplåstrad</Bruised>
 <Injuried>skadad</Injuried>
 <ModeratelyInjuried>lätt skada</ModeratelyInjuried>
@@ -175,10 +175,10 @@
 <TabNotifications>Meddelanden</TabNotifications>
 <TabLanguage>Språk</TabLanguage>
 <TabOther>Övrigt</TabOther>
-<TabCustom>Customizations</TabCustom>
-<TabGoalSound>Goals sounds</TabGoalSound>
-<TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
-<TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
+<TabCustom>Anpassa</TabCustom>
+<TabGoalSound>Ljud - mål</TabGoalSound>
+<TabWheatherSound>Ljud - väderhändelser och skador</TabWheatherSound>
+<TabWhistleSound>Ljud - domarsignaler och hattrick (3 mål av samma spelare)</TabWhistleSound>
 <GeneralOpen>Öppna HTLiveSight</GeneralOpen>
 <GeneralNewTab>På en ny flik</GeneralNewTab>
 <GeneralNewWindow>I ett nytt fönster</GeneralNewWindow>
@@ -207,35 +207,35 @@
 <OtherEvents>Händelser</OtherEvents>
 <OtherEventKey>Händelsekod</OtherEventKey>
 <OtherEventKeyNote>Visa händelsekod i matchkommentaren</OtherEventKeyNote>
-<CustomIcons>Icons</CustomIcons>
-<CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
-<CustomSounds>Sounds</CustomSounds>
-<CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
-<CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
-<CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
-<CustomSoundsGoal>Original Livefox sounds</CustomSoundsGoal>
-<CustomSoundsNoOpGoal>No sounds for opponent's goals</CustomSoundsNoOpGoal>
-<PathSoundsMyGoal>Sound for own goal</PathSoundsMyGoal>
-<PathSoundsOpGoal>Sound for goal of my opponent</PathSoundsOpGoal>
-<PathSoundsFrGoal>Sound for goal of friend's</PathSoundsFrGoal>
-<PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
-<PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
-<PathSoundsMiss>Missed goal sound</PathSoundsMiss>
-<PathSoundsSun>Sound for sunny weather</PathSoundsSun>
-<PathSoundsRain>Sound for rainy weather</PathSoundsRain>
-<PathSoundsOvercast>Sound for overcast weather</PathSoundsOvercast>
-<PathSoundsFewClouds>Sound for few clouds weather</PathSoundsFewClouds>
-<PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
-<PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
-<PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
-<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<CustomIcons>Ikoner</CustomIcons>
+<CustomIconsOld>Klassiska Livefox -ikoner i matchfönstret</CustomIconsOld>
+<CustomSounds>Ljud</CustomSounds>
+<CustomSoundsWeather>Väderljud vid matchstart</CustomSoundsWeather>
+  <CustomSoundsTime>Ljud för inledning/avslutning av halvlek</CustomSoundsTime>
+<CustomSoundsSEW>Ljud för speciella väderhändelser (SE)</CustomSoundsSEW>
+<CustomSoundsGoal>Klassiska Livefox -ljud</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>Inga ljud för motståndarens mål</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Ljud - Mina mål</PathSoundsMyGoal>
+<PathSoundsOpGoal>Ljud - Motståndarens mål</PathSoundsOpGoal>
+<PathSoundsFrGoal>Ljud - Favoritslags mål</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Ljud - Favoritlags motståndares mål</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Ljud - Andra lags mål</PathSoundsOtGoal>
+<PathSoundsMiss>Ljud - Missat mål</PathSoundsMiss>
+<PathSoundsSun>Ljud - Sol</PathSoundsSun>
+<PathSoundsRain>Ljud - Regn</PathSoundsRain>
+<PathSoundsOvercast>Ljud - Mulet</PathSoundsOvercast>
+<PathSoundsFewClouds>Ljud - Växlande molnighet</PathSoundsFewClouds>
+<PathSoundsMyBoo>Ljud - Skada i mitt lag</PathSoundsMyBoo>
+<PathSoundsOpBoo>Ljud - Skada för motståndaren</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Ljud - Avspark av 1:a och 2:a halvlekar</PathSoundsWhistleStart>
+<PathSoundsWhistle2>Ljud - Slut på första halvlek</PathSoundsWhistle2>
+<PathSoundsWhistle3>Ljud - Slut på matchen</PathSoundsWhistle3>
+  <PathSoundsWhistle>Ljud - Gula/Röda kort</PathSoundsWhistle>
+<PathSoundsHattrick>Ljud - Hattrick (3 mål av samma spelare)</PathSoundsHattrick>
+<PathSoundsRestore>Återställ</PathSoundsRestore>
+<PathSoundsPlay>Lyssna</PathSoundsPlay>
+<PathSoundsNote1>Infoga file:/// före sökvägen till ljud i. wav-format</PathSoundsNote1>
+<PathSoundsNote2>Exempel: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Välj språk</LanguageSelect>
 <LanguageNote>Obs! Firefox måste startas om för att ändringen ska börja gälla.</LanguageNote>
 <ButtonCancel>Avbryt</ButtonCancel>
@@ -244,7 +244,7 @@
 <!--About-->
 <WindowAboutTitle>Om HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
+<TabTranslators>Översättare</TabTranslators>
 <TabCredits>Credits</TabCredits>
 <MonthJanuary>Jan</MonthJanuary>
 <MonthFebruary>Feb</MonthFebruary>
