@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Htlivesight>
+
+<!--Overlay-->
+<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuStart>Start</MenuStart>
+<MenuOptions>Setări</MenuOptions>
+<TooltipButton>Click să deschizi meniul HTLiveSight</TooltipButton>
+
+<!--Main-->
+<WindowMainTitle>HTLiveSight</WindowMainTitle>
+<MenuServer>Server:</MenuServer>
+<MenuDisconnected>Deconectat</MenuDisconnected>
+<MenuOptions>Opţiuni</MenuOptions>
+<MenuAbout>Despre HTLiveSight</MenuAbout>
+<LoginLabel>Conectare</LoginLabel>
+<LoginTeamId>Introdu ID-ul echipei</LoginTeamId>
+<LoginUsername>Nume utilizator</LoginUsername>
+<LoginRememberMe>Ţine-mă minte</LoginRememberMe>
+<LoginButton>Conectare</LoginButton>
+<LoginReLive>Re-Live</LoginReLive>
+<LoginSpeed>Viteză</LoginSpeed>
+<LoginByEvent>Per event</LoginByEvent>
+<LeagueMatches>Meciuri de ligă</LeagueMatches>
+<LeagueLiveTable>Clasament live</LeagueLiveTable>
+<LeaguePosition>#</LeaguePosition>
+<LeagueTeam>Echipa</LeagueTeam>
+<LeaguePlayed>J</LeaguePlayed>
+<LeagueGoals>G</LeagueGoals>
+<LeagueGoalDiff>DG</LeagueGoalDiff>
+<LeaguePoints>PCT</LeaguePoints>
+<MatchesList>Lista Meciurilor</MatchesList>
+<MatchesAdd>Adaugă meci</MatchesAdd>
+<MatchesByMatch>După id meci</MatchesByMatch>
+<MatchesByTeam>După id echipă</MatchesByTeam>
+<MatchesYouth>Tineret</MatchesYouth>
+<FriendsTitle>Prieteni</FriendsTitle>
+<FriendsRemove>Renunţă</FriendsRemove>
+<FriendsOpen>Deschide</FriendsOpen>
+
+<!--Authorize-->
+<Introduction>Eşti redirecţionat către pagina CHPP pentru a obţine codul de autorizare. Dacă nu funcţionează, te rog dezactivează blocajul pop-up sau adaugă HTlivesight pe lista excepţiilor.</Introduction>
+<Insert>Introduceţi codul de autorizare aici:</Insert>
+<Ending>Acum HTlivesight este autorizat. Apasă OK pentru a reporni aplicaţia.</Ending>
+<Error401>Eroare 401: acces neautorizat. Trebuie să obţii autorizarea din nou. Apasă ok pentru a continua.</Error401>
+<Error404>Eroare 404: resursa cerută nu a fost gasită. Dacă această eroare apare din nou, verifică dacă serviciul CHPP nu este oprit.</Error404>
+<Error0>Eroare 0: nu eşti conectat la internet.</Error0>
+<Error>Eroare</Error>
+<ServerON>Conectat</ServerON>
+<ServerOFF>Deconectat</ServerOFF>
+<ResetToken>Codul de autorizare a fost şters. Reporneşte HTLS sau aşteaptă următorul update (less than 1 minute).</ResetToken>
+<NoHTServer>Nu ai selectat corect serverul Hattrick pe care eşti logat, click dreapta oriunde pe fundal şi click pe -> opţiuni -> general şi setează numărul corect al serverului Hattrick.</NoHTServer>
+<Error500>Eroare 500: eroare de server intern (din Hattrick)</Error500>
+<Error503>Eroare 503: Serviciul CHPP indisponibil (supraîncărcare temporara sau mententanţă)</Error503>
+
+<!--Properties-->
+<MatchesMaximum>Nu puteţi vizualiza mai mult de 20 meciuri!</MatchesMaximum>
+<LeagueLiveTable>Clasament Live</LeagueLiveTable>
+<LeagueRound>Etapa</LeagueRound>
+<MessageHattrickError>serverul Hattrick a produs o eroare.</MessageHattrickError>
+<MessageAlreadyFriend>Este deja prietenul tau.</MessageAlreadyFriend>
+<MessageErrorReading>Eroare la citirea datelor din</MessageErrorReading>
+<MessageLoginNotSuccessful>Conectare nereuşită.</MessageLoginNotSuccessful>
+<TacticPressing>presing</TacticPressing>
+<TacticCA>contra-atac</TacticCA>
+<TacticAIM>atac pe centru</TacticAIM>
+<TacticAOW>atac pe flancuri</TacticAOW>
+<TacticPlayCreative>joc creativ</TacticPlayCreative>
+<TacticLongShots>şut de la distanţă</TacticLongShots>
+<TimeFirstHalf>prima repriză</TimeFirstHalf>
+<TimeHalfTime>pauză</TimeHalfTime>
+<TimeSecondHalf>a 2-a repriză</TimeSecondHalf>
+<TimeExtraTime>prelungiri</TimeExtraTime>
+<TimePenalties>penaltyuri</TimePenalties>
+<TimeFinish>final</TimeFinish>
+<TimeStartsIn>va începe în</TimeStartsIn>
+<TimeDays>zile</TimeDays>
+<TimeHours>ore</TimeHours>
+<TimeMinutes>minute</TimeMinutes>
+<TimeDay>zi</TimeDay>
+<TimeHour>oră</TimeHour>
+<TimeMinute>minut</TimeMinute>
+<TimeMin>'</TimeMin>
+<TooltipWindowSound>Activează sau dezactivează sunetele din meci</TooltipWindowSound>
+<TooltipWindowLink>Link spre pagina meciului din Hattrick</TooltipWindowLink>
+<TooltipWindowInfo>Adună informaţii mesaje eveniment </TooltipWindowInfo>
+<TooltipWindowMaximize>Măreşte fereastra</TooltipWindowMaximize>
+<TooltipWindowMinimize>Micşorează fereastra</TooltipWindowMinimize>
+<TooltipWindowShade>Umbră fereastră</TooltipWindowShade>
+<TooltipWindowClose>Închide fereastra</TooltipWindowClose>
+<TooltipWindowOpen>Deschide fereastra</TooltipWindowOpen>
+<TooltipWindowMoveUp>Mută fereastra sus</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>Mută fereastra jos</TooltipWindowMoveDown>
+<TooltipFriendRemove>Şterge prietenul din listă</TooltipFriendRemove>
+<TooltipFriendMoveUp>Mută prietenul mai sus</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>Mută prietenul mai jos</TooltipFriendMoveDown>
+<MenuAddFriend>Prieten</MenuAddFriend>
+<MenuServer>Server:</MenuServer>
+<EventGoal>GOL</EventGoal>
+<EventPenaltyGoal>Penalty: GOL</EventPenaltyGoal>
+<EventPenaltyMiss>Penalty: RATARE</EventPenaltyMiss>
+<EventInjury>Accidentare</EventInjury>
+<EventRed>Cartonaş roşu</EventRed>
+<EventYellow2>Al doilea cartonaş galben</EventYellow2>
+<EventSideLeft>stânga</EventSideLeft>
+<EventSideRight>dreapta</EventSideRight>
+<EventSideCenter>centru</EventSideCenter>
+<EventSideFreeKick>lovitură liberă</EventSideFreeKick>
+<EventSidePenalty>penalty</EventSidePenalty>
+<EventSpecialUnpredictable>SE imprevizibil</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE şut de la distanţă</EventSpecialLongShot>
+<EventSpecialQuick>SE rapid</EventSpecialQuick>
+<EventSpecialLowStamina>rezistenţă scăzută</EventSpecialLowStamina>
+<EventSpecialSetPieces>faze fixe</EventSpecialSetPieces>
+<EventSpecialHead>cap</EventSpecialHead>
+<EventSpecialExperience>experienţă</EventSpecialExperience>
+<EventSpecialLowExperience>lipsă de experienţă</EventSpecialLowExperience>
+<EventSpecialWinger>+ extremă</EventSpecialWinger>
+<EventSpecialTechnical>tehnic</EventSpecialTechnical>
+<EventSpecialCounterAttack>contra-atac</EventSpecialCounterAttack>
+<EventSpecialCornerKick>corner</EventSpecialCornerKick>
+<EventSpecialIndirect>lovitură liberă indirectă</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ imprevizibil: pasă lungă</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ imprevizibil: şut</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ imprevizibil: acţiune specială</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- imprevizibil: greşeală</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- imprevizibil: autogol</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ rapid: sprint şi marcare gol</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ rapid: sprint şi pasă de gol</EventSpecialQuickAssist>
+<Pullback>retragere în apărare</Pullback>
+<Underestimation>subestimarea adversarului</Underestimation>
+<UnderestimationRemove>subestimarea adversarului eliminată</UnderestimationRemove>
+<UnderestimationReduceDouble>subestimarea adversarului redusă cu 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>subestimarea adversarului redusă cu 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>confuzie</OrganizationBreaks>
+<Reorganize>reorganizare</Reorganize>
+<NervesImportantThrillingGame>nervi într-un joc important</NervesImportantThrillingGame>
+<Bruised>lovit</Bruised>
+<Injuried>accidentat</Injuried>
+<ModeratelyInjuried>accidentare uşoară</ModeratelyInjuried>
+<BadlyInjuried>accidentare gravă</BadlyInjuried>
+<ByHimself>singur</ByHimself>
+<ByFoul>prin fault</ByFoul>
+<ExperiencedForward>atacant experimentat</ExperiencedForward>
+<InexperiencedDefender>apărător neexperimentat</InexperiencedDefender>
+<WingerHead>extremă: pasă în diagonală pt lovitură de cap</WingerHead>
+<EventSpecialLongShotDefended>intercepţie pasă lungă</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>rapid vs rapid</EventSpecialQuickVsQuick>
+<LongShot>şut de la distanţă</LongShot>
+<MeteoSpecialTechnicalRain>- tehnic (-atac -construcţie)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+ puternic (+atac +apărare +construcţie)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+ tehnic (+atac +construcţie)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>- puternic (-atac -rezistenţă)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>- rapid (-apărare)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>- rapid (-apărare -atac</MeteoSpecialQuickRain>
+<YellowNastyPlay>joc periculos</YellowNastyPlay>
+<YellowCheating>joc necinstit</YellowCheating>
+<ProgressUpdate>Urmatoarea actualizare:</ProgressUpdate>
+<ProgressSeconds>s</ProgressSeconds>
+<RequestServer>Obţine server recomandat</RequestServer>
+<RequestLeagueData>Obţine datele ligii</RequestLeagueData>
+<RequestLeagueGames>Obţine meciurile din liga</RequestLeagueGames>
+<RequestLive>Actualizare Live</RequestLive>
+<RequestAdd>Adaugă meci</RequestAdd>
+<RequestDelete>Şterge meci</RequestDelete>
+<RequestLogin>Conectare</RequestLogin>
+<RequestDetails>Obţine detaliile meciului</RequestDetails>
+<RequestTeam>Obţine meciul după datele echipei</RequestTeam>
+<RequestTeamData>Obţine datele echipei</RequestTeamData>
+
+<!--Settings-->
+<WindowTitle>Opţiuni HTLiveSight</WindowTitle>
+<TabGeneral>General</TabGeneral>
+<TabMatches>Meciuri</TabMatches>
+<TabNotifications>Notificări</TabNotifications>
+<TabLanguage>Limba</TabLanguage>
+<TabOther>Altele</TabOther>
+<TabCustom>Personalizare</TabCustom>
+<TabGoalSound>Sunete pentru goluri</TabGoalSound>
+<TabWheatherSound>Sunete pentru evenimente de vreme şi accidentari</TabWheatherSound>
+<TabWhistleSound>Sunete pentru hattrick şi fluierul arbitrului</TabWhistleSound>
+<GeneralOpen>Deschide HTLiveSight</GeneralOpen>
+<GeneralNewTab>Într-o filă nouă</GeneralNewTab>
+<GeneralNewWindow>Într-o fereastră nouă</GeneralNewWindow>
+<GeneralServer>Setările serverului</GeneralServer>
+<GeneralNote>Inserează serverul Hattrick pe care eşti logat (ex. www96).</GeneralNote>
+<MatchesLeague>Meciuri din ligă</MatchesLeague>
+<MatchesGetLeague>Obţine meciurile din ligă</MatchesGetLeague>
+<MatchesPlayed>Dacă se joacă în</MatchesPlayed>
+<MatchesHours>ore.</MatchesHours>
+<MatchesFriends>Prieteni</MatchesFriends>
+<MatchesGetFriends>Obţine meciurile prietenilor</MatchesGetFriends>
+<MatchesScorers>Marcatori</MatchesScorers>
+<ScorersList>Afişează marcatorii în header</ScorersList>
+<MatchesWindow>Fereastră</MatchesWindow>
+<MatchesLines>Linii de afişat în modul minimizat</MatchesLines>
+<NotifyNotify>Notificări</NotifyNotify>
+<NotifyEnableSound>Activează notificări sonore</NotifyEnableSound>
+<NotifyOnly>Doar în meciurile deschise</NotifyOnly>
+<NotifyFlash>Flash antete</NotifyFlash>
+<NotifyStatus>Status bar cu tastatură culisantă</NotifyStatus>
+<OtherAuthorization>Codul de autentificare</OtherAuthorization>
+<OtherReset>Revocă autorizarea</OtherReset>
+<OtherResetButton>Reset</OtherResetButton>
+<OtherReverse>Inversează ordinea evenimentelor din meci</OtherReverse>
+<OtherReverseNote>Reîncarcă pagina pentru a vedea efectul schimbării.</OtherReverseNote>
+<OtherEvents>Ordinea evenimentelor</OtherEvents>
+<OtherEventKey>Cod de event</OtherEventKey>
+<OtherEventKeyNote>Arata codul eventului în comentariu</OtherEventKeyNote>
+<CustomIcons>Iconuri</CustomIcons>
+<CustomIconsOld>Iconurile originale Livefox în fereastra de meci</CustomIconsOld>
+<CustomSounds>Sunete</CustomSounds>
+<CustomSoundsWeather>Sunete pentru vreme la începutul meciului</CustomSoundsWeather>
+<CustomSoundsTime>Sunete pentru începutul/sfârşitul pauzei</CustomSoundsTime>
+<CustomSoundsSEW>Sunete pentru eventurile de vreme</CustomSoundsSEW>
+<CustomSoundsGoal>Sunete originale Livefox</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>Fără sunet la golurile adversarului</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Sound for my goals</PathSoundsMyGoal>
+<PathSoundsOpGoal>Sunet pentru golul adversarului meu</PathSoundsOpGoal>
+<PathSoundsFrGoal>Sunet pentru golul prietenului meu</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Sunet pentru gol al adversarului prietenului meu</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Sunet pentru gol al altei echipe</PathSoundsOtGoal>
+<PathSoundsMiss>Sunet pentru ratare</PathSoundsMiss>
+<PathSoundsSun>Sunet pentru vreme însorită</PathSoundsSun>
+<PathSoundsRain>Sunet pentru vreme ploioasă</PathSoundsRain>
+<PathSoundsOvercast>Sunet pentru vreme noroasă</PathSoundsOvercast>
+<PathSoundsFewClouds>Sunet pentru vreme parţial noroasă</PathSoundsFewClouds>
+<PathSoundsMyBoo>Sunet pentru accidentare a propriului jucător</PathSoundsMyBoo>
+<PathSoundsOpBoo>Sunet pentru accidentare a jucătorului advers</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Fluier pentru începutul primei/celei de-a doua reprize</PathSoundsWhistleStart>
+<PathSoundsWhistle2>Fluier de final al primei reprize</PathSoundsWhistle2>
+<PathSoundsWhistle3>Fluierul de final al meciului</PathSoundsWhistle3>
+<PathSoundsWhistle>Sunet pentru cartonaş galben/roşu</PathSoundsWhistle>
+<PathSoundsHattrick>Sunet hattrick</PathSoundsHattrick>
+<PathSoundsRestore>Restore</PathSoundsRestore>
+<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsNote1>Inserează fişierul:/// înaintea căii sunetului în format .wav</PathSoundsNote1>
+<PathSoundsNote2>Exemplu: fişier:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<LanguageSelect>Selectează limba</LanguageSelect>
+<LanguageNote>Nota: Reporneşte HTLiveSight ca aceasta să aibă efect.</LanguageNote>
+<ButtonCancel>Anulare</ButtonCancel>
+<ButtonOk>OK</ButtonOk>
+
+<!--About-->
+<WindowAboutTitle>Despre HTLiveSight</WindowAboutTitle>
+<TabInfo>Info</TabInfo>
+<TabTranslators>Translatori</TabTranslators>
+<TabCredits>Credits</TabCredits>
+<MonthJanuary>Ian</MonthJanuary>
+<MonthFebruary>Feb</MonthFebruary>
+<MonthMarch>Mar</MonthMarch>
+<MonthApril>Apr</MonthApril>
+<MonthMay>Mai</MonthMay>
+<MonthJune>Iun</MonthJune>
+<MonthJuly>Iul</MonthJuly>
+<MonthAugust>Aug</MonthAugust>
+<MonthSeptember>Sep</MonthSeptember>
+<MonthOctober>Oct</MonthOctober>
+<MonthNovember>Nov</MonthNovember>
+<MonthDecember>Dec</MonthDecember>
+<TextCreatedBy>Creat de</TextCreatedBy>
+<TextDevelopedBy>Dezvoltat de</TextDevelopedBy>
+<TextHelpOf>Cu ajutorul lui</TextHelpOf>
+<TextThanksTo>Multe mulţumiri lui:</TextThanksTo>
+<ButtonClose>Închide</ButtonClose>
+
+</Htlivesight>

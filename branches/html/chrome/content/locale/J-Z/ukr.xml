@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Htlivesight>
+
+<!--Overlay-->
+<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuStart>Запуск</MenuStart>
+<MenuOptions>Налаштування</MenuOptions>
+<TooltipButton>Натисніть, щоб відкрити меню HTLiveSight</TooltipButton>
+
+<!--Main-->
+<WindowMainTitle>HTLiveSight</WindowMainTitle>
+<MenuServer>Сервер:</MenuServer>
+<MenuDisconnected>роз'єднано</MenuDisconnected>
+<MenuOptions>Налаштування</MenuOptions>
+<MenuAbout>Про HTLiveSight</MenuAbout>
+<LoginLabel>Вхід</LoginLabel>
+<LoginTeamId>Введіть TeamId своєї команди</LoginTeamId>
+<LoginUsername>Ім'я користувача</LoginUsername>
+<LoginRememberMe>Запам'ятати</LoginRememberMe>
+<LoginButton>Увійти</LoginButton>
+<LoginReLive>Re-Live</LoginReLive>
+<LoginSpeed>Швидкість</LoginSpeed>
+<LoginByEvent>За подією</LoginByEvent>
+<LeagueMatches>Матчі ліги</LeagueMatches>
+<LeagueLiveTable>Таблиця ліги наживо</LeagueLiveTable>
+<LeaguePosition>#</LeaguePosition>
+<LeagueTeam>Команда</LeagueTeam>
+<LeaguePlayed>І</LeaguePlayed>
+<LeagueGoals>М</LeagueGoals>
+<LeagueGoalDiff>РМ</LeagueGoalDiff>
+<LeaguePoints>Оч</LeaguePoints>
+<MatchesList>Список матчів</MatchesList>
+<MatchesAdd>Додати матч</MatchesAdd>
+<MatchesByMatch>За ID матчу</MatchesByMatch>
+<MatchesByTeam>За ID команди</MatchesByTeam>
+<MatchesYouth>ЮнАк?</MatchesYouth>
+<FriendsTitle>Друзі</FriendsTitle>
+<FriendsRemove>Видалити</FriendsRemove>
+<FriendsOpen>Відкрити</FriendsOpen>
+
+<!--Authorize-->
+<Introduction>Ви були перенаправлені на сторінку CHPP для отримання коду авторизації. Якщо цього не сталося, будь ласка, тимчасово вимкніть блокування спливаючих вікон у браузері або додайте HTlivesight до списку виключень.</Introduction>
+<Insert>введіть Ваш код авторизації тут:</Insert>
+<Ending>Тепер HTlivesight авторизований. Натисніть ОК для перезапуску програми</Ending>
+<Error401>Помилка 401: Неавторизований доступ. Вам необхідно знову отримати авторизацію. Для продовження натисніть ОК.</Error401>
+<Error404>Помилка 404: Ресурс не може бути знайдений. Якщо ця помилка з'явиться знову, переконайтеся, що сервіс CHPP працює.</Error404>
+<Error0>Помилка 0: Немає підключення до Інтернет.</Error0>
+<Error>Помилка</Error>
+<ServerON>Підключено</ServerON>
+<ServerOFF>Відключено</ServerOFF>
+<ResetToken>Код авторизації був видалений. Перезапустіть HTLS або почекайте наступного оновлення (less than 1 minute).</ResetToken>
+<NoHTServer>Ви не вибрали правильний Hattrick сервер, на якому ви авторизовані в даний момент, правий клік де-небудь на задньому фоні та виберіть -> опції-> загальні та виберіть правильний номер серверу Hattrick.</NoHTServer>
+<Error500>Помилка 500: внутрішня помилка сервера (Hattrick)</Error500>
+<Error503>Помилка 503: недоступний сервіс CHPP (тимчасове перевантаження або обслуговування)</Error503>
+
+<!--Properties-->
+<MatchesMaximum>Неможливо переглядати більше ніж 20 матчів одночасно!</MatchesMaximum>
+<LeagueLiveTable>Таблиця ліги наживо</LeagueLiveTable>
+<LeagueRound>Тур</LeagueRound>
+<MessageHattrickError>Отримано повідомлення про помилку з сервера Hattrick.</MessageHattrickError>
+<MessageAlreadyFriend>Вже в списку друзів.</MessageAlreadyFriend>
+<MessageErrorReading>Помилка зчитування даних з</MessageErrorReading>
+<MessageLoginNotSuccessful>Невдалий вхід.</MessageLoginNotSuccessful>
+<TacticPressing>Пресинг</TacticPressing>
+<TacticCA>Контратаки</TacticCA>
+<TacticAIM>Атака по центру</TacticAIM>
+<TacticAOW>Атака по флангах</TacticAOW>
+<TacticPlayCreative>Грати творчо</TacticPlayCreative>
+<TacticLongShots>Дальні удари</TacticLongShots>
+<TimeFirstHalf>1-ий тайм</TimeFirstHalf>
+<TimeHalfTime>перерва</TimeHalfTime>
+<TimeSecondHalf>2-ий тайм</TimeSecondHalf>
+<TimeExtraTime>додатковий час</TimeExtraTime>
+<TimePenalties>пенальті</TimePenalties>
+<TimeFinish>закінчено</TimeFinish>
+<TimeStartsIn>початок через</TimeStartsIn>
+<TimeDays>днів</TimeDays>
+<TimeHours>годин</TimeHours>
+<TimeMinutes>хвилин</TimeMinutes>
+<TimeDay>день</TimeDay>
+<TimeHour>годину</TimeHour>
+<TimeMinute>хвилину</TimeMinute>
+<TimeMin>'</TimeMin>
+<TooltipWindowSound>Активувати або деактивувати звуки для матчу</TooltipWindowSound>
+<TooltipWindowLink>Посилання на сторінку матчу в Hattrick</TooltipWindowLink>
+<TooltipWindowInfo>Показувати повідомлення про інформаційні події</TooltipWindowInfo>
+<TooltipWindowMaximize>Розгорнути вікно</TooltipWindowMaximize>
+<TooltipWindowMinimize>Показати останні декілька рядків</TooltipWindowMinimize>
+<TooltipWindowShade>Згорнути вікно</TooltipWindowShade>
+<TooltipWindowClose>Закрити вікно</TooltipWindowClose>
+<TooltipWindowOpen>Відкрити вікно</TooltipWindowOpen>
+<TooltipWindowMoveUp>Перемістити вікно вгору</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>Перемістити вікно вниз</TooltipWindowMoveDown>
+<TooltipFriendRemove>Видалити друга зі списку</TooltipFriendRemove>
+<TooltipFriendMoveUp>Перемістити вгору</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>Перемістити донизу</TooltipFriendMoveDown>
+<MenuAddFriend>Друг</MenuAddFriend>
+<MenuServer>Сервер:</MenuServer>
+<EventGoal>ГОЛ</EventGoal>
+<EventPenaltyGoal>Пенальті: ГОЛ</EventPenaltyGoal>
+<EventPenaltyMiss>Пенальті: ПОВЗ ВОРОТА</EventPenaltyMiss>
+<EventInjury>Травма</EventInjury>
+<EventRed>Червона картка</EventRed>
+<EventYellow2>Друга жовта картка</EventYellow2>
+<EventSideLeft>зліва</EventSideLeft>
+<EventSideRight>справа</EventSideRight>
+<EventSideCenter>по центру</EventSideCenter>
+<EventSideFreeKick>штрафний удар</EventSideFreeKick>
+<EventSidePenalty>Пенальті</EventSidePenalty>
+<EventSpecialUnpredictable>SE непередбачуваний</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE дальній удар</EventSpecialLongShot>
+<EventSpecialQuick>SE швидкий</EventSpecialQuick>
+<EventSpecialLowStamina>низький рівень витривалості</EventSpecialLowStamina>
+<EventSpecialSetPieces>стандарт</EventSpecialSetPieces>
+<EventSpecialHead>гра головою</EventSpecialHead>
+<EventSpecialExperience>досвід</EventSpecialExperience>
+<EventSpecialLowExperience>низький рівень досвіду</EventSpecialLowExperience>
+<EventSpecialWinger>+ вінгер</EventSpecialWinger>
+<EventSpecialTechnical>технічний</EventSpecialTechnical>
+<EventSpecialCounterAttack>контратака</EventSpecialCounterAttack>
+<EventSpecialCornerKick>кутовий удар</EventSpecialCornerKick>
+<EventSpecialIndirect>непрямий штрафний удар</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ непередбачуваний: довгий пас </EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ непередбачуваний: удар </EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ непередбачуваний: спеціальна дія</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- непередбачуваний: помилка</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- непередбачуваний: гол у свої ворота</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ швидкий: прискорення та удар</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ швидкий: прискорення і пас</EventSpecialQuickAssist>
+<Pullback>відхід в оборону</Pullback>
+<Underestimation>недооцінка</Underestimation>
+<UnderestimationRemove>недооцінка зникла</UnderestimationRemove>
+<UnderestimationReduceDouble>недооцінка знижена на 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>недооцінка знижена на 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>конфузія</OrganizationBreaks>
+<Reorganize>підвищення організованості</Reorganize>
+<NervesImportantThrillingGame>нервозність у важливому матчі</NervesImportantThrillingGame>
+<Bruised>травмований, але може грати</Bruised>
+<Injuried>травмований</Injuried>
+<ModeratelyInjuried>середня травма</ModeratelyInjuried>
+<BadlyInjuried>серйозна травма</BadlyInjuried>
+<ByHimself>самостійно</ByHimself>
+<ByFoul>після порушення</ByFoul>
+<ExperiencedForward>досвідчений нападник</ExperiencedForward>
+<InexperiencedDefender>недосвідчений захисник</InexperiencedDefender>
+<WingerHead>вінгер: навіс на того, який грає головою</WingerHead>
+<EventSpecialLongShotDefended>заблокований дальній удар</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>швидкий протии швидкого</EventSpecialQuickVsQuick>
+<LongShot>дальній удар</LongShot>
+<MeteoSpecialTechnicalRain>-технічний (-напад -створення гри)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+могутній (+напад +захист +створення гри)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+технічний (+напад +створення гри)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>-могутній (-напад -витривалість)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>-швидкий (-захист)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>-швидкий (-захист -напад)</MeteoSpecialQuickRain>
+<YellowNastyPlay>груба гра</YellowNastyPlay>
+<YellowCheating>неспортивна поведінка</YellowCheating>
+<ProgressUpdate>Наступне оновлення:</ProgressUpdate>
+<ProgressSeconds>сек</ProgressSeconds>
+<RequestServer>Під'єднуємось до рекомендованого серверу</RequestServer>
+<RequestLeagueData>Завантажуються дані ліги</RequestLeagueData>
+<RequestLeagueGames>Завантажуються матчі ліги</RequestLeagueGames>
+<RequestLive>Оновлення</RequestLive>
+<RequestAdd>Додається матч</RequestAdd>
+<RequestDelete>Видаляється матч</RequestDelete>
+<RequestLogin>Вхід</RequestLogin>
+<RequestDetails>Отримуються деталі матчу</RequestDetails>
+<RequestTeam>Завантажується матч команди</RequestTeam>
+<RequestTeamData>Завантажується дані команди</RequestTeamData>
+
+<!--Settings-->
+<WindowTitle>Налаштування HTLiveSight</WindowTitle>
+<TabGeneral>Загальні</TabGeneral>
+<TabMatches>Матчі</TabMatches>
+<TabNotifications>Повідомлення</TabNotifications>
+<TabLanguage>Мова</TabLanguage>
+<TabOther>Інше</TabOther>
+<TabCustom>Установки</TabCustom>
+<TabGoalSound>Звуки голів</TabGoalSound>
+<TabWheatherSound>Звуки погодних подій і травм</TabWheatherSound>
+<TabWhistleSound>Звуки свистків арбітра та хеттриків</TabWhistleSound>
+<GeneralOpen>Відкрити HTLiveSight</GeneralOpen>
+<GeneralNewTab>В новій вкладці</GeneralNewTab>
+<GeneralNewWindow>В новому вікні</GeneralNewWindow>
+<GeneralServer>Установки серверу</GeneralServer>
+<GeneralNote>Введіть сервер Hattrick, на якому ви авторизовані (наприклад, www96).</GeneralNote>
+<MatchesLeague>Матчі ліги</MatchesLeague>
+<MatchesGetLeague>Завантажувати матчі ліги</MatchesGetLeague>
+<MatchesPlayed>Якщо до матчів залишилось</MatchesPlayed>
+<MatchesHours>годин.</MatchesHours>
+<MatchesFriends>Друзі</MatchesFriends>
+<MatchesGetFriends>Завантажувати матчі друзів</MatchesGetFriends>
+<MatchesScorers>Автори забитих м'ячів</MatchesScorers>
+<ScorersList>Список авторів у заголовку</ScorersList>
+<MatchesWindow>Вікно</MatchesWindow>
+<MatchesLines>Кількість рядків для відображення в згорнутому вигляді</MatchesLines>
+<NotifyNotify>Повідомлення</NotifyNotify>
+<NotifyEnableSound>Увімкнути звуки</NotifyEnableSound>
+<NotifyOnly>Лише у відкритих матчах</NotifyOnly>
+<NotifyFlash>Мерехтіння заголовків</NotifyFlash>
+<NotifyStatus>Виринаючі повідомлення</NotifyStatus>
+<OtherAuthorization>Код авторизації</OtherAuthorization>
+<OtherReset>Видалити авторизацію</OtherReset>
+<OtherResetButton>Скинути</OtherResetButton>
+<OtherReverse>Відображення подій матчу знизу вгору</OtherReverse>
+<OtherReverseNote>Оновіть сторінку для активації змін.</OtherReverseNote>
+<OtherEvents>Порядок подій</OtherEvents>
+<OtherEventKey>Номер події</OtherEventKey>
+<OtherEventKeyNote>Показувати номер події в коментарі</OtherEventKeyNote>
+<CustomIcons>Іконки</CustomIcons>
+<CustomIconsOld>Оригінальні іконки Livefox у вікні матчу</CustomIconsOld>
+<CustomSounds>Звуки</CustomSounds>
+<CustomSoundsWeather>Звуки погоди на початку матчу</CustomSoundsWeather>
+<CustomSoundsTime>Звуки для початку/кінця перерви</CustomSoundsTime>
+<CustomSoundsSEW>Звуки для погодних спеціальних подій</CustomSoundsSEW>
+<CustomSoundsGoal>Оригінальні звуки Livefox</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>Голи суперника без звуку</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Звук для свого гола</PathSoundsMyGoal>
+<PathSoundsOpGoal>Звук для гола мого суперника</PathSoundsOpGoal>
+<PathSoundsFrGoal>Звук для гола мого друга</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Звук для гола суперника мого друга</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Звук для гола іншої команди</PathSoundsOtGoal>
+<PathSoundsMiss>Звук для незабитого гола</PathSoundsMiss>
+<PathSoundsSun>Звук для сонячної погоди</PathSoundsSun>
+<PathSoundsRain>Звук для дощової погоди</PathSoundsRain>
+<PathSoundsOvercast>Звук для хмарної погоди</PathSoundsOvercast>
+<PathSoundsFewClouds>Звук для малохмарної погоди</PathSoundsFewClouds>
+<PathSoundsMyBoo>Звук для травми в моїй команді</PathSoundsMyBoo>
+<PathSoundsOpBoo>Звук для травми в команді суперника</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Свисток для початку таймів</PathSoundsWhistleStart>
+<PathSoundsWhistle2>Свисток для закінчення першого тайму</PathSoundsWhistle2>
+<PathSoundsWhistle3>Фінальний свисток</PathSoundsWhistle3>
+<PathSoundsWhistle>Звук для жовтої/червоної картки</PathSoundsWhistle>
+<PathSoundsHattrick>Звук для хеттріка</PathSoundsHattrick>
+<PathSoundsRestore>Відновити</PathSoundsRestore>
+<PathSoundsPlay>Програти</PathSoundsPlay>
+<PathSoundsNote1>Введіть file:/// перед шляхом до звуку у форматі .wav</PathSoundsNote1>
+<PathSoundsNote2>Наприклад: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<LanguageSelect>Обрати мову</LanguageSelect>
+<LanguageNote>Потрібно перезавантажити Firefox, щоб застосувати зміни</LanguageNote>
+<ButtonCancel>Скасувати</ButtonCancel>
+<ButtonOk>OK</ButtonOk>
+
+<!--About-->
+<WindowAboutTitle>Про HTLiveSight</WindowAboutTitle>
+<TabInfo>Инфо</TabInfo>
+<TabTranslators>Перекладачі</TabTranslators>
+<TabCredits>Розробники</TabCredits>
+<MonthJanuary>Січ</MonthJanuary>
+<MonthFebruary>Лют</MonthFebruary>
+<MonthMarch>Бер</MonthMarch>
+<MonthApril>Кві</MonthApril>
+<MonthMay>Тра</MonthMay>
+<MonthJune>Чер</MonthJune>
+<MonthJuly>Лип</MonthJuly>
+<MonthAugust>Сер</MonthAugust>
+<MonthSeptember>Вер</MonthSeptember>
+<MonthOctober>Жов</MonthOctober>
+<MonthNovember>Лис</MonthNovember>
+<MonthDecember>Гру</MonthDecember>
+<TextCreatedBy>Власник</TextCreatedBy>
+<TextDevelopedBy>Розроблено</TextDevelopedBy>
+<TextHelpOf>з допомогою</TextHelpOf>
+<TextThanksTo>Велика подяка:</TextThanksTo>
+<ButtonClose>Закрити</ButtonClose>
+
+</Htlivesight>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Htlivesight>
+
+<!--Overlay-->
+<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuStart>Start</MenuStart>
+<MenuOptions>Options</MenuOptions>
+<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+
+<!--Main-->
+<WindowMainTitle>HTLiveSight</WindowMainTitle>
+<MenuServer>الخادم:</MenuServer>
+<MenuDisconnected>قطع الاتصال</MenuDisconnected>
+<MenuOptions>الخيارات</MenuOptions>
+<MenuAbout>HTLiveSight عن</MenuAbout>
+<LoginLabel>تسجيل دخول</LoginLabel>
+<LoginTeamId>ادخل رقم فريقك</LoginTeamId>
+<LoginUsername>اسم المستخدم</LoginUsername>
+<LoginRememberMe>تذكرني</LoginRememberMe>
+<LoginButton>دخول</LoginButton>
+<LoginReLive>Re-Live</LoginReLive>
+<LoginSpeed>Speed</LoginSpeed>
+<LoginByEvent>Per event</LoginByEvent>
+<LeagueMatches>مباريات الدوري</LeagueMatches>
+<LeagueLiveTable>الجدول المباشر</LeagueLiveTable>
+<LeaguePosition>#</LeaguePosition>
+<LeagueTeam>الفريق</LeagueTeam>
+<LeaguePlayed>لعب</LeaguePlayed>
+<LeagueGoals>له</LeagueGoals>
+<LeagueGoalDiff>فارق</LeagueGoalDiff>
+<LeaguePoints>نقاط</LeaguePoints>
+<MatchesList>قائمة المباريات</MatchesList>
+<MatchesAdd>إضافة مباراة</MatchesAdd>
+<MatchesByMatch>برقم المباراة</MatchesByMatch>
+<MatchesByTeam>برقم الفريق</MatchesByTeam>
+<MatchesYouth>ناشئين؟</MatchesYouth>
+<FriendsTitle>الاصدقاء</FriendsTitle>
+<FriendsRemove>حذف</FriendsRemove>
+<FriendsOpen>فتح</FriendsOpen>
+
+<!--Authorize-->
+<Introduction>سوف يتم إعادة توجيهك الى صفحة اخرى للحصول على كود التصريح، من فضلك اغلق مانعات الظهور أو قم بمنح الاذن للبرنامج في قائمة الاستثناءات.</Introduction>
+<Insert>أدخل كود التصريح هنا:</Insert>
+<Ending>تم الان منح التصريح للبرنامج. اضغط موافق لاعادة تشغيل البرنامج.</Ending>
+<Error401>خطأ 401: دخول غير مصرح به. عليك الحصول على كود تصريح جديد. اضغط موافق للمتابعة.</Error401>
+<Error404>خطأ 404: لم يتم ايجاد المصدر المطلوب. اذا ظهر هذا الخطأ مجددا فإن خدمة برامج هاتريك معطلة.</Error404>
+<Error0>خطأ 0: لا يوجد اتصال بالانترنت.</Error0>
+<Error>Error</Error>
+<ServerON>Connected</ServerON>
+<ServerOFF>تم قطع الاتصال</ServerOFF>
+<ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
+<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.</NoHTServer>
+<Error500>Error 500: internal server error (of Hattrick)</Error500>
+<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
+
+<!--Properties-->
+<MatchesMaximum>لا يمكن مشاهدة اكثر من 20 مباراة!</MatchesMaximum>
+<LeagueLiveTable>الجدول المباشر</LeagueLiveTable>
+<LeagueRound>الجولة</LeagueRound>
+<MessageHattrickError>يوجد خطأ في خادم هاتريك</MessageHattrickError>
+<MessageAlreadyFriend>إنه صديق فعلاً</MessageAlreadyFriend>
+<MessageErrorReading>خطأ في قراءة البيانات</MessageErrorReading>
+<MessageLoginNotSuccessful>لم ينجح تسجيا الدخول.</MessageLoginNotSuccessful>
+<TacticPressing>ضغط</TacticPressing>
+<TacticCA>الهجمة المرتدة</TacticCA>
+<TacticAIM>هجوم في الوسط</TacticAIM>
+<TacticAOW>هجوم على الاجنحة</TacticAOW>
+<TacticPlayCreative>اللعب الابداعي</TacticPlayCreative>
+<TacticLongShots>التسديدات البعيدة</TacticLongShots>
+<TimeFirstHalf>الشوط الاول</TimeFirstHalf>
+<TimeHalfTime>استراحة ما بين الشوطين</TimeHalfTime>
+<TimeSecondHalf>الشوط الثاني</TimeSecondHalf>
+<TimeExtraTime>الوقت الاضافي</TimeExtraTime>
+<TimePenalties>ضربات الترجيح</TimePenalties>
+<TimeFinish>انتهى</TimeFinish>
+<TimeStartsIn>يبدأ بعد</TimeStartsIn>
+<TimeDays>أيام</TimeDays>
+<TimeHours>ساعات</TimeHours>
+<TimeMinutes>دقائق</TimeMinutes>
+<TimeDay>يوم</TimeDay>
+<TimeHour>ساعة</TimeHour>
+<TimeMinute>دقيقة</TimeMinute>
+<TimeMin>'</TimeMin>
+<TooltipWindowSound>Activate or deactivate sounds for the match</TooltipWindowSound>
+<TooltipWindowLink>Link to Match Page on Hattrick</TooltipWindowLink>
+<TooltipWindowInfo>تشغيل رسائل المعلومات.</TooltipWindowInfo>
+<TooltipWindowMaximize>تكبير النافذة</TooltipWindowMaximize>
+<TooltipWindowMinimize>تصغير النافذة</TooltipWindowMinimize>
+<TooltipWindowShade>تظليل النافذة</TooltipWindowShade>
+<TooltipWindowClose>إغلاق النافذة</TooltipWindowClose>
+<TooltipWindowOpen>فتح نافذة</TooltipWindowOpen>
+<TooltipWindowMoveUp>تحريك النافذة الى الاعلى</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>تحريك النافذة الى الاسفل</TooltipWindowMoveDown>
+<TooltipFriendRemove>حذف الصديق من النافذة</TooltipFriendRemove>
+<TooltipFriendMoveUp>تحريك الصديق الى الاعلى</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>تحريك الصديق الى الاسفل</TooltipFriendMoveDown>
+<MenuAddFriend>صديق</MenuAddFriend>
+<MenuServer>الخادم:</MenuServer>
+<EventGoal>هدف</EventGoal>
+<EventPenaltyGoal>ضربة جزاء: هدف</EventPenaltyGoal>
+<EventPenaltyMiss>ضربة جزاء: ضائعة</EventPenaltyMiss>
+<EventInjury>إصابة</EventInjury>
+<EventRed>بطاقة حمراء</EventRed>
+<EventYellow2>بطاقة صفراء ثانية</EventYellow2>
+<EventSideLeft>يسار</EventSideLeft>
+<EventSideRight>يمين</EventSideRight>
+<EventSideCenter>وسط</EventSideCenter>
+<EventSideFreeKick>ضربة حرة</EventSideFreeKick>
+<EventSidePenalty>ضربة جزاء</EventSidePenalty>
+<EventSpecialUnpredictable>SE غير متوقع</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE تسديدة بعيدة</EventSpecialLongShot>
+<EventSpecialQuick>SE سريع</EventSpecialQuick>
+<EventSpecialLowStamina>لياقة ضعيفة</EventSpecialLowStamina>
+<EventSpecialSetPieces>ضربات ثابتة</EventSpecialSetPieces>
+<EventSpecialHead>ضربة رأس</EventSpecialHead>
+<EventSpecialExperience>الخبرة</EventSpecialExperience>
+<EventSpecialLowExperience>خبرة قليلة</EventSpecialLowExperience>
+<EventSpecialWinger>+ جناح</EventSpecialWinger>
+<EventSpecialTechnical>مهاري</EventSpecialTechnical>
+<EventSpecialCounterAttack>هجمة مرتدة</EventSpecialCounterAttack>
+<EventSpecialCornerKick>ضربة ركنية</EventSpecialCornerKick>
+<EventSpecialIndirect>ضربة حرة غير مباشرة</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ Unpredictable: long pass</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ Unpredictable: shot</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ Unpredictable: special action</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- Unpredictable: mistake</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- Unpredictable: own goal</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ Quick: rush and score</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ Quick: rush and assist</EventSpecialQuickAssist>
+<Pullback>العوده الى الخلف</Pullback>
+<Underestimation>Overconfidence</Underestimation>
+<UnderestimationRemove>Overconfidence removed</UnderestimationRemove>
+<UnderestimationReduceDouble>Overconfidence removed by 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>Overconfidence removed by 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>Confusion</OrganizationBreaks>
+<Reorganize>Reorganization</Reorganize>
+<NervesImportantThrillingGame>Nerves in important thrilling game</NervesImportantThrillingGame>
+<Bruised>Bruised</Bruised>
+<Injuried>Injury</Injuried>
+<ModeratelyInjuried>Moderate injury</ModeratelyInjuried>
+<BadlyInjuried>Bad injury</BadlyInjuried>
+<ByHimself>By himself</ByHimself>
+<ByFoul>By foul</ByFoul>
+<ExperiencedForward>Experienced forward</ExperiencedForward>
+<InexperiencedDefender>Inexperienced defender</InexperiencedDefender>
+<WingerHead>Winger: cross for head specialist</WingerHead>
+<EventSpecialLongShotDefended>Long shot stopped</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>Quick vs Quick</EventSpecialQuickVsQuick>
+<LongShot>Long Shot</LongShot>
+<MeteoSpecialTechnicalRain>-Technical (-Scoring -Playmaking)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+Powerful (+Scoring +Defending + Playmaking)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+Technical (+Scoring +Playmaking)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>-Powerful (-Scoring -Stamina)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>-Quick (-Defending)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>-Quick (-Defending -Scoring)</MeteoSpecialQuickRain>
+<YellowNastyPlay>Nasty play</YellowNastyPlay>
+<YellowCheating>Cheating</YellowCheating>
+<ProgressUpdate>Next update:</ProgressUpdate>
+<ProgressSeconds>s</ProgressSeconds>
+<RequestServer>الخادم المفضل</RequestServer>
+<RequestLeagueData>الحصول على بيانات الدوري</RequestLeagueData>
+<RequestLeagueGames>الحصول على مباريات الدوري</RequestLeagueGames>
+<RequestLive>تحديث مباشر</RequestLive>
+<RequestAdd>إضافة مباراة</RequestAdd>
+<RequestDelete>حذف مباراة</RequestDelete>
+<RequestLogin>الدخول</RequestLogin>
+<RequestDetails>الحصول على تفاصيل المباراة</RequestDetails>
+<RequestTeam>الحصول على مباريات الفريق</RequestTeam>
+<RequestTeamData>الحصول على بيانات الفريق</RequestTeamData>
+
+<!--Settings-->
+<WindowTitle>HTLiveSight خيارات</WindowTitle>
+<TabGeneral>خيارات عامة</TabGeneral>
+<TabMatches>المباريات</TabMatches>
+<TabNotifications>التنبيهات</TabNotifications>
+<TabLanguage>اللغة</TabLanguage>
+<TabOther>Other</TabOther>
+<TabCustom>Customizations</TabCustom>
+<TabGoalSound>Goals sounds</TabGoalSound>
+<TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
+<TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
+<GeneralOpen>HTLiveSight فتح</GeneralOpen>
+<GeneralNewTab>في مبوب جديد</GeneralNewTab>
+<GeneralNewWindow>في نافذة جديدة</GeneralNewWindow>
+<GeneralServer>Server settings</GeneralServer>
+<GeneralNote>Insert Hattrick server that you are logged on (ie. www96).</GeneralNote>
+<MatchesLeague>مباريات الدوري</MatchesLeague>
+<MatchesGetLeague>الحصول على مبريات الدوري</MatchesGetLeague>
+<MatchesPlayed>اذا لعب في</MatchesPlayed>
+<MatchesHours>.ساعات</MatchesHours>
+<MatchesFriends>الاصدقاء</MatchesFriends>
+<MatchesGetFriends>الحصول على مباريات الاصدقاء</MatchesGetFriends>
+<MatchesScorers>المسجلين</MatchesScorers>
+<ScorersList>قائمة المسجلين بالرأس</ScorersList>
+<MatchesWindow>نافذة</MatchesWindow>
+<MatchesLines>عدد الاسطر المرئية في الوضع المصغر</MatchesLines>
+<NotifyNotify>التنبيهات</NotifyNotify>
+<NotifyEnableSound>تشغيل التنبيهات الصوتية</NotifyEnableSound>
+<NotifyOnly>فقط في المباريات المفتوحة</NotifyOnly>
+<NotifyFlash>إضاءة متغيرة</NotifyFlash>
+<NotifyStatus>محرك شريط الحالة</NotifyStatus>
+<OtherAuthorization>Authorization code</OtherAuthorization>
+<OtherReset>Remove authorization</OtherReset>
+<OtherResetButton>Reset</OtherResetButton>
+<OtherReverse>Bottom up display of match events</OtherReverse>
+<OtherReverseNote>Refresh page to see the effect of change.</OtherReverseNote>
+<OtherEvents>Sequence of events</OtherEvents>
+<OtherEventKey>Eventkey</OtherEventKey>
+<OtherEventKeyNote>Show eventkey in the commentary</OtherEventKeyNote>
+<CustomIcons>Icons</CustomIcons>
+<CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
+<CustomSounds>Sounds</CustomSounds>
+<CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
+<CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
+<CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
+<CustomSoundsGoal>Original Livefox sounds</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>No sounds for opponent's goals</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Sound for own goal</PathSoundsMyGoal>
+<PathSoundsOpGoal>Sound for goal of my opponent</PathSoundsOpGoal>
+<PathSoundsFrGoal>Sound for goal of friend's</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
+<PathSoundsMiss>Missed goal sound</PathSoundsMiss>
+<PathSoundsSun>Sound for sunny weather</PathSoundsSun>
+<PathSoundsRain>Sound for rainy weather</PathSoundsRain>
+<PathSoundsOvercast>Sound for overcast weather</PathSoundsOvercast>
+<PathSoundsFewClouds>Sound for few clouds weather</PathSoundsFewClouds>
+<PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
+<PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
+<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
+<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
+<PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
+<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
+<PathSoundsRestore>Restore</PathSoundsRestore>
+<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
+<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<LanguageSelect>اختار اللغة</LanguageSelect>
+<LanguageNote>ملحوظة: أعد تشغيل المتصفح لتطبيق التغييرات</LanguageNote>
+<ButtonCancel>الغاء</ButtonCancel>
+<ButtonOk>نعم</ButtonOk>
+
+<!--About-->
+<WindowAboutTitle>HTLiveSight عن</WindowAboutTitle>
+<TabInfo>Info</TabInfo>
+<TabTranslators>Translators</TabTranslators>
+<TabCredits>Credits</TabCredits>
+<MonthJanuary>ينلير</MonthJanuary>
+<MonthFebruary>فبراير</MonthFebruary>
+<MonthMarch>مارس</MonthMarch>
+<MonthApril>أبريل</MonthApril>
+<MonthMay>مايو</MonthMay>
+<MonthJune>يونيو</MonthJune>
+<MonthJuly>يوليو</MonthJuly>
+<MonthAugust>أغسطس</MonthAugust>
+<MonthSeptember>سبتمبر</MonthSeptember>
+<MonthOctober>أكتوبر</MonthOctober>
+<MonthNovember>نوفمبر</MonthNovember>
+<MonthDecember>ديسمبر</MonthDecember>
+<TextCreatedBy>صنع بواسطة</TextCreatedBy>
+<TextDevelopedBy>طوٍر بواسطة</TextDevelopedBy>
+<TextHelpOf>بمساعدة من</TextHelpOf>
+<TextThanksTo>:شكرا جزيلا لكل من</TextThanksTo>
+<ButtonClose>اغلاق</ButtonClose>
+
+</Htlivesight>
