@@ -9,6 +9,15 @@
 		<link type="text/css" href="css/custom-theme/custom.css" rel="stylesheet" />
 		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+
+		<script type="application/x-javascript" src="./env.js" /> 
+		<script type="application/x-javascript" src="./about.js" />
+		<script type="application/x-javascript" src="prefs.js"/>  
+   		<script type="application/x-javascript" src="preferences.js"/>
+  		<script type="application/x-javascript" src="./util/misc.js" />
+		<script type="application/x-javascript" src="./util.js" />
+		<script type="application/x-javascript" src="./log.js" />
+
 		<script type="text/javascript">
 		// *** TO BE CUSTOMISED ***
 
@@ -402,6 +411,11 @@ function get_cookie ( cookie_name )
 				<img src="./css/custom-theme/images/osi.png" alt="OSI"><br />
 			</div>
 		</div>
-		
+	
 		</body>
+	  	<script type="text/javascript">
+    htlivesightPrefs.init();	
+// localization part!
+    htlivesight.About.localization();
+ 	</script>	
 </html>

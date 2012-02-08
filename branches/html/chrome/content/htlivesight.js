@@ -134,7 +134,7 @@ var htlivesight = {
   About: function() {
 //	  alert("startup:About begin");
       var features = "chrome,titlebar,toolbar,centerscreen,modal,resizable";
-      var url = htlivesightEnv.contentPath+"about.xul";
+      var url = htlivesightEnv.contentPath+"about.html";
       window.openDialog(url, "About", features);
   //    alert("startup:About end");
   },
