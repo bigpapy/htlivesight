@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>HTLiveSight</title>
+		<title id="WindowAboutTitle">HTLiveSight</title>
 		<link rel="icon" type="image/png" href="./css/custom-theme/images/48.png" />
 		<!--Dark Theme--><link rel="stylesheet" type="text/css" title="dark" href="css/custom-theme/jquery-ui-1.8.16.custom.css"/>
 		<!--Light Theme--><link  rel="alternate stylesheet" type="text/css" title="light" href="css/custom-theme2/jquery-ui-1.8.16.custom.css"/>
@@ -317,17 +317,20 @@ function get_cookie ( cookie_name )
 
 <div id="about-tabs">
 			<ul>
-				<li><a href="#tabs-1">Info</a></li>
-				<li><a href="#tabs-2">Translators</a></li>
-				<li><a href="#tabs-3">Credits</a></li>
+				<li><a href="#tabs-1" id="TabInfo">Info</a></li>
+				<li><a href="#tabs-2" id="TabTranslators">Translators</a></li>
+				<li><a href="#tabs-3" id="TabCredits">Credits</a></li>
 			</ul>
 			<div id="tabs-1">
 				<img src="./css/custom-theme/images/256.png" alt="HTLiveSight Logo"><br />
-				HTLiveSight<br />6 Feb 2012<br />Created by Silkevicious &amp; Bigpapy
-				<br />Based on HattrickLiveFox<br /><a href="http://hattricklivefox.mozdev.org">http://hattricklivefox.mozdev.org</a>
+				HTLiveSight<br />
+				<label id="creationDate" value="6 Feb 2012"/><br />
+				<label id="createdBy" value=""/> Silkevicious &amp; Bigpapy<br />
+				Based on HattrickLiveFox<br />
+				<a href="http://hattricklivefox.mozdev.org">http://hattricklivefox.mozdev.org</a>
 			</div>
 			<div id="tabs-2">
-				With the help of:<br />
+				<label id="TextHelpOf" value=""/><br />
 				<ul>
 		<li>[ara] العربية</li>
 		<li>[bel] Беларуская</li>
