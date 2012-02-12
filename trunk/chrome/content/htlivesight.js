@@ -126,7 +126,7 @@ var htlivesight = {
   Options: function() {
 //	  alert("startup:Options begin");
     var features = "chrome,titlebar,toolbar,centerscreen,modal,resizable";
-    var url = "chrome://htlivesight/content/settings.xul";
+    var url = htlivesightEnv.contentPath+"settings.xul";
     window.openDialog(url, "Options", features);
     htlivesight.prefs = htlivesight.Preferences.get();
 //    alert("startup:Options end");
@@ -134,7 +134,7 @@ var htlivesight = {
   About: function() {
 //	  alert("startup:About begin");
       var features = "chrome,titlebar,toolbar,centerscreen,modal,resizable";
-      var url = "chrome://htlivesight/content/about.xul";
+      var url = htlivesightEnv.contentPath+"about.html";
       window.openDialog(url, "About", features);
   //    alert("startup:About end");
   },
@@ -248,14 +248,14 @@ var htlivesight = {
 
   localization: function() {
 //	  alert("startup:unload: begin");
-	//  alert("begin");
+//	  alert("begin");
 
 		//prefs = htlivesight.Settings.preferences;
 		htlivesight.prefs=htlivesight.Preferences.get();
 
 //		alert("prefs.language.locale= "+ htlivesight.prefs.language.locale);
-		htlivesight.url = "chrome://htlivesight/content/locale/"+ htlivesight.prefs.language.locale +".xml";
-//		alert("url"+ htlivesight.url);
+		htlivesight.url = htlivesightEnv.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
+	//	alert("url"+ htlivesight.url);
 		htlivesight.languageXML = htlivesight.loadXml(htlivesight.url);
 
 		htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
@@ -318,7 +318,7 @@ var htlivesight = {
 //		alert("8");
 		if (!htlivesightPrefs.getBool("HtlsFirstStart")){
 		//	alert("1");
-			var optionsPage=window.open("chrome://htlivesight/content/settings.xul","_blank");
+			var optionsPage=window.open(htlivesightEnv.contentPath+"settings.xul","_blank");
 		//	alert("2");
 		//	optionsPage.onfocus();
 		
@@ -326,12 +326,7 @@ var htlivesight = {
 			htlivesightPrefs.setBool("HtlsFirstStart",true);
 
 
-			//	htlivesight.Settings.save();
-			//	alert("5");
-				
-			//	alert("5.5");
-			//	document.location.assign("chrome://htlivesight/content/htlivesight.xul");//reload HTLS
-			//	alert("6");
+			
 
 		//	alert("7");
 		};

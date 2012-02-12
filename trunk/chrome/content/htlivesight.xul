@@ -20,6 +20,7 @@
 	onunload="htlivesight.unload()">
 
 	<html:link rel="icon" style="display:none" href="chrome://htlivesight/skin/32.png"/>
+	<script type="application/x-javascript" src="env.js"/>
 	<script type="application/x-javascript" src="htlivesight.js"/>
 	<script type="application/x-javascript" src="log.js"/>
 	<script type="application/x-javascript" src="image.js"/>
