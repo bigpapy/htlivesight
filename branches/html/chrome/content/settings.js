@@ -18,13 +18,15 @@ htlivesight.Settings = {
  //   alert("startup4");
   }, 
   load: function() {
-//	  alert("load");
+	  alert("load");
     var prefs = htlivesight.Settings.preferences;
     var ndx = prefs.general.openInTab 
               ? htlivesight.Settings.OPEN_IN.TAB
               : htlivesight.Settings.OPEN_IN.WINDOW;
     document.getElementById("openin").selectedIndex=ndx;
+    alert("load1");
     document.getElementById("hattrickServer").value = prefs.general.hattrickServer;
+    alert("load2");
 //    if(prefs.other.reLive) {
 //    	document.getElementById("chkGetLeague").disabled=true;
 //    	prefs.matches.league.get=false;
@@ -160,20 +162,23 @@ htlivesight.Settings = {
   },
   // new localization part added by bigpapy (start)
   localization: function () {
-	//  alert("begin");
+	  alert("begin");
 	
 	var  prefs=htlivesight.Preferences.get();
-//	alert("1");
+	alert("1");
 //		alert("prefs.language.locale= "+ prefs.language.locale);
 	var	url = htlivesightEnv.contentPath+"locale/"+ prefs.language.locale +".xml";
 //		alert("url"+ url);
-//	alert("2");
+	alert("2");
 	var languageXML = htlivesight.loadXml(url);
-//	alert("3");
+	alert("3");
 	var data=languageXML.getElementsByTagName("Htlivesight");
-//	alert("4");
-	document.getElementById("htlivesight-options").attributes.getNamedItem("title").value=htlivesight.Util.Parse("WindowMainTitle",data[0]);
-//	alert("5");
+	alert("4");
+	alert(document.getElementsByTagName("title")[0].innerHTML);
+	alert(document.getElementsByTagName("title")[0].childNodes[0].nodeValue);
+	alert(htlivesight.Util.Parse("WindowMainTitle",data[0]));
+	document.getElementsByTagName("title")[0].childNodes[0].nodeValue=htlivesight.Util.Parse("WindowMainTitle",data[0]);
+	alert("5");
 //these two instructions are not working!! They do nothing even if they are correct. (Bigpapy)
 //	document.getElementById("htlivesight-options").attributes.getNamedItem("buttonlabelcancel").value=htlivesight.Util.Parse("ButtonCancel",data[0]);
 //	document.getElementById("htlivesight-options").attributes.getNamedItem("buttonlabelaccept").value=htlivesight.Util.Parse("ButtonOk",data[0]);
@@ -181,18 +186,23 @@ htlivesight.Settings = {
 //	optionButton.buttonlabelcancel=htlivesight.Util.Parse("ButtonCancel",data[0]);
 //	optionButton.buttonlabelaccept=htlivesight.Util.Parse("ButtonOk",data[0]);
 	
-	document.getElementById("TabGeneral").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabGeneral",data[0]);
-	document.getElementById("TabMatches").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabMatches",data[0]);
-	document.getElementById("TabNotifications").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabNotifications",data[0]);
-	document.getElementById("TabOther").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabOther",data[0]);
-	document.getElementById("TabCustom").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabCustom",data[0]);
-	document.getElementById("GeneralOpen").attributes.getNamedItem("label").value=htlivesight.Util.Parse("GeneralOpen",data[0]);
-	document.getElementById("openin_tab").attributes.getNamedItem("label").value=htlivesight.Util.Parse("GeneralNewTab",data[0]);
-	document.getElementById("openin_window").attributes.getNamedItem("label").value=htlivesight.Util.Parse("GeneralNewWindow",data[0]);
-	document.getElementById("LanguageSelect").attributes.getNamedItem("label").value=htlivesight.Util.Parse("LanguageSelect",data[0]);
-	document.getElementById("LanguageNote").value=htlivesight.Util.Parse("LanguageNote",data[0]);
-	document.getElementById("GeneralServer").attributes.getNamedItem("label").value=htlivesight.Util.Parse("GeneralServer",data[0]);
-	document.getElementById("GeneralNote").value=htlivesight.Util.Parse("GeneralNote",data[0]);
+	document.getElementById("TabGeneral").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("TabGeneral",data[0]);
+	alert("6");
+	document.getElementById("TabMatches").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("TabMatches",data[0]);
+	alert("7");
+	document.getElementById("TabNotifications").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("TabNotifications",data[0]);
+	alert("8");
+	document.getElementById("TabOther").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("TabOther",data[0]);
+	alert("9");
+	document.getElementById("TabCustom").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("TabCustom",data[0]);
+	alert("10");
+	document.getElementById("GeneralOpen").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("GeneralOpen",data[0]);
+	document.getElementById("openin_tab").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("GeneralNewTab",data[0]);
+	document.getElementById("openin_window").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("GeneralNewWindow",data[0]);
+	document.getElementById("LanguageSelect").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("LanguageSelect",data[0]);
+	document.getElementById("LanguageNote").innerHTML=htlivesight.Util.Parse("LanguageNote",data[0]);
+	document.getElementById("GeneralServer").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("GeneralServer",data[0]);
+	document.getElementById("GeneralNote").innerHTML=htlivesight.Util.Parse("GeneralNote",data[0]);
 //matches
 	document.getElementById("MatchesLeague").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesLeague",data[0]);
 	document.getElementById("chkGetLeague").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesGetLeague",data[0]);

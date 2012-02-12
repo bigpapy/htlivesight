@@ -126,7 +126,7 @@ var htlivesight = {
   Options: function() {
 //	  alert("startup:Options begin");
     var features = "chrome,titlebar,toolbar,centerscreen,modal,resizable";
-    var url = htlivesightEnv.contentPath+"settings.xul";
+    var url = htlivesightEnv.contentPath+"settings.html";
     window.openDialog(url, "Options", features);
     htlivesight.prefs = htlivesight.Preferences.get();
 //    alert("startup:Options end");
