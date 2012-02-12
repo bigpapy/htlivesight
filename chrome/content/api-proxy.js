@@ -73,7 +73,7 @@ htlivesight.ApiProxy = {
 	//			alert("before prefs (authorize)");
 				  prefs=htlivesight.Preferences.get();
 			//		alert("prefs.language.locale= "+ prefs.language.locale);
-					url = "chrome://htlivesight/content/locale/"+ prefs.language.locale +".xml";
+					url = htlivesightEnv.contentPath+"locale/"+ prefs.language.locale +".xml";
 			//		alert("url"+ url);
 
 
@@ -164,7 +164,7 @@ htlivesight.ApiProxy = {
 	//	alert("before prefs retrieve");
 		  prefs=htlivesight.Preferences.get();
 		//	alert("prefs.language.locale= "+ prefs.language.locale);
-			url = "chrome://htlivesight/content/locale/"+ prefs.language.locale +".xml";
+			url = htlivesightEnv.contentPath+"locale/"+ prefs.language.locale +".xml";
 		//	alert("url"+ url);
 
 		languageXML = htlivesight.loadXml(url);

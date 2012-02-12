@@ -11,7 +11,7 @@
   buttons="accept"
   ondialogaccept="window.close();">
 
-
+	<script type="application/x-javascript" src="./env.js" /> 
 	<script type="application/x-javascript" src="./about.js" />
 	<script type="application/x-javascript" src="prefs.js"/>  
    	<script type="application/x-javascript" src="preferences.js"/>

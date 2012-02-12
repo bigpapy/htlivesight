@@ -16,9 +16,11 @@
 	ondialogcancel="try{htlivesight.Settings.click.btnCancel()}catch(e){alert(e)};"
 	ondialogaccept="htlivesight.Settings.click.btnOk();">
 
+	<script type="application/x-javascript" src="env.js"/>
 	<script type="application/x-javascript" src="settings.js"/>
 	<script type="application/x-javascript" src="preferences.js"/>
 	<script type="application/x-javascript" src="log.js"/>
+	<script type="application/x-javascript" src="sound.js"/>
    <!-- added by bigpapy (start): necessary because reset button (in other menu) works -->
 	<script type="application/x-javascript" src="./prefs.js" />
 	<script type="application/x-javascript" src="./api-proxy.js" />

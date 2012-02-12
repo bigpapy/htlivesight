@@ -5,7 +5,7 @@ htlivesight.Click = {
    //   netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
       var url = Components.classes["@mozilla.org/network/standard-url;1"].createInstance();
       url = url.QueryInterface(Components.interfaces.nsIURL);
-      url.spec = "chrome://htlivesight/content/sound/wav.wav";
+      url.spec = htlivesightEnv.contentPath+"sound/wav.wav";
       var sample = Components.classes["@mozilla.org/sound;1"].createInstance( );
       sample = sample.QueryInterface(Components.interfaces.nsISound);
       sample.play(url);
