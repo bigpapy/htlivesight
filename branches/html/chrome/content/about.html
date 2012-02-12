@@ -324,6 +324,15 @@ function get_cookie ( cookie_name )
 		</head>
 	<body onload="set_style_from_cookie()">
 
+	  	<script type="text/javascript">
+		alert("0");
+    		htlivesightPrefs.init();
+		alert("0.1");	
+		// localization part!
+    		htlivesight.About.localization();
+		alert("0.2");
+ 		</script>
+
 <div id="about-tabs">
 			<ul>
 				<li><a href="#tabs-1" id="TabInfo">Info</a></li>
@@ -334,7 +343,8 @@ function get_cookie ( cookie_name )
 				<img src="./css/custom-theme/images/256.png" alt="HTLiveSight Logo"><br />
 				HTLiveSight<br />
 				<label id="creationDate" value="6 Feb 2012"/><br />
-				<label id="createdBy" value=""/> Silkevicious &amp; Bigpapy<br />
+				<a id="createdBy"></a>
+				<label id="Author">Silkevicious &amp; Bigpapy<br />
 				Based on HattrickLiveFox<br />
 				<a href="http://hattricklivefox.mozdev.org">http://hattricklivefox.mozdev.org</a>
 			</div>
@@ -413,9 +423,5 @@ function get_cookie ( cookie_name )
 		</div>
 	
 		</body>
-	  	<script type="text/javascript">
-    htlivesightPrefs.init();	
-// localization part!
-    htlivesight.About.localization();
- 	</script>	
+	
 </html>

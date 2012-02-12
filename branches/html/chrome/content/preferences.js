@@ -179,7 +179,7 @@ htlivesight.Preferences.friends = {
       var service = htlivesight.Preferences.service;
  //     service.setCharPref("htlivesight.friendsList", friends);      htlivesightPrefs.setString("friendsList", friends);
     } catch(e) {
-      htlivesight.Log.warn("cannot save friends. " + e);
+      alert("cannot save friends. " + e);
     }
   }
 };

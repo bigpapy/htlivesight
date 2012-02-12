@@ -34,12 +34,16 @@ var htlivesightPrefs = {
 	},
 
 	setString : function(key, value) {
-			var str = Components
-				.classes["@mozilla.org/supports-string;1"]
-				.createInstance(Components.interfaces.nsISupportsString);
-			str.data = value;
-			htlivesightPrefs._pref_branch.setComplexValue(encodeURI(key),
-				Components.interfaces.nsISupportsString, str);
+		if (htlivesightEnv.chromeContext()==='content')
+			sandboxed.extension.sendRequest({ req : "setValue", type:'string', key: key, value: value });
+		else {
+				var str = Components
+					.classes["@mozilla.org/supports-string;1"]
+					.createInstance(Components.interfaces.nsISupportsString);
+				str.data = value;
+				htlivesightPrefs._pref_branch.setComplexValue(encodeURI(key),
+						Components.interfaces.nsISupportsString, str);
+		}
 	},
 	
 	
@@ -60,7 +64,9 @@ var htlivesightPrefs = {
 	},
 
 	setBool : function(key, value) {
-			htlivesightPrefs._pref_branch.setBoolPref(encodeURI(key), value);
+		if (htlivesightEnv.chromeContext()==='content')
+			sandboxed.extension.sendRequest({ req : "setValue", type:'bool', key: key, value: value });
+		else htlivesightPrefs._pref_branch.setBoolPref(encodeURI(key), value);
 	},
 // begin adding by bigpapy (it's a try)*** to be tested, only inserted. ***
 	
@@ -73,7 +79,9 @@ var htlivesightPrefs = {
 	},
 
 	setInt : function(key, value) {
-			htlivesightPrefs._pref_branch.setIntPref(encodeURI(key), value);
+		if (htlivesightEnv.chromeContext()==='content')
+			sandboxed.extension.sendRequest({ req : "setValue", type:'int', key: key, value: value });
+		else htlivesightPrefs._pref_branch.setIntPref(encodeURI(key), value);
 	},
 	
 // end adding by bigpapy (it's a try).

@@ -56,8 +56,8 @@ else {
 		}
 	} */
 //	else {
-		platform = "Firefox";
-		chromeContext = function() {
+		htlivesight.platform = "Firefox";
+		htlivesight.chromeContext = function() {
 			return 'background';
 //		}
 	};
@@ -65,9 +65,13 @@ else {
 }
 
 var htlivesightEnv={
-	
-	contentPath : "chrome://htlivesight/content/",
-	arch: "Gecko",
+	platform: htlivesight.platform,
+	contentPath : htlivesight.resourcePath,
+	arch: htlivesight.arch,
+	chromeContext: function() {
+		return htlivesight.chromeContext();
+	},
+//	sandboxed: sandboxed,
 	
 };
 
