@@ -126,7 +126,7 @@ var htlivesight = {
   Options: function() {
 //	  alert("startup:Options begin");
     var features = "chrome,titlebar,toolbar,centerscreen,modal,resizable";
-    var url = htlivesightEnv.contentPath+"settings.html";
+    var url = htlivesightEnv.contentPath+"settings.xul";
     window.openDialog(url, "Options", features);
     htlivesight.prefs = htlivesight.Preferences.get();
 //    alert("startup:Options end");
@@ -134,7 +134,7 @@ var htlivesight = {
   About: function() {
 //	  alert("startup:About begin");
       var features = "chrome,titlebar,toolbar,centerscreen,modal,resizable";
-      var url = htlivesightEnv.contentPath+"about.html";
+      var url = htlivesightEnv.contentPath+"about.xul";
       window.openDialog(url, "About", features);
   //    alert("startup:About end");
   },
