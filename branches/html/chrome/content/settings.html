@@ -234,26 +234,42 @@ function get_cookie ( cookie_name )
 				$( "#addviateamid" ).button();
 				//Options buttons
 				$( "#openin" ).buttonset();
-				$( "#loadleague" ).button();
-				$( "#leagueplayed" ).button();
-				$( "#loadfriends" ).button();
-				$( "#friendsplayed" ).button();
-				$( "#shwscorers" ).button();
-				$( "#sndnot" ).button();
-				$( "#onlyopn" ).button();
-				$( "#flashhead" ).button();
-				$( "#statsbar" ).button();
+				$( "#chkGetLeague" ).button();
+				$( "#chkGetLeagueWithin" ).button();
+				$( "#chkGetFriends" ).button();
+				$( "#chkGetFriendsWithin" ).button();
+				$( "#chkHdrScorers" ).button();
+				$( "#chkSound" ).button();
+				$( "#chkSoundOnlyOpened" ).button();
+				$( "#chkFlash" ).button();
+				$( "#chkSlider" ).button();
 				$( "#removeauth" ).button();
-				$( "#seqev" ).button();
-				$( "#evkeys" ).button();
-				$( "#oldicons" ).button();
-				$( "#weatsnd" ).button();
-				$( "#startsnd" ).button();
-				$( "#wsesnd" ).button();
-				$( "#oldsnd" ).button();
-				$( "#nosndopp" ).button();
-				$( "#sndowngoal" ).button();
-				$( "#restore" ).button();
+				$( "#reverseOrder" ).button();
+				$( "#printEventKey" ).button();
+				$( "#oldIcons" ).button();
+				$( "#weather" ).button();
+				$( "#whistleTime" ).button();
+				$( "#weatherSE" ).button();
+				$( "#livefoxGoal" ).button();
+				$( "#noOpGoal" ).button();
+				$( "#myGoalCheck" ).button();
+				$( "#opGoalCheck" ).button();
+				$( "#frGoalCheck" ).button();
+				$( "#opfrGoalCheck" ).button();
+				$( "#otGoalCheck" ).button();
+				$( "#missGoalCheck" ).button();
+				$( "#sunCheck" ).button();
+				$( "#rainCheck" ).button();
+				$( "#overcastCheck" ).button();
+				$( "#fewCloudsCheck" ).button();
+				$( "#myBooCheck" ).button();
+				$( "#opBooCheck" ).button();
+				$( "#whistleStartCheck" ).button();
+				$( "#whistle2Check" ).button();
+				$( "#whistle3Check" ).button();
+				$( "#whistleCheck" ).button();
+				$( "#hattrickCheck" ).button();
+				$( ".brestore" ).button();
 				$( "#light" ).button();
 				$( "#dark" ).button();
 				
@@ -319,7 +335,14 @@ function get_cookie ( cookie_name )
 				}, 15000 );
 				}
 		
-
+				$('#ok-option').click(function(){
+					try {htlivesight.Settings.click.btnCancel()}catch(e){alert(e)};
+					return false;
+				});
+				$('#canc-option').click(function(){
+					htlivesight.Settings.click.btnOk();
+					return false;
+				});
 						
 			});
 		</script>
@@ -437,17 +460,17 @@ function get_cookie ( cookie_name )
 				
 					<fieldset>
 	<legend>League Matches</legend>
-		<input type="checkbox" id="chkGetLeague"/><label for="loadleague"></label>Load automatically League Matches and League Table<br />
-		<input type="checkbox" id="chkGetLeagueWithin"/><label for="leagueplayed"></label>Played in <input value="24" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all"/> hours<br />
+		<input type="checkbox" id="chkGetLeague"/><label for="chkGetLeague"></label>Load automatically League Matches and League Table<br />
+		<input type="checkbox" id="chkGetLeagueWithin"/><label for="chkGetLeagueWithin"></label>Played in <input value="24" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all"/> hours<br />
 	</fieldset>
 	<fieldset>
 	<legend>Friends Matches</legend>
-		<input type="checkbox" id="chkGetFriends"/><label for="loadfriends"></label>Load automatically matches of your friends<br />
-		<input type="checkbox" id="chkGetFriendsWithin"/><label for="friendsplayed"></label>Played in <input value="24" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" /> hours<br />
+		<input type="checkbox" id="chkGetFriends"/><label for="chkGetFriends"></label>Load automatically matches of your friends<br />
+		<input type="checkbox" id="chkGetFriendsWithin"/><label for="chkGetFriendsWithin"></label>Played in <input value="24" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" /> hours<br />
 	</fieldset>
 	<fieldset>
 	<legend>Scorers</legend>
-		<input type="checkbox" id="chkHdrScorers"/><label for="shwscorers"></label>Add scorers in header<br />
+		<input type="checkbox" id="chkHdrScorers"/><label for="chkHdrScorers"></label>Add scorers in header<br />
 	</fieldset>
 	<fieldset>
 	<legend>Live Window</legend>
@@ -459,10 +482,10 @@ function get_cookie ( cookie_name )
 
 					<fieldset>
 	<legend>Notifications</legend>
-		<input type="checkbox" id="chkSound"/><label for="sndnot"></label>Enable sound notifications<br />
-		<input type="checkbox" id="chkSoundOnlyOpened"/><label for="onlyopn"></label>Only in opened matches<br />
-		<input type="checkbox" id="chkFlash"/><label for="flashhead"></label>Flash headers<br />
-		<input type="checkbox" id="chkSlider"/><label for="statsbar"></label>Status bar slider<br />
+		<input type="checkbox" id="chkSound"/><label for="chkSound"></label>Enable sound notifications<br />
+		<input type="checkbox" id="chkSoundOnlyOpened"/><label for="chkSoundOnlyOpened"></label>Only in opened matches<br />
+		<input type="checkbox" id="chkFlash"/><label for="chkFlash"></label>Flash headers<br />
+		<input type="checkbox" id="chkSlider"/><label for="chkSlider"></label>Status bar slider<br />
 	</fieldset>
 				
 			</div>
@@ -474,11 +497,11 @@ function get_cookie ( cookie_name )
 	</fieldset>
 	<fieldset>
 	<legend>Sequence of events</legend>
-		<input type="checkbox" id="reverseOrder"/><label for="seqev"></label>Bottom up display of match events<br />
+		<input type="checkbox" id="reverseOrder"/><label for="reverseOrder"></label>Bottom up display of match events<br />
 	</fieldset>
 	<fieldset>
 	<legend>Eventkey</legend>
-		<input type="checkbox" id="printEventKey"/><label for="evkeys"></label>Show eventkey in the commentary<br />
+		<input type="checkbox" id="printEventKey"/><label for="printEventKey"></label>Show eventkey in the commentary<br />
 	</fieldset>
 				
 			</div>
@@ -486,20 +509,20 @@ function get_cookie ( cookie_name )
 
 					<fieldset>
 	<legend>Icons</legend>
-		<input type="checkbox" id="oldIcons"/><label for="oldicons"></label>Original Livefox icons in match window<br />
+		<input type="checkbox" id="oldIcons"/><label for="oldIcons"></label>Original Livefox icons in match window<br />
 	</fieldset>
 	<fieldset>
 	<legend>Sounds</legend>
-		<input type="checkbox" id="weather"/><label for="weatsnd"></label>Weather sound for start of the match<br />
-		<input type="checkbox" id="whistleTime"/><label for="startsnd"></label>Sound for start/end of an halftime<br />
-		<input type="checkbox" id="weatherSE"/><label for="wsesnd"></label>Sound for weather special events<br />
-		<input type="checkbox" id="livefoxGoal"/><label for="oldsnd"></label>Original Livefox sounds<br />
-		<input type="checkbox" id="noOpGoal"/><label for="nosndopp"></label>No sounds for opponent's goals<br />
+		<input type="checkbox" id="weather"/><label for="weather"></label>Weather sound for start of the match<br />
+		<input type="checkbox" id="whistleTime"/><label for="whistleTime"></label>Sound for start/end of an halftime<br />
+		<input type="checkbox" id="weatherSE"/><label for="weatherSE"></label>Sound for weather special events<br />
+		<input type="checkbox" id="livefoxGoal"/><label for="livefoxGoal"></label>Original Livefox sounds<br />
+		<input type="checkbox" id="noOpGoal"/><label for="noOpGoal"></label>No sounds for opponent's goals<br />
 	</fieldset>
 	<fieldset>
 	<legend>Goals sounds</legend>
 <!-- my goal -->
-		<input type="checkbox" id="myGoalCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="myGoalCheck"/><label for="myGoalCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -508,7 +531,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="myGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- op goal -->
-		<input type="checkbox" id="opGoalCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="opGoalCheck"/><label for="opGoalCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -517,7 +540,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="opGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- fr goal -->
-		<input type="checkbox" id="frGoalCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="frGoalCheck"/><label for="frGoalCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -526,7 +549,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="frGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- opfr goal -->
-		<input type="checkbox" id="opfrGoalCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="opfrGoalCheck"/><label for="opfrGoalCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -535,7 +558,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="opfrGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- ot goal -->
-		<input type="checkbox" id="otGoalCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="otGoalCheck"/><label for="otGoalCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -544,7 +567,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="otGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- miss goal -->
-		<input type="checkbox" id="missGoalCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="missGoalCheck"/><label for="missGoalCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -553,7 +576,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="missGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- sun goal -->
-		<input type="checkbox" id="sunCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="sunCheck"/><label for="sunCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -562,7 +585,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="sunSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- rain goal -->
-		<input type="checkbox" id="rainCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="rainCheck"/><label for="rainCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -571,7 +594,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="rainSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- overcast goal -->
-		<input type="checkbox" id="overcastCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="overcastCheck"/><label for="overcastCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -580,7 +603,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="overcastSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- few clouds goal -->
-		<input type="checkbox" id="fewCloudsCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="fewCloudsCheck"/><label for="fewCloudsCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -589,7 +612,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="fewCloudsSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- my boo goal -->
-		<input type="checkbox" id="myBooCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="myBooCheck"/><label for="myBooCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -598,7 +621,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="myBooSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- op boo goal -->
-		<input type="checkbox" id="opBooCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="opBooCheck"/><label for="opBooCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -607,7 +630,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="opBooSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- whistlestart goal -->
-		<input type="checkbox" id="whistleStartCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="whistleStartCheck"/><label for="whistleStartCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -616,7 +639,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="whistleStartSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- double whistle goal -->
-		<input type="checkbox" id="whistle2Check"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="whistle2Check"/><label for="whistle2Check"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -625,7 +648,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="whistle2SoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- triple whistle goal -->
-		<input type="checkbox" id="whistle3Check"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="whistle3Check"/><label for="whistle3Check"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -634,7 +657,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="whistle3SoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- whistle goal -->
-		<input type="checkbox" id="whistleCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="whistleCheck"/><label for="whistleCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -643,7 +666,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="whistleSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- hattrick -->
-		<input type="checkbox" id="hattrickCheck"/><label for="sndowngoal"></label>Sound for own goal <button id="restore">restore</button>
+		<input type="checkbox" id="hattrickCheck"/><label for="hattrickCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
 		
 		
 <input type="file" />	
@@ -655,10 +678,10 @@ function get_cookie ( cookie_name )
 			</div>
 		
 		<div class="ui-dialog-buttonset">
-<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button" role="button" aria-disabled="false">
+<button id="ok-option" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button" role="button" aria-disabled="false">
 <span class="ui-button-text">Ok</span>
 </button>
-<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button" role="button" aria-disabled="false">
+<button id="canc-option" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button" role="button" aria-disabled="false">
 <span class="ui-button-text">Cancel</span>
 </button>
 </div>
