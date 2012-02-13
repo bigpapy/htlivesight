@@ -18,34 +18,43 @@ htlivesight.Settings = {
  //   alert("startup4");
   }, 
   load: function() {
-	  alert("load");
+//	  alert("load");
     var prefs = htlivesight.Settings.preferences;
     var ndx = prefs.general.openInTab 
               ? htlivesight.Settings.OPEN_IN.TAB
               : htlivesight.Settings.OPEN_IN.WINDOW;
     document.getElementById("openin").selectedIndex=ndx;
-    alert("load1");
+ //   alert("load1");
     document.getElementById("hattrickServer").value = prefs.general.hattrickServer;
-    alert("load2");
+ //   alert("load2");
 //    if(prefs.other.reLive) {
 //    	document.getElementById("chkGetLeague").disabled=true;
 //    	prefs.matches.league.get=false;
 //    }
     if (prefs.matches.league.get) {
+//	alert("load3");
     	document.getElementById("chkGetLeague").checked=true;
+//	alert("load4");
     	if (prefs.matches.league.within) {
+//		alert("load5");
     		document.getElementById("txtGetLeagueWithinHours").disabled=false;
     	} else {
+//		alert("load6");
     		document.getElementById("txtGetLeagueWithinHours").disabled=true;
     	}
     } else {
+//	alert("load7");
     	document.getElementById("chkGetLeague").checked=false;
+//	alert("load8");
     	document.getElementById("chkGetLeagueWithin").disabled=true;
+//	alert("load9");
     	document.getElementById("txtGetLeagueWithinHours").disabled=true;
    	}
+ //   alert("load10");
     document.getElementById("chkGetLeagueWithin").checked=prefs.matches.league.within;
+//    alert("load11");
     document.getElementById("txtGetLeagueWithinHours").value=prefs.matches.league.withinHours;
-
+//    alert("load12");
     if (prefs.matches.friends.get) {
       document.getElementById("chkGetFriends").checked=true;
       if (prefs.matches.friends.within) {
@@ -58,25 +67,33 @@ htlivesight.Settings = {
       document.getElementById("chkGetFriendsWithin").disabled=true;
       document.getElementById("txtGetFriendsWithinHours").disabled=true;
     }
+//	alert("load13");
     document.getElementById("chkGetFriendsWithin").checked=prefs.matches.friends.within;
     document.getElementById("txtGetFriendsWithinHours").value=prefs.matches.friends.withinHours;
-    
+ //   alert("load14");
     document.getElementById("chkHdrScorers").checked=prefs.matches.scorers;
-    
+ //   alert("load15");
     document.getElementById("txtMatchWindowSize").value=prefs.matches.windowSize;
-    
+  //  alert("load16");
     document.getElementById("chkSound").checked=prefs.notification.sound;
     if (!prefs.notification.sound) {
       document.getElementById("chkSoundOnlyOpened").disabled=true;
     };
+//	alert("load17");
     document.getElementById("chkSoundOnlyOpened").checked = prefs.notification.soundOnlyOpened;
+//	alert("load18");
     document.getElementById("chkFlash").checked = prefs.notification.flash;
+//	alert("load19");
     document.getElementById("chkSlider").checked = prefs.notification.slider;
+//	alert("load20");
 
     document.getElementById("lang-list").value = prefs.language.locale;
+//	alert("load21");
  
     document.getElementById("reverseOrder").checked = prefs.other.bottomUp;
+//	alert("load22");
     document.getElementById("printEventKey").checked = prefs.other.printEventKey;
+//	alert("load23");
     
     document.getElementById("oldIcons").checked =prefs.personalization.oldIcons;
     document.getElementById("weather").checked =prefs.personalization.weather;
@@ -84,7 +101,7 @@ htlivesight.Settings = {
     document.getElementById("weatherSE").checked =prefs.personalization.weatherSE;
     document.getElementById("livefoxGoal").checked =prefs.personalization.livefoxGoal;
     document.getElementById("noOpGoal").checked =prefs.personalization.noOpGoal;
-    
+ //   alert("load24");
     document.getElementById("myGoalSoundPath").value = prefs.personalization.myGoalSoundPath;
     document.getElementById("opGoalSoundPath").value = prefs.personalization.opGoalSoundPath;
     document.getElementById("frGoalSoundPath").value = prefs.personalization.frGoalSoundPath;
