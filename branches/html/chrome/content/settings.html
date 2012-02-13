@@ -16,10 +16,11 @@
 		<script type="application/x-javascript" src="log.js"></script>
 		<script type="application/x-javascript" src="sound.js"></script>
    	<!-- added by bigpapy (start): necessary because reset button (in other menu) works -->
+		<script type="application/x-javascript" src="./util.js"></script>
 		<script type="application/x-javascript" src="prefs.js"></script>
 		<script type="application/x-javascript" src="api-proxy.js"></script>
 		<script type="application/x-javascript" src="util/misc.js"</script>
-		<script type="application/x-javascript" src="util.js"></script>
+		
 
 		<script type="text/javascript">
 		// *** TO BE CUSTOMISED ***
@@ -378,8 +379,9 @@ function get_cookie ( cookie_name )
 	<legend>Open HTLiveSight</legend>
 <form>
 	<div id="openin">
-		<input type="radio" id="openin_tab" name="radio" checked="checked"/><label for="openin_tab">In a new tab</label>
-		<input type="radio" id="openin_window" name="radio" /><label for="openin_window">In a new window</label>
+	<label id="GeneralOpen"></label>
+		<input type="radio" id="openin_tab" name="radio" checked="checked"/><label for="openin_tab" id="label_openin_tab">In a new tab</label>
+		<input type="radio" id="openin_window" name="radio" /><label for="openin_window" id="label_openin_window">In a new window</label>
 		
 	</div>
 </form>
@@ -388,6 +390,7 @@ function get_cookie ( cookie_name )
 				
 				<fieldset>
 	<legend>Select language</legend>
+	<label id="LanguageSelect"></label>
 		<select class="text ui-widget-content ui-corner-all" id="lang-list">
 		<option>Select language</option>
 		<option value="A-I/ara">[ara] العربية</option>
@@ -447,8 +450,10 @@ function get_cookie ( cookie_name )
 		<option value="J-Z/zho">[zho] 中文（简体）</option>
 		</select>
 	</fieldset>
-	
+	<label id="LanguageNote"></label>
 	<fieldset>
+	<label id="GeneralServer"><label>
+	<label id="GeneralNote"><label>
 	<legend>Server settings</legend>
 		Insert Hattrick server that you are logged on (ie. www96).<br />
 		<label>Hattrick server:</label>
