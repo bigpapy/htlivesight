@@ -214,9 +214,13 @@ htlivesight.Settings = {
 	document.getElementById("TabCustom").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("TabCustom",data[0]);
 	alert("10");
 	document.getElementById("GeneralOpen").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("GeneralOpen",data[0]);
+	alert("11");
 	document.getElementById("openin_tab").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("GeneralNewTab",data[0]);
+	alert("12");
 	document.getElementById("openin_window").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("GeneralNewWindow",data[0]);
+	alert("13");
 	document.getElementById("LanguageSelect").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("LanguageSelect",data[0]);
+	alert("14");
 	document.getElementById("LanguageNote").innerHTML=htlivesight.Util.Parse("LanguageNote",data[0]);
 	document.getElementById("GeneralServer").attributes.getNamedItem("label").innerHTML=htlivesight.Util.Parse("GeneralServer",data[0]);
 	document.getElementById("GeneralNote").innerHTML=htlivesight.Util.Parse("GeneralNote",data[0]);
