@@ -233,7 +233,7 @@ function get_cookie ( cookie_name )
 				$( "#addviamatchid" ).button();
 				$( "#addviateamid" ).button();
 				//Options buttons
-				$( "#general-open" ).buttonset();
+				$( "#openin" ).buttonset();
 				$( "#loadleague" ).button();
 				$( "#leagueplayed" ).button();
 				$( "#loadfriends" ).button();
@@ -355,8 +355,8 @@ function get_cookie ( cookie_name )
 	<legend>Open HTLiveSight</legend>
 <form>
 	<div id="openin">
-		<input type="radio" id="openin_tab" name="radio" checked="checked"/><label for="general-open1">In a new tab</label>
-		<input type="radio" id="openin_window" name="radio" /><label for="general-open2">In a new window</label>
+		<input type="radio" id="openin_tab" name="radio" checked="checked"/><label for="openin_tab">In a new tab</label>
+		<input type="radio" id="openin_window" name="radio" /><label for="openin_window">In a new window</label>
 		
 	</div>
 </form>
@@ -653,7 +653,19 @@ function get_cookie ( cookie_name )
 	</fieldset>
 				
 			</div>
+		
+		<div class="ui-dialog-buttonset">
+<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button" role="button" aria-disabled="false">
+<span class="ui-button-text">Ok</span>
+</button>
+<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button" role="button" aria-disabled="false">
+<span class="ui-button-text">Cancel</span>
+</button>
+</div>
+		
+		
 		</div>
+		
 	
 	  <script type="text/javascript">
 	  htlivesightPrefs.init();
