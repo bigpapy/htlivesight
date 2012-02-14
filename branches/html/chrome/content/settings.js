@@ -268,7 +268,7 @@ htlivesight.Settings = {
 	document.getElementById("OtherEventKey").innerHTML=htlivesight.Util.Parse("OtherEventKey",data[0]);
 //	alert("30");
 	document.getElementById("label_printEventKey").innerHTML=htlivesight.Util.Parse("OtherEventKeyNote",data[0]);
-	alert("31");
+//	alert("31");
 	// customization
 	document.getElementById("CustomIcons").innerHTML=htlivesight.Util.Parse("CustomIcons",data[0]);
 //	alert("32");
@@ -293,15 +293,17 @@ htlivesight.Settings = {
 	document.getElementById("label_myGoalCheck").innerHTML=htlivesight.Util.Parse("PathSoundsMyGoal",data[0]);
 	document.getElementById("label_myGoalButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
 	document.getElementById("label_myGoalButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
-	alert("38")
+//	alert("38")
 	// op goals sound labels
-	document.getElementById("opGoalCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsOpGoal",data[0]);
-	document.getElementById("opGoalButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("opGoalButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_opGoalCheck").innerHTML=htlivesight.Util.Parse("PathSoundsOpGoal",data[0]);
+	document.getElementById("label_opGoalButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("label_opGoalButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	alert("39");
 	// friends goal sound labels
-	document.getElementById("frGoalCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsFrGoal",data[0]);
-	document.getElementById("frGoalButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("frGoalButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_frGoalCheck").innerHTML=htlivesight.Util.Parse("PathSoundsFrGoal",data[0]);
+	document.getElementById("label_frGoalButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("label_frGoalButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	alert("40");
 	// opponent friends goal sound labes
 	document.getElementById("opfrGoalCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsOpFrGoal",data[0]);
 	document.getElementById("opfrGoalButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
