@@ -228,9 +228,12 @@ htlivesight.Settings = {
 	document.getElementById("GeneralNote").innerHTML=htlivesight.Util.Parse("GeneralNote",data[0]);
 	alert("17");
 //matches
-	document.getElementById("MatchesLeague").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesLeague",data[0]);
-	document.getElementById("chkGetLeague").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesGetLeague",data[0]);
-	document.getElementById("chkGetLeagueWithin").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesPlayed",data[0]);
+	document.getElementById("MatchesLeague").innerHTML=htlivesight.Util.Parse("MatchesLeague",data[0]);
+	alert("18");
+	document.getElementById("label_chkGetLeague").innerHTML=htlivesight.Util.Parse("MatchesGetLeague",data[0]);
+	alert("19");
+	document.getElementById("label_chkGetLeagueWithin").innerHTML=htlivesight.Util.Parse("MatchesPlayed",data[0]);
+	alert("20");
 	document.getElementById("MatchesHours").value=htlivesight.Util.Parse("MatchesHours",data[0]);
 	document.getElementById("MatchesFriends").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesFriends",data[0]);
 	document.getElementById("chkGetFriends").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesGetFriends",data[0]);
