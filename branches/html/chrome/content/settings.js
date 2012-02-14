@@ -252,40 +252,48 @@ htlivesight.Settings = {
 	document.getElementById("label_chkFlash").innerHTML=htlivesight.Util.Parse("NotifyFlash",data[0]);
 	document.getElementById("label_chkSlider").innerHTML=htlivesight.Util.Parse("NotifyStatus",data[0]);
 	//other
-	alert("23");
+//	alert("23");
 	document.getElementById("OtherAuthorization").innerHTML=htlivesight.Util.Parse("OtherAuthorization",data[0]);
-	alert("24");
+//	alert("24");
 	document.getElementById("OtherReset").innerHTML=htlivesight.Util.Parse("OtherReset",data[0]);
-	alert("25");
+//	alert("25");
 	document.getElementById("button_reset").innerHTML=htlivesight.Util.Parse("OtherResetButton",data[0]);
-	alert("26");
+//	alert("26");
 	document.getElementById("OtherEvents").innerHTML=htlivesight.Util.Parse("OtherEvents",data[0]);
-	alert("27");
+//	alert("27");
 	document.getElementById("label_reverseOrder").innerHTML=htlivesight.Util.Parse("OtherReverse",data[0]);
-	alert("28");
+//	alert("28");
 	document.getElementById("OtherReverseNote").innerHTML=htlivesight.Util.Parse("OtherReverseNote",data[0]);
-	alert("29");
+//	alert("29");
 	document.getElementById("OtherEventKey").innerHTML=htlivesight.Util.Parse("OtherEventKey",data[0]);
-	alert("30");
+//	alert("30");
 	document.getElementById("label_printEventKey").innerHTML=htlivesight.Util.Parse("OtherEventKeyNote",data[0]);
 	alert("31");
 	// customization
-	document.getElementById("CustomIcons").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomIcons",data[0]);
-	document.getElementById("oldIcons").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomIconsOld",data[0]);
-	document.getElementById("CustomSounds").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomSounds",data[0]);
-	document.getElementById("weather").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomSoundsWeather",data[0]);
-	document.getElementById("whistleTime").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomSoundsTime",data[0]);
-	document.getElementById("weatherSE").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomSoundsSEW",data[0]);
-	document.getElementById("livefoxGoal").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomSoundsGoal",data[0]);
-	document.getElementById("noOpGoal").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomSoundsNoOpGoal",data[0]);
-	document.getElementById("PathSoundsNote1").value=htlivesight.Util.Parse("PathSoundsNote1",data[0]);
-	document.getElementById("PathSoundsNote2").value=htlivesight.Util.Parse("PathSoundsNote2",data[0]);
+	document.getElementById("CustomIcons").innerHTML=htlivesight.Util.Parse("CustomIcons",data[0]);
+//	alert("32");
+	document.getElementById("label_oldIcons").innerHTML=htlivesight.Util.Parse("CustomIconsOld",data[0]);
+//	alert("33");
+	document.getElementById("CustomSounds").innerHTML=htlivesight.Util.Parse("CustomSounds",data[0]);
+//	alert("34");
+	document.getElementById("label_weather").innerHTML=htlivesight.Util.Parse("CustomSoundsWeather",data[0]);
+//	alert("35");
+	document.getElementById("label_whistleTime").innerHTML=htlivesight.Util.Parse("CustomSoundsTime",data[0]);
+	document.getElementById("label_weatherSE").innerHTML=htlivesight.Util.Parse("CustomSoundsSEW",data[0]);
+	document.getElementById("label_livefoxGoal").innerHTML=htlivesight.Util.Parse("CustomSoundsGoal",data[0]);
+	document.getElementById("label_noOpGoal").innerHTML=htlivesight.Util.Parse("CustomSoundsNoOpGoal",data[0]);
+//	alert("36");
+	document.getElementById("PathSoundsNote1").innerHTML=htlivesight.Util.Parse("PathSoundsNote1",data[0]);
+	document.getElementById("PathSoundsNote2").innerHTML=htlivesight.Util.Parse("PathSoundsNote2",data[0]);
+	
 //goalsounds
-	document.getElementById("TabGoalSound").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabGoalSound",data[0]);
+	document.getElementById("TabGoalSound").innerHTML=htlivesight.Util.Parse("TabGoalSound",data[0]);
+//	alert("37");
 	// my goals sound labels
-	document.getElementById("myGoalCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsMyGoal",data[0]);
-	document.getElementById("myGoalButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("myGoalButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_myGoalCheck").innerHTML=htlivesight.Util.Parse("PathSoundsMyGoal",data[0]);
+	document.getElementById("label_myGoalButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("label_myGoalButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	alert("38")
 	// op goals sound labels
 	document.getElementById("opGoalCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsOpGoal",data[0]);
 	document.getElementById("opGoalButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);

@@ -515,21 +515,23 @@ function get_cookie ( cookie_name )
 			<div id="otabs-5">      <!--TAB5-->
 
 					<fieldset>
-	<legend>Icons</legend>
-		<input type="checkbox" id="oldIcons"/><label for="oldIcons"></label>Original Livefox icons in match window<br />
+	<legend id="CustomIcons">Icons</legend>
+		<input type="checkbox" id="oldIcons"/><label for="oldIcons"></label><label id="label_oldIcons"> Original Livefox icons in match window</label><br />
 	</fieldset>
 	<fieldset>
-	<legend>Sounds</legend>
-		<input type="checkbox" id="weather"/><label for="weather"></label>Weather sound for start of the match<br />
-		<input type="checkbox" id="whistleTime"/><label for="whistleTime"></label>Sound for start/end of an halftime<br />
-		<input type="checkbox" id="weatherSE"/><label for="weatherSE"></label>Sound for weather special events<br />
-		<input type="checkbox" id="livefoxGoal"/><label for="livefoxGoal"></label>Original Livefox sounds<br />
-		<input type="checkbox" id="noOpGoal"/><label for="noOpGoal"></label>No sounds for opponent's goals<br />
+	<legend id="CustomSounds">Sounds</legend>
+		<input type="checkbox" id="weather"/><label for="weather"></label><label id="label_weather">Weather sound for start of the match</label><br />
+		<input type="checkbox" id="whistleTime"/><label for="whistleTime"></label><label id="label_whistleTime">Sound for start/end of an halftime</label><br />
+		<input type="checkbox" id="weatherSE"/><label for="weatherSE"></label><label id="label_weatherSE">Sound for weather special events</label><br />
+		<input type="checkbox" id="livefoxGoal"/><label for="livefoxGoal"></label><label id="label_livefoxGoal">Original Livefox sounds</label><br />
+		<input type="checkbox" id="noOpGoal"/><label for="noOpGoal"></label><label id="label_noOpGoal">No sounds for opponent's goals</label><br />
 	</fieldset>
 	<fieldset>
-	<legend>Goals sounds</legend>
+	<legend id="TabGoalSound">Goals sounds</legend>
+	<label id="PathSoundsNote1"></label></br>
+	<label id="PathSoundsNote2"></label></br>
 <!-- my goal -->
-		<input type="checkbox" id="myGoalCheck"/><label for="myGoalCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<input type="checkbox" id="myGoalCheck"/><label for="myGoalCheck"></label><label id="label_myGoalCheck">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_myGoalButton_reset"></label><button id="play" class="brestore">play</button><label id="label_myGoalButton_play"></label>
 		
 		
 <input type="file" />	
