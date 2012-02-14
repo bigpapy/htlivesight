@@ -220,44 +220,55 @@ htlivesight.Settings = {
 	document.getElementById("label_openin_window").innerHTML=htlivesight.Util.Parse("GeneralNewWindow",data[0]);
 //	alert("13");
 	document.getElementById("LanguageSelect").innerHTML=htlivesight.Util.Parse("LanguageSelect",data[0]);
-	alert("14");
+//	alert("14");
 	document.getElementById("LanguageNote").innerHTML=htlivesight.Util.Parse("LanguageNote",data[0]);
-	alert("15");
+//	alert("15");
 	document.getElementById("GeneralServer").innerHTML=htlivesight.Util.Parse("GeneralServer",data[0]);
-	alert("16");
+//	alert("16");
 	document.getElementById("GeneralNote").innerHTML=htlivesight.Util.Parse("GeneralNote",data[0]);
-	alert("17");
+//	alert("17");
 //matches
 	document.getElementById("MatchesLeague").innerHTML=htlivesight.Util.Parse("MatchesLeague",data[0]);
-	alert("18");
+//	alert("18");
 	document.getElementById("label_chkGetLeague").innerHTML=htlivesight.Util.Parse("MatchesGetLeague",data[0]);
-	alert("19");
+//	alert("19");
 	document.getElementById("label_chkGetLeagueWithin").innerHTML=htlivesight.Util.Parse("MatchesPlayed",data[0]);
-	alert("20");
-	document.getElementById("MatchesHours").value=htlivesight.Util.Parse("MatchesHours",data[0]);
-	document.getElementById("MatchesFriends").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesFriends",data[0]);
-	document.getElementById("chkGetFriends").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesGetFriends",data[0]);
-	document.getElementById("chkGetFriendsWithin").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesPlayed",data[0]);
-	document.getElementById("MatchesHours2").value=htlivesight.Util.Parse("MatchesHours",data[0]);
-	document.getElementById("MatchesScorers").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesScorers",data[0]);
-	document.getElementById("chkHdrScorers").attributes.getNamedItem("label").value=htlivesight.Util.Parse("ScorersList",data[0]);
-	document.getElementById("MatchesWindow").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesWindow",data[0]);
-	document.getElementById("MatchesLines").value=htlivesight.Util.Parse("MatchesLines",data[0]);
+//	alert("20");
+	document.getElementById("MatchesHours").innerHTML=htlivesight.Util.Parse("MatchesHours",data[0]);
+//	alert("21");
+	document.getElementById("MatchesFriends").innerHTML=htlivesight.Util.Parse("MatchesFriends",data[0]);
+	document.getElementById("label_chkGetFriends").innerHTML=htlivesight.Util.Parse("MatchesGetFriends",data[0]);
+	document.getElementById("label_chkGetFriendsWithin").innerHTML=htlivesight.Util.Parse("MatchesPlayed",data[0]);
+	document.getElementById("MatchesHours2").innerHTML=htlivesight.Util.Parse("MatchesHours",data[0]);
+//	alert("22")
+	document.getElementById("MatchesScorers").innerHTML=htlivesight.Util.Parse("MatchesScorers",data[0]);
+	document.getElementById("label_chkHdrScorers").innerHTML=htlivesight.Util.Parse("ScorersList",data[0]);
+	document.getElementById("MatchesWindow").innerHTML=htlivesight.Util.Parse("MatchesWindow",data[0]);
+	document.getElementById("MatchesLines").innerHTML=htlivesight.Util.Parse("MatchesLines",data[0]);
 	//notify
-	document.getElementById("NotifyNotify").attributes.getNamedItem("label").value=htlivesight.Util.Parse("NotifyNotify",data[0]);
-	document.getElementById("chkSound").attributes.getNamedItem("label").value=htlivesight.Util.Parse("NotifyEnableSound",data[0]);
-	document.getElementById("chkSoundOnlyOpened").attributes.getNamedItem("label").value=htlivesight.Util.Parse("NotifyOnly",data[0]);
-	document.getElementById("chkFlash").attributes.getNamedItem("label").value=htlivesight.Util.Parse("NotifyFlash",data[0]);
-	document.getElementById("chkSlider").attributes.getNamedItem("label").value=htlivesight.Util.Parse("NotifyStatus",data[0]);
+	document.getElementById("NotifyNotify").innerHTML=htlivesight.Util.Parse("NotifyNotify",data[0]);
+	document.getElementById("label_chkSound").innerHTML=htlivesight.Util.Parse("NotifyEnableSound",data[0]);
+	document.getElementById("label_chkSoundOnlyOpened").innerHTML=htlivesight.Util.Parse("NotifyOnly",data[0]);
+	document.getElementById("label_chkFlash").innerHTML=htlivesight.Util.Parse("NotifyFlash",data[0]);
+	document.getElementById("label_chkSlider").innerHTML=htlivesight.Util.Parse("NotifyStatus",data[0]);
 	//other
-	document.getElementById("OtherAuthorization").attributes.getNamedItem("label").value=htlivesight.Util.Parse("OtherAuthorization",data[0]);
-	document.getElementById("OtherReset").value=htlivesight.Util.Parse("OtherReset",data[0]);
-	document.getElementById("button_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("OtherResetButton",data[0]);
-	document.getElementById("OtherEvents").attributes.getNamedItem("label").value=htlivesight.Util.Parse("OtherEvents",data[0]);
-	document.getElementById("reverseOrder").attributes.getNamedItem("label").value=htlivesight.Util.Parse("OtherReverse",data[0]);
-	document.getElementById("OtherReverseNote").value=htlivesight.Util.Parse("OtherReverseNote",data[0]);
-	document.getElementById("OtherEventKey").attributes.getNamedItem("label").value=htlivesight.Util.Parse("OtherEventKey",data[0]);
-	document.getElementById("printEventKey").attributes.getNamedItem("label").value=htlivesight.Util.Parse("OtherEventKeyNote",data[0]);
+	alert("23");
+	document.getElementById("OtherAuthorization").innerHTML=htlivesight.Util.Parse("OtherAuthorization",data[0]);
+	alert("24");
+	document.getElementById("OtherReset").innerHTML=htlivesight.Util.Parse("OtherReset",data[0]);
+	alert("25");
+	document.getElementById("button_reset").innerHTML=htlivesight.Util.Parse("OtherResetButton",data[0]);
+	alert("26");
+	document.getElementById("OtherEvents").innerHTML=htlivesight.Util.Parse("OtherEvents",data[0]);
+	alert("27");
+	document.getElementById("label_reverseOrder").innerHTML=htlivesight.Util.Parse("OtherReverse",data[0]);
+	alert("28");
+	document.getElementById("OtherReverseNote").innerHTML=htlivesight.Util.Parse("OtherReverseNote",data[0]);
+	alert("29");
+	document.getElementById("OtherEventKey").innerHTML=htlivesight.Util.Parse("OtherEventKey",data[0]);
+	alert("30");
+	document.getElementById("label_printEventKey").innerHTML=htlivesight.Util.Parse("OtherEventKeyNote",data[0]);
+	alert("31");
 	// customization
 	document.getElementById("CustomIcons").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomIcons",data[0]);
 	document.getElementById("oldIcons").attributes.getNamedItem("label").value=htlivesight.Util.Parse("CustomIconsOld",data[0]);
@@ -851,6 +862,7 @@ htlivesight.Settings = {
           	document.getElementById("sunSoundPath").value = "@"+document.getElementById("sunSoundPath").value;
           	document.getElementById("sunSoundPath").disabled = true;
           	prefs.personalization.sunCheck=false;
+
             };
     },
     

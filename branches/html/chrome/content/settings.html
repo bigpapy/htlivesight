@@ -466,47 +466,49 @@ function get_cookie ( cookie_name )
 					<fieldset>
 	<legend id ="MatchesLeague"> League Matches</legend>
 		<input type="checkbox" id="chkGetLeague"/><label for="chkGetLeague"></label><label id="label_chkGetLeague">Load automatically League Matches and League Table</label><br />
-		<input type="checkbox" id="chkGetLeagueWithin"/><label for="chkGetLeagueWithin"></label><label id="label_chkGetLeagueWithin">Played in <input value="24" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all"/> hours</label><br />
+		<input type="checkbox" id="chkGetLeagueWithin"/><label for="chkGetLeagueWithin"></label><label id="label_chkGetLeagueWithin">Played in </label><input value="24" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all"/><label id="MatchesHours"> hours</label><br />
 	</fieldset>
 	<fieldset>
-	<legend>Friends Matches</legend>
-		<input type="checkbox" id="chkGetFriends"/><label for="chkGetFriends"></label>Load automatically matches of your friends<br />
-		<input type="checkbox" id="chkGetFriendsWithin"/><label for="chkGetFriendsWithin"></label>Played in <input value="24" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" /> hours<br />
+	<legend id="MatchesFriends">Friends Matches</legend>
+		<input type="checkbox" id="chkGetFriends"/><label for="chkGetFriends"></label><label id="label_chkGetFriends">Load automatically matches of your friends</label><br />
+		<input type="checkbox" id="chkGetFriendsWithin"/><label for="chkGetFriendsWithin"></label><label id="label_chkGetFriendsWithin">Played in</label> <input value="24" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" /><label id="MatchesHours2">hours</label><br />
 	</fieldset>
 	<fieldset>
-	<legend>Scorers</legend>
-		<input type="checkbox" id="chkHdrScorers"/><label for="chkHdrScorers"></label>Add scorers in header<br />
+	<legend id="MatchesScorers">Scorers</legend>
+		<input type="checkbox" id="chkHdrScorers"/><label for="chkHdrScorers"></label><label id="label_chkHdrScorers">Add scorers in header</label><br />
 	</fieldset>
 	<fieldset>
-	<legend>Live Window</legend>
-		<input value="3" id="txtMatchWindowSize" class="text ui-widget-content ui-corner-all"/> Lines to show in minimized mode<br />
+	<legend id="MatchesWindow">Live Window</legend>
+		<input value="3" id="txtMatchWindowSize" class="text ui-widget-content ui-corner-all"/><label id="MatchesLines"> Lines to show in minimized mode</label><br />
 	</fieldset>
 				
 			</div>
 			<div id="otabs-3"> <!--TAB3-->
 
 					<fieldset>
-	<legend>Notifications</legend>
-		<input type="checkbox" id="chkSound"/><label for="chkSound"></label>Enable sound notifications<br />
-		<input type="checkbox" id="chkSoundOnlyOpened"/><label for="chkSoundOnlyOpened"></label>Only in opened matches<br />
-		<input type="checkbox" id="chkFlash"/><label for="chkFlash"></label>Flash headers<br />
-		<input type="checkbox" id="chkSlider"/><label for="chkSlider"></label>Status bar slider<br />
+	<legend id="NotifyNotify">Notifications</legend>
+		<input type="checkbox" id="chkSound"/><label for="chkSound"></label><label id="label_chkSound">Enable sound notifications</label><br />
+		<input type="checkbox" id="chkSoundOnlyOpened"/><label for="chkSoundOnlyOpened"></label><label id="label_chkSoundOnlyOpened">Only in opened matches</label><br />
+		<input type="checkbox" id="chkFlash"/><label for="chkFlash"></label><label id="label_chkFlash">Flash headers</label><br />
+		<input type="checkbox" id="chkSlider"/><label for="chkSlider"></label><label id="label_chkSlider">Status bar slider</label><br />
 	</fieldset>
 				
 			</div>
 			<div id="otabs-4"> <!--TAB4-->
 
 					<fieldset>
-	<legend>Authorization code</legend>
-		Remove authorization	 <button id="removeauth">Reset</button>
+	<legend id="OtherAuthorization">Authorization code</legend><label id="OtherReset">
+		Remove authorization	 </label><button id="removeauth"></button><label for="removeauth" id="button_reset"></label>
 	</fieldset>
 	<fieldset>
-	<legend>Sequence of events</legend>
-		<input type="checkbox" id="reverseOrder"/><label for="reverseOrder"></label>Bottom up display of match events<br />
-	</fieldset>
+	<legend id="OtherEvents">Sequence of events</legend>
+		<input type="checkbox" id="reverseOrder"/><label for="reverseOrder"></label><label id="label_reverseOrder">Bottom up display of match events</label><br />
+	<label id="OtherReverseNote"></label>
+	</fieldset> 
+
 	<fieldset>
-	<legend>Eventkey</legend>
-		<input type="checkbox" id="printEventKey"/><label for="printEventKey"></label>Show eventkey in the commentary<br />
+	<legend id="OtherEventKey"></legend>
+		<input type="checkbox" id="printEventKey"/><label for="printEventKey"></label><label id="label_printEventKey">Show eventkey in the commentary</label><br />
 	</fieldset>
 				
 			</div>
