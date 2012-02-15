@@ -298,73 +298,90 @@ htlivesight.Settings = {
 	document.getElementById("label_opGoalCheck").innerHTML=htlivesight.Util.Parse("PathSoundsOpGoal",data[0]);
 	document.getElementById("label_opGoalButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
 	document.getElementById("label_opGoalButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
-	alert("39");
+//	alert("39");
 	// friends goal sound labels
 	document.getElementById("label_frGoalCheck").innerHTML=htlivesight.Util.Parse("PathSoundsFrGoal",data[0]);
 	document.getElementById("label_frGoalButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
 	document.getElementById("label_frGoalButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
-	alert("40");
+	//alert("40");
 	// opponent friends goal sound labes
-	document.getElementById("opfrGoalCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsOpFrGoal",data[0]);
-	document.getElementById("opfrGoalButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("opfrGoalButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_opfrGoalCheck").innerHTML=htlivesight.Util.Parse("PathSoundsOpFrGoal",data[0]);
+	document.getElementById("label_opfrGoalButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("label_opfrGoalButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// other goals sound labels
-	document.getElementById("otGoalCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsOtGoal",data[0]);
-	document.getElementById("otGoalButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("otGoalButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_otGoalCheck").innerHTML=htlivesight.Util.Parse("PathSoundsOtGoal",data[0]);
+	document.getElementById("label_otGoalButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("label_otGoalButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// miss goals sound labels
-	document.getElementById("missGoalCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsMiss",data[0]);
-	document.getElementById("missGoalButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("missGoalButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_missGoalCheck").innerHTML=htlivesight.Util.Parse("PathSoundsMiss",data[0]);
+	document.getElementById("label_missGoalButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("label_missGoalButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+//	alert("41");
 //meteo and injury sounds
-	document.getElementById("TabWheatherSound").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabWheatherSound",data[0]);
+	document.getElementById("TabWheatherSound").innerHTML=htlivesight.Util.Parse("TabWheatherSound",data[0]);
 	// sun sound
-	document.getElementById("sunCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsSun",data[0]);
-	document.getElementById("sunButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("sunButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_sunCheck").innerHTML=htlivesight.Util.Parse("PathSoundsSun",data[0]);
+	document.getElementById("label_sunButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("label_sunButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// rain sound
-	document.getElementById("rainCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRain",data[0]);
-	document.getElementById("rainButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("rainButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_rainCheck").innerHTML=htlivesight.Util.Parse("PathSoundsRain",data[0]);
+	document.getElementById("label_rainButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("label_rainButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// overcast sound
-	document.getElementById("overcastCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsOvercast",data[0]);
-	document.getElementById("overcastButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("overcastButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_overcastCheck").innerHTML=htlivesight.Util.Parse("PathSoundsOvercast",data[0]);
+	document.getElementById("label_overcastButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("label_overcastButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// few clouds sound
-	document.getElementById("fewCloudsCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsFewClouds",data[0]);
-	document.getElementById("fewCloudsButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("fewCloudsButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_fewCloudsCheck").innerHTML=htlivesight.Util.Parse("PathSoundsFewClouds",data[0]);
+	document.getElementById("label_fewCloudsButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("label_fewCloudsButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// My injury sound
-	document.getElementById("myBooCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsMyBoo",data[0]);
-	document.getElementById("myBooButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("myBooButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_myBooCheck").innerHTML=htlivesight.Util.Parse("PathSoundsMyBoo",data[0]);
+	document.getElementById("label_myBooButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("label_myBooButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 	// Opponent and other injury sound
-	document.getElementById("opBooCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsOpBoo",data[0]);
-	document.getElementById("opBooButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("opBooButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_opBooCheck").innerHTML=htlivesight.Util.Parse("PathSoundsOpBoo",data[0]);
+	document.getElementById("label_opBooButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+	document.getElementById("label_opBooButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+//alert("42");
 //begin/end half and booking sounds
-	document.getElementById("TabWhistleSound").attributes.getNamedItem("label").value=htlivesight.Util.Parse("TabWhistleSound",data[0]);
+	document.getElementById("TabWhistleSound").innerHTML=htlivesight.Util.Parse("TabWhistleSound",data[0]);
+//alert("43");
 	// Whistle start sound
-	document.getElementById("whistleStartCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsWhistleStart",data[0]);
-	document.getElementById("whistleStartButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("whistleStartButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_whistleStartCheck").innerHTML=htlivesight.Util.Parse("PathSoundsWhistleStart",data[0]);
+//alert("44");
+	document.getElementById("label_whistleStartButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+//alert("45");
+	document.getElementById("label_whistleStartButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+//alert("46");
 	// Whistle2 sound
-	document.getElementById("whistle2Check").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsWhistle2",data[0]);
-	document.getElementById("whistle2Button_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("whistle2Button_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_whistle2Check").innerHTML=htlivesight.Util.Parse("PathSoundsWhistle2",data[0]);
+//alert("47");
+	document.getElementById("label_whistle2Button_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+//alert("48");
+	document.getElementById("label_whistle2Button_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+//alert("49");
 	// Whistle3 sound
-	document.getElementById("whistle3Check").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsWhistle3",data[0]);
-	document.getElementById("whistle3Button_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("whistle3Button_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_whistle3Check").innerHTML=htlivesight.Util.Parse("PathSoundsWhistle3",data[0]);
+//alert("50");
+	document.getElementById("label_whistle3Button_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+//alert("51");
+	document.getElementById("label_whistle3Button_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+//alert("52");
 	// Whistle sound
-	document.getElementById("whistleCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsWhistle",data[0]);
-	document.getElementById("whistleButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("whistleButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+	document.getElementById("label_whistleCheck").innerHTML=htlivesight.Util.Parse("PathSoundsWhistle",data[0]);
+//alert("53");
+	document.getElementById("label_whistleButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+//alert("54");
+	document.getElementById("label_whistleButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+//alert("55");
 	// Hattrick sound
-	document.getElementById("hattrickCheck").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsHattrick",data[0]);
-	document.getElementById("hattrickButton_reset").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
-	document.getElementById("hattrickButton_play").attributes.getNamedItem("label").value=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
-
+	document.getElementById("label_hattrickCheck").innerHTML=htlivesight.Util.Parse("PathSoundsHattrick",data[0]);
+//alert("56");
+	document.getElementById("label_hattrickButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+//alert("57");
+	document.getElementById("label_hattrickButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+//alert("58: la fine! Tutto OK!");
   }, 
   //  new localization part added by bigpapy (start)
   

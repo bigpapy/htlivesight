@@ -557,7 +557,7 @@ function get_cookie ( cookie_name )
 		
 		<input type="url" id="frGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 <!-- opfr goal -->
-		<input type="checkbox" id="opfrGoalCheck"/><label for="opfrGoalCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<input type="checkbox" id="opfrGoalCheck"/><label for="opfrGoalCheck"></label><label id="label_opfrGoalCheck">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_opfrGoalButton_reset"></label><button id="play" class="brestore">play</button><label id="label_opfrGoalButton_play"></label>
 		
 		
 <input type="file" />	
@@ -566,7 +566,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="opfrGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- ot goal -->
-		<input type="checkbox" id="otGoalCheck"/><label for="otGoalCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<input type="checkbox" id="otGoalCheck"/><label for="otGoalCheck"></label><label id="label_otGoalCheck">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_otGoalButton_reset"></label><button id="play" class="brestore">play</button><label id="label_otGoalButton_play"></label>
 		
 		
 <input type="file" />	
@@ -575,7 +575,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="otGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- miss goal -->
-		<input type="checkbox" id="missGoalCheck"/><label for="missGoalCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<input type="checkbox" id="missGoalCheck"/><label for="missGoalCheck"></label><label id="label_missGoalCheck">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_missGoalButton_reset"></label><button id="play" class="brestore">play</button><label id="label_missGoalButton_play"></label>
 		
 		
 <input type="file" />	
@@ -584,7 +584,9 @@ function get_cookie ( cookie_name )
 		<input type="url" id="missGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- sun goal -->
-		<input type="checkbox" id="sunCheck"/><label for="sunCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<label id="TabWheatherSound"></label> <br />
+
+				<input type="checkbox" id="sunCheck"/><label for="sunCheck"></label><label id="label_sunCheck">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_sunButton_reset"></label><button id="play" class="brestore">play</button><label id="label_sunButton_play"></label>
 		
 		
 <input type="file" />	
@@ -593,34 +595,31 @@ function get_cookie ( cookie_name )
 		<input type="url" id="sunSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- rain goal -->
-		<input type="checkbox" id="rainCheck"/><label for="rainCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<input type="checkbox" id="rainCheck"/><label for="rainCheck"></label><label id="label_rainCheck">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_rainButton_reset"></label><button id="play" class="brestore">play</button><label id="label_rainButton_play"></label>
 		
 		
 <input type="file" />	
 		
 		
 		<input type="url" id="rainSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
-
 <!-- overcast goal -->
-		<input type="checkbox" id="overcastCheck"/><label for="overcastCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<input type="checkbox" id="overcastCheck"/><label for="overcastCheck"></label><label id="label_overcastCheck">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_overcastButton_reset"></label><button id="play" class="brestore">play</button><label id="label_overcastButton_play"></label>
 		
 		
 <input type="file" />	
 		
 		
 		<input type="url" id="overcastSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
-
 <!-- few clouds goal -->
-		<input type="checkbox" id="fewCloudsCheck"/><label for="fewCloudsCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<input type="checkbox" id="fewCloudsCheck"/><label for="fewCloudsCheck"></label><label id="label_fewCloudsCheck">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_fewCloudsButton_reset"></label><button id="play" class="brestore">play</button><label id="label_fewCloudsButton_play"></label>
 		
 		
 <input type="file" />	
 		
 		
 		<input type="url" id="fewCloudsSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
-
 <!-- my boo goal -->
-		<input type="checkbox" id="myBooCheck"/><label for="myBooCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<input type="checkbox" id="myBooCheck"/><label for="myBooCheck"></label><label id="label_myBooCheck">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_myBooButton_reset"></label><button id="play" class="brestore">play</button><label id="label_myBooButton_play"></label>
 		
 		
 <input type="file" />	
@@ -629,52 +628,49 @@ function get_cookie ( cookie_name )
 		<input type="url" id="myBooSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
 
 <!-- op boo goal -->
-		<input type="checkbox" id="opBooCheck"/><label for="opBooCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<input type="checkbox" id="opBooCheck"/><label for="opBooCheck"></label><label id="label_opBooCheck">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_opBooButton_reset"></label><button id="play" class="brestore">play</button><label id="label_opBooButton_play"></label>
 		
 		
 <input type="file" />	
 		
 		
 		<input type="url" id="opBooSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
-
 <!-- whistlestart goal -->
-		<input type="checkbox" id="whistleStartCheck"/><label for="whistleStartCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<label id="TabWhistleSound"></label> <br />
+
+		<input type="checkbox" id="whistleStartCheck"/><label for="whistleStartCheck"></label><label id="label_whistleStartCheck">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_whistleStartButton_reset"></label><button id="play" class="brestore">play</button><label id="label_whistleStartButton_play"></label>
 		
 		
 <input type="file" />	
 		
 		
 		<input type="url" id="whistleStartSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
-
 <!-- double whistle goal -->
-		<input type="checkbox" id="whistle2Check"/><label for="whistle2Check"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<input type="checkbox" id="whistle2Check"/><label for="whistle2Check"></label><label id="label_whistle2Check">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_whistle2Button_reset"></label><button id="play" class="brestore">play</button><label id="label_whistle2Button_play"></label>
 		
 		
 <input type="file" />	
 		
 		
 		<input type="url" id="whistle2SoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
-
 <!-- triple whistle goal -->
-		<input type="checkbox" id="whistle3Check"/><label for="whistle3Check"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<input type="checkbox" id="whistle3Check"/><label for="whistle3Check"></label><label id="label_whistle3Check">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_whistle3Button_reset"></label><button id="play" class="brestore">play</button><label id="label_whistle3Button_play"></label>
 		
 		
 <input type="file" />	
 		
 		
 		<input type="url" id="whistle3SoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
-
 <!-- whistle goal -->
-		<input type="checkbox" id="whistleCheck"/><label for="whistleCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<input type="checkbox" id="whistleCheck"/><label for="whistleCheck"></label><label id="label_whistleCheck">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_whistleButton_reset"></label><button id="play" class="brestore">play</button><label id="label_whistleButton_play"></label>
 		
 		
 <input type="file" />	
 		
 		
 		<input type="url" id="whistleSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
-
 <!-- hattrick -->
-		<input type="checkbox" id="hattrickCheck"/><label for="hattrickCheck"></label>Sound for own goal <button id="restore" class="brestore">restore</button>
+		<input type="checkbox" id="hattrickCheck"/><label for="hattrickCheck"></label><label id="label_hattrickCheck">Sound for own goal</label><button id="restore" class="brestore">restore</button><label id="label_hattrickButton_reset"></label><button id="play" class="brestore">play</button><label id="label_hattrickButton_play"></label>
 		
 		
 <input type="file" />	
@@ -700,11 +696,11 @@ function get_cookie ( cookie_name )
 	
 	  <script type="text/javascript">
 	  htlivesightPrefs.init();
-	  alert("prima di start");
+	//  alert("prima di start");
 	  htlivesight.Settings.startup();
-	  alert("quasi la fine");
+	//  alert("quasi la fine");
 	  htlivesight.Settings.localization();
-	  alert("fine");
+	//  alert("fine");
 	</script>
 	
 		</body>
