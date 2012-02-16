@@ -380,8 +380,8 @@ function get_cookie ( cookie_name )
 <form>
 	<div id="openin" oncommand="htlivesight.Settings.click.radopenin(this);">
 	
-		<input type="radio" id="openin_tab" name="radio" checked="checked"/><label for="openin_tab" id="label_openin_tab">In a new tab</label>
-		<input type="radio" id="openin_window" name="radio" /><label for="openin_window" id="label_openin_window">In a new window</label>
+		<input type="radio" id="openin_tab" name="radio" checked="checked" /><label for="openin_tab" id="label_openin_tab">In a new tab</label>
+		<input type="radio" id="openin_window" name="radio"/><label for="openin_window" id="label_openin_window">In a new window</label>
 		
 	</div>
 </form>
@@ -390,7 +390,7 @@ function get_cookie ( cookie_name )
 				
 				<fieldset>
 	<legend id="LanguageSelect"></legend>
-		<select class="text ui-widget-content ui-corner-all" id="lang-list" oncommand="htlivesight.Settings.click.selLang();">
+		<select class="text ui-widget-content ui-corner-all" id="lang-list" onsubmit="htlivesight.Settings.click.selLang();">
 		<option value="A-I/ara">[ara] العربية</option>
 		<option value="A-I/bel">[bel] Беларуская</option>
 		<option value="A-I/bul">[bul] Български</option>
@@ -402,9 +402,9 @@ function get_cookie ( cookie_name )
 		<option value="A-I/eng">[eng] English</option>
 		<option value="A-I/en-us">[eng-us] American</option>
 		<option value="A-I/ell">[ell] Ελληνικά</option>
-		<option value="spa">[spa] Español</option>
-		<option value="spa-ca">[spa-ca] Centroamericano</option>
-		<option value="spa-su">[spa-su] Sudamericano</option>
+		<option value="J-Z/spa">[spa] Español</option>
+		<option value="J-Z/spa-ca">[spa-ca] Centroamericano</option>
+		<option value="J-Z/spa-su">[spa-su] Sudamericano</option>
 		<option value="A-I/est">[est] Eesti</option>
 		<option value="A-I/eus">[eus] Euskara</option>
 		<option value="A-I/fas">[fas] فارسی</option>
@@ -465,17 +465,17 @@ function get_cookie ( cookie_name )
 				
 					<fieldset>
 	<legend id ="MatchesLeague"> League Matches</legend>
-		<input type="checkbox" id="chkGetLeague" oncommand="htlivesight.Settings.click.chkgetleague();"/><label for="chkGetLeague"></label><label id="label_chkGetLeague">Load automatically League Matches and League Table</label><br />
-		<input type="checkbox" id="chkGetLeagueWithin" oncommand="htlivesight.Settings.click.chkgetleaguewithin();"/><label for="chkGetLeagueWithin"></label><label id="label_chkGetLeagueWithin">Played in </label><input value="24" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixleaguehours();"/><label id="MatchesHours"> hours</label><br />
+		<input type="checkbox" id="chkGetLeague" onclick="htlivesight.Settings.click.chkgetleague();"/><label for="chkGetLeague"></label><label id="label_chkGetLeague">Load automatically League Matches and League Table</label><br />
+		<input type="checkbox" id="chkGetLeagueWithin" onclick="htlivesight.Settings.click.chkgetleaguewithin();"/><label for="chkGetLeagueWithin"></label><label id="label_chkGetLeagueWithin">Played in </label><input value="24" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixleaguehours();"/><label id="MatchesHours"> hours</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesFriends">Friends Matches</legend>
-		<input type="checkbox" id="chkGetFriends" oncommand="htlivesight.Settings.click.chkgetfriends();"/><label for="chkGetFriends"></label><label id="label_chkGetFriends">Load automatically matches of your friends</label><br />
-		<input type="checkbox" id="chkGetFriendsWithin" oncommand="htlivesight.Settings.click.chkgetfriendswithin();"/><label for="chkGetFriendsWithin"></label><label id="label_chkGetFriendsWithin">Played in</label> <input value="24" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixfriendshours();"/><label id="MatchesHours2">hours</label><br />
+		<input type="checkbox" id="chkGetFriends" onclick="htlivesight.Settings.click.chkgetfriends();"/><label for="chkGetFriends"></label><label id="label_chkGetFriends">Load automatically matches of your friends</label><br />
+		<input type="checkbox" id="chkGetFriendsWithin" onclick="htlivesight.Settings.click.chkgetfriendswithin();"/><label for="chkGetFriendsWithin"></label><label id="label_chkGetFriendsWithin">Played in</label> <input value="24" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixfriendshours();"/><label id="MatchesHours2">hours</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesScorers">Scorers</legend>
-		<input type="checkbox" id="chkHdrScorers" oncommand="htlivesight.Settings.click.chkhdrscorers();"/><label for="chkHdrScorers"></label><label id="label_chkHdrScorers">Add scorers in header</label><br />
+		<input type="checkbox" id="chkHdrScorers" onclick="htlivesight.Settings.click.chkhdrscorers();"/><label for="chkHdrScorers"></label><label id="label_chkHdrScorers">Add scorers in header</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesWindow">Live Window</legend>
@@ -487,10 +487,10 @@ function get_cookie ( cookie_name )
 
 					<fieldset>
 	<legend id="NotifyNotify">Notifications</legend>
-		<input type="checkbox" id="chkSound" oncommand="htlivesight.Settings.click.chkSound();"/><label for="chkSound"></label><label id="label_chkSound">Enable sound notifications</label><br />
-		<input type="checkbox" id="chkSoundOnlyOpened" oncommand="htlivesight.Settings.click.chkSoundOnlyOpened();"/><label for="chkSoundOnlyOpened"></label><label id="label_chkSoundOnlyOpened">Only in opened matches</label><br />
-		<input type="checkbox" id="chkFlash" oncommand="htlivesight.Settings.click.chkFlash();"/><label for="chkFlash"></label><label id="label_chkFlash">Flash headers</label><br />
-		<input type="checkbox" id="chkSlider" oncommand="htlivesight.Settings.click.chkSlider();"/><label for="chkSlider"></label><label id="label_chkSlider">Status bar slider</label><br />
+		<input type="checkbox" id="chkSound" onclick="htlivesight.Settings.click.chkSound();"/><label for="chkSound"></label><label id="label_chkSound">Enable sound notifications</label><br />
+		<input type="checkbox" id="chkSoundOnlyOpened" onclick="htlivesight.Settings.click.chkSoundOnlyOpened();"/><label for="chkSoundOnlyOpened"></label><label id="label_chkSoundOnlyOpened">Only in opened matches</label><br />
+		<input type="checkbox" id="chkFlash" onclick="htlivesight.Settings.click.chkFlash();"/><label for="chkFlash"></label><label id="label_chkFlash">Flash headers</label><br />
+		<input type="checkbox" id="chkSlider" onclick="htlivesight.Settings.click.chkSlider();"/><label for="chkSlider"></label><label id="label_chkSlider">Status bar slider</label><br />
 	</fieldset>
 				
 			</div>
@@ -502,13 +502,13 @@ function get_cookie ( cookie_name )
 	</fieldset>
 	<fieldset>
 	<legend id="OtherEvents">Sequence of events</legend>
-		<input type="checkbox" id="reverseOrder" oncommand="htlivesight.Settings.click.reverseOrder();"/><label for="reverseOrder"></label><label id="label_reverseOrder">Bottom up display of match events</label><br />
+		<input type="checkbox" id="reverseOrder" onclick="htlivesight.Settings.click.reverseOrder();"/><label for="reverseOrder"></label><label id="label_reverseOrder">Bottom up display of match events</label><br />
 	<label id="OtherReverseNote"></label>
 	</fieldset> 
 
 	<fieldset>
 	<legend id="OtherEventKey"></legend>
-		<input type="checkbox" id="printEventKey" oncommand="htlivesight.Settings.click.printEventKey();"/><label for="printEventKey"></label><label id="label_printEventKey">Show eventkey in the commentary</label><br />
+		<input type="checkbox" id="printEventKey" onclick="htlivesight.Settings.click.printEventKey();"/><label for="printEventKey"></label><label id="label_printEventKey">Show eventkey in the commentary</label><br />
 	</fieldset>
 				
 			</div>
@@ -516,15 +516,15 @@ function get_cookie ( cookie_name )
 
 					<fieldset>
 	<legend id="CustomIcons">Icons</legend>
-		<input type="checkbox" id="oldIcons" oncommand="htlivesight.Settings.click.oldIcons();"/><label for="oldIcons"></label><label id="label_oldIcons"> Original Livefox icons in match window</label><br />
+		<input type="checkbox" id="oldIcons" onclick="htlivesight.Settings.click.oldIcons();"/><label for="oldIcons"></label><label id="label_oldIcons"> Original Livefox icons in match window</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="CustomSounds">Sounds</legend>
-		<input type="checkbox" id="weather" oncommand="htlivesight.Settings.click.weather();"/><label for="weather"></label><label id="label_weather">Weather sound for start of the match</label><br />
-		<input type="checkbox" id="whistleTime" oncommand="htlivesight.Settings.click.whistleTime();"/><label for="whistleTime"></label><label id="label_whistleTime">Sound for start/end of an halftime</label><br />
-		<input type="checkbox" id="weatherSE" oncommand="htlivesight.Settings.click.weatherSE();"/><label for="weatherSE"></label><label id="label_weatherSE">Sound for weather special events</label><br />
-		<input type="checkbox" id="livefoxGoal" oncommand="htlivesight.Settings.click.livefoxGoal();"/><label for="livefoxGoal"></label><label id="label_livefoxGoal">Original Livefox sounds</label><br />
-		<input type="checkbox" id="noOpGoal" oncommand="htlivesight.Settings.click.noOpGoal();"/><label for="noOpGoal"></label><label id="label_noOpGoal">No sounds for opponent's goals</label><br />
+		<input type="checkbox" id="weather" onclick="htlivesight.Settings.click.weather();"/><label for="weather"></label><label id="label_weather">Weather sound for start of the match</label><br />
+		<input type="checkbox" id="whistleTime" onclick="htlivesight.Settings.click.whistleTime();"/><label for="whistleTime"></label><label id="label_whistleTime">Sound for start/end of an halftime</label><br />
+		<input type="checkbox" id="weatherSE" onclick="htlivesight.Settings.click.weatherSE();"/><label for="weatherSE"></label><label id="label_weatherSE">Sound for weather special events</label><br />
+		<input type="checkbox" id="livefoxGoal" onclick="htlivesight.Settings.click.livefoxGoal();"/><label for="livefoxGoal"></label><label id="label_livefoxGoal">Original Livefox sounds</label><br />
+		<input type="checkbox" id="noOpGoal" onclick="htlivesight.Settings.click.noOpGoal();"/><label for="noOpGoal"></label><label id="label_noOpGoal">No sounds for opponent's goals</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="TabGoalSound">Goals sounds</legend>

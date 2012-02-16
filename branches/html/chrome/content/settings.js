@@ -412,6 +412,7 @@ htlivesight.Settings = {
     
     chkgetleague: function() {
       var prefs = htlivesight.Settings.preferences;
+	alert("working!");
       if(document.getElementById("chkGetLeague").checked) {
         document.getElementById("chkGetLeagueWithin").disabled = false;
         htlivesight.Settings.click.chkgetleaguewithin();
@@ -513,6 +514,7 @@ htlivesight.Settings = {
     selLang: function() {
       var prefs = htlivesight.Settings.preferences;
       var newLang = document.getElementById("lang-list").selectedItem.value;
+	alert("newLang= "+ newLang);
       prefs.language.locale = newLang;
   
     },
