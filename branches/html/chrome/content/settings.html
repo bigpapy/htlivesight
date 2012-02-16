@@ -378,10 +378,10 @@ function get_cookie ( cookie_name )
 				<fieldset>
 	<legend id="GeneralOpen"></legend>
 <form>
-	<div id="openin" oncommand="htlivesight.Settings.click.radopenin(this);">
+	<div id="openin" >
 	
-		<input type="radio" id="openin_tab" name="radio" checked="checked" /><label for="openin_tab" id="label_openin_tab">In a new tab</label>
-		<input type="radio" id="openin_window" name="radio"/><label for="openin_window" id="label_openin_window">In a new window</label>
+		<input type="radio" id="openin_tab" name="radio" checked="checked" /><label for="openin_tab" id="label_openin_tab" onclick="htlivesight.Settings.click.radopenin(true);">In a new tab</label>
+		<input type="radio" id="openin_window" name="radio" /><label for="openin_window" id="label_openin_window" onclick="htlivesight.Settings.click.radopenin(false);">In a new window</label>
 		
 	</div>
 </form>
@@ -390,7 +390,8 @@ function get_cookie ( cookie_name )
 				
 				<fieldset>
 	<legend id="LanguageSelect"></legend>
-		<select class="text ui-widget-content ui-corner-all" id="lang-list" onsubmit="htlivesight.Settings.click.selLang();">
+		<form onchange="htlivesight.Settings.click.selLang();">
+		<select class="text ui-widget-content ui-corner-all" id="lang-list" >
 		<option value="A-I/ara">[ara] العربية</option>
 		<option value="A-I/bel">[bel] Беларуская</option>
 		<option value="A-I/bul">[bul] Български</option>
@@ -446,6 +447,7 @@ function get_cookie ( cookie_name )
 		<option value="J-Z/vls">[vls] Vlaams</option>
 		<option value="J-Z/ukr">[ukr] Українська</option>
 		<option value="J-Z/zho">[zho] 中文（简体）</option>
+		</form>
 		</select>
 		<br />
 	<label id="LanguageNote"></label>

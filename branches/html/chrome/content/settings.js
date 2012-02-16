@@ -20,10 +20,12 @@ htlivesight.Settings = {
   load: function() {
 //	  alert("load");
     var prefs = htlivesight.Settings.preferences;
-    var ndx = prefs.general.openInTab 
+  /*  var ndx = prefs.general.openInTab 
               ? htlivesight.Settings.OPEN_IN.TAB
               : htlivesight.Settings.OPEN_IN.WINDOW;
-    document.getElementById("openin").selectedIndex=ndx;
+    document.getElementById("openin").selectedIndex=ndx; */
+	document.getElementById("openin_tab").checked=prefs.general.openInTab;
+	document.getElementById("openin_window").checked=!prefs.general.openInTab;		
  //   alert("load1");
     document.getElementById("hattrickServer").value = prefs.general.hattrickServer;
  //   alert("load2");
@@ -396,9 +398,12 @@ htlivesight.Settings = {
       window.close();
 //	alert("after closing");
     },
-    radopenin: function() {
+    radopenin: function(value) {
+      alert("working! this:"+value);
       var prefs = htlivesight.Settings.preferences;
-      prefs.general.openInTab = (document.getElementById("openin").selectedIndex==htlivesight.Settings.OPEN_IN.TAB);
+      prefs.general.openInTab = value/*(document.getElementById("openin").selectedIndex==htlivesight.Settings.OPEN_IN.TAB)*/;
+	alert("openin="+document.getElementById("openin").selectedIndex);
+	alert("openInTab="+ prefs.general.openInTab);
 
     },
 
@@ -412,7 +417,7 @@ htlivesight.Settings = {
     
     chkgetleague: function() {
       var prefs = htlivesight.Settings.preferences;
-	alert("working!");
+//	alert("working!");
       if(document.getElementById("chkGetLeague").checked) {
         document.getElementById("chkGetLeagueWithin").disabled = false;
         htlivesight.Settings.click.chkgetleaguewithin();
