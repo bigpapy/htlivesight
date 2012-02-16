@@ -390,8 +390,11 @@ htlivesight.Settings = {
       window.close();
     },
     btnOk: function() {
+//	alert("before saving");
       htlivesight.Settings.save();
+//	alert("after saving");
       window.close();
+//	alert("after closing");
     },
     radopenin: function() {
       var prefs = htlivesight.Settings.preferences;
@@ -402,6 +405,7 @@ htlivesight.Settings = {
     txtfixhattrickserver: function() {
         var prefs = htlivesight.Settings.preferences;
         var value = document.getElementById("hattrickServer").value;//.replace(/\D/g, "");
+//	alert("server: "+value);
     //    document.getElementById("hattrickServer").value = value;
         prefs.general.hattrickServer = value;
       },
