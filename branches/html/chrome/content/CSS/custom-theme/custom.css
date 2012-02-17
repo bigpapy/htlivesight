@@ -17,13 +17,14 @@ font-weight:bold;
 body{ /*font: 1em "Trebuchet MS", sans-serif;*/
 font-size: 1em;
 font-family: myFirstFont;
-background-image: url(images/meme.png);
+background-image: url(images/bg.png);
 background-repeat:no-repeat;
 background-attachment:fixed;
 background-position:bottom left;
 padding: 0 0 0 0;
 margin: 0 0 0 0;
 }
+
 .anotherbrick1 { float:left;margin-right:10px;}
 .anotherbrick2 { position: absolute;right:10px;top:15px}
 .demoHeaders { margin-top: 2em; }

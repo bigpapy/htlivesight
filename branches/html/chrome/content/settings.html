@@ -5,8 +5,8 @@
 		<title id="htlivesight-options">HTLiveSight</title>
 		<link rel="icon" type="image/png" href="./CSS/custom-theme/images/48.png" />
 		<!--Dark Theme--><link rel="stylesheet" type="text/css" title="dark" href="CSS/custom-theme/jquery-ui-1.8.16.custom.css"/>
-		<!--Light Theme--><link  rel="alternate stylesheet" type="text/css" title="light" href="CSS/custom-theme2/jquery-ui-1.8.16.custom.css"/>
-		<link type="text/css" href="CSS/custom-theme/custom.css" rel="stylesheet" />
+		<!--Light Theme<link  rel="alternate stylesheet" type="text/css" title="light" href="CSS/custom-theme2/jquery-ui-1.8.16.custom.css"/>-->
+		<!----><link type="text/css" href="CSS/custom-theme/custom.css" rel="stylesheet" />
 		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
 
@@ -22,7 +22,7 @@
 		<script type="application/x-javascript" src="util/misc.js"</script>
 		
 
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 		// *** TO BE CUSTOMISED ***
 
 var style_cookie_name = "style" ;
@@ -81,7 +81,7 @@ function get_cookie ( cookie_name )
     }
     return '' ;
 }
-		</script>
+		</script>-->
 		<script type="text/javascript">
 			$(function(){
 				// Accordion
@@ -234,45 +234,45 @@ function get_cookie ( cookie_name )
 				$( "#addviamatchid" ).button();
 				$( "#addviateamid" ).button();
 				//Options buttons
-				$( "#openin" ).buttonset();
-				$( "#chkGetLeague" ).button();
-				$( "#chkGetLeagueWithin" ).button();
-				$( "#chkGetFriends" ).button();
-				$( "#chkGetFriendsWithin" ).button();
-				$( "#chkHdrScorers" ).button();
-				$( "#chkSound" ).button();
-				$( "#chkSoundOnlyOpened" ).button();
-				$( "#chkFlash" ).button();
-				$( "#chkSlider" ).button();
+				//$( "#openin" ).buttonset();
+				//$( "#chkGetLeague" ).button();
+				//$( "#chkGetLeagueWithin" ).button();
+				//$( "#chkGetFriends" ).button();
+				//$( "#chkGetFriendsWithin" ).button();
+				//$( "#chkHdrScorers" ).button();
+				//$( "#chkSound" ).button();
+				//$( "#chkSoundOnlyOpened" ).button();
+				//$( "#chkFlash" ).button();
+				//$( "#chkSlider" ).button();
 				$( "#removeauth" ).button();
-				$( "#reverseOrder" ).button();
-				$( "#printEventKey" ).button();
-				$( "#oldIcons" ).button();
-				$( "#weather" ).button();
-				$( "#whistleTime" ).button();
-				$( "#weatherSE" ).button();
-				$( "#livefoxGoal" ).button();
-				$( "#noOpGoal" ).button();
-				$( "#myGoalCheck" ).button();
-				$( "#opGoalCheck" ).button();
-				$( "#frGoalCheck" ).button();
-				$( "#opfrGoalCheck" ).button();
-				$( "#otGoalCheck" ).button();
-				$( "#missGoalCheck" ).button();
-				$( "#sunCheck" ).button();
-				$( "#rainCheck" ).button();
-				$( "#overcastCheck" ).button();
-				$( "#fewCloudsCheck" ).button();
-				$( "#myBooCheck" ).button();
-				$( "#opBooCheck" ).button();
-				$( "#whistleStartCheck" ).button();
-				$( "#whistle2Check" ).button();
-				$( "#whistle3Check" ).button();
-				$( "#whistleCheck" ).button();
-				$( "#hattrickCheck" ).button();
-				$( ".brestore" ).button();
-				$( "#light" ).button();
-				$( "#dark" ).button();
+				//$( "#reverseOrder" ).button();
+				//$( "#printEventKey" ).button();
+				//$( "#oldIcons" ).button();
+				//$( "#weather" ).button();
+				//$( "#whistleTime" ).button();
+				//$( "#weatherSE" ).button();
+				//$( "#livefoxGoal" ).button();
+				//$( "#noOpGoal" ).button();
+				//$( "#myGoalCheck" ).button();
+				//$( "#opGoalCheck" ).button();
+				//$( "#frGoalCheck" ).button();
+				//$( "#opfrGoalCheck" ).button();
+				//$( "#otGoalCheck" ).button();
+				//$( "#missGoalCheck" ).button();
+				//$( "#sunCheck" ).button();
+				//$( "#rainCheck" ).button();
+				//$( "#overcastCheck" ).button();
+				//$( "#fewCloudsCheck" ).button();
+				//$( "#myBooCheck" ).button();
+				//$( "#opBooCheck" ).button();
+				//$( "#whistleStartCheck" ).button();
+				//$( "#whistle2Check" ).button();
+				//$( "#whistle3Check" ).button();
+				//$( "#whistleCheck" ).button();
+				//$( "#hattrickCheck" ).button();
+				//$( ".brestore" ).button();
+				//$( "#light" ).button();
+				//$( "#dark" ).button();
 				
 				//hover states on the static widgets
 				$('#site_link, #dialog_link, #options_link, #about_link, ul#icons li').hover(
@@ -500,7 +500,8 @@ function get_cookie ( cookie_name )
 
 					<fieldset>
 	<legend id="OtherAuthorization">Authorization code</legend><label id="OtherReset">
-		Remove authorization	 </label><button id="removeauth" onclick="htlivesight.Settings.click.resetToken();"></button><label for="removeauth" id="button_reset"></label>
+		Remove authorization	 </label>
+		<button id="removeauth" onclick="htlivesight.Settings.click.resetToken();" /><label for="removeauth" id="button_reset"></label>
 	</fieldset>
 	<fieldset>
 	<legend id="OtherEvents">Sequence of events</legend>
