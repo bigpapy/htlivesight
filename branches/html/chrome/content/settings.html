@@ -537,54 +537,54 @@ function get_cookie ( cookie_name )
 		<input type="checkbox" id="myGoalCheck" onclick="htlivesight.Settings.click.myGoalSound()"/><label for="myGoalCheck"></label><label id="label_myGoalCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.myGoalReset()">restore</button><label id="label_myGoalButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.myGoalPlay()">play</button><label id="label_myGoalButton_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="myGoalSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.myGoalSoundFile();" />	
 		
 		
-		<input type="url" id="myGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="myGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.myGoalSound()"/> <br />
 
 <!-- op goal -->
 				<input type="checkbox" id="opGoalCheck" onclick="htlivesight.Settings.click.opGoalSound()"/><label for="opGoalCheck"></label><label id="label_opGoalCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.opGoalReset()">restore</button><label id="label_opGoalButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.opGoalPlay()">play</button><label id="label_opGoalButton_play" ></label>
 		
 		
-<input type="file" />	
+<input type="file" id="opGoalSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.opGoalSoundFile();" />	
 		
 		
-		<input type="url" id="opGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="opGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.opGoalSound()"/> <br />
 
 <!-- fr goal -->
 		<input type="checkbox" id="frGoalCheck" onclick="htlivesight.Settings.click.frGoalSound()"/><label for="frGoalCheck"></label><label id="label_frGoalCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.frGoalReset()">restore</button><label id="label_frGoalButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.frGoalPlay()">play</button><label id="label_frGoalButton_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="frGoalSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.frGoalSoundFile();" />	
 		
 		
-		<input type="url" id="frGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="frGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.frGoalSound()"/> <br />
 <!-- opfr goal -->
 		<input type="checkbox" id="opfrGoalCheck" onclick="htlivesight.Settings.click.opfrGoalSound()"/><label for="opfrGoalCheck"></label><label id="label_opfrGoalCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.opfrGoalReset()">restore</button><label id="label_opfrGoalButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.opfrGoalPlay()">play</button><label id="label_opfrGoalButton_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="opfrGoalSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.opfrGoalSoundFile();" />	
 		
 		
-		<input type="url" id="opfrGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="opfrGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.opfrGoalSound()"/> <br />
 
 <!-- ot goal -->
 		<input type="checkbox" id="otGoalCheck" onclick="htlivesight.Settings.click.otGoalSound()"/><label for="otGoalCheck"></label><label id="label_otGoalCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.otGoalReset()">restore</button><label id="label_otGoalButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.otGoalPlay()">play</button><label id="label_otGoalButton_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="otGoalSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.otGoalSoundFile();" />	
 		
 		
-		<input type="url" id="otGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="otGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.otGoalSound()"/> <br />
 
 <!-- miss goal -->
 		<input type="checkbox" id="missGoalCheck" onclick="htlivesight.Settings.click.missGoalSound()"/><label for="missGoalCheck"></label><label id="label_missGoalCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.missGoalReset()">restore</button><label id="label_missGoalButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.missGoalPlay()">play</button><label id="label_missGoalButton_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="missGoalSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.missGoalSoundFile();" />	
 		
 		
-		<input type="url" id="missGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="missGoalSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.missGoalSound()"/> <br />
 
 <!-- sun goal -->
 		<label id="TabWheatherSound"></label> <br />
@@ -592,94 +592,94 @@ function get_cookie ( cookie_name )
 				<input type="checkbox" id="sunCheck" onclick="htlivesight.Settings.click.sunSound()"/><label for="sunCheck"></label><label id="label_sunCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.sunReset()">restore</button><label id="label_sunButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.sunPlay()">play</button><label id="label_sunButton_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="sunSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.sunSoundFile();" />	
 		
 		
-		<input type="url" id="sunSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="sunSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.sunSound()"/> <br />
 
 <!-- rain goal -->
 		<input type="checkbox" id="rainCheck" onclick="htlivesight.Settings.click.rainSound()"/><label for="rainCheck"></label><label id="label_rainCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.rainReset()">restore</button><label id="label_rainButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.rainPlay()">play</button><label id="label_rainButton_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="rainSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.rainSoundFile();" />	
 		
 		
-		<input type="url" id="rainSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="rainSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.rainSound()"/> <br />
 <!-- overcast goal -->
 		<input type="checkbox" id="overcastCheck" onclick="htlivesight.Settings.click.overcastSound()"/><label for="overcastCheck"></label><label id="label_overcastCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.overcastReset()">restore</button><label id="label_overcastButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.overcastPlay()">play</button><label id="label_overcastButton_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="overcastSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.overcastSoundFile();" />	
 		
 		
-		<input type="url" id="overcastSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="overcastSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.overcastSound()"/> <br />
 <!-- few clouds goal -->
 		<input type="checkbox" id="fewCloudsCheck" onclick="htlivesight.Settings.click.fewCloudSound()"/><label for="fewCloudsCheck"></label><label id="label_fewCloudsCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.fewCloudReset()">restore</button><label id="label_fewCloudsButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.fewCloudPlay()">play</button><label id="label_fewCloudsButton_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="fewCloudsSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.fewCloudSoundFile();" />	
 		
 		
-		<input type="url" id="fewCloudsSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="fewCloudsSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.fewCloudSound()"/> <br />
 <!-- my boo goal -->
 		<input type="checkbox" id="myBooCheck" onclick="htlivesight.Settings.click.myBooSound()"/><label for="myBooCheck"></label><label id="label_myBooCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.myBooReset()">restore</button><label id="label_myBooButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.myBooPlay()">play</button><label id="label_myBooButton_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="myBooSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.myBooSoundFile();" />	
 		
 		
-		<input type="url" id="myBooSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="myBooSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.myBooSound()"/> <br />
 
 <!-- op boo goal -->
 		<input type="checkbox" id="opBooCheck" onclick="htlivesight.Settings.click.opBooSound()"/><label for="opBooCheck"></label><label id="label_opBooCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.opBooReset()">restore</button><label id="label_opBooButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.opBooPlay()">play</button><label id="label_opBooButton_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="opBooSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.opBooSoundFile();" />
 		
 		
-		<input type="url" id="opBooSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="opBooSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.opBooSound()"/> <br />
 <!-- whistlestart goal -->
 		<label id="TabWhistleSound"></label> <br />
 
 		<input type="checkbox" id="whistleStartCheck" onclick="htlivesight.Settings.click.whistleStartSound()"/><label for="whistleStartCheck"></label><label id="label_whistleStartCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.whistleStartReset()">restore</button><label id="label_whistleStartButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.whistleStartPlay()">play</button><label id="label_whistleStartButton_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="whistleStartSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.whistleStartSoundFile();" />	
 		
 		
-		<input type="url" id="whistleStartSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="whistleStartSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.whistleStartSound()"/> <br />
 <!-- double whistle goal -->
 		<input type="checkbox" id="whistle2Check" onclick="htlivesight.Settings.click.whistle2Sound()"/><label for="whistle2Check"></label><label id="label_whistle2Check">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.whistle2Reset()">restore</button><label id="label_whistle2Button_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.whistle2Play()">play</button><label id="label_whistle2Button_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="whistle2SoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.whistle2SoundFile();" />	
 		
 		
-		<input type="url" id="whistle2SoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="whistle2SoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.whistle2Sound()"/> <br />
 <!-- triple whistle goal -->
 		<input type="checkbox" id="whistle3Check" onclick="htlivesight.Settings.click.whistle3Sound()"/><label for="whistle3Check"></label><label id="label_whistle3Check">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.whistle3Reset()">restore</button><label id="label_whistle3Button_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.whistle3Play()">play</button><label id="label_whistle3Button_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="whistle3SoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.whistle3SoundFile();" />	
 		
 		
-		<input type="url" id="whistle3SoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="whistle3SoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.whistle3Sound()"/> <br />
 <!-- whistle goal -->
 		<input type="checkbox" id="whistleCheck" onclick="htlivesight.Settings.click.whistleSound()"/><label for="whistleCheck"></label><label id="label_whistleCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.whistleReset()">restore</button><label id="label_whistleButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.whistlePlay()">play</button><label id="label_whistleButton_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="whistleSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.whistleSoundFile();" />	
 		
 		
-		<input type="url" id="whistleSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="whistleSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.whistleSound()"/> <br />
 <!-- hattrick -->
 		<input type="checkbox" id="hattrickCheck" onclick="htlivesight.Settings.click.hattrickSound()"/><label for="hattrickCheck"></label><label id="label_hattrickCheck">Sound for own goal</label><button id="restore" class="brestore" onclick="htlivesight.Settings.click.hattrickReset()">restore</button><label id="label_hattrickButton_reset"></label><button id="play" class="brestore" onclick="htlivesight.Settings.click.hattrickPlay()">play</button><label id="label_hattrickButton_play"></label>
 		
 		
-<input type="file" />	
+<input type="file" id="hattrickSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.hattrickSoundFile();" />	
 		
 		
-		<input type="url" id="hattrickSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all"/> <br />
+		<input type="url" id="hattrickSoundPath" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.hattrickSound()"/> <br />
 	</fieldset>
 				
 			</div>
