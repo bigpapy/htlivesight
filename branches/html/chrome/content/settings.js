@@ -393,6 +393,7 @@ htlivesight.Settings = {
     },
     btnOk: function() {
 //	alert("before saving");
+      htlivesight.Settings.click.selLang();//change the language in prefs without saving it.
       htlivesight.Settings.save();
 //	alert("after saving");
       window.close();
@@ -518,10 +519,10 @@ htlivesight.Settings = {
     },
     selLang: function() {
       var prefs = htlivesight.Settings.preferences;
-      var newLang = document.getElementById("lang-list").selectedItem.value;
-	alert("newLang= "+ newLang);
+      var newLang = document.getElementById("lang-list").value;
+//	alert("newLang= "+ newLang);
       prefs.language.locale = newLang;
-  
+ // 	alert("tutto ok!");
     },
     //added by bigpapy (begin)
     resetToken: function() {
@@ -1204,6 +1205,7 @@ htlivesight.Settings = {
           document.getElementById("whistle2SoundPath").value=prefs.personalization.whistle2SoundPath;
           //prefs.personalization.myGoalSoundPath = prefs.personalization.myGoalSoundPath.replace("@","");
           prefs.personalization.whistle2Check=true;
+
           } else {
           	prefs.personalization.whistle2SoundPath = "@"+document.getElementById("whistle2SoundPath").value;
           	document.getElementById("whistle2SoundPath").value="@"+document.getElementById("whistle2SoundPath").value;

@@ -66,7 +66,7 @@
 							<menuitem value="A-I/bos" label="[bos] Bosanski"/>
 							<menuitem value="A-I/cat" label="[cat] Català"/>
 							<menuitem value="A-I/ces" label="[ces] Česky"/>
-                         	<menuitem value="A-I/dan" label="[dan] Danish"/>
+                         				<menuitem value="A-I/dan" label="[dan] Danish"/>
 							<menuitem value="A-I/ger" label="[ger] Deutsch"/>
 							<menuitem value="A-I/ell" label="[ell] Ελληνικά"/>
 							<menuitem value="A-I/eng" label="[eng] English (British)"/>
