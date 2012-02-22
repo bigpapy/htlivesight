@@ -28,10 +28,11 @@
 
 
 /* Icons
-----------------------------------*/
+----------------------------------*/ 
 
-/* states and images */
-.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+/* states and images */ /* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!!!! Qui prima c'era display: block;*/
+
+.ui-icon { display: inline-block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
 
 
 /* Misc visuals
@@ -56,9 +57,9 @@
 
 /* Component containers
 ----------------------------------*/
-.ui-widget { font-family: segoe ui, Arial, sans-serif; font-size: 12px; }
+.ui-widget { /*font-family: segoe ui, Arial, sans-serif;*/ font-size: 12px; }
 .ui-widget .ui-widget { font-size: 1em; }
-.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: segoe ui, Arial, sans-serif; font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { /*font-family: segoe ui, Arial, sans-serif;*/ font-size: 1em; }
 .ui-widget-content { border: 1px solid #dfd9c3; background: #f5f3e5 url(images/ui-bg_highlight-hard_100_f5f3e5_1x100.png) 50% top repeat-x; color: #000; }
 .ui-widget-content a { color: #000; }
 .ui-widget-header { border: 1px solid #d4ccb0; background: #ece8da url(images/ui-bg_diagonals-thick_100_ece8da_40x40.png) 50% 50% repeat; color: #000; font-weight: bold; }
