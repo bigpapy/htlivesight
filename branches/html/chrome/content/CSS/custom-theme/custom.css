@@ -17,11 +17,11 @@ font-weight:bold;
 body{ /*font: 1em "Trebuchet MS", sans-serif;*/
 font-size: 1em;
 font-family: myFirstFont;
-background-color: #000000;
-/*background-image: url(images/bg.png);
+/*background-color: #000000;*/
+background-image: url(images/bg.png);
 background-repeat:no-repeat;
 background-attachment:fixed;
-background-position:bottom left;*/
+background-position:center center;
 padding: 0 0 0 0;
 margin: 0 0 0 0;
 }

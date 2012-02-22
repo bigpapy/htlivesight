@@ -2,7 +2,7 @@ htlivesight.Button = {
 
 1: function () { 
 
-url : htlivesightEnv.contentPath+"htlivesight.xul";
+url : htlivesightEnv.contentPath+"htlivesight.html";
 
 document.getElementById("content").webNavigation.loadURI(url, 0, null, null, null);
 
@@ -19,11 +19,11 @@ document.getElementById("content").webNavigation.loadURI(url, 0, null, null, nul
     
     if (openInTab) {
       var browser = top.document.getElementById("content");
-      var theTab = browser.addTab(htlivesightEnv.contentPath+'htlivesight.xul');
+      var theTab = browser.addTab(htlivesightEnv.contentPath+'htlivesight.html');
       theTab.label = "HTLiveSight";
       browser.selectedTab = theTab;
     } else {
-    toOpenWindowByType('mozilla:htlivesight', htlivesightEnv.contentPath+'htlivesight.xul');
+    toOpenWindowByType('mozilla:htlivesight', htlivesightEnv.contentPath+'htlivesight.html');
       //window.open("chrome://livefox/content/livefox.xul", "trtretre", "chrome,resizable");
     }
   },
@@ -38,11 +38,11 @@ document.getElementById("content").webNavigation.loadURI(url, 0, null, null, nul
 	    
 	    if (openInTab) {
 	      var browser = top.document.getElementById("content");
-	      var theTab = browser.addTab(htlivesightEnv.contentPath+'settings.xul');
-	      theTab.label = "HTLiveSight";
+	      var theTab = browser.addTab(htlivesightEnv.contentPath+'settings.html');
+	      theTab.label = "HTLiveSight Options";
 	      browser.selectedTab = theTab;
 	    } else {
-	    toOpenWindowByType('mozilla:htlivesight', htlivesightEnv.contentPath+'settings.xul');
+	    toOpenWindowByType('mozilla:htlivesight', htlivesightEnv.contentPath+'settings.html');
 	      //window.open("chrome://livefox/content/livefox.xul", "trtretre", "chrome,resizable");
 	    }
 	  },
