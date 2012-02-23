@@ -5,12 +5,13 @@
 		<title>HTLiveSight</title>
 		<link rel="icon" type="image/png" href="./CSS/custom-theme/images/48.png" />
 		<!--Dark Theme--><link rel="stylesheet" type="text/css" title="dark" href="CSS/custom-theme/jquery-ui-1.8.16.custom.css"/>
-		<!--Light Theme<link  rel="stylesheet" type="text/css" title="light" href="CSS/custom-theme2/jquery-ui-1.8.16.custom.css"/>-->
-		<link type="text/css" href="CSS/custom-theme/custom.css" rel="stylesheet" />
+		<!--Light Theme<link  rel="alternate stylesheet" type="text/css" title="light" href="CSS/custom-theme2/jquery-ui-1.8.16.custom.css"/>-->
+		<!--Custom Tweaks--><link rel="stylesheet" type="text/css" href="CSS/custom-theme/custom.css" />
 		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
 		<script type="application/x-javascript" src="env.js"></script>
 		<script type="application/x-javascript" src="settings.js"></script>
+		<script type="application/x-javascript" src="about.js"></script>
 		<script type="application/x-javascript" src="preferences.js"></script>
 		<script type="application/x-javascript" src="log.js"></script>
 		<script type="application/x-javascript" src="sound.js"></script>
@@ -81,6 +82,9 @@ function get_cookie ( cookie_name )
     return '' ;
 }
 		</script>-->
+		
+		
+		
 		<script type="text/javascript">
 			$(function(){
 				// Accordion
@@ -122,25 +126,38 @@ function get_cookie ( cookie_name )
 					width: 600,
 					show: "fold",
 					hide: "fold",
-					buttons: {
-					"Ok": function() { 
-					$(this).click(function(){
-					try {htlivesight.Settings.click.btnOk();}catch(e){alert(e)};
-					return false;
-					}); 
-					}, 
-					"Cancel": function() { 
-					$(this).click(function(){
-					htlivesight.Settings.click.btnCancel()
-					return false;
-					});
-					}
-					}
+					buttons: [
+						{
+							text: "Ok",
+							click: function() { 
+								htlivesight.Settings.click.selLang();//change the language in prefs without saving it.
+								htlivesight.Settings.save(); 
+								$(this).dialog("close"); 
+								}
+						},
+						{
+							text: "Cancel",
+							click: function() { $(this).dialog("close");  }
+						}
+							]
+					//buttons: {
+					//"Ok": function() { 
+					//$(this).click(function(){
+					//try {htlivesight.Settings.click.btnOk();}catch(e){alert(e)};
+					//return false;
+					//}); 
+					//}, 
+					//"Cancel": function() { 
+					//$(this).dialog(function(){
+					//window.close();
+					//});
+					////}
+					//}
 				});
 				$('#about-dialog').dialog({
 					autoOpen: false,
 					modal: true,
-					width: 600,
+					//width: 500,
 					show: "fold",
 					hide: "fold",
 				});
@@ -392,7 +409,7 @@ function get_cookie ( cookie_name )
 			<div id="otabs-1">         <!--TAB1-->
 			
 			<fieldset>
-	<legend>Themes</legend>
+	<legend id="ThemesSelector">Themes</legend>
 	COMING SOON!
 			<!--<form>
 <input type="submit"
@@ -534,9 +551,11 @@ function get_cookie ( cookie_name )
 			<div id="otabs-4"> <!--TAB4-->
 
 					<fieldset>
-	<legend id="OtherAuthorization">Authorization code</legend><label id="OtherReset">
-		Remove authorization	 </label>
-		<button id="removeauth" onclick="htlivesight.Settings.click.resetToken();" /><label for="removeauth" id="button_reset"></label>
+	<legend id="OtherAuthorization">Authorization code</legend>
+		<form id="ResetAuth">
+		<label form="ResetAuth" id="OtherReset">Remove authorization</label>
+		<button id="removeauth" form="ResetAuth" onclick="htlivesight.Settings.click.resetToken();" /><label for="removeauth" form="ResetAuth" id="button_reset"></label>
+		</form>
 	</fieldset>
 	<fieldset>
 	<legend id="OtherEvents">Sequence of events</legend>
@@ -566,11 +585,11 @@ function get_cookie ( cookie_name )
 	</fieldset>
 	<fieldset>
 	<legend id="TabGoalSound">Goals sounds</legend>
-	<label id="PathSoundsNote1"></label></br>
-	<label id="PathSoundsNote2"></label></br>
+	<label id="PathSoundsNote1"></label><br />
+	<label id="PathSoundsNote2"></label><br />
 <!-- my goal --><br />
 		<input type="checkbox" id="myGoalCheck" onclick="htlivesight.Settings.click.myGoalSound()"/><label for="myGoalCheck"></label><label id="label_myGoalCheck">Sound for own goal</label>
-		<br /><button id="label_myGoalButton_reset" class="brestore" onclick="htlivesight.Settings.click.myGoalReset()">restore</button></label><button id="label_myGoalButton_play" class="brestore" onclick="htlivesight.Settings.click.myGoalPlay()">play</button>
+		<br /><button id="label_myGoalButton_reset" class="brestore" onclick="htlivesight.Settings.click.myGoalReset()">restore</button><button id="label_myGoalButton_play" class="brestore" onclick="htlivesight.Settings.click.myGoalPlay()">play</button>
 		
 		
 <input type="file" id="myGoalSoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.myGoalSoundFile();" />	
@@ -708,7 +727,7 @@ function get_cookie ( cookie_name )
 		<input type="url" id="whistle2SoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.whistle2Sound()"/> <br />
 <!-- triple whistle goal --><br />
 		<input type="checkbox" id="whistle3Check" onclick="htlivesight.Settings.click.whistle3Sound()"/><label for="whistle3Check"></label><label id="label_whistle3Check">Sound for own goal</label>
-		<br /><button id="label_whistle3Button_reset" class="brestore" onclick="htlivesight.Settings.click.whistle3Reset()">restore</button><label id="label_whistle3Button_reset"></label><button id="label_whistle3Button_play" class="brestore" onclick="htlivesight.Settings.click.whistle3Play()">play</button>
+		<br /><button id="label_whistle3Button_reset" class="brestore" onclick="htlivesight.Settings.click.whistle3Reset()">restore</button><button id="label_whistle3Button_play" class="brestore" onclick="htlivesight.Settings.click.whistle3Play()">play</button>
 		
 		
 <input type="file" id="whistle3SoundPathBrowse" tabindex="2" onchange="htlivesight.Settings.click.whistle3SoundFile();" />	
@@ -753,22 +772,26 @@ function get_cookie ( cookie_name )
 		
 		
 	</div>
-			<div id="about-dialog" title="About">
+			<div id="about-dialog">
 
 			
 			<div id="about-tabs">
 			<ul>
-				<li><a href="#tabs-1">Info</a></li>
-				<li><a href="#tabs-2">Translators</a></li>
-				<li><a href="#tabs-3">Credits</a></li>
+				<li><a href="#tabs-1" id="TabInfo">Info</a></li>
+				<li><a href="#tabs-2" id="TabTranslators">Translators</a></li>
+				<li><a href="#tabs-3" id="TabCredits">Credits</a></li>
 			</ul>
 			<div id="tabs-1">
 				<img src="./CSS/custom-theme/images/256.png" alt="HTLiveSight Logo"><br />
-				HTLiveSight<br />6 Feb 2012<br />Created by Silkevicious &amp; Bigpapy
-				<br />Based on HattrickLiveFox<br /><a href="http://hattricklivefox.mozdev.org">http://hattricklivefox.mozdev.org</a>
+				HTLiveSight Next<br />
+				23 Feb 2012<br /><br />
+				<label id="createdBy"></label><br />
+				Silkevicious &amp; Bigpapy<br /><br />
+				<label id="BasedOn">Based on</label> HattrickLiveFox<br />
+				<a href="http://hattricklivefox.mozdev.org">http://hattricklivefox.mozdev.org</a>
 			</div>
 			<div id="tabs-2">
-				With the help of:<br />
+				<label id="TextHelpOf">With the help of:</label><br />
 				<ul>
 		<li>[ara] العربية</li>
 		<li>[bel] Беларуская</li>
@@ -850,7 +873,7 @@ function get_cookie ( cookie_name )
 	<div id="topbar">
 	<div id="left_topbar">
 	Check out the latest news on 
-	<a title="Hattrick Forum" href="http://hattrick.org/Forum/Overview.aspx?v=0&f=796547" target="_blank">
+	<a title="Hattrick Forum" href="http://stage.hattrick.org/Forum/Overview.aspx?v=0&amp;f=796547" target="_blank">
 	<img alt="" class="socialicon" src="./CSS/custom-theme/images/ht.png">
 	</a>
 	<a title="Project Website" href="http://htlivesight.sourceforge.net" target="_blank">
@@ -868,7 +891,7 @@ function get_cookie ( cookie_name )
 	</div>
 	<div id="right_topbar">
 	Logged in as TEAMNAME
-	<a href="#" id="dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-power"></span>Login</a>
+	<a href="#" id="dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-power"></span>Login</a><!--<label for="dialog_link" id="LoginButtonz">Login</label>-->
 	<a href="#" id="options_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-gear"></span>Options</a>
 	<a href="#" id="about_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-info"></span>About</a>
 	</div>
@@ -879,7 +902,7 @@ function get_cookie ( cookie_name )
 	
 	<div class="match"><!--DIV SINGLE MATCH-->
 	
-<table cellspacing="0" class="matchheader ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active">
+<table  class="matchheader ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active"> <!--cellspacing="0"-->
 
 <thead>
   <tr class="ui-accordion-header ui-helper-reset ui-state-default ui-state-active ui-corner-top">
@@ -1219,10 +1242,9 @@ Conquisterò il mondo!!!
 	
 	
 	<div id="server_status"><!-- accordion league_table1-->
-	<h3><a href="#">Server</a></h3>
+	<h3><a href="#">menu.server</a></h3>
 	<div><!-- accordion league_table2-->
-	
-	Connected<br />	
+	<label id="server">menu.disconnected</label>
 	<progress id="osprogressbar"></progress>
 	</div><!-- accordion league_table2-->
 		</div><!-- accordion league_table1-->
@@ -1247,6 +1269,7 @@ Conquisterò il mondo!!!
 	//  alert("quasi la fine");
 	  htlivesight.Settings.localization();
 	//  alert("fine");
+	htlivesight.About.localization();
 	</script>
 	
 	<!-- SUPER DIV OVVERO CESTINO DI COSE UTILI

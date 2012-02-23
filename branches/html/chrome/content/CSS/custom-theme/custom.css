@@ -48,7 +48,7 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 #left_topbar a:link {text-decoration:none;}
 #left_topbar a:visited {text-decoration:none;}
 #left_topbar a:hover {text-decoration:none;}
-#left_topbar a:active {text-decoration:none;}*/
+#left_topbar a:active {text-decoration:none;}
 
 #applicationcontent{display:block;margin-top:1px;}
 #matchcontainer {display:inline-block;width:79.5%;margin-left:1px;margin-top:1px;border-radius:10px;float:left;font-size:13px}
