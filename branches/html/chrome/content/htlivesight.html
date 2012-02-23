@@ -10,19 +10,41 @@
 		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
 		<script type="application/x-javascript" src="env.js"></script>
+		<!--<script type="application/x-javascript" src="htlivesight.js"></script>-->
+		<script type="application/x-javascript" src="lang.js"></script>
 		<script type="application/x-javascript" src="settings.js"></script>
-		<script type="application/x-javascript" src="about.js"></script>
+		<!--<script type="application/x-javascript" src="about.js"></script>-->
 		<script type="application/x-javascript" src="preferences.js"></script>
 		<script type="application/x-javascript" src="log.js"></script>
 		<script type="application/x-javascript" src="sound.js"></script>
    	<!-- added by bigpapy (start): necessary because reset button (in other menu) works -->
-		<script type="application/x-javascript" src="./util.js"></script>
-		<script type="application/x-javascript" src="prefs.js"></script>
-		<script type="application/x-javascript" src="api-proxy.js"></script>
-		<script type="application/x-javascript" src="util/misc.js"></script>
-
+		<script type="application/x-javascript" src="util.js"></script>
+		<script type="application/x-javascript" src="./prefs.js"></script>
+		<script type="application/x-javascript" src="./api-proxy.js"></script>
+		<script type="application/x-javascript" src="./util/misc.js"></script>
 		
-		<!--<script type="text/javascript">
+		<script type="application/x-javascript" src="image.js"></script>
+		<script type="application/x-javascript" src="click.js"></script>
+		<script type="application/x-javascript" src="dom.js"></script>
+		<script type="application/x-javascript" src="notify.js"></script>
+		<script type="application/x-javascript" src="events.js"></script>
+		<script type="application/x-javascript" src="eventsystem.js"></script>
+		<script type="application/x-javascript" src="friends.js"></script>
+		<script type="application/x-javascript" src="http.js"></script>
+		<script type="application/x-javascript" src="login.js"></script>
+		<script type="application/x-javascript" src="logout.js"></script>
+		<script type="application/x-javascript" src="match.js"></script>
+		<script type="application/x-javascript" src="time.js"></script>
+		<script type="application/x-javascript" src="league.js"></script>
+		<script type="application/x-javascript" src="live.js"></script>
+		<script type="application/x-javascript" src="team.js"></script>
+		<script type="application/x-javascript" src="matches.js"></script>
+		<script type="application/x-javascript" src="matchdetails.js"></script>
+<!-- external libraries -->
+	<script type="application/x-javascript" src="./lib/oauth.js" ></script>
+	<script type="application/x-javascript" src="./lib/sha1.js" ></script>
+		
+				<!--<script type="text/javascript">
 		// *** TO BE CUSTOMISED ***
 
 var style_cookie_name = "style" ;
@@ -101,10 +123,10 @@ function get_cookie ( cookie_name )
 				$('#options-tabs').tabs();
 				$('#about-tabs').tabs();
 				// Login Dialog
-				$( "#saveteam" ).button();
-				$( "#login" ).button();
-				$( "#chkrelive" ).button();
-				$( "#rlpe" ).button();					
+				$( "#save_teamId" ).button();
+				$( "#button_login" ).button();
+				$( "#reLive" ).button();
+				$( "#reLiveByEvent" ).button();					
 				$('#login-dialog').dialog({
 					autoOpen: true,
 					modal: true,
@@ -120,7 +142,7 @@ function get_cookie ( cookie_name )
 					//	}
 					//}
 				});
-				$('#htlivesight-options').dialog({
+				$('#options-dialog').dialog({
 					autoOpen: false,
 					modal: true,
 					width: 600,
@@ -167,7 +189,7 @@ function get_cookie ( cookie_name )
 					return false;
 				});
 				$('#options_link').click(function(){
-					$('#htlivesight-options').dialog('open');
+					$('#options-dialog').dialog('open');
 					return false;
 				});
 				$('#about_link').click(function(){
@@ -250,49 +272,49 @@ function get_cookie ( cookie_name )
 					
 				});
 				//Other Buttons
-				$( "#removefriend" ).button();
-				$( "#openmatches" ).button();
-				$( "#isyouth" ).button();
-				$( "#addviamatchid" ).button();
-				$( "#addviateamid" ).button();
+				$( "#btnfriend_remove" ).button();
+				$( "#btnfriend_addmatch" ).button();
+				$( "#boxaddyouth" ).button();
+				$( "#buttonAddMatch" ).button();
+				$( "#buttonAddTeam" ).button();
 				//Options buttons
-				//$( "#openin" ).buttonset();
-				//$( "#chkGetLeague" ).button();
-				//$( "#chkGetLeagueWithin" ).button();
-				//$( "#chkGetFriends" ).button();
-				//$( "#chkGetFriendsWithin" ).button();
-				//$( "#chkHdrScorers" ).button();
-				//$( "#chkSound" ).button();
-				//$( "#chkSoundOnlyOpened" ).button();
-				//$( "#chkFlash" ).button();
-				//$( "#chkSlider" ).button();
+				$( "#openin" ).buttonset();
+				$( "#chkGetLeague" ).button();
+				$( "#chkGetLeagueWithin" ).button();
+				$( "#chkGetFriends" ).button();
+				$( "#chkGetFriendsWithin" ).button();
+				$( "#chkHdrScorers" ).button();
+				$( "#chkSound" ).button();
+				$( "#chkSoundOnlyOpened" ).button();
+				$( "#chkFlash" ).button();
+				$( "#chkSlider" ).button();
 				$( "#removeauth" ).button();
-				//$( "#reverseOrder" ).button();
-				//$( "#printEventKey" ).button();
-				//$( "#oldIcons" ).button();
-				//$( "#weather" ).button();
-				//$( "#whistleTime" ).button();
-				//$( "#weatherSE" ).button();
-				//$( "#livefoxGoal" ).button();
-				//$( "#noOpGoal" ).button();
-				//$( "#myGoalCheck" ).button();
-				//$( "#opGoalCheck" ).button();
-				//$( "#frGoalCheck" ).button();
-				//$( "#opfrGoalCheck" ).button();
-				//$( "#otGoalCheck" ).button();
-				//$( "#missGoalCheck" ).button();
-				//$( "#sunCheck" ).button();
-				//$( "#rainCheck" ).button();
-				//$( "#overcastCheck" ).button();
-				//$( "#fewCloudsCheck" ).button();
-				//$( "#myBooCheck" ).button();
-				//$( "#opBooCheck" ).button();
-				//$( "#whistleStartCheck" ).button();
-				//$( "#whistle2Check" ).button();
-				//$( "#whistle3Check" ).button();
-				//$( "#whistleCheck" ).button();
-				//$( "#hattrickCheck" ).button();
-				//$( ".brestore" ).button();
+				$( "#reverseOrder" ).button();
+				$( "#printEventKey" ).button();
+				$( "#oldIcons" ).button();
+				$( "#weather" ).button();
+				$( "#whistleTime" ).button();
+				$( "#weatherSE" ).button();
+				$( "#livefoxGoal" ).button();
+				$( "#noOpGoal" ).button();
+				$( "#myGoalCheck" ).button();
+				$( "#opGoalCheck" ).button();
+				$( "#frGoalCheck" ).button();
+				$( "#opfrGoalCheck" ).button();
+				$( "#otGoalCheck" ).button();
+				$( "#missGoalCheck" ).button();
+				$( "#sunCheck" ).button();
+				$( "#rainCheck" ).button();
+				$( "#overcastCheck" ).button();
+				$( "#fewCloudsCheck" ).button();
+				$( "#myBooCheck" ).button();
+				$( "#opBooCheck" ).button();
+				$( "#whistleStartCheck" ).button();
+				$( "#whistle2Check" ).button();
+				$( "#whistle3Check" ).button();
+				$( "#whistleCheck" ).button();
+				$( "#hattrickCheck" ).button();
+				$( ".brestore" ).button();
 				//$( "#light" ).button();
 				//$( "#dark" ).button();
 				
@@ -366,24 +388,24 @@ function get_cookie ( cookie_name )
 		</head>
 	<body onload="set_style_from_cookie()">
 	
-<div id="login-dialog" title="Login">
+<div id="login-dialog" title="">
 
 	<form>
 	<img src="./CSS/custom-theme/images/chpp.png" alt="HTLiveSight Logo" class="anotherbrick1">
 	
   	<fieldset>
-	<legend>Login</legend>
-		<label>Insert your TeamID</label>
-		<input type="text" id="loginteamid" class="text ui-widget-content ui-corner-all" />
-		<input type="checkbox" id="saveteam" /><label for="saveteam">Save</label>
-		<input type="submit" id="login" value="Login"/>
+	<legend id="LoginLabel2"></legend>
+		<label id="LoginTeamId"></label>
+		<input type="text" id="teamId" class="text ui-widget-content ui-corner-all" />
+		<input type="checkbox" id="save_teamId" /><label for="save_teamId" id="LoginSave"></label>
+		<input type="submit" id="button_login" value=""/>
 		</fieldset>
   	<fieldset>
-    <legend>Re-Live</legend>
-	<input type="checkbox" id="chkrelive" /><label for="chkrelive">Re-Live</label>
-		<label>Speed</label>
-		<input type="text" id="rlspd" value="" class="text ui-widget-content ui-corner-all" />
-		<input type="checkbox" id="rlpe"/><label for="rlpe">Per Event</label>
+    <legend id="LoginReLive"></legend>
+	<input type="checkbox" id="reLive" /><label for="reLive" id="LoginReLive2"></label>
+		<label id="LoginSpeed"></label>
+		<input type="text" id="reLiveSpeed" value="" class="text ui-widget-content ui-corner-all" />
+		<input type="checkbox" id="reLiveByEvent"/><label for="reLiveByEvent" id="LoginByEvent"></label>
 	</fieldset>
 	</form>
 
@@ -394,17 +416,17 @@ function get_cookie ( cookie_name )
 
 </div>
 	
-		<div id="htlivesight-options"> <!--id="options-dialog"-->
+		<div id="options-dialog" title="">
 
 		
 		
 		<div id="options-tabs">
 			<ul>
-				<li><a id="TabGeneral" href="#otabs-1">General</a></li>
-				<li><a id="TabMatches" href="#otabs-2">Matches</a></li>
-				<li><a id="TabNotifications" href="#otabs-3">Notifications</a></li>
-				<li><a id="TabOther" href="#otabs-4">Other</a></li>
-				<li><a id="TabCustom" href="#otabs-5">Customization</a></li>
+				<li><a id="TabGeneral" href="#otabs-1">Y</a></li>
+				<li><a id="TabMatches" href="#otabs-2">M</a></li>
+				<li><a id="TabNotifications" href="#otabs-3">C</a></li>
+				<li><a id="TabOther" href="#otabs-4">A</a></li>
+				<li><a id="TabCustom" href="#otabs-5">!</a></li>
 			</ul>
 			<div id="otabs-1">         <!--TAB1-->
 			
@@ -772,26 +794,26 @@ function get_cookie ( cookie_name )
 		
 		
 	</div>
-			<div id="about-dialog">
+			<div id="about-dialog" title="">
 
 			
 			<div id="about-tabs">
 			<ul>
-				<li><a href="#tabs-1" id="TabInfo">Info</a></li>
-				<li><a href="#tabs-2" id="TabTranslators">Translators</a></li>
-				<li><a href="#tabs-3" id="TabCredits">Credits</a></li>
+				<li><a href="#tabs-1" id="TabInfo"></a></li>
+				<li><a href="#tabs-2" id="TabTranslators"></a></li>
+				<li><a href="#tabs-3" id="TabCredits"></a></li>
 			</ul>
 			<div id="tabs-1">
 				<img src="./CSS/custom-theme/images/256.png" alt="HTLiveSight Logo"><br />
 				HTLiveSight Next<br />
-				23 Feb 2012<br /><br />
+				<label id="creationDate"></label><br /><br />
 				<label id="createdBy"></label><br />
 				Silkevicious &amp; Bigpapy<br /><br />
 				<label id="BasedOn">Based on</label> HattrickLiveFox<br />
 				<a href="http://hattricklivefox.mozdev.org">http://hattricklivefox.mozdev.org</a>
 			</div>
 			<div id="tabs-2">
-				<label id="TextHelpOf">With the help of:</label><br />
+				<label id="ThanksTo"></label><br />
 				<ul>
 		<li>[ara] العربية</li>
 		<li>[bel] Беларуская</li>
@@ -851,16 +873,16 @@ function get_cookie ( cookie_name )
 				</ul>
 			</div>
 			<div id="tabs-3">
-				Project support:<br />
+				<label id="Supporter">Project support:</label><br />
 				<img src="./CSS/custom-theme/images/google.png" alt="Google"><br />
 				<img src="./CSS/custom-theme/images/sf.png" alt="Sourceforge"><br />
-				<img src="./CSS/custom-theme/images/ixweb.png" alt="IXWebHosting"><br />
-				Our Technology:<br />
+				<img src="./CSS/custom-theme/images/ixweb.png" alt="IXWebHosting"><br /><br />
+				<label id="Tech">Our Technology:</label><br />
 				<img src="./CSS/custom-theme/images/html5.png" alt="HTML5"><br />
-				<img src="./CSS/custom-theme/images/jquery.png" alt="JQuery"><br />
-				Our License:<br />
+				<img src="./CSS/custom-theme/images/jquery.png" alt="JQuery"><br /><br />
+				<label id="License">Our License:</label><br />
 				<img src="./CSS/custom-theme/images/mit.png" alt="MIT"><br />
-				<img src="./CSS/custom-theme/images/osi.png" alt="OSI"><br />
+				<img src="./CSS/custom-theme/images/osi.png" alt="OSI">
 			</div>
 		</div>
 			
@@ -988,20 +1010,20 @@ Conquisterò il mondo!!!
 	
 	
 	<div id="league_matches"><!-- accordion league_matches1-->
-	<h3><a href="#">League Matches</a></h3>
+	<h3><a href="#" id="LeagueMatches"></a></h3>
 	<div><!-- accordion league_matches2-->
 	
 		
 	<table class="match_table">
 <thead>
   <tr>
-    <th colspan="5" class="datetime_league">DateTime</th>
+    <th colspan="5" class="datetime_league" id="league_round_date">DateTime</th>
   </tr>
 </thead>
 <tfoot>
   <tr>
-<td colspan="1" class="round_league">Round</td>
-<td colspan="4" class="chronometer_league">Chronometer</td>
+<td colspan="1" class="round_league" id="league_round_number">Round</td>
+<td colspan="4" class="chronometer_league" id="league_round_time">Chronometer</td>
   </tr>
 </tfoot>
 <tbody>
@@ -1053,19 +1075,19 @@ Conquisterò il mondo!!!
 	
 	
 	<div id="league_table"><!-- accordion league_table1-->
-	<h3><a href="#">League Table</a></h3>
+	<h3><a href="#" id="LeagueLiveTable"></a></h3>
 	<div><!-- accordion league_table2-->
 	
 	<table class="live_league_table">
 <thead >
   <tr>
-    <th  class="header_league_table">#</th>
-	<th  class="header_league_table">Team</th>
+    <th  class="header_league_table" id="LeaguePosition"></th>
+	<th  class="header_league_table" id="LeagueTeam"></th>
 	<th  class="header_league_table"> </th>
-	<th  class="header_league_table">R</th>
-	<th  class="header_league_table">G</th>
-	<th  class="header_league_table">DR</th>
-	<th  class="header_league_table">PTS</th>
+	<th  class="header_league_table" id="LeaguePlayed"></th>
+	<th  class="header_league_table" id="LeagueGoals"></th>
+	<th  class="header_league_table" id="LeagueGoalDiff"></th>
+	<th  class="header_league_table" id="LeaguePoints"></th>
   </tr>
 </thead>
 
@@ -1155,7 +1177,7 @@ Conquisterò il mondo!!!
 	
 	
 	<div id="other_matches"><!-- accordion league_matches1-->
-	<h3><a href="#">Other Matches</a></h3>
+	<h3><a href="#" id="MatchesList"></a></h3>
 	<div><!-- accordion league_matches2-->
 	
 		
@@ -1191,19 +1213,19 @@ Conquisterò il mondo!!!
 	
 	
 	<div id="friends_list"><!-- accordion league_table1-->
-	<h3><a href="#">Friend List</a></h3>
+	<h3><a href="#" id="FriendsTitle"></a></h3>
 	<div id="friends_list_int"><!-- accordion league_table2-->
 	<div>
-	<select name="drop1" id="Select1" size="4" multiple="multiple" class="text ui-widget-content ui-corner-all">
+	<select name="drop1" id="listbox_friends" size="4" multiple="multiple" class="text ui-widget-content ui-corner-all">
     <option value="1">item 1</option>
-    <option value="2">item 2sasdasdsadadsa</option>
+    <option value="2">item 2</option>
     <option value="3">item 3</option>
     <option value="4">item 4</option>
     <option value="0">All</option>
 </select></div>
 <div id="managefriendsbuttons">
-<button id="removefriend">Remove Friend</button>
-<button id="openmatches">Open matches</button>
+<button id="btnfriend_remove" /><label for="btnfriend_remove" id="FriendsRemove"></label>
+<button id="btnfriend_addmatch" /><label for="btnfriend_addmatch" id="FriendsOpen"></label>
 </div>
 	</div><!-- accordion league_table2-->
 		</div><!-- accordion league_table1-->
@@ -1220,16 +1242,16 @@ Conquisterò il mondo!!!
 	
 	
 	<div id="add_match"><!-- accordion league_table1-->
-	<h3><a href="#">Add Match</a></h3>
+	<h3><a href="#" id="MatchesAdd"></a></h3>
 	<div id="add_match_int"><!-- accordion league_table2-->
 	
 
-<input type="text" name="name" id="matchid" class="text ui-widget-content ui-corner-all" />
-<input type="checkbox" id="isyouth" /><label for="isyouth">Youth</label>
+<input type="text" id="boxaddmatch" class="text ui-widget-content ui-corner-all" />
+<input type="checkbox" id="boxaddyouth" /><label for="boxaddyouth" id="MatchesYouth"></label>
 <br />
 <div id="addmatchbuttons">
-<button id="addviamatchid">matchid</button>
-<button id="addviateamid">teamid</button>
+<button id="buttonAddMatch" /><label for="buttonAddMatch" id="MatchesByMatch"></label>
+<button id="buttonAddTeam" /><label for="buttonAddTeam" id="MatchesByTeam"></label>
 </div>
 	</div><!-- accordion league_table2-->
 		</div><!-- accordion league_table1-->
@@ -1242,9 +1264,9 @@ Conquisterò il mondo!!!
 	
 	
 	<div id="server_status"><!-- accordion league_table1-->
-	<h3><a href="#">menu.server</a></h3>
+	<h3><a href="#" id="MenuServer"></a></h3>
 	<div><!-- accordion league_table2-->
-	<label id="server">menu.disconnected</label>
+	<label id="ServerStatus"></label>
 	<progress id="osprogressbar"></progress>
 	</div><!-- accordion league_table2-->
 		</div><!-- accordion league_table1-->
@@ -1263,13 +1285,9 @@ Conquisterò il mondo!!!
 	</div><!-- /application troll-->
 	
 	<script type="text/javascript">
-	  htlivesightPrefs.init();
-	//  alert("prima di start");
-	  htlivesight.Settings.startup();
-	//  alert("quasi la fine");
-	  htlivesight.Settings.localization();
-	//  alert("fine");
-	htlivesight.About.localization();
+	htlivesightPrefs.init();
+	htlivesight.Settings.startup();
+	htlivesight.Lang.localization();
 	</script>
 	
 	<!-- SUPER DIV OVVERO CESTINO DI COSE UTILI

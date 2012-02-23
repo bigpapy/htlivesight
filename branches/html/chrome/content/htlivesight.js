@@ -259,8 +259,9 @@ var htlivesight = {
 		htlivesight.languageXML = htlivesight.loadXml(htlivesight.url);
 
 		htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
-
 		
+		
+			
 //		alert("1");
 		document.getElementById("htlivesight-window").attributes.getNamedItem("title").value=htlivesight.Util.Parse("WindowMainTitle",htlivesight.data[0]);
 	//	alert("2");
