@@ -261,65 +261,11 @@ var htlivesight = {
 		htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
 		
 		
-			
-//		alert("1");
-		document.getElementById("htlivesight-window").attributes.getNamedItem("title").value=htlivesight.Util.Parse("WindowMainTitle",htlivesight.data[0]);
-	//	alert("2");
-		document.getElementById("server").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MenuServer",htlivesight.data[0]);
-//		alert("2.1");
-		document.getElementById("server").attributes.getNamedItem("label").value+=htlivesight.Util.Parse("MenuDisconnected",htlivesight.data[0]);
-		document.getElementById("menuOptions").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MenuOptions",htlivesight.data[0]);
-		document.getElementById("menuAbout").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MenuAbout",htlivesight.data[0]);
-//		alert("3");
-		document.getElementById("LoginLabel").value=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);
-		document.getElementById("LoginLabel2").attributes.getNamedItem("label").value=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);
-		document.getElementById("LoginTeamId").value=htlivesight.Util.Parse("LoginTeamId",htlivesight.data[0]);
-		document.getElementById("save_teamId").attributes.getNamedItem("label").value=htlivesight.Util.Parse("LoginRememberMe",htlivesight.data[0]);
-		document.getElementById("button_login").attributes.getNamedItem("label").value=htlivesight.Util.Parse("LoginButton",htlivesight.data[0]);
-		document.getElementById("LoginReLive").attributes.getNamedItem("label").value=htlivesight.Util.Parse("LoginReLive",htlivesight.data[0]);
-		document.getElementById("reLive").attributes.getNamedItem("label").value=htlivesight.Util.Parse("LoginReLive",htlivesight.data[0]);
-		document.getElementById("LoginSpeed").value=htlivesight.Util.Parse("LoginSpeed",htlivesight.data[0]);
-		document.getElementById("reLiveByEvent").attributes.getNamedItem("label").value=htlivesight.Util.Parse("LoginByEvent",htlivesight.data[0]);
-//		alert("4");
-		document.getElementById("LeagueMatches").value=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);
-
-		document.getElementById("leaguetable_name").value=htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0]);
-
-		document.getElementById("LeaguePosition").value=htlivesight.Util.Parse("LeaguePosition",htlivesight.data[0]);
-
-		document.getElementById("LeagueTeam").value=htlivesight.Util.Parse("LeagueTeam",htlivesight.data[0]);
-
-		document.getElementById("LeaguePlayed").value=htlivesight.Util.Parse("LeaguePlayed",htlivesight.data[0]);
-//		alert("5");
-		document.getElementById("LeagueGoals").value=htlivesight.Util.Parse("LeagueGoals",htlivesight.data[0]);
-
-		document.getElementById("LeagueGoalDiff").value=htlivesight.Util.Parse("LeagueGoalDiff",htlivesight.data[0]);
-
-		document.getElementById("LeaguePoints").value=htlivesight.Util.Parse("LeaguePoints",htlivesight.data[0]);
-
-		document.getElementById("MatchesList").value=htlivesight.Util.Parse("MatchesList",htlivesight.data[0]);
-
-		document.getElementById("MatchesList").value=htlivesight.Util.Parse("MatchesList",htlivesight.data[0]);
-//		alert("6");
-		document.getElementById("FriendsTitle").value=htlivesight.Util.Parse("FriendsTitle",htlivesight.data[0]);
-
-		document.getElementById("btnfriend_remove").attributes.getNamedItem("label").value=htlivesight.Util.Parse("FriendsRemove",htlivesight.data[0]);
-
-		document.getElementById("btnfriend_addmatch").attributes.getNamedItem("label").value=htlivesight.Util.Parse("FriendsOpen",htlivesight.data[0]);
-
-		document.getElementById("MatchesAdd").value=htlivesight.Util.Parse("MatchesAdd",htlivesight.data[0]);
-
-		document.getElementById("MatchesAdd").value=htlivesight.Util.Parse("MatchesAdd",htlivesight.data[0]);
-//		alert("7");
-		document.getElementById("boxaddyouth").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesYouth",htlivesight.data[0]);
-
-		document.getElementById("buttonAddMatch").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesByMatch",htlivesight.data[0]);
-
-		document.getElementById("buttonAddTeam").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesByTeam",htlivesight.data[0]);
+		
 //		alert("8");
 		if (!htlivesightPrefs.getBool("HtlsFirstStart")){
 		//	alert("1");
-			var optionsPage=window.open(htlivesightEnv.contentPath+"settings.xul","_blank");
+			var optionsPage=window.open(htlivesightEnv.contentPath+"settings.html","_blank");
 		//	alert("2");
 		//	optionsPage.onfocus();
 		
