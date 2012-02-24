@@ -1,15 +1,20 @@
 if (!htlivesight) var htlivesight = {};
 
 htlivesight.Lang = {
-contentPath: htlivesight.resourcePath,
+//contentPath: htlivesight.resourcePath,
 startup: function() {},
 localization: function() {
+//	alert("begin localization");
 htlivesight.prefs=htlivesight.Preferences.get();
-htlivesight.url=htlivesight.Lang.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
+//alert("1");
+htlivesight.url=htlivesightEnv.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
+//alert("2: url="+ htlivesight.url);
 htlivesight.languageXML=htlivesight.loadXml(htlivesight.url);
+//alert("3");
 htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
 
 //LOGIN
+//alert("Login");
 document.getElementById("login-dialog").attributes.getNamedItem("title").value=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);
 
 document.getElementById("LoginLabel2").innerHTML=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);
@@ -23,6 +28,7 @@ document.getElementById("LoginSpeed").innerHTML=htlivesight.Util.Parse("LoginSpe
 document.getElementById("LoginByEvent").innerHTML=htlivesight.Util.Parse("LoginByEvent",htlivesight.data[0]);
 
 //ABOUT
+//alert("About");
 document.getElementById("about-dialog").attributes.getNamedItem("title").value=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);
 
 document.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
@@ -35,6 +41,7 @@ document.getElementById("ThanksTo").innerHTML=htlivesight.Util.Parse("TextThanks
 document.getElementById("TabCredits").innerHTML=htlivesight.Util.Parse("TabCredits",htlivesight.data[0]);
 
 //SETTINGS
+//alert("Settings");
 document.getElementById("options-dialog").attributes.getNamedItem("title").value=htlivesight.Util.Parse("WindowTitle",htlivesight.data[0]);
 
 document.getElementById("TabGeneral").innerHTML=htlivesight.Util.Parse("TabGeneral",htlivesight.data[0]);
@@ -46,6 +53,7 @@ document.getElementById("LanguageNote").innerHTML=htlivesight.Util.Parse("Langua
 document.getElementById("GeneralServer").innerHTML=htlivesight.Util.Parse("GeneralServer",htlivesight.data[0]);
 document.getElementById("GeneralNote").innerHTML=htlivesight.Util.Parse("GeneralNote",htlivesight.data[0]);
 
+//alert("Settings tab 2");
 document.getElementById("TabMatches").innerHTML=htlivesight.Util.Parse("TabMatches",htlivesight.data[0]);
 document.getElementById("MatchesLeague").innerHTML=htlivesight.Util.Parse("MatchesLeague",htlivesight.data[0]);
 document.getElementById("label_chkGetLeague").innerHTML=htlivesight.Util.Parse("MatchesGetLeague",htlivesight.data[0]);
@@ -60,13 +68,15 @@ document.getElementById("label_chkHdrScorers").innerHTML=htlivesight.Util.Parse(
 document.getElementById("MatchesWindow").innerHTML=htlivesight.Util.Parse("MatchesWindow",htlivesight.data[0]);
 document.getElementById("MatchesLines").innerHTML=htlivesight.Util.Parse("MatchesLines",htlivesight.data[0]);
 
+//alert("Settings tab 3");
 document.getElementById("TabNotifications").innerHTML=htlivesight.Util.Parse("TabNotifications",htlivesight.data[0]);
 document.getElementById("NotifyNotify").innerHTML=htlivesight.Util.Parse("NotifyNotify",htlivesight.data[0]);
 document.getElementById("label_chkSound").innerHTML=htlivesight.Util.Parse("NotifyEnableSound",htlivesight.data[0]);
 document.getElementById("label_chkSoundOnlyOpened").innerHTML=htlivesight.Util.Parse("NotifyOnly",htlivesight.data[0]);
 document.getElementById("label_chkFlash").innerHTML=htlivesight.Util.Parse("NotifyFlash",htlivesight.data[0]);
 document.getElementById("label_chkSlider").innerHTML=htlivesight.Util.Parse("NotifyStatus",htlivesight.data[0]);
-	
+
+//alert("Settings tab 4");
 document.getElementById("TabOther").innerHTML=htlivesight.Util.Parse("TabOther",htlivesight.data[0]);
 document.getElementById("OtherAuthorization").innerHTML=htlivesight.Util.Parse("OtherAuthorization",htlivesight.data[0]);
 document.getElementById("OtherReset").innerHTML=htlivesight.Util.Parse("OtherReset",htlivesight.data[0]);
@@ -76,7 +86,8 @@ document.getElementById("label_reverseOrder").innerHTML=htlivesight.Util.Parse("
 document.getElementById("OtherReverseNote").innerHTML=htlivesight.Util.Parse("OtherReverseNote",htlivesight.data[0]);
 document.getElementById("OtherEventKey").innerHTML=htlivesight.Util.Parse("OtherEventKey",htlivesight.data[0]);
 document.getElementById("label_printEventKey").innerHTML=htlivesight.Util.Parse("OtherEventKeyNote",htlivesight.data[0]);
-	
+
+//alert("Settings tab 5");
 document.getElementById("TabCustom").innerHTML=htlivesight.Util.Parse("TabCustom",htlivesight.data[0]);
 document.getElementById("CustomIcons").innerHTML=htlivesight.Util.Parse("CustomIcons",htlivesight.data[0]);
 document.getElementById("label_oldIcons").innerHTML=htlivesight.Util.Parse("CustomIconsOld",htlivesight.data[0]);
@@ -147,6 +158,7 @@ document.getElementById("label_hattrickButton_play").innerHTML=htlivesight.Util.
 
 
 //SIDEBAR
+//alert("Sidebar");
 document.getElementById("LeagueMatches").innerHTML=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);
 
 document.getElementById("LeagueLiveTable").innerHTML=htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0]);
@@ -170,7 +182,7 @@ document.getElementById("MatchesByTeam").innerHTML=htlivesight.Util.Parse("Match
 
 document.getElementById("MenuServer").innerHTML=htlivesight.Util.Parse("MenuServer",htlivesight.data[0]);
 document.getElementById("ServerStatus").innerHTML=htlivesight.Util.Parse("MenuDisconnected",htlivesight.data[0]);
-
+//alert("end localization");
 }
 
 };
