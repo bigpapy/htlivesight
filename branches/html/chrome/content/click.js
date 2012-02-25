@@ -22,11 +22,11 @@ htlivesight.Click = {
       htlivesight.AddLiveMatch(matchId, youth);
     }
   },
-  Login: function (event) {//	  alert("login1");
-    htlivesight.Login.teamId = document.getElementById("teamId").value;     //   alert("login2");    if (htlivesight.Login.teamId == ""){ //   	alert("login3");
+  Login: function (event) {	  alert("login1");
+    htlivesight.Login.teamId = document.getElementById("teamId").value;        alert("login2");    if (htlivesight.Login.teamId == ""){    	alert("login3");
       return;
-    }; //   alert("login4");
-    document.getElementById("button_login").disabled=true; //   alert("login5");   htlivesight.getRecommendedServer(); //  alert("login6");
+    };    alert("login4");
+    document.getElementById("button_login").disabled=true;    alert("login5");   htlivesight.getRecommendedServer();   alert("login6");
   },
   Logout: function (event) {
     htlivesight.Logout();
@@ -153,9 +153,9 @@ htlivesight.Click = {
     var name=this.id.split("_")[1];
     htlivesight.winboxShadeByName(name);
   },
-  loginClose: function() {
-     document.getElementById('login_box').hidden = true;
-     document.getElementById("button_login").disabled=true;
+  loginClose: function() {	  alert("loginClose1");
+     document.getElementById('login_box').hidden = true;     alert("loginClose2");
+     document.getElementById("button_login").disabled=true;     alert("loginClose3");
   },
   removeFriend: function() {
     htlivesight.Friends.remove();
