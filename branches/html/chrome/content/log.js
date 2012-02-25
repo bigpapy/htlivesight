@@ -1,9 +1,9 @@
 htlivesight.Log = {
   progressMeter: null,
   progressLabel: null,
-  start: function() {
+  start: function() {	  	  alert("log.start1");
     htlivesight.Log.progressMeter = document.getElementById("progressmeter");
-    htlivesight.Log.progressLabel = document.getElementById("progresslabel");
+    htlivesight.Log.progressLabel = document.getElementById("progresslabel");    alert("log.start2");    
   },
   Meter: function (value) {
     htlivesight.Log.progressMeter.setAttribute("value", value);

@@ -47,6 +47,6 @@ Login.ParseResponse = function (response, request) {
     document.getElementById("button_login").disabled=false;
   }
 };*/
-// Added by bigpapy (Login.Fakesuccess) to grant prosecution of the software:htlivesight.LogIn.Fakesuccess = function() {	htlivesight.LogIn.login=true;    htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.LOGIN);    document.getElementById("login_box").hidden = true;    document.getElementById("boxaddmatch").readOnly=false;    document.getElementById("boxaddmatch").readonly=false;    //htlivesight.DOM.addServerToPopup(HTTP.hattrickServer);	 //  alert("Login.Fakesuccess end");};
+// Added by bigpapy (Login.Fakesuccess) to grant prosecution of the software:htlivesight.LogIn.Fakesuccess = function() {		alert("Login.Fakesuccess begin");	htlivesight.LogIn.login=true;    htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.LOGIN);        document.getElementById("login_box").hidden = true;    document.getElementById("boxaddmatch").readOnly=false;    document.getElementById("boxaddmatch").readonly=false;    //htlivesight.DOM.addServerToPopup(HTTP.hattrickServer);	   alert("Login.Fakesuccess end");};
 
 

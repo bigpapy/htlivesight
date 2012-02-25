@@ -15,6 +15,7 @@ var htlivesight = {
   warningShown: false,
   strings: null,
   startup: function() {
+	  alert("startup1");
     // modify added by bigpapy
   //  htlivesight.prefs = htlivesight.Preferences.get();
  //   if (htlivesight.prefs.personalization.oldIcons){ htlivesight.Image = htlivesight.ImageOld;
@@ -41,6 +42,7 @@ var htlivesight = {
         document.getElementById("winboxcontent_"+winbox).hidden=false;
         htlivesight.winboxShadeByName("friends");
       }
+      alert("startup2")
     };
     htlivesight.Log.start();
  //   netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
