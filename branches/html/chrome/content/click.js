@@ -26,7 +26,7 @@ htlivesight.Click = {
     htlivesight.Login.teamId = document.getElementById("teamId").value;        alert("login2");    if (htlivesight.Login.teamId == ""){    	alert("login3");
       return;
     };    alert("login4");
-    document.getElementById("button_login").disabled=true;    alert("login5");   htlivesight.getRecommendedServer();   alert("login6");
+    //document.getElementById("button_login").disabled=true;    alert("login5");   htlivesight.getRecommendedServer();   alert("login6");   $('#login-dialog').dialog("close");    alert("close dialog");
   },
   Logout: function (event) {
     htlivesight.Logout();
@@ -154,8 +154,8 @@ htlivesight.Click = {
     htlivesight.winboxShadeByName(name);
   },
   loginClose: function() {	  alert("loginClose1");
-     document.getElementById('login_box').hidden = true;     alert("loginClose2");
-     document.getElementById("button_login").disabled=true;     alert("loginClose3");
+     document.getElementById('login-dialog').dialog = true;     alert("loginClose2");
+     //document.getElementById("button_login").disabled=true;     alert("loginClose3");
   },
   removeFriend: function() {
     htlivesight.Friends.remove();
