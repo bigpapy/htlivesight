@@ -15,7 +15,7 @@ var htlivesight = {
   warningShown: false,
   strings: null,
   startup: function() {
-	  alert("startup1");
+	  console.log("startup1");
     // modify added by bigpapy
   //  htlivesight.prefs = htlivesight.Preferences.get();
  //   if (htlivesight.prefs.personalization.oldIcons){ htlivesight.Image = htlivesight.ImageOld;
@@ -42,55 +42,56 @@ var htlivesight = {
         document.getElementById("winboxcontent_"+winbox).hidden=false;
         htlivesight.winboxShadeByName("friends");
       }
-      alert("startup2")
+      console.log("startup2");
     };
     htlivesight.Log.start();
  //   netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
  //   strings = document.getElementById("strings");
- //   alert("1");
+    console.log("1");
     document.getElementById("winbox_leaguematches").collapsed=true;
- //   alert("2");
+    console.log("2");
     winboxRegister(["leaguematches","leaguetable","matchlist","friends","addmatch"]);
- //   alert("3");
+    console.log("3");
     htlivesight.Click.AddButtonListeners();
- //   alert("4");
+    console.log("4");
     htlivesight.prefs = htlivesight.Preferences.get();
-//    alert("5");
+    console.log("5");
     if (htlivesight.prefs.personalization.oldIcons) htlivesight.Image = htlivesight.ImageOld;
- //   alert("6");
+    console.logrt("6");
 
     htlivesight.Friends.start();
- //   alert("7");
+    console.log("7");
     htlivesight.Sound.start();
     //htlivesight.Test.start();
- //   alert("8");
+    console.log("8");
     htlivesight.Log.debug("loading username and password");
- //   alert("9");
+    console.log("9");
     htlivesight.Log.debug("teamId: " + htlivesight.prefs.general.teamId);
- //   alert("9.5");
+    console.log("9.5");
     if (htlivesight.prefs.general.teamId != "") {
       document.getElementById("teamId").value=htlivesight.prefs.general.teamId;    
     //  document.getElementById("security_code").value=htlivesight.Preferences.password.get();
     }
- //   alert("10");
+    console.log("10");
     document.getElementById("reLive").checked=htlivesight.prefs.other.reLive;
- //   alert("11");
+    console.log("11");
     document.getElementById("reLiveSpeed").value=htlivesight.prefs.other.reLiveSpeed;
- //   alert("12");
+    console.log("12");
     document.getElementById("reLiveByEvent").checked=htlivesight.prefs.other.reLiveByEvent;
- //   alert("13");
+    console.log("13");
     if(!document.getElementById("reLive").checked) {
     	document.getElementById("reLiveSpeed").disabled = true;
       	document.getElementById("reLiveByEvent").disabled = true;
       }
- //   alert("14");
+    console.log("14");
   },
   getRecommendedServer: function() {
-	  alert("startup: getRecommendedServer");
+	  console.log("startup: getRecommendedServer begin");
     htlivesight.HTTP.getRecommendedServer();
+    console.log("startup: getRecommendedServer end");
   },
   Login: function(username, securitycode){// changed
-	  alert("startup: Login: begin");
+	  console.log("startup: Login: begin");
 	 
     if(document.getElementById("save_teamId").checked) {
       htlivesight.Preferences.teamId.save(document.getElementById("teamId").value);
@@ -116,14 +117,14 @@ var htlivesight = {
  //   Login.HTTP();
      htlivesight.LogIn.Fakesuccess();
 
-  //  alert("startup: Login: end");
+     console.log("startup: Login: end");
   },
   Logout: function() {
-	  alert("startup: Logout begin");
+//	  alert("startup: Logout begin");
     if (htlivesight.LogIn.login) {
       htlivesight.LogOut.HTTP();
     }
-    alert("startup: Logout end");
+ //   alert("startup: Logout end");
   },
   Options: function() {
 	  alert("startup:Options begin");
@@ -156,9 +157,11 @@ var htlivesight = {
    alert("startup:startview end");
   },
   GetMyData: function() { 
-	  alert("startup:GetMyData begin");
+	  console.log("startup:GetMyData begin");
+	  try{
 	  htlivesight.Team.HTTPGetMyData();
-	  alert("startup:GetMyData end");
+	  }catch(e){alert(e);}
+	  console.log("startup:GetMyData end");
   },
   GetLeague: function() {
 	  alert("startup:GetLeague begin");

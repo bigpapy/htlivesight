@@ -161,11 +161,11 @@ htlivesight.ApiProxy = {
 		dump("ApiProxy: attempting to retrieve: " + parameters + "…\n");
 	//	var strbundle = document.getElementById("stringsauthorize");
 		// adding new localization file
-	//	alert("before prefs retrieve");
+		console.log("before prefs retrieve");
 		  prefs=htlivesight.Preferences.get();
-		//	alert("prefs.language.locale= "+ prefs.language.locale);
+		  console.log("prefs.language.locale= "+ prefs.language.locale);
 			url = htlivesightEnv.contentPath+"locale/"+ prefs.language.locale +".xml";
-		//	alert("url"+ url);
+			console.log("url"+ url);
 
 		languageXML = htlivesight.loadXml(url);
 
@@ -173,8 +173,10 @@ htlivesight.ApiProxy = {
 		// end adding new localization files
 		
 		var teamId = document.getElementById("teamId").value;
+		console.log("teamId "+ teamId);
 		if (!htlivesight.ApiProxy.authorized(teamId)) { // if not authorized...
 			dump("ApiProxy: unauthorized.\n");
+			console.log("ApiProxy: unauthorized.\n")
 			htlivesight.ApiProxy.authorize(doc); // ...get authorization
 			callback(null);
 			return;
@@ -200,7 +202,9 @@ htlivesight.ApiProxy = {
 		htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
 		var url = htlivesight.OAuth.addToURL(htlivesight.ApiProxy.resourceUrl, msg.parameters);
 		dump("Fetching XML data from " + url + "\n");
+		console.log("Fetching XML data from " + url + "\n");
 		htlivesight.loadXml(url, function(x, status) {
+			console.log("status "+ status);
 			switch (status){
 			
 			case 0:	// error: not connected to internet
