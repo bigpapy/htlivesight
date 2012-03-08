@@ -58,10 +58,10 @@ $(function(){
 				$("#accordion3").accordion({ header: "h3", collapsible: true });
 				$("#league_matches").accordion({ header: "h3", collapsible: true });
 				$("#league_table").accordion({ header: "h3", collapsible: true });
-				$("#other_matches").accordion({ header: "h3", collapsible: true });
-				$("#friends_list").accordion({ header: "h3", collapsible: true });
-				$("#add_match").accordion({ header: "h3", collapsible: true });
-				$("#server_status").accordion({ header: "h3", collapsible: true });
+				$("#winbox_matchlist").accordion({ header: "h3", collapsible: true });
+				$("#winbox_friends").accordion({ header: "h3", collapsible: true });
+				$("#winbox_addmatch").accordion({ header: "h3", collapsible: true });
+				$("#server").accordion({ header: "h3", collapsible: true });
 				// Tabs
 				$('#options-tabs').tabs();
 				$('#about-tabs').tabs();
@@ -218,8 +218,8 @@ $(function(){
 				$( "#btnfriend_remove" ).button();
 				$( "#btnfriend_addmatch" ).button();
 				$( "#boxaddyouth" ).button();
-				$( "#buttonAddMatch" ).button();
-				$( "#buttonAddTeam" ).button();
+				$( "#imgwinboxopen_addmatch" ).button();
+				$( "#imgwinboxshade_addmatch" ).button();
 				//Options buttons
 				$( "#openin" ).buttonset();
 				$( "#chkGetLeague" ).button();

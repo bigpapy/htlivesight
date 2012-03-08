@@ -778,81 +778,93 @@
 			
 			
 			
-			<div id="other_matches"><!-- accordion league_matches1-->
-		<h3><a href="#" id="MatchesList"></a></h3>
-		<div><!-- accordion league_matches2-->
-				
-		<table class="match_table">
+	<div id="winbox_matchlist"><!-- accordion league_matches1-->
+	<h3><a href="#" id="MatchesList"></a></h3>
+	<div id="winboxcontent_matchlist"><!-- accordion league_matches2-->
+	<div id="contentbody_matchlist"><!-- accordion league_matches2-->		
+	<table class="match_table">
 	<tr class="match_row">
 		<td class="hometeam_league">Team9</td>
 		<td class="homescore_league">0</td>
 		<td class="separator_league">:</td>
 		<td class="awayscore_league">0</td>
 		<td class="awayteam_league">Team10</td>
-		<!--<td class="add_league"></td>-->
+		<td class="add_league"></td>
+		<td class="remove_league"></td>
 	</tr>
-	<tr class="match_row">
-		<td class="hometeam_league">Team11</td>
-		<td class="homescore_league">0</td>
-		<td class="separator_league">:</td>
-		<td class="awayscore_league">0</td>
-		<td class="awayteam_league">Team12</td>
-		<!--<td class="add_league"></td>-->
+	<tr class="match_row" id="other_grid_rows">
+		<td class="hometeam_league"></td>
+		<td class="homescore_league"></td>
+		<td class="separator_league"></td>
+		<td class="awayscore_league"></td>
+		<td class="awayteam_league"></td>
+		<td class="add_league"></td>
+		<td class="remove_league"></td>
 	</tr>
 	</table>
-			</div><!-- accordion league_matches2-->
-			</div><!-- accordion league_matches1-->
+	</div><!-- accordion league_matches2-->
+	</div><!-- accordion league_matches2-->
+	</div><!-- accordion league_matches1-->
 			
 			
 			
 			
-		<div id="friends_list"><!-- accordion league_table1-->
-		<h3><a href="#" id="FriendsTitle"></a></h3>
-		<div id="friends_list_int"><!-- accordion league_table2-->
-		<div>
-		<select name="drop1" id="listbox_friends" size="4" multiple="multiple" class="text ui-widget-content ui-corner-all">
-		<option value="1">item 1</option>
-		<option value="2">item 2</option>
-		<option value="3">item 3</option>
-		<option value="4">item 4</option>
-		<option value="0">All</option>
-	</select></div>
+	<div id="winbox_friends"><!-- accordion league_table1-->
+	<h3><a href="#" id="FriendsTitle"></a></h3>
+	<div id="winboxcontent_friends"><!-- accordion league_table2-->
+	<div id="contentbody_friends"><!-- accordion league_table2-->
+	<div>
+	<select id="listbox_friends" size="5" multiple="multiple" class="text ui-widget-content ui-corner-all">
+	<option value="1">example</option>
+	</select>
+	<img id="imgup_friend"/>
+	<img id="imgdown_friend"/>
+	</div>
 	<div id="managefriendsbuttons">
 	<button id="btnfriend_remove" /><label for="btnfriend_remove" id="FriendsRemove"></label>
 	<button id="btnfriend_addmatch" /><label for="btnfriend_addmatch" id="FriendsOpen"></label>
 	</div>
-		</div><!-- accordion league_table2-->
-			</div><!-- accordion league_table1-->
+	</div><!-- accordion league_table2-->
+	</div><!-- accordion league_table2-->
+	</div><!-- accordion league_table1-->
 			
 			
 			
 			
 			
 			
-	<div id="add_match"><!-- accordion league_table1-->
+	<div id="winbox_addmatch"><!-- accordion league_table1-->
 	<h3><a href="#" id="MatchesAdd"></a></h3>
-	<div id="add_match_int"><!-- accordion league_table2-->
+	<div id="winboxcontent_addmatch"><!-- accordion league_table2-->
+	<div id="contentbody_addmatch"><!-- accordion league_table2-->
 	<input type="text" id="boxaddmatch" class="text ui-widget-content ui-corner-all" />
 	<input type="checkbox" id="boxaddyouth" /><label for="boxaddyouth" id="MatchesYouth"></label>
 	<br />
 	<div id="addmatchbuttons">
-	<button id="buttonAddMatch" /><label for="buttonAddMatch" id="MatchesByMatch"></label>
-	<button id="buttonAddTeam" /><label for="buttonAddTeam" id="MatchesByTeam"></label>
+	<button id="imgwinboxopen_addmatch" /><label for="imgwinboxopen_addmatch" id="MatchesByMatch"></label>
+	<button id="imgwinboxshade_addmatch" /><label for="imgwinboxshade_addmatch" id="MatchesByTeam"></label>
 	</div>
+	</div><!-- accordion league_table2-->
 	</div><!-- accordion league_table2-->
 	</div><!-- accordion league_table1-->
 			
-			<div id="server_status"><!-- accordion league_table1-->
+			
+			
+		<div id="server"><!-- accordion league_table1-->
 		<h3><a href="#" id="MenuServer"></a></h3>
 		<div><!-- accordion league_table2-->
 		<label id="ServerStatus"></label>
-		<progress id="osprogressbar"></progress>
+		<div id="clockBox"></div>
+		<label id="progresslabel"></label>
+		<progress id="progressmeter"></progress>
 		</div><!-- accordion league_table2-->
-			</div><!-- accordion league_table1-->
+		</div><!-- accordion league_table1-->
+			
+			
 			
 		</div><!-- /sidebar-->
 		</div><!-- /application troll-->
-			<script type="text/javascript">
+		<script type="text/javascript">
 		htlivesightPrefs.init();
 		htlivesight.Settings.startup();
 		htlivesight.Lang.localization();
