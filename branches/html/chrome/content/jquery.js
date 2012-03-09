@@ -56,8 +56,8 @@ $(function(){
 				$("#accordion1").accordion({ header: "h3", collapsible: true });
 				$("#accordion2").accordion({ header: "h3", collapsible: true });
 				$("#accordion3").accordion({ header: "h3", collapsible: true });
-				$("#league_matches").accordion({ header: "h3", collapsible: true });
-				$("#league_table").accordion({ header: "h3", collapsible: true });
+				$("#winbox_leaguematches").accordion({ header: "h3", collapsible: true });
+				$("#winbox_leaguetable").accordion({ header: "h3", collapsible: true });
 				$("#winbox_matchlist").accordion({ header: "h3", collapsible: true });
 				$("#winbox_friends").accordion({ header: "h3", collapsible: true });
 				$("#winbox_addmatch").accordion({ header: "h3", collapsible: true });
