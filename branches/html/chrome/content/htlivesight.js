@@ -32,12 +32,12 @@ var htlivesight = {
         img = document.getElementById("imgwinboxshade_"+winbox);
         img.addEventListener('click',  htlivesight.Click.winboxShade, true);
         img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.shade")*/htlivesight.Util.Parse("TooltipWindowShade",htlivesight.data[0]));
-        img.collapsed=false;
+        img.style.display="block";
 
         img = document.getElementById("imgwinboxopen_"+winbox);
         img.addEventListener('click',  htlivesight.Click.winboxOpen, true);
         img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.open")*/htlivesight.Util.Parse("TooltipWindowOpen",htlivesight.data[0]));
-        img.collapsed=true;
+        img.style.display="none";
 
         document.getElementById("winboxcontent_"+winbox).hidden=false;
         htlivesight.winboxShadeByName("friends");
