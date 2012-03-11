@@ -20,7 +20,11 @@ htlivesight.Teams.update = function(newTeam) {
   if (!team) {
     team=newTeam;
     htlivesight.Teams.list["_"+team.id+"_"+team.youth] = team;
-    team.addTeamToFriendsPopup = htlivesight.DOM.createAddTeamToFriendsPopup(team);
+    
+    //next line is commented because html can't generate a right click menu. to be fixed.
+  //  team.addTeamToFriendsPopup = htlivesight.DOM.createAddTeamToFriendsPopup(team);
+    //bigpapyHTML
+    
     if (htlivesight.Friends.isFriend(team.id, team.youth, !htlivesight.Friends.STRICT)) {
       htlivesight.Friends.update(team.id, team.name);
     };

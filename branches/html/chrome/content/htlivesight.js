@@ -48,7 +48,7 @@ var htlivesight = {
  //   netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
  //   strings = document.getElementById("strings");
     console.log("1");
-    document.getElementById("winbox_leaguematches").collapsed=true;
+    document.getElementById("winbox_leaguematches").style.display="none";
     console.log("2");
     winboxRegister(["leaguematches","leaguetable","matchlist","friends","addmatch"]);
     console.log("3");
@@ -57,7 +57,7 @@ var htlivesight = {
     htlivesight.prefs = htlivesight.Preferences.get();
     console.log("5");
     if (htlivesight.prefs.personalization.oldIcons) htlivesight.Image = htlivesight.ImageOld;
-    console.logrt("6");
+    console.log("6");
 
     htlivesight.Friends.start();
     console.log("7");

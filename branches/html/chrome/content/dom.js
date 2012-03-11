@@ -219,9 +219,12 @@ htlivesight.DOM = {
   },
   addServerToPopup: function(server) {
  //   var strings = document.getElementById("strings");
-    var serverString = document.getElementById("server");
+//	  alert("server Pop up value before");
+	  document.getElementById("ServerStatus").innerHTML=server;
+//	  alert("server Pop up value after");
+ //   var serverString = document.getElementById("server");
   //  serverString.setAttribute("label", strings.getString("menu.server") + " " + server.substring(7));
-    serverString.setAttribute("label", /*strings.getString("menu.server")*/htlivesight.Util.Parse("MenuServer",data[0]) + " " + server);
+ //   serverString.setAttribute("label", /*strings.getString("menu.server")*/htlivesight.Util.Parse("MenuServer",data[0]) + " " + server);
   },
   createTextElement: function (text, doClean) {
     //var d = document.createElementNS('http://www.w3.org/1999/xhtml', 'html:div');    
@@ -997,7 +1000,7 @@ else {matchLeagueStarted = false;
   for(var j=1; j<=8; j++){
     document.getElementById("leaguetable_"+j).setAttribute("style", "");
   }
-  document.getElementById("leaguetable_name").setAttribute("value", /*strings.getString("league.live_table")*/htlivesight.Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")");
+  document.getElementById("contentbody_leaguetable"/*"leaguetable_name"*/).setAttribute("value", /*strings.getString("league.live_table")*/htlivesight.Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")");
   if(league.level == 1){
     document.getElementById("leaguetable_1").setAttribute("style", "background-color: #dfd;");
   }
