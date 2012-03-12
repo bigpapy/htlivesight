@@ -1040,7 +1040,7 @@ else {matchLeagueStarted = false;
 
  htlivesight.DOM.UpdateElementBoxLeague=function(league) {
 //  var strings = document.getElementById("strings");
-  document.getElementById("winbox_leaguematches").collapsed=false;
+  document.getElementById("winbox_leaguematches").style.display="block";
   var number = /*strings.getString("league.round")*/htlivesight.Util.Parse("LeagueRound",data[0]) + " " + league.currentRound.number;
   var date = htlivesight.Time.formatDate(league.currentRound.date);
 

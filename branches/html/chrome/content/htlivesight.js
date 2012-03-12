@@ -48,7 +48,7 @@ var htlivesight = {
  //   netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
  //   strings = document.getElementById("strings");
     console.log("1");
-    document.getElementById("winbox_leaguematches").style.display="none";
+    document.getElementById("winbox_leaguematches").style.display="block";
     console.log("2");
     winboxRegister(["leaguematches","leaguetable","matchlist","friends","addmatch"]);
     console.log("3");
@@ -180,16 +180,16 @@ var htlivesight = {
   },
   winboxOpenByName: function(name) {
 	  console.log("startup:winboxOpenByName begin");
-    document.getElementById("winboxcontent_"+name).collapsed = false;
-    document.getElementById("imgwinboxopen_"+name).collapsed = true;
-    document.getElementById("imgwinboxshade_"+name).collapsed = false;
+    document.getElementById("winboxcontent_"+name).style.display="block";
+    document.getElementById("imgwinboxopen_"+name).style.display="none";
+    document.getElementById("imgwinboxshade_"+name).style.display="block";
     console.log("startup:winboxOpenByName end");
   },
   winboxShadeByName: function(name) {
 	  console.log("startup:winboxShadeByName begin");
-    document.getElementById("winboxcontent_"+name).collapsed = true;
-    document.getElementById("imgwinboxopen_"+name).collapsed = false;
-    document.getElementById("imgwinboxshade_"+name).collapsed = true;
+    document.getElementById("winboxcontent_"+name).style.display="none";
+    document.getElementById("imgwinboxopen_"+name).style.display="block";
+    document.getElementById("imgwinboxshade_"+name).style.display="none";
     console.log("startup:winboxShadeByName end");
   },
   AddLiveMatch: function(matchId, youth) {
