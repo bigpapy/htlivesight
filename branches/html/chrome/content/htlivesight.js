@@ -127,34 +127,34 @@ var htlivesight = {
  //   alert("startup: Logout end");
   },
   Options: function() {
-	  alert("startup:Options begin");
+	  console.log("startup:Options begin");
     var features = "chrome,titlebar,toolbar,centerscreen,modal,resizable";
     var url = htlivesightEnv.contentPath+"settings.html";
     window.openDialog(url, "Options", features);
     htlivesight.prefs = htlivesight.Preferences.get();
-    alert("startup:Options end");
+    console.log("startup:Options end");
   },
   About: function() {
-	  alert("startup:About begin");
+	  console.log("startup:About begin");
       var features = "chrome,titlebar,toolbar,centerscreen,modal,resizable";
       var url = htlivesightEnv.contentPath+"about.html";
       window.openDialog(url, "About", features);
-      alert("startup:About end");
+      console.log("startup:About end");
   },
   Reconnect: function() {
-	alert("startup:Reconnect begin");
+	console.log("startup:Reconnect begin");
     document.getElementById("login_box").hidden = false;
     document.getElementById("button_login").disabled=false;
-   alert("startup:Reconnect end");
+   console.log("startup:Reconnect end");
   },
   startView: function() { 
-	  alert("startup:startview begin");
+	  console.log("startup:startview begin");
 	  do{
 		  htlivesight.Live.view();
 	  }while(htlivesight.errorLoadingXML);
 	  htlivesight.Live.view(); // added to avoid delay showing event list
 	  htlivesight.Live.startView();
-   alert("startup:startview end");
+   console.log("startup:startview end");
   },
   GetMyData: function() { 
 	  console.log("startup:GetMyData begin");
@@ -164,36 +164,36 @@ var htlivesight = {
 	  console.log("startup:GetMyData end");
   },
   GetLeague: function() {
-	  alert("startup:GetLeague begin");
+	  console.log("startup:GetLeague begin");
     htlivesight.League.HTTPGet();
-    alert("startup:GetLeague end");
+    console.log("startup:GetLeague end");
   },
   GetLeagueMatches: function() {
-	  alert("startup:GetLeagueMatches begin");  
+	  console.log("startup:GetLeagueMatches begin");  
     htlivesight.League.HTTPFixtures();
-    alert("startup:GetLeagueMatches end");
+    console.log("startup:GetLeagueMatches end");
   },
   GetMyMatch: function() { 
-	  alert("startup:GetMyMatch begin: id "/*+ Teams.myTeam.id +" youth " + Teams.myTeam.youth*/ );
+	  console.log("startup:GetMyMatch begin: id "/*+ Teams.myTeam.id +" youth " + Teams.myTeam.youth*/ );
     htlivesight.Matches.HTTPGetByTeam(htlivesight.Teams.myTeam.id, htlivesight.Teams.myTeam.youth);
-    alert("startup:GetMyMatch end");
+    console.log("startup:GetMyMatch end");
   },
   winboxOpenByName: function(name) {
-	  alert("startup:winboxOpenByName begin");
+	  console.log("startup:winboxOpenByName begin");
     document.getElementById("winboxcontent_"+name).collapsed = false;
     document.getElementById("imgwinboxopen_"+name).collapsed = true;
     document.getElementById("imgwinboxshade_"+name).collapsed = false;
-    alert("startup:winboxOpenByName end");
+    console.log("startup:winboxOpenByName end");
   },
   winboxShadeByName: function(name) {
-	  alert("startup:winboxShadeByName begin");
+	  console.log("startup:winboxShadeByName begin");
     document.getElementById("winboxcontent_"+name).collapsed = true;
     document.getElementById("imgwinboxopen_"+name).collapsed = false;
     document.getElementById("imgwinboxshade_"+name).collapsed = true;
-    alert("startup:winboxShadeByName end");
+    console.log("startup:winboxShadeByName end");
   },
   AddLiveMatch: function(matchId, youth) {
-	  alert("AddLiveMatch: begin");
+	  console.log("AddLiveMatch: begin");
 //	  alert("1");
     if (htlivesight.liveCount >= 20) {
   //  	alert("2");
@@ -225,20 +225,20 @@ var htlivesight = {
       htlivesight.GetMatchDetails(matchId, youth);
   //    alert("14");
  //   }
-      alert("AddLiveMatch: end");
+      console.log("AddLiveMatch: end");
   },
   GetMatchDetails: function(matchId, youth) { 
-	  alert("startup:GetMatchDetails begin");
+	  console.log("startup:GetMatchDetails begin");
  //   matchDetails.HTTPGet(matchId, youth);
-    alert("startup:GetMatchDetails end:");
+    console.log("startup:GetMatchDetails end:");
   },
   close: function() {
     // do nothing. unload do the job
   },
   unload: function() {
-	  alert("startup:unload: begin");
+	  console.log("startup:unload: begin");
     htlivesight.Logout();
-    alert("startup:unload: end");
+    console.log("startup:unload: end");
   },
   reLive: function() {
   //	var prefs = htlivesight.Settings.preferences;
@@ -253,25 +253,25 @@ var htlivesight = {
 
   localization: function() {
 //	  alert("startup:unload: begin");
-	  alert("begin");
+	  console.log("begin");
 
 		//prefs = htlivesight.Settings.preferences;
 		htlivesight.prefs=htlivesight.Preferences.get();
 
-		alert("prefs.language.locale= "+ htlivesight.prefs.language.locale);
+		console.log("prefs.language.locale= "+ htlivesight.prefs.language.locale);
 		htlivesight.url = htlivesightEnv.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
-		alert("url"+ htlivesight.url);
+		console.log("url"+ htlivesight.url);
 		htlivesight.languageXML = htlivesight.loadXml(htlivesight.url);
 
 		htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
 		
 		
 		
-		alert("8");
+		console.log("8");
 		if (!htlivesightPrefs.getBool("HtlsFirstStart")){
-			alert("1");
+			console.log("1");
 			var optionsPage=window.open(htlivesightEnv.contentPath+"settings.html","_blank");
-			alert("2");
+			console.log("2");
 		//	optionsPage.onfocus();
 		
 			

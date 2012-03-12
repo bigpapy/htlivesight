@@ -1,7 +1,6 @@
 htlivesight.Click = {
   Test: function (event) {
     try {
-
    //   netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
       var url = Components.classes["@mozilla.org/network/standard-url;1"].createInstance();
       url = url.QueryInterface(Components.interfaces.nsIURL);
@@ -118,7 +117,7 @@ htlivesight.Click = {
     var id=this.getAttribute("id").split("_");
     htlivesight.DOM.toggleTip(id[1], id[2]);
   },//added by bigpapy: action on clicking on icon
-  link: function() {	    var id=this.getAttribute("id").split("_");	    htlivesight.DOM.toggleLink(id[1], id[2]); },	//added by bigpapy (end): action on clicking on icon   //added by bigpapy: action on clicking on icon sound sound: function() {	 	var id=this.getAttribute("id").split("_");	    htlivesight.DOM.toggleSound(id[1], id[2]);	  },  	//added by bigpapy (end): action on clicking on icon sound   ToggleMatch: function() {
+  link: function() {	    var id=this.getAttribute("id").split("_");	    htlivesight.DOM.toggleLink(id[1], id[2]); },	//added by bigpapy (end): action on clicking on icon   //added by bigpapy: action on clicking on icon sound sound: function() {	 	var id=this.getAttribute("id").split("_");	    htlivesight.DOM.toggleSound(id[1], id[2]);	  },  	//added by bigpapy (end): action on clicking on icon sound   ToggleMatch: function() {
     var id = this.getAttribute("id").split("_");
     htlivesight.DOM.toggleView(id[2], id[3]);
   },
@@ -141,8 +140,8 @@ htlivesight.Click = {
     elem = document.getElementById("button_login");
     elem.addEventListener('command', htlivesight.Click.Login, true);
     
-    elem = document.getElementById("close_login");
-    elem.addEventListener('click',  htlivesight.Click.loginClose, true);
+    //elem = document.getElementById("close_login");
+    //elem.addEventListener('click',  htlivesight.Click.loginClose, true);
      
   },
   winboxOpen: function() {
@@ -169,9 +168,4 @@ htlivesight.Click = {
   moveDownFriend: function() {
     htlivesight.Friends.moveDown();
   }
-};
-
-
-
-
-
+};
