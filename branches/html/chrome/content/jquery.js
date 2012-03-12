@@ -218,8 +218,8 @@ $(function(){
 				$( "#btnfriend_remove" ).button();
 				$( "#btnfriend_addmatch" ).button();
 				$( "#boxaddyouth" ).button();
-				$( "#imgwinboxopen_addmatch" ).button();
-				$( "#imgwinboxshade_addmatch" ).button();
+				$( "#buttonAddMatch" ).button();
+				$( "#buttonAddTeam" ).button();
 				//Options buttons
 				$( "#openin" ).buttonset();
 				$( "#chkGetLeague" ).button();
