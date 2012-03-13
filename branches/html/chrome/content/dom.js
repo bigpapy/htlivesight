@@ -1107,23 +1107,39 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 
  htlivesight.DOM.CreateElementRowShortGame=function(match) {
   var row, l, hbox, /*vbox,*/ image;
-
-  row = document.createElement("row");
+  
+  //row = document.createElement("row");
+  row = document.createElement("tr");
   row.setAttribute("id", "short_" + match.id + "_" + match.youth);
-  row.setAttribute("align", "center");
+  //row.setAttribute("align", "center");
+  row.setAttribute("class", "match_row");
 
-  hbox = document.createElement("hbox");
+  console.log("Crea Riga");
+  console.log(row);
+  
+  //hbox = document.createElement("hbox");
+  hbox = document.createElement("td");
   row.appendChild(hbox);
-  hbox.setAttribute("pack", "end");
-  l = document.createElement("label");
+  //hbox.setAttribute("pack", "end");	nothing to add here  
+  hbox.setAttribute("class", "hometeam_league");
+  
+  console.log("Crea Primo TD");
+  console.log(hbox);
+  
+  //l = document.createElement("label");
+  l = document.createElement("td");
   hbox.appendChild(l);
+  
+  console.log("Crea Label1?");
+  console.log(l);
   
   /* change done by bigpapy in order to switch from long to short name in right box).*/
   //l.setAttribute("value", htlivesight.DOM.getTextContent(match.home.team.name));
 
-  l.setAttribute("value", htlivesight.DOM.getTextContent(match.home.team.shortName));
-  l.setAttribute("contextmenu", match.home.team.addTeamToFriendsPopup.getAttribute("id"));
+  //l.setAttribute("value", htlivesight.DOM.getTextContent(match.home.team.shortName));
+  //l.setAttribute("contextmenu", match.home.team.addTeamToFriendsPopup.getAttribute("id"));
   l.setAttribute("id", "short_home_name_" + match.id + "_" + match.youth);
+  document.getElementById("short_home_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
   
 //adding bold style to friend team
   if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)) l.setAttribute("style", "font-weight: bold;");
