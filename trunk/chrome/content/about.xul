@@ -26,7 +26,7 @@
         <tabpanel orient="vertical" align="center" flex="1">
 		  <image class="chpp" src="chrome://htlivesight/skin/128.png"/>
           <spacer class="tab"/>
-          <label class="header" value="HTLiveSightDEV 0.4.632"/>
+          <label class="header" value="HTLiveSightDEV 0.4.676"/>
           <label id= "creationDate" value=""/>
           <label id="createdBy" value=""/>
           <separator/>

@@ -8,7 +8,7 @@ label, description {
 #live_box{
 background: url("chrome://htlivesight/content/img/bg.png") #fff;
 background-repeat:no-repeat;
-background-position:bottom left;
+background-position:center center;
 }
 #winbox_login{
 	background-color: #fff;
