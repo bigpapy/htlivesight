@@ -1123,14 +1123,14 @@ htlivesight.DOM.UpdateShortBox = function(match) {
   //hbox.setAttribute("pack", "end");	nothing to add here  
   hbox.setAttribute("class", "hometeam_league");
   
-  console.log("Crea Primo TD");
+  console.log("Crea Primo TD che non so a cosa serve");
   console.log(hbox);
   
   //l = document.createElement("label");
   l = document.createElement("td");
   hbox.appendChild(l);
   
-  console.log("Crea Label1?");
+  console.log("Crea td1");
   console.log(l);
   
   /* change done by bigpapy in order to switch from long to short name in right box).*/
@@ -1148,16 +1148,25 @@ htlivesight.DOM.UpdateShortBox = function(match) {
   row.appendChild(l);
   l.setAttribute("value", match.home.goals);
   l.setAttribute("id", "short_home_goals_" + match.id + "_" + match.youth);
+  
+  console.log("Crea td2");
+  console.log(l);
 
   l = document.createElement("label");
   row.appendChild(l);
   l.setAttribute("value", ":");
   l.setAttribute("class", "score_separator");
+  
+  console.log("Crea td3");
+  console.log(l);
 
   l = document.createElement("label");
   row.appendChild(l);
   l.setAttribute("value", match.away.goals);
   l.setAttribute("id", "short_away_goals_" + match.id + "_" + match.youth);
+  
+  console.log("Crea td14");
+  console.log(l);
 
   l = document.createElement("label");
   row.appendChild(l);
