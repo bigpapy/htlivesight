@@ -126,7 +126,7 @@
 <EventSpecialUnpredictableMistake>- imprevisible: error</EventSpecialUnpredictableMistake>
 <EventSpecialUnpredictableOwnGoal>- imprevisible: autogol</EventSpecialUnpredictableOwnGoal>
 <EventSpecialQuickScoresAfterRush>+ rápido: carrera y gol</EventSpecialQuickScoresAfterRush>
-<EventSpecialQuickAssist>+ rápido: carrera y asiatencia</EventSpecialQuickAssist>
+<EventSpecialQuickAssist>+ rápido: carrera y asistencia</EventSpecialQuickAssist>
 <Pullback>pullback</Pullback>
 <Underestimation>exceso de confianza</Underestimation>
 <UnderestimationRemove>exceso de confianza eliminado</UnderestimationRemove>
