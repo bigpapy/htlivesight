@@ -5,7 +5,7 @@
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Paleisti</MenuStart>
 <MenuOptions>Nustatymai</MenuOptions>
-<TooltipButton>Spustelėjus atsidaro „HTLiveSight“ meniu</TooltipButton>
+<TooltipButton>Spustelėjus atsidaro „HTLiveSight“</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
