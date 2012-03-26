@@ -10,7 +10,7 @@
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Serveris: </MenuServer>
-<MenuDisconnected>Atsijungta</MenuDisconnected>
+<MenuDisconnected>atsijungta</MenuDisconnected>
 <MenuOptions>Nustatymai</MenuOptions>
 <MenuAbout>Apie „HTLiveSight“</MenuAbout>
 <LoginLabel>Prisijungti</LoginLabel>
