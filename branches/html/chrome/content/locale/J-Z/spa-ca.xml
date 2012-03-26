@@ -3,9 +3,9 @@
 
 <!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuStart>Inicio</MenuStart>
+<MenuOptions>Opciones</MenuOptions>
+<TooltipButton>Clic para abrir el menú de HTLiveSight</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
@@ -126,7 +126,7 @@
 <EventSpecialUnpredictableMistake>- impredecible: error</EventSpecialUnpredictableMistake>
 <EventSpecialUnpredictableOwnGoal>- impredecible: autogol</EventSpecialUnpredictableOwnGoal>
 <EventSpecialQuickScoresAfterRush>+ rápido: carrera y gol</EventSpecialQuickScoresAfterRush>
-<EventSpecialQuickAssist>+ rápido: carrera y asiatencia</EventSpecialQuickAssist>
+<EventSpecialQuickAssist>+ rápido: carrera y asistencia</EventSpecialQuickAssist>
 <Pullback>pullback</Pullback>
 <Underestimation>exceso de confianza</Underestimation>
 <UnderestimationRemove>exceso de confianza eliminado</UnderestimationRemove>
@@ -232,10 +232,10 @@
 <PathSoundsWhistle3>Silbido para el fin del partido</PathSoundsWhistle3>
 <PathSoundsWhistle>Sonido para tarjeta Amarilla/Roja</PathSoundsWhistle>
 <PathSoundsHattrick>Sonido de Hattrick</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<PathSoundsRestore>Restaurar</PathSoundsRestore>
+<PathSoundsPlay>Reproducir</PathSoundsPlay>
+<PathSoundsNote1>Insertar file:/// antes de la ruta del sonido en formato .wav</PathSoundsNote1>
+<PathSoundsNote2>Ejemplo: file:///c:\\ruta\al\sonido.wav</PathSoundsNote2>
 <LanguageSelect>Selecciona Idioma</LanguageSelect>
 <LanguageNote>Nota: Es necesario reiniciar HTLiveSight para que los cambios tengan efecto.</LanguageNote>
 <ButtonCancel>Cancelar</ButtonCancel>
@@ -244,8 +244,8 @@
 <!--About-->
 <WindowAboutTitle>Acerca de  HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabTranslators>Tranductores</TabTranslators>
+<TabCredits>Creditos</TabCredits>
 <MonthJanuary>Ene</MonthJanuary>
 <MonthFebruary>Feb</MonthFebruary>
 <MonthMarch>Mar</MonthMarch>

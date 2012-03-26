@@ -640,18 +640,17 @@
 			
 			
 			
-		<div id="sidebar"><!-- sidebar-->
-			
-			
+	<div id="sidebar"><!-- sidebar-->
+					
 			
 	<div id="winbox_leaguematches"><!-- accordion league_matches1-->
 	<h3><a href="#" id="LeagueMatches"></a></h3>
-	<!-- CUT HERE -->
+	<!-- CUT HERE 
 	<div id="winboxheader_leaguematches">
 	<img id="imgwinboxopen_leaguematches" class="imgwinboxopen"/>
 	<img id="imgwinboxshade_leaguematches" class="imgwinboxshade"/>
 	</div>
-	<!-- CUT HERE -->
+	 CUT HERE -->
 	<div id="winboxcontent_leaguematches"><!-- accordion league_matches2-->
 	<div id="contentbody_leaguematches"><!-- accordion league_matches2-->
 				
@@ -689,15 +688,15 @@
 			
 	<div id="winbox_leaguetable"><!-- accordion league_table1-->
 	<h3><a href="#" id="LeagueLiveTable"></a></h3>
-	<!-- CUT HERE -->
+	<!-- CUT HERE 
 	<div id="winboxheader_leaguetable">
 	<img id="imgwinboxopen_leaguetable" class="imgwinboxopen"/>
 	<img id="imgwinboxshade_leaguetable" class="imgwinboxshade"/>
 	</div>
-	<!-- CUT HERE -->
+	CUT HERE -->
 	<div id="winboxcontent_leaguetable"><!-- accordion league_table2-->
-	<div id="contentbody_leaguetable"><!-- accordion league_table2-->
-	<table id="leaguetable_grid_rows" class="live_league_table">
+	<div id="contentbody_leaguetable"><!-- accordion league_table2-->		<!--id="contentbody_leaguetable"-->
+	<table id="leaguetable_grid_rows" class="live_league_table" cellpadding="0">
 	<thead>
 	<tr>
 		<th  class="header_league_table" id="LeaguePosition"></th>
@@ -795,24 +794,24 @@
 			
 	<div id="winbox_matchlist"><!-- accordion league_matches1-->
 	<h3><a href="#" id="MatchesList"></a></h3>
-	<!-- CUT HERE -->
+	<!-- CUT HERE 
 	<div id="winboxheader_matchlist">
 	<img id="imgwinboxopen_matchlist" class="imgwinboxopen"/>
 	<img id="imgwinboxshade_matchlist" class="imgwinboxshade"/>
 	</div>
-	<!-- CUT HERE -->
+	 CUT HERE -->
 	<div id="winboxcontent_matchlist"><!-- accordion league_matches2-->
 	<div id="contentbody_matchlist"><!-- accordion league_matches2-->		
-	<table class="match_table">
-	<tr class="match_row" id="other_grid_rows"> <!-- RIGHE GENERATE DA JS? -->
+	<table class="match_table" id="other_grid_rows"><!-- 
+	<tr class="match_row" > 
 		<td class="hometeam_league"></td>
 		<td class="homescore_league"></td>
 		<td class="separator_league"></td>
 		<td class="awayscore_league"></td>
 		<td class="awayteam_league"></td>
 		<td class="add_league"></td>
-		<td class="remove_league"></td>
-	</tr>
+		<td class="remove_league"></td> 
+	</tr>-->
 	</table>
 	</div><!-- accordion league_matches2-->
 	</div><!-- accordion league_matches2-->
@@ -823,12 +822,12 @@
 			
 	<div id="winbox_friends"><!-- accordion league_table1-->
 	<h3><a href="#" id="FriendsTitle"></a></h3>
-	<!-- CUT HERE -->
+	<!-- CUT HERE 
 	<div id="winboxheader_friends">
 	<img id="imgwinboxopen_friends" class="imgwinboxopen"/>
 	<img id="imgwinboxshade_friends" class="imgwinboxshade"/>
 	</div>
-	<!-- CUT HERE -->
+	 CUT HERE -->
 	<div id="winboxcontent_friends"><!-- accordion league_table2-->
 	<div id="contentbody_friends"><!-- accordion league_table2-->
 	<div>
@@ -853,12 +852,12 @@
 			
 	<div id="winbox_addmatch"><!-- accordion league_table1-->
 	<h3><a href="#" id="MatchesAdd"></a></h3>
-	<!-- CUT HERE -->
+	<!-- CUT HERE 
 	<div id="winboxheader_addmatch">
 	<img id="imgwinboxopen_addmatch" class="imgwinboxopen"/>
 	<img id="imgwinboxshade_addmatch" class="imgwinboxshade"/>
 	</div>
-	<!-- CUT HERE -->
+	 CUT HERE -->
 	<div id="winboxcontent_addmatch"><!-- accordion league_table2-->
 	<div id="contentbody_addmatch"><!-- accordion league_table2-->
 	<input type="text" id="boxaddmatch" class="text ui-widget-content ui-corner-all" />
@@ -876,7 +875,7 @@
 			
 		<div id="server"><!-- accordion league_table1-->
 		<h3><a href="#" id="MenuServer"></a></h3>
-		<div><!-- accordion league_table2-->
+		<div id="serverint"><!-- accordion league_table2-->
 		<label id="ServerStatus"></label>
 		<div id="clockBox"></div>
 		<label id="progresslabel"></label>

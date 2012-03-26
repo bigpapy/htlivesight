@@ -1000,39 +1000,40 @@ else {matchLeagueStarted = false;
   for(var j=1; j<=8; j++){
     document.getElementById("leaguetable_"+j).setAttribute("style", "");
   }
-  document.getElementById("contentbody_leaguetable"/*"leaguetable_name"*/).setAttribute("value", /*strings.getString("league.live_table")*/htlivesight.Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")");
+  //document.getElementById("contentbody_leaguetable"/*"leaguetable_name"*/).setAttribute("value", /*strings.getString("league.live_table")*/htlivesight.Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")");
+  document.getElementById("LeagueLiveTable"/*"leaguetable_name"*/).innerHTML = htlivesight.Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")";
   if(league.level == 1){
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #dfd;");
+    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #88FF88;");
   }
   else if(league.level <= 6 || league.level % 2 == 0){
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #dfd; border-bottom-width: 1px; border-bottom-color: black;");
+    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #88FF88; border-bottom-width: 1px; border-bottom-color: black;");
   }
   else{
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #dfd;");
-    document.getElementById("leaguetable_2").setAttribute("style", "background-color: #dfd; border-bottom-width: 1px; border-bottom-color: black;");
+    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #88FF88;");
+    document.getElementById("leaguetable_2").setAttribute("style", "background-color: #88FF88; border-bottom-width: 1px; border-bottom-color: black;");
   }
   if(league.level != league.maxLevel){
-    document.getElementById("leaguetable_7").setAttribute("style", "background-color: #fdd; border-top-width: 1px; border-top-color: black;");
-    document.getElementById("leaguetable_8").setAttribute("style", "background-color: #fdd;");
+    document.getElementById("leaguetable_7").setAttribute("style", "background-color: #FF8888; border-top-width: 1px; border-top-color: black;");
+    document.getElementById("leaguetable_8").setAttribute("style", "background-color: #FF8888;");
   }
   if(league.level < 6){
-    document.getElementById("leaguetable_5").setAttribute("style", "background-color: #ffb;");
-    document.getElementById("leaguetable_6").setAttribute("style", "background-color: #ffb;");
+    document.getElementById("leaguetable_5").setAttribute("style", "background-color: #FFFF88;");
+    document.getElementById("leaguetable_6").setAttribute("style", "background-color: #FFFF88;");
   }
   for(var i in htlivesight.League.teams){
     if(htlivesight.League.teams[i].livePosition >= 1 && htlivesight.League.teams[i].livePosition <= 8){
       if(i == htlivesight.Teams.myTeam.id){
         document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition).setAttribute("style", document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition).getAttribute("style")+" font-weight: bold;");
       }
-      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_name").setAttribute("value", htlivesight.DOM.getTextContent(htlivesight.League.teams[i].name));
+      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_name").innerHTML = htlivesight.DOM.getTextContent(htlivesight.League.teams[i].name);
       document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_change").setAttribute("class", htlivesight.League.teams[i].change);
-      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_matches").setAttribute("value", htlivesight.League.teams[i].liveMatches);
+      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_matches").innerHTML = htlivesight.League.teams[i].liveMatches;
       var goals = htlivesight.League.teams[i].liveGoalsFor+"-"+htlivesight.League.teams[i].liveGoalsAgainst;
-      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goals").setAttribute("value", goals);
+      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goals").innerHTML = goals;
       var diff = htlivesight.League.teams[i].liveGoalsFor - htlivesight.League.teams[i].liveGoalsAgainst;
       if(diff >= 0) diff = "+"+diff;
-      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goaldif").setAttribute("value", diff);
-      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_points").setAttribute("value", htlivesight.League.teams[i].livePoints);
+      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goaldif").innerHTML = diff;
+      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_points").innerHTML = htlivesight.League.teams[i].livePoints;
     }
   }
 };
@@ -1044,9 +1045,11 @@ else {matchLeagueStarted = false;
   var number = /*strings.getString("league.round")*/htlivesight.Util.Parse("LeagueRound",data[0]) + " " + league.currentRound.number;
   var date = htlivesight.Time.formatDate(league.currentRound.date);
 
-  document.getElementById("league_round_number").setAttribute("value", number);
-  document.getElementById("league_round_date").setAttribute("value", date);
-  document.getElementById("league_round_time").setAttribute("value", "");
+  //document.getElementById("league_round_number").setAttribute("value", number);
+  //document.getElementById("league_round_date").setAttribute("value", date);
+  //document.getElementById("league_round_time").setAttribute("value", "");
+  document.getElementById("league_round_number").innerHTML = number;
+  document.getElementById("league_round_date").innerHTML = date;
 
 };
 
@@ -1079,9 +1082,11 @@ htlivesight.DOM.UpdateShortBox = function(match) {
     }
   
     if(elem.getAttribute("myLeagueMatch") == "true") {
-      label = document.getElementById("league_round_time");
-      label.setAttribute("value", match.timeElapsed);
-      // Gonzo
+      //label = document.getElementById("league_round_time");
+      //label.setAttribute("value", match.timeElapsed);
+      document.getElementById("league_round_time").innerHTML = match.timeElapsed;
+	  
+	  // Gonzo
       if(htlivesight.League.currentRound.number > htlivesight.League.teams[htlivesight.Teams.myTeam.id].matches){
         htlivesight.DOM.UpdateElementBoxLeagueTable(htlivesight.League);
       }
@@ -1164,7 +1169,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 
   cell = document.createElement("td");
   cell.setAttribute("id", "short_away_name_" + match.id + "_" + match.youth);
-  cell.setAttribute("class", "hometeam_league");
+  cell.setAttribute("class", "awayteam_league");
   //document.getElementById("short_away_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.away.team.shortName);
   if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)) cell.setAttribute("style", "font-weight: bold;");
 	

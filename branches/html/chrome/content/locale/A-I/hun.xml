@@ -81,7 +81,7 @@
 <TimeHour>óra</TimeHour>
 <TimeMinute>perc</TimeMinute>
 <TimeMin>'</TimeMin>
-<TooltipWindowSound>Mérkőshangok bekapcsolása/kikapcsolása</TooltipWindowSound>
+<TooltipWindowSound>Mérkőzéshangok bekapcsolása/kikapcsolása</TooltipWindowSound>
 <TooltipWindowLink>Hivatkozás a mérkőzéshez Hattricken</TooltipWindowLink>
 <TooltipWindowInfo>Eseményüzenetek bekapcsolása</TooltipWindowInfo>
 <TooltipWindowMaximize>Teljes képernyõ</TooltipWindowMaximize>
@@ -183,7 +183,7 @@
 <GeneralNewTab>Új fülön</GeneralNewTab>
 <GeneralNewWindow>Új ablakban</GeneralNewWindow>
 <GeneralServer>Szerver Beállítások</GeneralServer>
-<GeneralNote>Add meg a Hattrick szervert, ahová bejelentkeztél (pl. www98).</GeneralNote>
+<GeneralNote>Add meg azt a Hattrick szerver, ahová bejelentkeztél (pl. www98)</GeneralNote>
 <MatchesLeague>Bajnoki mérkõzések</MatchesLeague>
 <MatchesGetLeague>Bajnoki mérkõzések letöltése</MatchesGetLeague>
 <MatchesPlayed>Ha elkezdõdik</MatchesPlayed>
@@ -231,7 +231,7 @@
 <PathSoundsWhistle2>Sípszó az első félidő végén</PathSoundsWhistle2>
 <PathSoundsWhistle3>Sípszó a mérkőzés végén</PathSoundsWhistle3>
 <PathSoundsWhistle>Hangjelzés sárga/piros lapnál</PathSoundsWhistle>
-<PathSoundsHattrick>Hattrick hangjelzés</PathSoundsHattrick>
+<PathSoundsHattrick>Mesterhármas hangjelzés</PathSoundsHattrick>
 <PathSoundsRestore>Visszaállítás</PathSoundsRestore>
 <PathSoundsPlay>Lejátszás</PathSoundsPlay>
 <PathSoundsNote1>Szúrd be a .wav formátumú hang elérési útja elé: file:///</PathSoundsNote1>

@@ -5,7 +5,7 @@
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Avvio</MenuStart>
 <MenuOptions>Opzioni</MenuOptions>
-<TooltipButton>Clicca per aprire il menù di HTLiveSight</TooltipButton>
+<TooltipButton>Clicca per avviare il menù di HTLiveSight</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
