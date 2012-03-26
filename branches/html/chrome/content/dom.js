@@ -1096,9 +1096,18 @@ htlivesight.DOM.UpdateShortBox = function(match) {
   
     }
   
-    document.getElementById("short_home_goals_" + match.id + "_" + match.youth).setAttribute("value", match.home.goals);
-    document.getElementById("short_away_goals_" + match.id + "_" + match.youth).setAttribute("value", match.away.goals);
-  } catch(e) {
+    //document.getElementById("short_home_goals_" + match.id + "_" + match.youth).setAttribute("value", match.home.goals);
+	//document.getElementById("short_away_goals_" + match.id + "_" + match.youth).setAttribute("value", match.away.goals);
+ 
+  document.getElementById("short_home_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
+  //if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)) cell.setAttribute("style", "font-weight: bold;");
+  document.getElementById("short_home_goals_" + match.id + "_" + match.youth).innerHTML = match.home.goals;
+  document.getElementById("separator_" + match.id + "_" + match.youth).innerHTML = ":";
+  document.getElementById("short_away_goals_" + match.id + "_" + match.youth).innerHTML = match.away.goals;
+  document.getElementById("short_away_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.away.team.shortName);
+  //if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)) cell.setAttribute("style", "font-weight: bold;");
+  
+ } catch(e) {
    // alert("UpdateShortBox(): " + e);
 	  dump("UpdateShortBox(): " + e);
   }
@@ -1106,103 +1115,87 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 
 
  htlivesight.DOM.CreateElementRowShortGame=function(match) {
-  var row, l, hbox, /*vbox,*/ image;
+  var row, cell, /*vbox,*/ image;
   
-  //row = document.createElement("row");
+
   row = document.createElement("tr");
   row.setAttribute("id", "short_" + match.id + "_" + match.youth);
-  //row.setAttribute("align", "center");
   row.setAttribute("class", "match_row");
-
-  console.log("Crea Riga");
+  
   console.log(row);
   
-  //hbox = document.createElement("hbox");
-  hbox = document.createElement("td");
-  row.appendChild(hbox);
-  //hbox.setAttribute("pack", "end");	nothing to add here  
-  hbox.setAttribute("class", "hometeam_league");
   
-  console.log("Crea Primo TD che non so a cosa serve");
-  console.log(hbox);
+  cell = document.createElement("td");
+  cell.setAttribute("id", "short_home_name_" + match.id + "_" + match.youth);
+  cell.setAttribute("class", "hometeam_league");
+  //document.getElementById("short_home_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
+  if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)) cell.setAttribute("style", "font-weight: bold;");
+	
+	console.log(cell);
+  row.appendChild(cell);
   
-  //l = document.createElement("label");
-  l = document.createElement("td");
-  hbox.appendChild(l);
   
-  console.log("Crea td1");
-  console.log(l);
+  cell = document.createElement("td");
+  cell.setAttribute("id", "short_home_goals_" + match.id + "_" + match.youth);
+  cell.setAttribute("class", "homescore_league");
+  //document.getElementById("short_home_goals_" + match.id + "_" + match.youth).innerHTML = match.home.goals;
   
-  /* change done by bigpapy in order to switch from long to short name in right box).*/
-  //l.setAttribute("value", htlivesight.DOM.getTextContent(match.home.team.name));
+	console.log(cell);
+  row.appendChild(cell);
+  
+  
+  cell = document.createElement("td");
+  cell.setAttribute("id", "separator_" + match.id + "_" + match.youth);
+  cell.setAttribute("class", "separator_league");
+  //document.getElementById("separator_" + match.id + "_" + match.youth).innerHTML = ":";
+  
+	console.log(cell);
+  row.appendChild(cell);
 
-  //l.setAttribute("value", htlivesight.DOM.getTextContent(match.home.team.shortName));
-  //l.setAttribute("contextmenu", match.home.team.addTeamToFriendsPopup.getAttribute("id"));
-  l.setAttribute("id", "short_home_name_" + match.id + "_" + match.youth);
-  document.getElementById("short_home_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
-  
-//adding bold style to friend team
-  if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)) l.setAttribute("style", "font-weight: bold;");
 
-  l = document.createElement("label");
-  row.appendChild(l);
-  l.setAttribute("value", match.home.goals);
-  l.setAttribute("id", "short_home_goals_" + match.id + "_" + match.youth);
+  cell = document.createElement("td");
+  cell.setAttribute("id", "short_away_goals_" + match.id + "_" + match.youth);
+  cell.setAttribute("class", "awayscore_league");
+  //document.getElementById("short_away_goals_" + match.id + "_" + match.youth).innerHTML = match.away.goals;
   
-  console.log("Crea td2");
-  console.log(l);
+	console.log(cell);
+  row.appendChild(cell);
 
-  l = document.createElement("label");
-  row.appendChild(l);
-  l.setAttribute("value", ":");
-  l.setAttribute("class", "score_separator");
-  
-  console.log("Crea td3");
-  console.log(l);
 
-  l = document.createElement("label");
-  row.appendChild(l);
-  l.setAttribute("value", match.away.goals);
-  l.setAttribute("id", "short_away_goals_" + match.id + "_" + match.youth);
-  
-  console.log("Crea td14");
-  console.log(l);
+  cell = document.createElement("td");
+  cell.setAttribute("id", "short_away_name_" + match.id + "_" + match.youth);
+  cell.setAttribute("class", "hometeam_league");
+  //document.getElementById("short_away_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.away.team.shortName);
+  if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)) cell.setAttribute("style", "font-weight: bold;");
+	
+	console.log(cell);
+  row.appendChild(cell);
 
-  l = document.createElement("label");
-  row.appendChild(l);
-  
-  /* change done by bigpapy in order to switch from long to short name in right box).*/
-//  l.setAttribute("value", htlivesight.DOM.getTextContent(match.away.team.name));
-  // try://document.getElementById("leaguetable_"+League.teams[i].livePosition).setAttribute("style", document.getElementById("leaguetable_"+League.teams[i].livePosition).getAttribute("style")+" font-weight: bold;");
-  l.setAttribute("value", htlivesight.DOM.getTextContent(match.away.team.shortName));
-  //l.appendChild(createTextElement(match.away.team.name));
-  l.setAttribute("contextmenu", match.away.team.addTeamToFriendsPopup.getAttribute("id"));
-  l.setAttribute("id", "short_away_name_" + match.id + "_" + match.youth);
-// adding bold style to friend team
-  if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)) l.setAttribute("style", "font-weight: bold;");
-  
-  
-  image = document.createElement("image");
-  row.appendChild(image);
+
+  cell = document.createElement("td");
+  cell.setAttribute("id", "imageadd_" + match.id + "_" + match.youth);
+  cell.setAttribute("class", "add_league");
+  image = document.createElement("img");
   image.setAttribute("id", "short_liveimage_" + match.id + "_" + match.youth);
-  //image.setAttribute("src", htlivesight.Image.live.OFF);
   image.setAttribute("class", "imgwinboxopen");
-  image.setAttribute("match_id", match.id + "_" + match.youth);
-  image.addEventListener('click',  htlivesight.Click.ToggleMatch, true);
+  //image.setAttribute("match_id", match.id + "_" + match.youth);
+  //image.addEventListener('click',  htlivesight.Click.ToggleMatch, true);
+  
+  cell.appendChild(image);
+  row.appendChild(cell);
+  
 
-  image = document.createElement("image");
-  row.appendChild(image);
+  cell = document.createElement("td");
+  cell.setAttribute("id", "imagedel_" + match.id + "_" + match.youth);
+  cell.setAttribute("class", "remove_league");
+  image = document.createElement("img");
   image.setAttribute("id", "short_liveclose_" + match.id + "_" + match.youth);
   image.setAttribute("class", "imgwinboxclose");
-  image.setAttribute("match_id", match.id + "_" + match.youth);
-  image.addEventListener('click',  htlivesight.Click.DeleteMatch, true);
+  //image.setAttribute("match_id", match.id + "_" + match.youth);
+  //image.addEventListener('click',  htlivesight.Click.DeleteMatch, true);
+  
+  cell.appendChild(image);
+  row.appendChild(cell);
   
   return row;
 };
-
-
-
-
-
-
-
