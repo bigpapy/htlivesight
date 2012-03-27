@@ -312,16 +312,18 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
   var livebox, hbox, vbox, child;
 
   livebox = document.getElementById("live_box");
-  hbox = document.createElement("hbox");
+  //hbox = document.createElement("hbox");
+  hbox = document.createElement("div");
   //hbox.collapsed=true;
   hbox.hidden=true;
   
   livebox.appendChild(hbox);
   hbox.setAttribute("id", "live_" + match.id + "_" + match.youth);
 
-  vbox = document.createElement("vbox");
+  //vbox = document.createElement("vbox");
+  vbox = document.createElement("table");
   hbox.appendChild(vbox);
-  vbox.setAttribute("flex", "1");
+  //vbox.setAttribute("flex", "1");
   child = htlivesight.DOM.CreateElementGroupboxLiveMatch(match);
   vbox.appendChild(child);
 }
@@ -1180,24 +1182,25 @@ htlivesight.DOM.UpdateShortBox = function(match) {
   cell = document.createElement("td");
   cell.setAttribute("id", "imageadd_" + match.id + "_" + match.youth);
   cell.setAttribute("class", "add_league");
-  image = document.createElement("img");
+  image = document.createElement("button");
   image.setAttribute("id", "short_liveimage_" + match.id + "_" + match.youth);
   image.setAttribute("class", "imgwinboxopen");
-  //image.setAttribute("match_id", match.id + "_" + match.youth);
-  //image.addEventListener('click',  htlivesight.Click.ToggleMatch, true);
+  image.setAttribute("match_id", match.id + "_" + match.youth);
+  image.addEventListener('click',  htlivesight.Click.ToggleMatch, true);
   
   cell.appendChild(image);
   row.appendChild(cell);
+  //row.appendChild(image);
   
 
   cell = document.createElement("td");
   cell.setAttribute("id", "imagedel_" + match.id + "_" + match.youth);
   cell.setAttribute("class", "remove_league");
-  image = document.createElement("img");
+  image = document.createElement("button");
   image.setAttribute("id", "short_liveclose_" + match.id + "_" + match.youth);
   image.setAttribute("class", "imgwinboxclose");
-  //image.setAttribute("match_id", match.id + "_" + match.youth);
-  //image.addEventListener('click',  htlivesight.Click.DeleteMatch, true);
+  image.setAttribute("match_id", match.id + "_" + match.youth);
+  image.addEventListener('click',  htlivesight.Click.DeleteMatch, true);
   
   cell.appendChild(image);
   row.appendChild(cell);

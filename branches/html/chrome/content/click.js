@@ -118,11 +118,11 @@ htlivesight.Click = {
     htlivesight.DOM.toggleTip(id[1], id[2]);
   },//added by bigpapy: action on clicking on icon
   link: function() {	    var id=this.getAttribute("id").split("_");	    htlivesight.DOM.toggleLink(id[1], id[2]); },	//added by bigpapy (end): action on clicking on icon   //added by bigpapy: action on clicking on icon sound sound: function() {	 	var id=this.getAttribute("id").split("_");	    htlivesight.DOM.toggleSound(id[1], id[2]);	  },  	//added by bigpapy (end): action on clicking on icon sound   ToggleMatch: function() {
-    var id = this.getAttribute("id").split("_");
+    var id = this.getAttribute("id").split("_");	console.log(id[2]);	console.log(id[3]);
     htlivesight.DOM.toggleView(id[2], id[3]);
   },
   DeleteMatch: function() {
-    var id = this.getAttribute("id").split("_");
+    var id = this.getAttribute("id").split("_");	
     htlivesight.DOM.deleteView(id[2], id[3]);
   },
   addTeamToFriendsList: function(teamId, youth) {
@@ -132,7 +132,7 @@ htlivesight.Click = {
     var elem;
     
     elem = document.getElementById("buttonAddTeam");
-    elem.addEventListener('command', htlivesight.Click.AddMatchByTeam, true);
+    elem.addEventListener('command', htlivesight.Click.AddMatchByTeam, true);
   
     elem = document.getElementById("buttonAddMatch");
     elem.addEventListener('command', htlivesight.Click.AddMatch, true);

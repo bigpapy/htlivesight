@@ -57,7 +57,7 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 #live_box {display:inline-block;width:79.5%;margin-left:1px;margin-top:1px;border-radius:10px;float:left;font-size:13px}
 #sidebar {display:inline-block;float:right;width:20%;margin-right:1px}
 
-#winboxcontent_leaguematches{height:115px}
+#winboxcontent_leaguematches{min-height:115px}
 
 .match_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;padding:0 0 0 0;border-spacing:0 0 0 0}
 .match_row{}
@@ -67,19 +67,28 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 .separator_league {text-align:center;width:2%;padding:0 0 0 0;border-spacing:0 0 0 0}
 .awayscore_league {text-align:left;padding:0 0 0 0;border-spacing:0 0 0 0}
 .awayteam_league {text-align:left;width:42%;padding:0 0 0 0;border-spacing:0 0 0 0}
+.add_league{text-align:center;width:20px;height:20px;}
+.remove_league{text-align:center;width:20px;height:20px;}
 .round_league {text-align:left;border-top: thin solid white;}
 .chronometer_league {text-align:right;border-top: thin solid white;}
+
+.imgwinboxopen {background: url("chrome://htlivesight/content/img/wboxopen0.png") transparent;border:0;width:20px;height:20px;}
+.imgwinboxopen:hover {background: url("chrome://htlivesight/content/img/wboxopen1.png") transparent;border:0;width:20px;height:20px;}
+.imgwinboxshade {background: url("chrome://htlivesight/content/img/wboxshade0.png") transparent;border:0;width:20px;height:20px;}
+.imgwinboxshade:hover {background: url("chrome://htlivesight/content/img/wboxshade1.png") transparent;border:0;width:20px;height:20px;}
+.imgwinboxclose {background: url("chrome://htlivesight/content/img/wboxclose0.png") transparent;border:0;width:20px;height:20px;}
+.imgwinboxclose:hover {background: url("chrome://htlivesight/content/img/wboxclose1.png") transparent;border:0;width:20px;height:20px;}
 
 .live_league_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;text-align:center;}
 .header_league_table{text-align:center;border-bottom: thin solid white;}
 
 #winboxcontent_matchlist{min-height:25px}
-#winboxcontent_addmatch{height:62px}
-#winboxcontent_friends{height:115px}
+#winboxcontent_addmatch{min-height:62px}
+#winboxcontent_friends{min-height:115px}
 #managefriendsbuttons{margin-top:5px}
 #addmatchbuttons{margin-top:5px}
 
-#serverint{height:70px}
+#serverint{min-height:70px}
 #progressmeter{width:100%;}
 
 .matchheader{width:100%;border: #fff 0px solid; border-radius:5px;}
