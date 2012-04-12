@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--<?xml version="1.0"?>-->
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<?xml-stylesheet type="text/css" rel="stylesheet" href="CSS/default.css" title="Default"?>
-<?xml-stylesheet type="text/css" rel="stylesheet" href="CSS/livefox.css" title="Livefox"?>
-<?xml-stylesheet type="text/css" rel="stylesheet" href="CSS/default with old icons.css" title="default with old icons"?>
+<?xml-stylesheet type="text/css" rel="stylesheet" href="themes/default.css" title="Default"?>
+<?xml-stylesheet type="text/css" rel="stylesheet" href="themes/livefox.css" title="Livefox"?>
+<?xml-stylesheet type="text/css" rel="stylesheet" href="themes/default with old icons.css" title="default with old icons"?>
 
 <!DOCTYPE window SYSTEM "chrome://htlivesight/locale/htlivesight.dtd"> 
 

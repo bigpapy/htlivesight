@@ -92,7 +92,7 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 #progressmeter{width:100%;}
 
 .matchheader{width:100%;border: #fff 0px solid; border-radius:5px;}
-.line1header {width:20%;border-bottom:thin solid black; border-left:0px;border-right:0px;border-top:0px;text-align:center;}
+.line1header {width:25%;border-bottom:thin solid black; border-left:0px;border-right:0px;border-top:0px;text-align:center;}
 .chronoheader {border-bottom:thin solid black; text-align:center;}
 .line2sxheader {width:25%;border-bottom:thin solid white;border-left:medium solid white;border-bottom-left-radius:25px; text-align:center;font-size:16px;font-weight:bold}
 .line2rxheader {width:25%;border-bottom:thin solid white;border-right:medium solid white;border-bottom-right-radius:25px; text-align:center;font-size:16px;font-weight:bold}

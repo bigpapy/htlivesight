@@ -321,11 +321,14 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
   hbox.setAttribute("id", "live_" + match.id + "_" + match.youth);
 
   //vbox = document.createElement("vbox");
-  vbox = document.createElement("table");
-  hbox.appendChild(vbox);
+  
+  //vbox = document.createElement("table");
+  //hbox.appendChild(vbox);
+  
   //vbox.setAttribute("flex", "1");
   child = htlivesight.DOM.CreateElementGroupboxLiveMatch(match);
-  vbox.appendChild(child);
+  //vbox.appendChild(child);
+  hbox.appendChild(child);
 }
 
  htlivesight.DOM.CreateElementGroupboxLiveMatch=function(match) {
@@ -336,8 +339,8 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
   //caption.setAttribute("label", "Live Match");
   //box.appendChild(caption);
 
-  box = document.createElement("vbox");
-  box.setAttribute("class", "live_match");
+  box = document.createElement("table");
+  box.setAttribute("class", "live_match matchheader ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active");
   
 
   header = htlivesight.DOM.createElementBoxLiveMatchHeader(match);
@@ -371,8 +374,7 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
     }
 
     if (match.arena.attendance) {
-      label = document.getElementById("arena_attendance_" + match.id + "_" + match.youth);
-      label.setAttribute("value", match.arena.attendance);
+      document.getElementById("arena_attendance_" + match.id + "_" + match.youth).innerHTML = match.arena.attendance;
     }
     
     if (match.home.tactic) {
@@ -461,28 +463,32 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
 
 /* --- Create Header -------------------------- */
 htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
-  var header, placardbox, box, hbox, vbox, label, /*spacer,*/img;
+  var header, tbody, placardbox, box, hbox, vbox, label, /*spacer,*/img;
 //  var strings = document.getElementById("strings");
-  header = document.createElement("vbox");
-  header.setAttribute("class", "box_header");
+  //header = document.createElement("vbox");
+  header = document.createElement("thead");
+  header.setAttribute("class", "box_header animation");
   header.setAttribute("id", "box_header_"+match.id + "_" + match.youth);
-  header.setAttribute("flex", "1");
+  //header.setAttribute("flex", "1");
 
   // first row:  header header
-  hbox = document.createElement("hbox");
+  //hbox = document.createElement("hbox");
+  hbox = document.createElement("tr");
   header.appendChild(hbox);
-  hbox.setAttribute("align", "center");
-  hbox.setAttribute("class", "box_header_header");
+  //hbox.setAttribute("align", "center");
+  hbox.setAttribute("class", "box_header_header ui-accordion-header ui-helper-reset ui-state-default ui-state-active ui-corner-top");
 
-  var hboxL = document.createElement("hbox");
+  //var hboxL = document.createElement("hbox");
+  var hboxL = document.createElement("td");
+  hboxL.setAttribute("class", "line1header");
   hbox.appendChild(hboxL);
-  hboxL.setAttribute("flex", "1");
-  hboxL.setAttribute("align", "left");
+  //hboxL.setAttribute("flex", "1");
+  //hboxL.setAttribute("align", "left");
   
   label = document.createElement("label");
   hboxL.appendChild(label);
   label.setAttribute("id", "arena_name_" + match.id + "_" + match.youth);
-  img = document.createElement("image");
+  img = document.createElement("img");
   hboxL.appendChild(img);
   img.setAttribute("src", htlivesight.Image.transparent);
   img.setAttribute("id", "weather_image_" + match.id + "_" + match.youth);
@@ -493,27 +499,32 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxL.appendChild(label);
   label.setAttribute("id", "weather_text_" + match.id + "_" + match.youth);
 
-  var hboxM = document.createElement("hbox");
+  //var hboxM = document.createElement("hbox");
+  var hboxM = document.createElement("td");
+  hboxM.setAttribute("class", "chronoheader");
   hbox.appendChild(hboxM);
-  hboxM.setAttribute("flex", "1");
-  hboxM.setAttribute("align", "center");
+  //hboxM.setAttribute("flex", "1");
+  //hboxM.setAttribute("align", "center");
   
   label = document.createElement("label");
   label.setAttribute("id", "time_" + match.id + "_" + match.youth);
   hboxM.appendChild(label);
  
-  var hboxR = document.createElement("hbox");
+  //var hboxR = document.createElement("hbox");
+  var hboxR = document.createElement("td");
+  hboxR.setAttribute("class", "line1header");
   hbox.appendChild(hboxR);
-  hboxR.setAttribute("flex", "1");
-  hboxR.setAttribute("align", "right");
+  //hboxR.setAttribute("flex", "1");
+  //hboxR.setAttribute("align", "right");
 
-  box = document.createElement("hbox");
+  box = document.createElement("td");
+  box.setAttribute("style", "display:inline");
   hboxR.appendChild(box);
-  box.setAttribute("align", "center");
-  box.setAttribute("style", "margin-right: 20px;");
+  //box.setAttribute("align", "center");
+  //box.setAttribute("style", "margin-right: 20px;");
   
 // new added by bigpapy: sound button on header
-  img = document.createElement("image");
+  img = document.createElement("img");
   box.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.sound.ON);
   img.setAttribute("id", "sound_" + match.id + "_" + match.youth);
@@ -522,7 +533,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 //new end adding by bigpapy
   
 //added by bigpapy: link button on header
-  img = document.createElement("image");
+  img = document.createElement("img");
   box.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.link.OFF);
   img.setAttribute("id", "link_" + match.id + "_" + match.youth);
@@ -531,14 +542,14 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
 // end adding by bigpapy  
-  img = document.createElement("image");
+  img = document.createElement("img");
   box.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.info.ON);
   img.setAttribute("id", "tip_" + match.id + "_" + match.youth);
   img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.info")*/htlivesight.Util.Parse("TooltipWindowInfo",data[0]));
   img.addEventListener('click',  htlivesight.Click.tip, true);
 
-  img = document.createElement("image");
+  img = document.createElement("img");
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.maximize.OFF);
   img.setAttribute("id", "maximize_" + match.id + "_" + match.youth);
@@ -547,7 +558,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
   
-  img = document.createElement("image");
+  img = document.createElement("img");
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.minimize.ON);
   img.setAttribute("id", "minimize_" + match.id + "_" + match.youth);
@@ -556,7 +567,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
 
-  img = document.createElement("image");
+  img = document.createElement("img");
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.shade.OFF);
   img.setAttribute("id", "shade_" + match.id + "_" + match.youth);
@@ -565,7 +576,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
 
-  img = document.createElement("image");
+  img = document.createElement("img");
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.close.OFF);
   img.setAttribute("id", "close_" + match.id + "_" + match.youth);
@@ -574,7 +585,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
 
-  img = document.createElement("image");
+  img = document.createElement("img");
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.up.OFF);
   img.setAttribute("id", "moveup_" + match.id + "_" + match.youth);
@@ -583,7 +594,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
 
-  img = document.createElement("image");
+  img = document.createElement("img");
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.down.OFF);
   img.setAttribute("id", "movedown_" + match.id + "_" + match.youth);
@@ -593,17 +604,19 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
 
   // second row:  header body
-  placardbox = document.createElement("hbox");
+  //placardbox = document.createElement("hbox");
+  placardbox = document.createElement("tr");
   header.appendChild(placardbox);
-  placardbox.setAttribute("align", "center");
-  placardbox.setAttribute("pack", "center");
+  //placardbox.setAttribute("align", "center");
+  //placardbox.setAttribute("pack", "center");
   placardbox.setAttribute("id", "placardbox_"+match.id + "_" + match.youth);
-  placardbox.setAttribute("flex", "1");
+  //placardbox.setAttribute("flex", "1");
 
   // home team
-  vbox = document.createElement("vbox");
-  vbox.setAttribute("align", "end");
-  vbox.setAttribute("flex", "1");
+  //vbox = document.createElement("vbox");
+  vbox = document.createElement("td");
+  //vbox.setAttribute("align", "end");
+  //vbox.setAttribute("flex", "1");
   placardbox.appendChild(vbox);
   
   hbox = document.createElement("hbox");
