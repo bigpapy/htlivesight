@@ -113,9 +113,11 @@ htlivesight.Match.Update = function (newMatch) {
       if (!match.home) {
         match.home=newMatch.home;
         match.home.realGoals=newMatch.home.realGoals;
+        match.home.lineUp=newMatch.home.lineUp; // store home team lineup in global variable if not present
       } else {
         if(match.home.goals < newMatch.home.goals) match.home.goals = newMatch.home.goals;
         if(match.home.realGoals < newMatch.home.realGoals) match.home.realGoals = newMatch.home.realGoals;
+        if(match.home.lineUp== undefined) match.home.lineUp=newMatch.home.lineUp; // store home team lineup in global variable if the stored one is undefined.
       }
     };
 
@@ -123,9 +125,11 @@ htlivesight.Match.Update = function (newMatch) {
       if (!match.away) {
         match.away=newMatch.away;
         match.away.realGoals=newMatch.away.realGoals;
+        match.away.lineUp=newMatch.away.lineUp; // store away team lineup in global variable if the stored one is undefined.
       } else {
     	  if(match.away.goals < newMatch.away.goals)  match.away.goals = newMatch.away.goals;
     	  if(match.away.realGoals < newMatch.away.realGoals) match.away.realGoals = newMatch.away.realGoals;
+    	  if(match.away.lineUp== undefined) match.away.lineUp= newMatch.away.lineUp;
       }
     };
     
