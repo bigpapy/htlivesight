@@ -117,7 +117,7 @@ htlivesight.Match.Update = function (newMatch) {
       } else {
         if(match.home.goals < newMatch.home.goals) match.home.goals = newMatch.home.goals;
         if(match.home.realGoals < newMatch.home.realGoals) match.home.realGoals = newMatch.home.realGoals;
-        if(match.home.lineUp== undefined) match.home.lineUp=newMatch.home.lineUp; // store home team lineup in global variable if the stored one is undefined.
+    /*    if(match.home.lineUp== undefined)*/ match.home.lineUp=newMatch.home.lineUp; // store home team lineup in global variable if the stored one is undefined.
       }
     };
 
@@ -129,7 +129,7 @@ htlivesight.Match.Update = function (newMatch) {
       } else {
     	  if(match.away.goals < newMatch.away.goals)  match.away.goals = newMatch.away.goals;
     	  if(match.away.realGoals < newMatch.away.realGoals) match.away.realGoals = newMatch.away.realGoals;
-    	  if(match.away.lineUp== undefined) match.away.lineUp= newMatch.away.lineUp;
+    	/*  if(match.away.lineUp== undefined)*/ match.away.lineUp= newMatch.away.lineUp;
       }
     };
     
