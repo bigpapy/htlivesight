@@ -401,6 +401,7 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
         var line = 0;
         var numplayer = 1;
         for(var player in match.home.scorers) {
+        	if (match.home.scorers[player].name!= undefined && match.home.scorers[player].mins!= undefined)
           scorerText[line] += match.home.scorers[player].name + match.home.scorers[player].mins + ") ";
           if (numplayer++ == 3)
             line++;
@@ -421,6 +422,7 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
         var line = 0;
         var numplayer = 1;
         for(var player in match.away.scorers) {
+        	if (match.away.scorers[player].name!= undefined && match.away.scorers[player].mins!= undefined)
           scorerText[line] += match.away.scorers[player].name + match.away.scorers[player].mins + ") ";
           if (numplayer++ == 3)
             line++;
