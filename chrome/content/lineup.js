@@ -496,31 +496,6 @@ htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
 	
 };
 
-htlivesight.LineUp.InjuryWithoutReplaceEvent= function(event, match){
-	
-	 /** Here injured is to be considered as a sent off player!!*/
-    if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-	    lineUp=match.home.lineUp;
-	  else
-		lineUp=match.away.lineUp;
-  
-  lineUp=htlivesight.LineUp.RemovePlayerFromLineUp(lineUp,event.subjectPlayerId);
-  
-  var stringLineUp=htlivesight.Live.FromArrayToString(lineUp);
-  
-  event.lineupElement = htlivesight.DOM.createLineupElement("ev_"+match.id+"_"+match.youth+"_"+event.index, htlivesight.Events.translate.parseLineup(stringLineUp));
-  
-  match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
-
-  lineUp[0].update++;
-  
-  if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-	    match.home.lineUp= lineUp;
-	  else
-		match.away.lineUp= lineUp;
-	
-};
-
 htlivesight.LineUp.LineUpEvent= function(event, match){
 	
 	  var lineUp;
