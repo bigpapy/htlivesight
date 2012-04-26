@@ -123,14 +123,16 @@ htlivesight.LineUp.BehaviourFromIntToString= function (player, index){
 
 };
 
-	
+//convert lineup array into string	
 htlivesight.Live.FromArrayToString= function (lineUp){	
+	
 	var stringLineUp=": "; // because createLineupElement split event text with ":" and takes 2° part.
+	
 	for (var index=0; index<lineUp.length; index++) // building the lineup string
 	{
 		lineUp[index]=htlivesight.LineUp.BehaviourFromIntToString(lineUp[index], index);
-//		stringLineUp+=lineUp[index]; // adding player name and individual order
-		stringLineUp+=lineUp[index].behaviourString+lineUp[index].name+" "; // adding player name and individual order
+
+		stringLineUp+=lineUp[index].behaviourString+lineUp[index].name+" "; // adding individual order and player name  
 		
 		if ((index == 0) || (index==5) || (index==10)) 
 		{
@@ -145,6 +147,7 @@ htlivesight.Live.FromArrayToString= function (lineUp){
 	return stringLineUp; //returning lineup.
 };
 
+// used by sent off event and injury without replacement
 htlivesight.LineUp.RemovePlayerFromLineUp= function (lineUp,playerId){
 	
 	for (var index=0; index<lineUp.length; index++) // building the lineup string
@@ -165,16 +168,18 @@ htlivesight.LineUp.RemovePlayerFromLineUp= function (lineUp,playerId){
 	
 };
 
+// got schema from lineup (3-5-2, 3-4-3 etc).
 htlivesight.LineUp.FormationFromLineUp= function (lineUp){
 	var formation="";
 	var counterLine=0;
 	for (var index=1; index<lineUp.length; index++) // building the lineup string
 	{
-		if (lineUp[index].id!=0) counterLine++;
+		if (lineUp[index].id!=0) counterLine++; // add each player to schema
 		
 		if ((index==5) || (index==10)) 
 		{
 			formation+=counterLine+"-"; // after defenders and midfields add a minus to separate them
+
 			counterLine=0;
 		}
 		
@@ -184,6 +189,7 @@ htlivesight.LineUp.FormationFromLineUp= function (lineUp){
 	return formation; 
 };
 
+// got substitutions from xml
 htlivesight.LineUp.ParseSubstitutions= function (xml){
 	
 	var substitutions= new Array();
@@ -220,13 +226,14 @@ htlivesight.LineUp.ParseSubstitutions= function (xml){
 	
 };
 
+// used to update lineup with injuries event.
 htlivesight.LineUp.InjurySubstitution= function(lineUp,subjectPlayer,objectPlayer){
 	
 	for (var index=0; index<lineUp.length; index++) 
 	{
-		if (lineUp[index].id==subjectPlayer.id) 
+		if (lineUp[index].id==subjectPlayer.id) //find injured player
 		{
-			lineUp[index].id= objectPlayer.id;
+			lineUp[index].id= objectPlayer.id; // and changing with entering one.
 			
 			lineUp[index].name= objectPlayer.name; 
 			
