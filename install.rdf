@@ -7,7 +7,7 @@
 		<em:unpack>true</em:unpack>
 		<em:type>2</em:type>
 		<em:name>HTLiveSightDEV</em:name>
-		<em:version>0.4.699</em:version>
+		<em:version>0.4.710</em:version>
 		<em:description>Hattrick Match Viewer based on HattrickLiveFox</em:description>
 		
 		<em:creator>Silkevicious</em:creator>
@@ -26,7 +26,7 @@
 			<Description>
 				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
 				<em:minVersion>3.6</em:minVersion>
-				<em:maxVersion>14.0a1</em:maxVersion>
+				<em:maxVersion>15.0a1</em:maxVersion>
 			</Description>
 		</em:targetApplication>
 	
@@ -35,7 +35,7 @@
 			<Description>
 				<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
 				<em:minVersion>2.0</em:minVersion>
-				<em:maxVersion>2.11a1</em:maxVersion>
+				<em:maxVersion>2.12a1</em:maxVersion>
 			</Description>
 		</em:targetApplication>	
 	</Description>      
