@@ -124,7 +124,7 @@ htlivesight.LineUp.BehaviourFromIntToString= function (player, index){
 };
 
 //convert lineup array into string	
-htlivesight.Live.FromArrayToString= function (lineUp){	
+htlivesight.LineUp.FromArrayToString= function (lineUp){	
 	
 	var stringLineUp=": "; // because createLineupElement split event text with ":" and takes 2° part.
 	
@@ -262,8 +262,6 @@ htlivesight.LineUp.SubstitutionPlayerInLineUp= function(lineUp,subjectPlayer,obj
 
 htlivesight.LineUp.SubstitutionEvent= function(event, match){
 	
-	// added by bigpapy to update lineup: start
-    //TODO
                 var subjectPlayer= new Object();
 
                 var objectPlayer= new Object();
@@ -299,7 +297,7 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 
                 lineUp=htlivesight.LineUp.SubstitutionPlayerInLineUp(lineUp,subjectPlayer,objectPlayer);
 
-                var stringLineUp=htlivesight.Live.FromArrayToString(lineUp);
+                var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
 
                 event.lineupElement = htlivesight.DOM.createLineupElement("ev_"+match.id+"_"+match.youth+"_"+event.index, htlivesight.Events.translate.parseLineup(stringLineUp));
 
@@ -311,13 +309,11 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
             	  else
             		match.away.lineUp= lineUp;
 
-    // added by bigpapy to update lineup: end
-
 };
 
 htlivesight.LineUp.SwapEvent= function(event, match){
 	
-	 // bigpapy implementation swapping in lineup (begin):
+
     var subjectPlayer= new Object();
 
     var objectPlayer= new Object();
@@ -360,7 +356,7 @@ htlivesight.LineUp.SwapEvent= function(event, match){
     }
 
     
-    var stringLineUp=htlivesight.Live.FromArrayToString(lineUp);
+    var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
 
     event.lineupElement = htlivesight.DOM.createLineupElement("ev_"+match.id+"_"+match.youth+"_"+event.index, htlivesight.Events.translate.parseLineup(stringLineUp));
     lineUp[0].update++;
@@ -369,13 +365,11 @@ htlivesight.LineUp.SwapEvent= function(event, match){
 	  else
 		match.away.lineUp= lineUp;
 
- // bigpapy implementation swapping in lineup (end):
 };
+
 
 htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 
-	// added by bigpapy to update lineup: start
-    //TODO
                 var subjectPlayer= new Object();
 
                 var objectPlayer= new Object();
@@ -420,7 +414,7 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 
                 lineUp=htlivesight.LineUp.SubstitutionPlayerInLineUp(lineUp,subjectPlayer,objectPlayer);
 
-                var stringLineUp=htlivesight.Live.FromArrayToString(lineUp);
+                var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
 
                 event.lineupElement = htlivesight.DOM.createLineupElement("ev_"+match.id+"_"+match.youth+"_"+event.index, htlivesight.Events.translate.parseLineup(stringLineUp));
 
@@ -432,13 +426,13 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
             	  else
             		match.away.lineUp= lineUp;
 
-    // added by bigpapy to update lineup: end
+
 	
 };
 
 htlivesight.LineUp.SentOffEvent= function(event, match){
 	
-	// part added by bigpapy
+
     
     var lineUp;
     
@@ -449,7 +443,7 @@ htlivesight.LineUp.SentOffEvent= function(event, match){
     
     lineUp=htlivesight.LineUp.RemovePlayerFromLineUp(lineUp,event.subjectPlayerId);
     
-    var stringLineUp=htlivesight.Live.FromArrayToString(lineUp);
+    var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
     
     event.lineupElement = htlivesight.DOM.createLineupElement("ev_"+match.id+"_"+match.youth+"_"+event.index, htlivesight.Events.translate.parseLineup(stringLineUp));
     
@@ -463,6 +457,7 @@ htlivesight.LineUp.SentOffEvent= function(event, match){
 		match.away.lineUp= lineUp;
     
 };
+
 
 htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
 
@@ -477,7 +472,6 @@ htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
     subjectPlayer.name= htlivesight.Events.translate.parseScorer(event.text, event.subjectPlayerId);
     
     objectPlayer.name= htlivesight.Events.translate.parseScorer(event.text, event.objectPlayerId);
-//    event.special.txt = event.special.txt + ", eventkey:91 ";
     
     var lineUp;
     
@@ -488,7 +482,7 @@ htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
     
     lineUp=htlivesight.LineUp.InjurySubstitution(lineUp,subjectPlayer,objectPlayer);
     
-    var stringLineUp=htlivesight.Live.FromArrayToString(lineUp);
+    var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
     
     event.lineupElement = htlivesight.DOM.createLineupElement("ev_"+match.id+"_"+match.youth+"_"+event.index, htlivesight.Events.translate.parseLineup(stringLineUp));
     
@@ -503,6 +497,7 @@ htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
 	
 };
 
+
 htlivesight.LineUp.LineUpEvent= function(event, match){
 	
 	  var lineUp;
@@ -512,8 +507,43 @@ htlivesight.LineUp.LineUpEvent= function(event, match){
     	  else
     		lineUp=match.away.lineUp;
     	//passing lineup to rightclick function on schema text in the header of the match.
-      var stringLineUp=htlivesight.Live.FromArrayToString(lineUp);
+      var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
       return stringLineUp;
 	
 };
 
+htlivesight.LineUp.MissingKeeperEvent= function(event, match){
+
+	var objectPlayer= new Object();
+	
+	objectPlayer.id= event.objectPlayerId; // get player id moving to goal
+	
+	objectPlayer.name= htlivesight.Events.translate.parseScorer(event.text, event.objectPlayerId); //got player name from event text
+	
+	var lineUp;
+    
+    if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
+  	    lineUp=match.home.lineUp;
+  	  else
+  		lineUp=match.away.lineUp;
+
+
+    htlivesight.LineUp.RemovePlayerFromLineUp(lineUp,objectPlayer.id); //moving player from field...
+    
+    lineUp[0].name= objectPlayer.name; // ... to goal
+    lineUp[0].id= objectPlayer.id;
+    lineUp[0].behaviourInt= 0;
+    
+var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp); // create lineup string
+    
+    event.lineupElement = htlivesight.DOM.createLineupElement("ev_"+match.id+"_"+match.youth+"_"+event.index, htlivesight.Events.translate.parseLineup(stringLineUp)); //passing to dom
+    
+    match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
+
+    lineUp[0].update++; // increase counter modification event.
+    
+    if (match.isHomeTeam(event.subjectTeamId)) // updating home/away lineup
+	    match.home.lineUp= lineUp;
+	  else
+		match.away.lineUp= lineUp;
+};
