@@ -192,6 +192,10 @@
 <MatchesGetFriends>Carica le partite delle squadre amiche</MatchesGetFriends>
 <MatchesScorers>Marcatori</MatchesScorers>
 <ScorersList>Aggiungi i marcatori nelle intestazioni</ScorersList>
+<MatchesBooked>Ammoniti</MatchesBooked>
+<BookedList>Aggiungi gli ammoniti nelle intestazioni</BookedList>
+<MatchesSentOff>Espulsi</MatchesSentOff>
+<SentOffList>Aggiungi gli espulsi nelle intestazioni</SentOffList>
 <MatchesWindow>Finestra</MatchesWindow>
 <MatchesLines>Righe da mostrare in modalità minimizzata</MatchesLines>
 <NotifyNotify>Avvisi</NotifyNotify>

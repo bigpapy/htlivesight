@@ -188,6 +188,20 @@ hbox.header_notify {
 	margin-left: 10px;
 	margin-right: 10px;
 }
+.scorer {
+	margin-left: 10px;
+	margin-right: 10px;	
+}
+.booked {
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #FFCC00;
+}
+.sent_off {
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #FF0000;
+}
 .formation {
 }
 .border {

@@ -407,6 +407,7 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
             line++;
         }
         label.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[0]));
+
         if (numplayer > 4) {
           label2.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[1]));
           label2.setAttribute("hidden", "false");
@@ -428,6 +429,7 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
             line++;
         }
         label.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[0]));
+
         if (numplayer > 4) {
           label3.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[1]));
           label3.setAttribute("hidden", "false");
@@ -435,6 +437,110 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
         }
       }
     }
+    
+      // part added by bigpapy to show booked players (begin)
+    if (htlivesight.prefs.matches.booked) {  
+      label = document.getElementById("home_team_booked1_" + match.id + "_" + match.youth);  
+      var label2 = document.getElementById("home_team_booked2_" + match.id + "_" + match.youth);
+      var label3 = document.getElementById("away_team_booked2_" + match.id + "_" + match.youth);
+      if (match.home.booked) {
+        var bookedText = new Array;
+        bookedText[0] = "";
+        bookedText[1] = "";
+        var line = 0;
+        var numplayer = 1;
+        for(var player in match.home.booked) {
+        	if (match.home.booked[player].name!= undefined && match.home.booked[player].mins!= undefined)
+          bookedText[line] += match.home.booked[player].name + match.home.booked[player].mins + ") ";
+          if (numplayer++ == 3)
+            line++;
+        }
+        label.setAttribute("value", htlivesight.DOM.getTextContent(bookedText[0]));
+
+        if (numplayer > 4) {
+          label2.setAttribute("value", htlivesight.DOM.getTextContent(bookedText[1]));
+          label2.setAttribute("hidden", "false");
+          label3.setAttribute("hidden", "false");
+        }
+      }
+  
+      label = document.getElementById("away_team_booked1_" + match.id + "_" + match.youth);  
+      if (match.away.booked) {
+        var bookedText = new Array;
+        bookedText[0] = "";
+        bookedText[1] = "";
+        var line = 0;
+        var numplayer = 1;
+        for(var player in match.away.booked) {
+        	if (match.away.booked[player].name!= undefined && match.away.booked[player].mins!= undefined)
+          bookedText[line] += match.away.booked[player].name + match.away.booked[player].mins + ") ";
+          if (numplayer++ == 3)
+            line++;
+        }
+        label.setAttribute("value", htlivesight.DOM.getTextContent(bookedText[0]));
+
+        if (numplayer > 4) {
+          label3.setAttribute("value", htlivesight.DOM.getTextContent(bookedText[1]));
+          label3.setAttribute("hidden", "false");
+          label2.setAttribute("hidden", "false");
+        }
+      }
+    }
+      
+   // part added by bigpapy to show booked players (end)
+      
+      // part added by bigpapy to show sent_off players (begin)
+
+    if (htlivesight.prefs.matches.sentOff) {
+      label = document.getElementById("home_team_sent_off1_" + match.id + "_" + match.youth);  
+      var label2 = document.getElementById("home_team_sent_off2_" + match.id + "_" + match.youth);
+      var label3 = document.getElementById("away_team_sent_off2_" + match.id + "_" + match.youth);
+      if (match.home.sent_off) {
+        var sent_offText = new Array;
+        sent_offText[0] = "";
+        sent_offText[1] = "";
+        var line = 0;
+        var numplayer = 1;
+        for(var player in match.home.sent_off) {
+        	if (match.home.sent_off[player].name!= undefined && match.home.sent_off[player].mins!= undefined)
+          sent_offText[line] += match.home.sent_off[player].name + match.home.sent_off[player].mins + ") ";
+          if (numplayer++ == 3)
+            line++;
+        }
+        label.setAttribute("value", htlivesight.DOM.getTextContent(sent_offText[0]));
+
+        if (numplayer > 4) {
+          label2.setAttribute("value", htlivesight.DOM.getTextContent(sent_offText[1]));
+          label2.setAttribute("hidden", "false");
+          label3.setAttribute("hidden", "false");
+        }
+      }
+  
+      label = document.getElementById("away_team_sent_off1_" + match.id + "_" + match.youth);  
+      if (match.away.sent_off) {
+        var sent_offText = new Array;
+        sent_offText[0] = "";
+        sent_offText[1] = "";
+        var line = 0;
+        var numplayer = 1;
+        for(var player in match.away.sent_off) {
+        	if (match.away.sent_off[player].name!= undefined && match.away.sent_off[player].mins!= undefined)
+          sent_offText[line] += match.away.sent_off[player].name + match.away.sent_off[player].mins + ") ";
+          if (numplayer++ == 3)
+            line++;
+        }
+        label.setAttribute("value", htlivesight.DOM.getTextContent(sent_offText[0]));
+
+        if (numplayer > 4) {
+          label3.setAttribute("value", htlivesight.DOM.getTextContent(sent_offText[1]));
+          label3.setAttribute("hidden", "false");
+          label2.setAttribute("hidden", "false");
+        }
+      }
+    }  
+   // part added by bigpapy to show sent_off players (end)
+      
+    
         
     label = document.getElementById("time_" + match.id + "_" + match.youth);
     label.setAttribute("value", match.timeElapsed);
@@ -612,7 +718,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box.setAttribute("id", "header_home_team_notify_" + match.id + "_" + match.youth);
   box.setAttribute("class", "header_notify");
 
-  if (!htlivesight.prefs.matches.scorers) {
+  if (!htlivesight.prefs.matches.scorers && !htlivesight.prefs.matches.booked && !htlivesight.prefs.matches.sentOff) {
     label = document.createElement("label");
     hbox.appendChild(label);
     label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
@@ -631,23 +737,60 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   label.setAttribute("id", "home_team_formation_" + match.id + "_" + match.youth);
   label.setAttribute("class", "formation");
 
-  if (htlivesight.prefs.matches.scorers) {  
+  if (htlivesight.prefs.matches.scorers || htlivesight.prefs.matches.booked || htlivesight.prefs.matches.sentOff) {  
     label = document.createElement("label");
     hbox.appendChild(label);
     label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
     label.setAttribute("class", "team_name");
-
+  }
+    if (htlivesight.prefs.matches.scorers) { 
     label = document.createElement("description");
     vbox.appendChild(label);
     label.setAttribute("id", "home_team_scorers1_" + match.id + "_" + match.youth);
-    label.setAttribute("class", "tactic");
+    label.setAttribute("class", "scorer");
     label.setAttribute("value", " ");
+    
     label = document.createElement("description");
     vbox.appendChild(label);
     label.setAttribute("id", "home_team_scorers2_" + match.id + "_" + match.youth);
-    label.setAttribute("class", "tactic");
+    label.setAttribute("class", "scorer");
     label.setAttribute("value", " ");
     label.setAttribute("hidden", "true");
+  }
+    
+    // new part added by bigpapy (booked): begin
+  if (htlivesight.prefs.matches.booked) {
+    label = document.createElement("description");
+    vbox.appendChild(label);
+    label.setAttribute("id", "home_team_booked1_" + match.id + "_" + match.youth);
+    label.setAttribute("class", "booked");
+    label.setAttribute("value", " ");
+    
+    label = document.createElement("description");
+    vbox.appendChild(label);
+    label.setAttribute("id", "home_team_booked2_" + match.id + "_" + match.youth);
+    label.setAttribute("class", "booked");
+    label.setAttribute("value", " ");
+    label.setAttribute("hidden", "true");
+  }
+ // new part added by bigpapy (booked): end
+    
+ // new part added by bigpapy (sent off): begin
+  if (htlivesight.prefs.matches.sentOff) {
+    label = document.createElement("description");
+    vbox.appendChild(label);
+    label.setAttribute("id", "home_team_sent_off1_" + match.id + "_" + match.youth);
+    label.setAttribute("class", "sent_off");
+    label.setAttribute("value", " ");
+    
+    label = document.createElement("description");
+    vbox.appendChild(label);
+    label.setAttribute("id", "home_team_sent_off2_" + match.id + "_" + match.youth);
+    label.setAttribute("class", "sent_off");
+    label.setAttribute("value", " ");
+    label.setAttribute("hidden", "true");
+ // new part added by bigpapy (sent_off): end
+    
   }
 
   // score
@@ -678,7 +821,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   label.setAttribute("id", "away_team_name_" + match.id + "_" + match.youth);
   label.setAttribute("class", "team_name");
   
-  if (!htlivesight.prefs.matches.scorers) {
+  if (!htlivesight.prefs.matches.scorers && !htlivesight.prefs.matches.booked && !htlivesight.prefs.matches.sentOff) {
     hbox = document.createElement("hbox");
     vbox.appendChild(hbox);
   }
@@ -700,14 +843,48 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     label = document.createElement("description");
     vbox.appendChild(label);
     label.setAttribute("id", "away_team_scorers1_" + match.id + "_" + match.youth);
-    label.setAttribute("class", "tactic");
+    label.setAttribute("class", "scorer");
     label.setAttribute("value", " ");
+    
     label = document.createElement("description");
     vbox.appendChild(label);
     label.setAttribute("id", "away_team_scorers2_" + match.id + "_" + match.youth);
-    label.setAttribute("class", "tactic");
+    label.setAttribute("class", "scorer");
     label.setAttribute("value", " ");
     label.setAttribute("hidden", "true");
+  } 
+    // bigpapy: booked part begins
+  if (htlivesight.prefs.matches.booked) {
+    label = document.createElement("description");
+    vbox.appendChild(label);
+    label.setAttribute("id", "away_team_booked1_" + match.id + "_" + match.youth);
+    label.setAttribute("class", "booked");
+    label.setAttribute("value", " ");
+    
+    label = document.createElement("description");
+    vbox.appendChild(label);
+    label.setAttribute("id", "away_team_booked2_" + match.id + "_" + match.youth);
+    label.setAttribute("class", "booked");
+    label.setAttribute("value", " ");
+    label.setAttribute("hidden", "true");
+  }
+ // bigpapy: booked part end
+    
+ // bigpapy: sent_off part begins
+  if (htlivesight.prefs.matches.sentOff) {
+  label = document.createElement("description");
+    vbox.appendChild(label);
+    label.setAttribute("id", "away_team_sent_off1_" + match.id + "_" + match.youth);
+    label.setAttribute("class", "sent_off");
+    label.setAttribute("value", " ");
+    
+    label = document.createElement("description");
+    vbox.appendChild(label);
+    label.setAttribute("id", "away_team_sent_off2_" + match.id + "_" + match.youth);
+    label.setAttribute("class", "sent_off");
+    label.setAttribute("value", " ");
+    label.setAttribute("hidden", "true");
+ // bigpapy: sent_off part end
   }
 
   return header;
@@ -871,7 +1048,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   groupbox.appendChild(grid);
 
   return groupbox;
-}
+};
 
  htlivesight.DOM.CreateElementGridHighlights=function(gameId) {
   var grid, cols, col, rows, row;

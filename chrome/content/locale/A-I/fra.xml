@@ -192,6 +192,10 @@
 <MatchesGetFriends>Afficher les matchs amicaux</MatchesGetFriends>
 <MatchesScorers>Buteurs</MatchesScorers>
 <ScorersList>Afficher le noms des buteurs avec le score</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
 <MatchesWindow>Affichage des événements</MatchesWindow>
 <MatchesLines>Nombre d'événements à afficher en mode réduit</MatchesLines>
 <NotifyNotify>Alertes</NotifyNotify>

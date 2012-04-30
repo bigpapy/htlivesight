@@ -60,6 +60,8 @@ htlivesight.Settings = {
     document.getElementById("txtGetFriendsWithinHours").value=prefs.matches.friends.withinHours;
     
     document.getElementById("chkHdrScorers").checked=prefs.matches.scorers;
+    document.getElementById("chkHdrBooked").checked=prefs.matches.booked;
+    document.getElementById("chkHdrSentOff").checked=prefs.matches.sentOff;
     
     document.getElementById("txtMatchWindowSize").value=prefs.matches.windowSize;
     
@@ -204,6 +206,10 @@ htlivesight.Settings = {
 	document.getElementById("MatchesHours2").value=htlivesight.Util.Parse("MatchesHours",data[0]);
 	document.getElementById("MatchesScorers").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesScorers",data[0]);
 	document.getElementById("chkHdrScorers").attributes.getNamedItem("label").value=htlivesight.Util.Parse("ScorersList",data[0]);
+	document.getElementById("MatchesBooked").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesBooked",data[0]);
+	document.getElementById("chkHdrBooked").attributes.getNamedItem("label").value=htlivesight.Util.Parse("BookedList",data[0]);
+	document.getElementById("MatchesSentOff").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesSentOff",data[0]);
+	document.getElementById("chkHdrSentOff").attributes.getNamedItem("label").value=htlivesight.Util.Parse("SentOffList",data[0]);
 	document.getElementById("MatchesWindow").attributes.getNamedItem("label").value=htlivesight.Util.Parse("MatchesWindow",data[0]);
 	document.getElementById("MatchesLines").value=htlivesight.Util.Parse("MatchesLines",data[0]);
 	//notify
@@ -391,6 +397,16 @@ htlivesight.Settings = {
       var prefs = htlivesight.Settings.preferences;
       prefs.matches.scorers = document.getElementById("chkHdrScorers").checked;
     },
+    
+    chkhdrbooked: function() {
+        var prefs = htlivesight.Settings.preferences;
+        prefs.matches.booked = document.getElementById("chkHdrBooked").checked;
+      },
+    chkhdrsentoff: function() {
+       var prefs = htlivesight.Settings.preferences;
+       prefs.matches.sentOff = document.getElementById("chkHdrSentOff").checked;
+      },
+    
     txtfixwindowsize: function() {
       var prefs = htlivesight.Settings.preferences;
       var value = document.getElementById("txtMatchWindowSize").value.replace(/\D/g, "");

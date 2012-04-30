@@ -249,7 +249,7 @@ htlivesight.LineUp.SubstitutionPlayerInLineUp= function(lineUp,subjectPlayer,obj
 	lineUp= htlivesight.LineUp.RemovePlayerFromLineUp(lineUp,subjectPlayer.id);
 
 	var index=parseInt(objectPlayer.positionId)-100;// inserting position of entering player
-
+	console.log("index="+index);
 	lineUp[index].id=objectPlayer.id;// inserting other data...
 
 	lineUp[index].name= objectPlayer.name;
@@ -261,7 +261,8 @@ htlivesight.LineUp.SubstitutionPlayerInLineUp= function(lineUp,subjectPlayer,obj
 };
 
 htlivesight.LineUp.SubstitutionEvent= function(event, match){
-	
+
+				try{ // added because of errors with substitutions. to be removed when fixed.
                 var subjectPlayer= new Object();
 
                 var objectPlayer= new Object();
@@ -277,7 +278,7 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
                 			event.minute==match.substitutions[index].matchMinute){
 
                 		objectPlayer.positionId=parseInt(match.substitutions[index].newPositionId);
-
+                		
                         objectPlayer.behaviourInt=match.substitutions[index].newPositionBehaviour;
 
                 	};
@@ -308,7 +309,7 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
             	    match.home.lineUp= lineUp;
             	  else
             		match.away.lineUp= lineUp;
-
+				}catch(e){}
 };
 
 htlivesight.LineUp.SwapEvent= function(event, match){

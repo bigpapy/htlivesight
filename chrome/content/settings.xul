@@ -157,6 +157,15 @@
 					<caption id="MatchesScorers" label="matches.scorers"/>
 					<checkbox id="chkHdrScorers" label="matches.list" oncommand="htlivesight.Settings.click.chkhdrscorers();"/>
 				</groupbox>
+
+<groupbox>
+					<caption id="MatchesBooked" label="matches.booked"/>
+					<checkbox id="chkHdrBooked" label="matches.list.booked" oncommand="htlivesight.Settings.click.chkhdrbooked();"/>
+				</groupbox><groupbox>
+					<caption id="MatchesSentOff" label="matches.sentOff"/>
+					<checkbox id="chkHdrSentOff" label="matches.list.sentOff" oncommand="htlivesight.Settings.click.chkhdrsentoff();"/>
+				</groupbox>
+
 				<groupbox>
 					<caption id="MatchesWindow" label="matches.window"/>
 					<hbox align="center">
