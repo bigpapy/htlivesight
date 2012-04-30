@@ -192,6 +192,10 @@
 <MatchesGetFriends>Get friends' matches</MatchesGetFriends>
 <MatchesScorers>Scorers</MatchesScorers>
 <ScorersList>List scorers in header</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
 <MatchesWindow>Window</MatchesWindow>
 <MatchesLines>Lines to display in minimize mode</MatchesLines>
 <NotifyNotify>Notifications</NotifyNotify>
