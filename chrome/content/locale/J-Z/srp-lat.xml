@@ -191,7 +191,11 @@
 <MatchesFriends>Prijatelji</MatchesFriends>
 <MatchesGetFriends>Traži mečeve prijatelja</MatchesGetFriends>
 <MatchesScorers>Strelci</MatchesScorers>
-<ScorersList>Ispiši strelce u naslovu</ScorersList>
+<ScorersList>Ispiši strelce u zaglavlju</ScorersList>
+<MatchesBooked>Žuti kartoni</MatchesBooked>
+<BookedList>Prikaži igrače koji su dobili žuti karton u zaglavlju</BookedList>
+<MatchesSentOff>Crveni kartoni</MatchesSentOff>
+<SentOffList>Prikaži igrače koji su dobili crveni karton u zaglavlju</SentOffList>
 <MatchesWindow>Prozor</MatchesWindow>
 <MatchesLines>Linije za prikazati u minimiziranom modu</MatchesLines>
 <NotifyNotify>Obaveštenja</NotifyNotify>
