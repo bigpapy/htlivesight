@@ -383,8 +383,9 @@ try{ //added by bigpapy to debug from xul to html
   try {
 	
     if (match.arena.name) {
-      label = document.getElementById("arena_name_" + match.id + "_" + match.youth);
-      label.setAttribute("value", htlivesight.DOM.getTextContent(match.arena.name));
+      document.getElementById("arena_name_" + match.id + "_" + match.youth).innerHTML = match.arena.name;
+     // label = document.getElementById("arena_name_" + match.id + "_" + match.youth);
+     // label.setAttribute("value", htlivesight.DOM.getTextContent(match.arena.name));
     }
     
     if (match.weather.image) {
