@@ -398,23 +398,27 @@ try{ //added by bigpapy to debug from xul to html
     }
     
     if (match.home.tactic) {
-      label = document.getElementById("home_team_tactic_" + match.id + "_" + match.youth);
-      label.setAttribute("value", match.home.tactic);
+    	document.getElementById("home_team_tactic_" + match.id + "_" + match.youth).innerHTML = match.home.tactic;
+    //  label = document.getElementById("home_team_tactic_" + match.id + "_" + match.youth);
+    //  label.setAttribute("value", match.home.tactic);
     }
     
     if (match.home.formation) {
-      label = document.getElementById("home_team_formation_" + match.id + "_" + match.youth);
-      label.setAttribute("value", match.home.formation);
+    	document.getElementById("home_team_formation_" + match.id + "_" + match.youth).innerHTML = match.home.formation;
+    //  label = document.getElementById("home_team_formation_" + match.id + "_" + match.youth);
+    //  label.setAttribute("value", match.home.formation);
     }
 
     if (match.away.formation) {
-      label = document.getElementById("away_team_formation_" + match.id + "_" + match.youth);
-      label.setAttribute("value", match.away.formation);
+      document.getElementById("away_team_formation_" + match.id + "_" + match.youth).innerHTML = match.away.formation;
+   //   label = document.getElementById("away_team_formation_" + match.id + "_" + match.youth);
+   //   label.setAttribute("value", match.away.formation);
     }
 
     if (match.away.tactic) {
-      label = document.getElementById("away_team_tactic_" + match.id + "_" + match.youth);
-      label.setAttribute("value", match.away.tactic);
+      document.getElementById("away_team_tactic_" + match.id + "_" + match.youth).innerHTML = match.away.tactic;
+   //   label = document.getElementById("away_team_tactic_" + match.id + "_" + match.youth);
+   //   label.setAttribute("value", match.away.tactic);
     }
 
     if (htlivesight.prefs.matches.scorers) {
@@ -460,21 +464,25 @@ try{ //added by bigpapy to debug from xul to html
         }
       }
     }
-        
-    label = document.getElementById("time_" + match.id + "_" + match.youth);
-    label.setAttribute("value", match.timeElapsed);
+    document.getElementById("time_" + match.id + "_" + match.youth).innerHTML = match.timeElapsed;    
+  //  label = document.getElementById("time_" + match.id + "_" + match.youth);
+  //  label.setAttribute("value", match.timeElapsed);
 
-    label = document.getElementById("home_team_name_" + match.id + "_" + match.youth);
-    label.setAttribute("value", htlivesight.DOM.getTextContent(match.home.team.name));
+    document.getElementById("home_team_name_" + match.id + "_" + match.youth).innerHTML = match.home.team.name;
+ //   label = document.getElementById("home_team_name_" + match.id + "_" + match.youth);
+ //   label.setAttribute("value", htlivesight.DOM.getTextContent(match.home.team.name));
 
-    label = document.getElementById("home_team_goals_" + match.id + "_" + match.youth);
-    label.setAttribute("value", match.home.goals);
-  
-    label = document.getElementById("away_team_goals_" + match.id + "_" + match.youth);
-    label.setAttribute("value", match.away.goals);
+    document.getElementById("home_team_goals_" + match.id + "_" + match.youth).innerHTML = match.home.goals;
+ //   label = document.getElementById("home_team_goals_" + match.id + "_" + match.youth);
+ //   label.setAttribute("value", match.home.goals);
 
-    label = document.getElementById("away_team_name_" + match.id + "_" + match.youth);
-    label.setAttribute("value", htlivesight.DOM.getTextContent(match.away.team.name));
+    document.getElementById("away_team_goals_" + match.id + "_" + match.youth).innerHTML = match.away.goals;
+ //   label = document.getElementById("away_team_goals_" + match.id + "_" + match.youth);
+ //   label.setAttribute("value", match.away.goals);
+
+    document.getElementById("away_team_name_" + match.id + "_" + match.youth).innerHTML =match.away.team.name;
+ //   label = document.getElementById("away_team_name_" + match.id + "_" + match.youth);
+ //   label.setAttribute("value", htlivesight.DOM.getTextContent(match.away.team.name));
 
   } catch(e) {
     alert("DOM.UpdateLiveHeader\n" + e);
@@ -640,11 +648,13 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   //vbox.setAttribute("flex", "1");
   placardbox.appendChild(vbox);
   
-  hbox = document.createElement("hbox");
+  //hbox = document.createElement("hbox");
+  hbox = document.createElement("td"); //bigpapy add to fix it
   hbox.setAttribute("align", "center");
   vbox.appendChild(hbox);
 
-  box = document.createElement("hbox");
+  //box = document.createElement("hbox");
+  box = document.createElement("td"); //bigpapy add to fix it
   hbox.appendChild(box);
   box.setAttribute("id", "header_home_team_notify_" + match.id + "_" + match.youth);
   box.setAttribute("class", "header_notify");
@@ -655,7 +665,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
     label.setAttribute("class", "team_name");
     
-    hbox = document.createElement("hbox");
+    //hbox = document.createElement("hbox");
+    hbox = document.createElement("td"); //bigpapy add to fix it
     vbox.appendChild(hbox);
   }
   
@@ -688,7 +699,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   }
 
   // score
-  hbox = document.createElement("hbox");
+  //hbox = document.createElement("hbox");
+  hbox = document.createElement("td");//bigpapy add to fix it
   placardbox.appendChild(hbox);
   hbox.setAttribute("class", "big_score");
   label = document.createElement("label");
@@ -703,11 +715,13 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 
   // away team
   
-  vbox = document.createElement("vbox");
+  //vbox = document.createElement("vbox");
+  vbox = document.createElement("td");//bigpapy: added to fix html
   vbox.setAttribute("flex", "1");
   placardbox.appendChild(vbox);
   
-  hbox = document.createElement("hbox");
+  //hbox = document.createElement("hbox");
+  hbox = document.createElement("td"); //bigpapy: added to fix html
   vbox.appendChild(hbox);
   
   label = document.createElement("label");
@@ -716,7 +730,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   label.setAttribute("class", "team_name");
   
   if (!htlivesight.prefs.matches.scorers) {
-    hbox = document.createElement("hbox");
+    //hbox = document.createElement("hbox");
+    hbox = document.createElement("td");//bigpapy: added to fix html
     vbox.appendChild(hbox);
   }
   label = document.createElement("label");
@@ -728,7 +743,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   label.setAttribute("id", "away_team_tactic_" + match.id + "_" + match.youth);
   label.setAttribute("class", "tactic");
 
-  box = document.createElement("hbox");
+  //box = document.createElement("hbox");
+  box = document.createElement("td");// bigpapy: added to fix html
   hbox.appendChild(box);
   box.setAttribute("id", "header_away_team_notify_" + match.id + "_" + match.youth);
   box.setAttribute("class", "header_notify");
