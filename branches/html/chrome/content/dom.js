@@ -436,9 +436,11 @@ try{ //added by bigpapy to debug from xul to html
           if (numplayer++ == 3)
             line++;
         }
-        label.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[0]));
+     //   label.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[0]));
+        label.innerHTML= htlivesight.DOM.getTextContent(scorerText[0]);
         if (numplayer > 4) {
-          label2.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[1]));
+          //label2.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[1]));
+          label2.innerHTML= htlivesight.DOM.getTextContent(scorerText[1]);
           label2.setAttribute("hidden", "false");
           label3.setAttribute("hidden", "false");
         }
@@ -456,9 +458,11 @@ try{ //added by bigpapy to debug from xul to html
           if (numplayer++ == 3)
             line++;
         }
-        label.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[0]));
+       // label.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[0]));
+        label.innerHTML= htlivesight.DOM.getTextContent(scorerText[0]);
         if (numplayer > 4) {
-          label3.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[1]));
+          // label3.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[1]));
+        	label3.innerHTML= htlivesight.DOM.getTextContent(scorerText[1]);
           label3.setAttribute("hidden", "false");
           label2.setAttribute("hidden", "false");
         }
@@ -689,12 +693,14 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     vbox.appendChild(label);
     label.setAttribute("id", "home_team_scorers1_" + match.id + "_" + match.youth);
     label.setAttribute("class", "tactic");
-    label.setAttribute("value", " ");
+    //label.setAttribute("value", " ");
+    label.innerHTML= " ";
     label = document.createElement("description");
     vbox.appendChild(label);
     label.setAttribute("id", "home_team_scorers2_" + match.id + "_" + match.youth);
     label.setAttribute("class", "tactic");
-    label.setAttribute("value", " ");
+    //label.setAttribute("value", " ");
+    label.innerHTML= " ";
     label.setAttribute("hidden", "true");
   }
 
@@ -708,7 +714,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   label.setAttribute("id", "home_team_goals_" + match.id + "_" + match.youth);
   label = document.createElement("label");
   hbox.appendChild(label);
-  label.setAttribute("value", ":");
+  //label.setAttribute("value", ":");
+  label.innerHTML= ":";
   label = document.createElement("label");
   hbox.appendChild(label);
   label.setAttribute("id", "away_team_goals_" + match.id + "_" + match.youth);
@@ -754,12 +761,14 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     vbox.appendChild(label);
     label.setAttribute("id", "away_team_scorers1_" + match.id + "_" + match.youth);
     label.setAttribute("class", "tactic");
-    label.setAttribute("value", " ");
+    label.innerHTML= " ";
+    //label.setAttribute("value", " ");
     label = document.createElement("description");
     vbox.appendChild(label);
     label.setAttribute("id", "away_team_scorers2_" + match.id + "_" + match.youth);
     label.setAttribute("class", "tactic");
-    label.setAttribute("value", " ");
+    //label.setAttribute("value", " ");
+    label.innerHTML= " ";
     label.setAttribute("hidden", "true");
   }
 
@@ -864,7 +873,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   
     l = document.createElement("label");
     row.appendChild(l);
-    l.setAttribute("value", event.minute);
+    //l.setAttribute("value", event.minute);
+    l.innerHTML= event.minute;
   
     l = document.createElement("label");
     row.appendChild(l);
@@ -872,16 +882,13 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     l.appendChild(img);
     if(htlivesight.prefs.personalization.oldIcons && event.type.imageSrcOld){
     	img.setAttribute("src", event.type.imageSrcOld);
+
     }else{
     	img.setAttribute("src", event.type.imageSrc);
+
     }
     //img.setAttribute("src", event.type.imageSrc);
 
-
-    //l = document.createElement("label");
-    //row.appendChild(l);
-    //l.setAttribute("value","Telmo Costa");
-		
     t = htlivesight.DOM.createTextEventElement(event);
     row.appendChild(t);
     
@@ -958,16 +965,20 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   try{ // added by bigpapy to debug from xul to html
   row = document.createElement("row");
   l = document.createElement("label");
-  l.setAttribute("value", "123");
+  // l.setAttribute("value", "123");
+  l.innerHTM="123";
   row.appendChild(l);
   l = document.createElement("label");
-  l.setAttribute("value", "456");
+  //l.setAttribute("value", "456");
+  l.innerHTM="456";
   row.appendChild(l);
   l = document.createElement("label");
-  l.setAttribute("value", "789");
+//  l.setAttribute("value", "789");
+  l.innerHTM="789";
   row.appendChild(l);
   l = document.createElement("label");
   l.setAttribute("value", "0ab");
+  l.innerHTM="0ab";
   row.appendChild(l);
   return row;
   }catch(e){alert("CreateElementRowHighlightEvent: "+e);} // added by bigpapy to debug from xul to html
@@ -1061,14 +1072,14 @@ else {matchLeagueStarted = false;
   //document.getElementById("contentbody_leaguetable"/*"leaguetable_name"*/).setAttribute("value", /*strings.getString("league.live_table")*/htlivesight.Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")");
   document.getElementById("LeagueLiveTable"/*"leaguetable_name"*/).innerHTML = htlivesight.Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")";
   if(league.level == 1){
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #88FF88;");
+    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #34B034;");
   }
   else if(league.level <= 6 || league.level % 2 == 0){
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #88FF88; border-bottom-width: 1px; border-bottom-color: black;");
+    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #34B034; border-bottom-width: 1px; border-bottom-color: black;");
   }
   else{
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #88FF88;");
-    document.getElementById("leaguetable_2").setAttribute("style", "background-color: #88FF88; border-bottom-width: 1px; border-bottom-color: black;");
+    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #34B034;");
+    document.getElementById("leaguetable_2").setAttribute("style", "background-color: #34B034; border-bottom-width: 1px; border-bottom-color: black;");
   }
   if(league.level != league.maxLevel){
     document.getElementById("leaguetable_7").setAttribute("style", "background-color: #FF8888; border-top-width: 1px; border-top-color: black;");
