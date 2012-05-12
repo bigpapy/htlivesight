@@ -121,6 +121,7 @@ htlivesight.DOM = {
   
   // added by bigpapy: open new page on tab about match
   toggleLink: function(matchId, youth) {
+	  try{ // added by bigpapy to debug from XUL to HTML
 	  var htServer=htlivesight.prefs.general.hattrickServer;
 	  if (!htServer){ 
 	//	  var strbundle = document.getElementById("stringsauthorize");// internationalization: get local file content.
@@ -131,10 +132,12 @@ htlivesight.DOM = {
 	  var matchLink="http://" + htServer + ".hattrick.org/Club/Matches/Match.aspx?matchID=" + matchId;
 	  if (youth=="True"){ matchLink=matchLink+"&isYouth=True";};
 	 var matchpage=window.open(matchLink);
+  }catch(e){alert("toggleView: "+e);}// added by bigpapy to debug from XUL to HTML
 	  },
 	  // (end)added by bigpapy: open new page on tab about match
 	  
   toggleView: function(matchId, youth) {
+	  try{ // added by bigpapy to debug from XUL to HTML
     var box = document.getElementById("live_" + matchId + "_" + youth);
     var show = box.hidden;
     var img = document.getElementById("short_liveimage_" + matchId + "_" + youth);
@@ -165,8 +168,10 @@ htlivesight.DOM = {
       }
       box.parentNode.insertBefore(box, next);
     }
+	  }catch(e){alert("toggleView: "+e);}// added by bigpapy to debug from XUL to HTML
   },
   deleteView: function(matchId, youth) {
+	  try{
     htlivesight.Live.HTTPDeleteMatch(matchId, youth);
     var box = document.getElementById("live_" + matchId + "_" + youth);
     var img = document.getElementById("short_liveimage_" + matchId + "_" + youth);
@@ -178,8 +183,10 @@ htlivesight.DOM = {
 
     document.getElementById("short_" + matchId + "_" + youth).hidden = true;
     htlivesight.DOM.window.set(matchId, youth, htlivesight.DOM.mode.minimize);
+  }catch(e){alert("deleteView: "+e);}// added by bigpapy to debug from XUL to HTML
   },
   createLineupElement: function(id, lineup) {
+	  try{// added by bigpapy to debug from XUL to HTML
     var label, hbox;
     var popupset = document.getElementById("popup_set");
     var popup = document.createElement("popup");
@@ -200,9 +207,11 @@ htlivesight.DOM = {
       }
     };
     return popup;
+  }catch(e){alert("createLineupElement: "+e);}// added by bigpapy to debug from XUL to HTML
   },
   createAddTeamToFriendsPopup: function(team) {
  //   var strings = document.getElementById("strings");
+	  try{ // added by bigpapy to debug from XUL to HTML
     var popupset = document.getElementById("popup_set");
     var popup = document.createElement("popup");
     popup.setAttribute("id", "add_team_" +team.id);
@@ -216,6 +225,7 @@ htlivesight.DOM = {
 //    menuitem.setAttribute("oncommand", "htlivesight.Click.addTeamToFriendsList("+team.id+",'"+team.youth+"')");
     menuitem.addEventListener("command", function(){htlivesight.Click.addTeamToFriendsList(team.id,team.youth);},false);
     return popup;
+	  }catch(e){alert("createAddTeamToFriendsPopup: "+e);}// added by bigpapy to debug from XUL to HTML
   },
   addServerToPopup: function(server) {
  //   var strings = document.getElementById("strings");
@@ -227,10 +237,12 @@ htlivesight.DOM = {
  //   serverString.setAttribute("label", /*strings.getString("menu.server")*/htlivesight.Util.Parse("MenuServer",data[0]) + " " + server);
   },
   createTextElement: function (text, doClean) {
+	  try{//added by bigpapy to debug from XUL to HTML
     //var d = document.createElementNS('http://www.w3.org/1999/xhtml', 'html:div');    
     var resultDoc = htlivesight.DOM.parser.parseFromString("<label>" + (doClean ? htlivesight.Util.CleanText(text) : text)+ "</label>","text/xml");
     var d = resultDoc.documentElement;  
     return d.firstChild;
+	  }catch(e){alert("createTextElement :"+e);} //added by bigpapy to debug from XUL to HTML
   },
   getTextContent: function (text, doClean) {
     try {
@@ -242,6 +254,7 @@ htlivesight.DOM = {
     return null;
   },
   createTextEventElement: function(event) {
+	  try{ // added by bigpapy to debug from XUL to HTML
 	var cleanedText = htlivesight.Util.cleanTags(event.text);
 //	alert("Util.cleanTags(cleanedText) = "+ cleanedText);
 //	console.log(cleanedText);
@@ -276,7 +289,9 @@ htlivesight.DOM = {
 			retElement.appendChild(newElement);
 		}
     return retElement;
+  }catch(e){alert("createTextEventElement: "+e)}// added by bigpapy to debug from XUL to HTML
   }
+
 };
 
 /* -----------------------------------------------------------
@@ -310,6 +325,8 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
 };
  htlivesight.DOM.CreateElementLiveBox= function(match) {
   var livebox, hbox, vbox, child;
+  
+try{ //added by bigpapy to debug from xul to html
 
   livebox = document.getElementById("live_box");
   //hbox = document.createElement("hbox");
@@ -329,6 +346,7 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
   child = htlivesight.DOM.CreateElementGroupboxLiveMatch(match);
   //vbox.appendChild(child);
   hbox.appendChild(child);
+ }catch(e){alert("CreateElementGroupboxLiveMatch: ")+e;}// added by bigpapy to debug from XML to HTML
 }
 
  htlivesight.DOM.CreateElementGroupboxLiveMatch=function(match) {
@@ -338,7 +356,7 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
   //caption = document.createElement("caption");
   //caption.setAttribute("label", "Live Match");
   //box.appendChild(caption);
-
+  try{ // added by bigpapy to debug from XUL to HTML
   box = document.createElement("table");
   box.setAttribute("class", "live_match matchheader ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active");
   
@@ -350,7 +368,8 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
   box.appendChild(events);
 
   return box;
-}
+ }catch(e){alert("CreateElementGroupboxLiveMatch: ")+e;}// added by bigpapy to debug from XML to HTML
+};
 
 /* -----------------------------------------------------------
  * Header
@@ -466,6 +485,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   var header, tbody, placardbox, box, hbox, vbox, label, /*spacer,*/img;
 //  var strings = document.getElementById("strings");
   //header = document.createElement("vbox");
+  try{ //added by bigpapy to debug from xul to html
   header = document.createElement("thead");
   header.setAttribute("class", "box_header animation");
   header.setAttribute("id", "box_header_"+match.id + "_" + match.youth);
@@ -727,6 +747,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   }
 
   return header;
+}catch(e){alert("createElementBoxLiveMatchHeader: "+e);}// added by bigpapy to debug from xul to html
 };
 
 /** -----------------------------------------------------------
@@ -891,6 +912,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 
  htlivesight.DOM.CreateElementGridHighlights=function(gameId) {
   var grid, cols, col, rows, row;
+  try{ // added by bigpapy to debug from xul to html
   grid = document.createElement("grid");
   cols = document.createElement("columns");
   col = document.createElement("column");
@@ -911,10 +933,12 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   rows.appendChild(row);
 
   return grid;
-}
+  }catch(e){alert("CreateElementGridHighlights: "+e);}// added by bigpapy to debug from xul to html
+};
 
  htlivesight.DOM.CreateElementRowHighlightEvent=function(event) {
   var row, l;
+  try{ // added by bigpapy to debug from xul to html
   row = document.createElement("row");
   l = document.createElement("label");
   l.setAttribute("value", "123");
@@ -929,7 +953,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   l.setAttribute("value", "0ab");
   row.appendChild(l);
   return row;
-}
+  }catch(e){alert("CreateElementRowHighlightEvent: "+e);} // added by bigpapy to debug from xul to html
+};
 
 /* -----------------------------------------------------------
  * Right Box
@@ -938,6 +963,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 // Gonzo
  htlivesight.DOM.UpdateElementBoxLeagueTable=function(league) {
 	 var matchLeagueStarted;
+	 try{ // added by bigpapy to debug from XUL to HTML
 //  var strings = document.getElementById("strings");
   if (htlivesight.Time.hattrickTime > htlivesight.League.currentRound.date) {matchLeagueStarted = true; 
 	//alert("matchLeagueStarted: "+ matchLeagueStarted + " Time.hattrickTime:"+ Time.hattrickTime + " League.currentRound.date: " + League.currentRound.date);
@@ -1051,11 +1077,13 @@ else {matchLeagueStarted = false;
       document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_points").innerHTML = htlivesight.League.teams[i].livePoints;
     }
   }
+	 }catch(e){alert("UpdateElementBoxLeagueTable: "+e);}// added by bigpapy to debug from XUL to HTML
 };
 // End
 
  htlivesight.DOM.UpdateElementBoxLeague=function(league) {
 //  var strings = document.getElementById("strings");
+	 try{ // added by bigpapy to debug from xul to html
   document.getElementById("winbox_leaguematches").style.display="block";
   var number = /*strings.getString("league.round")*/htlivesight.Util.Parse("LeagueRound",data[0]) + " " + league.currentRound.number;
   var date = htlivesight.Time.formatDate(league.currentRound.date);
@@ -1065,18 +1093,19 @@ else {matchLeagueStarted = false;
   //document.getElementById("league_round_time").setAttribute("value", "");
   document.getElementById("league_round_number").innerHTML = number;
   document.getElementById("league_round_date").innerHTML = date;
-
+	 }catch(e){alert("UpdateElementBoxLeague : "+e);} // added by bigpapy to debug from xul to html
 };
 
 
  htlivesight.DOM.CreateElementRowLeagueGame=function(gameId) {
   var rows, row;
-  
+  try{ //added by bigpapy to debug from XUL to HTML
   rows = document.getElementById("league_grid_rows");
   row = htlivesight.DOM.CreateElementRowShortGame(gameId);
   rows.appendChild(row);
+  }catch(e){alert("htlivesight.DOM.CreateElementRowLeagueGame: "+e);}
 
-}
+};
 
 htlivesight.DOM.UpdateShortBox = function(match) {
   try {
@@ -1128,7 +1157,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
   //if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)) cell.setAttribute("style", "font-weight: bold;");
   
  } catch(e) {
-   // alert("UpdateShortBox(): " + e);
+    alert("UpdateShortBox(): " + e); //added by bigpapy to debug from XUL to HTML
 	  dump("UpdateShortBox(): " + e);
   }
 };
@@ -1137,7 +1166,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
  htlivesight.DOM.CreateElementRowShortGame=function(match) {
   var row, cell, /*vbox,*/ image;
   
-
+try{ //added by bigpapy to debug from XUL to HTML
   row = document.createElement("tr");
   row.setAttribute("id", "short_" + match.id + "_" + match.youth);
   row.setAttribute("class", "match_row");
@@ -1219,4 +1248,5 @@ htlivesight.DOM.UpdateShortBox = function(match) {
   row.appendChild(cell);
   
   return row;
+}catch(e){alert("htlivesight.DOM.CreateElementRowShortGame: "+e);}//added by bigpapy to debug from XUL to HTML
 };

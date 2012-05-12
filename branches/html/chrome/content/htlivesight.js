@@ -69,7 +69,7 @@ var htlivesight = {
     htlivesight.Log.debug("teamId: " + htlivesight.prefs.general.teamId);
     console.log("9.5");
     if (htlivesight.prefs.general.teamId != "") {
-      document.getElementById("teamId").value=htlivesight.prefs.general.teamId;    
+      document.getElementById("teamId").innerHTML=htlivesight.prefs.general.teamId;    
     //  document.getElementById("security_code").value=htlivesight.Preferences.password.get();
     }
     console.log("10");
