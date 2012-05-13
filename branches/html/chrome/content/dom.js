@@ -648,7 +648,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   // home team
   //vbox = document.createElement("vbox");
   vbox = document.createElement("td");
-  //vbox.setAttribute("align", "end");
+  vbox.setAttribute("align", "end");
   //vbox.setAttribute("flex", "1");
   placardbox.appendChild(vbox);
   
@@ -817,7 +817,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   try {
     var grid, cols, col, rows/*, row*/;
   
-    grid = document.createElement("grid");
+    grid = document.createElement("td");
+    grid.colSpan="3";
     grid.setAttribute("class", "live_events");  
   
     cols = document.createElement("columns");
