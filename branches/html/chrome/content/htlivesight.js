@@ -29,16 +29,20 @@ var htlivesight = {
 
       for(i=0, len=wbList.length; i<len; i++) {
         winbox=wbList[i];
+        console.log("winboxregister 1");
         img = document.getElementById("imgwinboxshade_"+winbox);
+        console.log("winboxregister 1.1 = "+img);
         img.addEventListener('click',  htlivesight.Click.winboxShade, true);
+        console.log("winboxregister 1.2");
         img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.shade")*/htlivesight.Util.Parse("TooltipWindowShade",htlivesight.data[0]));
+        console.log("winboxregister 1.3");
         img.style.display="block";
-
+        console.log("winboxregister 2");
         img = document.getElementById("imgwinboxopen_"+winbox);
         img.addEventListener('click',  htlivesight.Click.winboxOpen, true);
         img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.open")*/htlivesight.Util.Parse("TooltipWindowOpen",htlivesight.data[0]));
         img.style.display="none";
-
+        console.log("winboxregister 3");
         document.getElementById("winboxcontent_"+winbox).hidden=false;
         htlivesight.winboxShadeByName("friends");
       }
@@ -50,7 +54,7 @@ var htlivesight = {
     console.log("1");
     document.getElementById("winbox_leaguematches").style.display="block";
     console.log("2");
-    winboxRegister(["leaguematches","leaguetable","matchlist","friends","addmatch"]);
+//    winboxRegister(["leaguematches","leaguetable","matchlist","friends","addmatch"]);
     console.log("3");
     htlivesight.Click.AddButtonListeners();
     console.log("4");
