@@ -649,13 +649,13 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   // home team
   //vbox = document.createElement("vbox");
   vbox = document.createElement("td");
-  vbox.setAttribute("align", "end");
+  vbox.setAttribute("align", "center");
   //vbox.setAttribute("flex", "1");
   placardbox.appendChild(vbox);
   
   //hbox = document.createElement("hbox");
   hbox = document.createElement("td"); //bigpapy add to fix it
-  hbox.setAttribute("align", "center");
+  hbox.setAttribute("align", "right");
   vbox.appendChild(hbox);
 
   //box = document.createElement("hbox");
@@ -849,18 +849,30 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   try {
     var row, l, img, t/*, b*/;
     row = document.createElement("tr");
+ //   if (event.subjectTeamId == 0){
+ //   	row.style.backgroundColor="#fff";
+ //       row.style.color="#000";	
+ //   }
     if (event.subjectTeamId != 0) {
       var isF;
       isF = htlivesight.Friends.isFriend(event.subjectTeamId, match.youth, !htlivesight.Friends.STRICT);
       var isHome = match.isHomeTeam(event.subjectTeamId);
       if (isF && isHome) {
         row.setAttribute("class", "friend_home");
+//        row.style.backgroundColor="#ddf";
+//        row.style.color="#000";
       } else if(isF && !isHome) {
         row.setAttribute("class", "friend_away");
+ //       row.style.backgroundColor="#dfd";
+ //       row.style.color="#000";
       } else if(!isF && isHome) {
         row.setAttribute("class", "foe_home");
+//        row.style.backgroundColor="#fdd";
+//        row.style.color="#000";
       } else if(!isF && !isHome) {
         row.setAttribute("class", "foe_away");
+//        row.style.backgroundColor="#ffb";
+//        row.style.color="#000";
       }
     }
 
@@ -882,7 +894,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   
     l = document.createElement("label");
     row.appendChild(l);
-    img = document.createElement("image");
+    img = document.createElement("img");
     l.appendChild(img);
     if(htlivesight.prefs.personalization.oldIcons && event.type.imageSrcOld){
     	img.setAttribute("src", event.type.imageSrcOld);
