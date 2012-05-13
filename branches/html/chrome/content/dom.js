@@ -1073,22 +1073,22 @@ else {matchLeagueStarted = false;
   //document.getElementById("contentbody_leaguetable"/*"leaguetable_name"*/).setAttribute("value", /*strings.getString("league.live_table")*/htlivesight.Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")");
   document.getElementById("LeagueLiveTable"/*"leaguetable_name"*/).innerHTML = htlivesight.Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")";
   if(league.level == 1){
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #34B034;");
+    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #4C994C;");
   }
   else if(league.level <= 6 || league.level % 2 == 0){
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #34B034; border-bottom-width: 1px; border-bottom-color: black;");
+    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #4C994C; border-bottom-width: 1px; border-bottom-color: black;");
   }
   else{
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #34B034;");
-    document.getElementById("leaguetable_2").setAttribute("style", "background-color: #34B034; border-bottom-width: 1px; border-bottom-color: black;");
+    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #4C994C;");
+    document.getElementById("leaguetable_2").setAttribute("style", "background-color: #4C994C; border-bottom-width: 1px; border-bottom-color: black;");
   }
   if(league.level != league.maxLevel){
-    document.getElementById("leaguetable_7").setAttribute("style", "background-color: #FF8888; border-top-width: 1px; border-top-color: black;");
-    document.getElementById("leaguetable_8").setAttribute("style", "background-color: #FF8888;");
+    document.getElementById("leaguetable_7").setAttribute("style", "background-color: #D92626; border-top-width: 1px; border-top-color: black;");
+    document.getElementById("leaguetable_8").setAttribute("style", "background-color: #D92626;");
   }
   if(league.level < 6){
-    document.getElementById("leaguetable_5").setAttribute("style", "background-color: #FFFF88;");
-    document.getElementById("leaguetable_6").setAttribute("style", "background-color: #FFFF88;");
+    document.getElementById("leaguetable_5").setAttribute("style", "background-color: #D92626;");
+    document.getElementById("leaguetable_6").setAttribute("style", "background-color: #D92626;");
   }
   for(var i in htlivesight.League.teams){
     if(htlivesight.League.teams[i].livePosition >= 1 && htlivesight.League.teams[i].livePosition <= 8){
