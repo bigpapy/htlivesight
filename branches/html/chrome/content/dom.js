@@ -521,6 +521,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   label = document.createElement("label");
   hboxL.appendChild(label);
   label.setAttribute("id", "arena_name_" + match.id + "_" + match.youth);
+//  label.setAttribute("align", "left");
   img = document.createElement("img");
   hboxL.appendChild(img);
   img.setAttribute("src", htlivesight.Image.transparent);
@@ -709,6 +710,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hbox = document.createElement("td");//bigpapy add to fix it
   placardbox.appendChild(hbox);
   hbox.setAttribute("class", "big_score");
+  hbox.setAttribute("align", "center");
   label = document.createElement("label");
   hbox.appendChild(label);
   label.setAttribute("id", "home_team_goals_" + match.id + "_" + match.youth);
