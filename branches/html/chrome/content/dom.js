@@ -641,8 +641,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   //placardbox = document.createElement("hbox");
   placardbox = document.createElement("tr");
   header.appendChild(placardbox);
-  //placardbox.setAttribute("align", "center");
-  //placardbox.setAttribute("pack", "center");
+ // placardbox.setAttribute("align", "center");
+ // placardbox.setAttribute("pack", "center");
   placardbox.setAttribute("id", "placardbox_"+match.id + "_" + match.youth);
   //placardbox.setAttribute("flex", "1");
 
@@ -668,6 +668,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     label = document.createElement("label");
     hbox.appendChild(label);
     label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
+
     label.setAttribute("class", "team_name");
     
     //hbox = document.createElement("hbox");
@@ -833,7 +834,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     cols.appendChild(col);
     col.setAttribute("flex", "1");
   
-    rows = document.createElement("rows");
+    rows = document.createElement("table");
     grid.appendChild(rows);
     rows.setAttribute("id", "ev_rows_" + match.id + "_" + match.youth);
     return grid;
@@ -841,13 +842,13 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     alert("DOM.CreateElementGridLiveMatchEvents\n" + e);
   }
   return null;
-}
+};
 
 /* --- create event row ---------------------------- */
  htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
   try {
     var row, l, img, t/*, b*/;
-    row = document.createElement("row");
+    row = document.createElement("tr");
     if (event.subjectTeamId != 0) {
       var isF;
       isF = htlivesight.Friends.isFriend(event.subjectTeamId, match.youth, !htlivesight.Friends.STRICT);
@@ -980,7 +981,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   l.innerHTM="789";
   row.appendChild(l);
   l = document.createElement("label");
-  l.setAttribute("value", "0ab");
+ // l.setAttribute("value", "0ab");
   l.innerHTM="0ab";
   row.appendChild(l);
   return row;
