@@ -516,7 +516,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxL.setAttribute("class", "line1header");
   hbox.appendChild(hboxL);
   //hboxL.setAttribute("flex", "1");
-  //hboxL.setAttribute("align", "left");
+  hboxL.setAttribute("align", "left");
   
   label = document.createElement("label");
   hboxL.appendChild(label);
@@ -526,10 +526,12 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxL.appendChild(img);
   img.setAttribute("src", htlivesight.Image.transparent);
   img.setAttribute("id", "weather_image_" + match.id + "_" + match.youth);
+//  img.setAttribute("align", "left");
   label = document.createElement("label");
   hboxL.appendChild(label);
   label.setAttribute("id", "arena_attendance_" + match.id + "_" + match.youth);
   label = document.createElement("label");
+//  label.setAttribute("align", "left");
   hboxL.appendChild(label);
   label.setAttribute("id", "weather_text_" + match.id + "_" + match.youth);
 
@@ -639,10 +641,12 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 
   // second row:  header body
   //placardbox = document.createElement("hbox");
-  placardbox = document.createElement("tr");
+  placardbox = document.createElement("td");
+  placardbox.colSpan ="3";
+
   header.appendChild(placardbox);
- // placardbox.setAttribute("align", "center");
- // placardbox.setAttribute("pack", "center");
+  placardbox.setAttribute("align", "center");
+  placardbox.setAttribute("pack", "center");
   placardbox.setAttribute("id", "placardbox_"+match.id + "_" + match.youth);
   //placardbox.setAttribute("flex", "1");
 
