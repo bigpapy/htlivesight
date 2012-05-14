@@ -649,7 +649,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   // home team
   //vbox = document.createElement("vbox");
   vbox = document.createElement("td");
-  vbox.setAttribute("align", "center");
+  vbox.setAttribute("align", "right");
   //vbox.setAttribute("flex", "1");
   placardbox.appendChild(vbox);
   
