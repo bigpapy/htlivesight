@@ -668,17 +668,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box.setAttribute("id", "header_home_team_notify_" + match.id + "_" + match.youth);
   box.setAttribute("class", "header_notify");
 
-  if (!htlivesight.prefs.matches.scorers) {
-    label = document.createElement("label");
-    hbox.appendChild(label);
-    label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
-
-    label.setAttribute("class", "team_name");
-    
-    //hbox = document.createElement("hbox");
-    hbox = document.createElement("td"); //bigpapy add to fix it
-    vbox.appendChild(hbox);
-  }
+  
   
   label = document.createElement("label");
   hbox.appendChild(label);
@@ -689,6 +679,18 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   label.setAttribute("id", "home_team_formation_" + match.id + "_" + match.youth);
   label.setAttribute("class", "formation");
 
+  if (!htlivesight.prefs.matches.scorers) {
+	    label = document.createElement("label");
+	    hbox.appendChild(label);
+	    label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
+
+	    label.setAttribute("class", "team_name");
+	    
+	    //hbox = document.createElement("hbox");
+	    hbox = document.createElement("td"); //bigpapy add to fix it
+	    vbox.appendChild(hbox);
+	  }
+  
   if (htlivesight.prefs.matches.scorers) {  
     label = document.createElement("label");
     hbox.appendChild(label);
@@ -761,6 +763,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box = document.createElement("td");// bigpapy: added to fix html
   hbox.appendChild(box);
   box.setAttribute("id", "header_away_team_notify_" + match.id + "_" + match.youth);
+
   box.setAttribute("class", "header_notify");
 
   if (htlivesight.prefs.matches.scorers) {
