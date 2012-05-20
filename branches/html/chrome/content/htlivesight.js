@@ -51,43 +51,43 @@ var htlivesight = {
     htlivesight.Log.start();
  //   netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
  //   strings = document.getElementById("strings");
-    console.log("1");
+    console.log("starter1");
     document.getElementById("winbox_leaguematches").style.display="block";
-    console.log("2");
+    console.log("starter2");
 //    winboxRegister(["leaguematches","leaguetable","matchlist","friends","addmatch"]);
-    console.log("3");
+    console.log("starter3");
     htlivesight.Click.AddButtonListeners();
-    console.log("4");
+    console.log("starter4");
     htlivesight.prefs = htlivesight.Preferences.get();
-    console.log("5");
+    console.log("starter5");
     if (htlivesight.prefs.personalization.oldIcons) htlivesight.Image = htlivesight.ImageOld;
-    console.log("6");
+    console.log("starter6");
 
     htlivesight.Friends.start();
-    console.log("7");
+    console.log("starter7");
     htlivesight.Sound.start();
     //htlivesight.Test.start();
-    console.log("8");
+    console.log("starter8");
     htlivesight.Log.debug("loading username and password");
-    console.log("9");
+    console.log("starter9");
     htlivesight.Log.debug("teamId: " + htlivesight.prefs.general.teamId);
-    console.log("9.5");
+    console.log("starter9.5");
     if (htlivesight.prefs.general.teamId != "") {
-      document.getElementById("teamId").innerHTML=htlivesight.prefs.general.teamId;    
+      document.getElementById("teamId").value=htlivesight.prefs.general.teamId;    
     //  document.getElementById("security_code").value=htlivesight.Preferences.password.get();
     }
-    console.log("10");
+    console.log("starter10");
     document.getElementById("reLive").checked=htlivesight.prefs.other.reLive;
-    console.log("11");
+    console.log("starter11");
     document.getElementById("reLiveSpeed").value=htlivesight.prefs.other.reLiveSpeed;
-    console.log("12");
+    console.log("starter12");
     document.getElementById("reLiveByEvent").checked=htlivesight.prefs.other.reLiveByEvent;
-    console.log("13");
+    console.log("starter13");
     if(!document.getElementById("reLive").checked) {
     	document.getElementById("reLiveSpeed").disabled = true;
       	document.getElementById("reLiveByEvent").disabled = true;
       }
-    console.log("14");
+    console.log("starter14");
   },
   getRecommendedServer: function() {
 	  console.log("startup: getRecommendedServer begin");
@@ -299,10 +299,3 @@ var htlivesight = {
  //   alert("startup:unload: end");
   },*/
 };
-
-
-
-
-
-
-
