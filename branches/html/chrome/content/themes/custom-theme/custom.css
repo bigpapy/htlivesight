@@ -54,8 +54,8 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 
 
 #thebox{display:block;margin-top:1px;}
-#live_box {display:inline-block;width:79.5%;margin-left:1px;margin-top:1px;border-radius:10px;float:left;font-size:13px}
-#sidebar {display:inline-block;float:right;width:20%;margin-right:1px}
+#live_box {display:inline-block;width:75%;margin-left:1px;margin-top:1px;border-radius:10px;float:left;font-size:13px}
+#sidebar {display:inline-block;float:right;/*width:20%;*/margin-right:1px}
 
 #winboxcontent_leaguematches{min-height:115px}
 
