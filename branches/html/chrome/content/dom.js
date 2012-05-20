@@ -564,7 +564,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.sound.ON);
   img.setAttribute("id", "sound_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.sound")*/htlivesight.Util.Parse("TooltipWindowSound",data[0]));
+  img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowSound",data[0]));
+//  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.sound")*/htlivesight.Util.Parse("TooltipWindowSound",data[0]));
   img.addEventListener('click',  htlivesight.Click.sound, true);
 //new end adding by bigpapy
   
@@ -573,7 +574,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.link.OFF);
   img.setAttribute("id", "link_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.link")*/htlivesight.Util.Parse("TooltipWindowLink",data[0]));
+  img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowLink",data[0]));
+ // img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.link")*/htlivesight.Util.Parse("TooltipWindowLink",data[0]));
   img.addEventListener('click',  htlivesight.Click.link, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -582,14 +584,16 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.info.ON);
   img.setAttribute("id", "tip_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.info")*/htlivesight.Util.Parse("TooltipWindowInfo",data[0]));
+  img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowInfo",data[0]));
+ // img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.info")*/htlivesight.Util.Parse("TooltipWindowInfo",data[0]));
   img.addEventListener('click',  htlivesight.Click.tip, true);
 
   img = document.createElement("img");
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.maximize.OFF);
   img.setAttribute("id", "maximize_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.maximize")*/htlivesight.Util.Parse("TooltipWindowMaximize",data[0]));
+  img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowMaximize",data[0]));
+ // img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.maximize")*/htlivesight.Util.Parse("TooltipWindowMaximize",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -598,7 +602,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.minimize.ON);
   img.setAttribute("id", "minimize_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.minimize")*/htlivesight.Util.Parse("TooltipWindowMinimize",data[0]));
+  img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowMinimize",data[0]));
+ // img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.minimize")*/htlivesight.Util.Parse("TooltipWindowMinimize",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -607,7 +612,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.shade.OFF);
   img.setAttribute("id", "shade_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.shade")*/htlivesight.Util.Parse("TooltipWindowShade",data[0]));
+  img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowShade",data[0]));
+//  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.shade")*/htlivesight.Util.Parse("TooltipWindowShade",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -616,7 +622,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.close.OFF);
   img.setAttribute("id", "close_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.close")*/htlivesight.Util.Parse("TooltipWindowClose",data[0]));
+  img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowClose",data[0]));
+  //img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.close")*/htlivesight.Util.Parse("TooltipWindowClose",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -625,7 +632,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.up.OFF);
   img.setAttribute("id", "moveup_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.move_up")*/htlivesight.Util.Parse("TooltipWindowMoveUp",data[0]));
+  img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowMoveUp",data[0]));
+  //img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.move_up")*/htlivesight.Util.Parse("TooltipWindowMoveUp",data[0]));
   img.addEventListener('click',  htlivesight.Click.moveUp, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -634,7 +642,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("src", htlivesight.Image.window.down.OFF);
   img.setAttribute("id", "movedown_" + match.id + "_" + match.youth);
-  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.move_down")*/htlivesight.Util.Parse("TooltipWindowMoveDown",data[0]));
+  img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowMoveDown",data[0]));
+  //img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.move_down")*/htlivesight.Util.Parse("TooltipWindowMoveDown",data[0]));
   img.addEventListener('click',  htlivesight.Click.moveDown, true);
   img.addEventListener('mouseover',  htlivesight.Click.over, true);
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
@@ -1228,8 +1237,14 @@ try{ //added by bigpapy to debug from XUL to HTML
   cell = document.createElement("td");
   cell.setAttribute("id", "short_home_name_" + match.id + "_" + match.youth);
   cell.setAttribute("class", "hometeam_league");
+  
   //document.getElementById("short_home_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
-  if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)) cell.setAttribute("style", "font-weight: bold;");
+  if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)){
+	  cell.setAttribute("style", "font-weight: bold;");
+  }else{
+	  cell.setAttribute("title","click on the team to add to friends list");
+	  cell.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.home.team.id,match.youth);},false); 
+  }
 	
 	console.log(cell);
   row.appendChild(cell);
@@ -1265,8 +1280,14 @@ try{ //added by bigpapy to debug from XUL to HTML
   cell = document.createElement("td");
   cell.setAttribute("id", "short_away_name_" + match.id + "_" + match.youth);
   cell.setAttribute("class", "awayteam_league");
+  
   //document.getElementById("short_away_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.away.team.shortName);
-  if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)) cell.setAttribute("style", "font-weight: bold;");
+  if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)){
+	  cell.setAttribute("style", "font-weight: bold;");
+  }else{
+	  cell.setAttribute("title","click on the team to add to friends list");
+	  cell.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.away.team.id,match.youth);},false);  
+  }
 	
 	console.log(cell);
   row.appendChild(cell);
