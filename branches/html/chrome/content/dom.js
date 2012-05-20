@@ -1207,13 +1207,28 @@ htlivesight.DOM.UpdateShortBox = function(match) {
   
     //document.getElementById("short_home_goals_" + match.id + "_" + match.youth).setAttribute("value", match.home.goals);
 	//document.getElementById("short_away_goals_" + match.id + "_" + match.youth).setAttribute("value", match.away.goals);
- 
-  document.getElementById("short_home_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
+  var teamName=document.getElementById("short_home_name_" + match.id + "_" + match.youth);
+  teamName.innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
+  if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)){
+	  teamName.setAttribute("style", "font-weight: bold;");
+  }else{
+	  teamName.setAttribute("title","click on the team to add to friends list");
+	  teamName.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.home.team.id,match.youth);},false);
+	  teamName.setAttribute("style", "font-weight: normal;");
+  }
   //if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)) cell.setAttribute("style", "font-weight: bold;");
   document.getElementById("short_home_goals_" + match.id + "_" + match.youth).innerHTML = match.home.goals;
   document.getElementById("separator_" + match.id + "_" + match.youth).innerHTML = ":";
   document.getElementById("short_away_goals_" + match.id + "_" + match.youth).innerHTML = match.away.goals;
-  document.getElementById("short_away_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.away.team.shortName);
+  teamName=document.getElementById("short_away_name_" + match.id + "_" + match.youth);
+  teamName.innerHTML = htlivesight.DOM.getTextContent(match.away.team.shortName);
+  if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)){
+	  teamName.setAttribute("style", "font-weight: bold;");
+  }else{
+	  teamName.setAttribute("title","click on the team to add to friends list");
+	  teamName.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.away.team.id,match.youth);},false);
+	  teamName.setAttribute("style", "font-weight: normal;");
+  }
   //if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)) cell.setAttribute("style", "font-weight: bold;");
   
  } catch(e) {
