@@ -670,27 +670,35 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hbox = document.createElement("tr"); //bigpapy add to fix it
   hbox.setAttribute("align", "center");
   vbox.appendChild(hbox);
+  
+  leftbox = document.createElement("td"); //bigpapy add to fix it
+  leftbox.setAttribute("align", "right");
+  leftbox.setAttribute("valign", "top");
+  hbox.appendChild(leftbox);
+  leftbox.setAttribute("width", "47%");
 
   //box = document.createElement("hbox");
   box = document.createElement("td"); //bigpapy add to fix it
-  hbox.appendChild(box);
+  leftbox.appendChild(box);
   box.setAttribute("id", "header_home_team_notify_" + match.id + "_" + match.youth);
   box.setAttribute("class", "header_notify");
+  //box.setAttribute("width", "45%");
+ 
 
   
   
   label = document.createElement("label");
-  hbox.appendChild(label);
+  leftbox.appendChild(label);
   label.setAttribute("id", "home_team_tactic_" + match.id + "_" + match.youth);
   label.setAttribute("class", "tactic");
   label = document.createElement("label");
-  hbox.appendChild(label);
+  leftbox.appendChild(label);
   label.setAttribute("id", "home_team_formation_" + match.id + "_" + match.youth);
   label.setAttribute("class", "formation");
 
  // if (!htlivesight.prefs.matches.scorers) {
 	    label = document.createElement("label");
-	    hbox.appendChild(label);
+	    leftbox.appendChild(label);
 	    label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
 
 	    label.setAttribute("class", "team_name");
@@ -708,28 +716,36 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 
 	hbox1 = document.createElement("tr"); //bigpapy add to fix it
 	hbox1.colSpan ="7";
-	hbox1.setAttribute("align", "right");
+	hbox1.setAttribute("align", "center");
 	vbox.appendChild(hbox1);
 	
 	box1 = document.createElement("td");
-	box1.colSpan ="3";
+	//box1.colSpan ="3";
 	box1.setAttribute("align", "right");
+	box1.setAttribute("width", "47%");
 	hbox1.appendChild(box1);
 	  
     label = document.createElement("description");
-    hbox1.appendChild(label);
+    box1.appendChild(label);
     label.setAttribute("id", "home_team_scorers1_" + match.id + "_" + match.youth);
     label.setAttribute("class", "tactic");
+    
     //label.setAttribute("value", " ");
     label.innerHTML= " ";
     
     hbox2 = document.createElement("tr"); //bigpapy add to fix it
 	hbox2.colSpan ="7";
-	hbox2.setAttribute("align", "right");
+	hbox2.setAttribute("align", "center");
 	vbox.appendChild(hbox2);
+	
+	box21 = document.createElement("td");
+	//box1.colSpan ="3";
+	box21.setAttribute("align", "right");
+	box21.setAttribute("width", "47%");
+	hbox2.appendChild(box21);
     
     label = document.createElement("description");
-    hbox2.appendChild(label);
+    box21.appendChild(label);
     label.setAttribute("id", "home_team_scorers2_" + match.id + "_" + match.youth);
     label.setAttribute("class", "tactic");
     //label.setAttribute("value", " ");
@@ -740,19 +756,21 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   // score
   //hbox = document.createElement("hbox");
   box = document.createElement("td");//bigpapy add to fix it
-  box.rowSpan= "3";
+  box.setAttribute("width", "6%");
+  box.rowSpan= "1";
   hbox.appendChild(box);
   box.setAttribute("class", "big_score");
   box.setAttribute("align", "center");
+  box.setAttribute("valign", "top");
   label = document.createElement("label");
-  hbox.appendChild(label);
+  box.appendChild(label);
   label.setAttribute("id", "home_team_goals_" + match.id + "_" + match.youth);
   label = document.createElement("label");
-  hbox.appendChild(label);
+  box.appendChild(label);
   //label.setAttribute("value", ":");
   label.innerHTML= ":";
   label = document.createElement("label");
-  hbox.appendChild(label);
+  box.appendChild(label);
   label.setAttribute("id", "away_team_goals_" + match.id + "_" + match.youth);
 
   // away team
@@ -765,9 +783,15 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   //hbox = document.createElement("hbox");
 //  hbox = document.createElement("tr"); //bigpapy: added to fix html
 //  vbox.appendChild(hbox);
+
+  rightbox = document.createElement("td"); //bigpapy add to fix it
+  rightbox.setAttribute("align", "left");
+  rightbox.setAttribute("valign", "top");
+  hbox.appendChild(rightbox);
+  rightbox.setAttribute("width", "47%");
   
   label = document.createElement("label");
-  hbox.appendChild(label);
+  rightbox.appendChild(label);
   label.setAttribute("id", "away_team_name_" + match.id + "_" + match.youth);
   label.setAttribute("class", "team_name");
   
@@ -777,30 +801,55 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
  //   vbox.appendChild(hbox);
   }
   label = document.createElement("label");
-  hbox.appendChild(label);
+  rightbox.appendChild(label);
   label.setAttribute("id", "away_team_formation_" + match.id + "_" + match.youth);
   label.setAttribute("class", "formation");
   label = document.createElement("label");
-  hbox.appendChild(label);
+  rightbox.appendChild(label);
   label.setAttribute("id", "away_team_tactic_" + match.id + "_" + match.youth);
   label.setAttribute("class", "tactic");
 
+  	
   //box = document.createElement("hbox");
   box = document.createElement("td");// bigpapy: added to fix html
-  hbox.appendChild(box);
+  rightbox.appendChild(box);
   box.setAttribute("id", "header_away_team_notify_" + match.id + "_" + match.youth);
 
   box.setAttribute("class", "header_notify");
 
   if (htlivesight.prefs.matches.scorers) {
+	
+	box2 = document.createElement("td");  
+	hbox1.appendChild(box2);
+	box2.setAttribute("width", "6%");
+	
+	box3 = document.createElement("td");
+	//box3.colSpan ="3";
+	box3.setAttribute("align", "left");
+	box3.setAttribute("width", "47%");
+	hbox1.appendChild(box3);
+	  
     label = document.createElement("description");
-    hbox1.appendChild(label);
+    box3.appendChild(label);
     label.setAttribute("id", "away_team_scorers1_" + match.id + "_" + match.youth);
     label.setAttribute("class", "tactic");
     label.innerHTML= " ";
     //label.setAttribute("value", " ");
+    
+    box22 = document.createElement("td");
+	//box1.colSpan ="3";
+	box22.setAttribute("align", "center");
+	box22.setAttribute("width", "6%");
+	hbox2.appendChild(box22);
+	
+	box23 = document.createElement("td");
+	//box1.colSpan ="3";
+	box23.setAttribute("align", "center");
+	box23.setAttribute("width", "47%");
+	hbox2.appendChild(box23);
+    
     label = document.createElement("description");
-    hbox2.appendChild(label);
+    box23.appendChild(label);
     label.setAttribute("id", "away_team_scorers2_" + match.id + "_" + match.youth);
     label.setAttribute("class", "tactic");
     //label.setAttribute("value", " ");
@@ -882,6 +931,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   try {
     var row, l, img, t/*, b*/;
     row = document.createElement("tr");
+    row.style="width:100%";
  //   if (event.subjectTeamId == 0){
  //   	row.style.backgroundColor="#fff";
  //       row.style.color="#000";	
@@ -892,20 +942,20 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
       var isHome = match.isHomeTeam(event.subjectTeamId);
       if (isF && isHome) {
         row.setAttribute("class", "friend_home");
-//        row.style.backgroundColor="#ddf";
-//        row.style.color="#000";
+        row.style.backgroundColor="#ddf";
+        row.style.color="#000";
       } else if(isF && !isHome) {
         row.setAttribute("class", "friend_away");
- //       row.style.backgroundColor="#dfd";
- //       row.style.color="#000";
+        row.style.backgroundColor="#dfd";
+        row.style.color="#000";
       } else if(!isF && isHome) {
         row.setAttribute("class", "foe_home");
-//        row.style.backgroundColor="#fdd";
-//        row.style.color="#000";
+        row.style.backgroundColor="#fdd";
+        row.style.color="#000";
       } else if(!isF && !isHome) {
         row.setAttribute("class", "foe_away");
-//        row.style.backgroundColor="#ffb";
-//        row.style.color="#000";
+        row.style.backgroundColor="#ffb";
+        row.style.color="#000";
       }
     }
 
