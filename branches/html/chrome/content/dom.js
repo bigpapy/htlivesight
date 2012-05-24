@@ -285,11 +285,12 @@ htlivesight.DOM = {
 		if (event.special) {
 			newElement = document.createElementNS("http://www.w3.org/1999/xhtml", "em");
 		  newElement.setAttribute("class", "special_event");
+		  newElement.style.color= "#F5FA07";
 		  newElement.appendChild(document.createTextNode(" ["+event.special.txt+"]"));		    
 			retElement.appendChild(newElement);
 		}
     return retElement;
-  }catch(e){alert("createTextEventElement: "+e)}// added by bigpapy to debug from XUL to HTML
+  }catch(e){alert("createTextEventElement: "+e);}// added by bigpapy to debug from XUL to HTML
   }
 
 };
@@ -762,6 +763,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box.setAttribute("class", "big_score");
   box.setAttribute("align", "center");
   box.setAttribute("valign", "top");
+
+  
   label = document.createElement("label");
   box.appendChild(label);
   label.setAttribute("id", "home_team_goals_" + match.id + "_" + match.youth);
@@ -931,7 +934,6 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   try {
     var row, l, img, t/*, b*/;
     row = document.createElement("tr");
-    row.style="width:100%";
  //   if (event.subjectTeamId == 0){
  //   	row.style.backgroundColor="#fff";
  //       row.style.color="#000";	
@@ -942,20 +944,20 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
       var isHome = match.isHomeTeam(event.subjectTeamId);
       if (isF && isHome) {
         row.setAttribute("class", "friend_home");
-        row.style.backgroundColor="#ddf";
-        row.style.color="#000";
+        row.style.backgroundColor="#4242AA";
+       // row.style.color="#000";
       } else if(isF && !isHome) {
         row.setAttribute("class", "friend_away");
-        row.style.backgroundColor="#dfd";
-        row.style.color="#000";
+        row.style.backgroundColor="#347434";
+        //row.style.color="#000";
       } else if(!isF && isHome) {
         row.setAttribute("class", "foe_home");
-        row.style.backgroundColor="#fdd";
-        row.style.color="#000";
+        row.style.backgroundColor="#B53131";
+        //row.style.color="#000";
       } else if(!isF && !isHome) {
         row.setAttribute("class", "foe_away");
-        row.style.backgroundColor="#ffb";
-        row.style.color="#000";
+        row.style.backgroundColor="#7F3070";
+        //row.style.color="#000";
       }
     }
 
