@@ -442,8 +442,8 @@ try{ //added by bigpapy to debug from xul to html
         if (numplayer > 4) {
           //label2.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[1]));
           label2.innerHTML= htlivesight.DOM.getTextContent(scorerText[1]);
-          label2.setAttribute("hidden", "false");
-          label3.setAttribute("hidden", "false");
+          //label2.setAttribute("hidden", "false");
+          //label3.setAttribute("hidden", "false");
         }
       }
   
@@ -464,8 +464,8 @@ try{ //added by bigpapy to debug from xul to html
         if (numplayer > 4) {
           // label3.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[1]));
         	label3.innerHTML= htlivesight.DOM.getTextContent(scorerText[1]);
-          label3.setAttribute("hidden", "false");
-          label2.setAttribute("hidden", "false");
+          //label3.setAttribute("hidden", "false");
+          //label2.setAttribute("hidden", "false");
         }
       }
     }
@@ -653,6 +653,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   //placardbox = document.createElement("hbox");
   placardbox = document.createElement("td");
   placardbox.colSpan ="3";
+  placardbox.setAttribute("valign", "top");
 
   header.appendChild(placardbox);
   placardbox.setAttribute("align", "center");
@@ -683,7 +684,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   leftbox.appendChild(box);
   box.setAttribute("id", "header_home_team_notify_" + match.id + "_" + match.youth);
   box.setAttribute("class", "header_notify");
-  //box.setAttribute("width", "45%");
+  box.setAttribute("valign", "top");
  
 
   
@@ -692,10 +693,12 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   leftbox.appendChild(label);
   label.setAttribute("id", "home_team_tactic_" + match.id + "_" + match.youth);
   label.setAttribute("class", "tactic");
+  label.setAttribute("valign", "top");
   label = document.createElement("label");
   leftbox.appendChild(label);
   label.setAttribute("id", "home_team_formation_" + match.id + "_" + match.youth);
   label.setAttribute("class", "formation");
+  label.setAttribute("valign", "top");
 
  // if (!htlivesight.prefs.matches.scorers) {
 	    label = document.createElement("label");
@@ -703,7 +706,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	    label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
 
 	    label.setAttribute("class", "team_name");
-	    
+	    label.setAttribute("valign", "top");
 	    //hbox = document.createElement("hbox");
 	//    hbox = document.createElement("tr"); //bigpapy add to fix it
 	//    vbox.appendChild(hbox);
@@ -751,7 +754,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     label.setAttribute("class", "tactic");
     //label.setAttribute("value", " ");
     label.innerHTML= " ";
-    label.setAttribute("hidden", "true");
+    //label.setAttribute("hidden", "true");
   }
 
   // score
@@ -847,7 +850,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	
 	box23 = document.createElement("td");
 	//box1.colSpan ="3";
-	box23.setAttribute("align", "center");
+	box23.setAttribute("align", "left");
 	box23.setAttribute("width", "47%");
 	hbox2.appendChild(box23);
     
@@ -857,7 +860,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     label.setAttribute("class", "tactic");
     //label.setAttribute("value", " ");
     label.innerHTML= " ";
-    label.setAttribute("hidden", "true");
+    //label.setAttribute("hidden", "true");
   }
 
   return header;
