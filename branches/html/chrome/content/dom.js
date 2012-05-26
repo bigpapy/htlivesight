@@ -275,6 +275,7 @@ htlivesight.DOM = {
 			} else if (child.nodeName == "a") {
 			  newElement = document.createElementNS("http://www.w3.org/1999/xhtml", "em");
 		    newElement.setAttribute("class", "player_name");
+		    newElement.style.fontWeight="bold";
 		    newElement.appendChild(document.createTextNode(child.firstChild.textContent));		    
 			} else {
 				newElement = null;
@@ -710,7 +711,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	    //leftbox.appendChild(label);
 	    leftbox.appendChild(label);
 	    label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
-	    label.style.fontSize="medium";
+	    label.style.fontSize="xx-large";
+	    
 	 //   label.style.verticalAlign= "top";
 	    label.setAttribute("class", "team_name");
 
@@ -768,7 +770,6 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   //hbox = document.createElement("hbox");
   box = document.createElement("td");//bigpapy add to fix it
   box.setAttribute("width", "6%");
-  box.rowSpan= "1";
   hbox.appendChild(box);
   box.setAttribute("class", "big_score");
   box.setAttribute("align", "center");
@@ -777,6 +778,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   
   label = document.createElement("label");
   label.style.fontSize="xx-large";
+  label.style.verticalAlign= "top";
   box.appendChild(label);
   label.setAttribute("id", "home_team_goals_" + match.id + "_" + match.youth);
   label = document.createElement("label");
@@ -816,7 +818,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   label.setAttribute("id", "away_team_name_" + match.id + "_" + match.youth);
   label.setAttribute("class", "team_name");
   label.style.verticalAlign= "top";
-  label.style.fontSize="medium";
+  label.style.fontSize="xx-large";
   
   if (!htlivesight.prefs.matches.scorers) {
     //hbox = document.createElement("hbox");
