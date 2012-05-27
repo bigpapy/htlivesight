@@ -393,6 +393,7 @@ try{ //added by bigpapy to debug from xul to html
     if (match.weather.image) {
       label = document.getElementById("weather_image_" + match.id + "_" + match.youth);
       label.setAttribute("src", match.weather.image);
+	  label.setAttribute("class", "socialicon");
     }
 
     if (match.arena.attendance) {
@@ -520,21 +521,22 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   //hboxL.setAttribute("flex", "1");
   hboxL.setAttribute("align", "left");
   
-  label = document.createElement("label");
+  label = document.createElement("td"); //label = document.createElement("label");
   hboxL.appendChild(label);
   label.setAttribute("id", "arena_name_" + match.id + "_" + match.youth);
-//  label.setAttribute("align", "left");
+	label.setAttribute("style", "display:inline");
   img = document.createElement("img");
   hboxL.appendChild(img);
   img.setAttribute("src", htlivesight.Image.transparent);
   img.setAttribute("id", "weather_image_" + match.id + "_" + match.youth);
-//  img.setAttribute("align", "left");
-  label = document.createElement("label");
+  img.setAttribute("class", "socialicon");  
+	img.setAttribute("style", "display:inline");
+  label = document.createElement("td"); //label = document.createElement("label");
   hboxL.appendChild(label);
   label.setAttribute("id", "arena_attendance_" + match.id + "_" + match.youth);
+  label.setAttribute("style", "display:inline");
   label = document.createElement("label");
-//  label.setAttribute("align", "left");
-  hboxL.appendChild(label);
+	hboxL.appendChild(label);
   label.setAttribute("id", "weather_text_" + match.id + "_" + match.youth);
 
   //var hboxM = document.createElement("hbox");
@@ -684,34 +686,38 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 
   //box = document.createElement("hbox");
   // one
-  box = document.createElement("label"); //bigpapy add to fix it
+  box = document.createElement("td");//box = document.createElement("label"); bigpapy add to fix it
   leftbox.appendChild(box);
   box.setAttribute("id", "header_home_team_notify_" + match.id + "_" + match.youth);
   box.setAttribute("class", "header_notify");
+  box.setAttribute("style", "display:block-inline");
   box.style.verticalAlign= "top";
  
 
   
   
-  label = document.createElement("label");
+  label = document.createElement("td");//label = document.createElement("label");
   leftbox.appendChild(label);
   label.setAttribute("id", "home_team_tactic_" + match.id + "_" + match.youth);
   label.setAttribute("class", "tactic");
+  label.setAttribute("style", "display:block-inline");
   label.style.verticalAlign= "top";
-  label = document.createElement("label");
+  label = document.createElement("td");//label = document.createElement("label");
   leftbox.appendChild(label);
   label.setAttribute("id", "home_team_formation_" + match.id + "_" + match.youth);
   label.setAttribute("class", "formation");
+  label.setAttribute("style", "display:block-inline");
   label.style.verticalAlign= "top";
 
   //two!
  // if (!htlivesight.prefs.matches.scorers) {
-	    label = document.createElement("label");
+	    label = document.createElement("td");//label = document.createElement("label");
 	    label.style.verticalAlign= "top";
 	    //leftbox.appendChild(label);
 	    leftbox.appendChild(label);
 	    label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
-	    label.style.fontSize="xx-large";
+		label.setAttribute("style", "display:inline, font-size:16px");
+	    //label.style.fontSize="xx-large";
 	    
 	 //   label.style.verticalAlign= "top";
 	    label.setAttribute("class", "team_name");
@@ -777,13 +783,13 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 
   
   label = document.createElement("label");
-  label.style.fontSize="xx-large";
+  //label.style.fontSize="xx-large";
   label.style.verticalAlign= "top";
   box.appendChild(label);
   label.setAttribute("id", "home_team_goals_" + match.id + "_" + match.youth);
   label = document.createElement("label");
   label.style.verticalAlign= "top";
-  label.style.fontSize="xx-large";
+  //label.style.fontSize="xx-large";
   box.appendChild(label);
   //label.setAttribute("value", ":");
   label.innerHTML= ":";
@@ -792,7 +798,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box.appendChild(label);
   label.setAttribute("id", "away_team_goals_" + match.id + "_" + match.youth);
   label.style.verticalAlign= "top";
-  label.style.fontSize="xx-large";
+  //label.style.fontSize="xx-large";
 
   // away team
   
@@ -813,37 +819,41 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hbox.appendChild(rightbox);
   rightbox.setAttribute("width", "47%");
   
-  label = document.createElement("label");
+  label = document.createElement("td");//label = document.createElement("label");
   rightbox.appendChild(label);
   label.setAttribute("id", "away_team_name_" + match.id + "_" + match.youth);
   label.setAttribute("class", "team_name");
   label.style.verticalAlign= "top";
-  label.style.fontSize="xx-large";
+  label.setAttribute("style", "display:inline, font-size:16px");
+  //label.style.fontSize="xx-large";
   
   if (!htlivesight.prefs.matches.scorers) {
     //hbox = document.createElement("hbox");
  //   hbox = document.createElement("tr");//bigpapy: added to fix html
  //   vbox.appendChild(hbox);
   }
-  label = document.createElement("label");
+  label = document.createElement("td");//label = document.createElement("label");
   rightbox.appendChild(label);
   label.setAttribute("id", "away_team_formation_" + match.id + "_" + match.youth);
   label.setAttribute("class", "formation");
   label.setAttribute("valign", "top");
+  label.setAttribute("style", "display:block-inline");
   label.style.verticalAlign= "top";
-  label = document.createElement("label");
+  label = document.createElement("td");//label = document.createElement("label");
   rightbox.appendChild(label);
   label.setAttribute("id", "away_team_tactic_" + match.id + "_" + match.youth);
   label.setAttribute("class", "tactic");
   label.setAttribute("valign", "top");
+  label.setAttribute("style", "display:block-inline");
   label.style.verticalAlign= "top";
 
   	
   //box = document.createElement("hbox");
-  box = document.createElement("label");// bigpapy: added to fix html
+  box = document.createElement("td");//box = document.createElement("label"); bigpapy: added to fix html
   rightbox.appendChild(box);
   box.setAttribute("id", "header_away_team_notify_" + match.id + "_" + match.youth);
   box.setAttribute("valign", "top");
+  label.setAttribute("style", "display:block-inline");
   box.setAttribute("class", "header_notify");
 
   if (htlivesight.prefs.matches.scorers) {

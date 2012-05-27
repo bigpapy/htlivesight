@@ -217,6 +217,8 @@ $(function(){
 				//Other Buttons
 				$( "#btnfriend_remove" ).button();
 				$( "#btnfriend_addmatch" ).button();
+				$( "#imgup_friend" ).button();
+				$( "#imgdown_friend" ).button();
 				$( "#boxaddyouth" ).button();
 				$( "#buttonAddMatch" ).button();
 				$( "#buttonAddTeam" ).button();
