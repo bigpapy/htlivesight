@@ -445,7 +445,9 @@ try{ //added by bigpapy to debug from xul to html
           //label2.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[1]));
           label2.innerHTML= htlivesight.DOM.getTextContent(scorerText[1]);
           //label2.setAttribute("hidden", "false");
+          label2.setAttribute("style", "display:block");
           //label3.setAttribute("hidden", "false");
+          label3.setAttribute("style", "display:block");
         }
       }
   
@@ -467,7 +469,9 @@ try{ //added by bigpapy to debug from xul to html
           // label3.setAttribute("value", htlivesight.DOM.getTextContent(scorerText[1]));
         	label3.innerHTML= htlivesight.DOM.getTextContent(scorerText[1]);
           //label3.setAttribute("hidden", "false");
+        	label2.setAttribute("style", "display:block");
           //label2.setAttribute("hidden", "false");
+        	label3.setAttribute("style", "display:block");
         }
       }
     }
@@ -769,7 +773,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     label.setAttribute("class", "tactic");
     //label.setAttribute("value", " ");
     label.innerHTML= " ";
-    //label.setAttribute("hidden", "true");
+    label.setAttribute("style", "display:none");
   }
 
   // score
@@ -894,7 +898,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     label.setAttribute("class", "tactic");
     //label.setAttribute("value", " ");
     label.innerHTML= " ";
-    //label.setAttribute("hidden", "true");
+    label.setAttribute("style", "display:none");
   }
 
   return header;
@@ -1227,8 +1231,8 @@ else {matchLeagueStarted = false;
     document.getElementById("leaguetable_8").setAttribute("style", "background-color: #D92626;");
   }
   if(league.level < 6){
-    document.getElementById("leaguetable_5").setAttribute("style", "background-color: #D92626;");
-    document.getElementById("leaguetable_6").setAttribute("style", "background-color: #D92626;");
+    document.getElementById("leaguetable_5").setAttribute("style", "background-color: #D59022;");
+    document.getElementById("leaguetable_6").setAttribute("style", "background-color: #D59022;");
   }
   for(var i in htlivesight.League.teams){
     if(htlivesight.League.teams[i].livePosition >= 1 && htlivesight.League.teams[i].livePosition <= 8){
@@ -1355,7 +1359,7 @@ try{ //added by bigpapy to debug from XUL to HTML
   row.setAttribute("id", "short_" + match.id + "_" + match.youth);
   row.setAttribute("class", "match_row");
   
-  console.log(row);
+ // console.log(row);
   
   
   cell = document.createElement("td");
@@ -1370,7 +1374,7 @@ try{ //added by bigpapy to debug from XUL to HTML
 	  cell.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.home.team.id,match.youth);},false); 
   }
 	
-	console.log(cell);
+//	console.log(cell);
   row.appendChild(cell);
   
   
@@ -1379,7 +1383,7 @@ try{ //added by bigpapy to debug from XUL to HTML
   cell.setAttribute("class", "homescore_league");
   //document.getElementById("short_home_goals_" + match.id + "_" + match.youth).innerHTML = match.home.goals;
   
-	console.log(cell);
+//	console.log(cell);
   row.appendChild(cell);
   
   
@@ -1388,7 +1392,7 @@ try{ //added by bigpapy to debug from XUL to HTML
   cell.setAttribute("class", "separator_league");
   //document.getElementById("separator_" + match.id + "_" + match.youth).innerHTML = ":";
   
-	console.log(cell);
+//	console.log(cell);
   row.appendChild(cell);
 
 
@@ -1397,7 +1401,7 @@ try{ //added by bigpapy to debug from XUL to HTML
   cell.setAttribute("class", "awayscore_league");
   //document.getElementById("short_away_goals_" + match.id + "_" + match.youth).innerHTML = match.away.goals;
   
-	console.log(cell);
+//	console.log(cell);
   row.appendChild(cell);
 
 
@@ -1413,7 +1417,7 @@ try{ //added by bigpapy to debug from XUL to HTML
 	  cell.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.away.team.id,match.youth);},false);  
   }
 	
-	console.log(cell);
+//	console.log(cell);
   row.appendChild(cell);
 
 
