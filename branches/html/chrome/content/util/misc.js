@@ -38,16 +38,16 @@ htlivesight.loadXml = function(url, callback, crossSite) {
 				var parser = new DOMParser();
 				var xml = parser.parseFromString(text, "text/xml");
 				try {
-					console.log("status = "+ status + " xml = "+ xml );
+//					console.log("status = "+ status + " xml = "+ xml );
 					callback(xml, status);
 				}
 				catch (e) {
-					console.log("Uncaught callback error:"+ e);
+//					console.log("Uncaught callback error:"+ e);
 					dump("Uncaught callback error:"+ e);
 				}
 			}
 			catch (e) {
-				console.log("Cannot parse XML:\n" + text + "\n"+ e);
+//				console.log("Cannot parse XML:\n" + text + "\n"+ e);
 				dump("Cannot parse XML:\n" + text + "\n"+ e);
 				callback(null, status);
 			}

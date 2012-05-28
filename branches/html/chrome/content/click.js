@@ -21,11 +21,11 @@ htlivesight.Click = {
       htlivesight.AddLiveMatch(matchId, youth);
     }
   },
-  Login: function (event) {	  console.log("login1");
-    htlivesight.Login.teamId = document.getElementById("teamId").value;        console.log("login2: "+ document.getElementById("teamId").value);    if (htlivesight.Login.teamId == ""){    	console.log("login3");
+  Login: function (event) {//	  console.log("login1");
+    htlivesight.Login.teamId = document.getElementById("teamId").value;    //    console.log("login2: "+ document.getElementById("teamId").value);    if (htlivesight.Login.teamId == ""){ //   	console.log("login3");
       return;
-    };    console.log("login4");
-    //document.getElementById("button_login").disabled=true;    console.log("login5");   htlivesight.getRecommendedServer();   console.log("login6");   $('#login-dialog').dialog("close");    console.log("close dialog");
+    };//    console.log("login4");
+    //document.getElementById("button_login").disabled=true;//    console.log("login5");   htlivesight.getRecommendedServer();//   console.log("login6");   $('#login-dialog').dialog("close"); //   console.log("close dialog");
   },
   Logout: function (event) {
     htlivesight.Logout();
@@ -152,9 +152,9 @@ htlivesight.Click = {
     var name=this.id.split("_")[1];
     htlivesight.winboxShadeByName(name);
   },
-  loginClose: function() {	  alert("loginClose1");
-     document.getElementById('login-dialog').dialog = true;     alert("loginClose2");
-     //document.getElementById("button_login").disabled=true;     alert("loginClose3");
+  loginClose: function() {//	  alert("loginClose1");
+     document.getElementById('login-dialog').dialog = true; //    alert("loginClose2");
+     //document.getElementById("button_login").disabled=true; //    alert("loginClose3");
   },
   removeFriend: function() {
     htlivesight.Friends.remove();

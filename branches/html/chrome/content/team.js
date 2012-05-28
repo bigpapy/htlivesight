@@ -40,26 +40,26 @@ htlivesight.Team.HTTPGetMyData = function () {
     var parameters=[["file","teamdetails"],
                      ["teamID", document.getElementById("teamId").value]
     				];
-   console.log("htlivesight.Team.HTTPGetMyData"+ document.getElementById("teamId").value);
-   console.log("document: "+ document);
-   console.log("parameters: "+ parameters);
-    htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Team.ParseMyData(xml);console.log("htlivesight.Team.HTTPGetMyData"+ document.getElementById("teamId").value);});
+  // console.log("htlivesight.Team.HTTPGetMyData"+ document.getElementById("teamId").value);
+ //  console.log("document: "+ document);
+ //  console.log("parameters: "+ parameters);
+    htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Team.ParseMyData(xml);/*console.log("htlivesight.Team.HTTPGetMyData"+ document.getElementById("teamId").value);*/});
 
 };
 
 htlivesight.Team.ParseMyData = function (xml) {
 
   var myTeam;
- console.log("team.js: xml =" + xml);
+// console.log("team.js: xml =" + xml);
   try {
     if (xml) {
-      console.log("htlivesight.Team.ParseMyData 1");
+//      console.log("htlivesight.Team.ParseMyData 1");
       myTeam = htlivesight.Team.ParseTeamData(xml); // return team
-      console.log("htlivesight.Team.ParseMyData 2");
+ //     console.log("htlivesight.Team.ParseMyData 2");
       htlivesight.Teams.myTeam = myTeam;
-      console.log("htlivesight.Team.ParseMyData 3");
+//      console.log("htlivesight.Team.ParseMyData 3");
       htlivesight.Teams.update(myTeam);
-      console.log("htlivesight.Team.ParseMyData 4");
+//      console.log("htlivesight.Team.ParseMyData 4");
     } else {
     	// without this if during authorization you get this error message.
     	if (htlivesight.ApiProxy.authorized(document.getElementById("teamId").value)) alert("team data not found");
@@ -68,9 +68,9 @@ htlivesight.Team.ParseMyData = function (xml) {
   } catch(e) {
     alert("ParseMyData: " + e);
   }
-  console.log("before EventSystem.Declare in team.js");
+//  console.log("before EventSystem.Declare in team.js");
   htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TEAM);
-  console.log("after EventSystem.Declare in team.js");
+//  console.log("after EventSystem.Declare in team.js");
 
 };
 
