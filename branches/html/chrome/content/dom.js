@@ -1241,7 +1241,7 @@ else {matchLeagueStarted = false;
       }
       document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_name").innerHTML = htlivesight.DOM.getTextContent(htlivesight.League.teams[i].name);
       //document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_change").setAttribute("class", htlivesight.League.teams[i].change);
-      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_change").setAttribute("src",htlivesight.constants.IMG_PATH + htlivesight.League.teams[id].change);
+      document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_change").setAttribute("src",htlivesight.constants.IMG_PATH + htlivesight.League.teams[i].change);
       document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_matches").innerHTML = htlivesight.League.teams[i].liveMatches;
       var goals = htlivesight.League.teams[i].liveGoalsFor+"-"+htlivesight.League.teams[i].liveGoalsAgainst;
       document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goals").innerHTML = goals;
