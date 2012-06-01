@@ -95,10 +95,11 @@ htlivesight.ApiProxy = {
 				window.addEventListener("focus", function(ev) {
 					
 					//ask the auth code to user and get it only once
-					if (firstTime){				
+					if (firstTime){
+						firstTime=false;				
 						var insert=/*strbundle.getString("insert")*/htlivesight.Util.Parse("Insert",data[0]);
 						var oauthVerifier = prompt(insert,"");
-						firstTime=false;
+						
 					};
 					var accessor = {
 						consumerSecret : htlivesight.ApiProxy.consumerSecret,

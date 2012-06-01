@@ -987,19 +987,19 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
       var isHome = match.isHomeTeam(event.subjectTeamId);
       if (isF && isHome) {
         row.setAttribute("class", "friend_home");
-        row.style.backgroundColor="#0972A6";
-       // row.style.color="#000"; #4242AA
+        row.style.backgroundColor="#4C994C";//celeste #0972A6
+       // row.style.color="#000"; 
       } else if(isF && !isHome) {
         row.setAttribute("class", "friend_away");
-        row.style.backgroundColor="#347434";
+        row.style.backgroundColor="#D92626"; //verde #347434 #4C994C
         //row.style.color="#000";
       } else if(!isF && isHome) {
         row.setAttribute("class", "foe_home");
-        row.style.backgroundColor="#B53131";
+        row.style.backgroundColor="#0972A6"; //rosso #B53131 #D92626;
         //row.style.color="#000"; #0F92D5
       } else if(!isF && !isHome) {
         row.setAttribute("class", "foe_away");
-       //row.style.backgroundColor="#7F3070";
+       //row.style.backgroundColor="#7F3070"; //viola #B00D91
         row.style.backgroundColor="#B00D91";
         //row.style.color="#000";
       }
