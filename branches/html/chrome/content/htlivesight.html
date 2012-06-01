@@ -59,15 +59,15 @@
 	<label id="LoginTeamId"></label>
 	<input type="text" id="teamId" class="text ui-widget-content ui-corner-all"></input>
 	<br />
-	<input type="checkbox" id="save_teamId" /><label for="save_teamId" id="LoginSave"></label>
-	<input type="button" id="button_login" value="" onclick="try{htlivesight.Click.Login()}catch(e){alert(e);}"/>
+	<input type="checkbox" id="save_teamId" /><label for="save_teamId"></label><label id="LoginSave"></label>
+	<input type="button" id="button_login" style="float:right" value="" onclick="try{htlivesight.Click.Login()}catch(e){alert(e);}"/>
 	</fieldset>
 	<fieldset>
 	<legend id="LoginReLive"></legend>
-	<input type="checkbox" id="reLive" /><label for="reLive" id="LoginReLive2"></label>
+	<input type="checkbox" id="reLive" /><label for="reLive"></label><label id="LoginReLive2"></label><br />
 	<label id="LoginSpeed"></label>
 	<input type="text" id="reLiveSpeed" value="" class="text ui-widget-content ui-corner-all" />
-	<input type="checkbox" id="reLiveByEvent"/><label for="reLiveByEvent" id="LoginByEvent"></label>
+	<input type="checkbox" id="reLiveByEvent"/><label for="reLiveByEvent"></label><label id="LoginByEvent"></label>
 	</fieldset>
 	</form>
 	<img src="./themes/custom-theme/images/oauth.png" alt="HTLiveSight Logo" class="anotherbrick2">
@@ -449,74 +449,73 @@
 				<div id="tabs-2">
 					<label id="ThanksTo"></label><br />
 					<ul>
-			<li>[ara] العربية</li>
-		<li>[bel] Беларуская</li>
-		<li>[bul] Български</li>
-		<li>[bos] Bosanski</li>
-		<li>[cat] Català</li>
-		<li>[ces] Čeština</li>
-		<li>[dan] Dansk</li>
-		<li>[ger] Deutsch</li>
-		<li>[eng] English</li>
-		<li>[eng-us] American</li>
-		<li>[ell] Ελληνικά</li>
-		<li>[spa] Español</li>
-		<li>[spa-ca] Centroamericano</li>
-		<li>[spa-su] Sudamericano</li>
-		<li>[est] Eesti</li>
-		<li>[eus] Euskara</li>
-		<li>fas] فارسی</li>
-		<li>[fin] Suomi</li>
-		<li>[fra] Français</li>
-		<li>[fry] Frysk</li>
-		<li>[fur] Furlan</li>
-		<li>[glg] Galego</li>
-		<li>[heb] עברית</li>
-		<li>[hrv] Hrvatski</li>
-		<li>[hun] Magyar</li>
-		<li>[ind] Bahasa Indonesia</li>
-		<li>[isl] Islenska</li>
-		<li>[ita] Italiano</li>
-		<li>[jpn] 日本語</li>
-		<li>[kat] ქართული</li>
-		<li>[kor] 한국어</li>
-		<li>[ltz] Lëtzebuergesch</li>
-		<li>[lit] Lietuvių</li>
-		<li>[lav] Latviešu</li>
-		<li>[mkd] Македонски</li>
-		<li>[mlt] Malti</li>
-		<li>[nld] Nederlands</li>
-		<li>[nob] Norsk-Bokmål</li>
-		<li>[nno] Norsk-Nynorsk</li>
-		<li>[pol] Polski</li>
-		<li>[por] Português</li>
-		<li>[por-br] Brasileiro</li>
-		<li>[ron] Română</li>
-		<li>[rus] Русский</li>
-		<li>[slk] Slovenčina</li>
-		<li>[slv] Slovenčina</li>
-		<li>[sqi] Shqip</li>
-		<li>[srp] Српски</li>
-		<li>[srp-lat] Srpski</li>
-		<li>[swe] Svenska</li>
-		<li>[tur] Türkçe</li>
-		<li>[vie] Tiếng Việt</li>
-		<li>[vls] Vlaams</li>
-		<li>[ukr] Українська</li>
-		<li>[zho] 中文（简体）</li>
+		<li>[ara] العربية: RiBBz</li>
+		<li>[bel] Беларуская: LA-Vandrouny</li>
+		<li>[bul] Български: : Stanchev</li>
+		<li>[bos] Bosanski: GM-Gizmo</li>
+		<li>[cat] Català: Sesag</li>
+		<li>[ces] Čeština: MOMOOO</li>
+		<li>[dan] Dansk: cheilson</li>
+		<li>[ger] Deutsch: JayBi</li>
+		<li>[eng] English: Silkevicious</li>
+		<li>[eng-us] American: rsox1221</li>
+		<li>[ell] Ελληνικά: chris_ts</li>
+		<li>[est] Eesti: Simokas</li>
+		<li>[eus] Euskara: EH-Haro</li>
+		<li>fas] فارسی: -Morsal-</li>
+		<li>[fin] Suomi: -Lupi-</li>
+		<li>[fra] Français: Davidatorus</li>
+		<li>[fry] Frysk: MI-Side</li>
+		<li>[fur] Furlan: LA-Gato_Diaz</li>
+		<li>[glg] Galego: Djalma8_Brl</li>
+		<li>[heb] עברית: ozwuermli</li>
+		<li>[hrv] Hrvatski: CroPredator</li>
+		<li>[hun] Magyar: dzsoo</li>
+		<li>[ind] Bahasa Indonesia: Zolfaghar</li>
+		<li>[isl] Islenska: karibh</li>
+		<li>[ita] Italiano: BigPapy</li>
+		<li>[jpn] 日本語: LA-N-Kobayashi</li>
+		<li>[kat] ქართული: maxrika</li>
+		<li>[kor] 한국어: rhkdska</li>
+		<li>[ltz] Lëtzebuergesch: Maya26</li>
+		<li>[lit] Lietuvių: LA-MJ</li>
+		<li>[lav] Latviešu: Mauris182</li>
+		<li>[mkd] Македонски: YulBriner-PACER</li>
+		<li>[mlt] Malti: LA-Steve007</li>
+		<li>[nld] Nederlands: GM-eekels</li>
+		<li>[nob] Norsk-Bokmål: ultracool</li>
+		<li>[nno] Norsk-Nynorsk: olefurz</li>
+		<li>[pol] Polski: Misiakow-Strateg_FBP</li>
+		<li>[por] Português: Titico</li>
+		<li>[por-br] Brasileiro: MarceloFBrandao</li>
+		<li>[ron] Română: RadrianO</li>
+		<li>[rus] Русский: Vitaliy</li>
+		<li>[slk] Slovenčina: apatka</li>
+		<li>[slv] Slovenčina: artod</li>
+		<li>[spa] Español: Baler0</li>
+		<li>[spa-ca] Centroamericano: Baler0</li>
+		<li>[spa-su] Sudamericano: Baler0</li>
+		<li>[sqi] Shqip: DownTiME</li>
+		<li>[srp] Српски: ljushaff</li>
+		<li>[srp-lat] Srpski: ljushaff</li>
+		<li>[swe] Svenska: GM-murko</li>
+		<li>[tur] Türkçe: </li>
+		<li>[vie] Tiếng Việt: we_will_win</li>
+		<li>[vls] Vlaams: gogessj4</li>
+		<li>[ukr] Українська: Vitaliy</li>
+		<li>[zho] 中文（简体）: lapine</li>
 					</ul>
 				</div>
 				<div id="tabs-3">
 					<label id="Supporter">Project support:</label><br />
-					<img src="./themes/custom-theme/images/google.png" alt="Google"><br />
-					<img src="./themes/custom-theme/images/sf.png" alt="Sourceforge"><br />
-					<img src="./themes/custom-theme/images/ixweb.png" alt="IXWebHosting"><br /><br />
+					<a href="http://code.google.com/p/htlivesight" target="_newtab"><img src="./themes/custom-theme/images/google.png" alt="Google"></a><br />
+					<a href="http://sourceforge.net/projects/htlivesight" target="_newtab"><img src="./themes/custom-theme/images/sf.png" alt="Sourceforge"></a><br />
+					<a href="http://htlivesight.foundationhorizont.org" target="_newtab"><img src="./themes/custom-theme/images/ixweb.png" alt="IXWebHosting"></a><br /><br />
 					<label id="Tech">Our Technology:</label><br />
-					<img src="./themes/custom-theme/images/html5.png" alt="HTML5"><br />
-					<img src="./themes/custom-theme/images/jquery.png" alt="JQuery"><br /><br />
+					<a href="http://wikipedia.org/wiki/HTML5" target="_newtab"><img src="./themes/custom-theme/images/html5.png" alt="HTML5"></a><br />
+					<a href="http://jqueryui.com" target="_newtab"><img src="./themes/custom-theme/images/jquery.png" alt="JQuery"></a><br /><br />
 					<label id="License">Our License:</label><br />
-					<img src="./themes/custom-theme/images/mit.png" alt="MIT"><br />
-					<img src="./themes/custom-theme/images/osi.png" alt="OSI">
+					<a href="http://www.opensource.org/licenses/mit-license.php" target="_newtab"><img src="./themes/custom-theme/images/mit.png" alt="MIT"></a>
 				</div>
 			</div>
 				
@@ -560,6 +559,11 @@
 		<div id="thebox">
 		<div id="live_box">
 		
+		
+		
+		<div id="formationpopup" title="Formation">
+		What do you want? A pony?
+		</div>
 		<!--DIV SINGLE MATCH-->
 			<!--<div class="match">
 		<table  cellspacing="0" class="matchheader ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active">
@@ -892,6 +896,9 @@
 			
 		</div><!-- /sidebar-->
 		</div><!-- /application troll-->
+
+
+
 		<script type="text/javascript">
 		htlivesightPrefs.init();
 		htlivesight.Settings.startup();

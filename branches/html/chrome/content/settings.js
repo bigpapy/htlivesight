@@ -384,6 +384,9 @@ htlivesight.Settings = {
 //alert("57");
         document.getElementById("label_hattrickButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 //alert("58: la fine! Tutto OK!");
+
+
+
   }, 
   
   click: {
