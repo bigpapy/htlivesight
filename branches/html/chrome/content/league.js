@@ -244,8 +244,11 @@ htlivesight.League.ParseFixtures = function(xml) {
     
     if (htlivesight.showLeague) {
     	// Gonzo
-      document.getElementById("winbox_leaguetable").hidden = false;
-    
+     // document.getElementById("winbox_leaguetable").hidden = false;
+      document.getElementById("winbox_leaguetable").setAttribute("style", "display:block");
+      document.getElementById("winboxcontent_leaguematches").setAttribute("style", "display:block");
+      document.getElementById("LeagueMatches").setAttribute("style", "display:block");
+      document.getElementById("h3LeagueMatches").setAttribute("style", "display:block");
     	  htlivesight.DOM.UpdateElementBoxLeagueTable(htlivesight.League);
       // End 
     	  htlivesight.DOM.UpdateElementBoxLeague(htlivesight.League);
