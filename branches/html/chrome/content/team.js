@@ -57,6 +57,7 @@ htlivesight.Team.ParseMyData = function (xml) {
       myTeam = htlivesight.Team.ParseTeamData(xml); // return team
  //     console.log("htlivesight.Team.ParseMyData 2");
       htlivesight.Teams.myTeam = myTeam;
+      document.getElementById("teamName").innerHTML=myTeam.name;
 //      console.log("htlivesight.Team.ParseMyData 3");
       htlivesight.Teams.update(myTeam);
 //      console.log("htlivesight.Team.ParseMyData 4");
