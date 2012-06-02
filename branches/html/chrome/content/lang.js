@@ -13,6 +13,26 @@ htlivesight.languageXML=htlivesight.loadXml(htlivesight.url);
 //alert("3");
 htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
 
+//************* added by bigpapy to load prefs first time!
+//alert("before if!");
+if (!htlivesightPrefs.getBool("HtlsFirstStart")){
+//	alert("into if before opening optionspage");
+//	alert("htlivesightEnv.contentPath="+ htlivesightEnv.contentPath);
+
+	var optionsPage=window.open(htlivesightEnv.contentPath+"settings.html","_parent");
+//	alert("after opening optionspage");
+//	optionsPage.onfocus();
+
+	
+//	htlivesightPrefs.setBool("HtlsFirstStart",true);
+
+
+	
+
+//	alert("7");
+};
+// end added by bigpapy to load prefs first time **************************
+
 //LOGIN
 //alert("Login");
 document.getElementById("login-dialog").attributes.getNamedItem("title").value=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);

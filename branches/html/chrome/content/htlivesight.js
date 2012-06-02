@@ -256,26 +256,27 @@ var htlivesight = {
   },
 
   localization: function() {
-//	  alert("startup:unload: begin");
-//	  console.log("begin");
+	  alert("startup:unload: begin");
+	  console.log("begin");
 
 		//prefs = htlivesight.Settings.preferences;
 		htlivesight.prefs=htlivesight.Preferences.get();
 
-//		console.log("prefs.language.locale= "+ htlivesight.prefs.language.locale);
+		console.log("prefs.language.locale= "+ htlivesight.prefs.language.locale);
 		htlivesight.url = htlivesightEnv.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
-//		console.log("url"+ htlivesight.url);
+		console.log("url"+ htlivesight.url);
 		htlivesight.languageXML = htlivesight.loadXml(htlivesight.url);
 
 		htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
 		
 		
 		
-//		console.log("8");
+		alert("before if!");
 		if (!htlivesightPrefs.getBool("HtlsFirstStart")){
-//			console.log("1");
+			console.log("into if before opening optionspage");
+			console.log("htlivesightEnv.contentPath="+ htlivesightEnv.contentPath)
 			var optionsPage=window.open(htlivesightEnv.contentPath+"settings.html","_blank");
-//			console.log("2");
+			alert("after opening optionspage");
 		//	optionsPage.onfocus();
 		
 			

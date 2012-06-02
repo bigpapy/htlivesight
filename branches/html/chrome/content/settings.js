@@ -398,7 +398,14 @@ htlivesight.Settings = {
       htlivesight.Settings.click.selLang();//change the language in prefs without saving it.
       htlivesight.Settings.save();
 //	alert("after saving");
+//      alert("prova!");
+      if (!htlivesightPrefs.getBool("HtlsFirstStart")){
+    	  htlivesightPrefs.setBool("HtlsFirstStart",true);
+    	  window.open(htlivesightEnv.contentPath+"htlivesight.html","_parent");
+      }
+      else{
       window.close();
+      }
 //	alert("after closing");
     },
     radopenin: function(value) {
