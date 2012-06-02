@@ -66,24 +66,16 @@ $(function(){
 				$('#options-tabs').tabs();
 				$('#about-tabs').tabs();
 				// Login Dialog
-				$( "#save_teamId" ).button();
+				//$( "#save_teamId" ).button();
 				$( "#button_login" ).button();
-				$( "#reLive" ).button();
-				$( "#reLiveByEvent" ).button();					
+				//$( "#reLive" ).button();
+				//$( "#reLiveByEvent" ).button();					
 				$('#login-dialog').dialog({
 					autoOpen: true,
 					modal: true,
 					width: 750,
 					show: "fold",
 					hide: "fold",
-					//buttons: {
-					//	"Ok": function() { 
-					//		$(this).dialog("close"); 
-					//	}, 
-					//	"Cancel": function() { 
-					//		$(this).dialog("close"); 
-					//	}
-					//}
 				});
 				$('#options-dialog').dialog({
 					autoOpen: false,
@@ -105,19 +97,6 @@ $(function(){
 							click: function() { $(this).dialog("close");  }
 						}
 							]
-					//buttons: {
-					//"Ok": function() { 
-					//$(this).click(function(){
-					//try {htlivesight.Settings.click.btnOk();}catch(e){alert(e)};
-					//return false;
-					//}); 
-					//}, 
-					//"Cancel": function() { 
-					//$(this).dialog(function(){
-					//window.close();
-					//});
-					////}
-					//}
 				});
 				$('#about-dialog').dialog({
 					autoOpen: false,
@@ -232,12 +211,12 @@ $(function(){
 				$( "#btnfriend_addmatch" ).button();
 				$( "#imgup_friend" ).button();
 				$( "#imgdown_friend" ).button();
-				$( "#boxaddyouth" ).button();
+				//$( "#boxaddyouth" ).button();
 				$( "#buttonAddMatch" ).button();
 				$( "#buttonAddTeam" ).button();
 				//Options buttons
 				$( "#openin" ).buttonset();
-				$( "#chkGetLeague" ).button();
+				/*$( "#chkGetLeague" ).button();
 				$( "#chkGetLeagueWithin" ).button();
 				$( "#chkGetFriends" ).button();
 				$( "#chkGetFriendsWithin" ).button();
@@ -245,9 +224,9 @@ $(function(){
 				$( "#chkSound" ).button();
 				$( "#chkSoundOnlyOpened" ).button();
 				$( "#chkFlash" ).button();
-				$( "#chkSlider" ).button();
+				$( "#chkSlider" ).button();*/
 				$( "#removeauth" ).button();
-				$( "#reverseOrder" ).button();
+				/*$( "#reverseOrder" ).button();
 				$( "#printEventKey" ).button();
 				$( "#oldIcons" ).button();
 				$( "#weather" ).button();
@@ -271,7 +250,7 @@ $(function(){
 				$( "#whistle2Check" ).button();
 				$( "#whistle3Check" ).button();
 				$( "#whistleCheck" ).button();
-				$( "#hattrickCheck" ).button();
+				$( "#hattrickCheck" ).button();*/
 				$( ".brestore" ).button();
 				//$( "#light" ).button();
 				//$( "#dark" ).button();
