@@ -10,7 +10,7 @@ htlivesight.Log = {
     if (value==100) htlivesight.Log.progressLabel.setAttribute("value", "");
   },
   Label: function (value) {
-    htlivesight.Log.progressLabel.setAttribute("value", value);
+  //  htlivesight.Log.progressLabel.setAttribute("value", value);	  htlivesight.Log.progressLabel.innerHTML= value;
   },
   debug: function (message) {
     dump("[htlivesight:Debug] " + message + "\n");
