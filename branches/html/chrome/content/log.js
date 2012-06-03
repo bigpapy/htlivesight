@@ -33,8 +33,4 @@ htlivesight.Log = {
       htlivesight.Log.debug(prop + ":" + obj[prop]);
     }
   }
-};
-
-
-
-
+};

@@ -1222,10 +1222,10 @@ else {matchLeagueStarted = false;
 	// end part of restoring relive table position to last round and not actual one deleting it and getting position after first call of the function.
 	  
 	  
-    if(htlivesight.League.teams[id].livePosition > htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "down.gif";
-    else if(htlivesight.League.teams[id].livePosition < htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "up.gif" +
+    if(htlivesight.League.teams[id].livePosition > htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "down_bright.png";
+    else if(htlivesight.League.teams[id].livePosition < htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "up_bright.png" +
     		"";
-    else htlivesight.League.teams[id].change = "equal.gif";
+    else htlivesight.League.teams[id].change = "equal_bright.png";
   }
   for(var j=1; j<=8; j++){
     document.getElementById("leaguetable_"+j).setAttribute("style", "");
