@@ -1031,7 +1031,10 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     l = document.createElement("label");
     row.appendChild(l);
     //l.setAttribute("value", event.minute);
-    l.innerHTML= event.minute;
+    if (event.minute < 10) l.innerHTML="&nbsp;&nbsp;"+event.minute;
+    else if (event.minute <100) l.innerHTML="&nbsp;"+event.minute;
+    	else l.innerHTML= event.minute;
+    //l.innerHTML= event.minute;
   
     l = document.createElement("label");
     row.appendChild(l);
@@ -1220,7 +1223,8 @@ else {matchLeagueStarted = false;
 	  
 	  
     if(htlivesight.League.teams[id].livePosition > htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "down.gif";
-    else if(htlivesight.League.teams[id].livePosition < htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "up.gif";
+    else if(htlivesight.League.teams[id].livePosition < htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "up.gif" +
+    		"";
     else htlivesight.League.teams[id].change = "equal.gif";
   }
   for(var j=1; j<=8; j++){
