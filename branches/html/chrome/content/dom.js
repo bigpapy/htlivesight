@@ -8,6 +8,10 @@ htlivesight.DOM = {
     moveup:4,
     movedown:5
   },
+  formationpopup:function(){
+					$('#formationpopup').dialog('open');
+					return false;
+				},
   parser: new DOMParser(),
   parse: function(xml) {
     return htlivesight.DOM.parser.parseFromString(xml, "text/xml").documentElement;
@@ -719,6 +723,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	link.setAttribute("href", "#");
 	link.setAttribute("id", "home_team_formation_" + match.id + "_" + match.youth);
 	link.setAttribute("title", "");
+	link.setAttribute("onclick","htlivesight.DOM.formationpopup();");
+	
 
   //two!
  // if (!htlivesight.prefs.matches.scorers) {
@@ -855,6 +861,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	link.setAttribute("href", "#");
 	link.setAttribute("id", "away_team_formation_" + match.id + "_" + match.youth);
 	link.setAttribute("title", "");
+	link.setAttribute("onclick","htlivesight.DOM.formationpopup();");
   label = document.createElement("td");//label = document.createElement("label");
   rightbox.appendChild(label);
   label.setAttribute("id", "away_team_tactic_" + match.id + "_" + match.youth);

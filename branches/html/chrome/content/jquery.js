@@ -110,12 +110,7 @@ $(function(){
 					autoOpen: false,
 					show: "blind",
 					hide: "blind",
-					});
-				$('#home_team_formation_366146822_False').click(function(){
-					$('#formationpopup').dialog('open');
-					return false;
-				});
-  
+					});  
 				
 				
 				// Dialog Link
