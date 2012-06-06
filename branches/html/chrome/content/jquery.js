@@ -69,7 +69,19 @@ $(function(){
 				//$( "#save_teamId" ).button();
 				$( "#button_login" ).button();
 				//$( "#reLive" ).button();
-				//$( "#reLiveByEvent" ).button();					
+				//$( "#reLiveByEvent" ).button();
+				$('#chat-dialog').dialog({
+					autoOpen: false,
+					modal: false,
+					width: 675,
+					show: "fold",
+					hide: "fold",
+				});
+				$('#chat_link').click(function(){
+					$('#chat-dialog').dialog('open');
+					return false;
+				});
+				
 				$('#login-dialog').dialog({
 					autoOpen: true,
 					modal: true,

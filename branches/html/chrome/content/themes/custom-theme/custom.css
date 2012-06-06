@@ -31,11 +31,12 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 #topbar {width:100%;height:37px;color:white;background-color:black;display:block;font-size:13px;font-weight: 400;}
 #left_topbar {display:inline-block;float:left;margin-left:8px;margin-top:3px;} /*margin-top:8px*/
 #right_topbar {display:inline-block;float:right;margin-right:8px;margin-top:3px;}/*{display:inline-block;float:right;margin-top:8px}*/
-.socialicon{vertical-align:middle;padding: 0 0 0 0;margin: 0 0 0 0;text-decoration: none;}
-#left_topbar,#right_topbar a:link {text-decoration:none;}
-#left_topbar,#right_topbar a:visited {text-decoration:none;}
-#left_topbar,#right_topbar a:hover {text-decoration:none;}
-#left_topbar,#right_topbar a:active {text-decoration:none;}
+#central_topbar {display:inline-block;margin-top:3px;text-align:center;margin-left:20%}
+.socialicon{vertical-align:middle;padding: 0 0 0 0;margin: 0 0 0 0;}
+#left_topbar,#right_topbar,#central_topbar a:link {text-decoration:none;}
+#left_topbar,#right_topbar,#central_topbar a:visited {text-decoration:none;}
+#left_topbar,#right_topbar,#central_topbar a:hover {text-decoration:none;}
+#left_topbar,#right_topbar,#central_topbar a:active {text-decoration:none;}
 
 
 #thebox{display:block;margin-top:1px;}
