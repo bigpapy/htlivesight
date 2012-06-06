@@ -1006,20 +1006,20 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
       var isHome = match.isHomeTeam(event.subjectTeamId);
       if (isF && isHome) {
         row.setAttribute("class", "friend_home");
-        row.style.backgroundColor="#4C994C";//celeste #0972A6
+        row.style.backgroundColor="#023702";//verde #4C994C
        // row.style.color="#000"; 
       } else if(isF && !isHome) {
         row.setAttribute("class", "friend_away");
-        row.style.backgroundColor="#D92626"; //verde #347434 #4C994C
+        row.style.backgroundColor="#920606"; //rosso #D92626 
         //row.style.color="#000";
       } else if(!isF && isHome) {
         row.setAttribute("class", "foe_home");
-        row.style.backgroundColor="#0972A6"; //rosso #B53131 #D92626;
+        row.style.backgroundColor="#0B2D73"; //celeste #0972A6 #0B5173
         //row.style.color="#000"; #0F92D5
       } else if(!isF && !isHome) {
         row.setAttribute("class", "foe_away");
-       //row.style.backgroundColor="#7F3070"; //viola #B00D91
-        row.style.backgroundColor="#B00D91";
+       //row.style.backgroundColor="#7F3070"; 
+        row.style.backgroundColor="#660754"; //viola #B00D91
         //row.style.color="#000";
       }
     }
@@ -1229,10 +1229,10 @@ else {matchLeagueStarted = false;
 	// end part of restoring relive table position to last round and not actual one deleting it and getting position after first call of the function.
 	  
 	  
-    if(htlivesight.League.teams[id].livePosition > htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "down_bright.png";
-    else if(htlivesight.League.teams[id].livePosition < htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "up_bright.png" +
+    if(htlivesight.League.teams[id].livePosition > htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "down.gif";
+    else if(htlivesight.League.teams[id].livePosition < htlivesight.League.teams[id].position) htlivesight.League.teams[id].change = "up.gif" +
     		"";
-    else htlivesight.League.teams[id].change = "equal_bright.png";
+    else htlivesight.League.teams[id].change = "equal.gif";
   }
   for(var j=1; j<=8; j++){
     document.getElementById("leaguetable_"+j).setAttribute("style", "");
@@ -1240,22 +1240,22 @@ else {matchLeagueStarted = false;
   //document.getElementById("contentbody_leaguetable"/*"leaguetable_name"*/).setAttribute("value", /*strings.getString("league.live_table")*/htlivesight.Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")");
   document.getElementById("LeagueLiveTable"/*"leaguetable_name"*/).innerHTML = htlivesight.Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")";
   if(league.level == 1){
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #4C994C;");
+    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #023702;");
   }
   else if(league.level <= 6 || league.level % 2 == 0){
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #4C994C; border-bottom-width: 1px; border-bottom-color: black;");
+    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #023702; border-bottom-width: 1px; border-bottom-color: black;");
   }
   else{
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #4C994C;");
-    document.getElementById("leaguetable_2").setAttribute("style", "background-color: #4C994C; border-bottom-width: 1px; border-bottom-color: black;");
+    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #023702;");
+    document.getElementById("leaguetable_2").setAttribute("style", "background-color: #023702; border-bottom-width: 1px; border-bottom-color: black;");
   }
   if(league.level != league.maxLevel){
-    document.getElementById("leaguetable_7").setAttribute("style", "background-color: #D92626; border-top-width: 1px; border-top-color: black;");
-    document.getElementById("leaguetable_8").setAttribute("style", "background-color: #D92626;");
+    document.getElementById("leaguetable_7").setAttribute("style", "background-color: #750606; border-top-width: 1px; border-top-color: black;");
+    document.getElementById("leaguetable_8").setAttribute("style", "background-color: #750606;");
   }
   if(league.level < 6){
-    document.getElementById("leaguetable_5").setAttribute("style", "background-color: #D59022;");
-    document.getElementById("leaguetable_6").setAttribute("style", "background-color: #D59022;");
+    document.getElementById("leaguetable_5").setAttribute("style", "background-color: #757006;");
+    document.getElementById("leaguetable_6").setAttribute("style", "background-color: #757006;");
   }
   for(var i in htlivesight.League.teams){
     if(htlivesight.League.teams[i].livePosition >= 1 && htlivesight.League.teams[i].livePosition <= 8){
