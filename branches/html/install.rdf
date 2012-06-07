@@ -6,8 +6,8 @@
 		<em:id>{469b7d40-de9a-11e0-9572-0800200c9a66}</em:id>
 		<em:unpack>true</em:unpack>
 		<em:type>2</em:type>
-		<em:name>HTLiveSightNext</em:name>
-		<em:version>0.4.999</em:version>
+		<em:name>HTLiveSightDEV</em:name>
+		<em:version>0.5.775</em:version>
 		<em:description>Hattrick Match Viewer based on HattrickLiveFox</em:description>
 		
 		<em:creator>Silkevicious</em:creator>
@@ -19,7 +19,7 @@
 		<em:icon64URL>chrome://htlivesight/skin/64.png</em:icon64URL>
 		<em:optionsURL>chrome://htlivesight/content/settings.html</em:optionsURL>
 		<em:aboutURL>chrome://htlivesight/content/about.html</em:aboutURL>
-		<!--<em:updateURL>https://htlivesight.c6.ixwebhosting.com/dev/update.rdf</em:updateURL>-->
+		<em:updateURL>https://htlivesight.c6.ixwebhosting.com/dev/update.rdf</em:updateURL>
 	
 		<!-- Firefox -->
 		<em:targetApplication>

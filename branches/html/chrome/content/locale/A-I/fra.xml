@@ -49,13 +49,13 @@
 <ServerON>Connecté</ServerON>
 <ServerOFF>Déconnecté</ServerOFF>
 <ResetToken>L'autorisation a été retirée. Redémarrez HTLS ou attendez la prochaine mise à jour (au moins 1 minute).</ResetToken>
-<NoHTServer>Vous n'avez pas sélectionné le serveur Hattrick où vous êtes connecté depuis votre navigateur. Faites un clic droit -> Options -> Général -> remplir le formulaire avec votre numéro de serveur.</NoHTServer>
+<NoHTServer>Vous n'avez pas sélectionné le serveur Hattrick où vous êtes connecté depuis votre navigateur. Dans l'onglet général des options,remplissez le formulaire avec votre numéro de serveur.</NoHTServer>
 <Error500>Erreur 500: erreur interne au serveur d'Hattrick</Error500>
 <Error503>Erreur 503: le CHPP est indisponible (serveur surchargé ou maintenance)</Error503>
 
 <!--Properties-->
 <MatchesMaximum>Vous ne pouvez pas visualiser plus de 20 matchs!</MatchesMaximum>
-<LeagueLiveTable>Classement de la divisione</LeagueLiveTable>
+<LeagueLiveTable>Classement de la division</LeagueLiveTable>
 <LeagueRound>Journée</LeagueRound>
 <MessageHattrickError>Le serveur Hattrick a renvoyé une erreur.</MessageHattrickError>
 <MessageAlreadyFriend>Cette équipe fait déjà partie de vos amis.</MessageAlreadyFriend>
@@ -192,6 +192,10 @@
 <MatchesGetFriends>Afficher les matchs amicaux</MatchesGetFriends>
 <MatchesScorers>Buteurs</MatchesScorers>
 <ScorersList>Afficher le noms des buteurs avec le score</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
 <MatchesWindow>Affichage des événements</MatchesWindow>
 <MatchesLines>Nombre d'événements à afficher en mode réduit</MatchesLines>
 <NotifyNotify>Alertes</NotifyNotify>
@@ -244,8 +248,8 @@
 <!--About-->
 <WindowAboutTitle>A propos de</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabTranslators>Traducteurs</TabTranslators>
+<TabCredits>Crédits</TabCredits>
 <MonthJanuary>Jan</MonthJanuary>
 <MonthFebruary>Fév</MonthFebruary>
 <MonthMarch>Mar</MonthMarch>

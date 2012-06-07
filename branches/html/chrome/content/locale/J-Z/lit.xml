@@ -5,12 +5,12 @@
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Paleisti</MenuStart>
 <MenuOptions>Nustatymai</MenuOptions>
-<TooltipButton>Spustelėjus atsidaro „HTLiveSight“ meniu</TooltipButton>
+<TooltipButton>Spustelėjus atsidaro „HTLiveSight“</TooltipButton>
 
 <!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
-<MenuServer>Serveris:</MenuServer>
-<MenuDisconnected>Atsijungta</MenuDisconnected>
+<MenuServer>Serveris: </MenuServer>
+<MenuDisconnected>atsijungta</MenuDisconnected>
 <MenuOptions>Nustatymai</MenuOptions>
 <MenuAbout>Apie „HTLiveSight“</MenuAbout>
 <LoginLabel>Prisijungti</LoginLabel>
@@ -70,10 +70,10 @@
 <TimeFirstHalf>Pirmasis kėlinys</TimeFirstHalf>
 <TimeHalfTime>Pertrauka</TimeHalfTime>
 <TimeSecondHalf>Antrasis kėlinys</TimeSecondHalf>
-<TimeExtraTime>Pratęsimas</TimeExtraTime>
-<TimePenalties>Baudiniai</TimePenalties>
+<TimeExtraTime>pratęsimas</TimeExtraTime>
+<TimePenalties>baudiniai</TimePenalties>
 <TimeFinish>Pasibaigė</TimeFinish>
-<TimeStartsIn>prasideda po</TimeStartsIn>
+<TimeStartsIn>prasidės po</TimeStartsIn>
 <TimeDays>dienų</TimeDays>
 <TimeHours>valandų</TimeHours>
 <TimeMinutes>minučių</TimeMinutes>
@@ -125,27 +125,27 @@
 <EventSpecialUnpredictableSpecialAction>+ Nenuspėjamas: ypatingas veiksmas</EventSpecialUnpredictableSpecialAction>
 <EventSpecialUnpredictableMistake>- Nenuspėjamas: neapgalvotas perdavimas</EventSpecialUnpredictableMistake>
 <EventSpecialUnpredictableOwnGoal>- Nenuspėjamas: įvartis į savus vartus</EventSpecialUnpredictableOwnGoal>
-<EventSpecialQuickScoresAfterRush>+ Greitas: prasiveržimas ir įvartis</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickScoresAfterRush>+ Greitas: prasiveržimas ir smūgis</EventSpecialQuickScoresAfterRush>
 <EventSpecialQuickAssist>+ Greitas: prasiveržimas ir perdavimas</EventSpecialQuickAssist>
 <Pullback>Atsitraukimas gynybon</Pullback>
-<Underestimation>Jėgų pervertinimas</Underestimation>
-<UnderestimationRemove>Jėgų pervertinimo pabaiga</UnderestimationRemove>
-<UnderestimationReduceDouble>Jėgų pervertinimas sumažėjo 2/3</UnderestimationReduceDouble>
-<UnderestimationReduceOnce>Jėgų pervertinimas sumažėjo 1/3</UnderestimationReduceOnce>
+<Underestimation>Varžovų nuvertinimas</Underestimation>
+<UnderestimationRemove>Varžovų nuvertinimo pabaiga</UnderestimationRemove>
+<UnderestimationReduceDouble>Varžovų nuvertinimas sumažėjo 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>Varžovų nuvertinimas sumažėjo 1/3</UnderestimationReduceOnce>
 <OrganizationBreaks>Sumaištis</OrganizationBreaks>
-<Reorganize>Trenerio pastabos</Reorganize>
-<NervesImportantThrillingGame>Nuo įtampos pakriko nervai</NervesImportantThrillingGame>
+<Reorganize>Trenerio pastabos: sumažėjo sumaištis</Reorganize>
+<NervesImportantThrillingGame>Dėl patirties stokos pakriko nervai</NervesImportantThrillingGame>
 <Bruised>Susižeidė</Bruised>
-<Injuried>Trauma</Injuried>
+<Injuried>Trauma be keitimo</Injuried>
 <ModeratelyInjuried>Lengva trauma</ModeratelyInjuried>
 <BadlyInjuried>Sunki trauma</BadlyInjuried>
 <ByHimself>Pats</ByHimself>
 <ByFoul>Dėl pražangos</ByFoul>
 <ExperiencedForward>Patyręs puolėjas</ExperiencedForward>
 <InexperiencedDefender>Nepatyręs gynėjas</InexperiencedDefender>
-<WingerHead>Krašto saugas: pakeltas kamuolys aukštam žaidėjui</WingerHead>
+<WingerHead>Krašto saugas pakėlė kamuolį aukštam žaidėjui</WingerHead>
 <EventSpecialLongShotDefended>Blokuotas tolimasis smūgis</EventSpecialLongShotDefended>
-<EventSpecialQuickVsQuick>Greitas prieš greitą</EventSpecialQuickVsQuick>
+<EventSpecialQuickVsQuick>Greitas sustabdė greitą</EventSpecialQuickVsQuick>
 <LongShot>Tolimasis smūgis</LongShot>
 <MeteoSpecialTechnicalRain>Techniškas lyjant (-puolimas; -žaidimo org.)</MeteoSpecialTechnicalRain>
 <MeteoSpecialPowerfulRain>Stiprus lyjant (+puolimas; +gynyba; +žaidimo org.)</MeteoSpecialPowerfulRain>
@@ -155,8 +155,8 @@
 <MeteoSpecialQuickRain>Greitas lyjant (-gynyba; -puolimas)</MeteoSpecialQuickRain>
 <YellowNastyPlay>Nešvarus žaidimas</YellowNastyPlay>
 <YellowCheating>Sukčiavimas</YellowCheating>
-<ProgressUpdate>Kitas atnaujinimas po:</ProgressUpdate>
-<ProgressSeconds>s</ProgressSeconds>
+<ProgressUpdate>Kitas atnaujinimas po: </ProgressUpdate>
+<ProgressSeconds> s</ProgressSeconds>
 <RequestServer>Gauti rekomenduojamą serverį</RequestServer>
 <RequestLeagueData>Parsisiųsti lygos duomenis</RequestLeagueData>
 <RequestLeagueGames>Parsisiųsti lygos rungtynes</RequestLeagueGames>
