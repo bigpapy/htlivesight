@@ -28,7 +28,7 @@ ul#icons span.ui-icon {float: left; margin: 0 4px;}
 fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin-top:10px;}
 #login-dialog fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin-top:10px; margin-right:120px;}
 
-#topbar {width:100%;height:37px;color:white;background-color:black;display:block;font-size:13px;font-weight: 400;}
+/*#topbar {width:100%;height:37px;color:white;background-color:black;display:block;font-size:13px;font-weight: 400;}*/
 #left_topbar {display:inline-block;float:left;margin-left:8px;margin-top:3px;} /*margin-top:8px*/
 #right_topbar {display:inline-block;float:right;margin-right:8px;margin-top:3px;}/*{display:inline-block;float:right;margin-top:8px}*/
 #central_topbar {display:inline-block;margin-top:3px;text-align:center;margin-left:20%}
@@ -43,9 +43,9 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 #live_box {display:inline-block;margin-left:1px;margin-top:1px;border-radius:10px;float:left;width:74.5%;min-width:800px}
 #sidebar {display:inline-block;margin-right:1px;overflow:auto;float:right;width:24.5%;min-width:200px}
 
-.match_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;padding:0 0 0 0;border-spacing:0 0 0 0}
+/*.match_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;padding:0 0 0 0;border-spacing:0 0 0 0}*/
 .match_row{}
-.datetime_league {text-align:center;border-bottom: thin solid white;}
+/*.datetime_league {text-align:center;border-bottom: thin solid white;}*/
 .hometeam_league {text-align:right;width:42%;padding:0 0 0 0;border-spacing:0 0 0 0}
 .homescore_league {text-align:right;padding:0 0 0 0;border-spacing:0 0 0 0}
 .separator_league {text-align:center;width:2%;padding:0 0 0 0;border-spacing:0 0 0 0}
@@ -53,8 +53,8 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 .awayteam_league {text-align:left;width:42%;padding:0 0 0 0;border-spacing:0 0 0 0}
 .add_league{text-align:center;width:20px;height:20px;}
 .remove_league{text-align:center;width:20px;height:20px;}
-.round_league {text-align:left;border-top: thin solid white;}
-.chronometer_league {text-align:right;border-top: thin solid white;}
+/*.round_league {text-align:left;border-top: thin solid white;}
+.chronometer_league {text-align:right;border-top: thin solid white;}*/
 
 .team_name{font-size:16px;font-weight: 700;}
 .big_score{font-size:24px;font-weight: 700;}
@@ -66,8 +66,8 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 .imgwinboxclose {background: url("chrome://htlivesight/content/img/wboxclose0.png") transparent;border:0;width:20px;height:20px;}
 .imgwinboxclose:hover {background: url("chrome://htlivesight/content/img/wboxclose1.png") transparent;border:0;width:20px;height:20px;}
 
-.live_league_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;text-align:center;}
-.header_league_table{text-align:center;border-bottom: thin solid white;}
+/*.live_league_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;text-align:center;}
+.header_league_table{text-align:center;border-bottom: thin solid white;}*/
 
 #winbox_leaguematches{/*min-height:140px;*/overflow:auto}
 #winboxcontent_leaguetable{/*min-height:150px;*/overflow:auto}
