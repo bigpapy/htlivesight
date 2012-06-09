@@ -1160,6 +1160,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	 var matchLeagueStarted;
 	 try{ // added by bigpapy to debug from XUL to HTML
 //  var strings = document.getElementById("strings");
+		 if (htlivesight.League.currentRound == undefined) return;
   if (htlivesight.Time.hattrickTime > htlivesight.League.currentRound.date) {matchLeagueStarted = true; 
 	//alert("matchLeagueStarted: "+ matchLeagueStarted + " Time.hattrickTime:"+ Time.hattrickTime + " League.currentRound.date: " + League.currentRound.date);
 }
@@ -1281,6 +1282,7 @@ else {matchLeagueStarted = false;
  htlivesight.DOM.UpdateElementBoxLeague=function(league) {
 //  var strings = document.getElementById("strings");
 	 try{ // added by bigpapy to debug from xul to html
+		 if (league.currentRound == undefined) return;
   document.getElementById("winbox_leaguematches").style.display="block";
   var number = /*strings.getString("league.round")*/htlivesight.Util.Parse("LeagueRound",data[0]) + " " + league.currentRound.number;
   var date = htlivesight.Time.formatDate(league.currentRound.date);
@@ -1311,7 +1313,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
     elem = document.getElementById("short_" + match.id + "_" + match.youth);
     if (!elem) {
       elem = htlivesight.DOM.CreateElementRowShortGame(match);
-      if (htlivesight.League.currentRound.id.has(match.id) && htlivesight.showLeague) {
+      if ((htlivesight.League.currentRound!= undefined)&&(htlivesight.League.currentRound.id.has(match.id) && htlivesight.showLeague)) {
         if (match.getTeamById(htlivesight.Teams.myTeam.id)) {
           elem.setAttribute("myLeagueMatch", "true");
         }
@@ -1328,7 +1330,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
       document.getElementById("league_round_time").innerHTML = match.timeElapsed;
 	  
 	  // Gonzo
-      if(htlivesight.League.currentRound.number > htlivesight.League.teams[htlivesight.Teams.myTeam.id].matches){
+      if((htlivesight.League.currentRound!= undefined)&&(htlivesight.League.currentRound.number > htlivesight.League.teams[htlivesight.Teams.myTeam.id].matches)){
         htlivesight.DOM.UpdateElementBoxLeagueTable(htlivesight.League);
       }
       // End
