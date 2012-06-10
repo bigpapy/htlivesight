@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Htlivesight>
+
+<!--Overlay-->
+<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuStart>Inicio</MenuStart>
+<MenuOptions>Opciones</MenuOptions>
+<TooltipButton>Clic para abrir el menú de HTLiveSight</TooltipButton>
+
+<!--Main-->
+<WindowMainTitle>HTLiveSight</WindowMainTitle>
+<MenuServer>Servidor:</MenuServer>
+<MenuDisconnected>Desconectado</MenuDisconnected>
+<MenuOptions>Opciones</MenuOptions>
+<MenuAbout>Acerca de HTLiveSight</MenuAbout>
+<LoginLabel>Acceso a HT</LoginLabel>
+<LoginTeamId>Inserta el TeamId de tu equipo</LoginTeamId>
+<LoginUsername>Usuario</LoginUsername>
+<LoginRememberMe>Recuérdame</LoginRememberMe>
+<LoginButton>Entrar</LoginButton>
+<LoginReLive>Re-Live</LoginReLive>
+<LoginSpeed>Velocidad</LoginSpeed>
+<LoginByEvent>Por evento</LoginByEvent>
+<LeagueMatches>Partidos de liga</LeagueMatches>
+<LeagueLiveTable>Clasificación en vivo</LeagueLiveTable>
+<LeaguePosition>#</LeaguePosition>
+<LeagueTeam>Equipo</LeagueTeam>
+<LeaguePlayed>J</LeaguePlayed>
+<LeagueGoals>G</LeagueGoals>
+<LeagueGoalDiff>DG</LeagueGoalDiff>
+<LeaguePoints>PTS</LeaguePoints>
+<MatchesList>Lista de partidos</MatchesList>
+<MatchesAdd>Añadir partido</MatchesAdd>
+<MatchesByMatch>Según id partido</MatchesByMatch>
+<MatchesByTeam>Según id equipo</MatchesByTeam>
+<MatchesYouth>¿Juveniles?</MatchesYouth>
+<FriendsTitle>Amigos</FriendsTitle>
+<FriendsRemove>Eliminar</FriendsRemove>
+<FriendsOpen>Abrir</FriendsOpen>
+
+<!--Authorize-->
+<Introduction>En un momento serás redirigido a la página CHPP para obtener el código de autorización. Si no es así, por favor deshabilita temporalmente el bloqueo de ventanas emergentes o añade a HTlivesight en la lista de excepciones.</Introduction>
+<Insert>Inserta el código de autorización aquí:</Insert>
+<Ending>HTlivesight ha sido autorizado. Da clic en OK para reiniciar la aplicación.</Ending>
+<Error401>Error 401: acceso no autorizado. Necesitas realizar el proceso de autorización de nuevo. Da clic en OK para continuar.</Error401>
+<Error404>Error 404: el recurso solicitado no pudo ser encontrado. Si este error aparece nuevamente, verifica si el servicio CHPP esta caído.</Error404>
+<Error0>Error 0: Sin conexión a internet.</Error0>
+<Error>Error</Error>
+<ServerON>Conectado</ServerON>
+<ServerOFF>Desconectado</ServerOFF>
+<ResetToken>La autorización ha sido revocada. Reinicia HTLS o espera la próxima actualización (less than 1 minute).</ResetToken>
+<NoHTServer>No has seleccionado en que servidor de Hattrick estas conectado con tu navegador. Da clic derecho en el fondo -> Opciones -> General -> Escribe el número del servidor.</NoHTServer>
+<Error500>Error 500: error interno del servidor (de Hattrick)</Error500>
+<Error503>Error 503: servicio CHPP no disponible (temporalmente sobrecargado o en mantenimiento)</Error503>
+
+<!--Properties-->
+<MatchesMaximum>¡No se pueden ver más de 20 partidos!</MatchesMaximum>
+<LeagueLiveTable>Clasificación en vivo</LeagueLiveTable>
+<LeagueRound>Jornada</LeagueRound>
+<MessageHattrickError>El servidor de Hattrick devuelve un error.</MessageHattrickError>
+<MessageAlreadyFriend>Ya es tu amigo.</MessageAlreadyFriend>
+<MessageErrorReading>Error leyendo datos desde </MessageErrorReading>
+<MessageLoginNotSuccessful>Login fallido.</MessageLoginNotSuccessful>
+<TacticPressing>Presión</TacticPressing>
+<TacticCA>Contraataques</TacticCA>
+<TacticAIM>Atacar por el centro</TacticAIM>
+<TacticAOW>Atacar por las bandas</TacticAOW>
+<TacticPlayCreative>Jugar creativamente</TacticPlayCreative>
+<TacticLongShots>Tiros largos</TacticLongShots>
+<TimeFirstHalf>1ª mitad</TimeFirstHalf>
+<TimeHalfTime>descanso</TimeHalfTime>
+<TimeSecondHalf>2ª mitad</TimeSecondHalf>
+<TimeExtraTime>prórroga</TimeExtraTime>
+<TimePenalties>penaltis</TimePenalties>
+<TimeFinish>final</TimeFinish>
+<TimeStartsIn>empieza en</TimeStartsIn>
+<TimeDays>días</TimeDays>
+<TimeHours>horas</TimeHours>
+<TimeMinutes>minutos</TimeMinutes>
+<TimeDay>día</TimeDay>
+<TimeHour>hora</TimeHour>
+<TimeMinute>minutos</TimeMinute>
+<TimeMin>'</TimeMin>
+<TooltipWindowSound>Activar o descativar sonidos para el partido</TooltipWindowSound>
+<TooltipWindowLink>Enlace al partido en Hattrick</TooltipWindowLink>
+<TooltipWindowInfo>Poner los mensajes de información</TooltipWindowInfo>
+<TooltipWindowMaximize>Maximizar la ventana</TooltipWindowMaximize>
+<TooltipWindowMinimize>Minimizar ventana</TooltipWindowMinimize>
+<TooltipWindowShade>Ocultar ventana</TooltipWindowShade>
+<TooltipWindowClose>Cerrar ventana</TooltipWindowClose>
+<TooltipWindowOpen>Abrir ventana</TooltipWindowOpen>
+<TooltipWindowMoveUp>Mover esta ventana arriba</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>Mover esta ventana abajo</TooltipWindowMoveDown>
+<TooltipFriendRemove>Quitar amigo de la lista</TooltipFriendRemove>
+<TooltipFriendMoveUp>Mover amigo arriba</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>Mover amigo abajo</TooltipFriendMoveDown>
+<MenuAddFriend>Amigo</MenuAddFriend>
+<MenuServer>Servidor:</MenuServer>
+<EventGoal>GOL!!</EventGoal>
+<EventPenaltyGoal>Penalti: GOL</EventPenaltyGoal>
+<EventPenaltyMiss>Penalti: FALLADO!</EventPenaltyMiss>
+<EventInjury>Lesión</EventInjury>
+<EventRed>Tarjeta roja</EventRed>
+<EventYellow2>Segunda amarilla</EventYellow2>
+<EventSideLeft>izquierda</EventSideLeft>
+<EventSideRight>derecha</EventSideRight>
+<EventSideCenter>centro</EventSideCenter>
+<EventSideFreeKick>Falta directa</EventSideFreeKick>
+<EventSidePenalty>penalti</EventSidePenalty>
+<EventSpecialUnpredictable>SE imprevisible</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE tiro lejano</EventSpecialLongShot>
+<EventSpecialQuick>SE rápido</EventSpecialQuick>
+<EventSpecialLowStamina>baja condición</EventSpecialLowStamina>
+<EventSpecialSetPieces>lanzador</EventSpecialSetPieces>
+<EventSpecialHead>cabeceador</EventSpecialHead>
+<EventSpecialExperience>experiencia</EventSpecialExperience>
+<EventSpecialLowExperience>baja experiencia</EventSpecialLowExperience>
+<EventSpecialWinger>+ lateral</EventSpecialWinger>
+<EventSpecialTechnical>técnico</EventSpecialTechnical>
+<EventSpecialCounterAttack>contraataque</EventSpecialCounterAttack>
+<EventSpecialCornerKick>lanzamiento de corner</EventSpecialCornerKick>
+<EventSpecialIndirect>Falta indirecta</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ impredecible: pase largo</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ impredecible: tiro</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ impredecible: acción especial</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- impredecible: error</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- impredecible: autogol</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ rápido: carrera y gol</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ rápido: carrera y asistencia</EventSpecialQuickAssist>
+<Pullback>pullback</Pullback>
+<Underestimation>exceso de confianza</Underestimation>
+<UnderestimationRemove>exceso de confianza eliminado</UnderestimationRemove>
+<UnderestimationReduceDouble>exceso de confianza reducido 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>exceso de confianza reducido 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>confusión</OrganizationBreaks>
+<Reorganize>reorganización</Reorganize>
+<NervesImportantThrillingGame>nerviosismo en juego importante</NervesImportantThrillingGame>
+<Bruised>lastimado</Bruised>
+<Injuried>lesionado</Injuried>
+<ModeratelyInjuried>lesión leve</ModeratelyInjuried>
+<BadlyInjuried>lesión grave</BadlyInjuried>
+<ByHimself>por sí solo</ByHimself>
+<ByFoul>por una falta</ByFoul>
+<ExperiencedForward>delantero experimentado</ExperiencedForward>
+<InexperiencedDefender>defensa sin experiencia</InexperiencedDefender>
+<WingerHead>lateral: cruce para especialista de cabeza</WingerHead>
+<EventSpecialLongShotDefended>tiro lejano detenido</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>rápido vs rápido</EventSpecialQuickVsQuick>
+<LongShot>tiro lejano</LongShot>
+<MeteoSpecialTechnicalRain>- técnico (-anotación -jugadas)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+ potente (+anotación +defensa +jugadas)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+ técnico (+anotación +jugadas)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>- potente (-anotación -condición)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>- rápido (-defensa)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>- rápido (-defensa -anotación)</MeteoSpecialQuickRain>
+<YellowNastyPlay>juego sucio</YellowNastyPlay>
+<YellowCheating>engañando</YellowCheating>
+<ProgressUpdate>Próxima actualización:</ProgressUpdate>
+<ProgressSeconds>s</ProgressSeconds>
+<RequestServer>Conectando al servidor recomendado</RequestServer>
+<RequestLeagueData>Bajando los datos de la liga</RequestLeagueData>
+<RequestLeagueGames>Bajando los datos de la liga</RequestLeagueGames>
+<RequestLive>Actualización en vivo</RequestLive>
+<RequestAdd>Añadir partido</RequestAdd>
+<RequestDelete>Borrar partido</RequestDelete>
+<RequestLogin>Login</RequestLogin>
+<RequestDetails>Bajando detalles del partido</RequestDetails>
+<RequestTeam>Bajando partido por equipo</RequestTeam>
+<RequestTeamData>Bajando datos equipo</RequestTeamData>
+
+<!--Settings-->
+<WindowTitle>Opciones HTLiveSight</WindowTitle>
+<TabGeneral>General</TabGeneral>
+<TabMatches>Partidos</TabMatches>
+<TabNotifications>Notificaciones</TabNotifications>
+<TabLanguage>Idioma</TabLanguage>
+<TabOther>Otros</TabOther>
+<TabCustom>Personalizar</TabCustom>
+<TabGoalSound>Sonidos de gol</TabGoalSound>
+<TabWheatherSound>Sonidos de eventos climáticos y lesiones</TabWheatherSound>
+<TabWhistleSound>Sonidos de hattrick y silbidos del árbitro</TabWhistleSound>
+<GeneralOpen>Abrir HTLiveSight</GeneralOpen>
+<GeneralNewTab>En una nueva pestaña</GeneralNewTab>
+<GeneralNewWindow>En una nueva ventana</GeneralNewWindow>
+<GeneralServer>Configuración del servidor</GeneralServer>
+<GeneralNote>Escribe el servidor de Hattrick en el que estas conectado (p.ej. www96).</GeneralNote>
+<MatchesLeague>Partidos de liga</MatchesLeague>
+<MatchesGetLeague>Bajar partidos de liga</MatchesGetLeague>
+<MatchesPlayed>Si jugado en</MatchesPlayed>
+<MatchesHours>horas.</MatchesHours>
+<MatchesFriends>Amigos</MatchesFriends>
+<MatchesGetFriends>Bajar partidos de amigo</MatchesGetFriends>
+<MatchesScorers>Goleadores</MatchesScorers>
+<ScorersList>Clasificación de Pichichis</ScorersList>
+<MatchesWindow>Ventana completa</MatchesWindow>
+<MatchesLines>Mostrar líneas de detalle al minimizar</MatchesLines>
+<NotifyNotify>Notificaciones</NotifyNotify>
+<NotifyEnableSound>Habilitar notificaciones de sonido</NotifyEnableSound>
+<NotifyOnly>Sólo en partidos abiertos</NotifyOnly>
+<NotifyFlash>Titulares rápidos</NotifyFlash>
+<NotifyStatus>Avisos en barra de estado</NotifyStatus>
+<OtherAuthorization>Código de autorización</OtherAuthorization>
+<OtherReset>Revocar autorización</OtherReset>
+<OtherResetButton>Revocar</OtherResetButton>
+<OtherReverse>Mostrar eventos del partido de abajo hacia arriba</OtherReverse>
+<OtherReverseNote>Recargar página para ver los efectos del cambio</OtherReverseNote>
+<OtherEvents>Orden de eventos</OtherEvents>
+<OtherEventKey>Clave de evento</OtherEventKey>
+<OtherEventKeyNote>Mostrar la clave del evento en el comentario</OtherEventKeyNote>
+<CustomIcons>Iconos</CustomIcons>
+<CustomIconsOld>Iconos originales de Livefox en la ventana del partido</CustomIconsOld>
+<CustomSounds>Sonidos</CustomSounds>
+<CustomSoundsWeather>Sonido de clima al empezar el partido</CustomSoundsWeather>
+<CustomSoundsTime>Sonidos para el inicio/fin del medio tiempo</CustomSoundsTime>
+<CustomSoundsSEW>Sonidos para eventos especiales climáticos</CustomSoundsSEW>
+<CustomSoundsGoal>Sonidos originales de Livefox</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>Sin sonido para goles del rival</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Sonido para gol del equipo</PathSoundsMyGoal>
+<PathSoundsOpGoal>Sonido para gol del rival</PathSoundsOpGoal>
+<PathSoundsFrGoal>Sonido para gol de los Amigos</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Sonido para gol de rivales de Amigos</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Sonido para gol de otros equipos</PathSoundsOtGoal>
+<PathSoundsMiss>Sonido de ocasión fallada</PathSoundsMiss>
+<PathSoundsSun>Sonido para clima soleado</PathSoundsSun>
+<PathSoundsRain>Sonido para clima lluvioso</PathSoundsRain>
+<PathSoundsOvercast>Sonido para clima nublado</PathSoundsOvercast>
+<PathSoundsFewClouds>Sound para clima parcialmente nublado</PathSoundsFewClouds>
+<PathSoundsMyBoo>Sonido para lesión del equipo</PathSoundsMyBoo>
+<PathSoundsOpBoo>Sonido para lesión del rival</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Silbido para el inicio de la 1ra/2da mitad</PathSoundsWhistleStart>
+<PathSoundsWhistle2>Sildido para el fin de la 1ra mitad</PathSoundsWhistle2>
+<PathSoundsWhistle3>Silbido para el fin del partido</PathSoundsWhistle3>
+<PathSoundsWhistle>Sonido para tarjeta Amarilla/Roja</PathSoundsWhistle>
+<PathSoundsHattrick>Sonido de Hattrick</PathSoundsHattrick>
+<PathSoundsRestore>Restaurar</PathSoundsRestore>
+<PathSoundsPlay>Reproducir</PathSoundsPlay>
+<PathSoundsNote1>Insertar file:/// antes de la ruta del sonido en formato .wav</PathSoundsNote1>
+<PathSoundsNote2>Ejemplo: file:///c:\\ruta\al\sonido.wav</PathSoundsNote2>
+<LanguageSelect>Selecciona Idioma</LanguageSelect>
+<LanguageNote>Nota: Es necesario reiniciar HTLiveSight para que los cambios tengan efecto.</LanguageNote>
+<ButtonCancel>Cancelar</ButtonCancel>
+<ButtonOk>Aceptar</ButtonOk>
+
+<!--About-->
+<WindowAboutTitle>Acerca de  HTLiveSight</WindowAboutTitle>
+<TabInfo>Info</TabInfo>
+<TabTranslators>Tranductores</TabTranslators>
+<TabCredits>Creditos</TabCredits>
+<MonthJanuary>Ene</MonthJanuary>
+<MonthFebruary>Feb</MonthFebruary>
+<MonthMarch>Mar</MonthMarch>
+<MonthApril>Abr</MonthApril>
+<MonthMay>May</MonthMay>
+<MonthJune>Jun</MonthJune>
+<MonthJuly>Jul</MonthJuly>
+<MonthAugust>Aug</MonthAugust>
+<MonthSeptember>Sep</MonthSeptember>
+<MonthOctober>Oct</MonthOctober>
+<MonthNovember>Nov</MonthNovember>
+<MonthDecember>Dic</MonthDecember>
+<TextCreatedBy>Creado por</TextCreatedBy>
+<TextDevelopedBy>Desarrollado por</TextDevelopedBy>
+<TextHelpOf>Con la ayuda de</TextHelpOf>
+<TextThanksTo>Muchas gracias a:</TextThanksTo>
+<ButtonClose>Cerrar</ButtonClose>
+
+</Htlivesight>
