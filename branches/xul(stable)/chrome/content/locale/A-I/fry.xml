@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Htlivesight>
+
+<!--Overlay-->
+<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuStart>Start</MenuStart>
+<MenuOptions>Options</MenuOptions>
+<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+
+<!--Main-->
+<WindowMainTitle>HTLiveSight</WindowMainTitle>
+<MenuServer>Server:</MenuServer>
+<MenuDisconnected>Ferbining ferbrutsen</MenuDisconnected>
+<MenuOptions>Opsjes</MenuOptions>
+<MenuAbout>Oer HTLiveSight</MenuAbout>
+<LoginLabel>Login</LoginLabel>
+<LoginTeamId>Foegje dyn Team-ID yn</LoginTeamId>
+<LoginUsername>Loginnamme</LoginUsername>
+<LoginRememberMe>ûnthâlde</LoginRememberMe>
+<LoginButton>Login</LoginButton>
+<LoginReLive>Re-Live</LoginReLive>
+<LoginSpeed>Speed</LoginSpeed>
+<LoginByEvent>Per event</LoginByEvent>
+<LeagueMatches>Kompetysjewedstryden</LeagueMatches>
+<LeagueLiveTable>Aktuele Stán</LeagueLiveTable>
+<LeaguePosition>#</LeaguePosition>
+<LeagueTeam>Team</LeagueTeam>
+<LeaguePlayed>Spile</LeaguePlayed>
+<LeagueGoals>DF-DT</LeagueGoals>
+<LeagueGoalDiff>±</LeagueGoalDiff>
+<LeaguePoints>Pt</LeaguePoints>
+<MatchesList>Wedstrydenlist</MatchesList>
+<MatchesAdd>Wedstryd tafoege</MatchesAdd>
+<MatchesByMatch>Fia match id</MatchesByMatch>
+<MatchesByTeam>Fia team id</MatchesByTeam>
+<MatchesYouth>Jeugd?</MatchesYouth>
+<FriendsTitle>Freonen</FriendsTitle>
+<FriendsRemove>Ferwiderje</FriendsRemove>
+<FriendsOpen>Iepen</FriendsOpen>
+
+<!--Authorize-->
+<Introduction>Jo wurde omlieden nei de CHPPU pagina om in autorisaajsekoade te ûntfange. As jo net omlieden wurde, sjoch dan earst of pop-up blokkearings utskeakele binne. As jo dernei noch net omlieden wurde pleats dan HTLiveSight yn de utsûnderingslist.</Introduction>
+<Insert>Foegje de krigen autorisaasjekoade hjir yn:</Insert>
+<Ending>HTLiveSight is no autorisjeare. Klik OK om de applikaasje opnij te starte.</Ending>
+<Error401>Foutmelding 401: Net autoriseare tagong. Jo tjinje opnij autorisaasje te ferlienen. Klik OK om fierder te gean.</Error401>
+<Error404>Foutmelding 404: De freege boarne kin net berikke wurde. As dizze meidieling nochris ferskient kontrolearje dan of de CHPP tsjinst op HT aktyf is.</Error404>
+<Error0>Foutmelding 0: Net konnektearre mei ynternet.</Error0>
+<Error>Foutmelding</Error>
+<ServerON>Konnektearre</ServerON>
+<ServerOFF>Net konnektearre</ServerOFF>
+<ResetToken>Autorisaasje is ferwidere. Start HTLS opnij of wachtsje op de folgende update (less than 1 minute).</ResetToken>
+<NoHTServer>Jo ha net de Hattrick server selekteard op welke jo ynlogge binne mei jo browser. Klik rjoschts op eftergrûn -> opsjes -> algemien -> ful it formulier yn mei jou server numer.</NoHTServer>
+<Error500>Foutmelding 500: Ynterne server flater (fan Hattrick)</Error500>
+<Error503>Foutmelding 503: CHPP service unbeskikbar (tydelik oerladen of onderhâld)</Error503>
+
+<!--Properties-->
+<MatchesMaximum>Der kinne net mear as 20 wedstryden tagelyk fertoand wurde!</MatchesMaximum>
+<LeagueLiveTable>Aktuele Stán</LeagueLiveTable>
+<LeagueRound>Omgong</LeagueRound>
+<MessageHattrickError>Hattrick server jout in foutmelding.</MessageHattrickError>
+<MessageAlreadyFriend>Dit is al in freon.</MessageAlreadyFriend>
+<MessageErrorReading>Kin gjin data ophelje fan</MessageErrorReading>
+<MessageLoginNotSuccessful>Login mislearre.</MessageLoginNotSuccessful>
+<TacticPressing>druk sette</TacticPressing>
+<TacticCA>tsjin oanfallen</TacticCA>
+<TacticAIM>oanfal troch it midden</TacticAIM>
+<TacticAOW>oanfal oer de wjukken</TacticAOW>
+<TacticPlayCreative>kreatyf spul</TacticPlayCreative>
+<TacticLongShots>ôfstânsskoaten</TacticLongShots>
+<TimeFirstHalf>1ste helte</TimeFirstHalf>
+<TimeHalfTime>rest</TimeHalfTime>
+<TimeSecondHalf>2de helte</TimeSecondHalf>
+<TimeExtraTime>ekstra tiid</TimeExtraTime>
+<TimePenalties>strafskoppen</TimePenalties>
+<TimeFinish>einde wedstyjd</TimeFinish>
+<TimeStartsIn>start oer</TimeStartsIn>
+<TimeDays>dagen</TimeDays>
+<TimeHours>oeren</TimeHours>
+<TimeMinutes>minuten</TimeMinutes>
+<TimeDay>dei</TimeDay>
+<TimeHour>oere</TimeHour>
+<TimeMinute>minuut</TimeMinute>
+<TimeMin>'</TimeMin>
+<TooltipWindowSound>Aktivearje of deactivearje gelûden foar de wedstriid</TooltipWindowSound>
+<TooltipWindowLink>Link mei wedstriid pagina op Hattrick</TooltipWindowLink>
+<TooltipWindowInfo>Ynformaasjebarren berjochten oan/út</TooltipWindowInfo>
+<TooltipWindowMaximize>Maksimaal finster</TooltipWindowMaximize>
+<TooltipWindowMinimize>Minimaal finster</TooltipWindowMinimize>
+<TooltipWindowShade>Skaadfinnster</TooltipWindowShade>
+<TooltipWindowClose>Slút finster</TooltipWindowClose>
+<TooltipWindowOpen>Iepen finster</TooltipWindowOpen>
+<TooltipWindowMoveUp>Ferpleats dit finster nei boppe</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>Ferpleats dit finster nei under</TooltipWindowMoveDown>
+<TooltipFriendRemove>Ferwiderje freon út list</TooltipFriendRemove>
+<TooltipFriendMoveUp>Ferpleats freon omheech</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>Ferpleats freon omleech</TooltipFriendMoveDown>
+<MenuAddFriend>Freon</MenuAddFriend>
+<MenuServer>Server:</MenuServer>
+<EventGoal>DOELPUNT</EventGoal>
+<EventPenaltyGoal>Strafschop: TREFFER</EventPenaltyGoal>
+<EventPenaltyMiss>Strafschop: MIS</EventPenaltyMiss>
+<EventInjury>Blessuere</EventInjury>
+<EventRed>Rode kaart</EventRed>
+<EventYellow2>Twadde giele</EventYellow2>
+<EventSideLeft>links</EventSideLeft>
+<EventSideRight>rjochts</EventSideRight>
+<EventSideCenter>midden</EventSideCenter>
+<EventSideFreeKick>frije skop</EventSideFreeKick>
+<EventSidePenalty>strafskop</EventSidePenalty>
+<EventSpecialUnpredictable>SE unfoarsisber</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE ôfstânsskot</EventSpecialLongShot>
+<EventSpecialQuick>SE fluch</EventSpecialQuick>
+<EventSpecialLowStamina>wurgens</EventSpecialLowStamina>
+<EventSpecialSetPieces>deaspul</EventSpecialSetPieces>
+<EventSpecialHead>koppe</EventSpecialHead>
+<EventSpecialExperience>ûnderfining</EventSpecialExperience>
+<EventSpecialLowExperience>onervarenheid</EventSpecialLowExperience>
+<EventSpecialWinger>+ wjukspul</EventSpecialWinger>
+<EventSpecialTechnical>technysk</EventSpecialTechnical>
+<EventSpecialCounterAttack>tsjinoanfal</EventSpecialCounterAttack>
+<EventSpecialCornerKick>hoekschop</EventSpecialCornerKick>
+<EventSpecialIndirect>yndirecte frije traap</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ unfoarsisbar: lange pass</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ unfoarsisbar: skot</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ unfoarsisbar: speciale aksje</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- unfoarsisbar: flater</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- unfoarsisbar: eigen goal</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ fluch: fleane en skoare</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ fluch: fleane en assist</EventSpecialQuickAssist>
+<Pullback>weromlûke</Pullback>
+<Underestimation>oermoedigens</Underestimation>
+<UnderestimationRemove>oermoedigens ferwidere</UnderestimationRemove>
+<UnderestimationReduceDouble>oermoedigens redusearre mei 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>oermoedigens redusearre mei 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>betizing</OrganizationBreaks>
+<Reorganize>reorganisaasje</Reorganize>
+<NervesImportantThrillingGame>senuwen yn in wichtige opwinende wedstriid</NervesImportantThrillingGame>
+<Bruised>knieze</Bruised>
+<Injuried>blesseare</Injuried>
+<ModeratelyInjuried>reedlike blessuere</ModeratelyInjuried>
+<BadlyInjuried>minne blessuere</BadlyInjuried>
+<ByHimself>troch himsels</ByHimself>
+<ByFoul>troch in oertreding</ByFoul>
+<ExperiencedForward>bedreaune oanfaller</ExperiencedForward>
+<InexperiencedDefender>unbedreaune ferdigener</InexperiencedDefender>
+<WingerHead>Winger: cross foar kop spesjalist</WingerHead>
+<EventSpecialLongShotDefended>ôfstânsskot stoppe</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>fluch tsjin fluch</EventSpecialQuickVsQuick>
+<LongShot>ôfstânsskot</LongShot>
+<MeteoSpecialTechnicalRain>-technysk (-skoare -posysjespul)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+powerful (+skoare +defending +posysjespul)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+technysk (+skoare +posysjespul)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>-powerful (-skoare -kondysje)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>-fluch (-ferdigenje)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>-fluch (-ferdigenje -skoare)</MeteoSpecialQuickRain>
+<YellowNastyPlay>Nasty play</YellowNastyPlay>
+<YellowCheating>falsspilje</YellowCheating>
+<ProgressUpdate>Folgende update:</ProgressUpdate>
+<ProgressSeconds>s</ProgressSeconds>
+<RequestServer>Helje oanbefele server op</RequestServer>
+<RequestLeagueData>Helje kompetysjedata op</RequestLeagueData>
+<RequestLeagueGames>Haal kompetysjewedstriiden op</RequestLeagueGames>
+<RequestLive>Live Update</RequestLive>
+<RequestAdd>Foegje wedstriid ta</RequestAdd>
+<RequestDelete>Verwiderje wedstriid</RequestDelete>
+<RequestLogin>Login</RequestLogin>
+<RequestDetails>Helje wedstriiddetails op</RequestDetails>
+<RequestTeam>Haal wedstriiddata fan team op</RequestTeam>
+<RequestTeamData>Helje teamdata op</RequestTeamData>
+
+<!--Settings-->
+<WindowTitle>HTLiveSight Opsjes</WindowTitle>
+<TabGeneral>Algemien</TabGeneral>
+<TabMatches>Wedstriiden</TabMatches>
+<TabNotifications>Meldings</TabNotifications>
+<TabLanguage>Taal</TabLanguage>
+<TabOther>Other</TabOther>
+<TabCustom>Customizations</TabCustom>
+<TabGoalSound>Goals sounds</TabGoalSound>
+<TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
+<TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
+<GeneralOpen>Iepen HTLiveSight</GeneralOpen>
+<GeneralNewTab>Yn in nij tabblad</GeneralNewTab>
+<GeneralNewWindow>Yn in nij finster</GeneralNewWindow>
+<GeneralServer>Server ynstellings</GeneralServer>
+<GeneralNote>Foegje Hattrick server yn wêrop jo ynlogge binne (lykas www96).</GeneralNote>
+<MatchesLeague>Kompetysjewedstryden</MatchesLeague>
+<MatchesGetLeague>Helje Kompetysjewedstryd  op</MatchesGetLeague>
+<MatchesPlayed>As se spile wurden binnen</MatchesPlayed>
+<MatchesHours>oere.</MatchesHours>
+<MatchesFriends>Freonen</MatchesFriends>
+<MatchesGetFriends>Helje wedstryden fan freonen op</MatchesGetFriends>
+<MatchesScorers>Doelpuntenmakkers</MatchesScorers>
+<ScorersList>Lit doelpuntenmakkers yn de kop sjen</ScorersList>
+<MatchesWindow>Finster</MatchesWindow>
+<MatchesLines>Rigels sichtber yn minimaal finster</MatchesLines>
+<NotifyNotify>Meldingen</NotifyNotify>
+<NotifyEnableSound>Stean meldings mei lûd ta</NotifyEnableSound>
+<NotifyOnly>Allinich yn iepene wedstryden</NotifyOnly>
+<NotifyFlash>Knipperjende kop</NotifyFlash>
+<NotifyStatus>Statusbalk skowfinster</NotifyStatus>
+<OtherAuthorization>Autorisaasje kode</OtherAuthorization>
+<OtherReset>Ferwyderje autorisaasje</OtherReset>
+<OtherResetButton>Ferhelje</OtherResetButton>
+<OtherReverse>Draai wejefte wedstriidbarren om</OtherReverse>
+<OtherReverseNote>Ferfraskje side om it effekt fan de feroarings te sjen.</OtherReverseNote>
+<OtherEvents>Folchoarder fan barren</OtherEvents>
+<OtherEventKey>Eventkey</OtherEventKey>
+<OtherEventKeyNote>Lit eventkey yn it kommentaer sjen</OtherEventKeyNote>
+<CustomIcons>Icons</CustomIcons>
+<CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
+<CustomSounds>Sounds</CustomSounds>
+<CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
+<CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
+<CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
+<CustomSoundsGoal>Original Livefox sounds</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>No sounds for opponent's goals</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Sound for own goal</PathSoundsMyGoal>
+<PathSoundsOpGoal>Sound for goal of my opponent</PathSoundsOpGoal>
+<PathSoundsFrGoal>Sound for goal of friend's</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
+<PathSoundsMiss>Missed goal sound</PathSoundsMiss>
+<PathSoundsSun>Sound for sunny weather</PathSoundsSun>
+<PathSoundsRain>Sound for rainy weather</PathSoundsRain>
+<PathSoundsOvercast>Sound for overcast weather</PathSoundsOvercast>
+<PathSoundsFewClouds>Sound for few clouds weather</PathSoundsFewClouds>
+<PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
+<PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
+<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
+<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
+<PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
+<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
+<PathSoundsRestore>Restore</PathSoundsRestore>
+<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
+<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<LanguageSelect>Kieze taal</LanguageSelect>
+<LanguageNote>Noot: HTLiveSight mat op nij starte wurden foardat de wizigings effekt ha.</LanguageNote>
+<ButtonCancel>Annulearje</ButtonCancel>
+<ButtonOk>OK</ButtonOk>
+
+<!--About-->
+<WindowAboutTitle>Oer HTLiveSight</WindowAboutTitle>
+<TabInfo>Info</TabInfo>
+<TabTranslators>Translators</TabTranslators>
+<TabCredits>Credits</TabCredits>
+<MonthJanuary>Jan</MonthJanuary>
+<MonthFebruary>Feb</MonthFebruary>
+<MonthMarch>Mrt</MonthMarch>
+<MonthApril>Apr</MonthApril>
+<MonthMay>Mei</MonthMay>
+<MonthJune>Jun</MonthJune>
+<MonthJuly>Jul</MonthJuly>
+<MonthAugust>Aug</MonthAugust>
+<MonthSeptember>Sep</MonthSeptember>
+<MonthOctober>Okt</MonthOctober>
+<MonthNovember>Nov</MonthNovember>
+<MonthDecember>Dec</MonthDecember>
+<TextCreatedBy>Untworpen troch</TextCreatedBy>
+<TextDevelopedBy>Untwikkele troch</TextDevelopedBy>
+<TextHelpOf>mei help fan</TextHelpOf>
+<TextThanksTo>Mei tank oan:</TextThanksTo>
+<ButtonClose>Slute</ButtonClose>
+
+</Htlivesight>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Htlivesight>
+
+<!--Overlay-->
+<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuStart>Käivita</MenuStart>
+<MenuOptions>Valikud</MenuOptions>
+<TooltipButton>Kliki HTLiveSight menüü avamiseks</TooltipButton>
+
+<!--Main-->
+<WindowMainTitle>HTLiveSight</WindowMainTitle>
+<MenuServer>Server:</MenuServer>
+<MenuDisconnected>ühendus puudub</MenuDisconnected>
+<MenuOptions>Valikud</MenuOptions>
+<MenuAbout>HTLiveSight programmist</MenuAbout>
+<LoginLabel>Logi sisse</LoginLabel>
+<LoginTeamId>Sisesta oma meeskonna ID</LoginTeamId>
+<LoginUsername>Kasutajanimi</LoginUsername>
+<LoginRememberMe>Jäta mind meelde</LoginRememberMe>
+<LoginButton>Logi sisse</LoginButton>
+<LoginReLive>Kordus</LoginReLive>
+<LoginSpeed>Kiirus</LoginSpeed>
+<LoginByEvent>Sündmuse kohta</LoginByEvent>
+<LeagueMatches>Liiga mängud</LeagueMatches>
+<LeagueLiveTable>Otse tabel</LeagueLiveTable>
+<LeaguePosition>#</LeaguePosition>
+<LeagueTeam>Tiim</LeagueTeam>
+<LeaguePlayed>M</LeaguePlayed>
+<LeagueGoals>V</LeagueGoals>
+<LeagueGoalDiff>Vv</LeagueGoalDiff>
+<LeaguePoints>Pun</LeaguePoints>
+<MatchesList>Mängude nimekiri</MatchesList>
+<MatchesAdd>Lisa mäng</MatchesAdd>
+<MatchesByMatch>Mängu ID järgi</MatchesByMatch>
+<MatchesByTeam>Meeskonna ID järgi</MatchesByTeam>
+<MatchesYouth>Noortemäng?</MatchesYouth>
+<FriendsTitle>Sõbrad</FriendsTitle>
+<FriendsRemove>Eemalda</FriendsRemove>
+<FriendsOpen>Ava</FriendsOpen>
+
+<!--Authorize-->
+<Introduction>Sind suunatakse Hattricki CHPP lehele autoriseerimise koodi saamiseks. Selle toestamiseks lülita hüpikakende keeld ajutiselt välja või lisa HTLiveSight lubatud nimekirja.</Introduction>
+<Insert>sisesta oma autoriseerimise kood siia:</Insert>
+<Ending>Nüüd on HTLiveSight autoriseeritud. Kliki OK, et programm taaskäivitada.</Ending>
+<Error401>VIGA 401: autoriseerimata ligipääs. Sa pead autoriseerimise uuesti tegema. Kliki jätkamiseks OK.</Error401>
+<Error404>VIGA 404: soovitud andmeid ei suudetud leida. Kui see viga esineb korduvalt, siis kontrolli kas CHPP süsteem töötab.</Error404>
+<Error0>VIGA 0: interneti ühendus puudub.</Error0>
+<Error>Viga</Error>
+<ServerON>Ühendus loodud</ServerON>
+<ServerOFF>Ühendus lõppenud</ServerOFF>
+<ResetToken>Autoriseering on tühistatud. Taaskäivita HTLS või oota järgmise värskenduseni (less than 1 minute).</ResetToken>
+<NoHTServer>Sa ei ole sisestanud Hattrick serverit, kus kaudu oled oma brauseris sisse loginud. Parem klikk taustal -> Valikud -> Üldine -> sisesta serveri aadress.</NoHTServer>
+<Error500>VIGA 500: (Hattrick) serveri viga </Error500>
+<Error503>VIGA 503: CHPP teenus kättesaamatu (ajutine koormushäire või hooldustööd)</Error503>
+
+<!--Properties-->
+<MatchesMaximum>Maksimum mängude arv on 20!</MatchesMaximum>
+<LeagueLiveTable>Live! mängud</LeagueLiveTable>
+<LeagueRound>Voor</LeagueRound>
+<MessageHattrickError>Hattrick andis vastuseks vea.</MessageHattrickError>
+<MessageAlreadyFriend>On juba sõber.</MessageAlreadyFriend>
+<MessageErrorReading>Viga andmete lugemisel</MessageErrorReading>
+<MessageLoginNotSuccessful>Sisse logimine ebaõnnestus.</MessageLoginNotSuccessful>
+<TacticPressing>surumine</TacticPressing>
+<TacticCA>vasturünnakud</TacticCA>
+<TacticAIM>ründa keskelt</TacticAIM>
+<TacticAOW>ründa äärtelt</TacticAOW>
+<TacticPlayCreative>mängi loovalt</TacticPlayCreative>
+<TacticLongShots>pikad söödud</TacticLongShots>
+<TimeFirstHalf>1. poolaeg</TimeFirstHalf>
+<TimeHalfTime>Vaheaeg</TimeHalfTime>
+<TimeSecondHalf>2. poolaeg</TimeSecondHalf>
+<TimeExtraTime>Lisaaeg</TimeExtraTime>
+<TimePenalties>Penaltid</TimePenalties>
+<TimeFinish>Mäng lõppenud</TimeFinish>
+<TimeStartsIn>alguseni:</TimeStartsIn>
+<TimeDays>päeva</TimeDays>
+<TimeHours>tundi</TimeHours>
+<TimeMinutes>minutit</TimeMinutes>
+<TimeDay>päev</TimeDay>
+<TimeHour>tund</TimeHour>
+<TimeMinute>minut</TimeMinute>
+<TimeMin>'</TimeMin>
+<TooltipWindowSound>Lülita mängu heli sisse või välja</TooltipWindowSound>
+<TooltipWindowLink>Mängu link Hattrick lehel</TooltipWindowLink>
+<TooltipWindowInfo>Info sõnumite kuvamine</TooltipWindowInfo>
+<TooltipWindowMaximize>Maksimeeri aken</TooltipWindowMaximize>
+<TooltipWindowMinimize>Minimeeri aken</TooltipWindowMinimize>
+<TooltipWindowShade>Aken kokku</TooltipWindowShade>
+<TooltipWindowClose>Sulge aken</TooltipWindowClose>
+<TooltipWindowOpen>Ava aken</TooltipWindowOpen>
+<TooltipWindowMoveUp>Liiguta aken üles</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>Liiguta aken alla</TooltipWindowMoveDown>
+<TooltipFriendRemove>Eemalda sõber nimekirjast</TooltipFriendRemove>
+<TooltipFriendMoveUp>Liiguta sõber üles</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>Liiguta sõber alla</TooltipFriendMoveDown>
+<MenuAddFriend>Sõber</MenuAddFriend>
+<MenuServer>Server:</MenuServer>
+<EventGoal>VÄRAV</EventGoal>
+<EventPenaltyGoal>Penalty: VÄRAV</EventPenaltyGoal>
+<EventPenaltyMiss>Penalty: MÖÖDA</EventPenaltyMiss>
+<EventInjury>Vigastus</EventInjury>
+<EventRed>Punane kaart</EventRed>
+<EventYellow2>Teine kollane kaart</EventYellow2>
+<EventSideLeft>vasakult</EventSideLeft>
+<EventSideRight>paremalt</EventSideRight>
+<EventSideCenter>keskelt</EventSideCenter>
+<EventSideFreeKick>vaba löök</EventSideFreeKick>
+<EventSidePenalty>penalt</EventSidePenalty>
+<EventSpecialUnpredictable>SE ettearvamatu</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE pikk sööt</EventSpecialLongShot>
+<EventSpecialQuick>SE kiire</EventSpecialQuick>
+<EventSpecialLowStamina>madal vastupidavus</EventSpecialLowStamina>
+<EventSpecialSetPieces>standard</EventSpecialSetPieces>
+<EventSpecialHead>peamäng</EventSpecialHead>
+<EventSpecialExperience>kogemus</EventSpecialExperience>
+<EventSpecialLowExperience>madal kogemus</EventSpecialLowExperience>
+<EventSpecialWinger>+ äär</EventSpecialWinger>
+<EventSpecialTechnical>tehniline</EventSpecialTechnical>
+<EventSpecialCounterAttack>vasturünnak</EventSpecialCounterAttack>
+<EventSpecialCornerKick>nurgalöök</EventSpecialCornerKick>
+<EventSpecialIndirect>kaudne vabalöök</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ ettearvamatu: pikk sööt</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ ettearvamatu: pealelöök</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ ettearvamatu: eriline tegevust</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- ettearvamatu: viga</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- ettearvamatu: oma värav</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ kiire: spurt ja värav</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ kiire: spurt ja väravasööt</EventSpecialQuickAssist>
+<Pullback>tagasitõmbumine</Pullback>
+<Underestimation>liigne enesekindlus</Underestimation>
+<UnderestimationRemove>liigne enesekindlus tühistatud</UnderestimationRemove>
+<UnderestimationReduceDouble>liigne enesekindlus vähendatud 2/3 võrra</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>liigne enesekindlus vähendatud 1/3 võrra</UnderestimationReduceOnce>
+<OrganizationBreaks>segadus</OrganizationBreaks>
+<Reorganize>ümber organiseerumine</Reorganize>
+<NervesImportantThrillingGame>närvilisus tähtsas mängus</NervesImportantThrillingGame>
+<Bruised>kerge vigastus</Bruised>
+<Injuried>vigastus</Injuried>
+<ModeratelyInjuried>keskmine vigastus</ModeratelyInjuried>
+<BadlyInjuried>suur vigastus</BadlyInjuried>
+<ByHimself>ise</ByHimself>
+<ByFoul>vea tõttu</ByFoul>
+<ExperiencedForward>kogemustega ründaja</ExperiencedForward>
+<InexperiencedDefender>kogemusteta kaitsja</InexperiencedDefender>
+<WingerHead>äär: tsenderdus ja peamäng</WingerHead>
+<EventSpecialLongShotDefended>pikk sööt peatatud</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>kiire vs kiire</EventSpecialQuickVsQuick>
+<LongShot>pikk sööt</LongShot>
+<MeteoSpecialTechnicalRain>-tehniline (-ründamine -mängujuhtimine)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+jõuline (+ründamine +kaitsmine +mängujuhtimine)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+tehniline (+ründamine +mängujuhtimine)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>-jõuline (-ründamine -vastupidavus)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>-kiire (-kaitsmine)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>-kiire (-kaitsmine -ründamine)</MeteoSpecialQuickRain>
+<YellowNastyPlay>ebaaus mäng</YellowNastyPlay>
+<YellowCheating>sohk</YellowCheating>
+<ProgressUpdate>Järgmine uuendus:</ProgressUpdate>
+<ProgressSeconds>s</ProgressSeconds>
+<RequestServer>Lae soovituslik server</RequestServer>
+<RequestLeagueData>Lae liiga andmed</RequestLeagueData>
+<RequestLeagueGames>Lae liiga mängud</RequestLeagueGames>
+<RequestLive>Otse uuendus</RequestLive>
+<RequestAdd>Lisa mäng</RequestAdd>
+<RequestDelete>Eemalda mäng</RequestDelete>
+<RequestLogin>Logi sisse</RequestLogin>
+<RequestDetails>Lae mängu detailid</RequestDetails>
+<RequestTeam>Lae mäng meeskonna põhjal</RequestTeam>
+<RequestTeamData>Lae meeskonna detailid</RequestTeamData>
+
+<!--Settings-->
+<WindowTitle>HTLiveSight valikud</WindowTitle>
+<TabGeneral>Üldine</TabGeneral>
+<TabMatches>Mängud</TabMatches>
+<TabNotifications>Teavitused</TabNotifications>
+<TabLanguage>Keeled</TabLanguage>
+<TabOther>Muud</TabOther>
+<TabCustom>Valikud</TabCustom>
+<TabGoalSound>Värava heli</TabGoalSound>
+<TabWheatherSound>Ilma sündmuse ja vigastuste helid</TabWheatherSound>
+<TabWhistleSound>Kohtuniku viled ja hattricki helid</TabWhistleSound>
+<GeneralOpen>HTLiveSight avamine</GeneralOpen>
+<GeneralNewTab>Uues tabis</GeneralNewTab>
+<GeneralNewWindow>Uues aknas</GeneralNewWindow>
+<GeneralServer>Serveri seaded</GeneralServer>
+<GeneralNote>Sisesta Hattrick server, kuhu oled sisse loginud (nt. www96).</GeneralNote>
+<MatchesLeague>Liiga mängud</MatchesLeague>
+<MatchesGetLeague>Lae liiga mängud</MatchesGetLeague>
+<MatchesPlayed>Kui mänguni on</MatchesPlayed>
+<MatchesHours>tundi.</MatchesHours>
+<MatchesFriends>Sõprade mängud</MatchesFriends>
+<MatchesGetFriends>Lae sõprade mängud</MatchesGetFriends>
+<MatchesScorers>Värava lööjad</MatchesScorers>
+<ScorersList>Kuva värava lööjad päises</ScorersList>
+<MatchesWindow>Mängu aken</MatchesWindow>
+<MatchesLines>Ridu, mida kuvatakse minimiseeritult</MatchesLines>
+<NotifyNotify>Teavitused</NotifyNotify>
+<NotifyEnableSound>Luba häälega teavitused</NotifyEnableSound>
+<NotifyOnly>Ainult avatud mängude puhul</NotifyOnly>
+<NotifyFlash>Vilguta mängu päist</NotifyFlash>
+<NotifyStatus>Olekuriba liugur</NotifyStatus>
+<OtherAuthorization>Autoriseerimise kood</OtherAuthorization>
+<OtherReset>Tühista autoriseering</OtherReset>
+<OtherResetButton>Reset</OtherResetButton>
+<OtherReverse>Sündmuste järjekord tagurpidi</OtherReverse>
+<OtherReverseNote>Värskenda lehte, et valikud kuvataks</OtherReverseNote>
+<OtherEvents>Sündmuste järjekord</OtherEvents>
+<OtherEventKey>Sündmuse ID</OtherEventKey>
+<OtherEventKeyNote>Kuva sündmuse ID kommentaarides</OtherEventKeyNote>
+<CustomIcons>Ikoonid</CustomIcons>
+<CustomIconsOld>Algupärased Livefox ikoonid mängu aknas</CustomIconsOld>
+<CustomSounds>Helid</CustomSounds>
+<CustomSoundsWeather>Ilma heli mängu alguses</CustomSoundsWeather>
+<CustomSoundsTime>Poolaja alguse/lõpu heli</CustomSoundsTime>
+<CustomSoundsSEW>Ilma erisündmuse heli</CustomSoundsSEW>
+<CustomSoundsGoal>Algupärased Livefox helid</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>Vastase väravad ilma helita</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Oma värava heli</PathSoundsMyGoal>
+<PathSoundsOpGoal>Vastase värava heli</PathSoundsOpGoal>
+<PathSoundsFrGoal>Sõbra värava heli</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Sõbra vastase värava heli</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Muu meeskonna värava heli</PathSoundsOtGoal>
+<PathSoundsMiss>Mööda löödud võimaluse heli</PathSoundsMiss>
+<PathSoundsSun>Päikeselise ilma heli</PathSoundsSun>
+<PathSoundsRain>Vihmase ilma heli</PathSoundsRain>
+<PathSoundsOvercast>Pilvise ilma heli</PathSoundsOvercast>
+<PathSoundsFewClouds>Kerge pilvisusega ilma heli</PathSoundsFewClouds>
+<PathSoundsMyBoo>Oma meeskonna vigastuse heli</PathSoundsMyBoo>
+<PathSoundsOpBoo>Vastase meeskonna vigastuse heli</PathSoundsOpBoo>
+<PathSoundsWhistleStart>I/II poolaja alguse vile</PathSoundsWhistleStart>
+<PathSoundsWhistle2>Poolaja lõpuvile heli</PathSoundsWhistle2>
+<PathSoundsWhistle3>Mängu lõpuvile heli</PathSoundsWhistle3>
+<PathSoundsWhistle>Punase/kollase kaardi heli</PathSoundsWhistle>
+<PathSoundsHattrick>Hattrick heli</PathSoundsHattrick>
+<PathSoundsRestore>Taasta</PathSoundsRestore>
+<PathSoundsPlay>Mängi</PathSoundsPlay>
+<PathSoundsNote1>Sisesta file:/// enne teed .wav formaadis helifailini.</PathSoundsNote1>
+<PathSoundsNote2>Näiteks: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<LanguageSelect>Vali keel</LanguageSelect>
+<LanguageNote>Tähelepanu: Efekti võtmiseks pead Firefoxi taaskäivitama.</LanguageNote>
+<ButtonCancel>Tühista</ButtonCancel>
+<ButtonOk>OK</ButtonOk>
+
+<!--About-->
+<WindowAboutTitle>HTLiveSight programmist</WindowAboutTitle>
+<TabInfo>Info</TabInfo>
+<TabTranslators>Tõlkijad</TabTranslators>
+<TabCredits>Credits</TabCredits>
+<MonthJanuary>Jan</MonthJanuary>
+<MonthFebruary>Veb</MonthFebruary>
+<MonthMarch>Mär</MonthMarch>
+<MonthApril>Apr</MonthApril>
+<MonthMay>Mai</MonthMay>
+<MonthJune>Jun</MonthJune>
+<MonthJuly>Jul</MonthJuly>
+<MonthAugust>Aug</MonthAugust>
+<MonthSeptember>Sep</MonthSeptember>
+<MonthOctober>Okt</MonthOctober>
+<MonthNovember>Nov</MonthNovember>
+<MonthDecember>Det</MonthDecember>
+<TextCreatedBy>Looja</TextCreatedBy>
+<TextDevelopedBy>Arendaja</TextDevelopedBy>
+<TextHelpOf>Arendaja abi</TextHelpOf>
+<TextThanksTo>Suured tänud:</TextThanksTo>
+<ButtonClose>Sulge</ButtonClose>
+
+</Htlivesight>

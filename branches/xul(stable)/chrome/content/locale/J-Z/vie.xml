@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Htlivesight>
+
+<!--Overlay-->
+<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuStart>Bắt đầu</MenuStart>
+<MenuOptions>Lựa chọn</MenuOptions>
+<TooltipButton>Nhấn để mở HTLiveSight menu</TooltipButton>
+
+<!--Main-->
+<WindowMainTitle>HTLiveSight</WindowMainTitle>
+<MenuServer>Máy chủ:</MenuServer>
+<MenuDisconnected>ngắt kết nối</MenuDisconnected>
+<MenuOptions>Lựa chọn</MenuOptions>
+<MenuAbout>Giới thiệu về HTLiveSight</MenuAbout>
+<LoginLabel>Đăng nhập</LoginLabel>
+<LoginTeamId>Điền mã đội của bạn</LoginTeamId>
+<LoginUsername>Tài khoản</LoginUsername>
+<LoginRememberMe>Ghi nhớ tôi</LoginRememberMe>
+<LoginButton>Đăng nhập</LoginButton>
+<LoginReLive>Xem lại</LoginReLive>
+<LoginSpeed>Tốc độ</LoginSpeed>
+<LoginByEvent>Theo sự kiện</LoginByEvent>
+<LeagueMatches>Các trận đấu giải</LeagueMatches>
+<LeagueLiveTable>Bảng xếp hạng hiện tại</LeagueLiveTable>
+<LeaguePosition>Xếp hạng</LeaguePosition>
+<LeagueTeam>Đội</LeagueTeam>
+<LeaguePlayed>Số trận</LeaguePlayed>
+<LeagueGoals>Bàn thắng</LeagueGoals>
+<LeagueGoalDiff>Hiệu số</LeagueGoalDiff>
+<LeaguePoints>Điểm</LeaguePoints>
+<MatchesList>Danh sách trận đấu</MatchesList>
+<MatchesAdd>Thêm trận đấu</MatchesAdd>
+<MatchesByMatch>Theo mã trận đấu</MatchesByMatch>
+<MatchesByTeam>Theo mã đội</MatchesByTeam>
+<MatchesYouth>Đội trẻ?</MatchesYouth>
+<FriendsTitle>Bạn bè</FriendsTitle>
+<FriendsRemove>Xóa bỏ</FriendsRemove>
+<FriendsOpen>Mở</FriendsOpen>
+
+<!--Authorize-->
+<Introduction>Bạn đang được chuyển đến trang CHPP để lấy mã xác nhận. Nếu không được hãy gỡ màn hình pop up hiện tại hoặc cho HTlivesight vào danh sách loại trừ.</Introduction>
+<Insert>Điền mã ủy quyền của bạn tại đây:</Insert>
+<Ending>HTlivesight đã được ủy quyền. Nhấn OK để khởi động lại ứng dụng.</Ending>
+<Error401>Lỗi 401: Không truy cập ủy quyền được. Bạn có thể ủy quyền lại. nhấn ok để tiếp tục.</Error401>
+<Error404>Lỗi 404: Không tìm thấy tài nguyên yêu cầu. Nếu lỗi này tiếp tục xuất hiện nếu dịch cụ CHPP bị ngắt.</Error404>
+<Error0>Lỗi 0: Không có kết nối internet.</Error0>
+<Error>Lỗi</Error>
+<ServerON>Kết nối</ServerON>
+<ServerOFF>Ngắt kết nối</ServerOFF>
+<ResetToken>Mã cá nhân đã bị xóa. Khởi động lại HTLS hoặc chờ lần cập nhật tiếp theo (less than 1 minute).</ResetToken>
+<NoHTServer>Bạn không chọn đúng server Hattrick đang đăng nhập, nhấn chuột phải vào hình nền và nhấn vào -> Lựa chọn -> Cài đặt chung và đặt lại chính xác server Hattrick.</NoHTServer>
+<Error500>Lỗi 500: Lỗi server (của Hattrick)</Error500>
+<Error503>Lỗi 503: Dịch vụ CHPP không sẵn sàng(đang bảo trì hoặc bị quá tải)</Error503>
+
+<!--Properties-->
+<MatchesMaximum>Không thể xem quá 20 trận đấu!</MatchesMaximum>
+<LeagueLiveTable>Bảng xếp hạng hiện tại</LeagueLiveTable>
+<LeagueRound>Vòng đấu</LeagueRound>
+<MessageHattrickError>Máy chủ Hattrick bị lỗi.</MessageHattrickError>
+<MessageAlreadyFriend>Đã là bạn.</MessageAlreadyFriend>
+<MessageErrorReading>Lỗi đọc dữ liệu từ</MessageErrorReading>
+<MessageLoginNotSuccessful>Không đăng nhập thành công</MessageLoginNotSuccessful>
+<TacticPressing>pressing</TacticPressing>
+<TacticCA>phòng thủ phản  công</TacticCA>
+<TacticAIM>tấn công trung lộ</TacticAIM>
+<TacticAOW>tấn công cánh</TacticAOW>
+<TacticPlayCreative>chơi sáng tạo</TacticPlayCreative>
+<TacticLongShots>sút xa</TacticLongShots>
+<TimeFirstHalf>hiệp 1</TimeFirstHalf>
+<TimeHalfTime>nghỉ hiệp 1</TimeHalfTime>
+<TimeSecondHalf>hiệp 2</TimeSecondHalf>
+<TimeExtraTime>hiệp phụ</TimeExtraTime>
+<TimePenalties>penalty</TimePenalties>
+<TimeFinish>kết thúc</TimeFinish>
+<TimeStartsIn>bắt đầu lúc</TimeStartsIn>
+<TimeDays>ngày</TimeDays>
+<TimeHours>giờ</TimeHours>
+<TimeMinutes>phút</TimeMinutes>
+<TimeDay>ngày</TimeDay>
+<TimeHour>giờ</TimeHour>
+<TimeMinute>phút</TimeMinute>
+<TimeMin>'</TimeMin>
+<TooltipWindowSound>Mở hoặc tắt âm thanh trận đấu</TooltipWindowSound>
+<TooltipWindowLink>Kết nối với trận đấu trong Hattrick</TooltipWindowLink>
+<TooltipWindowInfo>Thông báo thay đổi thông tin</TooltipWindowInfo>
+<TooltipWindowMaximize>Phóng to cửa sổ</TooltipWindowMaximize>
+<TooltipWindowMinimize>Ẩn cửa sổ</TooltipWindowMinimize>
+<TooltipWindowShade>Mờ cửa sổ</TooltipWindowShade>
+<TooltipWindowClose>Đóng cửa sổ</TooltipWindowClose>
+<TooltipWindowOpen>Mở cửa sổ</TooltipWindowOpen>
+<TooltipWindowMoveUp>Đưa cửa sổ lên trước</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>Đưa cửa sổ ra sau</TooltipWindowMoveDown>
+<TooltipFriendRemove>Xóa khỏi danh sách bạn</TooltipFriendRemove>
+<TooltipFriendMoveUp>Đưa lên phía trên danh sách bạn</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>Đưa xuống phía dưới danh sách bạn.</TooltipFriendMoveDown>
+<MenuAddFriend>Bạn bè</MenuAddFriend>
+<MenuServer>Máy chủ:</MenuServer>
+<EventGoal>VÀO</EventGoal>
+<EventPenaltyGoal>Penalty: VÀO</EventPenaltyGoal>
+<EventPenaltyMiss>Penalty: BỎ LỠ</EventPenaltyMiss>
+<EventInjury>Chấn thương</EventInjury>
+<EventRed>Thẻ đỏ</EventRed>
+<EventYellow2>Thẻ vàng thứ hai</EventYellow2>
+<EventSideLeft>cánh trái</EventSideLeft>
+<EventSideRight>cánh phải</EventSideRight>
+<EventSideCenter>trung lộ</EventSideCenter>
+<EventSideFreeKick>đá phạt</EventSideFreeKick>
+<EventSidePenalty>penalty</EventSidePenalty>
+<EventSpecialUnpredictable>SE ngẫu hứng</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE sút xa</EventSpecialLongShot>
+<EventSpecialQuick>SE nhanh nhẹn</EventSpecialQuick>
+<EventSpecialLowStamina>thẻ lực thấp</EventSpecialLowStamina>
+<EventSpecialSetPieces>Đá phạt</EventSpecialSetPieces>
+<EventSpecialHead>đánh đầu</EventSpecialHead>
+<EventSpecialExperience>kinh nghiệm</EventSpecialExperience>
+<EventSpecialLowExperience>non kinh nghiệm</EventSpecialLowExperience>
+<EventSpecialWinger>+ chạy cánh</EventSpecialWinger>
+<EventSpecialTechnical>kỹ thuật</EventSpecialTechnical>
+<EventSpecialCounterAttack>phòng thủ phản công</EventSpecialCounterAttack>
+<EventSpecialCornerKick>đá phạt góc</EventSpecialCornerKick>
+<EventSpecialIndirect>đá phạt gián tiếp</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ ngẫu hứng: Chuyền dài</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ ngẫu hứng: ghi bàn</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ ngẫu hứng: hành động ngẫu hứng</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- ngẫu hứng: sai lầm</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- ngẫu hứng: phản lưới nhà</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ nhanh nhẹn: vượt qua đối thủ và ghi bàn</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ nhanh nhẹn: vượt qua đối phương kiến tạo</EventSpecialQuickAssist>
+<Pullback>lui về</Pullback>
+<Underestimation>quá tự tin</Underestimation>
+<UnderestimationRemove>Đã đánh giá đúng hơn về đối thủ</UnderestimationRemove>
+<UnderestimationReduceDouble>Sự tự tin giảm 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>Sự tự tin giảm 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>rối loạn đội hình</OrganizationBreaks>
+<Reorganize>tổ chức lại</Reorganize>
+<NervesImportantThrillingGame>Lo lắng cho trận đấu quan trọng này</NervesImportantThrillingGame>
+<Bruised>chấn thương nhưng còn đá được</Bruised>
+<Injuried>chấn thương</Injuried>
+<ModeratelyInjuried>chấn thương khá nặng</ModeratelyInjuried>
+<BadlyInjuried>Chấn thương rất nặng</BadlyInjuried>
+<ByHimself>tự mình</ByHimself>
+<ByFoul>phạm lỗi</ByFoul>
+<ExperiencedForward>tiền đạo có kinh nghiệm</ExperiencedForward>
+<InexperiencedDefender>hậu vệ thiếu kinh nghiệm</InexperiencedDefender>
+<WingerHead>tiền vệ cánh: tình huống đặc biệt tạt cánh đánh đầu</WingerHead>
+<EventSpecialLongShotDefended>chặn đứng sút sa</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>nhanh nhẹn với nhanh nhẹn</EventSpecialQuickVsQuick>
+<LongShot>sút sa</LongShot>
+<MeteoSpecialTechnicalRain>- kỹ thuật trong mưa (-giảm ghi bàn -giảm kiến thiết)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+ sức mạnh trong mưa (+ghi bàn +phòng thủ +kiến thiết)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+ kỹ thuật khi nắng (+ghi bàn +kiến thiết)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>- sức mạnh khi nắngl (-ghi bàn -thể lực)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>- nhanh nhẹn khi bị nắng (-phòng thủ)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>- nhanh nhẹn khi bị mưa (-phòng thủ -ghi bàn)</MeteoSpecialQuickRain>
+<YellowNastyPlay>thẻ vàng do chơi xấu</YellowNastyPlay>
+<YellowCheating>gian lận</YellowCheating>
+<ProgressUpdate>Tiếp tục cập nhật:</ProgressUpdate>
+<ProgressSeconds>s</ProgressSeconds>
+<RequestServer>Máy chủ khuyên dùng</RequestServer>
+<RequestLeagueData>Lấy dữ liệu bảng đấu</RequestLeagueData>
+<RequestLeagueGames>Lấy dữ liệu trận đấu bảng</RequestLeagueGames>
+<RequestLive>Trực tiếp</RequestLive>
+<RequestAdd>Thêm trận đấu</RequestAdd>
+<RequestDelete>Bỏ trận đấu</RequestDelete>
+<RequestLogin>Đăng nhập</RequestLogin>
+<RequestDetails>Thông tin trận đấu</RequestDetails>
+<RequestTeam>Trận đấu theo đội</RequestTeam>
+<RequestTeamData>Lấy dữ liệu đội bóng</RequestTeamData>
+
+<!--Settings-->
+<WindowTitle>Lựa chọn của HTLiveSight</WindowTitle>
+<TabGeneral>Tổng quát</TabGeneral>
+<TabMatches>Trận đấu</TabMatches>
+<TabNotifications>Thông báo</TabNotifications>
+<TabLanguage>Ngôn ngữ</TabLanguage>
+<TabOther>Khác</TabOther>
+<TabCustom>Tùy chọn</TabCustom>
+<TabGoalSound>Âm thanh khi có bàn thắng</TabGoalSound>
+<TabWheatherSound>Âm thanh khi có sự kiện thời tiết hoặc chấn thương</TabWheatherSound>
+<TabWhistleSound>Tiếng còi của trọng tài và âm thanh của Hattrick</TabWhistleSound>
+<GeneralOpen>Mở HTLiveSight</GeneralOpen>
+<GeneralNewTab>Trong tab mới</GeneralNewTab>
+<GeneralNewWindow>trong cửa sổ mới</GeneralNewWindow>
+<GeneralServer>Cài đặt Server</GeneralServer>
+<GeneralNote>Điền server Hattrick mà bạn đang đăng nhập (ví dụ. www96).</GeneralNote>
+<MatchesLeague>Các trận đấu bảng</MatchesLeague>
+<MatchesGetLeague>Lấy các trận đấu bảng</MatchesGetLeague>
+<MatchesPlayed>Nếu chơi tới</MatchesPlayed>
+<MatchesHours>giờ.</MatchesHours>
+<MatchesFriends>Bạn</MatchesFriends>
+<MatchesGetFriends>Lấy dữ liệu trận đấu của bạn mình</MatchesGetFriends>
+<MatchesScorers>Các cầu thủ ghi bàn</MatchesScorers>
+<ScorersList>Hiển thị các cầu thủ ghi bàn trên cùng</ScorersList>
+<MatchesWindow>Cửa sổ</MatchesWindow>
+<MatchesLines>Dòng hiển thị trong chế độ thu nhỏ</MatchesLines>
+<NotifyNotify>Thông báo</NotifyNotify>
+<NotifyEnableSound>Cho phép báo âm thanh</NotifyEnableSound>
+<NotifyOnly>Chỉ trong các trận đấu đã được mở</NotifyOnly>
+<NotifyFlash>Các dòng tít phía trên</NotifyFlash>
+<NotifyStatus>Thanh trượt trạng thái</NotifyStatus>
+<OtherAuthorization>Mã ủy quyền</OtherAuthorization>
+<OtherReset>Bỏ ủy quyền</OtherReset>
+<OtherResetButton>Reset</OtherResetButton>
+<OtherReverse>Đảo ngược hiển thị sự kiện trận đấu</OtherReverse>
+<OtherReverseNote>Tải lại trang để thấy sự thay đổi.</OtherReverseNote>
+<OtherEvents>Chuỗi sự kiện</OtherEvents>
+<OtherEventKey>Sự kiện quan trọng</OtherEventKey>
+<OtherEventKeyNote>Đưa sự kiện quan trọng vào trong bình luận</OtherEventKeyNote>
+<CustomIcons>Các biểu tượng</CustomIcons>
+<CustomIconsOld>Biểu tượng nguyên bản của Livefox trong cửa sổ trận đấu</CustomIconsOld>
+<CustomSounds>Âm thanh</CustomSounds>
+<CustomSoundsWeather>Âm thanh của thời tiết khi bắt đầu trận đấu</CustomSoundsWeather>
+<CustomSoundsTime>Âm thanh bắt đầu/kết thúc của mỗi hiệp</CustomSoundsTime>
+<CustomSoundsSEW>Âm thanh của sự kiện đặc biệt thời tiết</CustomSoundsSEW>
+<CustomSoundsGoal>Âm thanh của Livefox</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>Sự im lặng khi đối thủ ghi bàn</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Tiếng la hét khi đá phản lưới nhà</PathSoundsMyGoal>
+<PathSoundsOpGoal>Tiếng la khi đối thủ ghi bàn</PathSoundsOpGoal>
+<PathSoundsFrGoal>La mừng khi đội bạn mình ghi bàn</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Âm thanh khi đối thủ của bạn mình ghi bàn</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Âm thanh khi các đội khác ghi bàn</PathSoundsOtGoal>
+<PathSoundsMiss>Âm thanh khi bỏ lỡ cơ hội</PathSoundsMiss>
+<PathSoundsSun>Âm thanh khi trời nắng</PathSoundsSun>
+<PathSoundsRain>Âm thanh khi trời mưa</PathSoundsRain>
+<PathSoundsOvercast>Âm thanh khi trời âm u</PathSoundsOvercast>
+<PathSoundsFewClouds>Âm thanh khi trời có mây</PathSoundsFewClouds>
+<PathSoundsMyBoo>Âm thanh khi đội nhà chấn thương</PathSoundsMyBoo>
+<PathSoundsOpBoo>Âm thanh khi đối thủ chấn thương</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Tiếng còi bắt đầu hiệp 1/2 của trận đấu</PathSoundsWhistleStart>
+<PathSoundsWhistle2>Tiếng còi kết thúc hiệp 1</PathSoundsWhistle2>
+<PathSoundsWhistle3>Tiếng còi kết thúc trận đấu</PathSoundsWhistle3>
+<PathSoundsWhistle>Âm thanh khi thẻ đỏ/thẻ vàng</PathSoundsWhistle>
+<PathSoundsHattrick>Âm thanh Hattrick</PathSoundsHattrick>
+<PathSoundsRestore>Khôi phục</PathSoundsRestore>
+<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsNote1>Điền file:/// trước đường dẫn file âm thanh có đuôi .wav</PathSoundsNote1>
+<PathSoundsNote2>Ví dụ: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<LanguageSelect>Chọn ngôn ngữ</LanguageSelect>
+<LanguageNote>Chú ý: Khởi động lại Firefox để kích hoạt.</LanguageNote>
+<ButtonCancel>Hủy</ButtonCancel>
+<ButtonOk>Chấp nhận</ButtonOk>
+
+<!--About-->
+<WindowAboutTitle>Thông tin về HTLiveSight</WindowAboutTitle>
+<TabInfo>Info</TabInfo>
+<TabTranslators>Người dịch</TabTranslators>
+<TabCredits>Tín dụng</TabCredits>
+<MonthJanuary>Tháng 1</MonthJanuary>
+<MonthFebruary>Tháng 2</MonthFebruary>
+<MonthMarch>Tháng 3</MonthMarch>
+<MonthApril>Tháng 4</MonthApril>
+<MonthMay>Tháng 5</MonthMay>
+<MonthJune>Tháng 6</MonthJune>
+<MonthJuly>Tháng 7</MonthJuly>
+<MonthAugust>Tháng 8</MonthAugust>
+<MonthSeptember>Tháng 9</MonthSeptember>
+<MonthOctober>Tháng 10</MonthOctober>
+<MonthNovember>Tháng 11</MonthNovember>
+<MonthDecember>Tháng 12</MonthDecember>
+<TextCreatedBy>Tạo ra bởi</TextCreatedBy>
+<TextDevelopedBy>Phát triển bởi</TextDevelopedBy>
+<TextHelpOf>Với sự giúp đỡ của</TextHelpOf>
+<TextThanksTo>Gửi lời cảm ơn đến:</TextThanksTo>
+<ButtonClose>Đóng</ButtonClose>
+
+</Htlivesight>

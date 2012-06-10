@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://htlivesight/locale/about.dtd">
+
+<dialog id="htlivesight-about"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  title="window.title"
+  persist="screenX screenY"
+  resizable="yes"
+  buttons="accept"
+  ondialogaccept="window.close();">
+
+	<script type="application/x-javascript" src="./env.js" /> 
+	<script type="application/x-javascript" src="./about.js" />
+	<script type="application/x-javascript" src="prefs.js"/>  
+   	<script type="application/x-javascript" src="preferences.js"/>
+  	<script type="application/x-javascript" src="./util/misc.js" />
+	<script type="application/x-javascript" src="./util.js" />
+	<script type="application/x-javascript" src="./log.js" />
+  
+
+  <hbox>
+    <tabbox>
+      <tabpanels>
+        <tabpanel orient="vertical" align="center" flex="1">
+		  <image class="chpp" src="chrome://htlivesight/skin/128.png"/>
+          <spacer class="tab"/>
+          <label class="header" value="HTLiveSight 0.4.6"/>
+          <label id= "creationDate" value=""/>
+          <label id="createdBy" value=""/>
+          <separator/>
+		  <label value="Based on HattrickLiveFox"/>
+          <label value="http://hattricklivefox.mozdev.org/" class="text-link" href="http://hattricklivefox.mozdev.org/"/>
+		  <separator/>
+		  <label class="header" value="Thanks to"/>
+		  <image class="chpp" src="chrome://htlivesight/skin/sf.png"/>
+		  <label value="for hosting our project!"/>
+		  <label value="http://www.sourceforge.net/projects/htlivesight" class="text-link" href="http://www.sourceforge.net/projects/htlivesight"/>
+        </tabpanel>
+      </tabpanels>
+    </tabbox>
+    <spacer width="10px"/>
+    <vbox>
+      <image class="chpp" src="chrome://htlivesight/skin/chpp.png"/>
+      <separator/>
+	  <image class="chpp" src="chrome://htlivesight/skin/oauth.png"/>
+    </vbox>
+  </hbox>
+  
+  	<script type="text/javascript">
+    htlivesightPrefs.init();	
+// localization part!
+    htlivesight.About.localization();
+ 	</script>	
+  
+</dialog>
+

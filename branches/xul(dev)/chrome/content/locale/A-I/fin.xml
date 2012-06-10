@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Htlivesight>
+
+<!--Overlay-->
+<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuStart>Start</MenuStart>
+<MenuOptions>Options</MenuOptions>
+<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+
+<!--Main-->
+<WindowMainTitle>HTLiveSight</WindowMainTitle>
+<MenuServer>Palvelin:</MenuServer>
+<MenuDisconnected>ei yhteyttä</MenuDisconnected>
+<MenuOptions>Valinnat</MenuOptions>
+<MenuAbout>Tiedot HTLiveSight</MenuAbout>
+<LoginLabel>Kirjaudu</LoginLabel>
+<LoginTeamId>Insert TeamId of your team</LoginTeamId>
+<LoginUsername>Käyttäjänimi</LoginUsername>
+<LoginRememberMe>Muista minut</LoginRememberMe>
+<LoginButton>Kirjaudu</LoginButton>
+<LoginReLive>Re-Live</LoginReLive>
+<LoginSpeed>Nopeus</LoginSpeed>
+<LoginByEvent>Tapahtumittain</LoginByEvent>
+<LeagueMatches>Sarjaottelut</LeagueMatches>
+<LeagueLiveTable>Live taulukko</LeagueLiveTable>
+<LeaguePosition>#</LeaguePosition>
+<LeagueTeam>Joukkue</LeagueTeam>
+<LeaguePlayed>P</LeaguePlayed>
+<LeagueGoals>M</LeagueGoals>
+<LeagueGoalDiff>ME</LeagueGoalDiff>
+<LeaguePoints>PIS</LeaguePoints>
+<MatchesList>Ottelulista</MatchesList>
+<MatchesAdd>Lisää ottelu</MatchesAdd>
+<MatchesByMatch>Ottelu id</MatchesByMatch>
+<MatchesByTeam>Joukkue id</MatchesByTeam>
+<MatchesYouth>Juniori?</MatchesYouth>
+<FriendsTitle>Ystävät</FriendsTitle>
+<FriendsRemove>Poista</FriendsRemove>
+<FriendsOpen>Avaa</FriendsOpen>
+
+<!--Authorize-->
+<Introduction>Sinut ohjattiin chpp-sivulle saadaksesi valtuutuskoodin. Jos ei, niin poista väliaikaisesti ponnahdusikkunoiden esto tai lisää HTlivesight poikkeuslistalle.</Introduction>
+<Insert>lisää valtuutuskoodisi tähän:</Insert>
+<Ending>HTlivesight on nyt valtuutettu. Klikkaa OK käynnistääksesi ohjelman.</Ending>
+<Error401>Virhe 401: ei valtuutettua pääsyä. Tee valtuutus uudelleen. Klikkaa Ok jatkaaksesi.</Error401>
+<Error404>Virhe 404: haluttua resurssia ei löytynyt. Jos virhe tulee uudelleen, tarkasta onko HT:n CHPP-palvelut poissa käytöstä.</Error404>
+<Error0>Virhe 0: ei yhteyttä internetiin.</Error0>
+<Error>Virhe</Error>
+<ServerON>Yhdistetty</ServerON>
+<ServerOFF>Ei yhdistetty</ServerOFF>
+<ResetToken>Valtuutus poistettu. Käynnistä HTLS uudelleen tai odota seuraavaa päivitykseen (less than 1 minute).</ResetToken>
+<NoHTServer>Et ole valinnut palvelinta, johon olet kirjautunut HT:ssa. Klikkaa taustaa hiiren kakkosnäppäimellä -> asetukset -> yleistä -> lisää palvelimen numero.</NoHTServer>
+<Error500>Virhe 500: sisäinen palvelinvirhe (Hattrick)</Error500>
+<Error503>Virhe 503: CHPP palvelu ei saatavilla (tilapäinen ylikuorma tai ylläpito)</Error503>
+
+<!--Properties-->
+<MatchesMaximum>Et voi katsoa enempää kuin 20 ottelua!</MatchesMaximum>
+<LeagueLiveTable>Live-taulukko</LeagueLiveTable>
+<LeagueRound>Kierros</LeagueRound>
+<MessageHattrickError>Hattrick palvelin palautti virheen.</MessageHattrickError>
+<MessageAlreadyFriend>On jo ystäväsi.</MessageAlreadyFriend>
+<MessageErrorReading>Virhe luettaessa tietoja</MessageErrorReading>
+<MessageLoginNotSuccessful>Kirjautuminen epäonnistui.</MessageLoginNotSuccessful>
+<TacticPressing>painostus</TacticPressing>
+<TacticCA>vastahyökkäykset</TacticCA>
+<TacticAIM>hyökkäys keskeltä</TacticAIM>
+<TacticAOW>hyökkäys laidoilta</TacticAOW>
+<TacticPlayCreative>luova peli</TacticPlayCreative>
+<TacticLongShots>kaukolaukaukset</TacticLongShots>
+<TimeFirstHalf>1. puoliaika</TimeFirstHalf>
+<TimeHalfTime>puoliaika</TimeHalfTime>
+<TimeSecondHalf>2. puoliaika</TimeSecondHalf>
+<TimeExtraTime>lisäaika</TimeExtraTime>
+<TimePenalties>rankkarit</TimePenalties>
+<TimeFinish>päättynyt</TimeFinish>
+<TimeStartsIn>alkaa</TimeStartsIn>
+<TimeDays>päivää</TimeDays>
+<TimeHours>tuntia</TimeHours>
+<TimeMinutes>minuuttia</TimeMinutes>
+<TimeDay>päivä</TimeDay>
+<TimeHour>tunti</TimeHour>
+<TimeMinute>minuutti</TimeMinute>
+<TimeMin>'</TimeMin>
+<TooltipWindowSound>Otteluäänet päälle / pois</TooltipWindowSound>
+<TooltipWindowLink>Linkki Hattrickin ottelusivulle</TooltipWindowLink>
+<TooltipWindowInfo>Vaihda informatiiviset viestit</TooltipWindowInfo>
+<TooltipWindowMaximize>Suurenna ikkuna</TooltipWindowMaximize>
+<TooltipWindowMinimize>Pienennä ikkuna</TooltipWindowMinimize>
+<TooltipWindowShade>Varjosta ikkuna</TooltipWindowShade>
+<TooltipWindowClose>Sulje ikkuna</TooltipWindowClose>
+<TooltipWindowOpen>Avaa ikkuna</TooltipWindowOpen>
+<TooltipWindowMoveUp>Siirrä ylös</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>Siirrä alas</TooltipWindowMoveDown>
+<TooltipFriendRemove>Poista ystävä listalta</TooltipFriendRemove>
+<TooltipFriendMoveUp>Siirrä ystävä ylös</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>Siirrä ystävä alas</TooltipFriendMoveDown>
+<MenuAddFriend>Ystävä</MenuAddFriend>
+<MenuServer>Palvelin:</MenuServer>
+<EventGoal>MAALI</EventGoal>
+<EventPenaltyGoal>Rankkari: MAALI</EventPenaltyGoal>
+<EventPenaltyMiss>Rankkari: EPÄONNISTUI</EventPenaltyMiss>
+<EventInjury>Loukkaantuminen</EventInjury>
+<EventRed>Punainen kortti</EventRed>
+<EventYellow2>Toinen keltainen kortti</EventYellow2>
+<EventSideLeft>vasen</EventSideLeft>
+<EventSideRight>oikea</EventSideRight>
+<EventSideCenter>keskusta</EventSideCenter>
+<EventSideFreeKick>vapaapotku</EventSideFreeKick>
+<EventSidePenalty>rankkari</EventSidePenalty>
+<EventSpecialUnpredictable>SE arvaamaton</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE kaukolaukaus</EventSpecialLongShot>
+<EventSpecialQuick>SE nopea</EventSpecialQuick>
+<EventSpecialLowStamina>huono kestävyys</EventSpecialLowStamina>
+<EventSpecialSetPieces>rankkari</EventSpecialSetPieces>
+<EventSpecialHead>pääpeli</EventSpecialHead>
+<EventSpecialExperience>hyvä kokemus</EventSpecialExperience>
+<EventSpecialLowExperience>matala kokemus</EventSpecialLowExperience>
+<EventSpecialWinger>+ laituri</EventSpecialWinger>
+<EventSpecialTechnical>tekninen</EventSpecialTechnical>
+<EventSpecialCounterAttack>vastahyökkäys</EventSpecialCounterAttack>
+<EventSpecialCornerKick>kulmapotku</EventSpecialCornerKick>
+<EventSpecialIndirect>epäsuora vapaapotku</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ arvaamaton: pitkä syöttö</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ arvaamaton: laukaus</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ arvaamaton: odottamaton maalipaikka</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- arvaamaton: virhe</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- arvaamaton: oma maali</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ nopea: pyrähdys ja maali</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ nopea: pyrähdys ja syöttö</EventSpecialQuickAssist>
+<Pullback>vetäytyminen</Pullback>
+<Underestimation>aliarviointi</Underestimation>
+<UnderestimationRemove>aliarviointi poistettu</UnderestimationRemove>
+<UnderestimationReduceDouble>aliarviointia vähennetty 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>aliarviointia vähennetty 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>sekaannus</OrganizationBreaks>
+<Reorganize>uudelleen järjestäytyminen</Reorganize>
+<NervesImportantThrillingGame>hermostuu tärkeässä jännittävässä pelissä</NervesImportantThrillingGame>
+<Bruised>kolhiintunut</Bruised>
+<Injuried>loukkaantunut</Injuried>
+<ModeratelyInjuried>kohtalainen loukkaantuminen</ModeratelyInjuried>
+<BadlyInjuried>paha loukkaantuminen</BadlyInjuried>
+<ByHimself>itse</ByHimself>
+<ByFoul>virheestä</ByFoul>
+<ExperiencedForward>kokenut hyökkääjä</ExperiencedForward>
+<InexperiencedDefender>kokematon puolustaja</InexperiencedDefender>
+<WingerHead>laituri: syöttö pääpeli-pelaajalle</WingerHead>
+<EventSpecialLongShotDefended>kaukolaukaus estetty</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>nopea vs nopea</EventSpecialQuickVsQuick>
+<LongShot>kaukolaukaus</LongShot>
+<MeteoSpecialTechnicalRain>-tekninen (sade) (-maalinteko -pelinrakennus)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+voimakas (sade) (+maalinteko +puolustus +pelinrakennus)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+tekninen (aurinkoinen) (+maalinteko +pelinrakennus)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>-voimakas (aurinkoinen) (-maalinteko -kestävyys)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>-nopea (aurinkoinen) (-puolustus)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>-nopea (sade) (-puolustus -maalinteko)</MeteoSpecialQuickRain>
+<YellowNastyPlay>ilkeä pelaaminen</YellowNastyPlay>
+<YellowCheating>huijaus</YellowCheating>
+<ProgressUpdate>Päivitys:</ProgressUpdate>
+<ProgressSeconds>s</ProgressSeconds>
+<RequestServer>Hae palvelin</RequestServer>
+<RequestLeagueData>Hae sarjadata</RequestLeagueData>
+<RequestLeagueGames>Hae sarjaottelut</RequestLeagueGames>
+<RequestLive>Live-päivitys</RequestLive>
+<RequestAdd>Lisää ottelu</RequestAdd>
+<RequestDelete>Poista ottelu</RequestDelete>
+<RequestLogin>Kirjaudu</RequestLogin>
+<RequestDetails>Hae ottelun tarkemmat tiedot</RequestDetails>
+<RequestTeam>Hae ottelu joukkueella</RequestTeam>
+<RequestTeamData>Hae joukkueen data</RequestTeamData>
+
+<!--Settings-->
+<WindowTitle>HTLiveSight Asetukset</WindowTitle>
+<TabGeneral>Yleiset</TabGeneral>
+<TabMatches>Ottelut</TabMatches>
+<TabNotifications>Ilmoitukset</TabNotifications>
+<TabLanguage>Kieli</TabLanguage>
+<TabOther>Muu</TabOther>
+<TabCustom>Customizations</TabCustom>
+<TabGoalSound>Goals sounds</TabGoalSound>
+<TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
+<TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
+<GeneralOpen>Avaa HTLiveSight</GeneralOpen>
+<GeneralNewTab>Uudessa välilehdessä</GeneralNewTab>
+<GeneralNewWindow>Uudessa ikkunassa</GeneralNewWindow>
+<GeneralServer>Palvelinasetukset</GeneralServer>
+<GeneralNote>Lisää palvelin johon olet kirjautunut (esim. www96).</GeneralNote>
+<MatchesLeague>Sarjaottelut</MatchesLeague>
+<MatchesGetLeague>Hae sarjaottelut</MatchesGetLeague>
+<MatchesPlayed>Pelattu</MatchesPlayed>
+<MatchesHours>tunnin sisällä.</MatchesHours>
+<MatchesFriends>Ystävät</MatchesFriends>
+<MatchesGetFriends>Hae ystävien ottelut</MatchesGetFriends>
+<MatchesScorers>Maalintekijät</MatchesScorers>
+<ScorersList>Listaa maalintekijät yläpalkissa</ScorersList>
+<MatchesWindow>Ikkuna</MatchesWindow>
+<MatchesLines>Rivejä pienennetyssä muodossa</MatchesLines>
+<NotifyNotify>Ilmoitukset</NotifyNotify>
+<NotifyEnableSound>Ota ääni-ilmoitukset käyttöön</NotifyEnableSound>
+<NotifyOnly>Vain avoinnaolevissa otteluissa</NotifyOnly>
+<NotifyFlash>Välkytä yläpalkkia</NotifyFlash>
+<NotifyStatus>Liukuva alapalkki</NotifyStatus>
+<OtherAuthorization>Valtuutuskoodi</OtherAuthorization>
+<OtherReset>Poista valtuutus</OtherReset>
+<OtherResetButton>Reset</OtherResetButton>
+<OtherReverse>Ottelutapahtumien näyttö alhaalta ylös</OtherReverse>
+<OtherReverseNote>Päivitä sivu muutosten päivittämiseksi.</OtherReverseNote>
+<OtherEvents>Tapahtumien järjestys</OtherEvents>
+<OtherEventKey>Tapahtuma-avain</OtherEventKey>
+<OtherEventKeyNote>Näytä tapahtuma-avain kommenteissa</OtherEventKeyNote>
+<CustomIcons>Icons</CustomIcons>
+<CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
+<CustomSounds>Sounds</CustomSounds>
+<CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
+<CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
+<CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
+<CustomSoundsGoal>Original Livefox sounds</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>No sounds for opponent's goals</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Sound for own goal</PathSoundsMyGoal>
+<PathSoundsOpGoal>Sound for goal of my opponent</PathSoundsOpGoal>
+<PathSoundsFrGoal>Sound for goal of friend's</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
+<PathSoundsMiss>Missed goal sound</PathSoundsMiss>
+<PathSoundsSun>Sound for sunny weather</PathSoundsSun>
+<PathSoundsRain>Sound for rainy weather</PathSoundsRain>
+<PathSoundsOvercast>Sound for overcast weather</PathSoundsOvercast>
+<PathSoundsFewClouds>Sound for few clouds weather</PathSoundsFewClouds>
+<PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
+<PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
+<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
+<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
+<PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
+<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
+<PathSoundsRestore>Restore</PathSoundsRestore>
+<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
+<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<LanguageSelect>Valitse kieli</LanguageSelect>
+<LanguageNote>Huom: Käynnistä Firefox uudelleen.</LanguageNote>
+<ButtonCancel>Peruuta</ButtonCancel>
+<ButtonOk>OK</ButtonOk>
+
+<!--About-->
+<WindowAboutTitle>HTLiveSight tiedot</WindowAboutTitle>
+<TabInfo>Info</TabInfo>
+<TabTranslators>Translators</TabTranslators>
+<TabCredits>Credits</TabCredits>
+<MonthJanuary>Tammi</MonthJanuary>
+<MonthFebruary>Helmi</MonthFebruary>
+<MonthMarch>Maalis</MonthMarch>
+<MonthApril>Huhti</MonthApril>
+<MonthMay>Touko</MonthMay>
+<MonthJune>Kesä</MonthJune>
+<MonthJuly>Heinä</MonthJuly>
+<MonthAugust>Elo</MonthAugust>
+<MonthSeptember>Syys</MonthSeptember>
+<MonthOctober>Loka</MonthOctober>
+<MonthNovember>Marras</MonthNovember>
+<MonthDecember>Joulu</MonthDecember>
+<TextCreatedBy>Tekijät</TextCreatedBy>
+<TextDevelopedBy>Kehittäjät</TextDevelopedBy>
+<TextHelpOf>apuna</TextHelpOf>
+<TextThanksTo>Suuret kiitokset:</TextThanksTo>
+<ButtonClose>Sulje</ButtonClose>
+
+</Htlivesight>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Htlivesight>
+
+<!--Overlay-->
+<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuStart>Start</MenuStart>
+<MenuOptions>Options</MenuOptions>
+<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+
+<!--Main-->
+<WindowMainTitle>HTLiveSight</WindowMainTitle>
+<MenuServer>სერვერი:</MenuServer>
+<MenuDisconnected>გათიშული</MenuDisconnected>
+<MenuOptions>ოფცია</MenuOptions>
+<MenuAbout>HTLiveSight-ის შესახებ</MenuAbout>
+<LoginLabel>ლოჯინი</LoginLabel>
+<LoginTeamId>შეიყვანეთ თქვენი გუნდის საიდენტიფიკაციო ნომერი (TeamId)</LoginTeamId>
+<LoginUsername>სახელი</LoginUsername>
+<LoginRememberMe>დამიმახსოვრე</LoginRememberMe>
+<LoginButton>შესვლა</LoginButton>
+<LoginReLive>Re-Live</LoginReLive>
+<LoginSpeed>Speed</LoginSpeed>
+<LoginByEvent>Per event</LoginByEvent>
+<LeagueMatches>ლიგის მატჩები</LeagueMatches>
+<LeagueLiveTable>ცოცხალი მაგიდა</LeagueLiveTable>
+<LeaguePosition>#</LeaguePosition>
+<LeagueTeam>გუნდი</LeagueTeam>
+<LeaguePlayed>თამაშები</LeaguePlayed>
+<LeagueGoals>გატანილი ბურთები</LeagueGoals>
+<LeagueGoalDiff>ბურთების სხვაობა</LeagueGoalDiff>
+<LeaguePoints>ქულები</LeaguePoints>
+<MatchesList>მატჩების სია</MatchesList>
+<MatchesAdd>მატჩის დამატება</MatchesAdd>
+<MatchesByMatch>მატჩის ID-ის მიხედვით</MatchesByMatch>
+<MatchesByTeam>გუნდის ID-ის მიხედვით</MatchesByTeam>
+<MatchesYouth>ახალგაზრდული?</MatchesYouth>
+<FriendsTitle>ამხანაგური</FriendsTitle>
+<FriendsRemove>წაშლა</FriendsRemove>
+<FriendsOpen>გახსნა</FriendsOpen>
+
+<!--Authorize-->
+<Introduction>ხდება თქვენი გადამისამართება chpp გვერდზე ავტორიზაციის კოდის მისაღებად. წარუმატებლობის შემთხვევაში გთხოვთ დროებით გათიშოთ თქვენს ბრაუზერში პოპაპის ბლოკირება ან ჩასვათ HTlivesight გამონაკლისების სიაში</Introduction>
+<Insert>შეიყვანეთ თქვენი ავტორიზაციის კოდი:</Insert>
+<Ending>HTlivesight ავტორიზებულია. დააწექით OK ღილაკს პროგრამის გადასატვირთად</Ending>
+<Error401>შეცდომა 401: არაავტორიზებული წვდომის მცდელობა. გთხოვთ გაიაროთ ავტორიზაცია თავიდან. გასაგრძელებლად დააწექით OK ღილაკს</Error401>
+<Error404>შეცდომა 404: მოთხოვნილი რესურსი არ იძებნება. ამ შეცდომის განმეორების შემთხვევაში შეამოწმეთ გაშვებულია თუ არა chpp სერვისი</Error404>
+<Error0>შეცდომა 0: კავშირი ინტერნეტთან არ მყარდება</Error0>
+<Error>შეცდომა</Error>
+<ServerON>კავშირი დამყარებულია</ServerON>
+<ServerOFF>კავშირი გაწყვეტილია</ServerOFF>
+<ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
+<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.</NoHTServer>
+<Error500>შეცდომა 500: internal server error (of Hattrick)</Error500>
+<Error503>შეცდომა 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
+
+<!--Properties-->
+<MatchesMaximum>20 მატჩზე მეტის ნახვა ერთდროულად არ შეიძლება!</MatchesMaximum>
+<LeagueLiveTable>ცოცხალი მაგიდა</LeagueLiveTable>
+<LeagueRound>რაუნდი</LeagueRound>
+<MessageHattrickError>შეცდომა სერვერთან.</MessageHattrickError>
+<MessageAlreadyFriend>უკვე თქვენი მეგობარია.</MessageAlreadyFriend>
+<MessageErrorReading>შეცდომა ბაზის წაკითხვისას</MessageErrorReading>
+<MessageLoginNotSuccessful>ავტორიზაცია ვერ მოხერხდა.</MessageLoginNotSuccessful>
+<TacticPressing>პრესინგი</TacticPressing>
+<TacticCA>კონტრ-შეტევა</TacticCA>
+<TacticAIM>შეტევა ცენტრიდან</TacticAIM>
+<TacticAOW>შეტევა ფლანგიდან</TacticAOW>
+<TacticPlayCreative>შემოქმედებითი თამაში</TacticPlayCreative>
+<TacticLongShots>შორეული დარტყმა</TacticLongShots>
+<TimeFirstHalf>1 ნახევარი</TimeFirstHalf>
+<TimeHalfTime>შესვენება</TimeHalfTime>
+<TimeSecondHalf> ნახევარი</TimeSecondHalf>
+<TimeExtraTime>დამატებითი დრო</TimeExtraTime>
+<TimePenalties>პენალტები</TimePenalties>
+<TimeFinish>დასრულებული</TimeFinish>
+<TimeStartsIn>იწყება</TimeStartsIn>
+<TimeDays>დღეში</TimeDays>
+<TimeHours>საათში</TimeHours>
+<TimeMinutes>წუთში</TimeMinutes>
+<TimeDay>დღე</TimeDay>
+<TimeHour>საათი</TimeHour>
+<TimeMinute>წუთი</TimeMinute>
+<TimeMin>'</TimeMin>
+<TooltipWindowSound>Activate or deactivate sounds for the match</TooltipWindowSound>
+<TooltipWindowLink>Link to Match Page on Hattrick</TooltipWindowLink>
+<TooltipWindowInfo>წერილების შეტყობინება</TooltipWindowInfo>
+<TooltipWindowMaximize>ფანჯრის გაფართოება</TooltipWindowMaximize>
+<TooltipWindowMinimize>ფანჯრის ჩაკეცვა</TooltipWindowMinimize>
+<TooltipWindowShade>ფანჯრის დაჩრდილვა</TooltipWindowShade>
+<TooltipWindowClose>ფანჯრის დახურვა</TooltipWindowClose>
+<TooltipWindowOpen>ფანჯრის გახსნა</TooltipWindowOpen>
+<TooltipWindowMoveUp>ფანჯრის მაღლა აწევა</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>ფანჯრის დაბლა დაწევა</TooltipWindowMoveDown>
+<TooltipFriendRemove>სიიდან ამოშლა</TooltipFriendRemove>
+<TooltipFriendMoveUp>ზემოთ</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>ქვემოთ</TooltipFriendMoveDown>
+<MenuAddFriend>მეგობარი</MenuAddFriend>
+<MenuServer>სერვერი:</MenuServer>
+<EventGoal>გოოლი</EventGoal>
+<EventPenaltyGoal>Penalty: გოოლი</EventPenaltyGoal>
+<EventPenaltyMiss>Penalty: არ გატანილა</EventPenaltyMiss>
+<EventInjury>დაშავება</EventInjury>
+<EventRed>წითელი ბარათი</EventRed>
+<EventYellow2>მეორე ყვითელი ბარათი</EventYellow2>
+<EventSideLeft>მარცხენა</EventSideLeft>
+<EventSideRight>მარჯვენა</EventSideRight>
+<EventSideCenter>ცენტრი</EventSideCenter>
+<EventSideFreeKick>საჯარიმო დარტყმა</EventSideFreeKick>
+<EventSidePenalty>პენალტი</EventSidePenalty>
+<EventSpecialUnpredictable>SE გამოუცნობი</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE შორეული დარტყმა</EventSpecialLongShot>
+<EventSpecialQuick>SE სწრაფი</EventSpecialQuick>
+<EventSpecialLowStamina>დაბალი გამძლეობა</EventSpecialLowStamina>
+<EventSpecialSetPieces>სტანდარტული</EventSpecialSetPieces>
+<EventSpecialHead>თავი</EventSpecialHead>
+<EventSpecialExperience>გამოცდილება</EventSpecialExperience>
+<EventSpecialLowExperience>დაბალი გმაოცდილება</EventSpecialLowExperience>
+<EventSpecialWinger>+ ფლანგი</EventSpecialWinger>
+<EventSpecialTechnical>ტექნიკური მხარე</EventSpecialTechnical>
+<EventSpecialCounterAttack>კონტრშეტევა</EventSpecialCounterAttack>
+<EventSpecialCornerKick>კუთხური</EventSpecialCornerKick>
+<EventSpecialIndirect>არაპირდაპირი ჯარიმა</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ გამოუცნობი: გრძელი გადაცემა</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ გამოუცნობი: დარტყმა</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ გამოუცნობი: განსაკუთრებული ქმედება</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- გამოუცნობი: შეცდომა</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- გამოუცნობი: გოლი საკუთარ კარში</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ სწრაფი: სწრაფი გოლი</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ სწრაფი: გაქცევა და გადაცემა</EventSpecialQuickAssist>
+<Pullback>Pullback</Pullback>
+<Underestimation>ზედმეტად თავდაჯერებული</Underestimation>
+<UnderestimationRemove>ზედმეტი თავდაჯერება მოშორებულია</UnderestimationRemove>
+<UnderestimationReduceDouble>ზედმეტად თავდაჯერება შემცირებულია by 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>ზედმეტად თავდაჯერება შემცირებულია 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>დაბნეულობა</OrganizationBreaks>
+<Reorganize>რეორგანიზაცია</Reorganize>
+<NervesImportantThrillingGame>ნერვები დაძაბულ მნიშვნელოვან თამაშში</NervesImportantThrillingGame>
+<Bruised>Bruised</Bruised>
+<Injuried>დაშავებული</Injuried>
+<ModeratelyInjuried>საშუალო სიმძიმის დაშავებული</ModeratelyInjuried>
+<BadlyInjuried>მძიმედ დაშავებული</BadlyInjuried>
+<ByHimself>თვითონ</ByHimself>
+<ByFoul>ჯარიმით</ByFoul>
+<ExperiencedForward>გამოცდილი თავდამსხმელი</ExperiencedForward>
+<InexperiencedDefender>გამოუცდელი მცველი</InexperiencedDefender>
+<WingerHead>Winger: ფლანგიდან ჩაწოდება თავით თამაშის სპეციალისტისათვის</WingerHead>
+<EventSpecialLongShotDefended>შორეული დარტყმის მოგერიება</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>სწრაფი vs სწრაფი</EventSpecialQuickVsQuick>
+<LongShot>შორიდან დარტყმა</LongShot>
+<MeteoSpecialTechnicalRain>-ტექნიკური (-Scoring -Playmaking)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+ძლიერი (+Scoring +Defending + Playmaking)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+ტექნიკური (+Scoring +Playmaking)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>-ძლიერი (-Scoring -Stamina)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>-სწრაფი (-Defending)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>-სწრაფი (-Defending -Scoring)</MeteoSpecialQuickRain>
+<YellowNastyPlay>უხეში თამაში</YellowNastyPlay>
+<YellowCheating>მოტყუება</YellowCheating>
+<ProgressUpdate>განახლების პროგრესი:</ProgressUpdate>
+<ProgressSeconds>წამები</ProgressSeconds>
+<RequestServer>რეკომინდირებული სერვერისგან მიღება</RequestServer>
+<RequestLeagueData>ლიგის მონაცემების მიღება</RequestLeagueData>
+<RequestLeagueGames>თამაშების განრიგის მიღება</RequestLeagueGames>
+<RequestLive>მიმდინარე</RequestLive>
+<RequestAdd>მატჩის დამატება</RequestAdd>
+<RequestDelete>მატჩის წაშლა</RequestDelete>
+<RequestLogin>შესვლა</RequestLogin>
+<RequestDetails>მატჩი დაწვრილებით</RequestDetails>
+<RequestTeam>მატჩი გუნდის მიხედვით</RequestTeam>
+<RequestTeamData>გუნდის ინფორმაცია</RequestTeamData>
+
+<!--Settings-->
+<WindowTitle>HTLiveSight ოფცია</WindowTitle>
+<TabGeneral>მთავარი</TabGeneral>
+<TabMatches>მატჩები</TabMatches>
+<TabNotifications>შეტყობინებები</TabNotifications>
+<TabLanguage>ენა</TabLanguage>
+<TabOther>Other</TabOther>
+<TabCustom>Customizations</TabCustom>
+<TabGoalSound>Goals sounds</TabGoalSound>
+<TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
+<TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
+<GeneralOpen>HTLiveSight-ის გახსნა</GeneralOpen>
+<GeneralNewTab>ახალ დაფაზე</GeneralNewTab>
+<GeneralNewWindow>ახალ ფანჯარაში</GeneralNewWindow>
+<GeneralServer>Server settings</GeneralServer>
+<GeneralNote>Insert Hattrick server that you are logged on (ie. www96).</GeneralNote>
+<MatchesLeague>ლიგის მატჩები</MatchesLeague>
+<MatchesGetLeague>ლიგის მატჩების მიღება</MatchesGetLeague>
+<MatchesPlayed>თუ ითამაშა</MatchesPlayed>
+<MatchesHours>საათი.</MatchesHours>
+<MatchesFriends>მეგობრები</MatchesFriends>
+<MatchesGetFriends>მეგობრების მატჩების მიღება</MatchesGetFriends>
+<MatchesScorers>გოლის ავტორები</MatchesScorers>
+<ScorersList>თამაშების სია</ScorersList>
+<MatchesWindow>თამაშების ფანჯარა</MatchesWindow>
+<MatchesLines>ჩაკეცილ მდგომარეობაში</MatchesLines>
+<NotifyNotify>შეტყობინებები</NotifyNotify>
+<NotifyEnableSound>ხმოვანი შეტყობინების ჩართვა</NotifyEnableSound>
+<NotifyOnly>მხოლოდ გახსნილ მატჩებში</NotifyOnly>
+<NotifyFlash>Flash headers</NotifyFlash>
+<NotifyStatus>სტატუსი</NotifyStatus>
+<OtherAuthorization>Authorization code</OtherAuthorization>
+<OtherReset>Remove authorization</OtherReset>
+<OtherResetButton>Reset</OtherResetButton>
+<OtherReverse>Bottom up display of match events</OtherReverse>
+<OtherReverseNote>Refresh page to see the effect of change.</OtherReverseNote>
+<OtherEvents>Sequence of events</OtherEvents>
+<OtherEventKey>Eventkey</OtherEventKey>
+<OtherEventKeyNote>Show eventkey in the commentary</OtherEventKeyNote>
+<CustomIcons>Icons</CustomIcons>
+<CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
+<CustomSounds>Sounds</CustomSounds>
+<CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
+<CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
+<CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
+<CustomSoundsGoal>Original Livefox sounds</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>No sounds for opponent's goals</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Sound for own goal</PathSoundsMyGoal>
+<PathSoundsOpGoal>Sound for goal of my opponent</PathSoundsOpGoal>
+<PathSoundsFrGoal>Sound for goal of friend's</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
+<PathSoundsMiss>Missed goal sound</PathSoundsMiss>
+<PathSoundsSun>Sound for sunny weather</PathSoundsSun>
+<PathSoundsRain>Sound for rainy weather</PathSoundsRain>
+<PathSoundsOvercast>Sound for overcast weather</PathSoundsOvercast>
+<PathSoundsFewClouds>Sound for few clouds weather</PathSoundsFewClouds>
+<PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
+<PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
+<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
+<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
+<PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
+<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
+<PathSoundsRestore>Restore</PathSoundsRestore>
+<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
+<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<LanguageSelect>ენის არჩევა</LanguageSelect>
+<LanguageNote>შენიშვნა: ცვლილების შეტანისთვის საჭიროა HTLiveSight  გადატვირთვა.</LanguageNote>
+<ButtonCancel>გაუქმება</ButtonCancel>
+<ButtonOk>კარგი</ButtonOk>
+
+<!--About-->
+<WindowAboutTitle>HTLiveSight-ის შესახებ</WindowAboutTitle>
+<TabInfo>Info</TabInfo>
+<TabTranslators>Translators</TabTranslators>
+<TabCredits>Credits</TabCredits>
+<MonthJanuary>იან</MonthJanuary>
+<MonthFebruary>თებ</MonthFebruary>
+<MonthMarch>მარ</MonthMarch>
+<MonthApril>აპრ</MonthApril>
+<MonthMay>მაი</MonthMay>
+<MonthJune>ივნ</MonthJune>
+<MonthJuly>ივლ</MonthJuly>
+<MonthAugust>აგვ</MonthAugust>
+<MonthSeptember>სექ</MonthSeptember>
+<MonthOctober>ოქტ</MonthOctober>
+<MonthNovember>ნოე</MonthNovember>
+<MonthDecember>დეკ</MonthDecember>
+<TextCreatedBy>შემქმნელები</TextCreatedBy>
+<TextDevelopedBy>შეასრულა</TextDevelopedBy>
+<TextHelpOf>დახმარებით</TextHelpOf>
+<TextThanksTo>დიდი მადლობა:</TextThanksTo>
+<ButtonClose>დახურვა</ButtonClose>
+
+</Htlivesight>
