@@ -242,7 +242,7 @@ htlivesight.League.ParseFixtures = function(xml) {
       htlivesight.showLeague= false;
     }
     
-    if (htlivesight.showLeague && htlivesight.htlivesight.League.currentRound != undefined) {
+    if (htlivesight.showLeague && htlivesight.League.currentRound != undefined) {
     	// Gonzo
      // document.getElementById("winbox_leaguetable").hidden = false;
       document.getElementById("winbox_leaguetable").setAttribute("style", "display:block");
