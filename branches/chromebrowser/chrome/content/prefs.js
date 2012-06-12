@@ -118,24 +118,27 @@ var htlivesightPrefs = {
 	
 	getValue : function(key) {
         try {
-                if (htlivesightPrefs._pref_branch[key] !== undefined)
-                        return htlivesightPrefs._pref_branch[key];
-                else if (htlivesightPrefs.pref_default[key] !== undefined)
-                        return htlivesightPrefs.pref_default[key];
-                else
-                        return null;
+        	var value = chrome.extension.sendRequest({ req : "getValue", key : key });
+         //       if (htlivesightPrefs._pref_branch[key] !== undefined)
+         //               return htlivesightPrefs._pref_branch[key];
+         //       else if (htlivesightPrefs.pref_default[key] !== undefined)
+         //               return htlivesightPrefs.pref_default[key];
+         //       else
+                        return value;
         }
-        catch (e) {
+        catch (e) { console.log("getvalue error:"+e);
                 return null;
         };
         
 },
 	setValue : function(key, value) {
 		try {
-              htlivesightPrefs._pref_branch[key] = value;
+			console.log("begin set value");
+           //   htlivesightPrefs._pref_branch[key] = value;
               chrome.extension.sendRequest({ req : "setValue", key : key, value : value });
+              console.log("end set value");
             }
-		catch (e) {}
+		catch (e) {console.log("setvalue error:"+e);}
 	},
 
 	deleteValue : function(key) {

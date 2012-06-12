@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+chrome.extension.onRequest.addListener( function(request, sender, sendResponse) {
+    try {
+    	console.log("Listener working!");
+    		if (request.req=="setValue") {
+    		//	setValue(request.key, request.value, request.type);
+    		console.log("before setting");
+    			localStorage.setItem(request.key, JSON.stringify(request.value));
+    		console.log("after setting");
+    		};
+    		if (request.req=="deleteValue") {
+    			console.log("before deleting");
+    			localStorage.removeItem(request.key);
+    			console.log("after deleting");
+    		};
+    		if (request.req=="getValue") {
+    			console.log("before getting");
+    			 var value = localStorage.getItem(request.key);
+    			 sendResponse({value: value});
+    			 console.log("after getting");
+    		}
+    		
+
+          //  htlivesigt.background[request.req](request, sender, sendResponse);
+    }
+    catch (e) {
+          //  Foxtrick.log('Foxtrick - background onRequest: ', e);
+          //  Foxtrick.log(request);
+            sendResponse({ error : 'htlivesight - background onRequest: ' + e });
+    }
+});
+
+Foxtrick.loader.chrome.background.setValue = function(request, sender, sendResponse) {
+    if (FoxtrickPrefs.get(request.key)==request.value) 
+            return;
+    FoxtrickPrefs.setValue(request.key, request.value, request.type);
+    if ( request.key == 'htLanguage' )
+            Foxtrickl10n.init();
+};
+Foxtrick.loader.chrome.background.deleteValue = function(request, sender, sendResponse) {
+    FoxtrickPrefs.deleteValue(request.key);
+    if ( request.key == 'htLanguage' )
+            Foxtrickl10n.init();
+};
+		
+</script>
+</body>
+</html>	
