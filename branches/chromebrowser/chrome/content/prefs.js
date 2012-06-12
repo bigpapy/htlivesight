@@ -78,6 +78,7 @@ var htlivesightPrefs = {
 		}; // end gecko
 		
 		if (htlivesight.arch === "Sandboxed") {
+			console.log("get bool called!");
 			var value = htlivesightPrefs.getValue(key);
             if (typeof(value) == "boolean")
                     return value;
@@ -118,7 +119,9 @@ var htlivesightPrefs = {
 	
 	getValue : function(key) {
         try {
+        	console.log(" in getValue1");
         	var value = chrome.extension.sendRequest({ req : "getValue", key : key });
+        	console.log(" in getValue2: "+value);
          //       if (htlivesightPrefs._pref_branch[key] !== undefined)
          //               return htlivesightPrefs._pref_branch[key];
          //       else if (htlivesightPrefs.pref_default[key] !== undefined)
