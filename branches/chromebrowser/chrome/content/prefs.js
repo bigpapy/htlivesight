@@ -35,7 +35,7 @@ var htlivesightPrefs = {
 			}
 	 		return str;
 			} // end gecko
-		if (htlivesight.arch === "SandBox") {
+		if (htlivesight.arch === "Sandboxed") {
 			var value = htlivesightPrefs.getValue(key);
             if (typeof(value) == "string")
                     return value;
@@ -60,6 +60,7 @@ var htlivesightPrefs = {
 	
 	
 	getBool : function(key) {
+		
 		if (htlivesight.arch === "Gecko") {
 		var value;
 			try {
@@ -74,8 +75,9 @@ var htlivesightPrefs = {
 				}
 			}
 			return value;
-		} // end gecko
-		if (htlivesight.arch === "SandBox") {
+		}; // end gecko
+		
+		if (htlivesight.arch === "Sandboxed") {
 			var value = htlivesightPrefs.getValue(key);
             if (typeof(value) == "boolean")
                     return value;
@@ -99,7 +101,7 @@ var htlivesightPrefs = {
 			return null;
 		}
 		} // end gecko
-		if (htlivesight.arch === "SandBox") {
+		if (htlivesight.arch === "Sandboxed") {
 			var value = htlivesightPrefs.getValue(key);
             if (typeof(value) == "number")
                     return value;
