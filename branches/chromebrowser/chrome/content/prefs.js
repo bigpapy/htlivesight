@@ -8,7 +8,7 @@ var htlivesightPrefs = {
 	pref_default:'',
 
 	init : function() {
-
+		//alert(htlivesight.chromeContext());
 		if (htlivesight.arch === "Gecko") {
 			var prefs = Components
 				.classes["@mozilla.org/preferences-service;1"]
@@ -36,19 +36,18 @@ var htlivesightPrefs = {
 	 		return str;
 			} // end gecko
 		if (htlivesight.arch === "Sandboxed") {
-			var value = htlivesightPrefs.getValue(key);
-            if (typeof(value) == "string")
-                    return value;
-            return null;
-
+			 var value = localStorage["extensions.Htlivesight.prefs."+key];
+			 if (value==null) value="";
+			 return value;
 		}
 
 	},
 
 	setString : function(key, value) {
-		if (htlivesightEnv.chromeContext()==='content')
-			htlivesightPrefs.setValue(key, String(value));
-		else { 
+		if (htlivesight.arch === "Sandboxed")
+			localStorage["extensions.Htlivesight.prefs."+key] = value;
+		//	htlivesightPrefs.setValue(key, String(value));
+		if (htlivesight.arch === "Gecko") {
 				var str = Components
 					.classes["@mozilla.org/supports-string;1"]
 					.createInstance(Components.interfaces.nsISupportsString);
@@ -78,19 +77,19 @@ var htlivesightPrefs = {
 		}; // end gecko
 		
 		if (htlivesight.arch === "Sandboxed") {
-			console.log("get bool called!");
-			var value = htlivesightPrefs.getValue(key);
-            if (typeof(value) == "boolean")
-                    return value;
-            return null;
-
+			var value = localStorage["extensions.Htlivesight.prefs."+key];
+			if(value=="true") return true;
+			if(value=="false") return false;
+			return null;
 		}
 	},
 
 	setBool : function(key, value) {
-		if (htlivesightEnv.chromeContext()==='content')
-			htlivesightPrefs.setValue(key, Boolean(value));
-		else htlivesightPrefs._pref_branch.setBoolPref(encodeURI(key), value);
+		if (htlivesight.arch === "Sandboxed")
+			localStorage["extensions.Htlivesight.prefs."+key] = value;
+		
+		if (htlivesight.arch === "Gecko")
+		 htlivesightPrefs._pref_branch.setBoolPref(encodeURI(key), value);
 	},
 // begin adding by bigpapy (it's a try)*** to be tested, only inserted. ***
 	
@@ -103,51 +102,17 @@ var htlivesightPrefs = {
 		}
 		} // end gecko
 		if (htlivesight.arch === "Sandboxed") {
-			var value = htlivesightPrefs.getValue(key);
-            if (typeof(value) == "number")
-                    return value;
-            return null;
-
+			var value = localStorage["extensions.Htlivesight.prefs."+key];
+			parseInt(value);
+			 return value;
 		}
 	},
 
 	setInt : function(key, value) {
-		if (htlivesightEnv.chromeContext()==='content')
-			htlivesightPrefs.setValue(key, Number(value));
-		else htlivesightPrefs._pref_branch.setIntPref(encodeURI(key), value);
+		if (htlivesight.arch === "Sandboxed")
+			localStorage["extensions.Htlivesight.prefs."+key] = value;
+		
+		if (htlivesight.arch === "Gecko")
+			htlivesightPrefs._pref_branch.setIntPref(encodeURI(key), value);
 	},
-	
-	getValue : function(key) {
-        try {
-        	console.log(" in getValue1");
-        	var value = chrome.extension.sendRequest({ req : "getValue", key : key });
-        	console.log(" in getValue2: "+value);
-         //       if (htlivesightPrefs._pref_branch[key] !== undefined)
-         //               return htlivesightPrefs._pref_branch[key];
-         //       else if (htlivesightPrefs.pref_default[key] !== undefined)
-         //               return htlivesightPrefs.pref_default[key];
-         //       else
-                        return value;
-        }
-        catch (e) { console.log("getvalue error:"+e);
-                return null;
-        };
-        
-},
-	setValue : function(key, value) {
-		try {
-			console.log("begin set value");
-           //   htlivesightPrefs._pref_branch[key] = value;
-              chrome.extension.sendRequest({ req : "setValue", key : key, value : value });
-              console.log("end set value");
-            }
-		catch (e) {console.log("setvalue error:"+e);}
-	},
-
-	deleteValue : function(key) {
-		delete(htlivesightPrefs._pref_branch[key]);
-		chrome.extension.sendRequest({ req : "deleteValue", key : key });
-	},
- 
-
 };

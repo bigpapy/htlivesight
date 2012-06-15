@@ -57,7 +57,7 @@ htlivesight.ApiProxy = {
 		htlivesight.OAuth.setTimestampAndNonce(msg);
 		htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
 		var requestTokenUrl = htlivesight.OAuth.addToURL(htlivesight.ApiProxy.requestTokenUrl, msg.parameters);
-		dump("Requesting token at: " + requestTokenUrl + "\n");
+		console.log("Requesting token at: " + requestTokenUrl + "\n");
 		htlivesight.load(requestTokenUrl, function(text, status) {
 				if (status != 200) {
 					// failed to fetch link
@@ -90,9 +90,9 @@ htlivesight.ApiProxy = {
 
 				// open a new tab of the chpp page to get the authorization code
 				chppPage=window.open(htlivesight.ApiProxy.authorizeUrl + "?" + text );
-				
+			
 				// when clicking on this tab continue
-				window.addEventListener("focus", function(ev) {
+				setTimeout(function(){window.addEventListener("focus", function(ev) {
 					
 					//ask the auth code to user and get it only once
 					if (firstTime){
@@ -122,7 +122,7 @@ htlivesight.ApiProxy = {
 					htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
 					var query = htlivesight.OAuth.formEncode(msg.parameters);
 					var accessTokenUrl = htlivesight.ApiProxy.accessTokenUrl + "?" + query;
-					dump("Requesting access token at: " + accessTokenUrl + "\n");
+					console.log("Requesting access token at: " + accessTokenUrl + "\n");
 					
 					htlivesight.load(accessTokenUrl, function(text) {
 						
@@ -146,7 +146,7 @@ htlivesight.ApiProxy = {
 							document.location.reload();//reload HTLS
 						}catch(e){};
 						}, true);
-				}, false);
+				}, false)},3000);
 
 			}, true);
 	},
@@ -159,7 +159,7 @@ htlivesight.ApiProxy = {
 	 */	
 	
 	retrieve : function(doc, parameters, callback) {
-		dump("ApiProxy: attempting to retrieve: " + parameters + "…\n");
+		console.log("ApiProxy: attempting to retrieve: " + parameters + "…\n");
 	//	var strbundle = document.getElementById("stringsauthorize");
 		// adding new localization file
 	//	console.log("before prefs retrieve");
@@ -176,7 +176,7 @@ htlivesight.ApiProxy = {
 		var teamId = document.getElementById("teamId").value;
 	//	console.log("teamId "+ teamId);
 		if (!htlivesight.ApiProxy.authorized(teamId)) { // if not authorized...
-			dump("ApiProxy: unauthorized.\n");
+			console.log("ApiProxy: unauthorized.\n");
 		//	console.log("ApiProxy: unauthorized.\n")
 			htlivesight.ApiProxy.authorize(doc); // ...get authorization
 			callback(null);
@@ -202,7 +202,7 @@ htlivesight.ApiProxy = {
 		htlivesight.OAuth.setTimestampAndNonce(msg);
 		htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
 		var url = htlivesight.OAuth.addToURL(htlivesight.ApiProxy.resourceUrl, msg.parameters);
-		dump("Fetching XML data from " + url + "\n");
+		console.log("Fetching XML data from " + url + "\n");
 	//	console.log("Fetching XML data from " + url + "\n");
 		htlivesight.loadXml(url, function(x, status) {
 	//		console.log("status "+ status);
@@ -223,7 +223,7 @@ htlivesight.ApiProxy = {
 						break;
 
 			case 401: // error: not authorized	
-					//	dump("ApiProxy: error 401, unauthorized. Arguments: " + parameters + ".\n");
+					//	console.log("ApiProxy: error 401, unauthorized. Arguments: " + parameters + ".\n");
 						var error401=/*strbundle.getString("error401")*/htlivesight.Util.Parse("Error401",data[0]); //i13n: get local string
 						alert(error401);// show local error message
 						htlivesight.ApiProxy.invalidateAccessToken(teamId);//delete access token
@@ -263,7 +263,7 @@ htlivesight.ApiProxy = {
 						break;
 						
 			default	:	// all the others errors.
-				//		dump("ApiProxy: error " + status + ". Arguments: " + parameters + "\n");
+				//		console.log("ApiProxy: error " + status + ". Arguments: " + parameters + "\n");
 						var serverOFF=/*strbundle.getString("serverOFF")*/htlivesight.Util.Parse("ServerOFF",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF); //update server status in menu
 						var error=/*strbundle.getString("error")*/htlivesight.Util.Parse("Error",data[0]);//i13n: get local string

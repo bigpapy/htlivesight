@@ -1376,7 +1376,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
   
  } catch(e) {
     alert("UpdateShortBox(): " + e); //added by bigpapy to debug from XUL to HTML
-	  dump("UpdateShortBox(): " + e);
+	  console.log("UpdateShortBox(): " + e);
   }
 };
 

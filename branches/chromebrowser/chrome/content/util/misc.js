@@ -43,12 +43,12 @@ htlivesight.loadXml = function(url, callback, crossSite) {
 				}
 				catch (e) {
 //					console.log("Uncaught callback error:"+ e);
-					dump("Uncaught callback error:"+ e);
+					console.log("Uncaught callback error:"+ e);
 				}
 			}
 			catch (e) {
 //				console.log("Cannot parse XML:\n" + text + "\n"+ e);
-				dump("Cannot parse XML:\n" + text + "\n"+ e);
+				console.log("Cannot parse XML:\n" + text + "\n"+ e);
 				callback(null, status);
 			}
 		}, crossSite);

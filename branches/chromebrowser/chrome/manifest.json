@@ -14,7 +14,7 @@
     }
 },
 // Add any of these that you need
-//"background_page": "content/background",
+  "background_page": "content/background.html",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -60,7 +60,7 @@
 //"key": "",
 "minimum_chrome_version": "13",
 "omnibox": { "keyword" : "live" },
-"options_page": "content/settings.html",
+"options_page": "content/htlivesight.html",
 	"permissions" : [
 		"tabs",
 		"contextMenus",
