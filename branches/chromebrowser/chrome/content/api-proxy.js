@@ -91,64 +91,67 @@ htlivesight.ApiProxy = {
 				// open a new tab of the chpp page to get the authorization code
 				chppPage=window.open(htlivesight.ApiProxy.authorizeUrl + "?" + text );
 			
-				// when clicking on this tab continue
-				setTimeout(function(){window.addEventListener("focus", function(ev) {
-					
-					//ask the auth code to user and get it only once
-					if (firstTime){
-						firstTime=false;				
-						var insert=/*strbundle.getString("insert")*/htlivesight.Util.Parse("Insert",data[0]);
-						var oauthVerifier = prompt(insert,"");
-						
-					};
-					var accessor = {
-						consumerSecret : htlivesight.ApiProxy.consumerSecret,
-						tokenSecret : requestTokenSecret
-					};
-					var msg = {
-						action : htlivesight.ApiProxy.accessTokenUrl,
-						method : "get",
-						parameters : [
-							["oauth_consumer_key", htlivesight.ApiProxy.consumerKey],
-							["oauth_token", requestToken],
-							["oauth_signature_method", htlivesight.ApiProxy.signatureMethod],
-							["oauth_signature", ""],
-							["oauth_timestamp", ""],
-							["oauth_nonce", ""],
-							["oauth_verifier", oauthVerifier]
-						]
-					};
-					htlivesight.OAuth.setTimestampAndNonce(msg);
-					htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
-					var query = htlivesight.OAuth.formEncode(msg.parameters);
-					var accessTokenUrl = htlivesight.ApiProxy.accessTokenUrl + "?" + query;
-					console.log("Requesting access token at: " + accessTokenUrl + "\n");
-					
-					htlivesight.load(accessTokenUrl, function(text) {
-						
-						try{// added because of error not influent to the target of the function
-							var accessToken = text.split(/&/)[0].split(/=/)[1];
-							var accessTokenSecret = text.split(/&/)[1].split(/=/)[1];
-						
-							// save access Token
-							htlivesight.ApiProxy.setAccessToken(accessToken,teamId);
+				// add a delay because it didn't give time in chrome to open chpp authorization page.
+				setTimeout(function(){
+					// when clicking on this tab continue
+					window.addEventListener("focus", function(ev) {
 
-							// save access Token Secret
-							htlivesight.ApiProxy.setAccessTokenSecret(accessTokenSecret,teamId);
+						//ask the auth code to user and get it only once
+						if (firstTime){
+							firstTime=false;				
+							var insert=/*strbundle.getString("insert")*/htlivesight.Util.Parse("Insert",data[0]);
+							var oauthVerifier = prompt(insert,"");
 
-							//internationalization: get string for ending authorization
-							var ending=/*strbundle.getString("ending")*/htlivesight.Util.Parse("Ending",data[0]);;
-						
-							// showing ending message
-							alert(ending);
-						
-							chppPage.close();// close CHPP pages
-							document.location.reload();//reload HTLS
-						}catch(e){};
+						};
+						var accessor = {
+								consumerSecret : htlivesight.ApiProxy.consumerSecret,
+								tokenSecret : requestTokenSecret
+						};
+						var msg = {
+								action : htlivesight.ApiProxy.accessTokenUrl,
+								method : "get",
+								parameters : [
+								              ["oauth_consumer_key", htlivesight.ApiProxy.consumerKey],
+								              ["oauth_token", requestToken],
+								              ["oauth_signature_method", htlivesight.ApiProxy.signatureMethod],
+								              ["oauth_signature", ""],
+								              ["oauth_timestamp", ""],
+								              ["oauth_nonce", ""],
+								              ["oauth_verifier", oauthVerifier]
+								              ]
+						};
+						htlivesight.OAuth.setTimestampAndNonce(msg);
+						htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
+						var query = htlivesight.OAuth.formEncode(msg.parameters);
+						var accessTokenUrl = htlivesight.ApiProxy.accessTokenUrl + "?" + query;
+						console.log("Requesting access token at: " + accessTokenUrl + "\n");
+
+						htlivesight.load(accessTokenUrl, function(text) {
+
+							try{// added because of error not influent to the target of the function
+								var accessToken = text.split(/&/)[0].split(/=/)[1];
+								var accessTokenSecret = text.split(/&/)[1].split(/=/)[1];
+
+								// save access Token
+								htlivesight.ApiProxy.setAccessToken(accessToken,teamId);
+
+								// save access Token Secret
+								htlivesight.ApiProxy.setAccessTokenSecret(accessTokenSecret,teamId);
+
+								//internationalization: get string for ending authorization
+								var ending=/*strbundle.getString("ending")*/htlivesight.Util.Parse("Ending",data[0]);;
+
+								// showing ending message
+								alert(ending);
+
+								chppPage.close();// close CHPP pages
+								document.location.reload();//reload HTLS
+							}catch(e){};
 						}, true);
-				}, false)},3000);
+					}, false);
+				},1000); // delay to set event listener (1s)
 
-			}, true);
+		}, true);
 	},
 
 	
