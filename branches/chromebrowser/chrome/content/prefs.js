@@ -14,12 +14,14 @@ var htlivesightPrefs = {
 				.classes["@mozilla.org/preferences-service;1"]
 				.getService(Components.interfaces.nsIPrefService);
 			htlivesightPrefs._pref_branch = prefs.getBranch("extensions.Htlivesight.prefs.");
+
 		}
 	},
 
 	getString : function(key) {
 		if (htlivesight.arch === "Gecko") {
 			var str;
+
 			try {
 				str = htlivesightPrefs._pref_branch.getComplexValue(encodeURI(key),
 					Components.interfaces.nsISupportsString).data;
@@ -61,6 +63,7 @@ var htlivesightPrefs = {
 	getBool : function(key) {
 		
 		if (htlivesight.arch === "Gecko") {
+
 		var value;
 			try {
 				value = htlivesightPrefs._pref_branch.getBoolPref(encodeURI(key));
@@ -95,6 +98,7 @@ var htlivesightPrefs = {
 	
 	getInt : function(key) {
 		if (htlivesight.arch === "Gecko") {
+
 		try {
 			return htlivesightPrefs._pref_branch.getIntPref(encodeURI(key));
 		} catch(e) {
