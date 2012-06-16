@@ -156,13 +156,13 @@ htlivesight.DOM = {
       box.parentNode.insertBefore(box, curr);
       
       box.hidden = false;
-      //img.setAttribute("src", htlivesight.Image.live.on);
-      img.setAttribute("class", "imgwinboxshade");
+      img.setAttribute("src", htlivesight.Image.live.ON);
+   //   img.setAttribute("class", "imgwinboxshade");
       htlivesight.DOM.window.repaint(matchId, youth);
     } else {      
       box.hidden = true;
-      //img.setAttribute("src", htlivesight.Image.live.OFF);
-      img.setAttribute("class", "imgwinboxopen");
+      img.setAttribute("src", htlivesight.Image.live.OFF);
+  //    img.setAttribute("class", "imgwinboxopen");
 
       var curr=box;
       var next=curr.nextSibling;
@@ -181,7 +181,8 @@ htlivesight.DOM = {
     var img = document.getElementById("short_liveimage_" + matchId + "_" + youth);
     
     box.hidden = true;
-    img.setAttribute("class", "imgwinboxopen");
+    img.setAttribute("src", htlivesight.Image.live.OFF);
+   // img.setAttribute("class", "imgwinboxopen");
     htlivesight.Match.List["_" + matchId + "_" + youth].live = false;
     htlivesight.liveCount--;
 
@@ -1454,9 +1455,10 @@ try{ //added by bigpapy to debug from XUL to HTML
   cell = document.createElement("td");
   cell.setAttribute("id", "imageadd_" + match.id + "_" + match.youth);
   cell.setAttribute("class", "add_league");
-  image = document.createElement("button");
+  image = document.createElement("img");
   image.setAttribute("id", "short_liveimage_" + match.id + "_" + match.youth);
-  image.setAttribute("class", "imgwinboxopen");
+//  image.setAttribute("class", "imgwinboxopen");
+  image.setAttribute("src", htlivesight.Image.live.OFF);
   image.setAttribute("match_id", match.id + "_" + match.youth);
   image.addEventListener('click',  htlivesight.Click.ToggleMatch, true);
   
@@ -1468,9 +1470,10 @@ try{ //added by bigpapy to debug from XUL to HTML
   cell = document.createElement("td");
   cell.setAttribute("id", "imagedel_" + match.id + "_" + match.youth);
   cell.setAttribute("class", "remove_league");
-  image = document.createElement("button");
+  image = document.createElement("img");
   image.setAttribute("id", "short_liveclose_" + match.id + "_" + match.youth);
-  image.setAttribute("class", "imgwinboxclose");
+//  image.setAttribute("class", "imgwinboxclose");
+  image.setAttribute("src", htlivesight.Image.window.close.OFF);
   image.setAttribute("match_id", match.id + "_" + match.youth);
   image.addEventListener('click',  htlivesight.Click.DeleteMatch, true);
   
