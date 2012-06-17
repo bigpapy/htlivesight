@@ -59,15 +59,15 @@
 	<label id="LoginTeamId"></label>
 	<input type="text" id="teamId" class="text ui-widget-content ui-corner-all"></input>
 	<br />
-	<input type="checkbox" id="save_teamId" /><label for="save_teamId"></label><label id="LoginSave"></label>
+	<input type="checkbox" id="save_teamId" /><label for="save_teamId" id="LoginSave"></label>
 	<input type="button" id="button_login" style="float:right" value="" onclick="try{htlivesight.Click.Login()}catch(e){alert(e);}"/>
 	</fieldset>
 	<fieldset>
 	<legend id="LoginReLive"></legend>
-	<input type="checkbox" id="reLive" onclick="htlivesight.reLive()" /><label for="reLive"></label><label id="LoginReLive2"></label><br />
+	<input type="checkbox" id="reLive" onclick="htlivesight.reLive()" /><label for="reLive" id="LoginReLive2"></label><br />
 	<label id="LoginSpeed"></label>
 	<input type="text" id="reLiveSpeed" value="" class="text ui-widget-content ui-corner-all" />
-	<input type="checkbox" id="reLiveByEvent"/><label for="reLiveByEvent"></label><label id="LoginByEvent"></label>
+	<input type="checkbox" id="reLiveByEvent"/><label for="reLiveByEvent" id="LoginByEvent"></label>
 	</fieldset>
 	</form>
 	<img src="./themes/images/oauth.png" alt="HTLiveSight Logo" class="anotherbrick2">
@@ -190,17 +190,17 @@
 	
 	<fieldset>
 	<legend id ="MatchesLeague"> League Matches</legend>
-	<input type="checkbox" id="chkGetLeague" onclick="htlivesight.Settings.click.chkgetleague();"/><label for="chkGetLeague"></label><label id="label_chkGetLeague">Load automatically League Matches and League Table</label><br />
-	<input type="checkbox" id="chkGetLeagueWithin" onclick="htlivesight.Settings.click.chkgetleaguewithin();"/><label for="chkGetLeagueWithin"></label><label id="label_chkGetLeagueWithin">Played in </label><input value="24" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixleaguehours();"/><label id="MatchesHours"> hours</label><br />
+	<input type="checkbox" id="chkGetLeague" onclick="htlivesight.Settings.click.chkgetleague();"/><label for="chkGetLeague" id="label_chkGetLeague">Load automatically League Matches and League Table</label><br />
+	<input type="checkbox" id="chkGetLeagueWithin" onclick="htlivesight.Settings.click.chkgetleaguewithin();"/><label for="chkGetLeagueWithin" id="label_chkGetLeagueWithin">Played in </label><input value="24" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixleaguehours();"/><label id="MatchesHours"> hours</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesFriends">Friends Matches</legend>
-	<input type="checkbox" id="chkGetFriends" onclick="htlivesight.Settings.click.chkgetfriends();"/><label for="chkGetFriends"></label><label id="label_chkGetFriends">Load automatically matches of your friends</label><br />
-	<input type="checkbox" id="chkGetFriendsWithin" onclick="htlivesight.Settings.click.chkgetfriendswithin();"/><label for="chkGetFriendsWithin"></label><label id="label_chkGetFriendsWithin">Played in</label> <input value="24" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixfriendshours();"/><label id="MatchesHours2">hours</label><br />
+	<input type="checkbox" id="chkGetFriends" onclick="htlivesight.Settings.click.chkgetfriends();"/><label for="chkGetFriends" id="label_chkGetFriends">Load automatically matches of your friends</label><br />
+	<input type="checkbox" id="chkGetFriendsWithin" onclick="htlivesight.Settings.click.chkgetfriendswithin();"/><label for="chkGetFriendsWithin" id="label_chkGetFriendsWithin">Played in</label> <input value="24" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixfriendshours();"/><label id="MatchesHours2">hours</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesScorers">Scorers</legend>
-	<input type="checkbox" id="chkHdrScorers" onclick="htlivesight.Settings.click.chkhdrscorers();"/><label for="chkHdrScorers"></label><label id="label_chkHdrScorers">Add scorers in header</label><br />
+	<input type="checkbox" id="chkHdrScorers" onclick="htlivesight.Settings.click.chkhdrscorers();"/><label for="chkHdrScorers" id="label_chkHdrScorers">Add scorers in header</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesWindow">Live Window</legend>
@@ -211,10 +211,10 @@
 	<div id="otabs-3"> <!--TAB3-->
 	<fieldset>
 	<legend id="NotifyNotify">Notifications</legend>
-	<input type="checkbox" id="chkSound" onclick="htlivesight.Settings.click.chkSound();"/><label for="chkSound"></label><label id="label_chkSound">Enable sound notifications</label><br />
-	<input type="checkbox" id="chkSoundOnlyOpened" onclick="htlivesight.Settings.click.chkSoundOnlyOpened();"/><label for="chkSoundOnlyOpened"></label><label id="label_chkSoundOnlyOpened">Only in opened matches</label><br />
-	<input type="checkbox" id="chkFlash" onclick="htlivesight.Settings.click.chkFlash();"/><label for="chkFlash"></label><label id="label_chkFlash">Flash headers</label><br />
-	<input type="checkbox" id="chkSlider" onclick="htlivesight.Settings.click.chkSlider();"/><label for="chkSlider"></label><label id="label_chkSlider">Status bar slider</label><br />
+	<input type="checkbox" id="chkSound" onclick="htlivesight.Settings.click.chkSound();"/><label for="chkSound" id="label_chkSound">Enable sound notifications</label><br />
+	<input type="checkbox" id="chkSoundOnlyOpened" onclick="htlivesight.Settings.click.chkSoundOnlyOpened();"/><label for="chkSoundOnlyOpened" id="label_chkSoundOnlyOpened">Only in opened matches</label><br />
+	<input type="checkbox" id="chkFlash" onclick="htlivesight.Settings.click.chkFlash();"/><label for="chkFlash" id="label_chkFlash">Flash headers</label><br />
+	<input type="checkbox" id="chkSlider" onclick="htlivesight.Settings.click.chkSlider();"/><label for="chkSlider" id="label_chkSlider">Status bar slider</label><br />
 	</fieldset>
 	
 	</div>
@@ -228,34 +228,34 @@
 	</fieldset>
 	<fieldset>
 	<legend id="OtherEvents">Sequence of events</legend>
-	<input type="checkbox" id="reverseOrder" onclick="htlivesight.Settings.click.reverseOrder();"/><label for="reverseOrder"></label><label id="label_reverseOrder">Bottom up display of match events</label><br />
+	<input type="checkbox" id="reverseOrder" onclick="htlivesight.Settings.click.reverseOrder();"/><label for="reverseOrder" id="label_reverseOrder">Bottom up display of match events</label><br />
 	<label id="OtherReverseNote"></label>
 	</fieldset>
 	<fieldset>
 	<legend id="OtherEventKey"></legend>
-	<input type="checkbox" id="printEventKey" onclick="htlivesight.Settings.click.printEventKey();"/><label for="printEventKey"></label><label id="label_printEventKey">Show eventkey in the commentary</label><br />
+	<input type="checkbox" id="printEventKey" onclick="htlivesight.Settings.click.printEventKey();"/><label for="printEventKey" id="label_printEventKey">Show eventkey in the commentary</label><br />
 	</fieldset>
 	
 	</div>
 	<div id="otabs-5">      <!--TAB5-->
 	<fieldset>
 	<legend id="CustomIcons">Icons</legend>
-	<input type="checkbox" id="oldIcons" onclick="htlivesight.Settings.click.oldIcons();"/><label for="oldIcons"></label><label id="label_oldIcons"> Original Livefox icons in match window</label><br />
+	<input type="checkbox" id="oldIcons" onclick="htlivesight.Settings.click.oldIcons();"/><label for="oldIcons" id="label_oldIcons"> Original Livefox icons in match window</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="CustomSounds">Sounds</legend>
-	<input type="checkbox" id="weather" onclick="htlivesight.Settings.click.weather();"/><label for="weather"></label><label id="label_weather">Weather sound for start of the match</label><br />
-	<input type="checkbox" id="whistleTime" onclick="htlivesight.Settings.click.whistleTime();"/><label for="whistleTime"></label><label id="label_whistleTime">Sound for start/end of an halftime</label><br />
-	<input type="checkbox" id="weatherSE" onclick="htlivesight.Settings.click.weatherSE();"/><label for="weatherSE"></label><label id="label_weatherSE">Sound for weather special events</label><br />
-	<input type="checkbox" id="livefoxGoal" onclick="htlivesight.Settings.click.livefoxGoal();"/><label for="livefoxGoal"></label><label id="label_livefoxGoal">Original Livefox sounds</label><br />
-	<input type="checkbox" id="noOpGoal" onclick="htlivesight.Settings.click.noOpGoal();"/><label for="noOpGoal"></label><label id="label_noOpGoal">No sounds for opponent's goals</label><br />
+	<input type="checkbox" id="weather" onclick="htlivesight.Settings.click.weather();"/><label for="weather" id="label_weather">Weather sound for start of the match</label><br />
+	<input type="checkbox" id="whistleTime" onclick="htlivesight.Settings.click.whistleTime();"/><label for="whistleTime" id="label_whistleTime">Sound for start/end of an halftime</label><br />
+	<input type="checkbox" id="weatherSE" onclick="htlivesight.Settings.click.weatherSE();"/><label for="weatherSE" id="label_weatherSE">Sound for weather special events</label><br />
+	<input type="checkbox" id="livefoxGoal" onclick="htlivesight.Settings.click.livefoxGoal();"/><label for="livefoxGoal" id="label_livefoxGoal">Original Livefox sounds</label><br />
+	<input type="checkbox" id="noOpGoal" onclick="htlivesight.Settings.click.noOpGoal();"/><label for="noOpGoal" id="label_noOpGoal">No sounds for opponent's goals</label><br />
 		</fieldset>
 		<fieldset>
 		<legend id="TabGoalSound">Goals sounds</legend>
 		<label id="PathSoundsNote1"></label><br />
 		<label id="PathSoundsNote2"></label><br />
 	<!-- my goal --><br />
-			<input type="checkbox" id="myGoalCheck" onclick="htlivesight.Settings.click.myGoalSound()"/><label for="myGoalCheck"></label><label id="label_myGoalCheck">Sound for own goal</label>
+			<input type="checkbox" id="myGoalCheck" onclick="htlivesight.Settings.click.myGoalSound()"/><label for="myGoalCheck" id="label_myGoalCheck">Sound for own goal</label>
 			<br /><button id="label_myGoalButton_reset" class="brestore" onclick="htlivesight.Settings.click.myGoalReset()">restore</button><button id="label_myGoalButton_play" class="brestore" onclick="htlivesight.Settings.click.myGoalPlay()">play</button>
 			
 			
@@ -264,7 +264,7 @@
 			
 			<input type="url" id="myGoalSoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.myGoalSound()"/> <br />
 	<!-- op goal --><br />
-					<input type="checkbox" id="opGoalCheck" onclick="htlivesight.Settings.click.opGoalSound()"/><label for="opGoalCheck"></label><label id="label_opGoalCheck">Sound for own goal</label>
+					<input type="checkbox" id="opGoalCheck" onclick="htlivesight.Settings.click.opGoalSound()"/><label for="opGoalCheck" id="label_opGoalCheck">Sound for own goal</label>
 					<br /><button id="label_opGoalButton_reset" class="brestore" onclick="htlivesight.Settings.click.opGoalReset()">restore</button><button id="label_opGoalButton_play" class="brestore" onclick="htlivesight.Settings.click.opGoalPlay()">play</button>
 			
 			
@@ -273,7 +273,7 @@
 			
 			<input type="url" id="opGoalSoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.opGoalSound()"/> <br />
 	<!-- fr goal --><br />
-			<input type="checkbox" id="frGoalCheck" onclick="htlivesight.Settings.click.frGoalSound()"/><label for="frGoalCheck"></label><label id="label_frGoalCheck">Sound for own goal</label>
+			<input type="checkbox" id="frGoalCheck" onclick="htlivesight.Settings.click.frGoalSound()"/><label for="frGoalCheck" id="label_frGoalCheck">Sound for own goal</label>
 			<br /><button id="label_frGoalButton_reset" class="brestore" onclick="htlivesight.Settings.click.frGoalReset()">restore</button><button id="label_frGoalButton_play" class="brestore" onclick="htlivesight.Settings.click.frGoalPlay()">play</button>
 			
 			
@@ -282,7 +282,7 @@
 			
 			<input type="url" id="frGoalSoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.frGoalSound()"/> <br />
 	<!-- opfr goal --><br />
-			<input type="checkbox" id="opfrGoalCheck" onclick="htlivesight.Settings.click.opfrGoalSound()"/><label for="opfrGoalCheck"></label><label id="label_opfrGoalCheck">Sound for own goal</label>
+			<input type="checkbox" id="opfrGoalCheck" onclick="htlivesight.Settings.click.opfrGoalSound()"/><label for="opfrGoalCheck" id="label_opfrGoalCheck">Sound for own goal</label>
 			<br /><button id="label_opfrGoalButton_reset" class="brestore" onclick="htlivesight.Settings.click.opfrGoalReset()">restore</button><button id="label_opfrGoalButton_play" class="brestore" onclick="htlivesight.Settings.click.opfrGoalPlay()">play</button>
 			
 			
@@ -291,7 +291,7 @@
 			
 			<input type="url" id="opfrGoalSoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.opfrGoalSound()"/> <br />
 	<!-- ot goal --><br />
-			<input type="checkbox" id="otGoalCheck" onclick="htlivesight.Settings.click.otGoalSound()"/><label for="otGoalCheck"></label><label id="label_otGoalCheck">Sound for own goal</label>
+			<input type="checkbox" id="otGoalCheck" onclick="htlivesight.Settings.click.otGoalSound()"/><label for="otGoalCheck" id="label_otGoalCheck">Sound for own goal</label>
 			<br /><button id="label_otGoalButton_reset" class="brestore" onclick="htlivesight.Settings.click.otGoalReset()">restore</button><button id="label_otGoalButton_play" class="brestore" onclick="htlivesight.Settings.click.otGoalPlay()">play</button>
 			
 			
@@ -300,7 +300,7 @@
 			
 			<input type="url" id="otGoalSoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.otGoalSound()"/> <br />
 	<!-- miss goal --><br />
-			<input type="checkbox" id="missGoalCheck" onclick="htlivesight.Settings.click.missGoalSound()"/><label for="missGoalCheck"></label><label id="label_missGoalCheck">Sound for own goal</label>
+			<input type="checkbox" id="missGoalCheck" onclick="htlivesight.Settings.click.missGoalSound()"/><label for="missGoalCheck" id="label_missGoalCheck">Sound for own goal</label>
 			<br /><button id="label_missGoalButton_reset" class="brestore" onclick="htlivesight.Settings.click.missGoalReset()">restore</button><button id="label_missGoalButton_play" class="brestore" onclick="htlivesight.Settings.click.missGoalPlay()">play</button>
 			
 			
@@ -310,7 +310,7 @@
 			<input type="url" id="missGoalSoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.missGoalSound()"/> <br />
 	<!-- sun goal --><br />
 			<label id="TabWheatherSound"></label> <br />
-					<input type="checkbox" id="sunCheck" onclick="htlivesight.Settings.click.sunSound()"/><label for="sunCheck"></label><label id="label_sunCheck">Sound for own goal</label>
+					<input type="checkbox" id="sunCheck" onclick="htlivesight.Settings.click.sunSound()"/><label for="sunCheck" id="label_sunCheck">Sound for own goal</label>
 					<br /><button id="label_sunButton_reset" class="brestore" onclick="htlivesight.Settings.click.sunReset()">restore</button><button id="label_sunButton_play" class="brestore" onclick="htlivesight.Settings.click.sunPlay()">play</button>
 			
 			
@@ -319,7 +319,7 @@
 			
 			<input type="url" id="sunSoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.sunSound()"/> <br />
 	<!-- rain goal --><br />
-			<input type="checkbox" id="rainCheck" onclick="htlivesight.Settings.click.rainSound()"/><label for="rainCheck"></label><label id="label_rainCheck">Sound for own goal</label>
+			<input type="checkbox" id="rainCheck" onclick="htlivesight.Settings.click.rainSound()"/><label for="rainCheck" id="label_rainCheck">Sound for own goal</label>
 			<br /><button id="label_rainButton_reset" class="brestore" onclick="htlivesight.Settings.click.rainReset()">restore</button><button id="label_rainButton_play" class="brestore" onclick="htlivesight.Settings.click.rainPlay()">play</button>
 			
 			
@@ -328,7 +328,7 @@
 			
 			<input type="url" id="rainSoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.rainSound()"/> <br />
 	<!-- overcast goal --><br />
-			<input type="checkbox" id="overcastCheck" onclick="htlivesight.Settings.click.overcastSound()"/><label for="overcastCheck"></label><label id="label_overcastCheck">Sound for own goal</label>
+			<input type="checkbox" id="overcastCheck" onclick="htlivesight.Settings.click.overcastSound()"/><label for="overcastCheck" id="label_overcastCheck">Sound for own goal</label>
 			<br /><button id="label_overcastButton_reset" class="brestore" onclick="htlivesight.Settings.click.overcastReset()">restore</button><button id="label_overcastButton_play" class="brestore" onclick="htlivesight.Settings.click.overcastPlay()">play</button>
 			
 			
@@ -337,7 +337,7 @@
 			
 			<input type="url" id="overcastSoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.overcastSound()"/> <br />
 	<!-- few clouds goal --><br />
-			<input type="checkbox" id="fewCloudsCheck" onclick="htlivesight.Settings.click.fewCloudSound()"/><label for="fewCloudsCheck"></label><label id="label_fewCloudsCheck">Sound for own goal</label>
+			<input type="checkbox" id="fewCloudsCheck" onclick="htlivesight.Settings.click.fewCloudSound()"/><label for="fewCloudsCheck" id="label_fewCloudsCheck">Sound for own goal</label>
 			<br /><button id="label_fewCloudsButton_reset" class="brestore" onclick="htlivesight.Settings.click.fewCloudReset()">restore</button><button id="label_fewCloudsButton_play" class="brestore" onclick="htlivesight.Settings.click.fewCloudPlay()">play</button>
 			
 			
@@ -346,7 +346,7 @@
 			
 			<input type="url" id="fewCloudsSoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.fewCloudSound()"/> <br />
 	<!-- my boo goal --><br />
-			<input type="checkbox" id="myBooCheck" onclick="htlivesight.Settings.click.myBooSound()"/><label for="myBooCheck"></label><label id="label_myBooCheck">Sound for own goal</label>
+			<input type="checkbox" id="myBooCheck" onclick="htlivesight.Settings.click.myBooSound()"/><label for="myBooCheck" id="label_myBooCheck">Sound for own goal</label>
 			<br /><button id="label_myBooButton_reset" class="brestore" onclick="htlivesight.Settings.click.myBooReset()">restore</button><button id="label_myBooButton_play" class="brestore" onclick="htlivesight.Settings.click.myBooPlay()">play</button>
 			
 			
@@ -355,7 +355,7 @@
 			
 			<input type="url" id="myBooSoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.myBooSound()"/> <br />
 	<!-- op boo goal --><br />
-			<input type="checkbox" id="opBooCheck" onclick="htlivesight.Settings.click.opBooSound()"/><label for="opBooCheck"></label><label id="label_opBooCheck">Sound for own goal</label>
+			<input type="checkbox" id="opBooCheck" onclick="htlivesight.Settings.click.opBooSound()"/><label for="opBooCheck" id="label_opBooCheck">Sound for own goal</label>
 			<br /><button id="label_opBooButton_reset" class="brestore" onclick="htlivesight.Settings.click.opBooReset()">restore</button><button id="label_opBooButton_play" class="brestore" onclick="htlivesight.Settings.click.opBooPlay()">play</button>
 			
 			
@@ -365,7 +365,7 @@
 			<input type="url" id="opBooSoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.opBooSound()"/> <br />
 	<!-- whistlestart goal --><br />
 			<label id="TabWhistleSound"></label> <br />
-			<input type="checkbox" id="whistleStartCheck" onclick="htlivesight.Settings.click.whistleStartSound()"/><label for="whistleStartCheck"></label><label id="label_whistleStartCheck">Sound for own goal</label>
+			<input type="checkbox" id="whistleStartCheck" onclick="htlivesight.Settings.click.whistleStartSound()"/><label for="whistleStartCheck" id="label_whistleStartCheck">Sound for own goal</label>
 			<br /><button id="label_whistleStartButton_reset" class="brestore" onclick="htlivesight.Settings.click.whistleStartReset()">restore</button><button id="label_whistleStartButton_play" class="brestore" onclick="htlivesight.Settings.click.whistleStartPlay()">play</button>
 			
 			
@@ -374,7 +374,7 @@
 			
 			<input type="url" id="whistleStartSoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.whistleStartSound()"/> <br />
 	<!-- double whistle goal --><br />
-			<input type="checkbox" id="whistle2Check" onclick="htlivesight.Settings.click.whistle2Sound()"/><label for="whistle2Check"></label><label id="label_whistle2Check">Sound for own goal</label>
+			<input type="checkbox" id="whistle2Check" onclick="htlivesight.Settings.click.whistle2Sound()"/><label for="whistle2Check" id="label_whistle2Check">Sound for own goal</label>
 			<br /><button id="label_whistle2Button_reset" class="brestore" onclick="htlivesight.Settings.click.whistle2Reset()">restore</button><button id="label_whistle2Button_play" class="brestore" onclick="htlivesight.Settings.click.whistle2Play()">play</button>
 			
 			
@@ -383,7 +383,7 @@
 			
 			<input type="url" id="whistle2SoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.whistle2Sound()"/> <br />
 	<!-- triple whistle goal --><br />
-			<input type="checkbox" id="whistle3Check" onclick="htlivesight.Settings.click.whistle3Sound()"/><label for="whistle3Check"></label><label id="label_whistle3Check">Sound for own goal</label>
+			<input type="checkbox" id="whistle3Check" onclick="htlivesight.Settings.click.whistle3Sound()"/><label for="whistle3Check" id="label_whistle3Check">Sound for own goal</label>
 			<br /><button id="label_whistle3Button_reset" class="brestore" onclick="htlivesight.Settings.click.whistle3Reset()">restore</button><button id="label_whistle3Button_play" class="brestore" onclick="htlivesight.Settings.click.whistle3Play()">play</button>
 			
 			
@@ -392,7 +392,7 @@
 			
 			<input type="url" id="whistle3SoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.whistle3Sound()"/> <br />
 	<!-- whistle goal --><br />
-			<input type="checkbox" id="whistleCheck" onclick="htlivesight.Settings.click.whistleSound()"/><label for="whistleCheck"></label><label id="label_whistleCheck">Sound for own goal</label>
+			<input type="checkbox" id="whistleCheck" onclick="htlivesight.Settings.click.whistleSound()"/><label for="whistleCheck" id="label_whistleCheck">Sound for own goal</label>
 			<br /><button id="label_whistleButton_reset" class="brestore" onclick="htlivesight.Settings.click.whistleReset()">restore</button><button id="label_whistleButton_play" class="brestore" onclick="htlivesight.Settings.click.whistlePlay()">play</button>
 			
 			
@@ -401,7 +401,7 @@
 			
 			<input type="url" id="whistleSoundPath" maxlength="63" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.whistleSound()"/> <br />
 	<!-- hattrick --><br />
-			<input type="checkbox" id="hattrickCheck" onclick="htlivesight.Settings.click.hattrickSound()"/><label for="hattrickCheck"></label><label id="label_hattrickCheck">Sound for own goal</label>
+			<input type="checkbox" id="hattrickCheck" onclick="htlivesight.Settings.click.hattrickSound()"/><label for="hattrickCheck" id="label_hattrickCheck">Sound for own goal</label>
 			<br /><button id="label_hattrickButton_reset" class="brestore" onclick="htlivesight.Settings.click.hattrickReset()">restore</button><button id="label_hattrickButton_play" class="brestore" onclick="htlivesight.Settings.click.hattrickPlay()">play</button>
 			
 			
