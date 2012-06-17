@@ -43,7 +43,8 @@ if (typeof(opera) == "object") {
 	htlivesight.arch = "Sandboxed";
 	htlivesight.platform = "Opera";
 	htlivesight.internalPath = "chrome://htlivesight/content/";
-	htlivesight.resourcePath = htlivesight.internalPath
+	htlivesight.resourcePath = "chrome://htlivesight/content/";
+
 	// to tell which context the chrome script is running at 
 	// either background page, or content script 
 	htlivesight.chromeContext = function() {

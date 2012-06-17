@@ -9,6 +9,6 @@
         <icon src="/chrome/skin/64.png" width="64" height="64"/>
 	<access origin="https://chpp.hattrick.org" subdomains="true"/>
         <access origin="http://chpp.hattrick.org" subdomains="true"/>
-	<access origin="/chrome/content/locale/" subdomains="true"/>
-        <access origin="webchat.quakenet.org/" subdomains="true"/>
+	<access origin="http://fonts.googleapis.com" subdomains="true"/>
+        <access origin="http://webchat.quakenet.org/" subdomains="true"/>
 </widget>
