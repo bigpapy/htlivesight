@@ -37,9 +37,7 @@ if (typeof(chrome) == "object") {
 			create : function (url) {chrome.tabs.create(url)},
 		},
 	};
-}
-
-if (typeof(opera) == "object") {
+}else if (typeof(opera) == "object") {
 	htlivesight.arch = "Sandboxed";
 	htlivesight.platform = "Opera";
 	htlivesight.internalPath = "chrome://htlivesight/content/";
