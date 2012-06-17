@@ -39,6 +39,28 @@ if (typeof(chrome) == "object") {
 	};
 }
 
+if (typeof(opera) == "object") {
+	htlivesight.arch = "Sandboxed";
+	htlivesight.platform = "Opera";
+	htlivesight.internalPath = "chrome://htlivesight/content/";
+	htlivesight.resourcePath = htlivesight.internalPath
+	// to tell which context the chrome script is running at 
+	// either background page, or content script 
+	htlivesight.chromeContext = function() {
+		try {
+			if (opera.extension.postMessage) {
+				return "background";
+			}
+			else {
+				return "content";
+			}
+		}
+		catch (e) {
+			return "content";
+		}
+	}
+}
+
 else {
 	htlivesight.arch = "Gecko";
 	htlivesight.resourcePath = "chrome://htlivesight/content/";

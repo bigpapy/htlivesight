@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+       window.addEventListener("load", function(){
+        var theButton;
+        var ToolbarUIItemProperties = {
+          title: "Htlivesight",
+          icon: "chrome/skin/32.png",
+          onclick: function() {
+        	    // Create a tab with the specified URL
+        	    var tab = opera.extension.tabs.create({url: 'chrome/content/htlivesight.html'});
+        	    tab.focus();
+        	  }
+        }
+        theButton = opera.contexts.toolbar.createItem(ToolbarUIItemProperties);
+        opera.contexts.toolbar.addItem(theButton);
+      }, false);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
