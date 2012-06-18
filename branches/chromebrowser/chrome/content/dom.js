@@ -244,7 +244,7 @@ htlivesight.DOM = {
   createTextElement: function (text, doClean) {
 	  try{//added by bigpapy to debug from XUL to HTML
     //var d = document.createElementNS('http://www.w3.org/1999/xhtml', 'html:div');    
-    var resultDoc = htlivesight.DOM.parser.parseFromString("<label>" + (doClean ? htlivesight.Util.CleanText(text) : text)+ "</label>","text/xml");
+    var resultDoc = htlivesight.DOM.parser.parseFromString("<span>" + (doClean ? htlivesight.Util.CleanText(text) : text)+ "</span>","text/xml");
     var d = resultDoc.documentElement;  
     return d.firstChild;
 	  }catch(e){alert("createTextElement :"+e);} //added by bigpapy to debug from XUL to HTML
@@ -269,7 +269,7 @@ htlivesight.DOM = {
     var resultDoc = htlivesight.DOM.parser.parseFromString("<root>" + cleanedText + "</root>","text/xml");
     var nodeList = resultDoc.documentElement.childNodes;
     
-    var retElement = document.createElement("description");
+    var retElement = document.createElement("td");
     retElement.setAttribute("class", "event_text");
     
 		var newElement;
@@ -280,7 +280,6 @@ htlivesight.DOM = {
 			} else if (child.nodeName == "a") {
 			  newElement = document.createElementNS("http://www.w3.org/1999/xhtml", "em");
 		    newElement.setAttribute("class", "player_name");
-		    newElement.style.fontWeight="bold";
 		    newElement.appendChild(document.createTextNode(child.firstChild.textContent));		    
 			} else {
 				newElement = null;
@@ -291,7 +290,6 @@ htlivesight.DOM = {
 		if (event.special) {
 			newElement = document.createElementNS("http://www.w3.org/1999/xhtml", "em");
 		  newElement.setAttribute("class", "special_event");
-		  newElement.style.color= "#F5FA07";
 		  newElement.appendChild(document.createTextNode(" ["+event.special.txt+"]"));		    
 			retElement.appendChild(newElement);
 		}
@@ -398,7 +396,7 @@ try{ //added by bigpapy to debug from xul to html
     if (match.weather.image) {
       label = document.getElementById("weather_image_" + match.id + "_" + match.youth);
       label.setAttribute("src", match.weather.image);
-	  label.setAttribute("class", "socialicon");
+	  label.setAttribute("class", "weather_image");
     }
 
     if (match.arena.attendance) {
@@ -532,23 +530,23 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   //hboxL.setAttribute("flex", "1");
   hboxL.setAttribute("align", "left");
   
-  label = document.createElement("td"); //label = document.createElement("label");
+  label = document.createElement("span"); //label = document.createElement("label");
   hboxL.appendChild(label);
   label.setAttribute("id", "arena_name_" + match.id + "_" + match.youth);
-	label.setAttribute("style", "display:inline");
+	label.setAttribute("class", "arena_name");
   img = document.createElement("img");
   hboxL.appendChild(img);
   img.setAttribute("src", htlivesight.Image.transparent);
   img.setAttribute("id", "weather_image_" + match.id + "_" + match.youth);
-  img.setAttribute("class", "socialicon");  
-	img.setAttribute("style", "display:inline");
-  label = document.createElement("td"); //label = document.createElement("label");
+  img.setAttribute("class", "weather_image");  
+  label = document.createElement("span"); //label = document.createElement("label");
   hboxL.appendChild(label);
   label.setAttribute("id", "arena_attendance_" + match.id + "_" + match.youth);
-  label.setAttribute("style", "display:inline");
-  label = document.createElement("label");
+  label.setAttribute("class", "arena_attendance");
+  label = document.createElement("span");
 	hboxL.appendChild(label);
   label.setAttribute("id", "weather_text_" + match.id + "_" + match.youth);
+  label.setAttribute("class", "weather_text");
 
   //var hboxM = document.createElement("hbox");
   var hboxM = document.createElement("td");
@@ -557,7 +555,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   //hboxM.setAttribute("flex", "1");
   //hboxM.setAttribute("align", "center");
   
-  label = document.createElement("label");
+  label = document.createElement("span");
   label.setAttribute("id", "time_" + match.id + "_" + match.youth);
   hboxM.appendChild(label);
  
@@ -568,15 +566,16 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   //hboxR.setAttribute("flex", "1");
   //hboxR.setAttribute("align", "right");
 
-  box = document.createElement("td");
-  box.setAttribute("style", "display:inline");
-  hboxR.appendChild(box);
+  box = hboxR; //document.createElement("td");
+  //box.setAttribute("style", "display:inline");
+  //hboxR.appendChild(box);
   //box.setAttribute("align", "center");
   //box.setAttribute("style", "margin-right: 20px;");
   
 // new added by bigpapy: sound button on header
   img = document.createElement("img");
   box.appendChild(img);
+  img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.sound.ON);
   img.setAttribute("id", "sound_" + match.id + "_" + match.youth);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowSound",data[0]));
@@ -587,6 +586,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 //added by bigpapy: link button on header
   img = document.createElement("img");
   box.appendChild(img);
+  img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.link.OFF);
   img.setAttribute("id", "link_" + match.id + "_" + match.youth);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowLink",data[0]));
@@ -597,6 +597,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 // end adding by bigpapy  
   img = document.createElement("img");
   box.appendChild(img);
+  img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.info.ON);
   img.setAttribute("id", "tip_" + match.id + "_" + match.youth);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowInfo",data[0]));
@@ -605,6 +606,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 
   img = document.createElement("img");
   hboxR.appendChild(img);
+  img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.maximize.OFF);
   img.setAttribute("id", "maximize_" + match.id + "_" + match.youth);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowMaximize",data[0]));
@@ -615,6 +617,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   
   img = document.createElement("img");
   hboxR.appendChild(img);
+  img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.minimize.ON);
   img.setAttribute("id", "minimize_" + match.id + "_" + match.youth);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowMinimize",data[0]));
@@ -625,6 +628,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 
   img = document.createElement("img");
   hboxR.appendChild(img);
+  img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.shade.OFF);
   img.setAttribute("id", "shade_" + match.id + "_" + match.youth);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowShade",data[0]));
@@ -635,6 +639,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 
   img = document.createElement("img");
   hboxR.appendChild(img);
+  img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.close.OFF);
   img.setAttribute("id", "close_" + match.id + "_" + match.youth);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowClose",data[0]));
@@ -645,6 +650,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 
   img = document.createElement("img");
   hboxR.appendChild(img);
+  img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.up.OFF);
   img.setAttribute("id", "moveup_" + match.id + "_" + match.youth);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowMoveUp",data[0]));
@@ -655,6 +661,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 
   img = document.createElement("img");
   hboxR.appendChild(img);
+  img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.down.OFF);
   img.setAttribute("id", "movedown_" + match.id + "_" + match.youth);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowMoveDown",data[0]));
@@ -664,13 +671,16 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   img.addEventListener('mouseout',  htlivesight.Click.out, true);
 
   // second row:  header body
+  var placardrow = document.createElement("tr");
+  placardrow.align="center";
+  placardrow.setAttribute("class", "placardrow");
+  header.appendChild(placardrow);
   //placardbox = document.createElement("hbox");
   placardbox = document.createElement("td");
+  
   placardbox.colSpan ="3";
-  placardbox.style.verticalAlign= "top";
 
-  header.appendChild(placardbox);
-  placardbox.setAttribute("align", "center");
+  placardrow.appendChild(placardbox);
   //placardbox.setAttribute("pack", "center");
   placardbox.setAttribute("id", "placardbox_"+match.id + "_" + match.youth);
   //placardbox.setAttribute("flex", "1");
@@ -678,47 +688,39 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   // home team
   //vbox = document.createElement("vbox");
   vbox = document.createElement("table");
-  vbox.setAttribute("align", "center");
-  vbox.style.verticalAlign= "top";
   //vbox.setAttribute("flex", "1");
   placardbox.appendChild(vbox);
   
   //hbox = document.createElement("hbox");
   hbox = document.createElement("tr"); //bigpapy add to fix it
-  hbox.setAttribute("align", "center");
-  hbox.style.verticalAlign= "top";
   vbox.appendChild(hbox);
   
   leftbox = document.createElement("td"); //bigpapy add to fix it
   leftbox.setAttribute("align", "right");
-  leftbox.style.verticalAlign= "top";
   hbox.appendChild(leftbox);
   leftbox.setAttribute("width", "47%");
+
+  var homebox = document.createElement("table"), hometr = document.createElement("tr");
+  leftbox.appendChild(homebox);
+  homebox.appendChild(hometr);
+  homebox.setAttribute("class", "team_home");
 
   //box = document.createElement("hbox");
   // one
   box = document.createElement("td");//box = document.createElement("label"); bigpapy add to fix it
-  leftbox.appendChild(box);
+  hometr.appendChild(box);
   box.setAttribute("id", "header_home_team_notify_" + match.id + "_" + match.youth);
   box.setAttribute("class", "header_notify");
-  box.setAttribute("style", "display:block-inline");
-  box.style.verticalAlign= "top";
- 
-
   
   
   label = document.createElement("td");//label = document.createElement("label");
-  leftbox.appendChild(label);
+  hometr.appendChild(label);
   label.setAttribute("id", "home_team_tactic_" + match.id + "_" + match.youth);
   label.setAttribute("class", "tactic");
-  label.setAttribute("style", "display:block-inline");
-  label.style.verticalAlign= "top";
   label = document.createElement("td");//label = document.createElement("label");
-  leftbox.appendChild(label);
+  hometr.appendChild(label);
   //label.setAttribute("id", "home_team_formation_" + match.id + "_" + match.youth);
   label.setAttribute("class", "formation");
-  label.setAttribute("style", "display:block-inline");
-  label.style.verticalAlign= "top";
   link = document.createElement("a");
 	label.appendChild(link);
 	link.setAttribute("href", "#");
@@ -730,11 +732,9 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   //two!
  // if (!htlivesight.prefs.matches.scorers) {
 	    label = document.createElement("td");//label = document.createElement("label");
-	    label.style.verticalAlign= "top";
 	    //leftbox.appendChild(label);
-	    leftbox.appendChild(label);
+	    hometr.appendChild(label);
 	    label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
-		label.setAttribute("style", "display:inline, font-size:16px");
 	    //label.style.fontSize="xx-large";
 	    
 	 //   label.style.verticalAlign= "top";
@@ -752,39 +752,39 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 //    label.setAttribute("class", "team_name");
 
 	hbox1 = document.createElement("tr"); //bigpapy add to fix it
-	hbox1.colSpan ="7";
-	hbox1.setAttribute("align", "center");
+	hbox1.setAttribute("class", "scorers");
 	vbox.appendChild(hbox1);
 	
 	box1 = document.createElement("td");
 	//box1.colSpan ="3";
 	box1.setAttribute("align", "right");
 	box1.setAttribute("width", "47%");
+	box1.setAttribute("class", "scorers_home");
 	hbox1.appendChild(box1);
 	  
-    label = document.createElement("description");
+    label = document.createElement("span");
     box1.appendChild(label);
     label.setAttribute("id", "home_team_scorers1_" + match.id + "_" + match.youth);
-    label.setAttribute("class", "tactic");
+    //label.setAttribute("class", "tactic");
     
     //label.setAttribute("value", " ");
     label.innerHTML= " ";
     
     hbox2 = document.createElement("tr"); //bigpapy add to fix it
-	hbox2.colSpan ="7";
-	hbox2.setAttribute("align", "center");
+	hbox2.setAttribute("class", "scorers");
 	vbox.appendChild(hbox2);
 	
 	box21 = document.createElement("td");
 	//box1.colSpan ="3";
 	box21.setAttribute("align", "right");
 	box21.setAttribute("width", "47%");
+	box21.setAttribute("class", "scorers_home");
 	hbox2.appendChild(box21);
     
-    label = document.createElement("description");
+    label = document.createElement("span");
     box21.appendChild(label);
     label.setAttribute("id", "home_team_scorers2_" + match.id + "_" + match.youth);
-    label.setAttribute("class", "tactic");
+    //label.setAttribute("class", "tactic");
     //label.setAttribute("value", " ");
     label.innerHTML= " ";
     label.setAttribute("style", "display:none");
@@ -797,25 +797,21 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hbox.appendChild(box);
   box.setAttribute("class", "big_score");
   box.setAttribute("align", "center");
-  box.style.verticalAlign= "top";
 
   
-  label = document.createElement("label");
+  label = document.createElement("span");
   //label.style.fontSize="xx-large";
-  label.style.verticalAlign= "top";
   box.appendChild(label);
   label.setAttribute("id", "home_team_goals_" + match.id + "_" + match.youth);
-  label = document.createElement("label");
-  label.style.verticalAlign= "top";
+  label = document.createElement("span");
   //label.style.fontSize="xx-large";
   box.appendChild(label);
   //label.setAttribute("value", ":");
   label.innerHTML= ":";
-  label = document.createElement("label");
+  label = document.createElement("span");
   
   box.appendChild(label);
   label.setAttribute("id", "away_team_goals_" + match.id + "_" + match.youth);
-  label.style.verticalAlign= "top";
   //label.style.fontSize="xx-large";
 
   // away team
@@ -830,19 +826,20 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 //  vbox.appendChild(hbox);
 
   rightbox = document.createElement("td"); //bigpapy add to fix it
-  rightbox.style.verticalAlign= "top";
   rightbox.setAttribute("align", "left");
   //rightbox.rowSpan= "1";
-  rightbox.style.verticalAlign= "top";
   hbox.appendChild(rightbox);
   rightbox.setAttribute("width", "47%");
+ 
+  var awaybox = document.createElement("table"), awaytr = document.createElement("tr");
+  rightbox.appendChild(awaybox);
+  awaybox.appendChild(awaytr);
+  awaybox.setAttribute("class", "team_away"); 
   
   label = document.createElement("td");//label = document.createElement("label");
-  rightbox.appendChild(label);
+  awaytr.appendChild(label);
   label.setAttribute("id", "away_team_name_" + match.id + "_" + match.youth);
   label.setAttribute("class", "team_name");
-  label.style.verticalAlign= "top";
-  label.setAttribute("style", "display:inline, font-size:16px");
   //label.style.fontSize="xx-large";
   
   if (!htlivesight.prefs.matches.scorers) {
@@ -851,12 +848,9 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
  //   vbox.appendChild(hbox);
   }
   label = document.createElement("td");//label = document.createElement("label");
-  rightbox.appendChild(label);
+  awaytr.appendChild(label);
   //label.setAttribute("id", "away_team_formation_" + match.id + "_" + match.youth);
   label.setAttribute("class", "formation");
-  label.setAttribute("valign", "top");
-  label.setAttribute("style", "display:block-inline");
-  label.style.verticalAlign= "top";
 	link = document.createElement("a");
 	label.appendChild(link);
 	link.setAttribute("href", "#");
@@ -864,20 +858,14 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	link.setAttribute("title", "");
 	link.setAttribute("onclick","htlivesight.DOM.formationpopup();");
   label = document.createElement("td");//label = document.createElement("label");
-  rightbox.appendChild(label);
+  awaytr.appendChild(label);
   label.setAttribute("id", "away_team_tactic_" + match.id + "_" + match.youth);
   label.setAttribute("class", "tactic");
-  label.setAttribute("valign", "top");
-  label.setAttribute("style", "display:block-inline");
-  label.style.verticalAlign= "top";
-
   	
   //box = document.createElement("hbox");
   box = document.createElement("td");//box = document.createElement("label"); bigpapy: added to fix html
-  rightbox.appendChild(box);
+  awaytr.appendChild(box);
   box.setAttribute("id", "header_away_team_notify_" + match.id + "_" + match.youth);
-  box.setAttribute("valign", "top");
-  label.setAttribute("style", "display:block-inline");
   box.setAttribute("class", "header_notify");
 
   if (htlivesight.prefs.matches.scorers) {
@@ -891,18 +879,18 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	box3.setAttribute("align", "left");
 	//box3.setAttribute("valign", "bottom");
 	box3.setAttribute("width", "47%");
+	box3.setAttribute("class", "scorers_away");
 	hbox1.appendChild(box3);
 	  
-    label = document.createElement("description");
+    label = document.createElement("span");
     box3.appendChild(label);
     label.setAttribute("id", "away_team_scorers1_" + match.id + "_" + match.youth);
-    label.setAttribute("class", "tactic");
+    //label.setAttribute("class", "tactic");
     label.innerHTML= " ";
     //label.setAttribute("value", " ");
     
     box22 = document.createElement("td");
 	//box1.colSpan ="3";
-	box22.setAttribute("align", "center");
 	box22.setAttribute("width", "6%");
 	hbox2.appendChild(box22);
 	
@@ -910,12 +898,13 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	//box1.colSpan ="3";
 	box23.setAttribute("align", "left");
 	box23.setAttribute("width", "47%");
+	box23.setAttribute("class", "scorers_away");
 	hbox2.appendChild(box23);
     
-    label = document.createElement("description");
+    label = document.createElement("span");
     box23.appendChild(label);
     label.setAttribute("id", "away_team_scorers2_" + match.id + "_" + match.youth);
-    label.setAttribute("class", "tactic");
+    //label.setAttribute("class", "tactic");
     //label.setAttribute("value", " ");
     label.innerHTML= " ";
     label.setAttribute("style", "display:none");
@@ -964,26 +953,29 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 /* --- create grid ---------------------------- */
  htlivesight.DOM.CreateElementGridLiveMatchEvents= function(match) {
   try {
-    var grid, cols, col, rows/*, row*/;
+    var grid, gridtd, cols, col, rows/*, row*/;
   
-    grid = document.createElement("td");
-    grid.colSpan="3";
-    grid.setAttribute("class", "live_events");  
+  	grid = document.createElement("tr");
+    gridtd = document.createElement("td");
+    grid.appendChild(gridtd);
+    gridtd.colSpan="3";
+    gridtd.setAttribute("class", "live_events");  
   
-    cols = document.createElement("columns");
-    grid.appendChild(cols);
+/*    cols = document.createElement("columns");
+    gridtd.appendChild(cols);
     col = document.createElement("column");
     cols.appendChild(col);
     col = document.createElement("column");
     cols.appendChild(col);
     col = document.createElement("column");
     cols.appendChild(col);
-    col.setAttribute("flex", "1");
+    col.setAttribute("flex", "1");*/
   
-    rows = document.createElement("table");
+    rows = document.createElement("table");    
     rows.width="100%";
-    grid.appendChild(rows);
+    gridtd.appendChild(rows);
     rows.setAttribute("id", "ev_rows_" + match.id + "_" + match.youth);
+    rows.setAttribute("class", "ev_rows");
     return grid;
   } catch(e) {
     alert("DOM.CreateElementGridLiveMatchEvents\n" + e);
@@ -1024,6 +1016,9 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
         //row.style.color="#000";
       }
     }
+    else {
+      row.setAttribute("class", "info_row");
+    }
 
     if(event.lineupElement) {
       if (match.home.team.id==event.subjectTeamId) {
@@ -1036,17 +1031,19 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
       l.setAttribute("contextmenu", event.lineupElement.id);
     };
   
-    l = document.createElement("label");
+    l = document.createElement("td");
+    l.setAttribute("class","event_minute");
     row.appendChild(l);
-    l.setAttribute("value", event.minute);
+/*    l.setAttribute("value", event.minute);
     if (event.minute < 10) l.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;"+event.minute;
     else if (event.minute <100) l.innerHTML="&#160;&#160;"+event.minute;
-    	else l.innerHTML= event.minute;
-  //  l.innerHTML= event.minute;
+    	else l.innerHTML= event.minute;*/
+    l.innerHTML= event.minute;
   
-    l = document.createElement("label");
+    l = document.createElement("td");
     row.appendChild(l);
     img = document.createElement("img");
+    l.setAttribute("class","event_icon");
     l.appendChild(img);
     if(htlivesight.prefs.personalization.oldIcons && event.type.imageSrcOld){
     	img.setAttribute("src", event.type.imageSrcOld);
