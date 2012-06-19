@@ -986,7 +986,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 /* --- create event row ---------------------------- */
  htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
   try {
-    var row, l, img, t/*, b*/;
+    var row, l, img, t, empty_img/*, b*/;
     row = document.createElement("tr");
 
  //   if (event.subjectTeamId == 0){
@@ -1049,16 +1049,25 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   //  l.innerHTML= event.minute;
   
     l = document.createElement("td");
+    l1 = document.createElement("td");
     row.appendChild(l);
+    row.appendChild(l1);
     img = document.createElement("img");
+    empty_img = document.createElement("img");
     l.setAttribute("class","event_icon");
-    l.appendChild(img);
+    if (match.isHomeTeam(event.subjectTeamId)|| event.subjectTeamId == 0){
+    	l.appendChild(img);
+    	l1.appendChild(empty_img);}
+    else{
+    	l.appendChild(empty_img);
+    	l1.appendChild(img);
+    }
+	empty_img.setAttribute("src", htlivesight.Image.transparent);
     if(htlivesight.prefs.personalization.oldIcons && event.type.imageSrcOld){
     	img.setAttribute("src", event.type.imageSrcOld);
 
     }else{
     	img.setAttribute("src", event.type.imageSrc);
-
     }
     //img.setAttribute("src", event.type.imageSrc);
 
