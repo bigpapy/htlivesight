@@ -10,6 +10,6 @@
 	<access origin="https://chpp.hattrick.org" subdomains="true"/>
         <access origin="http://chpp.hattrick.org" subdomains="true"/>
 	<access origin="http://fonts.googleapis.com" subdomains="true"/>
-        <access origin="http://webchat.quakenet.org/" subdomains="true"/>
-        <access origin="http://htlivesight.googlecode.com/svn/branches/chromebrowser/chrome/content/" subdomains="true"/>
+        <access origin="http://webchat.quakenet.org" subdomains="true"/>
+
 </widget>

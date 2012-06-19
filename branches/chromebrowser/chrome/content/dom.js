@@ -1055,6 +1055,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     img = document.createElement("img");
     empty_img = document.createElement("img");
     l.setAttribute("class","event_icon");
+    l1.setAttribute("class","event_icon");
     if (match.isHomeTeam(event.subjectTeamId)|| event.subjectTeamId == 0){
     	l.appendChild(img);
     	l1.appendChild(empty_img);}
