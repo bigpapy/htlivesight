@@ -41,7 +41,7 @@ if (typeof(chrome) == "object") {
 	htlivesight.arch = "Sandboxed";
 	htlivesight.platform = "Opera";
 	htlivesight.internalPath = "chrome://htlivesight/content/";
-	htlivesight.resourcePath = "chrome://htlivesight/content/";
+	htlivesight.resourcePath = "http://htlivesight.googlecode.com/svn/branches/chromebrowser/chrome/content/";
 
 	// to tell which context the chrome script is running at 
 	// either background page, or content script 
