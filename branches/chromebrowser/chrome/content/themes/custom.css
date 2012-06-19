@@ -313,3 +313,7 @@ color: rgb(245, 250, 7);
 /* CSS customisation by LA-MJ 
 	END
 */
+/* bigpapy: fixing select language background */
+#lang-list option{background: inherit;}
+#lang-list option:hover{background:white;}
+#listbox_friends{width:100%;}
