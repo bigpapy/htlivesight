@@ -688,6 +688,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   // home team
   //vbox = document.createElement("vbox");
   vbox = document.createElement("table");
+  vbox.width="100%";
   //vbox.setAttribute("flex", "1");
   placardbox.appendChild(vbox);
   
