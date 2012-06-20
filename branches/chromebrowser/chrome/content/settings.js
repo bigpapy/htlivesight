@@ -183,7 +183,7 @@ htlivesight.Settings = {
 			
 			document.getElementById("foeHomeColorCheck").checked = prefs.colors.foeHomeColorCheck;
 			document.getElementById("foeHomeColorCode").disabled = !prefs.colors.foeHomeColorCheck;
-			document.getElementById("foeHomeColorCode").value = prefs.colors.friendAwayColorCode;
+			document.getElementById("foeHomeColorCode").value = prefs.colors.foeHomeColorCode;
 			
 			document.getElementById("foeAwayColorCheck").checked = prefs.colors.foeAwayColorCheck;
 			document.getElementById("foeAwayColorCode").disabled = !prefs.colors.foeAwayColorCheck;
