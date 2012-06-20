@@ -1412,7 +1412,7 @@ htlivesight.Settings = {
 			
 			friendHomeColorSet: function() {
 					var prefs = htlivesight.Settings.preferences;
-					var value = document.getElementById("friendHomeColorCode").value.replace(/\D/g, "");
+					var value = document.getElementById("friendHomeColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
 					prefs.colors.friendHomeColorCode = value;
 			},
 			
@@ -1429,7 +1429,7 @@ htlivesight.Settings = {
 			
 			friendAwayColorSet: function() {
 					var prefs = htlivesight.Settings.preferences;
-					var value = document.getElementById("friendAwayColorCode").value.replace(/\D/g, "");
+					var value = document.getElementById("friendAwayColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
 					prefs.colors.friendAwayColorCode = value;
 			},
 			
@@ -1446,7 +1446,7 @@ htlivesight.Settings = {
 			
 			foeHomeColorSet: function() {
 					var prefs = htlivesight.Settings.preferences;
-					var value = document.getElementById("foeHomeColorCode").value.replace(/\D/g, "");
+					var value = document.getElementById("foeHomeColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
 					prefs.colors.foeHomeColorCode = value;
 			},
 			
@@ -1463,7 +1463,7 @@ htlivesight.Settings = {
 			
 			foeAwayColorSet: function() {
 					var prefs = htlivesight.Settings.preferences;
-					var value = document.getElementById("foeAwayColorCode").value.replace(/\D/g, "");
+					var value = document.getElementById("foeAwayColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
 					prefs.colors.foeAwayColorCode = value;
 			},
 			
