@@ -292,6 +292,8 @@ htlivesight.DOM = {
 		  newElement.setAttribute("class", "special_event");
 		  newElement.appendChild(document.createTextNode(" ["+event.special.txt+"]"));		    
 			retElement.appendChild(newElement);
+		    if (prefs.colors.seTextColorCheck)
+		    	newElement.style.color= "#" + prefs.colors.seTextColorCode;
 		}
     return retElement;
   }catch(e){alert("createTextEventElement: "+e);}// added by bigpapy to debug from XUL to HTML
@@ -990,10 +992,13 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     var row, l, img, t, empty_img/*, b*/;
     row = document.createElement("tr");
 
- //   if (event.subjectTeamId == 0){
- //   	row.style.backgroundColor="#fff";
- //       row.style.color="#000";	
- //   }
+    if (event.subjectTeamId == 0){
+    	if (prefs.colors.neutralColorCheck)
+    		row.style.backgroundColor= "#" + prefs.colors.neutralColorCode;
+    }
+    if (prefs.colors.textColorCheck)
+        row.style.color= "#" + prefs.colors.textColorCode;
+    
      if (event.subjectTeamId != 0) {
       var isF;
       isF = htlivesight.Friends.isFriend(event.subjectTeamId, match.youth, !htlivesight.Friends.STRICT);

@@ -188,6 +188,18 @@ htlivesight.Settings = {
 			document.getElementById("foeAwayColorCheck").checked = prefs.colors.foeAwayColorCheck;
 			document.getElementById("foeAwayColorCode").disabled = !prefs.colors.foeAwayColorCheck;
 			document.getElementById("foeAwayColorCode").value = prefs.colors.foeAwayColorCode;
+			
+			document.getElementById("neutralColorCheck").checked = prefs.colors.neutralColorCheck;
+			document.getElementById("neutralColorCode").disabled = !prefs.colors.neutralColorCheck;
+			document.getElementById("neutralColorCode").value = prefs.colors.neutralColorCode;
+			
+			document.getElementById("textColorCheck").checked = prefs.colors.textColorCheck;
+			document.getElementById("textColorCode").disabled = !prefs.colors.textColorCheck;
+			document.getElementById("textColorCode").value = prefs.colors.textColorCode;
+			
+			document.getElementById("seTextColorCheck").checked = prefs.colors.seTextColorCheck;
+			document.getElementById("seTextColorCode").disabled = !prefs.colors.seTextColorCheck;
+			document.getElementById("seTextColorCode").value = prefs.colors.seTextColorCode;
 
 		},
 		save: function() {
@@ -1465,6 +1477,57 @@ htlivesight.Settings = {
 					var prefs = htlivesight.Settings.preferences;
 					var value = document.getElementById("foeAwayColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
 					prefs.colors.foeAwayColorCode = value;
+			},
+			
+			neutralColorCheck: function() {
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("neutralColorCheck").checked) {
+					document.getElementById("neutralColorCode").disabled = false;
+					prefs.colors.neutralColorCheck=true;
+				} else {
+					document.getElementById("neutralColorCode").disabled = true;
+					prefs.colors.neutralColorCheck=false;
+				}
+			},
+			
+			neutralColorSet: function() {
+					var prefs = htlivesight.Settings.preferences;
+					var value = document.getElementById("neutralColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
+					prefs.colors.neutralColorCode = value;
+			},
+			
+			textColorCheck: function() {
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("textColorCheck").checked) {
+					document.getElementById("textColorCode").disabled = false;
+					prefs.colors.textColorCheck=true;
+				} else {
+					document.getElementById("textColorCode").disabled = true;
+					prefs.colors.textColorCheck=false;
+				}
+			},
+			
+			textColorSet: function() {
+					var prefs = htlivesight.Settings.preferences;
+					var value = document.getElementById("textColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
+					prefs.colors.textColorCode = value;
+			},
+			
+			seTextColorCheck: function() {
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("seTextColorCheck").checked) {
+					document.getElementById("seTextColorCode").disabled = false;
+					prefs.colors.seTextColorCheck=true;
+				} else {
+					document.getElementById("seTextColorCode").disabled = true;
+					prefs.colors.seTextColorCheck=false;
+				}
+			},
+			
+			seTextColorSet: function() {
+					var prefs = htlivesight.Settings.preferences;
+					var value = document.getElementById("seTextColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
+					prefs.colors.seTextColorCode = value;
 			},
 			
 		}
