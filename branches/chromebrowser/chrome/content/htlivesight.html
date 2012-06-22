@@ -1,7 +1,7 @@
 	<!DOCTYPE html>
 	<html>
 	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<title>HTLiveSight</title>
 	<link rel="icon" type="image/png" href="./themes/images/48.png" />
 	<!--WebFonts_OpenSans--><link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,500italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek,greek-ext,vietnamese' rel='stylesheet' type='text/css'>
@@ -56,16 +56,16 @@
 	<img src="./themes/images/chpp.png" alt="HTLiveSight Logo" class="anotherbrick1">
 	<fieldset>
 	<legend id="LoginLabel2"></legend>
-	<label id="LoginTeamId"></label>
+	<label id="LoginTeamId" for="teamId"></label>
 	<input type="text" id="teamId" class="text ui-widget-content ui-corner-all"></input>
 	<br />
 	<input type="checkbox" id="save_teamId" /><label for="save_teamId" id="LoginSave"></label>
-	<input type="button" id="button_login" style="float:right" value="" onclick="try{htlivesight.Click.Login()}catch(e){alert(e);}"/>
+	<input type="button" id="button_login" value="" onclick="try{htlivesight.Click.Login()}catch(e){alert(e);}"/>
 	</fieldset>
 	<fieldset>
 	<legend id="LoginReLive"></legend>
 	<input type="checkbox" id="reLive" onclick="htlivesight.reLive()" /><label for="reLive" id="LoginReLive2"></label><br />
-	<label id="LoginSpeed"></label>
+	<label id="LoginSpeed" for="reLiveSpeed"></label>
 	<input type="text" id="reLiveSpeed" value="" class="text ui-widget-content ui-corner-all" />
 	<input type="checkbox" id="reLiveByEvent"/><label for="reLiveByEvent" id="LoginByEvent"></label>
 	</fieldset>
@@ -182,8 +182,8 @@
 	<legend id="GeneralServer"></legend>
 	<label id="GeneralNote"></label>
 	<br />
-	<label>Hattrick server:</label>
-	<input type="text" name="hattrickserver" id="hattrickServer" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixhattrickserver();"/>
+	<label for="hattrickServer">Hattrick server:</label>
+	<input type="text" size="5" name="hattrickserver" id="hattrickServer" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixhattrickserver();"/>
 	</fieldset>
 	
 	</div>
@@ -192,12 +192,12 @@
 	<fieldset>
 	<legend id ="MatchesLeague"> League Matches</legend>
 	<input type="checkbox" id="chkGetLeague" onclick="htlivesight.Settings.click.chkgetleague();"/><label for="chkGetLeague" id="label_chkGetLeague">Load automatically League Matches and League Table</label><br />
-	<input type="checkbox" id="chkGetLeagueWithin" onclick="htlivesight.Settings.click.chkgetleaguewithin();"/><label for="chkGetLeagueWithin" id="label_chkGetLeagueWithin">Played in </label><input value="24" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixleaguehours();"/><label id="MatchesHours"> hours</label><br />
+	<input type="checkbox" id="chkGetLeagueWithin" onclick="htlivesight.Settings.click.chkgetleaguewithin();"/><label for="chkGetLeagueWithin" id="label_chkGetLeagueWithin">Played in </label> <input value="24" size="3" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixleaguehours();"/> <label id="MatchesHours" for="txtGetLeagueWithinHours">hours</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesFriends">Friends Matches</legend>
 	<input type="checkbox" id="chkGetFriends" onclick="htlivesight.Settings.click.chkgetfriends();"/><label for="chkGetFriends" id="label_chkGetFriends">Load automatically matches of your friends</label><br />
-	<input type="checkbox" id="chkGetFriendsWithin" onclick="htlivesight.Settings.click.chkgetfriendswithin();"/><label for="chkGetFriendsWithin" id="label_chkGetFriendsWithin">Played in</label> <input value="24" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixfriendshours();"/><label id="MatchesHours2">hours</label><br />
+	<input type="checkbox" id="chkGetFriendsWithin" onclick="htlivesight.Settings.click.chkgetfriendswithin();"/><label for="chkGetFriendsWithin" id="label_chkGetFriendsWithin">Played in</label> <input value="24" size="3" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixfriendshours();"/> <label id="MatchesHours2" for="txtGetFriendsWithinHours">hours</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesScorers">Scorers</legend>
@@ -205,7 +205,7 @@
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesWindow">Live Window</legend>
-	<input value="3" id="txtMatchWindowSize" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixwindowsize();"/><label id="MatchesLines"> Lines to show in minimized mode</label><br />
+	<input value="3" size="2" id="txtMatchWindowSize" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixwindowsize();"/> <label id="MatchesLines">Lines to show in minimized mode</label><br />
 	</fieldset>
 	
 	</div>
@@ -223,7 +223,7 @@
 	<fieldset>
 	<legend id="OtherAuthorization">Authorization code</legend>
 	<form id="ResetAuth">
-	<label form="ResetAuth" id="OtherReset">Remove authorization</label>
+	<span id="OtherReset">Remove authorization</span>
 	<button id="removeauth" form="ResetAuth" onclick="htlivesight.Settings.click.resetToken();" /><label for="removeauth" form="ResetAuth" id="button_reset"></label>
 	</form>
 	</fieldset>
@@ -253,8 +253,8 @@
 		</fieldset>
 		<fieldset>
 		<legend id="TabGoalSound">Goals sounds</legend>
-		<label id="PathSoundsNote1"></label><br />
-		<label id="PathSoundsNote2"></label><br />
+		<span id="PathSoundsNote1"></span><br />
+		<span id="PathSoundsNote2"></span><br />
 	<!-- my goal --><br />
 			<input type="checkbox" id="myGoalCheck" onclick="htlivesight.Settings.click.myGoalSound()"/><label for="myGoalCheck" id="label_myGoalCheck">Sound for own goal</label>
 			<br /><button id="label_myGoalButton_reset" class="brestore" onclick="htlivesight.Settings.click.myGoalReset()">restore</button><button id="label_myGoalButton_play" class="brestore" onclick="htlivesight.Settings.click.myGoalPlay()">play</button>
@@ -418,60 +418,59 @@
 			<!--TAB5-->
 			<fieldset>
 				<legend id="CustomEventColors">Events</legend>
-				<span>you can choose you color at </span><a href="http://www.colorpicker.com/" target="_blank">http://www.colorpicker.com/</a>  <br />
+				<span>You can choose your color at </span><a href="http://www.colorpicker.com/" target="_blank">http://www.colorpicker.com/</a><br />
 				<input type="checkbox" id="friendHomeColorCheck"
-					onclick="htlivesight.Settings.click.friendHomeColorCheck();" /><label
-					for="friendHomeColorCheck" id="label_friendHomeColorCheck"> Set
-					custom background color for friends (and your) event when playing at home</label><br /> 
-					 <br /> <label>Home friends hex color: #</label> <input type="text" name="friendHomeColor"
-					id="friendHomeColorCode" class="text ui-widget-content ui-corner-all"
-					oninput="htlivesight.Settings.click.friendHomeColorSet();" /> <br /> <br />
+					onclick="htlivesight.Settings.click.friendHomeColorCheck();" />
+					<label for="friendHomeColorCheck" id="label_friendHomeColorCheck"> Set a custom background color for your
+					 friend's (and your own) events when playing at home</label><br /><br />
+					<label for="friendHomeColorCode" id="label_friendHomeColorCode">Friend's at home hex color: #</label>
+					<input type="text" name="friendHomeColor" id="friendHomeColorCode" class="text ui-widget-content ui-corner-all"
+					oninput="htlivesight.Settings.click.friendHomeColorSet();" /><br /><br />
 				
 				<input type="checkbox" id="friendAwayColorCheck"
-					onclick="htlivesight.Settings.click.friendAwayColorCheck();" /><label
-					for="friendAwayColorCheck" id="label_friendAwayColorCheck"> Set
-					custom background color for friends (and your) event when playing away</label><br /> 
-					 <br /> <label>Away friends hex color: #</label> <input type="text" name="friendAwayColor"
-					id="friendAwayColorCode" class="text ui-widget-content ui-corner-all"
-					oninput="htlivesight.Settings.click.friendAwayColorSet();" /> <br /> <br />
+					onclick="htlivesight.Settings.click.friendAwayColorCheck();" />
+					<label for="friendAwayColorCheck" id="label_friendAwayColorCheck"> Set a custom background color for your friend's (and your own) events when playing away</label><br /><br />
+					<label for="friendAwayColorCode" id="label_friendAwayColorCode">Friend's away hex color: #</label>
+					<input type="text" name="friendAwayColor"	id="friendAwayColorCode" class="text ui-widget-content ui-corner-all"
+					oninput="htlivesight.Settings.click.friendAwayColorSet();" /><br /><br />
 				
 				<input type="checkbox" id="foeHomeColorCheck"
 					onclick="htlivesight.Settings.click.foeHomeColorCheck();" /><label
-					for="foeHomeColorCheck" id="label_foeHomeColorCheck"> Set
-					custom background color for foreign home team event</label><br /> 
-					 <br /> <label>Home foreign hex color: #</label> <input type="text" name="foeHomeColor"
+					for="foeHomeColorCheck" id="label_foeHomeColorCheck"> Set a
+					custom background color for foreign home team events</label><br /> 
+					 <br /> <label for="foeHomeColorCode" id="label_foeHomeColorCode">Foreign home hex color: #</label><input type="text" name="foeHomeColor"
 					id="foeHomeColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.foeHomeColorSet();" /> <br /> <br />
 				
 				<input type="checkbox" id="foeAwayColorCheck"
 					onclick="htlivesight.Settings.click.foeAwayColorCheck();" /><label
-					for="foeAwayColorCheck" id="label_foeAwayColorCheck"> Set
-					custom background color for foreign away team event</label><br /> 
-					 <br /> <label>Away foreign hex color: #</label> <input type="text" name="foeAwayColor"
+					for="foeAwayColorCheck" id="label_foeAwayColorCheck"> Set a
+					custom background color for foreign away team events</label><br /> 
+					 <br /> <label for="foeAwayColorCode" id="label_foeAwayColorCode">Foreign away hex color: #</label><input type="text" name="foeAwayColor"
 					id="foeAwayColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.foeAwayColorSet();" /> <br /> <br />
 					
 				<input type="checkbox" id="neutralColorCheck"
 					onclick="htlivesight.Settings.click.neutralColorCheck();" /><label
-					for="neutralColorCheck" id="label_neutralColorCheck"> Set
-					custom background color for neutral event</label><br /> 
-					 <br /> <label>Neutral hex color: #</label> <input type="text" name="neutralColor"
+					for="neutralColorCheck" id="label_neutralColorCheck"> Set a
+					custom background color for neutral events</label><br /> 
+					 <br /> <label for="neutralColorCode" id="label_neutralColorCode">Neutral hex color: #</label><input type="text" name="neutralColor"
 					id="neutralColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.neutralColorSet();" /> <br /> <br />
 					
 				<input type="checkbox" id="textColorCheck"
 					onclick="htlivesight.Settings.click.textColorCheck();" /><label
 					for="textColorCheck" id="label_textColorCheck"> Set
-					custom text color for event</label><br /> 
-					 <br /> <label>event text hex color: #</label> <input type="text" name="textColor"
+					a custom color for event text</label><br /> 
+					 <br /> <label for="textColorCode" id="label_textColorCode">Event text hex color: #</label> <input type="text" name="textColor"
 					id="textColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.textColorSet();" /> <br /> <br />
 					
 				<input type="checkbox" id="seTextColorCheck"
 					onclick="htlivesight.Settings.click.seTextColorCheck();" /><label
-					for="seTextColorCheck" id="label_seTextColorCheck"> Set
-					custom SE text color for event</label><br /> 
-					 <br /> <label>SE text hex color: #</label> <input type="text" name="seTextColor"
+					for="seTextColorCheck" id="label_seTextColorCheck"> Set a
+					custom color for SE text</label><br /> 
+					 <br /> <label for="seTextColorCode" id="label_seTextColorCode">SE text hex color: #</label> <input type="text" name="seTextColor"
 					id="seTextColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.seTextColorSet();" />  	
 			</fieldset>
@@ -504,14 +503,14 @@
 				<div id="tabs-1">
 					<img src="./themes/images/256.png" alt="HTLiveSight Logo"><br />
 					HTLiveSightDEV 0.5.813<br />
-					<label id="creationDate"></label><br /><br />
-					<label id="createdBy"></label><br />
+					<span id="creationDate"></span><br /><br />
+					<span id="createdBy"></span><br />
 					Silkevicious &amp; Bigpapy<br /><br />
-					<label id="BasedOn">Based on</label> HattrickLiveFox<br />
+					<span id="BasedOn">Based on</span> <span id="BasedOnTitle">HattrickLiveFox</span><br />
 					<a href="http://hattricklivefox.mozdev.org">http://hattricklivefox.mozdev.org</a>
 				</div>
 				<div id="tabs-2">
-					<label id="ThanksTo"></label><br />
+					<span id="ThanksTo"></span><br />
 					<ul>
 		<li>[ara] العربية: RiBBz</li>
 		<li>[bel] Беларуская: LA-Vandrouny</li>
@@ -526,7 +525,7 @@
 		<li>[ell] Ελληνικά: chris_ts</li>
 		<li>[est] Eesti: Simokas</li>
 		<li>[eus] Euskara: EH-Haro</li>
-		<li>fas] فارسی: -Morsal-</li>
+		<li>[fas] فارسی: -Morsal-</li>
 		<li>[fin] Suomi: -Lupi-</li>
 		<li>[fra] Français: Davidatorus</li>
 		<li>[fry] Frysk: MI-Side</li>
@@ -571,7 +570,7 @@
 					</ul>
 				</div>
 				<div id="tabs-3">
-					<label id="Supporter">Project support:</label><br />
+					<span id="Supporter">Project support:</span><br />
 					<a href="http://code.google.com/p/htlivesight" target="_newtab"><img src="./themes/images/google.png" alt="Google"></a><br />
 					<a href="http://sourceforge.net/projects/htlivesight" target="_newtab"><img src="./themes/images/sf.png" alt="Sourceforge"></a><br />
 					<a href="http://htlivesight.foundationhorizont.org" target="_newtab"><img src="./themes/images/ixweb.png" alt="IXWebHosting"></a><br /><br />
@@ -591,19 +590,19 @@
 			<div id="topbar">
 		<div id="left_topbar">
 		Check out the latest news on
-		<a title="Hattrick Forum" href="http://stage.hattrick.org/Forum/Overview.aspx?v=0&amp;f=796547" target="_blank" style="text-decoration:none">
+		<a title="Hattrick Forum" href="http://stage.hattrick.org/Forum/Overview.aspx?v=0&amp;f=796547" target="_blank">
 		<img alt="hattrick" class="socialicon" src="./themes/images/ht.png">
 		</a>
-		<a title="Project Website" href="http://htlivesight.sourceforge.net" target="_blank" style="text-decoration:none">
+		<a title="Project Website" href="http://htlivesight.sourceforge.net" target="_blank">
 		<img alt="website" class="socialicon" src="./themes/images/www.png">
 		</a>
-		<a title="Google+ Page" href="https://plus.google.com/108738414532467976031" target="_blank" style="text-decoration:none">
+		<a title="Google+ Page" href="https://plus.google.com/108738414532467976031" target="_blank">
 		<img alt="gplus" class="socialicon" src="./themes/images/gplus.png">
 		</a>
-		<a title="Twitter Page" href="http://twitter.com/htlivesight" target="_blank" style="text-decoration:none">
+		<a title="Twitter Page" href="http://twitter.com/htlivesight" target="_blank">
 		<img alt="twitter" class="socialicon" src="./themes/images/twit.png">
 		</a>
-		<a title="Facebook Page" href="http://www.facebook.com/pages/HTLiveSight/239694369438717" style="text-decoration:none" target="_blank">
+		<a title="Facebook Page" href="http://www.facebook.com/pages/HTLiveSight/239694369438717" target="_blank">
 		<img alt="facebook" class="socialicon" src="./themes/images/fb.png">
 		</a>
 		</div>
@@ -616,15 +615,15 @@
 		</div>
 		</div>
 		<div id="right_topbar">
-		Logged in as <label id="teamName"></label>
+		Logged in as <span id="teamName"></span>
 		<!--<a href="#" id="dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-power"></span>Login</a>
 		<a href="#" id="options_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-gear"></span>Options</a>
 		<a href="#" id="about_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-info"></span>About</a>-->
-		<a title="Options" id="options_link" href="#" style="text-decoration:none">
-		<img alt="" class="socialicon" src="./themes/images/options.png">
+		<a title="Options" id="options_link" href="#">
+		<img alt="Options" class="socialicon" src="./themes/images/options.png">
 		</a>
-		<a title="About" id="about_link" href="#" style="text-decoration:none">
-		<img alt="" class="socialicon" src="./themes/images/about.png">
+		<a title="About" id="about_link" href="#">
+		<img alt="About" class="socialicon" src="./themes/images/about.png">
 		</a>
 		</div>
 		</div>
@@ -634,8 +633,9 @@
 		
 		
 		<div id="formationpopup" title="Lineup">
-		Lineup popup function is temporary deactivated due a CHPP problem.<br />As soon the HTs fix it, we'll re-add this feature.<br />
+		<span id="label_formationPopupUnavailable">Lineup popup function is temporary deactivated due a CHPP problem.<br />As soon the HTs fix it, we'll re-add this feature.<br />
 		Sorry for the inconvenience.
+		</span>
 		</div>
 		<!--DIV SINGLE MATCH-->
 			<!--<div class="match">
@@ -737,7 +737,7 @@
 	<table class="match_table">
 	<thead id="contentheader_leaguematches">
 	<tr>
-		<th colspan="7" class="datetime_league"><label id="league_round_date"></label></th>
+		<th colspan="7" class="datetime_league"><span id="league_round_date"></span></th>
 	</tr>
 	</thead>
 	<tbody id="league_grid_rows"> <!-- id="league_grid" -->
@@ -753,8 +753,8 @@
 	</tbody>
 	<tfoot id="contentfooter_leaguematches">
 	<tr>
-		<td colspan="2" class="round_league"><label id="league_round_number"></label></td>
-		<td colspan="5" class="chronometer_league"><label id="league_round_time"></label></td>
+		<td colspan="2" class="round_league"><span id="league_round_number"></span></td>
+		<td colspan="5" class="chronometer_league"><span id="league_round_time"></span></td>
 	</tr>
 	</tfoot>
 	</table>
@@ -790,76 +790,76 @@
 	</thead>
 	<tbody>
 		<tr id="leaguetable_1">
-		<td><label>1.</label></td>
-		<td><label id="leaguetable_1_name"></label></td>
+		<td><span>1.</span></td>
+		<td><span id="leaguetable_1_name"></span></td>
 		<td><img id="leaguetable_1_change" class="leaguetable_equal"/></td>
-		<td><label id="leaguetable_1_matches"></label></td>
-		<td><label id="leaguetable_1_goals"></label></td>
-		<td><label id="leaguetable_1_goaldif"></label></td>
-		<td><label id="leaguetable_1_points"></label></td>
+		<td><span id="leaguetable_1_matches"></span></td>
+		<td><span id="leaguetable_1_goals"></span></td>
+		<td><span id="leaguetable_1_goaldif"></span></td>
+		<td><span id="leaguetable_1_points"></span></td>
 	</tr>
 		<tr id="leaguetable_2">
-		<td><label>2.</label></td>
-		<td><label id="leaguetable_2_name"></label></td>
+		<td><span>2.</span></td>
+		<td><span id="leaguetable_2_name"></span></td>
 		<td><img id="leaguetable_2_change" class="leaguetable_equal"/></td>
-		<td><label id="leaguetable_2_matches"></label></td>
-		<td><label id="leaguetable_2_goals"></label></td>
-		<td><label id="leaguetable_2_goaldif"></label></td>
-		<td><label id="leaguetable_2_points"></label></td>
+		<td><span id="leaguetable_2_matches"></span></td>
+		<td><span id="leaguetable_2_goals"></span></td>
+		<td><span id="leaguetable_2_goaldif"></span></td>
+		<td><span id="leaguetable_2_points"></span></td>
 	</tr>
 		<tr id="leaguetable_3">
-		<td><label>3.</label></td>
-		<td><label id="leaguetable_3_name"></label></td>
+		<td><span>3.</span></td>
+		<td><span id="leaguetable_3_name"></span></td>
 		<td><img id="leaguetable_3_change" class="leaguetable_equal"/></td>
-		<td><label id="leaguetable_3_matches"></label></td>
-		<td><label id="leaguetable_3_goals"></label></td>
-		<td><label id="leaguetable_3_goaldif"></label></td>
-		<td><label id="leaguetable_3_points"></label></td>
+		<td><span id="leaguetable_3_matches"></span></td>
+		<td><span id="leaguetable_3_goals"></span></td>
+		<td><span id="leaguetable_3_goaldif"></span></td>
+		<td><span id="leaguetable_3_points"></span></td>
 	</tr>
 		<tr id="leaguetable_4">
-		<td><label>4.</label></td>
-		<td><label id="leaguetable_4_name"></label></td>
+		<td><span>4.</span></td>
+		<td><span id="leaguetable_4_name"></span></td>
 		<td><img id="leaguetable_4_change" class="leaguetable_equal"/></td>
-		<td><label id="leaguetable_4_matches"></label></td>
-		<td><label id="leaguetable_4_goals"></label></td>
-		<td><label id="leaguetable_4_goaldif"></label></td>
-		<td><label id="leaguetable_4_points"></label></td>
+		<td><span id="leaguetable_4_matches"></span></td>
+		<td><span id="leaguetable_4_goals"></span></td>
+		<td><span id="leaguetable_4_goaldif"></span></td>
+		<td><span id="leaguetable_4_points"></span></td>
 	</tr>
 		<tr id="leaguetable_5">
-		<td><label>5.</label></td>
-		<td><label id="leaguetable_5_name"></label></td>
+		<td><span>5.</span></td>
+		<td><span id="leaguetable_5_name"></span></td>
 		<td><img id="leaguetable_5_change" class="leaguetable_equal"/></td>
-		<td><label id="leaguetable_5_matches"></label></td>
-		<td><label id="leaguetable_5_goals"></label></td>
-		<td><label id="leaguetable_5_goaldif"></label></td>
-		<td><label id="leaguetable_5_points"></label></td>
+		<td><span id="leaguetable_5_matches"></span></td>
+		<td><span id="leaguetable_5_goals"></span></td>
+		<td><span id="leaguetable_5_goaldif"></span></td>
+		<td><span id="leaguetable_5_points"></span></td>
 	</tr>
 		<tr id="leaguetable_6">
-		<td><label>6.</label></td>
-		<td><label id="leaguetable_6_name"></label></td>
+		<td><span>6.</span></td>
+		<td><span id="leaguetable_6_name"></span></td>
 		<td><img id="leaguetable_6_change" class="leaguetable_equal"/></td>
-		<td><label id="leaguetable_6_matches"></label></td>
-		<td><label id="leaguetable_6_goals"></label></td>
-		<td><label id="leaguetable_6_goaldif"></label></td>
-		<td><label id="leaguetable_6_points"></label></td>
+		<td><span id="leaguetable_6_matches"></span></td>
+		<td><span id="leaguetable_6_goals"></span></td>
+		<td><span id="leaguetable_6_goaldif"></span></td>
+		<td><span id="leaguetable_6_points"></span></td>
 	</tr>
 		<tr id="leaguetable_7">
-		<td><label>7.</label></td>
-		<td><label id="leaguetable_7_name"></label></td>
+		<td><span>7.</span></td>
+		<td><span id="leaguetable_7_name"></span></td>
 		<td><img id="leaguetable_7_change" class="leaguetable_equal"/></td>
-		<td><label id="leaguetable_7_matches"></label></td>
-		<td><label id="leaguetable_7_goals"></label></td>
-		<td><label id="leaguetable_7_goaldif"></label></td>
-		<td><label id="leaguetable_7_points"></label></td>
+		<td><span id="leaguetable_7_matches"></span></td>
+		<td><span id="leaguetable_7_goals"></span></td>
+		<td><span id="leaguetable_7_goaldif"></span></td>
+		<td><span id="leaguetable_7_points"></span></td>
 	</tr>
 		<tr id="leaguetable_8">
-		<td><label>8.</label></td>
-		<td><label id="leaguetable_8_name"></label></td>
+		<td><span>8.</span></td>
+		<td><span id="leaguetable_8_name"></span></td>
 		<td><img id="leaguetable_8_change" class="leaguetable_equal"/></td>
-		<td><label id="leaguetable_8_matches"></label></td>
-		<td><label id="leaguetable_8_goals"></label></td>
-		<td><label id="leaguetable_8_goaldif"></label></td>
-		<td><label id="leaguetable_8_points"></label></td>
+		<td><span id="leaguetable_8_matches"></span></td>
+		<td><span id="leaguetable_8_goals"></span></td>
+		<td><span id="leaguetable_8_goaldif"></span></td>
+		<td><span id="leaguetable_8_points"></span></td>
 	</tr>
 	</tbody>
 	</table>
@@ -958,8 +958,8 @@
 		<div id="server"><!-- accordion league_table1-->
 		<h3><a href="#" id="MenuServer"></a></h3>
 		<div id="serverint"><!-- accordion league_table2-->
-		<label id="ServerStatus"></label>
-		<label id="progresslabel" ></label>
+		<span id="ServerStatus"></span>
+		<span id="progresslabel" ></span>
 		<div id="clockBox" style="display:none"></div>
 		<progress id="progressmeter"></progress>
 		</div><!-- accordion league_table2-->

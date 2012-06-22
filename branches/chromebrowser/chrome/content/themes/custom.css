@@ -262,6 +262,10 @@ animation-timing-function:ease-in-out;
 /* CSS customisation by LA-MJ 
 	START
 */
+#button_login{float: right;}
+#right_topbar > a, #left_topbar > a{
+text-decoration:none;
+}
 table.ev_rows{
 border-collapse: collapse;
 }
