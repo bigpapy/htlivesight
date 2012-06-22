@@ -1,11 +1,10 @@
 {
-"name": "HTLiveSightNext",
-"version": "0.5.999",
+"name": "HTLiveSightDEV",
+"version": "0.5.813",
 "description": "An Hattrick Live Match Viewer",
 "icons": { "16": "skin/16.png",
            "48": "skin/48.png",
           "128": "skin/128.png" },
-//"default_locale": "en",
 "app": {
     "launch": {
 		"default_icon": "24.png",
@@ -13,53 +12,9 @@
       "local_path": "content/htlivesight.html"
     }
 },
-// Add any of these that you need
-//  "background_page": "content/background.html",
-//  "content_scripts": [
-//    {
-//      "matches": ["content/htlivesight.html","content/settings.html"],
-//      "css": ["content/themes/custom.css", "content/themes/dark/jquery-ui-1.8.21.custom.css"],
-//      "js": [
-//   "content/js/jquery-1.7.2.min.js",
-//   "content/js/jquery-ui-1.8.21.custom.min.js",
-//	  "content/about.js",
-//	  "content/api-proxy.js",
-//	  "content/click.js",
-//	  "content/dom.js",
-//	  "content/env.js",
-//	  "content/events.js",
-//	  "content/eventsystem.js",
-//	  "content/friends.js",
-//	  "content/htlivesight.js",
-//	  "content/http.js",
-//	  "content/image.js",
-//	  "content/league.js",
-//	  "content/live.js",
-//	  "content/log.js",
-//	  "content/login.js",
-//	  "content/logout.js",
-//	  "content/match.js",
-//	  "content/matchdetails.js",
-//	  "content/matches.js",
-//	  "content/notify.js",
-//	  "content/overlay.js",
-//	  "content/preferences.js",
-//	  "content/prefs.js",
-//	  "content/settings.js",
-//	  "content/sound.js",
-//	  "content/team.js",
-//	  "content/test.js",
-//	  "content/time.js",
-//	  "content/util.js"
-//	  ]
-//    }
-//  ],
-//"file_browser_handlers": [],
 "homepage_url": "http://htlivesight.sourceforge.net",
 "incognito": "spanning",
-//"key": "",
 "minimum_chrome_version": "13",
-"omnibox": { "keyword" : "live" },
 "options_page": "content/settings.html",
 	"permissions" : [
 		"tabs",
@@ -67,7 +22,6 @@
 		"notifications",
 		"clipboardWrite",
 		"*://chpp.hattrick.org/*"
-	]
-//"plugins": [],
-//"update_url": "http://path/to/updateInfo.xml"
+	],
+"update_url": "https://htlivesight.c6.ixwebhosting.com/chromedev/updates.xml"
 }
