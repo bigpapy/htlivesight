@@ -46,11 +46,11 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 /*.match_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;padding:0 0 0 0;border-spacing:0 0 0 0}*/
 .match_row{}
 /*.datetime_league {text-align:center;border-bottom: thin solid white;}*/
-.hometeam_league {text-align:right;width:42%;padding:0 0 0 0;border-spacing:0 0 0 0}
+.hometeam_league {text-align:right;width:42%;padding:0 5px;border-spacing:0 0 0 0}
 .homescore_league {text-align:right;padding:0 0 0 0;border-spacing:0 0 0 0}
 .separator_league {text-align:center;width:2%;padding:0 0 0 0;border-spacing:0 0 0 0}
 .awayscore_league {text-align:left;padding:0 0 0 0;border-spacing:0 0 0 0}
-.awayteam_league {text-align:left;width:42%;padding:0 0 0 0;border-spacing:0 0 0 0}
+.awayteam_league {text-align:left;width:42%;padding:0 5px;border-spacing:0 0 0 0}
 .add_league{text-align:center;width:20px;height:20px;}
 .remove_league{text-align:center;width:20px;height:20px;}
 /*.round_league {text-align:left;border-top: thin solid white;}
@@ -266,11 +266,17 @@ animation-timing-function:ease-in-out;
 #right_topbar > a, #left_topbar > a{
 text-decoration:none;
 }
-table.ev_rows{
+#leaguetable_grid_rows td{
+padding: 2px 0;
+}
+table.ev_rows,#leaguetable_grid_rows{
 border-collapse: collapse;
 }
 table.ev_rows > tr{
 border-bottom: 2px solid black;
+}
+table.ev_rows > tr > td{
+padding: 2px 0;
 }
 img.match_button{}
 img.weather_image{
