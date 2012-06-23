@@ -269,6 +269,10 @@ text-decoration:none;
 #leaguetable_grid_rows td{
 padding: 2px 0;
 }
+#leaguetable_grid_rows td:first-child,#leaguetable_grid_rows th:first-child{
+padding-left: 3px;
+border-right: thin solid white;
+}
 table.ev_rows,#leaguetable_grid_rows{
 border-collapse: collapse;
 }
