@@ -1049,10 +1049,10 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     l.setAttribute("class","event_minute");
     row.appendChild(l);
 /*    l.setAttribute("value", event.minute); */
-    if (event.minute < 10) l.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;"+event.minute;
+  /*  if (event.minute < 10) l.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;"+event.minute;
     else if (event.minute <100) l.innerHTML="&#160;&#160;"+event.minute;
-    	else l.innerHTML= event.minute;
-  //  l.innerHTML= event.minute;
+    	else l.innerHTML= event.minute;*/
+  l.innerHTML= event.minute;
   
     l = document.createElement("td");
     l1 = document.createElement("td");
