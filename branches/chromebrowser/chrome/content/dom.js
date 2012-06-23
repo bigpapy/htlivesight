@@ -1439,7 +1439,7 @@ try{ //added by bigpapy to debug from XUL to HTML
   //document.getElementById("short_home_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
   htlivesight.Util.RemoveClass(cell,['short_own','short_friend']);//reset styling
   if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)){
-  	  if(match.home.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(teamName,'short_own'); 
+  	  if(match.home.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(cell,'short_own'); 
   	  else
   	  htlivesight.Util.AddClass(cell,'short_friend');
   }else{
@@ -1485,7 +1485,7 @@ try{ //added by bigpapy to debug from XUL to HTML
   //document.getElementById("short_away_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.away.team.shortName);
   htlivesight.Util.RemoveClass(cell,['short_own','short_friend']);//reset styling
   if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)){
-  	  if(match.away.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(teamName,'short_own'); 
+  	  if(match.away.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(cell,'short_own'); 
   	  else
 	  htlivesight.Util.AddClass(cell,'short_friend');
   }else{
