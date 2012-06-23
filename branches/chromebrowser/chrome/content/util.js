@@ -49,7 +49,40 @@ RemoveAmpersand : function(text) {		  var t = text;		  t = t.replace(/&/g, "&a
  * Parse functions
  * --------------------------------------------------- */
 	// Function modified by bigpapy
-Parse : function (regStr, xml) {  try {  	  found = xml.getElementsByTagName(regStr)[0].textContent;    if (found) {      	return htlivesight.Util.RemoveAmpersand(found);    }  } catch(e) {	 // console.log("Util.Parse error: "+regStr+" = " + e);  }  return null;},};
+Parse : function (regStr, xml) {  try {  	  found = xml.getElementsByTagName(regStr)[0].textContent;    if (found) {      	return htlivesight.Util.RemoveAmpersand(found);    }  } catch(e) {	 // console.log("Util.Parse error: "+regStr+" = " + e);  }  return null;},
+
+//Class modification functions by LA-MJ
+HasClass : function (el, cname){
+	try {
+		var classes = el.className.split(" ");
+		return classes.has(cname);
+	}
+	catch(e){
+		console.log("Util.Parse error: this might not be a valid element: ");
+	}
+},
+RemoveClass : function (el, cname){
+	if(cname instanceof Array) for (var i=0,c;c=cname[i];++i) this.RemoveClass(el,c);
+	else if(this.HasClass(el,cname)){
+		var classes = el.className.split(" ");
+		classes.splice(classes.indexOf(cname),1);
+		el.className = (classes.length) ? classes.join(" ") : "";
+	}
+},
+AddClass : function (el, cname){
+	if(cname instanceof Array) for (var i=0,c;c=cname[i];++i) this.AddClass(el,c);
+	else if(!this.HasClass(el,cname)){
+		var classes = (el.className=="") ? new Array() : el.className.split(" ");
+		classes.push(cname);
+		el.className = classes.join(" ");
+	}
+},ChangeClass : function (el, cname, newname){
+	if(this.HasClass(el,cname)){
+		var classes = el.className.split(" ");
+		classes.splice(classes.indexOf(cname),1,newname);
+		el.className = classes.join(" ");
+	}
+}};
 /* ---------------------------------------------------
  * Other functions
  * --------------------------------------------------- */

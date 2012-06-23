@@ -1258,32 +1258,47 @@ else {matchLeagueStarted = false;
     else htlivesight.League.teams[id].change = "equal.gif";
   }
   for(var j=1; j<=8; j++){
-    document.getElementById("leaguetable_"+j).setAttribute("style", "");
+    //document.getElementById("leaguetable_"+j).setAttribute("style", "");
+    htlivesight.Util.RemoveClass(document.getElementById("leaguetable_"+j+""),['league_title','league_promote','league_demote','league_qualify','league_own']);
   }
   //document.getElementById("contentbody_leaguetable"/*"leaguetable_name"*/).setAttribute("value", /*strings.getString("league.live_table")*/htlivesight.Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")");
   document.getElementById("LeagueLiveTable"/*"leaguetable_name"*/).innerHTML = htlivesight.Util.Parse("LeagueLiveTable",data[0])+" ("+league.levelUnitName+")";
   if(league.level == 1){
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #023702;");
+    //document.getElementById("leaguetable_1").setAttribute("style", "background-color: #023702;");
+    //title holder
+    htlivesight.Util.AddClass(document.getElementById("leaguetable_1"),'league_title');
   }
   else if(league.level <= 6 || league.level % 2 == 0){
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #023702; border-bottom-width: 1px; border-bottom-color: black;");
+    //document.getElementById("leaguetable_1").setAttribute("style", "background-color: #023702; border-bottom-width: 1px; border-bottom-color: black;");
+    //#1 promotes
+    htlivesight.Util.AddClass(document.getElementById("leaguetable_1"),'league_promote');
   }
   else{
-    document.getElementById("leaguetable_1").setAttribute("style", "background-color: #023702;");
-    document.getElementById("leaguetable_2").setAttribute("style", "background-color: #023702; border-bottom-width: 1px; border-bottom-color: black;");
+    //document.getElementById("leaguetable_1").setAttribute("style", "background-color: #023702;");
+    //document.getElementById("leaguetable_2").setAttribute("style", "background-color: #023702; border-bottom-width: 1px; border-bottom-color: black;");
+    //#1 AND #2 promote
+    htlivesight.Util.AddClass(document.getElementById("leaguetable_1"),'league_promote');
+    htlivesight.Util.AddClass(document.getElementById("leaguetable_2"),'league_promote');
   }
   if(league.level != league.maxLevel){
-    document.getElementById("leaguetable_7").setAttribute("style", "background-color: #750606; border-top-width: 1px; border-top-color: black;");
-    document.getElementById("leaguetable_8").setAttribute("style", "background-color: #750606;");
+    //document.getElementById("leaguetable_7").setAttribute("style", "background-color: #750606; border-top-width: 1px; border-top-color: black;");
+    //document.getElementById("leaguetable_8").setAttribute("style", "background-color: #750606;");
+    //#7 AND #8 demote
+    htlivesight.Util.AddClass(document.getElementById("leaguetable_7"),'league_demote');
+    htlivesight.Util.AddClass(document.getElementById("leaguetable_8"),'league_demote');
   }
   if(league.level < 6){
-    document.getElementById("leaguetable_5").setAttribute("style", "background-color: #757006;");
-    document.getElementById("leaguetable_6").setAttribute("style", "background-color: #757006;");
+    //document.getElementById("leaguetable_5").setAttribute("style", "background-color: #757006;");
+    //document.getElementById("leaguetable_6").setAttribute("style", "background-color: #757006;");
+    //#5 AND #8 need to qualify
+    htlivesight.Util.AddClass(document.getElementById("leaguetable_5"),'league_qualify');
+    htlivesight.Util.AddClass(document.getElementById("leaguetable_6"),'league_qualify');
   }
   for(var i in htlivesight.League.teams){
     if(htlivesight.League.teams[i].livePosition >= 1 && htlivesight.League.teams[i].livePosition <= 8){
       if(i == htlivesight.Teams.myTeam.id){
-        document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition).setAttribute("style", document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition).getAttribute("style")+" font-weight: bold;");
+        //document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition).setAttribute("style", document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition).getAttribute("style")+" font-weight: bold;");
+        htlivesight.Util.AddClass(document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition),'league_own');
       }
       document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_name").innerHTML = htlivesight.DOM.getTextContent(htlivesight.League.teams[i].name);
       //document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_change").setAttribute("class", htlivesight.League.teams[i].change);

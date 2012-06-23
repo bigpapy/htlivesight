@@ -272,6 +272,12 @@ padding: 2px 0;
 table.ev_rows,#leaguetable_grid_rows{
 border-collapse: collapse;
 }
+tr.league_title, tr.league_promote{background-color: #023702;}
+tr.league_title + tr,tr.league_promote + tr{border-top: 1px solid green;}
+tr:not(.league_demote) + tr.league_demote{border-top: 1px solid red;}
+tr.league_demote{background-color: #750606;}
+tr.league_qualify{background-color: #757006;}
+tr.league_own > td:nth-child(2) > span{font-weight: bold;}
 table.ev_rows > tr{
 border-bottom: 2px solid black;
 }
