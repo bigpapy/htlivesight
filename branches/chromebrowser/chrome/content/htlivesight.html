@@ -60,7 +60,7 @@
 	<input type="text" id="teamId" class="text ui-widget-content ui-corner-all"></input>
 	<br />
 	<input type="checkbox" id="save_teamId" /><label for="save_teamId" id="LoginSave"></label>
-	<input type="button" id="button_login" value="" onclick="try{htlivesight.Click.Login()}catch(e){alert(e);}"/>
+	<input type="button" id="button_login" style="float:right" value="" onclick="try{htlivesight.Click.Login()}catch(e){alert(e);}"/>
 	</fieldset>
 	<fieldset>
 	<legend id="LoginReLive"></legend>
@@ -197,7 +197,7 @@
 	<fieldset>
 	<legend id="MatchesFriends">Friends Matches</legend>
 	<input type="checkbox" id="chkGetFriends" onclick="htlivesight.Settings.click.chkgetfriends();"/><label for="chkGetFriends" id="label_chkGetFriends">Load automatically matches of your friends</label><br />
-	<input type="checkbox" id="chkGetFriendsWithin" onclick="htlivesight.Settings.click.chkgetfriendswithin();"/><label for="chkGetFriendsWithin" id="label_chkGetFriendsWithin">Played in</label> <input value="24" size="3" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixfriendshours();"/> <label id="MatchesHours2" for="txtGetFriendsWithinHours">hours</label><br />
+	<input type="checkbox" id="chkGetFriendsWithin" onclick="htlivesight.Settings.click.chkgetfriendswithin();"/><label for="chkGetFriendsWithin" id="label_chkGetFriendsWithin">Played in</label> <input value="24" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixfriendshours();"/><label id="MatchesHours2">hours</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesScorers">Scorers</legend>
@@ -419,7 +419,7 @@
 			<fieldset>
 				<legend id="CustomEventColors">Events</legend>
 				<span>You can choose your color at </span><a href="http://www.colorpicker.com/" target="_blank">http://www.colorpicker.com/</a><br />
-				<input type="checkbox" id="friendHomeColorCheck"
+					<input type="checkbox" id="friendHomeColorCheck"
 					onclick="htlivesight.Settings.click.friendHomeColorCheck();" />
 					<label for="friendHomeColorCheck" id="label_friendHomeColorCheck"> Set a custom background color for your
 					 friend's (and your own) events when playing at home</label><br /><br />
@@ -446,33 +446,33 @@
 					onclick="htlivesight.Settings.click.foeAwayColorCheck();" /><label
 					for="foeAwayColorCheck" id="label_foeAwayColorCheck"> Set a
 					custom background color for foreign away team events</label><br /> 
-					 <br /> <label for="foeAwayColorCode" id="label_foeAwayColorCode">Foreign away hex color: #</label><input type="text" name="foeAwayColor"
+					 <br /> <label id="label_foeAwayColorCode" >Away foreign hex color:</label> <input type="text" name="foeAwayColor"
 					id="foeAwayColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.foeAwayColorSet();" /> <br /> <br />
 					
-				<input type="checkbox" id="neutralColorCheck"
+					<input type="checkbox" id="neutralColorCheck"
 					onclick="htlivesight.Settings.click.neutralColorCheck();" /><label
-					for="neutralColorCheck" id="label_neutralColorCheck"> Set a
-					custom background color for neutral events</label><br /> 
-					 <br /> <label for="neutralColorCode" id="label_neutralColorCode">Neutral hex color: #</label><input type="text" name="neutralColor"
+					for="neutralColorCheck" id="label_neutralColorCheck"> Set
+					custom background color for neutral event</label><br /> 
+					 <br /> <label id="label_neutralColorCode">Neutral hex color:</label> <input type="text" name="neutralColor"
 					id="neutralColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.neutralColorSet();" /> <br /> <br />
 					
-				<input type="checkbox" id="textColorCheck"
+					<input type="checkbox" id="textColorCheck"
 					onclick="htlivesight.Settings.click.textColorCheck();" /><label
 					for="textColorCheck" id="label_textColorCheck"> Set
-					a custom color for event text</label><br /> 
-					 <br /> <label for="textColorCode" id="label_textColorCode">Event text hex color: #</label> <input type="text" name="textColor"
+					custom text color for event</label><br /> 
+					 <br /> <label id="label_textColorCode">event text hex color:</label> <input type="text" name="textColor"
 					id="textColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.textColorSet();" /> <br /> <br />
 					
-				<input type="checkbox" id="seTextColorCheck"
+					<input type="checkbox" id="seTextColorCheck"
 					onclick="htlivesight.Settings.click.seTextColorCheck();" /><label
-					for="seTextColorCheck" id="label_seTextColorCheck"> Set a
-					custom color for SE text</label><br /> 
-					 <br /> <label for="seTextColorCode" id="label_seTextColorCode">SE text hex color: #</label> <input type="text" name="seTextColor"
+					for="seTextColorCheck" id="label_seTextColorCheck"> Set
+					custom SE text color for event</label><br /> 
+					 <br /> <label id="label_seTextColorCode">SE text hex color:</label> <input type="text" name="seTextColor"
 					id="seTextColorCode" class="text ui-widget-content ui-corner-all"
-					oninput="htlivesight.Settings.click.seTextColorSet();" />  	
+					oninput="htlivesight.Settings.click.seTextColorSet();" /> 	
 			</fieldset>
 		</div>
 			</div>
@@ -502,15 +502,15 @@
 				</ul>
 				<div id="tabs-1">
 					<img src="./themes/images/256.png" alt="HTLiveSight Logo"><br />
+					<img src="./themes/images/256.png" alt="HTLiveSight Logo"><br />
 					HTLiveSightDEV 0.5.813<br />
 					<span id="creationDate"></span><br /><br />
-					<span id="createdBy"></span><br />
 					Silkevicious &amp; Bigpapy<br /><br />
-					<span id="BasedOn">Based on</span> <span id="BasedOnTitle">HattrickLiveFox</span><br />
+					<label id="BasedOn">Based on</label> HattrickLiveFox<br />
 					<a href="http://hattricklivefox.mozdev.org">http://hattricklivefox.mozdev.org</a>
 				</div>
 				<div id="tabs-2">
-					<span id="ThanksTo"></span><br />
+					<label id="ThanksTo"></label><br />
 					<ul>
 		<li>[ara] العربية: RiBBz</li>
 		<li>[bel] Беларуская: LA-Vandrouny</li>
@@ -525,7 +525,7 @@
 		<li>[ell] Ελληνικά: chris_ts</li>
 		<li>[est] Eesti: Simokas</li>
 		<li>[eus] Euskara: EH-Haro</li>
-		<li>[fas] فارسی: -Morsal-</li>
+		<li>fas] فارسی: -Morsal-</li>
 		<li>[fin] Suomi: -Lupi-</li>
 		<li>[fra] Français: Davidatorus</li>
 		<li>[fry] Frysk: MI-Side</li>
@@ -570,7 +570,7 @@
 					</ul>
 				</div>
 				<div id="tabs-3">
-					<span id="Supporter">Project support:</span><br />
+					<label id="Supporter">Project support:</label><br />
 					<a href="http://code.google.com/p/htlivesight" target="_newtab"><img src="./themes/images/google.png" alt="Google"></a><br />
 					<a href="http://sourceforge.net/projects/htlivesight" target="_newtab"><img src="./themes/images/sf.png" alt="Sourceforge"></a><br />
 					<a href="http://htlivesight.foundationhorizont.org" target="_newtab"><img src="./themes/images/ixweb.png" alt="IXWebHosting"></a><br /><br />
@@ -590,19 +590,19 @@
 			<div id="topbar">
 		<div id="left_topbar">
 		Check out the latest news on
-		<a title="Hattrick Forum" href="http://stage.hattrick.org/Forum/Overview.aspx?v=0&amp;f=796547" target="_blank">
+		<a title="Hattrick Forum" href="http://stage.hattrick.org/Forum/Overview.aspx?v=0&amp;f=796547" target="_blank" style="text-decoration:none">
 		<img alt="hattrick" class="socialicon" src="./themes/images/ht.png">
 		</a>
-		<a title="Project Website" href="http://htlivesight.sourceforge.net" target="_blank">
+		<a title="Project Website" href="http://htlivesight.sourceforge.net" target="_blank" style="text-decoration:none">
 		<img alt="website" class="socialicon" src="./themes/images/www.png">
 		</a>
-		<a title="Google+ Page" href="https://plus.google.com/108738414532467976031" target="_blank">
+		<a title="Google+ Page" href="https://plus.google.com/108738414532467976031" target="_blank" style="text-decoration:none">
 		<img alt="gplus" class="socialicon" src="./themes/images/gplus.png">
 		</a>
-		<a title="Twitter Page" href="http://twitter.com/htlivesight" target="_blank">
+		<a title="Twitter Page" href="http://twitter.com/htlivesight" target="_blank" style="text-decoration:none">
 		<img alt="twitter" class="socialicon" src="./themes/images/twit.png">
 		</a>
-		<a title="Facebook Page" href="http://www.facebook.com/pages/HTLiveSight/239694369438717" target="_blank">
+		<a title="Facebook Page" href="http://www.facebook.com/pages/HTLiveSight/239694369438717" style="text-decoration:none" target="_blank">
 		<img alt="facebook" class="socialicon" src="./themes/images/fb.png">
 		</a>
 		</div>
@@ -615,20 +615,21 @@
 		</div>
 		</div>
 		<div id="right_topbar">
-		Logged in as <span id="teamName"></span>
+		Logged in as <label id="teamName"></label>
 		<!--<a href="#" id="dialog_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-power"></span>Login</a>
 		<a href="#" id="options_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-gear"></span>Options</a>
 		<a href="#" id="about_link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-info"></span>About</a>-->
-		<a title="Options" id="options_link" href="#">
-		<img alt="Options" class="socialicon" src="./themes/images/options.png">
+		<a title="Options" id="options_link" href="#" style="text-decoration:none">
+		<img alt="" class="socialicon" src="./themes/images/options.png">
 		</a>
-		<a title="About" id="about_link" href="#">
-		<img alt="About" class="socialicon" src="./themes/images/about.png">
+		<a title="About" id="about_link" href="#" style="text-decoration:none">
+		<img alt="" class="socialicon" src="./themes/images/about.png">
 		</a>
 		</div>
 		</div>
 		<div id="thebox">
 		<div id="live_box">
+		
 		
 		
 		

@@ -90,6 +90,8 @@ htlivesight.Settings = {
 //			alert("load20");
 
 			document.getElementById("lang-list").value = prefs.language.locale;
+			document.getElementById("lang-list").style.background= "#000000";
+			document.getElementById("lang-list").style.text="#FFFFFF";
 //			alert("load21");
 
 			document.getElementById("reverseOrder").checked = prefs.other.bottomUp;
@@ -176,22 +178,32 @@ htlivesight.Settings = {
 			document.getElementById("friendHomeColorCheck").checked = prefs.colors.friendHomeColorCheck;
 			document.getElementById("friendHomeColorCode").disabled = !prefs.colors.friendHomeColorCheck;
 			document.getElementById("friendHomeColorCode").value = prefs.colors.friendHomeColorCode;
+			if (prefs.colors.friendHomeColorCheck)
+				document.getElementById("label_friendHomeColorCode").style.backgroundColor= "#" + prefs.colors.friendHomeColorCode;
 			
 			document.getElementById("friendAwayColorCheck").checked = prefs.colors.friendAwayColorCheck;
 			document.getElementById("friendAwayColorCode").disabled = !prefs.colors.friendAwayColorCheck;
 			document.getElementById("friendAwayColorCode").value = prefs.colors.friendAwayColorCode;
+			if (prefs.colors.friendAwayColorCheck)
+				document.getElementById("label_friendAwayColorCode").style.backgroundColor= "#" + prefs.colors.friendAwayColorCode;
 			
 			document.getElementById("foeHomeColorCheck").checked = prefs.colors.foeHomeColorCheck;
 			document.getElementById("foeHomeColorCode").disabled = !prefs.colors.foeHomeColorCheck;
 			document.getElementById("foeHomeColorCode").value = prefs.colors.foeHomeColorCode;
+			if (prefs.colors.foeHomeColorCheck)
+				document.getElementById("label_foeHomeColorCode").style.backgroundColor= "#" + prefs.colors.foeHomeColorCode;
 			
 			document.getElementById("foeAwayColorCheck").checked = prefs.colors.foeAwayColorCheck;
 			document.getElementById("foeAwayColorCode").disabled = !prefs.colors.foeAwayColorCheck;
 			document.getElementById("foeAwayColorCode").value = prefs.colors.foeAwayColorCode;
+			if (prefs.colors.foeAwayColorCheck)
+				document.getElementById("label_foeAwayColorCode").style.backgroundColor= "#" + prefs.colors.foeAwayColorCode;
 			
 			document.getElementById("neutralColorCheck").checked = prefs.colors.neutralColorCheck;
 			document.getElementById("neutralColorCode").disabled = !prefs.colors.neutralColorCheck;
 			document.getElementById("neutralColorCode").value = prefs.colors.neutralColorCode;
+			if (prefs.colors.neutralColorCheck)
+				document.getElementById("label_neutralColorCode").style.backgroundColor= "#" + prefs.colors.neutralAwayColorCode;
 			
 			document.getElementById("textColorCheck").checked = prefs.colors.textColorCheck;
 			document.getElementById("textColorCode").disabled = !prefs.colors.textColorCheck;
@@ -1415,7 +1427,7 @@ htlivesight.Settings = {
 				if(document.getElementById("friendHomeColorCheck").checked) {
 					document.getElementById("friendHomeColorCode").disabled = false;
 					prefs.colors.friendHomeColorCheck=true;
-					
+					document.getElementById("label_friendHomeColorCode").style.backgroundColor= "#" + prefs.colors.friendHomeColorCode;
 				} else {
 					document.getElementById("friendHomeColorCode").disabled = true;
 					prefs.colors.friendHomeColorCheck=false;
@@ -1426,6 +1438,7 @@ htlivesight.Settings = {
 					var prefs = htlivesight.Settings.preferences;
 					var value = document.getElementById("friendHomeColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
 					prefs.colors.friendHomeColorCode = value;
+					document.getElementById("label_friendHomeColorCode").style.backgroundColor= "#" + prefs.colors.friendHomeColorCode;
 			},
 			
 			friendAwayColorCheck: function() {
@@ -1433,6 +1446,7 @@ htlivesight.Settings = {
 				if(document.getElementById("friendAwayColorCheck").checked) {
 					document.getElementById("friendAwayColorCode").disabled = false;
 					prefs.colors.friendAwayColorCheck=true;
+					document.getElementById("label_friendAwayColorCode").style.backgroundColor= "#" + prefs.colors.friendAwayColorCode;
 				} else {
 					document.getElementById("friendAwayColorCode").disabled = true;
 					prefs.colors.friendAwayColorCheck=false;
@@ -1443,6 +1457,7 @@ htlivesight.Settings = {
 					var prefs = htlivesight.Settings.preferences;
 					var value = document.getElementById("friendAwayColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
 					prefs.colors.friendAwayColorCode = value;
+					document.getElementById("label_friendAwayColorCode").style.backgroundColor= "#" + prefs.colors.friendAwayColorCode;
 			},
 			
 			foeHomeColorCheck: function() {
@@ -1450,6 +1465,7 @@ htlivesight.Settings = {
 				if(document.getElementById("foeHomeColorCheck").checked) {
 					document.getElementById("foeHomeColorCode").disabled = false;
 					prefs.colors.foeHomeColorCheck=true;
+					document.getElementById("label_foeHomeColorCode").style.backgroundColor= "#" + prefs.colors.foeHomeColorCode;
 				} else {
 					document.getElementById("foeHomeColorCode").disabled = true;
 					prefs.colors.foeHomeColorCheck=false;
@@ -1460,6 +1476,7 @@ htlivesight.Settings = {
 					var prefs = htlivesight.Settings.preferences;
 					var value = document.getElementById("foeHomeColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
 					prefs.colors.foeHomeColorCode = value;
+					document.getElementById("label_foeHomeColorCode").style.backgroundColor= "#" + prefs.colors.foeHomeColorCode;
 			},
 			
 			foeAwayColorCheck: function() {
@@ -1467,6 +1484,7 @@ htlivesight.Settings = {
 				if(document.getElementById("foeAwayColorCheck").checked) {
 					document.getElementById("foeAwayColorCode").disabled = false;
 					prefs.colors.foeAwayColorCheck=true;
+					document.getElementById("label_foeAwayColorCode").style.backgroundColor= "#" + prefs.colors.foeAwayColorCode;
 				} else {
 					document.getElementById("foeAwayColorCode").disabled = true;
 					prefs.colors.foeAwayColorCheck=false;
@@ -1477,6 +1495,7 @@ htlivesight.Settings = {
 					var prefs = htlivesight.Settings.preferences;
 					var value = document.getElementById("foeAwayColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
 					prefs.colors.foeAwayColorCode = value;
+					document.getElementById("label_foeAwayColorCode").style.backgroundColor= "#" + prefs.colors.foeAwayColorCode;
 			},
 			
 			neutralColorCheck: function() {
@@ -1484,6 +1503,7 @@ htlivesight.Settings = {
 				if(document.getElementById("neutralColorCheck").checked) {
 					document.getElementById("neutralColorCode").disabled = false;
 					prefs.colors.neutralColorCheck=true;
+					document.getElementById("label_neutralColorCode").style.backgroundColor= "#" + prefs.colors.neutralColorCode;
 				} else {
 					document.getElementById("neutralColorCode").disabled = true;
 					prefs.colors.neutralColorCheck=false;
@@ -1494,6 +1514,7 @@ htlivesight.Settings = {
 					var prefs = htlivesight.Settings.preferences;
 					var value = document.getElementById("neutralColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
 					prefs.colors.neutralColorCode = value;
+					document.getElementById("label_neutralColorCode").style.backgroundColor= "#" + prefs.colors.neutralColorCode;
 			},
 			
 			textColorCheck: function() {
