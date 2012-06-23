@@ -1352,7 +1352,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
       elem = htlivesight.DOM.CreateElementRowShortGame(match);
       if ((htlivesight.League.currentRound!= undefined)&&(htlivesight.League.currentRound.id.has(match.id) && htlivesight.showLeague)) {
         if (match.getTeamById(htlivesight.Teams.myTeam.id)) {
-          elem.setAttribute("myLeagueMatch", "true");
+          htlivesight.Util.AddClass(elem,"myLeagueMatch");
         }
         document.getElementById("league_grid_rows").appendChild(elem);
       } else {
@@ -1361,7 +1361,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
     } else {
     }
   
-    if(elem.getAttribute("myLeagueMatch") == "true") {
+    if(htlivesight.Util.HasClass(elem,"myLeagueMatch")) {
       //label = document.getElementById("league_round_time");
       //label.setAttribute("value", match.timeElapsed);
       document.getElementById("league_round_time").innerHTML = match.timeElapsed;
@@ -1386,30 +1386,33 @@ htlivesight.DOM.UpdateShortBox = function(match) {
   var teamName=document.getElementById("short_home_name_" + match.id + "_" + match.youth);
   teamName.innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
   if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)){
-	  teamName.setAttribute("style", "font-weight: bold;");
+  	  if(match.home.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(teamName,'short_own'); 
+  	  else
+	  htlivesight.Util.AddClass(teamName,'short_friend');
 	  teamName.setAttribute("title","");
   }else{
-	  teamName.setAttribute("style", "font-weight: normal;");
+	  htlivesight.Util.RemoveClass(teamName,['short_own','short_friend']);//reset styling
 	  teamName.setAttribute("title","click on the team to add to friends list");
 	  teamName.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.home.team.id,match.youth);},false);
 
   }
-  //if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)) cell.setAttribute("style", "font-weight: bold;");
+  
   document.getElementById("short_home_goals_" + match.id + "_" + match.youth).innerHTML = match.home.goals;
   document.getElementById("separator_" + match.id + "_" + match.youth).innerHTML = ":";
   document.getElementById("short_away_goals_" + match.id + "_" + match.youth).innerHTML = match.away.goals;
   teamName=document.getElementById("short_away_name_" + match.id + "_" + match.youth);
   teamName.innerHTML = htlivesight.DOM.getTextContent(match.away.team.shortName);
   if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)){
-	  teamName.setAttribute("style", "font-weight: bold;");
+  	  if(match.away.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(teamName,'short_own'); 
+  	  else
+	  htlivesight.Util.AddClass(teamName,'short_friend');
 	  teamName.setAttribute("title","");
   }else{
-	  teamName.setAttribute("style", "font-weight: normal;");
+	  htlivesight.Util.RemoveClass(teamName,['short_own','short_friend']);//reset styling
 	  teamName.setAttribute("title","click on the team to add to friends list");
 	  teamName.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.away.team.id,match.youth);},false);
 
   }
-  //if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)) cell.setAttribute("style", "font-weight: bold;");
   
  } catch(e) {
     alert("UpdateShortBox(): " + e); //added by bigpapy to debug from XUL to HTML
@@ -1434,8 +1437,11 @@ try{ //added by bigpapy to debug from XUL to HTML
   cell.setAttribute("class", "hometeam_league");
   
   //document.getElementById("short_home_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
+  htlivesight.Util.RemoveClass(cell,['short_own','short_friend']);//reset styling
   if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)){
-	  cell.setAttribute("style", "font-weight: bold;");
+  	  if(match.home.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(teamName,'short_own'); 
+  	  else
+  	  htlivesight.Util.AddClass(cell,'short_friend');
   }else{
 	  cell.setAttribute("title","click on the team to add to friends list");
 	  cell.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.home.team.id,match.youth);},false); 
@@ -1477,8 +1483,11 @@ try{ //added by bigpapy to debug from XUL to HTML
   cell.setAttribute("class", "awayteam_league");
   
   //document.getElementById("short_away_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.away.team.shortName);
+  htlivesight.Util.RemoveClass(cell,['short_own','short_friend']);//reset styling
   if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)){
-	  cell.setAttribute("style", "font-weight: bold;");
+  	  if(match.away.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(teamName,'short_own'); 
+  	  else
+	  htlivesight.Util.AddClass(cell,'short_friend');
   }else{
 	  cell.setAttribute("title","click on the team to add to friends list");
 	  cell.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.away.team.id,match.youth);},false);  

@@ -272,6 +272,7 @@ padding: 2px 0;
 table.ev_rows,#leaguetable_grid_rows{
 border-collapse: collapse;
 }
+td.short_friend, td.short_own{font-weight: bold;}
 tr.league_title, tr.league_promote{background-color: #023702;}
 tr.league_title + tr,tr.league_promote + tr:not(.league_promote){border-top: 1px solid green;}
 tr:not(.league_demote) + tr.league_demote{border-top: 1px solid red;}
