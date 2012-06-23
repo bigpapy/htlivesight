@@ -316,10 +316,15 @@ text-align:right;
 width:25px;
 }
 td.event_icon{
-width:20px;
-text-align:center;
+width:25px;
+text-align: center;
 }
-td.event_text{}
+td.event_icon > img{
+vertical-align: middle;
+}
+td.event_icon + td.event_icon{
+padding-right: 2px;
+}
 em.player_name{
 font-weight: bold; 
 }
