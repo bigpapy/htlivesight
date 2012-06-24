@@ -203,7 +203,7 @@ htlivesight.Settings = {
 			document.getElementById("neutralColorCode").disabled = !prefs.colors.neutralColorCheck;
 			document.getElementById("neutralColorCode").value = prefs.colors.neutralColorCode;
 			if (prefs.colors.neutralColorCheck)
-				document.getElementById("label_neutralColorCode").style.backgroundColor= "#" + prefs.colors.neutralAwayColorCode;
+				document.getElementById("label_neutralColorCode").style.backgroundColor= "#" + prefs.colors.neutralColorCode;
 			
 			document.getElementById("textColorCheck").checked = prefs.colors.textColorCheck;
 			document.getElementById("textColorCode").disabled = !prefs.colors.textColorCheck;
