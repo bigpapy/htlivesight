@@ -1517,8 +1517,8 @@ try{ //added by bigpapy to debug from XUL to HTML
   cell.setAttribute("class", "remove_league");
   image = document.createElement("img");
   image.setAttribute("id", "short_liveclose_" + match.id + "_" + match.youth);
-//  image.setAttribute("class", "imgwinboxclose");
-  image.setAttribute("src", htlivesight.Image.window.close.OFF);
+// image.setAttribute("class", "imgwinboxclose");
+  image.setAttribute("src", htlivesight.Image.shortBox.CLOSE);
   image.setAttribute("match_id", match.id + "_" + match.youth);
   image.addEventListener('click',  htlivesight.Click.DeleteMatch, true);
   
