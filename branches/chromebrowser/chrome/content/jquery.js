@@ -50,7 +50,7 @@
 	    }
 	    return '' ;
 	}		</script>*/
-
+	
 $(function(){
 				// Accordion
 				$("#accordion1").accordion({ header: "h3", collapsible: true });
@@ -81,7 +81,10 @@ $(function(){
 					$('#chat-dialog').dialog('open');
 					return false;
 				});
-				
+				$("#hidesidebar").click(function () {  
+				$("#sidebar").toggle("slow");
+				$("#live_box").toggleClass( "fullscreen", "slow" );				
+				});  
 				$('#login-dialog').dialog({
 					autoOpen: true,
 					modal: true,

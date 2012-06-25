@@ -14,6 +14,29 @@ var htlivesight = {
   liveCount: 0,
   warningShown: false,
   strings: null,
+  
+  dynresize: function() {
+	var winW2 = 630, winH2 = 460;
+if (document.body && document.body.offsetWidth) {
+ winW2 = document.body.offsetWidth;
+ winH2 = document.body.offsetHeight;
+}
+if (document.compatMode=='CSS1Compat' &&
+    document.documentElement &&
+    document.documentElement.offsetWidth ) {
+ winW2 = document.documentElement.offsetWidth;
+ winH2 = document.documentElement.offsetHeight;
+}
+if (window.innerWidth && window.innerHeight) {
+ winW2 = window.innerWidth;
+ winH2 = window.innerHeight;
+}
+document.getElementById("live_box").setAttribute("style", "width:" + (winW2-320) + "px" );
+//document.getElementById("chronoheader").setAttribute("style", "width:" + (winW2-250-220) + "px" );
+//document.getElementById("sidebar").setAttribute("style", "width:" + (winW2-94) );
+},
+
+  
   startup: function() {
 //	  console.log("startup1");
     // modify added by bigpapy
@@ -22,7 +45,31 @@ var htlivesight = {
    // Events.type.SWAP= new Event.type(150, htlivesight.Image.event.swap);
    //   }
     // end modify by bigpapy
-    var winboxRegister = function(wbList) {
+	
+	var winW = 630, winH = 460;
+if (document.body && document.body.offsetWidth) {
+ winW = document.body.offsetWidth;
+ winH = document.body.offsetHeight;
+}
+if (document.compatMode=='CSS1Compat' &&
+    document.documentElement &&
+    document.documentElement.offsetWidth ) {
+ winW = document.documentElement.offsetWidth;
+ winH = document.documentElement.offsetHeight;
+}
+if (window.innerWidth && window.innerHeight) {
+ winW = window.innerWidth;
+ winH = window.innerHeight;
+}
+console.info(winW);
+console.info(winH);
+document.getElementById("live_box").setAttribute("style", "width:" + (winW-320) + "px" );
+//document.getElementById("chronoheader").setAttribute("style", "width:" + (winW-210-300-220) );
+//document.getElementById("sidebar").setAttribute("style", "width:" + (winW-94) );
+	
+	
+	
+	  var winboxRegister = function(wbList) {
       var winbox;
       var i, len;
       var img;

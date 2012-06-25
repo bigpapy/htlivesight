@@ -31,7 +31,7 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 /*#topbar {width:100%;height:37px;color:white;background-color:black;display:block;font-size:13px;font-weight: 400;}*/
 #left_topbar {display:inline-block;float:left;margin-left:8px;margin-top:3px;} /*margin-top:8px*/
 #right_topbar {display:inline-block;float:right;margin-right:8px;margin-top:3px;}/*{display:inline-block;float:right;margin-top:8px}*/
-#central_topbar {display:inline-block;margin-top:3px;text-align:center;margin-left:20%}
+#central_topbar {display:inline-block;margin-top:3px;margin-left:3px;text-align:center;}
 .socialicon{vertical-align:middle;padding: 0 0 0 0;margin: 0 0 0 0;}
 #left_topbar,#right_topbar,#central_topbar a:link {text-decoration:none;}
 #left_topbar,#right_topbar,#central_topbar a:visited {text-decoration:none;}
@@ -40,8 +40,9 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 
 
 #thebox{display:block;margin-top:1px;}
-#live_box {display:inline-block;margin-left:1px;margin-top:1px;border-radius:10px;float:left;width:74.5%;min-width:800px}
-#sidebar {display:inline-block;margin-right:1px;overflow:auto;float:right;width:24.5%;min-width:200px}
+#live_box {display:inline-block;margin-left:1px;margin-top:1px;border-radius:10px;float:left;/*width:74.5%;min-width:800px*/min-width:600px;}
+#sidebar {display:inline-block;margin-right:1px;overflow:auto;float:right;/*width:24.5%;min-width:200px*/min-width:200px;max-width:300px;}
+.fullscreen{width:99.9% !important;}
 
 /*.match_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;padding:0 0 0 0;border-spacing:0 0 0 0}*/
 .match_row{}
@@ -81,8 +82,9 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 #progresslabel{float:right}
 
 .matchheader{width:100%;border: #fff 0px solid; border-radius:5px;}
-.line1header {width:25%;border-bottom:thin solid black; border-left:0px;border-right:0px;border-top:0px;text-align:center;font-size: 13px;}
-.chronoheader {border-bottom:thin solid black; text-align:center;font-size: 13px;}
+.line1header {width:220px;border: 0 0 0 0;text-align:center;font-size: 13px;float:left;}
+.chronoheader {border: 0 0 0 0;text-align:center;font-size: 13px;min-width:160px;width:36%}
+.iconzone {width:220px;border: 0 0 0 0;text-align:center;font-size: 13px;float:right;}
 .line2sxheader {width:25%;border-bottom:thin solid white;border-left:medium solid white;border-bottom-left-radius:25px; text-align:center;font-size:16px;font-weight:bold}
 .line2rxheader {width:25%;border-bottom:thin solid white;border-right:medium solid white;border-bottom-right-radius:25px; text-align:center;font-size:16px;font-weight:bold}
 .scoreheader {width:100px;border-left:medium solid white;border-right:medium solid white;border-radius:25px; text-align:center;font-size:16px;font-weight:bold}

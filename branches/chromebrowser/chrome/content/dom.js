@@ -563,7 +563,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
  
   //var hboxR = document.createElement("hbox");
   var hboxR = document.createElement("td");
-  hboxR.setAttribute("class", "line1header");
+  hboxR.setAttribute("class", "iconzone");
   hbox.appendChild(hboxR);
   //hboxR.setAttribute("flex", "1");
   //hboxR.setAttribute("align", "right");

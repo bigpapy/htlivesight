@@ -25,8 +25,7 @@ htlivesight.Click = {
     htlivesight.Login.teamId = document.getElementById("teamId").value;    //    console.log("login2: "+ document.getElementById("teamId").value);    if (htlivesight.Login.teamId == ""){ //   	console.log("login3");
       return;
     };//    console.log("login4");
-    //document.getElementById("button_login").disabled=true;//    console.log("login5");   htlivesight.getRecommendedServer();//   console.log("login6");   $('#login-dialog').dialog("close"); //   console.log("close dialog");
-  },
+    //document.getElementById("button_login").disabled=true;//    console.log("login5");   htlivesight.getRecommendedServer();//   console.log("login6");   $('#login-dialog').dialog("close"); //   console.log("close dialog");  },
   Logout: function (event) {
     htlivesight.Logout();
   },
