@@ -454,11 +454,11 @@ htlivesight.Settings = {
 //				alert("after closing");
 			},
 			radopenin: function(value) {
-				alert("working! this:"+value);
+			//	alert("working! this:"+value);
 				var prefs = htlivesight.Settings.preferences;
 				prefs.general.openInTab = value/*(document.getElementById("openin").selectedIndex==htlivesight.Settings.OPEN_IN.TAB)*/;
-				alert("openin="+document.getElementById("openin").selectedIndex);
-				alert("openInTab="+ prefs.general.openInTab);
+			//	alert("openin="+document.getElementById("openin").selectedIndex);
+			//	alert("openInTab="+ prefs.general.openInTab);
 
 			},
 
