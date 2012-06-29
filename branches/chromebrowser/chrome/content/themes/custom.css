@@ -342,6 +342,6 @@ color: rgb(245, 250, 7);
 	END
 */
 /* bigpapy: fixing select language background */
-#lang-list option{background: inherit;}
-#lang-list option:hover{background:white;}
+#lang-list option{background-color: transparent;}
+
 #listbox_friends{width:100%;}

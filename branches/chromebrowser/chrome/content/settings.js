@@ -90,8 +90,6 @@ htlivesight.Settings = {
 //			alert("load20");
 
 			document.getElementById("lang-list").value = prefs.language.locale;
-			document.getElementById("lang-list").style.background= "#000000";
-			document.getElementById("lang-list").style.text="#FFFFFF";
 //			alert("load21");
 
 			document.getElementById("reverseOrder").checked = prefs.other.bottomUp;
