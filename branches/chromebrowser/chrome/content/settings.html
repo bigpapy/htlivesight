@@ -10,12 +10,12 @@
 	rel='stylesheet' type='text/css'>
 <!--WebFonts_Ubuntu<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,500italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek,greek-ext' rel='stylesheet' type='text/css'>-->
 <!--Dark Theme-->
-<link rel="stylesheet" type="text/css" title="dark"
+<link rel="stylesheet" type="text/css" 
 	href="themes/dark/jquery-ui-1.8.21.custom.css" />
 <!--Light Theme-->
-<!--<link rel="stylesheet" type="text/css" title="light" href="themes/light/jquery-ui-1.8.21.custom.css"/>-->
+<link rel="stylesheet" type="text/css"  href="themes/light/jquery-ui-1.8.21.custom.css"/>
 <!--Livefox Theme-->
-<!--<link rel="stylesheet" type="text/css" title="livefox" href="themes/livefox/jquery-ui-1.8.21.custom.css"/>-->
+<link rel="stylesheet" type="text/css"  href="themes/livefox/jquery-ui-1.8.21.custom.css"/>
 <!--Custom Tweaks-->
 <link rel="stylesheet" type="text/css" href="themes/custom.css" />
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
@@ -53,17 +53,16 @@
 			<!--TAB1-->
 
 			<fieldset>
-				<legend id="ThemesSelector">Themes</legend>
-				COMING SOON!
-				<!--<form>
-	<input type="submit"
-	onclick="switch_style('dark');return false;"
-	name="theme" value="Dark Theme" id="dark">
-	<input type="submit"
-	onclick="switch_style('light');return false;"
-	name="theme" value="Light Theme" id="light">
-	</form>-->
-			</fieldset>
+	<legend id="ThemesSelector">Themes</legend>
+	<form>
+	<input type="radio" onclick="htlivesight.Settings.click.switch_style(2);"
+	name="theme" value="Dark Theme" id="dark_theme"><label for="dark_theme" id="label_dark_theme" >Dark</label>
+	<input type="radio" onclick="htlivesight.Settings.click.switch_style(3);"
+	name="theme" value="Light Theme" id="light_theme"><label for="light_theme" id="label_light_theme" >Light</label>
+	<input type="radio" onclick="htlivesight.Settings.click.switch_style(4);"
+	name="theme" value="Livefox Theme" id="livefox_theme"><label for="livefox_theme" id="label_livefox_theme" >LiveFox</label>
+	</form>
+	</fieldset>
 
 
 

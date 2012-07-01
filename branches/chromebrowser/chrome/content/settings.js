@@ -24,6 +24,31 @@ htlivesight.Settings = {
               ? htlivesight.Settings.OPEN_IN.TAB
               : htlivesight.Settings.OPEN_IN.WINDOW;
     document.getElementById("openin").selectedIndex=ndx; */
+		//	alert("prefs.general.theme="+prefs.general.theme);
+			
+			document.getElementById("dark_theme").checked=false;
+			document.getElementById("light_theme").checked=false;
+			document.getElementById("livefox_theme").checked=false;
+			
+			switch (""+prefs.general.theme) {
+
+			case "3": 
+				document.getElementById("light_theme").checked=true;
+				//alert("3");
+				break;
+			case "4":
+				document.getElementById("livefox_theme").checked=true;
+				//alert("4");
+				break;
+			default:
+				document.getElementById("dark_theme").checked=true;
+				prefs.general.theme=2;
+			break;
+			}
+			
+			//alert("befor switch style");
+			htlivesight.Settings.click.switch_style(prefs.general.theme);  // enable only choosed css.
+			//alert("after switch style");
 			document.getElementById("openin_tab").checked=prefs.general.openInTab;
 			document.getElementById("openin_window").checked=!prefs.general.openInTab;		
 			//   alert("load1");
@@ -450,6 +475,29 @@ htlivesight.Settings = {
 					window.close();
 				}
 //				alert("after closing");
+			},
+			switch_style: function(whichSheet){
+				whichSheet=whichSheet-1;
+				if(document.styleSheets){
+					var c = document.styleSheets.length;
+				//	alert("length="+c);
+				//	alert("stylesheet 1="+document.styleSheets[0].title);
+				//	alert("stylesheet 2="+document.styleSheets[1].title);
+				//	alert("stylesheet 3="+document.styleSheets[2].title);
+				//	 if (true) alert('Change to Style '+(whichSheet+1));
+					for(var i=2;i<c-1;i++){
+						if(i!=whichSheet){
+							document.styleSheets[i].disabled=true;
+				//			alert("disabled stylesheet id="+document.styleSheets[i].id);
+						}else{
+							document.styleSheets[i].disabled=false;
+				//			alert("enabled stylesheet id="+document.styleSheets[i].id);
+						}
+					}
+				}
+				var prefs = htlivesight.Settings.preferences;
+				prefs.general.theme = whichSheet+1;
+			//	alert("end changing style!");
 			},
 			radopenin: function(value) {
 			//	alert("working! this:"+value);
