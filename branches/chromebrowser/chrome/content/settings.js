@@ -241,7 +241,7 @@ htlivesight.Settings = {
 			document.getElementById("seTextColorCheck").checked = prefs.colors.seTextColorCheck;
 			document.getElementById("seTextColorCode").disabled = !prefs.colors.seTextColorCheck;
 			document.getElementById("seTextColorCode").value = prefs.colors.seTextColorCode;
-
+		
 		},
 		save: function() {
 			htlivesight.Log.properties(this.preferences.notification);
@@ -743,25 +743,42 @@ htlivesight.Settings = {
 
 			},
 
-			myGoalSoundFile: function() {
+			getSoundFile: function(file, id) {
+
 				var prefs = htlivesight.Settings.preferences;
-				soundPath=document.getElementById("myGoalSoundPathBrowse").value;
-				if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file:///"+soundPath;
-				document.getElementById("myGoalSoundPath").value=soundPath;
-				prefs.personalization.myGoalSoundPath = soundPath;
+				if	(htlivesight.arch == "Sandboxed"){
+
+					var reader = new FileReader();
+
+					reader.onerror = function(e) {
+						window.alert('Error code: ' + e.target.error.code);
+						calback(null);
+					};
+					reader.onload = function (oFREvent) {
+						dataUrl = oFREvent.target.result;
+						if (dataUrl.length > 450000) {
+							window.alert('File too large! Max 300kB.');
+							dataUrl = null;
+						}else{
+							document.getElementById(id).value = dataUrl;
+							prefs.personalization[id] = dataUrl;
+						}
+					};
+					reader.readAsDataURL(file[0]);
+				};
+				if	(htlivesight.arch == "Gecko"){
+					var browseId=id+"Browse";
+					var soundPath=document.getElementById(browseId).value;
+					
+					if ((soundPath.search("chrome:")==-1) && (soundPath.search("file:")==-1)) soundPath="file:///"+soundPath;
+					document.getElementById(id).value=soundPath;
+					prefs.personalization[id] = soundPath;
+				}
 			},
 
 			myGoalPlay: function() {
 				soundPath=document.getElementById("myGoalSoundPath").value;
 				htlivesight.Sound.play(soundPath, document);
-				/*  try {
-    			var soundService = Components.classes["@mozilla.org/sound;1"].getService(Components.interfaces.nsISound);
-    			var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
-    			soundPath=document.getElementById("myGoalSoundPath").value;
-    		//	if (soundPath.search("chrome:")==-1) soundPath="file://"+soundPath;
-    			soundService.play(ioService.newURI(soundPath, null, null));
-    			return;
-    		} catch(e) {}*/
 			},
 
 			opGoalSound: function() {

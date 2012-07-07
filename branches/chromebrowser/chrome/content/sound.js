@@ -4,9 +4,9 @@ htlivesight.Sound = {
   samplePath: "sound/",	  
 };
 
-htlivesight.Sound.sample = function(file) {	if (htlivesight.arch === "Gecko") { 
+htlivesight.Sound.sample = function(file) {/*	if (htlivesight.arch === "Gecko") { 
   var urlInstance = Components.classes["@mozilla.org/network/standard-url;1"].createInstance();
-  this.url = urlInstance.QueryInterface(Components.interfaces.nsIURL);	}	if (htlivesight.arch === "Sandboxed"){		this.url = new Object;	}
+  this.url = urlInstance.QueryInterface(Components.interfaces.nsIURL);	}	if (htlivesight.arch === "Sandboxed"){*/		this.url = new Object;//	}
   this.url.spec = htlivesight.ResourcePath + htlivesight.Sound.samplePath + file;  
 };
 
