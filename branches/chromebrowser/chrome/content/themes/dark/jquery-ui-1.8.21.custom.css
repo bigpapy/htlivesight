@@ -1,6 +1,6 @@
 /* Custom Zone
 ----------------------------------*/
-#topbar {width:100%;height:37px;color:white;background: #000000 url(images/ui-bg_highlight-hard_33_000000_1x100.png) 50% top repeat-x;display:block;font-size:13px;font-weight: 400;}
+#topbar {width:100%;height:29px;color:white;background: #000000 url(images/ui-bg_highlight-hard_33_000000_1x100.png) 50% top repeat-x;display:block;font-size:13px;font-weight: 400;}
 .match_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;padding:0 0 0 0;border-spacing:0 0 0 0}
 .datetime_league {text-align:center;border-bottom: thin solid white;}
 .round_league {text-align:left;border-top: thin solid white;}
@@ -8,7 +8,9 @@
 .live_league_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;text-align:center;}
 .header_league_table{text-align:center;border-bottom: thin solid white;}
 #chat_link{color:white !important}
-
+tr.league_title, tr.league_promote{background-color: #023702;}
+tr.league_demote{background-color: #750606;}
+tr.league_qualify{background-color: #C57006;}
 /*!
  * jQuery UI CSS Framework 1.8.21
  *

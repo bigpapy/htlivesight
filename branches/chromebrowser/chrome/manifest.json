@@ -1,6 +1,6 @@
 {
 "name": "HTLiveSightDEV",
-"version": "0.5.830",
+"version": "0.5.839",
 "description": "An Hattrick Live Match Viewer",
 "icons": { "16": "skin/16.png",
            "48": "skin/48.png",
@@ -22,6 +22,6 @@
 		"notifications",
 		"clipboardWrite",
 		"*://chpp.hattrick.org/*"
-	]/*,
-"update_url": "https://htlivesight.c6.ixwebhosting.com/chromedev/updates.xml"*/
+	],
+"update_url": "https://htlivesight.c6.ixwebhosting.com/chromedev/updates.xml"
 }
