@@ -271,16 +271,11 @@ text-decoration:none;
 #leaguetable_grid_rows td{
 padding: 2px 0;
 }
-#leaguetable_grid_rows td:first-child,#leaguetable_grid_rows th:first-child{
-padding-left: 3px;
-border-right: thin solid white;
-}
+
 table.ev_rows,#leaguetable_grid_rows{
 border-collapse: collapse;
 }
 td.short_friend, td.short_own{font-weight: bold;}
-tr.league_title + tr,tr.league_promote + tr:not(.league_promote){border-top: 1px solid green;}
-tr:not(.league_demote) + tr.league_demote{border-top: 1px solid red;}
 tr.league_own > td:nth-child(2) > span{font-weight: bold;}
 table.ev_rows > tr{
 border-bottom: 2px solid black;

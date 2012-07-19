@@ -11,6 +11,12 @@
 tr.league_title, tr.league_promote{background-color: #023702;}
 tr.league_demote{background-color: #750606;}
 tr.league_qualify{background-color: #C57006;}
+#leaguetable_grid_rows td:first-child,#leaguetable_grid_rows th:first-child{
+padding-left: 3px;
+border-right: thin solid white;
+}
+tr.league_title + tr,tr.league_promote + tr:not(.league_promote){border-top: 1px solid green;}
+tr:not(.league_demote) + tr.league_demote{border-top: 1px solid red;}
 /*!
  * jQuery UI CSS Framework 1.8.21
  *
