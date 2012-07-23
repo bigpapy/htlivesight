@@ -297,18 +297,7 @@ tr.scorers{}
 td.scorers_home{}
 td.scorers_away{}
 tr.info_row{}
-tr.foe_away{
-background-color: #660754;
-}
-tr.foe_home{
-background-color: #0B2D73;
-}
-tr.friend_home{
-background-color: #023702;
-}
-tr.friend_away{
-background-color: #920606;
-}
+
 td.event_minute{
 text-align:right;
 width:25px;
@@ -326,9 +315,7 @@ padding-right: 2px;
 em.player_name{
 font-weight: bold; 
 }
-em.special_event{
-color: rgb(245, 250, 7);
-}
+
 
 /* CSS customisation by LA-MJ 
 	END

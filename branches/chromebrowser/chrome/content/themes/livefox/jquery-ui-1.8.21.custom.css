@@ -8,6 +8,10 @@
 .live_league_table{width:100%;border: thin solid black;border-radius:5px;-moz-border-radius:5px;text-align:center;}
 .header_league_table{text-align:center;border-bottom: thin solid black;}
 #chat_link{color:black !important}
+#leaguetable_grid_rows td:first-child,#leaguetable_grid_rows th:first-child{
+padding-left: 3px;
+border-right: thin solid black;
+}
 tr.league_title, tr.league_promote{background-color: #02A702;}
 tr.league_demote{background-color: #B50606;}
 tr.league_qualify{background-color: #C57006;}
@@ -15,8 +19,23 @@ tr.league_qualify{background-color: #C57006;}
 padding-left: 3px;
 border-right: thin solid black;
 }
-tr.league_title + tr,tr.league_promote + tr:not(.league_promote){border-top: 1px solid lime;}
-tr:not(.league_demote) + tr.league_demote{border-top: 1px solid orangered;}
+tr.league_title + tr,tr.league_promote + tr:not(.league_promote){border-top: 1px solid darkgreen;}
+tr:not(.league_demote) + tr.league_demote{border-top: 1px solid darkred;}
+tr.foe_away{
+background-color: #ffffdd;
+}
+tr.foe_home{
+background-color: #ddddff;
+}
+tr.friend_home{
+background-color: #ddffdd;
+}
+tr.friend_away{
+background-color: #ffdddd;
+}
+em.special_event{
+color: rgb(145, 150, 7);
+}
 /*!
  * jQuery UI CSS Framework 1.8.21
  *

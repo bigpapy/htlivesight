@@ -8,6 +8,10 @@
 .live_league_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;text-align:center;}
 .header_league_table{text-align:center;border-bottom: thin solid white;}
 #chat_link{color:white !important}
+#leaguetable_grid_rows td:first-child,#leaguetable_grid_rows th:first-child{
+padding-left: 3px;
+border-right: thin solid white;
+}
 tr.league_title, tr.league_promote{background-color: #023702;}
 tr.league_demote{background-color: #750606;}
 tr.league_qualify{background-color: #C57006;}
@@ -17,6 +21,21 @@ border-right: thin solid white;
 }
 tr.league_title + tr,tr.league_promote + tr:not(.league_promote){border-top: 1px solid green;}
 tr:not(.league_demote) + tr.league_demote{border-top: 1px solid red;}
+tr.foe_away{
+background-color: #660754;
+}
+tr.foe_home{
+background-color: #0B2D73;
+}
+tr.friend_home{
+background-color: #023702;
+}
+tr.friend_away{
+background-color: #920606;
+}
+em.special_event{
+color: rgb(245, 250, 7);
+}
 /*!
  * jQuery UI CSS Framework 1.8.21
  *
