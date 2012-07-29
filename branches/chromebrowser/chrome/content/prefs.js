@@ -9,13 +9,15 @@ var htlivesightPrefs = {
 
 	init : function() {
 		//alert(htlivesight.chromeContext());
+	//	alert("arch="+htlivesight.arch);
 		if (htlivesight.arch === "Gecko") {
 			var prefs = Components
 				.classes["@mozilla.org/preferences-service;1"]
 				.getService(Components.interfaces.nsIPrefService);
 			htlivesightPrefs._pref_branch = prefs.getBranch("extensions.Htlivesight.prefs.");
-
+		//	alert("init done!");
 		}
+
 	},
 
 	getString : function(key) {
