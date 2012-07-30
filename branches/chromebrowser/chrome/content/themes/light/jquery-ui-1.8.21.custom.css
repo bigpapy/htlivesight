@@ -22,19 +22,19 @@ border-right: thin solid black;
 tr.league_title + tr,tr.league_promote + tr:not(.league_promote){border-top: 1px solid darkgreen;}
 tr:not(.league_demote) + tr.league_demote{border-top: 1px solid darkred;}
 tr.foe_away{
-background-color: #ffffdd;
+background-color: #F3F777;
 }
 tr.foe_home{
-background-color: #ddddff;
+background-color: #77F7EF;
 }
 tr.friend_home{
-background-color: #ddffdd;
+background-color: #77F77B;
 }
 tr.friend_away{
-background-color: #ffdddd;
+background-color: #F7A8F5;
 }
 em.special_event{
-color: rgb(145, 150, 7);
+color: #F7021B;
 }
 /*!
  * jQuery UI CSS Framework 1.8.21
