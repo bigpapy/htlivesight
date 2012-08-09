@@ -8,8 +8,23 @@ htlivesight.DOM = {
     moveup:4,
     movedown:5
   },
-  formationpopup:function(){
-					$('#formationpopup').dialog('open');
+  formationpopup:function(id){
+	  			//	alert("opening popup= "+id+"_table");
+	  			
+	  			//"home_team_formation_" + match.id + "_" + match.youth
+	  			matchId=id.replace(/(home|away)_team_formation/,"");
+	  			var side=id.substr(0,4);
+	  			var match = htlivesight.Match.List[matchId];
+	  			if (side=="home")
+	  			  {
+	  				teamName=match.home.team.name;
+	  			}else if (side=="away"){
+	  				teamName=match.away.team.name;
+	  			}
+	  			
+	  			$("#"+id+"_table").dialog({ autoOpen: true, width: 640, height: 110, title: teamName });
+				//	$("#"+id+"_table").dialog('open');
+				//	alert("popup opened!");
 					return false;
 				},
   parser: new DOMParser(),
@@ -191,26 +206,61 @@ htlivesight.DOM = {
   }catch(e){alert("deleteView: "+e);}// added by bigpapy to debug from XUL to HTML
   },
   createLineupElement: function(id, lineup) {
-	  try{// added by bigpapy to debug from XUL to HTML
+	  try{// added by bigpapy to debug from XUL to HTML		  
     var label, hbox;
-    var popupset = document.getElementById("popup_set");
-    var popup = document.createElement("popup");
+    var popupset = document.getElementById("live_box");
+    var popup = document.createElement("table");
+    popup.cellSpacing="4";
+    popup.cellPadding="4";
+    popup.width="640";
+//    if (document.getElementById(id) != null){
+//    	var element_to_remove= document.getElementById(id);
+ //     popupset.removeChild(element_to_remove);
+ //   }
     popupset.appendChild(popup);
     popup.setAttribute("id", id);
-	popup.setAttribute("class", "formationpopup");
-
+    popup.setAttribute("class", "formationpopup");
+	popup.style.textAlign="center";
+	popup.style.display='none';
+	//var popuptext = document.createElement("span");
+	//popup.appendChild(popuptext);
+	//if (true) popuptext.innerHTML=lineup;return;
+	var lineupText="";
     var i, j;
+    //alert(""+lineup);
     for(i=0; i<lineup.length; i++) {
-      hbox = document.createElement("hbox");
+      hbox = document.createElement("tr");
       hbox.setAttribute("pack", "center");
       popup.appendChild(hbox);
       for(j=0; j<lineup[i].length; j++) {
-        label = document.createElement("label");
-        label.setAttribute("value", htlivesight.DOM.getTextContent(lineup[i][j]));
-        label.setAttribute("class", "border");
+        label = document.createElement("td");
+        label.style.background="#575656";
+        label.width="20%";
+        label.height="30";
+    //	  if (htlivesight.DOM.getTextContent(lineup[i][j]).match("     ")){
+    //		  lineupText=lineupText + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    //	  }
+    //	  lineupText=lineupText +  htlivesight.DOM.getTextContent(lineup[i][j])+ "&nbsp;&nbsp;&nbsp;&nbsp;";
+    	//  console.log(lineup[i][j]);
+        if (i==0 && j==0){
+        	label_empty = document.createElement("td");
+        	hbox.appendChild(label_empty);
+        	label_empty1 = document.createElement("td");
+        	hbox.appendChild(label_empty1);
+        }
+        if (i==3 && j==0){
+        	label_empty = document.createElement("td");
+        	hbox.appendChild(label_empty);
+        }
+        label.innerHTML= htlivesight.DOM.getTextContent(lineup[i][j]);
+     //   label.setAttribute("class", "border");
         hbox.appendChild(label);
       }
+    //  lineupText+="<br>";
     };
+    //lineupText=lineup;
+    //alert(lineupText)
+   // popuptext.innerHTML= lineupText; return
     return popup;
   }catch(e){alert("createLineupElement: "+e);}// added by bigpapy to debug from XUL to HTML
   },
@@ -726,11 +776,14 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   label.setAttribute("class", "formation");
   link = document.createElement("a");
 	label.appendChild(link);
-	link.setAttribute("href", "#");
+	//link.setAttribute("href", "#");
 	link.setAttribute("id", "home_team_formation_" + match.id + "_" + match.youth);
-	link.setAttribute("title", "");
-	link.setAttribute("onclick","htlivesight.DOM.formationpopup();");
-	
+	link.setAttribute("title", "left click to open lineup table");
+	//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.youth+"_home"+");";
+	//link.addEventListener("click",htlivesight.DOM.formationpopup(argumentLineup));
+	link.setAttribute("onclick","htlivesight.DOM.formationpopup(this.id)");
+	//$( "#"+"home_team_formation_"+match.id+"_"+match.youth+"_table" ).dialog( "option", "title", match.home.team.name );
+	//$("#"+"home_team_formation_"+match.id+"_"+match.youth+"_table").dialog({ title: match.home.team.name });
 
   //two!
  // if (!htlivesight.prefs.matches.scorers) {
@@ -856,10 +909,11 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   label.setAttribute("class", "formation");
 	link = document.createElement("a");
 	label.appendChild(link);
-	link.setAttribute("href", "#");
+	//link.setAttribute("href", "#");
 	link.setAttribute("id", "away_team_formation_" + match.id + "_" + match.youth);
-	link.setAttribute("title", "");
-	link.setAttribute("onclick","htlivesight.DOM.formationpopup();");
+	link.setAttribute("title", "left click to open lineup");
+	link.setAttribute("onclick","htlivesight.DOM.formationpopup(this.id);");
+//	$("#"+"away_team_formation_"+match.id+"_"+match.youth+"_table").dialog({ autoOpen: true, width: 480, height: 110 });
   label = document.createElement("td");//label = document.createElement("label");
   awaytr.appendChild(label);
   label.setAttribute("id", "away_team_tactic_" + match.id + "_" + match.youth);

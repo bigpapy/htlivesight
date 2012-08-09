@@ -4,13 +4,14 @@
  * ---------------------------------------------------------------- */
 if (!htlivesight) var htlivesight = {};
 
-htlivesight.Match= function(id, date, home, away, event, arena, youth) {
+htlivesight.Match= function(id, date, home, away, event, arena, youth, subs) {
   this.id = id;
   this.date = date;
   this.home = home;
   this.away = away;
   this.event = event;
   this.youth = youth;
+  this.substitutions = subs;
   this.window = {
     mode: htlivesight.DOM.mode.minimize,
     tip: true
@@ -96,6 +97,13 @@ htlivesight.Match.Update = function (newMatch) {
     match = newMatch;
     htlivesight.Match.List["_"+match.id+"_"+match.youth] = match;
   } else {
+	  
+	// added by bigpapy to get substitutions.
+      if (newMatch.substitutions) {
+          match.substitutions=newMatch.substitutions;
+      }
+	  // added by bigpapy to get substitutions.
+	  
     if (newMatch.arena) {
       if (!match.arena) {
         match.arena = newMatch.arena;
@@ -113,9 +121,11 @@ htlivesight.Match.Update = function (newMatch) {
       if (!match.home) {
         match.home=newMatch.home;
         match.home.realGoals=newMatch.home.realGoals;
+        match.home.lineUp=newMatch.home.lineUp; // store home team lineup in global variable if not present
       } else {
         if(match.home.goals < newMatch.home.goals) match.home.goals = newMatch.home.goals;
         if(match.home.realGoals < newMatch.home.realGoals) match.home.realGoals = newMatch.home.realGoals;
+        if(match.home.lineUp[0].update < newMatch.home.lineUp[0].update) match.home.lineUp=newMatch.home.lineUp; // store home team lineup in global variable if the stored one is undefined.
       }
     };
 
@@ -123,9 +133,12 @@ htlivesight.Match.Update = function (newMatch) {
       if (!match.away) {
         match.away=newMatch.away;
         match.away.realGoals=newMatch.away.realGoals;
+        match.away.lineUp=newMatch.away.lineUp; // store away team lineup in global variable if the stored one is undefined.
       } else {
     	  if(match.away.goals < newMatch.away.goals)  match.away.goals = newMatch.away.goals;
     	  if(match.away.realGoals < newMatch.away.realGoals) match.away.realGoals = newMatch.away.realGoals;
+    	  
+    	  if(match.away.lineUp[0].update < newMatch.away.lineUp[0].update) match.away.lineUp= newMatch.away.lineUp;
       }
     };
     

@@ -125,8 +125,7 @@ $(function(){
 					autoOpen: false,
 					show: "blind",
 					hide: "blind",
-					});  
-				
+					});
 				
 				// Dialog Link
 				$('#dialog_link').click(function(){
