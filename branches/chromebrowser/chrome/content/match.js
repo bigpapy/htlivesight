@@ -40,12 +40,32 @@ htlivesight.Match.Team = function (id, name, shortName) {
 };
 
 htlivesight.Match.side = function(team, goals, formation, tactic) {
-  this.team = team;
-  this.goals = goals;
-  this.formation = formation;
-  this.tactic = tactic;
-  this.scorers = null;
-  this.realGoals=0;
+	  this.team = team;
+	  this.goals = goals;
+	  this.formation = formation;
+	  this.tactic = tactic;
+	  this.scorers = null;
+	  this.booked = null;
+	  this.sent_off = null;
+	  this.free_kick = 0;
+	  this.free_kick_goal = 0;
+	  this.penalty = 0;
+	  this.penalty_goal = 0;
+	  this.right = 0;
+	  this.right_goal = 0;
+	  this.center = 0;
+	  this.center_goal = 0;
+	  this.left = 0;
+	  this.left_goal = 0;
+	  this.occasion = 0;
+	  this.special_event = 0;
+	  this.special_event_goal = 0;
+	  this.realGoals=0;
+	  this.yellow=0;
+	  this.red=0;
+	  this.injured=0;
+	  this.possession_1=0;
+	  this.possession_2=0;
 };
 
 htlivesight.Match.events = function(evList) {
@@ -119,26 +139,82 @@ htlivesight.Match.Update = function (newMatch) {
 
     if (newMatch.home) {
       if (!match.home) {
-        match.home=newMatch.home;
-        match.home.realGoals=newMatch.home.realGoals;
-        match.home.lineUp=newMatch.home.lineUp; // store home team lineup in global variable if not present
+    	  match.home=newMatch.home;
+          match.home.realGoals=newMatch.home.realGoals;
+          match.home.lineUp=newMatch.home.lineUp; // store home team lineup in global variable if not present
+          match.home.free_kick = newMatch.home.free_kick;
+          match.home.free_kick_goal = newMatch.home.free_kick_goal;
+          match.home.penalty = newMatch.home.penalty;
+          match.home.penalty_goal = newMatch.home.penalty_goal;
+          match.home.right = newMatch.home.right;
+          match.home.right_goal = newMatch.home.right_goal;
+          match.home.center = newMatch.home.center;
+          match.home.center_goal = newMatch.home.center_goal;
+          match.home.left = newMatch.home.left;
+          match.home.left_goal = newMatch.home.left_goal;
+          match.home.special_event = newMatch.home.special_event;
+          match.home.special_event_goal = newMatch.home.special_event_goal;
+          match.home.possession_1 = newMatch.home.possession_1;
+          match.home.possession_2 = newMatch.home.possession_2;
       } else {
-        if(match.home.goals < newMatch.home.goals) match.home.goals = newMatch.home.goals;
-        if(match.home.realGoals < newMatch.home.realGoals) match.home.realGoals = newMatch.home.realGoals;
-        if(match.home.lineUp[0].update < newMatch.home.lineUp[0].update) match.home.lineUp=newMatch.home.lineUp; // store home team lineup in global variable if the stored one is undefined.
+    	  if(match.home.goals < newMatch.home.goals) match.home.goals = newMatch.home.goals;
+
+          if(match.home.free_kick < newMatch.home.free_kick) match.home.free_kick = newMatch.home.free_kick;
+          if(match.home.free_kick_goal < newMatch.home.free_kick_goal) match.home.free_kick_goal = newMatch.home.free_kick_goal;
+          if(match.home.penalty < newMatch.home.penalty) match.home.penalty = newMatch.home.penalty;
+          if(match.home.penalty_goal < newMatch.home.penalty_goal) match.home.penalty_goal = newMatch.home.penalty_goal;
+          if(match.home.right < newMatch.home.right) match.home.right = newMatch.home.right;
+          if(match.home.right_goal < newMatch.home.right_goal) match.home.right_goal = newMatch.home.right_goal;
+          if(match.home.center < newMatch.home.center) match.home.center = newMatch.home.center;
+          if(match.home.center_goal < newMatch.home.center_goal) match.home.center_goal = newMatch.home.center_goal;
+          if(match.home.left < newMatch.home.left) match.home.left = newMatch.home.left;
+          if(match.home.left.goal < newMatch.home.left_goal) match.home.left_goal = newMatch.home.left_goal;
+          if(match.home.special_event_goal < newMatch.home.special_event_goal) match.home.special_event_goal = newMatch.home.special_event_goal;
+          if(match.home.special_event < newMatch.home.special_event) match.home.special_event = newMatch.home.special_event;
+          if(match.home.lineUp[0].update < newMatch.home.lineUp[0].update) match.home.lineUp=newMatch.home.lineUp; // store home team lineup in global variable if the stored one is undefined.
+          if(match.home.possession_1 < newMatch.home.possession_1) match.home.possession_1 = newMatch.home.possession_1;
+          if(match.home.possession_2 < newMatch.home.possession_2) match.home.possession_2 = newMatch.home.possession_2;
       }
     };
 
     if (newMatch.away) {
       if (!match.away) {
-        match.away=newMatch.away;
-        match.away.realGoals=newMatch.away.realGoals;
-        match.away.lineUp=newMatch.away.lineUp; // store away team lineup in global variable if the stored one is undefined.
+    	  match.away=newMatch.away;
+          match.away.realGoals=newMatch.away.realGoals;
+          match.away.lineUp=newMatch.away.lineUp; // store away team lineup in global variable if the stored one is undefined.
+          match.away.free_kick = newMatch.away.free_kick;
+          match.away.free_kick_goal = newMatch.away.free_kick_goal;
+          match.away.penalty = newMatch.away.penalty;
+          match.away.penalty_goal = newMatch.away.penalty_goal;
+          match.away.right = newMatch.away.right;
+          match.away.right_goal = newMatch.away.right_goal;
+          match.away.center = newMatch.away.center;
+          match.away.center_goal = newMatch.away.center_goal;
+          match.away.left = newMatch.away.left;
+          match.away.left_goal = newMatch.away.left_goal;
+          match.away.special_event = newMatch.away.special_event;
+          match.away.special_event_goal = newMatch.away.special_event_goal;
+          match.away.possession_1 = newMatch.away.possession_1;
+          match.away.possession_2 = newMatch.away.possession_2;
       } else {
     	  if(match.away.goals < newMatch.away.goals)  match.away.goals = newMatch.away.goals;
     	  if(match.away.realGoals < newMatch.away.realGoals) match.away.realGoals = newMatch.away.realGoals;
+
+    	  if(match.away.free_kick < newMatch.away.free_kick) match.away.free_kick = newMatch.away.free_kick;
+    	  if(match.away.free_kick_goal < newMatch.away.free_kick_goal) match.away.free_kick_goal = newMatch.away.free_kick_goal;
+          if(match.away.penalty < newMatch.away.penalty) match.away.penalty = newMatch.away.penalty;
+          if(match.away.penalty_goal < newMatch.away.penalty_goal) match.away.penalty_goal = newMatch.away.penalty_goal;
+          if(match.away.right < newMatch.away.right) match.away.right = newMatch.away.right;
+          if(match.away.right_goal < newMatch.away.right_goal) match.away.right_goal = newMatch.away.right_goal;
+          if(match.away.center < newMatch.away.center) match.away.center = newMatch.away.center;
+          if(match.away.left < newMatch.away.left) match.away.left = newMatch.away.left;
+          if(match.away.special_event < newMatch.away.special_event) match.away.special_event = newMatch.away.special_event;
+          if(match.away.special_event_goal < newMatch.away.special_event_goal) match.away.special_event_goal = newMatch.away.special_event_goal;
+          if(match.away.possession_1 < newMatch.away.possession_1) match.away.possession_1 = newMatch.away.possession_1;
+          if(match.away.possession_2 < newMatch.away.possession_2) match.away.possession_2 = newMatch.away.possession_2;
     	  
     	  if(match.away.lineUp[0].update < newMatch.away.lineUp[0].update) match.away.lineUp= newMatch.away.lineUp;
+
       }
     };
     

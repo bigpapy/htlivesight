@@ -9,24 +9,45 @@ htlivesight.DOM = {
     movedown:5
   },
   formationpopup:function(id){
-	  			//	alert("opening popup= "+id+"_table");
-	  			
-	  			//"home_team_formation_" + match.id + "_" + match.youth
-	  			matchId=id.replace(/(home|away)_team_formation/,"");
-	  			var side=id.substr(0,4);
-	  			var match = htlivesight.Match.List[matchId];
-	  			if (side=="home")
-	  			  {
-	  				teamName=match.home.team.name;
-	  			}else if (side=="away"){
-	  				teamName=match.away.team.name;
-	  			}
-	  			
-	  			$("#"+id+"_table").dialog({ autoOpen: true, width: 640, height: 110, title: teamName });
-				//	$("#"+id+"_table").dialog('open');
-				//	alert("popup opened!");
-					return false;
-				},
+	  //	alert("opening popup= "+id+"_table");
+
+	  //"home_team_formation_" + match.id + "_" + match.youth
+	  matchId=id.replace(/(home|away)_team_formation/,"");
+	  var side=id.substr(0,4);
+	  var match = htlivesight.Match.List[matchId];
+	  if (side=="home")
+	  {
+		  teamName=match.home.team.name;
+	  }else if (side=="away"){
+		  teamName=match.away.team.name;
+	  }
+
+	  $("#"+id+"_table").dialog({ autoOpen: true, width: 640, height: 110, title: teamName });
+	  //	$("#"+id+"_table").dialog('open');
+	  //	alert("popup opened!");
+	  return false;
+  },
+
+  statisticspopup:function(id){
+	  //	alert("opening popup= "+id+"_table");
+
+	  //"home_team_formation_" + match.id + "_" + match.youth
+	  matchId=id.replace(/(home|away)_team_name/,"");
+	  var side=id.substr(0,4);
+	  var match = htlivesight.Match.List[matchId];
+	  if (side=="home")
+	  {
+		  teamName=match.home.team.name;
+	  }else if (side=="away"){
+		  teamName=match.away.team.name;
+	  }
+
+	  $("#"+id+"_statistics").dialog({ autoOpen: true, width: 200, height: 110, title: teamName });
+	  //	$("#"+id+"_table").dialog('open');
+	  //	alert("popup opened!");
+	  return false;
+  },
+				
   parser: new DOMParser(),
   parse: function(xml) {
     return htlivesight.DOM.parser.parseFromString(xml, "text/xml").documentElement;
@@ -264,6 +285,130 @@ htlivesight.DOM = {
     return popup;
   }catch(e){alert("createLineupElement: "+e);}// added by bigpapy to debug from XUL to HTML
   },
+  
+  // function added by bigpapy to have statistic left clicking on team name
+  createStatisticElement: function(id, match, event) {
+	    var label, hbox;
+	    var popupset = document.getElementById("live_box");
+	    var popup = document.createElement("table");
+	    popupset.appendChild(popup);
+	    popup.setAttribute("id", id);
+		popup.setAttribute("class", "formationpopup");
+		popup.style.display = 'none';
+		
+		// creating row (bigpapy)
+		hbox = document.createElement("tr");
+	  //    hbox.setAttribute("pack", "center");
+	      popup.appendChild(hbox);
+	      // adding element title to the row (bigpapy)
+	        var free_kick=match.getSideById(event.subjectTeamId).free_kick;
+	        var free_kick_goal=match.getSideById(event.subjectTeamId).free_kick_goal;
+	      	label = document.createElement("td");
+	      	label.innerHTML="free kick: "+free_kick_goal+" / "+free_kick;
+	        hbox.appendChild(label);
+	        popup.appendChild(hbox);
+	//TODO        
+	        hbox = document.createElement("tr");
+	  //      hbox.setAttribute("pack", "center");
+	   //     label = document.createElement("label");
+	        var penalty=match.getSideById(event.subjectTeamId).penalty;
+	        var penalty_goal=match.getSideById(event.subjectTeamId).penalty_goal;
+	      	label = document.createElement("td");
+	      	label.innerHTML="penalty: "+penalty_goal+" / "+penalty;
+		    hbox.appendChild(label);
+	        popup.appendChild(hbox);
+	        
+	        hbox = document.createElement("tr");
+	   //     hbox.setAttribute("pack", "center");
+	   //     label = document.createElement("label");
+	        var left=match.getSideById(event.subjectTeamId).left;
+	        var left_goal=match.getSideById(event.subjectTeamId).left_goal;
+	        label = document.createElement("td");
+	      	label.innerHTML="left:    "+left_goal+" / "+left;
+	        hbox.appendChild(label);
+	        popup.appendChild(hbox);
+	        
+	        hbox = document.createElement("tr");
+	   //     hbox.setAttribute("pack", "center");
+	   //     label = document.createElement("label");
+	        var center=match.getSideById(event.subjectTeamId).center;
+	        var center_goal=match.getSideById(event.subjectTeamId).center_goal;
+	        label = document.createElement("td");
+	      	label.innerHTML="center:  "+center_goal+" / "+center;
+		    hbox.appendChild(label);
+	        popup.appendChild(hbox);
+	        
+	        hbox = document.createElement("tr");
+	    //    hbox.setAttribute("pack", "center");
+	   //     label = document.createElement("label");
+	        var right=match.getSideById(event.subjectTeamId).right;
+	        var right_goal=match.getSideById(event.subjectTeamId).right_goal;
+	        label = document.createElement("td");
+	      	label.innerHTML="right:     "+right_goal+" / "+right;
+		    hbox.appendChild(label);
+	        popup.appendChild(hbox);
+	        
+	        hbox = document.createElement("tr");
+		    //    hbox.setAttribute("pack", "center");
+		   //     label = document.createElement("label");
+		        var special=match.getSideById(event.subjectTeamId).special_event;
+		        var special_goal=match.getSideById(event.subjectTeamId).special_event_goal;
+		        label = document.createElement("td");
+		      	label.innerHTML="SE:     "+special_goal+" / "+special;
+			    hbox.appendChild(label);
+		        popup.appendChild(hbox);
+		        
+		        hbox = document.createElement("tr");
+			    //    hbox.setAttribute("pack", "center");
+			   //     label = document.createElement("label");
+		        var occasion=match.getSideById(event.subjectTeamId).occasion;
+		        var goals=match.getSideById(event.subjectTeamId).goals;
+		        label = document.createElement("td");
+		      	label.innerHTML="occasion: "+goals+" / "+occasion;
+			        hbox.appendChild(label);
+			        popup.appendChild(hbox);
+			        
+			   hbox = document.createElement("tr");
+				    //    hbox.setAttribute("pack", "center");
+				   //     label = document.createElement("label");
+				   var yellow=match.getSideById(event.subjectTeamId).yellow;
+				   label = document.createElement("td");
+			       label.innerHTML="yellow: "+yellow;
+				   hbox.appendChild(label);
+				   popup.appendChild(hbox);
+				        
+			  hbox = document.createElement("tr");
+					    //    hbox.setAttribute("pack", "center");
+					   //     label = document.createElement("label");
+				   var red=match.getSideById(event.subjectTeamId).red;
+				   label = document.createElement("td");
+			       label.innerHTML="red:   "+red;
+				   hbox.appendChild(label);
+				   popup.appendChild(hbox);
+				   
+				   hbox = document.createElement("tr");
+				    //    hbox.setAttribute("pack", "center");
+				   //     label = document.createElement("label");
+			   var injured=match.getSideById(event.subjectTeamId).injured;
+			   label = document.createElement("td");
+		       label.innerHTML="injured:   "+injured;
+			   hbox.appendChild(label);
+			   popup.appendChild(hbox);
+	        
+			   hbox = document.createElement("tr");
+			    //    hbox.setAttribute("pack", "center");
+			   //     label = document.createElement("label");
+		   var possession1=match.getSideById(event.subjectTeamId).possession_1;
+		   var possession2=match.getSideById(event.subjectTeamId).possession_2;
+		   label = document.createElement("td");
+	       label.innerHTML="ball possess:   "+possession1+"% / "+ possession2+"%";
+		   hbox.appendChild(label);
+		   popup.appendChild(hbox);
+			   
+	        return popup;
+
+	  },
+  
   createAddTeamToFriendsPopup: function(team) {
  //   var strings = document.getElementById("strings");
 	  try{ // added by bigpapy to debug from XUL to HTML
@@ -790,7 +935,15 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	    label = document.createElement("td");//label = document.createElement("label");
 	    //leftbox.appendChild(label);
 	    hometr.appendChild(label);
-	    label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
+	 //   label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
+	    link = document.createElement("a");
+		label.appendChild(link);
+		//link.setAttribute("href", "#");
+		link.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
+		link.setAttribute("title", "left click to open statistics at the end of the match");
+		//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.youth+"_home"+");";
+		//link.addEventListener("click",htlivesight.DOM.formationpopup(argumentLineup));
+		link.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id)");
 	    //label.style.fontSize="xx-large";
 	    
 	 //   label.style.verticalAlign= "top";
@@ -894,8 +1047,17 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   
   label = document.createElement("td");//label = document.createElement("label");
   awaytr.appendChild(label);
-  label.setAttribute("id", "away_team_name_" + match.id + "_" + match.youth);
+//  label.setAttribute("id", "away_team_name_" + match.id + "_" + match.youth);
   label.setAttribute("class", "team_name");
+  link = document.createElement("a");
+  
+	label.appendChild(link);
+	//link.setAttribute("href", "#");
+	link.setAttribute("id", "away_team_name_" + match.id + "_" + match.youth);
+	link.setAttribute("title", "left click to open statistics at the end of the match");
+	//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.youth+"_home"+");";
+	//link.addEventListener("click",htlivesight.DOM.formationpopup(argumentLineup));
+	link.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
   //label.style.fontSize="xx-large";
   
   if (!htlivesight.prefs.matches.scorers) {
@@ -1088,6 +1250,23 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
       row.setAttribute("class", "info_row");
     }
 
+     try{
+    	    if(""+event.key.A + event.key.BC=="041") {
+    	        if (match.home.team.id==event.subjectTeamId) {
+    	          l1 = document.getElementById("home_team_name_" + match.id + "_" + match.youth);
+    	          htlivesight.DOM.createStatisticElement("home_team_name_"+match.id+"_"+match.youth+"_statistics", match, event);
+    	          l1.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
+    	          l1.setAttribute("contextmenu", "home_team_statistics_"+match.id+"_"+match.youth);
+   	          
+    	        } else {
+    	          l1 = document.getElementById("away_team_name_" + match.id + "_" + match.youth);    	          
+    	          htlivesight.DOM.createStatisticElement("away_team_name_"+match.id+"_"+match.youth+"_statistics", match, event);
+    	          l1.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
+    	          l1.setAttribute("contextmenu", "away_team_statistics_"+match.id+"_"+match.youth);
+    	        };
+    	    }; }catch(e){alert("errore stats:"+e);}
+     
+     
     if(event.lineupElement) {
       if (match.home.team.id==event.subjectTeamId) {
         l = document.getElementById("home_team_formation_"+match.id + "_" + match.youth);
