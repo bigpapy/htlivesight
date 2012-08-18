@@ -152,11 +152,11 @@ htlivesight.LineUp.RemovePlayerFromLineUp= function (lineUp,playerId){
 	
 	for (var index=0; index<lineUp.length; index++) // building the lineup string
 	{
-		console.log("removeplayer: lineUp[index].id="+lineUp[index].id);
-		console.log("removeplayer: playerId="+playerId);
+	//	console.log("removeplayer: lineUp[index].id="+lineUp[index].id);
+	//	console.log("removeplayer: playerId="+playerId);
 		if (parseInt(lineUp[index].id)==parseInt(playerId)) 
 		{
-			console.log("removeplayer: player id found! Removing");
+	//		console.log("removeplayer: player id found! Removing");
 			lineUp[index].id= "0";
 			
 			lineUp[index].name= "                   "; // delete name
@@ -168,7 +168,7 @@ htlivesight.LineUp.RemovePlayerFromLineUp= function (lineUp,playerId){
 			return lineUp;
 		};
 	};
-	alert("player not found!");
+//	alert("player not found! Id of player not found is: "+ playerId);
 	return lineUp;
 	
 };
@@ -203,38 +203,38 @@ htlivesight.LineUp.ParseSubstitutions= function (xml){
 		
 	
 	var substitutionXml= xml.getElementsByTagName("Substitution");
-	console.log("Substitution length (num of subs)="+substitutionXml.length);
+//	console.log("Substitution length (num of subs)="+substitutionXml.length);
 	for (var index=0; index<substitutionXml.length; index++) // initializing with empty positions
 	{
 		substitutions[index]=new Object();
 		
-		console.log("getting TeamID of the substitution...");
+//		console.log("getting TeamID of the substitution...");
 		substitutions[index].teamID= substitutionXml[index].getElementsByTagName("TeamID")[0].textContent; 
-		console.log("TeamId="+substitutions[index].teamID);
+//		console.log("TeamId="+substitutions[index].teamID);
 
-		console.log("getting subjectPlayerID of the substitution...");
+//		console.log("getting subjectPlayerID of the substitution...");
 		substitutions[index].subjectPlayerID= substitutionXml[index].getElementsByTagName("SubjectPlayerID")[0].textContent; 
-		console.log("subjectPlayerID="+substitutions[index].subjectPlayerID);
+//		console.log("subjectPlayerID="+substitutions[index].subjectPlayerID);
 		
-		console.log("getting objectPlayerID of the substitution...");
+//		console.log("getting objectPlayerID of the substitution...");
 		substitutions[index].objectPlayerID= substitutionXml[index].getElementsByTagName("ObjectPlayerID")[0].textContent; 
-		console.log("objectPlayerID="+substitutions[index].objectPlayerID);
+//		console.log("objectPlayerID="+substitutions[index].objectPlayerID);
 
-		console.log("getting orderType of the substitution...");
+//		console.log("getting orderType of the substitution...");
 		substitutions[index].orderType= substitutionXml[index].getElementsByTagName("OrderType")[0].textContent; 
-		console.log("orderType="+substitutions[index].orderType);
+//		console.log("orderType="+substitutions[index].orderType);
 	
-		console.log("getting newPositionId of the substitution...");
+//		console.log("getting newPositionId of the substitution...");
 		substitutions[index].newPositionId= parseInt(substitutionXml[index].getElementsByTagName("NewPositionId")[0].textContent); 
-		console.log("newPositionId="+substitutions[index].newPositionId);
+//		console.log("newPositionId="+substitutions[index].newPositionId);
 		
-		console.log("getting newPositionBehaviour of the substitution...");
+//		console.log("getting newPositionBehaviour of the substitution...");
 		substitutions[index].newPositionBehaviour= substitutionXml[index].getElementsByTagName("NewPositionBehaviour")[0].textContent; 
-		console.log("newPositionBehaviour="+substitutions[index].newPositionBehaviour);
+//		console.log("newPositionBehaviour="+substitutions[index].newPositionBehaviour);
 		
-		console.log("getting matchMinute of the substitution...");
+//		console.log("getting matchMinute of the substitution...");
 		substitutions[index].matchMinute= substitutionXml[index].getElementsByTagName("MatchMinute")[0].textContent;
-		console.log("MatchMinute="+substitutions[index].MatchMinute);
+//		console.log("MatchMinute="+substitutions[index].MatchMinute);
 	}
 	
 	}catch(e){console.log("error parsing substitution:"+e);};
@@ -264,17 +264,17 @@ htlivesight.LineUp.SubstitutionPlayerInLineUp= function(lineUp,subjectPlayer,obj
 
 	// removing player exiting
 	lineUp= htlivesight.LineUp.RemovePlayerFromLineUp(lineUp,subjectPlayer.id);
-	console.log("objectPlayer.positionId="+objectPlayer.positionId);
+//	console.log("objectPlayer.positionId="+objectPlayer.positionId);
 	var index=parseInt(objectPlayer.positionId)-100;// inserting position of entering player
-	console.log("index="+index);
+//	console.log("index="+index);
 	lineUp[index]= new Object;
 	lineUp[index].id=objectPlayer.id;// inserting other data...
-	console.log("passed id of new player!");
+//	console.log("passed id of new player!");
 
 	lineUp[index].name= objectPlayer.name;
-	console.log("passed name of new player!");
+//	console.log("passed name of new player!");
 	lineUp[index].behaviourInt= objectPlayer.behaviourInt;
-	console.log("passed individual order of the new player");
+//	console.log("passed individual order of the new player");
 	return lineUp;
 
 };
@@ -282,7 +282,7 @@ htlivesight.LineUp.SubstitutionPlayerInLineUp= function(lineUp,subjectPlayer,obj
 htlivesight.LineUp.SubstitutionEvent= function(event, match){
 
 				try{ // added because of errors with substitutions. to be removed when fixed.
-					console.log("Function: SubstitutionEvent: action: beginning. Let's see if there is any error here. ;)");
+//					console.log("Function: SubstitutionEvent: action: beginning. Let's see if there is any error here. ;)");
                 var subjectPlayer= new Object();
 
                 var objectPlayer= new Object();
@@ -290,77 +290,78 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
                 var found= false; // this variable is used to fix delaly of the subs info against subs event.
 
                 subjectPlayer.id= event.subjectPlayerId;
-                console.log("Function: SubstitutionEvent: action: got subjectPlayer:id="+subjectPlayer.id);
+ //               console.log("Function: SubstitutionEvent: action: got subjectPlayer:id="+subjectPlayer.id);
 
                 objectPlayer.id= event.objectPlayerId;
-                console.log("Function: SubstitutionEvent: action: got objectPlayer:id="+objectPlayer.id);
-                console.log("Function: SubstitutionEvent: action: looking for sub info...");
+//                console.log("Function: SubstitutionEvent: action: got objectPlayer:id="+objectPlayer.id);
+//                console.log("Function: SubstitutionEvent: action: looking for sub info...");
                 for (var index=0; index < match.substitutions.length; index++){
                 	
-                	console.log("index="+index);
-                	console.log("match.substitutions[index].subjectPlayerID="+match.substitutions[index].subjectPlayerID);
-                	console.log("subjectPlayer.id="+subjectPlayer.id);
-                	console.log("match.substitutions[index].objectPlayerID="+match.substitutions[index].objectPlayerID);
-                	console.log("objectPlayer.id="+objectPlayer.id);
-                	console.log("match.substitutions[index].matchMinute="+match.substitutions[index].matchMinute);
-                	console.log("event.minute="+event.minute);
+ //               	console.log("index="+index);
+//                	console.log("match.substitutions[index].subjectPlayerID="+match.substitutions[index].subjectPlayerID);
+//                	console.log("subjectPlayer.id="+subjectPlayer.id);
+//                	console.log("match.substitutions[index].objectPlayerID="+match.substitutions[index].objectPlayerID);
+//                	console.log("objectPlayer.id="+objectPlayer.id);
+//                	console.log("match.substitutions[index].matchMinute="+match.substitutions[index].matchMinute);
+//                	console.log("event.minute="+event.minute);
                 	
                 	if(subjectPlayer.id==match.substitutions[index].subjectPlayerID &&
                 			objectPlayer.id==match.substitutions[index].objectPlayerID &&
                 			event.minute==match.substitutions[index].matchMinute){
-                		console.log("Function: SubstitutionEvent: action: sub found! getting data...");
+//                		console.log("Function: SubstitutionEvent: action: sub found! getting data...");
                 		objectPlayer.positionId=parseInt(match.substitutions[index].newPositionId);
-                		console.log("Function: SubstitutionEvent: action: got new position="+objectPlayer.positionId);
+//                		console.log("Function: SubstitutionEvent: action: got new position="+objectPlayer.positionId);
                         objectPlayer.behaviourInt=match.substitutions[index].newPositionBehaviour;
-                        console.log("Function: SubstitutionEvent: action: got new behaviour="+objectPlayer.behaviourInt);
+//                        console.log("Function: SubstitutionEvent: action: got new behaviour="+objectPlayer.behaviourInt);
                         found= true;
                 	};
      
                 };
-              if (!found){
-            	  /*   	setTimeout(function(){
-                		htlivesight.Live.updating=true;
-                 	   	now.setDate(now.getDate()+7);
-                 	   	htlivesight.Live.nextEventTime=now.getTime();
-                 	   	htlivesight.Live.view();
-                 	   	htlivesight.LineUp.SubstitutionEvent(event, htlivesight.Match.List["_"+match.id+"_"+match.youth]);
-                 	   	alert("Another try: it seems that I got subs info, check it!");
-                	}, 70000); */
-           //     	alert("Sub info not found, CHPP info delay of 1 minute is still present!");
-                	return;
-                } 
-                console.log("Function: SubstitutionEvent: Did you see position and behaviour number above? If not this is bad!!!");
+
+//                console.log("Function: SubstitutionEvent: Did you see position and behaviour number above? If not this is bad!!!");
                 subjectPlayer.name= htlivesight.Events.translate.parseScorer(event.text, event.subjectPlayerId);
-                console.log("Function: SubstitutionEvent: action: got subjectPlayer.name="+subjectPlayer.name);
+//                console.log("Function: SubstitutionEvent: action: got subjectPlayer.name="+subjectPlayer.name);
                 objectPlayer.name= htlivesight.Events.translate.parseScorer(event.text, event.objectPlayerId);
-                console.log("Function: SubstitutionEvent: action: got objectPlayer.name="+objectPlayer.name);
+//                console.log("Function: SubstitutionEvent: action: got objectPlayer.name="+objectPlayer.name);
                 var lineUp;
 
                 if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
               	    lineUp=match.home.lineUp;
               	  else
               		lineUp=match.away.lineUp;
-                console.log("Function: SubstitutionEvent: action: got lineup (I can't show the value!)");
-                lineUp=htlivesight.LineUp.SubstitutionPlayerInLineUp(lineUp,subjectPlayer,objectPlayer);
-                console.log("Function: SubstitutionEvent: action: lineup updated with subs!");
+                
+//                console.log("Function: SubstitutionEvent: action: got lineup (I can't show the value!)");
+                
+                if (found){
+                	
+                	lineUp=htlivesight.LineUp.SubstitutionPlayerInLineUp(lineUp,subjectPlayer,objectPlayer);
+                	
+                	
+                }else{
+                	
+                	lineUp=htlivesight.LineUp.InjurySubstitution(lineUp,subjectPlayer,objectPlayer);
+                	
+                }
+                
+//                console.log("Function: SubstitutionEvent: action: lineup updated with subs!");
                 var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
-                console.log("Function: SubstitutionEvent: action: converting lineup to string (now I can show it!)="+stringLineUp);
+//                console.log("Function: SubstitutionEvent: action: converting lineup to string (now I can show it!)="+stringLineUp);
                 if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
               	  var side="home";
                 else
               	  var side="away";
-                
+              //TODO: restore next line when CHPP unsynch will be fixed.
                 event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp));
-                console.log("Function: SubstitutionEvent: action: passed value to show on right click!");
+//                console.log("Function: SubstitutionEvent: action: passed value to show on right click!");
                 match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
-                console.log("Function: SubstitutionEvent: action: calculated new formation="+match.getSideById(event.subjectTeamId).formation);
+ //               console.log("Function: SubstitutionEvent: action: calculated new formation="+match.getSideById(event.subjectTeamId).formation);
                 lineUp[0].update++;
-                console.log("Function: SubstitutionEvent: action: updating counter change="+lineUp[0].update++);
+//                console.log("Function: SubstitutionEvent: action: updating counter change="+lineUp[0].update++);
                 if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
             	    match.home.lineUp= lineUp;
             	  else
             		match.away.lineUp= lineUp;
-                console.log("Function: SubstitutionEvent: action: end. It seems there isn't any big error here.");
+ //               console.log("Function: SubstitutionEvent: action: end. It seems there isn't any big error here.");
 				}catch(e){console.log("WARNING!!! This is an error, please copy last log message and the following error:"+e);}
 };
 
@@ -415,7 +416,7 @@ htlivesight.LineUp.SwapEvent= function(event, match){
   	  var side="home";
     else
   	  var side="away";
-    
+  //TODO: restore next line when CHPP unsynch will be fixed.
     event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp));
     lineUp[0].update++;
     if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
@@ -428,7 +429,7 @@ htlivesight.LineUp.SwapEvent= function(event, match){
 
 htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 				try{
-					console.log("Function: IndividualOrderEvent: action: beginning. Let's see if there is any error here. ;)");
+//					console.log("Function: IndividualOrderEvent: action: beginning. Let's see if there is any error here. ;)");
                 var subjectPlayer= new Object();
 
                 var objectPlayer= new Object();
@@ -436,86 +437,129 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
                 var found= false; // this variable is used to fix delaly of the individual order info against individual order event.
 
                 subjectPlayer.id= event.subjectPlayerId;
-                console.log("Function: IndividualOrderEvent: action: got subjectPlayer:id="+subjectPlayer.id);
+
+ //               console.log("Function: IndividualOrderEvent: action: got subjectPlayer:id="+subjectPlayer.id);
+                
                 objectPlayer.id= event.subjectPlayerId;
-                console.log("Function: IndividualOrderEvent: action: got objectPlayer:id="+objectPlayer.id);
-                console.log("Function: IndividualOrderEvent: action: looking for order info...");
+                
+//                console.log("Function: IndividualOrderEvent: action: got objectPlayer:id="+objectPlayer.id);
+                
+//                console.log("Function: IndividualOrderEvent: action: looking for order info...");
+                
                 for (var index=0; index < match.substitutions.length; index++){
-                	console.log("index="+index);
-                	console.log("match.substitutions[index].subjectPlayerID="+match.substitutions[index].subjectPlayerID);
-                	console.log("subjectPlayer.id="+subjectPlayer.id);
-                	console.log("match.substitutions[index].objectPlayerID="+match.substitutions[index].objectPlayerID);
-                	console.log("objectPlayer.id="+objectPlayer.id);
-                	console.log("match.substitutions[index].matchMinute="+match.substitutions[index].matchMinute);
-                	console.log("event.minute="+event.minute);
+                
+ //               	console.log("index="+index);
+               	
+ //               	console.log("match.substitutions[index].subjectPlayerID="+match.substitutions[index].subjectPlayerID);
+                	
+ //               	console.log("subjectPlayer.id="+subjectPlayer.id);
+                	
+ //               	console.log("match.substitutions[index].objectPlayerID="+match.substitutions[index].objectPlayerID);
+                	
+ //               	console.log("objectPlayer.id="+objectPlayer.id);
+                	
+//                	console.log("match.substitutions[index].matchMinute="+match.substitutions[index].matchMinute);
+                	
+//                	console.log("event.minute="+event.minute);
+                	
                 	if(subjectPlayer.id==match.substitutions[index].subjectPlayerID &&
+                	
                 			objectPlayer.id==match.substitutions[index].objectPlayerID &&
+                			
                 			event.minute==match.substitutions[index].matchMinute){
-                		console.log("Function: IndividualOrderEvent: action: order found! getting data...");
+//                		console.log("Function: IndividualOrderEvent: action: order found! getting data...");
+                		
                 		objectPlayer.positionId=parseInt(match.substitutions[index].newPositionId);
-                		console.log("Function: IndividualOrderEvent: action: got new position="+objectPlayer.positionId);
+                	
+ //               		console.log("Function: IndividualOrderEvent: action: got new position="+objectPlayer.positionId);
+                		
                 		objectPlayer.behaviourInt=match.substitutions[index].newPositionBehaviour;
-                		console.log("Function: IndividualOrderEvent: action: got new behaviour="+objectPlayer.behaviourInt);
+                		
+//                		console.log("Function: IndividualOrderEvent: action: got new behaviour="+objectPlayer.behaviourInt);
+                		
                 		found= true;
                 	};
      
                 };
-                if (!found){
-             /*   	setTimeout(function(){
-                		var now=new Date();
-                		htlivesight.Live.updating=true;
-                 	   	now.setDate(now.getDate()+7);
-                 	   	htlivesight.Live.nextEventTime=now.getTime();
-                 	   	htlivesight.Live.view();
-                 	   	htlivesight.LineUp.IndividualOrderEvent(event, match);
-                 	   	alert("Another try: it seems that I got individual order info, check it!");
-                	}, 60000);*/
-                //	alert("Individual order info not found, CHPP info delay of 1 minute is still present!");
-                	return;
-                }
-                console.log("Function: IndividualOrderEvent: Did you see position and behaviour number above? If not this is bad!!!");
+
+//                console.log("Function: IndividualOrderEvent: Did you see position and behaviour number above? If not this is bad!!!");
+                
                 var lineUp;
 
                 if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-              	    lineUp=match.home.lineUp;
-              	  else
-              		lineUp=match.away.lineUp;
-                console.log("Function: IndividualOrderEvent: action: got lineup (I can't show the value!)");
-                console.log("Function: IndividualOrderEvent: action: looking for player name...");
+              	
+                	lineUp=match.home.lineUp;
+              	  
+                else
+              	
+                	lineUp=match.away.lineUp;
+
+ //               console.log("Function: IndividualOrderEvent: action: got lineup (I can't show the value!)");
+                
+ //               console.log("Function: IndividualOrderEvent: action: looking for player name...");
+                
                 for (var index=0; index<lineUp.length; index++) // building the lineup string
             	{
             		if (lineUp[index].id==subjectPlayer.id) 
             		{
             			objectPlayer.name=lineUp[index].name;
-            			console.log("Function: IndividualOrderEvent: action: name found! It's "+ objectPlayer.name);
+            	
+ //           			console.log("Function: IndividualOrderEvent: action: name found! It's "+ objectPlayer.name);
+            			
             			break;
             		}
             	}
-                console.log("Function: IndividualOrderEvent: Did you see player name above? If not this is bad!!!");
-                subjectPlayer.name= objectPlayer.name;
-                console.log("Function: IndividualOrderEvent: action: got subjectPlayer.name="+subjectPlayer.name);
-                
 
-                lineUp=htlivesight.LineUp.SubstitutionPlayerInLineUp(lineUp,subjectPlayer,objectPlayer);
-                console.log("Function: IndividualOrderEvent: action: lineup updated with orders!");
-                var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
-                console.log("Function: IndividualOrderEvent: action: converting lineup to string (now I can show it!)="+stringLineUp);
-                if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-              	  var side="home";
-                else
-              	  var side="away";
+ //               console.log("Function: IndividualOrderEvent: Did you see player name above? If not this is bad!!!");
                 
-                event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp));
-                console.log("Function: IndividualOrderEvent: action: passed value to show on right click!");
-                match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
-                console.log("Function: IndividualOrderEvent: action: calculated new formation="+match.getSideById(event.subjectTeamId).formation);
-                lineUp[0].update++;
-                console.log("Function: IndividualOrderEvent: action: updating counter change="+lineUp[0].update++);
+                subjectPlayer.name= objectPlayer.name;
+                
+ //               console.log("Function: IndividualOrderEvent: action: got subjectPlayer.name="+subjectPlayer.name);
+                
+                if (found){
+                	
+                	lineUp=htlivesight.LineUp.SubstitutionPlayerInLineUp(lineUp,subjectPlayer,objectPlayer);
+                	
+                }else{
+                	
+                //	lineUp=htlivesight.LineUp.InjurySubstitution(lineUp,subjectPlayer,objectPlayer);
+                	
+                }
+
+//                console.log("Function: IndividualOrderEvent: action: lineup updated with orders!");
+                
+                var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
+                
+ //               console.log("Function: IndividualOrderEvent: action: converting lineup to string (now I can show it!)="+stringLineUp);
+                
                 if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-            	    match.home.lineUp= lineUp;
+              	
+                	var side="home";
+                
+                else
+              	
+                	var side="away";
+              //TODO: restore next line when CHPP unsynch will be fixed.
+                event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp));
+                
+//                console.log("Function: IndividualOrderEvent: action: passed value to show on right click!");
+                
+                match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
+                
+//                console.log("Function: IndividualOrderEvent: action: calculated new formation="+match.getSideById(event.subjectTeamId).formation);
+                
+                lineUp[0].update++;
+                
+//                console.log("Function: IndividualOrderEvent: action: updating counter change="+lineUp[0].update++);
+                
+                if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
+            	
+                	match.home.lineUp= lineUp;
             	  else
             		match.away.lineUp= lineUp;
-                console.log("Function: IndividualOrderEvent: action: end. It seems there isn't any big error here.");
+                
+//                console.log("Function: IndividualOrderEvent: action: end. It seems there isn't any big error here.");
+				
 				}catch(e){console.log("WARNING!!! This is an error, please copy last log message and the following error:"+e);}
 
 	
@@ -540,7 +584,7 @@ htlivesight.LineUp.SentOffEvent= function(event, match){
     	  var side="home";
       else
     	  var side="away";
-      
+   //TODO: restore next line when CHPP unsynch will be fixed.   
       event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp));
     
     match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
@@ -584,7 +628,7 @@ htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
   	  var side="home";
     else
   	  var side="away";
-    
+    //TODO: restore next line when CHPP unsynch will be fixed.   
     event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp));
     
     match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
@@ -641,7 +685,7 @@ if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
 	  var side="home";
   else
 	  var side="away";
-  
+//TODO: restore next line when CHPP unsynch will be fixed.
   event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp));
     
     match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)

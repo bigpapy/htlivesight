@@ -42,7 +42,7 @@ htlivesight.DOM = {
 		  teamName=match.away.team.name;
 	  }
 
-	  $("#"+id+"_statistics").dialog({ autoOpen: true, width: 200, height: 110, title: teamName });
+	  $("#"+id+"_statistics").dialog({ autoOpen: true, width: 320, height: 110, title: teamName });
 	  //	$("#"+id+"_table").dialog('open');
 	  //	alert("popup opened!");
 	  return false;
@@ -295,17 +295,34 @@ htlivesight.DOM = {
 	    popup.setAttribute("id", id);
 		popup.setAttribute("class", "formationpopup");
 		popup.style.display = 'none';
+	
 		
+        hbox = document.createElement("tr");
+	    //    hbox.setAttribute("pack", "center");
+	   //     label = document.createElement("label");
+        var occasion=match.getSideById(event.subjectTeamId).occasion;
+        var goals=match.getSideById(event.subjectTeamId).goals;
+        label = document.createElement("td");
+      	label.innerHTML="goals:";
+      	label_number = document.createElement("td");
+      	label_number.innerHTML=goals+" / "+occasion;
+        hbox.appendChild(label);
+        hbox.appendChild(label_number);
+        popup.appendChild(hbox);
 		// creating row (bigpapy)
 		hbox = document.createElement("tr");
 	  //    hbox.setAttribute("pack", "center");
 	      popup.appendChild(hbox);
 	      // adding element title to the row (bigpapy)
+	      	      
 	        var free_kick=match.getSideById(event.subjectTeamId).free_kick;
 	        var free_kick_goal=match.getSideById(event.subjectTeamId).free_kick_goal;
 	      	label = document.createElement("td");
-	      	label.innerHTML="free kick: "+free_kick_goal+" / "+free_kick;
+	      	label.innerHTML="free kick:";
+	      	label_number = document.createElement("td");
+	      	label_number.innerHTML=free_kick_goal+" / "+free_kick;
 	        hbox.appendChild(label);
+	        hbox.appendChild(label_number);
 	        popup.appendChild(hbox);
 	//TODO        
 	        hbox = document.createElement("tr");
@@ -314,8 +331,11 @@ htlivesight.DOM = {
 	        var penalty=match.getSideById(event.subjectTeamId).penalty;
 	        var penalty_goal=match.getSideById(event.subjectTeamId).penalty_goal;
 	      	label = document.createElement("td");
-	      	label.innerHTML="penalty: "+penalty_goal+" / "+penalty;
-		    hbox.appendChild(label);
+	      	label.innerHTML="penalty:";
+	      	label_number = document.createElement("td");
+	      	label_number.innerHTML=penalty_goal+" / "+penalty;
+	        hbox.appendChild(label);
+	        hbox.appendChild(label_number);
 	        popup.appendChild(hbox);
 	        
 	        hbox = document.createElement("tr");
@@ -324,8 +344,11 @@ htlivesight.DOM = {
 	        var left=match.getSideById(event.subjectTeamId).left;
 	        var left_goal=match.getSideById(event.subjectTeamId).left_goal;
 	        label = document.createElement("td");
-	      	label.innerHTML="left:    "+left_goal+" / "+left;
+	      	label.innerHTML="left:";
+	      	label_number = document.createElement("td");
+	      	label_number.innerHTML=left_goal+" / "+left;
 	        hbox.appendChild(label);
+	        hbox.appendChild(label_number);
 	        popup.appendChild(hbox);
 	        
 	        hbox = document.createElement("tr");
@@ -334,8 +357,11 @@ htlivesight.DOM = {
 	        var center=match.getSideById(event.subjectTeamId).center;
 	        var center_goal=match.getSideById(event.subjectTeamId).center_goal;
 	        label = document.createElement("td");
-	      	label.innerHTML="center:  "+center_goal+" / "+center;
-		    hbox.appendChild(label);
+	      	label.innerHTML="center:";
+	      	label_number = document.createElement("td");
+	      	label_number.innerHTML=center_goal+" / "+center;
+	        hbox.appendChild(label);
+	        hbox.appendChild(label_number);
 	        popup.appendChild(hbox);
 	        
 	        hbox = document.createElement("tr");
@@ -344,8 +370,11 @@ htlivesight.DOM = {
 	        var right=match.getSideById(event.subjectTeamId).right;
 	        var right_goal=match.getSideById(event.subjectTeamId).right_goal;
 	        label = document.createElement("td");
-	      	label.innerHTML="right:     "+right_goal+" / "+right;
-		    hbox.appendChild(label);
+	      	label.innerHTML="right:";
+	      	label_number = document.createElement("td");
+	      	label_number.innerHTML=right_goal+" / "+right;
+	        hbox.appendChild(label);
+	        hbox.appendChild(label_number);
 	        popup.appendChild(hbox);
 	        
 	        hbox = document.createElement("tr");
@@ -354,46 +383,47 @@ htlivesight.DOM = {
 		        var special=match.getSideById(event.subjectTeamId).special_event;
 		        var special_goal=match.getSideById(event.subjectTeamId).special_event_goal;
 		        label = document.createElement("td");
-		      	label.innerHTML="SE:     "+special_goal+" / "+special;
-			    hbox.appendChild(label);
+		      	label.innerHTML="SE:";
+		      	label_number = document.createElement("td");
+		      	label_number.innerHTML=special_goal+" / "+special;
+		        hbox.appendChild(label);
+		        hbox.appendChild(label_number);
 		        popup.appendChild(hbox);
-		        
-		        hbox = document.createElement("tr");
-			    //    hbox.setAttribute("pack", "center");
-			   //     label = document.createElement("label");
-		        var occasion=match.getSideById(event.subjectTeamId).occasion;
-		        var goals=match.getSideById(event.subjectTeamId).goals;
-		        label = document.createElement("td");
-		      	label.innerHTML="occasion: "+goals+" / "+occasion;
-			        hbox.appendChild(label);
-			        popup.appendChild(hbox);
-			        
+	        
 			   hbox = document.createElement("tr");
 				    //    hbox.setAttribute("pack", "center");
 				   //     label = document.createElement("label");
 				   var yellow=match.getSideById(event.subjectTeamId).yellow;
 				   label = document.createElement("td");
-			       label.innerHTML="yellow: "+yellow;
-				   hbox.appendChild(label);
-				   popup.appendChild(hbox);
+			       label.innerHTML="yellow: ";
+			       label_number = document.createElement("td");
+			      	label_number.innerHTML=yellow;
+			        hbox.appendChild(label);
+			        hbox.appendChild(label_number);
+			        popup.appendChild(hbox);
 				        
 			  hbox = document.createElement("tr");
 					    //    hbox.setAttribute("pack", "center");
 					   //     label = document.createElement("label");
 				   var red=match.getSideById(event.subjectTeamId).red;
 				   label = document.createElement("td");
-			       label.innerHTML="red:   "+red;
-				   hbox.appendChild(label);
-				   popup.appendChild(hbox);
-				   
-				   hbox = document.createElement("tr");
+			       label.innerHTML="red:";
+			       label_number = document.createElement("td");
+			      	label_number.innerHTML=red;
+			        hbox.appendChild(label);
+			        hbox.appendChild(label_number);
+			        popup.appendChild(hbox);
 				    //    hbox.setAttribute("pack", "center");
 				   //     label = document.createElement("label");
+			        hbox = document.createElement("tr");
 			   var injured=match.getSideById(event.subjectTeamId).injured;
 			   label = document.createElement("td");
-		       label.innerHTML="injured:   "+injured;
-			   hbox.appendChild(label);
-			   popup.appendChild(hbox);
+		       label.innerHTML="injured:";
+		       label_number = document.createElement("td");
+		      	label_number.innerHTML=injured;
+		        hbox.appendChild(label);
+		        hbox.appendChild(label_number);
+		        popup.appendChild(hbox);
 	        
 			   hbox = document.createElement("tr");
 			    //    hbox.setAttribute("pack", "center");
@@ -401,9 +431,21 @@ htlivesight.DOM = {
 		   var possession1=match.getSideById(event.subjectTeamId).possession_1;
 		   var possession2=match.getSideById(event.subjectTeamId).possession_2;
 		   label = document.createElement("td");
-	       label.innerHTML="ball possess:   "+possession1+"% / "+ possession2+"%";
-		   hbox.appendChild(label);
-		   popup.appendChild(hbox);
+	       label.innerHTML="ball possess 1°half:";
+	       label_number = document.createElement("td");
+	      	label_number.innerHTML=+possession1+"%";
+	        hbox.appendChild(label);
+	        hbox.appendChild(label_number);
+	        popup.appendChild(hbox);
+	        
+	        hbox = document.createElement("tr");
+	        label = document.createElement("td");
+		       label.innerHTML="ball possess 2°half:";
+		       label_number = document.createElement("td");
+		      	label_number.innerHTML=+possession2+"%";
+		        hbox.appendChild(label);
+		        hbox.appendChild(label_number);
+		        popup.appendChild(hbox);
 			   
 	        return popup;
 
@@ -549,7 +591,7 @@ try{ //added by bigpapy to debug from xul to html
   //vbox.appendChild(child);
   hbox.appendChild(child);
  }catch(e){alert("CreateElementGroupboxLiveMatch: ")+e;}// added by bigpapy to debug from XML to HTML
-}
+};
 
  htlivesight.DOM.CreateElementGroupboxLiveMatch=function(match) {
   var box, /*caption,*/ header, events;
@@ -677,6 +719,185 @@ try{ //added by bigpapy to debug from xul to html
         }
       }
     }
+    
+    
+    
+    
+ // part added by bigpapy to show booked players (begin)
+ 
+ 	    if (htlivesight.prefs.matches.booked) {
+  
+ 	      label = document.getElementById("home_team_booked1_" + match.id + "_" + match.youth);
+ 
+ 	      var label2 = document.getElementById("home_team_booked2_" + match.id + "_" + match.youth);
+  
+ 	      var label3 = document.getElementById("away_team_booked2_" + match.id + "_" + match.youth);
+   
+ 	      if (match.home.booked) {
+  
+ 	        var bookedText = new Array;
+ 
+ 	        bookedText[0] = "";
+  
+ 	        bookedText[1] = "";
+  
+ 	        var line = 0;
+ 
+ 	        var numplayer = 1;
+ 
+  	        for(var player in match.home.booked) {
+   
+ 	        	if (match.home.booked[player].name!= undefined && match.home.booked[player].mins!= undefined)
+ 
+ 	          bookedText[line] += match.home.booked[player].name + match.home.booked[player].mins + ") ";
+ 
+ 	          if (numplayer++ == 3)
+
+ 	            line++;
+  
+ 	        }
+ 
+ 	        label.innerHTML= htlivesight.DOM.getTextContent(bookedText[0]);
+  
+ 	        if (numplayer > 4) {
+  
+ 	          label2.innerHTML= htlivesight.DOM.getTextContent(bookedText[1]);
+ 
+  	          label2.setAttribute("style", "display:block");
+
+ 	          label3.setAttribute("style", "display:block");
+
+ 	        }
+   
+ 	      }
+ 
+ 	      label = document.getElementById("away_team_booked1_" + match.id + "_" + match.youth);
+
+ 	      if (match.away.booked) {
+ 
+ 	        var bookedText = new Array;
+  
+ 	        bookedText[0] = "";
+ 
+ 	        bookedText[1] = "";
+
+ 	        var line = 0;
+ 
+ 	        var numplayer = 1;
+
+ 	        for(var player in match.away.booked) {
+
+ 	        	if (match.away.booked[player].name!= undefined && match.away.booked[player].mins!= undefined)
+ 
+ 	          bookedText[line] += match.away.booked[player].name + match.away.booked[player].mins + ") ";
+
+ 	          if (numplayer++ == 3)
+ 
+ 	            line++;
+  
+ 	        }
+  
+ 	        label.innerHTML= htlivesight.DOM.getTextContent(bookedText[0]);
+
+ 	        if (numplayer > 4) {
+ 
+ 	          label3.innerHTML= htlivesight.DOM.getTextContent(bookedText[1]);
+
+ 	          label3.setAttribute("style", "display:block");
+ 
+ 	          label2.setAttribute("style", "display:block");
+
+ 	        }
+ 
+ 	      }
+ 	    }
+  	   // part added by bigpapy to show booked players (end)
+  	      // part added by bigpapy to show sent_off players (begin)
+ 	    if (htlivesight.prefs.matches.sentOff) {
+ 	    	
+  	      label = document.getElementById("home_team_sent_off1_" + match.id + "_" + match.youth);
+  	      
+  	      var label2 = document.getElementById("home_team_sent_off2_" + match.id + "_" + match.youth);
+  
+ 	      var label3 = document.getElementById("away_team_sent_off2_" + match.id + "_" + match.youth);
+ 
+ 	      if (match.home.sent_off) {
+ 
+ 	        var sent_offText = new Array;
+ 
+ 	        sent_offText[0] = "";
+ 
+ 	        sent_offText[1] = "";
+ 	        
+ 	        var line = 0;
+ 	        
+ 	        var numplayer = 1;
+ 
+ 	        for(var player in match.home.sent_off) {
+
+ 	        	if (match.home.sent_off[player].name!= undefined && match.home.sent_off[player].mins!= undefined)
+
+ 	        		sent_offText[line] += match.home.sent_off[player].name + match.home.sent_off[player].mins + ") ";
+ 
+ 	          if (numplayer++ == 3)
+  
+ 	            line++;
+ 	        }
+
+ 	        label.innerHTML= htlivesight.DOM.getTextContent(sent_offText[0]);
+ 	        
+	        if (numplayer > 4) {
+ 
+ 	          label2.innerHTML= htlivesight.DOM.getTextContent(sent_offText[1]);
+ 
+ 	          label2.setAttribute("style", "display:block");
+  
+ 	          label3.setAttribute("style", "display:block");
+ 
+ 	        }
+ 	      }
+
+ 	      label = document.getElementById("away_team_sent_off1_" + match.id + "_" + match.youth);
+ 
+ 	      if (match.away.sent_off) {
+ 
+ 	        var sent_offText = new Array;
+ 
+ 	        sent_offText[0] = "";
+ 	        
+ 	        sent_offText[1] = "";
+ 	        
+  	        var line = 0;
+  	        
+ 	        var numplayer = 1;
+ 	        
+ 	        for(var player in match.away.sent_off) {
+ 	        	
+  	        	if (match.away.sent_off[player].name!= undefined && match.away.sent_off[player].mins!= undefined)
+
+  	        		sent_offText[line] += match.away.sent_off[player].name + match.away.sent_off[player].mins + ") ";
+
+  	        	if (numplayer++ == 3)
+  	            line++;
+ 	        }
+ 	        label.innerHTML= htlivesight.DOM.getTextContent(sent_offText[0]);
+ 	        
+ 	        if (numplayer > 4) {
+ 	        	
+ 	          label3.innerHTML= htlivesight.DOM.getTextContent(sent_offText[1]);
+ 	          
+  	          label3.setAttribute("style", "display:block");
+  	          
+ 	          label2.setAttribute("style", "display:block");
+
+ 	        }
+ 	      }
+ 	    }
+ 	   // part added by bigpapy to show sent_off players (end)
+    
+    
+    
+    
     document.getElementById("time_" + match.id + "_" + match.youth).innerHTML = match.timeElapsed;    
   //  label = document.getElementById("time_" + match.id + "_" + match.youth);
   //  label.setAttribute("value", match.timeElapsed);
@@ -999,6 +1220,108 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     label.setAttribute("style", "display:none");
   }
 
+  
+  
+  
+  
+  
+//new part added by bigpapy (booked): begin
+ 	  if (htlivesight.prefs.matches.booked) {
+
+ 		 hbox3 = document.createElement("tr"); //bigpapy add to fix it
+ 		hbox3.setAttribute("class", "scorers");
+ 		vbox.appendChild(hbox3);
+ 		
+ 		box31 = document.createElement("td");
+ 		//box1.colSpan ="3";
+ 		box31.setAttribute("align", "right");
+ 		box31.setAttribute("width", "47%");
+ 		box31.setAttribute("class", "scorers_home");
+ 		hbox3.appendChild(box31);
+ 		  
+ 	    label = document.createElement("span");
+ 	    label.style.color= "#E8AE00";
+ 	    box31.appendChild(label);
+ 	    label.setAttribute("id", "home_team_booked1_" + match.id + "_" + match.youth);
+ 	    //label.setAttribute("class", "tactic");
+ 	    
+ 	    //label.setAttribute("value", " ");
+ 	    label.innerHTML= " ";
+ 	    
+ 	    hbox4 = document.createElement("tr"); //bigpapy add to fix it
+ 		hbox4.setAttribute("class", "scorers");
+ 		vbox.appendChild(hbox4);
+ 		
+ 		box41 = document.createElement("td");
+ 		//box1.colSpan ="3";
+ 		box41.setAttribute("align", "right");
+ 		box41.setAttribute("width", "47%");
+ 		box41.setAttribute("class", "scorers_home");
+ 		hbox4.appendChild(box41);
+ 	    
+ 	    label = document.createElement("span");
+ 	    box41.style.color= "#E8AE00";
+ 	    box41.appendChild(label);
+ 	    label.setAttribute("id", "home_team_booked2_" + match.id + "_" + match.youth);
+ 	    //label.setAttribute("class", "tactic");
+ 	    //label.setAttribute("value", " ");
+ 	    label.innerHTML= " ";
+ 	    label.setAttribute("style", "display:none");
+	  }
+
+	 // new part added by bigpapy (booked): end
+
+	 // new part added by bigpapy (sent off): begin
+
+	  if (htlivesight.prefs.matches.sentOff) {
+
+		  hbox5 = document.createElement("tr"); //bigpapy add to fix it
+			hbox5.setAttribute("class", "sent_off");
+			vbox.appendChild(hbox5);
+			
+			box51 = document.createElement("td");
+			//box1.colSpan ="3";
+			box51.setAttribute("align", "right");
+			box51.setAttribute("width", "47%");
+			box51.setAttribute("class", "sent_off_home");
+			hbox5.appendChild(box51);
+			  
+		    label = document.createElement("span");
+		    label.style.color= "#FF0011";
+		    box51.appendChild(label);
+		    label.setAttribute("id", "home_team_sent_off1_" + match.id + "_" + match.youth);
+		    //label.setAttribute("class", "tactic");
+		    
+		    //label.setAttribute("value", " ");
+		    label.innerHTML= " ";
+		    
+		    hbox6 = document.createElement("tr"); //bigpapy add to fix it
+			hbox6.setAttribute("class", "sent_off");
+			vbox.appendChild(hbox6);
+			
+			box61 = document.createElement("td");
+			//box1.colSpan ="3";
+			box61.setAttribute("align", "right");
+			box61.setAttribute("width", "47%");
+			box61.setAttribute("class", "sent_off_home");
+			hbox6.appendChild(box61);
+		    
+		    label = document.createElement("span");
+		    box61.style.color= "#FF0011";
+		    box61.appendChild(label);
+		    label.setAttribute("id", "home_team_sent_off2_" + match.id + "_" + match.youth);
+		    //label.setAttribute("class", "tactic");
+		    //label.setAttribute("value", " ");
+		    label.innerHTML= " ";
+		    label.setAttribute("style", "display:none");
+	 // new part added by bigpapy (sent_off): end
+
+	  }
+  
+  
+  
+  
+  
   // score
   //hbox = document.createElement("hbox");
   box = document.createElement("td");//bigpapy add to fix it
@@ -1060,7 +1383,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	link.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
   //label.style.fontSize="xx-large";
   
-  if (!htlivesight.prefs.matches.scorers) {
+  if (!htlivesight.prefs.matches.scorers  && !htlivesight.prefs.matches.booked && !htlivesight.prefs.matches.sentOff) {
     //hbox = document.createElement("hbox");
  //   hbox = document.createElement("tr");//bigpapy: added to fix html
  //   vbox.appendChild(hbox);
@@ -1092,6 +1415,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	box2 = document.createElement("td");  
 	hbox1.appendChild(box2);
 	box2.setAttribute("width", "6%");
+	box2.setAttribute("align", "center");
 	
 	box3 = document.createElement("td");
 	//box3.colSpan ="3";
@@ -1111,6 +1435,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     box22 = document.createElement("td");
 	//box1.colSpan ="3";
 	box22.setAttribute("width", "6%");
+	box22.setAttribute("align", "center");
 	hbox2.appendChild(box22);
 	
 	box23 = document.createElement("td");
@@ -1128,6 +1453,104 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     label.innerHTML= " ";
     label.setAttribute("style", "display:none");
   }
+  
+//new part added by bigpapy (booked): begin
+	  if (htlivesight.prefs.matches.booked) {
+
+		  box32 = document.createElement("td");  
+			hbox3.appendChild(box32);
+			box32.setAttribute("width", "6%");
+			
+			box33 = document.createElement("td");
+			//box3.colSpan ="3";
+			box33.setAttribute("align", "left");
+			//box3.setAttribute("valign", "bottom");
+			box33.setAttribute("width", "47%");
+			box33.setAttribute("class", "booked_away");
+			hbox3.appendChild(box33);
+			  
+		    label = document.createElement("span");
+		    label.style.color= "#E8AE00";
+		    box33.appendChild(label);
+		    label.setAttribute("id", "away_team_booked1_" + match.id + "_" + match.youth);
+		    //label.setAttribute("class", "tactic");
+		    label.innerHTML= " ";
+		    //label.setAttribute("value", " ");
+		    
+		    box42 = document.createElement("td");
+			//box1.colSpan ="3";
+			box42.setAttribute("width", "6%");
+			hbox4.appendChild(box42);
+			
+			box43 = document.createElement("td");
+			//box1.colSpan ="3";
+			box43.setAttribute("align", "left");
+			box43.setAttribute("width", "47%");
+			box43.setAttribute("class", "booked_away");
+			hbox4.appendChild(box43);
+		    
+		    label = document.createElement("span");
+		    box43.style.color= "#E8AE00";
+		    box43.appendChild(label);
+		    label.setAttribute("id", "away_team_booked2_" + match.id + "_" + match.youth);
+		    //label.setAttribute("class", "tactic");
+		    //label.setAttribute("value", " ");
+		    label.innerHTML= " ";
+		    label.setAttribute("style", "display:none");
+    
+  }
+
+ // new part added by bigpapy (booked): end
+
+ // new part added by bigpapy (sent off): begin
+
+  if (htlivesight.prefs.matches.sentOff) {
+	  
+	  box52 = document.createElement("td");  
+		hbox5.appendChild(box52);
+		box52.setAttribute("width", "6%");
+		
+		box53 = document.createElement("td");
+		//box3.colSpan ="3";
+		box53.setAttribute("align", "left");
+		//box3.setAttribute("valign", "bottom");
+		box53.setAttribute("width", "47%");
+		box53.setAttribute("class", "sent_off_away");
+		hbox5.appendChild(box53);
+		  
+	    label = document.createElement("span");
+	    label.style.color= "#FF0011";
+	    box53.appendChild(label);
+	    label.setAttribute("id", "away_team_sent_off1_" + match.id + "_" + match.youth);
+	    //label.setAttribute("class", "tactic");
+	    label.innerHTML= " ";
+	    //label.setAttribute("value", " ");
+	    
+	    box62 = document.createElement("td");
+		//box1.colSpan ="3";
+		box62.setAttribute("width", "6%");
+		hbox6.appendChild(box62);
+		
+		box63 = document.createElement("td");
+		//box1.colSpan ="3";
+		box63.setAttribute("align", "left");
+		box63.setAttribute("width", "47%");
+		box63.setAttribute("class", "sent_off_away");
+		hbox6.appendChild(box63);
+	    
+	    label = document.createElement("span");
+	    box63.style.color= "#FF0011";
+	    box63.appendChild(label);
+	    label.setAttribute("id", "away_team_sent_off2_" + match.id + "_" + match.youth);
+	    //label.setAttribute("class", "tactic");
+	    //label.setAttribute("value", " ");
+	    label.innerHTML= " ";
+	    label.setAttribute("style", "display:none");
+
+ // new part added by bigpapy (sent_off): end
+
+  }
+
 
   return header;
 }catch(e){alert("createElementBoxLiveMatchHeader: "+e);}// added by bigpapy to debug from xul to html
@@ -1257,7 +1680,6 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     	          htlivesight.DOM.createStatisticElement("home_team_name_"+match.id+"_"+match.youth+"_statistics", match, event);
     	          l1.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
     	          l1.setAttribute("contextmenu", "home_team_statistics_"+match.id+"_"+match.youth);
-   	          
     	        } else {
     	          l1 = document.getElementById("away_team_name_" + match.id + "_" + match.youth);    	          
     	          htlivesight.DOM.createStatisticElement("away_team_name_"+match.id+"_"+match.youth+"_statistics", match, event);

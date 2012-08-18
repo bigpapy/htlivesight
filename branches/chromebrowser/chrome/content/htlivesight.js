@@ -201,9 +201,16 @@ document.getElementById("live_box").setAttribute("style", "width:" + (winW-320) 
   startView: function() { 
 //	  console.log("startup:startview begin");
 	  do{
+		  console.log("htlivesight0");
 		  htlivesight.Live.view();
+		  console.log("htlivesight1");
+		  setTimeout(function(){htlivesight.matchDetails.view();}, 500);
+		  console.log("htlivesight2");
 	  }while(htlivesight.errorLoadingXML);
-	  htlivesight.Live.view(); // added to avoid delay showing event list
+//	  htlivesight.Live.view(); // added to avoid delay showing event list
+//	  console.log("htlivesight1");
+//	  htlivesight.matchDetails.view();
+//	  console.log("htlivesight2");
 	  htlivesight.Live.startView();
 //   console.log("startup:startview end");
   },

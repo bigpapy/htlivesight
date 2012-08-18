@@ -99,6 +99,8 @@ htlivesight.Settings = {
 			document.getElementById("txtGetFriendsWithinHours").value=prefs.matches.friends.withinHours;
 			//   alert("load14");
 			document.getElementById("chkHdrScorers").checked=prefs.matches.scorers;
+			document.getElementById("chkHdrBooked").checked=prefs.matches.booked;
+			document.getElementById("chkHdrSentOff").checked=prefs.matches.sentOff;
 			//   alert("load15");
 			document.getElementById("txtMatchWindowSize").value=prefs.matches.windowSize;
 			//  alert("load16");
@@ -313,6 +315,11 @@ htlivesight.Settings = {
 //			alert("22")
 			document.getElementById("MatchesScorers").innerHTML=htlivesight.Util.Parse("MatchesScorers",data[0]);
 			document.getElementById("label_chkHdrScorers").innerHTML=htlivesight.Util.Parse("ScorersList",data[0]);
+			document.getElementById("MatchesBooked").innerHTML=htlivesight.Util.Parse("MatchesBooked",data[0]);
+			document.getElementById("label_chkHdrBooked").innerHTML=htlivesight.Util.Parse("BookedList",data[0]);
+			document.getElementById("MatchesSentOff").innerHTML=htlivesight.Util.Parse("MatchesSentOff",data[0]);
+			document.getElementById("label_chkHdrSentOff").innerHTML=htlivesight.Util.Parse("SentOffList",data[0]);
+			
 			document.getElementById("MatchesWindow").innerHTML=htlivesight.Util.Parse("MatchesWindow",data[0]);
 			document.getElementById("MatchesLines").innerHTML=htlivesight.Util.Parse("MatchesLines",data[0]);
 			//notify
@@ -577,6 +584,17 @@ htlivesight.Settings = {
 				var prefs = htlivesight.Settings.preferences;
 				prefs.matches.scorers = document.getElementById("chkHdrScorers").checked;
 			},
+			
+			chkhdrbooked: function() {
+				var prefs = htlivesight.Settings.preferences;
+				prefs.matches.booked = document.getElementById("chkHdrBooked").checked;
+			},
+			
+			chkhdrsentoff: function() {
+				var prefs = htlivesight.Settings.preferences;
+				prefs.matches.sentOff = document.getElementById("chkHdrSentOff").checked;
+			},
+			
 			txtfixwindowsize: function() {
 				var prefs = htlivesight.Settings.preferences;
 				var value = document.getElementById("txtMatchWindowSize").value.replace(/\D/g, "");
