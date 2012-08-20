@@ -351,7 +351,7 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
                 else
               	  var side="away";
               //TODO: restore next line when CHPP unsynch will be fixed.
-                event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp));
+                event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
 //                console.log("Function: SubstitutionEvent: action: passed value to show on right click!");
                 match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
  //               console.log("Function: SubstitutionEvent: action: calculated new formation="+match.getSideById(event.subjectTeamId).formation);
@@ -417,7 +417,7 @@ htlivesight.LineUp.SwapEvent= function(event, match){
     else
   	  var side="away";
   //TODO: restore next line when CHPP unsynch will be fixed.
-    event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp));
+    event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
     lineUp[0].update++;
     if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
 	    match.home.lineUp= lineUp;
@@ -540,7 +540,7 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
               	
                 	var side="away";
               //TODO: restore next line when CHPP unsynch will be fixed.
-                event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp));
+                event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
                 
 //                console.log("Function: IndividualOrderEvent: action: passed value to show on right click!");
                 
@@ -585,7 +585,7 @@ htlivesight.LineUp.SentOffEvent= function(event, match){
       else
     	  var side="away";
    //TODO: restore next line when CHPP unsynch will be fixed.   
-      event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp));
+      event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp), event);
     
     match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
 
@@ -629,7 +629,7 @@ htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
     else
   	  var side="away";
     //TODO: restore next line when CHPP unsynch will be fixed.   
-    event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp));
+    event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
     
     match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
 
@@ -686,7 +686,7 @@ if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
   else
 	  var side="away";
 //TODO: restore next line when CHPP unsynch will be fixed.
-  event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp));
+  event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
     
     match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
 

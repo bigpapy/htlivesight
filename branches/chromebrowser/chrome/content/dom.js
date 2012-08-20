@@ -22,7 +22,7 @@ htlivesight.DOM = {
 		  teamName=match.away.team.name;
 	  }
 
-	  $("#"+id+"_table").dialog({ autoOpen: true, width: 640, height: 110, title: teamName });
+	  $("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 680, height: 250, title: teamName });
 	  //	$("#"+id+"_table").dialog('open');
 	  //	alert("popup opened!");
 	  return false;
@@ -42,7 +42,7 @@ htlivesight.DOM = {
 		  teamName=match.away.team.name;
 	  }
 
-	  $("#"+id+"_statistics").dialog({ autoOpen: true, width: 320, height: 110, title: teamName });
+	  $("#"+id+"_statistics").dialog({ autoOpen: true, width: 350, height: 220, title: teamName });
 	  //	$("#"+id+"_table").dialog('open');
 	  //	alert("popup opened!");
 	  return false;
@@ -226,10 +226,39 @@ htlivesight.DOM = {
     htlivesight.DOM.window.set(matchId, youth, htlivesight.DOM.mode.minimize);
   }catch(e){alert("deleteView: "+e);}// added by bigpapy to debug from XUL to HTML
   },
-  createLineupElement: function(id, lineup) {
+  createLineupElement: function(id, lineup, event) {
 	  try{// added by bigpapy to debug from XUL to HTML		  
-    var label, hbox;
-    var popupset = document.getElementById("live_box");
+    var label, hbox, ul;
+    
+  //  $( "#"+id ).tabs();
+
+    
+    
+    
+    var mainDiv= document.getElementById(id);
+    
+
+    if (mainDiv == null){
+    	mainDiv= document.createElement("div");
+    	mainDiv.setAttribute("id", id);
+    	mainDiv.style.display='none';
+    	var popupset = document.getElementById("live_box");
+    	popupset.appendChild(mainDiv);
+    	ul = document.createElement("ul");
+    	mainDiv.appendChild(ul);
+    }else{
+    	ul = mainDiv.getElementsByTagName("ul")[0];	
+    }
+    var li_ = document.createElement("li");
+    ul.appendChild(li_);
+    var a = document.createElement("a");
+    if (event.minute=="0") var index=1;
+    else index= ul.getElementsByTagName("li").length;
+    
+    a.setAttribute("href","#"+id+"-"+index);
+    a.innerHTML=event.minute+"'";
+    li_.appendChild(a);    
+
     var popup = document.createElement("table");
     popup.cellSpacing="4";
     popup.cellPadding="4";
@@ -238,11 +267,11 @@ htlivesight.DOM = {
 //    	var element_to_remove= document.getElementById(id);
  //     popupset.removeChild(element_to_remove);
  //   }
-    popupset.appendChild(popup);
-    popup.setAttribute("id", id);
-    popup.setAttribute("class", "formationpopup");
+    mainDiv.appendChild(popup);
+    popup.setAttribute("id", id+"-"+index);
+  //  popup.setAttribute("class", "formationpopup");
 	popup.style.textAlign="center";
-	popup.style.display='none';
+//	popup.style.display='none';
 	//var popuptext = document.createElement("span");
 	//popup.appendChild(popuptext);
 	//if (true) popuptext.innerHTML=lineup;return;
@@ -1148,6 +1177,9 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.youth+"_home"+");";
 	//link.addEventListener("click",htlivesight.DOM.formationpopup(argumentLineup));
 	link.setAttribute("onclick","htlivesight.DOM.formationpopup(this.id)");
+    $( "#"+"home_team_formation_" + match.id + "_" + match.youth+"_table").tabs();
+
+	
 	//$( "#"+"home_team_formation_"+match.id+"_"+match.youth+"_table" ).dialog( "option", "title", match.home.team.name );
 	//$("#"+"home_team_formation_"+match.id+"_"+match.youth+"_table").dialog({ title: match.home.team.name });
 
@@ -1398,6 +1430,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	link.setAttribute("id", "away_team_formation_" + match.id + "_" + match.youth);
 	link.setAttribute("title", "left click to open lineup");
 	link.setAttribute("onclick","htlivesight.DOM.formationpopup(this.id);");
+    $( "#"+"away_team_formation_" + match.id + "_" + match.youth+"_table").tabs();
 //	$("#"+"away_team_formation_"+match.id+"_"+match.youth+"_table").dialog({ autoOpen: true, width: 480, height: 110 });
   label = document.createElement("td");//label = document.createElement("label");
   awaytr.appendChild(label);
