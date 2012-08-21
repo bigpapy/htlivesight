@@ -323,6 +323,18 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 //                console.log("Function: SubstitutionEvent: action: got subjectPlayer.name="+subjectPlayer.name);
                 objectPlayer.name= htlivesight.Events.translate.parseScorer(event.text, event.objectPlayerId);
 //                console.log("Function: SubstitutionEvent: action: got objectPlayer.name="+objectPlayer.name);
+                
+                if ((subjectPlayer.name== undefined)||(objectPlayer.name== undefined)){
+                	for (var index=0; index < lineUp.length; index++){
+                    	if ((lineUp[index].id==subjectPlayer.id)&&(subjectPlayer.name== undefined)){
+                    		subjectPlayer.name=lineUp[index].name;
+                    	}
+                    	if ((lineUp[index].id==objectPlayer.id)&&(objectPlayer.name== undefined)){
+                    		objectPlayer.name=lineUp[index].name;
+                    	}
+                	}
+                }
+                
                 var lineUp;
 
                 if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
@@ -351,7 +363,9 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
                 else
               	  var side="away";
               //TODO: restore next line when CHPP unsynch will be fixed.
+                $( "#"+side+"_team_formation_" + match.id + "_" + match.youth+"_table").tabs("destroy");
                 event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
+                $( "#"+side+"_team_formation_" + match.id + "_" + match.youth+"_table").tabs();
 //                console.log("Function: SubstitutionEvent: action: passed value to show on right click!");
                 match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
  //               console.log("Function: SubstitutionEvent: action: calculated new formation="+match.getSideById(event.subjectTeamId).formation);
@@ -373,22 +387,36 @@ htlivesight.LineUp.SwapEvent= function(event, match){
     var objectPlayer= new Object();
 
     subjectPlayer.id= event.subjectPlayerId;
-
-
+    
     objectPlayer.id= event.objectPlayerId;
 
 
     if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-  	    lineUp=match.home.lineUp;
-  	  else
-  		lineUp=match.away.lineUp;
+  	   var lineUp=match.home.lineUp;
+    if (match.isAwayTeam(event.subjectTeamId))
+  	   var lineUp=match.away.lineUp;
+    
+    if (lineUp== undefined) alert("subjectTeamId is uncorrect! SubjectTeamId="+event.subjectTeamId);
            
     subjectPlayer.name= htlivesight.Events.translate.parseScorer(event.text, event.subjectPlayerId);
 
 
     objectPlayer.name= htlivesight.Events.translate.parseScorer(event.text, event.objectPlayerId);
-
-
+    
+    if ((subjectPlayer.name== undefined)||(objectPlayer.name== undefined)){
+    	for (var index=0; index < lineUp.length; index++){
+        	if ((lineUp[index].id==subjectPlayer.id)&&(subjectPlayer.name== undefined)){
+        		subjectPlayer.name=lineUp[index].name;
+        	}
+        	if ((lineUp[index].id==objectPlayer.id)&&(objectPlayer.name== undefined)){
+        		objectPlayer.name=lineUp[index].name;
+        	}
+    	}
+    }
+    
+    if ((subjectPlayer.name== undefined)||(objectPlayer.name== undefined)||(subjectPlayer.id==undefined)||(objectPlayer.id==undefined)){
+    alert("subjectPlayer id="+subjectPlayer.id+"\n subject player name="+subjectPlayer.name+"\n objectPlayer id="+objectPlayer.id+"\n object player name="+objectPlayer.name);
+    }
     for (var index=0; index < lineUp.length; index++){
     	if (lineUp[index].id==subjectPlayer.id){
     		lineUp[index].name=objectPlayer.name;
@@ -417,7 +445,9 @@ htlivesight.LineUp.SwapEvent= function(event, match){
     else
   	  var side="away";
   //TODO: restore next line when CHPP unsynch will be fixed.
+    $( "#"+side+"_team_formation_" + match.id + "_" + match.youth+"_table").tabs("destroy");
     event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
+    $( "#"+side+"_team_formation_" + match.id + "_" + match.youth+"_table").tabs();
     lineUp[0].update++;
     if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
 	    match.home.lineUp= lineUp;
@@ -481,6 +511,7 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
                 	};
      
                 };
+    
 
 //                console.log("Function: IndividualOrderEvent: Did you see position and behaviour number above? If not this is bad!!!");
                 
@@ -540,8 +571,9 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
               	
                 	var side="away";
               //TODO: restore next line when CHPP unsynch will be fixed.
+                $( "#"+side+"_team_formation_" + match.id + "_" + match.youth+"_table").tabs("destroy");
                 event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
-                
+                $( "#"+side+"_team_formation_" + match.id + "_" + match.youth+"_table").tabs();
 //                console.log("Function: IndividualOrderEvent: action: passed value to show on right click!");
                 
                 match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
@@ -584,9 +616,11 @@ htlivesight.LineUp.SentOffEvent= function(event, match){
     	  var side="home";
       else
     	  var side="away";
-   //TODO: restore next line when CHPP unsynch will be fixed.   
+   //TODO: restore next line when CHPP unsynch will be fixed.  
+    $( "#"+side+"_team_formation_" + match.id + "_" + match.youth+"_table").tabs("destroy");
       event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp), event);
-    
+      $( "#"+side+"_team_formation_" + match.id + "_" + match.youth+"_table").tabs();
+      
     match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
 
     lineUp[0].update++;
@@ -628,8 +662,10 @@ htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
   	  var side="home";
     else
   	  var side="away";
-    //TODO: restore next line when CHPP unsynch will be fixed.   
+    //TODO: restore next line when CHPP unsynch will be fixed.  
+    $( "#"+side+"_team_formation_" + match.id + "_" + match.youth+"_table").tabs("destroy");
     event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
+    $( "#"+side+"_team_formation_" + match.id + "_" + match.youth+"_table").tabs();
     
     match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
 
@@ -686,8 +722,10 @@ if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
   else
 	  var side="away";
 //TODO: restore next line when CHPP unsynch will be fixed.
+$( "#"+side+"_team_formation_" + match.id + "_" + match.youth+"_table").tabs("destroy");
   event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
-    
+  $( "#"+side+"_team_formation_" + match.id + "_" + match.youth+"_table").tabs();
+  
     match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
 
     lineUp[0].update++; // increase counter modification event.

@@ -22,7 +22,7 @@ htlivesight.DOM = {
 		  teamName=match.away.team.name;
 	  }
 
-	  $("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 680, height: 250, title: teamName });
+	  $("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 270, title: teamName });
 	  //	$("#"+id+"_table").dialog('open');
 	  //	alert("popup opened!");
 	  return false;
@@ -284,7 +284,9 @@ htlivesight.DOM = {
       popup.appendChild(hbox);
       for(j=0; j<lineup[i].length; j++) {
         label = document.createElement("td");
-        label.style.background="#575656";
+        label.style.background="#919090";
+      //  label.setAttribute('class','player_block');
+        
         label.width="20%";
         label.height="30";
     //	  if (htlivesight.DOM.getTextContent(lineup[i][j]).match("     ")){
@@ -303,6 +305,7 @@ htlivesight.DOM = {
         	hbox.appendChild(label_empty);
         }
         label.innerHTML= htlivesight.DOM.getTextContent(lineup[i][j]);
+     //   label.setAttribute("class", "player_block");
      //   label.setAttribute("class", "border");
         hbox.appendChild(label);
       }
