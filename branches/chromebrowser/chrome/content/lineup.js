@@ -396,7 +396,7 @@ htlivesight.LineUp.SwapEvent= function(event, match){
     if (match.isAwayTeam(event.subjectTeamId))
   	   var lineUp=match.away.lineUp;
     
-    if (lineUp== undefined) alert("subjectTeamId is uncorrect! SubjectTeamId="+event.subjectTeamId);
+ //   if (lineUp== undefined) alert("subjectTeamId is uncorrect! SubjectTeamId="+event.subjectTeamId);
            
     subjectPlayer.name= htlivesight.Events.translate.parseScorer(event.text, event.subjectPlayerId);
 
@@ -415,7 +415,7 @@ htlivesight.LineUp.SwapEvent= function(event, match){
     }
     
     if ((subjectPlayer.name== undefined)||(objectPlayer.name== undefined)||(subjectPlayer.id==undefined)||(objectPlayer.id==undefined)){
-    alert("subjectPlayer id="+subjectPlayer.id+"\n subject player name="+subjectPlayer.name+"\n objectPlayer id="+objectPlayer.id+"\n object player name="+objectPlayer.name);
+//    alert("subjectPlayer id="+subjectPlayer.id+"\n subject player name="+subjectPlayer.name+"\n objectPlayer id="+objectPlayer.id+"\n object player name="+objectPlayer.name);
     }
     for (var index=0; index < lineUp.length; index++){
     	if (lineUp[index].id==subjectPlayer.id){
