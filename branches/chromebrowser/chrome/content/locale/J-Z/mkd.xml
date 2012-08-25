@@ -190,8 +190,15 @@
 <MatchesHours>час.</MatchesHours>
 <MatchesFriends>Пријатели</MatchesFriends>
 <MatchesGetFriends>Земи натпревари на пријателите</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Стрелци</MatchesScorers>
 <ScorersList>Излистај ги стрелците во насловот</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Прозорец</MatchesWindow>
 <MatchesLines>Број на линии за прикажување во минимизиран мод</MatchesLines>
 <NotifyNotify>Нотификации</NotifyNotify>

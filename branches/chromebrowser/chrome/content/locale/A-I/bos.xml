@@ -192,6 +192,13 @@
 <MatchesGetFriends>Dohvati utakmice prijatelja</MatchesGetFriends>
 <MatchesScorers>Strijelci</MatchesScorers>
 <ScorersList>Lista strijelaca u zaglavlju</ScorersList>
+<MatchesHeader>Header</MatchesHeader>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Opcije prikaza</MatchesWindow>
 <MatchesLines>Broj linija u smanjenom prikazu</MatchesLines>
 <NotifyNotify>Obavijesti</NotifyNotify>

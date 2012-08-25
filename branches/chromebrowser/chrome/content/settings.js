@@ -101,6 +101,7 @@ htlivesight.Settings = {
 			document.getElementById("chkHdrScorers").checked=prefs.matches.scorers;
 			document.getElementById("chkHdrBooked").checked=prefs.matches.booked;
 			document.getElementById("chkHdrSentOff").checked=prefs.matches.sentOff;
+			document.getElementById("chkHdrInjured").checked=prefs.matches.injured;
 			//   alert("load15");
 			document.getElementById("txtMatchWindowSize").value=prefs.matches.windowSize;
 			//  alert("load16");
@@ -313,12 +314,15 @@ htlivesight.Settings = {
 			document.getElementById("label_chkGetFriendsWithin").innerHTML=htlivesight.Util.Parse("MatchesPlayed",data[0]);
 			document.getElementById("MatchesHours2").innerHTML=htlivesight.Util.Parse("MatchesHours",data[0]);
 //			alert("22")
-			document.getElementById("MatchesScorers").innerHTML=htlivesight.Util.Parse("MatchesScorers",data[0]);
+			document.getElementById("MatchesHeader").innerHTML=htlivesight.Util.Parse("MatchesHeader",data[0]);
+		//	document.getElementById("MatchesScorers").innerHTML=htlivesight.Util.Parse("MatchesScorers",data[0]);
 			document.getElementById("label_chkHdrScorers").innerHTML=htlivesight.Util.Parse("ScorersList",data[0]);
-			document.getElementById("MatchesBooked").innerHTML=htlivesight.Util.Parse("MatchesBooked",data[0]);
+		//	document.getElementById("MatchesBooked").innerHTML=htlivesight.Util.Parse("MatchesBooked",data[0]);
 			document.getElementById("label_chkHdrBooked").innerHTML=htlivesight.Util.Parse("BookedList",data[0]);
-			document.getElementById("MatchesSentOff").innerHTML=htlivesight.Util.Parse("MatchesSentOff",data[0]);
+		//	document.getElementById("MatchesSentOff").innerHTML=htlivesight.Util.Parse("MatchesSentOff",data[0]);
 			document.getElementById("label_chkHdrSentOff").innerHTML=htlivesight.Util.Parse("SentOffList",data[0]);
+		//	document.getElementById("MatchesInjured").innerHTML=htlivesight.Util.Parse("MatchesInjured",data[0]);
+			document.getElementById("label_chkHdrInjured").innerHTML=htlivesight.Util.Parse("InjuredList",data[0]);
 			
 			document.getElementById("MatchesWindow").innerHTML=htlivesight.Util.Parse("MatchesWindow",data[0]);
 			document.getElementById("MatchesLines").innerHTML=htlivesight.Util.Parse("MatchesLines",data[0]);
@@ -594,6 +598,11 @@ htlivesight.Settings = {
 				var prefs = htlivesight.Settings.preferences;
 				prefs.matches.sentOff = document.getElementById("chkHdrSentOff").checked;
 			},
+			
+			chkhdrinjured: function() {
+				var prefs = htlivesight.Settings.preferences;
+				prefs.matches.injured = document.getElementById("chkHdrInjured").checked;
+			},			
 			
 			txtfixwindowsize: function() {
 				var prefs = htlivesight.Settings.preferences;

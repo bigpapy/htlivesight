@@ -192,6 +192,13 @@
 <MatchesGetFriends>Lae sõprade mängud</MatchesGetFriends>
 <MatchesScorers>Värava lööjad</MatchesScorers>
 <ScorersList>Kuva värava lööjad päises</ScorersList>
+<MatchesHeader>Header</MatchesHeader>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Mängu aken</MatchesWindow>
 <MatchesLines>Ridu, mida kuvatakse minimiseeritult</MatchesLines>
 <NotifyNotify>Teavitused</NotifyNotify>

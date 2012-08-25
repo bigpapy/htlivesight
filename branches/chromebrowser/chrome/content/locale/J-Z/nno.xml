@@ -190,8 +190,15 @@
 <MatchesHours>timar.</MatchesHours>
 <MatchesFriends>Vener</MatchesFriends>
 <MatchesGetFriends>Hent venene sine kampar</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Målscorarar</MatchesScorers>
 <ScorersList>Vis målscorarar i oversikta</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Vindauge</MatchesWindow>
 <MatchesLines>Antall linjer i de siste hendingane</MatchesLines>
 <NotifyNotify>Påminningar</NotifyNotify>

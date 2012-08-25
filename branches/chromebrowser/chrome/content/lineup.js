@@ -414,9 +414,9 @@ htlivesight.LineUp.SwapEvent= function(event, match){
     	}
     }
     
-    if ((subjectPlayer.name== undefined)||(objectPlayer.name== undefined)||(subjectPlayer.id==undefined)||(objectPlayer.id==undefined)){
+//    if ((subjectPlayer.name== undefined)||(objectPlayer.name== undefined)||(subjectPlayer.id==undefined)||(objectPlayer.id==undefined)){
 //    alert("subjectPlayer id="+subjectPlayer.id+"\n subject player name="+subjectPlayer.name+"\n objectPlayer id="+objectPlayer.id+"\n object player name="+objectPlayer.name);
-    }
+//    }
     for (var index=0; index < lineUp.length; index++){
     	if (lineUp[index].id==subjectPlayer.id){
     		lineUp[index].name=objectPlayer.name;

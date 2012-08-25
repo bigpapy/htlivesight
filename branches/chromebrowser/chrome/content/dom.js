@@ -926,7 +926,89 @@ try{ //added by bigpapy to debug from xul to html
  	      }
  	    }
  	   // part added by bigpapy to show sent_off players (end)
-    
+
+	      // part added by bigpapy to show injured players (begin)
+ 	    if (htlivesight.prefs.matches.injured) {
+ 	    	
+  	      label = document.getElementById("home_team_injured1_" + match.id + "_" + match.youth);
+  	      
+  	      var label2 = document.getElementById("home_team_injured2_" + match.id + "_" + match.youth);
+  
+ 	      var label3 = document.getElementById("away_team_injured2_" + match.id + "_" + match.youth);
+ 
+ 	      if (match.home.injuries) {
+ 
+ 	        var injuredText = new Array;
+ 
+ 	        injuredText[0] = "";
+ 
+ 	        injuredText[1] = "";
+ 	        
+ 	        var line = 0;
+ 	        
+ 	        var numplayer = 1;
+ 
+ 	        for(var player in match.home.injuries) {
+
+ 	        	if (match.home.injuries[player].name!= undefined && match.home.injuries[player].mins!= undefined)
+
+ 	        		injuredText[line] += match.home.injuries[player].name + match.home.injuries[player].mins + ") ";
+ 
+ 	          if (numplayer++ == 3)
+  
+ 	            line++;
+ 	        }
+
+ 	        label.innerHTML= htlivesight.DOM.getTextContent(injuredText[0]);
+ 	        
+	        if (numplayer > 4) {
+ 
+ 	          label2.innerHTML= htlivesight.DOM.getTextContent(injuredText[1]);
+ 
+ 	          label2.setAttribute("style", "display:block");
+  
+ 	          label3.setAttribute("style", "display:block");
+ 
+ 	        }
+ 	      }
+
+ 	      label = document.getElementById("away_team_injured1_" + match.id + "_" + match.youth);
+ 
+ 	      if (match.away.injuries) {
+ 
+ 	        var injuredText = new Array;
+ 
+ 	        injuredText[0] = "";
+ 	        
+ 	        injuredText[1] = "";
+ 	        
+  	        var line = 0;
+  	        
+ 	        var numplayer = 1;
+ 	        
+ 	        for(var player in match.away.injuries) {
+ 	        	
+  	        	if (match.away.injuries[player].name!= undefined && match.away.injuries[player].mins!= undefined)
+
+  	        		injuredText[line] += match.away.injuries[player].name + match.away.injuries[player].mins + ") ";
+
+  	        	if (numplayer++ == 3)
+  	            line++;
+ 	        }
+ 	        label.innerHTML= htlivesight.DOM.getTextContent(injuredText[0]);
+ 	        
+ 	        if (numplayer > 4) {
+ 	        	
+ 	          label3.innerHTML= htlivesight.DOM.getTextContent(injuredText[1]);
+ 	          
+  	          label3.setAttribute("style", "display:block");
+  	          
+ 	          label2.setAttribute("style", "display:block");
+
+ 	        }
+ 	      }
+ 	    }
+ 	   // part added by bigpapy to show injured players (end)
     
     
     
@@ -1353,6 +1435,52 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 
 	  }
   
+	// new part added by bigpapy (injured): begin
+	  
+	  if (htlivesight.prefs.matches.injured) {
+
+		  hbox7 = document.createElement("tr"); //bigpapy add to fix it
+			hbox7.setAttribute("class", "injured");
+			vbox.appendChild(hbox7);
+			
+			box71 = document.createElement("td");
+			//box1.colSpan ="3";
+			box71.setAttribute("align", "right");
+			box71.setAttribute("width", "47%");
+			box71.setAttribute("class", "injured_home");
+			hbox7.appendChild(box71);
+			  
+		    label = document.createElement("span");
+		    label.style.color= "#FA6C64";
+		    box71.appendChild(label);
+		    label.setAttribute("id", "home_team_injured1_" + match.id + "_" + match.youth);
+		    //label.setAttribute("class", "tactic");
+		    
+		    //label.setAttribute("value", " ");
+		    label.innerHTML= " ";
+		    
+		    hbox8 = document.createElement("tr"); //bigpapy add to fix it
+			hbox8.setAttribute("class", "injured");
+			vbox.appendChild(hbox8);
+			
+			box81 = document.createElement("td");
+			//box1.colSpan ="3";
+			box81.setAttribute("align", "right");
+			box81.setAttribute("width", "47%");
+			box81.setAttribute("class", "injured_home");
+			hbox8.appendChild(box81);
+		    
+		    label = document.createElement("span");
+		    box81.style.color= "#FA6C64";
+		    box81.appendChild(label);
+		    label.setAttribute("id", "home_team_injured2_" + match.id + "_" + match.youth);
+		    //label.setAttribute("class", "tactic");
+		    //label.setAttribute("value", " ");
+		    label.innerHTML= " ";
+		    label.setAttribute("style", "display:none");
+	 // new part added by bigpapy (injured): end
+
+	  }
   
   
   
@@ -1418,7 +1546,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	link.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
   //label.style.fontSize="xx-large";
   
-  if (!htlivesight.prefs.matches.scorers  && !htlivesight.prefs.matches.booked && !htlivesight.prefs.matches.sentOff) {
+  if (!htlivesight.prefs.matches.scorers  && !htlivesight.prefs.matches.booked && !htlivesight.prefs.matches.sentOff && !htlivesight.prefs.matches.injured) {
     //hbox = document.createElement("hbox");
  //   hbox = document.createElement("tr");//bigpapy: added to fix html
  //   vbox.appendChild(hbox);
@@ -1584,6 +1712,55 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	    label.setAttribute("style", "display:none");
 
  // new part added by bigpapy (sent_off): end
+
+  }
+  
+  // new part added by bigpapy (injured): begin
+
+  if (htlivesight.prefs.matches.injured) {
+	  
+	  box72 = document.createElement("td");  
+		hbox7.appendChild(box72);
+		box72.setAttribute("width", "6%");
+		
+		box73 = document.createElement("td");
+		//box3.colSpan ="3";
+		box73.setAttribute("align", "left");
+		//box3.setAttribute("valign", "bottom");
+		box73.setAttribute("width", "47%");
+		box73.setAttribute("class", "injured_away");
+		hbox7.appendChild(box73);
+		  
+	    label = document.createElement("span");
+	    label.style.color= "#FA6C64";
+	    box73.appendChild(label);
+	    label.setAttribute("id", "away_team_injured1_" + match.id + "_" + match.youth);
+	    //label.setAttribute("class", "tactic");
+	    label.innerHTML= " ";
+	    //label.setAttribute("value", " ");
+	    
+	    box82 = document.createElement("td");
+		//box1.colSpan ="3";
+		box82.setAttribute("width", "6%");
+		hbox8.appendChild(box82);
+		
+		box83 = document.createElement("td");
+		//box1.colSpan ="3";
+		box83.setAttribute("align", "left");
+		box83.setAttribute("width", "47%");
+		box83.setAttribute("class", "injured_away");
+		hbox8.appendChild(box83);
+	    
+	    label = document.createElement("span");
+	    box83.style.color= "#FA6C64";
+	    box83.appendChild(label);
+	    label.setAttribute("id", "away_team_injured2_" + match.id + "_" + match.youth);
+	    //label.setAttribute("class", "tactic");
+	    //label.setAttribute("value", " ");
+	    label.innerHTML= " ";
+	    label.setAttribute("style", "display:none");
+
+ // new part added by bigpapy (injured): end
 
   }
 

@@ -190,8 +190,15 @@
 <MatchesHours>oere.</MatchesHours>
 <MatchesFriends>Freonen</MatchesFriends>
 <MatchesGetFriends>Helje wedstryden fan freonen op</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Doelpuntenmakkers</MatchesScorers>
 <ScorersList>Lit doelpuntenmakkers yn de kop sjen</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Finster</MatchesWindow>
 <MatchesLines>Rigels sichtber yn minimaal finster</MatchesLines>
 <NotifyNotify>Meldingen</NotifyNotify>

@@ -190,8 +190,15 @@
 <MatchesHours>tunnin sisällä.</MatchesHours>
 <MatchesFriends>Ystävät</MatchesFriends>
 <MatchesGetFriends>Hae ystävien ottelut</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Maalintekijät</MatchesScorers>
 <ScorersList>Listaa maalintekijät yläpalkissa</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Ikkuna</MatchesWindow>
 <MatchesLines>Rivejä pienennetyssä muodossa</MatchesLines>
 <NotifyNotify>Ilmoitukset</NotifyNotify>

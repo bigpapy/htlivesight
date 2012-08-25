@@ -190,8 +190,15 @@
 <MatchesHours>horas.</MatchesHours>
 <MatchesFriends>Amigos</MatchesFriends>
 <MatchesGetFriends>Bajar partidos de amigo</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Goleadores</MatchesScorers>
 <ScorersList>Clasificación de Pichichis</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Ventana completa</MatchesWindow>
 <MatchesLines>Mostrar líneas de detalle al minimizar</MatchesLines>
 <NotifyNotify>Notificaciones</NotifyNotify>

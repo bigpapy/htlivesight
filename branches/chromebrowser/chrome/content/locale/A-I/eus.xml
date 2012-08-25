@@ -192,6 +192,13 @@
 <MatchesGetFriends>Lagunaren partiduak deskargatu</MatchesGetFriends>
 <MatchesScorers>Goleatzaileak</MatchesScorers>
 <ScorersList>Goleatzaileen sailkapena</ScorersList>
+<MatchesHeader>Header</MatchesHeader>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Lehio osoa</MatchesWindow>
 <MatchesLines>Ikonotutakoan bistaratzeko xehetasun lerroak</MatchesLines>
 <NotifyNotify>Jakinarazpenak</NotifyNotify>

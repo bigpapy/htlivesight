@@ -192,6 +192,13 @@
 <MatchesGetFriends>الحصول على مباريات الاصدقاء</MatchesGetFriends>
 <MatchesScorers>المسجلين</MatchesScorers>
 <ScorersList>قائمة المسجلين بالرأس</ScorersList>
+<MatchesHeader>Header</MatchesHeader>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>نافذة</MatchesWindow>
 <MatchesLines>عدد الاسطر المرئية في الوضع المصغر</MatchesLines>
 <NotifyNotify>التنبيهات</NotifyNotify>

@@ -190,8 +190,15 @@
 <MatchesHours>jam.</MatchesHours>
 <MatchesFriends>Teman</MatchesFriends>
 <MatchesGetFriends>Ambil pertandingan teman</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Skorer</MatchesScorers>
 <ScorersList>Daftar skorer dengan kepala</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Jendela</MatchesWindow>
 <MatchesLines>Baris yang ditampilkan pada mode minimal</MatchesLines>
 <NotifyNotify>Pemberitahuan</NotifyNotify>

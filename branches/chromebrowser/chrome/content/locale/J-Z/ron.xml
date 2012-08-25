@@ -190,8 +190,15 @@
 <MatchesHours>ore.</MatchesHours>
 <MatchesFriends>Prieteni</MatchesFriends>
 <MatchesGetFriends>Obţine meciurile prietenilor</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Marcatori</MatchesScorers>
 <ScorersList>Afişează marcatorii în header</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Fereastră</MatchesWindow>
 <MatchesLines>Linii de afişat în modul minimizat</MatchesLines>
 <NotifyNotify>Notificări</NotifyNotify>

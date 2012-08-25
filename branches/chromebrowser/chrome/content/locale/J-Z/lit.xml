@@ -190,8 +190,15 @@
 <MatchesHours>valandų (ar mažiau)</MatchesHours>
 <MatchesFriends>Draugų rungtynės</MatchesFriends>
 <MatchesGetFriends>Parsisiųsti automatiškai</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Įvarčių autoriai</MatchesScorers>
 <ScorersList>Rodyti antraštėje</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Rungtynių langas</MatchesWindow>
 <MatchesLines>Sumažintame režime rodomų eilučių skaičius</MatchesLines>
 <NotifyNotify>Pranešimai</NotifyNotify>

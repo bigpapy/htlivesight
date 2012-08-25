@@ -190,8 +190,15 @@
 <MatchesHours>часов.</MatchesHours>
 <MatchesFriends>Друзья</MatchesFriends>
 <MatchesGetFriends>Открывать матчи друзей</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Забитые голы</MatchesScorers>
 <ScorersList>Показывать в заголовке</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Окно</MatchesWindow>
 <MatchesLines>Количество строк в свернутом режиме</MatchesLines>
 <NotifyNotify>Уведомления</NotifyNotify>

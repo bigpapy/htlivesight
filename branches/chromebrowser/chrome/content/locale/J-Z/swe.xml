@@ -190,8 +190,15 @@
 <MatchesHours>timmar.</MatchesHours>
 <MatchesFriends>Favoritlag</MatchesFriends>
 <MatchesGetFriends>Hämta matcher för mina favoritlag</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Målgörare</MatchesScorers>
 <ScorersList>Visa målgörare i matchens sidhuvud</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Fönster</MatchesWindow>
 <MatchesLines>Antal rader som visas i minimerat läge</MatchesLines>
 <NotifyNotify>Meddelanden</NotifyNotify>

@@ -192,6 +192,13 @@
 <MatchesGetFriends>Атрымаць матчы сяброў</MatchesGetFriends>
 <MatchesScorers>Аўтары галоў</MatchesScorers>
 <ScorersList>Спіс аўтараў галоў уверсе</ScorersList>
+<MatchesHeader>Header</MatchesHeader>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>акно</MatchesWindow>
 <MatchesLines>Радкоў у мінімальным рэжыме</MatchesLines>
 <NotifyNotify>Апавяшчэнні</NotifyNotify>

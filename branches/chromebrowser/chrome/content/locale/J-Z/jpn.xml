@@ -184,6 +184,7 @@
 <GeneralNewWindow>In a new window</GeneralNewWindow>
 <GeneralServer>Server settings</GeneralServer>
 <GeneralNote>Insert Hattrick server that you are logged on (ie. www96).</GeneralNote>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesLeague>League matches</MatchesLeague>
 <MatchesGetLeague>Get league matches</MatchesGetLeague>
 <MatchesPlayed>If played in</MatchesPlayed>
@@ -192,6 +193,12 @@
 <MatchesGetFriends>Get friends' matches</MatchesGetFriends>
 <MatchesScorers>Scorers</MatchesScorers>
 <ScorersList>List scorers in header</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Window</MatchesWindow>
 <MatchesLines>Lines to display in minimize mode</MatchesLines>
 <NotifyNotify>Notifications</NotifyNotify>

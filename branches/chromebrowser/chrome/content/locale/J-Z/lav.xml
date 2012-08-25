@@ -190,8 +190,15 @@
 <MatchesHours>stundu laikâ.</MatchesHours>
 <MatchesFriends>Draugi</MatchesFriends>
 <MatchesGetFriends>Pievienot drauga spçles</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Vârtu guvçji</MatchesScorers>
 <ScorersList>Vârtu guvçju saraksts galvenç</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Logs</MatchesWindow>
 <MatchesLines>Attçlotâs informâcijas joslas minimzçtâ reþîmâ</MatchesLines>
 <NotifyNotify>Paziòojumi</NotifyNotify>

@@ -190,8 +190,15 @@
 <MatchesHours>oris.</MatchesHours>
 <MatchesFriends>Scuadris amîs</MatchesFriends>
 <MatchesGetFriends>Cjame lis partidis de scuadris amîs</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Marcadôrs</MatchesScorers>
 <ScorersList>Zonte i marcadôrs te intestazions</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Barcon</MatchesWindow>
 <MatchesLines>Riis di mostrâ in modalitât minime</MatchesLines>
 <NotifyNotify>Avîs</NotifyNotify>

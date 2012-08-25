@@ -190,8 +190,15 @@
 <MatchesHours>hodín.</MatchesHours>
 <MatchesFriends>Priatelia</MatchesFriends>
 <MatchesGetFriends>Zobraziť zápasy priateľov</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Strelci</MatchesScorers>
 <ScorersList>Vypísať strelcov v záhlaví</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Okno</MatchesWindow>
 <MatchesLines>Riadky zobrazené v minimalizovanom móde</MatchesLines>
 <NotifyNotify>Hlásenia</NotifyNotify>

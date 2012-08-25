@@ -47,6 +47,7 @@ htlivesight.Match.side = function(team, goals, formation, tactic) {
 	  this.scorers = null;
 	  this.booked = null;
 	  this.sent_off = null;
+	  this.injuries = null;
 	  this.free_kick = 0;
 	  this.free_kick_goal = 0;
 	  this.penalty = 0;

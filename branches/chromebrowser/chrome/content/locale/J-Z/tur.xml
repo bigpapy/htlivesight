@@ -190,8 +190,15 @@
 <MatchesHours>saat içindekileri.</MatchesHours>
 <MatchesFriends>Arkadaşlar</MatchesFriends>
 <MatchesGetFriends>Arkadaşların maçlarını yükle</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Goller</MatchesScorers>
 <ScorersList>Gol atanları başlıkta göster</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Pencere</MatchesWindow>
 <MatchesLines>Satır göster (son olayları göster modunda)</MatchesLines>
 <NotifyNotify>Uyarılar</NotifyNotify>

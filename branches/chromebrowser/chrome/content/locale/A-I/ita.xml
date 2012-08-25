@@ -190,12 +190,15 @@
 <MatchesHours>ore.</MatchesHours>
 <MatchesFriends>Squadre amiche</MatchesFriends>
 <MatchesGetFriends>Carica le partite delle squadre amiche</MatchesGetFriends>
+<MatchesHeader>Intestazione</MatchesHeader>
 <MatchesScorers>Marcatori</MatchesScorers>
 <ScorersList>Aggiungi i marcatori nelle intestazioni</ScorersList>
 <MatchesBooked>Ammoniti</MatchesBooked>
 <BookedList>Aggiungi gli ammoniti nelle intestazioni</BookedList>
 <MatchesSentOff>Espulsi</MatchesSentOff>
 <SentOffList>Aggiungi gli espulsi nelle intestazioni</SentOffList>
+<MatchesInjured>Infortunati</MatchesInjured>
+<InjuredList>Aggiungi gli infortunati nelle intestazioni</InjuredList>
 <MatchesWindow>Finestra</MatchesWindow>
 <MatchesLines>Righe da mostrare in modalità minimizzata</MatchesLines>
 <NotifyNotify>Avvisi</NotifyNotify>

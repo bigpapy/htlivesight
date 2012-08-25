@@ -190,8 +190,15 @@
 <MatchesHours>timer.</MatchesHours>
 <MatchesFriends>Venner</MatchesFriends>
 <MatchesGetFriends>Hent venners kamper</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Målscorere</MatchesScorers>
 <ScorersList>Vis målscorere i oversikten</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Vindu</MatchesWindow>
 <MatchesLines>Antall linjer i de siste hendelsene</MatchesLines>
 <NotifyNotify>Påminnelser</NotifyNotify>

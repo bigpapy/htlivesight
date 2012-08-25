@@ -190,8 +190,15 @@
 <MatchesHours>sati.</MatchesHours>
 <MatchesFriends>Prijatelji</MatchesFriends>
 <MatchesGetFriends>Traži mečeve prijatelja</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Strelci</MatchesScorers>
 <ScorersList>Ispiši strelce u zaglavlju</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesBooked>Žuti kartoni</MatchesBooked>
 <BookedList>Prikaži igrače koji su dobili žuti karton u zaglavlju</BookedList>
 <MatchesSentOff>Crveni kartoni</MatchesSentOff>

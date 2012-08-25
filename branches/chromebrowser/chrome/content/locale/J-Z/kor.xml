@@ -190,8 +190,15 @@
 <MatchesHours>hours.</MatchesHours>
 <MatchesFriends>친구</MatchesFriends>
 <MatchesGetFriends>친구의 경기 가져오기</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>득점자</MatchesScorers>
 <ScorersList>List scorers in header</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>창</MatchesWindow>
 <MatchesLines>Lines to display in minimize mode</MatchesLines>
 <NotifyNotify>알림</NotifyNotify>

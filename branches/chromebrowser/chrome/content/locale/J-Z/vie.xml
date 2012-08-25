@@ -190,8 +190,15 @@
 <MatchesHours>giờ.</MatchesHours>
 <MatchesFriends>Bạn</MatchesFriends>
 <MatchesGetFriends>Lấy dữ liệu trận đấu của bạn mình</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Các cầu thủ ghi bàn</MatchesScorers>
 <ScorersList>Hiển thị các cầu thủ ghi bàn trên cùng</ScorersList>
+<MatchesBooked>Booked</MatchesBooked>
+<BookedList>List booked in header</BookedList>
+<MatchesSentOff>Sent off</MatchesSentOff>
+<SentOffList>List sent off in header</SentOffList>
+<MatchesInjured>Injured</MatchesInjured>
+<InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Cửa sổ</MatchesWindow>
 <MatchesLines>Dòng hiển thị trong chế độ thu nhỏ</MatchesLines>
 <NotifyNotify>Thông báo</NotifyNotify>

@@ -83,13 +83,16 @@ document.getElementById("MatchesFriends").innerHTML=htlivesight.Util.Parse("Matc
 document.getElementById("label_chkGetFriends").innerHTML=htlivesight.Util.Parse("MatchesGetFriends",htlivesight.data[0]);
 document.getElementById("label_chkGetFriendsWithin").innerHTML=htlivesight.Util.Parse("MatchesPlayed",htlivesight.data[0]);
 document.getElementById("MatchesHours2").innerHTML=htlivesight.Util.Parse("MatchesHours",htlivesight.data[0]);
-document.getElementById("MatchesScorers").innerHTML=htlivesight.Util.Parse("MatchesScorers",htlivesight.data[0]);
+document.getElementById("MatchesHeader").innerHTML=htlivesight.Util.Parse("MatchesHeader",htlivesight.data[0]);
+//document.getElementById("MatchesScorers").innerHTML=htlivesight.Util.Parse("MatchesScorers",htlivesight.data[0]);
 document.getElementById("label_chkHdrScorers").innerHTML=htlivesight.Util.Parse("ScorersList",htlivesight.data[0]);
 
-document.getElementById("MatchesBooked").innerHTML=htlivesight.Util.Parse("MatchesBooked",htlivesight.data[0]);
+//document.getElementById("MatchesBooked").innerHTML=htlivesight.Util.Parse("MatchesBooked",htlivesight.data[0]);
 document.getElementById("label_chkHdrBooked").innerHTML=htlivesight.Util.Parse("BookedList",htlivesight.data[0]);
-document.getElementById("MatchesSentOff").innerHTML=htlivesight.Util.Parse("MatchesSentOff",htlivesight.data[0]);
+//document.getElementById("MatchesSentOff").innerHTML=htlivesight.Util.Parse("MatchesSentOff",htlivesight.data[0]);
 document.getElementById("label_chkHdrSentOff").innerHTML=htlivesight.Util.Parse("SentOffList",htlivesight.data[0]);
+//document.getElementById("MatchesInjured").innerHTML=htlivesight.Util.Parse("MatchesInjured",htlivesight.data[0]);
+document.getElementById("label_chkHdrInjured").innerHTML=htlivesight.Util.Parse("InjuredList",htlivesight.data[0]);
 
 document.getElementById("MatchesWindow").innerHTML=htlivesight.Util.Parse("MatchesWindow",htlivesight.data[0]);
 document.getElementById("MatchesLines").innerHTML=htlivesight.Util.Parse("MatchesLines",htlivesight.data[0]);
