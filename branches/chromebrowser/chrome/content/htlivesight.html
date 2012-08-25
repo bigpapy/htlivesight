@@ -426,60 +426,63 @@
 				<div id="otabs-6">
 			<!--TAB5-->
 			<fieldset>
-				<legend id="CustomEventColors">Events</legend>
-				<span>You can choose your color at </span><a href="http://www.colorpicker.com/" target="_blank">http://www.colorpicker.com/</a><br />
+				<legend id="CustomEventColors">Event background color</legend>
+				<span>You can choose your color at </span><a href="http://www.colorpicker.com/" target="_blank">http://www.colorpicker.com/</a><br /><br />
 				<input type="checkbox" id="friendHomeColorCheck"
 					onclick="htlivesight.Settings.click.friendHomeColorCheck();" />
-					<label for="friendHomeColorCheck" id="label_friendHomeColorCheck"> Set a custom background color for your
-					 friend's (and your own) events when playing at home</label><br /><br />
-					<label for="friendHomeColorCode" id="label_friendHomeColorCode">Friend's at home hex color: #</label>
+					<!--  <label for="friendHomeColorCheck" id="label_friendHomeColorCheck"> Set a custom background color for your
+					 friend's (and your own) events when playing at home</label> -->
+					<label for="friendHomeColorCheck" id="label_friendHomeColorCode">Friend home hex color: #</label> 
 					<input type="text" name="friendHomeColor" id="friendHomeColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.friendHomeColorSet();" /><br /><br />
 				
 				<input type="checkbox" id="friendAwayColorCheck"
 					onclick="htlivesight.Settings.click.friendAwayColorCheck();" />
-					<label for="friendAwayColorCheck" id="label_friendAwayColorCheck"> Set a custom background color for your friend's (and your own) events when playing away</label><br /><br />
-					<label for="friendAwayColorCode" id="label_friendAwayColorCode">Friend's away hex color: #</label>
+				<!--	<label for="friendAwayColorCheck" id="label_friendAwayColorCheck"> Set a custom background color for your friend's (and your own) events when playing away</label> -->
+					<label for="friendAwayColorCheck" id="label_friendAwayColorCode">Friend away hex color: #</label> 
 					<input type="text" name="friendAwayColor"	id="friendAwayColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.friendAwayColorSet();" /><br /><br />
 				
 				<input type="checkbox" id="foeHomeColorCheck"
-					onclick="htlivesight.Settings.click.foeHomeColorCheck();" /><label
+					onclick="htlivesight.Settings.click.foeHomeColorCheck();" /><!--<label
 					for="foeHomeColorCheck" id="label_foeHomeColorCheck"> Set a
-					custom background color for foreign home team events</label><br /> 
-					 <br /> <label for="foeHomeColorCode" id="label_foeHomeColorCode">Foreign home hex color: #</label><input type="text" name="foeHomeColor"
+					custom background color for foreign home team events</label>-->
+					<label for="foeHomeColorCheck" id="label_foeHomeColorCode">Foreign home hex color: #</label><input type="text" name="foeHomeColor"
 					id="foeHomeColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.foeHomeColorSet();" /> <br /> <br />
 				
 				<input type="checkbox" id="foeAwayColorCheck"
-					onclick="htlivesight.Settings.click.foeAwayColorCheck();" /><label
+					onclick="htlivesight.Settings.click.foeAwayColorCheck();" /><!--<label
 					for="foeAwayColorCheck" id="label_foeAwayColorCheck"> Set a
-					custom background color for foreign away team events</label><br /> 
-					 <br /> <label for="foeAwayColorCode" id="label_foeAwayColorCode">Foreign away hex color: #</label><input type="text" name="foeAwayColor"
+					custom background color for foreign away team events</label> <br /> 
+					 <br /> --><label for="foeAwayColorCheck" id="label_foeAwayColorCode">Foreign away hex color: #</label><input type="text" name="foeAwayColor"
 					id="foeAwayColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.foeAwayColorSet();" /> <br /> <br />
 					
 				<input type="checkbox" id="neutralColorCheck"
-					onclick="htlivesight.Settings.click.neutralColorCheck();" /><label
+					onclick="htlivesight.Settings.click.neutralColorCheck();" /><!-- <label
 					for="neutralColorCheck" id="label_neutralColorCheck"> Set a
 					custom background color for neutral events</label><br /> 
-					 <br /> <label for="neutralColorCode" id="label_neutralColorCode">Neutral hex color: #</label><input type="text" name="neutralColor"
+					 <br />--> <label for="neutralColorCheck" id="label_neutralColorCode">Neutral hex color: #</label><input type="text" name="neutralColor"
 					id="neutralColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.neutralColorSet();" /> <br /> <br />
-					
+
+				</fieldset>
+	<fieldset>
+	<legend id="CustomEventColors">Event text color</legend>					
 				<input type="checkbox" id="textColorCheck"
-					onclick="htlivesight.Settings.click.textColorCheck();" /><label
+					onclick="htlivesight.Settings.click.textColorCheck();" /><!--<label
 					for="textColorCheck" id="label_textColorCheck"> Set
 					a custom color for event text</label><br /> 
-					 <br /> <label for="textColorCode" id="label_textColorCode">Event text hex color: #</label> <input type="text" name="textColor"
+					 <br />--> <label for="textColorCheck" id="label_textColorCode">Event text hex color: #</label> <input type="text" name="textColor"
 					id="textColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.textColorSet();" /> <br /> <br />
 					
 				<input type="checkbox" id="seTextColorCheck"
-					onclick="htlivesight.Settings.click.seTextColorCheck();" /><label
+					onclick="htlivesight.Settings.click.seTextColorCheck();" /><!--<label
 					for="seTextColorCheck" id="label_seTextColorCheck"> Set a
 					custom color for SE text</label><br /> 
-					 <br /> <label for="seTextColorCode" id="label_seTextColorCode">SE text hex color: #</label> <input type="text" name="seTextColor"
+					 <br />--> <label for="seTextColorCheck" id="label_seTextColorCode">SE text hex color: #</label> <input type="text" name="seTextColor"
 					id="seTextColorCode" class="text ui-widget-content ui-corner-all"
 					oninput="htlivesight.Settings.click.seTextColorSet();" />  	
 			</fieldset>
@@ -511,7 +514,7 @@
 				</ul>
 				<div id="tabs-1">
 					<img src="./themes/images/256.png" alt="HTLiveSight Logo"><br />
-					HTLiveSightDEV 0.5.850<br />
+					HTLiveSightDEV 0.5.842<br />
 					<span id="creationDate"></span><br /><br />
 					<span id="createdBy"></span><br />
 					Silkevicious &amp; Bigpapy<br /><br />
