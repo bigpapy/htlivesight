@@ -271,57 +271,57 @@
 <TextThanksTo>Un grande ringraziamento a:</TextThanksTo>
 <ButtonClose>Chiudi</ButtonClose>
 
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at www.colorpicker.com</ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) hex color: #</FriendHome>
-<FriendAway>Away (own and friends) hex color: #</FriendAway>
-<FoeHome>Home foreign hex color: #</FoeHome>
-<FoeAway>Away foreign hex color: #</FoeAway>
-<Neutral>Neutral hex color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text hex color: #</EventTextColor>
-<SETextColor>Special event text hex color: #</SETextColor>
+<NonExistent>Inesistente</NonExistent>
+<Disastrous>Disastroso</Disastrous>
+<Wretched>Tremendo</Wretched>
+<Poor>Scarso</Poor>
+<Weak>Debole</Weak>
+<Inadequate>Insufficiente</Inadequate>
+<Passable>Accettabile</Passable>
+<Solid>Buono</Solid>
+<Excellent>Eccellente</Excellent>
+<Formidable>Formidabile</Formidable>
+<Outstanding>Straordinario</Outstanding>
+<Brilliant>Splendido</Brilliant>
+<Magnificent>Magnifico</Magnificent>
+<WorldClass>Fuoriclasse</WorldClass>
+<Supernatural>Sovrannaturale</Supernatural>
+<Titanic>Titanico</Titanic>
+<ExtraTerrestrial>Extraterrestre</ExtraTerrestrial>
+<Mythical>Mitico</Mythical>
+<Magical>Magico</Magical>
+<Utopian>Utopico</Utopian>
+<Divine>Divino</Divine>
+<VeryHigh>molto alto</VeryHigh>
+<High>alto</High>
+<Low>basso</Low>
+<VeryLow>molto basso</VeryLow>
+<RightDefence>Difesa destra</RightDefence>
+<MiddleDefence>Difesa centrale</MiddleDefence>
+<LeftDefence>Difesa sinistra</LeftDefence>
+<Midfield>Centrocampo</Midfield>
+<RightAttack>Attacco destro</RightAttack>
+<MiddleAttack>Attacco centrale</MiddleAttack>
+<LeftAttack>Attacco sinistro</LeftAttack>
+<IndirectSetPiecesDefence>Calci di punizione indiretti difesa</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Calci di punizione indiretti attacco</IndirectSetPiecesAttack>
+<TeamAttitude>Attitudine di squadra</TeamAttitude>
+<TacticType>Tipo di tattica</TacticType>
+<TacticSkill>Livello di tattica</TacticSkill>
+<BallPosses>Possesso palla</BallPosses>
+<SpecialEvent>Special Event</SpecialEvent>
+<Normal>Normale</Normal>
+<PIC>Partitella</PIC>
+<MOTS>Partita della stagione</MOTS>
+<ColorPicker>Puoi scegliere il tuoi colori a www.colorpicker.com</ColorPicker>
+<EventBackground>Colore sfondo eventi</EventBackground>
+<FriendHome>Colore eventi squadra propria/amica casa (esadecimale): #</FriendHome>
+<FriendAway>Colore eventi squadra propria/amica trasferta (esadecimale): #</FriendAway>
+<FoeHome>Colore eventi squadra estranea casa (esadecimale): #</FoeHome>
+<FoeAway>Colore eventi squadra estranea trasferta (esadecimale): #</FoeAway>
+<Neutral>Colore evento neutrale (esadecimale): #</Neutral>
+<EventColorTitle>Colore testo evento</EventColorTitle>
+<EventTextColor>Colore testo evento (esadecimale): #</EventTextColor>
+<SETextColor>Colore testo Special Event (esadecimale): #</SETextColor>
 
 </Htlivesight>
