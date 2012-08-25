@@ -463,7 +463,17 @@ htlivesight.Settings = {
 //			alert("57");
 			document.getElementById("label_hattrickButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 //			alert("58: la fine! Tutto OK!");
-
+			document.getElementById("TabColors").innerHTML=htlivesight.Util.Parse("Colors",data[0]);
+			document.getElementById("CustomEventBackground").innerHTML=htlivesight.Util.Parse("EventBackground",data[0]);
+			document.getElementById("ChooseColor").innerHTML=htlivesight.Util.Parse("ColorPicker",data[0]);
+			document.getElementById("label_friendHomeColorCode").innerHTML=htlivesight.Util.Parse("FriendHome",data[0]);
+			document.getElementById("label_friendAwayColorCode").innerHTML=htlivesight.Util.Parse("FriendAway",data[0]);
+			document.getElementById("label_foeHomeColorCode").innerHTML=htlivesight.Util.Parse("FoeHome",data[0]);
+			document.getElementById("label_foeAwayColorCode").innerHTML=htlivesight.Util.Parse("FoeAway",data[0]);
+			document.getElementById("label_neutralColorCode").innerHTML=htlivesight.Util.Parse("Neutral",data[0]);
+			document.getElementById("CustomEventText").innerHTML=htlivesight.Util.Parse("EventColorTitle",data[0]);
+			document.getElementById("label_textColorCode").innerHTML=htlivesight.Util.Parse("EventTextColor",data[0]);
+			document.getElementById("label_seTextColorCode").innerHTML=htlivesight.Util.Parse("SETextColor",data[0]);
 
 
 		}, 

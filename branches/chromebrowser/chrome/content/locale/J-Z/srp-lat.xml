@@ -317,7 +317,7 @@
 <Normal>Normal</Normal>
 <PIC>Play it cool</PIC>
 <MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at www.colorpicker.com</ColorPicker>
+<ColorPicker>You can choose your color at </ColorPicker>
 <EventBackground>Event background color</EventBackground>
 <FriendHome>Home (own and friends) hex color: #</FriendHome>
 <FriendAway>Away (own and friends) hex color: #</FriendAway>
@@ -327,5 +327,6 @@
 <EventColorTitle>Event text color</EventColorTitle>
 <EventTextColor>Event text hex color: #</EventTextColor>
 <SETextColor>Special event text hex color: #</SETextColor>
+<Colors>Colors</Colors>
 
 </Htlivesight>

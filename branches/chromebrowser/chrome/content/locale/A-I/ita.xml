@@ -313,15 +313,15 @@
 <Normal>Normale</Normal>
 <PIC>Partitella</PIC>
 <MOTS>Partita della stagione</MOTS>
-<ColorPicker>Puoi scegliere il tuoi colori a www.colorpicker.com</ColorPicker>
+<ColorPicker>Puoi scegliere i tuoi colori a </ColorPicker>
 <EventBackground>Colore sfondo eventi</EventBackground>
-<FriendHome>Colore eventi squadra propria/amica casa (esadecimale): #</FriendHome>
-<FriendAway>Colore eventi squadra propria/amica trasferta (esadecimale): #</FriendAway>
-<FoeHome>Colore eventi squadra estranea casa (esadecimale): #</FoeHome>
-<FoeAway>Colore eventi squadra estranea trasferta (esadecimale): #</FoeAway>
-<Neutral>Colore evento neutrale (esadecimale): #</Neutral>
+<FriendHome>Squadra propria/amica in casa : #</FriendHome>
+<FriendAway>Squadra propria/amica in trasferta : #</FriendAway>
+<FoeHome>Altra squadra in casa : #</FoeHome>
+<FoeAway>Altra squadra in trasferta : #</FoeAway>
+<Neutral>Neutrale : #</Neutral>
 <EventColorTitle>Colore testo evento</EventColorTitle>
-<EventTextColor>Colore testo evento (esadecimale): #</EventTextColor>
-<SETextColor>Colore testo Special Event (esadecimale): #</SETextColor>
-
+<EventTextColor>Evento : #</EventTextColor>
+<SETextColor>Special Event : #</SETextColor>
+<Colors>Colori</Colors>
 </Htlivesight>

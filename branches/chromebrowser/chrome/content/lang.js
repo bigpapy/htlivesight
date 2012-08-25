@@ -211,7 +211,21 @@ document.getElementById("MatchesByTeam").innerHTML=htlivesight.Util.Parse("Match
 
 document.getElementById("MenuServer").innerHTML=htlivesight.Util.Parse("MenuServer",htlivesight.data[0]);
 document.getElementById("ServerStatus").innerHTML=htlivesight.Util.Parse("MenuDisconnected",htlivesight.data[0]);
+
+
+document.getElementById("TabColors").innerHTML=htlivesight.Util.Parse("Colors",htlivesight.data[0]);
+document.getElementById("CustomEventBackground").innerHTML=htlivesight.Util.Parse("EventBackground",htlivesight.data[0]);
+document.getElementById("ChooseColor").innerHTML=htlivesight.Util.Parse("ColorPicker",htlivesight.data[0]);
+document.getElementById("label_friendHomeColorCode").innerHTML=htlivesight.Util.Parse("FriendHome",htlivesight.data[0]);
+document.getElementById("label_friendAwayColorCode").innerHTML=htlivesight.Util.Parse("FriendAway",htlivesight.data[0]);
+document.getElementById("label_foeHomeColorCode").innerHTML=htlivesight.Util.Parse("FoeHome",htlivesight.data[0]);
+document.getElementById("label_foeAwayColorCode").innerHTML=htlivesight.Util.Parse("FoeAway",htlivesight.data[0]);
+document.getElementById("label_neutralColorCode").innerHTML=htlivesight.Util.Parse("Neutral",htlivesight.data[0]);
+document.getElementById("CustomEventText").innerHTML=htlivesight.Util.Parse("EventColorTitle",htlivesight.data[0]);
+document.getElementById("label_textColorCode").innerHTML=htlivesight.Util.Parse("EventTextColor",htlivesight.data[0]);
+document.getElementById("label_seTextColorCode").innerHTML=htlivesight.Util.Parse("SETextColor",htlivesight.data[0]);
 //console.log("end localization");
+
 }
 
 };
