@@ -271,4 +271,57 @@
 <TextThanksTo>רוב תודות ל:</TextThanksTo>
 <ButtonClose>סגור</ButtonClose>
 
+<NonExistent>Non existent</NonExistent>
+<Disastrous>Disastrous</Disastrous>
+<Wretched>Wretched</Wretched>
+<Poor>Poor</Poor>
+<Weak>Weak</Weak>
+<Inadequate>Inadequate</Inadequate>
+<Passable>Passable</Passable>
+<Solid>Solid</Solid>
+<Excellent>Excellent</Excellent>
+<Formidable>Formidable</Formidable>
+<Outstanding>Outstanding</Outstanding>
+<Brilliant>Brilliant</Brilliant>
+<Magnificent>Magnificent</Magnificent>
+<WorldClass>World class</WorldClass>
+<Supernatural>Supernatural</Supernatural>
+<Titanic>Titanic</Titanic>
+<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
+<Mythical>Mythical</Mythical>
+<Magical>Magical</Magical>
+<Utopian>Utopian</Utopian>
+<Divine>Divine</Divine>
+<VeryHigh>very high</VeryHigh>
+<High>high</High>
+<Low>low</Low>
+<VeryLow>very low</VeryLow>
+<RightDefence>Right defence</RightDefence>
+<MiddleDefence>Middle defence</MiddleDefence>
+<LeftDefence>Left defence</LeftDefence>
+<Midfield>Midfield</Midfield>
+<RightAttack>Right attack</RightAttack>
+<MiddleAttack>Middle attack</MiddleAttack>
+<LeftAttack>Left attack</LeftAttack>
+<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
+<TeamAttitude>Team attitude</TeamAttitude>
+<TacticType>Tactic type</TacticType>
+<TacticSkill>Tactic skill</TacticSkill>
+<BallPosses>Ball posses</BallPosses>
+<SpecialEvent>Special event</SpecialEvent>
+<Normal>Normal</Normal>
+<PIC>Play it cool</PIC>
+<MOTS>Match of the season</MOTS>
+<ColorPicker>You can choose your color at www.colorpicker.com</ColorPicker>
+<EventBackground>Event background color</EventBackground>
+<FriendHome>Home (own and friends) hex color: #</FriendHome>
+<FriendAway>Away (own and friends) hex color: #</FriendAway>
+<FoeHome>Home foreign hex color: #</FoeHome>
+<FoeAway>Away foreign hex color: #</FoeAway>
+<Neutral>Neutral hex color: #</Neutral>
+<EventColorTitle>Event text color</EventColorTitle>
+<EventTextColor>Event text hex color: #</EventTextColor>
+<SETextColor>Special event text hex color: #</SETextColor>
+
 </Htlivesight>
