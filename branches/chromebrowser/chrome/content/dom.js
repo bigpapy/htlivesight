@@ -1258,7 +1258,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	label.appendChild(link);
 	//link.setAttribute("href", "#");
 	link.setAttribute("id", "home_team_formation_" + match.id + "_" + match.youth);
-	link.setAttribute("title", "left click to open lineup table");
+	
+	link.setAttribute("title", htlivesight.Util.Parse("SchemaTip", data[0]));
 	//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.youth+"_home"+");";
 	//link.addEventListener("click",htlivesight.DOM.formationpopup(argumentLineup));
 	link.setAttribute("onclick","htlivesight.DOM.formationpopup(this.id)");
@@ -1278,7 +1279,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		label.appendChild(link);
 		//link.setAttribute("href", "#");
 		link.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
-		link.setAttribute("title", "left click to open statistics at the end of the match");
+		link.setAttribute("title", htlivesight.Util.Parse("StatisticTip", data[0]));
 		//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.youth+"_home"+");";
 		//link.addEventListener("click",htlivesight.DOM.formationpopup(argumentLineup));
 		link.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id)");
@@ -1540,7 +1541,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	label.appendChild(link);
 	//link.setAttribute("href", "#");
 	link.setAttribute("id", "away_team_name_" + match.id + "_" + match.youth);
-	link.setAttribute("title", "left click to open statistics at the end of the match");
+
+	link.setAttribute("title", htlivesight.Util.Parse("StatisticTip", data[0]));
 	//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.youth+"_home"+");";
 	//link.addEventListener("click",htlivesight.DOM.formationpopup(argumentLineup));
 	link.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
@@ -1559,7 +1561,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	label.appendChild(link);
 	//link.setAttribute("href", "#");
 	link.setAttribute("id", "away_team_formation_" + match.id + "_" + match.youth);
-	link.setAttribute("title", "left click to open lineup");
+	link.setAttribute( "title", htlivesight.Util.Parse( "SchemaTip", data[0] ) );
 	link.setAttribute("onclick","htlivesight.DOM.formationpopup(this.id);");
     $( "#"+"away_team_formation_" + match.id + "_" + match.youth+"_table").tabs();
 //	$("#"+"away_team_formation_"+match.id+"_"+match.youth+"_table").dialog({ autoOpen: true, width: 480, height: 110 });
