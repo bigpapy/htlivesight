@@ -324,4 +324,7 @@
 <EventTextColor>Evento : #</EventTextColor>
 <SETextColor>Special Event : #</SETextColor>
 <Colors>Colori</Colors>
+<SchemaTip>Clicca per mostrare la formazione</SchemaTip>
+<StatisticTip>Clicca per mostrare le statistiche</StatisticTip>
+<Tournament>Torneo</Tournament>
 </Htlivesight>

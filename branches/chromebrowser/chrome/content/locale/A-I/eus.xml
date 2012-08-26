@@ -324,5 +324,8 @@
 <EventTextColor>Event text color: #</EventTextColor>
 <SETextColor>Special event text color: #</SETextColor>
 <Colors>Colors</Colors>
+<SchemaTip>Click to show Lineup</SchemaTip>
+<StatisticTip>Click to show Statistics</StatisticTip>
+<Tournament>Tournament</Tournament>
 
 </Htlivesight>
