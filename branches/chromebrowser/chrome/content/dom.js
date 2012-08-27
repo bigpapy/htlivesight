@@ -335,7 +335,7 @@ htlivesight.DOM = {
         var occasion=match.getSideById(event.subjectTeamId).occasion;
         var goals=match.getSideById(event.subjectTeamId).goals;
         label = document.createElement("td");
-      	label.innerHTML="goals:";
+      	label.innerHTML=htlivesight.Util.Parse("Goals",data[0]);
       	label_number = document.createElement("td");
       	label_number.innerHTML=goals+" / "+occasion;
         hbox.appendChild(label);
@@ -350,7 +350,7 @@ htlivesight.DOM = {
 	        var free_kick=match.getSideById(event.subjectTeamId).free_kick;
 	        var free_kick_goal=match.getSideById(event.subjectTeamId).free_kick_goal;
 	      	label = document.createElement("td");
-	      	label.innerHTML="free kick:";
+	      	label.innerHTML=htlivesight.Util.Parse("FreeKicks",data[0]);;
 	      	label_number = document.createElement("td");
 	      	label_number.innerHTML=free_kick_goal+" / "+free_kick;
 	        hbox.appendChild(label);
@@ -363,7 +363,7 @@ htlivesight.DOM = {
 	        var penalty=match.getSideById(event.subjectTeamId).penalty;
 	        var penalty_goal=match.getSideById(event.subjectTeamId).penalty_goal;
 	      	label = document.createElement("td");
-	      	label.innerHTML="penalty:";
+	      	label.innerHTML=htlivesight.Util.Parse("TimePenalties",data[0]);
 	      	label_number = document.createElement("td");
 	      	label_number.innerHTML=penalty_goal+" / "+penalty;
 	        hbox.appendChild(label);
@@ -376,7 +376,7 @@ htlivesight.DOM = {
 	        var left=match.getSideById(event.subjectTeamId).left;
 	        var left_goal=match.getSideById(event.subjectTeamId).left_goal;
 	        label = document.createElement("td");
-	      	label.innerHTML="left:";
+	      	label.innerHTML=htlivesight.Util.capitalize(htlivesight.Util.Parse("EventSideLeft",data[0]));
 	      	label_number = document.createElement("td");
 	      	label_number.innerHTML=left_goal+" / "+left;
 	        hbox.appendChild(label);
@@ -389,7 +389,7 @@ htlivesight.DOM = {
 	        var center=match.getSideById(event.subjectTeamId).center;
 	        var center_goal=match.getSideById(event.subjectTeamId).center_goal;
 	        label = document.createElement("td");
-	      	label.innerHTML="center:";
+	      	label.innerHTML=htlivesight.Util.capitalize(htlivesight.Util.Parse("EventSideCenter",data[0]));
 	      	label_number = document.createElement("td");
 	      	label_number.innerHTML=center_goal+" / "+center;
 	        hbox.appendChild(label);
@@ -402,7 +402,7 @@ htlivesight.DOM = {
 	        var right=match.getSideById(event.subjectTeamId).right;
 	        var right_goal=match.getSideById(event.subjectTeamId).right_goal;
 	        label = document.createElement("td");
-	      	label.innerHTML="right:";
+	      	label.innerHTML=htlivesight.Util.capitalize(htlivesight.Util.Parse("EventSideRight",data[0]));
 	      	label_number = document.createElement("td");
 	      	label_number.innerHTML=right_goal+" / "+right;
 	        hbox.appendChild(label);
@@ -415,7 +415,7 @@ htlivesight.DOM = {
 		        var special=match.getSideById(event.subjectTeamId).special_event;
 		        var special_goal=match.getSideById(event.subjectTeamId).special_event_goal;
 		        label = document.createElement("td");
-		      	label.innerHTML="SE:";
+		      	label.innerHTML=htlivesight.Util.Parse("SpecialEvent",data[0]);;
 		      	label_number = document.createElement("td");
 		      	label_number.innerHTML=special_goal+" / "+special;
 		        hbox.appendChild(label);
@@ -427,7 +427,7 @@ htlivesight.DOM = {
 				   //     label = document.createElement("label");
 				   var yellow=match.getSideById(event.subjectTeamId).yellow;
 				   label = document.createElement("td");
-			       label.innerHTML="yellow: ";
+			       label.innerHTML=htlivesight.Util.Parse("YellowCards",data[0]);
 			       label_number = document.createElement("td");
 			      	label_number.innerHTML=yellow;
 			        hbox.appendChild(label);
@@ -439,7 +439,7 @@ htlivesight.DOM = {
 					   //     label = document.createElement("label");
 				   var red=match.getSideById(event.subjectTeamId).red;
 				   label = document.createElement("td");
-			       label.innerHTML="red:";
+			       label.innerHTML=htlivesight.Util.Parse("RedCards",data[0]);
 			       label_number = document.createElement("td");
 			      	label_number.innerHTML=red;
 			        hbox.appendChild(label);
@@ -450,7 +450,7 @@ htlivesight.DOM = {
 			        hbox = document.createElement("tr");
 			   var injured=match.getSideById(event.subjectTeamId).injured;
 			   label = document.createElement("td");
-		       label.innerHTML="injured:";
+		       label.innerHTML=htlivesight.Util.Parse("Injuries",data[0]);
 		       label_number = document.createElement("td");
 		      	label_number.innerHTML=injured;
 		        hbox.appendChild(label);
@@ -463,7 +463,7 @@ htlivesight.DOM = {
 		   var possession1=match.getSideById(event.subjectTeamId).possession_1;
 		   var possession2=match.getSideById(event.subjectTeamId).possession_2;
 		   label = document.createElement("td");
-	       label.innerHTML="ball possess 1°half:";
+	       label.innerHTML=label.innerHTML=htlivesight.Util.Parse("BallPosses",data[0])+" "+htlivesight.Util.decapitalize(htlivesight.Util.Parse("TimeSecondHalf",data[0]));
 	       label_number = document.createElement("td");
 	      	label_number.innerHTML=+possession1+"%";
 	        hbox.appendChild(label);
@@ -472,8 +472,8 @@ htlivesight.DOM = {
 	        
 	        hbox = document.createElement("tr");
 	        label = document.createElement("td");
-		       label.innerHTML="ball possess 2°half:";
-		       label_number = document.createElement("td");
+		       label.innerHTML=htlivesight.Util.Parse("BallPosses",data[0])+" "+htlivesight.Util.decapitalize(htlivesight.Util.Parse("TimeFirstHalf",data[0]));
+		        label_number = document.createElement("td");
 		      	label_number.innerHTML=+possession2+"%";
 		        hbox.appendChild(label);
 		        hbox.appendChild(label_number);

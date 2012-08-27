@@ -305,7 +305,7 @@
 <LeftAttack>Attacco sinistro</LeftAttack>
 <IndirectSetPiecesDefence>Calci di punizione indiretti difesa</IndirectSetPiecesDefence>
 <IndirectSetPiecesAttack>Calci di punizione indiretti attacco</IndirectSetPiecesAttack>
-<TeamAttitude>Attitudine di squadra</TeamAttitude>
+<TeamAttitude>Atteggiamento</TeamAttitude>
 <TacticType>Tipo di tattica</TacticType>
 <TacticSkill>Livello di tattica</TacticSkill>
 <BallPosses>Possesso palla</BallPosses>
@@ -327,4 +327,17 @@
 <SchemaTip>Clicca per mostrare la formazione</SchemaTip>
 <StatisticTip>Clicca per mostrare le statistiche di fine partita</StatisticTip>
 <Tournament>Torneo</Tournament>
+
+<FreeKicks>Calci di punizione</FreeKicks>
+<RedCards>Cartellini rossi</RedCards>
+<YellowCards>Cartellini gialli</YellowCards>
+<Injuries>Infortuni</Injuries>
+<Goals>Reti</Goals>
+
+<Total>Posti Totali</Total>
+<Terraces>Gradinate</Terraces>
+<Basic>Tribune</Basic>
+<Roof>Tribune coperte</Roof>
+<VIP>Poltrone VIP</VIP>
+
 </Htlivesight>

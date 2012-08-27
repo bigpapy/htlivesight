@@ -149,13 +149,15 @@ htlivesight.LineUp.FromArrayToString= function (lineUp){
 
 // used by sent off event and injury without replacement
 htlivesight.LineUp.RemovePlayerFromLineUp= function (lineUp,playerId){
-	
+//	alert("lineUp.length="+lineUp.length);
 	for (var index=0; index<lineUp.length; index++) // building the lineup string
 	{
 	//	console.log("removeplayer: lineUp[index].id="+lineUp[index].id);
 	//	console.log("removeplayer: playerId="+playerId);
+//		alert("lineUp["+index+"].id= "+lineUp[index].id+" playerId= "+playerId);
 		if (parseInt(lineUp[index].id)==parseInt(playerId)) 
 		{
+		//	alert("found player!");
 	//		console.log("removeplayer: player id found! Removing");
 			lineUp[index].id= "0";
 			
@@ -168,7 +170,7 @@ htlivesight.LineUp.RemovePlayerFromLineUp= function (lineUp,playerId){
 			return lineUp;
 		};
 	};
-//	alert("player not found! Id of player not found is: "+ playerId);
+	alert("player not found! Id of player not found is: "+ playerId);
 	return lineUp;
 	
 };
@@ -616,6 +618,7 @@ htlivesight.LineUp.SentOffEvent= function(event, match){
     	  var side="home";
       else
     	  var side="away";
+  //  alert("Side= "+side+" subjectTeamId="+event.subjectTeamId+" subjectPlayerId="+event.subjectPlayerId);
    //TODO: restore next line when CHPP unsynch will be fixed.  
     $( "#"+side+"_team_formation_" + match.id + "_" + match.youth+"_table").tabs("destroy");
       event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.youth+"_table", htlivesight.Events.translate.parseLineup(stringLineUp), event);
