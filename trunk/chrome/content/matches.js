@@ -56,7 +56,7 @@ htlivesight.Matches.ParseGetByTeam = function(xml) {
       htlivesight.Friends.autoFriendCount--;
     }
   } catch(e) {
-    alert("Matches.ParseGetByTeam: " + e);	  dump("Matches.ParseGetByTeam: " + e);	  // relive error removed, to test again.
+    alert("Matches.ParseGetByTeam: " + e);	  console.log("Matches.ParseGetByTeam: " + e);	  // relive error removed, to test again.
   }
   return null;
 };

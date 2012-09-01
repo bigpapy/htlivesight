@@ -4,10 +4,9 @@ if (!htlivesight)
 if (typeof(chrome) == "object") {
 	htlivesight.arch = "Sandboxed";
 	htlivesight.platform = "Chrome";
-	htlivesight.InternalPath = htlivesight.ResourcePath = chrome.extension.getURL("content/");
-
-	// to tell which context the chrome script is running at
-	// either background page, or content script
+	htlivesight.internalPath = htlivesight.resourcePath = chrome.extension.getURL("content/");
+	// to tell which context the chrome script is running at 
+	// either background page, or content script 
 	htlivesight.chromeContext = function() {
 		try {
 			if (chrome.bookmarks) {
@@ -38,6 +37,27 @@ if (typeof(chrome) == "object") {
 			create : function (url) {chrome.tabs.create(url)},
 		},
 	};
+}else if (typeof(opera) == "object") {
+	htlivesight.arch = "Sandboxed";
+	htlivesight.platform = "Opera";
+	htlivesight.internalPath = "chrome://htlivesight/content/";
+	htlivesight.resourcePath = "http://htlivesight.googlecode.com/svn/branches/chromebrowser/chrome/content/";
+
+	// to tell which context the chrome script is running at 
+	// either background page, or content script 
+	htlivesight.chromeContext = function() {
+		try {
+			if (opera.extension.postMessage) {
+				return "background";
+			}
+			else {
+				return "content";
+			}
+		}
+		catch (e) {
+			return "content";
+		}
+	}
 }
 
 else {
@@ -65,12 +85,13 @@ else {
 }
 
 var htlivesightEnv={
-	
-	contentPath : "chrome://htlivesight/content/",
-	arch: "Gecko",
+	platform: htlivesight.platform,
+	contentPath : htlivesight.resourcePath,
+	arch: htlivesight.arch,
 	chromeContext: function() {
 		return htlivesight.chromeContext();
 	},
+//	sandboxed: sandboxed,
 	
 };
 

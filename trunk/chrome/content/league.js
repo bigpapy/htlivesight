@@ -242,10 +242,13 @@ htlivesight.League.ParseFixtures = function(xml) {
       htlivesight.showLeague= false;
     }
     
-    if (htlivesight.showLeague) {
+    if (htlivesight.showLeague && htlivesight.League.currentRound != undefined) {
     	// Gonzo
-      document.getElementById("winbox_leaguetable").hidden = false;
-    
+     // document.getElementById("winbox_leaguetable").hidden = false;
+      document.getElementById("winbox_leaguetable").setAttribute("style", "display:block");
+      document.getElementById("winboxcontent_leaguematches").setAttribute("style", "display:block");
+      document.getElementById("LeagueMatches").setAttribute("style", "display:block");
+      document.getElementById("h3LeagueMatches").setAttribute("style", "display:block");
     	  htlivesight.DOM.UpdateElementBoxLeagueTable(htlivesight.League);
       // End 
     	  htlivesight.DOM.UpdateElementBoxLeague(htlivesight.League);
@@ -256,7 +259,7 @@ htlivesight.League.ParseFixtures = function(xml) {
       }
     }
   } catch(e) {
-    alert("htlivesight.League.ParseFixtures (set info): " + e);
+   // alert("htlivesight.League.ParseFixtures (set info): " + e);
   }
   htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES); // punto di fine della copia
 };
