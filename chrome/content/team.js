@@ -20,7 +20,11 @@ htlivesight.Teams.update = function(newTeam) {
   if (!team) {
     team=newTeam;
     htlivesight.Teams.list["_"+team.id+"_"+team.youth] = team;
-    team.addTeamToFriendsPopup = htlivesight.DOM.createAddTeamToFriendsPopup(team);
+    
+    //next line is commented because html can't generate a right click menu. to be fixed.
+  //  team.addTeamToFriendsPopup = htlivesight.DOM.createAddTeamToFriendsPopup(team);
+    //bigpapyHTML
+    
     if (htlivesight.Friends.isFriend(team.id, team.youth, !htlivesight.Friends.STRICT)) {
       htlivesight.Friends.update(team.id, team.name);
     };
@@ -32,23 +36,31 @@ htlivesight.Teams.update = function(newTeam) {
 };
 
 htlivesight.Team.HTTPGetMyData = function () {
- 
+
     var parameters=[["file","teamdetails"],
                      ["teamID", document.getElementById("teamId").value]
     				];
-    
-    htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Team.ParseMyData(xml);}); 
+  // console.log("htlivesight.Team.HTTPGetMyData"+ document.getElementById("teamId").value);
+ //  console.log("document: "+ document);
+ //  console.log("parameters: "+ parameters);
+    htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Team.ParseMyData(xml);/*console.log("htlivesight.Team.HTTPGetMyData"+ document.getElementById("teamId").value);*/});
+
 };
 
 htlivesight.Team.ParseMyData = function (xml) {
 
   var myTeam;
-
+// console.log("team.js: xml =" + xml);
   try {
     if (xml) {
+//      console.log("htlivesight.Team.ParseMyData 1");
       myTeam = htlivesight.Team.ParseTeamData(xml); // return team
+ //     console.log("htlivesight.Team.ParseMyData 2");
       htlivesight.Teams.myTeam = myTeam;
+      document.getElementById("teamName").innerHTML=myTeam.name;
+//      console.log("htlivesight.Team.ParseMyData 3");
       htlivesight.Teams.update(myTeam);
+//      console.log("htlivesight.Team.ParseMyData 4");
     } else {
     	// without this if during authorization you get this error message.
     	if (htlivesight.ApiProxy.authorized(document.getElementById("teamId").value)) alert("team data not found");
@@ -57,7 +69,9 @@ htlivesight.Team.ParseMyData = function (xml) {
   } catch(e) {
     alert("ParseMyData: " + e);
   }
+//  console.log("before EventSystem.Declare in team.js");
   htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TEAM);
+//  console.log("after EventSystem.Declare in team.js");
 
 };
 

@@ -49,7 +49,7 @@
 <ServerON>Connesso</ServerON>
 <ServerOFF>Disconnesso</ServerOFF>
 <ResetToken>Il codice di autorizzazione è stato cancellato. Riavvia HTLS o aspetta il prossimo aggiornamento (meno di un minuto).</ResetToken>
-<NoHTServer>Non hai scelto il server di Hattrick a cui sei connesso con il browser, clicca col tasto destro sullo sfondo -> opzioni -> generale e imposta il server di hattrick a cui sei connesso col browser.</NoHTServer>
+<NoHTServer>Non hai scelto il server di Hattrick a cui sei connesso con il browser, clicca col tasto destro sulle opzioni e imposta il server di hattrick a cui sei connesso col browser.</NoHTServer>
 <Error500>Errore 500: errore interno al server (di Hattrick)</Error500>
 <Error503>Errore 503: servizio CHPP non disponibile (sovraccarico temporaneo o manutenzione)</Error503>
 
@@ -190,12 +190,15 @@
 <MatchesHours>ore.</MatchesHours>
 <MatchesFriends>Squadre amiche</MatchesFriends>
 <MatchesGetFriends>Carica le partite delle squadre amiche</MatchesGetFriends>
+<MatchesHeader>Intestazione</MatchesHeader>
 <MatchesScorers>Marcatori</MatchesScorers>
 <ScorersList>Aggiungi i marcatori nelle intestazioni</ScorersList>
 <MatchesBooked>Ammoniti</MatchesBooked>
 <BookedList>Aggiungi gli ammoniti nelle intestazioni</BookedList>
 <MatchesSentOff>Espulsi</MatchesSentOff>
 <SentOffList>Aggiungi gli espulsi nelle intestazioni</SentOffList>
+<MatchesInjured>Infortunati</MatchesInjured>
+<InjuredList>Aggiungi gli infortunati nelle intestazioni</InjuredList>
 <MatchesWindow>Finestra</MatchesWindow>
 <MatchesLines>Righe da mostrare in modalità minimizzata</MatchesLines>
 <NotifyNotify>Avvisi</NotifyNotify>
@@ -267,5 +270,74 @@
 <TextHelpOf>Con l'aiuto di</TextHelpOf>
 <TextThanksTo>Un grande ringraziamento a:</TextThanksTo>
 <ButtonClose>Chiudi</ButtonClose>
+
+<NonExistent>Inesistente</NonExistent>
+<Disastrous>Disastroso</Disastrous>
+<Wretched>Tremendo</Wretched>
+<Poor>Scarso</Poor>
+<Weak>Debole</Weak>
+<Inadequate>Insufficiente</Inadequate>
+<Passable>Accettabile</Passable>
+<Solid>Buono</Solid>
+<Excellent>Eccellente</Excellent>
+<Formidable>Formidabile</Formidable>
+<Outstanding>Straordinario</Outstanding>
+<Brilliant>Splendido</Brilliant>
+<Magnificent>Magnifico</Magnificent>
+<WorldClass>Fuoriclasse</WorldClass>
+<Supernatural>Sovrannaturale</Supernatural>
+<Titanic>Titanico</Titanic>
+<ExtraTerrestrial>Extraterrestre</ExtraTerrestrial>
+<Mythical>Mitico</Mythical>
+<Magical>Magico</Magical>
+<Utopian>Utopico</Utopian>
+<Divine>Divino</Divine>
+<VeryHigh>molto alto</VeryHigh>
+<High>alto</High>
+<Low>basso</Low>
+<VeryLow>molto basso</VeryLow>
+<RightDefence>Difesa destra</RightDefence>
+<MiddleDefence>Difesa centrale</MiddleDefence>
+<LeftDefence>Difesa sinistra</LeftDefence>
+<Midfield>Centrocampo</Midfield>
+<RightAttack>Attacco destro</RightAttack>
+<MiddleAttack>Attacco centrale</MiddleAttack>
+<LeftAttack>Attacco sinistro</LeftAttack>
+<IndirectSetPiecesDefence>Calci di punizione indiretti difesa</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Calci di punizione indiretti attacco</IndirectSetPiecesAttack>
+<TeamAttitude>Atteggiamento</TeamAttitude>
+<TacticType>Tipo di tattica</TacticType>
+<TacticSkill>Livello di tattica</TacticSkill>
+<BallPosses>Possesso palla</BallPosses>
+<SpecialEvent>Special Event</SpecialEvent>
+<Normal>Normale</Normal>
+<PIC>Partitella</PIC>
+<MOTS>Partita della stagione</MOTS>
+<ColorPicker>Puoi scegliere i tuoi colori a </ColorPicker>
+<EventBackground>Colore sfondo eventi</EventBackground>
+<FriendHome>Squadra propria/amica in casa : #</FriendHome>
+<FriendAway>Squadra propria/amica in trasferta : #</FriendAway>
+<FoeHome>Altra squadra in casa : #</FoeHome>
+<FoeAway>Altra squadra in trasferta : #</FoeAway>
+<Neutral>Neutrale : #</Neutral>
+<EventColorTitle>Colore testo evento</EventColorTitle>
+<EventTextColor>Evento : #</EventTextColor>
+<SETextColor>Special Event : #</SETextColor>
+<Colors>Colori</Colors>
+<SchemaTip>Clicca per mostrare la formazione</SchemaTip>
+<StatisticTip>Clicca per mostrare le statistiche di fine partita</StatisticTip>
+<Tournament>Torneo</Tournament>
+
+<FreeKicks>Calci di punizione</FreeKicks>
+<RedCards>Cartellini rossi</RedCards>
+<YellowCards>Cartellini gialli</YellowCards>
+<Injuries>Infortuni</Injuries>
+<Goals>Reti</Goals>
+
+<Total>Posti Totali</Total>
+<Terraces>Gradinate</Terraces>
+<Basic>Tribune</Basic>
+<Roof>Tribune coperte</Roof>
+<VIP>Poltrone VIP</VIP>
 
 </Htlivesight>

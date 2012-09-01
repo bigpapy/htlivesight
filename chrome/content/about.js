@@ -1,14 +1,31 @@
 if (!htlivesight) var htlivesight = {};
 
-htlivesight.About = {
-		contentPath: htlivesight.resourcePath,
-  startup: function() {
-  },    localization: function() {//	  alert("1");	// loading preferences:		htlivesight.prefs=htlivesight.Preferences.get();
-//		alert("2");	// composition of the url about localization xml file: 		htlivesight.url = htlivesight.About.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
-//		alert("3");	// loading xml file:			htlivesight.languageXML = htlivesight.loadXml(htlivesight.url);
-//		alert("4");	// getting all the label:			htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
-//		alert("5");	// getting "htlivesight-about" label and setting it.			document.getElementById("htlivesight-about").attributes.getNamedItem("title").value=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);
-//		alert("6");		// here there is date of creation, change here		document.getElementById("creationDate").value="26 "+htlivesight.Util.Parse("MonthApril",htlivesight.data[0])+" 2012";
-//		alert("7");		// here there are authors name, change them here 		document.getElementById("createdBy").value=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0])+" Silkevicious & Bigpapy";
-//		alert("8");  }
-};
+htlivesight.About = {contentPath: htlivesight.resourcePath,
+
+startup: function() {},
+  
+localization: function() {
+htlivesight.prefs=htlivesight.Preferences.get();
+htlivesight.url = htlivesight.About.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
+htlivesight.languageXML = htlivesight.loadXml(htlivesight.url);
+htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
+
+//PASTE AFTER HERE
+
+//document.getElementById("about-dialog").attributes.getNamedItem("title").value=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);
+
+document.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
+document.getElementById("creationDate").innerHTML="22 "+htlivesight.Util.Parse("MonthAugust",htlivesight.data[0])+" 2012";
+document.getElementById("createdBy").innerHTML=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
+
+document.getElementById("TabTranslators").innerHTML=htlivesight.Util.Parse("TabTranslators",htlivesight.data[0]);
+document.getElementById("ThanksTo").innerHTML=htlivesight.Util.Parse("TextThanksTo",htlivesight.data[0]);
+
+document.getElementById("TabCredits").innerHTML=htlivesight.Util.Parse("TabCredits",htlivesight.data[0]);
+
+//PASTE BEFORE HERE
+
+}
+
+};
+

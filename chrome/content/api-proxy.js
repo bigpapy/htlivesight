@@ -57,7 +57,7 @@ htlivesight.ApiProxy = {
 		htlivesight.OAuth.setTimestampAndNonce(msg);
 		htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
 		var requestTokenUrl = htlivesight.OAuth.addToURL(htlivesight.ApiProxy.requestTokenUrl, msg.parameters);
-		dump("Requesting token at: " + requestTokenUrl + "\n");
+		console.log("Requesting token at: " + requestTokenUrl + "\n");
 		htlivesight.load(requestTokenUrl, function(text, status) {
 				if (status != 200) {
 					// failed to fetch link
@@ -90,64 +90,68 @@ htlivesight.ApiProxy = {
 
 				// open a new tab of the chpp page to get the authorization code
 				chppPage=window.open(htlivesight.ApiProxy.authorizeUrl + "?" + text );
-				
-				// when clicking on this tab continue
-				window.addEventListener("focus", function(ev) {
-					
-					//ask the auth code to user and get it only once
-					if (firstTime){				
-						var insert=/*strbundle.getString("insert")*/htlivesight.Util.Parse("Insert",data[0]);
-						var oauthVerifier = prompt(insert,"");
-						firstTime=false;
-					};
-					var accessor = {
-						consumerSecret : htlivesight.ApiProxy.consumerSecret,
-						tokenSecret : requestTokenSecret
-					};
-					var msg = {
-						action : htlivesight.ApiProxy.accessTokenUrl,
-						method : "get",
-						parameters : [
-							["oauth_consumer_key", htlivesight.ApiProxy.consumerKey],
-							["oauth_token", requestToken],
-							["oauth_signature_method", htlivesight.ApiProxy.signatureMethod],
-							["oauth_signature", ""],
-							["oauth_timestamp", ""],
-							["oauth_nonce", ""],
-							["oauth_verifier", oauthVerifier]
-						]
-					};
-					htlivesight.OAuth.setTimestampAndNonce(msg);
-					htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
-					var query = htlivesight.OAuth.formEncode(msg.parameters);
-					var accessTokenUrl = htlivesight.ApiProxy.accessTokenUrl + "?" + query;
-					dump("Requesting access token at: " + accessTokenUrl + "\n");
-					
-					htlivesight.load(accessTokenUrl, function(text) {
-						
-						try{// added because of error not influent to the target of the function
-							var accessToken = text.split(/&/)[0].split(/=/)[1];
-							var accessTokenSecret = text.split(/&/)[1].split(/=/)[1];
-						
-							// save access Token
-							htlivesight.ApiProxy.setAccessToken(accessToken,teamId);
+			
+				// add a delay because it didn't give time in chrome to open chpp authorization page.
+				setTimeout(function(){
+					// when clicking on this tab continue
+					window.addEventListener("focus", function(ev) {
 
-							// save access Token Secret
-							htlivesight.ApiProxy.setAccessTokenSecret(accessTokenSecret,teamId);
+						//ask the auth code to user and get it only once
+						if (firstTime){
+							firstTime=false;				
+							var insert=/*strbundle.getString("insert")*/htlivesight.Util.Parse("Insert",data[0]);
+							var oauthVerifier = prompt(insert,"");
 
-							//internationalization: get string for ending authorization
-							var ending=/*strbundle.getString("ending")*/htlivesight.Util.Parse("Ending",data[0]);;
-						
-							// showing ending message
-							alert(ending);
-						
-							chppPage.close();// close CHPP pages
-							document.location.reload();//reload HTLS
-						}catch(e){};
+						};
+						var accessor = {
+								consumerSecret : htlivesight.ApiProxy.consumerSecret,
+								tokenSecret : requestTokenSecret
+						};
+						var msg = {
+								action : htlivesight.ApiProxy.accessTokenUrl,
+								method : "get",
+								parameters : [
+								              ["oauth_consumer_key", htlivesight.ApiProxy.consumerKey],
+								              ["oauth_token", requestToken],
+								              ["oauth_signature_method", htlivesight.ApiProxy.signatureMethod],
+								              ["oauth_signature", ""],
+								              ["oauth_timestamp", ""],
+								              ["oauth_nonce", ""],
+								              ["oauth_verifier", oauthVerifier]
+								              ]
+						};
+						htlivesight.OAuth.setTimestampAndNonce(msg);
+						htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
+						var query = htlivesight.OAuth.formEncode(msg.parameters);
+						var accessTokenUrl = htlivesight.ApiProxy.accessTokenUrl + "?" + query;
+						console.log("Requesting access token at: " + accessTokenUrl + "\n");
+
+						htlivesight.load(accessTokenUrl, function(text) {
+
+							try{// added because of error not influent to the target of the function
+								var accessToken = text.split(/&/)[0].split(/=/)[1];
+								var accessTokenSecret = text.split(/&/)[1].split(/=/)[1];
+
+								// save access Token
+								htlivesight.ApiProxy.setAccessToken(accessToken,teamId);
+
+								// save access Token Secret
+								htlivesight.ApiProxy.setAccessTokenSecret(accessTokenSecret,teamId);
+
+								//internationalization: get string for ending authorization
+								var ending=/*strbundle.getString("ending")*/htlivesight.Util.Parse("Ending",data[0]);;
+
+								// showing ending message
+								alert(ending);
+
+								chppPage.close();// close CHPP pages
+								document.location.reload();//reload HTLS
+							}catch(e){};
 						}, true);
-				}, false);
+					}, false);
+				},1000); // delay to set event listener (1s)
 
-			}, true);
+		}, true);
 	},
 
 	
@@ -158,14 +162,14 @@ htlivesight.ApiProxy = {
 	 */	
 	
 	retrieve : function(doc, parameters, callback) {
-		dump("ApiProxy: attempting to retrieve: " + parameters + "…\n");
+		console.log("ApiProxy: attempting to retrieve: " + parameters + "…\n");
 	//	var strbundle = document.getElementById("stringsauthorize");
 		// adding new localization file
-	//	alert("before prefs retrieve");
+	//	console.log("before prefs retrieve");
 		  prefs=htlivesight.Preferences.get();
-		//	alert("prefs.language.locale= "+ prefs.language.locale);
+	//	  console.log("prefs.language.locale= "+ prefs.language.locale);
 			url = htlivesightEnv.contentPath+"locale/"+ prefs.language.locale +".xml";
-		//	alert("url"+ url);
+	//		console.log("url"+ url);
 
 		languageXML = htlivesight.loadXml(url);
 
@@ -173,8 +177,10 @@ htlivesight.ApiProxy = {
 		// end adding new localization files
 		
 		var teamId = document.getElementById("teamId").value;
+	//	console.log("teamId "+ teamId);
 		if (!htlivesight.ApiProxy.authorized(teamId)) { // if not authorized...
-			dump("ApiProxy: unauthorized.\n");
+			console.log("ApiProxy: unauthorized.\n");
+		//	console.log("ApiProxy: unauthorized.\n")
 			htlivesight.ApiProxy.authorize(doc); // ...get authorization
 			callback(null);
 			return;
@@ -199,8 +205,10 @@ htlivesight.ApiProxy = {
 		htlivesight.OAuth.setTimestampAndNonce(msg);
 		htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
 		var url = htlivesight.OAuth.addToURL(htlivesight.ApiProxy.resourceUrl, msg.parameters);
-		dump("Fetching XML data from " + url + "\n");
+		console.log("Fetching XML data from " + url + "\n");
+	//	console.log("Fetching XML data from " + url + "\n");
 		htlivesight.loadXml(url, function(x, status) {
+	//		console.log("status "+ status);
 			switch (status){
 			
 			case 0:	// error: not connected to internet
@@ -218,7 +226,7 @@ htlivesight.ApiProxy = {
 						break;
 
 			case 401: // error: not authorized	
-					//	dump("ApiProxy: error 401, unauthorized. Arguments: " + parameters + ".\n");
+					//	console.log("ApiProxy: error 401, unauthorized. Arguments: " + parameters + ".\n");
 						var error401=/*strbundle.getString("error401")*/htlivesight.Util.Parse("Error401",data[0]); //i13n: get local string
 						alert(error401);// show local error message
 						htlivesight.ApiProxy.invalidateAccessToken(teamId);//delete access token
@@ -258,7 +266,7 @@ htlivesight.ApiProxy = {
 						break;
 						
 			default	:	// all the others errors.
-				//		dump("ApiProxy: error " + status + ". Arguments: " + parameters + "\n");
+				//		console.log("ApiProxy: error " + status + ". Arguments: " + parameters + "\n");
 						var serverOFF=/*strbundle.getString("serverOFF")*/htlivesight.Util.Parse("ServerOFF",data[0]);//i13n: get local string
 						htlivesight.DOM.addServerToPopup(serverOFF); //update server status in menu
 						var error=/*strbundle.getString("error")*/htlivesight.Util.Parse("Error",data[0]);//i13n: get local string
