@@ -955,8 +955,12 @@
 	<div id="winboxcontent_addmatch"><!-- accordion league_table2-->
 	<div id="contentbody_addmatch"><!-- accordion league_table2-->
 	<input type="text" id="boxaddmatch" class="text ui-widget-content ui-corner-all" />
-	<input type="checkbox" id="boxaddyouth" /><label for="boxaddyouth" id="MatchesYouth"></label>
-	<br />
+<!--  <input type="checkbox" id="boxaddyouth" /><label for="boxaddyouth" id="MatchesYouth"></label> -->
+						<select id="sourceSystem">
+							<option id="optionHattrick" value="hattrick">Senior</option>
+							<option id="optionYouth" value="youth">Youth</option>
+							<option id="optionHtointegrated" value="htointegrated">Tournament</option>
+						</select> <br />
 	<div id="addmatchbuttons">
 	<button id="buttonAddMatch" onclick="try{htlivesight.Click.AddMatch()}catch(e){alert(e);}"/><label for="buttonAddMatch" id="MatchesByMatch"></label>
 	<button id="buttonAddTeam" onclick="try{htlivesight.Click.AddMatchByTeam()}catch(e){alert(e);}"/><label for="buttonAddTeam" id="MatchesByTeam"></label>

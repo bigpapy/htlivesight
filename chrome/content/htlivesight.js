@@ -250,7 +250,7 @@ document.getElementById("live_box").setAttribute("style", "width:" + (winW-320) 
     document.getElementById("imgwinboxshade_"+name).style.display="none";
  //   console.log("startup:winboxShadeByName end");
   },
-  AddLiveMatch: function(matchId, youth) {
+  AddLiveMatch: function(matchId, sourceSystem) {
 //	  console.log("AddLiveMatch: begin");
 //	  alert("1");
     if (htlivesight.liveCount >= 20) {
@@ -278,14 +278,14 @@ document.getElementById("live_box").setAttribute("style", "width:" + (winW-320) 
  //     if (htlivesight.Match.List["_"+matchId+"_"+youth].live == false)
       htlivesight.liveCount++;
  //     alert("12: htlivesight.liveCount: "+ htlivesight.liveCount);
-      htlivesight.Live.HTTPAddMatch(matchId, youth);
+      htlivesight.Live.HTTPAddMatch(matchId, sourceSystem);
  //     alert("13");
-      htlivesight.GetMatchDetails(matchId, youth);
+      htlivesight.GetMatchDetails(matchId, sourceSystem);
   //    alert("14");
  //   }
  //     console.log("AddLiveMatch: end");
   },
-  GetMatchDetails: function(matchId, youth) { 
+  GetMatchDetails: function(matchId, sourceSystem) { 
 //	  console.log("startup:GetMatchDetails begin");
  //   matchDetails.HTTPGet(matchId, youth);
  //   console.log("startup:GetMatchDetails end:");

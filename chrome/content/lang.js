@@ -205,7 +205,11 @@ document.getElementById("FriendsRemove").innerHTML=htlivesight.Util.Parse("Frien
 document.getElementById("FriendsOpen").innerHTML=htlivesight.Util.Parse("FriendsOpen",htlivesight.data[0]);
 
 document.getElementById("MatchesAdd").innerHTML=htlivesight.Util.Parse("MatchesAdd",htlivesight.data[0]);
-document.getElementById("MatchesYouth").innerHTML=htlivesight.Util.Parse("MatchesYouth",htlivesight.data[0]);
+//options of the select list translations.
+document.getElementById("optionHattrick").innerHTML=htlivesight.Util.Parse("Senior",htlivesight.data[0]);
+document.getElementById("optionYouth").innerHTML=htlivesight.Util.Parse("Youth",htlivesight.data[0]);
+document.getElementById("optionHtointegrated").innerHTML=htlivesight.Util.Parse("Tournament",htlivesight.data[0]);
+
 document.getElementById("MatchesByMatch").innerHTML=htlivesight.Util.Parse("MatchesByMatch",htlivesight.data[0]);
 document.getElementById("MatchesByTeam").innerHTML=htlivesight.Util.Parse("MatchesByTeam",htlivesight.data[0]);
 

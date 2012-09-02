@@ -11,7 +11,7 @@ htlivesight.DOM = {
   formationpopup:function(id){
 	  //	alert("opening popup= "+id+"_table");
 
-	  //"home_team_formation_" + match.id + "_" + match.youth
+	  //"home_team_formation_" + match.id + "_" + match.sourceSystem
 	  matchId=id.replace(/(home|away)_team_formation/,"");
 	  var side=id.substr(0,4);
 	  var match = htlivesight.Match.List[matchId];
@@ -31,7 +31,7 @@ htlivesight.DOM = {
   statisticspopup:function(id){
 	  //	alert("opening popup= "+id+"_table");
 
-	  //"home_team_formation_" + match.id + "_" + match.youth
+	  //"home_team_formation_" + match.id + "_" + match.sourceSystem
 	  matchId=id.replace(/(home|away)_team_name/,"");
 	  var side=id.substr(0,4);
 	  var match = htlivesight.Match.List[matchId];
@@ -53,31 +53,31 @@ htlivesight.DOM = {
     return htlivesight.DOM.parser.parseFromString(xml, "text/xml").documentElement;
   },
   window: {
-    set: function(matchId, youth, setmode) {
+    set: function(matchId, sourceSystem, setmode) {
       with (htlivesight.DOM.mode) {
 	      var img_file, img = htlivesight.Image.window;
 	      
 	      if (setmode == close) {
-	        htlivesight.DOM.toggleView(matchId, youth);
+	        htlivesight.DOM.toggleView(matchId, sourceSystem);
 	        return;
 	      }
 	        
-	      htlivesight.Match.List["_"+matchId+"_"+youth].window.mode = setmode;
+	      htlivesight.Match.List["_"+matchId+"_"+sourceSystem].window.mode = setmode;
 	
 	      img_file = (setmode == shade ? img.shade.ON : img.shade.OFF); 
-	      document.getElementById("shade_" + matchId + "_" + youth).setAttribute("src",img_file);
+	      document.getElementById("shade_" + matchId + "_" + sourceSystem).setAttribute("src",img_file);
 	      
 	      img_file = (setmode==minimize ? img.minimize.ON : img.minimize.OFF);
-	      document.getElementById("minimize_" + matchId + "_" + youth).setAttribute("src", img_file);
+	      document.getElementById("minimize_" + matchId + "_" + sourceSystem).setAttribute("src", img_file);
 	  
 	      img_file = (setmode==maximize ? img.maximize.ON : img.maximize.OFF);
-	      document.getElementById("maximize_" + matchId + "_" + youth).setAttribute("src", img_file);
+	      document.getElementById("maximize_" + matchId + "_" + sourceSystem).setAttribute("src", img_file);
 	//      alert("htlivesight.DOM.window.set");
-	      htlivesight.DOM.window.repaint(matchId, youth);
+	      htlivesight.DOM.window.repaint(matchId, sourceSystem);
       }
     },
-    repaint: function(matchId, youth) {
-      var match = htlivesight.Match.List["_"+matchId+"_"+youth];
+    repaint: function(matchId, sourceSystem) {
+      var match = htlivesight.Match.List["_"+matchId+"_"+sourceSystem];
       var event;
       var elem;
       var first, last;
@@ -102,7 +102,7 @@ htlivesight.DOM = {
      while (yetToShow>=0 && index>=0) {
     
       
-        elem = document.getElementById("ev_row_"+matchId+"_"+youth+"_"+index);
+        elem = document.getElementById("ev_row_"+matchId+"_"+sourceSystem+"_"+index);
         event = match.event.list["_"+index];
         if (elem == null || event == null) {
         	
@@ -126,7 +126,7 @@ htlivesight.DOM = {
 
       while (index>=0) {
          	  
-        elem = document.getElementById("ev_row_"+matchId+"_"+youth+"_"+index);
+        elem = document.getElementById("ev_row_"+matchId+"_"+sourceSystem+"_"+index);
         if (elem != null)
           elem.hidden=true;
         
@@ -135,21 +135,21 @@ htlivesight.DOM = {
     }
   },
   
-  toggleTip: function(matchId, youth) {
-    var tip = !htlivesight.Match.List["_"+matchId+"_"+youth].window.tip;
-    var img = document.getElementById("tip_" + matchId + "_" + youth);
+  toggleTip: function(matchId, sourceSystem) {
+    var tip = !htlivesight.Match.List["_"+matchId+"_"+sourceSystem].window.tip;
+    var img = document.getElementById("tip_" + matchId + "_" + sourceSystem);
     
-    htlivesight.Match.List["_"+matchId+"_"+youth].window.tip = tip;
+    htlivesight.Match.List["_"+matchId+"_"+sourceSystem].window.tip = tip;
     img.setAttribute("src", tip ? htlivesight.Image.window.info.ON : htlivesight.Image.window.info.OFF);
     
-    htlivesight.DOM.window.repaint(matchId, youth);
+    htlivesight.DOM.window.repaint(matchId, sourceSystem);
   },
 //added by bigpapy: open new page on tab about match
-  toggleSound: function(matchId, youth) {
-	  var sound = !htlivesight.Match.List["_"+matchId+"_"+youth].window.mute;
-	  var img = document.getElementById("sound_" + matchId + "_" + youth);
-//	  var match = Match.List["_"+matchId+"_"+youth];
-	  htlivesight.Match.List["_"+matchId+"_"+youth].window.mute = sound;
+  toggleSound: function(matchId, sourceSystem) {
+	  var sound = !htlivesight.Match.List["_"+matchId+"_"+sourceSystem].window.mute;
+	  var img = document.getElementById("sound_" + matchId + "_" + sourceSystem);
+//	  var match = Match.List["_"+matchId+"_"+sourceSystem];
+	  htlivesight.Match.List["_"+matchId+"_"+sourceSystem].window.mute = sound;
 	  img.setAttribute("src", sound ? htlivesight.Image.window.sound.OFF : htlivesight.Image.window.sound.ON);
 //	  alert("prima di delete");
 //	  htlivesight.DOM.window.deleteLiveEvents(match);
@@ -160,7 +160,7 @@ htlivesight.DOM = {
   // (end)added by bigpapy: open new page on tab about match
   
   // added by bigpapy: open new page on tab about match
-  toggleLink: function(matchId, youth) {
+  toggleLink: function(matchId, sourceSystem) {
 	  try{ // added by bigpapy to debug from XUL to HTML
 	  var htServer=htlivesight.prefs.general.hattrickServer;
 	  if (!htServer){ 
@@ -170,17 +170,17 @@ htlivesight.DOM = {
        	  htServer="www";
       };
 	  var matchLink="http://" + htServer + ".hattrick.org/Club/Matches/Match.aspx?matchID=" + matchId;
-	  if (youth=="True"){ matchLink=matchLink+"&isYouth=True";};
+	  if (sourceSystem=="youth"){ matchLink=matchLink+"&isYouth=True";};
 	 var matchpage=window.open(matchLink);
   }catch(e){alert("toggleView: "+e);}// added by bigpapy to debug from XUL to HTML
 	  },
 	  // (end)added by bigpapy: open new page on tab about match
 	  
-  toggleView: function(matchId, youth) {
+  toggleView: function(matchId, sourceSystem) {
 	  try{ // added by bigpapy to debug from XUL to HTML
-    var box = document.getElementById("live_" + matchId + "_" + youth);
+    var box = document.getElementById("live_" + matchId + "_" + sourceSystem);
     var show = box.hidden;
-    var img = document.getElementById("short_liveimage_" + matchId + "_" + youth);
+    var img = document.getElementById("short_liveimage_" + matchId + "_" + sourceSystem);
 
     if (show) {
       var curr=box;
@@ -194,7 +194,7 @@ htlivesight.DOM = {
       box.hidden = false;
       img.setAttribute("src", htlivesight.Image.live.ON);
    //   img.setAttribute("class", "imgwinboxshade");
-      htlivesight.DOM.window.repaint(matchId, youth);
+      htlivesight.DOM.window.repaint(matchId, sourceSystem);
     } else {      
       box.hidden = true;
       img.setAttribute("src", htlivesight.Image.live.OFF);
@@ -210,20 +210,20 @@ htlivesight.DOM = {
     }
 	  }catch(e){alert("toggleView: "+e);}// added by bigpapy to debug from XUL to HTML
   },
-  deleteView: function(matchId, youth) {
+  deleteView: function(matchId, sourceSystem) {
 	  try{
-    htlivesight.Live.HTTPDeleteMatch(matchId, youth);
-    var box = document.getElementById("live_" + matchId + "_" + youth);
-    var img = document.getElementById("short_liveimage_" + matchId + "_" + youth);
+    htlivesight.Live.HTTPDeleteMatch(matchId, sourceSystem);
+    var box = document.getElementById("live_" + matchId + "_" + sourceSystem);
+    var img = document.getElementById("short_liveimage_" + matchId + "_" + sourceSystem);
     
     box.hidden = true;
     img.setAttribute("src", htlivesight.Image.live.OFF);
    // img.setAttribute("class", "imgwinboxopen");
-    htlivesight.Match.List["_" + matchId + "_" + youth].live = false;
+    htlivesight.Match.List["_" + matchId + "_" + sourceSystem].live = false;
     htlivesight.liveCount--;
 
-    document.getElementById("short_" + matchId + "_" + youth).hidden = true;
-    htlivesight.DOM.window.set(matchId, youth, htlivesight.DOM.mode.minimize);
+    document.getElementById("short_" + matchId + "_" + sourceSystem).hidden = true;
+    htlivesight.DOM.window.set(matchId, sourceSystem, htlivesight.DOM.mode.minimize);
   }catch(e){alert("deleteView: "+e);}// added by bigpapy to debug from XUL to HTML
   },
   createLineupElement: function(id, lineup, event) {
@@ -579,7 +579,7 @@ htlivesight.DOM.UpdateLiveMatch = function(match) {
   try {
     htlivesight.DOM.UpdateLiveBox(match);
     htlivesight.DOM.UpdateShortBox(match);
-    htlivesight.DOM.window.repaint(match.id, match.youth);
+    htlivesight.DOM.window.repaint(match.id, match.sourceSystem);
   } catch(e) {
     alert("DOM.UpdateLiveMatch\n" + e);
   }
@@ -590,7 +590,7 @@ htlivesight.DOM.UpdateLiveMatch = function(match) {
  * ----------------------------------------------------------- */
 htlivesight.DOM.UpdateLiveBox = function(match) {
   try {
-    var box = document.getElementById("live_" + match.id + "_" + match.youth);
+    var box = document.getElementById("live_" + match.id + "_" + match.sourceSystem);
     if (!box) htlivesight.DOM.CreateElementLiveBox(match);
     htlivesight.DOM.UpdateLiveHeader(match);
     htlivesight.DOM.UpdateLiveEvents(match);
@@ -611,7 +611,7 @@ try{ //added by bigpapy to debug from xul to html
   hbox.hidden=true;
   
   livebox.appendChild(hbox);
-  hbox.setAttribute("id", "live_" + match.id + "_" + match.youth);
+  hbox.setAttribute("id", "live_" + match.id + "_" + match.sourceSystem);
 
   //vbox = document.createElement("vbox");
   
@@ -654,56 +654,56 @@ try{ //added by bigpapy to debug from xul to html
 /* --- update header -------- */
  htlivesight.DOM.UpdateLiveHeader= function(match) {
   var label/*, attr*/;
- // var headerElement = document.getElementById("box_header_"+match.id + "_" + match.youth);
+ // var headerElement = document.getElementById("box_header_"+match.id + "_" + match.sourceSystem);
   
   try {
 	
     if (match.arena.name) {
-      document.getElementById("arena_name_" + match.id + "_" + match.youth).innerHTML = match.arena.name;
-     // label = document.getElementById("arena_name_" + match.id + "_" + match.youth);
+      document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).innerHTML = match.arena.name;
+     // label = document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem);
      // label.setAttribute("value", htlivesight.DOM.getTextContent(match.arena.name));
     }
     
     if (match.weather.image) {
-      label = document.getElementById("weather_image_" + match.id + "_" + match.youth);
+      label = document.getElementById("weather_image_" + match.id + "_" + match.sourceSystem);
       label.setAttribute("src", match.weather.image);
 	  label.setAttribute("class", "weather_image");
     }
 
     if (match.arena.attendance) {
-      document.getElementById("arena_attendance_" + match.id + "_" + match.youth).innerHTML = match.arena.attendance;
+      document.getElementById("arena_attendance_" + match.id + "_" + match.sourceSystem).innerHTML = match.arena.attendance;
     }
     
     if (match.home.tactic) {
-    	document.getElementById("home_team_tactic_" + match.id + "_" + match.youth).innerHTML = match.home.tactic;
-    //  label = document.getElementById("home_team_tactic_" + match.id + "_" + match.youth);
+    	document.getElementById("home_team_tactic_" + match.id + "_" + match.sourceSystem).innerHTML = match.home.tactic;
+    //  label = document.getElementById("home_team_tactic_" + match.id + "_" + match.sourceSystem);
     //  label.setAttribute("value", match.home.tactic);
     }
     
     if (match.home.formation) {
-    	document.getElementById("home_team_formation_" + match.id + "_" + match.youth).innerHTML = match.home.formation;
-		//label = document.getElementById("home_team_formation_" + match.id + "_" + match.youth);
+    	document.getElementById("home_team_formation_" + match.id + "_" + match.sourceSystem).innerHTML = match.home.formation;
+		//label = document.getElementById("home_team_formation_" + match.id + "_" + match.sourceSystem);
 		  
-    //  label = document.getElementById("home_team_formation_" + match.id + "_" + match.youth);
+    //  label = document.getElementById("home_team_formation_" + match.id + "_" + match.sourceSystem);
     //  label.setAttribute("value", match.home.formation);
     }
 
     if (match.away.formation) {
-      document.getElementById("away_team_formation_" + match.id + "_" + match.youth).innerHTML = match.away.formation;
-   //   label = document.getElementById("away_team_formation_" + match.id + "_" + match.youth);
+      document.getElementById("away_team_formation_" + match.id + "_" + match.sourceSystem).innerHTML = match.away.formation;
+   //   label = document.getElementById("away_team_formation_" + match.id + "_" + match.sourceSystem);
    //   label.setAttribute("value", match.away.formation);
     }
 
     if (match.away.tactic) {
-      document.getElementById("away_team_tactic_" + match.id + "_" + match.youth).innerHTML = match.away.tactic;
-   //   label = document.getElementById("away_team_tactic_" + match.id + "_" + match.youth);
+      document.getElementById("away_team_tactic_" + match.id + "_" + match.sourceSystem).innerHTML = match.away.tactic;
+   //   label = document.getElementById("away_team_tactic_" + match.id + "_" + match.sourceSystem);
    //   label.setAttribute("value", match.away.tactic);
     }
 
     if (htlivesight.prefs.matches.scorers) {
-      label = document.getElementById("home_team_scorers1_" + match.id + "_" + match.youth);  
-      var label2 = document.getElementById("home_team_scorers2_" + match.id + "_" + match.youth);
-      var label3 = document.getElementById("away_team_scorers2_" + match.id + "_" + match.youth);
+      label = document.getElementById("home_team_scorers1_" + match.id + "_" + match.sourceSystem);  
+      var label2 = document.getElementById("home_team_scorers2_" + match.id + "_" + match.sourceSystem);
+      var label3 = document.getElementById("away_team_scorers2_" + match.id + "_" + match.sourceSystem);
       if (match.home.scorers) {
         var scorerText = new Array;
         scorerText[0] = "";
@@ -727,7 +727,7 @@ try{ //added by bigpapy to debug from xul to html
         }
       }
   
-      label = document.getElementById("away_team_scorers1_" + match.id + "_" + match.youth);  
+      label = document.getElementById("away_team_scorers1_" + match.id + "_" + match.sourceSystem);  
       if (match.away.scorers) {
         var scorerText = new Array;
         scorerText[0] = "";
@@ -759,11 +759,11 @@ try{ //added by bigpapy to debug from xul to html
  
  	    if (htlivesight.prefs.matches.booked) {
   
- 	      label = document.getElementById("home_team_booked1_" + match.id + "_" + match.youth);
+ 	      label = document.getElementById("home_team_booked1_" + match.id + "_" + match.sourceSystem);
  
- 	      var label2 = document.getElementById("home_team_booked2_" + match.id + "_" + match.youth);
+ 	      var label2 = document.getElementById("home_team_booked2_" + match.id + "_" + match.sourceSystem);
   
- 	      var label3 = document.getElementById("away_team_booked2_" + match.id + "_" + match.youth);
+ 	      var label3 = document.getElementById("away_team_booked2_" + match.id + "_" + match.sourceSystem);
    
  	      if (match.home.booked) {
   
@@ -803,7 +803,7 @@ try{ //added by bigpapy to debug from xul to html
    
  	      }
  
- 	      label = document.getElementById("away_team_booked1_" + match.id + "_" + match.youth);
+ 	      label = document.getElementById("away_team_booked1_" + match.id + "_" + match.sourceSystem);
 
  	      if (match.away.booked) {
  
@@ -847,11 +847,11 @@ try{ //added by bigpapy to debug from xul to html
   	      // part added by bigpapy to show sent_off players (begin)
  	    if (htlivesight.prefs.matches.sentOff) {
  	    	
-  	      label = document.getElementById("home_team_sent_off1_" + match.id + "_" + match.youth);
+  	      label = document.getElementById("home_team_sent_off1_" + match.id + "_" + match.sourceSystem);
   	      
-  	      var label2 = document.getElementById("home_team_sent_off2_" + match.id + "_" + match.youth);
+  	      var label2 = document.getElementById("home_team_sent_off2_" + match.id + "_" + match.sourceSystem);
   
- 	      var label3 = document.getElementById("away_team_sent_off2_" + match.id + "_" + match.youth);
+ 	      var label3 = document.getElementById("away_team_sent_off2_" + match.id + "_" + match.sourceSystem);
  
  	      if (match.home.sent_off) {
  
@@ -889,7 +889,7 @@ try{ //added by bigpapy to debug from xul to html
  	        }
  	      }
 
- 	      label = document.getElementById("away_team_sent_off1_" + match.id + "_" + match.youth);
+ 	      label = document.getElementById("away_team_sent_off1_" + match.id + "_" + match.sourceSystem);
  
  	      if (match.away.sent_off) {
  
@@ -930,11 +930,11 @@ try{ //added by bigpapy to debug from xul to html
 	      // part added by bigpapy to show injured players (begin)
  	    if (htlivesight.prefs.matches.injured) {
  	    	
-  	      label = document.getElementById("home_team_injured1_" + match.id + "_" + match.youth);
+  	      label = document.getElementById("home_team_injured1_" + match.id + "_" + match.sourceSystem);
   	      
-  	      var label2 = document.getElementById("home_team_injured2_" + match.id + "_" + match.youth);
+  	      var label2 = document.getElementById("home_team_injured2_" + match.id + "_" + match.sourceSystem);
   
- 	      var label3 = document.getElementById("away_team_injured2_" + match.id + "_" + match.youth);
+ 	      var label3 = document.getElementById("away_team_injured2_" + match.id + "_" + match.sourceSystem);
  
  	      if (match.home.injuries) {
  
@@ -972,7 +972,7 @@ try{ //added by bigpapy to debug from xul to html
  	        }
  	      }
 
- 	      label = document.getElementById("away_team_injured1_" + match.id + "_" + match.youth);
+ 	      label = document.getElementById("away_team_injured1_" + match.id + "_" + match.sourceSystem);
  
  	      if (match.away.injuries) {
  
@@ -1012,24 +1012,24 @@ try{ //added by bigpapy to debug from xul to html
     
     
     
-    document.getElementById("time_" + match.id + "_" + match.youth).innerHTML = match.timeElapsed;    
-  //  label = document.getElementById("time_" + match.id + "_" + match.youth);
+    document.getElementById("time_" + match.id + "_" + match.sourceSystem).innerHTML = match.timeElapsed;    
+  //  label = document.getElementById("time_" + match.id + "_" + match.sourceSystem);
   //  label.setAttribute("value", match.timeElapsed);
 
-    document.getElementById("home_team_name_" + match.id + "_" + match.youth).innerHTML = match.home.team.name;
- //   label = document.getElementById("home_team_name_" + match.id + "_" + match.youth);
+    document.getElementById("home_team_name_" + match.id + "_" + match.sourceSystem).innerHTML = match.home.team.name;
+ //   label = document.getElementById("home_team_name_" + match.id + "_" + match.sourceSystem);
  //   label.setAttribute("value", htlivesight.DOM.getTextContent(match.home.team.name));
 
-    document.getElementById("home_team_goals_" + match.id + "_" + match.youth).innerHTML = match.home.goals;
- //   label = document.getElementById("home_team_goals_" + match.id + "_" + match.youth);
+    document.getElementById("home_team_goals_" + match.id + "_" + match.sourceSystem).innerHTML = match.home.goals;
+ //   label = document.getElementById("home_team_goals_" + match.id + "_" + match.sourceSystem);
  //   label.setAttribute("value", match.home.goals);
 
-    document.getElementById("away_team_goals_" + match.id + "_" + match.youth).innerHTML = match.away.goals;
- //   label = document.getElementById("away_team_goals_" + match.id + "_" + match.youth);
+    document.getElementById("away_team_goals_" + match.id + "_" + match.sourceSystem).innerHTML = match.away.goals;
+ //   label = document.getElementById("away_team_goals_" + match.id + "_" + match.sourceSystem);
  //   label.setAttribute("value", match.away.goals);
 
-    document.getElementById("away_team_name_" + match.id + "_" + match.youth).innerHTML =match.away.team.name;
- //   label = document.getElementById("away_team_name_" + match.id + "_" + match.youth);
+    document.getElementById("away_team_name_" + match.id + "_" + match.sourceSystem).innerHTML =match.away.team.name;
+ //   label = document.getElementById("away_team_name_" + match.id + "_" + match.sourceSystem);
  //   label.setAttribute("value", htlivesight.DOM.getTextContent(match.away.team.name));
 
   } catch(e) {
@@ -1045,7 +1045,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   try{ //added by bigpapy to debug from xul to html
   header = document.createElement("thead");
   header.setAttribute("class", "box_header animation");
-  header.setAttribute("id", "box_header_"+match.id + "_" + match.youth);
+  header.setAttribute("id", "box_header_"+match.id + "_" + match.sourceSystem);
   //header.setAttribute("flex", "1");
 
   // first row:  header header
@@ -1064,20 +1064,20 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   
   label = document.createElement("span"); //label = document.createElement("label");
   hboxL.appendChild(label);
-  label.setAttribute("id", "arena_name_" + match.id + "_" + match.youth);
+  label.setAttribute("id", "arena_name_" + match.id + "_" + match.sourceSystem);
 	label.setAttribute("class", "arena_name");
   img = document.createElement("img");
   hboxL.appendChild(img);
   img.setAttribute("src", htlivesight.Image.transparent);
-  img.setAttribute("id", "weather_image_" + match.id + "_" + match.youth);
+  img.setAttribute("id", "weather_image_" + match.id + "_" + match.sourceSystem);
   img.setAttribute("class", "weather_image");  
   label = document.createElement("span"); //label = document.createElement("label");
   hboxL.appendChild(label);
-  label.setAttribute("id", "arena_attendance_" + match.id + "_" + match.youth);
+  label.setAttribute("id", "arena_attendance_" + match.id + "_" + match.sourceSystem);
   label.setAttribute("class", "arena_attendance");
   label = document.createElement("span");
 	hboxL.appendChild(label);
-  label.setAttribute("id", "weather_text_" + match.id + "_" + match.youth);
+  label.setAttribute("id", "weather_text_" + match.id + "_" + match.sourceSystem);
   label.setAttribute("class", "weather_text");
 
   //var hboxM = document.createElement("hbox");
@@ -1088,7 +1088,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   //hboxM.setAttribute("align", "center");
   
   label = document.createElement("span");
-  label.setAttribute("id", "time_" + match.id + "_" + match.youth);
+  label.setAttribute("id", "time_" + match.id + "_" + match.sourceSystem);
   hboxM.appendChild(label);
  
   //var hboxR = document.createElement("hbox");
@@ -1109,7 +1109,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box.appendChild(img);
   img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.sound.ON);
-  img.setAttribute("id", "sound_" + match.id + "_" + match.youth);
+  img.setAttribute("id", "sound_" + match.id + "_" + match.sourceSystem);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowSound",data[0]));
 //  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.sound")*/htlivesight.Util.Parse("TooltipWindowSound",data[0]));
   img.addEventListener('click',  htlivesight.Click.sound, true);
@@ -1120,7 +1120,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box.appendChild(img);
   img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.link.OFF);
-  img.setAttribute("id", "link_" + match.id + "_" + match.youth);
+  img.setAttribute("id", "link_" + match.id + "_" + match.sourceSystem);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowLink",data[0]));
  // img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.link")*/htlivesight.Util.Parse("TooltipWindowLink",data[0]));
   img.addEventListener('click',  htlivesight.Click.link, true);
@@ -1131,7 +1131,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   box.appendChild(img);
   img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.info.ON);
-  img.setAttribute("id", "tip_" + match.id + "_" + match.youth);
+  img.setAttribute("id", "tip_" + match.id + "_" + match.sourceSystem);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowInfo",data[0]));
  // img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.info")*/htlivesight.Util.Parse("TooltipWindowInfo",data[0]));
   img.addEventListener('click',  htlivesight.Click.tip, true);
@@ -1140,7 +1140,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.maximize.OFF);
-  img.setAttribute("id", "maximize_" + match.id + "_" + match.youth);
+  img.setAttribute("id", "maximize_" + match.id + "_" + match.sourceSystem);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowMaximize",data[0]));
  // img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.maximize")*/htlivesight.Util.Parse("TooltipWindowMaximize",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
@@ -1151,7 +1151,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.minimize.ON);
-  img.setAttribute("id", "minimize_" + match.id + "_" + match.youth);
+  img.setAttribute("id", "minimize_" + match.id + "_" + match.sourceSystem);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowMinimize",data[0]));
  // img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.minimize")*/htlivesight.Util.Parse("TooltipWindowMinimize",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
@@ -1162,7 +1162,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.shade.OFF);
-  img.setAttribute("id", "shade_" + match.id + "_" + match.youth);
+  img.setAttribute("id", "shade_" + match.id + "_" + match.sourceSystem);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowShade",data[0]));
 //  img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.shade")*/htlivesight.Util.Parse("TooltipWindowShade",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
@@ -1173,7 +1173,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.close.OFF);
-  img.setAttribute("id", "close_" + match.id + "_" + match.youth);
+  img.setAttribute("id", "close_" + match.id + "_" + match.sourceSystem);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowClose",data[0]));
   //img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.close")*/htlivesight.Util.Parse("TooltipWindowClose",data[0]));
   img.addEventListener('click',  htlivesight.Click.window, true);
@@ -1184,7 +1184,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.up.OFF);
-  img.setAttribute("id", "moveup_" + match.id + "_" + match.youth);
+  img.setAttribute("id", "moveup_" + match.id + "_" + match.sourceSystem);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowMoveUp",data[0]));
   //img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.move_up")*/htlivesight.Util.Parse("TooltipWindowMoveUp",data[0]));
   img.addEventListener('click',  htlivesight.Click.moveUp, true);
@@ -1195,7 +1195,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   hboxR.appendChild(img);
   img.setAttribute("class", "match_button");
   img.setAttribute("src", htlivesight.Image.window.down.OFF);
-  img.setAttribute("id", "movedown_" + match.id + "_" + match.youth);
+  img.setAttribute("id", "movedown_" + match.id + "_" + match.sourceSystem);
   img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowMoveDown",data[0]));
   //img.setAttribute("tooltiptext", /*strings.getString("tooltip.window.move_down")*/htlivesight.Util.Parse("TooltipWindowMoveDown",data[0]));
   img.addEventListener('click',  htlivesight.Click.moveDown, true);
@@ -1214,7 +1214,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 
   placardrow.appendChild(placardbox);
   //placardbox.setAttribute("pack", "center");
-  placardbox.setAttribute("id", "placardbox_"+match.id + "_" + match.youth);
+  placardbox.setAttribute("id", "placardbox_"+match.id + "_" + match.sourceSystem);
   //placardbox.setAttribute("flex", "1");
 
   // home team
@@ -1242,45 +1242,45 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   // one
   box = document.createElement("td");//box = document.createElement("label"); bigpapy add to fix it
   hometr.appendChild(box);
-  box.setAttribute("id", "header_home_team_notify_" + match.id + "_" + match.youth);
+  box.setAttribute("id", "header_home_team_notify_" + match.id + "_" + match.sourceSystem);
   box.setAttribute("class", "header_notify");
   
   
   label = document.createElement("td");//label = document.createElement("label");
   hometr.appendChild(label);
-  label.setAttribute("id", "home_team_tactic_" + match.id + "_" + match.youth);
+  label.setAttribute("id", "home_team_tactic_" + match.id + "_" + match.sourceSystem);
   label.setAttribute("class", "tactic");
   label = document.createElement("td");//label = document.createElement("label");
   hometr.appendChild(label);
-  //label.setAttribute("id", "home_team_formation_" + match.id + "_" + match.youth);
+  //label.setAttribute("id", "home_team_formation_" + match.id + "_" + match.sourceSystem);
   label.setAttribute("class", "formation");
   link = document.createElement("a");
 	label.appendChild(link);
 	//link.setAttribute("href", "#");
-	link.setAttribute("id", "home_team_formation_" + match.id + "_" + match.youth);
+	link.setAttribute("id", "home_team_formation_" + match.id + "_" + match.sourceSystem);
 	
 	link.setAttribute("title", htlivesight.Util.Parse("SchemaTip", data[0]));
-	//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.youth+"_home"+");";
+	//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.sourceSystem+"_home"+");";
 	//link.addEventListener("click",htlivesight.DOM.formationpopup(argumentLineup));
 	link.setAttribute("onclick","htlivesight.DOM.formationpopup(this.id)");
-    $( "#"+"home_team_formation_" + match.id + "_" + match.youth+"_table").tabs();
+    $( "#"+"home_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 
 	
-	//$( "#"+"home_team_formation_"+match.id+"_"+match.youth+"_table" ).dialog( "option", "title", match.home.team.name );
-	//$("#"+"home_team_formation_"+match.id+"_"+match.youth+"_table").dialog({ title: match.home.team.name });
+	//$( "#"+"home_team_formation_"+match.id+"_"+match.sourceSystem+"_table" ).dialog( "option", "title", match.home.team.name );
+	//$("#"+"home_team_formation_"+match.id+"_"+match.sourceSystem+"_table").dialog({ title: match.home.team.name });
 
   //two!
  // if (!htlivesight.prefs.matches.scorers) {
 	    label = document.createElement("td");//label = document.createElement("label");
 	    //leftbox.appendChild(label);
 	    hometr.appendChild(label);
-	 //   label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
+	 //   label.setAttribute("id", "home_team_name_" + match.id + "_" + match.sourceSystem);
 	    link = document.createElement("a");
 		label.appendChild(link);
 		//link.setAttribute("href", "#");
-		link.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
+		link.setAttribute("id", "home_team_name_" + match.id + "_" + match.sourceSystem);
 		link.setAttribute("title", htlivesight.Util.Parse("StatisticTip", data[0]));
-		//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.youth+"_home"+");";
+		//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.sourceSystem+"_home"+");";
 		//link.addEventListener("click",htlivesight.DOM.formationpopup(argumentLineup));
 		link.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id)");
 	    //label.style.fontSize="xx-large";
@@ -1296,7 +1296,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   if (htlivesight.prefs.matches.scorers) {  
 //    label = document.createElement("label");
 //    hbox.appendChild(label);
-//    label.setAttribute("id", "home_team_name_" + match.id + "_" + match.youth);
+//    label.setAttribute("id", "home_team_name_" + match.id + "_" + match.sourceSystem);
 //    label.setAttribute("class", "team_name");
 
 	hbox1 = document.createElement("tr"); //bigpapy add to fix it
@@ -1312,7 +1312,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	  
     label = document.createElement("span");
     box1.appendChild(label);
-    label.setAttribute("id", "home_team_scorers1_" + match.id + "_" + match.youth);
+    label.setAttribute("id", "home_team_scorers1_" + match.id + "_" + match.sourceSystem);
     //label.setAttribute("class", "tactic");
     
     //label.setAttribute("value", " ");
@@ -1331,7 +1331,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     
     label = document.createElement("span");
     box21.appendChild(label);
-    label.setAttribute("id", "home_team_scorers2_" + match.id + "_" + match.youth);
+    label.setAttribute("id", "home_team_scorers2_" + match.id + "_" + match.sourceSystem);
     //label.setAttribute("class", "tactic");
     //label.setAttribute("value", " ");
     label.innerHTML= " ";
@@ -1360,7 +1360,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
  	    label = document.createElement("span");
  	    label.style.color= "#E8AE00";
  	    box31.appendChild(label);
- 	    label.setAttribute("id", "home_team_booked1_" + match.id + "_" + match.youth);
+ 	    label.setAttribute("id", "home_team_booked1_" + match.id + "_" + match.sourceSystem);
  	    //label.setAttribute("class", "tactic");
  	    
  	    //label.setAttribute("value", " ");
@@ -1380,7 +1380,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
  	    label = document.createElement("span");
  	    box41.style.color= "#E8AE00";
  	    box41.appendChild(label);
- 	    label.setAttribute("id", "home_team_booked2_" + match.id + "_" + match.youth);
+ 	    label.setAttribute("id", "home_team_booked2_" + match.id + "_" + match.sourceSystem);
  	    //label.setAttribute("class", "tactic");
  	    //label.setAttribute("value", " ");
  	    label.innerHTML= " ";
@@ -1407,7 +1407,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		    label = document.createElement("span");
 		    label.style.color= "#FF0011";
 		    box51.appendChild(label);
-		    label.setAttribute("id", "home_team_sent_off1_" + match.id + "_" + match.youth);
+		    label.setAttribute("id", "home_team_sent_off1_" + match.id + "_" + match.sourceSystem);
 		    //label.setAttribute("class", "tactic");
 		    
 		    //label.setAttribute("value", " ");
@@ -1427,7 +1427,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		    label = document.createElement("span");
 		    box61.style.color= "#FF0011";
 		    box61.appendChild(label);
-		    label.setAttribute("id", "home_team_sent_off2_" + match.id + "_" + match.youth);
+		    label.setAttribute("id", "home_team_sent_off2_" + match.id + "_" + match.sourceSystem);
 		    //label.setAttribute("class", "tactic");
 		    //label.setAttribute("value", " ");
 		    label.innerHTML= " ";
@@ -1454,7 +1454,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		    label = document.createElement("span");
 		    label.style.color= "#FA6C64";
 		    box71.appendChild(label);
-		    label.setAttribute("id", "home_team_injured1_" + match.id + "_" + match.youth);
+		    label.setAttribute("id", "home_team_injured1_" + match.id + "_" + match.sourceSystem);
 		    //label.setAttribute("class", "tactic");
 		    
 		    //label.setAttribute("value", " ");
@@ -1474,7 +1474,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		    label = document.createElement("span");
 		    box81.style.color= "#FA6C64";
 		    box81.appendChild(label);
-		    label.setAttribute("id", "home_team_injured2_" + match.id + "_" + match.youth);
+		    label.setAttribute("id", "home_team_injured2_" + match.id + "_" + match.sourceSystem);
 		    //label.setAttribute("class", "tactic");
 		    //label.setAttribute("value", " ");
 		    label.innerHTML= " ";
@@ -1498,7 +1498,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   label = document.createElement("span");
   //label.style.fontSize="xx-large";
   box.appendChild(label);
-  label.setAttribute("id", "home_team_goals_" + match.id + "_" + match.youth);
+  label.setAttribute("id", "home_team_goals_" + match.id + "_" + match.sourceSystem);
   label = document.createElement("span");
   //label.style.fontSize="xx-large";
   box.appendChild(label);
@@ -1507,7 +1507,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   label = document.createElement("span");
   
   box.appendChild(label);
-  label.setAttribute("id", "away_team_goals_" + match.id + "_" + match.youth);
+  label.setAttribute("id", "away_team_goals_" + match.id + "_" + match.sourceSystem);
   //label.style.fontSize="xx-large";
 
   // away team
@@ -1534,16 +1534,16 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   
   label = document.createElement("td");//label = document.createElement("label");
   awaytr.appendChild(label);
-//  label.setAttribute("id", "away_team_name_" + match.id + "_" + match.youth);
+//  label.setAttribute("id", "away_team_name_" + match.id + "_" + match.sourceSystem);
   label.setAttribute("class", "team_name");
   link = document.createElement("a");
   
 	label.appendChild(link);
 	//link.setAttribute("href", "#");
-	link.setAttribute("id", "away_team_name_" + match.id + "_" + match.youth);
+	link.setAttribute("id", "away_team_name_" + match.id + "_" + match.sourceSystem);
 
 	link.setAttribute("title", htlivesight.Util.Parse("StatisticTip", data[0]));
-	//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.youth+"_home"+");";
+	//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.sourceSystem+"_home"+");";
 	//link.addEventListener("click",htlivesight.DOM.formationpopup(argumentLineup));
 	link.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
   //label.style.fontSize="xx-large";
@@ -1555,25 +1555,25 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   }
   label = document.createElement("td");//label = document.createElement("label");
   awaytr.appendChild(label);
-  //label.setAttribute("id", "away_team_formation_" + match.id + "_" + match.youth);
+  //label.setAttribute("id", "away_team_formation_" + match.id + "_" + match.sourceSystem);
   label.setAttribute("class", "formation");
 	link = document.createElement("a");
 	label.appendChild(link);
 	//link.setAttribute("href", "#");
-	link.setAttribute("id", "away_team_formation_" + match.id + "_" + match.youth);
+	link.setAttribute("id", "away_team_formation_" + match.id + "_" + match.sourceSystem);
 	link.setAttribute( "title", htlivesight.Util.Parse( "SchemaTip", data[0] ) );
 	link.setAttribute("onclick","htlivesight.DOM.formationpopup(this.id);");
-    $( "#"+"away_team_formation_" + match.id + "_" + match.youth+"_table").tabs();
-//	$("#"+"away_team_formation_"+match.id+"_"+match.youth+"_table").dialog({ autoOpen: true, width: 480, height: 110 });
+    $( "#"+"away_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
+//	$("#"+"away_team_formation_"+match.id+"_"+match.sourceSystem+"_table").dialog({ autoOpen: true, width: 480, height: 110 });
   label = document.createElement("td");//label = document.createElement("label");
   awaytr.appendChild(label);
-  label.setAttribute("id", "away_team_tactic_" + match.id + "_" + match.youth);
+  label.setAttribute("id", "away_team_tactic_" + match.id + "_" + match.sourceSystem);
   label.setAttribute("class", "tactic");
   	
   //box = document.createElement("hbox");
   box = document.createElement("td");//box = document.createElement("label"); bigpapy: added to fix html
   awaytr.appendChild(box);
-  box.setAttribute("id", "header_away_team_notify_" + match.id + "_" + match.youth);
+  box.setAttribute("id", "header_away_team_notify_" + match.id + "_" + match.sourceSystem);
   box.setAttribute("class", "header_notify");
 
   if (htlivesight.prefs.matches.scorers) {
@@ -1593,7 +1593,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	  
     label = document.createElement("span");
     box3.appendChild(label);
-    label.setAttribute("id", "away_team_scorers1_" + match.id + "_" + match.youth);
+    label.setAttribute("id", "away_team_scorers1_" + match.id + "_" + match.sourceSystem);
     //label.setAttribute("class", "tactic");
     label.innerHTML= " ";
     //label.setAttribute("value", " ");
@@ -1613,7 +1613,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     
     label = document.createElement("span");
     box23.appendChild(label);
-    label.setAttribute("id", "away_team_scorers2_" + match.id + "_" + match.youth);
+    label.setAttribute("id", "away_team_scorers2_" + match.id + "_" + match.sourceSystem);
     //label.setAttribute("class", "tactic");
     //label.setAttribute("value", " ");
     label.innerHTML= " ";
@@ -1638,7 +1638,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		    label = document.createElement("span");
 		    label.style.color= "#E8AE00";
 		    box33.appendChild(label);
-		    label.setAttribute("id", "away_team_booked1_" + match.id + "_" + match.youth);
+		    label.setAttribute("id", "away_team_booked1_" + match.id + "_" + match.sourceSystem);
 		    //label.setAttribute("class", "tactic");
 		    label.innerHTML= " ";
 		    //label.setAttribute("value", " ");
@@ -1658,7 +1658,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		    label = document.createElement("span");
 		    box43.style.color= "#E8AE00";
 		    box43.appendChild(label);
-		    label.setAttribute("id", "away_team_booked2_" + match.id + "_" + match.youth);
+		    label.setAttribute("id", "away_team_booked2_" + match.id + "_" + match.sourceSystem);
 		    //label.setAttribute("class", "tactic");
 		    //label.setAttribute("value", " ");
 		    label.innerHTML= " ";
@@ -1687,7 +1687,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	    label = document.createElement("span");
 	    label.style.color= "#FF0011";
 	    box53.appendChild(label);
-	    label.setAttribute("id", "away_team_sent_off1_" + match.id + "_" + match.youth);
+	    label.setAttribute("id", "away_team_sent_off1_" + match.id + "_" + match.sourceSystem);
 	    //label.setAttribute("class", "tactic");
 	    label.innerHTML= " ";
 	    //label.setAttribute("value", " ");
@@ -1707,7 +1707,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	    label = document.createElement("span");
 	    box63.style.color= "#FF0011";
 	    box63.appendChild(label);
-	    label.setAttribute("id", "away_team_sent_off2_" + match.id + "_" + match.youth);
+	    label.setAttribute("id", "away_team_sent_off2_" + match.id + "_" + match.sourceSystem);
 	    //label.setAttribute("class", "tactic");
 	    //label.setAttribute("value", " ");
 	    label.innerHTML= " ";
@@ -1736,7 +1736,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	    label = document.createElement("span");
 	    label.style.color= "#FA6C64";
 	    box73.appendChild(label);
-	    label.setAttribute("id", "away_team_injured1_" + match.id + "_" + match.youth);
+	    label.setAttribute("id", "away_team_injured1_" + match.id + "_" + match.sourceSystem);
 	    //label.setAttribute("class", "tactic");
 	    label.innerHTML= " ";
 	    //label.setAttribute("value", " ");
@@ -1756,7 +1756,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	    label = document.createElement("span");
 	    box83.style.color= "#FA6C64";
 	    box83.appendChild(label);
-	    label.setAttribute("id", "away_team_injured2_" + match.id + "_" + match.youth);
+	    label.setAttribute("id", "away_team_injured2_" + match.id + "_" + match.sourceSystem);
 	    //label.setAttribute("class", "tactic");
 	    //label.setAttribute("value", " ");
 	    label.innerHTML= " ";
@@ -1780,19 +1780,19 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   try {
     var i, ev, evList;
     var row, rows, lastrow;
-    rows = document.getElementById("ev_rows_" + match.id + "_" + match.youth);
+    rows = document.getElementById("ev_rows_" + match.id + "_" + match.sourceSystem);
     evList = match.event.list;
     for (i=evList.first; i <= evList.last; i++) { 	
     	ev = evList["_"+i];
-    	if (ev && ev.text != "" && !(document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i)))) {
+    	if (ev && ev.text != "" && !(document.getElementById("ev_row_"+match.id + "_" + match.sourceSystem+"_"+(i)))) {
     		row = htlivesight.DOM.CreateElementRowLiveEvent(match, ev);
-    		row.setAttribute("id", "ev_row_"+match.id + "_" + match.youth+"_"+i );
+    		row.setAttribute("id", "ev_row_"+match.id + "_" + match.sourceSystem+"_"+i );
     		if (htlivesight.prefs.other.bottomUp){ // reverse order
     			var countBack=0;
- 				if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i));// last event
-    			if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-1));// last event
-    			if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-2));// last event
-    			if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.youth+"_"+(i-3));// last event (before two "")*/
+ 				if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.sourceSystem+"_"+(i));// last event
+    			if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.sourceSystem+"_"+(i-1));// last event
+    			if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.sourceSystem+"_"+(i-2));// last event
+    			if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.sourceSystem+"_"+(i-3));// last event (before two "")*/
        			rows.insertBefore(row,lastrow);// inserting new row at the top of the list
        			lastrow=row; // top row is the last one
     		}else{
@@ -1831,7 +1831,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     rows = document.createElement("table");    
     rows.width="100%";
     gridtd.appendChild(rows);
-    rows.setAttribute("id", "ev_rows_" + match.id + "_" + match.youth);
+    rows.setAttribute("id", "ev_rows_" + match.id + "_" + match.sourceSystem);
     rows.setAttribute("class", "ev_rows");
     return grid;
   } catch(e) {
@@ -1855,7 +1855,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     
      if (event.subjectTeamId != 0) {
       var isF;
-      isF = htlivesight.Friends.isFriend(event.subjectTeamId, match.youth, !htlivesight.Friends.STRICT);
+      isF = htlivesight.Friends.isFriend(event.subjectTeamId, match.sourceSystem, !htlivesight.Friends.STRICT);
       var isHome = match.isHomeTeam(event.subjectTeamId);
       if (isF && isHome) {
         row.setAttribute("class", "friend_home");
@@ -1891,24 +1891,24 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
      try{
     	    if(""+event.key.A + event.key.BC=="041") {
     	        if (match.home.team.id==event.subjectTeamId) {
-    	          l1 = document.getElementById("home_team_name_" + match.id + "_" + match.youth);
-    	          htlivesight.DOM.createStatisticElement("home_team_name_"+match.id+"_"+match.youth+"_statistics", match, event);
+    	          l1 = document.getElementById("home_team_name_" + match.id + "_" + match.sourceSystem);
+    	          htlivesight.DOM.createStatisticElement("home_team_name_"+match.id+"_"+match.sourceSystem+"_statistics", match, event);
     	          l1.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
-    	          l1.setAttribute("contextmenu", "home_team_statistics_"+match.id+"_"+match.youth);
+    	          l1.setAttribute("contextmenu", "home_team_statistics_"+match.id+"_"+match.sourceSystem);
     	        } else {
-    	          l1 = document.getElementById("away_team_name_" + match.id + "_" + match.youth);    	          
-    	          htlivesight.DOM.createStatisticElement("away_team_name_"+match.id+"_"+match.youth+"_statistics", match, event);
+    	          l1 = document.getElementById("away_team_name_" + match.id + "_" + match.sourceSystem);    	          
+    	          htlivesight.DOM.createStatisticElement("away_team_name_"+match.id+"_"+match.sourceSystem+"_statistics", match, event);
     	          l1.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
-    	          l1.setAttribute("contextmenu", "away_team_statistics_"+match.id+"_"+match.youth);
+    	          l1.setAttribute("contextmenu", "away_team_statistics_"+match.id+"_"+match.sourceSystem);
     	        };
     	    }; }catch(e){alert("errore stats:"+e);}
      
      
     if(event.lineupElement) {
       if (match.home.team.id==event.subjectTeamId) {
-        l = document.getElementById("home_team_formation_"+match.id + "_" + match.youth);
+        l = document.getElementById("home_team_formation_"+match.id + "_" + match.sourceSystem);
       } else {
-        l = document.getElementById("away_team_formation_"+match.id + "_" + match.youth);
+        l = document.getElementById("away_team_formation_"+match.id + "_" + match.sourceSystem);
       }
       //l.setAttribute("tooltip", event.lineupElement.id);
       // TODO
@@ -2217,7 +2217,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
   try {
     var elem, label/*, a*/;
     
-    elem = document.getElementById("short_" + match.id + "_" + match.youth);
+    elem = document.getElementById("short_" + match.id + "_" + match.sourceSystem);
     if (!elem) {
       elem = htlivesight.DOM.CreateElementRowShortGame(match);
       if ((htlivesight.League.currentRound!= undefined)&&(htlivesight.League.currentRound.id.has(match.id) && htlivesight.showLeague)) {
@@ -2251,11 +2251,11 @@ htlivesight.DOM.UpdateShortBox = function(match) {
   
     }
   
-    //document.getElementById("short_home_goals_" + match.id + "_" + match.youth).setAttribute("value", match.home.goals);
-	//document.getElementById("short_away_goals_" + match.id + "_" + match.youth).setAttribute("value", match.away.goals);
-  var teamName=document.getElementById("short_home_name_" + match.id + "_" + match.youth);
+    //document.getElementById("short_home_goals_" + match.id + "_" + match.sourceSystem).setAttribute("value", match.home.goals);
+	//document.getElementById("short_away_goals_" + match.id + "_" + match.sourceSystem).setAttribute("value", match.away.goals);
+  var teamName=document.getElementById("short_home_name_" + match.id + "_" + match.sourceSystem);
   teamName.innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
-  if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)){
+  if(htlivesight.Friends.isFriend(match.home.team.id,match.sourceSystem)){
   	  if(match.home.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(teamName,'short_own'); 
   	  else
 	  htlivesight.Util.AddClass(teamName,'short_friend');
@@ -2263,16 +2263,16 @@ htlivesight.DOM.UpdateShortBox = function(match) {
   }else{
 	  htlivesight.Util.RemoveClass(teamName,['short_own','short_friend']);//reset styling
 	  teamName.setAttribute("title","click on the team to add to friends list");
-	  teamName.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.home.team.id,match.youth);},false);
+	  teamName.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.home.team.id,match.sourceSystem);},false);
 
   }
   
-  document.getElementById("short_home_goals_" + match.id + "_" + match.youth).innerHTML = match.home.goals;
-  document.getElementById("separator_" + match.id + "_" + match.youth).innerHTML = ":";
-  document.getElementById("short_away_goals_" + match.id + "_" + match.youth).innerHTML = match.away.goals;
-  teamName=document.getElementById("short_away_name_" + match.id + "_" + match.youth);
+  document.getElementById("short_home_goals_" + match.id + "_" + match.sourceSystem).innerHTML = match.home.goals;
+  document.getElementById("separator_" + match.id + "_" + match.sourceSystem).innerHTML = ":";
+  document.getElementById("short_away_goals_" + match.id + "_" + match.sourceSystem).innerHTML = match.away.goals;
+  teamName=document.getElementById("short_away_name_" + match.id + "_" + match.sourceSystem);
   teamName.innerHTML = htlivesight.DOM.getTextContent(match.away.team.shortName);
-  if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)){
+  if(htlivesight.Friends.isFriend(match.away.team.id,match.sourceSystem)){
   	  if(match.away.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(teamName,'short_own'); 
   	  else
 	  htlivesight.Util.AddClass(teamName,'short_friend');
@@ -2280,7 +2280,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
   }else{
 	  htlivesight.Util.RemoveClass(teamName,['short_own','short_friend']);//reset styling
 	  teamName.setAttribute("title","click on the team to add to friends list");
-	  teamName.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.away.team.id,match.youth);},false);
+	  teamName.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.away.team.id,match.sourceSystem);},false);
 
   }
   
@@ -2296,25 +2296,25 @@ htlivesight.DOM.UpdateShortBox = function(match) {
   
 try{ //added by bigpapy to debug from XUL to HTML
   row = document.createElement("tr");
-  row.setAttribute("id", "short_" + match.id + "_" + match.youth);
+  row.setAttribute("id", "short_" + match.id + "_" + match.sourceSystem);
   row.setAttribute("class", "match_row");
   
  // console.log(row);
   
   
   cell = document.createElement("td");
-  cell.setAttribute("id", "short_home_name_" + match.id + "_" + match.youth);
+  cell.setAttribute("id", "short_home_name_" + match.id + "_" + match.sourceSystem);
   cell.setAttribute("class", "hometeam_league");
   
-  //document.getElementById("short_home_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
+  //document.getElementById("short_home_name_" + match.id + "_" + match.sourceSystem).innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
   htlivesight.Util.RemoveClass(cell,['short_own','short_friend']);//reset styling
-  if(htlivesight.Friends.isFriend(match.home.team.id,match.youth)){
+  if(htlivesight.Friends.isFriend(match.home.team.id,match.sourceSystem)){
   	  if(match.home.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(cell,'short_own'); 
   	  else
   	  htlivesight.Util.AddClass(cell,'short_friend');
   }else{
 	  cell.setAttribute("title","click on the team to add to friends list");
-	  cell.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.home.team.id,match.youth);},false); 
+	  cell.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.home.team.id,match.sourceSystem);},false); 
   }
 	
 //	console.log(cell);
@@ -2322,45 +2322,45 @@ try{ //added by bigpapy to debug from XUL to HTML
   
   
   cell = document.createElement("td");
-  cell.setAttribute("id", "short_home_goals_" + match.id + "_" + match.youth);
+  cell.setAttribute("id", "short_home_goals_" + match.id + "_" + match.sourceSystem);
   cell.setAttribute("class", "homescore_league");
-  //document.getElementById("short_home_goals_" + match.id + "_" + match.youth).innerHTML = match.home.goals;
+  //document.getElementById("short_home_goals_" + match.id + "_" + match.sourceSystem).innerHTML = match.home.goals;
   
 //	console.log(cell);
   row.appendChild(cell);
   
   
   cell = document.createElement("td");
-  cell.setAttribute("id", "separator_" + match.id + "_" + match.youth);
+  cell.setAttribute("id", "separator_" + match.id + "_" + match.sourceSystem);
   cell.setAttribute("class", "separator_league");
-  //document.getElementById("separator_" + match.id + "_" + match.youth).innerHTML = ":";
+  //document.getElementById("separator_" + match.id + "_" + match.sourceSystem).innerHTML = ":";
   
 //	console.log(cell);
   row.appendChild(cell);
 
 
   cell = document.createElement("td");
-  cell.setAttribute("id", "short_away_goals_" + match.id + "_" + match.youth);
+  cell.setAttribute("id", "short_away_goals_" + match.id + "_" + match.sourceSystem);
   cell.setAttribute("class", "awayscore_league");
-  //document.getElementById("short_away_goals_" + match.id + "_" + match.youth).innerHTML = match.away.goals;
+  //document.getElementById("short_away_goals_" + match.id + "_" + match.sourceSystem).innerHTML = match.away.goals;
   
 //	console.log(cell);
   row.appendChild(cell);
 
 
   cell = document.createElement("td");
-  cell.setAttribute("id", "short_away_name_" + match.id + "_" + match.youth);
+  cell.setAttribute("id", "short_away_name_" + match.id + "_" + match.sourceSystem);
   cell.setAttribute("class", "awayteam_league");
   
-  //document.getElementById("short_away_name_" + match.id + "_" + match.youth).innerHTML = htlivesight.DOM.getTextContent(match.away.team.shortName);
+  //document.getElementById("short_away_name_" + match.id + "_" + match.sourceSystem).innerHTML = htlivesight.DOM.getTextContent(match.away.team.shortName);
   htlivesight.Util.RemoveClass(cell,['short_own','short_friend']);//reset styling
-  if(htlivesight.Friends.isFriend(match.away.team.id,match.youth)){
+  if(htlivesight.Friends.isFriend(match.away.team.id,match.sourceSystem)){
   	  if(match.away.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(cell,'short_own'); 
   	  else
 	  htlivesight.Util.AddClass(cell,'short_friend');
   }else{
 	  cell.setAttribute("title","click on the team to add to friends list");
-	  cell.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.away.team.id,match.youth);},false);  
+	  cell.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.away.team.id,match.sourceSystem);},false);  
   }
 	
 //	console.log(cell);
@@ -2368,13 +2368,13 @@ try{ //added by bigpapy to debug from XUL to HTML
 
 
   cell = document.createElement("td");
-  cell.setAttribute("id", "imageadd_" + match.id + "_" + match.youth);
+  cell.setAttribute("id", "imageadd_" + match.id + "_" + match.sourceSystem);
   cell.setAttribute("class", "add_league");
   image = document.createElement("img");
-  image.setAttribute("id", "short_liveimage_" + match.id + "_" + match.youth);
+  image.setAttribute("id", "short_liveimage_" + match.id + "_" + match.sourceSystem);
 //  image.setAttribute("class", "imgwinboxopen");
   image.setAttribute("src", htlivesight.Image.live.OFF);
-  image.setAttribute("match_id", match.id + "_" + match.youth);
+  image.setAttribute("match_id", match.id + "_" + match.sourceSystem);
   image.addEventListener('click',  htlivesight.Click.ToggleMatch, true);
   
   cell.appendChild(image);
@@ -2383,13 +2383,13 @@ try{ //added by bigpapy to debug from XUL to HTML
   
 
   cell = document.createElement("td");
-  cell.setAttribute("id", "imagedel_" + match.id + "_" + match.youth);
+  cell.setAttribute("id", "imagedel_" + match.id + "_" + match.sourceSystem);
   cell.setAttribute("class", "remove_league");
   image = document.createElement("img");
-  image.setAttribute("id", "short_liveclose_" + match.id + "_" + match.youth);
+  image.setAttribute("id", "short_liveclose_" + match.id + "_" + match.sourceSystem);
 // image.setAttribute("class", "imgwinboxclose");
   image.setAttribute("src", htlivesight.Image.shortBox.CLOSE);
-  image.setAttribute("match_id", match.id + "_" + match.youth);
+  image.setAttribute("match_id", match.id + "_" + match.sourceSystem);
   image.addEventListener('click',  htlivesight.Click.DeleteMatch, true);
   
   cell.appendChild(image);

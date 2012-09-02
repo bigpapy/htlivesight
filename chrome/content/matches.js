@@ -11,14 +11,14 @@ htlivesight.Matches =function() {
  * Get match by team id data
  * ---------------------------------------------------------------- */
 
-htlivesight.Matches.HTTPGetByTeam = function (teamId, youth) {
+htlivesight.Matches.HTTPGetByTeam = function (teamId, sourceSystem) {
 // alert("youth: "+ youth);	/*   var URL;
 
     URL = HTTP.hattrickServer + "/Common/chppxml.axd?file=matches"
         + "&teamID=" + teamId
 	+ "&isYouth=" + youth;*/
 
-   // EventSystem.HTTPRequest(URL, Matches.ParseGetByTeam, "request.team");  var parameters=[    				["file", "matches"],    				["teamID", teamId]    			];    			if (youth == "True")    				parameters.push(["isYouth", "true"]);    	//		alert ("youth " +youth);    htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Matches.ParseGetByTeam(xml);});
+   // EventSystem.HTTPRequest(URL, Matches.ParseGetByTeam, "request.team");  var parameters=[    				["file", "matches"],    				["teamID", teamId]    			];    			if (sourceSystem == "youth")    				parameters.push(["isYouth", "true"]);    	//		alert ("youth " +youth);    htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Matches.ParseGetByTeam(xml);});
 };
 
 htlivesight.Matches.ParseGetByTeam = function(xml) {
@@ -30,9 +30,9 @@ htlivesight.Matches.ParseGetByTeam = function(xml) {
 //    regExp = new RegExp(regStr, "g");
  //   var id, homeTeam, awayTeam;
     var matches = new Array();
-    var youth = htlivesight.Live.ParseYouth(xml); //  alert("youth " + youth);        var matchNodes = xml.getElementsByTagName("Match");      //  alert("dopo xml.getElementsByTagName(Match)");
+    var sourceSystem = htlivesight.Live.ParseSourceSystem(xml); //  alert("youth " + youth);        var matchNodes = xml.getElementsByTagName("Match");      //  alert("dopo xml.getElementsByTagName(Match)");
   //  for(;found = regExp.exec(xml);) {    for(var j=0;j< matchNodes.length ;j++){    var	matchNode = matchNodes[j];     
-    	matches[matches.length] = htlivesight.Matches.ParseMatch(matchNode, youth);    	
+    	matches[matches.length] = htlivesight.Matches.ParseMatch(matchNode, sourceSystem);    	
     }      
     var diffDate, nearestDiff=Number.MAX_VALUE;
     var g=-1, i=0;
@@ -50,7 +50,7 @@ htlivesight.Matches.ParseGetByTeam = function(xml) {
     }
     if(g != -1) {
       if(!(htlivesight.warningShown == true && htlivesight.liveCount >= 20))
-        htlivesight.AddLiveMatch(matches[g].id, matches[g].youth);
+        htlivesight.AddLiveMatch(matches[g].id, matches[g].sourceSystem);
     }
     if(htlivesight.Friends.autoFriendCount > 0) {
       htlivesight.Friends.autoFriendCount--;
@@ -67,7 +67,7 @@ htlivesight.Matches.ParseGetByTeam = function(xml) {
  * commun Parse functions
  * ---------------------------------------------------------------- */
 
-htlivesight.Matches.ParseMatch = function (xml, youth) {
+htlivesight.Matches.ParseMatch = function (xml, sourceSystem) {
   //match.type = Matches.ParseMatchType(xml);//	alert(" "+ Live.ParseMatchId(xml) +" "+ League.ParseMatchDate(xml) + " "+ Live.ParseHomeTeam(xml)+ " "+Live.ParseAwayTeam(xml));
  return new htlivesight.Match(
     htlivesight.Live.ParseMatchId(xml),
@@ -75,7 +75,7 @@ htlivesight.Matches.ParseMatch = function (xml, youth) {
     htlivesight.Live.ParseHomeTeam(xml),
     htlivesight.Live.ParseAwayTeam(xml),
     null, null,
-    youth	
+    sourceSystem	
   );
 };
 

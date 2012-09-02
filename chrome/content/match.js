@@ -4,13 +4,13 @@
  * ---------------------------------------------------------------- */
 if (!htlivesight) var htlivesight = {};
 
-htlivesight.Match= function(id, date, home, away, event, arena, youth, subs) {
+htlivesight.Match= function(id, date, home, away, event, arena, sourceSystem, subs) {
   this.id = id;
   this.date = date;
   this.home = home;
   this.away = away;
   this.event = event;
-  this.youth = youth;
+  this.sourceSystem = sourceSystem;
   this.substitutions = subs;
   this.window = {
     mode: htlivesight.DOM.mode.minimize,
@@ -111,12 +111,12 @@ htlivesight.Match.prototype.isAwayTeam = function(teamId) {
 };
 
 htlivesight.Match.Update = function (newMatch) {
-  var match = htlivesight.Match.List["_"+newMatch.id+"_"+newMatch.youth];
+  var match = htlivesight.Match.List["_"+newMatch.id+"_"+newMatch.sourceSystem];
   if (!match) {
     // new match!
     // add match to match list
     match = newMatch;
-    htlivesight.Match.List["_"+match.id+"_"+match.youth] = match;
+    htlivesight.Match.List["_"+match.id+"_"+match.sourceSystem] = match;
   } else {
 	  
 	// added by bigpapy to get substitutions.

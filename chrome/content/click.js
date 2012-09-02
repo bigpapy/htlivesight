@@ -15,10 +15,9 @@ htlivesight.Click = {
     }
   },
   AddMatch: function (event) {
-    var matchId = parseInt(document.getElementById("boxaddmatch").value, 10);
-    var youth = (document.getElementById("boxaddyouth").checked?"True":"False");
-    if (matchId) {
-      htlivesight.AddLiveMatch(matchId, youth);
+    var matchId = parseInt(document.getElementById("boxaddmatch").value, 10);        //alert("select value="+document.getElementById("sourceSystem").value);
+    //var youth = (document.getElementById("boxaddyouth").checked?"True":"False");        var sourceSystem= document.getElementById("sourceSystem").value;        if (matchId) {
+      htlivesight.AddLiveMatch(matchId, sourceSystem);
     }
   },
   Login: function (event) {//	  console.log("login1");
@@ -30,10 +29,10 @@ htlivesight.Click = {
     htlivesight.Logout();
   },
   AddMatchByTeam: function (event) {
-    var teamId = parseInt(document.getElementById("boxaddmatch").value, 10);
-    var youth = (document.getElementById("boxaddyouth").checked?"True":"False");
+    var teamId = parseInt(document.getElementById("boxaddmatch").value, 10);    
+    var sourceSystem = document.getElementById("sourceSystem").value;
     if(teamId) {
-      htlivesight.Matches.HTTPGetByTeam(teamId, youth);
+      htlivesight.Matches.HTTPGetByTeam(teamId, sourceSystem);
     }
   },
   ClearLog: function() {
