@@ -18,10 +18,10 @@ htlivesight.Matches.HTTPGetByTeam = function (teamId, sourceSystem) {
         + "&teamID=" + teamId
 	+ "&isYouth=" + youth;*/
 
-   // EventSystem.HTTPRequest(URL, Matches.ParseGetByTeam, "request.team");  var parameters=[    				["file", "matches"],    				["teamID", teamId]    			];    			if (sourceSystem == "youth")    				parameters.push(["isYouth", "true"]);    	//		alert ("youth " +youth);    htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Matches.ParseGetByTeam(xml);});
+   // EventSystem.HTTPRequest(URL, Matches.ParseGetByTeam, "request.team");  var parameters=[    				["file", "matches"],    	              ["version","2.3"],    				["teamID", teamId]    			];    			if (sourceSystem == "youth")    				parameters.push(["isYouth", "true"]);    	//		alert ("youth " +youth);    htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Matches.ParseGetByTeam(xml,sourceSystem);});
 };
 
-htlivesight.Matches.ParseGetByTeam = function(xml) {
+htlivesight.Matches.ParseGetByTeam = function(xml,sourceSystem) {
 	// Gonzo replace: var regStr = "(<Match\\s(?:.*?)</Match>)";
 //	var regStr = "(<Match>(.*?)</Match>)";
 //  var regExp, found;
@@ -30,7 +30,7 @@ htlivesight.Matches.ParseGetByTeam = function(xml) {
 //    regExp = new RegExp(regStr, "g");
  //   var id, homeTeam, awayTeam;
     var matches = new Array();
-    var sourceSystem = htlivesight.Live.ParseSourceSystem(xml); //  alert("youth " + youth);        var matchNodes = xml.getElementsByTagName("Match");      //  alert("dopo xml.getElementsByTagName(Match)");
+  //  var sourceSystem = sourceSystem; //  alert("youth " + youth);        var matchNodes = xml.getElementsByTagName("Match");      //  alert("dopo xml.getElementsByTagName(Match)");
   //  for(;found = regExp.exec(xml);) {    for(var j=0;j< matchNodes.length ;j++){    var	matchNode = matchNodes[j];     
     	matches[matches.length] = htlivesight.Matches.ParseMatch(matchNode, sourceSystem);    	
     }      
