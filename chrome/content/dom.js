@@ -1313,6 +1313,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     label = document.createElement("span");
     box1.appendChild(label);
     label.setAttribute("id", "home_team_scorers1_" + match.id + "_" + match.sourceSystem);
+	label.setAttribute("class", "scinheader");
     //label.setAttribute("class", "tactic");
     
     //label.setAttribute("value", " ");
@@ -1332,6 +1333,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     label = document.createElement("span");
     box21.appendChild(label);
     label.setAttribute("id", "home_team_scorers2_" + match.id + "_" + match.sourceSystem);
+	label.setAttribute("class", "scinheader");
     //label.setAttribute("class", "tactic");
     //label.setAttribute("value", " ");
     label.innerHTML= " ";
@@ -1358,7 +1360,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
  		hbox3.appendChild(box31);
  		  
  	    label = document.createElement("span");
- 	    label.style.color= "#E8AE00";
+		label.setAttribute("class", "ycinheader");
  	    box31.appendChild(label);
  	    label.setAttribute("id", "home_team_booked1_" + match.id + "_" + match.sourceSystem);
  	    //label.setAttribute("class", "tactic");
@@ -1378,7 +1380,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
  		hbox4.appendChild(box41);
  	    
  	    label = document.createElement("span");
- 	    box41.style.color= "#E8AE00";
+ 	    box41.setAttribute("class", "ycinheader");
  	    box41.appendChild(label);
  	    label.setAttribute("id", "home_team_booked2_" + match.id + "_" + match.sourceSystem);
  	    //label.setAttribute("class", "tactic");
@@ -1405,7 +1407,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			hbox5.appendChild(box51);
 			  
 		    label = document.createElement("span");
-		    label.style.color= "#FF0011";
+			label.setAttribute("class", "rcinheader");
 		    box51.appendChild(label);
 		    label.setAttribute("id", "home_team_sent_off1_" + match.id + "_" + match.sourceSystem);
 		    //label.setAttribute("class", "tactic");
@@ -1425,7 +1427,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			hbox6.appendChild(box61);
 		    
 		    label = document.createElement("span");
-		    box61.style.color= "#FF0011";
+		    box61.setAttribute("class", "rcinheader");
 		    box61.appendChild(label);
 		    label.setAttribute("id", "home_team_sent_off2_" + match.id + "_" + match.sourceSystem);
 		    //label.setAttribute("class", "tactic");
@@ -1452,7 +1454,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			hbox7.appendChild(box71);
 			  
 		    label = document.createElement("span");
-		    label.style.color= "#FA6C64";
+			label.setAttribute("class", "injinheader");
 		    box71.appendChild(label);
 		    label.setAttribute("id", "home_team_injured1_" + match.id + "_" + match.sourceSystem);
 		    //label.setAttribute("class", "tactic");
@@ -1472,7 +1474,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			hbox8.appendChild(box81);
 		    
 		    label = document.createElement("span");
-		    box81.style.color= "#FA6C64";
+		    box81.setAttribute("class", "injinheader");
 		    box81.appendChild(label);
 		    label.setAttribute("id", "home_team_injured2_" + match.id + "_" + match.sourceSystem);
 		    //label.setAttribute("class", "tactic");
@@ -1594,6 +1596,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     label = document.createElement("span");
     box3.appendChild(label);
     label.setAttribute("id", "away_team_scorers1_" + match.id + "_" + match.sourceSystem);
+	label.setAttribute("class", "scinheader");
     //label.setAttribute("class", "tactic");
     label.innerHTML= " ";
     //label.setAttribute("value", " ");
@@ -1614,6 +1617,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     label = document.createElement("span");
     box23.appendChild(label);
     label.setAttribute("id", "away_team_scorers2_" + match.id + "_" + match.sourceSystem);
+	label.setAttribute("class", "scinheader");
     //label.setAttribute("class", "tactic");
     //label.setAttribute("value", " ");
     label.innerHTML= " ";
@@ -1636,7 +1640,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			hbox3.appendChild(box33);
 			  
 		    label = document.createElement("span");
-		    label.style.color= "#E8AE00";
+		    label.setAttribute("class", "ycinheader");
 		    box33.appendChild(label);
 		    label.setAttribute("id", "away_team_booked1_" + match.id + "_" + match.sourceSystem);
 		    //label.setAttribute("class", "tactic");
@@ -1656,7 +1660,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			hbox4.appendChild(box43);
 		    
 		    label = document.createElement("span");
-		    box43.style.color= "#E8AE00";
+		    box43.setAttribute("class", "ycinheader");
 		    box43.appendChild(label);
 		    label.setAttribute("id", "away_team_booked2_" + match.id + "_" + match.sourceSystem);
 		    //label.setAttribute("class", "tactic");
@@ -1685,7 +1689,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		hbox5.appendChild(box53);
 		  
 	    label = document.createElement("span");
-	    label.style.color= "#FF0011";
+	    label.setAttribute("class", "rcinheader");
 	    box53.appendChild(label);
 	    label.setAttribute("id", "away_team_sent_off1_" + match.id + "_" + match.sourceSystem);
 	    //label.setAttribute("class", "tactic");
@@ -1705,7 +1709,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		hbox6.appendChild(box63);
 	    
 	    label = document.createElement("span");
-	    box63.style.color= "#FF0011";
+	    box63.setAttribute("class", "rcinheader");
 	    box63.appendChild(label);
 	    label.setAttribute("id", "away_team_sent_off2_" + match.id + "_" + match.sourceSystem);
 	    //label.setAttribute("class", "tactic");
@@ -1734,7 +1738,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		hbox7.appendChild(box73);
 		  
 	    label = document.createElement("span");
-	    label.style.color= "#FA6C64";
+	    label.setAttribute("class", "injinheader");
 	    box73.appendChild(label);
 	    label.setAttribute("id", "away_team_injured1_" + match.id + "_" + match.sourceSystem);
 	    //label.setAttribute("class", "tactic");
@@ -1754,7 +1758,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		hbox8.appendChild(box83);
 	    
 	    label = document.createElement("span");
-	    box83.style.color= "#FA6C64";
+	    box83.setAttribute("class", "injinheader");
 	    box83.appendChild(label);
 	    label.setAttribute("id", "away_team_injured2_" + match.id + "_" + match.sourceSystem);
 	    //label.setAttribute("class", "tactic");

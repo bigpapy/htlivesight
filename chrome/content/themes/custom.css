@@ -270,6 +270,7 @@ text-decoration:none;
 }
 #leaguetable_grid_rows td{
 padding: 2px 0;
+/*border-bottom:thin solid DimGray;*/
 }
 
 table.ev_rows,#leaguetable_grid_rows{
@@ -327,3 +328,8 @@ font-weight: bold;
 
 #CrowdinLogo{float:left}
 #CrowdinLabel{margin-top:5px;margin-left:220px;}
+
+.scinheader{font-weight:bold !important;}
+.ycinheader{color:#E8AE00 !important; font-weight:bold !important;}
+.rcinheader{color:#FF0000 !important; font-weight:bold !important;}
+.injinheader{color:#DCA675 !important; font-weight:bold !important;}
