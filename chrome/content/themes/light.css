@@ -22,19 +22,19 @@ border-right: thin solid black;
 tr.league_title + tr,tr.league_promote + tr:not(.league_promote){border-top: 1px solid darkgreen;}
 tr:not(.league_demote) + tr.league_demote{border-top: 1px solid darkred;}
 tr.foe_away{
-background-color: #ffffdd;
+background-color: #F3F777;
 }
 tr.foe_home{
-background-color: #ddddff;
+background-color: #77F7EF;
 }
 tr.friend_home{
-background-color: #ddffdd;
+background-color: #77F77B;
 }
 tr.friend_away{
-background-color: #ffdddd;
+background-color: #F7A8F5;
 }
 em.special_event{
-color: #d60;
+color: #F7021B;
 }
 .booked_player{
 color: rgb(245, 250, 7)!important;
@@ -44,7 +44,7 @@ color: #FF0F03!important;
 }
 
 /*!
- * jQuery UI CSS Framework 1.8.21
+ * jQuery UI CSS Framework 1.8.23
  *
  * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
@@ -84,7 +84,7 @@ color: #FF0F03!important;
 
 
 /*!
- * jQuery UI CSS Framework 1.8.21
+ * jQuery UI CSS Framework 1.8.23
  *
  * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
@@ -92,7 +92,7 @@ color: #FF0F03!important;
  *
  * http://docs.jquery.com/UI/Theming/API
  *
- * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=segoe%20ui,%20Arial,%20sans-serif&fwDefault=normal&fsDefault=12px&cornerRadius=0px&bgColorHeader=bbbbbb&bgTextureHeader=08_diagonals_thick.png&bgImgOpacityHeader=100&borderColorHeader=888888&fcHeader=222222&iconColorHeader=222222&bgColorContent=fafafa&bgTextureContent=01_flat.png&bgImgOpacityContent=75&borderColorContent=888888&fcContent=222222&iconColorContent=222222&bgColorDefault=eeeeee&bgTextureDefault=04_highlight_hard.png&bgImgOpacityDefault=33&borderColorDefault=888888&fcDefault=555555&iconColorDefault=888888&bgColorHover=dddddd&bgTextureHover=04_highlight_hard.png&bgImgOpacityHover=33&borderColorHover=888888&fcHover=212121&iconColorHover=454545&bgColorActive=bbbbbb&bgTextureActive=04_highlight_hard.png&bgImgOpacityActive=33&borderColorActive=888888&fcActive=212121&iconColorActive=454545&bgColorHighlight=ffff00&bgTextureHighlight=08_diagonals_thick.png&bgImgOpacityHighlight=50&borderColorHighlight=888888&fcHighlight=000000&iconColorHighlight=0000ff&bgColorError=ff0000&bgTextureError=08_diagonals_thick.png&bgImgOpacityError=50&borderColorError=888888&fcError=ffffff&iconColorError=ffff00&bgColorOverlay=555555&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=66&opacityOverlay=66&bgColorShadow=cccccc&bgTextureShadow=01_flat.png&bgImgOpacityShadow=33&opacityShadow=66&thicknessShadow=7px&offsetTopShadow=-7px&offsetLeftShadow=-7px&cornerRadiusShadow=10px
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=segoe%20ui,%20Arial,%20sans-serif&fwDefault=normal&fsDefault=12px&cornerRadius=5px&bgColorHeader=dddddd&bgTextureHeader=04_highlight_hard.png&bgImgOpacityHeader=33&borderColorHeader=eeeeee&fcHeader=000000&iconColorHeader=888888&bgColorContent=f5f3e5&bgTextureContent=04_highlight_hard.png&bgImgOpacityContent=33&borderColorContent=dfd9c3&fcContent=000000&iconColorContent=808080&bgColorDefault=fafaf4&bgTextureDefault=04_highlight_hard.png&bgImgOpacityDefault=33&borderColorDefault=d4ccb0&fcDefault=458e00&iconColorDefault=8dc262&bgColorHover=67b021&bgTextureHover=04_highlight_hard.png&bgImgOpacityHover=33&borderColorHover=327e04&fcHover=ffffff&iconColorHover=ffffff&bgColorActive=459e00&bgTextureActive=04_highlight_hard.png&bgImgOpacityActive=33&borderColorActive=327e04&fcActive=ffffff&iconColorActive=eeeeee&bgColorHighlight=fff000&bgTextureHighlight=04_highlight_hard.png&bgImgOpacityHighlight=33&borderColorHighlight=000&fcHighlight=000&iconColorHighlight=0000ff&bgColorError=ff0000&bgTextureError=04_highlight_hard.png&bgImgOpacityError=33&borderColorError=000&fcError=fff&iconColorError=fff000&bgColorOverlay=555555&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=33&opacityOverlay=66&bgColorShadow=cccccc&bgTextureShadow=01_flat.png&bgImgOpacityShadow=33&opacityShadow=66&thicknessShadow=7px&offsetTopShadow=-7px&offsetLeftShadow=-7px&cornerRadiusShadow=8px
  */
 
 
@@ -101,28 +101,28 @@ color: #FF0F03!important;
 .ui-widget { /*font-family: segoe ui, Arial, sans-serif; font-size: 12px;*/ }
 .ui-widget .ui-widget { font-size: 1em; }
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { /*font-family: segoe ui, Arial, sans-serif;*/ font-size: 1em; }
-.ui-widget-content { border: 1px solid #888888; background: #fafafa url(images/ui-bg_flat_75_fafafa_40x100.png) 50% 50% repeat-x; color: #222222; }
-.ui-widget-content a { color: #222222; }
-.ui-widget-header { border: 1px solid #888888; background: #bbbbbb url(images/ui-bg_diagonals-thick_100_bbbbbb_40x40.png) 50% 50% repeat; color: #222222; font-weight: bold; }
-.ui-widget-header a { color: #222222; }
+.ui-widget-content { border: 1px solid #dfd9c3; background: #f5f3e5 url(images/ui-bg_highlight-hard_33_f5f3e5_1x100.png) 50% top repeat-x; color: #000000; }
+.ui-widget-content a { color: #000000; }
+.ui-widget-header { border: 1px solid #eeeeee; background: #dddddd url(images/ui-bg_highlight-hard_33_dddddd_1x100.png) 50% 50% repeat-x; color: #000000; font-weight: bold; }
+.ui-widget-header a { color: #000000; }
 
 /* Interaction states
 ----------------------------------*/
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #888888; background: #eeeeee url(images/ui-bg_highlight-hard_33_eeeeee_1x100.png) 50% 50% repeat-x; font-weight: normal; color: #555555; }
-.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #555555; text-decoration: none; }
-.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #888888; background: #dddddd url(images/ui-bg_highlight-hard_33_dddddd_1x100.png) 50% 50% repeat-x; font-weight: normal; color: #212121; }
-.ui-state-hover a, .ui-state-hover a:hover { color: #212121; text-decoration: none; }
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #888888; background: #bbbbbb url(images/ui-bg_highlight-hard_33_bbbbbb_1x100.png) 50% 50% repeat-x; font-weight: normal; color: #212121; }
-.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #212121; text-decoration: none; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #d4ccb0; background: #fafaf4 url(images/ui-bg_highlight-hard_33_fafaf4_1x100.png) 50% 50% repeat-x; font-weight: normal; color: #458e00; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #458e00; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #327e04; background: #67b021 url(images/ui-bg_highlight-hard_33_67b021_1x100.png) 50% 50% repeat-x; font-weight: normal; color: #ffffff; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #ffffff; text-decoration: none; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #327e04; background: #459e00 url(images/ui-bg_highlight-hard_33_459e00_1x100.png) 50% 50% repeat-x; font-weight: normal; color: #ffffff; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #ffffff; text-decoration: none; }
 .ui-widget :active { outline: none; }
 
 /* Interaction Cues
 ----------------------------------*/
-.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #888888; background: #ffff00 url(images/ui-bg_diagonals-thick_50_ffff00_40x40.png) 50% 50% repeat; color: #000000; }
-.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #000000; }
-.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #888888; background: #ff0000 url(images/ui-bg_diagonals-thick_50_ff0000_40x40.png) 50% 50% repeat; color: #ffffff; }
-.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #ffffff; }
-.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #ffffff; }
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #000; background: #fff000 url(images/ui-bg_highlight-hard_33_fff000_1x100.png) 50% top repeat-x; color: #000; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #000; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #000; background: #ff0000 url(images/ui-bg_highlight-hard_33_ff0000_1x100.png) 50% top repeat-x; color: #fff; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #fff; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #fff; }
 .ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
 .ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
 .ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
@@ -131,14 +131,14 @@ color: #FF0F03!important;
 ----------------------------------*/
 
 /* states and images */
-.ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_222222_256x240.png); }
-.ui-widget-content .ui-icon {background-image: url(images/ui-icons_222222_256x240.png); }
-.ui-widget-header .ui-icon {background-image: url(images/ui-icons_222222_256x240.png); }
-.ui-state-default .ui-icon { background-image: url(images/ui-icons_888888_256x240.png); }
-.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url(images/ui-icons_454545_256x240.png); }
-.ui-state-active .ui-icon {background-image: url(images/ui-icons_454545_256x240.png); }
+.ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_808080_256x240.png); }
+.ui-widget-content .ui-icon {background-image: url(images/ui-icons_808080_256x240.png); }
+.ui-widget-header .ui-icon {background-image: url(images/ui-icons_888888_256x240.png); }
+.ui-state-default .ui-icon { background-image: url(images/ui-icons_8dc262_256x240.png); }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png); }
+.ui-state-active .ui-icon {background-image: url(images/ui-icons_eeeeee_256x240.png); }
 .ui-state-highlight .ui-icon {background-image: url(images/ui-icons_0000ff_256x240.png); }
-.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {background-image: url(images/ui-icons_ffff00_256x240.png); }
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {background-image: url(images/ui-icons_fff000_256x240.png); }
 
 /* positioning */
 .ui-icon-carat-1-n { background-position: 0 0; }
@@ -322,15 +322,15 @@ color: #FF0F03!important;
 ----------------------------------*/
 
 /* Corner radius */
-.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { -moz-border-radius-topleft: 0px; -webkit-border-top-left-radius: 0px; -khtml-border-top-left-radius: 0px; border-top-left-radius: 0px; }
-.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { -moz-border-radius-topright: 0px; -webkit-border-top-right-radius: 0px; -khtml-border-top-right-radius: 0px; border-top-right-radius: 0px; }
-.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { -moz-border-radius-bottomleft: 0px; -webkit-border-bottom-left-radius: 0px; -khtml-border-bottom-left-radius: 0px; border-bottom-left-radius: 0px; }
-.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { -moz-border-radius-bottomright: 0px; -webkit-border-bottom-right-radius: 0px; -khtml-border-bottom-right-radius: 0px; border-bottom-right-radius: 0px; }
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; border-top-left-radius: 5px; }
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; border-top-right-radius: 5px; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px; }
 
 /* Overlays */
-.ui-widget-overlay { background: #555555 url(images/ui-bg_flat_66_555555_40x100.png) 50% 50% repeat-x; opacity: .66;filter:Alpha(Opacity=66); }
-.ui-widget-shadow { margin: -7px 0 0 -7px; padding: 7px; background: #cccccc url(images/ui-bg_flat_33_cccccc_40x100.png) 50% 50% repeat-x; opacity: .66;filter:Alpha(Opacity=66); -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }/*!
- * jQuery UI Resizable 1.8.21
+.ui-widget-overlay { background: #555555 url(images/ui-bg_flat_33_555555_40x100.png) 50% 50% repeat-x; opacity: .66;filter:Alpha(Opacity=66); }
+.ui-widget-shadow { margin: -7px 0 0 -7px; padding: 7px; background: #cccccc url(images/ui-bg_flat_33_cccccc_40x100.png) 50% 50% repeat-x; opacity: .66;filter:Alpha(Opacity=66); -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }/*!
+ * jQuery UI Resizable 1.8.23
  *
  * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
@@ -349,7 +349,7 @@ color: #FF0F03!important;
 .ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
 .ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
 .ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}/*!
- * jQuery UI Selectable 1.8.21
+ * jQuery UI Selectable 1.8.23
  *
  * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
@@ -359,7 +359,7 @@ color: #FF0F03!important;
  */
 .ui-selectable-helper { position: absolute; z-index: 100; border:1px dotted black; }
 /*!
- * jQuery UI Accordion 1.8.21
+ * jQuery UI Accordion 1.8.23
  *
  * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
@@ -372,13 +372,13 @@ color: #FF0F03!important;
 .ui-accordion .ui-accordion-header { cursor: pointer; position: relative; margin-top: 1px; zoom: 1; }
 .ui-accordion .ui-accordion-li-fix { display: inline; }
 .ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
-.ui-accordion .ui-accordion-header a { display: block; font-size: 1em; font-weight:700; padding: .5em .5em .5em .7em; }/* Original FS 1em, no FW */
+.ui-accordion .ui-accordion-header a { display: block; font-size: 1em; font-weight:700; padding: .5em .5em .5em .7em; }
 .ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }
 .ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
 .ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; }
 .ui-accordion .ui-accordion-content-active { display: block; }
 /*!
- * jQuery UI Autocomplete 1.8.21
+ * jQuery UI Autocomplete 1.8.23
  *
  * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
@@ -392,7 +392,7 @@ color: #FF0F03!important;
 * html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
 
 /*
- * jQuery UI Menu 1.8.21
+ * jQuery UI Menu 1.8.23
  *
  * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
@@ -431,7 +431,7 @@ color: #FF0F03!important;
 	margin: -1px;
 }
 /*!
- * jQuery UI Button 1.8.21
+ * jQuery UI Button 1.8.23
  *
  * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
@@ -469,7 +469,7 @@ input.ui-button { padding: .4em 1em; }
 /* workarounds */
 button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
 /*!
- * jQuery UI Dialog 1.8.21
+ * jQuery UI Dialog 1.8.23
  *
  * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
@@ -490,7 +490,7 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 .ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
 .ui-draggable .ui-dialog-titlebar { cursor: move; }
 /*!
- * jQuery UI Slider 1.8.21
+ * jQuery UI Slider 1.8.23
  *
  * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
@@ -513,7 +513,7 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 .ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
 .ui-slider-vertical .ui-slider-range-min { bottom: 0; }
 .ui-slider-vertical .ui-slider-range-max { top: 0; }/*!
- * jQuery UI Tabs 1.8.21
+ * jQuery UI Tabs 1.8.23
  *
  * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
@@ -531,7 +531,7 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 .ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
 .ui-tabs .ui-tabs-hide { display: none !important; }
 /*!
- * jQuery UI Datepicker 1.8.21
+ * jQuery UI Datepicker 1.8.23
  *
  * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
@@ -588,8 +588,6 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 
 /* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
 .ui-datepicker-cover {
-    display: none; /*sorry for IE5*/
-    display/**/: block; /*sorry for IE5*/
     position: absolute; /*must have*/
     z-index: -1; /*must have*/
     filter: mask(); /*must have*/
@@ -598,7 +596,7 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
     width: 200px; /*must have*/
     height: 200px; /*must have*/
 }/*!
- * jQuery UI Progressbar 1.8.21
+ * jQuery UI Progressbar 1.8.23
  *
  * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
