@@ -163,10 +163,10 @@
     if((m==0 || m==60)&&((now-htlivesight.Time.whistleTime)>noWhistleTime)){
     	 if (htlivesight.prefs.personalization.whistleTime &&
     			 htlivesight.prefs.notification.sound &&
-    			 !htlivesight.Match.List["_"+match.id+"_"+match.youth].window.mute) {
+    			 !htlivesight.Match.List["_"+match.id+"_"+match.sourceSystem].window.mute) {
     		 try{
     	        if (!htlivesight.prefs.notification.soundOnlyOpened
-    	        || document.getElementById("live_"+match.id+"_"+match.youth).hidden==false) {
+    	        || document.getElementById("live_"+match.id+"_"+match.sourceSystem).hidden==false) {
     	        	htlivesight.Sound.sample.beginning.play();
     	        	htlivesight.Time.whistleTime=0+now;
     	        	}
