@@ -30,9 +30,9 @@ htlivesight.Click = {
   },
   AddMatchByTeam: function (event) {
     var teamId = parseInt(document.getElementById("boxaddmatch").value, 10);    
-    var sourceSystem = document.getElementById("sourceSystem").value;
+    var sourceSystem = document.getElementById("sourceSystem").value;        var youth="False";        if (sourceSystem=="youth"){youth="True";}
     if(teamId) {
-      htlivesight.Matches.HTTPGetByTeam(teamId, sourceSystem);
+      htlivesight.Matches.HTTPGetByTeam(teamId, youth);
     }
   },
   ClearLog: function() {
