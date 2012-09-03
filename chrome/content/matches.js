@@ -11,17 +11,17 @@ htlivesight.Matches =function() {
  * Get match by team id data
  * ---------------------------------------------------------------- */
 
-htlivesight.Matches.HTTPGetByTeam = function (teamId, sourceSystem) {
+htlivesight.Matches.HTTPGetByTeam = function (teamId, youth) {
 // alert("youth: "+ youth);	/*   var URL;
 
     URL = HTTP.hattrickServer + "/Common/chppxml.axd?file=matches"
         + "&teamID=" + teamId
 	+ "&isYouth=" + youth;*/
 
-   // EventSystem.HTTPRequest(URL, Matches.ParseGetByTeam, "request.team");  var parameters=[    				["file", "matches"],    	              ["version","2.3"],    				["teamID", teamId]    			];    			if (sourceSystem == "youth")    				parameters.push(["isYouth", "true"]);    	//		alert ("youth " +youth);    htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Matches.ParseGetByTeam(xml,sourceSystem);});
+   // EventSystem.HTTPRequest(URL, Matches.ParseGetByTeam, "request.team");  var parameters=[    				["file", "matches"],    	              ["version","2.6"],    				["teamID", teamId]    			];    			if (youth == "True")    				parameters.push(["isYouth", "true"]);    	//		alert ("youth " +youth);    htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Matches.ParseGetByTeam(xml,youth);});
 };
 
-htlivesight.Matches.ParseGetByTeam = function(xml,sourceSystem) {
+htlivesight.Matches.ParseGetByTeam = function(xml,youth) {
 	// Gonzo replace: var regStr = "(<Match\\s(?:.*?)</Match>)";
 //	var regStr = "(<Match>(.*?)</Match>)";
 //  var regExp, found;
@@ -31,7 +31,7 @@ htlivesight.Matches.ParseGetByTeam = function(xml,sourceSystem) {
  //   var id, homeTeam, awayTeam;
     var matches = new Array();
   //  var sourceSystem = sourceSystem; //  alert("youth " + youth);        var matchNodes = xml.getElementsByTagName("Match");      //  alert("dopo xml.getElementsByTagName(Match)");
-  //  for(;found = regExp.exec(xml);) {    for(var j=0;j< matchNodes.length ;j++){    var	matchNode = matchNodes[j];     
+  //  for(;found = regExp.exec(xml);) {    for(var j=0;j< matchNodes.length ;j++){    var	matchNode = matchNodes[j];        var sourceSystem= htlivesight.Matches.ParseSourceSystem(matchNode);     
     	matches[matches.length] = htlivesight.Matches.ParseMatch(matchNode, sourceSystem);    	
     }      
     var diffDate, nearestDiff=Number.MAX_VALUE;
@@ -81,7 +81,7 @@ htlivesight.Matches.ParseMatch = function (xml, sourceSystem) {
 
 htlivesight.Matches.ParseMatchType = function (xml) {    alert ("questa funzione non viene mai chiamata: Matches.ParseMatchType");
 //  return htlivesight.Util.Parse("<MatchType>(.*?)</MatchType>", xml);		return xml.getElementsByTagName("MatchType")[0].textContent;
-};
+};htlivesight.Matches.ParseSourceSystem = function (xml) {//    alert ("questa funzione non viene mai chiamata: Matches.ParseMatchType");//  return htlivesight.Util.Parse("<MatchType>(.*?)</MatchType>", xml);		return xml.getElementsByTagName("SourceSystem")[0].textContent;};
  
 
  
