@@ -321,6 +321,7 @@ htlivesight.DOM = {
   
   // function added by bigpapy to have statistic left clicking on team name
   createStatisticElement: function(id, match, event) {
+	  try{
 	    var label, hbox;
 	    var popupset = document.getElementById("live_box");
 	    var popup = document.createElement("table");
@@ -480,7 +481,7 @@ htlivesight.DOM = {
 		        hbox.appendChild(label_number);
 		        popup.appendChild(hbox);
 			   
-	        return popup;
+	        return popup;}catch(e){alert("createStatisticElement: "+e)}
 
 	  },
   
