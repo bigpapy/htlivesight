@@ -30,7 +30,7 @@ htlivesight.Click = {
   },
   AddMatchByTeam: function (event) {
     var teamId = parseInt(document.getElementById("boxaddmatch").value, 10);    
-    var sourceSystem = document.getElementById("sourceSystem").value;        var youth="False";        if (sourceSystem=="youth"){youth="True";}    alert("sourceSystem="+sourceSystem+" youth="+youth);
+    var sourceSystem = document.getElementById("sourceSystem").value;        var youth="False";        if (sourceSystem=="youth"){youth="True";}    //alert("sourceSystem="+sourceSystem+" youth="+youth);
     if(teamId) {
       htlivesight.Matches.HTTPGetByTeam(teamId, youth);
     }
