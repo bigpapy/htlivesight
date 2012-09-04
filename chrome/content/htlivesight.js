@@ -345,6 +345,9 @@ document.getElementById("live_box").setAttribute("style", "width:" + (winW-320) 
 
  //   alert("startup:unload: end");
   },  
+  chatdelay: function() {
+  document.getElementById("chat-dialog").innerHTML = '<iframe src="http://webchat.quakenet.org/?channels=htlivesight&uio=OT10cnVlJjExPTEyMwb9" width="647" height="400"></iframe>';
+  }, 
 /*  temachange: function() {
 //	  alert("startup:unload: begin");
 //	  document.getElementById(tabID).setAttribute("class", "livefox.css");
