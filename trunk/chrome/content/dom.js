@@ -170,7 +170,8 @@ htlivesight.DOM = {
        	  htServer="www";
       };
 	  var matchLink="http://" + htServer + ".hattrick.org/Club/Matches/Match.aspx?matchID=" + matchId;
-	  if (sourceSystem=="youth"){ matchLink=matchLink+"&isYouth=True";};
+	  if (sourceSystem=="youth"||sourceSystem=="True"){ matchLink=matchLink+"&SourceSystem=Youth";};
+	  if(htlivesight.Match.List["_"+matchId+"_"+sourceSystem].arena.name==null){ matchLink=matchLink+"&SourceSystem=HTOIntegrated";};
 	 var matchpage=window.open(matchLink);
   }catch(e){alert("toggleView: "+e);}// added by bigpapy to debug from XUL to HTML
 	  },
