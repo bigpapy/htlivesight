@@ -18,7 +18,7 @@ htlivesight.Matches.HTTPGetByTeam = function (teamId, youth) {
         + "&teamID=" + teamId
 	+ "&isYouth=" + youth;*/
 
-   // EventSystem.HTTPRequest(URL, Matches.ParseGetByTeam, "request.team");  var parameters=[    				["file", "matches"],    	              ["version","2.6"],    				["teamID", teamId]    			];    			if (youth == "True")    				parameters.push(["isYouth", "true"]);    	//		alert ("youth " +youth);    htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Matches.ParseGetByTeam(xml,youth);});
+   // EventSystem.HTTPRequest(URL, Matches.ParseGetByTeam, "request.team");  var parameters=[    				["file", "matches"],    	              ["version","2.6"],    				["teamID", teamId]    			];    			if ((youth == "True")|| (youth="Youth"))    				parameters.push(["isYouth", "true"]);    htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Matches.ParseGetByTeam(xml,youth);});
 };
 
 htlivesight.Matches.ParseGetByTeam = function(xml,youth) {
