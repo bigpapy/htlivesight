@@ -22,7 +22,7 @@ htlivesight.DOM = {
 		  teamName=match.away.team.name;
 	  }
 
-	  $("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 270, title: teamName });
+	  $("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 330, title: teamName, dialogClass: "formationbg" });
 	  //	$("#"+id+"_table").dialog('open');
 	  //	alert("popup opened!");
 	  return false;
@@ -261,9 +261,9 @@ htlivesight.DOM = {
     li_.appendChild(a);    
 
     var popup = document.createElement("table");
-    popup.cellSpacing="4";
-    popup.cellPadding="4";
-    popup.width="640";
+    popup.cellSpacing="15px";
+    popup.cellPadding="5px";
+    popup.width="640px";
 //    if (document.getElementById(id) != null){
 //    	var element_to_remove= document.getElementById(id);
  //     popupset.removeChild(element_to_remove);
@@ -282,11 +282,12 @@ htlivesight.DOM = {
     for(i=0; i<lineup.length; i++) {
       hbox = document.createElement("tr");
       hbox.setAttribute("pack", "center");
+	  //hbox.setAttribute('class','formationrow');
       popup.appendChild(hbox);
       for(j=0; j<lineup[i].length; j++) {
         label = document.createElement("td");
-        label.style.background="#919090";
-      //  label.setAttribute('class','player_block');
+        //label.style.background="#919090";
+		label.setAttribute('class','formationplayer');
         
         label.width="20%";
         label.height="30";
@@ -1567,8 +1568,9 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	link.setAttribute("id", "away_team_formation_" + match.id + "_" + match.sourceSystem);
 	link.setAttribute( "title", htlivesight.Util.Parse( "SchemaTip", data[0] ) );
 	link.setAttribute("onclick","htlivesight.DOM.formationpopup(this.id);");
+	
     $( "#"+"away_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
-//	$("#"+"away_team_formation_"+match.id+"_"+match.sourceSystem+"_table").dialog({ autoOpen: true, width: 480, height: 110 });
+	//	$("#"+"away_team_formation_"+match.id+"_"+match.sourceSystem+"_table").dialog({ autoOpen: true, width: 480, height: 110 });
   label = document.createElement("td");//label = document.createElement("label");
   awaytr.appendChild(label);
   label.setAttribute("id", "away_team_tactic_" + match.id + "_" + match.sourceSystem);

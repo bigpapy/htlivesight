@@ -357,3 +357,12 @@ font-weight: bold;
 .ycinheader{color:#E8AE00 !important; font-weight:bold !important;}
 .rcinheader{color:#FF0000 !important; font-weight:bold !important;}
 .injinheader{color:#DCA675 !important; font-weight:bold !important;}
+
+.formationbg{
+background:url("chrome://htlivesight/content/themes/images/field1.jpg") !important;
+-moz-background-size:100% 100%; /* Firefox 3.6 */
+background-size:100% 100%;
+background-repeat:no-repeat;
+background-position:left;
+background-origin:content-box;}
+.formationplayer{background-color: transparent;border:thin solid white;border-radius:5px;color:white !important;}
