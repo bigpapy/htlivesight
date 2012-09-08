@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>opsionet</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Serveri:</MenuServer>
 <MenuDisconnected>Jashtw linje</MenuDisconnected>
-<MenuOptions>opsionet</MenuOptions>
 <MenuAbout>Rreth HTLiveSight</MenuAbout>
 <LoginLabel>Login</LoginLabel>
 <LoginTeamId>Vendosni ID e skuadrws tuaj</LoginTeamId>
@@ -22,7 +18,7 @@
 <LoginSpeed>Speed</LoginSpeed>
 <LoginByEvent>Per event</LoginByEvent>
 <LeagueMatches>Ndeshjet e serisw</LeagueMatches>
-<LeagueLiveTable>Ndeshjet live</LeagueLiveTable>
+<LeagueLiveTable>Ndeshjet Live</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Skuadra</LeagueTeam>
 <LeaguePlayed>Nde</LeaguePlayed>
@@ -37,25 +33,15 @@
 <FriendsTitle>shokwt</FriendsTitle>
 <FriendsRemove>hiq</FriendsRemove>
 <FriendsOpen>hap</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Ju po dwrgoheni tek faqja Chpp pwr tw marrw kodin e autorizimit. Nwqoftwse jo, ju lutemi tw hiqni pwrkohwsisht Block tuaj ose ta fusni HtLiveSight nw listwn e programeve tw lejuara nga ju.</Introduction>
 <Insert>Tani HtLiveSight wshtw I lejuar.</Insert>
 <Ending>Shtypni OK pwr tw rifilluar aplikimi.</Ending>
-<Error401>Gabim 401: Akses I paautorizuar. Ju duhet tw merrni autorizimin swrish. Shtypni OK pwr tw vazhduar.</Error401>
-<Error404>Gabim 404: Burimi I kwrkuar nuk mund tw gjendet. Nw qoftw se ky gabim kontrolloni nw qoftw se shwrbimi CHPP wshtw offline.</Error404>
-<Error0>Gabim 0: Nuk keni sinjal interneti</Error0>
 <Error>Gabim</Error>
 <ServerON>Connected</ServerON>
 <ServerOFF>Disconnected</ServerOFF>
 <ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
-<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.</NoHTServer>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-
-<!--Properties-->
+<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
 <MatchesMaximum>Nuk mund tw shikohen mw shumw se 20 ndeshje!</MatchesMaximum>
-<LeagueLiveTable>Ndeshjet Live</LeagueLiveTable>
 <LeagueRound>Raundi</LeagueRound>
 <MessageHattrickError>Serveri Hattrick doli Error.</MessageHattrickError>
 <MessageAlreadyFriend>Tashmw shoku juaj.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>çoje shokun lartw</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>çoje shokun poshtw</TooltipFriendMoveDown>
 <MenuAddFriend>shokw</MenuAddFriend>
-<MenuServer>Serveri:</MenuServer>
 <EventGoal>Gol</EventGoal>
 <EventPenaltyGoal>Penallti:Gol</EventPenaltyGoal>
 <EventPenaltyMiss>Penallti:Jashtw</EventPenaltyMiss>
 <EventInjury>dwmtim</EventInjury>
 <EventRed>karton I kuq</EventRed>
-<EventYellow2>kartoni I dyte I verdhe</EventYellow2>
 <EventSideLeft>majtas</EventSideLeft>
 <EventSideRight>djathtas</EventSideRight>
 <EventSideCenter>qendwr</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Merrni detajet e ndeshjes</RequestDetails>
 <RequestTeam>Merrni ndeshjen nga skuadra</RequestTeam>
 <RequestTeamData>Merrni tw dhwnat e skuadrws</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight Opsionet</WindowTitle>
 <TabGeneral>Tw pwrgjithshmet</TabGeneral>
 <TabMatches>Ndeshjet</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>zgjidh gjuhwn</LanguageSelect>
 <LanguageNote>Shwnim:Bwjini restart firefox nw mwnyrw qe ndryshimet te pranohen.</LanguageNote>
 <ButtonCancel>anullo</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>About HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>With the help of</TextHelpOf>
 <TextThanksTo>Many thanks to:</TextThanksTo>
 <ButtonClose>Close</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

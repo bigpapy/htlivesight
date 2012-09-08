@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
 <MenuOptions>Options</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
 <MenuDisconnected>Disconnected</MenuDisconnected>
-<MenuOptions>Options</MenuOptions>
 <MenuAbout>About HTLiveSight</MenuAbout>
 <LoginLabel>Login</LoginLabel>
 <LoginTeamId>Insert TeamId of your team</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Friends</FriendsTitle>
 <FriendsRemove>Remove</FriendsRemove>
 <FriendsOpen>Open</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>You will be redirected to chpp page to get authorizazion code. If not, please remove temporarely pop up block or grant HTlivesight in the exception list.</Introduction>
 <Insert>Insert your authorization code here:</Insert>
 <Ending>Now HTlivesight is authorized. Click OK to restart application.</Ending>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
 <Error>Error</Error>
 <ServerON>Connected</ServerON>
 <ServerOFF>Disconnected</ServerOFF>
 <ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
-<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.</NoHTServer>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-
-<!--Properties-->
+<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
 <MatchesMaximum>You can't watch more than 20 matches!</MatchesMaximum>
-<LeagueLiveTable>Live Table</LeagueLiveTable>
 <LeagueRound>Round</LeagueRound>
 <MessageHattrickError>Hattrick server returned an error.</MessageHattrickError>
 <MessageAlreadyFriend>Already your friend!</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Move friend up</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Move friend down</TooltipFriendMoveDown>
 <MenuAddFriend>Friend</MenuAddFriend>
-<MenuServer>Server:</MenuServer>
 <EventGoal>GOAL</EventGoal>
 <EventPenaltyGoal>Penalty: GOAL</EventPenaltyGoal>
 <EventPenaltyMiss>Penalty: MISS</EventPenaltyMiss>
 <EventInjury>Injury</EventInjury>
 <EventRed>Red card</EventRed>
-<EventYellow2>Second yellow card</EventYellow2>
 <EventSideLeft>Left</EventSideLeft>
 <EventSideRight>Right</EventSideRight>
 <EventSideCenter>Center</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Get Match Details</RequestDetails>
 <RequestTeam>Get Match By Team</RequestTeam>
 <RequestTeamData>Get Team Data</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight Options</WindowTitle>
 <TabGeneral>General</TabGeneral>
 <TabMatches>Matches</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Select language</LanguageSelect>
 <LanguageNote>Note: Restart Firefox for this to take effect.</LanguageNote>
 <ButtonCancel>Cancel</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>About HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>With the help of</TextHelpOf>
 <TextThanksTo>Many thanks to:</TextThanksTo>
 <ButtonClose>Close</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,17 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
 <FreeKicks>Free kicks</FreeKicks>
 <RedCards>Red cards</RedCards>
 <YellowCards>Yellow cards</YellowCards>
 <Injuries>Injuries</Injuries>
 <Goals>Goals</Goals>
-
 <Total>Total</Total>
 <Terraces>Terraces</Terraces>
 <Basic>Basic seating</Basic>
 <Roof>Seats under roof</Roof>
 <VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin it's supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

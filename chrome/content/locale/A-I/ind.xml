@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>Opsi</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
 <MenuDisconnected>terputus</MenuDisconnected>
-<MenuOptions>Opsi</MenuOptions>
 <MenuAbout>Tentang HTLiveSight</MenuAbout>
 <LoginLabel>Masuk</LoginLabel>
 <LoginTeamId>Masukkan Id timmu</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Teman</FriendsTitle>
 <FriendsRemove>Hapus</FriendsRemove>
 <FriendsOpen>Buka</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Kamu dialihkan ke halaman chpp untuk mendapatkan kode otorisasi. Bila tidak, harap matikan sementara pop up block atau masukkan HTlivesight ke dalam daftar pengecualian.</Introduction>
 <Insert>masukkan kode otorisasi di sini:</Insert>
 <Ending>Sekarang HTlivesight sudah diotorisasi. Klik OK untuk menjalankan ulang aplikasi.</Ending>
-<Error401>Eror 401: akses tidak sah. Kamu harus mendapat otorisasi lagi. Klik ok untuk melanjutkan.</Error401>
-<Error404>Eror 404: sumber yang diminta tidak dapat ditemukan. Bila eror ini muncul lagi periksa apakah layanan chpp sedang mati.</Error404>
-<Error0>Eror 0: tidak terhubung dengan internet.</Error0>
 <Error>Eror</Error>
 <ServerON>Terhubung</ServerON>
 <ServerOFF>Terputus</ServerOFF>
 <ResetToken>Kode otorisasi telah dihapus. Hidupkan ulang HTLS atau tunggu pembaruan berikutnya (less than 1 minute).</ResetToken>
-<NoHTServer>Kamu tidak memilih server Hattrick  dimana kamu sedang terhubung, klik kanan di mana saja di latar dan klik pada -> opsi -> umum dan atur angka server Hattrick yang benar.</NoHTServer>
-<Error500>Eror 500: eror internal server (Hattrick)</Error500>
-<Error503>Eror 503: layanan CHPP tidak tersedia (kelebihan beban sementara atau sedang pemeliharaan)</Error503>
-
-<!--Properties-->
+<NoHTServer>Kamu tidak memilih server Hattrick  dimana kamu sedang terhubung, klik kanan di mana saja di latar dan klik pada - opsi - umum dan atur angka server Hattrick yang benar.</NoHTServer>
 <MatchesMaximum>Tidak dapat menonton lebih dari 20 pertandingan!</MatchesMaximum>
-<LeagueLiveTable>Tabel Live</LeagueLiveTable>
 <LeagueRound>Ronde</LeagueRound>
 <MessageHattrickError>Server Hattrick membalas dengan eror.</MessageHattrickError>
 <MessageAlreadyFriend>Sudah menjadi teman.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Naikkan teman</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Turunkan teman</TooltipFriendMoveDown>
 <MenuAddFriend>Teman</MenuAddFriend>
-<MenuServer>Server:</MenuServer>
 <EventGoal>GOL</EventGoal>
 <EventPenaltyGoal>pinalti: GOL</EventPenaltyGoal>
 <EventPenaltyMiss>pinalti: GAGAL</EventPenaltyMiss>
 <EventInjury>Cedera</EventInjury>
 <EventRed>Kartu merah</EventRed>
-<EventYellow2>Kartu kuning kedua</EventYellow2>
 <EventSideLeft>kiri</EventSideLeft>
 <EventSideRight>kanan</EventSideRight>
 <EventSideCenter>tengah</EventSideCenter>
@@ -158,7 +142,7 @@
 <ProgressUpdate>Pembaruan berikutnya:</ProgressUpdate>
 <ProgressSeconds>d</ProgressSeconds>
 <RequestServer>Gunakan Server Yang Direkomendasikan</RequestServer>
-<RequestLeagueData>=Ambil Data Liga</RequestLeagueData>
+<RequestLeagueData>Ambil Data Liga</RequestLeagueData>
 <RequestLeagueGames>Ambil Pertandingan Liga</RequestLeagueGames>
 <RequestLive>Pembaruan Otomatis</RequestLive>
 <RequestAdd>Tambahkan Pertandingan</RequestAdd>
@@ -167,8 +151,6 @@
 <RequestDetails>Ambil Detail Pertandingan</RequestDetails>
 <RequestTeam>Ambil Pertandingan Menurut Tim</RequestTeam>
 <RequestTeamData>Ambil Data Tim</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>Opsi HTLiveSight</WindowTitle>
 <TabGeneral>Umum</TabGeneral>
 <TabMatches>Pertandingan</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Suara tim sendiri cedera</PathSoundsMyBoo>
 <PathSoundsOpBoo>Suara tim lawan cedera</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Peluit mulai babak pertama/kedua</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Peluit akhir babak pertama</PathSoundsWhistle2>
-<PathSoundsWhistle3>Peluit akhir pertandingan</PathSoundsWhistle3>
 <PathSoundsWhistle>Suara kartu kuning/merah</PathSoundsWhistle>
 <PathSoundsHattrick>Suara Hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Pilih bahasa</LanguageSelect>
 <LanguageNote>Catatan: Hidupkan ulang Firefox untuk memberlakukan perubahan.</LanguageNote>
 <ButtonCancel>Batal</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Tentang HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>dengan bantuan</TextHelpOf>
 <TextThanksTo>Terima kasih banyak kepada:</TextThanksTo>
 <ButtonClose>Tutup</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

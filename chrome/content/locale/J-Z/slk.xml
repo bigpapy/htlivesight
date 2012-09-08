@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
+<MenuStart>Štart</MenuStart>
 <MenuOptions>Možnosti</MenuOptions>
 <TooltipButton>Klikni pre otvorenie HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
 <MenuDisconnected>odpojený</MenuDisconnected>
-<MenuOptions>Možnosti</MenuOptions>
 <MenuAbout>O HTLiveSighte</MenuAbout>
 <LoginLabel>Prihlásenie</LoginLabel>
 <LoginTeamId>Sem zadaj tvoje ID tímu</LoginTeamId>
@@ -22,7 +18,7 @@
 <LoginSpeed>Rýchlosť</LoginSpeed>
 <LoginByEvent>Za udalosť</LoginByEvent>
 <LeagueMatches>Ligové zápasy</LeagueMatches>
-<LeagueLiveTable>Live tabuľka</LeagueLiveTable>
+<LeagueLiveTable>Aktuálna tabuľka</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Tím</LeagueTeam>
 <LeaguePlayed>Z</LeaguePlayed>
@@ -37,25 +33,15 @@
 <FriendsTitle>Priatelia</FriendsTitle>
 <FriendsRemove>Odstrániť</FriendsRemove>
 <FriendsOpen>Otvoriť</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Budeš presmerovaný na stránku chpp, kde ti bude udelený autorizačný kód. Ak sa tak nestane, dočasne zakáž blokovanie vyskakovacích okien alebo udeľ výnimku pre program HTlivesight.</Introduction>
 <Insert>sem zadaj tvoj autorizačný kód:</Insert>
 <Ending>HTlivesight je teraz autorizovaný. Klikni na OK pre reštartovanie aplikácie.</Ending>
-<Error401>Chyba 401: neautorizovaný prístup. Musíš získať tvoju autorizáciu znova. Klikni na OK pre pokračovanie.</Error401>
-<Error404>Chyba 404: požadovaný zdroj nebol nájdený. Ak táto chyba pretrváva, skontroluj či je chpp servis v poriadku.</Error404>
-<Error0>Chyba 0: nie si pripojený k internetu.</Error0>
 <Error>Chyba</Error>
 <ServerON>Pripojený</ServerON>
 <ServerOFF>Odpojený</ServerOFF>
 <ResetToken>Autorizačný kód bol zmazaný. Reštartuj HTLS alebo počkaj na ďalšiu aktualizáciu (less than 1 minute).</ResetToken>
-<NoHTServer>Nezvolil si správny server Hattricku, na ktorom si aktuálne prihlásený. Klikni pravým tlačidlom kdekoľvek na pozadie a klikni na -> Možnosti -> všeobecné a nastav správne číslo Hatrrick servera.</NoHTServer>
-<Error500>Chyba 500: interná chyba servera (na Hattricku)</Error500>
-<Error503>Chyba 503: CHPP servis nedostupný (dočasné preťaženie alebo údržba)</Error503>
-
-<!--Properties-->
+<NoHTServer>Nezvolil si správny server Hattricku, na ktorom si aktuálne prihlásený. Klikni pravým tlačidlom kdekoľvek na pozadie a klikni na - Možnosti - všeobecné a nastav správne číslo Hatrrick servera.</NoHTServer>
 <MatchesMaximum>Nemôžeš sledovať viac ako 20 zápasov!</MatchesMaximum>
-<LeagueLiveTable>Aktuálna tabuľka</LeagueLiveTable>
 <LeagueRound>Kolo</LeagueRound>
 <MessageHattrickError>Hattrick server hlási chybu.</MessageHattrickError>
 <MessageAlreadyFriend>Už je tvojim priateľom.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Posunúť priateľa nahor</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Posunúť priateľa nadol</TooltipFriendMoveDown>
 <MenuAddFriend>Priateľ</MenuAddFriend>
-<MenuServer>Server:</MenuServer>
 <EventGoal>GÓL</EventGoal>
 <EventPenaltyGoal>Pokutový kop: GÓL</EventPenaltyGoal>
 <EventPenaltyMiss>Pokutový kop: VEDĽA</EventPenaltyMiss>
 <EventInjury>Zranenie</EventInjury>
 <EventRed>Červená karta</EventRed>
-<EventYellow2>Druhá žltá karta</EventYellow2>
 <EventSideLeft>po ľavej strane</EventSideLeft>
 <EventSideRight>po pravej strane</EventSideRight>
 <EventSideCenter>stredom</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Získať zápasové údaje</RequestDetails>
 <RequestTeam>Získať zápasy podľa tímov</RequestTeam>
 <RequestTeamData>Získať údaje tímu</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight možnosti</WindowTitle>
 <TabGeneral>Všeobecné</TabGeneral>
 <TabMatches>Zápasy</TabMatches>
@@ -190,15 +172,15 @@
 <MatchesHours>hodín.</MatchesHours>
 <MatchesFriends>Priatelia</MatchesFriends>
 <MatchesGetFriends>Zobraziť zápasy priateľov</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Hlavička</MatchesHeader>
 <MatchesScorers>Strelci</MatchesScorers>
 <ScorersList>Vypísať strelcov v záhlaví</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>Karty</MatchesBooked>
+<BookedList>Zoznam kariet v hlavičke</BookedList>
+<MatchesSentOff>Vystriedaný</MatchesSentOff>
+<SentOffList>Zoznam vystriedaných v hlavičke</SentOffList>
+<MatchesInjured>Zranený</MatchesInjured>
+<InjuredList>Zoznam zranených v hlavičke</InjuredList>
 <MatchesWindow>Okno</MatchesWindow>
 <MatchesLines>Riadky zobrazené v minimalizovanom móde</MatchesLines>
 <NotifyNotify>Hlásenia</NotifyNotify>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Zvuk pre zranenie v mojom tíme</PathSoundsMyBoo>
 <PathSoundsOpBoo>Zvuk pre zranenie v súperovom tíme</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Zvuk pre začiatok 1./2. polčasu</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Zvuk pre koniec prvého polčasu</PathSoundsWhistle2>
-<PathSoundsWhistle3>Zvuk pre koniec zápasu</PathSoundsWhistle3>
 <PathSoundsWhistle>Zvuk pre žltú/červenú kartu</PathSoundsWhistle>
 <PathSoundsHattrick>Zvuk pre hetrik</PathSoundsHattrick>
 <PathSoundsRestore>Obnov</PathSoundsRestore>
 <PathSoundsPlay>Prehraj</PathSoundsPlay>
-<PathSoundsNote1>Vlož file:/// pred cestu zvuku vo formáte .wav</PathSoundsNote1>
-<PathSoundsNote2>Príklad: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Vybrať jazyk</LanguageSelect>
 <LanguageNote>Poznámka: Zmeny sa prejavia po reštartovaní programu HTLiveSight.</LanguageNote>
 <ButtonCancel>Zruš</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>O HTLiveSighte</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Prekladatelia</TabTranslators>
@@ -270,62 +246,74 @@
 <TextHelpOf>s pomocou</TextHelpOf>
 <TextThanksTo>Veľká vďaka patrí:</TextThanksTo>
 <ButtonClose>Zatvoriť</ButtonClose>
-
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Tournament>Tournament</Tournament>
+<NonExistent>Neexistujúci</NonExistent>
+<Disastrous>Katastrofálny</Disastrous>
+<Wretched>Úbohý</Wretched>
+<Poor>Biedny</Poor>
+<Weak>Slabý</Weak>
+<Inadequate>Nedostatočný</Inadequate>
+<Passable>Schopný</Passable>
+<Solid>Solídny</Solid>
+<Excellent>Výborný</Excellent>
+<Formidable>Vynikajúci</Formidable>
+<Outstanding>Výnimočný</Outstanding>
+<Brilliant>Brilantný</Brilliant>
+<Magnificent>Veľkolepý</Magnificent>
+<WorldClass>Svetový</WorldClass>
+<Supernatural>Nadprirodzený</Supernatural>
+<Titanic>Kolosálny</Titanic>
+<ExtraTerrestrial>Nadpozemský</ExtraTerrestrial>
+<Mythical>Mýtický</Mythical>
+<Magical>magický</Magical>
+<Utopian>Legendárny</Utopian>
+<Divine>Božský</Divine>
+<VeryHigh>veľmi vysoký</VeryHigh>
+<High>vysoký</High>
+<Low>nízky</Low>
+<VeryLow>veľmi nízky</VeryLow>
+<RightDefence>Pravá obrana</RightDefence>
+<MiddleDefence>Stredná obrana</MiddleDefence>
+<LeftDefence>Ľavá obrana</LeftDefence>
+<Midfield>Záloha</Midfield>
+<RightAttack>Pravý útok</RightAttack>
+<MiddleAttack>Stredný útok</MiddleAttack>
+<LeftAttack>Ľavý útok</LeftAttack>
+<IndirectSetPiecesDefence>Štandardky z nepriamych kopov - obrana</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Štandardky z nepriamych kopov - útok</IndirectSetPiecesAttack>
+<TeamAttitude>Prístup k zápasu</TeamAttitude>
+<TacticType>Taktika</TacticType>
+<TacticSkill>Taktický výkon</TacticSkill>
+<BallPosses>Držanie lopty</BallPosses>
+<SpecialEvent>Špeciálna udalosť</SpecialEvent>
+<Normal>Normálny</Normal>
+<PIC>Uvoľnený</PIC>
+<MOTS>Zápas sezóny</MOTS>
+<ColorPicker>Môžeš si vybrať tvoju farbu na </ColorPicker>
+<EventBackground>Farba pozadia udalosti</EventBackground>
+<FriendHome>Farba pre (môj alebo priateľov) tím doma:#</FriendHome>
+<FriendAway>Farba pre (môj alebo priateľov) tím vonku:#</FriendAway>
+<FoeHome>Farba pre cudzí tím doma:#</FoeHome>
+<FoeAway>Farba pre cudzí tím vonku:#</FoeAway>
+<Neutral>Neutrálna farba:#</Neutral>
+<EventColorTitle>Farba textu udalosti</EventColorTitle>
+<EventTextColor>Farba textu udalosti:#</EventTextColor>
+<SETextColor>Farba textu špeciálnej udalosti: #</SETextColor>
+<Colors>Farby</Colors>
+<SchemaTip>Klikni pre zobrazenie zostavy</SchemaTip>
+<StatisticTip>Klikni pre zobrazenie štatistík na konci zápasu</StatisticTip>
+<Youth>Dorast</Youth>
+<Senior>Senior</Senior>
+<Tournament>Turnaj</Tournament>
+<FreeKicks>Štandartky</FreeKicks>
+<RedCards>Červené karty</RedCards>
+<YellowCards>Žlté karty</YellowCards>
+<Injuries>Zranenia</Injuries>
+<Goals>Góly</Goals>
+<Total>Spolu</Total>
+<Terraces>Na státie</Terraces>
+<Basic>Na sedenie</Basic>
+<Roof>Krytá tribúna</Roof>
+<VIP>VIP miesta</VIP>
+<CrowdinHelp>Pomôž s prekladom! S Crowdin-om je to jednoduché a zábavné! Klikni sem!</CrowdinHelp>
 
 </Htlivesight>

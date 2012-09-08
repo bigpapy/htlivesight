@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>Valmöguleikar</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Netþjónn:</MenuServer>
 <MenuDisconnected>Ótengdur</MenuDisconnected>
-<MenuOptions>Valmöguleikar</MenuOptions>
 <MenuAbout>Upplýsingar um HTLiveSight</MenuAbout>
 <LoginLabel>Innskráning</LoginLabel>
 <LoginTeamId>Sláðu inn Liðsmerki (númmer) á liðinu þínu</LoginTeamId>
@@ -22,7 +18,7 @@
 <LoginSpeed>Hraði</LoginSpeed>
 <LoginByEvent>Eftir atvikum</LoginByEvent>
 <LeagueMatches>Keppnisleikir</LeagueMatches>
-<LeagueLiveTable>Uppfærð Tafla</LeagueLiveTable>
+<LeagueLiveTable>Uppfærð deild</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Lið</LeagueTeam>
 <LeaguePlayed>L</LeaguePlayed>
@@ -37,25 +33,15 @@
 <FriendsTitle>Vinir</FriendsTitle>
 <FriendsRemove>Henda út</FriendsRemove>
 <FriendsOpen>Opna</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Þú verður fluttur á CHPP leyfissíðuna til að slá inn aðgangs kóða. Ef ekki, vinsamlegast slökkvið tímabundið á pop-up varanum eða bætið HTlivesight á listann yfir undantekningar.</Introduction>
 <Insert>Sláið inn kóðann hér:</Insert>
 <Ending>HTLivesight hefur nú verið virkjað. Smelltu á Í lagi til að endurræsa forritið.</Ending>
-<Error401>Villa 401: aðgangur bannaður. Þú verður að sækja um aðganginn aftur. Smelltu á Í Lagi til að halda áfram.</Error401>
-<Error404>Villa 404: Hérna fannst ekkert þú ert í rugli. Ef þú færð þessa villu aftur þá gæti CHPP þjónustan verið óvirk.</Error404>
-<Error0>Villa 0: internetið er ekki tengt.</Error0>
 <Error>Villa</Error>
 <ServerON>Tengdur</ServerON>
 <ServerOFF>Ótengdur</ServerOFF>
 <ResetToken>Leyfi hefur verið fjarlægt. Endurræstu HTLS eða bíddu eftir næstu uppfærslu (less than 1 minute).</ResetToken>
-<NoHTServer>Þú hefur ekki valið hattrick netþjóninn sem þú varst skráður inn á. Hægri smelltu á bakgrunninn -> Valmöguleikar -> Almennt -> fylltu svo út númmerið á netþjóninum.</NoHTServer>
-<Error500>Villa 500: villa á netþjóni (hjá Hattrick)</Error500>
-<Error503>Villa 503: CHPP þjónusta ekki virk (annað hvort í uppfærslu eða niðri)</Error503>
-
-<!--Properties-->
+<NoHTServer>Þú hefur ekki valið hattrick netþjóninn sem þú varst skráður inn á. Hægri smelltu á bakgrunninn - Valmöguleikar - Almennt - fylltu svo út númmerið á netþjóninum.</NoHTServer>
 <MatchesMaximum>Get ekki horft á meira en 20 leiki!</MatchesMaximum>
-<LeagueLiveTable>Uppfærð deild</LeagueLiveTable>
 <LeagueRound>Umferð</LeagueRound>
 <MessageHattrickError>Villa í netþjóni Hattrick.</MessageHattrickError>
 <MessageAlreadyFriend>Nú þegar vinur.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Færa vin upp</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Færa vin niður</TooltipFriendMoveDown>
 <MenuAddFriend>Vinur</MenuAddFriend>
-<MenuServer>Netþjónn:</MenuServer>
 <EventGoal>MARK!</EventGoal>
 <EventPenaltyGoal>Penalty: MARK!</EventPenaltyGoal>
 <EventPenaltyMiss>Penalty: KLIKKAÐI!</EventPenaltyMiss>
 <EventInjury>Meiðsli</EventInjury>
 <EventRed>Rautt spjald</EventRed>
-<EventYellow2>Annað gult spjald</EventYellow2>
 <EventSideLeft>vinstri</EventSideLeft>
 <EventSideRight>hægri</EventSideRight>
 <EventSideCenter>miðja</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Ná í leikskýrslu</RequestDetails>
 <RequestTeam>Ná í leik liðs</RequestTeam>
 <RequestTeamData>Ná í liðs upplýsingar</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight Valkostir</WindowTitle>
 <TabGeneral>Almennt</TabGeneral>
 <TabMatches>Leikir</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Hljóð fyrir meiðsli hjá mínu liði</PathSoundsMyBoo>
 <PathSoundsOpBoo>Hljóð fyrir meiðsli hjá mótherjunum</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Flautað til leiks byrjun/hálfleik</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Flautað til loka fyrri hálfleiks</PathSoundsWhistle2>
-<PathSoundsWhistle3>Flautað til lok leiks</PathSoundsWhistle3>
 <PathSoundsWhistle>Hljóð fyrir Gul/Rauð spjöld</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick hljóð</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Veldu tungumál</LanguageSelect>
 <LanguageNote>ATH: Endurræsa þarf HTLiveSight svo breytingar virki.</LanguageNote>
 <ButtonCancel>Hætta</ButtonCancel>
 <ButtonOk>Í Lagi</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Upplýsingar um HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>með aðstoð frá</TextHelpOf>
 <TextThanksTo>Við þökkum:</TextThanksTo>
 <ButtonClose>Loka</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,5 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
+
 </Htlivesight>

@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Покрени</MenuStart>
 <MenuOptions>Опције</MenuOptions>
 <TooltipButton>Кликни да отвориш HTLiveSight мени</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Сервер:</MenuServer>
 <MenuDisconnected>није повезан</MenuDisconnected>
-<MenuOptions>Опције</MenuOptions>
 <MenuAbout>O HTLiveSight екстензији</MenuAbout>
 <LoginLabel>Улогуј се</LoginLabel>
 <LoginTeamId>Убаците teamID вашег клуба</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Пријатељи</FriendsTitle>
 <FriendsRemove>Уклони</FriendsRemove>
 <FriendsOpen>Отвори</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Бићете преусмерени на Хеттрик CHPP страницу ради преузимања кода за ауторизацију. Уколико се нови прозор не отвори, искључите блокаду поп-ап прозора за HTlivesight у Фајерфокс подешавањима.</Introduction>
 <Insert>Овде убаците код за ауторизацију:</Insert>
 <Ending>HTlivesight је сада ауторизован. Кликните на OK да рестартујете апликацију.</Ending>
-<Error401>Грешка 401: приступ није ауторизован. Морате поново отићи на ауторизацију. Кликните на OK да наставите.</Error401>
-<Error404>Грешка 404: трађени подаци нису пронађени. Уколико вам се ова грешка понови, проверите да ли је Хеттрик CHPP сервер у нормалној функцији.</Error404>
-<Error0>Грешка 0: нисте повезани на интернет.</Error0>
 <Error>Грешка</Error>
 <ServerON>Повезан</ServerON>
 <ServerOFF>Неповезан</ServerOFF>
 <ResetToken>Код за ауторизацију је обрисан. Рестартујте HTLS или сачекајте нареднo ажурирање (less than 1 minute).</ResetToken>
-<NoHTServer>Нисте изабрали odgovarajući Хеттрик сервер на којем сте тренутно улоговани, кликните десним тастером миша bilo где на позадину pa затим  на -> опције -> Општа и ту подесите броj Хеттрик сервера.</NoHTServer>
-<Error500>Грешка 500: интерна грешка на Хеттрик серверу</Error500>
-<Error503>Грешка 503: CHPP сервис није доступан (привремено преоптерећење или одржавање)</Error503>
-
-<!--Properties-->
+<NoHTServer>Нисте изабрали odgovarajući Хеттрик сервер на којем сте тренутно улоговани, кликните десним тастером миша bilo где на позадину pa затим  на - опције - Општа и ту подесите броj Хеттрик сервера.</NoHTServer>
 <MatchesMaximum>Не можете пратити више од 20 мечева!</MatchesMaximum>
-<LeagueLiveTable>Уживо табела</LeagueLiveTable>
 <LeagueRound>Коло</LeagueRound>
 <MessageHattrickError>Постоји грешка код преузимања података са Хeттриковог сервера.</MessageHattrickError>
 <MessageAlreadyFriend>Већ је твој пријатељ.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Помери пријатеља на горе</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Помери пријатеља на доле</TooltipFriendMoveDown>
 <MenuAddFriend>Пријатељ</MenuAddFriend>
-<MenuServer>Сервер:</MenuServer>
 <EventGoal>ГООООЛ!!!</EventGoal>
 <EventPenaltyGoal>Пенали: ГООООЛ!!!</EventPenaltyGoal>
 <EventPenaltyMiss>Пенали: ПРОМАШАЈ!...</EventPenaltyMiss>
 <EventInjury>Повреда</EventInjury>
 <EventRed>Црвени картон</EventRed>
-<EventYellow2>Други жути картон</EventYellow2>
 <EventSideLeft>лево</EventSideLeft>
 <EventSideRight>десно</EventSideRight>
 <EventSideCenter>центар</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Тражи детаље меча</RequestDetails>
 <RequestTeam>Тражи меч по тиму</RequestTeam>
 <RequestTeamData>Тражи податке тима</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight Подешавања</WindowTitle>
 <TabGeneral>Општа</TabGeneral>
 <TabMatches>Мечеви</TabMatches>
@@ -190,19 +172,15 @@
 <MatchesHours>сати.</MatchesHours>
 <MatchesFriends>Пријатељи</MatchesFriends>
 <MatchesGetFriends>Тражи мечеве пријатеља</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Заглавље</MatchesHeader>
 <MatchesScorers>Стрелци</MatchesScorers>
 <ScorersList>Испиши стрелце у заглављу</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
 <MatchesBooked>Жути картони</MatchesBooked>
 <BookedList>Прикажи играче који су добили жути картон у заглављу</BookedList>
 <MatchesSentOff>Црвени картони</MatchesSentOff>
 <SentOffList>Прикажи играче који су добили црвени картон у заглављу</SentOffList>
+<MatchesInjured>Повређен</MatchesInjured>
+<InjuredList>Прикажи повређене у заглављу</InjuredList>
 <MatchesWindow>Прозор</MatchesWindow>
 <MatchesLines>Линије за приказати у минимизираном моду</MatchesLines>
 <NotifyNotify>Обавештења</NotifyNotify>
@@ -239,24 +217,18 @@
 <PathSoundsMyBoo>Звук за повреде мојих играча</PathSoundsMyBoo>
 <PathSoundsOpBoo>Звук за повреде противничких играча</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Звиждук за почетак првог и другог полувремена</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Звиждук за крај првог полувремена</PathSoundsWhistle2>
-<PathSoundsWhistle3>Звиждук за крај меча</PathSoundsWhistle3>
 <PathSoundsWhistle>Звук за жуте и црвене картоне</PathSoundsWhistle>
 <PathSoundsHattrick>Звук за хет-трик</PathSoundsHattrick>
 <PathSoundsRestore>Поништи</PathSoundsRestore>
 <PathSoundsPlay>Преслушај</PathSoundsPlay>
-<PathSoundsNote1>Убаци 'file:///' испред адресе звучног фајла у '.wav' формату</PathSoundsNote1>
-<PathSoundsNote2>Пример: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Одабери језик</LanguageSelect>
 <LanguageNote>Рестартујte HTLS да би ова подешавања имала ефекта.</LanguageNote>
 <ButtonCancel>Поништи</ButtonCancel>
-<ButtonOk>OK</ButtonOk>
-
-<!--About-->
+<ButtonOk>ОК</ButtonOk>
 <WindowAboutTitle>О HTLiveSight-у</WindowAboutTitle>
-<TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabInfo>Инфо</TabInfo>
+<TabTranslators>Преводиоци</TabTranslators>
+<TabCredits>Заслуге</TabCredits>
 <MonthJanuary>Јан</MonthJanuary>
 <MonthFebruary>Феб</MonthFebruary>
 <MonthMarch>Мар</MonthMarch>
@@ -274,62 +246,74 @@
 <TextHelpOf>уз помоћ</TextHelpOf>
 <TextThanksTo>Посебна захвалност:</TextThanksTo>
 <ButtonClose>Затвори</ButtonClose>
-
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Tournament>Tournament</Tournament>
+<NonExistent>непостојећи</NonExistent>
+<Disastrous>катастрофалан</Disastrous>
+<Wretched>очајан</Wretched>
+<Poor>јадан</Poor>
+<Weak>слаб</Weak>
+<Inadequate>недовољан</Inadequate>
+<Passable>просечан</Passable>
+<Solid>добар</Solid>
+<Excellent>одличан</Excellent>
+<Formidable>силан</Formidable>
+<Outstanding>изузетан</Outstanding>
+<Brilliant>бриљантан</Brilliant>
+<Magnificent>фантастичан</Magnificent>
+<WorldClass>светска класа</WorldClass>
+<Supernatural>натприродан</Supernatural>
+<Titanic>величанствен</Titanic>
+<ExtraTerrestrial>легендаран</ExtraTerrestrial>
+<Mythical>епски</Mythical>
+<Magical>магичан</Magical>
+<Utopian>савршен</Utopian>
+<Divine>божански</Divine>
+<VeryHigh>веома висок</VeryHigh>
+<High>висок</High>
+<Low>низак</Low>
+<VeryLow>веома низак</VeryLow>
+<RightDefence>Десна одбрана</RightDefence>
+<MiddleDefence>Централна одбрана</MiddleDefence>
+<LeftDefence>Лева одбрана</LeftDefence>
+<Midfield>Везни ред</Midfield>
+<RightAttack>Десни напад</RightAttack>
+<MiddleAttack>Централни напад</MiddleAttack>
+<LeftAttack>Леви напад</LeftAttack>
+<IndirectSetPiecesDefence>Индиректни ударци - одбрана</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Индиректни ударци - напад</IndirectSetPiecesAttack>
+<TeamAttitude>Тимски став</TeamAttitude>
+<TacticType>Тактика</TacticType>
+<TacticSkill>Оцена тактике</TacticSkill>
+<BallPosses>Посед лопте</BallPosses>
+<SpecialEvent>Специјални догађај</SpecialEvent>
+<Normal>Нормално</Normal>
+<PIC>Само опуштено</PIC>
+<MOTS>Меч сезоне</MOTS>
+<ColorPicker>Боју можете изабрати на </ColorPicker>
+<EventBackground>Боја позадине за догађаје</EventBackground>
+<FriendHome>Боја за домаћу екипу (мој клуб и пријатељи): #</FriendHome>
+<FriendAway>Боја за гостујућу екипу (мој клуб и пријатељи): #</FriendAway>
+<FoeHome>Боја за домаћу екипу: #</FoeHome>
+<FoeAway>Боја за гостујућу екипу: #</FoeAway>
+<Neutral>Боја за неутралну: #</Neutral>
+<EventColorTitle>Боја текста за догађаје</EventColorTitle>
+<EventTextColor>Боја текста за догађаје: #</EventTextColor>
+<SETextColor>Боја текста за догађаје: #</SETextColor>
+<Colors>Боје</Colors>
+<SchemaTip>Кликни да прикажеш поставу</SchemaTip>
+<StatisticTip>Кликни да прикажеш статистику на крају меча</StatisticTip>
+<Youth>Омладинци</Youth>
+<Senior>Сениори</Senior>
+<Tournament>Турнир</Tournament>
+<FreeKicks>Слободни ударци</FreeKicks>
+<RedCards>Црвени картони</RedCards>
+<YellowCards>Жути картони</YellowCards>
+<Injuries>Повреде</Injuries>
+<Goals>Голови</Goals>
+<Total>Укупно</Total>
+<Terraces>Стајаћа места</Terraces>
+<Basic>Седећа места</Basic>
+<Roof>Покривена седишта</Roof>
+<VIP>VIP ложе</VIP>
+<CrowdinHelp>Желите да помогнете у превођењу? Уз помоћ Crowdin апликације то је врло лако и забавно. Кликните овде!</CrowdinHelp>
 
 </Htlivesight>

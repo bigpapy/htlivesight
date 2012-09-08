@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Inicio</MenuStart>
 <MenuOptions>Opciones</MenuOptions>
 <TooltipButton>Clic para abrir el menú de HTLiveSight</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Servidor:</MenuServer>
 <MenuDisconnected>Desconectado</MenuDisconnected>
-<MenuOptions>Opciones</MenuOptions>
 <MenuAbout>Acerca de HTLiveSight</MenuAbout>
 <LoginLabel>Acceso a HT</LoginLabel>
 <LoginTeamId>Inserta el TeamId de tu equipo</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Amigos</FriendsTitle>
 <FriendsRemove>Eliminar</FriendsRemove>
 <FriendsOpen>Abrir</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>En un momento serás redirigido a la página CHPP para obtener el código de autorización. Si no es así, por favor deshabilita temporalmente el bloqueo de ventanas emergentes o añade a HTlivesiht en la lista de excepciones.</Introduction>
 <Insert>Inserta el código de autorización aquí:</Insert>
 <Ending>HTlivesight ha sido autorizado. Da clic en OK para reiniciar la aplicación.</Ending>
-<Error401>Error 401: acceso no autorizado. Necesitas realizar el proceso de autorización de nuevo. Da clic en OK para continuar.</Error401>
-<Error404>Error 404: el recurso solicitado no pudo ser encontrado. Si este error aparece nuevamente, verifica si el servicio CHPP esta caído.</Error404>
-<Error0>Error 0: Sin conexión a internet.</Error0>
 <Error>Error</Error>
 <ServerON>Conectado</ServerON>
 <ServerOFF>Desconectado</ServerOFF>
 <ResetToken>La autorización ha sido revocada. Reinicia HTLS o espera la próxima actualización (less than 1 minute).</ResetToken>
-<NoHTServer>No has seleccionado en que servidor de Hattrick estas conectado con tu navegador. Da clic derecho en el fondo -> Opciones -> General -> Escribe el número del servidor.</NoHTServer>
-<Error500>Error 500: error interno del servidor (de Hattrick)</Error500>
-<Error503>Error 503: servicio CHPP no disponible (temporalmente sobrecargado o en mantenimiento)</Error503>
-
-<!--Properties-->
+<NoHTServer>No has seleccionado en que servidor de Hattrick estas conectado con tu navegador. Da clic derecho en el fondo - Opciones - General - Escribe el número del servidor.</NoHTServer>
 <MatchesMaximum>¡No se pueden ver más de 20 partidos!</MatchesMaximum>
-<LeagueLiveTable>Clasificación en vivo</LeagueLiveTable>
 <LeagueRound>Jornada</LeagueRound>
 <MessageHattrickError>El servidor de Hattrick devuelve un error.</MessageHattrickError>
 <MessageAlreadyFriend>Ya es tu amigo.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Mover amigo arriba</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Mover amigo abajo</TooltipFriendMoveDown>
 <MenuAddFriend>Amigo</MenuAddFriend>
-<MenuServer>Servidor:</MenuServer>
 <EventGoal>GOL!!</EventGoal>
 <EventPenaltyGoal>Penalti: GOL</EventPenaltyGoal>
 <EventPenaltyMiss>Penalti: FALLADO!</EventPenaltyMiss>
 <EventInjury>Lesión</EventInjury>
 <EventRed>Tarjeta roja</EventRed>
-<EventYellow2>Segunda amarilla</EventYellow2>
 <EventSideLeft>izquierda</EventSideLeft>
 <EventSideRight>derecha</EventSideRight>
 <EventSideCenter>centro</EventSideCenter>
@@ -163,12 +147,10 @@
 <RequestLive>Actualización en vivo</RequestLive>
 <RequestAdd>Añadir partido</RequestAdd>
 <RequestDelete>Borrar partido</RequestDelete>
-<RequestLogin>Login</RequestLogin>
+<RequestLogin>Iniciar sesión</RequestLogin>
 <RequestDetails>Bajando detalles del partido</RequestDetails>
 <RequestTeam>Bajando partido por equipo</RequestTeam>
 <RequestTeamData>Bajando datos equipo</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>Opciones HTLiveSight</WindowTitle>
 <TabGeneral>General</TabGeneral>
 <TabMatches>Partidos</TabMatches>
@@ -190,15 +172,15 @@
 <MatchesHours>horas.</MatchesHours>
 <MatchesFriends>Amigos</MatchesFriends>
 <MatchesGetFriends>Bajar partidos de amigo</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Encabezado</MatchesHeader>
 <MatchesScorers>Goleadores</MatchesScorers>
 <ScorersList>Clasificación de Pichichis</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>Amonestados</MatchesBooked>
+<BookedList>Enlistar amonestados en el encabezado</BookedList>
+<MatchesSentOff>Expulsados</MatchesSentOff>
+<SentOffList>Enlistar expulsados en el encabezado</SentOffList>
+<MatchesInjured>Lesionados</MatchesInjured>
+<InjuredList>Enlistar los lesionados en el encabezado</InjuredList>
 <MatchesWindow>Ventana completa</MatchesWindow>
 <MatchesLines>Mostrar líneas de detalle al minimizar</MatchesLines>
 <NotifyNotify>Notificaciones</NotifyNotify>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sonido para lesión del equipo</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sonido para lesión del rival</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Silbido para el inicio de la 1ra/2da mitad</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Sildido para el fin de la 1ra mitad</PathSoundsWhistle2>
-<PathSoundsWhistle3>Silbido para el fin del partido</PathSoundsWhistle3>
 <PathSoundsWhistle>Sonido para tarjeta Amarilla/Roja</PathSoundsWhistle>
 <PathSoundsHattrick>Sonido de Hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Restaurar</PathSoundsRestore>
 <PathSoundsPlay>Reproducir</PathSoundsPlay>
-<PathSoundsNote1>Insertar file:/// antes de la ruta del sonido en formato .wav</PathSoundsNote1>
-<PathSoundsNote2>Ejemplo: file:///c:\\ruta\al\sonido.wav</PathSoundsNote2>
 <LanguageSelect>Selecciona Idioma</LanguageSelect>
 <LanguageNote>Nota: Es necesario reiniciar HTLiveSight para que los cambios tengan efecto.</LanguageNote>
 <ButtonCancel>Cancelar</ButtonCancel>
 <ButtonOk>Aceptar</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Acerca de  HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Traductores</TabTranslators>
@@ -260,72 +236,84 @@
 <MonthMay>May</MonthMay>
 <MonthJune>Jun</MonthJune>
 <MonthJuly>Jul</MonthJuly>
-<MonthAugust>Aug</MonthAugust>
+<MonthAugust>Ago</MonthAugust>
 <MonthSeptember>Sep</MonthSeptember>
 <MonthOctober>Oct</MonthOctober>
 <MonthNovember>Nov</MonthNovember>
-<MonthDecember>Dec</MonthDecember>
+<MonthDecember>Dic</MonthDecember>
 <TextCreatedBy>Creado por</TextCreatedBy>
 <TextDevelopedBy>Desarrollado por</TextDevelopedBy>
 <TextHelpOf>Con la ayuda de</TextHelpOf>
 <TextThanksTo>Muchas gracias a:</TextThanksTo>
 <ButtonClose>Cerrar</ButtonClose>
-
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
+<NonExistent>Inexistente</NonExistent>
+<Disastrous>Desastroso</Disastrous>
+<Wretched>Horrible</Wretched>
+<Poor>Pobre</Poor>
+<Weak>Débil</Weak>
+<Inadequate>Insuficiente</Inadequate>
+<Passable>Aceptable</Passable>
+<Solid>Bueno</Solid>
+<Excellent>Excelente</Excellent>
 <Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
+<Outstanding>Destacado</Outstanding>
+<Brilliant>Brillante</Brilliant>
+<Magnificent>Magnífico</Magnificent>
+<WorldClass>Clase mundial</WorldClass>
+<Supernatural>Sobrenatural</Supernatural>
+<Titanic>Titánico</Titanic>
+<ExtraTerrestrial>Extraterrestre</ExtraTerrestrial>
+<Mythical>Mítico</Mythical>
+<Magical>Mágico</Magical>
+<Utopian>Utópico</Utopian>
+<Divine>Divino</Divine>
+<VeryHigh>muy alto</VeryHigh>
+<High>alto</High>
+<Low>bajo</Low>
+<VeryLow>muy bajo</VeryLow>
+<RightDefence>Defensa derecha</RightDefence>
+<MiddleDefence>Defensa central</MiddleDefence>
+<LeftDefence>Defensa izquierda</LeftDefence>
+<Midfield>Mediocampo</Midfield>
+<RightAttack>Ataque derecho</RightAttack>
+<MiddleAttack>Ataque central</MiddleAttack>
+<LeftAttack>Ataque izquierdo</LeftAttack>
+<IndirectSetPiecesDefence>Tiros libres indirectos defensa</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Tiros libres indirectos ataque</IndirectSetPiecesAttack>
+<TeamAttitude>Actitud</TeamAttitude>
+<TacticType>Táctica</TacticType>
+<TacticSkill>Nivel de táctica</TacticSkill>
+<BallPosses>Posesión</BallPosses>
+<SpecialEvent>Evento especial</SpecialEvent>
 <Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Tournament>Tournament</Tournament>
+<PIC>Jugar relajados</PIC>
+<MOTS>Partido de la temporada</MOTS>
+<ColorPicker>Escoge tu color para </ColorPicker>
+<EventBackground>Color de fondo del evento</EventBackground>
+<FriendHome>Color local (propios y amigos):#</FriendHome>
+<FriendAway>Color visitante (propios y amigos):#</FriendAway>
+<FoeHome>Color de otros locales: #</FoeHome>
+<FoeAway>Color de otros visitantes: #</FoeAway>
+<Neutral>Color neutral: #</Neutral>
+<EventColorTitle>Color del texto de evento</EventColorTitle>
+<EventTextColor>Color del texto de evento: #</EventTextColor>
+<SETextColor>Color del texto para evento especial:#</SETextColor>
+<Colors>Colores</Colors>
+<SchemaTip>Haz clic para mostrar la alineación</SchemaTip>
+<StatisticTip>Haz clic para mostrar estadísticas al final del partido</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
+<Tournament>Torneo</Tournament>
+<FreeKicks>Tiros libres</FreeKicks>
+<RedCards>Tarjetas rojas</RedCards>
+<YellowCards>Tarjetas amarillas</YellowCards>
+<Injuries>Lesiones</Injuries>
+<Goals>Goles</Goals>
+<Total>Total</Total>
+<Terraces>Populares</Terraces>
+<Basic>Plateas</Basic>
+<Roof>Plateas techadas</Roof>
+<VIP>Palcos VIP</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

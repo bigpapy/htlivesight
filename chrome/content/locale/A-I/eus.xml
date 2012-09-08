@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
+<MenuStart>Inicio</MenuStart>
+<MenuOptions>Aukerak</MenuOptions>
+<TooltipButton>Pulsa para abrir o menú de HTLiveSight</TooltipButton>
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Zerbitzaria:</MenuServer>
 <MenuDisconnected>Lineaz kanpo</MenuDisconnected>
-<MenuOptions>Aukerak</MenuOptions>
 <MenuAbout>HTLiveSight-i buruz</MenuAbout>
 <LoginLabel>HT-era sarbidea</LoginLabel>
 <LoginTeamId>Zure taldearen TeamId-a sartu</LoginTeamId>
@@ -19,10 +15,10 @@
 <LoginRememberMe>Gogoratu</LoginRememberMe>
 <LoginButton>Sartu</LoginButton>
 <LoginReLive>Re-Live</LoginReLive>
-<LoginSpeed>Speed</LoginSpeed>
-<LoginByEvent>Per event</LoginByEvent>
+<LoginSpeed>Velocidade</LoginSpeed>
+<LoginByEvent>Por evento</LoginByEvent>
 <LeagueMatches>Ligako partiduak</LeagueMatches>
-<LeagueLiveTable>Sailkapena zuzenean</LeagueLiveTable>
+<LeagueLiveTable>Sailkapena zuzenan</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Taldea</LeagueTeam>
 <LeaguePlayed>Jok</LeaguePlayed>
@@ -37,25 +33,15 @@
 <FriendsTitle>Lagunak</FriendsTitle>
 <FriendsRemove>Ezabatu</FriendsRemove>
 <FriendsOpen>Ireki</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Baimen-kodea lortzeko CHPP orrialdera birzuzendua izaten ari zara. Horrela izan ezean, lehio agerkorren blokeoa aldi baterako desgaitu edo HTLiveSight salbuespenen zerrendara gehitu ezazu mesedez.</Introduction>
 <Insert>Sartu baimen-kodea hemen:</Insert>
 <Ending>HTLiveSight baimendua izan da. Ados klikatu ezazu aplikazioa berrabiarazteko.</Ending>
-<Error401>401 hutsegitea: baimendu gabeko sarrera. Baimena lortzeko prozesua berriz burutu behar duzu. Ados klikatu ezazu jarraitzeko.</Error401>
-<Error404>404 hutsegitea: eskatutako baliabidea ezin izan da aurkitu. Hutsegite hau berriz agertuz gero, CHPP zerbitzua erorita dagoen egiaztatu.</Error404>
-<Error0>0 hutsegitea: Interneterako konexiorik gabe.</Error0>
 <Error>Hutsegitea</Error>
 <ServerON>Konektatuta</ServerON>
 <ServerOFF>Deskonektatuta</ServerOFF>
-<ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
-<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.</NoHTServer>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-
-<!--Properties-->
+<ResetToken>A autorización foi borrada. Reinicia HTLS ou agarda a próxima actualización (menos de 1 minuto).</ResetToken>
+<NoHTServer>Non seleccionaches o servidor de Hattrick no que estás logueado no teu navegador. Clica co botón dereito no fondo - opcións - xeral - coloca o número do teu servidor no formulario.</NoHTServer>
 <MatchesMaximum>Ezin dira 20 partidu baino gehiago ikusi!</MatchesMaximum>
-<LeagueLiveTable>Sailkapena zuzenan</LeagueLiveTable>
 <LeagueRound>Jardunaldia</LeagueRound>
 <MessageHattrickError>Hattrick-eko zerbitzariak errorea itzultzen du.</MessageHattrickError>
 <MessageAlreadyFriend>Jadanik zure laguna da.</MessageAlreadyFriend>
@@ -81,7 +67,7 @@
 <TimeHour>ordu</TimeHour>
 <TimeMinute>minutu</TimeMinute>
 <TimeMin>'</TimeMin>
-<TooltipWindowSound>Activate or deactivate sounds for the match</TooltipWindowSound>
+<TooltipWindowSound>Activar ou desactivar sons para os encontros</TooltipWindowSound>
 <TooltipWindowLink>Hattrick-eko partiduen orrialdera esteka</TooltipWindowLink>
 <TooltipWindowInfo>Informazio mezuak jarri</TooltipWindowInfo>
 <TooltipWindowMaximize>Lehioa maximizatu</TooltipWindowMaximize>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Laguna gora mugitu</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Laguna behera mugitu</TooltipFriendMoveDown>
 <MenuAddFriend>Laguna</MenuAddFriend>
-<MenuServer>Zerbitzaria:</MenuServer>
 <EventGoal>GOLA!!</EventGoal>
 <EventPenaltyGoal>Penalti: GOLA!</EventPenaltyGoal>
 <EventPenaltyMiss>Penalti: HUTSEGIN DU!</EventPenaltyMiss>
 <EventInjury>Lesioa</EventInjury>
 <EventRed>Txartel gorria</EventRed>
-<EventYellow2>Bigarren txartel horia</EventYellow2>
 <EventSideLeft>ezkerra</EventSideLeft>
 <EventSideRight>eskubia</EventSideRight>
 <EventSideCenter>erdia</EventSideCenter>
@@ -127,7 +111,7 @@
 <EventSpecialUnpredictableOwnGoal>- ustekabekoa: autogol</EventSpecialUnpredictableOwnGoal>
 <EventSpecialQuickScoresAfterRush>+ azkarra: korrikaldia eta gola</EventSpecialQuickScoresAfterRush>
 <EventSpecialQuickAssist>+ azkarra: korrikaldia eta asistentzia</EventSpecialQuickAssist>
-<Pullback>Pullback</Pullback>
+<Pullback>botarse atrás</Pullback>
 <Underestimation>gehiegizko segurtasuna</Underestimation>
 <UnderestimationRemove>gehiegizko segurtasuna ezabatuad</UnderestimationRemove>
 <UnderestimationReduceDouble>gehiegizko segurtasuna 2/3 murriztua</UnderestimationReduceDouble>
@@ -163,36 +147,34 @@
 <RequestLive>Eguneraketa zuzenean</RequestLive>
 <RequestAdd>Partidua gehitu</RequestAdd>
 <RequestDelete>Partidua ezabatu</RequestDelete>
-<RequestLogin>Login</RequestLogin>
+<RequestLogin>Conectar</RequestLogin>
 <RequestDetails>Partiduaren xehetasunak deskargatzen</RequestDetails>
 <RequestTeam>Taldekako partiduak deskargatzen</RequestTeam>
 <RequestTeamData>Taldearen datuak deskargatzen</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight aukerak</WindowTitle>
 <TabGeneral>Orokorra</TabGeneral>
 <TabMatches>Partiduak</TabMatches>
 <TabNotifications>Jakinarazpenak</TabNotifications>
 <TabLanguage>Hizkuntza</TabLanguage>
-<TabOther>Other</TabOther>
-<TabCustom>Customizations</TabCustom>
-<TabGoalSound>Goals sounds</TabGoalSound>
-<TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
-<TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
+<TabOther>Outro</TabOther>
+<TabCustom>Personalizacións</TabCustom>
+<TabGoalSound>Sons para os goles</TabGoalSound>
+<TabWheatherSound>Sons para eventos climáticos e lesións</TabWheatherSound>
+<TabWhistleSound>Sons para asubíos do árbitro e de hattrick</TabWhistleSound>
 <GeneralOpen>HTLiveSight ireki</GeneralOpen>
 <GeneralNewTab>Erlaitz berri batean</GeneralNewTab>
 <GeneralNewWindow>Lehio berri batean</GeneralNewWindow>
-<GeneralServer>Server settings</GeneralServer>
-<GeneralNote>Insert Hattrick server that you are logged on (ie. www96).</GeneralNote>
+<GeneralServer>Axustes Servidor</GeneralServer>
+<GeneralNote>Introduce o servidor de Hattrick no que estás logueado (por exemplo www96).</GeneralNote>
 <MatchesLeague>Ligako partiduak</MatchesLeague>
 <MatchesGetLeague>Ligako partiduak deskargatu</MatchesGetLeague>
 <MatchesPlayed>-n jokatu bada</MatchesPlayed>
 <MatchesHours>orduak.</MatchesHours>
 <MatchesFriends>Lagunak</MatchesFriends>
 <MatchesGetFriends>Lagunaren partiduak deskargatu</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Goleatzaileak</MatchesScorers>
 <ScorersList>Goleatzaileen sailkapena</ScorersList>
-<MatchesHeader>Header</MatchesHeader>
 <MatchesBooked>Booked</MatchesBooked>
 <BookedList>List booked in header</BookedList>
 <MatchesSentOff>Sent off</MatchesSentOff>
@@ -206,53 +188,47 @@
 <NotifyOnly>Irekitako partiduetan bakarrik</NotifyOnly>
 <NotifyFlash>Izenburu azkarrak</NotifyFlash>
 <NotifyStatus>Abisuak egoera barran</NotifyStatus>
-<OtherAuthorization>Authorization code</OtherAuthorization>
-<OtherReset>Remove authorization</OtherReset>
+<OtherAuthorization>Código de autorización</OtherAuthorization>
+<OtherReset>Revogar autorización</OtherReset>
 <OtherResetButton>Reset</OtherResetButton>
-<OtherReverse>Bottom up display of match events</OtherReverse>
-<OtherReverseNote>Refresh page to see the effect of change.</OtherReverseNote>
-<OtherEvents>Sequence of events</OtherEvents>
-<OtherEventKey>Eventkey</OtherEventKey>
-<OtherEventKeyNote>Show eventkey in the commentary</OtherEventKeyNote>
-<CustomIcons>Icons</CustomIcons>
-<CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
-<CustomSounds>Sounds</CustomSounds>
-<CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
-<CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
-<CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
-<CustomSoundsGoal>Original Livefox sounds</CustomSoundsGoal>
-<CustomSoundsNoOpGoal>No sounds for opponent's goals</CustomSoundsNoOpGoal>
-<PathSoundsMyGoal>Sound for own goal</PathSoundsMyGoal>
-<PathSoundsOpGoal>Sound for goal of my opponent</PathSoundsOpGoal>
-<PathSoundsFrGoal>Sound for goal of friend's</PathSoundsFrGoal>
-<PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
-<PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
-<PathSoundsMiss>Missed goal sound</PathSoundsMiss>
-<PathSoundsSun>Sound for sunny weather</PathSoundsSun>
-<PathSoundsRain>Sound for rainy weather</PathSoundsRain>
-<PathSoundsOvercast>Sound for overcast weather</PathSoundsOvercast>
-<PathSoundsFewClouds>Sound for few clouds weather</PathSoundsFewClouds>
-<PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
-<PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
-<PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
-<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
+<OtherReverse>Exhibición dos eventos de abaixo a arriba</OtherReverse>
+<OtherReverseNote>Actualiza a páxina para ver os efectos do cambio.</OtherReverseNote>
+<OtherEvents>Secuencia de eventos</OtherEvents>
+<OtherEventKey>Código do evento</OtherEventKey>
+<OtherEventKeyNote>Amosa o código do evento no comentario</OtherEventKeyNote>
+<CustomIcons>Iconos</CustomIcons>
+<CustomIconsOld>Iconos orixinais de Livefox na ventá de encontros</CustomIconsOld>
+<CustomSounds>Sons</CustomSounds>
+<CustomSoundsWeather>Sons da climatoloxía ó inicio do encontro</CustomSoundsWeather>
+<CustomSoundsTime>Sons para inicio/fin do descanso</CustomSoundsTime>
+<CustomSoundsSEW>Sons para eventos especiais climáticos</CustomSoundsSEW>
+<CustomSoundsGoal>Sons do Livefox Orixinal</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>Sen sons para goles do rival</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Son para un gol propio</PathSoundsMyGoal>
+<PathSoundsOpGoal>Son para gol do meu rival</PathSoundsOpGoal>
+<PathSoundsFrGoal>Son para gol dun amigo</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Son para gol do rival dun amigo</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Son para goles de outros equipos</PathSoundsOtGoal>
+<PathSoundsMiss>Son para goles errados</PathSoundsMiss>
+<PathSoundsSun>Son para tempo soleado</PathSoundsSun>
+<PathSoundsRain>Son para choiva</PathSoundsRain>
+<PathSoundsOvercast>Son para tempo nubrado</PathSoundsOvercast>
+<PathSoundsFewClouds>Son para tempo parcialmente nubrado</PathSoundsFewClouds>
+<PathSoundsMyBoo>Son para lesión no propio equipo</PathSoundsMyBoo>
+<PathSoundsOpBoo>Son para lesión do rival</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Asubío para inicio da primeira/segunda metade</PathSoundsWhistleStart>
+<PathSoundsWhistle>Son de cartón amarelo/vermello</PathSoundsWhistle>
+<PathSoundsHattrick>Son de Hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Hizkuntza hautatu</LanguageSelect>
 <LanguageNote>Oharra: Aldaketek efektu izan dezaten beharrezkoa da HTLiveSight berrabiaraztea.</LanguageNote>
 <ButtonCancel>Utzi</ButtonCancel>
 <ButtonOk>Ados</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>HTLiveSight-i buruz</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabTranslators>Traductores</TabTranslators>
+<TabCredits>Créditos</TabCredits>
 <MonthJanuary>Urt</MonthJanuary>
 <MonthFebruary>Ots</MonthFebruary>
 <MonthMarch>Mar</MonthMarch>
@@ -270,7 +246,6 @@
 <TextHelpOf>Laguntzaileak</TextHelpOf>
 <TextThanksTo>Mila esker honakoei:</TextThanksTo>
 <ButtonClose>Itxi</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

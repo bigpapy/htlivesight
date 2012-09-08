@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Avvio</MenuStart>
 <MenuOptions>Opzioni</MenuOptions>
 <TooltipButton>Clicca per avviare il menù di HTLiveSight</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
 <MenuDisconnected>Disconnesso</MenuDisconnected>
-<MenuOptions>Opzioni</MenuOptions>
 <MenuAbout>Informazioni su HTLiveSight</MenuAbout>
 <LoginLabel>Login</LoginLabel>
 <LoginTeamId>Inserisci il TeamId della tua squadra</LoginTeamId>
@@ -22,7 +18,7 @@
 <LoginSpeed>Velocità</LoginSpeed>
 <LoginByEvent>Per evento</LoginByEvent>
 <LeagueMatches>Partite di campionato</LeagueMatches>
-<LeagueLiveTable>Classifica aggiornata</LeagueLiveTable>
+<LeagueLiveTable>Classifica</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Squadra</LeagueTeam>
 <LeaguePlayed>P</LeaguePlayed>
@@ -37,25 +33,15 @@
 <FriendsTitle>Squadre amiche</FriendsTitle>
 <FriendsRemove>Rimuovi</FriendsRemove>
 <FriendsOpen>Apri</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Stai per essere reindirizzato alla pagina chpp per ottenere il codice di autorizzazione. Se ciò non accade, per favore rimuovi temporaneamente il blocco pop up o inserisci HTlivesight nella lista delle eccezioni.</Introduction>
 <Insert>Inserisci il codice di autorizzazione:</Insert>
 <Ending>Ora HTlivesight è stato autorizzato. Clicca su OK per riavviare l'applicazione.</Ending>
-<Error401>Errore 401: accesso non autorizzato. Devi ottenere di nuovo l'autorizzazione. Clicca OK per continuare.</Error401>
-<Error404>Errore 404: la risorsa richiesta non è disponibile. Se l'errore si ripete controlla se il chpp è spento.</Error404>
-<Error0>Errore 0:non sei connesso ad internet.</Error0>
 <Error>Errore </Error>
 <ServerON>Connesso</ServerON>
 <ServerOFF>Disconnesso</ServerOFF>
 <ResetToken>Il codice di autorizzazione è stato cancellato. Riavvia HTLS o aspetta il prossimo aggiornamento (meno di un minuto).</ResetToken>
 <NoHTServer>Non hai scelto il server di Hattrick a cui sei connesso con il browser, clicca col tasto destro sulle opzioni e imposta il server di hattrick a cui sei connesso col browser.</NoHTServer>
-<Error500>Errore 500: errore interno al server (di Hattrick)</Error500>
-<Error503>Errore 503: servizio CHPP non disponibile (sovraccarico temporaneo o manutenzione)</Error503>
-
-<!--Properties-->
 <MatchesMaximum>Non puoi guardare più di 20 partite!</MatchesMaximum>
-<LeagueLiveTable>Classifica</LeagueLiveTable>
 <LeagueRound>Giornata</LeagueRound>
 <MessageHattrickError>Il server di Hattrick segnala un errore.</MessageHattrickError>
 <MessageAlreadyFriend>E' già nell'elenco degli amici</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Sposta l'amico verso l'alto</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Sposta l'amico verso il basso</TooltipFriendMoveDown>
 <MenuAddFriend>Aggiungi amico</MenuAddFriend>
-<MenuServer>Server:</MenuServer>
 <EventGoal>GOAL</EventGoal>
 <EventPenaltyGoal>Penalty: GOAL</EventPenaltyGoal>
 <EventPenaltyMiss>Penalty: SBAGLIATO</EventPenaltyMiss>
 <EventInjury>Infortunio</EventInjury>
 <EventRed>Cartellino rosso</EventRed>
-<EventYellow2>Secondo cartellino giallo</EventYellow2>
 <EventSideLeft>sinistra</EventSideLeft>
 <EventSideRight>destra</EventSideRight>
 <EventSideCenter>centro</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Acquisisci i dettagli della partita</RequestDetails>
 <RequestTeam>Acquisisci la partita per squadra</RequestTeam>
 <RequestTeamData>Acquisisci i dati della squadra</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>Opzioni di HTLiveSight</WindowTitle>
 <TabGeneral>Generali</TabGeneral>
 <TabMatches>Partite</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Suono infortunio della mia squadra</PathSoundsMyBoo>
 <PathSoundsOpBoo>Suono infortunio della squadra avversaria</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Suono inizio 1° e 2° tempo</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Suono fine primo tempo</PathSoundsWhistle2>
-<PathSoundsWhistle3>Suono fine partita</PathSoundsWhistle3>
 <PathSoundsWhistle>Suono ammonizione/espulsione</PathSoundsWhistle>
 <PathSoundsHattrick>Suono hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Ripristina</PathSoundsRestore>
 <PathSoundsPlay>Suona</PathSoundsPlay>
-<PathSoundsNote1>Inserisci file:/// prima dell'indirizzo del file audio in formato .wav</PathSoundsNote1>
-<PathSoundsNote2>Esempio: file:///c:\\cartella\contenente\il\suono.wav</PathSoundsNote2>
 <LanguageSelect>Scegli la lingua</LanguageSelect>
 <LanguageNote>Attenzione: Riavvia Firefox per rendere effettivi i cambiamenti.</LanguageNote>
 <ButtonCancel>Cancella</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Informazioni su HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Traduttori</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>Con l'aiuto di</TextHelpOf>
 <TextThanksTo>Un grande ringraziamento a:</TextThanksTo>
 <ButtonClose>Chiudi</ButtonClose>
-
 <NonExistent>Inesistente</NonExistent>
 <Disastrous>Disastroso</Disastrous>
 <Wretched>Tremendo</Wretched>
@@ -305,7 +280,7 @@
 <LeftAttack>Attacco sinistro</LeftAttack>
 <IndirectSetPiecesDefence>Calci di punizione indiretti difesa</IndirectSetPiecesDefence>
 <IndirectSetPiecesAttack>Calci di punizione indiretti attacco</IndirectSetPiecesAttack>
-<TeamAttitude>Atteggiamento</TeamAttitude>
+<TeamAttitude>atteggiamento</TeamAttitude>
 <TacticType>Tipo di tattica</TacticType>
 <TacticSkill>Livello di tattica</TacticSkill>
 <BallPosses>Possesso palla</BallPosses>
@@ -326,20 +301,19 @@
 <Colors>Colori</Colors>
 <SchemaTip>Clicca per mostrare la formazione</SchemaTip>
 <StatisticTip>Clicca per mostrare le statistiche di fine partita</StatisticTip>
+<Youth>Giovanile</Youth>
+<Senior>Prima squadra</Senior>
 <Tournament>Torneo</Tournament>
-<Youth>Giovanili</Youth>
-<Senior>Maggiore</Senior>
-
 <FreeKicks>Calci di punizione</FreeKicks>
 <RedCards>Cartellini rossi</RedCards>
 <YellowCards>Cartellini gialli</YellowCards>
-<Injuries>Infortuni</Injuries>
+<Injuries>Infortunati</Injuries>
 <Goals>Reti</Goals>
-
-<Total>Posti Totali</Total>
+<Total>Totale</Total>
 <Terraces>Gradinate</Terraces>
 <Basic>Tribune</Basic>
 <Roof>Tribune coperte</Roof>
 <VIP>Poltrone VIP</VIP>
+<CrowdinHelp>Aiutaci a tradurre! Con Crowdin è facilissimo e molto divertente! Clicca qui!</CrowdinHelp>
 
 </Htlivesight>

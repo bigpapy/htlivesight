@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>Opcions</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Servidor:</MenuServer>
 <MenuDisconnected>desconnectat</MenuDisconnected>
-<MenuOptions>Opcions</MenuOptions>
 <MenuAbout>Sobre HTLiveSight</MenuAbout>
 <LoginLabel>Connexió</LoginLabel>
 <LoginTeamId>Introdueix el TeamID del teu equip</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Amics</FriendsTitle>
 <FriendsRemove>El·liminar</FriendsRemove>
 <FriendsOpen>Obrir</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Se't redirigeix a la pàgina CHPP per tal d'obtenir el codi d'autorització. Si no fos el cas, desactiva momentàniament el bloqueig dels "pop-up" o posa l'HTlivesight a la llista d'excepcions.</Introduction>
 <Insert>Introdueix el codi d'autorització aquí:</Insert>
 <Ending>L'HTlivesight ja està autoritzat. Clica OK per reiniciar l'aplicació.</Ending>
-<Error401>Error 401: Accés no autoritzat. Has d'obtenir el codi d'autorització un altre cop. Clica OK per continuar.</Error401>
-<Error404>Error 404: El recurs demanat no s'ha pogut trobar. Si aquest error torna a aparèixer assegura't que el servei de CHPP funciona correctament.</Error404>
-<Error0>Error 0: no estàs connectat a internet.</Error0>
 <Error>Error</Error>
 <ServerON>Connectat</ServerON>
 <ServerOFF>Desconnectat</ServerOFF>
 <ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
-<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.</NoHTServer>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-
-<!--Properties-->
+<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
 <MatchesMaximum>No es poden seguir mÃ©s de 20 partits!</MatchesMaximum>
-<LeagueLiveTable>Taula en viu</LeagueLiveTable>
 <LeagueRound>Ronda</LeagueRound>
 <MessageHattrickError>El servidor Hattrick ha retornat un error.</MessageHattrickError>
 <MessageAlreadyFriend>Already your friend!</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Pujar amic</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Baixar amic</TooltipFriendMoveDown>
 <MenuAddFriend>Amic</MenuAddFriend>
-<MenuServer>Servidor:</MenuServer>
 <EventGoal>GOL</EventGoal>
 <EventPenaltyGoal>Penal: GOL</EventPenaltyGoal>
 <EventPenaltyMiss>Penal: ERRADA</EventPenaltyMiss>
 <EventInjury>Injury</EventInjury>
 <EventRed>Tarjeta vermella</EventRed>
-<EventYellow2>Segona tarjeta groga</EventYellow2>
 <EventSideLeft>esquerra</EventSideLeft>
 <EventSideRight>dreta</EventSideRight>
 <EventSideCenter>centre</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Obtenir detalls del partit</RequestDetails>
 <RequestTeam>Obtenir partit per equip</RequestTeam>
 <RequestTeamData>Obtenir dades de l'equip</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>Opcions de HTLiveSight</WindowTitle>
 <TabGeneral>General</TabGeneral>
 <TabMatches>Partits</TabMatches>
@@ -190,9 +172,9 @@
 <MatchesHours>hores.</MatchesHours>
 <MatchesFriends>Amics</MatchesFriends>
 <MatchesGetFriends>Obtenir partits d'amics</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Anotadors</MatchesScorers>
 <ScorersList>Llistar anotadors</ScorersList>
-<MatchesHeader>Header</MatchesHeader>
 <MatchesBooked>Booked</MatchesBooked>
 <BookedList>List booked in header</BookedList>
 <MatchesSentOff>Sent off</MatchesSentOff>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Seleccionar idioma</LanguageSelect>
 <LanguageNote>Nota: Reiniciar HTLiveSight per fer efectius els canvis.</LanguageNote>
 <ButtonCancel>Cancel·lar</ButtonCancel>
 <ButtonOk>Acceptar</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Sobre HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>amb l'ajuda de</TextHelpOf>
 <TextThanksTo>Moltes gràcies a:</TextThanksTo>
 <ButtonClose>Tancar</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,5 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
+
 </Htlivesight>

@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
+<MenuStart>Starta</MenuStart>
 <MenuOptions>Inställningar</MenuOptions>
 <TooltipButton>Klicka för att öppna HTLiveSight -menyn</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
-<MenuDisconnected>frånkopplad</MenuDisconnected>
-<MenuOptions>Inställningar</MenuOptions>
+<MenuDisconnected>Frånkopplad</MenuDisconnected>
 <MenuAbout>Om HTLiveSight</MenuAbout>
 <LoginLabel>Inloggning</LoginLabel>
 <LoginTeamId>Ditt lagID</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Favoritlag</FriendsTitle>
 <FriendsRemove>Ta bort</FriendsRemove>
 <FriendsOpen>Öppna</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Du sänds vidare till CHPP -sidan för att inleda din autentiseringsprocess. Väl där loggar du in med dina vanliga inloggningsuppgifter för att få din kod för att ge HTLiveSight tillstånd till ditt lags data. Om du inte kommer fram kan det bero på ngn form av pop-up blocker. Inaktivera den tillfälligt isåfall eller lägg till HTLiveSight i listan för undantag.</Introduction>
 <Insert>Klistra in din behörighetskod här:</Insert>
 <Ending>Nu är HTLiveSight godkänt. Klicka OK för att starta om applikationen.</Ending>
-<Error401>Error 401: Obehörig Åtkomst. Du måste fixa tillståndet igen. Klicka på OK för att fortsätta.</Error401>
-<Error404>Error 404: Den begärda resursen kan inte hittas. Om felet visas igen kontrollera Hattricks SysInfo om CHPP är nere.</Error404>
-<Error0>Error 0: Inte ansluten till internet.</Error0>
-<Error>Error</Error>
+<Error>Fel</Error>
 <ServerON>Uppkopplad</ServerON>
 <ServerOFF>Frånkopplad</ServerOFF>
 <ResetToken>Behörighetskoden (OAuth) har tagits bort. Starta om HTLS eller vänta på nästa uppdatering (less than 1 minute).</ResetToken>
-<NoHTServer>Du har ej valt korrekt Hattrickserver som du för tillfället också är inloggad på. Högerklicka i HTLS och välj -> Inställningar -> Allmänt och fyll där i korrekt Hattrickserver.</NoHTServer>
-<Error500>Error 500: Internal Server Error (Internt fel på själva webbservern)</Error500>
-<Error503>Error 503: CHPP Service Unavailable (Tillfälligt avbrott/Överbelastning/Underhåll)</Error503>
-
-<!--Properties-->
+<NoHTServer>Du har ej valt korrekt Hattrickserver som du för tillfället också är inloggad på. Högerklicka i HTLS och välj - Inställningar - Allmänt och fyll där i korrekt Hattrickserver.</NoHTServer>
 <MatchesMaximum>Det går inte att följa fler än tjugo (20) matcher!</MatchesMaximum>
-<LeagueLiveTable>Live-tabell</LeagueLiveTable>
 <LeagueRound>Omgång</LeagueRound>
 <MessageHattrickError>Ett fel returnerades av Hattricks server.</MessageHattrickError>
 <MessageAlreadyFriend>Ingår redan bland dina favoritlag.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Flytta upp favoritlag</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Flytta ner favoritlag</TooltipFriendMoveDown>
 <MenuAddFriend>Lägg till favoritlag</MenuAddFriend>
-<MenuServer>Server:</MenuServer>
 <EventGoal>MÅL</EventGoal>
 <EventPenaltyGoal>Straff: MÅL</EventPenaltyGoal>
 <EventPenaltyMiss>Straff: MISS</EventPenaltyMiss>
 <EventInjury>Skada</EventInjury>
 <EventRed>Rött kort</EventRed>
-<EventYellow2>Gult kort (nr.2)</EventYellow2>
 <EventSideLeft>vänster</EventSideLeft>
 <EventSideRight>höger</EventSideRight>
 <EventSideCenter>mitten</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Hämta matchinformation</RequestDetails>
 <RequestTeam>Hämta match efter lag</RequestTeam>
 <RequestTeamData>Hämta lagdata</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight - Inställningar</WindowTitle>
 <TabGeneral>Allmänt</TabGeneral>
 <TabMatches>Matcher</TabMatches>
@@ -190,15 +172,15 @@
 <MatchesHours>timmar.</MatchesHours>
 <MatchesFriends>Favoritlag</MatchesFriends>
 <MatchesGetFriends>Hämta matcher för mina favoritlag</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Sidhuvud</MatchesHeader>
 <MatchesScorers>Målgörare</MatchesScorers>
 <ScorersList>Visa målgörare i matchens sidhuvud</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>Varningar</MatchesBooked>
+<BookedList>Visa varningar i sidhuvudet</BookedList>
+<MatchesSentOff>Utvisad</MatchesSentOff>
+<SentOffList>Visa utvisningar i sidhuvudet</SentOffList>
+<MatchesInjured>skadad</MatchesInjured>
+<InjuredList>Visa skador i sidhuvudet</InjuredList>
 <MatchesWindow>Fönster</MatchesWindow>
 <MatchesLines>Antal rader som visas i minimerat läge</MatchesLines>
 <NotifyNotify>Meddelanden</NotifyNotify>
@@ -208,7 +190,7 @@
 <NotifyStatus>Notis i statusfältet (popup)</NotifyStatus>
 <OtherAuthorization>Behörighetskod (OAuth)</OtherAuthorization>
 <OtherReset>Ta bort tillstånd</OtherReset>
-<OtherResetButton>Reset</OtherResetButton>
+<OtherResetButton>Återställ</OtherResetButton>
 <OtherReverse>Ändra läsriktning</OtherReverse>
 <OtherReverseNote>Uppdatera sidan för att se effekten av ändringen.</OtherReverseNote>
 <OtherEvents>Händelser</OtherEvents>
@@ -218,7 +200,7 @@
 <CustomIconsOld>Klassiska Livefox -ikoner i matchfönstret</CustomIconsOld>
 <CustomSounds>Ljud</CustomSounds>
 <CustomSoundsWeather>Väderljud vid matchstart</CustomSoundsWeather>
-  <CustomSoundsTime>Ljud för inledning/avslutning av halvlek</CustomSoundsTime>
+<CustomSoundsTime>Ljud för inledning/avslutning av halvlek</CustomSoundsTime>
 <CustomSoundsSEW>Ljud för speciella väderhändelser (SE)</CustomSoundsSEW>
 <CustomSoundsGoal>Klassiska Livefox -ljud</CustomSoundsGoal>
 <CustomSoundsNoOpGoal>Inga ljud för motståndarens mål</CustomSoundsNoOpGoal>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Ljud - Skada i mitt lag</PathSoundsMyBoo>
 <PathSoundsOpBoo>Ljud - Skada för motståndaren</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Ljud - Avspark av 1:a och 2:a halvlekar</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Ljud - Slut på första halvlek</PathSoundsWhistle2>
-<PathSoundsWhistle3>Ljud - Slut på matchen</PathSoundsWhistle3>
-  <PathSoundsWhistle>Ljud - Gula/Röda kort</PathSoundsWhistle>
+<PathSoundsWhistle>Ljud - Gula/Röda kort</PathSoundsWhistle>
 <PathSoundsHattrick>Ljud - Hattrick (3 mål av samma spelare)</PathSoundsHattrick>
 <PathSoundsRestore>Återställ</PathSoundsRestore>
 <PathSoundsPlay>Lyssna</PathSoundsPlay>
-<PathSoundsNote1>Infoga file:/// före sökvägen till ljud i. wav-format</PathSoundsNote1>
-<PathSoundsNote2>Exempel: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Välj språk</LanguageSelect>
 <LanguageNote>Obs! Firefox måste startas om för att ändringen ska börja gälla.</LanguageNote>
 <ButtonCancel>Avbryt</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Om HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Översättare</TabTranslators>
@@ -270,62 +246,74 @@
 <TextHelpOf>med hjälp av</TextHelpOf>
 <TextThanksTo>Stort tack till:</TextThanksTo>
 <ButtonClose>Stäng</ButtonClose>
-
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
+<NonExistent>Obefintlig</NonExistent>
+<Disastrous>Katastrofal</Disastrous>
+<Wretched>Usel</Wretched>
+<Poor>Dålig</Poor>
+<Weak>Hyfsad</Weak>
+<Inadequate>Bra</Inadequate>
+<Passable>Ypperlig</Passable>
+<Solid>Enastående</Solid>
+<Excellent>Fenomenal</Excellent>
+<Formidable>Unik</Formidable>
+<Outstanding>Legendarisk</Outstanding>
+<Brilliant>Gudabenådad</Brilliant>
+<Magnificent>Övernaturlig</Magnificent>
+<WorldClass>Oförglömlig</WorldClass>
+<Supernatural>Himmelsk</Supernatural>
+<Titanic>Titanisk</Titanic>
+<ExtraTerrestrial>Utomjordisk</ExtraTerrestrial>
+<Mythical>Mytomspunnen</Mythical>
+<Magical>Magisk</Magical>
+<Utopian>Utopisk</Utopian>
+<Divine>Gudomlig</Divine>
+<VeryHigh>mkt hög</VeryHigh>
+<High>hög</High>
+<Low>låg</Low>
+<VeryLow>mkt låg</VeryLow>
+<RightDefence>Högerförsvar</RightDefence>
+<MiddleDefence>Mittförsvar</MiddleDefence>
+<LeftDefence>Vänsterförsvar</LeftDefence>
+<Midfield>Mittfält</Midfield>
+<RightAttack>Högeranfall</RightAttack>
+<MiddleAttack>Mittanfall</MiddleAttack>
+<LeftAttack>Vänsteranfall</LeftAttack>
+<IndirectSetPiecesDefence>Indirekta fasta situationer - Försvar</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Indirekta fasta situationer - Anfall</IndirectSetPiecesAttack>
+<TeamAttitude>Inställning</TeamAttitude>
+<TacticType>Taktik</TacticType>
+<TacticSkill>Taktiknivå</TacticSkill>
+<BallPosses>Bollinnehav</BallPosses>
+<SpecialEvent>SE</SpecialEvent>
 <Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Tournament>Tournament</Tournament>
+<PIC>Ta Det Lugnt (TDL)</PIC>
+<MOTS>Säsongens Viktigaste Match (SVM)</MOTS>
+<ColorPicker>Du kan välja din färg på </ColorPicker>
+<EventBackground>Händelsen bakgrundsfärg</EventBackground>
+<FriendHome>Hemma (egna och favoritlags) färg: #</FriendHome>
+<FriendAway>Borta (egna och favoritlags) färg: #</FriendAway>
+<FoeHome>Hemma (främmande lag) färg: #</FoeHome>
+<FoeAway>Borta (främmande lag) färg: #</FoeAway>
+<Neutral>Neutral färg: #</Neutral>
+<EventColorTitle>Händelsens textfärg</EventColorTitle>
+<EventTextColor>Händelsens textfärg: #</EventTextColor>
+<SETextColor>SE textfärg: #</SETextColor>
+<Colors>Färger</Colors>
+<SchemaTip>Klicka för att visa laguppställning</SchemaTip>
+<StatisticTip>Klicka för att visa statistik när matchen är slut</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
+<Tournament>Turnering</Tournament>
+<FreeKicks>Frisparkar</FreeKicks>
+<RedCards>Röda kort</RedCards>
+<YellowCards>Gula kort</YellowCards>
+<Injuries>Skador</Injuries>
+<Goals>Mål</Goals>
+<Total>Totalt</Total>
+<Terraces>Ståplatser</Terraces>
+<Basic>Enkla sittplatser</Basic>
+<Roof>Stolar under tak</Roof>
+<VIP>Platser i VIP-boxar</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

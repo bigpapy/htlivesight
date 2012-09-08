@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Запуск</MenuStart>
 <MenuOptions>Настройки</MenuOptions>
 <TooltipButton>Нажмите, чтобы открыть меню HTLiveSight</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Сервер:</MenuServer>
 <MenuDisconnected>отключено</MenuDisconnected>
-<MenuOptions>Настройки</MenuOptions>
 <MenuAbout>О HTLiveSight</MenuAbout>
 <LoginLabel>Вход</LoginLabel>
 <LoginTeamId>Введите TeamId своей команды</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Друзья</FriendsTitle>
 <FriendsRemove>Убрать</FriendsRemove>
 <FriendsOpen>Открыть</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Вы были перенаправлены на страницу CHPP для получения кода авторизации. Если этого не произошло, пожалуйста, временно отключите блокировку всплывающих окон в браузере или добавьте HTlivesight в список исключений.</Introduction>
 <Insert>введите Ваш код авторизации здесь:</Insert>
 <Ending>Теперь HTlivesight авторизован. Нажмите ОК для перезапуска приложения</Ending>
-<Error401>Ошибка 401: Неавторизованный доступ. Вам необходимо снова получить авторизацию. Для продолжения нажмите ОК.</Error401>
-<Error404>Ошибка 404: Запрашиваемый ресурс не может быть найден. Если эта ошибка появится снова, убедитесь, что сервис CHPP работает.</Error404>
-<Error0>Ошибка 0: Нет подключения к Интернет.</Error0>
 <Error>Ошибка</Error>
 <ServerON>Подключено</ServerON>
 <ServerOFF>Отключено</ServerOFF>
 <ResetToken>Код авторизации был удалён. Перезапустите HTLS или подождите следующего обновления (less than 1 minute).</ResetToken>
-<NoHTServer>Вы не выбрали правильный Hattrick сервер, на котором вы авторизованы в данный момент, правый клик где-нибудь на заднем фоне и выберите -> опции-> общие и выберите правильный номер сервера Hattrick.</NoHTServer>
-<Error500>Ошибка 500: внутренняя ошибка сервера (Hattrick)</Error500>
-<Error503>Ошибка 503: недоступен сервис CHPP  (временная перегрузка или обслуживание)</Error503>
-
-<!--Properties-->
+<NoHTServer>Вы не выбрали правильный Hattrick сервер, на котором вы авторизованы в данный момент, правый клик где-нибудь на заднем фоне и выберите - опции- общие и выберите правильный номер сервера Hattrick.</NoHTServer>
 <MatchesMaximum>Невозможно смотреть более 20 матчей</MatchesMaximum>
-<LeagueLiveTable>Таблица при текущих результатах</LeagueLiveTable>
 <LeagueRound>Круг</LeagueRound>
 <MessageHattrickError>Сервер ответил об ошибке.</MessageHattrickError>
 <MessageAlreadyFriend>Уже в друзьях.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Поднять выше</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Опустить ниже</TooltipFriendMoveDown>
 <MenuAddFriend>Друзья</MenuAddFriend>
-<MenuServer>Сервер:</MenuServer>
 <EventGoal>ГОЛ</EventGoal>
 <EventPenaltyGoal>Пенальти: ГОЛ</EventPenaltyGoal>
 <EventPenaltyMiss>Пенальти: МИМО</EventPenaltyMiss>
 <EventInjury>Травма</EventInjury>
 <EventRed>Красная карточка</EventRed>
-<EventYellow2>Вторая желтая карточка</EventYellow2>
 <EventSideLeft>слева</EventSideLeft>
 <EventSideRight>справа</EventSideRight>
 <EventSideCenter>по центру</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Запрос деталей матча</RequestDetails>
 <RequestTeam>Запрос матча команды</RequestTeam>
 <RequestTeamData>Запрос данных команды</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>Настройки HTLiveSight</WindowTitle>
 <TabGeneral>Общие</TabGeneral>
 <TabMatches>Матчи</TabMatches>
@@ -190,15 +172,15 @@
 <MatchesHours>часов.</MatchesHours>
 <MatchesFriends>Друзья</MatchesFriends>
 <MatchesGetFriends>Открывать матчи друзей</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Заголовок</MatchesHeader>
 <MatchesScorers>Забитые голы</MatchesScorers>
 <ScorersList>Показывать в заголовке</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>Предупреждён</MatchesBooked>
+<BookedList>Список предупреждённых в заголовке</BookedList>
+<MatchesSentOff>Удалён</MatchesSentOff>
+<SentOffList>Список удалённых в заголовке</SentOffList>
+<MatchesInjured>Травмирован</MatchesInjured>
+<InjuredList>Список травмированных в заголовке</InjuredList>
 <MatchesWindow>Окно</MatchesWindow>
 <MatchesLines>Количество строк в свернутом режиме</MatchesLines>
 <NotifyNotify>Уведомления</NotifyNotify>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Звук для травмы в моей команде</PathSoundsMyBoo>
 <PathSoundsOpBoo>Звук для травмы в команде соперника</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Свисток для начала таймов</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Свисток для окончания первого тайма</PathSoundsWhistle2>
-<PathSoundsWhistle3>Финальный свисток</PathSoundsWhistle3>
 <PathSoundsWhistle>Звук для жёлтой/красной карточки</PathSoundsWhistle>
 <PathSoundsHattrick>Звук для хеттрика</PathSoundsHattrick>
 <PathSoundsRestore>Восстановить</PathSoundsRestore>
 <PathSoundsPlay>Проиграть</PathSoundsPlay>
-<PathSoundsNote1>Введите file:/// перед путём к звуковому файлу в формате .wav</PathSoundsNote1>
-<PathSoundsNote2>Например: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Выбор языка</LanguageSelect>
 <LanguageNote>Перезапустите HTLiveSight для ввода в действие</LanguageNote>
 <ButtonCancel>Отмена</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>О HTLiveSight</WindowAboutTitle>
 <TabInfo>Инфо</TabInfo>
 <TabTranslators>Переводчики</TabTranslators>
@@ -270,62 +246,74 @@
 <TextHelpOf>С помощью</TextHelpOf>
 <TextThanksTo>Благодарность:</TextThanksTo>
 <ButtonClose>Закрыть</ButtonClose>
-
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Tournament>Tournament</Tournament>
+<NonExistent>Отсутствует</NonExistent>
+<Disastrous>Катастрофично</Disastrous>
+<Wretched>Ужасно</Wretched>
+<Poor>Плохо</Poor>
+<Weak>Слабо</Weak>
+<Inadequate>Недостаточно</Inadequate>
+<Passable>Сносно</Passable>
+<Solid>Хорошо</Solid>
+<Excellent>Отлично</Excellent>
+<Formidable>Превосходно</Formidable>
+<Outstanding>Восхитительно</Outstanding>
+<Brilliant>Блестяще</Brilliant>
+<Magnificent>Потрясающе</Magnificent>
+<WorldClass>Мирового класса</WorldClass>
+<Supernatural>Сверхъестественно</Supernatural>
+<Titanic>Колоссально</Titanic>
+<ExtraTerrestrial>Запредельно</ExtraTerrestrial>
+<Mythical>Сказочно</Mythical>
+<Magical>Волшебно</Magical>
+<Utopian>Легендарно</Utopian>
+<Divine>Божественно</Divine>
+<VeryHigh>очень высокий</VeryHigh>
+<High>высокий</High>
+<Low>низкий</Low>
+<VeryLow>очень низкий</VeryLow>
+<RightDefence>Защита справа</RightDefence>
+<MiddleDefence>Защита по центру</MiddleDefence>
+<LeftDefence>Защита слева</LeftDefence>
+<Midfield>Полузащита</Midfield>
+<RightAttack>Атака справа</RightAttack>
+<MiddleAttack>Атака по центру</MiddleAttack>
+<LeftAttack>Атака слева</LeftAttack>
+<IndirectSetPiecesDefence>Свободные удары - защита</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Свободные удары - атака</IndirectSetPiecesAttack>
+<TeamAttitude>Настрой команды</TeamAttitude>
+<TacticType>Тип тактики</TacticType>
+<TacticSkill>Уровень тактики</TacticSkill>
+<BallPosses>Владение мячом</BallPosses>
+<SpecialEvent>Специальное событие</SpecialEvent>
+<Normal>Нормально</Normal>
+<PIC>Играть вполсилы</PIC>
+<MOTS>Матч сезона</MOTS>
+<ColorPicker>Вы можете выбрать свой цвет </ColorPicker>
+<EventBackground>Цвет фона события</EventBackground>
+<FriendHome>Домашний цвет(свой и для друзей): #</FriendHome>
+<FriendAway>Гостевой цвет(свой и для друзей): #</FriendAway>
+<FoeHome>Цвет соперника-хозяина поля: #</FoeHome>
+<FoeAway>Цвет соперника-гостя: #</FoeAway>
+<Neutral>Нейтральный цвет: #</Neutral>
+<EventColorTitle>Цвет текста события</EventColorTitle>
+<EventTextColor>Цвет текста события: #</EventTextColor>
+<SETextColor>Цвет текста специального события: #</SETextColor>
+<Colors>Цвета</Colors>
+<SchemaTip>Нажмите, чтобы показать расстановку</SchemaTip>
+<StatisticTip>Нажмите, чтобы показать Статистику в конце матча</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
+<Tournament>Турнир</Tournament>
+<FreeKicks>Штрафные удары</FreeKicks>
+<RedCards>Красные карточки</RedCards>
+<YellowCards>Желтые карточки</YellowCards>
+<Injuries>Травмы</Injuries>
+<Goals>Голы</Goals>
+<Total>Всего</Total>
+<Terraces>Террасы</Terraces>
+<Basic>Обычные места</Basic>
+<Roof>Сидения под крышей</Roof>
+<VIP>Места в VIP-ложе</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

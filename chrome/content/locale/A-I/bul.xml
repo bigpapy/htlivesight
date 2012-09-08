@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>Опции</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>ЛайвФокс</WindowMainTitle>
 <MenuServer>Сървър:</MenuServer>
 <MenuDisconnected>няма връзка</MenuDisconnected>
-<MenuOptions>Опции</MenuOptions>
 <MenuAbout>За ЛайвФокс</MenuAbout>
 <LoginLabel>Акаунт</LoginLabel>
 <LoginTeamId>Постави ID на отбора си</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Приятели</FriendsTitle>
 <FriendsRemove>Изтрий</FriendsRemove>
 <FriendsOpen>Отвори</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Вие сте пренасочени към страницата на CHPP, за да получите вашият код за достъп. Ако не, моля премахнете забраната/блокадата на HTlivesight от вашия списък с изключения.</Introduction>
 <Insert>поставете вашият код за достъп тук:</Insert>
 <Ending>Сега HTlivesight е оторизиран. Натиснете OK, за да рестартирате апликацията.</Ending>
-<Error401>Грешка 401: неоторизиран достъп. Трябва да вземете код за достъп отново. Натисни OK, за да продължиш.</Error401>
-<Error404>Грешка 404: Исканият ресурс не може да бъде намерен. If this error appear again control if chpp service is down.</Error404>
-<Error0>Грешка 0: няма връзка с интернет.</Error0>
 <Error>Грешка</Error>
 <ServerON>Свързан</ServerON>
 <ServerOFF>Изключен</ServerOFF>
 <ResetToken>Оторизацията беше премахната. Рестартирай HTLS или изчакай следващия ъпдейт (less than 1 minute).</ResetToken>
-<NoHTServer>Не сте избрали Хеттрик сървъра, в който сте свързан с вашият браузър. Right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.</NoHTServer>
-<Error500>Грешка 500: internal server error (of Hattrick)</Error500>
-<Error503>Грешка 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-
-<!--Properties-->
+<NoHTServer>Не сте избрали Хеттрик сървъра, в който сте свързан с вашият браузър. Right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
 <MatchesMaximum>Зареждането на повече от десет мача е забранено!</MatchesMaximum>
-<LeagueLiveTable>Класиране при текущите резултати</LeagueLiveTable>
 <LeagueRound>Кръг</LeagueRound>
 <MessageHattrickError>Грешка в сървъра на Хеттрик.</MessageHattrickError>
 <MessageAlreadyFriend>Вече е в списъка с приятелите.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Премести нагоре</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Премести надолу</TooltipFriendMoveDown>
 <MenuAddFriend>Добави приятел</MenuAddFriend>
-<MenuServer>Сървър:</MenuServer>
 <EventGoal>ГОЛ</EventGoal>
 <EventPenaltyGoal>Дузпа: ГОЛ</EventPenaltyGoal>
 <EventPenaltyMiss>Дузпа: ПРОПУСК</EventPenaltyMiss>
 <EventInjury>Контузия</EventInjury>
 <EventRed>Червен картон</EventRed>
-<EventYellow2>Втори жълт картон</EventYellow2>
 <EventSideLeft>отляво</EventSideLeft>
 <EventSideRight>отдясно</EventSideRight>
 <EventSideCenter>през средата</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Сваляне на мач</RequestDetails>
 <RequestTeam>Намиране текущия мач на отбор</RequestTeam>
 <RequestTeamData>Сваляне данни на отбора</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>Опции на ЛайвФокс</WindowTitle>
 <TabGeneral>Общи</TabGeneral>
 <TabMatches>Мачове</TabMatches>
@@ -190,9 +172,9 @@
 <MatchesHours>часа.</MatchesHours>
 <MatchesFriends>Приятели</MatchesFriends>
 <MatchesGetFriends>Свали мачовете на приятелите</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Голмайстори</MatchesScorers>
 <ScorersList>Показвай голмайсторите</ScorersList>
-<MatchesHeader>Header</MatchesHeader>
 <MatchesBooked>Booked</MatchesBooked>
 <BookedList>List booked in header</BookedList>
 <MatchesSentOff>Sent off</MatchesSentOff>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Избери език</LanguageSelect>
 <LanguageNote>Забележка: рестартирай ЛайвФокс след смяна на езика.</LanguageNote>
 <ButtonCancel>Откажи</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>За ЛайвФокс</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,8 +246,6 @@
 <TextHelpOf>С помощта на</TextHelpOf>
 <TextThanksTo>Благодарности на:</TextThanksTo>
 <ButtonClose>Затвори</ButtonClose>
-
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -327,5 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
+
 </Htlivesight>

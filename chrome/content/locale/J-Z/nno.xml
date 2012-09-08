@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>Alternativ</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
 <MenuDisconnected>Frakobla</MenuDisconnected>
-<MenuOptions>Alternativ</MenuOptions>
 <MenuAbout>Om HTLiveSight</MenuAbout>
 <LoginLabel>Logg inn</LoginLabel>
 <LoginTeamId>LagID for ditt lag</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Vener</FriendsTitle>
 <FriendsRemove>Fjern</FriendsRemove>
 <FriendsOpen>Åpne</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Du blir sendt til CHPP-siden der du får ein autoriseringskode. Dersom du ikkje mottar den, de-aktivér pop-up blockeren din midlertidig eller legg til HTlivesight i listen for unntak. list.</Introduction>
 <Insert>Sett inn din autoriseringskode her:</Insert>
 <Ending>HTlivesight er no autorisert. Trykk på OK for å starte applikasjonen på nytt.</Ending>
-<Error401>Error 401: uautorisert tilgang. Du må hente ein ny autoriseringskode. Klikk for å fortsette.</Error401>
-<Error404>Error 404: Den forespurde ressursen kunne ikkje bli funne. Dersom problemet fortsett bør du kontrollere om HT's CHPP service er utilgjengelig.</Error404>
-<Error0>Error 0: Ikkje kobla til internettet.</Error0>
 <Error>Error</Error>
 <ServerON>Tilkobla</ServerON>
 <ServerOFF>Frakobla</ServerOFF>
 <ResetToken>Autoriseringskoden har blitt sletta. Restart HTLS eller vent på den neste oppdateringa (less than 1 minute).</ResetToken>
-<NoHTServer>Du valgte ikkje den Hattrick serveren som du er logga på, høgre-klikk kvar som helst på bakgrunnen og klikk på -> Instillinger -> generellt og tast inn korrekt Hattrick server nummer.</NoHTServer>
-<Error500>Error 500: intern server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP tjensete utilgjengelig (midlertidig overbelasting eller vedlikehald)</Error503>
-
-<!--Properties-->
+<NoHTServer>Du valgte ikkje den Hattrick serveren som du er logga på, høgre-klikk kvar som helst på bakgrunnen og klikk på - Instillinger - generellt og tast inn korrekt Hattrick server nummer.</NoHTServer>
 <MatchesMaximum>Du kan ikkje sjå fleire enn 20 kampar!</MatchesMaximum>
-<LeagueLiveTable>Live Tabell</LeagueLiveTable>
 <LeagueRound>Runde</LeagueRound>
 <MessageHattrickError>Hattrickserveren meldte om en feil.</MessageHattrickError>
 <MessageAlreadyFriend>Denne personen er allerede ein ven.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Flytt ven opp</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Flytt ven ned</TooltipFriendMoveDown>
 <MenuAddFriend>Legg til ven</MenuAddFriend>
-<MenuServer>Server:</MenuServer>
 <EventGoal>MÅL</EventGoal>
 <EventPenaltyGoal>Straffe: MÅL</EventPenaltyGoal>
 <EventPenaltyMiss>Straffe: BOM</EventPenaltyMiss>
 <EventInjury>Skade</EventInjury>
 <EventRed>Rødt kort</EventRed>
-<EventYellow2>Andre gule kort</EventYellow2>
 <EventSideLeft>Venstre</EventSideLeft>
 <EventSideRight>Høyre</EventSideRight>
 <EventSideCenter>midten</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Henter kampdetaljar</RequestDetails>
 <RequestTeam>Hent kamp med lag</RequestTeam>
 <RequestTeamData>Hent lag data</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight Alternativer</WindowTitle>
 <TabGeneral>Generelt</TabGeneral>
 <TabMatches>Kampar</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Velg språk</LanguageSelect>
 <LanguageNote>Husk: Start HTLiveSight på nytt for at endringane skal setje inn.</LanguageNote>
 <ButtonCancel>Avbryt</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Om HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>Med hjelp frå</TextHelpOf>
 <TextThanksTo>Mange takk til:</TextThanksTo>
 <ButtonClose>Lukk</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

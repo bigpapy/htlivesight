@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Bắt đầu</MenuStart>
-<MenuOptions>Lựa chọn</MenuOptions>
+<MenuOptions>Lựa chọn</MenuOptions>
 <TooltipButton>Nhấn để mở HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Máy chủ:</MenuServer>
 <MenuDisconnected>ngắt kết nối</MenuDisconnected>
-<MenuOptions>Lựa chọn</MenuOptions>
 <MenuAbout>Giới thiệu về HTLiveSight</MenuAbout>
 <LoginLabel>Đăng nhập</LoginLabel>
 <LoginTeamId>Điền mã đội của bạn</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Bạn bè</FriendsTitle>
 <FriendsRemove>Xóa bỏ</FriendsRemove>
 <FriendsOpen>Mở</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Bạn đang được chuyển đến trang CHPP để lấy mã xác nhận. Nếu không được hãy gỡ màn hình pop up hiện tại hoặc cho HTlivesight vào danh sách loại trừ.</Introduction>
 <Insert>Điền mã ủy quyền của bạn tại đây:</Insert>
 <Ending>HTlivesight đã được ủy quyền. Nhấn OK để khởi động lại ứng dụng.</Ending>
-<Error401>Lỗi 401: Không truy cập ủy quyền được. Bạn có thể ủy quyền lại. nhấn ok để tiếp tục.</Error401>
-<Error404>Lỗi 404: Không tìm thấy tài nguyên yêu cầu. Nếu lỗi này tiếp tục xuất hiện nếu dịch cụ CHPP bị ngắt.</Error404>
-<Error0>Lỗi 0: Không có kết nối internet.</Error0>
 <Error>Lỗi</Error>
 <ServerON>Kết nối</ServerON>
 <ServerOFF>Ngắt kết nối</ServerOFF>
 <ResetToken>Mã cá nhân đã bị xóa. Khởi động lại HTLS hoặc chờ lần cập nhật tiếp theo (less than 1 minute).</ResetToken>
-<NoHTServer>Bạn không chọn đúng server Hattrick đang đăng nhập, nhấn chuột phải vào hình nền và nhấn vào -> Lựa chọn -> Cài đặt chung và đặt lại chính xác server Hattrick.</NoHTServer>
-<Error500>Lỗi 500: Lỗi server (của Hattrick)</Error500>
-<Error503>Lỗi 503: Dịch vụ CHPP không sẵn sàng(đang bảo trì hoặc bị quá tải)</Error503>
-
-<!--Properties-->
+<NoHTServer>Bạn không chọn đúng server Hattrick đang đăng nhập, nhấn chuột phải vào hình nền và nhấn vào - Lựa chọn - Cài đặt chung và đặt lại chính xác server Hattrick.</NoHTServer>
 <MatchesMaximum>Không thể xem quá 20 trận đấu!</MatchesMaximum>
-<LeagueLiveTable>Bảng xếp hạng hiện tại</LeagueLiveTable>
 <LeagueRound>Vòng đấu</LeagueRound>
 <MessageHattrickError>Máy chủ Hattrick bị lỗi.</MessageHattrickError>
 <MessageAlreadyFriend>Đã là bạn.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Đưa lên phía trên danh sách bạn</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Đưa xuống phía dưới danh sách bạn.</TooltipFriendMoveDown>
 <MenuAddFriend>Bạn bè</MenuAddFriend>
-<MenuServer>Máy chủ:</MenuServer>
 <EventGoal>VÀO</EventGoal>
 <EventPenaltyGoal>Penalty: VÀO</EventPenaltyGoal>
 <EventPenaltyMiss>Penalty: BỎ LỠ</EventPenaltyMiss>
 <EventInjury>Chấn thương</EventInjury>
 <EventRed>Thẻ đỏ</EventRed>
-<EventYellow2>Thẻ vàng thứ hai</EventYellow2>
 <EventSideLeft>cánh trái</EventSideLeft>
 <EventSideRight>cánh phải</EventSideRight>
 <EventSideCenter>trung lộ</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Thông tin trận đấu</RequestDetails>
 <RequestTeam>Trận đấu theo đội</RequestTeam>
 <RequestTeamData>Lấy dữ liệu đội bóng</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>Lựa chọn của HTLiveSight</WindowTitle>
 <TabGeneral>Tổng quát</TabGeneral>
 <TabMatches>Trận đấu</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Âm thanh khi đội nhà chấn thương</PathSoundsMyBoo>
 <PathSoundsOpBoo>Âm thanh khi đối thủ chấn thương</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Tiếng còi bắt đầu hiệp 1/2 của trận đấu</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Tiếng còi kết thúc hiệp 1</PathSoundsWhistle2>
-<PathSoundsWhistle3>Tiếng còi kết thúc trận đấu</PathSoundsWhistle3>
 <PathSoundsWhistle>Âm thanh khi thẻ đỏ/thẻ vàng</PathSoundsWhistle>
 <PathSoundsHattrick>Âm thanh Hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Khôi phục</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Điền file:/// trước đường dẫn file âm thanh có đuôi .wav</PathSoundsNote1>
-<PathSoundsNote2>Ví dụ: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Chọn ngôn ngữ</LanguageSelect>
 <LanguageNote>Chú ý: Khởi động lại Firefox để kích hoạt.</LanguageNote>
 <ButtonCancel>Hủy</ButtonCancel>
 <ButtonOk>Chấp nhận</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Thông tin về HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Người dịch</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>Với sự giúp đỡ của</TextHelpOf>
 <TextThanksTo>Gửi lời cảm ơn đến:</TextThanksTo>
 <ButtonClose>Đóng</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Avvio</MenuStart>
-<MenuOptions>Opzioni</MenuOptions>
+<MenuOptions>Opzions</MenuOptions>
 <TooltipButton>Clicca per aprire il menù di HTLiveSight</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
 <MenuDisconnected>Disconetût</MenuDisconnected>
-<MenuOptions>Opzions</MenuOptions>
 <MenuAbout>Informazions su HTLiveSight</MenuAbout>
 <LoginLabel>Login</LoginLabel>
 <LoginTeamId>Met dentri il TeamId de tô scuadre</LoginTeamId>
@@ -22,7 +18,7 @@
 <LoginSpeed>Velocità</LoginSpeed>
 <LoginByEvent>Per evento</LoginByEvent>
 <LeagueMatches>Partidis di campionât</LeagueMatches>
-<LeagueLiveTable>Classifiche inzornade</LeagueLiveTable>
+<LeagueLiveTable>Classifiche</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Scuadre</LeagueTeam>
 <LeaguePlayed>Z</LeaguePlayed>
@@ -37,25 +33,15 @@
 <FriendsTitle>Scuadris amîs</FriendsTitle>
 <FriendsRemove>Gjave</FriendsRemove>
 <FriendsOpen>Vierz</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Tu stâs par sedi mandât ae pagjine CHPP par otignî il codiç di autorizazion. Se nol sucêt, par plasè gjave momentaneamentri il bloc pop up o inserîs HTlivesight te liste de ecezions.</Introduction>
 <Insert>Inseris il codiç di autorizazion:</Insert>
 <Ending>Cumò HTlivesight al è stât autorizât. Frache su OK par tornâ a tacâ la aplicazion.</Ending>
-<Error401>Erôr 401: acês no autorizât. Tu âs di otignî di gnûf la autorizazion. Frache su OK par continuâ.</Error401>
-<Error404>Erôr 404: la risorse no je disponibile. Se l'erôr si ripet controle se il CHPP al è distudât.</Error404>
-<Error0>Erôr 0: no tu sês tacât a internet.</Error0>
 <Error>Erôr </Error>
 <ServerON>Conetût</ServerON>
 <ServerOFF>Disconetût</ServerOFF>
 <ResetToken>Il codice di autorizzazione è stato cancellato. Riavvia HTLS o aspetta il prossimo aggiornamento (meno di un minuto).</ResetToken>
-<NoHTServer>Non hai scelto il server di Hattrick a cui sei connesso con il browser, clicca col tasto destro sullo sfondo -> opzioni -> generale e imposta il server di hattrick a cui sei connesso col browser.</NoHTServer>
-<Error500>Errore 500: errore interno al server (di Hattrick)</Error500>
-<Error503>Errore 503: servizio CHPP non disponibile (sovraccarico temporaneo o manutenzione)</Error503>
-
-<!--Properties-->
+<NoHTServer>Non hai scelto il server di Hattrick a cui sei connesso con il browser, clicca col tasto destro sullo sfondo - opzioni - generale e imposta il server di hattrick a cui sei connesso col browser.</NoHTServer>
 <MatchesMaximum>No tu puedis cjalâ plui di 20 partidis!</MatchesMaximum>
-<LeagueLiveTable>Classifiche</LeagueLiveTable>
 <LeagueRound>Zornade</LeagueRound>
 <MessageHattrickError>Il server di Hattrick al segnale un erôr.</MessageHattrickError>
 <MessageAlreadyFriend>al è za te liste dai amîs</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Sposte l'amî in alt</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Sposte l'amî in bas</TooltipFriendMoveDown>
 <MenuAddFriend>Zonte amî</MenuAddFriend>
-<MenuServer>Server:</MenuServer>
 <EventGoal>GOAL</EventGoal>
 <EventPenaltyGoal>rigôr: GÔL</EventPenaltyGoal>
 <EventPenaltyMiss>rigôr: SBALIÂT</EventPenaltyMiss>
 <EventInjury>Infortuni</EventInjury>
 <EventRed>Cartelin ros</EventRed>
-<EventYellow2>Secont cartelin zâl</EventYellow2>
 <EventSideLeft>çampe</EventSideLeft>
 <EventSideRight>destre</EventSideRight>
 <EventSideCenter>centri</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Tire dongje i detais de partide</RequestDetails>
 <RequestTeam>Tire dongje la partide pe scuadre</RequestTeam>
 <RequestTeamData>Tire dongje i dâts de scuadre</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>Opzions di HTLiveSight</WindowTitle>
 <TabGeneral>Gjenerâl</TabGeneral>
 <TabMatches>Partidis</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Suono infortunio della mia squadra</PathSoundsMyBoo>
 <PathSoundsOpBoo>Suono infortunio della squadra avversaria</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Suono inizio 1° e 2° tempo</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Suono fine primo tempo</PathSoundsWhistle2>
-<PathSoundsWhistle3>Suono fine partita</PathSoundsWhistle3>
 <PathSoundsWhistle>Suono ammonizione/espulsione</PathSoundsWhistle>
 <PathSoundsHattrick>Suono hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Ripristina</PathSoundsRestore>
 <PathSoundsPlay>Suona</PathSoundsPlay>
-<PathSoundsNote1>Inserisci file:/// prima dell'indirizzo del file audio in formato .wav</PathSoundsNote1>
-<PathSoundsNote2>Esempio: file:///c:\\cartella\contenente\il\suono.wav</PathSoundsNote2>
 <LanguageSelect>Sielz la lenghe</LanguageSelect>
 <LanguageNote>Atenzion: Torne tacâ Firefox par rindi efetîfs i cambiaments.</LanguageNote>
 <ButtonCancel>Scancele</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Informazions su HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Traduttori</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>Cun l'aiût di</TextHelpOf>
 <TextThanksTo>Un grant ringraciament a:</TextThanksTo>
 <ButtonClose>Sierâ</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

@@ -1,276 +1,251 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
 <MenuOptions>Options</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
-<MenuDisconnected>odspojeno</MenuDisconnected>
-<MenuOptions>Opcije</MenuOptions>
-<MenuAbout>O HTLiveSight-u</MenuAbout>
-<LoginLabel>Logiranje</LoginLabel>
-<LoginTeamId>Umetni Idmomčadi</LoginTeamId>
-<LoginUsername>Korisničko ime</LoginUsername>
-<LoginRememberMe>Zapamti me</LoginRememberMe>
-<LoginButton>Logiraj se</LoginButton>
-<LoginReLive>Snimka</LoginReLive>
-<LoginSpeed>Brzina</LoginSpeed>
-<LoginByEvent>Po događaju</LoginByEvent>
-<LeagueMatches>Ligaške utakmice</LeagueMatches>
-<LeagueLiveTable>Tablica uživo</LeagueLiveTable>
+<MenuDisconnected>Disconnected</MenuDisconnected>
+<MenuAbout>About HTLiveSight</MenuAbout>
+<LoginLabel>Login</LoginLabel>
+<LoginTeamId>Insert TeamId of your team</LoginTeamId>
+<LoginUsername>Username</LoginUsername>
+<LoginRememberMe>Remember me</LoginRememberMe>
+<LoginButton>Login</LoginButton>
+<LoginReLive>Re-Live</LoginReLive>
+<LoginSpeed>Speed</LoginSpeed>
+<LoginByEvent>Per event</LoginByEvent>
+<LeagueMatches>League Matches</LeagueMatches>
+<LeagueLiveTable>Live Table</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
-<LeagueTeam>Momčad</LeagueTeam>
-<LeaguePlayed>O</LeaguePlayed>
+<LeagueTeam>Team</LeagueTeam>
+<LeaguePlayed>P</LeaguePlayed>
 <LeagueGoals>G</LeagueGoals>
-<LeagueGoalDiff>GR</LeagueGoalDiff>
-<LeaguePoints>BOD</LeaguePoints>
-<MatchesList>Lista utakmica</MatchesList>
-<MatchesAdd>Dodaj utakmicu</MatchesAdd>
-<MatchesByMatch>Po id-u utakmice</MatchesByMatch>
-<MatchesByTeam>Po id-u momčadi</MatchesByTeam>
-<MatchesYouth>Juniori?</MatchesYouth>
-<FriendsTitle>Prijatelji</FriendsTitle>
-<FriendsRemove>Odstrani</FriendsRemove>
-<FriendsOpen>Otvori</FriendsOpen>
-
-<!--Authorize-->
-<Introduction>Ti si prebacen na CHPP stranicu kako bi dobili autorizacijski kod. Ako ne, molimo vas da uklonite temporarely pop-up blokiranje ili odobri HTlivesight u popis iznimki.</Introduction>
-<Insert>umetnite autorizacijski kod ovdje:</Insert>
-<Ending>Sada je HTlivesight ovlašten. Kliknite OK za ponovno pokretanje aplikacije.</Ending>
-<Error401>Greška 401: neovlaštenog pristupa. Morate dobiti odobrenje opet. Kliknite OK za nastavak.</Error401>
-<Error404>Greška 404: Traženi resurs nije mogao biti pronaðen. Ako se ova greška ponovi pogledaj jeli CHPP servis ugašen.</Error404>
-<Error0>Greška 0: nema konekcije na internet.</Error0>
-<Error>Greška</Error>
-<ServerON>Povezan</ServerON>
-<ServerOFF>Nije povezan</ServerOFF>
-<ResetToken>Autorizacija je uklonjena. Ponovo pokrenite HTLS ili pričekajte sljedeće ažuriranje (less than 1 minute).</ResetToken>
-<NoHTServer>Niste odabrali Hattrick poslužitelja, gdje ste prijavljeni s vašim preglednikom. Desnom tipkom miša kliknite na pozadinu -> Opcije -> Općenito -> ispuniti obrazac s vašim brojem poslužitelja.</NoHTServer>
-<Error500>Greška 500: interna pogreška poslužitelja (na Hattrick)</Error500>
-<Error503>Greška 503: CHPP servis nedostupan (privremeno preopterećenje ili održavanje)</Error503>
-
-<!--Properties-->
-<MatchesMaximum>Ne može se pratiti više od 20 utakmica!</MatchesMaximum>
-<LeagueLiveTable>Tablica uživo</LeagueLiveTable>
-<LeagueRound>Kolo</LeagueRound>
-<MessageHattrickError>Greška na HT serveru.</MessageHattrickError>
-<MessageAlreadyFriend>Već je upisan kao prijatelj.</MessageAlreadyFriend>
-<MessageErrorReading>Pogreška u čitanju podataka sa</MessageErrorReading>
-<MessageLoginNotSuccessful>Logiranje nije uspjelo.</MessageLoginNotSuccessful>
-<TacticPressing>presing</TacticPressing>
-<TacticCA>protunapadi</TacticCA>
-<TacticAIM>napadi kroz sredinu</TacticAIM>
-<TacticAOW>napadi po krilima</TacticAOW>
-<TacticPlayCreative>kreativna igra</TacticPlayCreative>
-<TacticLongShots>šut iz daljine</TacticLongShots>
-<TimeFirstHalf>1. pol.</TimeFirstHalf>
-<TimeHalfTime>poluvrijeme</TimeHalfTime>
-<TimeSecondHalf>2. pol.</TimeSecondHalf>
-<TimeExtraTime>produžetak</TimeExtraTime>
-<TimePenalties>jedanaesterci</TimePenalties>
-<TimeFinish>KRAJ</TimeFinish>
-<TimeStartsIn>počinje za</TimeStartsIn>
-<TimeDays>dana</TimeDays>
-<TimeHours>sati</TimeHours>
-<TimeMinutes>minuta</TimeMinutes>
-<TimeDay>dan</TimeDay>
-<TimeHour>sat</TimeHour>
-<TimeMinute>minut</TimeMinute>
+<LeagueGoalDiff>GD</LeagueGoalDiff>
+<LeaguePoints>PTS</LeaguePoints>
+<MatchesList>Match List</MatchesList>
+<MatchesAdd>Add match</MatchesAdd>
+<MatchesByMatch>By MatchID</MatchesByMatch>
+<MatchesByTeam>By TeamID</MatchesByTeam>
+<MatchesYouth>Youth?</MatchesYouth>
+<FriendsTitle>Friends</FriendsTitle>
+<FriendsRemove>Remove</FriendsRemove>
+<FriendsOpen>Open</FriendsOpen>
+<Introduction>You will be redirected to chpp page to get authorizazion code. If not, please remove temporarely pop up block or grant HTlivesight in the exception list.</Introduction>
+<Insert>Insert your authorization code here:</Insert>
+<Ending>Now HTlivesight is authorized. Click OK to restart application.</Ending>
+<Error>Error</Error>
+<ServerON>Connected</ServerON>
+<ServerOFF>Disconnected</ServerOFF>
+<ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
+<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
+<MatchesMaximum>You can't watch more than 20 matches!</MatchesMaximum>
+<LeagueRound>Round</LeagueRound>
+<MessageHattrickError>Hattrick server returned an error.</MessageHattrickError>
+<MessageAlreadyFriend>Already your friend!</MessageAlreadyFriend>
+<MessageErrorReading>Error reading data from</MessageErrorReading>
+<MessageLoginNotSuccessful>Login not successful.</MessageLoginNotSuccessful>
+<TacticPressing>Pressing</TacticPressing>
+<TacticCA>Counter-attack</TacticCA>
+<TacticAIM>Attack in the middle</TacticAIM>
+<TacticAOW>Attack on the wings</TacticAOW>
+<TacticPlayCreative>Play creatively</TacticPlayCreative>
+<TacticLongShots>Long shots</TacticLongShots>
+<TimeFirstHalf>1st half</TimeFirstHalf>
+<TimeHalfTime>Half time</TimeHalfTime>
+<TimeSecondHalf>2nd half</TimeSecondHalf>
+<TimeExtraTime>Extra time</TimeExtraTime>
+<TimePenalties>Penalties</TimePenalties>
+<TimeFinish>Finished</TimeFinish>
+<TimeStartsIn>Starts in</TimeStartsIn>
+<TimeDays>days</TimeDays>
+<TimeHours>hours</TimeHours>
+<TimeMinutes>minutes</TimeMinutes>
+<TimeDay>day</TimeDay>
+<TimeHour>hour</TimeHour>
+<TimeMinute>minute</TimeMinute>
 <TimeMin>'</TimeMin>
-<TooltipWindowSound>Aktiviraj ili deaktiviraj zvuk za utakmicu</TooltipWindowSound>
-<TooltipWindowLink>Link na utakmicu na Hattricku</TooltipWindowLink>
-<TooltipWindowInfo>Prikaži ostale informacije</TooltipWindowInfo>
-<TooltipWindowMaximize>Proširi prikaz</TooltipWindowMaximize>
-<TooltipWindowMinimize>Smanjeni prikaz</TooltipWindowMinimize>
-<TooltipWindowShade>Smanji prikaz</TooltipWindowShade>
-<TooltipWindowClose>Zatvori prozor</TooltipWindowClose>
-<TooltipWindowOpen>Otvori prozor</TooltipWindowOpen>
-<TooltipWindowMoveUp>Pomakni prozor prema gore</TooltipWindowMoveUp>
-<TooltipWindowMoveDown>Pomakni prozor prema dolje</TooltipWindowMoveDown>
-<TooltipFriendRemove>Odstrani prijatelja s liste</TooltipFriendRemove>
-<TooltipFriendMoveUp>Pomakni prema gore</TooltipFriendMoveUp>
-<TooltipFriendMoveDown>Pomakni prema dolje</TooltipFriendMoveDown>
-<MenuAddFriend>Prijatelj</MenuAddFriend>
-<MenuServer>Server:</MenuServer>
-<EventGoal>GOL</EventGoal>
-<EventPenaltyGoal>jedanaesterac: GOL</EventPenaltyGoal>
-<EventPenaltyMiss>jedanaesterac: PROMAŠAJ</EventPenaltyMiss>
-<EventInjury>Ozljeda</EventInjury>
-<EventRed>Crveni karton</EventRed>
-<EventYellow2>Drugi žuti karton</EventYellow2>
-<EventSideLeft>s lijeva</EventSideLeft>
-<EventSideRight>s desna</EventSideRight>
-<EventSideCenter>po sredini</EventSideCenter>
-<EventSideFreeKick>slobodan udarac</EventSideFreeKick>
-<EventSidePenalty>jedanaesterac</EventSidePenalty>
-<EventSpecialUnpredictable>SE nepredvidljiv</EventSpecialUnpredictable>
-<EventSpecialLongShot>SE šut iz daljine</EventSpecialLongShot>
-<EventSpecialQuick>SE brz</EventSpecialQuick>
-<EventSpecialLowStamina>manjak izdržljivosti</EventSpecialLowStamina>
-<EventSpecialSetPieces>iz prekida</EventSpecialSetPieces>
-<EventSpecialHead>glavom</EventSpecialHead>
-<EventSpecialExperience>iskustvo</EventSpecialExperience>
-<EventSpecialLowExperience>neiskustvo</EventSpecialLowExperience>
-<EventSpecialWinger>+ krilo</EventSpecialWinger>
-<EventSpecialTechnical>tehničar</EventSpecialTechnical>
-<EventSpecialCounterAttack>protunapad</EventSpecialCounterAttack>
-<EventSpecialCornerKick>udarac iz kuta</EventSpecialCornerKick>
-<EventSpecialIndirect>indirektni slobodan udarac</EventSpecialIndirect>
-<EventSpecialUnpredictableLongPass>+ nepredvidljivo: dugo dodavanje</EventSpecialUnpredictableLongPass>
-<EventSpecialUnpredictableScoresOnHisOwn>+ nepredvidljivo: udarac</EventSpecialUnpredictableScoresOnHisOwn>
-<EventSpecialUnpredictableSpecialAction>+ nepredvidljivo: specijalna akcija</EventSpecialUnpredictableSpecialAction>
-<EventSpecialUnpredictableMistake>- nepredvidljivo: pogreška</EventSpecialUnpredictableMistake>
-<EventSpecialUnpredictableOwnGoal>- nepredvidljivo: svoj gol</EventSpecialUnpredictableOwnGoal>
-<EventSpecialQuickScoresAfterRush>+ brz: pretrčavanje i pogodak</EventSpecialQuickScoresAfterRush>
-<EventSpecialQuickAssist>+ brz: pretrčavanje i asistencija</EventSpecialQuickAssist>
-<Pullback>povlačenje</Pullback>
-<Underestimation>prekomjerno samopouzdanje</Underestimation>
-<UnderestimationRemove>prekomjerno samopouzdanje uklonjeno</UnderestimationRemove>
-<UnderestimationReduceDouble>prekomjerno samopouzdanje smanjeno za 2/3</UnderestimationReduceDouble>
-<UnderestimationReduceOnce>prekomjerno samopouzdanje smanjeno za 1/3</UnderestimationReduceOnce>
-<OrganizationBreaks>zbunjenost</OrganizationBreaks>
-<Reorganize>preraspored</Reorganize>
-<NervesImportantThrillingGame>živci u važno uzbudljivoj igri</NervesImportantThrillingGame>
-<Bruised>ozljeđen ali igra</Bruised>
-<Injuried>ozljeđen</Injuried>
-<ModeratelyInjuried>umjerena ozljeda</ModeratelyInjuried>
-<BadlyInjuried>teška ozljeda</BadlyInjuried>
-<ByHimself>sam</ByHimself>
-<ByFoul>od prekršaj</ByFoul>
-<ExperiencedForward>iskusan napadač</ExperiencedForward>
-<InexperiencedDefender>neiskusan branić</InexperiencedDefender>
-<WingerHead>krilo: prebaciti za specijalista glavom</WingerHead>
-<EventSpecialLongShotDefended>udarac iz daljine zaustavljen</EventSpecialLongShotDefended>
-<EventSpecialQuickVsQuick>brz vs brz</EventSpecialQuickVsQuick>
-<LongShot>udarac iz daljine</LongShot>
-<MeteoSpecialTechnicalRain>- tehničar (-napad -veza)</MeteoSpecialTechnicalRain>
-<MeteoSpecialPowerfulRain>+ snažan (+napad +obrana +veza)</MeteoSpecialPowerfulRain>
-<MeteoSpecialTechnicalSun>+ tehničar (+napad +veza)</MeteoSpecialTechnicalSun>
-<MeteoSpecialPowerfulSun>- snažan (-napad -izdržljivost)</MeteoSpecialPowerfulSun>
-<MeteoSpecialQuickSun>- brz (-obrana)</MeteoSpecialQuickSun>
-<MeteoSpecialQuickRain>- brz (-obrana -napad)</MeteoSpecialQuickRain>
-<YellowNastyPlay>prljava igra</YellowNastyPlay>
-<YellowCheating>nesportsko ponašanje</YellowCheating>
-<ProgressUpdate>Sljedece ažuriranje:</ProgressUpdate>
-<ProgressSeconds>sec</ProgressSeconds>
-<RequestServer>Dohvati Preporuceni Server</RequestServer>
-<RequestLeagueData>Dohvati Ligaške Podatke</RequestLeagueData>
-<RequestLeagueGames>Dohvati Ligaške Utakmice</RequestLeagueGames>
-<RequestLive>Ažuriranje Uživo</RequestLive>
-<RequestAdd>Dodaj utakmicu</RequestAdd>
-<RequestDelete>Izbriši Utakmicu</RequestDelete>
-<RequestLogin>Logiraj se</RequestLogin>
-<RequestDetails>Dohvati Detalje s Utakmice</RequestDetails>
-<RequestTeam>Dohvati Utakmicu prema Momčadi</RequestTeam>
-<RequestTeamData>Dohvati Momčadske Podatke</RequestTeamData>
-
-<!--Settings-->
-<WindowTitle>HTLiveSight Opcije</WindowTitle>
-<TabGeneral>Općenito</TabGeneral>
-<TabMatches>Utakmice</TabMatches>
-<TabNotifications>Obavijesti</TabNotifications>
-<TabLanguage>Jezik</TabLanguage>
-<TabOther>Ostalo</TabOther>
-<TabCustom>Prilagodbe</TabCustom>
-<TabGoalSound>Zvuk golova</TabGoalSound>
-<TabWheatherSound>Zvukovi Vremenskih događaja i ozljeda</TabWheatherSound>
-<TabWhistleSound>Zvuk sučeve zviždaljke i Hattricka</TabWhistleSound>
-<GeneralOpen>Otvori HTLiveSight</GeneralOpen>
-<GeneralNewTab>U novom tabu</GeneralNewTab>
-<GeneralNewWindow>U novom prozoru</GeneralNewWindow>
-<GeneralServer>Server postavke</GeneralServer>
-<GeneralNote>Umetnite Hattrick poslužitelj da ste prijavljeni (npr. www96).</GeneralNote>
-<MatchesLeague>Ligaške utakmice</MatchesLeague>
-<MatchesGetLeague>Dohvati ligaške utakmice</MatchesGetLeague>
-<MatchesPlayed>Ako su odigrane unutar</MatchesPlayed>
-<MatchesHours>sata.</MatchesHours>
-<MatchesFriends>Prijatelji</MatchesFriends>
-<MatchesGetFriends>Dohvati utakmice prijatelja</MatchesGetFriends>
-<MatchesScorers>Strijelci</MatchesScorers>
-<ScorersList>Lista strijelaca u zaglavlju</ScorersList>
+<TooltipWindowSound>Activate or deactivate sounds for the match</TooltipWindowSound>
+<TooltipWindowLink>Link to Match Page on Hattrick</TooltipWindowLink>
+<TooltipWindowInfo>Toggle information event messages</TooltipWindowInfo>
+<TooltipWindowMaximize>Maximize window</TooltipWindowMaximize>
+<TooltipWindowMinimize>Minimize window</TooltipWindowMinimize>
+<TooltipWindowShade>Shade window</TooltipWindowShade>
+<TooltipWindowClose>Close window</TooltipWindowClose>
+<TooltipWindowOpen>Open window</TooltipWindowOpen>
+<TooltipWindowMoveUp>Move this window up</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>Move this window down</TooltipWindowMoveDown>
+<TooltipFriendRemove>Remove friend from list</TooltipFriendRemove>
+<TooltipFriendMoveUp>Move friend up</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>Move friend down</TooltipFriendMoveDown>
+<MenuAddFriend>Friend</MenuAddFriend>
+<EventGoal>GOAL</EventGoal>
+<EventPenaltyGoal>Penalty: GOAL</EventPenaltyGoal>
+<EventPenaltyMiss>Penalty: MISS</EventPenaltyMiss>
+<EventInjury>Injury</EventInjury>
+<EventRed>Red card</EventRed>
+<EventSideLeft>Left</EventSideLeft>
+<EventSideRight>Right</EventSideRight>
+<EventSideCenter>Center</EventSideCenter>
+<EventSideFreeKick>Free kick</EventSideFreeKick>
+<EventSidePenalty>Penalty</EventSidePenalty>
+<EventSpecialUnpredictable>SE Unpredictable</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE Long Shot</EventSpecialLongShot>
+<EventSpecialQuick>SE Quick</EventSpecialQuick>
+<EventSpecialLowStamina>Low stamina</EventSpecialLowStamina>
+<EventSpecialSetPieces>Set piece</EventSpecialSetPieces>
+<EventSpecialHead>Head</EventSpecialHead>
+<EventSpecialExperience>Experience</EventSpecialExperience>
+<EventSpecialLowExperience>Low experience</EventSpecialLowExperience>
+<EventSpecialWinger>+ Winger</EventSpecialWinger>
+<EventSpecialTechnical>Technical vs Head</EventSpecialTechnical>
+<EventSpecialCounterAttack>Counter-attack</EventSpecialCounterAttack>
+<EventSpecialCornerKick>Corner kick</EventSpecialCornerKick>
+<EventSpecialIndirect>Indirect free kick</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ Unpredictable: long pass</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ Unpredictable: shot</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ Unpredictable: special action</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- Unpredictable: mistake</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- Unpredictable: own goal</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ Quick: rush and score</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ Quick: rush and assist</EventSpecialQuickAssist>
+<Pullback>Pullback</Pullback>
+<Underestimation>Overconfidence</Underestimation>
+<UnderestimationRemove>Overconfidence removed</UnderestimationRemove>
+<UnderestimationReduceDouble>Overconfidence removed by 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>Overconfidence removed by 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>Confusion</OrganizationBreaks>
+<Reorganize>Reorganization</Reorganize>
+<NervesImportantThrillingGame>Nerves in important thrilling game</NervesImportantThrillingGame>
+<Bruised>Bruised</Bruised>
+<Injuried>Injury</Injuried>
+<ModeratelyInjuried>Moderate injury</ModeratelyInjuried>
+<BadlyInjuried>Bad injury</BadlyInjuried>
+<ByHimself>By himself</ByHimself>
+<ByFoul>By foul</ByFoul>
+<ExperiencedForward>Experienced forward</ExperiencedForward>
+<InexperiencedDefender>Inexperienced defender</InexperiencedDefender>
+<WingerHead>Winger: cross for head specialist</WingerHead>
+<EventSpecialLongShotDefended>Long shot stopped</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>Quick vs Quick</EventSpecialQuickVsQuick>
+<LongShot>Long Shot</LongShot>
+<MeteoSpecialTechnicalRain>-Technical (-Scoring -Playmaking)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+Powerful (+Scoring +Defending + Playmaking)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+Technical (+Scoring +Playmaking)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>-Powerful (-Scoring -Stamina)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>-Quick (-Defending)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>-Quick (-Defending -Scoring)</MeteoSpecialQuickRain>
+<YellowNastyPlay>Nasty play</YellowNastyPlay>
+<YellowCheating>Cheating</YellowCheating>
+<ProgressUpdate>Next update:</ProgressUpdate>
+<ProgressSeconds>s</ProgressSeconds>
+<RequestServer>Get Recommended Server</RequestServer>
+<RequestLeagueData>Get League Data</RequestLeagueData>
+<RequestLeagueGames>Get League Games</RequestLeagueGames>
+<RequestLive>Live Update</RequestLive>
+<RequestAdd>Add Match</RequestAdd>
+<RequestDelete>Delete Match</RequestDelete>
+<RequestLogin>Login</RequestLogin>
+<RequestDetails>Get Match Details</RequestDetails>
+<RequestTeam>Get Match By Team</RequestTeam>
+<RequestTeamData>Get Team Data</RequestTeamData>
+<WindowTitle>HTLiveSight Options</WindowTitle>
+<TabGeneral>General</TabGeneral>
+<TabMatches>Matches</TabMatches>
+<TabNotifications>Notifications</TabNotifications>
+<TabLanguage>Language</TabLanguage>
+<TabOther>Other</TabOther>
+<TabCustom>Customizations</TabCustom>
+<TabGoalSound>Goals sounds</TabGoalSound>
+<TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
+<TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
+<GeneralOpen>Open HTLiveSight</GeneralOpen>
+<GeneralNewTab>In a new tab</GeneralNewTab>
+<GeneralNewWindow>In a new window</GeneralNewWindow>
+<GeneralServer>Server settings</GeneralServer>
+<GeneralNote>Insert Hattrick server that you are logged on (ie. www96).</GeneralNote>
+<MatchesLeague>League matches</MatchesLeague>
+<MatchesGetLeague>Get league matches</MatchesGetLeague>
+<MatchesPlayed>If played in</MatchesPlayed>
+<MatchesHours>hours.</MatchesHours>
+<MatchesFriends>Friends</MatchesFriends>
+<MatchesGetFriends>Get friends' matches</MatchesGetFriends>
 <MatchesHeader>Header</MatchesHeader>
+<MatchesScorers>Scorers</MatchesScorers>
+<ScorersList>List scorers in header</ScorersList>
 <MatchesBooked>Booked</MatchesBooked>
 <BookedList>List booked in header</BookedList>
 <MatchesSentOff>Sent off</MatchesSentOff>
 <SentOffList>List sent off in header</SentOffList>
 <MatchesInjured>Injured</MatchesInjured>
 <InjuredList>List injured in header</InjuredList>
-<MatchesWindow>Opcije prikaza</MatchesWindow>
-<MatchesLines>Broj linija u smanjenom prikazu</MatchesLines>
-<NotifyNotify>Obavijesti</NotifyNotify>
-<NotifyEnableSound>Omogući zvučne obavijesti</NotifyEnableSound>
-<NotifyOnly>Samo u otvorenim utakmicama</NotifyOnly>
-<NotifyFlash>Bljeskanje zaglavlja</NotifyFlash>
-<NotifyStatus>Obavijest iz statusne trake</NotifyStatus>
-<OtherAuthorization>Autorizacijski kod</OtherAuthorization>
-<OtherReset>Odstrani autorizaciju</OtherReset>
-<OtherResetButton>Resetiraj</OtherResetButton>
-<OtherReverse>Odozdo prema gore prikaz događaja utakmice</OtherReverse>
-<OtherReverseNote>Osvježi stranicu da biste vidjeli učinak promjene.</OtherReverseNote>
-<OtherEvents>Slijed događaja</OtherEvents>
-<OtherEventKey>Ključni događaj</OtherEventKey>
-<OtherEventKeyNote>Prikaži ključni događaj u komentaru</OtherEventKeyNote>
-<CustomIcons>Ikone</CustomIcons>
-<CustomIconsOld>Originalne Livefox ikone u prozoru utakmica</CustomIconsOld>
-<CustomSounds>Zvukovi</CustomSounds>
-<CustomSoundsWeather>Zvuk vremena za početak utakmice</CustomSoundsWeather>
-<CustomSoundsTime>Zvuk za start/kraj poluvrijemena</CustomSoundsTime>
-<CustomSoundsSEW>Zvuk za specijalni vremenski događaj</CustomSoundsSEW>
-<CustomSoundsGoal>Originalni Livefox zvuk</CustomSoundsGoal>
-<CustomSoundsNoOpGoal>Bez zvuka za protivnikove golove</CustomSoundsNoOpGoal>
-<PathSoundsMyGoal>Zvuk mog gola</PathSoundsMyGoal>
-<PathSoundsOpGoal>Zvuk gola mog protivnika</PathSoundsOpGoal>
-<PathSoundsFrGoal>Zvuk gola od prijatelja</PathSoundsFrGoal>
-<PathSoundsOpFrGoal>Zvuk gola prijateljevog protivnika</PathSoundsOpFrGoal>
-<PathSoundsOtGoal>Ostali zvukovi golova momčadi</PathSoundsOtGoal>
-<PathSoundsMiss>Zvuk promašenog gola</PathSoundsMiss>
-<PathSoundsSun>Zvuk za sunčano vrijeme</PathSoundsSun>
-<PathSoundsRain>Zvuk za kišovito vrijeme</PathSoundsRain>
-<PathSoundsOvercast>Zvuk za oblačno vrijeme</PathSoundsOvercast>
-<PathSoundsFewClouds>Zvuk za mjestimično oblačno vrijeme</PathSoundsFewClouds>
-<PathSoundsMyBoo>Zvuk ozljede vlastitog tima</PathSoundsMyBoo>
-<PathSoundsOpBoo>Zvuk za ozljedu protivnikovog tima</PathSoundsOpBoo>
-<PathSoundsWhistleStart>Zvižduk za početak 1pol/2pol</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Zvižduk za kraj prvog poluvrimena</PathSoundsWhistle2>
-<PathSoundsWhistle3>Zvižduk za kraj utakmice</PathSoundsWhistle3>
-<PathSoundsWhistle>Zvuk Žutog/Crvenog kartona</PathSoundsWhistle>
-<PathSoundsHattrick>Hattrick zvuk</PathSoundsHattrick>
+<MatchesWindow>Window</MatchesWindow>
+<MatchesLines>Lines to display in minimize mode</MatchesLines>
+<NotifyNotify>Notifications</NotifyNotify>
+<NotifyEnableSound>Enable sound notifications</NotifyEnableSound>
+<NotifyOnly>Only in opened matches</NotifyOnly>
+<NotifyFlash>Flash headers</NotifyFlash>
+<NotifyStatus>Status bar slider</NotifyStatus>
+<OtherAuthorization>Authorization code</OtherAuthorization>
+<OtherReset>Remove authorization</OtherReset>
+<OtherResetButton>Reset</OtherResetButton>
+<OtherReverse>Bottom up display of match events</OtherReverse>
+<OtherReverseNote>Refresh page to see the effect of change.</OtherReverseNote>
+<OtherEvents>Sequence of events</OtherEvents>
+<OtherEventKey>Eventkey</OtherEventKey>
+<OtherEventKeyNote>Show eventkey in the commentary</OtherEventKeyNote>
+<CustomIcons>Icons</CustomIcons>
+<CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
+<CustomSounds>Sounds</CustomSounds>
+<CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
+<CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
+<CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
+<CustomSoundsGoal>Original Livefox sounds</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>No sounds for opponent's goals</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Sound for own goal</PathSoundsMyGoal>
+<PathSoundsOpGoal>Sound for goal of my opponent</PathSoundsOpGoal>
+<PathSoundsFrGoal>Sound for goal of friend's</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
+<PathSoundsMiss>Missed goal sound</PathSoundsMiss>
+<PathSoundsSun>Sound for sunny weather</PathSoundsSun>
+<PathSoundsRain>Sound for rainy weather</PathSoundsRain>
+<PathSoundsOvercast>Sound for overcast weather</PathSoundsOvercast>
+<PathSoundsFewClouds>Sound for few clouds weather</PathSoundsFewClouds>
+<PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
+<PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
+<PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
+<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
-<LanguageSelect>Odaberi jezik</LanguageSelect>
-<LanguageNote>Napomena: Ponovno pokrenite HTLiveSight radi potvrde ove promjene.</LanguageNote>
-<ButtonCancel>Poništi</ButtonCancel>
-<ButtonOk>Potvrdi</ButtonOk>
-
-<!--About-->
-<WindowAboutTitle>O HTLiveSight-u</WindowAboutTitle>
+<LanguageSelect>Select language</LanguageSelect>
+<LanguageNote>Note: Restart Firefox for this to take effect.</LanguageNote>
+<ButtonCancel>Cancel</ButtonCancel>
+<ButtonOk>OK</ButtonOk>
+<WindowAboutTitle>About HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
 <TabCredits>Credits</TabCredits>
-<MonthJanuary>Sij</MonthJanuary>
-<MonthFebruary>Velj</MonthFebruary>
-<MonthMarch>Ožu</MonthMarch>
-<MonthApril>Tra</MonthApril>
-<MonthMay>Svi</MonthMay>
-<MonthJune>Lip</MonthJune>
-<MonthJuly>Srp</MonthJuly>
-<MonthAugust>Kol</MonthAugust>
-<MonthSeptember>Ruj</MonthSeptember>
-<MonthOctober>Lis</MonthOctober>
-<MonthNovember>Stu</MonthNovember>
-<MonthDecember>Pro</MonthDecember>
-<TextCreatedBy>Kreirao</TextCreatedBy>
-<TextDevelopedBy>Razvio</TextDevelopedBy>
-<TextHelpOf>uz pomoć</TextHelpOf>
-<TextThanksTo>Zahvale:</TextThanksTo>
-<ButtonClose>Zatvori</ButtonClose>
-
+<MonthJanuary>Jan</MonthJanuary>
+<MonthFebruary>Feb</MonthFebruary>
+<MonthMarch>Mar</MonthMarch>
+<MonthApril>Apr</MonthApril>
+<MonthMay>May</MonthMay>
+<MonthJune>Jun</MonthJune>
+<MonthJuly>Jul</MonthJuly>
+<MonthAugust>Aug</MonthAugust>
+<MonthSeptember>Sep</MonthSeptember>
+<MonthOctober>Oct</MonthOctober>
+<MonthNovember>Nov</MonthNovember>
+<MonthDecember>Dec</MonthDecember>
+<TextCreatedBy>Created by</TextCreatedBy>
+<TextDevelopedBy>Developed by</TextDevelopedBy>
+<TextHelpOf>With the help of</TextHelpOf>
+<TextThanksTo>Many thanks to:</TextThanksTo>
+<ButtonClose>Close</ButtonClose>
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Možnosti</MenuOptions>
+<MenuOptions>Nastavení</MenuOptions>
 <TooltipButton>Klikni k otevření menu HTLiveSightu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
 <MenuDisconnected>nepřipojen</MenuDisconnected>
-<MenuOptions>Nastavení</MenuOptions>
 <MenuAbout>O HTLiveSightu</MenuAbout>
 <LoginLabel>Přihlášení</LoginLabel>
 <LoginTeamId>Zadej ID tvého týmu</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Přátelé</FriendsTitle>
 <FriendsRemove>Smazat</FriendsRemove>
 <FriendsOpen>Otevřít</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Jsi přesměrován na stránku CHPP, kde se zobrazí autorizační kód. Pokud ne, zkontroluj prosím, zda nemáš zakázáno automatické otevírání vyskakovacích oken. To buď dočasně vypni, nebo přidej HTLiveSight mezi výjimky.</Introduction>
 <Insert>zadej svůj autorizační kód sem:</Insert>
 <Ending>Nyní je HTLiveSight autorizován. Klikni na OK, aby se aplikace restartovala.</Ending>
-<Error401>Chyba 401: neautorizovaný přístup. Musíš se autorizovat znovu. Klikni na OK k pokračování.</Error401>
-<Error404>Chyba 404: požadovaný zdroj nemohl být nalezen. Pokud se tato chyba zobrazí znovu, zkontroluj, jestli vývojáři HT dočasně nevypnuli CHPP rozhraní.</Error404>
-<Error0>Chyba 0: nejsi připojen k internetu.</Error0>
 <Error>Chyba</Error>
 <ServerON>Připojeno</ServerON>
 <ServerOFF>Nepřipojeno</ServerOFF>
 <ResetToken>Autorizace byla odstraněna. Restartuj HTLS, nebo počkej na aktualizaci (cca 1 min.).</ResetToken>
-<NoHTServer>Nevybral(a) jsi server Hattricku, na který jsi se přihlásil(a) přes svůj prohlížeč. Klikni pravým tlačítkem myši na pozadí => možnosti => obecné => vyplň číslo serveru.</NoHTServer>
-<Error500>Chyba 500: interní chyba serveru (na Hattricku).</Error500>
-<Error503>Chyba 503: CHPP je mimo provoz (dočasné přetížení nebo údržba).</Error503>
-
-<!--Properties-->
+<NoHTServer>Nevybral(a) jsi server Hattricku, na který jsi se přihlásil(a) přes svůj prohlížeč. Klikni pravým tlačítkem myši na pozadí \= možnosti \= obecné \= vyplň číslo serveru.</NoHTServer>
 <MatchesMaximum>Nemůžeš sledovat více než 20 zápasů!</MatchesMaximum>
-<LeagueLiveTable>Průběžná tabulka</LeagueLiveTable>
 <LeagueRound>Kolo</LeagueRound>
 <MessageHattrickError>Server Hattricku hlásí chybu.</MessageHattrickError>
 <MessageAlreadyFriend>Již se nachází v přátelích.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Přesunout přítele nahoru</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Přesunout přítele dolu</TooltipFriendMoveDown>
 <MenuAddFriend>Přítel</MenuAddFriend>
-<MenuServer>Server:</MenuServer>
 <EventGoal>GÓL</EventGoal>
 <EventPenaltyGoal>Penalta: GÓL</EventPenaltyGoal>
 <EventPenaltyMiss>Penalta: MINUL</EventPenaltyMiss>
 <EventInjury>Zranění</EventInjury>
 <EventRed>Červená karta</EventRed>
-<EventYellow2>Druhá žlutá karta</EventYellow2>
 <EventSideLeft>levá strana</EventSideLeft>
 <EventSideRight>pravá strana</EventSideRight>
 <EventSideCenter>střed</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Zobrazit detaily zápasu</RequestDetails>
 <RequestTeam>Zobrazit zápas podle týmu</RequestTeam>
 <RequestTeamData>Zobrazit týmová data</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>Nastavení HTLiveSight</WindowTitle>
 <TabGeneral>Obecné</TabGeneral>
 <TabMatches>Zápasy</TabMatches>
@@ -190,9 +172,9 @@
 <MatchesHours>hodin.</MatchesHours>
 <MatchesFriends>Přátelé</MatchesFriends>
 <MatchesGetFriends>Zobrazovat zápasy přátel</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Střelci</MatchesScorers>
 <ScorersList>Seznam střelců v záhlaví</ScorersList>
-<MatchesHeader>Header</MatchesHeader>
 <MatchesBooked>Booked</MatchesBooked>
 <BookedList>List booked in header</BookedList>
 <MatchesSentOff>Sent off</MatchesSentOff>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Zvuk zranění tvého hráče</PathSoundsMyBoo>
 <PathSoundsOpBoo>Zvuk zranění hráče soupeře</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Zvuk pro začátek poločasu</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Zvuk pro konec 1. poločasu</PathSoundsWhistle2>
-<PathSoundsWhistle3>Zvuk pro konec zápasu</PathSoundsWhistle3>
 <PathSoundsWhistle>Zvuk žluté či červené karty</PathSoundsWhistle>
 <PathSoundsHattrick>Zvuk vstřeleného hattricku</PathSoundsHattrick>
 <PathSoundsRestore>Vrátit zpět</PathSoundsRestore>
 <PathSoundsPlay>Přehrát</PathSoundsPlay>
-<PathSoundsNote1>Vlož file:/// před každou adresu souboru ve formátu .wav</PathSoundsNote1>
-<PathSoundsNote2>Příklad: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Vyber jazyk</LanguageSelect>
 <LanguageNote>Poznámka: Aby se nové nastavení projevilo, je nutné restartovat HTLiveSight.</LanguageNote>
 <ButtonCancel>Storno</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>O HTLiveSightu</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Překladatelé</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>s pomocí</TextHelpOf>
 <TextThanksTo>Mnohokrát díky:</TextThanksTo>
 <ButtonClose>Zavřít</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

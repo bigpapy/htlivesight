@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Indítás</MenuStart>
 <MenuOptions>Beállítások</MenuOptions>
 <TooltipButton>HTLiveSight menü megnyitása</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Szerver:</MenuServer>
 <MenuDisconnected>Nincs kapcsolat</MenuDisconnected>
-<MenuOptions>Beállítások</MenuOptions>
 <MenuAbout>A HTLiveSight névjegye</MenuAbout>
 <LoginLabel>Bejelentkezés</LoginLabel>
 <LoginTeamId>Kérlek add meg a csapatazonosítód</LoginTeamId>
@@ -22,7 +18,7 @@
 <LoginSpeed>Sebesség</LoginSpeed>
 <LoginByEvent>Eseményenként</LoginByEvent>
 <LeagueMatches>Bajnoki meccsek</LeagueMatches>
-<LeagueLiveTable>Élõ tabella</LeagueLiveTable>
+<LeagueLiveTable>Élő tabella</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Csapat</LeagueTeam>
 <LeaguePlayed>M</LeaguePlayed>
@@ -37,42 +33,32 @@
 <FriendsTitle>Barátok</FriendsTitle>
 <FriendsRemove>Eltávolít</FriendsRemove>
 <FriendsOpen>Megnyit</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Átirányítottunk a CHPP engedélykérő oldalára. Ha nem ezt tapasztalod, akkor ideiglenesen kapcsold ki a felugró ablak blokkolódat, vagy vedd fel a HTlivesight kiegészítőt a kivételek listájára.</Introduction>
 <Insert>Az engedélyezés után kapott kódot másold ide:</Insert>
 <Ending>A HTlivesight most már engedélyezve van. Kattints az OK-ra az alkalmazás újraindításához.</Ending>
-<Error401>Hiba 401: illetéktelen hozzáférés. Újra engedélyt kell adnod nekünk. Folytatáshoz kattints az OK-ra!</Error401>
-<Error404>Hiba 404: a kért erőforrás nem található. Ha a hiba újból előfordul, akkor valószínűleg a CHPP szolgáltatás nem működik.</Error404>
-<Error0>Hiba 0: nincs internetkapcsolat.</Error0>
 <Error>Hiba</Error>
 <ServerON>Kapcsolódva</ServerON>
 <ServerOFF>Nincs kapcsolat</ServerOFF>
 <ResetToken>Engedély eltávolítva. Indítsd újra a HTLS-t, vagy várd meg a következő frissítést (less than 1 minute).</ResetToken>
-<NoHTServer>Nem választottad ki a Hattrick szervert, ahová a böngésződdel bejelentkeztél. Jobb klikk a háttéren -> opciók -> általános -> majd add meg a szerverszámod a mezőben.</NoHTServer>
-<Error500>Hiba 500: belső szerver hiba (Hattrick)</Error500>
-<Error503>Hiba 503: CHPP szolgáltatás nem elérhető (ideiglenes túlterhelség vagy karbantartás)</Error503>
-
-<!--Properties-->
-<MatchesMaximum>Nem nézhetsz tíznél több mérkõzést!</MatchesMaximum>
-<LeagueLiveTable>Élõ tabella</LeagueLiveTable>
+<NoHTServer>Nem választottad ki azt a Hattrick szervert, ahová a böngésződdel bejelentkeztél. Jobb klikk a háttéren - opciók - általános - majd add meg a szerverszámod a beviteli mezőben.</NoHTServer>
+<MatchesMaximum>Nem nézhetsz húsznál több mérkőzést!</MatchesMaximum>
 <LeagueRound>Forduló</LeagueRound>
 <MessageHattrickError>A Hattrick szerver hibát jelzett.</MessageHattrickError>
-<MessageAlreadyFriend>Már a barátod.</MessageAlreadyFriend>
+<MessageAlreadyFriend>Már a barátod!</MessageAlreadyFriend>
 <MessageErrorReading>Hiba adatolvasás közben:</MessageErrorReading>
-<MessageLoginNotSuccessful>Belépési hiba.</MessageLoginNotSuccessful>
-<TacticPressing>tördelés</TacticPressing>
-<TacticCA>ellentámadás</TacticCA>
-<TacticAIM>középen támadás</TacticAIM>
-<TacticAOW>széleken támadás</TacticAOW>
-<TacticPlayCreative>kreatív játék</TacticPlayCreative>
-<TacticLongShots>távoli lövés</TacticLongShots>
+<MessageLoginNotSuccessful>Belépés nem sikerült.</MessageLoginNotSuccessful>
+<TacticPressing>Játéktördelés</TacticPressing>
+<TacticCA>Ellentámadás</TacticCA>
+<TacticAIM>Középen támadás</TacticAIM>
+<TacticAOW>Széleken támadás</TacticAOW>
+<TacticPlayCreative>Kreatív játék</TacticPlayCreative>
+<TacticLongShots>Távoli lövés</TacticLongShots>
 <TimeFirstHalf>1. félidõ</TimeFirstHalf>
-<TimeHalfTime>félidõ</TimeHalfTime>
+<TimeHalfTime>Félidõ</TimeHalfTime>
 <TimeSecondHalf>2. félidõ</TimeSecondHalf>
-<TimeExtraTime>hosszabbítás</TimeExtraTime>
-<TimePenalties>büntetõk</TimePenalties>
-<TimeFinish>vége</TimeFinish>
+<TimeExtraTime>Hosszabbítás</TimeExtraTime>
+<TimePenalties>Büntetõk</TimePenalties>
+<TimeFinish>Vége</TimeFinish>
 <TimeStartsIn>még</TimeStartsIn>
 <TimeDays>nap</TimeDays>
 <TimeHours>óra</TimeHours>
@@ -88,65 +74,63 @@
 <TooltipWindowMinimize>Kis méret</TooltipWindowMinimize>
 <TooltipWindowShade>Eredményjelző</TooltipWindowShade>
 <TooltipWindowClose>Ablak bezárása</TooltipWindowClose>
-<TooltipWindowOpen>Abalak megnyitása</TooltipWindowOpen>
+<TooltipWindowOpen>Ablak megnyitása</TooltipWindowOpen>
 <TooltipWindowMoveUp>Ablak felfelé mozgatása</TooltipWindowMoveUp>
 <TooltipWindowMoveDown>Ablak lefelé mozgatása</TooltipWindowMoveDown>
 <TooltipFriendRemove>Barát eltávolítása a listáról</TooltipFriendRemove>
 <TooltipFriendMoveUp>Barát feljebb hozása</TooltipFriendMoveUp>
-<TooltipFriendMoveDown>Barát lejebb küldése</TooltipFriendMoveDown>
+<TooltipFriendMoveDown>Barát lejjebb küldése</TooltipFriendMoveDown>
 <MenuAddFriend>Barát</MenuAddFriend>
-<MenuServer>Szerver:</MenuServer>
 <EventGoal>GÓÓÓL</EventGoal>
 <EventPenaltyGoal>Büntető: GÓL</EventPenaltyGoal>
 <EventPenaltyMiss>Büntető: Kimaradt</EventPenaltyMiss>
 <EventInjury>Sérülés</EventInjury>
 <EventRed>Piros lap</EventRed>
-<EventYellow2>Második sárga lap</EventYellow2>
-<EventSideLeft>bal</EventSideLeft>
-<EventSideRight>jobb</EventSideRight>
-<EventSideCenter>közép</EventSideCenter>
-<EventSideFreeKick>szabadrúgás</EventSideFreeKick>
-<EventSidePenalty>büntetõ</EventSidePenalty>
-<EventSpecialUnpredictable>kiszámíthatatlan SE</EventSpecialUnpredictable>
-<EventSpecialLongShot>távoli lövés SE</EventSpecialLongShot>
-<EventSpecialQuick>gyors SE</EventSpecialQuick>
-<EventSpecialLowStamina>alacsony erõnlét</EventSpecialLowStamina>
-<EventSpecialSetPieces>pontrúgás</EventSpecialSetPieces>
-<EventSpecialHead>jól fejelõ SE</EventSpecialHead>
-<EventSpecialExperience>tapasztalat</EventSpecialExperience>
-<EventSpecialLowExperience>alacsony tapasztalat</EventSpecialLowExperience>
-<EventSpecialWinger>szélsõ +</EventSpecialWinger>
-<EventSpecialTechnical>technikás SE</EventSpecialTechnical>
-<EventSpecialCounterAttack>ellentámadás</EventSpecialCounterAttack>
-<EventSpecialCornerKick>szöglet</EventSpecialCornerKick>
-<EventSpecialIndirect>közvetett szabadrúgás</EventSpecialIndirect>
-<EventSpecialUnpredictableLongPass>kiszámíthatatlan + (hosszú átadás)</EventSpecialUnpredictableLongPass>
-<EventSpecialUnpredictableScoresOnHisOwn>kiszámíthatatlan + (váratlan lövés)</EventSpecialUnpredictableScoresOnHisOwn>
-<EventSpecialUnpredictableSpecialAction>kiszámíthatatlan + (különleges akció)</EventSpecialUnpredictableSpecialAction>
-<EventSpecialUnpredictableMistake>kiszámíthatatlan - (labdavesztés)</EventSpecialUnpredictableMistake>
-<EventSpecialUnpredictableOwnGoal>kiszámíthatatlan - (öngól)</EventSpecialUnpredictableOwnGoal>
-<EventSpecialQuickScoresAfterRush>gyors + (elfutás)</EventSpecialQuickScoresAfterRush>
-<EventSpecialQuickAssist>gyors + (elfutás és átadás)</EventSpecialQuickAssist>
-<Pullback>visszahúzódás</Pullback>
-<Underestimation>túlzott önbizalom</Underestimation>
-<UnderestimationRemove>túlzott önbizalom visszaállt</UnderestimationRemove>
-<UnderestimationReduceDouble>túlzott önbizalom csökkent 2/3 résszel</UnderestimationReduceDouble>
-<UnderestimationReduceOnce>túlzott önbizalom csökkent 1/3 résszel</UnderestimationReduceOnce>
-<OrganizationBreaks>zavar</OrganizationBreaks>
-<Reorganize>szervezettség visszaállt</Reorganize>
-<NervesImportantThrillingGame>tapasztalathiány kiélezett mérkőzésen</NervesImportantThrillingGame>
-<Bruised>tapasz</Bruised>
-<Injuried>sérülés</Injuried>
-<ModeratelyInjuried>mérsékelt sérülés</ModeratelyInjuried>
-<BadlyInjuried>komoly sérülés</BadlyInjuried>
+<EventSideLeft>Bal</EventSideLeft>
+<EventSideRight>Jobb</EventSideRight>
+<EventSideCenter>Középső</EventSideCenter>
+<EventSideFreeKick>Szabadrúgás</EventSideFreeKick>
+<EventSidePenalty>Büntetõ</EventSidePenalty>
+<EventSpecialUnpredictable>Kiszámíthatatlan SE</EventSpecialUnpredictable>
+<EventSpecialLongShot>Távoli lövés SE</EventSpecialLongShot>
+<EventSpecialQuick>Gyors SE</EventSpecialQuick>
+<EventSpecialLowStamina>Alacsony erőnlét</EventSpecialLowStamina>
+<EventSpecialSetPieces>Pontrúgás</EventSpecialSetPieces>
+<EventSpecialHead>Jól fejelõ SE</EventSpecialHead>
+<EventSpecialExperience>Tapasztalat</EventSpecialExperience>
+<EventSpecialLowExperience>Alacsony tapasztalat</EventSpecialLowExperience>
+<EventSpecialWinger>Szélsõ+</EventSpecialWinger>
+<EventSpecialTechnical>Technikás VS Jól fejeleő SE</EventSpecialTechnical>
+<EventSpecialCounterAttack>Ellentámadás</EventSpecialCounterAttack>
+<EventSpecialCornerKick>Szöglet</EventSpecialCornerKick>
+<EventSpecialIndirect>Közvetett szabadrúgás</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>Kiszámíthatatlan+ :hosszú átadás</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>Kiszámíthatatlan+ :váratlan lövés</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>Kiszámíthatatlan+ :különleges akció</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>kiszámíthatatlan- :labdavesztés</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>Kiszámíthatatlan- :öngól</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>Gyors+ : elfutás</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>Gyors+ :elfutás és átadás</EventSpecialQuickAssist>
+<Pullback>Visszahúzódás</Pullback>
+<Underestimation>Túlzott önbizalom</Underestimation>
+<UnderestimationRemove>Túlzott önbizalom visszaállt</UnderestimationRemove>
+<UnderestimationReduceDouble>Túlzott önbizalom csökkent 2/3 résszel</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>Túlzott önbizalom csökkent 1/3 résszel</UnderestimationReduceOnce>
+<OrganizationBreaks>Zavarodottság</OrganizationBreaks>
+<Reorganize>Szervezettség visszaállt</Reorganize>
+<NervesImportantThrillingGame>Tapasztalathiány kiélezett mérkőzésen</NervesImportantThrillingGame>
+<Bruised>Tapaszos</Bruised>
+<Injuried>Sérülés</Injuried>
+<ModeratelyInjuried>Enyhe sérülés</ModeratelyInjuried>
+<BadlyInjuried>Komoly sérülés</BadlyInjuried>
 <ByHimself>önmagától</ByHimself>
 <ByFoul>szabálytalanság által</ByFoul>
-<ExperiencedForward>tapasztalt csatár</ExperiencedForward>
-<InexperiencedDefender>tapasztalatlan védő</InexperiencedDefender>
-<WingerHead>szélső: keresztlabda jól fejelő játékosnak</WingerHead>
-<EventSpecialLongShotDefended>távoli lövés kivédekezve</EventSpecialLongShotDefended>
-<EventSpecialQuickVsQuick>gyors VS gyors</EventSpecialQuickVsQuick>
-<LongShot>távoli lövés</LongShot>
+<ExperiencedForward>Tapasztalt csatár</ExperiencedForward>
+<InexperiencedDefender>Tapasztalatlan védő</InexperiencedDefender>
+<WingerHead>Szélső: keresztlabda jól fejelő játékosnak</WingerHead>
+<EventSpecialLongShotDefended>Kivédekezett távoli lövés</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>Gyors VS Gyors</EventSpecialQuickVsQuick>
+<LongShot>Távoli lövés</LongShot>
 <MeteoSpecialTechnicalRain>technikás - (-gólszerzés -játékszervezés)</MeteoSpecialTechnicalRain>
 <MeteoSpecialPowerfulRain>erőteljes + (+gólszerzés +védekezés +játékszervezés)</MeteoSpecialPowerfulRain>
 <MeteoSpecialTechnicalSun>technikás + (+gólszerzés +játékszervezés)</MeteoSpecialTechnicalSun>
@@ -167,8 +151,6 @@
 <RequestDetails>Mérkõzés részleteinek letöltése</RequestDetails>
 <RequestTeam>A csapat mérkõzésének letöltése</RequestTeam>
 <RequestTeamData>A csapat adatainak letöltése</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight beállítások</WindowTitle>
 <TabGeneral>Általános</TabGeneral>
 <TabMatches>Mérkõzések</TabMatches>
@@ -190,22 +172,22 @@
 <MatchesHours>órán belül.</MatchesHours>
 <MatchesFriends>Barátok</MatchesFriends>
 <MatchesGetFriends>Barátok mérkõzéseinek letöltése</MatchesGetFriends>
+<MatchesHeader>Fejléc</MatchesHeader>
 <MatchesScorers>Gólok</MatchesScorers>
 <ScorersList>A gólszerzõk megjelennek a fejlécben</ScorersList>
-<MatchesHeader>Header</MatchesHeader>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>Lapot kapott</MatchesBooked>
+<BookedList>Lappal büntetett játékosok felsorolása a fejlécen</BookedList>
+<MatchesSentOff>Kiállítva</MatchesSentOff>
+<SentOffList>Kiállítottak felsorolása a fejlécen</SentOffList>
+<MatchesInjured>Sérült</MatchesInjured>
+<InjuredList>Sérültek felsorolása a fejlécen</InjuredList>
 <MatchesWindow>Ablak</MatchesWindow>
 <MatchesLines>Kis méretben megjelenítendő sorok</MatchesLines>
 <NotifyNotify>Jelzések</NotifyNotify>
 <NotifyEnableSound>Hangjelzések bekapcsolása</NotifyEnableSound>
 <NotifyOnly>Csak megnyitott meccseken</NotifyOnly>
 <NotifyFlash>Fejléc villogtatása</NotifyFlash>
-<NotifyStatus>Állapotjelzõ üzenet</NotifyStatus>
+<NotifyStatus>Állapotjelző üzenet</NotifyStatus>
 <OtherAuthorization>Engedélyező kód</OtherAuthorization>
 <OtherReset>Engedély megvonása</OtherReset>
 <OtherResetButton>Visszaállítás</OtherResetButton>
@@ -235,22 +217,16 @@
 <PathSoundsMyBoo>Hangjelzés saját csapat sérülésénél</PathSoundsMyBoo>
 <PathSoundsOpBoo>Hangjelzés ellenfél játékosának sérülésénél</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Sípszó első/második félidő kezdésnél</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Sípszó az első félidő végén</PathSoundsWhistle2>
-<PathSoundsWhistle3>Sípszó a mérkőzés végén</PathSoundsWhistle3>
 <PathSoundsWhistle>Hangjelzés sárga/piros lapnál</PathSoundsWhistle>
 <PathSoundsHattrick>Mesterhármas hangjelzés</PathSoundsHattrick>
 <PathSoundsRestore>Visszaállítás</PathSoundsRestore>
 <PathSoundsPlay>Lejátszás</PathSoundsPlay>
-<PathSoundsNote1>Szúrd be a .wav formátumú hang elérési útja elé: file:///</PathSoundsNote1>
-<PathSoundsNote2>Például: file:///c:\\utvonal\a\hanghoz\hang.wav</PathSoundsNote2>
 <LanguageSelect>Nyelvválasztás</LanguageSelect>
 <LanguageNote>Megj.: A HTLiveSight újraindítása szükséges.</LanguageNote>
 <ButtonCancel>Mégse</ButtonCancel>
-<ButtonOk>OK</ButtonOk>
-
-<!--About-->
+<ButtonOk>Potvrdi</ButtonOk>
 <WindowAboutTitle>A HTLiveSight névjegye</WindowAboutTitle>
-<TabInfo>Info</TabInfo>
+<TabInfo>Infó</TabInfo>
 <TabTranslators>Fordítók</TabTranslators>
 <TabCredits>Köszönet</TabCredits>
 <MonthJanuary>Jan</MonthJanuary>
@@ -263,69 +239,81 @@
 <MonthAugust>Aug</MonthAugust>
 <MonthSeptember>Sze</MonthSeptember>
 <MonthOctober>Okt</MonthOctober>
-<MonthNovember>Nov</MonthNovember>
+<MonthNovember>Stu</MonthNovember>
 <MonthDecember>Dec</MonthDecember>
 <TextCreatedBy>Készítette:</TextCreatedBy>
 <TextDevelopedBy>Fejlesztette:</TextDevelopedBy>
 <TextHelpOf>Segítettek:</TextHelpOf>
 <TextThanksTo>Rengeteg köszönet:</TextThanksTo>
 <ButtonClose>Kilépés</ButtonClose>
-
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Tournament>Tournament</Tournament>
+<NonExistent>Nem létező</NonExistent>
+<Disastrous>Katasztrofális</Disastrous>
+<Wretched>Pocsék</Wretched>
+<Poor>Csapnivaló</Poor>
+<Weak>Gyenge</Weak>
+<Inadequate>Középszerű</Inadequate>
+<Passable>Megfelelő</Passable>
+<Solid>Jó</Solid>
+<Excellent>Remek</Excellent>
+<Formidable>Nagyszerű</Formidable>
+<Outstanding>Kiemelkedő</Outstanding>
+<Brilliant>Ragyogó</Brilliant>
+<Magnificent>Lenyűgöző</Magnificent>
+<WorldClass>Világklasszis</WorldClass>
+<Supernatural>Természetfeletti</Supernatural>
+<Titanic>Titáni</Titanic>
+<ExtraTerrestrial>Földöntúli</ExtraTerrestrial>
+<Mythical>Legendás</Mythical>
+<Magical>Varázslatos</Magical>
+<Utopian>Csodás</Utopian>
+<Divine>Isteni</Divine>
+<VeryHigh>nagyon magas</VeryHigh>
+<High>magas</High>
+<Low>alacsony</Low>
+<VeryLow>átlag alatt</VeryLow>
+<RightDefence>Jobb oldali védelem</RightDefence>
+<MiddleDefence>Középső védelem</MiddleDefence>
+<LeftDefence>Baloldali védelem</LeftDefence>
+<Midfield>Középpálya</Midfield>
+<RightAttack>Jobboldali támadás</RightAttack>
+<MiddleAttack>Középső támadás</MiddleAttack>
+<LeftAttack>Baloldali támadás</LeftAttack>
+<IndirectSetPiecesDefence>Közvetett szabadrúgás - védekezés</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Közvetett szabadrúgás - támadás</IndirectSetPiecesAttack>
+<TeamAttitude>Csapat hozzáállása</TeamAttitude>
+<TacticType>Taktika</TacticType>
+<TacticSkill>Taktika szintje</TacticSkill>
+<BallPosses>Labdabirtoklás</BallPosses>
+<SpecialEvent>Különleges esemény</SpecialEvent>
+<Normal>Alap</Normal>
+<PIC>Laza játék</PIC>
+<MOTS>A szezon mérkőzése</MOTS>
+<ColorPicker>Itt választhatsz színt</ColorPicker>
+<EventBackground>Események háttérszíne</EventBackground>
+<FriendHome>Saját és barátaid csapatának hazai színe: #</FriendHome>
+<FriendAway>Saját és barátaid csapatának idegenbeli színe: #</FriendAway>
+<FoeHome>Otthon játszó egyéb csapatok színe: #</FoeHome>
+<FoeAway>Idegenben játszó egyéb csapatok színe: #</FoeAway>
+<Neutral>Semleges szín kódja:#</Neutral>
+<EventColorTitle>Esemény színe</EventColorTitle>
+<EventTextColor>Esemény színe:#</EventTextColor>
+<SETextColor>Különleges esemény szöveg színe:#</SETextColor>
+<Colors>Színek</Colors>
+<SchemaTip>Kattints a felállás megjelenítéséhez</SchemaTip>
+<StatisticTip>Kattints a mérkőzés végi statisztikák megjelenítéséhez</StatisticTip>
+<Youth>Ifi</Youth>
+<Senior>Felnőtt</Senior>
+<Tournament>Privát liga</Tournament>
+<FreeKicks>Szabadrúgások</FreeKicks>
+<RedCards>Piros lapok</RedCards>
+<YellowCards>Sárga lapok</YellowCards>
+<Injuries>Sérülések</Injuries>
+<Goals>Gólok</Goals>
+<Total>Összesen</Total>
+<Terraces>Állóhelyek</Terraces>
+<Basic>Ülőhelyek</Basic>
+<Roof>Fedett ülőhelyek</Roof>
+<VIP>VIP-helyek</VIP>
+<CrowdinHelp>Segítsd a fordítást! Crowdin-nal rendkívül egyszerű és szórakoztató! Kattints ide!</CrowdinHelp>
 
 </Htlivesight>

@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Démarrer</MenuStart>
 <MenuOptions>Options</MenuOptions>
-<TooltipButton>Cliquer pour ouvrir le menu</TooltipButton>
-
-<!--Main-->
+<TooltipButton>Visionnez vos matchs sur HTliveSight</TooltipButton>
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Serveur:</MenuServer>
 <MenuDisconnected>Déconnecté</MenuDisconnected>
-<MenuOptions>Options</MenuOptions>
 <MenuAbout>A propos de HTLiveSight</MenuAbout>
 <LoginLabel>Connexion</LoginLabel>
 <LoginTeamId>Insérer l'ID de votre équipe</LoginTeamId>
@@ -33,43 +29,33 @@
 <MatchesAdd>Ajouter un match</MatchesAdd>
 <MatchesByMatch>Par ID du match</MatchesByMatch>
 <MatchesByTeam>Par ID de l'équipe</MatchesByTeam>
-<MatchesYouth>Match de jeunes?</MatchesYouth>
-<FriendsTitle>Amis</FriendsTitle>
+<MatchesYouth>Jeunes?</MatchesYouth>
+<FriendsTitle>Liste de vos amis</FriendsTitle>
 <FriendsRemove>Supprimer</FriendsRemove>
-<FriendsOpen>Ouvrir</FriendsOpen>
-
-<!--Authorize-->
+<FriendsOpen>Afficher</FriendsOpen>
 <Introduction>Vous êtes redirigé vers la page CHPP pour obtenir le code d'autorisation. Si rien ne se passe, désactivez le bloqueur de popup temporairement ou ajoutez HTlivesight dans sa liste d'exception.</Introduction>
 <Insert>Insérez votre code d'autorisation ici:</Insert>
 <Ending>Maintenant HTlivesight est autorisé. Cliquez sur OK pour redémarrer l'application.</Ending>
-<Error401>Erreur 401: accès non autorisé. Vous devez obtenir une nouvelle autorisation. Cliquez sur OK pour continuer.</Error401>
-<Error404>Erreur 404: La ressource demandée n'a pas pu être trouvé. Si cette erreur apparaît à nouveau, vérifiez si le service CHPP n'est pas en panne.</Error404>
-<Error0>Erreur 0: Vous n'êtes pas connecté à Internet.</Error0>
 <Error>Erreur</Error>
 <ServerON>Connecté</ServerON>
 <ServerOFF>Déconnecté</ServerOFF>
 <ResetToken>L'autorisation a été retirée. Redémarrez HTLS ou attendez la prochaine mise à jour (au moins 1 minute).</ResetToken>
 <NoHTServer>Vous n'avez pas sélectionné le serveur Hattrick où vous êtes connecté depuis votre navigateur. Dans l'onglet général des options,remplissez le formulaire avec votre numéro de serveur.</NoHTServer>
-<Error500>Erreur 500: erreur interne au serveur d'Hattrick</Error500>
-<Error503>Erreur 503: le CHPP est indisponible (serveur surchargé ou maintenance)</Error503>
-
-<!--Properties-->
 <MatchesMaximum>Vous ne pouvez pas visualiser plus de 20 matchs!</MatchesMaximum>
-<LeagueLiveTable>Classement de la division</LeagueLiveTable>
 <LeagueRound>Journée</LeagueRound>
 <MessageHattrickError>Le serveur Hattrick a renvoyé une erreur.</MessageHattrickError>
 <MessageAlreadyFriend>Cette équipe fait déjà partie de vos amis.</MessageAlreadyFriend>
 <MessageErrorReading>Erreur de lecture de données depuis</MessageErrorReading>
-<MessageLoginNotSuccessful>Echec de connection.</MessageLoginNotSuccessful>
+<MessageLoginNotSuccessful>Échec de la connection.</MessageLoginNotSuccessful>
 <TacticPressing>Pressing</TacticPressing>
 <TacticCA>Contre-attaques</TacticCA>
 <TacticAIM>Attaque au centre</TacticAIM>
 <TacticAOW>Attaque sur les ailes</TacticAOW>
 <TacticPlayCreative>Jeu créatif</TacticPlayCreative>
 <TacticLongShots>Tir lointain</TacticLongShots>
-<TimeFirstHalf>Première mi-temps</TimeFirstHalf>
+<TimeFirstHalf>1ère mi-temps</TimeFirstHalf>
 <TimeHalfTime>Mi-temps</TimeHalfTime>
-<TimeSecondHalf>Deuxième mi-temps</TimeSecondHalf>
+<TimeSecondHalf>2ème mi-temps</TimeSecondHalf>
 <TimeExtraTime>Prolongations</TimeExtraTime>
 <TimePenalties>Tirs au but</TimePenalties>
 <TimeFinish>Terminé</TimeFinish>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Déplacer vers le haut</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Déplacer vers le bas</TooltipFriendMoveDown>
 <MenuAddFriend>Ami</MenuAddFriend>
-<MenuServer>Serveur:</MenuServer>
 <EventGoal>BUT</EventGoal>
 <EventPenaltyGoal>Pénalty: BUT</EventPenaltyGoal>
 <EventPenaltyMiss>Pénalty: MANQUÉ</EventPenaltyMiss>
 <EventInjury>Blessure</EventInjury>
 <EventRed>Carton rouge</EventRed>
-<EventYellow2>Deuxième carton jaune</EventYellow2>
 <EventSideLeft>gauche</EventSideLeft>
 <EventSideRight>droite</EventSideRight>
 <EventSideCenter>centre</EventSideCenter>
@@ -115,18 +99,18 @@
 <EventSpecialHead>tête</EventSpecialHead>
 <EventSpecialExperience>expérience</EventSpecialExperience>
 <EventSpecialLowExperience>manque d'expérience</EventSpecialLowExperience>
-<EventSpecialWinger>+ ailier</EventSpecialWinger>
+<EventSpecialWinger>SE+ ailier</EventSpecialWinger>
 <EventSpecialTechnical>techniques</EventSpecialTechnical>
 <EventSpecialCounterAttack>contre-attaque</EventSpecialCounterAttack>
 <EventSpecialCornerKick>corner</EventSpecialCornerKick>
 <EventSpecialIndirect>coup franc indirect</EventSpecialIndirect>
-<EventSpecialUnpredictableLongPass>+ imprévisible: longue passe</EventSpecialUnpredictableLongPass>
-<EventSpecialUnpredictableScoresOnHisOwn>+ imprévisible: tir</EventSpecialUnpredictableScoresOnHisOwn>
-<EventSpecialUnpredictableSpecialAction>+ imprévisible: action inattendue</EventSpecialUnpredictableSpecialAction>
-<EventSpecialUnpredictableMistake>- imprévisible: passe à l'adversaire</EventSpecialUnpredictableMistake>
-<EventSpecialUnpredictableOwnGoal>- imprévisible: but contre son camp</EventSpecialUnpredictableOwnGoal>
-<EventSpecialQuickScoresAfterRush>+ rapide: accélération et tir</EventSpecialQuickScoresAfterRush>
-<EventSpecialQuickAssist>+ rapide: accélération et passe</EventSpecialQuickAssist>
+<EventSpecialUnpredictableLongPass>SE+ imprévisible: longue passe</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>SE+ imprévisible: tir</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>SE+ imprévisible: action inattendue</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>SE- imprévisible: passe à l'adversaire</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>SE- imprévisible: but contre son camp</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>SE+ rapide: accélération et tir</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>SE+ rapide: accélération et passe</EventSpecialQuickAssist>
 <Pullback>repli défensif</Pullback>
 <Underestimation>sur-confiance</Underestimation>
 <UnderestimationRemove>sur-confiance annulée</UnderestimationRemove>
@@ -143,16 +127,16 @@
 <ByFoul>due à la faute</ByFoul>
 <ExperiencedForward>attaquant expérimenté</ExperiencedForward>
 <InexperiencedDefender>défenseur inexpérimenté</InexperiencedDefender>
-<WingerHead>ailier: tête</WingerHead>
+<WingerHead>SE ailier: centre pour Joueur de tête</WingerHead>
 <EventSpecialLongShotDefended>tir lointain intercepté</EventSpecialLongShotDefended>
 <EventSpecialQuickVsQuick>rapide contre rapide</EventSpecialQuickVsQuick>
 <LongShot>tir lointain</LongShot>
-<MeteoSpecialTechnicalRain>- technique (-buteur -construction)</MeteoSpecialTechnicalRain>
-<MeteoSpecialPowerfulRain>+ costaud (+buteur +défense +construction)</MeteoSpecialPowerfulRain>
-<MeteoSpecialTechnicalSun>+ technique (+buteur +construction)</MeteoSpecialTechnicalSun>
-<MeteoSpecialPowerfulSun>- costaud (-buteur -endurance)</MeteoSpecialPowerfulSun>
-<MeteoSpecialQuickSun>- rapide (-défense)</MeteoSpecialQuickSun>
-<MeteoSpecialQuickRain>- rapide (-défense -buteur)</MeteoSpecialQuickRain>
+<MeteoSpecialTechnicalRain>SE- technique (-buteur -construction)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>SE+ costaud (+buteur +défense +construction)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>SE+ technique (+buteur +construction)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>SE- costaud (-buteur -endurance)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>SE- rapide (-défense)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>SE- rapide (-défense -buteur)</MeteoSpecialQuickRain>
 <YellowNastyPlay>faute</YellowNastyPlay>
 <YellowCheating>tricherie</YellowCheating>
 <ProgressUpdate>Prochaine mise à jour:</ProgressUpdate>
@@ -167,15 +151,13 @@
 <RequestDetails>Recherche des détails du match...</RequestDetails>
 <RequestTeam>Chargement du Match par équipe...</RequestTeam>
 <RequestTeamData>Recherche des données de l'équipe...</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>Options HTLiveSight</WindowTitle>
 <TabGeneral>Général</TabGeneral>
 <TabMatches>Matchs</TabMatches>
 <TabNotifications>Alertes</TabNotifications>
 <TabLanguage>Langues</TabLanguage>
 <TabOther>Autres</TabOther>
-<TabCustom>Personnalisations</TabCustom>
+<TabCustom>Sons</TabCustom>
 <TabGoalSound>Sons des buts</TabGoalSound>
 <TabWheatherSound>Sons de la météo et des blessures</TabWheatherSound>
 <TabWhistleSound>Sons des coups de sifflets et du coup du chapeau</TabWhistleSound>
@@ -185,20 +167,20 @@
 <GeneralServer>Réglage du serveur</GeneralServer>
 <GeneralNote>Inserer le serveur auquel vous êtes connecté à Hattrick (ex: www96).</GeneralNote>
 <MatchesLeague>Matchs de ligue</MatchesLeague>
-<MatchesGetLeague>Afficher les matchs de ligue</MatchesGetLeague>
+<MatchesGetLeague>Afficher les matchs de votre ligue</MatchesGetLeague>
 <MatchesPlayed>Si joué depuis ou dans</MatchesPlayed>
 <MatchesHours>heures.</MatchesHours>
-<MatchesFriends>Matchs Amicaux</MatchesFriends>
-<MatchesGetFriends>Afficher les matchs amicaux</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesFriends>Vos amis</MatchesFriends>
+<MatchesGetFriends>Afficher les matchs de vos amis</MatchesGetFriends>
+<MatchesHeader>En-tête des matchs</MatchesHeader>
 <MatchesScorers>Buteurs</MatchesScorers>
-<ScorersList>Afficher le noms des buteurs avec le score</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<ScorersList>Afficher les buteurs</ScorersList>
+<MatchesBooked>Avertissement</MatchesBooked>
+<BookedList>Afficher les joueurs avertis</BookedList>
+<MatchesSentOff>Expulsion</MatchesSentOff>
+<SentOffList>Afficher les joueurs expulsés</SentOffList>
+<MatchesInjured>Blessés</MatchesInjured>
+<InjuredList>Afficher les blessés</InjuredList>
 <MatchesWindow>Affichage des événements</MatchesWindow>
 <MatchesLines>Nombre d'événements à afficher en mode réduit</MatchesLines>
 <NotifyNotify>Alertes</NotifyNotify>
@@ -234,21 +216,15 @@
 <PathSoundsFewClouds>Météo partiellement ensoleillée</PathSoundsFewClouds>
 <PathSoundsMyBoo>Blessure de nos joueurs</PathSoundsMyBoo>
 <PathSoundsOpBoo>Blessure des joueurs de l'adversaire</PathSoundsOpBoo>
-<PathSoundsWhistleStart>Début des mi-temps</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Fin de la 1ère mi-temps</PathSoundsWhistle2>
-<PathSoundsWhistle3>Fin du match</PathSoundsWhistle3>
+<PathSoundsWhistleStart>Début 1ère/2ème mi-temps</PathSoundsWhistleStart>
 <PathSoundsWhistle>Cartons jaune ou rouge</PathSoundsWhistle>
 <PathSoundsHattrick>Coup du chapeau</PathSoundsHattrick>
 <PathSoundsRestore>Restaurer</PathSoundsRestore>
 <PathSoundsPlay>Ecouter</PathSoundsPlay>
-<PathSoundsNote1>Insérer file:/// avant le lien du son au format.wav</PathSoundsNote1>
-<PathSoundsNote2>Exemple: file:///c:\\lien\pour\le\son.wav</PathSoundsNote2>
 <LanguageSelect>Choix de la langue</LanguageSelect>
 <LanguageNote>Note: Redémarrez Firefox pour appliquer vos changements.</LanguageNote>
 <ButtonCancel>Annuler</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>A propos de</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Traducteurs</TabTranslators>
@@ -270,75 +246,74 @@
 <TextHelpOf>Avec l'aide de</TextHelpOf>
 <TextThanksTo>Un grand merci à:</TextThanksTo>
 <ButtonClose>Fermer</ButtonClose>
-
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
+<NonExistent>Inexistant</NonExistent>
+<Disastrous>Catastrophique</Disastrous>
+<Wretched>Mauvais</Wretched>
+<Poor>Médiocre</Poor>
+<Weak>Faible</Weak>
+<Inadequate>Inadéquat</Inadequate>
 <Passable>Passable</Passable>
-<Solid>Solid</Solid>
+<Solid>Honorable</Solid>
 <Excellent>Excellent</Excellent>
 <Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Tournament>Tournament</Tournament>
-<Youth>Youth</Youth>
+<Outstanding>Impressionnant</Outstanding>
+<Brilliant>Brillant</Brilliant>
+<Magnificent>Inoubliable</Magnificent>
+<WorldClass>Légendaire</WorldClass>
+<Supernatural>Surnaturel</Supernatural>
+<Titanic>Titanesque</Titanic>
+<ExtraTerrestrial>Extraterrestre</ExtraTerrestrial>
+<Mythical>Mythique</Mythical>
+<Magical>Magique</Magical>
+<Utopian>Utopique</Utopian>
+<Divine>Divin</Divine>
+<VeryHigh>très haut</VeryHigh>
+<High>haut</High>
+<Low>bas</Low>
+<VeryLow>très bas</VeryLow>
+<RightDefence>Défense lat. droite</RightDefence>
+<MiddleDefence>Défense centrale</MiddleDefence>
+<LeftDefence>Défense lat. gauche</LeftDefence>
+<Midfield>Milieu de terrain</Midfield>
+<RightAttack>Attaque aile droite</RightAttack>
+<MiddleAttack>Attaque centrale</MiddleAttack>
+<LeftAttack>Attaque aile gauche</LeftAttack>
+<IndirectSetPiecesDefence>Coup franc indirect Défense</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Coup franc indirect Attaque</IndirectSetPiecesAttack>
+<TeamAttitude>Attitude de l'équipe</TeamAttitude>
+<TacticType>Tactique</TacticType>
+<TacticSkill>Niveau de la tactique</TacticSkill>
+<BallPosses>Possession</BallPosses>
+<SpecialEvent>Situations Exceptionnelles (SE)</SpecialEvent>
+<Normal>Normal (PIN)</Normal>
+<PIC>Tranquille (PIC)</PIC>
+<MOTS>Match le plus important (MOTS)</MOTS>
+<ColorPicker>Vous pouvez choisir votre couleur sur </ColorPicker>
+<EventBackground>Couleur de fond des événements</EventBackground>
+<FriendHome>Domicile (vous et vos amis): #</FriendHome>
+<FriendAway>Extérieur (vous et vos amis): #</FriendAway>
+<FoeHome>Domicile (autres équipes): #</FoeHome>
+<FoeAway>Extérieur (autres équipes): #</FoeAway>
+<Neutral>Événements neutres: #</Neutral>
+<EventColorTitle>Couleur du texte</EventColorTitle>
+<EventTextColor>Texte des événements: #</EventTextColor>
+<SETextColor>Texte des informations: #</SETextColor>
+<Colors>Couleurs</Colors>
+<SchemaTip>Cliquez ici pour afficher la composition</SchemaTip>
+<StatisticTip>Cliquez ici pour afficher des statistiques à la fin du match</StatisticTip>
+<Youth>Jeunes</Youth>
 <Senior>Senior</Senior>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
-
+<Tournament>Tournoi</Tournament>
+<FreeKicks>Coups francs</FreeKicks>
+<RedCards>Cartons rouges</RedCards>
+<YellowCards>Cartons jaunes</YellowCards>
+<Injuries>Blessures</Injuries>
+<Goals>Buts</Goals>
 <Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
+<Terraces>Places debout</Terraces>
+<Basic>Places assises</Basic>
+<Roof>Places assises couvertes</Roof>
+<VIP>Places en loge VIP</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

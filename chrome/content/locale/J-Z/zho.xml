@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>选项</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>服务器:</MenuServer>
 <MenuDisconnected>未连接</MenuDisconnected>
-<MenuOptions>选项</MenuOptions>
 <MenuAbout>关于 HTLiveSight</MenuAbout>
 <LoginLabel>登陆</LoginLabel>
 <LoginTeamId>输入您的球队的Id</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>朋友</FriendsTitle>
 <FriendsRemove>移除</FriendsRemove>
 <FriendsOpen>打开</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>你正被重新转接到chpp网页获取授权码。如未成功，请暂时关闭屏蔽弹出窗口设置或将HTlivesight加入信任列表。</Introduction>
 <Insert>在此输入您的授权码:</Insert>
 <Ending>现在HTlivesight已被授权。点击确认重启程序。</Ending>
-<Error401>错误401: 未授权。 您必须再次取得授权。点击确认继续。</Error401>
-<Error404>错误404: 未找到要求的资源。如果此错误再次出现，请确认chpp服务是否暂停。</Error404>
-<Error0>错误0: 未连接到互联网。</Error0>
 <Error>错误</Error>
 <ServerON>已连接</ServerON>
 <ServerOFF>连接断开</ServerOFF>
 <ResetToken>授权码已被删除. 重启 HTLS 或等候下次更新 (1分钟以内).</ResetToken>
-<NoHTServer>你没有选取与你当前登陆一致的 Hattrick 服务器, 右键点击选取 -> 选项 -> 总体设置 然后设置正确的 Hattrick 服务器号码</NoHTServer>
-<Error500>错误500: 内部服务器错误 (Hattrick)</Error500>
-<Error503>错误503: CHPP 服务不可用 (暂时过载 或 维护中)</Error503>
-
-<!--Properties-->
+<NoHTServer>你没有选取与你当前登陆一致的 Hattrick 服务器, 右键点击选取 - 选项 - 总体设置 然后设置正确的 Hattrick 服务器号码</NoHTServer>
 <MatchesMaximum>最多可观看20场比赛!</MatchesMaximum>
-<LeagueLiveTable>实时积分榜</LeagueLiveTable>
 <LeagueRound>轮次</LeagueRound>
 <MessageHattrickError>Hattrick服务器反馈错误.</MessageHattrickError>
 <MessageAlreadyFriend>已添加朋友!</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>上移朋友</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>下移朋友</TooltipFriendMoveDown>
 <MenuAddFriend>朋友</MenuAddFriend>
-<MenuServer>服务器:</MenuServer>
 <EventGoal>进球</EventGoal>
 <EventPenaltyGoal>点球罚进</EventPenaltyGoal>
 <EventPenaltyMiss>点球罚丢</EventPenaltyMiss>
 <EventInjury>受伤</EventInjury>
 <EventRed>红牌</EventRed>
-<EventYellow2>第二张黄牌</EventYellow2>
 <EventSideLeft>左路</EventSideLeft>
 <EventSideRight>右路</EventSideRight>
 <EventSideCenter>中路</EventSideCenter>
@@ -144,7 +128,7 @@
 <ExperiencedForward>有经验的前锋</ExperiencedForward>
 <InexperiencedDefender>经验不足的后卫</InexperiencedDefender>
 <WingerHead>边锋: 给有头球特长的球员传中</WingerHead>
-<EventSpecialLongShotDefended>=远射被封堵</EventSpecialLongShotDefended>
+<EventSpecialLongShotDefended>远射被封堵</EventSpecialLongShotDefended>
 <EventSpecialQuickVsQuick>速度与速度较量</EventSpecialQuickVsQuick>
 <LongShot>远射</LongShot>
 <MeteoSpecialTechnicalRain>-技术 (-得分能力 -组织能力)</MeteoSpecialTechnicalRain>
@@ -167,8 +151,6 @@
 <RequestDetails>获取比赛细节</RequestDetails>
 <RequestTeam>按队伍获取比赛</RequestTeam>
 <RequestTeamData>获取队伍数据</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight 选项</WindowTitle>
 <TabGeneral>全局设置</TabGeneral>
 <TabMatches>比赛设置</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>选择语言</LanguageSelect>
 <LanguageNote>提示: 重启HTLiveSight以保存生效.</LanguageNote>
 <ButtonCancel>取消</ButtonCancel>
 <ButtonOk>确认</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>关于 HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>提供了帮助的</TextHelpOf>
 <TextThanksTo>特别鸣谢:</TextThanksTo>
 <ButtonClose>关闭</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>
