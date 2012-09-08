@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>התחלה</MenuStart>
 <MenuOptions>אפשרויות</MenuOptions>
 <TooltipButton>HTLiveSight לחץ לפתיחת תפריט</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>שרת:</MenuServer>
 <MenuDisconnected>מנותק</MenuDisconnected>
-<MenuOptions>אפשרויות</MenuOptions>
 <MenuAbout>HTLiveSight אודות</MenuAbout>
 <LoginLabel>התחבר</LoginLabel>
 <LoginTeamId>הכנס את מספר קבוצתך</LoginTeamId>
@@ -37,29 +33,19 @@
 <FriendsTitle>חברים</FriendsTitle>
 <FriendsRemove>הסר</FriendsRemove>
 <FriendsOpen>פתח</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>אתה מופנה לדף תוכנות העזר על מנת לקבל את קוד האישור. אם לא, בבקשה הסר זמנית את חוסם הפופ-אפים או אשר את האפליקציה ברשימת החריגים.</Introduction>
 <Insert>הכנס את קוד האישור כאן:</Insert>
 <Ending>התוכנה מאושרת. לחץ אישור בכדי לאתחל את האפליקציה.</Ending>
-<Error401>שגיאה 401: כניסה לא מורשית. אנא קבל אישור פעם נוספת. לחץ על אישור להמשיך.</Error401>
-<Error404>שגיאה 404: המקור המבוקש לא נמצא. אם שגיאה זו נמשכת, בדוק אם שירות תוכנות העזר של האטריק פעיל.</Error404>
-<Error0>.שגיאה 0: לא מחובר לאינטרנט</Error0>
 <Error>שגיאה</Error>
 <ServerON>מחובר</ServerON>
 <ServerOFF>מנותק</ServerOFF>
 <ResetToken>(ההרשאה הוסרה. אנא אתחל את התוכנה, או המתן לעידכון הבא (בעוד פחות מדקה</ResetToken>
-<NoHTServer>לא בחרת את שרת ההאטריק אליו אתה מחובר בדפדפן. לחץ כפתור ימני על הרקע -> אפשרויות -> כללי -> מלא את הדף עם מספר השרת</NoHTServer>
-<Error500>שגיאה 500: שגיאה בשרת פנימי של האטריק</Error500>
-<Error503>שגיאה 503: תוכנות עזר של האטריק לא זמינות עקב עומס יתר או שיפוצים</Error503>
-
-<!--Properties-->
+<NoHTServer>לא בחרת את שרת ההאטריק אליו אתה מחובר בדפדפן. לחץ כפתור ימני על הרקע - אפשרויות - כללי - מלא את הדף עם מספר השרת</NoHTServer>
 <MatchesMaximum>!אינך יכול לצפות ביותר מ-20 משחקים</MatchesMaximum>
-<LeagueLiveTable>טבלה חיה</LeagueLiveTable>
 <LeagueRound>סיבוב</LeagueRound>
 <MessageHattrickError>שרת האטריק החזיר שגיאה</MessageHattrickError>
 <MessageAlreadyFriend>כבר נמצא ברשימת החברים</MessageAlreadyFriend>
-<MessageErrorReading>:שגיאה בקריאת מידע מ</MessageErrorReading>
+<MessageErrorReading>שגיאה בקריאת מידע מ</MessageErrorReading>
 <MessageLoginNotSuccessful>התחברות נכשלה</MessageLoginNotSuccessful>
 <TacticPressing>לחץ</TacticPressing>
 <TacticCA>התקפות מתפרצות</TacticCA>
@@ -81,7 +67,7 @@
 <TimeHour>שעה</TimeHour>
 <TimeMinute>דקה</TimeMinute>
 <TimeMin>'</TimeMin>
-<TooltipWindowSound>הפעל\בטל צלילים</TooltipWindowSound>
+<TooltipWindowSound>הפעלבטל צלילים</TooltipWindowSound>
 <TooltipWindowLink>קישור לדף המשחק בהאטריק</TooltipWindowLink>
 <TooltipWindowInfo>הפעל הודעות מידע על אירועים</TooltipWindowInfo>
 <TooltipWindowMaximize>הגדל חלון</TooltipWindowMaximize>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>הזז חבר למעלה</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>הזז חבר למטה</TooltipFriendMoveDown>
 <MenuAddFriend>הוסף חבר </MenuAddFriend>
-<MenuServer>שרת:</MenuServer>
 <EventGoal>שער</EventGoal>
 <EventPenaltyGoal>פנדל: שער</EventPenaltyGoal>
 <EventPenaltyMiss>פנדל: החמצה</EventPenaltyMiss>
 <EventInjury>פציעה</EventInjury>
 <EventRed>כרטיס אדום</EventRed>
-<EventYellow2>כרטיס אדום שני</EventYellow2>
 <EventSideLeft>שמאל</EventSideLeft>
 <EventSideRight>ימין</EventSideRight>
 <EventSideCenter>מרכז</EventSideCenter>
@@ -155,7 +139,7 @@
 <MeteoSpecialQuickRain>(מהיר (-הגנה -הבקעה-</MeteoSpecialQuickRain>
 <YellowNastyPlay>משחק מסוכן</YellowNastyPlay>
 <YellowCheating>חוסר הגינות</YellowCheating>
-<ProgressUpdate>:עידכון הבא</ProgressUpdate>
+<ProgressUpdate>עידכון הבא</ProgressUpdate>
 <ProgressSeconds>ש</ProgressSeconds>
 <RequestServer>ייבא שרת מומלץ</RequestServer>
 <RequestLeagueData>ייבא מידע ליגה</RequestLeagueData>
@@ -167,8 +151,6 @@
 <RequestDetails>ייבא פרטי משחק</RequestDetails>
 <RequestTeam>ייבא משחק על ידי קבוצה</RequestTeam>
 <RequestTeamData>ייבא מידע על קבוצה</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight אפשרויות</WindowTitle>
 <TabGeneral>כללי</TabGeneral>
 <TabMatches>משחקים</TabMatches>
@@ -218,7 +200,7 @@
 <CustomIconsOld>אייקונים מקוריים של לייב-פוקס בחלון המשחק</CustomIconsOld>
 <CustomSounds>צלילים</CustomSounds>
 <CustomSoundsWeather>צליל מזג אוויר בתחילת המשחק</CustomSoundsWeather>
-<CustomSoundsTime>צלילים להתחלה\סיום מחצית</CustomSoundsTime>
+<CustomSoundsTime>צלילים להתחלהסיום מחצית</CustomSoundsTime>
 <CustomSoundsSEW>צלילים לאירועי מזג אוויר</CustomSoundsSEW>
 <CustomSoundsGoal>צלילי לייב-פוקס המקוריים</CustomSoundsGoal>
 <CustomSoundsNoOpGoal>ללא צלילים לשערי היריבה</CustomSoundsNoOpGoal>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>צליל לפציעה של שחקן שלי</PathSoundsMyBoo>
 <PathSoundsOpBoo>צליל לפציעה של שחקן היריבה</PathSoundsOpBoo>
 <PathSoundsWhistleStart>שריקה להתחלת מחצית ראשונה או שנייה</PathSoundsWhistleStart>
-<PathSoundsWhistle2>שריקה לסיום המחצית הראשונה</PathSoundsWhistle2>
-<PathSoundsWhistle3>שריקה לסיום המשחק</PathSoundsWhistle3>
 <PathSoundsWhistle>צליל לכרטיס צהוב או אדום</PathSoundsWhistle>
 <PathSoundsHattrick>צליל לשלושער</PathSoundsHattrick>
 <PathSoundsRestore>שחזר</PathSoundsRestore>
 <PathSoundsPlay>השמע</PathSoundsPlay>
-<PathSoundsNote1>.wav לפני מיקום קובץ השמע בפורמט file:/// הכנס</PathSoundsNote1>
-<PathSoundsNote2>file:///c:\\path\to\the\sound.wav :דוגמה</PathSoundsNote2>
 <LanguageSelect>בחר שפה</LanguageSelect>
 <LanguageNote>שים לב: יש לאתחל את פיירפוקס על מנת שהשינויי יופעל</LanguageNote>
 <ButtonCancel>בטל</ButtonCancel>
 <ButtonOk>אשר</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>HTLiveSight אודות</WindowAboutTitle>
 <TabInfo>מידע</TabInfo>
 <TabTranslators>מתרגמים</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>בעזרתו של</TextHelpOf>
 <TextThanksTo>רוב תודות ל:</TextThanksTo>
 <ButtonClose>סגור</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

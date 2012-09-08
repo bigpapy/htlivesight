@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>Uzstâdîjumi</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Serveris:</MenuServer>
 <MenuDisconnected>Atvienots</MenuDisconnected>
-<MenuOptions>Uzstâdîjumi</MenuOptions>
 <MenuAbout>Par HTLiveSight</MenuAbout>
 <LoginLabel>Pievienoties</LoginLabel>
 <LoginTeamId>Ievadiet savas komandas ID</LoginTeamId>
@@ -22,7 +18,7 @@
 <LoginSpeed>Speed</LoginSpeed>
 <LoginByEvent>Per event</LoginByEvent>
 <LeagueMatches>Lîgas spçles</LeagueMatches>
-<LeagueLiveTable>Aktîvâ grupas tabuls</LeagueLiveTable>
+<LeagueLiveTable>Grupas aktîvâ tabula</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Komanda</LeagueTeam>
 <LeaguePlayed>S</LeaguePlayed>
@@ -37,25 +33,15 @@
 <FriendsTitle>Draugi</FriendsTitle>
 <FriendsRemove>Dzçst</FriendsRemove>
 <FriendsOpen>Atvçrt</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Lai saòemtu pieejas kodu, Jûs tiksiet novirzîts uz CHPP lapu. Lûdzu izslçdziet uznirstoðo logu bloíçtâju vai pievienotjiet HTlivesight izòçmumu sarakstam, lai savienotos ar lapu.</Introduction>
 <Insert>Ievadiet savu pieejas kodu ðeit:</Insert>
 <Ending>HTlivesight ir autorizçts. Spiediet OK, lai pârstartçtu programmu.</Ending>
-<Error401>Kïûda 401: neatïauta pieeja. Jums nepiecieðams saòemt jaunu pieejas kodu. Spiediet OK, lai turpinâtu.</Error401>
-<Error404>Kïûda 404: pieprasîtais resurss netika atrasts. Ja ðî kïûda atkârtojas, iespçjams, ka CHPP pakalpojums ðobrîd nedarbojas.</Error404>
-<Error0>Kïûda 0: Nav interneta savienojuma.</Error0>
 <Error>Kïûda</Error>
 <ServerON>Savienots</ServerON>
 <ServerOFF>Atvienots</ServerOFF>
 <ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
-<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.</NoHTServer>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-
-<!--Properties-->
+<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
 <MatchesMaximum>Nav iespçjams skatîties vairâk kâ 20 spçles!</MatchesMaximum>
-<LeagueLiveTable>Grupas aktîvâ tabula</LeagueLiveTable>
 <LeagueRound>Kârta</LeagueRound>
 <MessageHattrickError>Kïûda Hattrick serverî.</MessageHattrickError>
 <MessageAlreadyFriend>Jau ir Tavs draugs!</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Pârvietot draugu uz augðu</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Pârvietot draugu uz leju</TooltipFriendMoveDown>
 <MenuAddFriend>Draugs</MenuAddFriend>
-<MenuServer>Serveris:</MenuServer>
 <EventGoal>Vârti</EventGoal>
 <EventPenaltyGoal>Realizçts soda sitiens</EventPenaltyGoal>
 <EventPenaltyMiss>Nerealizçts soda sitiens</EventPenaltyMiss>
 <EventInjury>Savainojums</EventInjury>
 <EventRed>Sarkanâ kartîte</EventRed>
-<EventYellow2>Otrâ dzeltenâ kartîte</EventYellow2>
 <EventSideLeft>No kreisâs puses</EventSideLeft>
 <EventSideRight>No labâs puses</EventSideRight>
 <EventSideCenter>No centra</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Saòemt spçles informâciju</RequestDetails>
 <RequestTeam>Pievienot spçli pçc komandas</RequestTeam>
 <RequestTeamData>Saòemt komandas datus</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight uzstâdîjumi</WindowTitle>
 <TabGeneral>Vispârîgi</TabGeneral>
 <TabMatches>Spçles</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Izvçlçties valodu</LanguageSelect>
 <LanguageNote>Piezîme: Pârstartçjiet Firefox, lai izmaiòas stâtos spçkâ.</LanguageNote>
 <ButtonCancel>Atcelt</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Par HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>ar palîdzîbu no</TextHelpOf>
 <TextThanksTo>Liels paldies:</TextThanksTo>
 <ButtonClose>Aizvçrt</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

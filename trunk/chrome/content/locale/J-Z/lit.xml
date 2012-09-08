@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Paleisti</MenuStart>
 <MenuOptions>Nustatymai</MenuOptions>
 <TooltipButton>Spustelėjus atsidaro „HTLiveSight“</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
-<MenuServer>Serveris: </MenuServer>
+<MenuServer>Serveris:</MenuServer>
 <MenuDisconnected>atsijungta</MenuDisconnected>
-<MenuOptions>Nustatymai</MenuOptions>
 <MenuAbout>Apie „HTLiveSight“</MenuAbout>
 <LoginLabel>Prisijungti</LoginLabel>
 <LoginTeamId>Įveskite komandos ID</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Draugai</FriendsTitle>
 <FriendsRemove>Pašalinti</FriendsRemove>
 <FriendsOpen>Parsisiųsti</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Programai reikalingas autorizavimo kodas, kurį gausite prisijungę prie Hattrick atsivėrusiame lange. Jei langas neatsidaro, patikrinkite, ar naršyklė neblokuoja iškiliųjų langų, ir leiskite „HTLiveSight“ juos atidaryti.</Introduction>
 <Insert>Nukopijuokite autorizacijos kodą:</Insert>
 <Ending>HTLiveSight sėkmingai autorizuotas. Perkraukite įskiepį.</Ending>
-<Error401>Klaida Nr. 401: neautorizuota. Bandykite dar kartą.</Error401>
-<Error404>Klaida Nr. 404: nerasta. Jei klaida nepranyksta, CHPP sąsaja gali būti sutrikusi.</Error404>
-<Error0>Klaida Nr. 0: nėra interneto ryšio.</Error0>
 <Error>Klaida</Error>
 <ServerON>prisijungta</ServerON>
 <ServerOFF>atsijungta</ServerOFF>
 <ResetToken>Autorizacijos kodas ištrintas. Perkraukite HTLS arba laukite kito atnaujinimo (greičiau nei po minutės).</ResetToken>
-<NoHTServer>Nepasirinkote Hattrick serverio, prie kurio esate prisijungę. Paspaudę dešinį pelės mygtuką ant fono pasirinkite „Nustatymai -> Bendri“ ir įveskite Hattrick serverį.</NoHTServer>
-<Error500>Klaida Nr. 500: vidinė Hattrick serverio klaida</Error500>
-<Error503>Klaida Nr. 503: CHPP sąsaja nepasiekiama (perdidelė apkrova arba išjungta)</Error503>
-
-<!--Properties-->
+<NoHTServer>Nepasirinkote Hattrick serverio, prie kurio esate prisijungę. Paspaudę dešinį pelės mygtuką ant fono pasirinkite „Nustatymai - Bendri“ ir įveskite Hattrick serverį.</NoHTServer>
 <MatchesMaximum>Negalima stebėti daugiau nei 20 rungtynių!</MatchesMaximum>
-<LeagueLiveTable>Lentelė gyvai</LeagueLiveTable>
 <LeagueRound>Turas:</LeagueRound>
 <MessageHattrickError>Hattrick serveryje įvyko klaida</MessageHattrickError>
 <MessageAlreadyFriend>jau draugų sąraše!</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Pakelti</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Nuleisti</TooltipFriendMoveDown>
 <MenuAddFriend>Į draugų sąrašą</MenuAddFriend>
-<MenuServer>Serveris:</MenuServer>
 <EventGoal>Įvartis</EventGoal>
 <EventPenaltyGoal>Baudinys: įvartis</EventPenaltyGoal>
 <EventPenaltyMiss>Baudinys: nepataikė</EventPenaltyMiss>
 <EventInjury>Trauma</EventInjury>
 <EventRed>Raudona kortelė</EventRed>
-<EventYellow2>Antra geltona kortelė</EventYellow2>
 <EventSideLeft>Kairė</EventSideLeft>
 <EventSideRight>Dešinė</EventSideRight>
 <EventSideCenter>Centras</EventSideCenter>
@@ -156,7 +140,7 @@
 <YellowNastyPlay>Nešvarus žaidimas</YellowNastyPlay>
 <YellowCheating>Sukčiavimas</YellowCheating>
 <ProgressUpdate>Kitas atnaujinimas po: </ProgressUpdate>
-<ProgressSeconds> s</ProgressSeconds>
+<ProgressSeconds>s</ProgressSeconds>
 <RequestServer>Gauti rekomenduojamą serverį</RequestServer>
 <RequestLeagueData>Parsisiųsti lygos duomenis</RequestLeagueData>
 <RequestLeagueGames>Parsisiųsti lygos rungtynes</RequestLeagueGames>
@@ -167,8 +151,6 @@
 <RequestDetails>Parsisiųsti rungtynių duomenis</RequestDetails>
 <RequestTeam>Parsisiųsti tam tikros komandos rungtynes</RequestTeam>
 <RequestTeamData>Parsisiųsti komandos duomenis</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>„HTLiveSight“ nustatymai</WindowTitle>
 <TabGeneral>Bendri</TabGeneral>
 <TabMatches>Rungtynės</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Mano žaidėjo trauma</PathSoundsMyBoo>
 <PathSoundsOpBoo>Varžovo žaidėjo trauma</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Kėlinio pradžia</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Pirmojo kėlinio pabaiga</PathSoundsWhistle2>
-<PathSoundsWhistle3>Rungtynių pabaiga</PathSoundsWhistle3>
 <PathSoundsWhistle>Gauta kortelė</PathSoundsWhistle>
 <PathSoundsHattrick>Hat-trick'as</PathSoundsHattrick>
 <PathSoundsRestore>Atstatyti</PathSoundsRestore>
 <PathSoundsPlay>Groti</PathSoundsPlay>
-<PathSoundsNote1>Pridėkite „file:///“ prieš .wav rinkmenos adresą</PathSoundsNote1>
-<PathSoundsNote2>Pavyzdžiui: file:///c:\\kelias\iki\garso.wav</PathSoundsNote2>
 <LanguageSelect>Pasirinkti kalbą</LanguageSelect>
 <LanguageNote>Pastaba: pakeitus būtina perkrauti „HTLiveSight“.</LanguageNote>
 <ButtonCancel>Atšaukti</ButtonCancel>
 <ButtonOk>Gerai</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Apie „HTLiveSight“</WindowAboutTitle>
 <TabInfo>Apie</TabInfo>
 <TabTranslators>Vertėjai</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>Pagelbėjo</TextHelpOf>
 <TextThanksTo>Padėka:</TextThanksTo>
 <ButtonClose>Uždaryti</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

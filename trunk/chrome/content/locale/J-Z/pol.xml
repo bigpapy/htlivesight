@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Opcje</MenuOptions>
+<MenuOptions>Ustawienia</MenuOptions>
 <TooltipButton>Otwórz menu HTLiveSight</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Serwer:</MenuServer>
 <MenuDisconnected>Rozłączony</MenuDisconnected>
-<MenuOptions>Ustawienia</MenuOptions>
 <MenuAbout>O HTLiveSight</MenuAbout>
 <LoginLabel>Logowanie</LoginLabel>
 <LoginTeamId>Wprowadź ID twojej drużyny</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Znajomi</FriendsTitle>
 <FriendsRemove>Usuń</FriendsRemove>
 <FriendsOpen>Otwórz</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Zostaniesz przekierowany na stronę CHPP, gdzie otrzymasz kod autoryzacji. Jeśli nie, proszę wyłącz blokadę wyskakujących okienek w przeglądarce, lub dodaj HTLiveSight do listy wyjątków.</Introduction>
 <Insert>Wprowadź tutaj swój kod autoryzacji.:</Insert>
 <Ending>Dokonano autoryzacji HTLiveSight. Kliknij OK, żeby zrestartować aplikację.</Ending>
-<Error401>Błąd 401: Błąd autoryzacji. Musisz ponownie dokonać autoryzacji. Kliknij OK, żeby przejść dalej.</Error401>
-<Error404>Błąd 404: Zasób którego szukałeś nie został znaleziony. Jeśli ten błąd się powtarza, sprawdź w Informacjach Systemowych stan CHPP.</Error404>
-<Error0>Błąd 0: Brak połączenia z Interneterm.</Error0>
 <Error>Błąd</Error>
 <ServerON>Połączony</ServerON>
 <ServerOFF>Niepołączony</ServerOFF>
 <ResetToken>Kod autoryzacji został usunięty. Zrestartuj aplikację, albo poczekaj na następne uaktualnienie (normalnie mniej niż minutę).</ResetToken>
 <NoHTServer>Nie wybrałeś serwera, na którym jesteś zalogowany w Hattricku. Kliknij prawym przyciskiem myszy w tle i wybierz opcje, ogólne, żeby ustalić poprawny numer serwera.</NoHTServer>
-<Error500>Błąd 500: Wewnętrzny błąd serwera</Error500>
-<Error503>Błąd 503: Usułga CHPP jest niedostępna (usługa przeciążona lub planowe wyłączenie)</Error503>
-
-<!--Properties-->
 <MatchesMaximum>Nie możesz śledzić więcej niż 20 meczów!</MatchesMaximum>
-<LeagueLiveTable>Tabela</LeagueLiveTable>
 <LeagueRound>Kolejka</LeagueRound>
 <MessageHattrickError>Serwer Hattricka zwrócił błąd</MessageHattrickError>
 <MessageAlreadyFriend>Ten znajomy jest już na liście przyjaciół</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Przesuń znajomego wyżej</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Przesuń znajomego niżej</TooltipFriendMoveDown>
 <MenuAddFriend>Dodaj jako znajomego</MenuAddFriend>
-<MenuServer>Serwer:</MenuServer>
 <EventGoal>GOL</EventGoal>
 <EventPenaltyGoal>Karny: GOL</EventPenaltyGoal>
 <EventPenaltyMiss>Karny: PUDŁO</EventPenaltyMiss>
 <EventInjury>Kontuzja</EventInjury>
 <EventRed>Czerwona kartka</EventRed>
-<EventYellow2>Druga żółta kartka</EventYellow2>
 <EventSideLeft>lewa</EventSideLeft>
 <EventSideRight>prawa</EventSideRight>
 <EventSideCenter>środek</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Pobieram szczegóły meczu</RequestDetails>
 <RequestTeam>Pobieram mecz po team id</RequestTeam>
 <RequestTeamData>Pobieram dane drużyny</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight - Ustawienia</WindowTitle>
 <TabGeneral>Ogólne</TabGeneral>
 <TabMatches>Mecze</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Dźwięk dla kontuzji w moim zespole</PathSoundsMyBoo>
 <PathSoundsOpBoo>Dźwięk dla kontuzji w zespole rywala</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Dźwięk dla rozpoczęcia pierwszej/drugiej połowy spotkania</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Dźwięk końca pierwszej połowy</PathSoundsWhistle2>
-<PathSoundsWhistle3>Dźwięk końca spotkania</PathSoundsWhistle3>
 <PathSoundsWhistle>Dźwięk żółtej/czerwonej kartki</PathSoundsWhistle>
 <PathSoundsHattrick>Dźwięki Hattricka</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Dodaj file:/// przed lokalizacją pliku w formacie .wav</PathSoundsNote1>
-<PathSoundsNote2>Na przykład: file:///c:\\ścieżka\do\dźwięku.wav</PathSoundsNote2>
 <LanguageSelect>Wybierz język</LanguageSelect>
 <LanguageNote>Uwaga: Musisz zrestartować HTLiveSight, aby zmiany były widoczne</LanguageNote>
 <ButtonCancel>Anuluj</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>O HTLiveSight</WindowAboutTitle>
 <TabInfo>Informajce</TabInfo>
 <TabTranslators>Tłumacze</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>z pomocą</TextHelpOf>
 <TextThanksTo>Podziękowania dla:</TextThanksTo>
 <ButtonClose>Zamknij</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

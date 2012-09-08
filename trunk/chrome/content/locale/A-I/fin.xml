@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>Valinnat</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Palvelin:</MenuServer>
 <MenuDisconnected>ei yhteyttä</MenuDisconnected>
-<MenuOptions>Valinnat</MenuOptions>
 <MenuAbout>Tiedot HTLiveSight</MenuAbout>
 <LoginLabel>Kirjaudu</LoginLabel>
 <LoginTeamId>Insert TeamId of your team</LoginTeamId>
@@ -22,7 +18,7 @@
 <LoginSpeed>Nopeus</LoginSpeed>
 <LoginByEvent>Tapahtumittain</LoginByEvent>
 <LeagueMatches>Sarjaottelut</LeagueMatches>
-<LeagueLiveTable>Live taulukko</LeagueLiveTable>
+<LeagueLiveTable>Live-taulukko</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Joukkue</LeagueTeam>
 <LeaguePlayed>P</LeaguePlayed>
@@ -37,25 +33,15 @@
 <FriendsTitle>Ystävät</FriendsTitle>
 <FriendsRemove>Poista</FriendsRemove>
 <FriendsOpen>Avaa</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Sinut ohjattiin chpp-sivulle saadaksesi valtuutuskoodin. Jos ei, niin poista väliaikaisesti ponnahdusikkunoiden esto tai lisää HTlivesight poikkeuslistalle.</Introduction>
 <Insert>lisää valtuutuskoodisi tähän:</Insert>
 <Ending>HTlivesight on nyt valtuutettu. Klikkaa OK käynnistääksesi ohjelman.</Ending>
-<Error401>Virhe 401: ei valtuutettua pääsyä. Tee valtuutus uudelleen. Klikkaa Ok jatkaaksesi.</Error401>
-<Error404>Virhe 404: haluttua resurssia ei löytynyt. Jos virhe tulee uudelleen, tarkasta onko HT:n CHPP-palvelut poissa käytöstä.</Error404>
-<Error0>Virhe 0: ei yhteyttä internetiin.</Error0>
 <Error>Virhe</Error>
 <ServerON>Yhdistetty</ServerON>
 <ServerOFF>Ei yhdistetty</ServerOFF>
 <ResetToken>Valtuutus poistettu. Käynnistä HTLS uudelleen tai odota seuraavaa päivitykseen (less than 1 minute).</ResetToken>
-<NoHTServer>Et ole valinnut palvelinta, johon olet kirjautunut HT:ssa. Klikkaa taustaa hiiren kakkosnäppäimellä -> asetukset -> yleistä -> lisää palvelimen numero.</NoHTServer>
-<Error500>Virhe 500: sisäinen palvelinvirhe (Hattrick)</Error500>
-<Error503>Virhe 503: CHPP palvelu ei saatavilla (tilapäinen ylikuorma tai ylläpito)</Error503>
-
-<!--Properties-->
+<NoHTServer>Et ole valinnut palvelinta, johon olet kirjautunut HT:ssa. Klikkaa taustaa hiiren kakkosnäppäimellä - asetukset - yleistä - lisää palvelimen numero.</NoHTServer>
 <MatchesMaximum>Et voi katsoa enempää kuin 20 ottelua!</MatchesMaximum>
-<LeagueLiveTable>Live-taulukko</LeagueLiveTable>
 <LeagueRound>Kierros</LeagueRound>
 <MessageHattrickError>Hattrick palvelin palautti virheen.</MessageHattrickError>
 <MessageAlreadyFriend>On jo ystäväsi.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Siirrä ystävä ylös</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Siirrä ystävä alas</TooltipFriendMoveDown>
 <MenuAddFriend>Ystävä</MenuAddFriend>
-<MenuServer>Palvelin:</MenuServer>
 <EventGoal>MAALI</EventGoal>
 <EventPenaltyGoal>Rankkari: MAALI</EventPenaltyGoal>
 <EventPenaltyMiss>Rankkari: EPÄONNISTUI</EventPenaltyMiss>
 <EventInjury>Loukkaantuminen</EventInjury>
 <EventRed>Punainen kortti</EventRed>
-<EventYellow2>Toinen keltainen kortti</EventYellow2>
 <EventSideLeft>vasen</EventSideLeft>
 <EventSideRight>oikea</EventSideRight>
 <EventSideCenter>keskusta</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Hae ottelun tarkemmat tiedot</RequestDetails>
 <RequestTeam>Hae ottelu joukkueella</RequestTeam>
 <RequestTeamData>Hae joukkueen data</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight Asetukset</WindowTitle>
 <TabGeneral>Yleiset</TabGeneral>
 <TabMatches>Ottelut</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Valitse kieli</LanguageSelect>
 <LanguageNote>Huom: Käynnistä Firefox uudelleen.</LanguageNote>
 <ButtonCancel>Peruuta</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>HTLiveSight tiedot</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>apuna</TextHelpOf>
 <TextThanksTo>Suuret kiitokset:</TextThanksTo>
 <ButtonClose>Sulje</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

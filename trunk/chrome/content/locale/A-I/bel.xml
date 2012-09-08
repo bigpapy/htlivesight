@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>Наладкі</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Сервер:</MenuServer>
 <MenuDisconnected>Адлучаны</MenuDisconnected>
-<MenuOptions>Наладкі</MenuOptions>
 <MenuAbout>Пра HTLiveSight</MenuAbout>
 <LoginLabel>Лагін</LoginLabel>
 <LoginTeamId>Увядзіце TeamId Вашае каманды</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Сябры</FriendsTitle>
 <FriendsRemove>Выдаліць</FriendsRemove>
 <FriendsOpen>Адчыніць</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Вы былі перанакіраваныя на старонку chpp, каб атрымаць код аўтарызацыі. Калі не, калі ласка, здыміце, калі ласка, абарону ад pop-up вакон, альбо дадайце HTlivesight у спіс выключэнняў.</Introduction>
 <Insert>увядзіце Ваш код аўтарызацыі:</Insert>
 <Ending>Цяпер HTlivesight аўтарызаваны. Клікніце ОК, каб перазапусціць прыкладанне.</Ending>
-<Error401>Памылка 401: неаўтарызаваны доступ. Вам трэба зноўку аўтарызавацца. Клікніце ОК, каб працягнуць.</Error401>
-<Error404>Памылка 404: запытаны рэсур не можа быць знойдзены. Калі гэтая памылка ўзнікла не ў першы раз, праверце, можа, штось сталася з chpp-сэрвісам.</Error404>
-<Error0>Памылка 0: няма падлучэння да інтэрнэту.</Error0>
 <Error>Памылка</Error>
 <ServerON>Падлучаны</ServerON>
 <ServerOFF>Адлучаны</ServerOFF>
 <ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
-<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.</NoHTServer>
-<Error500>Памылка 500: internal server error (of Hattrick)</Error500>
-<Error503>Памылка 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-
-<!--Properties-->
+<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
 <MatchesMaximum>Нельга глядзець больш за 20 матчаў!</MatchesMaximum>
-<LeagueLiveTable>Жывая табліца</LeagueLiveTable>
 <LeagueRound>Тур</LeagueRound>
 <MessageHattrickError>Сервер Hattrick вярнуў памылку.</MessageHattrickError>
 <MessageAlreadyFriend>Ужо Ваш сябр.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Перасунуць сябра вышэй</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Перасунуць сябра ніжэй</TooltipFriendMoveDown>
 <MenuAddFriend>Сябр</MenuAddFriend>
-<MenuServer>Сервер:</MenuServer>
 <EventGoal>ГОЛ</EventGoal>
 <EventPenaltyGoal>Пенальці: ГОЛ</EventPenaltyGoal>
 <EventPenaltyMiss>Пенальці: ПРОМАХ</EventPenaltyMiss>
 <EventInjury>Траўма</EventInjury>
 <EventRed>Чырвоная картка</EventRed>
-<EventYellow2>Другая жоўтая картка</EventYellow2>
 <EventSideLeft>злева</EventSideLeft>
 <EventSideRight>справа</EventSideRight>
 <EventSideCenter>па цэнтры</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Атрымаць справаздачу па матчы</RequestDetails>
 <RequestTeam>Атрымаць матч па камандзе</RequestTeam>
 <RequestTeamData>Атрымаць дадзеныя каманды</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight Наладкі</WindowTitle>
 <TabGeneral>Агульныя</TabGeneral>
 <TabMatches>Матчы</TabMatches>
@@ -190,9 +172,9 @@
 <MatchesHours>гадзін таму.</MatchesHours>
 <MatchesFriends>Сябры</MatchesFriends>
 <MatchesGetFriends>Атрымаць матчы сяброў</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Аўтары галоў</MatchesScorers>
 <ScorersList>Спіс аўтараў галоў уверсе</ScorersList>
-<MatchesHeader>Header</MatchesHeader>
 <MatchesBooked>Booked</MatchesBooked>
 <BookedList>List booked in header</BookedList>
 <MatchesSentOff>Sent off</MatchesSentOff>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Абярыце мову</LanguageSelect>
 <LanguageNote>Заўвага: Перазапусціце Firefox, каб убачыць эфект.</LanguageNote>
 <ButtonCancel>Адмена</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Пра HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>З дапамогай</TextHelpOf>
 <TextThanksTo>Вялікі дзякуй:</TextThanksTo>
 <ButtonClose>Зачыніць</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,5 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
+
 </Htlivesight>

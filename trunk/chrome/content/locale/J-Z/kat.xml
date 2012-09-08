@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>ოფცია</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>სერვერი:</MenuServer>
 <MenuDisconnected>გათიშული</MenuDisconnected>
-<MenuOptions>ოფცია</MenuOptions>
 <MenuAbout>HTLiveSight-ის შესახებ</MenuAbout>
 <LoginLabel>ლოჯინი</LoginLabel>
 <LoginTeamId>შეიყვანეთ თქვენი გუნდის საიდენტიფიკაციო ნომერი (TeamId)</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>ამხანაგური</FriendsTitle>
 <FriendsRemove>წაშლა</FriendsRemove>
 <FriendsOpen>გახსნა</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>ხდება თქვენი გადამისამართება chpp გვერდზე ავტორიზაციის კოდის მისაღებად. წარუმატებლობის შემთხვევაში გთხოვთ დროებით გათიშოთ თქვენს ბრაუზერში პოპაპის ბლოკირება ან ჩასვათ HTlivesight გამონაკლისების სიაში</Introduction>
 <Insert>შეიყვანეთ თქვენი ავტორიზაციის კოდი:</Insert>
 <Ending>HTlivesight ავტორიზებულია. დააწექით OK ღილაკს პროგრამის გადასატვირთად</Ending>
-<Error401>შეცდომა 401: არაავტორიზებული წვდომის მცდელობა. გთხოვთ გაიაროთ ავტორიზაცია თავიდან. გასაგრძელებლად დააწექით OK ღილაკს</Error401>
-<Error404>შეცდომა 404: მოთხოვნილი რესურსი არ იძებნება. ამ შეცდომის განმეორების შემთხვევაში შეამოწმეთ გაშვებულია თუ არა chpp სერვისი</Error404>
-<Error0>შეცდომა 0: კავშირი ინტერნეტთან არ მყარდება</Error0>
 <Error>შეცდომა</Error>
 <ServerON>კავშირი დამყარებულია</ServerON>
 <ServerOFF>კავშირი გაწყვეტილია</ServerOFF>
 <ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
-<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.</NoHTServer>
-<Error500>შეცდომა 500: internal server error (of Hattrick)</Error500>
-<Error503>შეცდომა 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-
-<!--Properties-->
+<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
 <MatchesMaximum>20 მატჩზე მეტის ნახვა ერთდროულად არ შეიძლება!</MatchesMaximum>
-<LeagueLiveTable>ცოცხალი მაგიდა</LeagueLiveTable>
 <LeagueRound>რაუნდი</LeagueRound>
 <MessageHattrickError>შეცდომა სერვერთან.</MessageHattrickError>
 <MessageAlreadyFriend>უკვე თქვენი მეგობარია.</MessageAlreadyFriend>
@@ -69,7 +55,7 @@
 <TacticLongShots>შორეული დარტყმა</TacticLongShots>
 <TimeFirstHalf>1 ნახევარი</TimeFirstHalf>
 <TimeHalfTime>შესვენება</TimeHalfTime>
-<TimeSecondHalf> ნახევარი</TimeSecondHalf>
+<TimeSecondHalf>ნახევარი</TimeSecondHalf>
 <TimeExtraTime>დამატებითი დრო</TimeExtraTime>
 <TimePenalties>პენალტები</TimePenalties>
 <TimeFinish>დასრულებული</TimeFinish>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>ზემოთ</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>ქვემოთ</TooltipFriendMoveDown>
 <MenuAddFriend>მეგობარი</MenuAddFriend>
-<MenuServer>სერვერი:</MenuServer>
 <EventGoal>გოოლი</EventGoal>
 <EventPenaltyGoal>Penalty: გოოლი</EventPenaltyGoal>
 <EventPenaltyMiss>Penalty: არ გატანილა</EventPenaltyMiss>
 <EventInjury>დაშავება</EventInjury>
 <EventRed>წითელი ბარათი</EventRed>
-<EventYellow2>მეორე ყვითელი ბარათი</EventYellow2>
 <EventSideLeft>მარცხენა</EventSideLeft>
 <EventSideRight>მარჯვენა</EventSideRight>
 <EventSideCenter>ცენტრი</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>მატჩი დაწვრილებით</RequestDetails>
 <RequestTeam>მატჩი გუნდის მიხედვით</RequestTeam>
 <RequestTeamData>გუნდის ინფორმაცია</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight ოფცია</WindowTitle>
 <TabGeneral>მთავარი</TabGeneral>
 <TabMatches>მატჩები</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>ენის არჩევა</LanguageSelect>
 <LanguageNote>შენიშვნა: ცვლილების შეტანისთვის საჭიროა HTLiveSight  გადატვირთვა.</LanguageNote>
 <ButtonCancel>გაუქმება</ButtonCancel>
 <ButtonOk>კარგი</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>HTLiveSight-ის შესახებ</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>დახმარებით</TextHelpOf>
 <TextThanksTo>დიდი მადლობა:</TextThanksTo>
 <ButtonClose>დახურვა</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

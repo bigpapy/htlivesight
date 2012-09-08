@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>الخيارات</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>الخادم:</MenuServer>
 <MenuDisconnected>قطع الاتصال</MenuDisconnected>
-<MenuOptions>الخيارات</MenuOptions>
 <MenuAbout>HTLiveSight عن</MenuAbout>
 <LoginLabel>تسجيل دخول</LoginLabel>
 <LoginTeamId>ادخل رقم فريقك</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>الاصدقاء</FriendsTitle>
 <FriendsRemove>حذف</FriendsRemove>
 <FriendsOpen>فتح</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>سوف يتم إعادة توجيهك الى صفحة اخرى للحصول على كود التصريح، من فضلك اغلق مانعات الظهور أو قم بمنح الاذن للبرنامج في قائمة الاستثناءات.</Introduction>
 <Insert>أدخل كود التصريح هنا:</Insert>
 <Ending>تم الان منح التصريح للبرنامج. اضغط موافق لاعادة تشغيل البرنامج.</Ending>
-<Error401>خطأ 401: دخول غير مصرح به. عليك الحصول على كود تصريح جديد. اضغط موافق للمتابعة.</Error401>
-<Error404>خطأ 404: لم يتم ايجاد المصدر المطلوب. اذا ظهر هذا الخطأ مجددا فإن خدمة برامج هاتريك معطلة.</Error404>
-<Error0>خطأ 0: لا يوجد اتصال بالانترنت.</Error0>
 <Error>Error</Error>
 <ServerON>Connected</ServerON>
 <ServerOFF>تم قطع الاتصال</ServerOFF>
 <ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
-<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.</NoHTServer>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-
-<!--Properties-->
+<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
 <MatchesMaximum>لا يمكن مشاهدة اكثر من 20 مباراة!</MatchesMaximum>
-<LeagueLiveTable>الجدول المباشر</LeagueLiveTable>
 <LeagueRound>الجولة</LeagueRound>
 <MessageHattrickError>يوجد خطأ في خادم هاتريك</MessageHattrickError>
 <MessageAlreadyFriend>إنه صديق فعلاً</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>تحريك الصديق الى الاعلى</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>تحريك الصديق الى الاسفل</TooltipFriendMoveDown>
 <MenuAddFriend>صديق</MenuAddFriend>
-<MenuServer>الخادم:</MenuServer>
 <EventGoal>هدف</EventGoal>
 <EventPenaltyGoal>ضربة جزاء: هدف</EventPenaltyGoal>
 <EventPenaltyMiss>ضربة جزاء: ضائعة</EventPenaltyMiss>
 <EventInjury>إصابة</EventInjury>
 <EventRed>بطاقة حمراء</EventRed>
-<EventYellow2>بطاقة صفراء ثانية</EventYellow2>
 <EventSideLeft>يسار</EventSideLeft>
 <EventSideRight>يمين</EventSideRight>
 <EventSideCenter>وسط</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>الحصول على تفاصيل المباراة</RequestDetails>
 <RequestTeam>الحصول على مباريات الفريق</RequestTeam>
 <RequestTeamData>الحصول على بيانات الفريق</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight خيارات</WindowTitle>
 <TabGeneral>خيارات عامة</TabGeneral>
 <TabMatches>المباريات</TabMatches>
@@ -190,9 +172,9 @@
 <MatchesHours>.ساعات</MatchesHours>
 <MatchesFriends>الاصدقاء</MatchesFriends>
 <MatchesGetFriends>الحصول على مباريات الاصدقاء</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>المسجلين</MatchesScorers>
 <ScorersList>قائمة المسجلين بالرأس</ScorersList>
-<MatchesHeader>Header</MatchesHeader>
 <MatchesBooked>Booked</MatchesBooked>
 <BookedList>List booked in header</BookedList>
 <MatchesSentOff>Sent off</MatchesSentOff>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>اختار اللغة</LanguageSelect>
 <LanguageNote>ملحوظة: أعد تشغيل المتصفح لتطبيق التغييرات</LanguageNote>
 <ButtonCancel>الغاء</ButtonCancel>
 <ButtonOk>نعم</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>HTLiveSight عن</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -268,9 +244,8 @@
 <TextCreatedBy>صنع بواسطة</TextCreatedBy>
 <TextDevelopedBy>طوٍر بواسطة</TextDevelopedBy>
 <TextHelpOf>بمساعدة من</TextHelpOf>
-<TextThanksTo>:شكرا جزيلا لكل من</TextThanksTo>
+<TextThanksTo>شكرا جزيلا لكل من</TextThanksTo>
 <ButtonClose>اغلاق</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

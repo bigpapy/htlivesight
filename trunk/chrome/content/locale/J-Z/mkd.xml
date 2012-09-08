@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>Опции</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Сервер:</MenuServer>
 <MenuDisconnected>дисконектиран</MenuDisconnected>
-<MenuOptions>Опции</MenuOptions>
 <MenuAbout>За HTLiveSight</MenuAbout>
 <LoginLabel>Најавување</LoginLabel>
 <LoginTeamId>Внеси TeamId на твојот тим</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Пријатели</FriendsTitle>
 <FriendsRemove>Отстрани</FriendsRemove>
 <FriendsOpen>Отвори</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Редиректирани сте на CHPP страната за да добиете авторизациски код. Во спротивно, привремено исклчето го pop-up блокерот или додадете го HTlivesight листата на исклучоци.</Introduction>
 <Insert>внесето го Вашиот авторизациски код тука:</Insert>
 <Ending>HTlivesight сега е авторизиран. Притиснете OK за да се рестартира апликацијата.</Ending>
-<Error401>Грешка 401: неавторизиран влез. Мора повторно да добиете авторизација. Притиснете ok за да продолжите.</Error401>
-<Error404>Грешка 404: бараниот ресурс не е пронајден. Ако оваа грешка се појави повторно проверете дали CHPP сервисот работи.</Error404>
-<Error0>Грешка 0: не сте поврзани на интернет.</Error0>
 <Error>Грешка</Error>
 <ServerON>Конектиран</ServerON>
 <ServerOFF>Дисконектиран</ServerOFF>
 <ResetToken>Авторизацискиот код е избришан. Рестартијате го HTLS или почекајте го следното ажурирање (less than 1 minute).</ResetToken>
-<NoHTServer>Не го избра точниот Hattrick сервер на кој си најавен во моментот, десен клик било каде на позадината и одбери -> опции -> општо и поставете го точниот Hattrick сервер.</NoHTServer>
-<Error500>Грешка 500: интерна сервер грешка (на Hattrick)</Error500>
-<Error503>Грешка 503: CHPP сервисот е недостапен (привремено реоптоварување или одржување)</Error503>
-
-<!--Properties-->
+<NoHTServer>Не го избра точниот Hattrick сервер на кој си најавен во моментот, десен клик било каде на позадината и одбери - опции - општо и поставете го точниот Hattrick сервер.</NoHTServer>
 <MatchesMaximum>Не може да се гледаат повеќе од 20 натпревари!</MatchesMaximum>
-<LeagueLiveTable>Табела во живо</LeagueLiveTable>
 <LeagueRound>Коло</LeagueRound>
 <MessageHattrickError>Hattrick серверот врати грешка.</MessageHattrickError>
 <MessageAlreadyFriend>Веќе ти е пријател.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Помести го пријателот нагоре</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Помести го пријателот надолу</TooltipFriendMoveDown>
 <MenuAddFriend>Пријател</MenuAddFriend>
-<MenuServer>Сервер:</MenuServer>
 <EventGoal>ГОЛ</EventGoal>
 <EventPenaltyGoal>Пенал: ГОЛ</EventPenaltyGoal>
 <EventPenaltyMiss>Пенал: ПРОМАШУВАЊЕ</EventPenaltyMiss>
 <EventInjury>Повреда</EventInjury>
 <EventRed>Црвен картон</EventRed>
-<EventYellow2>Втор жолт картон</EventYellow2>
 <EventSideLeft>лево</EventSideLeft>
 <EventSideRight>десно</EventSideRight>
 <EventSideCenter>средина</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Земи Деталиу за Натпреварот</RequestDetails>
 <RequestTeam>Земи Натпревар по Тим</RequestTeam>
 <RequestTeamData>Земи Податоци за Тимот</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight Опции</WindowTitle>
 <TabGeneral>Општо</TabGeneral>
 <TabMatches>Натпревари</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Одбери јазик</LanguageSelect>
 <LanguageNote>Потсетување: Рестартирај го Firefox за се случат промените.</LanguageNote>
 <ButtonCancel>Откажи</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>За HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>со помош на</TextHelpOf>
 <TextThanksTo>Голема благодарност до:</TextThanksTo>
 <ButtonClose>Затвори</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

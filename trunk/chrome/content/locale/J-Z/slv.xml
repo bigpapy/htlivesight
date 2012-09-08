@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>Možnosti</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Strežnik:</MenuServer>
 <MenuDisconnected>Ni povezave</MenuDisconnected>
-<MenuOptions>Možnosti</MenuOptions>
 <MenuAbout>O HTLiveSightu</MenuAbout>
 <LoginLabel>Prijava</LoginLabel>
 <LoginTeamId>Vpiši TeamId svoje ekipe</LoginTeamId>
@@ -22,7 +18,7 @@
 <LoginSpeed>Hitrost</LoginSpeed>
 <LoginByEvent>Po dogodku</LoginByEvent>
 <LeagueMatches>Ligaške tekme</LeagueMatches>
-<LeagueLiveTable>Lestvica v živo</LeagueLiveTable>
+<LeagueLiveTable>Lestvica</LeagueLiveTable>
 <LeaguePosition>št. </LeaguePosition>
 <LeagueTeam>Ekipa</LeagueTeam>
 <LeaguePlayed>I</LeaguePlayed>
@@ -37,25 +33,15 @@
 <FriendsTitle>Prijateljske ekipe</FriendsTitle>
 <FriendsRemove>Odstrani</FriendsRemove>
 <FriendsOpen>Odpri</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Prikazala se bo chpp stran za pridobitev kode za pooblastilo. Če do tega ne pride, začasno deaktiviraj blokado pop-upov ali dodaj HTlivesight v seznam izjem.</Introduction>
 <Insert>Vpiši kodo za pooblastilo:</Insert>
 <Ending>HTLivesight je zdaj pooblaščen. Klikni na OK za ponovni zagon aplikacije.</Ending>
-<Error401>Napaka401: nedovoljen dostop. Moraš ponovno pooblastiti aplikacijo. Klikni na OK za nadaljevanje programa.</Error401>
-<Error404>Napaka404: vsebina ni na voljo. Če se napaka ponavlja, preveri, ali je chpp izključen.</Error404>
-<Error0>Napaka0: nisi povezan na internet.</Error0>
 <Error>Napaka</Error>
 <ServerON>Povezan</ServerON>
 <ServerOFF>Ni povezave</ServerOFF>
 <ResetToken>Koda pooblastila je bila izbrisana. Ponovno zaženi HTLS ali počakaj na naslednjo posodobitev (less than 1 minute).</ResetToken>
-<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.</NoHTServer>
-<Error500>Napaka 500: notranja napaka strežnika (Hattrickovega))</Error500>
-<Error503>Napaka 503: CHPP ni na voljo (začasna prezasedenost ali vzdrževanje)</Error503>
-
-<!--Properties-->
+<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
 <MatchesMaximum>Ne moreš spremljati več kot 20 tekem!</MatchesMaximum>
-<LeagueLiveTable>Lestvica</LeagueLiveTable>
 <LeagueRound>Krog</LeagueRound>
 <MessageHattrickError>Strežnik Hattricka javlja napako.</MessageHattrickError>
 <MessageAlreadyFriend>Je že na seznamu tvojih prijateljev</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Premakni prijatelja navzgor</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Premakni prijatelja navzdol</TooltipFriendMoveDown>
 <MenuAddFriend>Dodaj prijatelja</MenuAddFriend>
-<MenuServer>Strežnik:</MenuServer>
 <EventGoal>GOL</EventGoal>
 <EventPenaltyGoal>Enajstmetrovka: GOL</EventPenaltyGoal>
 <EventPenaltyMiss>Enajstmetrovka: BREZ GOLA</EventPenaltyMiss>
 <EventInjury>Poškodba</EventInjury>
 <EventRed>Rdeč karton</EventRed>
-<EventYellow2>Drugi rumeni karton</EventYellow2>
 <EventSideLeft>leva</EventSideLeft>
 <EventSideRight>desna</EventSideRight>
 <EventSideCenter>center</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Pridobi detajle tekme</RequestDetails>
 <RequestTeam>Pridobi tekmo za ekipo</RequestTeam>
 <RequestTeamData>Pridobi podatke ekipe</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>Možnosti HTLiveSighta</WindowTitle>
 <TabGeneral>Splošne</TabGeneral>
 <TabMatches>Tekme</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Zvok za poškodbo v lastni ekipi</PathSoundsMyBoo>
 <PathSoundsOpBoo>Zvok za poškodbo v nasprotnikovi ekipi</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Žvižg ob začetku 1./2. polčasa</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Žvižg ob koncu 1. polčasa</PathSoundsWhistle2>
-<PathSoundsWhistle3>Žvižg ob koncu tekme</PathSoundsWhistle3>
 <PathSoundsWhistle>Zvok rumenega/rdečega kartona</PathSoundsWhistle>
 <PathSoundsHattrick>Zvok hattricka</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Izberi jezik</LanguageSelect>
 <LanguageNote>Pozor: Ponovno zaženi Firefox za uveljavitev sprememb.</LanguageNote>
 <ButtonCancel>Pobriši</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>O HTLiveSightu</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>S pomočjo</TextHelpOf>
 <TextThanksTo>Toplo se zahvaljujemo:</TextThanksTo>
 <ButtonClose>Zapri</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>Optiounen</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
 <MenuDisconnected>net verbonnen</MenuDisconnected>
-<MenuOptions>Optiounen</MenuOptions>
 <MenuAbout>Iwwert HTLiveSight</MenuAbout>
 <LoginLabel>Aloggen</LoginLabel>
 <LoginTeamId>Gef d'Veräins-ID vun dengem Veräin an</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Frënn</FriendsTitle>
 <FriendsRemove>weg huelen</FriendsRemove>
 <FriendsOpen>op maachen</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Du gess elo op d'CHPP-Sait geleet fir den "autorisation code" anzeginn. Wann net, w.e.g schalt "pop-up-block" aus (steet normalweis uewen), oder erlaab einfach HTlivesight emmer den Zougang.</Introduction>
 <Insert>gef den Code hei an:</Insert>
 <Ending>Elo huet HTlivesight d'Erlaabnis. Klick op OK, fir d'Applicatioun nei ze starten.</Ending>
-<Error401>Feeler 401: onerlaabten Zougang. Du muss d'Erlaabnis nach engkeier ufroen. Klick OK fir weider ze machen.</Error401>
-<Error404>Feeler 404: D'Sait konnt net fonnt ginn. Wann des Feelermeldung nach eng Kéier optriéd, kuck op d'CHPP-Programmer fonctionnéiren.</Error404>
-<Error0>Feeler 0: keng Connectioun zum Internet.</Error0>
 <Error>Feeler</Error>
 <ServerON>Verbonnen</ServerON>
 <ServerOFF>net verbonnen zum Internet</ServerOFF>
 <ResetToken>Autorisatiouns-Code gouf geläscht. Start den HTLS nei oder ward op de nächsten Update (less than 1 minute).</ResetToken>
-<NoHTServer>Du hues de falschen Hattrick Server gewielt, riets-Klick egal wou --> Optiounen --> Allgemeng an gef dei richteg Hattrick-Server-Nummer an.</NoHTServer>
-<Error500>Feeler 500: internal server error (vun Hattrick)</Error500>
-<Error503>Feeler 503: CHPP service unavailable (kurzfristeg Iwerlaschtung oder Maintenance-Aarbescht)</Error503>
-
-<!--Properties-->
+<NoHTServer>Du hues de falschen Hattrick Server gewielt, riets-Klick egal wou -- Optiounen -- Allgemeng an gef dei richteg Hattrick-Server-Nummer an.</NoHTServer>
 <MatchesMaximum>Méi wei 20 Mätscher kann een net kucken!</MatchesMaximum>
-<LeagueLiveTable>Live Tabell</LeagueLiveTable>
 <LeagueRound>Ronn</LeagueRound>
 <MessageHattrickError>Hattrick server huet ee Feeler gemellt.</MessageHattrickError>
 <MessageAlreadyFriend>Schonn dain Frënd.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Frënd dobäi maachen</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Frënd eweg maachen</TooltipFriendMoveDown>
 <MenuAddFriend>Frënd</MenuAddFriend>
-<MenuServer>Server:</MenuServer>
 <EventGoal>GOAL</EventGoal>
 <EventPenaltyGoal>Eelefmeter: GOAL</EventPenaltyGoal>
 <EventPenaltyMiss>Eelefmeter: VERPASST</EventPenaltyMiss>
 <EventInjury>Verletzt</EventInjury>
 <EventRed>roud Kaart</EventRed>
-<EventYellow2>zweet giel Kaart</EventYellow2>
 <EventSideLeft>lénks</EventSideLeft>
 <EventSideRight>riéts</EventSideRight>
 <EventSideCenter>durch d'Mëtt</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Match Detailer kréien</RequestDetails>
 <RequestTeam>Match vum Veräin kréien</RequestTeam>
 <RequestTeamData>Donnéen vum Veräin kréien</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight Optiounen</WindowTitle>
 <TabGeneral>Allgemeng</TabGeneral>
 <TabMatches>Mätscher</TabMatches>
@@ -190,9 +172,9 @@
 <MatchesHours>Stonnen.</MatchesHours>
 <MatchesFriends>Frënn</MatchesFriends>
 <MatchesGetFriends>Mätscher vun Frënn kréien</MatchesGetFriends>
+<MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Goalgetters</MatchesScorers>
 <ScorersList>Bescht Goalgetters</ScorersList>
-<MatchesHeader>Header</MatchesHeader>
 <MatchesBooked>Booked</MatchesBooked>
 <BookedList>List booked in header</BookedList>
 <MatchesSentOff>Sent off</MatchesSentOff>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Toun fir eege Verletzung</PathSoundsMyBoo>
 <PathSoundsOpBoo>Toun fir Verletzung vum Géigner</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start-Toun vun 1./2. Halbzait</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Schluss-Toun 1. Halschent</PathSoundsWhistle2>
-<PathSoundsWhistle3>Schluss vum Match-Toun</PathSoundsWhistle3>
 <PathSoundsWhistle>Toun fir giel/roud Kaart</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick Toun</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Sprooch wiélen</LanguageSelect>
 <LanguageNote>Notiz: Start Firefox nei fir datt all d'Ännerungen antriéden.</LanguageNote>
 <ButtonCancel>Oofbriéchen</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Iwwert HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>mat der Hellef vun</TextHelpOf>
 <TextThanksTo>Villmols Merci un:</TextThanksTo>
 <ButtonClose>Zou</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

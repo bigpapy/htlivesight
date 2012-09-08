@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>Seçenekler</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Sunucu:</MenuServer>
 <MenuDisconnected>Bağlantı kesildi</MenuDisconnected>
-<MenuOptions>Seçenekler</MenuOptions>
 <MenuAbout>HTLiveSight Hakkında</MenuAbout>
 <LoginLabel>Giriş</LoginLabel>
 <LoginTeamId>Takım numaranızı girin</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Arkadaşlar</FriendsTitle>
 <FriendsRemove>Sil</FriendsRemove>
 <FriendsOpen>Yükle</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Yetki kodunu almak için chpp sayfasına yönlendirildiniz. Gerçekleşmediyse pop up engellemeyi geçici olarak devre dışı bırakın ya da HTlivesight uygulamasını engellenmeyecekler listesine alın.</Introduction>
 <Insert>Yetki kodunuzu girin:</Insert>
 <Ending>HTlivesight onaylandı. Uygulamayı yeniden başlatmak için OK tuşuna basın.</Ending>
-<Error401>Hata 401: Geçersiz giriş. Tekrar yetki almanız gerekiyor. Devam etmek için OK tuşuna basın.</Error401>
-<Error404>Hata 404: Kaynağa erişilemiyor. Eğer hata tekrar ederse chpp ürünün etkin olup olmadığını kontrol edin.</Error404>
-<Error0>Hata 0: İnternet erişimi yok.</Error0>
 <Error>Hata</Error>
 <ServerON>Bağlı</ServerON>
 <ServerOFF>Bağlı değil.</ServerOFF>
 <ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
-<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on -> options -> general and set the correct Hattrick server number.</NoHTServer>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-
-<!--Properties-->
+<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
 <MatchesMaximum>20 Maçtan fazlasını izleyemezsiniz!</MatchesMaximum>
-<LeagueLiveTable>Anlık Puan Tablosu</LeagueLiveTable>
 <LeagueRound>Hafta</LeagueRound>
 <MessageHattrickError>Hattrick sunucusu hata verdi.</MessageHattrickError>
 <MessageAlreadyFriend>Zaten arkadaşınız.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Yukarı</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Aşağı</TooltipFriendMoveDown>
 <MenuAddFriend>Arkadaş</MenuAddFriend>
-<MenuServer>Sunucu:</MenuServer>
 <EventGoal>GOAL</EventGoal>
 <EventPenaltyGoal>Penaltı: GOAL</EventPenaltyGoal>
 <EventPenaltyMiss>Penaltı: KAÇTI</EventPenaltyMiss>
 <EventInjury>Sakatlık</EventInjury>
 <EventRed>Kırmızı kart</EventRed>
-<EventYellow2>İkinci sarı kart</EventYellow2>
 <EventSideLeft>soldan</EventSideLeft>
 <EventSideRight>sağdan</EventSideRight>
 <EventSideCenter>ortadan</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Maç Detaylarını Getir</RequestDetails>
 <RequestTeam>Takıma Göre Maçları Getir</RequestTeam>
 <RequestTeamData>Takım Verisini Getir</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight Seçenekleri</WindowTitle>
 <TabGeneral>Genel</TabGeneral>
 <TabMatches>Maçlar</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Dil seçimi</LanguageSelect>
 <LanguageNote>Not: HTLiveSight'u yeniden başlatmanız gerekir</LanguageNote>
 <ButtonCancel>Vazgeç</ButtonCancel>
 <ButtonOk>Uygula</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>HTLiveSight Hakkında</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>Yardım eden:</TextHelpOf>
 <TextThanksTo>Teşekkürler:</TextThanksTo>
 <ButtonClose>Kapat</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

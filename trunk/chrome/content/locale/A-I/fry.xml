@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
+<MenuOptions>Opsjes</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
 <MenuDisconnected>Ferbining ferbrutsen</MenuDisconnected>
-<MenuOptions>Opsjes</MenuOptions>
 <MenuAbout>Oer HTLiveSight</MenuAbout>
 <LoginLabel>Login</LoginLabel>
 <LoginTeamId>Foegje dyn Team-ID yn</LoginTeamId>
@@ -37,25 +33,15 @@
 <FriendsTitle>Freonen</FriendsTitle>
 <FriendsRemove>Ferwiderje</FriendsRemove>
 <FriendsOpen>Iepen</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Jo wurde omlieden nei de CHPPU pagina om in autorisaajsekoade te ûntfange. As jo net omlieden wurde, sjoch dan earst of pop-up blokkearings utskeakele binne. As jo dernei noch net omlieden wurde pleats dan HTLiveSight yn de utsûnderingslist.</Introduction>
 <Insert>Foegje de krigen autorisaasjekoade hjir yn:</Insert>
 <Ending>HTLiveSight is no autorisjeare. Klik OK om de applikaasje opnij te starte.</Ending>
-<Error401>Foutmelding 401: Net autoriseare tagong. Jo tjinje opnij autorisaasje te ferlienen. Klik OK om fierder te gean.</Error401>
-<Error404>Foutmelding 404: De freege boarne kin net berikke wurde. As dizze meidieling nochris ferskient kontrolearje dan of de CHPP tsjinst op HT aktyf is.</Error404>
-<Error0>Foutmelding 0: Net konnektearre mei ynternet.</Error0>
 <Error>Foutmelding</Error>
 <ServerON>Konnektearre</ServerON>
 <ServerOFF>Net konnektearre</ServerOFF>
 <ResetToken>Autorisaasje is ferwidere. Start HTLS opnij of wachtsje op de folgende update (less than 1 minute).</ResetToken>
-<NoHTServer>Jo ha net de Hattrick server selekteard op welke jo ynlogge binne mei jo browser. Klik rjoschts op eftergrûn -> opsjes -> algemien -> ful it formulier yn mei jou server numer.</NoHTServer>
-<Error500>Foutmelding 500: Ynterne server flater (fan Hattrick)</Error500>
-<Error503>Foutmelding 503: CHPP service unbeskikbar (tydelik oerladen of onderhâld)</Error503>
-
-<!--Properties-->
+<NoHTServer>Jo ha net de Hattrick server selekteard op welke jo ynlogge binne mei jo browser. Klik rjoschts op eftergrûn - opsjes - algemien - ful it formulier yn mei jou server numer.</NoHTServer>
 <MatchesMaximum>Der kinne net mear as 20 wedstryden tagelyk fertoand wurde!</MatchesMaximum>
-<LeagueLiveTable>Aktuele Stán</LeagueLiveTable>
 <LeagueRound>Omgong</LeagueRound>
 <MessageHattrickError>Hattrick server jout in foutmelding.</MessageHattrickError>
 <MessageAlreadyFriend>Dit is al in freon.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Ferpleats freon omheech</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Ferpleats freon omleech</TooltipFriendMoveDown>
 <MenuAddFriend>Freon</MenuAddFriend>
-<MenuServer>Server:</MenuServer>
 <EventGoal>DOELPUNT</EventGoal>
 <EventPenaltyGoal>Strafschop: TREFFER</EventPenaltyGoal>
 <EventPenaltyMiss>Strafschop: MIS</EventPenaltyMiss>
 <EventInjury>Blessuere</EventInjury>
 <EventRed>Rode kaart</EventRed>
-<EventYellow2>Twadde giele</EventYellow2>
 <EventSideLeft>links</EventSideLeft>
 <EventSideRight>rjochts</EventSideRight>
 <EventSideCenter>midden</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Helje wedstriiddetails op</RequestDetails>
 <RequestTeam>Haal wedstriiddata fan team op</RequestTeam>
 <RequestTeamData>Helje teamdata op</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight Opsjes</WindowTitle>
 <TabGeneral>Algemien</TabGeneral>
 <TabMatches>Wedstriiden</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Kieze taal</LanguageSelect>
 <LanguageNote>Noot: HTLiveSight mat op nij starte wurden foardat de wizigings effekt ha.</LanguageNote>
 <ButtonCancel>Annulearje</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Oer HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translators</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>mei help fan</TextHelpOf>
 <TextThanksTo>Mei tank oan:</TextThanksTo>
 <ButtonClose>Slute</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

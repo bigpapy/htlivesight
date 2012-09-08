@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
-<MenuOptions>Setări</MenuOptions>
+<MenuOptions>Opţiuni</MenuOptions>
 <TooltipButton>Click să deschizi meniul HTLiveSight</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
 <MenuDisconnected>Deconectat</MenuDisconnected>
-<MenuOptions>Opţiuni</MenuOptions>
 <MenuAbout>Despre HTLiveSight</MenuAbout>
 <LoginLabel>Conectare</LoginLabel>
 <LoginTeamId>Introdu ID-ul echipei</LoginTeamId>
@@ -22,7 +18,7 @@
 <LoginSpeed>Viteză</LoginSpeed>
 <LoginByEvent>Per event</LoginByEvent>
 <LeagueMatches>Meciuri de ligă</LeagueMatches>
-<LeagueLiveTable>Clasament live</LeagueLiveTable>
+<LeagueLiveTable>Clasament Live</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Echipa</LeagueTeam>
 <LeaguePlayed>J</LeaguePlayed>
@@ -37,25 +33,15 @@
 <FriendsTitle>Prieteni</FriendsTitle>
 <FriendsRemove>Renunţă</FriendsRemove>
 <FriendsOpen>Deschide</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Eşti redirecţionat către pagina CHPP pentru a obţine codul de autorizare. Dacă nu funcţionează, te rog dezactivează blocajul pop-up sau adaugă HTlivesight pe lista excepţiilor.</Introduction>
 <Insert>Introduceţi codul de autorizare aici:</Insert>
 <Ending>Acum HTlivesight este autorizat. Apasă OK pentru a reporni aplicaţia.</Ending>
-<Error401>Eroare 401: acces neautorizat. Trebuie să obţii autorizarea din nou. Apasă ok pentru a continua.</Error401>
-<Error404>Eroare 404: resursa cerută nu a fost gasită. Dacă această eroare apare din nou, verifică dacă serviciul CHPP nu este oprit.</Error404>
-<Error0>Eroare 0: nu eşti conectat la internet.</Error0>
 <Error>Eroare</Error>
 <ServerON>Conectat</ServerON>
 <ServerOFF>Deconectat</ServerOFF>
 <ResetToken>Codul de autorizare a fost şters. Reporneşte HTLS sau aşteaptă următorul update (less than 1 minute).</ResetToken>
-<NoHTServer>Nu ai selectat corect serverul Hattrick pe care eşti logat, click dreapta oriunde pe fundal şi click pe -> opţiuni -> general şi setează numărul corect al serverului Hattrick.</NoHTServer>
-<Error500>Eroare 500: eroare de server intern (din Hattrick)</Error500>
-<Error503>Eroare 503: Serviciul CHPP indisponibil (supraîncărcare temporara sau mententanţă)</Error503>
-
-<!--Properties-->
+<NoHTServer>Nu ai selectat corect serverul Hattrick pe care eşti logat, click dreapta oriunde pe fundal şi click pe - opţiuni - general şi setează numărul corect al serverului Hattrick.</NoHTServer>
 <MatchesMaximum>Nu puteţi vizualiza mai mult de 20 meciuri!</MatchesMaximum>
-<LeagueLiveTable>Clasament Live</LeagueLiveTable>
 <LeagueRound>Etapa</LeagueRound>
 <MessageHattrickError>serverul Hattrick a produs o eroare.</MessageHattrickError>
 <MessageAlreadyFriend>Este deja prietenul tau.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Mută prietenul mai sus</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Mută prietenul mai jos</TooltipFriendMoveDown>
 <MenuAddFriend>Prieten</MenuAddFriend>
-<MenuServer>Server:</MenuServer>
 <EventGoal>GOL</EventGoal>
 <EventPenaltyGoal>Penalty: GOL</EventPenaltyGoal>
 <EventPenaltyMiss>Penalty: RATARE</EventPenaltyMiss>
 <EventInjury>Accidentare</EventInjury>
 <EventRed>Cartonaş roşu</EventRed>
-<EventYellow2>Al doilea cartonaş galben</EventYellow2>
 <EventSideLeft>stânga</EventSideLeft>
 <EventSideRight>dreapta</EventSideRight>
 <EventSideCenter>centru</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Obţine detaliile meciului</RequestDetails>
 <RequestTeam>Obţine meciul după datele echipei</RequestTeam>
 <RequestTeamData>Obţine datele echipei</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>Opţiuni HTLiveSight</WindowTitle>
 <TabGeneral>General</TabGeneral>
 <TabMatches>Meciuri</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Sunet pentru accidentare a propriului jucător</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sunet pentru accidentare a jucătorului advers</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Fluier pentru începutul primei/celei de-a doua reprize</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Fluier de final al primei reprize</PathSoundsWhistle2>
-<PathSoundsWhistle3>Fluierul de final al meciului</PathSoundsWhistle3>
 <PathSoundsWhistle>Sunet pentru cartonaş galben/roşu</PathSoundsWhistle>
 <PathSoundsHattrick>Sunet hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Inserează fişierul:/// înaintea căii sunetului în format .wav</PathSoundsNote1>
-<PathSoundsNote2>Exemplu: fişier:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Selectează limba</LanguageSelect>
 <LanguageNote>Nota: Reporneşte HTLiveSight ca aceasta să aibă efect.</LanguageNote>
 <ButtonCancel>Anulare</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Despre HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Translatori</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>Cu ajutorul lui</TextHelpOf>
 <TextThanksTo>Multe mulţumiri lui:</TextThanksTo>
 <ButtonClose>Închide</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

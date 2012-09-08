@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
 <MenuOptions>Opties</MenuOptions>
 <TooltipButton>Open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
 <MenuDisconnected>Verbinding verbroken</MenuDisconnected>
-<MenuOptions>Opties</MenuOptions>
 <MenuAbout>Over HTLiveSight</MenuAbout>
 <LoginLabel>Login</LoginLabel>
 <LoginTeamId>Voeg je Team-ID in</LoginTeamId>
@@ -22,7 +18,7 @@
 <LoginSpeed>Snelheid</LoginSpeed>
 <LoginByEvent>Per gebeurtenis</LoginByEvent>
 <LeagueMatches>Competitiewedstrijden</LeagueMatches>
-<LeagueLiveTable>Actuele stand</LeagueLiveTable>
+<LeagueLiveTable>Live stand</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Team</LeagueTeam>
 <LeaguePlayed>GSP</LeaguePlayed>
@@ -37,25 +33,15 @@
 <FriendsTitle>Vrienden</FriendsTitle>
 <FriendsRemove>Verwijderen</FriendsRemove>
 <FriendsOpen>Tonen</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Je wordt doorgestuurd naar de CHPP pagina op Hattrick om een autorisatiecode te ontvangen. Indien je niet wordt omgeleid, kijk dan eerst of er pop-up blokkers actief zijn. Schakel deze uit of maak een uitzondering voor HTLiveSight.</Introduction>
 <Insert>Type hier de verkregen autorisatiecode in:</Insert>
 <Ending>HTLiveSight is nu geautoriseerd. Klik OK om de applicatie opnieuw op te starten.</Ending>
-<Error401>Error 401: Ongeautoriseerde toegang. Je zult opnieuw autorisatie moeten verlenen. Klik OK om verder te gaan.</Error401>
-<Error404>Error 404: De gevraagde bron kon niet worden bereikt. Als deze foutmelding nogmaals verschijnt, controleer dan op Hattrick of er problemen zijn met CHPP.</Error404>
-<Error0>Error 0: Geen internettoegang.</Error0>
 <Error>Foutmelding</Error>
 <ServerON>Verbonden</ServerON>
 <ServerOFF>Geen verbinding</ServerOFF>
 <ResetToken>Autorisatiecode is verwijderd. Start LiveSight opnieuw op of wacht op de volgende update (less than 1 minute).</ResetToken>
-<NoHTServer>Je hebt niet de juiste Hattrick server gekozen waar je nu op ingelogd bent. Klik met de rechtermuisknop ergens op de achtergrond en selecteer Opties --> Algemeen om de juiste Hattrick server in te stellen.</NoHTServer>
-<Error500>Error 500: internal server error (van Hattrick)</Error500>
-<Error503>Error 503: CHPP service niet beschikbaar (tijdelijke overbelasting of onderhoud)</Error503>
-
-<!--Properties-->
+<NoHTServer>Je hebt niet de juiste Hattrick server gekozen waar je nu op ingelogd bent. Klik met de rechtermuisknop ergens op de achtergrond en selecteer Opties -- Algemeen om de juiste Hattrick server in te stellen.</NoHTServer>
 <MatchesMaximum>Er kunnen niet meer dan 20 wedstrijden gelijktijdig getoond worden!</MatchesMaximum>
-<LeagueLiveTable>Live stand</LeagueLiveTable>
 <LeagueRound>Ronde</LeagueRound>
 <MessageHattrickError>Hattrick server geeft een foutmelding.</MessageHattrickError>
 <MessageAlreadyFriend>Dit is al een vriend.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Schuif vriend omhoog</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Schuif vriend omlaag</TooltipFriendMoveDown>
 <MenuAddFriend>Vriend</MenuAddFriend>
-<MenuServer>Server:</MenuServer>
 <EventGoal>DOELPUNT</EventGoal>
 <EventPenaltyGoal>Strafschop: RAAK</EventPenaltyGoal>
 <EventPenaltyMiss>Strafschop: MIS</EventPenaltyMiss>
 <EventInjury>Blessure</EventInjury>
 <EventRed>Rode kaart</EventRed>
-<EventYellow2>Tweede gele kaart</EventYellow2>
 <EventSideLeft>links</EventSideLeft>
 <EventSideRight>rechts</EventSideRight>
 <EventSideCenter>centrum</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>Haal wedstrijddetails op</RequestDetails>
 <RequestTeam>Haal wedstrijdgegevens van team op</RequestTeam>
 <RequestTeamData>Haal teamgegevens op</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight Opties</WindowTitle>
 <TabGeneral>Algemeen</TabGeneral>
 <TabMatches>Wedstrijden</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Geluid bij blessure in eigen team</PathSoundsMyBoo>
 <PathSoundsOpBoo>Geluid bij blessure voor de tegenstander</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Fluitsignaal start eerste en tweede helft</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Fluitsignaal einde eerste helft</PathSoundsWhistle2>
-<PathSoundsWhistle3>Fluitsignaal einde wedstrijd</PathSoundsWhistle3>
 <PathSoundsWhistle>Geluid bij gele/rode kaart</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick geluid</PathSoundsHattrick>
 <PathSoundsRestore>Herstellen</PathSoundsRestore>
 <PathSoundsPlay>Afspelen</PathSoundsPlay>
-<PathSoundsNote1>Voeg bestand toe:/// voor het pad naar het geluid in .wav formaat</PathSoundsNote1>
-<PathSoundsNote2>Voorbeeld: file:///c:\\pad\naar\het\geluid.wav</PathSoundsNote2>
 <LanguageSelect>Kies taal</LanguageSelect>
 <LanguageNote>Let op: HTLiveSight moet opnieuw worden opgestart voordat de wijzigingen effect hebben.</LanguageNote>
 <ButtonCancel>Annuleren</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Over HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Vertalers</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>met hulp van</TextHelpOf>
 <TextThanksTo>Met dank aan:</TextThanksTo>
 <ButtonClose>Sluiten</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>

@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
-
-<!--Main-->
+<MenuStart>Pokreni</MenuStart>
+<MenuOptions>Opcije</MenuOptions>
+<TooltipButton>Klikni za otvoriti HTLiveSight meni</TooltipButton>
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
 <MenuDisconnected>odspojeno</MenuDisconnected>
-<MenuOptions>Opcije</MenuOptions>
 <MenuAbout>O HTLiveSight-u</MenuAbout>
 <LoginLabel>Logiranje</LoginLabel>
-<LoginTeamId>Umetni Idmomčadi</LoginTeamId>
+<LoginTeamId>Umetni Id svoje momčadi</LoginTeamId>
 <LoginUsername>Korisničko ime</LoginUsername>
 <LoginRememberMe>Zapamti me</LoginRememberMe>
 <LoginButton>Logiraj se</LoginButton>
@@ -37,25 +33,15 @@
 <FriendsTitle>Prijatelji</FriendsTitle>
 <FriendsRemove>Odstrani</FriendsRemove>
 <FriendsOpen>Otvori</FriendsOpen>
-
-<!--Authorize-->
-<Introduction>Ti si prebacen na CHPP stranicu kako bi dobili autorizacijski kod. Ako ne, molimo vas da uklonite temporarely pop-up blokiranje ili odobri HTlivesight u popis iznimki.</Introduction>
-<Insert>umetnite autorizacijski kod ovdje:</Insert>
+<Introduction>Bit ćete prebačeni na CHPP stranicu kako bi dobili autorizacijski kod. Ako se ne prebaci, molimo vas da na trenutno uklonite pop-up blokiranje ili odobrite HTlivesight u popis iznimki.</Introduction>
+<Insert>Umetnite autorizacijski kod ovdje:</Insert>
 <Ending>Sada je HTlivesight ovlašten. Kliknite OK za ponovno pokretanje aplikacije.</Ending>
-<Error401>Greška 401: neovlaštenog pristupa. Morate dobiti odobrenje opet. Kliknite OK za nastavak.</Error401>
-<Error404>Greška 404: Traženi resurs nije mogao biti pronaðen. Ako se ova greška ponovi pogledaj jeli CHPP servis ugašen.</Error404>
-<Error0>Greška 0: nema konekcije na internet.</Error0>
 <Error>Greška</Error>
 <ServerON>Povezan</ServerON>
 <ServerOFF>Nije povezan</ServerOFF>
-<ResetToken>Autorizacija je uklonjena. Ponovo pokrenite HTLS ili pričekajte sljedeće ažuriranje (less than 1 minute).</ResetToken>
-<NoHTServer>Niste odabrali Hattrick poslužitelja, gdje ste prijavljeni s vašim preglednikom. Desnom tipkom miša kliknite na pozadinu -> Opcije -> Općenito -> ispuniti obrazac s vašim brojem poslužitelja.</NoHTServer>
-<Error500>Greška 500: interna pogreška poslužitelja (na Hattrick)</Error500>
-<Error503>Greška 503: CHPP servis nedostupan (privremeno preopterećenje ili održavanje)</Error503>
-
-<!--Properties-->
+<ResetToken>Autorizacija je uklonjena. Ponovo pokrenite HTLS ili pričekajte sljedeće ažuriranje (manje od 1 minute).</ResetToken>
+<NoHTServer>Niste odabrali Hattrick poslužitelja, gdje ste prijavljeni s vašim preglednikom. Desnom tipkom miša kliknite na pozadinu - Opcije - Općenito - ispuniti obrazac s vašim brojem poslužitelja.</NoHTServer>
 <MatchesMaximum>Ne može se pratiti više od 20 utakmica!</MatchesMaximum>
-<LeagueLiveTable>Tablica uživo</LeagueLiveTable>
 <LeagueRound>Kolo</LeagueRound>
 <MessageHattrickError>Greška na HT serveru.</MessageHattrickError>
 <MessageAlreadyFriend>Već je upisan kao prijatelj.</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Pomakni prema gore</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Pomakni prema dolje</TooltipFriendMoveDown>
 <MenuAddFriend>Prijatelj</MenuAddFriend>
-<MenuServer>Server:</MenuServer>
 <EventGoal>GOL</EventGoal>
 <EventPenaltyGoal>jedanaesterac: GOL</EventPenaltyGoal>
 <EventPenaltyMiss>jedanaesterac: PROMAŠAJ</EventPenaltyMiss>
 <EventInjury>Ozljeda</EventInjury>
 <EventRed>Crveni karton</EventRed>
-<EventYellow2>Drugi žuti karton</EventYellow2>
 <EventSideLeft>s lijeva</EventSideLeft>
 <EventSideRight>s desna</EventSideRight>
 <EventSideCenter>po sredini</EventSideCenter>
@@ -140,7 +124,7 @@
 <ModeratelyInjuried>umjerena ozljeda</ModeratelyInjuried>
 <BadlyInjuried>teška ozljeda</BadlyInjuried>
 <ByHimself>sam</ByHimself>
-<ByFoul>od prekršaj</ByFoul>
+<ByFoul>od prekršaja</ByFoul>
 <ExperiencedForward>iskusan napadač</ExperiencedForward>
 <InexperiencedDefender>neiskusan branić</InexperiencedDefender>
 <WingerHead>krilo: prebaciti za specijalista glavom</WingerHead>
@@ -167,8 +151,6 @@
 <RequestDetails>Dohvati Detalje s Utakmice</RequestDetails>
 <RequestTeam>Dohvati Utakmicu prema Momčadi</RequestTeam>
 <RequestTeamData>Dohvati Momčadske Podatke</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>HTLiveSight Opcije</WindowTitle>
 <TabGeneral>Općenito</TabGeneral>
 <TabMatches>Utakmice</TabMatches>
@@ -190,16 +172,16 @@
 <MatchesHours>sata.</MatchesHours>
 <MatchesFriends>Prijatelji</MatchesFriends>
 <MatchesGetFriends>Dohvati utakmice prijatelja</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Zaglavlje</MatchesHeader>
 <MatchesScorers>Strijelci</MatchesScorers>
 <ScorersList>Lista strijelaca u zaglavlju</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
-<MatchesWindow>Opcije prikaza</MatchesWindow>
+<MatchesBooked>Kartonirani</MatchesBooked>
+<BookedList>Lista kartoniranih u zaglavlju</BookedList>
+<MatchesSentOff>Izbačeni</MatchesSentOff>
+<SentOffList>Lista izbačenih u zaglavlju</SentOffList>
+<MatchesInjured>Ozljeđeni</MatchesInjured>
+<InjuredList>Popis ozljeđenih u zaglavlju</InjuredList>
+<MatchesWindow>Prozor</MatchesWindow>
 <MatchesLines>Broj linija u smanjenom prikazu</MatchesLines>
 <NotifyNotify>Obavijesti</NotifyNotify>
 <NotifyEnableSound>Omogući zvučne obavijesti</NotifyEnableSound>
@@ -235,24 +217,18 @@
 <PathSoundsMyBoo>Zvuk ozljede vlastitog tima</PathSoundsMyBoo>
 <PathSoundsOpBoo>Zvuk za ozljedu protivnikovog tima</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Zvižduk za početak 1pol/2pol</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Zvižduk za kraj prvog poluvrimena</PathSoundsWhistle2>
-<PathSoundsWhistle3>Zvižduk za kraj utakmice</PathSoundsWhistle3>
 <PathSoundsWhistle>Zvuk Žutog/Crvenog kartona</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick zvuk</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
+<PathSoundsRestore>Vrati</PathSoundsRestore>
+<PathSoundsPlay>Sviraj</PathSoundsPlay>
 <LanguageSelect>Odaberi jezik</LanguageSelect>
 <LanguageNote>Napomena: Ponovno pokrenite HTLiveSight radi potvrde ove promjene.</LanguageNote>
 <ButtonCancel>Poništi</ButtonCancel>
 <ButtonOk>Potvrdi</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>O HTLiveSight-u</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabTranslators>Prevoditelji</TabTranslators>
+<TabCredits>Zasluge</TabCredits>
 <MonthJanuary>Sij</MonthJanuary>
 <MonthFebruary>Velj</MonthFebruary>
 <MonthMarch>Ožu</MonthMarch>
@@ -270,62 +246,74 @@
 <TextHelpOf>uz pomoć</TextHelpOf>
 <TextThanksTo>Zahvale:</TextThanksTo>
 <ButtonClose>Zatvori</ButtonClose>
-
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Tournament>Tournament</Tournament>
+<NonExistent>Nikakav</NonExistent>
+<Disastrous>Katastrofalan</Disastrous>
+<Wretched>Očajan</Wretched>
+<Poor>Loš</Poor>
+<Weak>Slab</Weak>
+<Inadequate>Nedovoljan</Inadequate>
+<Passable>Prolazan</Passable>
+<Solid>Dobar</Solid>
+<Excellent>Odličan</Excellent>
+<Formidable>Impresivan</Formidable>
+<Outstanding>Izvanredan</Outstanding>
+<Brilliant>Sjajan</Brilliant>
+<Magnificent>Veličanstven</Magnificent>
+<WorldClass>Svjetski</WorldClass>
+<Supernatural>Natprirodan</Supernatural>
+<Titanic>Titanski</Titanic>
+<ExtraTerrestrial>Izvanzemaljski</ExtraTerrestrial>
+<Mythical>Mitski</Mythical>
+<Magical>Čaroban</Magical>
+<Utopian>Utopijski</Utopian>
+<Divine>Božanski</Divine>
+<VeryHigh>vrlo visok</VeryHigh>
+<High>visok</High>
+<Low>nizak</Low>
+<VeryLow>vrlo nizak</VeryLow>
+<RightDefence>Desna obrana</RightDefence>
+<MiddleDefence>Središnja obrana</MiddleDefence>
+<LeftDefence>Lijeva obrana</LeftDefence>
+<Midfield>Veza</Midfield>
+<RightAttack>Desni napad</RightAttack>
+<MiddleAttack>Središnji napad</MiddleAttack>
+<LeftAttack>Lijevi napad</LeftAttack>
+<IndirectSetPiecesDefence>Indirektni slobodni udarci obrane</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Indirektni slobodni udarci napada</IndirectSetPiecesAttack>
+<TeamAttitude>Stav igrača</TeamAttitude>
+<TacticType>Taktika</TacticType>
+<TacticSkill>Ocjena taktike</TacticSkill>
+<BallPosses>Posjed lopte</BallPosses>
+<SpecialEvent>Specijalni događaj</SpecialEvent>
+<Normal>Normalno</Normal>
+<PIC>Štedimo snagu</PIC>
+<MOTS>Utakmica sezone</MOTS>
+<ColorPicker>Možete odabrati boju na </ColorPicker>
+<EventBackground>Boja pozadine događaja</EventBackground>
+<FriendHome>Domaća (svoja i prijateljska) boja: #</FriendHome>
+<FriendAway>Gostujuća (svoja i prijateljska) boja: #</FriendAway>
+<FoeHome>Boja domaćih protivnika: #</FoeHome>
+<FoeAway>Boja gostujućih protivnika: #</FoeAway>
+<Neutral>Neutralna boja: #</Neutral>
+<EventColorTitle>Boja teksta događaja</EventColorTitle>
+<EventTextColor>Boja teksta događaja: #</EventTextColor>
+<SETextColor>Specijalna boja teksta događaja: #</SETextColor>
+<Colors>Boje</Colors>
+<SchemaTip>Klikni za prikaz početne postave</SchemaTip>
+<StatisticTip>Klikni za prikaz statistike na kraju utakmice</StatisticTip>
+<Youth>Junior</Youth>
+<Senior>Senior</Senior>
+<Tournament>Turnir</Tournament>
+<FreeKicks>Slobodni udarci</FreeKicks>
+<RedCards>Crveni kartoni</RedCards>
+<YellowCards>Žuti kartoni</YellowCards>
+<Injuries>Ozljede</Injuries>
+<Goals>Golovi</Goals>
+<Total>Ukupno</Total>
+<Terraces>Stajaća mjesta</Terraces>
+<Basic>Sjedeća mjesta</Basic>
+<Roof>Natkrivena mjesta</Roof>
+<VIP>Svečane lože</VIP>
+<CrowdinHelp>Pomozi prevoditi! Sa Crowdin je super lako i jako zabavno! Klikni ovdje!</CrowdinHelp>
 
 </Htlivesight>

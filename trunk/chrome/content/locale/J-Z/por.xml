@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 
-<!--Overlay-->
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Iniciar</MenuStart>
 <MenuOptions>Opções</MenuOptions>
 <TooltipButton>Clique para abrir o menu do HTLiveSight</TooltipButton>
-
-<!--Main-->
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Servidor:</MenuServer>
 <MenuDisconnected>desligado</MenuDisconnected>
-<MenuOptions>Opções</MenuOptions>
 <MenuAbout>Acerca do HTLiveSight</MenuAbout>
 <LoginLabel>Ligar</LoginLabel>
 <LoginTeamId>Inserir TeamID da sua equipa</LoginTeamId>
@@ -22,7 +18,7 @@
 <LoginSpeed>Velocidade</LoginSpeed>
 <LoginByEvent>Por evento</LoginByEvent>
 <LeagueMatches>Jogos do Campeonato</LeagueMatches>
-<LeagueLiveTable>Tabela em direto</LeagueLiveTable>
+<LeagueLiveTable>Classificação em direto</LeagueLiveTable>
 <LeaguePosition>Pos</LeaguePosition>
 <LeagueTeam>Equipa</LeagueTeam>
 <LeaguePlayed>J</LeaguePlayed>
@@ -37,25 +33,15 @@
 <FriendsTitle>Amigos</FriendsTitle>
 <FriendsRemove>Remover</FriendsRemove>
 <FriendsOpen>Abrir</FriendsOpen>
-
-<!--Authorize-->
 <Introduction>Está a ser direcionado à página de CHPP para obter o código de autorização. Se não conseguir, autorize as janelas de pop up ou ponha o HTlivesight na lista de exceções.</Introduction>
 <Insert>coloque o seu código de autorização aqui:</Insert>
 <Ending>Agora o HTlivesight está autorizado. Clique em OK para reiniciar a aplicação.</Ending>
-<Error401>Erro 401: acesso não autorizado. Tem que obter autorização de novo. Clique em OK para continuar.</Error401>
-<Error404>Erro 404: o recurso solicitado não foi encontrado. Se este erro aparecer de novo, confira se o serviço CHPP está em baixo.</Error404>
-<Error0>Erro 0: não está conetado à Internet.</Error0>
 <Error>Erro</Error>
 <ServerON>Ligado</ServerON>
 <ServerOFF>Desligado</ServerOFF>
 <ResetToken>O código de autorização foi apagado. Reinicie o HTLS ou aguarde pela próxima atualização (less than 1 minute).</ResetToken>
-<NoHTServer>Não selecionou corretamente o servidor do Hattrick ao qual está atualmente ligado. Clique com o botão direito em qualquer lugar do fundo e clique em -> opções -> geral e coloque corretamente o número do servidor do Hattrick.</NoHTServer>
-<Error500>Erro 500: erro interno no servidor (do Hattrick)</Error500>
-<Error503>Erro 503: serviço CHPP indisponível (sobrecarga temporária ou manutenção)</Error503>
-
-<!--Properties-->
+<NoHTServer>Não selecionou corretamente o servidor do Hattrick ao qual está atualmente ligado. Clique com o botão direito em qualquer lugar do fundo e clique em - opções - geral e coloque corretamente o número do servidor do Hattrick.</NoHTServer>
 <MatchesMaximum>Não pode acompanhar mais de 20 jogos!</MatchesMaximum>
-<LeagueLiveTable>Classificação em direto</LeagueLiveTable>
 <LeagueRound>Jornada</LeagueRound>
 <MessageHattrickError>O servidor do Hattrick devolveu um erro!</MessageHattrickError>
 <MessageAlreadyFriend>Já está na lista de amigos</MessageAlreadyFriend>
@@ -95,13 +81,11 @@
 <TooltipFriendMoveUp>Mover amigo para cima</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Mover amigo para baixo</TooltipFriendMoveDown>
 <MenuAddFriend>Amigo</MenuAddFriend>
-<MenuServer>Servidor:</MenuServer>
 <EventGoal>GOLO</EventGoal>
 <EventPenaltyGoal>Penalti: GOLO</EventPenaltyGoal>
 <EventPenaltyMiss>Penalti: FALHOU</EventPenaltyMiss>
 <EventInjury>Lesão</EventInjury>
 <EventRed>Cartão vermelho</EventRed>
-<EventYellow2>Segundo cartão amarelo</EventYellow2>
 <EventSideLeft>esquerda</EventSideLeft>
 <EventSideRight>direita</EventSideRight>
 <EventSideCenter>centro</EventSideCenter>
@@ -167,8 +151,6 @@
 <RequestDetails>A receber Detalhes do Jogo</RequestDetails>
 <RequestTeam>A receber Jogo por Equipa</RequestTeam>
 <RequestTeamData>A receber Dados da equipa</RequestTeamData>
-
-<!--Settings-->
 <WindowTitle>Opções HTLiveSight</WindowTitle>
 <TabGeneral>Geral</TabGeneral>
 <TabMatches>Jogos</TabMatches>
@@ -235,20 +217,14 @@
 <PathSoundsMyBoo>Som para lesão de nosso jogador</PathSoundsMyBoo>
 <PathSoundsOpBoo>Som para lesão de adversário</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Apito para início da 1ª/2ª parte</PathSoundsWhistleStart>
-<PathSoundsWhistle2>Apito para o fim da 1ª parte</PathSoundsWhistle2>
-<PathSoundsWhistle3>Apito para o fim do jogo</PathSoundsWhistle3>
 <PathSoundsWhistle>Som para cartão Amarelo/Vermelho</PathSoundsWhistle>
 <PathSoundsHattrick>Som de hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .wav format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:\\path\to\the\sound.wav</PathSoundsNote2>
 <LanguageSelect>Seleccionar idioma</LanguageSelect>
 <LanguageNote>Nota: Deve reiniciar o HTLiveSight para as opções terem efeito.</LanguageNote>
 <ButtonCancel>Cancelar</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
-
-<!--About-->
 <WindowAboutTitle>Acerca do HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Tradutores</TabTranslators>
@@ -270,7 +246,6 @@
 <TextHelpOf>com a ajuda de</TextHelpOf>
 <TextThanksTo>Muito obrigado a:</TextThanksTo>
 <ButtonClose>Fechar</ButtonClose>
-
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -326,6 +301,19 @@
 <Colors>Colors</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
+<Youth>Youth</Youth>
+<Senior>Senior</Senior>
 <Tournament>Tournament</Tournament>
+<FreeKicks>Free kicks</FreeKicks>
+<RedCards>Red cards</RedCards>
+<YellowCards>Yellow cards</YellowCards>
+<Injuries>Injuries</Injuries>
+<Goals>Goals</Goals>
+<Total>Total</Total>
+<Terraces>Terraces</Terraces>
+<Basic>Basic seating</Basic>
+<Roof>Seats under roof</Roof>
+<VIP>Seats in VIP boxes</VIP>
+<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
 
 </Htlivesight>
