@@ -261,9 +261,11 @@ htlivesight.DOM = {
     li_.appendChild(a);    
 
     var popup = document.createElement("table");
-    popup.cellSpacing="15px";
-    popup.cellPadding="5px";
-    popup.width="640px";
+    popup.cellSpacing="20px";
+    popup.cellPadding="2px";
+    popup.width="675px";
+    popup.style.marginLeft="auto";
+    popup.style.marginRight="auto";
 //    if (document.getElementById(id) != null){
 //    	var element_to_remove= document.getElementById(id);
  //     popupset.removeChild(element_to_remove);
