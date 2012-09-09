@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
-
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Start</MenuStart>
 <MenuOptions>Opties</MenuOptions>
@@ -172,15 +171,15 @@
 <MatchesHours>uur.</MatchesHours>
 <MatchesFriends>Vrienden</MatchesFriends>
 <MatchesGetFriends>Haal wedstrijden van vrienden op</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Koptekst</MatchesHeader>
 <MatchesScorers>Doelpuntenmakers</MatchesScorers>
 <ScorersList>Laat doelpuntenmakers in de kop zien</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>Geboekte spelers</MatchesBooked>
+<BookedList>Lijst met geboekte spelers in koptekst</BookedList>
+<MatchesSentOff>Weggestuurd</MatchesSentOff>
+<SentOffList>Lijst met weggestuurde spelers in koptekst</SentOffList>
+<MatchesInjured>Geblesseerd</MatchesInjured>
+<InjuredList>Lijst met blessures in koptekst</InjuredList>
 <MatchesWindow>Venster</MatchesWindow>
 <MatchesLines>Regels zichtbaar in minimaal venster</MatchesLines>
 <NotifyNotify>Meldingen</NotifyNotify>
@@ -190,11 +189,11 @@
 <NotifyStatus>Statusbalk schuifvenster</NotifyStatus>
 <OtherAuthorization>Autorisatiecode</OtherAuthorization>
 <OtherReset>Verwijder autorisatie</OtherReset>
-<OtherResetButton>Reset</OtherResetButton>
+<OtherResetButton>Herstel</OtherResetButton>
 <OtherReverse>Wedstrijdgebeurtenissen van beneden naar boven</OtherReverse>
 <OtherReverseNote>Ververs de pagina om de wijzigingen te zien.</OtherReverseNote>
 <OtherEvents>Volgorde van gebeurtenissen</OtherEvents>
-<OtherEventKey>Eventkey</OtherEventKey>
+<OtherEventKey>GebeurtenisSleutel</OtherEventKey>
 <OtherEventKeyNote>Toon de eventkey in het commentaar</OtherEventKeyNote>
 <CustomIcons>Pictogrammen</CustomIcons>
 <CustomIconsOld>Oorspronkelijke Livefox pictogrammen in het wedstrijdscherm</CustomIconsOld>
@@ -246,74 +245,73 @@
 <TextHelpOf>met hulp van</TextHelpOf>
 <TextThanksTo>Met dank aan:</TextThanksTo>
 <ButtonClose>Sluiten</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
-<Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
-<Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-
+<NonExistent>Niet bestaand</NonExistent>
+<Disastrous>Rampzalig</Disastrous>
+<Wretched>Waardeloos</Wretched>
+<Poor>Slecht</Poor>
+<Weak>Zwak</Weak>
+<Inadequate>Matig</Inadequate>
+<Passable>Redelijk</Passable>
+<Solid>Goed</Solid>
+<Excellent>Uitstekend</Excellent>
+<Formidable>Formidabel</Formidable>
+<Outstanding>Uitmuntend</Outstanding>
+<Brilliant>Briljant</Brilliant>
+<Magnificent>Wonderbaarlijk</Magnificent>
+<WorldClass>Wereldklasse</WorldClass>
+<Supernatural>Bovennatuurlijk</Supernatural>
+<Titanic>Reusachtig</Titanic>
+<ExtraTerrestrial>Buitenaards</ExtraTerrestrial>
+<Mythical>Mythisch</Mythical>
+<Magical>Magisch</Magical>
+<Utopian>Utopisch</Utopian>
+<Divine>Goddelijk</Divine>
+<VeryHigh>zeer hoog</VeryHigh>
+<High>hoog</High>
+<Low>laag</Low>
+<VeryLow>zeer laag</VeryLow>
+<RightDefence>Rechterverdediging</RightDefence>
+<MiddleDefence>Centrum verdediging</MiddleDefence>
+<LeftDefence>Linkerverdediging</LeftDefence>
+<Midfield>Middenveld</Midfield>
+<RightAttack>Rechteraanval</RightAttack>
+<MiddleAttack>Centrum aanval</MiddleAttack>
+<LeftAttack>Linkeraanval</LeftAttack>
+<IndirectSetPiecesDefence>Indirecte vrije trappen - verdediging</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Indirecte vrije trappen - aanval</IndirectSetPiecesAttack>
+<TeamAttitude>Teammotivatie</TeamAttitude>
+<TacticType>Tactiek type</TacticType>
+<TacticSkill>Tactiekvaardigheid</TacticSkill>
+<BallPosses>Balbezit</BallPosses>
+<SpecialEvent>Speciale gebeurtenis</SpecialEvent>
+<Normal>Normaal</Normal>
+<PIC>Speel het rustig</PIC>
+<MOTS>Wedstrijd van het seizoen</MOTS>
+<ColorPicker>Je kunt je kleur kiezen bij</ColorPicker>
+<EventBackground>Gebeurtenis achtergrond kleur</EventBackground>
+<FriendHome>Thuis (eigen en van vrienden) kleur: #</FriendHome>
+<FriendAway>Uit (eigen en van vrienden) kleur: #</FriendAway>
+<FoeHome>Thuisspelende ploeg: #</FoeHome>
+<FoeAway>Uitspelende ploeg: #</FoeAway>
+<Neutral>Neutrale kleur: #</Neutral>
+<EventColorTitle>Gebeurtenis tekst kleur</EventColorTitle>
+<EventTextColor>Gebeurtenis tekst kleur: #</EventTextColor>
+<SETextColor>Speciale gebeurtenis tekst kleur: #</SETextColor>
+<Colors>Kleuren</Colors>
+<SchemaTip>Klik om opstelling te laten zien</SchemaTip>
+<StatisticTip>Klik om statistieken aan het eind van de wedstrijd te laten zien</StatisticTip>
+<Youth>Jeugd</Youth>
+<Senior>Senioren</Senior>
+<Tournament>Toernooi</Tournament>
+<FreeKicks>Vrije trappen</FreeKicks>
+<RedCards>Rode kaarten</RedCards>
+<YellowCards>Gele kaarten</YellowCards>
+<Injuries>Blessures</Injuries>
+<Goals>Doelpunten</Goals>
+<Total>Totaal</Total>
+<Terraces>Staanplaatsen</Terraces>
+<Basic>Gewone zitplaatsen</Basic>
+<Roof>Overdekte zitplaatsen</Roof>
+<VIP>Zitplaatsen in de VIP-boxen</VIP>
+<CrowdinHelp>Help met vertalen! Met CrowdIn is het heel erg makkelijk en erg grappig! Klik hier!</CrowdinHelp>
 </Htlivesight>

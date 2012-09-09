@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
-
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Inicio</MenuStart>
 <MenuOptions>Opcións</MenuOptions>
@@ -301,19 +300,18 @@
 <Colors>Cores</Colors>
 <SchemaTip>Pulsa para amosar aliñación</SchemaTip>
 <StatisticTip>Pulsa para amosar estatísticas ao remate do encontro</StatisticTip>
-<Youth>Youth</Youth>
-<Senior>Senior</Senior>
+<Youth>Xuvenís</Youth>
+<Senior>Primeiro equipo</Senior>
 <Tournament>Torneo</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
+<FreeKicks>Lanzamentos de falta</FreeKicks>
 <RedCards>Cartóns vermellos</RedCards>
 <YellowCards>Cartóns amarelos</YellowCards>
 <Injuries>Lesións</Injuries>
 <Goals>Goles</Goals>
 <Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
+<Terraces>Preferencia</Terraces>
+<Basic>Fondos</Basic>
+<Roof>Asentos baixo teito</Roof>
+<VIP>Palcos VIP</VIP>
 <CrowdinHelp>Axuda a traducir!! Con Crowdin é supersinxelo e moi divertido! Preme aquí!</CrowdinHelp>
-
 </Htlivesight>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
-
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Démarrer</MenuStart>
 <MenuOptions>Options</MenuOptions>
@@ -20,10 +19,10 @@
 <LeagueMatches>Matchs de ligue</LeagueMatches>
 <LeagueLiveTable>Classement de la division</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
-<LeagueTeam>Equipe</LeagueTeam>
+<LeagueTeam>Équipe</LeagueTeam>
 <LeaguePlayed>J</LeaguePlayed>
 <LeagueGoals>Buts</LeagueGoals>
-<LeagueGoalDiff>Diff</LeagueGoalDiff>
+<LeagueGoalDiff>±</LeagueGoalDiff>
 <LeaguePoints>Pts</LeaguePoints>
 <MatchesList>Liste des matchs</MatchesList>
 <MatchesAdd>Ajouter un match</MatchesAdd>
@@ -57,7 +56,7 @@
 <TimeHalfTime>Mi-temps</TimeHalfTime>
 <TimeSecondHalf>2ème mi-temps</TimeSecondHalf>
 <TimeExtraTime>Prolongations</TimeExtraTime>
-<TimePenalties>Tirs au but</TimePenalties>
+<TimePenalties>Pénaltys</TimePenalties>
 <TimeFinish>Terminé</TimeFinish>
 <TimeStartsIn>Coup d'envoi dans</TimeStartsIn>
 <TimeDays>jours</TimeDays>
@@ -86,24 +85,24 @@
 <EventPenaltyMiss>Pénalty: MANQUÉ</EventPenaltyMiss>
 <EventInjury>Blessure</EventInjury>
 <EventRed>Carton rouge</EventRed>
-<EventSideLeft>gauche</EventSideLeft>
-<EventSideRight>droite</EventSideRight>
-<EventSideCenter>centre</EventSideCenter>
-<EventSideFreeKick>coup franc</EventSideFreeKick>
-<EventSidePenalty>pénalty</EventSidePenalty>
+<EventSideLeft>Gauche</EventSideLeft>
+<EventSideRight>Droite</EventSideRight>
+<EventSideCenter>Centre</EventSideCenter>
+<EventSideFreeKick>Coup franc</EventSideFreeKick>
+<EventSidePenalty>Pénalty</EventSidePenalty>
 <EventSpecialUnpredictable>SE imprévisible</EventSpecialUnpredictable>
 <EventSpecialLongShot>SE tir lointain</EventSpecialLongShot>
 <EventSpecialQuick>SE rapide</EventSpecialQuick>
-<EventSpecialLowStamina>fatigue</EventSpecialLowStamina>
-<EventSpecialSetPieces>construction</EventSpecialSetPieces>
-<EventSpecialHead>tête</EventSpecialHead>
-<EventSpecialExperience>expérience</EventSpecialExperience>
-<EventSpecialLowExperience>manque d'expérience</EventSpecialLowExperience>
+<EventSpecialLowStamina>Faible endurance</EventSpecialLowStamina>
+<EventSpecialSetPieces>Coup franc</EventSpecialSetPieces>
+<EventSpecialHead>SE Joueur de Tête</EventSpecialHead>
+<EventSpecialExperience>SE Expérience</EventSpecialExperience>
+<EventSpecialLowExperience>SE Manque d'expérience</EventSpecialLowExperience>
 <EventSpecialWinger>SE+ ailier</EventSpecialWinger>
-<EventSpecialTechnical>techniques</EventSpecialTechnical>
-<EventSpecialCounterAttack>contre-attaque</EventSpecialCounterAttack>
-<EventSpecialCornerKick>corner</EventSpecialCornerKick>
-<EventSpecialIndirect>coup franc indirect</EventSpecialIndirect>
+<EventSpecialTechnical>SE Technique contre JdT</EventSpecialTechnical>
+<EventSpecialCounterAttack>Contre-attaque</EventSpecialCounterAttack>
+<EventSpecialCornerKick>SE Corner</EventSpecialCornerKick>
+<EventSpecialIndirect>Coup franc indirect</EventSpecialIndirect>
 <EventSpecialUnpredictableLongPass>SE+ imprévisible: longue passe</EventSpecialUnpredictableLongPass>
 <EventSpecialUnpredictableScoresOnHisOwn>SE+ imprévisible: tir</EventSpecialUnpredictableScoresOnHisOwn>
 <EventSpecialUnpredictableSpecialAction>SE+ imprévisible: action inattendue</EventSpecialUnpredictableSpecialAction>
@@ -111,25 +110,25 @@
 <EventSpecialUnpredictableOwnGoal>SE- imprévisible: but contre son camp</EventSpecialUnpredictableOwnGoal>
 <EventSpecialQuickScoresAfterRush>SE+ rapide: accélération et tir</EventSpecialQuickScoresAfterRush>
 <EventSpecialQuickAssist>SE+ rapide: accélération et passe</EventSpecialQuickAssist>
-<Pullback>repli défensif</Pullback>
-<Underestimation>sur-confiance</Underestimation>
-<UnderestimationRemove>sur-confiance annulée</UnderestimationRemove>
-<UnderestimationReduceDouble>sur-confiance réduite de 2/3</UnderestimationReduceDouble>
-<UnderestimationReduceOnce>sur-confiance réduite de 1/3</UnderestimationReduceOnce>
-<OrganizationBreaks>confusion</OrganizationBreaks>
-<Reorganize>réorganisation</Reorganize>
-<NervesImportantThrillingGame>nervosité due à l'enjeu</NervesImportantThrillingGame>
-<Bruised>égratignure</Bruised>
-<Injuried>blessure</Injuried>
-<ModeratelyInjuried>blessure légère</ModeratelyInjuried>
-<BadlyInjuried>blessure grave</BadlyInjuried>
-<ByHimself>tout seul</ByHimself>
-<ByFoul>due à la faute</ByFoul>
-<ExperiencedForward>attaquant expérimenté</ExperiencedForward>
-<InexperiencedDefender>défenseur inexpérimenté</InexperiencedDefender>
+<Pullback>Repli défensif</Pullback>
+<Underestimation>Sur-confiance</Underestimation>
+<UnderestimationRemove>Sur-confiance annulée</UnderestimationRemove>
+<UnderestimationReduceDouble>Sur-confiance réduite de 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>Sur-confiance réduite de 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>Confusion</OrganizationBreaks>
+<Reorganize>Réorganisation</Reorganize>
+<NervesImportantThrillingGame>Nervosité due à l'enjeu</NervesImportantThrillingGame>
+<Bruised>Égratignure</Bruised>
+<Injuried>Blessure</Injuried>
+<ModeratelyInjuried>Blessure légère</ModeratelyInjuried>
+<BadlyInjuried>Blessure grave</BadlyInjuried>
+<ByHimself>Tout seul</ByHimself>
+<ByFoul>Due à la faute</ByFoul>
+<ExperiencedForward>Attaquant expérimenté</ExperiencedForward>
+<InexperiencedDefender>Défenseur inexpérimenté</InexperiencedDefender>
 <WingerHead>SE ailier: centre pour Joueur de tête</WingerHead>
-<EventSpecialLongShotDefended>tir lointain intercepté</EventSpecialLongShotDefended>
-<EventSpecialQuickVsQuick>rapide contre rapide</EventSpecialQuickVsQuick>
+<EventSpecialLongShotDefended>Tir lointain intercepté</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>SE rapide contre rapide</EventSpecialQuickVsQuick>
 <LongShot>tir lointain</LongShot>
 <MeteoSpecialTechnicalRain>SE- technique (-buteur -construction)</MeteoSpecialTechnicalRain>
 <MeteoSpecialPowerfulRain>SE+ costaud (+buteur +défense +construction)</MeteoSpecialPowerfulRain>
@@ -137,8 +136,8 @@
 <MeteoSpecialPowerfulSun>SE- costaud (-buteur -endurance)</MeteoSpecialPowerfulSun>
 <MeteoSpecialQuickSun>SE- rapide (-défense)</MeteoSpecialQuickSun>
 <MeteoSpecialQuickRain>SE- rapide (-défense -buteur)</MeteoSpecialQuickRain>
-<YellowNastyPlay>faute</YellowNastyPlay>
-<YellowCheating>tricherie</YellowCheating>
+<YellowNastyPlay>Faute</YellowNastyPlay>
+<YellowCheating>Tricherie</YellowCheating>
 <ProgressUpdate>Prochaine mise à jour:</ProgressUpdate>
 <ProgressSeconds>s</ProgressSeconds>
 <RequestServer>Recherche du serveur Hattrick...</RequestServer>
@@ -175,9 +174,9 @@
 <MatchesHeader>En-tête des matchs</MatchesHeader>
 <MatchesScorers>Buteurs</MatchesScorers>
 <ScorersList>Afficher les buteurs</ScorersList>
-<MatchesBooked>Avertissement</MatchesBooked>
+<MatchesBooked>Carton jaune</MatchesBooked>
 <BookedList>Afficher les joueurs avertis</BookedList>
-<MatchesSentOff>Expulsion</MatchesSentOff>
+<MatchesSentOff>Carton rouge</MatchesSentOff>
 <SentOffList>Afficher les joueurs expulsés</SentOffList>
 <MatchesInjured>Blessés</MatchesInjured>
 <InjuredList>Afficher les blessés</InjuredList>
@@ -220,9 +219,9 @@
 <PathSoundsWhistle>Cartons jaune ou rouge</PathSoundsWhistle>
 <PathSoundsHattrick>Coup du chapeau</PathSoundsHattrick>
 <PathSoundsRestore>Restaurer</PathSoundsRestore>
-<PathSoundsPlay>Ecouter</PathSoundsPlay>
+<PathSoundsPlay>Écouter</PathSoundsPlay>
 <LanguageSelect>Choix de la langue</LanguageSelect>
-<LanguageNote>Note: Redémarrez Firefox pour appliquer vos changements.</LanguageNote>
+<LanguageNote>Note: Redémarrez votre navigateur pour appliquer vos changements.</LanguageNote>
 <ButtonCancel>Annuler</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
 <WindowAboutTitle>A propos de</WindowAboutTitle>
@@ -285,7 +284,7 @@
 <TacticSkill>Niveau de la tactique</TacticSkill>
 <BallPosses>Possession</BallPosses>
 <SpecialEvent>Situations Exceptionnelles (SE)</SpecialEvent>
-<Normal>Normal (PIN)</Normal>
+<Normal>Normal</Normal>
 <PIC>Tranquille (PIC)</PIC>
 <MOTS>Match le plus important (MOTS)</MOTS>
 <ColorPicker>Vous pouvez choisir votre couleur sur </ColorPicker>
@@ -314,6 +313,5 @@
 <Basic>Places assises</Basic>
 <Roof>Places assises couvertes</Roof>
 <VIP>Places en loge VIP</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-
+<CrowdinHelp>Aider nous à traduire ! Avec Crowdin, c'est super facile ! Cliquez ici !</CrowdinHelp>
 </Htlivesight>

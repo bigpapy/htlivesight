@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
-
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Iniciar</MenuStart>
 <MenuOptions>Opções</MenuOptions>
@@ -14,7 +13,7 @@
 <LoginUsername>Nome de utilizador</LoginUsername>
 <LoginRememberMe>Lembrar-se de mim</LoginRememberMe>
 <LoginButton>Ligar</LoginButton>
-<LoginReLive>Re-Live</LoginReLive>
+<LoginReLive>Rever</LoginReLive>
 <LoginSpeed>Velocidade</LoginSpeed>
 <LoginByEvent>Por evento</LoginByEvent>
 <LeagueMatches>Jogos do Campeonato</LeagueMatches>
@@ -172,15 +171,15 @@
 <MatchesHours>horas.</MatchesHours>
 <MatchesFriends>Amigos</MatchesFriends>
 <MatchesGetFriends>Mostrar jogos dos amigos</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Cabeçalho</MatchesHeader>
 <MatchesScorers>Marcadores</MatchesScorers>
 <ScorersList>Listar marcadores no cabeçalho</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>Cartões</MatchesBooked>
+<BookedList>Mostrar cartões no cabeçalho</BookedList>
+<MatchesSentOff>Expulso</MatchesSentOff>
+<SentOffList>Mostrar expulsões no cabeçalho</SentOffList>
+<MatchesInjured>Lesões</MatchesInjured>
+<InjuredList>Mostrar lesões no cabeçalho</InjuredList>
 <MatchesWindow>Janela</MatchesWindow>
 <MatchesLines>Linhas a visualizar no modo minimizado</MatchesLines>
 <NotifyNotify>Notificações</NotifyNotify>
@@ -199,7 +198,7 @@
 <CustomIcons>Ícones</CustomIcons>
 <CustomIconsOld>Ícones originais do Livefox na janela de jogo</CustomIconsOld>
 <CustomSounds>Sons</CustomSounds>
-<CustomSoundsWeather>Som de Tempo para o início do jogo</CustomSoundsWeather>
+<CustomSoundsWeather>Som de Clima no início do jogo</CustomSoundsWeather>
 <CustomSoundsTime>Sons para o início/fim de cada uma das partes</CustomSoundsTime>
 <CustomSoundsSEW>Sons para eventos de tempo</CustomSoundsSEW>
 <CustomSoundsGoal>Sons originais do Livefox</CustomSoundsGoal>
@@ -219,12 +218,12 @@
 <PathSoundsWhistleStart>Apito para início da 1ª/2ª parte</PathSoundsWhistleStart>
 <PathSoundsWhistle>Som para cartão Amarelo/Vermelho</PathSoundsWhistle>
 <PathSoundsHattrick>Som de hattrick</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsRestore>Repor</PathSoundsRestore>
+<PathSoundsPlay>Ouvir</PathSoundsPlay>
 <LanguageSelect>Seleccionar idioma</LanguageSelect>
 <LanguageNote>Nota: Deve reiniciar o HTLiveSight para as opções terem efeito.</LanguageNote>
 <ButtonCancel>Cancelar</ButtonCancel>
-<ButtonOk>OK</ButtonOk>
+<ButtonOk>Ok</ButtonOk>
 <WindowAboutTitle>Acerca do HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Tradutores</TabTranslators>
@@ -246,74 +245,73 @@
 <TextHelpOf>com a ajuda de</TextHelpOf>
 <TextThanksTo>Muito obrigado a:</TextThanksTo>
 <ButtonClose>Fechar</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
+<NonExistent>Inexistente</NonExistent>
+<Disastrous>Desastroso</Disastrous>
+<Wretched>Terrível</Wretched>
+<Poor>Mau</Poor>
+<Weak>Fraco</Weak>
+<Inadequate>Inadequado</Inadequate>
+<Passable>Razoável</Passable>
+<Solid>Bom</Solid>
+<Excellent>Excelente</Excellent>
+<Formidable>Formidável</Formidable>
+<Outstanding>Fenomenal</Outstanding>
+<Brilliant>Brilhante</Brilliant>
+<Magnificent>Magnífico</Magnificent>
+<WorldClass>Genial</WorldClass>
+<Supernatural>Soberbo</Supernatural>
+<Titanic>Titânico</Titanic>
+<ExtraTerrestrial>Colossal</ExtraTerrestrial>
+<Mythical>Mítico</Mythical>
+<Magical>Mágico</Magical>
+<Utopian>Utópico</Utopian>
+<Divine>Lendário</Divine>
+<VeryHigh>muito alto</VeryHigh>
+<High>alto</High>
+<Low>baixo</Low>
+<VeryLow>muito baixo</VeryLow>
+<RightDefence>Defesa direita</RightDefence>
+<MiddleDefence>Defesa centro</MiddleDefence>
+<LeftDefence>Defesa esquerda</LeftDefence>
+<Midfield>Meio-campo</Midfield>
+<RightAttack>Ataque direito</RightAttack>
+<MiddleAttack>Ataque centro</MiddleAttack>
+<LeftAttack>Ataque esquerdo</LeftAttack>
+<IndirectSetPiecesDefence>Livres indiretos defesa</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Livres indiretos ataque</IndirectSetPiecesAttack>
+<TeamAttitude>Atitude da equipa</TeamAttitude>
+<TacticType>Tática</TacticType>
+<TacticSkill>nível da tática</TacticSkill>
+<BallPosses>Posse de bola</BallPosses>
+<SpecialEvent>Evento especial</SpecialEvent>
 <Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
+<PIC>Jogar com calma</PIC>
+<MOTS>Jogo da época</MOTS>
+<ColorPicker>Pode escolher as cores em:</ColorPicker>
+<EventBackground>Cor de fundo do evento</EventBackground>
+<FriendHome>Cor (nossa e de amigos) em casa: #</FriendHome>
+<FriendAway>Cor (nossa e de amigos) fora: #</FriendAway>
+<FoeHome>Cor de outras equipas em casa:#</FoeHome>
+<FoeAway>Cor de outras equipas fora:#</FoeAway>
+<Neutral>Cor neutra: #</Neutral>
+<EventColorTitle>Cor de texto do evento</EventColorTitle>
+<EventTextColor>Cor do texto do evento: #</EventTextColor>
+<SETextColor>Cor do texto entre parêntesis: #</SETextColor>
+<Colors>Cores</Colors>
+<SchemaTip>Clique para visualizar a Formação</SchemaTip>
+<StatisticTip>Clique para visualizar as Estatísticas no final da partida</StatisticTip>
+<Youth>Júnior</Youth>
 <Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
+<Tournament>Torneio</Tournament>
+<FreeKicks>Livres diretos</FreeKicks>
+<RedCards>Cartões vermelhos</RedCards>
+<YellowCards>Cartões amarelos</YellowCards>
+<Injuries>Lesões</Injuries>
+<Goals>Golos</Goals>
 <Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-
+<Terraces>Lugares em pé</Terraces>
+<Basic>Lugares sentados</Basic>
+<Roof>Lugares cobertos</Roof>
+<VIP>Camarotes</VIP>
+<CrowdinHelp>Ajude a traduzir! Com Crowdin é super fácil e muito divertido! Clique aqui!</CrowdinHelp>
 </Htlivesight>

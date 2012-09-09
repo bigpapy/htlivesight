@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
-
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Avvio</MenuStart>
 <MenuOptions>Opzioni</MenuOptions>
@@ -315,5 +314,4 @@
 <Roof>Tribune coperte</Roof>
 <VIP>Poltrone VIP</VIP>
 <CrowdinHelp>Aiutaci a tradurre! Con Crowdin è facilissimo e molto divertente! Clicca qui!</CrowdinHelp>
-
 </Htlivesight>
