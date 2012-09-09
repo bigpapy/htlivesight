@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
-
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Inicio</MenuStart>
 <MenuOptions>Opciones</MenuOptions>
@@ -301,8 +300,8 @@
 <Colors>Colores</Colors>
 <SchemaTip>Haz clic para mostrar la alneación</SchemaTip>
 <StatisticTip>Haz clic para mostrar estadísticas al final del partido</StatisticTip>
-<Youth>Youth</Youth>
-<Senior>Senior</Senior>
+<Youth>Juveniles</Youth>
+<Senior>Mayor</Senior>
 <Tournament>Torneo</Tournament>
 <FreeKicks>Tiros libres</FreeKicks>
 <RedCards>Tarjetas rojas</RedCards>
@@ -314,6 +313,5 @@
 <Basic>Preferentes</Basic>
 <Roof>Tribunas</Roof>
 <VIP>Palcos</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-
+<CrowdinHelp>¡Ayudanos a traducir, con Crowdin es muy sencillo y divertido!. Haz clic aquí!</CrowdinHelp>
 </Htlivesight>

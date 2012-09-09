@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
-
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Запуск</MenuStart>
 <MenuOptions>Настройки</MenuOptions>
@@ -301,8 +300,8 @@
 <Colors>Цвета</Colors>
 <SchemaTip>Нажмите, чтобы показать расстановку</SchemaTip>
 <StatisticTip>Нажмите, чтобы показать Статистику в конце матча</StatisticTip>
-<Youth>Youth</Youth>
-<Senior>Senior</Senior>
+<Youth>Молодёжная</Youth>
+<Senior>Основная</Senior>
 <Tournament>Турнир</Tournament>
 <FreeKicks>Штрафные удары</FreeKicks>
 <RedCards>Красные карточки</RedCards>
@@ -314,6 +313,5 @@
 <Basic>Обычные места</Basic>
 <Roof>Сидения под крышей</Roof>
 <VIP>Места в VIP-ложе</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-
+<CrowdinHelp>Помогите с переводом! С Crowdin это очень легко и весело! Нажмите сюда!</CrowdinHelp>
 </Htlivesight>

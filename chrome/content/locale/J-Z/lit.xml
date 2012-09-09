@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
-
 <MenuItemValue>HTLiveSight</MenuItemValue>
 <MenuStart>Paleisti</MenuStart>
 <MenuOptions>Nustatymai</MenuOptions>
@@ -172,15 +171,15 @@
 <MatchesHours>valandų (ar mažiau)</MatchesHours>
 <MatchesFriends>Draugų rungtynės</MatchesFriends>
 <MatchesGetFriends>Parsisiųsti automatiškai</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Antraštė</MatchesHeader>
 <MatchesScorers>Įvarčių autoriai</MatchesScorers>
 <ScorersList>Rodyti antraštėje</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>Įspėti žaidėjai</MatchesBooked>
+<BookedList>Antraštėje rodyti geltonas korteles</BookedList>
+<MatchesSentOff>Pašalinti žaidėjai</MatchesSentOff>
+<SentOffList>Antraštėje rodyti raudonas korteles</SentOffList>
+<MatchesInjured>Traumos</MatchesInjured>
+<InjuredList>Antraštėje rodyti traumuotus žaidėjus</InjuredList>
 <MatchesWindow>Rungtynių langas</MatchesWindow>
 <MatchesLines>Sumažintame režime rodomų eilučių skaičius</MatchesLines>
 <NotifyNotify>Pranešimai</NotifyNotify>
@@ -246,74 +245,73 @@
 <TextHelpOf>Pagelbėjo</TextHelpOf>
 <TextThanksTo>Padėka:</TextThanksTo>
 <ButtonClose>Uždaryti</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
-<Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
-<Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-
+<NonExistent>neegzistuojantis</NonExistent>
+<Disastrous>katastrofiškas</Disastrous>
+<Wretched>katastrofiškas</Wretched>
+<Poor>silpnas</Poor>
+<Weak>silpnas</Weak>
+<Inadequate>vidutiniškas</Inadequate>
+<Passable>priimtinas</Passable>
+<Solid>geras</Solid>
+<Excellent>puikus</Excellent>
+<Formidable>nuostabus</Formidable>
+<Outstanding>išskirtinis</Outstanding>
+<Brilliant>genialus</Brilliant>
+<Magnificent>fantastiškas</Magnificent>
+<WorldClass>pasaulinės klasės</WorldClass>
+<Supernatural>antgamtiškas</Supernatural>
+<Titanic>gigantiškas</Titanic>
+<ExtraTerrestrial>nežemiškas</ExtraTerrestrial>
+<Mythical>mistinis</Mythical>
+<Magical>magiškas</Magical>
+<Utopian>utopiškas</Utopian>
+<Divine>dieviškas</Divine>
+<VeryHigh>maks.</VeryHigh>
+<High>aukštas</High>
+<Low>žemas</Low>
+<VeryLow>min.</VeryLow>
+<RightDefence>Dešinė gynybos pusė</RightDefence>
+<MiddleDefence>Centrinė gynyba</MiddleDefence>
+<LeftDefence>Kairė gynybos pusė</LeftDefence>
+<Midfield>Saugų linija</Midfield>
+<RightAttack>Dešinė atakos pusė</RightAttack>
+<MiddleAttack>Centrinė ataka</MiddleAttack>
+<LeftAttack>Kairė atakos pusė</LeftAttack>
+<IndirectSetPiecesDefence>Net. stand. situacijų gynyba</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Net. stand. situacijų ataka</IndirectSetPiecesAttack>
+<TeamAttitude>Komandos nusiteikimas</TeamAttitude>
+<TacticType>Taktika</TacticType>
+<TacticSkill>Taktikos įgūdis</TacticSkill>
+<BallPosses>Kamuolio valdymas</BallPosses>
+<SpecialEvent>Ypatingasis įvykis</SpecialEvent>
+<Normal>Normaliai</Normal>
+<PIC>Žaiskit atsipalaidavę</PIC>
+<MOTS>Lemiamos rungtynės</MOTS>
+<ColorPicker>Spalvų kodus rasite:</ColorPicker>
+<EventBackground>Įvykių fono spalva</EventBackground>
+<FriendHome>Namų komandos (savo ir draugų) spalva: #</FriendHome>
+<FriendAway>Svečių komandos (savo ir draugų) spalva: #</FriendAway>
+<FoeHome>Namų komandos (kitos) spalva: #</FoeHome>
+<FoeAway>Į sandėlį užsienio spalva: #</FoeAway>
+<Neutral>Informacinių įvykių spalva: #</Neutral>
+<EventColorTitle>Įvykių teksto spalva</EventColorTitle>
+<EventTextColor>Įvykio aprašymo spalva: #</EventTextColor>
+<SETextColor>Įvykio kategorijos spalva: #</SETextColor>
+<Colors>Spalvos</Colors>
+<SchemaTip>Parodyti sudėtį</SchemaTip>
+<StatisticTip>Parodyti statistiką rungtynių pabaigoje</StatisticTip>
+<Youth>Jaunių</Youth>
+<Senior>Paprastos</Senior>
+<Tournament>Turnyro</Tournament>
+<FreeKicks>Standartinės padėtys</FreeKicks>
+<RedCards>Raudonos kortelės</RedCards>
+<YellowCards>Geltonos kortelės</YellowCards>
+<Injuries>Traumos</Injuries>
+<Goals>Įvarčiai</Goals>
+<Total>Iš viso</Total>
+<Terraces>Terasose</Terraces>
+<Basic>Paprastose sėdimosiose vietose</Basic>
+<Roof>Sėdimose vietose po stogu</Roof>
+<VIP>VIP ložėse</VIP>
+<CrowdinHelp>Padėkite išversti! Naudotis „Crowdin“ ypatingai lengva ir smagu! Pabandykite!</CrowdinHelp>
 </Htlivesight>
