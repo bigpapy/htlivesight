@@ -359,7 +359,7 @@ font-weight: bold;
 .injinheader{color:#DCA675 !important; font-weight:bold !important;}
 
 .formationbg{
-background:url("chrome://htlivesight/content/themes/images/field1.jpg") !important;
+background:url("images/field1.jpg") !important;
 -moz-background-size:100% 100%; /* Firefox 3.6 */
 background-size:100% 100%;
 background-repeat:no-repeat;
