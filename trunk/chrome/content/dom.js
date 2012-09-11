@@ -170,8 +170,12 @@ htlivesight.DOM = {
        	  htServer="www";
       };
 	  var matchLink="http://" + htServer + ".hattrick.org/Club/Matches/Match.aspx?matchID=" + matchId;
-	  if (sourceSystem=="youth"||sourceSystem=="True"){ matchLink=matchLink+"&SourceSystem=Youth";};
-	  if(htlivesight.Match.List["_"+matchId+"_"+sourceSystem].arena.name==null){ matchLink=matchLink+"&SourceSystem=HTOIntegrated";};
+	  if (sourceSystem=="Hattrick"||sourceSystem=="False"){ 
+		  matchLink=matchLink+"&SourceSystem=Hattrick";
+	  }else if (sourceSystem=="youth"||sourceSystem=="True"){
+		  matchLink=matchLink+"&SourceSystem=Youth";
+	  }else if(htlivesight.Match.List["_"+matchId+"_"+sourceSystem].arena.name==null){ matchLink=matchLink+"&SourceSystem=HTOIntegrated";};
+	  alert("matchLink= "+matchLink+"\n sourceSystem="+htlivesight.Match.List["_"+matchId+"_"+sourceSystem].sourceSystem);
 	 var matchpage=window.open(matchLink);
   }catch(e){alert("toggleView: "+e);}// added by bigpapy to debug from XUL to HTML
 	  },
@@ -261,9 +265,9 @@ htlivesight.DOM = {
     li_.appendChild(a);    
 
     var popup = document.createElement("table");
-    popup.cellSpacing="20px";
+    popup.cellSpacing="25px";
     popup.cellPadding="2px";
-    popup.width="675px";
+    popup.width="97%";
     popup.style.marginLeft="auto";
     popup.style.marginRight="auto";
 //    if (document.getElementById(id) != null){
@@ -291,7 +295,7 @@ htlivesight.DOM = {
         //label.style.background="#919090";
 		label.setAttribute('class','formationplayer');
         
-        label.width="20%";
+        label.width="130";
         label.height="30";
     //	  if (htlivesight.DOM.getTextContent(lineup[i][j]).match("     ")){
     //		  lineupText=lineupText + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
