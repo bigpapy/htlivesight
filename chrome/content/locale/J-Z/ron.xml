@@ -38,12 +38,12 @@
 <Error>Eroare</Error>
 <ServerON>Conectat</ServerON>
 <ServerOFF>Deconectat</ServerOFF>
-<ResetToken>Codul de autorizare a fost şters. Reporneşte HTLS sau aşteaptă următorul update (less than 1 minute).</ResetToken>
+<ResetToken>Codul de autorizare a fost şters. Reporneşte HTLS sau aşteaptă următorul update (mai puțin de 1 minut).</ResetToken>
 <NoHTServer>Nu ai selectat corect serverul Hattrick pe care eşti logat, click dreapta oriunde pe fundal şi click pe - opţiuni - general şi setează numărul corect al serverului Hattrick.</NoHTServer>
 <MatchesMaximum>Nu puteţi vizualiza mai mult de 20 meciuri!</MatchesMaximum>
 <LeagueRound>Etapa</LeagueRound>
 <MessageHattrickError>serverul Hattrick a produs o eroare.</MessageHattrickError>
-<MessageAlreadyFriend>Este deja prietenul tau.</MessageAlreadyFriend>
+<MessageAlreadyFriend>Este deja prietenul tău.</MessageAlreadyFriend>
 <MessageErrorReading>Eroare la citirea datelor din</MessageErrorReading>
 <MessageLoginNotSuccessful>Conectare nereuşită.</MessageLoginNotSuccessful>
 <TacticPressing>presing</TacticPressing>
@@ -68,7 +68,7 @@
 <TimeMin>'</TimeMin>
 <TooltipWindowSound>Activează sau dezactivează sunetele din meci</TooltipWindowSound>
 <TooltipWindowLink>Link spre pagina meciului din Hattrick</TooltipWindowLink>
-<TooltipWindowInfo>Adună informaţii mesaje eveniment </TooltipWindowInfo>
+<TooltipWindowInfo>Comută mesaje cu informații despre event</TooltipWindowInfo>
 <TooltipWindowMaximize>Măreşte fereastra</TooltipWindowMaximize>
 <TooltipWindowMinimize>Micşorează fereastra</TooltipWindowMinimize>
 <TooltipWindowShade>Umbră fereastră</TooltipWindowShade>
@@ -94,12 +94,12 @@
 <EventSpecialLongShot>SE şut de la distanţă</EventSpecialLongShot>
 <EventSpecialQuick>SE rapid</EventSpecialQuick>
 <EventSpecialLowStamina>rezistenţă scăzută</EventSpecialLowStamina>
-<EventSpecialSetPieces>faze fixe</EventSpecialSetPieces>
+<EventSpecialSetPieces>fază fixă</EventSpecialSetPieces>
 <EventSpecialHead>cap</EventSpecialHead>
 <EventSpecialExperience>experienţă</EventSpecialExperience>
 <EventSpecialLowExperience>lipsă de experienţă</EventSpecialLowExperience>
 <EventSpecialWinger>+ extremă</EventSpecialWinger>
-<EventSpecialTechnical>tehnic</EventSpecialTechnical>
+<EventSpecialTechnical>tehnic vs cap</EventSpecialTechnical>
 <EventSpecialCounterAttack>contra-atac</EventSpecialCounterAttack>
 <EventSpecialCornerKick>corner</EventSpecialCornerKick>
 <EventSpecialIndirect>lovitură liberă indirectă</EventSpecialIndirect>
@@ -118,8 +118,8 @@
 <OrganizationBreaks>confuzie</OrganizationBreaks>
 <Reorganize>reorganizare</Reorganize>
 <NervesImportantThrillingGame>nervi într-un joc important</NervesImportantThrillingGame>
-<Bruised>lovit</Bruised>
-<Injuried>accidentat</Injuried>
+<Bruised>plasture</Bruised>
+<Injuried>accidentare</Injuried>
 <ModeratelyInjuried>accidentare uşoară</ModeratelyInjuried>
 <BadlyInjuried>accidentare gravă</BadlyInjuried>
 <ByHimself>singur</ByHimself>
@@ -135,7 +135,7 @@
 <MeteoSpecialTechnicalSun>+ tehnic (+atac +construcţie)</MeteoSpecialTechnicalSun>
 <MeteoSpecialPowerfulSun>- puternic (-atac -rezistenţă)</MeteoSpecialPowerfulSun>
 <MeteoSpecialQuickSun>- rapid (-apărare)</MeteoSpecialQuickSun>
-<MeteoSpecialQuickRain>- rapid (-apărare -atac</MeteoSpecialQuickRain>
+<MeteoSpecialQuickRain>- rapid (-apărare -atac)</MeteoSpecialQuickRain>
 <YellowNastyPlay>joc periculos</YellowNastyPlay>
 <YellowCheating>joc necinstit</YellowCheating>
 <ProgressUpdate>Urmatoarea actualizare:</ProgressUpdate>
@@ -171,22 +171,22 @@
 <MatchesHours>ore.</MatchesHours>
 <MatchesFriends>Prieteni</MatchesFriends>
 <MatchesGetFriends>Obţine meciurile prietenilor</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Antet</MatchesHeader>
 <MatchesScorers>Marcatori</MatchesScorers>
 <ScorersList>Afişează marcatorii în header</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>Cartonaș galben</MatchesBooked>
+<BookedList>Afișează cartonașele galbene în header</BookedList>
+<MatchesSentOff>Eliminat</MatchesSentOff>
+<SentOffList>Afișează eliminările în header</SentOffList>
+<MatchesInjured>Accidentări</MatchesInjured>
+<InjuredList>Afișează accidentările în header</InjuredList>
 <MatchesWindow>Fereastră</MatchesWindow>
 <MatchesLines>Linii de afişat în modul minimizat</MatchesLines>
 <NotifyNotify>Notificări</NotifyNotify>
 <NotifyEnableSound>Activează notificări sonore</NotifyEnableSound>
 <NotifyOnly>Doar în meciurile deschise</NotifyOnly>
 <NotifyFlash>Flash antete</NotifyFlash>
-<NotifyStatus>Status bar cu tastatură culisantă</NotifyStatus>
+<NotifyStatus>Notificare culisantă</NotifyStatus>
 <OtherAuthorization>Codul de autentificare</OtherAuthorization>
 <OtherReset>Revocă autorizarea</OtherReset>
 <OtherResetButton>Reset</OtherResetButton>
@@ -194,7 +194,7 @@
 <OtherReverseNote>Reîncarcă pagina pentru a vedea efectul schimbării.</OtherReverseNote>
 <OtherEvents>Ordinea evenimentelor</OtherEvents>
 <OtherEventKey>Cod de event</OtherEventKey>
-<OtherEventKeyNote>Arata codul eventului în comentariu</OtherEventKeyNote>
+<OtherEventKeyNote>Arată codul eventului în comentariu</OtherEventKeyNote>
 <CustomIcons>Iconuri</CustomIcons>
 <CustomIconsOld>Iconurile originale Livefox în fereastra de meci</CustomIconsOld>
 <CustomSounds>Sunete</CustomSounds>
@@ -203,7 +203,7 @@
 <CustomSoundsSEW>Sunete pentru eventurile de vreme</CustomSoundsSEW>
 <CustomSoundsGoal>Sunete originale Livefox</CustomSoundsGoal>
 <CustomSoundsNoOpGoal>Fără sunet la golurile adversarului</CustomSoundsNoOpGoal>
-<PathSoundsMyGoal>Sound for my goals</PathSoundsMyGoal>
+<PathSoundsMyGoal>Sunet pentru golurile mele</PathSoundsMyGoal>
 <PathSoundsOpGoal>Sunet pentru golul adversarului meu</PathSoundsOpGoal>
 <PathSoundsFrGoal>Sunet pentru golul prietenului meu</PathSoundsFrGoal>
 <PathSoundsOpFrGoal>Sunet pentru gol al adversarului prietenului meu</PathSoundsOpFrGoal>
@@ -218,7 +218,7 @@
 <PathSoundsWhistleStart>Fluier pentru începutul primei/celei de-a doua reprize</PathSoundsWhistleStart>
 <PathSoundsWhistle>Sunet pentru cartonaş galben/roşu</PathSoundsWhistle>
 <PathSoundsHattrick>Sunet hattrick</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
+<PathSoundsRestore>Restabilește</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
 <LanguageSelect>Selectează limba</LanguageSelect>
 <LanguageNote>Nota: Reporneşte HTLiveSight ca aceasta să aibă efect.</LanguageNote>
@@ -245,73 +245,83 @@
 <TextHelpOf>Cu ajutorul lui</TextHelpOf>
 <TextThanksTo>Multe mulţumiri lui:</TextThanksTo>
 <ButtonClose>Închide</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
+<NonExistent>Inexistent</NonExistent>
+<Disastrous>Dezastruos</Disastrous>
+<Wretched>Mizerabil</Wretched>
+<Poor>Jalnic</Poor>
+<Weak>Slab</Weak>
+<Inadequate>Inadecvat</Inadequate>
+<Passable>Acceptabil</Passable>
+<Solid>Bun</Solid>
+<Excellent>Excelent</Excellent>
+<Formidable>Formidabil</Formidable>
+<Outstanding>Impresionant</Outstanding>
+<Brilliant>Sclipitor</Brilliant>
+<Magnificent>Magnific</Magnificent>
+<WorldClass>Legendar</WorldClass>
+<Supernatural>Supranatural</Supernatural>
 <Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
+<ExtraTerrestrial>Extraterestru</ExtraTerrestrial>
+<Mythical>Mitic</Mythical>
+<Magical>Magic</Magical>
+<Utopian>Utopic</Utopian>
+<Divine>Divin</Divine>
+<VeryHigh>foarte ridicat</VeryHigh>
+<High>ridicat</High>
+<Low>scăzut</Low>
+<VeryLow>foarte scăzut</VeryLow>
+<RightDefence>Apărare pe dreapta</RightDefence>
+<MiddleDefence>Apărare pe centru</MiddleDefence>
+<LeftDefence>Apărare pe stânga</LeftDefence>
+<Midfield>Mijloc</Midfield>
+<RightAttack>Atac pe dreapta</RightAttack>
+<MiddleAttack>Atac pe centru</MiddleAttack>
+<LeftAttack>Atac pe stânga</LeftAttack>
+<IndirectSetPiecesDefence>Lovituri libere indirecte - apărare</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Lovituri libere indirecte - atac</IndirectSetPiecesAttack>
+<TeamAttitude>Atitudinea echipei</TeamAttitude>
+<TacticType>Tactica</TacticType>
+<TacticSkill>Nivel tactic</TacticSkill>
+<BallPosses>Posesie</BallPosses>
+<SpecialEvent>Event special</SpecialEvent>
 <Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
-<Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
+<PIC>Relaxat</PIC>
+<MOTS>Meciul Sezonului</MOTS>
+<ColorPicker>Poți alege culoarea pe</ColorPicker>
+<EventBackground>Culoarea de fond pentru event</EventBackground>
+<FriendHome>Culoare gazde (echipa proprie și a prietenilor): #</FriendHome>
+<FriendAway>Culoare oaspeți (echipa proprie și a prietenilor): #</FriendAway>
+<FoeHome>Culoare gazde (alte echipe): #</FoeHome>
+<FoeAway>Culoare oaspeți (alte echipe): #</FoeAway>
+<Neutral>Culoare teren neutru: #</Neutral>
+<EventColorTitle>Culoare text event</EventColorTitle>
+<EventTextColor>Culoare text event: #</EventTextColor>
+<SETextColor>Culoare text eticheta event: #</SETextColor>
+<Colors>Culori</Colors>
+<SchemaTip>Click să vezi așezarea</SchemaTip>
+<StatisticTip>Click sa afișeze statisticile de meci</StatisticTip>
+<Youth>Tineret</Youth>
+<Senior>Seniori</Senior>
+<Tournament>Turneu</Tournament>
+<FreeKicks>Lovituri libere</FreeKicks>
+<RedCards>Cartonașe roșii</RedCards>
+<YellowCards>Cartonașe galbene</YellowCards>
+<Injuries>Accidentări</Injuries>
+<Goals>Goluri</Goals>
 <Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
+<Terraces>Locuri la peluze</Terraces>
+<Basic>Locuri obișnuite</Basic>
+<Roof>Locuri acoperite</Roof>
+<VIP>Loje VIP</VIP>
+<CrowdinHelp>Ajuta-ne cu traducerea! Cu Crowdin e super-ușor și foarte amuzant! Click aici!</CrowdinHelp>
+<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
+<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
+<Error0>Error 0: not connected to internet.</Error0>
+<Error500>Error 500: internal server error (of Hattrick)</Error500>
+<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
+<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
+<PathSoundsNote2>Example: file:///c:pathtothesound.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
+<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
+<EventYellow2>Second yellow card</EventYellow2>
 </Htlivesight>

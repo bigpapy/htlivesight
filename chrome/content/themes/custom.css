@@ -363,6 +363,6 @@ background:url("images/field1.jpg") !important;
 -moz-background-size:100% 100%; /* Firefox 3.6 */
 background-size:100% 100%;
 background-repeat:no-repeat;
-background-position:center;
+background-position:center top;
 background-origin:content-box;}
 .formationplayer{background-color: transparent;border:thin solid white;border-radius:5px;color:white !important;}
