@@ -217,7 +217,7 @@
 <PathSoundsOpBoo>Blessure des joueurs de l'adversaire</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Début 1ère/2ème mi-temps</PathSoundsWhistleStart>
 <PathSoundsWhistle>Cartons jaune ou rouge</PathSoundsWhistle>
-<PathSoundsHattrick>Coup du chapeau</PathSoundsHattrick>
+<PathSoundsHattrick>Coup du chapeau (hattrick)</PathSoundsHattrick>
 <PathSoundsRestore>Restaurer</PathSoundsRestore>
 <PathSoundsPlay>Écouter</PathSoundsPlay>
 <LanguageSelect>Choix de la langue</LanguageSelect>
@@ -314,14 +314,14 @@
 <Roof>Places assises couvertes</Roof>
 <VIP>Places en loge VIP</VIP>
 <CrowdinHelp>Aider nous à traduire ! Avec Crowdin, c'est super facile ! Cliquez ici !</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:pathtothesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
+<Error401>Erreur 401 : accès non autorisé. Vous devez obtenir l'autorisation de nouveau. Cliquez sur ok pour continuer.</Error401>
+<Error404>Erreur 404 : la ressource demandée est introuvable. Si cette erreur s'affiche de nouveau, vérifier si le service CHPP n'est pas stoppé dans les informations système d'hattrick.</Error404>
+<Error0>Erreur 0: non connecté à internet.</Error0>
+<Error500>Erreur 500 : erreur de serveur interne (venant de Hattrick)</Error500>
+<Error503>Erreur 503 : service CHPP indisponible (surcharge temporaire ou maintenance)</Error503>
+<PathSoundsNote1>Insérer file:/// avant le chemin d'accès du son au format .ogg ou .wav</PathSoundsNote1>
+<PathSoundsNote2>Exemple : file:///c:cheminduson.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>Fin de 1ère mi-temps</PathSoundsWhistle2>
+<PathSoundsWhistle3>Fin du match</PathSoundsWhistle3>
+<EventYellow2>Deuxième carton jaune</EventYellow2>
 </Htlivesight>

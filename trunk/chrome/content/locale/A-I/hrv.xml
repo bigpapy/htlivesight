@@ -314,14 +314,14 @@
 <Roof>Natkrivena mjesta</Roof>
 <VIP>Svečane lože</VIP>
 <CrowdinHelp>Pomozi prevoditi! Sa Crowdin je super lako i jako zabavno! Klikni ovdje!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:pathtothesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
+<Error401>Greška 401: nedozvoljen pristup. Morate opet dozvoliti pristup. Klikni za nastaviti.</Error401>
+<Error404>Greška 404: zahtjevani resurs nije moguće pronaći. Ako se ova greška opet pojavi provjerite da li CHPP servis ne radi.</Error404>
+<Error0>Greška 0: nije spojeno na internet.</Error0>
+<Error500>Greška 500: unutarnja greška servera (Hattricka)</Error500>
+<Error503>Greška 503: CHPP servis nedostupan (trenutno preopterečenje ili održavanje)</Error503>
+<PathSoundsNote1>Umetnite file:/// prije putanje za zvuk u .ogg ili .wav formatu</PathSoundsNote1>
+<PathSoundsNote2>Primjer: file:///c:putanjadozvuka.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>Zvižduk za kraj prvog poluvremena</PathSoundsWhistle2>
+<PathSoundsWhistle3>Zvižduk za kraj utakmice</PathSoundsWhistle3>
+<EventYellow2>Drugi žuti karton</EventYellow2>
 </Htlivesight>

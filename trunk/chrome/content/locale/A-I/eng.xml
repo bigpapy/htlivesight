@@ -319,8 +319,8 @@
 <Error0>Error 0: not connected to internet.</Error0>
 <Error500>Error 500: internal server error (of Hattrick)</Error500>
 <Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:pathtothesound.ogg</PathSoundsNote2>
+<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg or .wav format</PathSoundsNote1>
+<PathSoundsNote2>Example: file:///c:pathpathtothesound.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
 <PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <EventYellow2>Second yellow card</EventYellow2>

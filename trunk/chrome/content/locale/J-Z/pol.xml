@@ -139,7 +139,7 @@
 <YellowNastyPlay>brzydkie zagranie</YellowNastyPlay>
 <YellowCheating>oszukiwanie</YellowCheating>
 <ProgressUpdate>Następna aktualizacja:</ProgressUpdate>
-<ProgressSeconds>s</ProgressSeconds>
+<ProgressSeconds>y</ProgressSeconds>
 <RequestServer>Łączę z serwerem</RequestServer>
 <RequestLeagueData>Pobieram dane ligi</RequestLeagueData>
 <RequestLeagueGames>Pobieram mecze ligowe</RequestLeagueGames>
@@ -171,15 +171,15 @@
 <MatchesHours>godzin.</MatchesHours>
 <MatchesFriends>Znajomi</MatchesFriends>
 <MatchesGetFriends>Pobieraj mecze znajomych</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Nagłówek</MatchesHeader>
 <MatchesScorers>Zdobywcy bramek</MatchesScorers>
 <ScorersList>Wyświetlaj zdobywców bramek w nagłówku</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>Ukarany</MatchesBooked>
+<BookedList>Lista ukaranych w nagłówku</BookedList>
+<MatchesSentOff>Wyrzucony z boiska</MatchesSentOff>
+<SentOffList>Lista wyrzuconych z boiska w nagłówku</SentOffList>
+<MatchesInjured>Kontuzjowany</MatchesInjured>
+<InjuredList>Lista kontuzjowanych w nagłówku</InjuredList>
 <MatchesWindow>Ostatnie zdarzenia</MatchesWindow>
 <MatchesLines>Liczba wyświetlanych ostatnich zdarzeń</MatchesLines>
 <NotifyNotify>Powiadomienia</NotifyNotify>
@@ -189,7 +189,7 @@
 <NotifyStatus>Włącz wysuwane powiadomienia</NotifyStatus>
 <OtherAuthorization>Kod autoryzacji</OtherAuthorization>
 <OtherReset>Usuń autoryzację</OtherReset>
-<OtherResetButton>Reset</OtherResetButton>
+<OtherResetButton>Resetuj</OtherResetButton>
 <OtherReverse>Wyświetlaj zdarzenia meczowe z dołu, do góry</OtherReverse>
 <OtherReverseNote>Odśwież stronę, żeby zobaczyć efekt zmian.</OtherReverseNote>
 <OtherEvents>Porządek zdarzeń</OtherEvents>
@@ -218,8 +218,8 @@
 <PathSoundsWhistleStart>Dźwięk dla rozpoczęcia pierwszej/drugiej połowy spotkania</PathSoundsWhistleStart>
 <PathSoundsWhistle>Dźwięk żółtej/czerwonej kartki</PathSoundsWhistle>
 <PathSoundsHattrick>Dźwięki Hattricka</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsRestore>Przywróć</PathSoundsRestore>
+<PathSoundsPlay>Graj</PathSoundsPlay>
 <LanguageSelect>Wybierz język</LanguageSelect>
 <LanguageNote>Uwaga: Musisz zrestartować HTLiveSight, aby zmiany były widoczne</LanguageNote>
 <ButtonCancel>Anuluj</ButtonCancel>
@@ -227,7 +227,7 @@
 <WindowAboutTitle>O HTLiveSight</WindowAboutTitle>
 <TabInfo>Informajce</TabInfo>
 <TabTranslators>Tłumacze</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabCredits>O nas</TabCredits>
 <MonthJanuary>Sty</MonthJanuary>
 <MonthFebruary>Lut</MonthFebruary>
 <MonthMarch>Mar</MonthMarch>
@@ -245,83 +245,83 @@
 <TextHelpOf>z pomocą</TextHelpOf>
 <TextThanksTo>Podziękowania dla:</TextThanksTo>
 <ButtonClose>Zamknij</ButtonClose>
-<NonExistent>Non existent</NonExistent>
+<NonExistent>Nie istnieje</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
 <Poor>Poor</Poor>
 <Weak>Weak</Weak>
 <Inadequate>Inadequate</Inadequate>
 <Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
+<Solid>Solidny</Solid>
+<Excellent>Znakomity</Excellent>
 <Formidable>Formidable</Formidable>
 <Outstanding>Outstanding</Outstanding>
 <Brilliant>Brilliant</Brilliant>
 <Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
+<WorldClass>Światowej klasy</WorldClass>
 <Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
+<Titanic>Tytaniczny</Titanic>
 <ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
+<Mythical>Mityczny</Mythical>
+<Magical>Magiczny</Magical>
+<Utopian>Utopijny</Utopian>
 <Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
+<VeryHigh>bardzo wysoki</VeryHigh>
+<High>wysoki</High>
+<Low>niski</Low>
+<VeryLow>bardzo niski</VeryLow>
+<RightDefence>Prawa obrona</RightDefence>
+<MiddleDefence>Środek obrony</MiddleDefence>
+<LeftDefence>Lewa obrona</LeftDefence>
+<Midfield>Pomoc</Midfield>
+<RightAttack>Prawy atak</RightAttack>
+<MiddleAttack>Atak środkiem</MiddleAttack>
+<LeftAttack>Lewy atak</LeftAttack>
 <IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
 <IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
+<TeamAttitude>Nastawienie zespołu</TeamAttitude>
+<TacticType>Taktyka typu</TacticType>
+<TacticSkill>Taktyka umiejętności</TacticSkill>
+<BallPosses>Posiadanie piłki</BallPosses>
+<SpecialEvent>Specjalne zdarzenie</SpecialEvent>
+<Normal>Normalny</Normal>
 <PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
+<MOTS>Mecz sezonu (MOTS)</MOTS>
+<ColorPicker>Można wybrać kolor na </ColorPicker>
+<EventBackground>Kolor tła zdarzeń</EventBackground>
+<FriendHome>Kolor Twój i Twoich przyjaciół (gospodarz)</FriendHome>
+<FriendAway>Kolor Twój i Twoich przyjaciół (gość)</FriendAway>
+<FoeHome>Kolor rywala (gospodarz)</FoeHome>
+<FoeAway>Kolor rywala (gość)</FoeAway>
+<Neutral>Kolor</Neutral>
+<EventColorTitle>Kolor tekstu zdarzeń</EventColorTitle>
+<EventTextColor>Kolor tekstu zdarzeń: #</EventTextColor>
+<SETextColor>Kolor tekstu specjalnego wydarzenia: #</SETextColor>
+<Colors>Kolory</Colors>
+<SchemaTip>Kliknij, aby wyświetlić skład</SchemaTip>
+<StatisticTip>Kliknij, aby wyświetlić statystyki z końcem meczu</StatisticTip>
+<Youth>Młodzież</Youth>
 <Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
-<Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:pathtothesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
+<Tournament>Turniej</Tournament>
+<FreeKicks>Rzuty wolne</FreeKicks>
+<RedCards>Czerwone kartki</RedCards>
+<YellowCards>Żółte kartki</YellowCards>
+<Injuries>Kontuzje</Injuries>
+<Goals>Bramki</Goals>
+<Total>Ogółem</Total>
+<Terraces>Miejsca stojące</Terraces>
+<Basic>Miejsca siedzące</Basic>
+<Roof>Miejsca pod dachem</Roof>
+<VIP>Miejsca VIP</VIP>
+<CrowdinHelp>Pomóż tłumaczyć! Z Crowdin jest to bardzo proste!</CrowdinHelp>
+<Error401>Błąd 401: nieautoryzowany dostęp. Musisz otrzymać autoryzację ponownie. Kliknij przycisk ok, aby kontynuować.</Error401>
+<Error404>Błąd 404: żądany zasób nie może zostać znaleziony. Jeśli ten błąd pojawia się ponownie, usługa chpp nie działa.</Error404>
+<Error0>Błąd 0: nie podłączony do Internetu.</Error0>
+<Error500>Błąd 500: wewnętrzny błąd serwera (z Hattricka)</Error500>
+<Error503>Błąd 503: CHPP Usługa niedostępna (tymczasowego przeciążenia lub konserwacji)</Error503>
+<PathSoundsNote1>Wstaw file:/// przed ścieżką dźwięk w formacie .ogg</PathSoundsNote1>
+<PathSoundsNote2>Przykład: file:///c:path o hesound.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>Gwizdek kończący pierwszą połowę</PathSoundsWhistle2>
+<PathSoundsWhistle3>Gwizdek kończący mecz</PathSoundsWhistle3>
+<EventYellow2>Druga żółta kartka</EventYellow2>
 </Htlivesight>

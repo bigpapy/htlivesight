@@ -314,14 +314,14 @@
 <Roof>Sėdimose vietose po stogu</Roof>
 <VIP>VIP ložėse</VIP>
 <CrowdinHelp>Padėkite išversti! Naudotis „Crowdin“ ypatingai lengva ir smagu! Pabandykite!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:pathtothesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
+<Error401>Klaida Nr 401: neleidžiama prisijungti. Autorizuokite htlivesight iš naujo. Spauskite „Gerai“.</Error401>
+<Error404>Klaida Nr. 404: duomenis nerasti. Jei klaida pasikartojo, patikrinkite, ar CHPP veikia.</Error404>
+<Error0>Klaida Nr. 0: nėra interneto ryšio.</Error0>
+<Error500>Klaida Nr. 500: vidinė Hattrick serverio klaida</Error500>
+<Error503>Klaida Nr. 503: CHPP sąsaja nepasiekiama (išjungta arba laikina perkrova)</Error503>
+<PathSoundsNote1>Prirašykite „file:///“ prieš garso failo (ogg formatu) adreso Jūsų kompiuteryje</PathSoundsNote1>
+<PathSoundsNote2>Pavyzdžiui: file:///c:keliasikigarso.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>Pirmo kėlinio pabaigos švilpukas</PathSoundsWhistle2>
+<PathSoundsWhistle3>Rungtynių pabaigos švilpukas</PathSoundsWhistle3>
+<EventYellow2>Antra geltona kortelė</EventYellow2>
 </Htlivesight>
