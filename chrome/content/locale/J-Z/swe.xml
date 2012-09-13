@@ -314,14 +314,14 @@
 <Roof>Stolar under tak</Roof>
 <VIP>Platser i VIP-boxar</VIP>
 <CrowdinHelp>Hjälp till att översätta! Med Crowdin är det jättelätt och väldigt roligt! Klicka här!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:pathtothesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
+<Error401>Error 401: obehörig åtkomst. Du måste få tillstånd igen. Klicka på ok för att fortsätta.</Error401>
+<Error404>Error 404: begärda resursen kunde inte hittas. Om detta felmeddelande visas igen, kontrollera om CHPP är nere.</Error404>
+<Error0>Error 0: ej ansluten till internet.</Error0>
+<Error500>Error 500: Internt serverfel (av Hattrick)</Error500>
+<Error503>Error 503: CHPP tjänsten är inte tillgänglig (tillfällig överbelastning eller underhåll)</Error503>
+<PathSoundsNote1>Infoga file:/// före sökvägen till ljudet i .ogg-format</PathSoundsNote1>
+<PathSoundsNote2>Exempel: file:///c:sökvägtillljudfilen.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>Halvtid</PathSoundsWhistle2>
+<PathSoundsWhistle3>Slutsignal</PathSoundsWhistle3>
+<EventYellow2>Andra gula kortet</EventYellow2>
 </Htlivesight>

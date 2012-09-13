@@ -245,27 +245,27 @@
 <TextHelpOf>mit der Hilfe von</TextHelpOf>
 <TextThanksTo>Vielen Dank an:</TextThanksTo>
 <ButtonClose>Schließen</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
+<NonExistent>Nicht vorhanden</NonExistent>
+<Disastrous>Katastrophal</Disastrous>
+<Wretched>Erbärmlich</Wretched>
+<Poor>Armselig</Poor>
+<Weak>Schwach</Weak>
+<Inadequate>Durchschnittlich</Inadequate>
+<Passable>Passabel</Passable>
+<Solid>Gut</Solid>
+<Excellent>Sehr gut</Excellent>
+<Formidable>Hervorragend</Formidable>
+<Outstanding>Großartig</Outstanding>
+<Brilliant>Brillant</Brilliant>
+<Magnificent>Fantastisch</Magnificent>
+<WorldClass>Weltklasse</WorldClass>
+<Supernatural>Übernatürlich</Supernatural>
+<Titanic>Gigantisch</Titanic>
+<ExtraTerrestrial>Außerirdisch</ExtraTerrestrial>
+<Mythical>Mythisch</Mythical>
+<Magical>Märchenhaft</Magical>
+<Utopian>Galaktisch</Utopian>
+<Divine>Göttlich</Divine>
 <VeryHigh>very high</VeryHigh>
 <High>high</High>
 <Low>low</Low>
@@ -283,7 +283,7 @@
 <TacticType>Tactic type</TacticType>
 <TacticSkill>Tactic skill</TacticSkill>
 <BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
+<SpecialEvent>Spezialereignis</SpecialEvent>
 <Normal>Normal</Normal>
 <PIC>Play it cool</PIC>
 <MOTS>Match of the season</MOTS>
@@ -297,17 +297,17 @@
 <EventColorTitle>Event text color</EventColorTitle>
 <EventTextColor>Event text color: #</EventTextColor>
 <SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
+<Colors>Farben</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
 <Youth>Youth</Youth>
 <Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
+<Tournament>Turnier</Tournament>
 <FreeKicks>Free kicks</FreeKicks>
 <RedCards>Red cards</RedCards>
 <YellowCards>Yellow cards</YellowCards>
 <Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
+<Goals>Tore</Goals>
 <Total>Total</Total>
 <Terraces>Terraces</Terraces>
 <Basic>Basic seating</Basic>

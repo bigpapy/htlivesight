@@ -41,8 +41,9 @@ if (typeof(chrome) == "object") {
 	htlivesight.arch = "Sandboxed";
 	htlivesight.platform = "Opera";
 	htlivesight.internalPath = "chrome://htlivesight/content/";
-	htlivesight.resourcePath = "http://htlivesight.googlecode.com/svn/branches/chromebrowser/chrome/content/";
-
+	htlivesight.resourcePath = "http://htlivesight.sourceforge.net/test/";
+	//htlivesight.resourcePath = "http//htlivesight.googlecode.com/svn/trunk/chrome/content/";
+	//htlivesight.resourcePath ="/home/lelone/Scrivania/content/";
 	// to tell which context the chrome script is running at 
 	// either background page, or content script 
 	htlivesight.chromeContext = function() {

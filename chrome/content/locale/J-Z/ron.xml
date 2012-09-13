@@ -314,14 +314,14 @@
 <Roof>Locuri acoperite</Roof>
 <VIP>Loje VIP</VIP>
 <CrowdinHelp>Ajuta-ne cu traducerea! Cu Crowdin e super-ușor și foarte amuzant! Click aici!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:pathtothesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
+<Error401>Eroare 401: acces neautorizat. Trebuie sa obții autorizarea din nou. Click pentru a continua.</Error401>
+<Error404>Eroare 404: resursa cerută nu a fost găsită. Daca eroarea aceasta reapare, verifică daca serviciul chpp este oprit.</Error404>
+<Error0>Eroare 0: neconectat la internet.</Error0>
+<Error500>Eroare 500: Eroare de server (Hattrick) internă</Error500>
+<Error503>Eroare 503: Serviciul CHPP indisponibil (supraîncărcare temporară sau mentenanță)</Error503>
+<PathSoundsNote1>Inserează file:/// înainte de calea către fișierul de sunet .ogg</PathSoundsNote1>
+<PathSoundsNote2>Exemplu: file:///c:caleacătresunet.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>Fluier de sfârșit al primei reprize</PathSoundsWhistle2>
+<PathSoundsWhistle3>Fluier de final</PathSoundsWhistle3>
+<EventYellow2>Al doilea cartonaș galben</EventYellow2>
 </Htlivesight>

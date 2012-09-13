@@ -22,7 +22,7 @@ htlivesight.DOM = {
 		  teamName=match.away.team.name;
 	  }
 
-	  $("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 330, title: teamName, dialogClass: "formationbg" });
+	  $("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 400, title: teamName, dialogClass: "formationbg" });
 	  //	$("#"+id+"_table").dialog('open');
 	  //	alert("popup opened!");
 	  return false;
@@ -247,6 +247,8 @@ htlivesight.DOM = {
     	mainDiv= document.createElement("div");
     	mainDiv.setAttribute("id", id);
     	mainDiv.style.display='none';
+    	mainDiv.style.marginLeft="auto";
+    	mainDiv.style.marginRight="auto";
     	var popupset = document.getElementById("live_box");
     	popupset.appendChild(mainDiv);
     	ul = document.createElement("ul");
@@ -287,7 +289,9 @@ htlivesight.DOM = {
     //alert(""+lineup);
     for(i=0; i<lineup.length; i++) {
       hbox = document.createElement("tr");
-      hbox.setAttribute("pack", "center");
+      //hbox.setAttribute("pack", "center");
+      hbox.style.marginLeft="auto";
+      hbox.style.marginRight="auto";
 	  //hbox.setAttribute('class','formationrow');
       popup.appendChild(hbox);
       for(j=0; j<lineup[i].length; j++) {
