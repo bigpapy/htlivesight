@@ -39,7 +39,7 @@
 <ServerON>Připojeno</ServerON>
 <ServerOFF>Nepřipojeno</ServerOFF>
 <ResetToken>Autorizace byla odstraněna. Restartuj HTLS, nebo počkej na aktualizaci (cca 1 min.).</ResetToken>
-<NoHTServer>Nevybral(a) jsi server Hattricku, na který jsi se přihlásil(a) přes svůj prohlížeč. Klikni pravým tlačítkem myši na pozadí = možnosti = obecné = vyplň číslo serveru.</NoHTServer>
+<NoHTServer>Nevybral(a) jsi server Hattricku, na který jsi se přihlásil(a) přes svůj prohlížeč. Klikni pravým tlačítkem myši na pozadí \= možnosti \= obecné \= vyplň číslo serveru.</NoHTServer>
 <MatchesMaximum>Nemůžeš sledovat více než 20 zápasů!</MatchesMaximum>
 <LeagueRound>Kolo</LeagueRound>
 <MessageHattrickError>Server Hattricku hlásí chybu.</MessageHattrickError>
@@ -320,7 +320,7 @@
 <Error500>Error 500: internal server error (of Hattrick)</Error500>
 <Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
 <PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:pathtothesound.ogg</PathSoundsNote2>
+<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
 <PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
 <EventYellow2>Second yellow card</EventYellow2>
