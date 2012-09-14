@@ -367,6 +367,7 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
               //TODO: restore next line when CHPP unsynch will be fixed.
                 $( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
                 event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
+              //  $("#"+side+"_team_formation_"+match.id+"_"+match.sourceSystem).css({'background-color':'#88ff88'}).animate({'background-color':'#000000'},1000);
                 $( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 //                console.log("Function: SubstitutionEvent: action: passed value to show on right click!");
                 match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
@@ -449,6 +450,7 @@ htlivesight.LineUp.SwapEvent= function(event, match){
   //TODO: restore next line when CHPP unsynch will be fixed.
     $( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
     event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
+   // $("#"+side+"_team_formation_"+match.id+"_"+match.sourceSystem).css({'background-color':'#88ff88'}).animate({'background-color':'#000000'},1000);
     $( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
     lineUp[0].update++;
     if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
@@ -575,6 +577,7 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
               //TODO: restore next line when CHPP unsynch will be fixed.
                 $( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
                 event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
+               // $("#"+side+"_team_formation_"+match.id+"_"+match.sourceSystem).css({'background-color':'#88ff88'}).animate({'background-color':'#000000'},1000);
                 $( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 //                console.log("Function: IndividualOrderEvent: action: passed value to show on right click!");
                 
@@ -622,6 +625,7 @@ htlivesight.LineUp.SentOffEvent= function(event, match){
    //TODO: restore next line when CHPP unsynch will be fixed.  
     $( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
       event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp), event);
+     // $("#"+side+"_team_formation_"+match.id+"_"+match.sourceSystem).css({'background-color':'#88ff88'}).animate({'background-color':'#000000'},1000);
       $( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
       
     match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
@@ -668,6 +672,7 @@ htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
     //TODO: restore next line when CHPP unsynch will be fixed.  
     $( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
     event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
+   // $("#"+side+"_team_formation_"+match.id+"_"+match.sourceSystem).css({'background-color':'#88ff88'}).animate({'background-color':'#000000'},1000);
     $( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
     
     match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
@@ -727,6 +732,7 @@ if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
 //TODO: restore next line when CHPP unsynch will be fixed.
 $( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
   event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
+  //$("#"+side+"_team_formation_"+match.id+"_"+match.sourceSystem).css({'background-color':'#88ff88'}).animate({'background-color':'#000000'},1000);
   $( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
   
     match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
