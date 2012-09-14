@@ -320,7 +320,7 @@
 <Error500>Klaida Nr. 500: vidinė Hattrick serverio klaida</Error500>
 <Error503>Klaida Nr. 503: CHPP sąsaja nepasiekiama (išjungta arba laikina perkrova)</Error503>
 <PathSoundsNote1>Prirašykite „file:///“ prieš garso failo (ogg formatu) adreso Jūsų kompiuteryje</PathSoundsNote1>
-<PathSoundsNote2>Pavyzdžiui: file:///c:keliasikigarso.ogg</PathSoundsNote2>
+<PathSoundsNote2>Pavyzdžiui: file:///c:\kelias\iki\garso.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Pirmo kėlinio pabaigos švilpukas</PathSoundsWhistle2>
 <PathSoundsWhistle3>Rungtynių pabaigos švilpukas</PathSoundsWhistle3>
 <EventYellow2>Antra geltona kortelė</EventYellow2>

@@ -320,7 +320,7 @@
 <Error500>Greška 500: unutarnja greška servera (Hattricka)</Error500>
 <Error503>Greška 503: CHPP servis nedostupan (trenutno preopterečenje ili održavanje)</Error503>
 <PathSoundsNote1>Umetnite file:/// prije putanje za zvuk u .ogg ili .wav formatu</PathSoundsNote1>
-<PathSoundsNote2>Primjer: file:///c:putanjadozvuka.ogg</PathSoundsNote2>
+<PathSoundsNote2>Primjer: file:///c:\putanja\do\zvuka.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Zvižduk za kraj prvog poluvremena</PathSoundsWhistle2>
 <PathSoundsWhistle3>Zvižduk za kraj utakmice</PathSoundsWhistle3>
 <EventYellow2>Drugi žuti karton</EventYellow2>

@@ -320,7 +320,7 @@
 <Error500>Грешка 500: интерна грешка Хеттрик сервера</Error500>
 <Error503>Грешка 503: CHPP сервис није доступан због преоптерећења или одржавања</Error503>
 <PathSoundsNote1>Убаците file:/// испред адресе звучног фајла у .ogg формату</PathSoundsNote1>
-<PathSoundsNote2>На пример: file:///c:адреса_фајла.ogg</PathSoundsNote2>
+<PathSoundsNote2>На пример: file:///c:\адреса_фајла.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Звиждук за крај првог полувремена</PathSoundsWhistle2>
 <PathSoundsWhistle3>Звиждук за крај утакмице</PathSoundsWhistle3>
 <EventYellow2>Други жути картон</EventYellow2>

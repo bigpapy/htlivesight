@@ -320,7 +320,7 @@
 <Error500>Eroare 500: Eroare de server (Hattrick) internă</Error500>
 <Error503>Eroare 503: Serviciul CHPP indisponibil (supraîncărcare temporară sau mentenanță)</Error503>
 <PathSoundsNote1>Inserează file:/// înainte de calea către fișierul de sunet .ogg</PathSoundsNote1>
-<PathSoundsNote2>Exemplu: file:///c:caleacătresunet.ogg</PathSoundsNote2>
+<PathSoundsNote2>Exemplu: file:///c:\calea\către\sunet.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Fluier de sfârșit al primei reprize</PathSoundsWhistle2>
 <PathSoundsWhistle3>Fluier de final</PathSoundsWhistle3>
 <EventYellow2>Al doilea cartonaș galben</EventYellow2>

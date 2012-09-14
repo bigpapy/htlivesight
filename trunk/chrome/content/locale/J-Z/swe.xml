@@ -320,7 +320,7 @@
 <Error500>Error 500: Internt serverfel (av Hattrick)</Error500>
 <Error503>Error 503: CHPP tjänsten är inte tillgänglig (tillfällig överbelastning eller underhåll)</Error503>
 <PathSoundsNote1>Infoga file:/// före sökvägen till ljudet i .ogg-format</PathSoundsNote1>
-<PathSoundsNote2>Exempel: file:///c:sökvägtillljudfilen.ogg</PathSoundsNote2>
+<PathSoundsNote2>Exempel: file:///c:\sökväg\till\ljudfilen.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Halvtid</PathSoundsWhistle2>
 <PathSoundsWhistle3>Slutsignal</PathSoundsWhistle3>
 <EventYellow2>Andra gula kortet</EventYellow2>

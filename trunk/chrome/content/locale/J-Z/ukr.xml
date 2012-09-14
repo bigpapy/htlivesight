@@ -320,7 +320,7 @@
 <Error500>Помилка 500: Внутрішня помилка сервера (Hattrick)</Error500>
 <Error503>Помилка 503: Служба СНРР недоступна (тимчасове перевантаження або технічне обслуговування)</Error503>
 <PathSoundsNote1>Вставте file:/// перед шляхом до звуку в форматі .ogg</PathSoundsNote1>
-<PathSoundsNote2>Наприклад: file:///c:pathtothesound.ogg</PathSoundsNote2>
+<PathSoundsNote2>Наприклад: file:///c:\path\to\thesound.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Свисток на перерву</PathSoundsWhistle2>
 <PathSoundsWhistle3>Фінальний свисток</PathSoundsWhistle3>
 <EventYellow2>Друга жовта картка</EventYellow2>
