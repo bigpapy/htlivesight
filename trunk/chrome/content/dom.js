@@ -175,7 +175,7 @@ htlivesight.DOM = {
 	  }else if (sourceSystem=="youth"||sourceSystem=="True"){
 		  matchLink=matchLink+"&SourceSystem=Youth";
 	  }else if(htlivesight.Match.List["_"+matchId+"_"+sourceSystem].arena.name==null){ matchLink=matchLink+"&SourceSystem=HTOIntegrated";};
-	  alert("matchLink= "+matchLink+"\n sourceSystem="+htlivesight.Match.List["_"+matchId+"_"+sourceSystem].sourceSystem);
+	//  alert("matchLink= "+matchLink+"\n sourceSystem="+htlivesight.Match.List["_"+matchId+"_"+sourceSystem].sourceSystem);
 	 var matchpage=window.open(matchLink);
   }catch(e){alert("toggleView: "+e);}// added by bigpapy to debug from XUL to HTML
 	  },
