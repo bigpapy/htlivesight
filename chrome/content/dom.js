@@ -321,6 +321,8 @@ htlivesight.DOM = {
      //   label.setAttribute("class", "border");
         hbox.appendChild(label);
       }
+      var originalBg = $(".ui-widget-content").css("background-color");
+      $("#"+id.substr(0,id.length-6)).css({'background-color':'#C4C239'}).animate({'background-color':originalBg},2000);
     //  lineupText+="<br>";
     };
     //lineupText=lineup;
