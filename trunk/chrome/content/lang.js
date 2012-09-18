@@ -72,6 +72,7 @@ document.getElementById("LanguageSelect").innerHTML=htlivesight.Util.Parse("Lang
 document.getElementById("LanguageNote").innerHTML=htlivesight.Util.Parse("LanguageNote",htlivesight.data[0]);
 document.getElementById("GeneralServer").innerHTML=htlivesight.Util.Parse("GeneralServer",htlivesight.data[0]);
 document.getElementById("GeneralNote").innerHTML=htlivesight.Util.Parse("GeneralNote",htlivesight.data[0]);
+document.getElementById("CrowdinHelp").innerHTML=htlivesight.Util.Parse("CrowdinHelp",htlivesight.data[0]);
 
 //console.log("Settings tab 2");
 document.getElementById("TabMatches").innerHTML=htlivesight.Util.Parse("TabMatches",htlivesight.data[0]);

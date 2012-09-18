@@ -299,6 +299,8 @@ htlivesight.Settings = {
 			document.getElementById("GeneralServer").innerHTML=htlivesight.Util.Parse("GeneralServer",data[0]);
 //			alert("16");
 			document.getElementById("GeneralNote").innerHTML=htlivesight.Util.Parse("GeneralNote",data[0]);
+			
+			document.getElementById("CrowdinHelp").innerHTML=htlivesight.Util.Parse("CrowdinHelp",data[0]);
 //			alert("17");
 //			matches
 			document.getElementById("MatchesLeague").innerHTML=htlivesight.Util.Parse("MatchesLeague",data[0]);
