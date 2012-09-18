@@ -279,7 +279,7 @@
 <LeftAttack>Attacco sinistro</LeftAttack>
 <IndirectSetPiecesDefence>Calci di punizione indiretti difesa</IndirectSetPiecesDefence>
 <IndirectSetPiecesAttack>Calci di punizione indiretti attacco</IndirectSetPiecesAttack>
-<TeamAttitude>atteggiamento</TeamAttitude>
+<TeamAttitude>Atteggiamento</TeamAttitude>
 <TacticType>Tipo di tattica</TacticType>
 <TacticSkill>Livello di tattica</TacticSkill>
 <BallPosses>Possesso palla</BallPosses>
@@ -315,7 +315,7 @@
 <VIP>Poltrone VIP</VIP>
 <CrowdinHelp>Aiutaci a tradurre! Con Crowdin è facilissimo e molto divertente! Clicca qui!</CrowdinHelp>
 <Error401>Errore 401: accesso non autorizzato. Devi ottenere nuovamente l'autorizzazione. Fare clic su ok per continuare.</Error401>
-<Error404>Errore 404: la risorsa richiesta potrebbe non essere disponibile. Se questo errore appare nuovamente controllare se il servizio chpp è off line.</Error404>
+<Error404>Errore 404: la risorsa richiesta potrebbe non essere disponibile. Se questo errore appare nuovamente controllare se il servizio CHPP è off line.</Error404>
 <Error0>Errore 0: non connesso a internet.</Error0>
 <Error500>Errore 500: errore interno del server (di Hattrick)</Error500>
 <Error503>Errore 503: servizio CHPP non disponibile (sovraccarico temporaneo o manutenzione)</Error503>
