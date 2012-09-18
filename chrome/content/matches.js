@@ -78,10 +78,6 @@ htlivesight.Matches.ParseMatch = function (xml, sourceSystem) {
     sourceSystem	
   );
 };
-
 htlivesight.Matches.ParseMatchType = function (xml) {    alert ("questa funzione non viene mai chiamata: Matches.ParseMatchType");
 //  return htlivesight.Util.Parse("<MatchType>(.*?)</MatchType>", xml);		return xml.getElementsByTagName("MatchType")[0].textContent;
-};htlivesight.Matches.ParseSourceSystem = function (xml) {//    alert ("questa funzione non viene mai chiamata: Matches.ParseMatchType");//  return htlivesight.Util.Parse("<MatchType>(.*?)</MatchType>", xml);	//alert("Into Matches.ParseSourceSystem: Sourcesystem="+ xml.getElementsByTagName("SourceSystem")[0].textContent);	return xml.getElementsByTagName("SourceSystem")[0].textContent;};
- 
-
- 
+};htlivesight.Matches.ParseSourceSystem = function (xml) {//    alert ("questa funzione non viene mai chiamata: Matches.ParseMatchType");//  return htlivesight.Util.Parse("<MatchType>(.*?)</MatchType>", xml);	//alert("Into Matches.ParseSourceSystem: Sourcesystem="+ xml.getElementsByTagName("SourceSystem")[0].textContent);	return xml.getElementsByTagName("SourceSystem")[0].textContent.toLowerCase();};

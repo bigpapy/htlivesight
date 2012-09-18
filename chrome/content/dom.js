@@ -174,7 +174,7 @@ htlivesight.DOM = {
 		  matchLink=matchLink+"&SourceSystem=Hattrick";
 	  }else if (sourceSystem=="youth"||sourceSystem=="Youth"||sourceSystem=="True"){
 		  matchLink=matchLink+"&SourceSystem=Youth";
-	  }else if(sourceSystem=="htointegrated"||sourceSystem=="Htointegrated"){ matchLink=matchLink+"&SourceSystem=HTOIntegrated";};
+	  }else if(sourceSystem=="htointegrated"||sourceSystem=="HTOIntegrated"){ matchLink=matchLink+"&SourceSystem=HTOIntegrated";};
 	//  alert("matchLink= "+matchLink+"\n sourceSystem="+htlivesight.Match.List["_"+matchId+"_"+sourceSystem].sourceSystem);
 	 var matchpage=window.open(matchLink);
   }catch(e){alert("toggleView: "+e);}// added by bigpapy to debug from XUL to HTML

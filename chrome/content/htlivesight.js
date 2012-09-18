@@ -134,6 +134,13 @@ document.getElementById("live_box").setAttribute("style", "width:" + (winW-320) 
     	document.getElementById("reLiveSpeed").disabled = true;
       	document.getElementById("reLiveByEvent").disabled = true;
       }
+ //   alert("before Adding server to htls link forum");
+    if (htlivesight.prefs.general.hattrickServer=="") htlivesight.prefs.general.hattrickServer="www"; 
+    var link=document.getElementById("HTLSThread").getAttribute("href");
+    link="http://"+htlivesight.prefs.general.hattrickServer+link
+  //  alert("link= "+ link+ "server= "+htlivesight.prefs.general.hattrickServer);
+    document.getElementById("HTLSThread").setAttribute("href",link);
+  //  alert("after Adding server to htls link forum");
 //    console.log("starter14");
   },
   getRecommendedServer: function() {
