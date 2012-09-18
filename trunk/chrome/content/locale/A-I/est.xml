@@ -314,14 +314,14 @@
 <Roof>Katusealused istmed</Roof>
 <VIP>VIP-kohad</VIP>
 <CrowdinHelp>Aita tõlkida! Crowdini abiga on see imelihtne! Kliki siia!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
+<Error401>Viga 401: ligipääs keelatud. Sa pead uuesti autoriseerima. Jätkamiseks kliki OK.</Error401>
+<Error404>Viga 404: soovitud lehekülge ei leitud. Kui viga kordub, kontrolli kas CHPP süsteem töötab.</Error404>
+<Error0>Viga 0: interneti ühendus puudub.</Error0>
+<Error500>Viga 500: (Hattrick) serveri süsteemi viga.</Error500>
+<Error503>Viga 503: CHPP teenus ei ole kättesaadav (ajutine tõrge või hooldustööd).</Error503>
+<PathSoundsNote1>Sisesta .ogg helifaili tee algusesse file:///</PathSoundsNote1>
+<PathSoundsNote2>Näiteks: file:///c:\tee\failini\failinimi.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>Esimese poolaja lõpuvile</PathSoundsWhistle2>
+<PathSoundsWhistle3>Mängu lõpuvile</PathSoundsWhistle3>
+<EventYellow2>Teine kollane kaart</EventYellow2>
 </Htlivesight>

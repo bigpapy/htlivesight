@@ -314,14 +314,14 @@
 <Roof>Lugares cobertos</Roof>
 <VIP>Camarotes</VIP>
 <CrowdinHelp>Ajude a traduzir! Com Crowdin é super fácil e muito divertido! Clique aqui!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
+<Error401>Erro 401: acesso não autorizado. Tem que obter nova autorização. Clique em ok para continuar.</Error401>
+<Error404>Erro 404: o recurso solicitado não foi encontrado. Se este erro ocorrer novamente verifique se o serviço CHPP está em baixo.</Error404>
+<Error0>Erro: não ligado à internet.</Error0>
+<Error500>Erro 500: erro do servidor interno (do Hattrick)</Error500>
+<Error503>Erro 503: CHPP indisponível (sobrecarga temporária ou manutenção)</Error503>
+<PathSoundsNote1>Inserir file:/// antes do caminho do som no formato .ogg</PathSoundsNote1>
+<PathSoundsNote2>Exemplo: file:///c:path o hesound.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>Fim da 1ª parte</PathSoundsWhistle2>
+<PathSoundsWhistle3>Apito final</PathSoundsWhistle3>
+<EventYellow2>Segundo cartão amarelo</EventYellow2>
 </Htlivesight>

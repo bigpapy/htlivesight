@@ -99,8 +99,8 @@
 <EventSpecialExperience>SE Expérience</EventSpecialExperience>
 <EventSpecialLowExperience>SE Manque d'expérience</EventSpecialLowExperience>
 <EventSpecialWinger>SE+ ailier</EventSpecialWinger>
-<EventSpecialTechnical>SE Technique contre JdT</EventSpecialTechnical>
-<EventSpecialCounterAttack>Contre-attaque</EventSpecialCounterAttack>
+<EventSpecialTechnical>Technique contre JdT</EventSpecialTechnical>
+<EventSpecialCounterAttack>SE Contre-attaque</EventSpecialCounterAttack>
 <EventSpecialCornerKick>SE Corner</EventSpecialCornerKick>
 <EventSpecialIndirect>Coup franc indirect</EventSpecialIndirect>
 <EventSpecialUnpredictableLongPass>SE+ imprévisible: longue passe</EventSpecialUnpredictableLongPass>
@@ -128,7 +128,7 @@
 <InexperiencedDefender>Défenseur inexpérimenté</InexperiencedDefender>
 <WingerHead>SE ailier: centre pour Joueur de tête</WingerHead>
 <EventSpecialLongShotDefended>Tir lointain intercepté</EventSpecialLongShotDefended>
-<EventSpecialQuickVsQuick>SE rapide contre rapide</EventSpecialQuickVsQuick>
+<EventSpecialQuickVsQuick>Rapide contre rapide</EventSpecialQuickVsQuick>
 <LongShot>tir lointain</LongShot>
 <MeteoSpecialTechnicalRain>SE- technique (-buteur -construction)</MeteoSpecialTechnicalRain>
 <MeteoSpecialPowerfulRain>SE+ costaud (+buteur +défense +construction)</MeteoSpecialPowerfulRain>
