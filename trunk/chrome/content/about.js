@@ -15,7 +15,7 @@ htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
 //document.getElementById("about-dialog").attributes.getNamedItem("title").value=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);
 
 document.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
-document.getElementById("creationDate").innerHTML="02 "+htlivesight.Util.Parse("MonthSeptember",htlivesight.data[0])+" 2012";
+document.getElementById("creationDate").innerHTML="23 "+htlivesight.Util.Parse("MonthSeptember",htlivesight.data[0])+" 2012";
 document.getElementById("createdBy").innerHTML=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
 
 document.getElementById("TabTranslators").innerHTML=htlivesight.Util.Parse("TabTranslators",htlivesight.data[0]);
