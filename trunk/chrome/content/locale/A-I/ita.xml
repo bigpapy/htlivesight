@@ -324,4 +324,16 @@
 <PathSoundsWhistle2>Fischio di fine primo tempo</PathSoundsWhistle2>
 <PathSoundsWhistle3>Fischio di fine partita</PathSoundsWhistle3>
 <EventYellow2>Secondo cartellino giallo</EventYellow2>
+<Up>Su</Up>
+<Down>Giù</Down>
+<LoggedIn>Connesso come</LoggedIn>
+<latestNews>Controlla le ultime notizie su</latestNews>
+<HTLSThread>Forum di Hattrick</HTLSThread>
+<ProjectWebsite>Sito web del progetto</ProjectWebsite>
+<GooglePlusPage>Pagina di Google+</GooglePlusPage>
+<TwitterPage>Pagina di Twitter</TwitterPage>
+<FacebookPage>Pagina di Facebook</FacebookPage>
+<chatLink>Apri la chat</chatLink>
+<hidesidebar>Nascondi la barra laterale</hidesidebar>
+<addFriend>Clicca per aggiungere questa squadra agli amici</addFriend>
 </Htlivesight>

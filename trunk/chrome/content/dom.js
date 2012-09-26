@@ -321,8 +321,9 @@ htlivesight.DOM = {
      //   label.setAttribute("class", "border");
         hbox.appendChild(label);
       }
- //     var originalBg = $(".ui-widget-content").css("background-color");
- //     $("#"+id.substr(0,id.length-6)).css({'background-color':'#C4C239'}).animate({'background-color':originalBg},2000);
+      var originalBg = $(".ui-widget-content").css("background-color");
+      $("#"+id.substr(0,id.length-6)).css({'background-color':'#C4C239'}).animate({'background-color':originalBg},2000);
+    //  document.getElementById(id.substr(0,id.length-6)).style.backgroundColor="inherit";
     //  lineupText+="<br>";
     };
     //lineupText=lineup;
@@ -2282,7 +2283,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 	  teamName.setAttribute("title","");
   }else{
 	  htlivesight.Util.RemoveClass(teamName,['short_own','short_friend']);//reset styling
-	  teamName.setAttribute("title","click on the team to add to friends list");
+	  teamName.setAttribute("title", htlivesight.Util.Parse("addFriend",data[0]));
 	  teamName.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.home.team.id,match.sourceSystem);},false);
 
   }
@@ -2299,7 +2300,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 	  teamName.setAttribute("title","");
   }else{
 	  htlivesight.Util.RemoveClass(teamName,['short_own','short_friend']);//reset styling
-	  teamName.setAttribute("title","click on the team to add to friends list");
+	  teamName.setAttribute("title", htlivesight.Util.Parse("addFriend",data[0]));
 	  teamName.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.away.team.id,match.sourceSystem);},false);
 
   }
