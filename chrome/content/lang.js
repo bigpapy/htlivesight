@@ -52,7 +52,7 @@ document.getElementById("LoginByEvent").innerHTML=htlivesight.Util.Parse("LoginB
 document.getElementById("about-dialog").attributes.getNamedItem("title").value=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);
 
 document.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
-document.getElementById("creationDate").innerHTML="23 "+htlivesight.Util.Parse("MonthSeptember",htlivesight.data[0])+" 2012";
+document.getElementById("creationDate").innerHTML="02 "+htlivesight.Util.Parse("MonthSeptember",htlivesight.data[0])+" 2012";
 document.getElementById("createdBy").innerHTML=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
 
 document.getElementById("TabTranslators").innerHTML=htlivesight.Util.Parse("TabTranslators",htlivesight.data[0]);
@@ -229,7 +229,23 @@ document.getElementById("label_neutralColorCode").innerHTML=htlivesight.Util.Par
 document.getElementById("CustomEventText").innerHTML=htlivesight.Util.Parse("EventColorTitle",htlivesight.data[0]);
 document.getElementById("label_textColorCode").innerHTML=htlivesight.Util.Parse("EventTextColor",htlivesight.data[0]);
 document.getElementById("label_seTextColorCode").innerHTML=htlivesight.Util.Parse("SETextColor",htlivesight.data[0]);
-//console.log("end localization");
+
+/** biigpapy new localizations **/
+//document.getElementById("imgup_friend").innerHTML=htlivesight.Util.Parse("Up",htlivesight.data[0]);
+//document.getElementById("imgdown_friend").innerHTML=htlivesight.Util.Parse("Down",htlivesight.data[0]);
+document.getElementById("LoggedIn").innerHTML=htlivesight.Util.Parse("LoggedIn",htlivesight.data[0]);
+document.getElementById("latestNews").innerHTML=htlivesight.Util.Parse("latestNews",htlivesight.data[0]);
+document.getElementById("HTLSThread").title=htlivesight.Util.Parse("HTLSThread",htlivesight.data[0]);
+document.getElementById("ProjectWebsite").title=htlivesight.Util.Parse("ProjectWebsite",htlivesight.data[0]);
+document.getElementById("GooglePlusPage").title=htlivesight.Util.Parse("GooglePlusPage",htlivesight.data[0]);
+document.getElementById("TwitterPage").title=htlivesight.Util.Parse("TwitterPage",htlivesight.data[0]);
+document.getElementById("FacebookPage").title=htlivesight.Util.Parse("FacebookPage",htlivesight.data[0]);
+document.getElementById("chat_link").title=htlivesight.Util.Parse("chatLink",htlivesight.data[0]);
+document.getElementById("hidesidebar").title=htlivesight.Util.Parse("hidesidebar",htlivesight.data[0]);
+document.getElementById("options_link").title=htlivesight.Util.Parse("MenuOptions",htlivesight.data[0]);
+document.getElementById("about_link").title=htlivesight.Util.Parse("MenuAbout",htlivesight.data[0]);
+
+//console.log("end localization");ProjectWebsite
 
 }
 
