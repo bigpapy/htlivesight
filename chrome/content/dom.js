@@ -321,8 +321,8 @@ htlivesight.DOM = {
      //   label.setAttribute("class", "border");
         hbox.appendChild(label);
       }
-      var originalBg = $(".ui-widget-content").css("background-color");
-      $("#"+id.substr(0,id.length-6)).css({'background-color':'#C4C239'}).animate({'background-color':originalBg},2000);
+   //   var originalBg = $(".ui-widget-content").css("background-color");
+   //   $("#"+id.substr(0,id.length-6)).css({'background-color':'#C4C239'}).animate({'background-color':originalBg},2000);
     //  document.getElementById(id.substr(0,id.length-6)).style.backgroundColor="inherit";
     //  lineupText+="<br>";
     };

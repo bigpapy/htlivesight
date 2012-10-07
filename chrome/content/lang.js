@@ -4,23 +4,23 @@ htlivesight.Lang = {
 //contentPath: htlivesight.resourcePath,
 startup: function() {},
 localization: function() {
-//	console.log("begin localization");
+//alert("begin localization");
 htlivesight.prefs=htlivesight.Preferences.get();
-//console.log("1");
+//alert("1");
 htlivesight.url=htlivesightEnv.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
-//console.log("2: url="+ htlivesight.url);
+//alert("2: url="+ htlivesight.url);
 htlivesight.languageXML=htlivesight.loadXml(htlivesight.url);
-//console.log("3");
+//alert("3");
 htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
 
 //************* added by bigpapy to load prefs first time!
-//console.log("before if!");
+//alert("before if!");
 if (!htlivesightPrefs.getBool("HtlsFirstStart")){
-//	console.log("into if before opening optionspage");
-//	console.log("htlivesightEnv.contentPath="+ htlivesightEnv.contentPath);
+//alert("into if before opening optionspage");
+//	alert("htlivesightEnv.contentPath="+ htlivesightEnv.contentPath);
 
 	var optionsPage=window.open(htlivesightEnv.contentPath+"settings.html","_parent");
-//	console.log("after opening optionspage");
+//	alert("after opening optionspage");
 //	optionsPage.onfocus();
 
 	
@@ -29,14 +29,15 @@ if (!htlivesightPrefs.getBool("HtlsFirstStart")){
 
 	
 
-//	console.log("7");
+//	alert("7");
 };
 // end added by bigpapy to load prefs first time **************************
 
 //LOGIN
-//console.log("Login");
-document.getElementById("login-dialog").attributes.getNamedItem("title").value=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);
+//alert("Login");
 
+document.getElementById("ui-dialog-title-login-dialog").innerHTML=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);	
+//alert("login2");
 document.getElementById("LoginLabel2").innerHTML=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);
 document.getElementById("LoginTeamId").innerHTML=htlivesight.Util.Parse("LoginTeamId",htlivesight.data[0]);
 document.getElementById("LoginSave").innerHTML=htlivesight.Util.Parse("LoginRememberMe",htlivesight.data[0]);
@@ -48,9 +49,8 @@ document.getElementById("LoginSpeed").innerHTML=htlivesight.Util.Parse("LoginSpe
 document.getElementById("LoginByEvent").innerHTML=htlivesight.Util.Parse("LoginByEvent",htlivesight.data[0]);
 
 //ABOUT
-//console.log("About");
-document.getElementById("about-dialog").attributes.getNamedItem("title").value=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);
-
+//alert("About");
+document.getElementById("ui-dialog-title-about-dialog").innerHTML=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);	
 document.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
 document.getElementById("creationDate").innerHTML="02 "+htlivesight.Util.Parse("MonthSeptember",htlivesight.data[0])+" 2012";
 document.getElementById("createdBy").innerHTML=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
@@ -61,9 +61,8 @@ document.getElementById("ThanksTo").innerHTML=htlivesight.Util.Parse("TextThanks
 document.getElementById("TabCredits").innerHTML=htlivesight.Util.Parse("TabCredits",htlivesight.data[0]);
 
 //SETTINGS
-//console.log("Settings");
-document.getElementById("options-dialog").attributes.getNamedItem("title").value=htlivesight.Util.Parse("WindowTitle",htlivesight.data[0]);
-
+//alert("Settings");
+document.getElementById("ui-dialog-title-options-dialog").innerHTML=htlivesight.Util.Parse("WindowTitle",htlivesight.data[0]);
 document.getElementById("TabGeneral").innerHTML=htlivesight.Util.Parse("TabGeneral",htlivesight.data[0]);
 document.getElementById("GeneralOpen").innerHTML=htlivesight.Util.Parse("GeneralOpen",htlivesight.data[0]);
 document.getElementById("label_openin_tab").innerHTML=htlivesight.Util.Parse("GeneralNewTab",htlivesight.data[0]);
@@ -74,7 +73,7 @@ document.getElementById("GeneralServer").innerHTML=htlivesight.Util.Parse("Gener
 document.getElementById("GeneralNote").innerHTML=htlivesight.Util.Parse("GeneralNote",htlivesight.data[0]);
 document.getElementById("CrowdinHelp").innerHTML=htlivesight.Util.Parse("CrowdinHelp",htlivesight.data[0]);
 
-//console.log("Settings tab 2");
+//alert("Settings tab 2");
 document.getElementById("TabMatches").innerHTML=htlivesight.Util.Parse("TabMatches",htlivesight.data[0]);
 document.getElementById("MatchesLeague").innerHTML=htlivesight.Util.Parse("MatchesLeague",htlivesight.data[0]);
 document.getElementById("label_chkGetLeague").innerHTML=htlivesight.Util.Parse("MatchesGetLeague",htlivesight.data[0]);
@@ -98,7 +97,7 @@ document.getElementById("label_chkHdrInjured").innerHTML=htlivesight.Util.Parse(
 document.getElementById("MatchesWindow").innerHTML=htlivesight.Util.Parse("MatchesWindow",htlivesight.data[0]);
 document.getElementById("MatchesLines").innerHTML=htlivesight.Util.Parse("MatchesLines",htlivesight.data[0]);
 
-//console.log("Settings tab 3");
+//alert("Settings tab 3");
 document.getElementById("TabNotifications").innerHTML=htlivesight.Util.Parse("TabNotifications",htlivesight.data[0]);
 document.getElementById("NotifyNotify").innerHTML=htlivesight.Util.Parse("NotifyNotify",htlivesight.data[0]);
 document.getElementById("label_chkSound").innerHTML=htlivesight.Util.Parse("NotifyEnableSound",htlivesight.data[0]);
@@ -106,7 +105,7 @@ document.getElementById("label_chkSoundOnlyOpened").innerHTML=htlivesight.Util.P
 document.getElementById("label_chkFlash").innerHTML=htlivesight.Util.Parse("NotifyFlash",htlivesight.data[0]);
 document.getElementById("label_chkSlider").innerHTML=htlivesight.Util.Parse("NotifyStatus",htlivesight.data[0]);
 
-//console.log("Settings tab 4");
+//alert("Settings tab 4");
 document.getElementById("TabOther").innerHTML=htlivesight.Util.Parse("TabOther",htlivesight.data[0]);
 document.getElementById("OtherAuthorization").innerHTML=htlivesight.Util.Parse("OtherAuthorization",htlivesight.data[0]);
 document.getElementById("OtherReset").innerHTML=htlivesight.Util.Parse("OtherReset",htlivesight.data[0]);
@@ -117,7 +116,7 @@ document.getElementById("OtherReverseNote").innerHTML=htlivesight.Util.Parse("Ot
 document.getElementById("OtherEventKey").innerHTML=htlivesight.Util.Parse("OtherEventKey",htlivesight.data[0]);
 document.getElementById("label_printEventKey").innerHTML=htlivesight.Util.Parse("OtherEventKeyNote",htlivesight.data[0]);
 
-//console.log("Settings tab 5");
+//alert("Settings tab 5");
 document.getElementById("TabCustom").innerHTML=htlivesight.Util.Parse("TabCustom",htlivesight.data[0]);
 document.getElementById("CustomIcons").innerHTML=htlivesight.Util.Parse("CustomIcons",htlivesight.data[0]);
 document.getElementById("label_oldIcons").innerHTML=htlivesight.Util.Parse("CustomIconsOld",htlivesight.data[0]);
@@ -188,7 +187,7 @@ document.getElementById("label_hattrickButton_play").innerHTML=htlivesight.Util.
 
 
 //SIDEBAR
-//console.log("Sidebar");
+//alert("Sidebar");
 document.getElementById("LeagueMatches").innerHTML=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);
 
 document.getElementById("LeagueLiveTable").innerHTML=htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0]);
@@ -245,7 +244,7 @@ document.getElementById("hidesidebar").title=htlivesight.Util.Parse("hidesidebar
 document.getElementById("options_link").title=htlivesight.Util.Parse("MenuOptions",htlivesight.data[0]);
 document.getElementById("about_link").title=htlivesight.Util.Parse("MenuAbout",htlivesight.data[0]);
 
-//console.log("end localization");ProjectWebsite
+//alert("end localization");
 
 }
 
