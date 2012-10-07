@@ -43,13 +43,16 @@
 	<script type="application/x-javascript" src="matches.js"></script>
 	<script type="application/x-javascript" src="matchdetails.js"></script>
 	<script type="application/x-javascript" src="lineup.js"></script>
+	<script type="application/x-javascript" src="htlivesight_listeners.js"></script>
 	<!-- external libraries -->
 	<script type="application/x-javascript" src="./lib/oauth.js" ></script>
 	<script type="application/x-javascript" src="./lib/sha1.js" ></script>
 	
 	<script type="application/x-javascript" src="jquery.js"></script>
+
+	
 	</head>
-	<body onload="htlivesight.startup()" onresize="htlivesight.dynresize();"> <!--onload="set_style_from_cookie()"-->
+  <body onload="htlivesight.startup()" onresize="htlivesight.dynresize();">
 	<div id="login-dialog" title="">
 	<form>
 	<img src="./themes/images/chpp.png" alt="HTLiveSight Logo" class="anotherbrick1">
@@ -59,7 +62,8 @@
 	<input type="text" id="teamId" class="text ui-widget-content ui-corner-all"></input>
 	<br />
 	<input type="checkbox" id="save_teamId" /><label for="save_teamId" id="LoginSave"></label>
-	<input type="button" id="button_login" value="" onclick="try{htlivesight.Click.Login()}catch(e){alert(e);}"/>
+	<input type="button" id="button_login" value="" onclick="htlivesight.Click.Login()"/>
+
 	</fieldset>
 	<fieldset>
 	<legend id="LoginReLive"></legend>
@@ -513,7 +517,7 @@
 				</ul>
 				<div id="tabs-1">
 					<img src="./themes/images/256.png" alt="HTLiveSight Logo"><br />
-					HTLiveSightDEV 0.5.862<br />
+					HTLiveSightDEV 0.5.908<br />
 					<span id="creationDate"></span><br /><br />
 					<span id="createdBy"></span><br />
 					Silkevicious &amp; Bigpapy<br /><br />
@@ -980,26 +984,7 @@
 		<progress id="progressmeter"></progress>
 		</div><!-- accordion league_table2-->
 		</div><!-- accordion league_table1-->
-			
-			
-			
 		</div><!-- /sidebar-->
 		</div><!-- /application troll-->
-
-
-
-		<script type="text/javascript">
-		/* convincedd part */
-//		var BackgroundPage = chrome.extension.getBackgroundPage();
-//		BackgroundPage.htlivesightPrefs.init();
-	/* end convincedd part */
-		htlivesightPrefs.init();
-		htlivesight.Settings.startup();
-//		console.log("htlivesight.html 1");
-		htlivesight.Lang.localization();
-//		console.log("htlivesight.html 2");
-		</script>
-			
-			
 		</body>
 	</html>

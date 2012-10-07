@@ -1,5 +1,11 @@
 if (!htlivesight) var htlivesight = {};
 
+document.addEventListener('DOMContentLoaded', function () {
+	htlivesightPrefs.init();
+	// localization part!
+		htlivesight.About.localization();
+	});
+
 htlivesight.About = {contentPath: htlivesight.resourcePath,
 
 startup: function() {},
