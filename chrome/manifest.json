@@ -7,8 +7,8 @@
           "128": "skin/128.png" },
 "app": {
     "launch": {
-		"default_icon": "24.png",
-		"default_title": "Launch HTLiveSight",
+                "default_icon": "24.png",
+                "default_title": "Launch HTLiveSight",
       "local_path": "content/htlivesight.html"
     }
 },
@@ -16,12 +16,12 @@
 "incognito": "spanning",
 "minimum_chrome_version": "13",
 "options_page": "content/settings.html",
-	"permissions" : [
-		"tabs",
-		"contextMenus",
-		"notifications",
-		"clipboardWrite",
-		"*://chpp.hattrick.org/*"
-	],
+        "permissions" : [
+                "tabs",
+                "contextMenus",
+                "notifications",
+                "clipboardWrite",
+                "*://chpp.hattrick.org/*"
+        ],
 "update_url": "https://htlivesight.c6.ixwebhosting.com/chromedev/updates.xml"
 }
