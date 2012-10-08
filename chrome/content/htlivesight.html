@@ -44,6 +44,7 @@
 	<script type="application/x-javascript" src="matchdetails.js"></script>
 	<script type="application/x-javascript" src="lineup.js"></script>
 	<script type="application/x-javascript" src="htlivesight_listeners.js"></script>
+	<script type="application/x-javascript" src="settings_listeners.js"></script>
 	<!-- external libraries -->
 	<script type="application/x-javascript" src="./lib/oauth.js" ></script>
 	<script type="application/x-javascript" src="./lib/sha1.js" ></script>
@@ -52,7 +53,7 @@
 
 	
 	</head>
-  <body onload="htlivesight.startup()" onresize="htlivesight.dynresize();">
+  <body>
 	<div id="login-dialog" title="">
 	<form>
 	<img src="./themes/images/chpp.png" alt="HTLiveSight Logo" class="anotherbrick1">
@@ -62,12 +63,12 @@
 	<input type="text" id="teamId" class="text ui-widget-content ui-corner-all"></input>
 	<br />
 	<input type="checkbox" id="save_teamId" /><label for="save_teamId" id="LoginSave"></label>
-	<input type="button" id="button_login" value="" onclick="htlivesight.Click.Login()"/>
+	<input type="button" id="button_login" value="" />
 
 	</fieldset>
 	<fieldset>
 	<legend id="LoginReLive"></legend>
-	<input type="checkbox" id="reLive" onclick="htlivesight.reLive()" /><label for="reLive" id="LoginReLive2"></label><br />
+	<input type="checkbox" id="reLive" /><label for="reLive" id="LoginReLive2"></label><br />
 	<label id="LoginSpeed" for="reLiveSpeed"></label>
 	<input type="text" id="reLiveSpeed" value="" class="text ui-widget-content ui-corner-all" />
 	<input type="checkbox" id="reLiveByEvent"/><label for="reLiveByEvent" id="LoginByEvent"></label>
@@ -93,12 +94,9 @@
 	<fieldset>
 	<legend id="ThemesSelector">Themes</legend>
 	<form>
-	<input type="radio" onclick="htlivesight.Settings.click.switch_style(2);"
-	name="theme" value="Dark Theme" id="dark_theme"><label for="dark_theme" id="label_dark_theme" >Dark</label>
-	<input type="radio" onclick="htlivesight.Settings.click.switch_style(3);"
-	name="theme" value="Light Theme" id="light_theme"><label for="light_theme" id="label_light_theme" >Light</label>
-	<input type="radio" onclick="htlivesight.Settings.click.switch_style(4);"
-	name="theme" value="Livefox Theme" id="livefox_theme"><label for="livefox_theme" id="label_livefox_theme" >LiveFox</label>
+	<input type="radio" name="theme" value="Dark Theme" id="dark_theme"><label for="dark_theme" id="label_dark_theme" >Dark</label>
+	<input type="radio" name="theme" value="Light Theme" id="light_theme"><label for="light_theme" id="label_light_theme" >Light</label>
+	<input type="radio" name="theme" value="Livefox Theme" id="livefox_theme"><label for="livefox_theme" id="label_livefox_theme" >LiveFox</label>
 	</form>
 	</fieldset>
 	
@@ -108,8 +106,8 @@
 	<legend id="GeneralOpen"></legend>
 	<form>
 	<div id="openin" >
-	<input type="radio" id="openin_tab" name="radio" checked="checked" /><label for="openin_tab" id="label_openin_tab" onclick="htlivesight.Settings.click.radopenin(true);">In a new tab</label>
-	<input type="radio" id="openin_window" name="radio" /><label for="openin_window" id="label_openin_window" onclick="htlivesight.Settings.click.radopenin(false);">In a new window</label>
+	<input type="radio" id="openin_tab" name="radio" checked="checked" /><label for="openin_tab" id="label_openin_tab" >In a new tab</label>
+	<input type="radio" id="openin_window" name="radio" /><label for="openin_window" id="label_openin_window" >In a new window</label>
 	
 	</div>
 	</form>
@@ -621,7 +619,7 @@
 		</a>
 		</div>
 		<div id="central_topbar">
-		<a title="Open Chat" id="chat_link" href="#" onclick="htlivesight.chatdelay()">
+		<a title="Open Chat" id="chat_link" href="#" >
 		<img alt="chat" class="socialicon" src="./themes/images/chat.png">
 		</a>
 		<div id="chat-dialog" title="Chat">
@@ -966,8 +964,8 @@
 							<option id="optionHtointegrated" value="htointegrated">Tournament</option>
 						</select> <br />
 	<div id="addmatchbuttons">
-	<button id="buttonAddMatch" onclick="try{htlivesight.Click.AddMatch()}catch(e){alert(e);}"/><label for="buttonAddMatch" id="MatchesByMatch"></label>
-	<button id="buttonAddTeam" onclick="try{htlivesight.Click.AddMatchByTeam()}catch(e){alert(e);}"/><label for="buttonAddTeam" id="MatchesByTeam"></label>
+	<button id="buttonAddMatch" /><label for="buttonAddMatch" id="MatchesByMatch"></label>
+	<button id="buttonAddTeam" /><label for="buttonAddTeam" id="MatchesByTeam"></label>
 	</div>
 	</div><!-- accordion league_table2-->
 	</div><!-- accordion league_table2-->
