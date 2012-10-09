@@ -324,4 +324,14 @@
 <PathSoundsWhistle2>Звиждук за крај првог полувремена</PathSoundsWhistle2>
 <PathSoundsWhistle3>Звиждук за крај утакмице</PathSoundsWhistle3>
 <EventYellow2>Други жути картон</EventYellow2>
+<LoggedIn>Улогован као</LoggedIn>
+<latestNews>Погледајте најновије вести на</latestNews>
+<HTLSThread>Хеттрик Форуму</HTLSThread>
+<ProjectWebsite>званичном сајту пројекта</ProjectWebsite>
+<GooglePlusPage>Google+ страници</GooglePlusPage>
+<TwitterPage>Twitter страници</TwitterPage>
+<FacebookPage>Facebook страници</FacebookPage>
+<chatLink>Отвори чет</chatLink>
+<hidesidebar>Сакриј десни мени</hidesidebar>
+<addFriend>Кликни да додаш овај тим међу пријатеље</addFriend>
 </Htlivesight>

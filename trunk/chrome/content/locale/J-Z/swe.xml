@@ -205,7 +205,7 @@
 <CustomSoundsNoOpGoal>Inga ljud för motståndarens mål</CustomSoundsNoOpGoal>
 <PathSoundsMyGoal>Ljud - Mina mål</PathSoundsMyGoal>
 <PathSoundsOpGoal>Ljud - Motståndarens mål</PathSoundsOpGoal>
-<PathSoundsFrGoal>Ljud - Favoritslags mål</PathSoundsFrGoal>
+<PathSoundsFrGoal>Ljud - Favoritlags mål</PathSoundsFrGoal>
 <PathSoundsOpFrGoal>Ljud - Favoritlags motståndares mål</PathSoundsOpFrGoal>
 <PathSoundsOtGoal>Ljud - Andra lags mål</PathSoundsOtGoal>
 <PathSoundsMiss>Ljud - Missat mål</PathSoundsMiss>
@@ -215,7 +215,7 @@
 <PathSoundsFewClouds>Ljud - Växlande molnighet</PathSoundsFewClouds>
 <PathSoundsMyBoo>Ljud - Skada i mitt lag</PathSoundsMyBoo>
 <PathSoundsOpBoo>Ljud - Skada för motståndaren</PathSoundsOpBoo>
-<PathSoundsWhistleStart>Ljud - Avspark av 1:a och 2:a halvlekar</PathSoundsWhistleStart>
+<PathSoundsWhistleStart>Ljud - Avspark i 1:a och 2:a halvlek</PathSoundsWhistleStart>
 <PathSoundsWhistle>Ljud - Gula/Röda kort</PathSoundsWhistle>
 <PathSoundsHattrick>Ljud - Hattrick (3 mål av samma spelare)</PathSoundsHattrick>
 <PathSoundsRestore>Återställ</PathSoundsRestore>
@@ -266,10 +266,10 @@
 <Magical>Magisk</Magical>
 <Utopian>Utopisk</Utopian>
 <Divine>Gudomlig</Divine>
-<VeryHigh>mkt hög</VeryHigh>
-<High>hög</High>
-<Low>låg</Low>
-<VeryLow>mkt låg</VeryLow>
+<VeryHigh>(mkt hög)</VeryHigh>
+<High>(hög)</High>
+<Low>(låg)</Low>
+<VeryLow>(mkt låg)</VeryLow>
 <RightDefence>Högerförsvar</RightDefence>
 <MiddleDefence>Mittförsvar</MiddleDefence>
 <LeftDefence>Vänsterförsvar</LeftDefence>
@@ -287,16 +287,16 @@
 <Normal>Normal</Normal>
 <PIC>Ta Det Lugnt (TDL)</PIC>
 <MOTS>Säsongens Viktigaste Match (SVM)</MOTS>
-<ColorPicker>Du kan välja din färg på </ColorPicker>
-<EventBackground>Händelsen bakgrundsfärg</EventBackground>
+<ColorPicker>Du kan välja din färg via</ColorPicker>
+<EventBackground>Händelsens bakgrundsfärg</EventBackground>
 <FriendHome>Hemma (egna och favoritlags) färg: #</FriendHome>
 <FriendAway>Borta (egna och favoritlags) färg: #</FriendAway>
-<FoeHome>Hemma (främmande lag) färg: #</FoeHome>
-<FoeAway>Borta (främmande lag) färg: #</FoeAway>
+<FoeHome>Hemma (främmande lags) färg: #</FoeHome>
+<FoeAway>Borta (främmande lags) färg: #</FoeAway>
 <Neutral>Neutral färg: #</Neutral>
 <EventColorTitle>Händelsens textfärg</EventColorTitle>
 <EventTextColor>Händelsens textfärg: #</EventTextColor>
-<SETextColor>SE textfärg: #</SETextColor>
+<SETextColor>Etikett (Infotagg inom '[]' i en händelse) textfärg: #</SETextColor>
 <Colors>Färger</Colors>
 <SchemaTip>Klicka för att visa laguppställning</SchemaTip>
 <StatisticTip>Klicka för att visa statistik när matchen är slut</StatisticTip>
@@ -324,4 +324,14 @@
 <PathSoundsWhistle2>Halvtid</PathSoundsWhistle2>
 <PathSoundsWhistle3>Slutsignal</PathSoundsWhistle3>
 <EventYellow2>Andra gula kortet</EventYellow2>
+<LoggedIn>Inloggad med</LoggedIn>
+<latestNews>Senaste nytt via</latestNews>
+<HTLSThread>Hattrick forum</HTLSThread>
+<ProjectWebsite>Projektets hemsida</ProjectWebsite>
+<GooglePlusPage>Google+</GooglePlusPage>
+<TwitterPage>Twitter</TwitterPage>
+<FacebookPage>Facebook</FacebookPage>
+<chatLink>Öppna chatt</chatLink>
+<hidesidebar>Dölj sidomenyn</hidesidebar>
+<addFriend>Klicka på lagnamnet för att lägga till som 'Favoritlag'</addFriend>
 </Htlivesight>

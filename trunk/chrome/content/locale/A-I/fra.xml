@@ -93,14 +93,14 @@
 <EventSpecialUnpredictable>SE imprévisible</EventSpecialUnpredictable>
 <EventSpecialLongShot>SE tir lointain</EventSpecialLongShot>
 <EventSpecialQuick>SE rapide</EventSpecialQuick>
-<EventSpecialLowStamina>Faible endurance</EventSpecialLowStamina>
+<EventSpecialLowStamina>SE Faible endurance</EventSpecialLowStamina>
 <EventSpecialSetPieces>Coup franc</EventSpecialSetPieces>
 <EventSpecialHead>SE Joueur de Tête</EventSpecialHead>
 <EventSpecialExperience>SE Expérience</EventSpecialExperience>
 <EventSpecialLowExperience>SE Manque d'expérience</EventSpecialLowExperience>
 <EventSpecialWinger>SE+ ailier</EventSpecialWinger>
-<EventSpecialTechnical>Technique contre JdT</EventSpecialTechnical>
-<EventSpecialCounterAttack>SE Contre-attaque</EventSpecialCounterAttack>
+<EventSpecialTechnical>SE Technique contre JdT</EventSpecialTechnical>
+<EventSpecialCounterAttack>Contre-attaque</EventSpecialCounterAttack>
 <EventSpecialCornerKick>SE Corner</EventSpecialCornerKick>
 <EventSpecialIndirect>Coup franc indirect</EventSpecialIndirect>
 <EventSpecialUnpredictableLongPass>SE+ imprévisible: longue passe</EventSpecialUnpredictableLongPass>
@@ -128,7 +128,7 @@
 <InexperiencedDefender>Défenseur inexpérimenté</InexperiencedDefender>
 <WingerHead>SE ailier: centre pour Joueur de tête</WingerHead>
 <EventSpecialLongShotDefended>Tir lointain intercepté</EventSpecialLongShotDefended>
-<EventSpecialQuickVsQuick>Rapide contre rapide</EventSpecialQuickVsQuick>
+<EventSpecialQuickVsQuick>SE Rapide contre rapide</EventSpecialQuickVsQuick>
 <LongShot>tir lointain</LongShot>
 <MeteoSpecialTechnicalRain>SE- technique (-buteur -construction)</MeteoSpecialTechnicalRain>
 <MeteoSpecialPowerfulRain>SE+ costaud (+buteur +défense +construction)</MeteoSpecialPowerfulRain>
@@ -324,16 +324,14 @@
 <PathSoundsWhistle2>Fin de 1ère mi-temps</PathSoundsWhistle2>
 <PathSoundsWhistle3>Fin du match</PathSoundsWhistle3>
 <EventYellow2>Deuxième carton jaune</EventYellow2>
-<Up>⬆</Up>
-<Down>⬇</Down>
 <LoggedIn>Connecté :</LoggedIn>
 <latestNews>Nos dernières nouvelles sur</latestNews>
-<HTLSThread>Forum d'Hattrick</HTLSThread>
+<HTLSThread>Hattrick</HTLSThread>
 <ProjectWebsite>Site du projet</ProjectWebsite>
-<GooglePlusPage>Google+</GooglePlusPage>
+<GooglePlusPage>Google +</GooglePlusPage>
 <TwitterPage>Twitter</TwitterPage>
 <FacebookPage>Facebook</FacebookPage>
 <chatLink>Ouvrir le chat</chatLink>
 <hidesidebar>Masquer la barre latérale</hidesidebar>
-<addFriend>Cliquer sur cette équipe pour l'ajouter à vos amis</addFriend>
+<addFriend>Cliquez ici pour ajouter cette équipe à vos amis</addFriend>
 </Htlivesight>

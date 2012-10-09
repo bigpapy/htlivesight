@@ -119,7 +119,7 @@
 <Reorganize>Trenerio pastabos: sumažėjo sumaištis</Reorganize>
 <NervesImportantThrillingGame>Dėl patirties stokos pakriko nervai</NervesImportantThrillingGame>
 <Bruised>Susižeidė</Bruised>
-<Injuried>Trauma be keitimo</Injuried>
+<Injuried>Trauma</Injuried>
 <ModeratelyInjuried>Lengva trauma</ModeratelyInjuried>
 <BadlyInjuried>Sunki trauma</BadlyInjuried>
 <ByHimself>Pats</ByHimself>
@@ -324,4 +324,14 @@
 <PathSoundsWhistle2>Pirmo kėlinio pabaigos švilpukas</PathSoundsWhistle2>
 <PathSoundsWhistle3>Rungtynių pabaigos švilpukas</PathSoundsWhistle3>
 <EventYellow2>Antra geltona kortelė</EventYellow2>
+<LoggedIn>Prisijungė</LoggedIn>
+<latestNews>Naujienos:</latestNews>
+<HTLSThread>Hattrick Forumas</HTLSThread>
+<ProjectWebsite>Projekto svetainė</ProjectWebsite>
+<GooglePlusPage>Google+</GooglePlusPage>
+<TwitterPage>Twitter</TwitterPage>
+<FacebookPage>Facebook</FacebookPage>
+<chatLink>Atidaryti pokalbių kambarį</chatLink>
+<hidesidebar>Paslėpti šoninę juostą</hidesidebar>
+<addFriend>Spustelėję pridėsite į draugų sąrašą</addFriend>
 </Htlivesight>

@@ -324,4 +324,14 @@
 <PathSoundsWhistle2>Свисток на перерву</PathSoundsWhistle2>
 <PathSoundsWhistle3>Фінальний свисток</PathSoundsWhistle3>
 <EventYellow2>Друга жовта картка</EventYellow2>
+<LoggedIn>Logged in as</LoggedIn>
+<latestNews>Check latest news on</latestNews>
+<HTLSThread>Hattrick Forum</HTLSThread>
+<ProjectWebsite>Website project</ProjectWebsite>
+<GooglePlusPage>Google+ page</GooglePlusPage>
+<TwitterPage>Twitter page</TwitterPage>
+<FacebookPage>Facebook page</FacebookPage>
+<chatLink>Open chat</chatLink>
+<hidesidebar>Hide Sidebar</hidesidebar>
+<addFriend>Click to add this team to friends</addFriend>
 </Htlivesight>

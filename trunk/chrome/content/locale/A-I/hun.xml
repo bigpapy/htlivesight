@@ -314,14 +314,24 @@
 <Roof>Fedett ülőhelyek</Roof>
 <VIP>VIP-helyek</VIP>
 <CrowdinHelp>Segítsd a fordítást! Crowdin-nal rendkívül egyszerű és szórakoztató! Kattints ide!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
+<Error401>Hiba 401: jogosulatlan hozzáférés. Újra engedélyt kell adnod. Kattintson az OK gombra a folytatáshoz.</Error401>
+<Error404>Hiba 404: a kért erőforrás nem található. Ha ez a hiba újra megjelenik, a CHPP szolgáltatás leállt.</Error404>
+<Error0>Hiba 0: nem csatlakozik az internethez.</Error0>
+<Error500>Hiba 500: Belső kiszolgáló hiba (Hattrick)</Error500>
+<Error503>Hiba 503: a CHPP szolgáltatás nem elérhető (ideiglenes túlterheltség vagy karbantartás)</Error503>
+<PathSoundsNote1>Szúrd be az .ogg formátumú hangfájl elérési útja elé: file:///</PathSoundsNote1>
+<PathSoundsNote2>Példa: file:///c:\elérési\útja\a_hang.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>Első félidő vége sípszó</PathSoundsWhistle2>
+<PathSoundsWhistle3>Mérkőzés vége sípszó</PathSoundsWhistle3>
+<EventYellow2>Második sárga lap</EventYellow2>
+<LoggedIn>Logged in as</LoggedIn>
+<latestNews>Check latest news on</latestNews>
+<HTLSThread>Hattrick Forum</HTLSThread>
+<ProjectWebsite>Website project</ProjectWebsite>
+<GooglePlusPage>Google+ page</GooglePlusPage>
+<TwitterPage>Twitter page</TwitterPage>
+<FacebookPage>Facebook page</FacebookPage>
+<chatLink>Open chat</chatLink>
+<hidesidebar>Hide Sidebar</hidesidebar>
+<addFriend>Click to add this team to friends</addFriend>
 </Htlivesight>
