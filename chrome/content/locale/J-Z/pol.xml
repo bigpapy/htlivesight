@@ -246,26 +246,26 @@
 <TextThanksTo>Podziękowania dla:</TextThanksTo>
 <ButtonClose>Zamknij</ButtonClose>
 <NonExistent>Nie istnieje</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
+<Disastrous>Fatalny</Disastrous>
+<Wretched>Nędzny</Wretched>
+<Poor>Kiepski</Poor>
+<Weak>Słaby</Weak>
+<Inadequate>Przeciętny</Inadequate>
+<Passable>Zadowalający</Passable>
 <Solid>Solidny</Solid>
 <Excellent>Znakomity</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
+<Formidable>Fantastyczny</Formidable>
+<Outstanding>Olśniewający</Outstanding>
+<Brilliant>Błyskotliwy</Brilliant>
+<Magnificent>Mistrzowski</Magnificent>
 <WorldClass>Światowej klasy</WorldClass>
-<Supernatural>Supernatural</Supernatural>
+<Supernatural>Nadprzyrodzony</Supernatural>
 <Titanic>Tytaniczny</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
+<ExtraTerrestrial>Nieziemski</ExtraTerrestrial>
 <Mythical>Mityczny</Mythical>
 <Magical>Magiczny</Magical>
 <Utopian>Utopijny</Utopian>
-<Divine>Divine</Divine>
+<Divine>Boski</Divine>
 <VeryHigh>bardzo wysoki</VeryHigh>
 <High>wysoki</High>
 <Low>niski</Low>
@@ -277,15 +277,15 @@
 <RightAttack>Prawy atak</RightAttack>
 <MiddleAttack>Atak środkiem</MiddleAttack>
 <LeftAttack>Lewy atak</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
+<IndirectSetPiecesDefence>Rzuty wolne pośrednie (obrona)</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Rzuty wolne pośrednie (atak)</IndirectSetPiecesAttack>
 <TeamAttitude>Nastawienie zespołu</TeamAttitude>
 <TacticType>Taktyka typu</TacticType>
 <TacticSkill>Taktyka umiejętności</TacticSkill>
 <BallPosses>Posiadanie piłki</BallPosses>
 <SpecialEvent>Specjalne zdarzenie</SpecialEvent>
 <Normal>Normalny</Normal>
-<PIC>Play it cool</PIC>
+<PIC>Gra na luzie (PIC)</PIC>
 <MOTS>Mecz sezonu (MOTS)</MOTS>
 <ColorPicker>Można wybrać kolor na </ColorPicker>
 <EventBackground>Kolor tła zdarzeń</EventBackground>
@@ -324,4 +324,14 @@
 <PathSoundsWhistle2>Gwizdek kończący pierwszą połowę</PathSoundsWhistle2>
 <PathSoundsWhistle3>Gwizdek kończący mecz</PathSoundsWhistle3>
 <EventYellow2>Druga żółta kartka</EventYellow2>
+<LoggedIn>Zalogowany jako</LoggedIn>
+<latestNews>Sprawdź najnowsze wiadomości na</latestNews>
+<HTLSThread>Forum Hattrick</HTLSThread>
+<ProjectWebsite>Projekt strony</ProjectWebsite>
+<GooglePlusPage>Strona Google+</GooglePlusPage>
+<TwitterPage>Twitter</TwitterPage>
+<FacebookPage>Facebook</FacebookPage>
+<chatLink>Otwórz czat</chatLink>
+<hidesidebar>Ukryj pasek boczny</hidesidebar>
+<addFriend>Kliknij, aby dodać ten zespół do przyjaciół</addFriend>
 </Htlivesight>
