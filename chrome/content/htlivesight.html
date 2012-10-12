@@ -183,7 +183,7 @@
 	<label id="GeneralNote"></label>
 	<br />
 	<label for="hattrickServer">Hattrick server:</label>
-	<input type="text" size="5" name="hattrickserver" id="hattrickServer" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixhattrickserver();"/>
+	<input type="text" size="5" name="hattrickserver" id="hattrickServer" class="text ui-widget-content ui-corner-all" />
 	</fieldset>
 	
 	</div>
@@ -191,41 +191,41 @@
 	
 	<fieldset>
 	<legend id ="MatchesLeague"> League Matches</legend>
-	<input type="checkbox" id="chkGetLeague" onclick="htlivesight.Settings.click.chkgetleague();"/><label for="chkGetLeague" id="label_chkGetLeague">Load automatically League Matches and League Table</label><br />
-	<input type="checkbox" id="chkGetLeagueWithin" onclick="htlivesight.Settings.click.chkgetleaguewithin();"/><label for="chkGetLeagueWithin" id="label_chkGetLeagueWithin">Played in </label> <input value="24" size="3" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixleaguehours();"/> <label id="MatchesHours" for="txtGetLeagueWithinHours">hours</label><br />
+	<input type="checkbox" id="chkGetLeague" /><label for="chkGetLeague" id="label_chkGetLeague">Load automatically League Matches and League Table</label><br />
+	<input type="checkbox" id="chkGetLeagueWithin" /><label for="chkGetLeagueWithin" id="label_chkGetLeagueWithin">Played in </label> <input value="24" size="3" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all" /> <label id="MatchesHours" for="txtGetLeagueWithinHours">hours</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesFriends">Friends Matches</legend>
-	<input type="checkbox" id="chkGetFriends" onclick="htlivesight.Settings.click.chkgetfriends();"/><label for="chkGetFriends" id="label_chkGetFriends">Load automatically matches of your friends</label><br />
-	<input type="checkbox" id="chkGetFriendsWithin" onclick="htlivesight.Settings.click.chkgetfriendswithin();"/><label for="chkGetFriendsWithin" id="label_chkGetFriendsWithin">Played in</label> <input value="24" size="3" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixfriendshours();"/> <label id="MatchesHours2" for="txtGetFriendsWithinHours">hours</label><br />
+	<input type="checkbox" id="chkGetFriends" /><label for="chkGetFriends" id="label_chkGetFriends">Load automatically matches of your friends</label><br />
+	<input type="checkbox" id="chkGetFriendsWithin" /><label for="chkGetFriendsWithin" id="label_chkGetFriendsWithin">Played in</label> <input value="24" size="3" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" /> <label id="MatchesHours2" for="txtGetFriendsWithinHours">hours</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesHeader">Header</legend>
 	
-	<input type="checkbox" id="chkHdrScorers" onclick="htlivesight.Settings.click.chkhdrscorers();"/><label for="chkHdrScorers" id="label_chkHdrScorers">Add scorers in header</label><br />
+	<input type="checkbox" id="chkHdrScorers" /><label for="chkHdrScorers" id="label_chkHdrScorers">Add scorers in header</label><br />
 
 	
-	<input type="checkbox" id="chkHdrBooked" onclick="htlivesight.Settings.click.chkhdrbooked();"/><label for="chkHdrBooked" id="label_chkHdrBooked">Add booked in header</label><br />
+	<input type="checkbox" id="chkHdrBooked" /><label for="chkHdrBooked" id="label_chkHdrBooked">Add booked in header</label><br />
 
 	
-	<input type="checkbox" id="chkHdrSentOff" onclick="htlivesight.Settings.click.chkhdrsentoff();"/><label for="chkHdrSentOff" id="label_chkHdrSentOff">Add sent off in header</label><br />
+	<input type="checkbox" id="chkHdrSentOff" /><label for="chkHdrSentOff" id="label_chkHdrSentOff">Add sent off in header</label><br />
 
 	
-	<input type="checkbox" id="chkHdrInjured" onclick="htlivesight.Settings.click.chkhdrinjured();"/><label for="chkHdrInjured" id="label_chkHdrInjured">Add injured in header</label><br />
+	<input type="checkbox" id="chkHdrInjured" /><label for="chkHdrInjured" id="label_chkHdrInjured">Add injured in header</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesWindow">Live Window</legend>
-	<input value="3" size="2" id="txtMatchWindowSize" class="text ui-widget-content ui-corner-all" oninput="htlivesight.Settings.click.txtfixwindowsize();"/> <label id="MatchesLines">Lines to show in minimized mode</label><br />
+	<input value="3" size="2" id="txtMatchWindowSize" class="text ui-widget-content ui-corner-all" /> <label id="MatchesLines">Lines to show in minimized mode</label><br />
 	</fieldset>
 	
 	</div>
 	<div id="otabs-3"> <!--TAB3-->
 	<fieldset>
 	<legend id="NotifyNotify">Notifications</legend>
-	<input type="checkbox" id="chkSound" onclick="htlivesight.Settings.click.chkSound();"/><label for="chkSound" id="label_chkSound">Enable sound notifications</label><br />
-	<input type="checkbox" id="chkSoundOnlyOpened" onclick="htlivesight.Settings.click.chkSoundOnlyOpened();"/><label for="chkSoundOnlyOpened" id="label_chkSoundOnlyOpened">Only in opened matches</label><br />
-	<input type="checkbox" id="chkFlash" onclick="htlivesight.Settings.click.chkFlash();"/><label for="chkFlash" id="label_chkFlash">Flash headers</label><br />
-	<input type="checkbox" id="chkSlider" onclick="htlivesight.Settings.click.chkSlider();"/><label for="chkSlider" id="label_chkSlider">Status bar slider</label><br />
+	<input type="checkbox" id="chkSound" /><label for="chkSound" id="label_chkSound">Enable sound notifications</label><br />
+	<input type="checkbox" id="chkSoundOnlyOpened" /><label for="chkSoundOnlyOpened" id="label_chkSoundOnlyOpened">Only in opened matches</label><br />
+	<input type="checkbox" id="chkFlash" /><label for="chkFlash" id="label_chkFlash">Flash headers</label><br />
+	<input type="checkbox" id="chkSlider" /><label for="chkSlider" id="label_chkSlider">Status bar slider</label><br />
 	</fieldset>
 	
 	</div>
@@ -234,32 +234,32 @@
 	<legend id="OtherAuthorization">Authorization code</legend>
 	<form id="ResetAuth">
 	<span id="OtherReset">Remove authorization</span>
-	<button id="removeauth" form="ResetAuth" onclick="htlivesight.Settings.click.resetToken();" /><label for="removeauth" form="ResetAuth" id="button_reset"></label>
+	<button id="removeauth" form="ResetAuth" /><label for="removeauth" form="ResetAuth" id="button_reset"></label>
 	</form>
 	</fieldset>
 	<fieldset>
 	<legend id="OtherEvents">Sequence of events</legend>
-	<input type="checkbox" id="reverseOrder" onclick="htlivesight.Settings.click.reverseOrder();"/><label for="reverseOrder" id="label_reverseOrder">Bottom up display of match events</label><br />
+	<input type="checkbox" id="reverseOrder" /><label for="reverseOrder" id="label_reverseOrder">Bottom up display of match events</label><br />
 	<label id="OtherReverseNote"></label>
 	</fieldset>
 	<fieldset>
 	<legend id="OtherEventKey"></legend>
-	<input type="checkbox" id="printEventKey" onclick="htlivesight.Settings.click.printEventKey();"/><label for="printEventKey" id="label_printEventKey">Show eventkey in the commentary</label><br />
+	<input type="checkbox" id="printEventKey" /><label for="printEventKey" id="label_printEventKey">Show eventkey in the commentary</label><br />
 	</fieldset>
 	
 	</div>
 	<div id="otabs-5">      <!--TAB5-->
 	<fieldset>
 	<legend id="CustomIcons">Icons</legend>
-	<input type="checkbox" id="oldIcons" onclick="htlivesight.Settings.click.oldIcons();"/><label for="oldIcons" id="label_oldIcons"> Original Livefox icons in match window</label><br />
+	<input type="checkbox" id="oldIcons"/><label for="oldIcons" id="label_oldIcons"> Original Livefox icons in match window</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="CustomSounds">Sounds</legend>
-	<input type="checkbox" id="weather" onclick="htlivesight.Settings.click.weather();"/><label for="weather" id="label_weather">Weather sound for start of the match</label><br />
-	<input type="checkbox" id="whistleTime" onclick="htlivesight.Settings.click.whistleTime();"/><label for="whistleTime" id="label_whistleTime">Sound for start/end of an halftime</label><br />
-	<input type="checkbox" id="weatherSE" onclick="htlivesight.Settings.click.weatherSE();"/><label for="weatherSE" id="label_weatherSE">Sound for weather special events</label><br />
-	<input type="checkbox" id="livefoxGoal" onclick="htlivesight.Settings.click.livefoxGoal();"/><label for="livefoxGoal" id="label_livefoxGoal">Original Livefox sounds</label><br />
-	<input type="checkbox" id="noOpGoal" onclick="htlivesight.Settings.click.noOpGoal();"/><label for="noOpGoal" id="label_noOpGoal">No sounds for opponent's goals</label><br />
+	<input type="checkbox" id="weather" /><label for="weather" id="label_weather">Weather sound for start of the match</label><br />
+	<input type="checkbox" id="whistleTime" /><label for="whistleTime" id="label_whistleTime">Sound for start/end of an halftime</label><br />
+	<input type="checkbox" id="weatherSE" /><label for="weatherSE" id="label_weatherSE">Sound for weather special events</label><br />
+	<input type="checkbox" id="livefoxGoal" /><label for="livefoxGoal" id="label_livefoxGoal">Original Livefox sounds</label><br />
+	<input type="checkbox" id="noOpGoal" /><label for="noOpGoal" id="label_noOpGoal">No sounds for opponent's goals</label><br />
 		</fieldset>
 		<fieldset>
 		<legend id="TabGoalSound">Goals sounds</legend>
