@@ -1278,7 +1278,10 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	link.setAttribute("title", htlivesight.Util.Parse("SchemaTip", data[0]));
 	//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.sourceSystem+"_home"+");";
 	//link.addEventListener("click",htlivesight.DOM.formationpopup(argumentLineup));
-	link.setAttribute("onclick","htlivesight.DOM.formationpopup(this.id)");
+
+	link.addEventListener("click",function(){htlivesight.DOM.formationpopup(this.id);});
+
+	//link.setAttribute("onclick","htlivesight.DOM.formationpopup(this.id)");
     $( "#"+"home_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 
 	
@@ -1297,8 +1300,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		link.setAttribute("id", "home_team_name_" + match.id + "_" + match.sourceSystem);
 		link.setAttribute("title", htlivesight.Util.Parse("StatisticTip", data[0]));
 		//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.sourceSystem+"_home"+");";
-		//link.addEventListener("click",htlivesight.DOM.formationpopup(argumentLineup));
-		link.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id)");
+		link.addEventListener("click",function(){htlivesight.DOM.statisticspopup(this.id);});
+	//	link.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id)");
 	    //label.style.fontSize="xx-large";
 	    
 	 //   label.style.verticalAlign= "top";
@@ -1563,7 +1566,10 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	link.setAttribute("title", htlivesight.Util.Parse("StatisticTip", data[0]));
 	//var argumentLineup= "htlivesight.DOM.formationpopup("+"ev_"+match.id+"_"+match.sourceSystem+"_home"+");";
 	//link.addEventListener("click",htlivesight.DOM.formationpopup(argumentLineup));
-	link.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
+
+	link.addEventListener('click', function(){htlivesight.DOM.statisticspopup(this.id);});
+
+	//link.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
   //label.style.fontSize="xx-large";
   
   if (!htlivesight.prefs.matches.scorers  && !htlivesight.prefs.matches.booked && !htlivesight.prefs.matches.sentOff && !htlivesight.prefs.matches.injured) {
@@ -1580,7 +1586,10 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	//link.setAttribute("href", "#");
 	link.setAttribute("id", "away_team_formation_" + match.id + "_" + match.sourceSystem);
 	link.setAttribute( "title", htlivesight.Util.Parse( "SchemaTip", data[0] ) );
-	link.setAttribute("onclick","htlivesight.DOM.formationpopup(this.id);");
+
+	link.addEventListener('click',function(){htlivesight.DOM.formationpopup(this.id);});
+
+	//link.setAttribute("onclick","htlivesight.DOM.formationpopup(this.id);");
 	
     $( "#"+"away_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 	//	$("#"+"away_team_formation_"+match.id+"_"+match.sourceSystem+"_table").dialog({ autoOpen: true, width: 480, height: 110 });
@@ -1914,12 +1923,14 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     	        if (match.home.team.id==event.subjectTeamId) {
     	          l1 = document.getElementById("home_team_name_" + match.id + "_" + match.sourceSystem);
     	          htlivesight.DOM.createStatisticElement("home_team_name_"+match.id+"_"+match.sourceSystem+"_statistics", match, event);
-    	          l1.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
+    	          l1.addEventListener('click',function(){htlivesight.DOM.statisticspopup(this.id);});
+    	          //l1.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
     	          l1.setAttribute("contextmenu", "home_team_statistics_"+match.id+"_"+match.sourceSystem);
     	        } else {
     	          l1 = document.getElementById("away_team_name_" + match.id + "_" + match.sourceSystem);    	          
     	          htlivesight.DOM.createStatisticElement("away_team_name_"+match.id+"_"+match.sourceSystem+"_statistics", match, event);
-    	          l1.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
+    	          l1.addEventListener('click',function(){htlivesight.DOM.statisticspopup(this.id);});
+    	          //l1.setAttribute("onclick","htlivesight.DOM.statisticspopup(this.id);");
     	          l1.setAttribute("contextmenu", "away_team_statistics_"+match.id+"_"+match.sourceSystem);
     	        };
     	    }; }catch(e){alert("errore stats:"+e);}
