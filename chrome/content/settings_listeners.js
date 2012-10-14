@@ -1,4 +1,9 @@
+/** beginning script */
+htlivesightPrefs.init();
+
 document.addEventListener('DOMContentLoaded', function () {
+	htlivesight.Settings.startup();
+	htlivesight.Settings.localization();
 //document.querySelector('button').addEventListener('click', clickHandler); /***** example ****//
 //	document.getElementsByTagName("body")[0].addEventListener('resize',function(){htlivesight.dynresize();});
 
@@ -72,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("opfrGoalSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('opfrGoal');});
   //ot goal
 	document.getElementById("otGoalCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('otGoal');});
-	document.getElementById("label_otGoalButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('otGoal');});
+	document.getElementById("label_otGoalButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('otGoal','sound/ovation.ogg');});
 	document.getElementById("label_otGoalButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('otGoalSoundPath');});
 	document.getElementById("otGoalSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'otGoalSoundPath');});
 	document.getElementById("otGoalSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('otGoal');});
@@ -172,4 +177,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	document.getElementById("seTextColorCheck").addEventListener('click',function(){htlivesight.Settings.click.seTextColorCheck();});
 	document.getElementById("seTextColorCode").addEventListener('change',function(){htlivesight.Settings.click.seTextColorSet();});
+	
+	document.getElementById("ok-option").addEventListener('click',function(){htlivesight.Settings.click.btnOk();});
+	document.getElementById("canc-option").addEventListener('click',function(){htlivesight.Settings.click.btnCancel();});
+		
 });
