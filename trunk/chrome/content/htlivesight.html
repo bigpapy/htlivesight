@@ -1,657 +1,786 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<title>HTLiveSight</title>
-	<link rel="icon" type="image/png" href="./themes/images/48.png" />
-	<!--Temporary Trick--><link href='#' rel='stylesheet' type='text/css'>
-	<!--Dark Theme--> <link rel="stylesheet"  type="text/css"  href="themes/dark.css" /> 
-	<!--Light Theme--> <link rel="stylesheet"  type="text/css"  href="themes/light.css" />
-	<!--Livefox Theme--> <link rel="stylesheet"  type="text/css"  href="themes/livefox.css" />
-	<!--Custom Tweaks--> <link rel="stylesheet" type="text/css" href="themes/custom.css" />
-	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
-    <script type="application/x-javascript" src="htlivesight.js"></script>
-    <script type="application/x-javascript" src="env.js"></script>
-	<script type="application/x-javascript" src="lang.js"></script>
-	<script type="application/x-javascript" src="settings.js"></script>
-	<!--<script type="application/x-javascript" src="about.js"></script>-->
-	<script type="application/x-javascript" src="preferences.js"></script>
-	<script type="application/x-javascript" src="log.js"></script>
-	<script type="application/x-javascript" src="sound.js"></script>
-	<!-- added by bigpapy (start): necessary because reset button (in other menu) works -->
-	<script type="application/x-javascript" src="util.js"></script>
-	<script type="application/x-javascript" src="./prefs.js"></script>
-	<script type="application/x-javascript" src="./api-proxy.js"></script>
-	<script type="application/x-javascript" src="./util/misc.js"></script>
-	
-	<script type="application/x-javascript" src="image.js"></script>
-	<script type="application/x-javascript" src="click.js"></script>
-	<script type="application/x-javascript" src="dom.js"></script>
-	<script type="application/x-javascript" src="notify.js"></script>
-	<script type="application/x-javascript" src="events.js"></script>
-	<script type="application/x-javascript" src="eventsystem.js"></script>
-	<script type="application/x-javascript" src="friends.js"></script>
-	<script type="application/x-javascript" src="http.js"></script>
-	<script type="application/x-javascript" src="login.js"></script>
-	<script type="application/x-javascript" src="logout.js"></script>
-	<script type="application/x-javascript" src="match.js"></script>
-	<script type="application/x-javascript" src="time.js"></script>
-	<script type="application/x-javascript" src="league.js"></script>
-	<script type="application/x-javascript" src="live.js"></script>
-	<script type="application/x-javascript" src="team.js"></script>
-	<script type="application/x-javascript" src="matches.js"></script>
-	<script type="application/x-javascript" src="matchdetails.js"></script>
-	<script type="application/x-javascript" src="lineup.js"></script>
-	<script type="application/x-javascript" src="htlivesight_listeners.js"></script>
-	<script type="application/x-javascript" src="settings_listeners.js"></script>
-	<!-- external libraries -->
-	<script type="application/x-javascript" src="./lib/oauth.js" ></script>
-	<script type="application/x-javascript" src="./lib/sha1.js" ></script>
-	
-	<script type="application/x-javascript" src="jquery.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>HTLiveSight</title>
+<link rel="icon" type="image/png" href="./themes/images/48.png" />
+<!--Temporary Trick-->
+<link href='#' rel='stylesheet' type='text/css'>
+<!--Dark Theme-->
+<link rel="stylesheet" type="text/css" href="themes/dark.css" />
+<!--Light Theme-->
+<link rel="stylesheet" type="text/css" href="themes/light.css" />
+<!--Livefox Theme-->
+<link rel="stylesheet" type="text/css" href="themes/livefox.css" />
+<!--Custom Tweaks-->
+<link rel="stylesheet" type="text/css" href="themes/custom.css" />
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="application/x-javascript" src="htlivesight.js"></script>
+<script type="application/x-javascript" src="env.js"></script>
+<script type="application/x-javascript" src="lang.js"></script>
+<script type="application/x-javascript" src="settings.js"></script>
+<!--<script type="application/x-javascript" src="about.js"></script>-->
+<script type="application/x-javascript" src="preferences.js"></script>
+<script type="application/x-javascript" src="log.js"></script>
+<script type="application/x-javascript" src="sound.js"></script>
+<!-- added by bigpapy (start): necessary because reset button (in other menu) works -->
+<script type="application/x-javascript" src="util.js"></script>
+<script type="application/x-javascript" src="./prefs.js"></script>
+<script type="application/x-javascript" src="./api-proxy.js"></script>
+<script type="application/x-javascript" src="./util/misc.js"></script>
 
-	
-	</head>
-  <body>
+<script type="application/x-javascript" src="image.js"></script>
+<script type="application/x-javascript" src="click.js"></script>
+<script type="application/x-javascript" src="dom.js"></script>
+<script type="application/x-javascript" src="notify.js"></script>
+<script type="application/x-javascript" src="events.js"></script>
+<script type="application/x-javascript" src="eventsystem.js"></script>
+<script type="application/x-javascript" src="friends.js"></script>
+<script type="application/x-javascript" src="http.js"></script>
+<script type="application/x-javascript" src="login.js"></script>
+<script type="application/x-javascript" src="logout.js"></script>
+<script type="application/x-javascript" src="match.js"></script>
+<script type="application/x-javascript" src="time.js"></script>
+<script type="application/x-javascript" src="league.js"></script>
+<script type="application/x-javascript" src="live.js"></script>
+<script type="application/x-javascript" src="team.js"></script>
+<script type="application/x-javascript" src="matches.js"></script>
+<script type="application/x-javascript" src="matchdetails.js"></script>
+<script type="application/x-javascript" src="lineup.js"></script>
+<script type="application/x-javascript" src="htlivesight_listeners.js"></script>
+<script type="application/x-javascript" src="settings_listeners.js"></script>
+<!-- external libraries -->
+<script type="application/x-javascript" src="./lib/oauth.js"></script>
+<script type="application/x-javascript" src="./lib/sha1.js"></script>
+
+<script type="application/x-javascript" src="jquery.js"></script>
+
+
+</head>
+<body>
 	<div id="login-dialog" title="">
-	<form>
-	<img src="./themes/images/chpp.png" alt="HTLiveSight Logo" class="anotherbrick1">
-	<fieldset>
-	<legend id="LoginLabel2"></legend>
-	<label id="LoginTeamId" for="teamId"></label>
-	<input type="text" id="teamId" class="text ui-widget-content ui-corner-all"></input>
-	<br />
-	<input type="checkbox" id="save_teamId" /><label for="save_teamId" id="LoginSave"></label>
-	<input type="button" id="button_login" value="" />
+		<form>
+			<img src="./themes/images/chpp.png" alt="HTLiveSight Logo"
+				class="anotherbrick1">
+			<fieldset>
+				<legend id="LoginLabel2"></legend>
+				<label id="LoginTeamId" for="teamId"></label> <input type="text"
+					id="teamId" class="text ui-widget-content ui-corner-all"></input> <br />
+				<input type="checkbox" id="save_teamId" /><label for="save_teamId"
+					id="LoginSave"></label> <input type="button" id="button_login"
+					value="" />
 
-	</fieldset>
-	<fieldset>
-	<legend id="LoginReLive"></legend>
-	<input type="checkbox" id="reLive" /><label for="reLive" id="LoginReLive2"></label><br />
-	<label id="LoginSpeed" for="reLiveSpeed"></label>
-	<input type="text" id="reLiveSpeed" value="" class="text ui-widget-content ui-corner-all" />
-	<input type="checkbox" id="reLiveByEvent"/><label for="reLiveByEvent" id="LoginByEvent"></label>
-	</fieldset>
-	</form>
-	<img src="./themes/images/oauth.png" alt="HTLiveSight Logo" class="anotherbrick2">
-	
+			</fieldset>
+			<fieldset>
+				<legend id="LoginReLive"></legend>
+				<input type="checkbox" id="reLive" /><label for="reLive"
+					id="LoginReLive2"></label><br /> <label id="LoginSpeed"
+					for="reLiveSpeed"></label> <input type="text" id="reLiveSpeed"
+					value="" class="text ui-widget-content ui-corner-all" /> <input
+					type="checkbox" id="reLiveByEvent" /><label for="reLiveByEvent"
+					id="LoginByEvent"></label>
+			</fieldset>
+		</form>
+		<img src="./themes/images/oauth.png" alt="HTLiveSight Logo"
+			class="anotherbrick2">
+
 	</div>
 	<div id="options-dialog" title="">
-	
-	
-	<div id="options-tabs">
-	<ul>
-	<li><a id="TabGeneral" href="#otabs-1">Y</a></li>
-	<li><a id="TabMatches" href="#otabs-2">M</a></li>
-	<li><a id="TabNotifications" href="#otabs-3">C</a></li>
-	<li><a id="TabOther" href="#otabs-4">A</a></li>
-	<li><a id="TabCustom" href="#otabs-5">!</a></li>
-	<li><a id="TabColors" href="#otabs-6">Colors</a></li>
-	</ul>
-	<div id="otabs-1">         <!--TAB1-->
-	
-	<fieldset>
-	<legend id="ThemesSelector">Themes</legend>
-	<form>
-	<input type="radio" name="theme" value="Dark Theme" id="dark_theme"><label for="dark_theme" id="label_dark_theme" >Dark</label>
-	<input type="radio" name="theme" value="Light Theme" id="light_theme"><label for="light_theme" id="label_light_theme" >Light</label>
-	<input type="radio" name="theme" value="Livefox Theme" id="livefox_theme"><label for="livefox_theme" id="label_livefox_theme" >LiveFox</label>
-	</form>
-	</fieldset>
-	
-	
-	
-	<fieldset>
-	<legend id="GeneralOpen"></legend>
-	<form>
-	<div id="openin" >
-	<input type="radio" id="openin_tab" name="radio" checked="checked" /><label for="openin_tab" id="label_openin_tab" >In a new tab</label>
-	<input type="radio" id="openin_window" name="radio" /><label for="openin_window" id="label_openin_window" >In a new window</label>
-	
-	</div>
-	</form>
-	</fieldset>
-	
-	
-	<fieldset>
-	<legend id="LanguageSelect"></legend>
-	<form>
-	<select class="text ui-widget-content ui-corner-all" id="lang-list" >
-	<option value="A-I/ara">[ara] العربية</option>
-		<option value="A-I/bel">[bel] Беларуская</option>
-		<option value="A-I/bul">[bul] Български</option>
-		<option value="A-I/bos">[bos] Bosanski</option>
-		<option value="A-I/cat">[cat] Català</option>
-		<option value="A-I/ces">[ces] Čeština</option>
-		<option value="A-I/dan">[dan] Dansk</option>
-		<option value="A-I/ger">[ger] Deutsch</option>
-		<option value="A-I/eng">[eng] English</option>
-		<option value="A-I/eng-us">[eng-us] American</option>
-		<option value="A-I/ell">[ell] Ελληνικά</option>
-		<option value="J-Z/spa">[spa] Español</option>
-		<option value="J-Z/spa-ca">[spa-ca] Centroamericano</option>
-		<option value="J-Z/spa-su">[spa-su] Sudamericano</option>
-		<option value="A-I/est">[est] Eesti</option>
-		<option value="A-I/eus">[eus] Euskara</option>
-		<option value="A-I/fas">[fas] فارسی</option>
-		<option value="A-I/fin">[fin] Suomi</option>
-		<option value="A-I/fra">[fra] Français</option>
-		<option value="A-I/fry">[fry] Frysk</option>
-		<option value="A-I/fur">[fur] Furlan</option>
-		<option value="A-I/glg">[glg] Galego</option>
-		<option value="A-I/heb">[heb] עברית</option>
-		<option value="A-I/hrv">[hrv] Hrvatski</option>
-		<option value="A-I/hun">[hun] Magyar</option>
-		<option value="A-I/ind">[ind] Bahasa Indonesia</option>
-		<option value="A-I/isl">[isl] Islenska</option>
-		<option value="A-I/ita">[ita] Italiano</option>
-		<option value="J-Z/jpn">[jpn] 日本語</option>
-		<option value="J-Z/kat">[kat] ქართული</option>
-		<option value="J-Z/kor">[kor] 한국어</option>
-		<option value="J-Z/ltz">[ltz] Lëtzebuergesch</option>
-		<option value="J-Z/lit">[lit] Lietuvių</option>
-		<option value="J-Z/lav">[lav] Latviešu</option>
-		<option value="J-Z/mkd">[mkd] Македонски</option>
-		<option value="J-Z/mlt">[mlt] Malti</option>
-		<option value="J-Z/nld">[nld] Nederlands</option>
-		<option value="J-Z/nob">[nob] Norsk-Bokmål</option>
-		<option value="J-Z/nno">[nno] Norsk-Nynorsk</option>
-		<option value="J-Z/pol">[pol] Polski</option>
-		<option value="J-Z/por">[por] Português</option>
-		<option value="J-Z/por-br">[por-br] Brasileiro</option>
-		<option value="J-Z/ron">[ron] Română</option>
-		<option value="J-Z/rus">[rus] Русский</option>
-		<option value="J-Z/slk">[slk] Slovenčina</option>
-		<option value="J-Z/slv">[slv] Slovenčina</option>
-		<option value="J-Z/sqi">[sqi] Shqip</option>
-		<option value="J-Z/srp">[srp] Српски</option>
-		<option value="J-Z/swe">[swe] Svenska</option>
-		<option value="J-Z/tur">[tur] Türkçe</option>
-		<option value="J-Z/vie">[vie] Tiếng Việt</option>
-		<option value="J-Z/vls">[vls] Vlaams</option>
-		<option value="J-Z/ukr">[ukr] Українська</option>
-		<option value="J-Z/zho">[zho] 中文（简体）</option>
-	</select>
-	</form>
-	<br />
-	<label id="LanguageNote"></label>
-	<div id="CrowdinLink"><a href="http://crowdin.net/project/htlivesight/invite?token=a41f1ac45795476ca5087af76978fad8" target="_blank"><img id="CrowdinLogo" src="./themes/images/crowdin.png" /><div id="CrowdinLabel"><label id="CrowdinHelp">Help translating! With Crowdin is supereasy and very funny!</label></div></a></div>
-	</fieldset>
-	<fieldset>
-	<legend id="GeneralServer"></legend>
-	<label id="GeneralNote"></label>
-	<br />
-	<label for="hattrickServer">Hattrick server:</label>
-	<input type="text" size="5" name="hattrickserver" id="hattrickServer" class="text ui-widget-content ui-corner-all" />
-	</fieldset>
-	
-	</div>
-	<div id="otabs-2"> <!--TAB2-->
-	
-	<fieldset>
-	<legend id ="MatchesLeague"> League Matches</legend>
-	<input type="checkbox" id="chkGetLeague" /><label for="chkGetLeague" id="label_chkGetLeague">Load automatically League Matches and League Table</label><br />
-	<input type="checkbox" id="chkGetLeagueWithin" /><label for="chkGetLeagueWithin" id="label_chkGetLeagueWithin">Played in </label> <input value="24" size="3" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all" /> <label id="MatchesHours" for="txtGetLeagueWithinHours">hours</label><br />
-	</fieldset>
-	<fieldset>
-	<legend id="MatchesFriends">Friends Matches</legend>
-	<input type="checkbox" id="chkGetFriends" /><label for="chkGetFriends" id="label_chkGetFriends">Load automatically matches of your friends</label><br />
-	<input type="checkbox" id="chkGetFriendsWithin" /><label for="chkGetFriendsWithin" id="label_chkGetFriendsWithin">Played in</label> <input value="24" size="3" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" /> <label id="MatchesHours2" for="txtGetFriendsWithinHours">hours</label><br />
-	</fieldset>
-	<fieldset>
-	<legend id="MatchesHeader">Header</legend>
-	
-	<input type="checkbox" id="chkHdrScorers" /><label for="chkHdrScorers" id="label_chkHdrScorers">Add scorers in header</label><br />
 
-	
-	<input type="checkbox" id="chkHdrBooked" /><label for="chkHdrBooked" id="label_chkHdrBooked">Add booked in header</label><br />
 
-	
-	<input type="checkbox" id="chkHdrSentOff" /><label for="chkHdrSentOff" id="label_chkHdrSentOff">Add sent off in header</label><br />
+		<div id="options-tabs">
+			<ul>
+				<li><a id="TabGeneral" href="#otabs-1">Y</a>
+				</li>
+				<li><a id="TabMatches" href="#otabs-2">M</a>
+				</li>
+				<li><a id="TabNotifications" href="#otabs-3">C</a>
+				</li>
+				<li><a id="TabOther" href="#otabs-4">A</a>
+				</li>
+				<li><a id="TabCustom" href="#otabs-5">!</a>
+				</li>
+				<li><a id="TabColors" href="#otabs-6">Colors</a>
+				</li>
+			</ul>
+			<div id="otabs-1">
+				<!--TAB1-->
 
-	
-	<input type="checkbox" id="chkHdrInjured" /><label for="chkHdrInjured" id="label_chkHdrInjured">Add injured in header</label><br />
-	</fieldset>
-	<fieldset>
-	<legend id="MatchesWindow">Live Window</legend>
-	<input value="3" size="2" id="txtMatchWindowSize" class="text ui-widget-content ui-corner-all" /> <label id="MatchesLines">Lines to show in minimized mode</label><br />
-	</fieldset>
-	
-	</div>
-	<div id="otabs-3"> <!--TAB3-->
-	<fieldset>
-	<legend id="NotifyNotify">Notifications</legend>
-	<input type="checkbox" id="chkSound" /><label for="chkSound" id="label_chkSound">Enable sound notifications</label><br />
-	<input type="checkbox" id="chkSoundOnlyOpened" /><label for="chkSoundOnlyOpened" id="label_chkSoundOnlyOpened">Only in opened matches</label><br />
-	<input type="checkbox" id="chkFlash" /><label for="chkFlash" id="label_chkFlash">Flash headers</label><br />
-	<input type="checkbox" id="chkSlider" /><label for="chkSlider" id="label_chkSlider">Status bar slider</label><br />
-	</fieldset>
-	
-	</div>
-	<div id="otabs-4"> <!--TAB4-->
-	<fieldset>
-	<legend id="OtherAuthorization">Authorization code</legend>
-	<form id="ResetAuth">
-	<span id="OtherReset">Remove authorization</span>
-	<button id="removeauth" form="ResetAuth" /><label for="removeauth" form="ResetAuth" id="button_reset"></label>
-	</form>
-	</fieldset>
-	<fieldset>
-	<legend id="OtherEvents">Sequence of events</legend>
-	<input type="checkbox" id="reverseOrder" /><label for="reverseOrder" id="label_reverseOrder">Bottom up display of match events</label><br />
-	<label id="OtherReverseNote"></label>
-	</fieldset>
-	<fieldset>
-	<legend id="OtherEventKey"></legend>
-	<input type="checkbox" id="printEventKey" /><label for="printEventKey" id="label_printEventKey">Show eventkey in the commentary</label><br />
-	</fieldset>
-	
-	</div>
-	<div id="otabs-5">      <!--TAB5-->
-	<fieldset>
-	<legend id="CustomIcons">Icons</legend>
-	<input type="checkbox" id="oldIcons"/><label for="oldIcons" id="label_oldIcons"> Original Livefox icons in match window</label><br />
-	</fieldset>
-	<fieldset>
-	<legend id="CustomSounds">Sounds</legend>
-	<input type="checkbox" id="weather" /><label for="weather" id="label_weather">Weather sound for start of the match</label><br />
-	<input type="checkbox" id="whistleTime" /><label for="whistleTime" id="label_whistleTime">Sound for start/end of an halftime</label><br />
-	<input type="checkbox" id="weatherSE" /><label for="weatherSE" id="label_weatherSE">Sound for weather special events</label><br />
-	<input type="checkbox" id="livefoxGoal" /><label for="livefoxGoal" id="label_livefoxGoal">Original Livefox sounds</label><br />
-	<input type="checkbox" id="noOpGoal" /><label for="noOpGoal" id="label_noOpGoal">No sounds for opponent's goals</label><br />
-		</fieldset>
-		<fieldset>
-		<legend id="TabGoalSound">Goals sounds</legend>
-		<span id="PathSoundsNote1"></span><br />
-		<span id="PathSoundsNote2"></span><br />
-	<!-- my goal --><br />
-			<input type="checkbox" id="myGoalCheck" /><label for="myGoalCheck" id="label_myGoalCheck">Sound for own goal</label>
-			<br /><button id="label_myGoalButton_reset" class="brestore" >restore</button><button id="label_myGoalButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="myGoalSoundPathBrowse" tabindex="2"  />	
-			
-			
-			<input type="url" id="myGoalSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- op goal --><br />
-					<input type="checkbox" id="opGoalCheck" /><label for="opGoalCheck" id="label_opGoalCheck">Sound for own goal</label>
-					<br /><button id="label_opGoalButton_reset" class="brestore" >restore</button><button id="label_opGoalButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="opGoalSoundPathBrowse" tabindex="2" />	
-			
-			
-			<input type="url" id="opGoalSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- fr goal --><br />
-			<input type="checkbox" id="frGoalCheck" /><label for="frGoalCheck" id="label_frGoalCheck">Sound for own goal</label>
-			<br /><button id="label_frGoalButton_reset" class="brestore" >restore</button><button id="label_frGoalButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="frGoalSoundPathBrowse" tabindex="2" />	
-			
-			
-			<input type="url" id="frGoalSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- opfr goal --><br />
-			<input type="checkbox" id="opfrGoalCheck" /><label for="opfrGoalCheck" id="label_opfrGoalCheck">Sound for own goal</label>
-			<br /><button id="label_opfrGoalButton_reset" class="brestore" >restore</button><button id="label_opfrGoalButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="opfrGoalSoundPathBrowse" tabindex="2" />	
-			
-			
-			<input type="url" id="opfrGoalSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- ot goal --><br />
-			<input type="checkbox" id="otGoalCheck" /><label for="otGoalCheck" id="label_otGoalCheck">Sound for own goal</label>
-			<br /><button id="label_otGoalButton_reset" class="brestore" >restore</button><button id="label_otGoalButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="otGoalSoundPathBrowse" tabindex="2" />	
-			
-			
-			<input type="url" id="otGoalSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- miss goal --><br />
-			<input type="checkbox" id="missGoalCheck" /><label for="missGoalCheck" id="label_missGoalCheck">Sound for own goal</label>
-			<br /><button id="label_missGoalButton_reset" class="brestore" >restore</button><button id="label_missGoalButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="missGoalSoundPathBrowse" tabindex="2" />	
-			
-			
-			<input type="url" id="missGoalSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- sun goal --><br />
-			<label id="TabWheatherSound"></label> <br />
-					<input type="checkbox" id="sunCheck" /><label for="sunCheck" id="label_sunCheck">Sound for own goal</label>
-					<br /><button id="label_sunButton_reset" class="brestore" >restore</button><button id="label_sunButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="sunSoundPathBrowse" tabindex="2" />	
-			
-			
-			<input type="url" id="sunSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- rain goal --><br />
-			<input type="checkbox" id="rainCheck" /><label for="rainCheck" id="label_rainCheck">Sound for own goal</label>
-			<br /><button id="label_rainButton_reset" class="brestore" >restore</button><button id="label_rainButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="rainSoundPathBrowse" tabindex="2" />	
-			
-			
-			<input type="url" id="rainSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- overcast goal --><br />
-			<input type="checkbox" id="overcastCheck" /><label for="overcastCheck" id="label_overcastCheck">Sound for own goal</label>
-			<br /><button id="label_overcastButton_reset" class="brestore" >restore</button><button id="label_overcastButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="overcastSoundPathBrowse" tabindex="2"  />	
-			
-			
-			<input type="url" id="overcastSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- few clouds goal --><br />
-			<input type="checkbox" id="fewCloudsCheck" /><label for="fewCloudsCheck" id="label_fewCloudsCheck">Sound for own goal</label>
-			<br /><button id="label_fewCloudsButton_reset" class="brestore" >restore</button><button id="label_fewCloudsButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="fewCloudsSoundPathBrowse" tabindex="2" />	
-			
-			
-			<input type="url" id="fewCloudsSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- my boo goal --><br />
-			<input type="checkbox" id="myBooCheck" /><label for="myBooCheck" id="label_myBooCheck">Sound for own goal</label>
-			<br /><button id="label_myBooButton_reset" class="brestore" >restore</button><button id="label_myBooButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="myBooSoundPathBrowse" tabindex="2" />	
-			
-			
-			<input type="url" id="myBooSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- op boo goal --><br />
-			<input type="checkbox" id="opBooCheck" /><label for="opBooCheck" id="label_opBooCheck">Sound for own goal</label>
-			<br /><button id="label_opBooButton_reset" class="brestore" >restore</button><button id="label_opBooButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="opBooSoundPathBrowse" tabindex="2" />
-			
-			
-			<input type="url" id="opBooSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- whistlestart --><br />
-			<label id="TabWhistleSound"></label> <br />
-			<input type="checkbox" id="whistleStartCheck" /><label for="whistleStartCheck" id="label_whistleStartCheck">Sound for own goal</label>
-			<br /><button id="label_whistleStartButton_reset" class="brestore" >restore</button><button id="label_whistleStartButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="whistleStartSoundPathBrowse" tabindex="2" />	
-			
-			
-			<input type="url" id="whistleStartSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- double whistle --><br />
-			<input type="checkbox" id="whistle2Check" /><label for="whistle2Check" id="label_whistle2Check">Sound for own goal</label>
-			<br /><button id="label_whistle2Button_reset" class="brestore" >restore</button><button id="label_whistle2Button_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="whistle2SoundPathBrowse" tabindex="2" />	
-			
-			
-			<input type="url" id="whistle2SoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- triple whistle --><br />
-			<input type="checkbox" id="whistle3Check" /><label for="whistle3Check" id="label_whistle3Check">Sound for own goal</label>
-			<br /><button id="label_whistle3Button_reset" class="brestore" >restore</button><button id="label_whistle3Button_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="whistle3SoundPathBrowse" tabindex="2" />	
-			
-			
-			<input type="url" id="whistle3SoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- whistle goal --><br />
-			<input type="checkbox" id="whistleCheck" /><label for="whistleCheck" id="label_whistleCheck">Sound for own goal</label>
-			<br /><button id="label_whistleButton_reset" class="brestore" >restore</button><button id="label_whistleButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="whistleSoundPathBrowse" tabindex="2" />	
-			
-			
-			<input type="url" id="whistleSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-	<!-- hattrick --><br />
-			<input type="checkbox" id="hattrickCheck" /><label for="hattrickCheck" id="label_hattrickCheck">Sound for own goal</label>
-			<br /><button id="label_hattrickButton_reset" class="brestore" >restore</button><button id="label_hattrickButton_play" class="brestore" >play</button>
-			
-			
-	<input type="file" id="hattrickSoundPathBrowse" tabindex="2" />	
-			
-			
-			<input type="url" id="hattrickSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-		</fieldset>
-					
-				</div>
-				
-				<div id="otabs-6">
-			<!--TAB5-->
-			<fieldset>
-				<legend id="CustomEventBackground">Event background color</legend>
-				<span id="ChooseColor">You can choose your color at </span><a href="http://www.colorpicker.com/" target="_blank">http://www.colorpicker.com/</a><br /><br />
-				<input type="checkbox" id="friendHomeColorCheck"
-					 />
+				<fieldset>
+					<legend id="ThemesSelector">Themes</legend>
+					<form>
+						<input type="radio" name="theme" value="Dark Theme"
+							id="dark_theme"><label for="dark_theme"
+							id="label_dark_theme">Dark</label> <input type="radio"
+							name="theme" value="Light Theme" id="light_theme"><label
+							for="light_theme" id="label_light_theme">Light</label> <input
+							type="radio" name="theme" value="Livefox Theme"
+							id="livefox_theme"><label for="livefox_theme"
+							id="label_livefox_theme">LiveFox</label>
+					</form>
+				</fieldset>
+
+
+
+				<fieldset>
+					<legend id="GeneralOpen"></legend>
+					<form>
+						<div id="openin">
+							<input type="radio" id="openin_tab" name="radio"
+								checked="checked" /><label for="openin_tab"
+								id="label_openin_tab">In a new tab</label> <input type="radio"
+								id="openin_window" name="radio" /><label for="openin_window"
+								id="label_openin_window">In a new window</label>
+
+						</div>
+					</form>
+				</fieldset>
+
+
+				<fieldset>
+					<legend id="LanguageSelect"></legend>
+					<form>
+						<select class="text ui-widget-content ui-corner-all"
+							id="lang-list">
+							<option value="A-I/ara">[ara] العربية</option>
+							<option value="A-I/bel">[bel] Беларуская</option>
+							<option value="A-I/bul">[bul] Български</option>
+							<option value="A-I/bos">[bos] Bosanski</option>
+							<option value="A-I/cat">[cat] Català</option>
+							<option value="A-I/ces">[ces] Čeština</option>
+							<option value="A-I/dan">[dan] Dansk</option>
+							<option value="A-I/ger">[ger] Deutsch</option>
+							<option value="A-I/eng">[eng] English</option>
+							<option value="A-I/eng-us">[eng-us] American</option>
+							<option value="A-I/ell">[ell] Ελληνικά</option>
+							<option value="J-Z/spa">[spa] Español</option>
+							<option value="J-Z/spa-ca">[spa-ca] Centroamericano</option>
+							<option value="J-Z/spa-su">[spa-su] Sudamericano</option>
+							<option value="A-I/est">[est] Eesti</option>
+							<option value="A-I/eus">[eus] Euskara</option>
+							<option value="A-I/fas">[fas] فارسی</option>
+							<option value="A-I/fin">[fin] Suomi</option>
+							<option value="A-I/fra">[fra] Français</option>
+							<option value="A-I/fry">[fry] Frysk</option>
+							<option value="A-I/fur">[fur] Furlan</option>
+							<option value="A-I/glg">[glg] Galego</option>
+							<option value="A-I/heb">[heb] עברית</option>
+							<option value="A-I/hrv">[hrv] Hrvatski</option>
+							<option value="A-I/hun">[hun] Magyar</option>
+							<option value="A-I/ind">[ind] Bahasa Indonesia</option>
+							<option value="A-I/isl">[isl] Islenska</option>
+							<option value="A-I/ita">[ita] Italiano</option>
+							<option value="J-Z/jpn">[jpn] 日本語</option>
+							<option value="J-Z/kat">[kat] ქართული</option>
+							<option value="J-Z/kor">[kor] 한국어</option>
+							<option value="J-Z/ltz">[ltz] Lëtzebuergesch</option>
+							<option value="J-Z/lit">[lit] Lietuvių</option>
+							<option value="J-Z/lav">[lav] Latviešu</option>
+							<option value="J-Z/mkd">[mkd] Македонски</option>
+							<option value="J-Z/mlt">[mlt] Malti</option>
+							<option value="J-Z/nld">[nld] Nederlands</option>
+							<option value="J-Z/nob">[nob] Norsk-Bokmål</option>
+							<option value="J-Z/nno">[nno] Norsk-Nynorsk</option>
+							<option value="J-Z/pol">[pol] Polski</option>
+							<option value="J-Z/por">[por] Português</option>
+							<option value="J-Z/por-br">[por-br] Brasileiro</option>
+							<option value="J-Z/ron">[ron] Română</option>
+							<option value="J-Z/rus">[rus] Русский</option>
+							<option value="J-Z/slk">[slk] Slovenčina</option>
+							<option value="J-Z/slv">[slv] Slovenčina</option>
+							<option value="J-Z/sqi">[sqi] Shqip</option>
+							<option value="J-Z/srp">[srp] Српски</option>
+							<option value="J-Z/swe">[swe] Svenska</option>
+							<option value="J-Z/tur">[tur] Türkçe</option>
+							<option value="J-Z/vie">[vie] Tiếng Việt</option>
+							<option value="J-Z/vls">[vls] Vlaams</option>
+							<option value="J-Z/ukr">[ukr] Українська</option>
+							<option value="J-Z/zho">[zho] 中文（简体）</option>
+						</select>
+					</form>
+					<br /> <label id="LanguageNote"></label>
+					<div id="CrowdinLink">
+						<a
+							href="http://crowdin.net/project/htlivesight/invite?token=a41f1ac45795476ca5087af76978fad8"
+							target="_blank"><img id="CrowdinLogo"
+							src="./themes/images/crowdin.png" />
+						<div id="CrowdinLabel">
+								<label id="CrowdinHelp">Help translating! With Crowdin
+									is supereasy and very funny!</label>
+							</div>
+						</a>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend id="GeneralServer"></legend>
+					<label id="GeneralNote"></label> <br /> <label
+						for="hattrickServer">Hattrick server:</label> <input type="text"
+						size="5" name="hattrickserver" id="hattrickServer"
+						class="text ui-widget-content ui-corner-all" />
+				</fieldset>
+
+			</div>
+			<div id="otabs-2">
+				<!--TAB2-->
+
+				<fieldset>
+					<legend id="MatchesLeague"> League Matches</legend>
+					<input type="checkbox" id="chkGetLeague" /><label
+						for="chkGetLeague" id="label_chkGetLeague">Load
+						automatically League Matches and League Table</label><br /> <input
+						type="checkbox" id="chkGetLeagueWithin" /><label
+						for="chkGetLeagueWithin" id="label_chkGetLeagueWithin">Played
+						in </label> <input value="24" size="3" id="txtGetLeagueWithinHours"
+						class="text ui-widget-content ui-corner-all" /> <label
+						id="MatchesHours" for="txtGetLeagueWithinHours">hours</label><br />
+				</fieldset>
+				<fieldset>
+					<legend id="MatchesFriends">Friends Matches</legend>
+					<input type="checkbox" id="chkGetFriends" /><label
+						for="chkGetFriends" id="label_chkGetFriends">Load
+						automatically matches of your friends</label><br /> <input
+						type="checkbox" id="chkGetFriendsWithin" /><label
+						for="chkGetFriendsWithin" id="label_chkGetFriendsWithin">Played
+						in</label> <input value="24" size="3" id="txtGetFriendsWithinHours"
+						class="text ui-widget-content ui-corner-all" /> <label
+						id="MatchesHours2" for="txtGetFriendsWithinHours">hours</label><br />
+				</fieldset>
+				<fieldset>
+					<legend id="MatchesHeader">Header</legend>
+
+					<input type="checkbox" id="chkHdrScorers" /><label
+						for="chkHdrScorers" id="label_chkHdrScorers">Add scorers
+						in header</label><br /> <input type="checkbox" id="chkHdrBooked" /><label
+						for="chkHdrBooked" id="label_chkHdrBooked">Add booked in
+						header</label><br /> <input type="checkbox" id="chkHdrSentOff" /><label
+						for="chkHdrSentOff" id="label_chkHdrSentOff">Add sent off
+						in header</label><br /> <input type="checkbox" id="chkHdrInjured" /><label
+						for="chkHdrInjured" id="label_chkHdrInjured">Add injured
+						in header</label><br />
+				</fieldset>
+				<fieldset>
+					<legend id="MatchesWindow">Live Window</legend>
+					<input value="3" size="2" id="txtMatchWindowSize"
+						class="text ui-widget-content ui-corner-all" /> <label
+						id="MatchesLines">Lines to show in minimized mode</label><br />
+				</fieldset>
+
+			</div>
+			<div id="otabs-3">
+				<!--TAB3-->
+				<fieldset>
+					<legend id="NotifyNotify">Notifications</legend>
+					<input type="checkbox" id="chkSound" /><label for="chkSound"
+						id="label_chkSound">Enable sound notifications</label><br /> <input
+						type="checkbox" id="chkSoundOnlyOpened" /><label
+						for="chkSoundOnlyOpened" id="label_chkSoundOnlyOpened">Only
+						in opened matches</label><br /> <input type="checkbox" id="chkFlash" /><label
+						for="chkFlash" id="label_chkFlash">Flash headers</label><br /> <input
+						type="checkbox" id="chkSlider" /><label for="chkSlider"
+						id="label_chkSlider">Status bar slider</label><br />
+				</fieldset>
+
+			</div>
+			<div id="otabs-4">
+				<!--TAB4-->
+				<fieldset>
+					<legend id="OtherAuthorization">Authorization code</legend>
+					<form id="ResetAuth">
+						<span id="OtherReset">Remove authorization</span>
+						<button id="removeauth" form="ResetAuth" />
+						<label for="removeauth" form="ResetAuth" id="button_reset"></label>
+					</form>
+				</fieldset>
+				<fieldset>
+					<legend id="OtherEvents">Sequence of events</legend>
+					<input type="checkbox" id="reverseOrder" /><label
+						for="reverseOrder" id="label_reverseOrder">Bottom up
+						display of match events</label><br /> <label id="OtherReverseNote"></label>
+				</fieldset>
+				<fieldset>
+					<legend id="OtherEventKey"></legend>
+					<input type="checkbox" id="printEventKey" /><label
+						for="printEventKey" id="label_printEventKey">Show eventkey
+						in the commentary</label><br />
+				</fieldset>
+
+			</div>
+			<div id="otabs-5">
+				<!--TAB5-->
+				<fieldset>
+					<legend id="CustomIcons">Icons</legend>
+					<input type="checkbox" id="oldIcons" /><label for="oldIcons"
+						id="label_oldIcons"> Original Livefox icons in match
+						window</label><br />
+				</fieldset>
+				<fieldset>
+					<legend id="CustomSounds">Sounds</legend>
+					<input type="checkbox" id="weather" /><label for="weather"
+						id="label_weather">Weather sound for start of the match</label><br />
+					<input type="checkbox" id="whistleTime" /><label for="whistleTime"
+						id="label_whistleTime">Sound for start/end of an halftime</label><br />
+					<input type="checkbox" id="weatherSE" /><label for="weatherSE"
+						id="label_weatherSE">Sound for weather special events</label><br />
+					<input type="checkbox" id="livefoxGoal" /><label for="livefoxGoal"
+						id="label_livefoxGoal">Original Livefox sounds</label><br /> <input
+						type="checkbox" id="noOpGoal" /><label for="noOpGoal"
+						id="label_noOpGoal">No sounds for opponent's goals</label><br />
+				</fieldset>
+				<fieldset>
+					<legend id="TabGoalSound">Goals sounds</legend>
+					<span id="PathSoundsNote1"></span><br /> <span
+						id="PathSoundsNote2"></span><br />
+					<!-- my goal -->
+					<br /> <input type="checkbox" id="myGoalCheck" /><label
+						for="myGoalCheck" id="label_myGoalCheck">Sound for own
+						goal</label> <br />
+					<button id="label_myGoalButton_reset" class="brestore">restore</button>
+					<button id="label_myGoalButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="myGoalSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="myGoalSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- op goal -->
+					<br /> <input type="checkbox" id="opGoalCheck" /><label
+						for="opGoalCheck" id="label_opGoalCheck">Sound for own
+						goal</label> <br />
+					<button id="label_opGoalButton_reset" class="brestore">restore</button>
+					<button id="label_opGoalButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="opGoalSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="opGoalSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- fr goal -->
+					<br /> <input type="checkbox" id="frGoalCheck" /><label
+						for="frGoalCheck" id="label_frGoalCheck">Sound for own
+						goal</label> <br />
+					<button id="label_frGoalButton_reset" class="brestore">restore</button>
+					<button id="label_frGoalButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="frGoalSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="frGoalSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- opfr goal -->
+					<br /> <input type="checkbox" id="opfrGoalCheck" /><label
+						for="opfrGoalCheck" id="label_opfrGoalCheck">Sound for own
+						goal</label> <br />
+					<button id="label_opfrGoalButton_reset" class="brestore">restore</button>
+					<button id="label_opfrGoalButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="opfrGoalSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="opfrGoalSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- ot goal -->
+					<br /> <input type="checkbox" id="otGoalCheck" /><label
+						for="otGoalCheck" id="label_otGoalCheck">Sound for own
+						goal</label> <br />
+					<button id="label_otGoalButton_reset" class="brestore">restore</button>
+					<button id="label_otGoalButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="otGoalSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="otGoalSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- miss goal -->
+					<br /> <input type="checkbox" id="missGoalCheck" /><label
+						for="missGoalCheck" id="label_missGoalCheck">Sound for own
+						goal</label> <br />
+					<button id="label_missGoalButton_reset" class="brestore">restore</button>
+					<button id="label_missGoalButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="missGoalSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="missGoalSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- sun goal -->
+					<br /> <label id="TabWheatherSound"></label> <br /> <input
+						type="checkbox" id="sunCheck" /><label for="sunCheck"
+						id="label_sunCheck">Sound for own goal</label> <br />
+					<button id="label_sunButton_reset" class="brestore">restore</button>
+					<button id="label_sunButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="sunSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="sunSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- rain goal -->
+					<br /> <input type="checkbox" id="rainCheck" /><label
+						for="rainCheck" id="label_rainCheck">Sound for own goal</label> <br />
+					<button id="label_rainButton_reset" class="brestore">restore</button>
+					<button id="label_rainButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="rainSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="rainSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- overcast goal -->
+					<br /> <input type="checkbox" id="overcastCheck" /><label
+						for="overcastCheck" id="label_overcastCheck">Sound for own
+						goal</label> <br />
+					<button id="label_overcastButton_reset" class="brestore">restore</button>
+					<button id="label_overcastButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="overcastSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="overcastSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- few clouds goal -->
+					<br /> <input type="checkbox" id="fewCloudsCheck" /><label
+						for="fewCloudsCheck" id="label_fewCloudsCheck">Sound for
+						own goal</label> <br />
+					<button id="label_fewCloudsButton_reset" class="brestore">restore</button>
+					<button id="label_fewCloudsButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="fewCloudsSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="fewCloudsSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- my boo goal -->
+					<br /> <input type="checkbox" id="myBooCheck" /><label
+						for="myBooCheck" id="label_myBooCheck">Sound for own goal</label>
+					<br />
+					<button id="label_myBooButton_reset" class="brestore">restore</button>
+					<button id="label_myBooButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="myBooSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="myBooSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- op boo goal -->
+					<br /> <input type="checkbox" id="opBooCheck" /><label
+						for="opBooCheck" id="label_opBooCheck">Sound for own goal</label>
+					<br />
+					<button id="label_opBooButton_reset" class="brestore">restore</button>
+					<button id="label_opBooButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="opBooSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="opBooSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- whistlestart -->
+					<br /> <label id="TabWhistleSound"></label> <br /> <input
+						type="checkbox" id="whistleStartCheck" /><label
+						for="whistleStartCheck" id="label_whistleStartCheck">Sound
+						for own goal</label> <br />
+					<button id="label_whistleStartButton_reset" class="brestore">restore</button>
+					<button id="label_whistleStartButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="whistleStartSoundPathBrowse" tabindex="2" />
+
+
+					<input type="url" id="whistleStartSoundPath" maxlength="450000"
+						size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- double whistle -->
+					<br /> <input type="checkbox" id="whistle2Check" /><label
+						for="whistle2Check" id="label_whistle2Check">Sound for own
+						goal</label> <br />
+					<button id="label_whistle2Button_reset" class="brestore">restore</button>
+					<button id="label_whistle2Button_play" class="brestore">play</button>
+
+
+					<input type="file" id="whistle2SoundPathBrowse" tabindex="2" /> <input
+						type="url" id="whistle2SoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- triple whistle -->
+					<br /> <input type="checkbox" id="whistle3Check" /><label
+						for="whistle3Check" id="label_whistle3Check">Sound for own
+						goal</label> <br />
+					<button id="label_whistle3Button_reset" class="brestore">restore</button>
+					<button id="label_whistle3Button_play" class="brestore">play</button>
+
+
+					<input type="file" id="whistle3SoundPathBrowse" tabindex="2" /> <input
+						type="url" id="whistle3SoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- whistle goal -->
+					<br /> <input type="checkbox" id="whistleCheck" /><label
+						for="whistleCheck" id="label_whistleCheck">Sound for own
+						goal</label> <br />
+					<button id="label_whistleButton_reset" class="brestore">restore</button>
+					<button id="label_whistleButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="whistleSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="whistleSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- hattrick -->
+					<br /> <input type="checkbox" id="hattrickCheck" /><label
+						for="hattrickCheck" id="label_hattrickCheck">Sound for own
+						goal</label> <br />
+					<button id="label_hattrickButton_reset" class="brestore">restore</button>
+					<button id="label_hattrickButton_play" class="brestore">play</button>
+
+
+					<input type="file" id="hattrickSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="hattrickSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+				</fieldset>
+
+			</div>
+
+			<div id="otabs-6">
+				<!--TAB5-->
+				<fieldset>
+					<legend id="CustomEventBackground">Event background color</legend>
+					<span id="ChooseColor">You can choose your color at </span><a
+						href="http://www.colorpicker.com/" target="_blank">http://www.colorpicker.com/</a><br />
+					<br /> <input type="checkbox" id="friendHomeColorCheck" />
 					<!--  <label for="friendHomeColorCheck" id="label_friendHomeColorCheck"> Set a custom background color for your
 					 friend's (and your own) events when playing at home</label> -->
-					<label for="friendHomeColorCheck" id="label_friendHomeColorCode">Friend home hex color: #</label> 
-					<input type="text" name="friendHomeColor" id="friendHomeColorCode" class="text ui-widget-content ui-corner-all"
-					 /><br /><br />
-				
-				<input type="checkbox" id="friendAwayColorCheck"
-					 />
-				<!--	<label for="friendAwayColorCheck" id="label_friendAwayColorCheck"> Set a custom background color for your friend's (and your own) events when playing away</label> -->
-					<label for="friendAwayColorCheck" id="label_friendAwayColorCode">Friend away hex color: #</label> 
-					<input type="text" name="friendAwayColor"	id="friendAwayColorCode" class="text ui-widget-content ui-corner-all"
-					 /><br /><br />
-				
-				<input type="checkbox" id="foeHomeColorCheck"
-					 /><!--<label
+					<label for="friendHomeColorCheck" id="label_friendHomeColorCode">Friend
+						home hex color: #</label> <input type="text" name="friendHomeColor"
+						id="friendHomeColorCode"
+						class="text ui-widget-content ui-corner-all" /><br />
+					<br /> <input type="checkbox" id="friendAwayColorCheck" />
+					<!--	<label for="friendAwayColorCheck" id="label_friendAwayColorCheck"> Set a custom background color for your friend's (and your own) events when playing away</label> -->
+					<label for="friendAwayColorCheck" id="label_friendAwayColorCode">Friend
+						away hex color: #</label> <input type="text" name="friendAwayColor"
+						id="friendAwayColorCode"
+						class="text ui-widget-content ui-corner-all" /><br />
+					<br /> <input type="checkbox" id="foeHomeColorCheck" />
+					<!--<label
 					for="foeHomeColorCheck" id="label_foeHomeColorCheck"> Set a
 					custom background color for foreign home team events</label>-->
-					<label for="foeHomeColorCheck" id="label_foeHomeColorCode">Foreign home hex color: #</label><input type="text" name="foeHomeColor"
-					id="foeHomeColorCode" class="text ui-widget-content ui-corner-all"
-					 /> <br /> <br />
-				
-				<input type="checkbox" id="foeAwayColorCheck"
-					 /><!--<label
+					<label for="foeHomeColorCheck" id="label_foeHomeColorCode">Foreign
+						home hex color: #</label><input type="text" name="foeHomeColor"
+						id="foeHomeColorCode" class="text ui-widget-content ui-corner-all" />
+					<br /> <br /> <input type="checkbox" id="foeAwayColorCheck" />
+					<!--<label
 					for="foeAwayColorCheck" id="label_foeAwayColorCheck"> Set a
 					custom background color for foreign away team events</label> <br /> 
-					 <br /> --><label for="foeAwayColorCheck" id="label_foeAwayColorCode">Foreign away hex color: #</label><input type="text" name="foeAwayColor"
-					id="foeAwayColorCode" class="text ui-widget-content ui-corner-all"
-					 /> <br /> <br />
-					
-				<input type="checkbox" id="neutralColorCheck"
-					 /><!-- <label
+					 <br /> -->
+					<label for="foeAwayColorCheck" id="label_foeAwayColorCode">Foreign
+						away hex color: #</label><input type="text" name="foeAwayColor"
+						id="foeAwayColorCode" class="text ui-widget-content ui-corner-all" />
+					<br /> <br /> <input type="checkbox" id="neutralColorCheck" />
+					<!-- <label
 					for="neutralColorCheck" id="label_neutralColorCheck"> Set a
 					custom background color for neutral events</label><br /> 
-					 <br />--> <label for="neutralColorCheck" id="label_neutralColorCode">Neutral hex color: #</label><input type="text" name="neutralColor"
-					id="neutralColorCode" class="text ui-widget-content ui-corner-all"
-					 /> <br /> <br />
+					 <br />-->
+					<label for="neutralColorCheck" id="label_neutralColorCode">Neutral
+						hex color: #</label><input type="text" name="neutralColor"
+						id="neutralColorCode" class="text ui-widget-content ui-corner-all" />
+					<br /> <br />
 
 				</fieldset>
-	<fieldset>
-	<legend id="CustomEventText">Event text color</legend>					
-				<input type="checkbox" id="textColorCheck"
-					 /><!--<label
+				<fieldset>
+					<legend id="CustomEventText">Event text color</legend>
+					<input type="checkbox" id="textColorCheck" />
+					<!--<label
 					for="textColorCheck" id="label_textColorCheck"> Set
 					a custom color for event text</label><br /> 
-					 <br />--> <label for="textColorCheck" id="label_textColorCode">Event text hex color: #</label> <input type="text" name="textColor"
-					id="textColorCode" class="text ui-widget-content ui-corner-all"
-					 /> <br /> <br />
-					
-				<input type="checkbox" id="seTextColorCheck"
-					 /><!--<label
+					 <br />-->
+					<label for="textColorCheck" id="label_textColorCode">Event
+						text hex color: #</label> <input type="text" name="textColor"
+						id="textColorCode" class="text ui-widget-content ui-corner-all" />
+					<br /> <br /> <input type="checkbox" id="seTextColorCheck" />
+					<!--<label
 					for="seTextColorCheck" id="label_seTextColorCheck"> Set a
 					custom color for SE text</label><br /> 
-					 <br />--> <label for="seTextColorCheck" id="label_seTextColorCode">SE text hex color: #</label> <input type="text" name="seTextColor"
-					id="seTextColorCode" class="text ui-widget-content ui-corner-all"
-					/>  	
-			</fieldset>
-		</div>
+					 <br />-->
+					<label for="seTextColorCheck" id="label_seTextColorCode">SE
+						text hex color: #</label> <input type="text" name="seTextColor"
+						id="seTextColorCode" class="text ui-widget-content ui-corner-all" />
+				</fieldset>
 			</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		</div>
-				<div id="about-dialog" title="">
-				
-				<div id="about-tabs">
-				<ul>
-					<li><a href="#tabs-1" id="TabInfo"></a></li>
-					<li><a href="#tabs-2" id="TabTranslators"></a></li>
-					<li><a href="#tabs-3" id="TabCredits"></a></li>
-				</ul>
-				<div id="tabs-1">
-					<img src="./themes/images/256.png" alt="HTLiveSight Logo"><br />
-					HTLiveSightDEV 0.5.908<br />
-					<span id="creationDate"></span><br /><br />
-					<span id="createdBy"></span><br />
-					Silkevicious &amp; Bigpapy<br /><br />
-					<span id="BasedOn">Based on</span> <span id="BasedOnTitle">HattrickLiveFox</span><br />
-					<a href="http://hattricklivefox.mozdev.org">http://hattricklivefox.mozdev.org</a>
-				</div>
-				<div id="tabs-2">
-					<span id="ThanksTo"></span><br />
-					<ul>
-		<li>[ara] العربية: RiBBz</li>
-		<li>[bel] Беларуская: LA-Vandrouny</li>
-		<li>[bul] Български: : Stanchev</li>
-		<li>[bos] Bosanski: GM-Gizmo</li>
-		<li>[cat] Català: Sesag</li>
-		<li>[ces] Čeština: MOMOOO</li>
-		<li>[dan] Dansk: cheilson</li>
-		<li>[ger] Deutsch: JayBi, CatzHoek</li>
-		<li>[eng] English: Silkevicious</li>
-		<li>[eng-us] American: rsox1221, jashaz</li>
-		<li>[ell] Ελληνικά: chris_ts</li>
-		<li>[est] Eesti: Simokas</li>
-		<li>[eus] Euskara: EH-Haro</li>
-		<li>fas] فارسی: -Morsal-</li>
-		<li>[fin] Suomi: -Lupi-</li>
-		<li>[fra] Français: Davidatorus</li>
-		<li>[fry] Frysk: MI-Side</li>
-		<li>[fur] Furlan: LA-Gato_Diaz</li>
-		<li>[glg] Galego: Djalma8_Brl, GZ-grobas</li>
-		<li>[heb] עברית: ozwuermli</li>
-		<li>[hrv] Hrvatski: CroPredator, Zayc</li>
-		<li>[hun] Magyar: dzsoo</li>
-		<li>[ind] Bahasa Indonesia: Zolfaghar</li>
-		<li>[isl] Islenska: karibh</li>
-		<li>[ita] Italiano: BigPapy</li>
-		<li>[jpn] 日本語: LA-N-Kobayashi</li>
-		<li>[kat] ქართული: maxrika</li>
-		<li>[kor] 한국어: rhkdska</li>
-		<li>[ltz] Lëtzebuergesch: Maya26</li>
-		<li>[lit] Lietuvių: LA-MJ</li>
-		<li>[lav] Latviešu: Mauris182</li>
-		<li>[mkd] Македонски: YulBriner-PACER</li>
-		<li>[mlt] Malti: LA-Steve007</li>
-		<li>[nld] Nederlands: GM-eekels, CoRrRan</li>
-		<li>[nob] Norsk-Bokmål: ultracool</li>
-		<li>[nno] Norsk-Nynorsk: olefurz</li>
-		<li>[pol] Polski: Misiakow-Strateg_FBP</li>
-		<li>[por] Português: Titico</li>
-		<li>[por-br] Brasileiro: MarceloFBrandao</li>
-		<li>[ron] Română: RadrianO</li>
-		<li>[rus] Русский: Vitaliy</li>
-		<li>[slk] Slovenčina: apatka</li>
-		<li>[slv] Slovenčina: artod</li>
-		<li>[spa] Español: Baler0</li>
-		<li>[spa-ca] Centroamericano: Baler0</li>
-		<li>[spa-su] Sudamericano: Baler0</li>
-		<li>[sqi] Shqip: DownTiME</li>
-		<li>[srp] Српски: ljushaff</li>
-		<li>[swe] Svenska: GM-murko</li>
-		<li>[tur] Türkçe: </li>
-		<li>[vie] Tiếng Việt: we_will_win</li>
-		<li>[vls] Vlaams: gogessj4</li>
-		<li>[ukr] Українська: Vitaliy</li>
-		<li>[zho] 中文（简体）: lapine</li>
-					</ul>
-				</div>
-				<div id="tabs-3">
-					<span id="Supporter">Project support:</span><br />
-					<a href="http://code.google.com/p/htlivesight" target="_newtab"><img src="./themes/images/google.png" alt="Google"></a><br />
-					<a href="http://sourceforge.net/projects/htlivesight" target="_newtab"><img src="./themes/images/sf.png" alt="Sourceforge"></a><br />
-					<a href="http://htlivesight.foundationhorizont.org" target="_newtab"><img src="./themes/images/ixweb.png" alt="IXWebHosting"></a><br /><br />
-					<label id="Tech">Our Technology:</label><br />
-					<a href="http://wikipedia.org/wiki/HTML5" target="_newtab"><img src="./themes/images/html5.png" alt="HTML5"></a><br />
-					<a href="http://jqueryui.com" target="_newtab"><img src="./themes/images/jquery.png" alt="JQuery"></a><br /><br />
-					<label id="License">Our License:</label><br />
-					<a href="http://www.opensource.org/licenses/mit-license.php" target="_newtab"><img src="./themes/images/mit.png" alt="MIT"></a>
-				</div>
-			</div>
-				
-				
-				
-				
-				
-		</div>
-			<div id="topbar">
-		<div id="left_topbar">
-		<span id="latestNews">Check out the latest news on</span>
-		<a title="Hattrick Forum" id="HTLSThread" href=".hattrick.org/Forum/Overview.aspx?v=0&amp;f=796547" target="_blank">
-		<img alt="hattrick" class="socialicon" src="./themes/images/ht.png">
-		</a>
-		<a title="Project Website" id="ProjectWebsite" href="http://htlivesight.sourceforge.net" target="_blank">
-		<img alt="website" class="socialicon" src="./themes/images/www.png">
-		</a>
-		<a title="Google+ Page" id="GooglePlusPage" href="https://plus.google.com/108738414532467976031" target="_blank">
-		<img alt="gplus" class="socialicon" src="./themes/images/gplus.png">
-		</a>
-		<a title="Twitter Page" id="TwitterPage" href="http://twitter.com/htlivesight" target="_blank">
-		<img alt="twitter" class="socialicon" src="./themes/images/twit.png">
-		</a>
-		<a title="Facebook Page" id="FacebookPage" href="http://www.facebook.com/pages/HTLiveSight/239694369438717" target="_blank">
-		<img alt="facebook" class="socialicon" src="./themes/images/fb.png">
-		</a>
-		</div>
-		<div id="central_topbar">
-		<a title="Open Chat" id="chat_link" href="#" >
-		<img alt="chat" class="socialicon" src="./themes/images/chat.png">
-		</a>
-		<div id="chat-dialog" title="Chat">
-		<!--<iframe src="http://webchat.quakenet.org/?channels=htlivesight&uio=OT10cnVlJjExPTEyMwb9" width="647" height="400"></iframe>-->
-		</div>
-		</div>
-		<div id="right_topbar">
-		<span id="LoggedIn">Logged in as</span>
-		<span id="teamName"></span>
-		<a title="Hide Sidebar" id="hidesidebar" href="#">
-		<img alt="Hide Sidebar" class="socialicon" src="./themes/images/hide.png">
-		</a>
-		<a title="Options" id="options_link" href="#">
-		<img alt="Options" class="socialicon" src="./themes/images/options.png">
-		</a>
-		<a title="About" id="about_link" href="#">
-		<img alt="About" class="socialicon" src="./themes/images/about.png">
-		</a>
-		</div>
-		</div>
-		<div id="thebox">
-		<div id="live_box">
-		
-		
-		
-		<div id="formationpopup" title="Lineup">
-		<span id="label_formationPopupUnavailable">Lineup popup function is temporary deactivated due a CHPP problem.<br />As soon the HTs fix it, we'll re-add this feature.<br />
-		Sorry for the inconvenience.
-		</span>
 		</div>
 
-		<!--DIV SINGLE MATCH-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<div id="about-dialog" title="">
+
+		<div id="about-tabs">
+			<ul>
+				<li><a href="#tabs-1" id="TabInfo"></a>
+				</li>
+				<li><a href="#tabs-2" id="TabTranslators"></a>
+				</li>
+				<li><a href="#tabs-3" id="TabCredits"></a>
+				</li>
+			</ul>
+			<div id="tabs-1">
+				<img src="./themes/images/256.png" alt="HTLiveSight Logo"><br />
+				HTLiveSightDEV 0.5.908<br /> <span id="creationDate"></span><br />
+				<br /> <span id="createdBy"></span><br /> Silkevicious &amp;
+				Bigpapy<br />
+				<br /> <span id="BasedOn">Based on</span> <span id="BasedOnTitle">HattrickLiveFox</span><br />
+				<a href="http://hattricklivefox.mozdev.org">http://hattricklivefox.mozdev.org</a>
+			</div>
+			<div id="tabs-2">
+				<span id="ThanksTo"></span><br />
+				<ul>
+					<li>[ara] العربية: RiBBz</li>
+					<li>[bel] Беларуская: LA-Vandrouny</li>
+					<li>[bul] Български: : Stanchev</li>
+					<li>[bos] Bosanski: GM-Gizmo</li>
+					<li>[cat] Català: Sesag</li>
+					<li>[ces] Čeština: MOMOOO</li>
+					<li>[dan] Dansk: cheilson</li>
+					<li>[ger] Deutsch: JayBi, CatzHoek</li>
+					<li>[eng] English: Silkevicious</li>
+					<li>[eng-us] American: rsox1221, jashaz</li>
+					<li>[ell] Ελληνικά: chris_ts</li>
+					<li>[est] Eesti: Simokas</li>
+					<li>[eus] Euskara: EH-Haro</li>
+					<li>fas] فارسی: -Morsal-</li>
+					<li>[fin] Suomi: -Lupi-</li>
+					<li>[fra] Français: Davidatorus</li>
+					<li>[fry] Frysk: MI-Side</li>
+					<li>[fur] Furlan: LA-Gato_Diaz</li>
+					<li>[glg] Galego: Djalma8_Brl, GZ-grobas</li>
+					<li>[heb] עברית: ozwuermli</li>
+					<li>[hrv] Hrvatski: CroPredator, Zayc</li>
+					<li>[hun] Magyar: dzsoo</li>
+					<li>[ind] Bahasa Indonesia: Zolfaghar</li>
+					<li>[isl] Islenska: karibh</li>
+					<li>[ita] Italiano: BigPapy</li>
+					<li>[jpn] 日本語: LA-N-Kobayashi</li>
+					<li>[kat] ქართული: maxrika</li>
+					<li>[kor] 한국어: rhkdska</li>
+					<li>[ltz] Lëtzebuergesch: Maya26</li>
+					<li>[lit] Lietuvių: LA-MJ</li>
+					<li>[lav] Latviešu: Mauris182</li>
+					<li>[mkd] Македонски: YulBriner-PACER</li>
+					<li>[mlt] Malti: LA-Steve007</li>
+					<li>[nld] Nederlands: GM-eekels, CoRrRan</li>
+					<li>[nob] Norsk-Bokmål: ultracool</li>
+					<li>[nno] Norsk-Nynorsk: olefurz</li>
+					<li>[pol] Polski: Misiakow-Strateg_FBP</li>
+					<li>[por] Português: Titico</li>
+					<li>[por-br] Brasileiro: MarceloFBrandao</li>
+					<li>[ron] Română: RadrianO</li>
+					<li>[rus] Русский: Vitaliy</li>
+					<li>[slk] Slovenčina: apatka</li>
+					<li>[slv] Slovenčina: artod</li>
+					<li>[spa] Español: Baler0</li>
+					<li>[spa-ca] Centroamericano: Baler0</li>
+					<li>[spa-su] Sudamericano: Baler0</li>
+					<li>[sqi] Shqip: DownTiME</li>
+					<li>[srp] Српски: ljushaff</li>
+					<li>[swe] Svenska: GM-murko</li>
+					<li>[tur] Türkçe:</li>
+					<li>[vie] Tiếng Việt: we_will_win</li>
+					<li>[vls] Vlaams: gogessj4</li>
+					<li>[ukr] Українська: Vitaliy</li>
+					<li>[zho] 中文（简体）: lapine</li>
+				</ul>
+			</div>
+			<div id="tabs-3">
+				<span id="Supporter">Project support:</span><br /> <a
+					href="http://code.google.com/p/htlivesight" target="_newtab"><img
+					src="./themes/images/google.png" alt="Google">
+				</a><br /> <a href="http://sourceforge.net/projects/htlivesight"
+					target="_newtab"><img src="./themes/images/sf.png"
+					alt="Sourceforge">
+				</a><br /> <a href="http://htlivesight.foundationhorizont.org"
+					target="_newtab"><img src="./themes/images/ixweb.png"
+					alt="IXWebHosting">
+				</a><br />
+				<br /> <label id="Tech">Our Technology:</label><br /> <a
+					href="http://wikipedia.org/wiki/HTML5" target="_newtab"><img
+					src="./themes/images/html5.png" alt="HTML5">
+				</a><br /> <a href="http://jqueryui.com" target="_newtab"><img
+					src="./themes/images/jquery.png" alt="JQuery">
+				</a><br />
+				<br /> <label id="License">Our License:</label><br /> <a
+					href="http://www.opensource.org/licenses/mit-license.php"
+					target="_newtab"><img src="./themes/images/mit.png" alt="MIT">
+				</a>
+			</div>
+		</div>
+
+
+
+
+
+	</div>
+	<div id="topbar">
+		<div id="left_topbar">
+			<span id="latestNews">Check out the latest news on</span> <a
+				title="Hattrick Forum" id="HTLSThread"
+				href=".hattrick.org/Forum/Overview.aspx?v=0&amp;f=796547"
+				target="_blank"> <img alt="hattrick" class="socialicon"
+				src="./themes/images/ht.png"> </a> <a title="Project Website"
+				id="ProjectWebsite" href="http://htlivesight.sourceforge.net"
+				target="_blank"> <img alt="website" class="socialicon"
+				src="./themes/images/www.png"> </a> <a title="Google+ Page"
+				id="GooglePlusPage"
+				href="https://plus.google.com/108738414532467976031" target="_blank">
+				<img alt="gplus" class="socialicon" src="./themes/images/gplus.png">
+			</a> <a title="Twitter Page" id="TwitterPage"
+				href="http://twitter.com/htlivesight" target="_blank"> <img
+				alt="twitter" class="socialicon" src="./themes/images/twit.png">
+			</a> <a title="Facebook Page" id="FacebookPage"
+				href="http://www.facebook.com/pages/HTLiveSight/239694369438717"
+				target="_blank"> <img alt="facebook" class="socialicon"
+				src="./themes/images/fb.png"> </a>
+		</div>
+		<div id="central_topbar">
+			<a title="Open Chat" id="chat_link" href="#"> <img alt="chat"
+				class="socialicon" src="./themes/images/chat.png"> </a>
+			<div id="chat-dialog" title="Chat">
+				<!--<iframe src="http://webchat.quakenet.org/?channels=htlivesight&uio=OT10cnVlJjExPTEyMwb9" width="647" height="400"></iframe>-->
+			</div>
+		</div>
+		<div id="right_topbar">
+			<span id="LoggedIn">Logged in as</span> <span id="teamName"></span> <a
+				title="Hide Sidebar" id="hidesidebar" href="#"> <img
+				alt="Hide Sidebar" class="socialicon" src="./themes/images/hide.png">
+			</a> <a title="Options" id="options_link" href="#"> <img
+				alt="Options" class="socialicon" src="./themes/images/options.png">
+			</a> <a title="About" id="about_link" href="#"> <img alt="About"
+				class="socialicon" src="./themes/images/about.png"> </a>
+		</div>
+	</div>
+	<div id="thebox">
+		<div id="live_box">
+
+
+
+			<div id="formationpopup" title="Lineup">
+				<span id="label_formationPopupUnavailable">Lineup popup
+					function is temporary deactivated due a CHPP problem.<br />As soon
+					the HTs fix it, we'll re-add this feature.<br /> Sorry for the
+					inconvenience. </span>
+			</div>
+
+			<!--DIV SINGLE MATCH-->
 			<!--<div class="match">
 		<table  cellspacing="0" class="matchheader ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active">
 	<thead>
@@ -659,7 +788,7 @@
 		<td class="line1header">Data+Ora+Meteo+Stadio</td>
 		<td class="chronoheader" colspan="3">Cronometro</td>
 		<td class="line1header">-->
-		<!--
+			<!--
 		<a href="#" id="idontknow" class="ui-corner-all ui-icon ui-icon-volume-on"></a>
 		<a href="#" id="idontknow" class="ui-corner-all ui-icon ui-icon-extlink"></a>
 		<a href="#" id="idontknow" class="ui-corner-all ui-icon ui-icon-info"></a>
@@ -669,7 +798,7 @@
 		<a href="#" id="closematch" class="ui-corner-all ui-icon ui-icon-triangle-1-s"></a>
 		<a href="#" id="moveup" class="ui-corner-all ui-icon ui-icon-arrow-n"></a>
 		<a href="#" id="movedown" class="ui-corner-all ui-icon ui-icon-arrow-s"></a>-->
-		<!--
+			<!--
 		</td>
 	</tr>
 	</thead>
@@ -696,11 +825,11 @@
 	</div>
 	</div>
 	</div>-->
-	<!-- /DIV SINGLE MATCH-->
-	
+			<!-- /DIV SINGLE MATCH-->
 
-	<!-- La stanza dei bottoni-->
-	<!--
+
+			<!-- La stanza dei bottoni-->
+			<!--
 	<a href="#" id="button" class="ui-state-default ui-corner-all">Run Effect</a>
 	<a href="#" id="button2" class="ui-state-default ui-corner-all">Run Effect 2</a>
 	<a href="#" id="animator" class="ui-state-default ui-corner-all">Red Card/Injury Animation</a>
@@ -723,39 +852,48 @@
 					Error 500: internal server error (of Hattrick)</p>
 				</div>
 			</div>-->
-		<!-- La stanza dei bottoni-->	
-			
-			
-			
-			</div>
-			
-			
-			
-			
-			
-			
-	<div id="sidebar"><!-- sidebar-->
-					
-			
-	<div id="winbox_leaguematches" ><!-- accordion league_matches1-->
-	<h3 id="h3LeagueMatches" style="display:none"><a href="#" id="LeagueMatches" style="display:none"></a></h3>
-	<!-- CUT HERE 
+			<!-- La stanza dei bottoni-->
+
+
+
+		</div>
+
+
+
+
+
+
+		<div id="sidebar">
+			<!-- sidebar-->
+
+
+			<div id="winbox_leaguematches">
+				<!-- accordion league_matches1-->
+				<h3 id="h3LeagueMatches" style="display: none">
+					<a href="#" id="LeagueMatches" style="display: none"></a>
+				</h3>
+				<!-- CUT HERE 
 	<div id="winboxheader_leaguematches">
 	<img id="imgwinboxopen_leaguematches" class="imgwinboxopen"/>
 	<img id="imgwinboxshade_leaguematches" class="imgwinboxshade"/>
 	</div>
 	 CUT HERE -->
-	<div id="winboxcontent_leaguematches" style="display:none"><!-- accordion league_matches2-->
-	<div id="contentbody_leaguematches"><!-- accordion league_matches2-->
-				
-	<table class="match_table">
-	<thead id="contentheader_leaguematches">
-	<tr>
-		<th colspan="7" class="datetime_league"><span id="league_round_date"></span></th>
-	</tr>
-	</thead>
-	<tbody id="league_grid_rows"> <!-- id="league_grid" -->
-	<!--<tr class="match_row"> 
+				<div id="winboxcontent_leaguematches" style="display: none">
+					<!-- accordion league_matches2-->
+					<div id="contentbody_leaguematches">
+						<!-- accordion league_matches2-->
+
+						<table class="match_table">
+							<thead id="contentheader_leaguematches">
+								<tr>
+									<th colspan="7" class="datetime_league"><span
+										id="league_round_date"></span>
+									</th>
+								</tr>
+							</thead>
+							<tbody id="league_grid_rows">
+								<!-- id="league_grid" -->
+								<!--<tr class="match_row"> 
 		<td class="hometeam_league"></td>
 		<td class="homescore_league"></td>
 		<td class="separator_league"></td>
@@ -764,139 +902,226 @@
 		<td class="add_league"></td>
 		<td class="remove_league"></td>
 	</tr>-->
-	</tbody>
-	<tfoot id="contentfooter_leaguematches">
-	<tr>
-		<td colspan="1" class="round_league"><span id="league_round_number"></span></td>
-		<td colspan="6" class="chronometer_league"><span id="league_round_time"></span></td>
-	</tr>
-	</tfoot>
-	</table>
-			</div><!-- accordion league_matches2-->
-			</div><!-- accordion league_matches2-->
-			</div><!-- accordion league_matches1-->
-			
-			
-			
-			
-			
-	<div id="winbox_leaguetable" style="display:none"><!-- accordion league_table1-->
-	<h3><a href="#" id="LeagueLiveTable"></a></h3>
-	<!-- CUT HERE 
+							</tbody>
+							<tfoot id="contentfooter_leaguematches">
+								<tr>
+									<td colspan="1" class="round_league"><span
+										id="league_round_number"></span>
+									</td>
+									<td colspan="6" class="chronometer_league"><span
+										id="league_round_time"></span>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<!-- accordion league_matches2-->
+				</div>
+				<!-- accordion league_matches2-->
+			</div>
+			<!-- accordion league_matches1-->
+
+
+
+
+
+			<div id="winbox_leaguetable" style="display: none">
+				<!-- accordion league_table1-->
+				<h3>
+					<a href="#" id="LeagueLiveTable"></a>
+				</h3>
+				<!-- CUT HERE 
 	<div id="winboxheader_leaguetable">
 	<img id="imgwinboxopen_leaguetable" class="imgwinboxopen"/>
 	<img id="imgwinboxshade_leaguetable" class="imgwinboxshade"/>
 	</div>
 	CUT HERE -->
-	<div id="winboxcontent_leaguetable"><!-- accordion league_table2-->
-	<div id="contentbody_leaguetable"><!-- accordion league_table2-->		<!--id="contentbody_leaguetable"-->
-	<table id="leaguetable_grid_rows" class="live_league_table" cellpadding="0">
-	<thead>
-	<tr>
-		<th  class="header_league_table" id="LeaguePosition"></th>
-		<th  class="header_league_table" id="LeagueTeam"></th>
-		<th  class="header_league_table"> </th>
-		<th  class="header_league_table" id="LeaguePlayed"></th>
-		<th  class="header_league_table" id="LeagueGoals"></th>
-		<th  class="header_league_table" id="LeagueGoalDiff"></th>
-		<th  class="header_league_table" id="LeaguePoints"></th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr id="leaguetable_1">
-		<td><span>1.</span></td>
-		<td><span id="leaguetable_1_name"></span></td>
-		<td><img id="leaguetable_1_change" class="leaguetable_equal"/></td>
-		<td><span id="leaguetable_1_matches"></span></td>
-		<td><span id="leaguetable_1_goals"></span></td>
-		<td><span id="leaguetable_1_goaldif"></span></td>
-		<td><span id="leaguetable_1_points"></span></td>
-	</tr>
-		<tr id="leaguetable_2">
-		<td><span>2.</span></td>
-		<td><span id="leaguetable_2_name"></span></td>
-		<td><img id="leaguetable_2_change" class="leaguetable_equal"/></td>
-		<td><span id="leaguetable_2_matches"></span></td>
-		<td><span id="leaguetable_2_goals"></span></td>
-		<td><span id="leaguetable_2_goaldif"></span></td>
-		<td><span id="leaguetable_2_points"></span></td>
-	</tr>
-		<tr id="leaguetable_3">
-		<td><span>3.</span></td>
-		<td><span id="leaguetable_3_name"></span></td>
-		<td><img id="leaguetable_3_change" class="leaguetable_equal"/></td>
-		<td><span id="leaguetable_3_matches"></span></td>
-		<td><span id="leaguetable_3_goals"></span></td>
-		<td><span id="leaguetable_3_goaldif"></span></td>
-		<td><span id="leaguetable_3_points"></span></td>
-	</tr>
-		<tr id="leaguetable_4">
-		<td><span>4.</span></td>
-		<td><span id="leaguetable_4_name"></span></td>
-		<td><img id="leaguetable_4_change" class="leaguetable_equal"/></td>
-		<td><span id="leaguetable_4_matches"></span></td>
-		<td><span id="leaguetable_4_goals"></span></td>
-		<td><span id="leaguetable_4_goaldif"></span></td>
-		<td><span id="leaguetable_4_points"></span></td>
-	</tr>
-		<tr id="leaguetable_5">
-		<td><span>5.</span></td>
-		<td><span id="leaguetable_5_name"></span></td>
-		<td><img id="leaguetable_5_change" class="leaguetable_equal"/></td>
-		<td><span id="leaguetable_5_matches"></span></td>
-		<td><span id="leaguetable_5_goals"></span></td>
-		<td><span id="leaguetable_5_goaldif"></span></td>
-		<td><span id="leaguetable_5_points"></span></td>
-	</tr>
-		<tr id="leaguetable_6">
-		<td><span>6.</span></td>
-		<td><span id="leaguetable_6_name"></span></td>
-		<td><img id="leaguetable_6_change" class="leaguetable_equal"/></td>
-		<td><span id="leaguetable_6_matches"></span></td>
-		<td><span id="leaguetable_6_goals"></span></td>
-		<td><span id="leaguetable_6_goaldif"></span></td>
-		<td><span id="leaguetable_6_points"></span></td>
-	</tr>
-		<tr id="leaguetable_7">
-		<td><span>7.</span></td>
-		<td><span id="leaguetable_7_name"></span></td>
-		<td><img id="leaguetable_7_change" class="leaguetable_equal"/></td>
-		<td><span id="leaguetable_7_matches"></span></td>
-		<td><span id="leaguetable_7_goals"></span></td>
-		<td><span id="leaguetable_7_goaldif"></span></td>
-		<td><span id="leaguetable_7_points"></span></td>
-	</tr>
-		<tr id="leaguetable_8">
-		<td><span>8.</span></td>
-		<td><span id="leaguetable_8_name"></span></td>
-		<td><img id="leaguetable_8_change" class="leaguetable_equal"/></td>
-		<td><span id="leaguetable_8_matches"></span></td>
-		<td><span id="leaguetable_8_goals"></span></td>
-		<td><span id="leaguetable_8_goaldif"></span></td>
-		<td><span id="leaguetable_8_points"></span></td>
-	</tr>
-	</tbody>
-	</table>
-			</div><!-- accordion league_table2-->
-			</div><!-- accordion league_table2-->
-			</div><!-- accordion league_table1-->
-			
-		
+				<div id="winboxcontent_leaguetable">
+					<!-- accordion league_table2-->
+					<div id="contentbody_leaguetable">
+						<!-- accordion league_table2-->
+						<!--id="contentbody_leaguetable"-->
+						<table id="leaguetable_grid_rows" class="live_league_table"
+							cellpadding="0">
+							<thead>
+								<tr>
+									<th class="header_league_table" id="LeaguePosition"></th>
+									<th class="header_league_table" id="LeagueTeam"></th>
+									<th class="header_league_table"></th>
+									<th class="header_league_table" id="LeaguePlayed"></th>
+									<th class="header_league_table" id="LeagueGoals"></th>
+									<th class="header_league_table" id="LeagueGoalDiff"></th>
+									<th class="header_league_table" id="LeaguePoints"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="leaguetable_1">
+									<td><span>1.</span>
+									</td>
+									<td><span id="leaguetable_1_name"></span>
+									</td>
+									<td><img id="leaguetable_1_change"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_1_matches"></span>
+									</td>
+									<td><span id="leaguetable_1_goals"></span>
+									</td>
+									<td><span id="leaguetable_1_goaldif"></span>
+									</td>
+									<td><span id="leaguetable_1_points"></span>
+									</td>
+								</tr>
+								<tr id="leaguetable_2">
+									<td><span>2.</span>
+									</td>
+									<td><span id="leaguetable_2_name"></span>
+									</td>
+									<td><img id="leaguetable_2_change"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_2_matches"></span>
+									</td>
+									<td><span id="leaguetable_2_goals"></span>
+									</td>
+									<td><span id="leaguetable_2_goaldif"></span>
+									</td>
+									<td><span id="leaguetable_2_points"></span>
+									</td>
+								</tr>
+								<tr id="leaguetable_3">
+									<td><span>3.</span>
+									</td>
+									<td><span id="leaguetable_3_name"></span>
+									</td>
+									<td><img id="leaguetable_3_change"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_3_matches"></span>
+									</td>
+									<td><span id="leaguetable_3_goals"></span>
+									</td>
+									<td><span id="leaguetable_3_goaldif"></span>
+									</td>
+									<td><span id="leaguetable_3_points"></span>
+									</td>
+								</tr>
+								<tr id="leaguetable_4">
+									<td><span>4.</span>
+									</td>
+									<td><span id="leaguetable_4_name"></span>
+									</td>
+									<td><img id="leaguetable_4_change"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_4_matches"></span>
+									</td>
+									<td><span id="leaguetable_4_goals"></span>
+									</td>
+									<td><span id="leaguetable_4_goaldif"></span>
+									</td>
+									<td><span id="leaguetable_4_points"></span>
+									</td>
+								</tr>
+								<tr id="leaguetable_5">
+									<td><span>5.</span>
+									</td>
+									<td><span id="leaguetable_5_name"></span>
+									</td>
+									<td><img id="leaguetable_5_change"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_5_matches"></span>
+									</td>
+									<td><span id="leaguetable_5_goals"></span>
+									</td>
+									<td><span id="leaguetable_5_goaldif"></span>
+									</td>
+									<td><span id="leaguetable_5_points"></span>
+									</td>
+								</tr>
+								<tr id="leaguetable_6">
+									<td><span>6.</span>
+									</td>
+									<td><span id="leaguetable_6_name"></span>
+									</td>
+									<td><img id="leaguetable_6_change"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_6_matches"></span>
+									</td>
+									<td><span id="leaguetable_6_goals"></span>
+									</td>
+									<td><span id="leaguetable_6_goaldif"></span>
+									</td>
+									<td><span id="leaguetable_6_points"></span>
+									</td>
+								</tr>
+								<tr id="leaguetable_7">
+									<td><span>7.</span>
+									</td>
+									<td><span id="leaguetable_7_name"></span>
+									</td>
+									<td><img id="leaguetable_7_change"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_7_matches"></span>
+									</td>
+									<td><span id="leaguetable_7_goals"></span>
+									</td>
+									<td><span id="leaguetable_7_goaldif"></span>
+									</td>
+									<td><span id="leaguetable_7_points"></span>
+									</td>
+								</tr>
+								<tr id="leaguetable_8">
+									<td><span>8.</span>
+									</td>
+									<td><span id="leaguetable_8_name"></span>
+									</td>
+									<td><img id="leaguetable_8_change"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_8_matches"></span>
+									</td>
+									<td><span id="leaguetable_8_goals"></span>
+									</td>
+									<td><span id="leaguetable_8_goaldif"></span>
+									</td>
+									<td><span id="leaguetable_8_points"></span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- accordion league_table2-->
+				</div>
+				<!-- accordion league_table2-->
+			</div>
+			<!-- accordion league_table1-->
 
 
-		
-			
-	<div id="winbox_matchlist"><!-- accordion league_matches1-->
-	<h3><a href="#" id="MatchesList"></a></h3>
-	<!-- CUT HERE 
+
+
+
+
+			<div id="winbox_matchlist">
+				<!-- accordion league_matches1-->
+				<h3>
+					<a href="#" id="MatchesList"></a>
+				</h3>
+				<!-- CUT HERE 
 	<div id="winboxheader_matchlist">
 	<img id="imgwinboxopen_matchlist" class="imgwinboxopen"/>
 	<img id="imgwinboxshade_matchlist" class="imgwinboxshade"/>
 	</div>
 	 CUT HERE -->
-	<div id="winboxcontent_matchlist"><!-- accordion league_matches2-->
-	<div id="contentbody_matchlist"><!-- accordion league_matches2-->		
-	<table class="match_table" id="other_grid_rows"><!-- 
+				<div id="winboxcontent_matchlist">
+					<!-- accordion league_matches2-->
+					<div id="contentbody_matchlist">
+						<!-- accordion league_matches2-->
+						<table class="match_table" id="other_grid_rows">
+							<!-- 
 	<tr class="match_row" > 
 		<td class="hometeam_league"></td>
 		<td class="homescore_league"></td>
@@ -906,83 +1131,119 @@
 		<td class="add_league"></td>
 		<td class="remove_league"></td> 
 	</tr>-->
-	</table>
-	</div><!-- accordion league_matches2-->
-	</div><!-- accordion league_matches2-->
-	</div><!-- accordion league_matches1-->
-			
-			
-			
-			
-	<div id="winbox_friends"><!-- accordion league_table1-->
-	<h3><a href="#" id="FriendsTitle"></a></h3>
-	<!-- CUT HERE 
+						</table>
+					</div>
+					<!-- accordion league_matches2-->
+				</div>
+				<!-- accordion league_matches2-->
+			</div>
+			<!-- accordion league_matches1-->
+
+
+
+
+			<div id="winbox_friends">
+				<!-- accordion league_table1-->
+				<h3>
+					<a href="#" id="FriendsTitle"></a>
+				</h3>
+				<!-- CUT HERE 
 	<div id="winboxheader_friends">
 	<img id="imgwinboxopen_friends" class="imgwinboxopen"/>
 	<img id="imgwinboxshade_friends" class="imgwinboxshade"/>
 	</div>
 	 CUT HERE -->
-	<div id="winboxcontent_friends"><!-- accordion league_table2-->
-	<div id="contentbody_friends"><!-- accordion league_table2-->
-	<div>
-	<select id="listbox_friends" size="5" multiple="multiple" class="text ui-widget-content ui-corner-all">
-	<!--  <option value="1">example</option>  -->
-	</select>
-	</div>
-	<div id="managefriendsbuttons">
-	<button id="btnfriend_remove" /><label for="btnfriend_remove" id="FriendsRemove"></label>
-	<button id="btnfriend_addmatch" /><label for="btnfriend_addmatch" id="FriendsOpen"></label>
-	<button id="imgup_friend" /><label for="imgup_friend">▲</label><!-- <img id="imgup_friend"/> -->
-	<button id="imgdown_friend" /><label for="imgdown_friend">▼</label><!-- <img id="imgdown_friend"/> -->
-	</div>
-	</div><!-- accordion league_table2-->
-	<!-- <img id="imgup_friend"/> -->		
-	<!--<img id="imgdown_friend"/> -->
-	</div><!-- accordion league_table2-->
-	</div><!-- accordion league_table1-->
-			
-			
-			
-			
-			
-			
-	<div id="winbox_addmatch"><!-- accordion league_table1-->
-	<h3><a href="#" id="MatchesAdd"></a></h3>
-	<!-- CUT HERE 
+				<div id="winboxcontent_friends">
+					<!-- accordion league_table2-->
+					<div id="contentbody_friends">
+						<!-- accordion league_table2-->
+						<div>
+							<select id="listbox_friends" size="5" multiple="multiple"
+								class="text ui-widget-content ui-corner-all">
+								<!--  <option value="1">example</option>  -->
+							</select>
+						</div>
+						<div id="managefriendsbuttons">
+							<button id="btnfriend_remove" />
+							<label for="btnfriend_remove" id="FriendsRemove"></label>
+							<button id="btnfriend_addmatch" />
+							<label for="btnfriend_addmatch" id="FriendsOpen"></label>
+							<button id="imgup_friend" />
+							<label for="imgup_friend">▲</label>
+							<!-- <img id="imgup_friend"/> -->
+							<button id="imgdown_friend" />
+							<label for="imgdown_friend">▼</label>
+							<!-- <img id="imgdown_friend"/> -->
+						</div>
+					</div>
+					<!-- accordion league_table2-->
+					<!-- <img id="imgup_friend"/> -->
+					<!--<img id="imgdown_friend"/> -->
+				</div>
+				<!-- accordion league_table2-->
+			</div>
+			<!-- accordion league_table1-->
+
+
+
+
+
+
+			<div id="winbox_addmatch">
+				<!-- accordion league_table1-->
+				<h3>
+					<a href="#" id="MatchesAdd"></a>
+				</h3>
+				<!-- CUT HERE 
 	<div id="winboxheader_addmatch">
 	<img id="imgwinboxopen_addmatch" class="imgwinboxopen"/>
 	<img id="imgwinboxshade_addmatch" class="imgwinboxshade"/>
 	</div>
 	 CUT HERE -->
-	<div id="winboxcontent_addmatch"><!-- accordion league_table2-->
-	<div id="contentbody_addmatch"><!-- accordion league_table2-->
-	<input type="text" id="boxaddmatch" class="text ui-widget-content ui-corner-all" />
-<!--  <input type="checkbox" id="boxaddyouth" /><label for="boxaddyouth" id="MatchesYouth"></label> -->
+				<div id="winboxcontent_addmatch">
+					<!-- accordion league_table2-->
+					<div id="contentbody_addmatch">
+						<!-- accordion league_table2-->
+						<input type="text" id="boxaddmatch"
+							class="text ui-widget-content ui-corner-all" />
+						<!--  <input type="checkbox" id="boxaddyouth" /><label for="boxaddyouth" id="MatchesYouth"></label> -->
 						<select id="sourceSystem">
 							<option id="optionHattrick" value="hattrick">Senior</option>
 							<option id="optionYouth" value="youth">Youth</option>
 							<option id="optionHtointegrated" value="htointegrated">Tournament</option>
 						</select> <br />
-	<div id="addmatchbuttons">
-	<button id="buttonAddMatch" /><label for="buttonAddMatch" id="MatchesByMatch"></label>
-	<button id="buttonAddTeam" /><label for="buttonAddTeam" id="MatchesByTeam"></label>
+						<div id="addmatchbuttons">
+							<button id="buttonAddMatch" />
+							<label for="buttonAddMatch" id="MatchesByMatch"></label>
+							<button id="buttonAddTeam" />
+							<label for="buttonAddTeam" id="MatchesByTeam"></label>
+						</div>
+					</div>
+					<!-- accordion league_table2-->
+				</div>
+				<!-- accordion league_table2-->
+			</div>
+			<!-- accordion league_table1-->
+
+
+
+			<div id="server">
+				<!-- accordion league_table1-->
+				<h3>
+					<a href="#" id="MenuServer"></a>
+				</h3>
+				<div id="serverint">
+					<!-- accordion league_table2-->
+					<span id="ServerStatus"></span> <span id="progresslabel"></span>
+					<div id="clockBox" style="display: none"></div>
+					<progress id="progressmeter"></progress>
+				</div>
+				<!-- accordion league_table2-->
+			</div>
+			<!-- accordion league_table1-->
+		</div>
+		<!-- /sidebar-->
 	</div>
-	</div><!-- accordion league_table2-->
-	</div><!-- accordion league_table2-->
-	</div><!-- accordion league_table1-->
-			
-			
-			
-		<div id="server"><!-- accordion league_table1-->
-		<h3><a href="#" id="MenuServer"></a></h3>
-		<div id="serverint"><!-- accordion league_table2-->
-		<span id="ServerStatus"></span>
-		<span id="progresslabel" ></span>
-		<div id="clockBox" style="display:none"></div>
-		<progress id="progressmeter"></progress>
-		</div><!-- accordion league_table2-->
-		</div><!-- accordion league_table1-->
-		</div><!-- /sidebar-->
-		</div><!-- /application troll-->
-		</body>
-	</html>
+	<!-- /application troll-->
+</body>
+</html>

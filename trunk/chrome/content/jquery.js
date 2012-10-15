@@ -100,7 +100,12 @@ $(function(){
 					hide: "fold",
 					buttons: [
 						{
-							text: "Ok",
+							text: function() {
+								htlivesight.prefs=htlivesight.Preferences.get();
+								htlivesight.url=htlivesightEnv.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
+								htlivesight.languageXML=htlivesight.loadXml(htlivesight.url);
+								htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
+								return htlivesight.Util.Parse("ButtonOk",htlivesight.data[0]);},
 							click: function() { 
 								htlivesight.Settings.click.selLang();//change the language in prefs without saving it.
 								htlivesight.Settings.save(); 
@@ -108,7 +113,12 @@ $(function(){
 								}
 						},
 						{
-							text: "Cancel",
+							text: function() {
+								htlivesight.prefs=htlivesight.Preferences.get();
+								htlivesight.url=htlivesightEnv.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
+								htlivesight.languageXML=htlivesight.loadXml(htlivesight.url);
+								htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
+								return htlivesight.Util.Parse("ButtonCancel",htlivesight.data[0]);},
 							click: function() { $(this).dialog("close");  }
 						}
 							]

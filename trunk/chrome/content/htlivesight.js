@@ -137,7 +137,7 @@ document.getElementById("live_box").setAttribute("style", "width:" + (winW-320) 
  //   alert("before Adding server to htls link forum");
     if (htlivesight.prefs.general.hattrickServer=="") htlivesight.prefs.general.hattrickServer="www"; 
     var link=document.getElementById("HTLSThread").getAttribute("href");
-    link="http://"+htlivesight.prefs.general.hattrickServer+link
+    link="http://"+htlivesight.prefs.general.hattrickServer+link;
   //  alert("link= "+ link+ "server= "+htlivesight.prefs.general.hattrickServer);
     document.getElementById("HTLSThread").setAttribute("href",link);
   //  alert("after Adding server to htls link forum");
@@ -335,7 +335,7 @@ document.getElementById("live_box").setAttribute("style", "width:" + (winW-320) 
 		alert("before if!");
 		if (!htlivesightPrefs.getBool("HtlsFirstStart")){
 			console.log("into if before opening optionspage");
-			console.log("htlivesightEnv.contentPath="+ htlivesightEnv.contentPath)
+			console.log("htlivesightEnv.contentPath="+ htlivesightEnv.contentPath);
 			var optionsPage=window.open(htlivesightEnv.contentPath+"settings.html","_blank");
 			alert("after opening optionspage");
 		//	optionsPage.onfocus();

@@ -19,7 +19,7 @@ if (typeof(chrome) == "object") {
 		catch (e) {
 			return "content";
 		}
-	}
+	};
 
 	// port common functions to sandboxed
 	var sandboxed = {
@@ -29,12 +29,12 @@ if (typeof(chrome) == "object") {
 				else chrome.extension.sendRequest(data);
 			},
 			onRequest : {
-				addListener : function (listener) {chrome.extension.onRequest.addListener(listener)},
+				addListener : function (listener) {chrome.extension.onRequest.addListener(listener);},
 			},
-			getURL : function (path) {chrome.extension.getURL(path)},
+			getURL : function (path) {chrome.extension.getURL(path);},
 		},
 		tabs : {
-			create : function (url) {chrome.tabs.create(url)},
+			create : function (url) {chrome.tabs.create(url);},
 		},
 	};
 }else if (typeof(opera) == "object") {
@@ -58,7 +58,7 @@ if (typeof(chrome) == "object") {
 		catch (e) {
 			return "content";
 		}
-	}
+	};
 }
 
 else {

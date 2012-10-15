@@ -495,7 +495,7 @@ htlivesight.DOM = {
 		        hbox.appendChild(label_number);
 		        popup.appendChild(hbox);
 			   
-	        return popup;}catch(e){alert("createStatisticElement: "+e)}
+	        return popup;}catch(e){alert("createStatisticElement: "+e);}
 
 	  },
   
@@ -2005,7 +2005,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
     alert("DOM.CreateElementRowLiveEvent\n" + e);
   }
   return null; 
-}
+};
 
 
 /* -----------------------------------------------------------
@@ -2023,7 +2023,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
   groupbox.appendChild(grid);
 
   return groupbox;
-}
+};
 
  htlivesight.DOM.CreateElementGridHighlights=function(gameId) {
   var grid, cols, col, rows, row;
