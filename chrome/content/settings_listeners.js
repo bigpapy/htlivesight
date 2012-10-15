@@ -1,13 +1,12 @@
-/** beginning script */
+/* beginning script */
 htlivesightPrefs.init();
 
 document.addEventListener('DOMContentLoaded', function () {
 	htlivesight.Settings.startup();
 	htlivesight.Settings.localization();
-//document.querySelector('button').addEventListener('click', clickHandler); /***** example ****//
-//	document.getElementsByTagName("body")[0].addEventListener('resize',function(){htlivesight.dynresize();});
-
-	/** tab 1 */
+	/* ending script */
+	/* beginning listeners */
+	/* tab 1 */
 	document.getElementById("dark_theme").addEventListener('click',function(){htlivesight.Settings.click.switch_style(2);});
 	document.getElementById("light_theme").addEventListener('click',function(){htlivesight.Settings.click.switch_style(3);});
 	document.getElementById("livefox_theme").addEventListener('click',function(){htlivesight.Settings.click.switch_style(4);});
@@ -16,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("openin_window").addEventListener('click',function(){htlivesight.Settings.click.radopenin(false);});
 	document.getElementById("hattrickServer").addEventListener('change',function(){htlivesight.Settings.click.txtfixhattrickserver();});
 	
-	/** tab 2 */
+	/* tab 2 */
 	document.getElementById("chkGetLeague").addEventListener('click',function(){htlivesight.Settings.click.chkgetleague();});
 	document.getElementById("chkGetLeagueWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgetleaguewithin();});
 	document.getElementById("txtGetLeagueWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixleaguehours();});
@@ -32,18 +31,18 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	document.getElementById("txtMatchWindowSize").addEventListener('change',function(){htlivesight.Settings.click.txtfixwindowsize();});
 	
-	/** tab 3 */
+	/* tab 3 */
 	document.getElementById("chkSound").addEventListener('click',function(){htlivesight.Settings.click.chkSound();});
 	document.getElementById("chkSoundOnlyOpened").addEventListener('click',function(){htlivesight.Settings.click.chkSoundOnlyOpened();});
 	document.getElementById("chkFlash").addEventListener('click',function(){htlivesight.Settings.click.chkFlash();});
 	document.getElementById("chkSlider").addEventListener('click',function(){htlivesight.Settings.click.chkSlider();});
 	
-	/** tab 4 */
+	/* tab 4 */
 	document.getElementById("removeauth").addEventListener('click',function(){htlivesight.Settings.click.resetToken();});
 	document.getElementById("reverseOrder").addEventListener('click',function(){htlivesight.Settings.click.reverseOrder();});
 	document.getElementById("printEventKey").addEventListener('click',function(){htlivesight.Settings.click.printEventKey();});
 	
-	/** tab 5 */
+	/* tab 5 */
 	document.getElementById("oldIcons").addEventListener('click',function(){htlivesight.Settings.click.oldIcons();});
 	
 	document.getElementById("weather").addEventListener('click',function(){htlivesight.Settings.click.weather();});
@@ -153,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("label_hattrickButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('hattrickSoundPath');});
 	document.getElementById("hattrickSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'hattrickSoundPath');});
 	document.getElementById("hattrickSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('hattrick');});
-	// tab 5
+	/* tab 6 */
 	document.getElementById("friendHomeColorCheck").addEventListener('click',function(){htlivesight.Settings.click.friendHomeColorCheck();});
 	document.getElementById("friendHomeColorCode").addEventListener('change',function(){htlivesight.Settings.click.friendHomeColorSet();});
 	
@@ -177,8 +176,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	document.getElementById("seTextColorCheck").addEventListener('click',function(){htlivesight.Settings.click.seTextColorCheck();});
 	document.getElementById("seTextColorCode").addEventListener('change',function(){htlivesight.Settings.click.seTextColorSet();});
-	
+	/* ok cancel buttons*/
 	document.getElementById("ok-option").addEventListener('click',function(){htlivesight.Settings.click.btnOk();});
 	document.getElementById("canc-option").addEventListener('click',function(){htlivesight.Settings.click.btnCancel();});
-		
+	/* ending listeners */	
 });
