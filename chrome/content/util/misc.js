@@ -5,30 +5,30 @@
 
 if (!htlivesight) var htlivesight = {};
 htlivesight.load = function(url, callback, crossSite) {
-		var req = new XMLHttpRequest();
-		if (!callback) {
-			req.open("GET", url, false);
-			if (typeof(req.overrideMimeType) == "function")
-				req.overrideMimeType("text/plain");
-			try
-			{req.send(null);}catch(e){alert(e);}
-			var response = req.responseText;
-			return response;
-		}
-		else {
-			req.open("GET", url, true);
-			req.onreadystatechange = function(aEvt) {
-				if (req.readyState == 4) {
-					try {
-						callback(req.responseText, req.status);
-					}
-					catch (e) {
-						alert("Uncaught callback error:"+ e);
-					}
+	var req = new XMLHttpRequest();
+	if (!callback) {
+		req.open("GET", url, false);
+		if (typeof(req.overrideMimeType) == "function")
+			req.overrideMimeType("text/plain");
+		try
+		{req.send(null);}catch(e){alert(e);}
+		var response = req.responseText;
+		return response;
+	}
+	else {
+		req.open("GET", url, true);
+		req.onreadystatechange = function(aEvt) {
+			if (req.readyState == 4) {
+				try {
+					callback(req.responseText, req.status);
 				}
-			};
-			req.send();
-		}
+				catch (e) {
+					alert("Uncaught callback error:"+ e);
+				}
+			}
+		};
+		req.send();
+	}
 };
 
 htlivesight.loadXml = function(url, callback, crossSite) {
@@ -38,16 +38,13 @@ htlivesight.loadXml = function(url, callback, crossSite) {
 				var parser = new DOMParser();
 				var xml = parser.parseFromString(text, "text/xml");
 				try {
-//					console.log("status = "+ status + " xml = "+ xml );
 					callback(xml, status);
 				}
 				catch (e) {
-//					console.log("Uncaught callback error:"+ e);
 					console.log("Uncaught callback error:"+ e);
 				}
 			}
 			catch (e) {
-//				console.log("Cannot parse XML:\n" + text + "\n"+ e);
 				console.log("Cannot parse XML:\n" + text + "\n"+ e);
 				callback(null, status);
 			}
@@ -69,25 +66,25 @@ htlivesight.loadXml = function(url, callback, crossSite) {
 };
 
 htlivesight.filePickerForDataUrl = function(doc, callback) {
-    var input = doc.createElement('input');
-    input.type = 'file';
-    input.addEventListener('change',function(ev) {
-            var file = ev.target.files[0];
-            var reader = new window.FileReader();
-            reader.onerror = function(e) {
-                    window.alert('Error code: ' + e.target.error.code);
-                    calback(null);
-            };
-            reader.onload = function(evt) {
-                    var dataUrl = evt.target.result;
-                    if (dataUrl.length > 164000) {
-                            window.alert('File too large');
-                            dataUrl = null;
-                    }
-                    callback(dataUrl);
-            }
-            reader.readAsDataURL(file);
-    }, false);
-    return input;
-}
+	var input = doc.createElement('input');
+	input.type = 'file';
+	input.addEventListener('change',function(ev) {
+		var file = ev.target.files[0];
+		var reader = new window.FileReader();
+		reader.onerror = function(e) {
+			window.alert('Error code: ' + e.target.error.code);
+			calback(null);
+		};
+		reader.onload = function(evt) {
+			var dataUrl = evt.target.result;
+			if (dataUrl.length > 164000) {
+				window.alert('File too large');
+				dataUrl = null;
+			}
+			callback(dataUrl);
+		};
+		reader.readAsDataURL(file);
+	}, false);
+	return input;
+};
 
