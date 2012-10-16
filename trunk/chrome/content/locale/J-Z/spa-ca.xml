@@ -314,8 +314,8 @@
 <Roof>Tribunas</Roof>
 <VIP>Palcos</VIP>
 <CrowdinHelp>¡Ayudanos a traducir, con Crowdin es muy sencillo y divertido!. Haz clic aquí!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
+<Error401>Error 401: acceso no autorizado. Tienes que obtener la autorización nuevamente. Haz clic en Aceptar para continuar.</Error401>
+<Error404>Error 404: no se encontró el recurso solicitado. Si este error aparece nuevamente revisa si el servicio de CHPP esta caído.</Error404>
 <Error0>Error 0: no conectado a internet.</Error0>
 <Error500>Error 500: error interno del servidor (de Hattrick)</Error500>
 <Error503>Error 503: CHPP servicio no disponible (sobrecarga temporal o en mantenimiento)</Error503>
@@ -324,14 +324,14 @@
 <PathSoundsWhistle2>Silbatazo Final de la 1ra mitad</PathSoundsWhistle2>
 <PathSoundsWhistle3>Silbatazo del Final del partido</PathSoundsWhistle3>
 <EventYellow2>Segunda tarjeta amarilla</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
+<LoggedIn>Conectado como</LoggedIn>
+<latestNews>Revisar las últimas noticias en</latestNews>
+<HTLSThread>Foro Hattrick</HTLSThread>
+<ProjectWebsite>Sitio web del proyecto</ProjectWebsite>
+<GooglePlusPage>Página de Google +</GooglePlusPage>
+<TwitterPage>Página de Twitter</TwitterPage>
+<FacebookPage>Página de Facebook</FacebookPage>
+<chatLink>Chat abierto</chatLink>
+<hidesidebar>Ocultar barra lateral</hidesidebar>
+<addFriend>Haz clic para agregar este equipo a Amigos</addFriend>
 </Htlivesight>
