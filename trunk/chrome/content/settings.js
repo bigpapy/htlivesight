@@ -476,9 +476,10 @@ htlivesight.Settings = {
 			document.getElementById("CustomEventText").innerHTML=htlivesight.Util.Parse("EventColorTitle",data[0]);
 			document.getElementById("label_textColorCode").innerHTML=htlivesight.Util.Parse("EventTextColor",data[0]);
 			document.getElementById("label_seTextColorCode").innerHTML=htlivesight.Util.Parse("SETextColor",data[0]);
-			document.getElementById("OkButton").innerHTML=htlivesight.Util.Parse("ButtonOk",data[0]);
-			document.getElementById("CancelButton").innerHTML=htlivesight.Util.Parse("ButtonCancel",data[0]);
-
+			try{ //because it's present in settings.html but not in htlivesight.html
+				document.getElementById("OkButton").innerHTML=htlivesight.Util.Parse("ButtonOk",data[0]);
+				document.getElementById("CancelButton").innerHTML=htlivesight.Util.Parse("ButtonCancel",data[0]);
+			}catch(e){}
 
 		}, 
 
