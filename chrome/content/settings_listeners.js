@@ -177,7 +177,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("seTextColorCheck").addEventListener('click',function(){htlivesight.Settings.click.seTextColorCheck();});
 	document.getElementById("seTextColorCode").addEventListener('change',function(){htlivesight.Settings.click.seTextColorSet();});
 	/* ok cancel buttons*/
+	try{ // because this two buttons are present in settings.html but not in htlivesight.html
 	document.getElementById("ok-option").addEventListener('click',function(){htlivesight.Settings.click.btnOk();});
 	document.getElementById("canc-option").addEventListener('click',function(){htlivesight.Settings.click.btnCancel();});
+	}catch(e){}
 	/* ending listeners */	
 });
