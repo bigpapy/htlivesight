@@ -17,21 +17,26 @@ var htlivesight = {
   
   dynresize: function() {
 	var winW2 = 630, winH2 = 460;
+//	console.log("dynresize 1");
 if (document.body && document.body.offsetWidth) {
  winW2 = document.body.offsetWidth;
  winH2 = document.body.offsetHeight;
 }
+//console.log("dynresize 2");
 if (document.compatMode=='CSS1Compat' &&
     document.documentElement &&
     document.documentElement.offsetWidth ) {
  winW2 = document.documentElement.offsetWidth;
  winH2 = document.documentElement.offsetHeight;
 }
+//console.log("dynresize 3");
 if (window.innerWidth && window.innerHeight) {
  winW2 = window.innerWidth;
  winH2 = window.innerHeight;
 }
+//console.log("dynresize 4");
 document.getElementById("live_box").setAttribute("style", "width:" + (winW2-320) + "px" );
+//console.log("dynresize 5");
 //document.getElementById("chronoheader").setAttribute("style", "width:" + (winW2-250-220) + "px" );
 //document.getElementById("sidebar").setAttribute("style", "width:" + (winW2-94) );
 },
