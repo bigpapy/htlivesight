@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	htlivesight.Settings.startup();
 	htlivesight.Lang.localization();
 	htlivesight.startup();
-	document.body.onresize=function(){htlivesight.dynresize();};
+	window.onresize=function(){htlivesight.dynresize();};
 	
 	/* ending script */
 	/* beginning listeners */
