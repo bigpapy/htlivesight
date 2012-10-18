@@ -49,8 +49,10 @@ htlivesight.Settings = {
 			//alert("befor switch style");
 			htlivesight.Settings.click.switch_style(prefs.general.theme);  // enable only choosed css.
 			//alert("after switch style");
-			document.getElementById("openin_tab").checked=prefs.general.openInTab;
-			document.getElementById("openin_window").checked=!prefs.general.openInTab;		
+			if (prefs.general.openInTab){document.getElementById("openin_tab").click();}
+			else{document.getElementById("openin_window").click();}
+			//document.getElementById("openin_tab").checked=prefs.general.openInTab;
+			//document.getElementById("openin_window").checked=!prefs.general.openInTab;		
 			//   alert("load1");
 			document.getElementById("hattrickServer").value = prefs.general.hattrickServer;
 			//   alert("load2");
