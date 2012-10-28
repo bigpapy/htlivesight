@@ -239,7 +239,7 @@ htlivesight.LineUp.ParseSubstitutions= function (xml){
 //		console.log("MatchMinute="+substitutions[index].MatchMinute);
 	}
 	
-	}catch(e){console.log("error parsing substitution:"+e);};
+	}catch(e){/*console.log("error parsing substitution:"+e);*/};
 	
 	return substitutions;
 	
