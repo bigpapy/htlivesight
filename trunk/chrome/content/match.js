@@ -142,7 +142,9 @@ htlivesight.Match.Update = function (newMatch) {
       if (!match.home) {
     	  match.home=newMatch.home;
           match.home.realGoals=newMatch.home.realGoals;
-          match.home.lineUp=newMatch.home.lineUp; // store home team lineup in global variable if not present
+          try{
+          	match.home.lineUp=newMatch.home.lineUp; // store home team lineup in global variable if not present
+          }catch(e){console.log(e);}
           match.home.free_kick = newMatch.home.free_kick;
           match.home.free_kick_goal = newMatch.home.free_kick_goal;
           match.home.penalty = newMatch.home.penalty;
@@ -172,7 +174,9 @@ htlivesight.Match.Update = function (newMatch) {
           if(match.home.left.goal < newMatch.home.left_goal) match.home.left_goal = newMatch.home.left_goal;
           if(match.home.special_event_goal < newMatch.home.special_event_goal) match.home.special_event_goal = newMatch.home.special_event_goal;
           if(match.home.special_event < newMatch.home.special_event) match.home.special_event = newMatch.home.special_event;
+          try{
           if(match.home.lineUp[0].update < newMatch.home.lineUp[0].update) match.home.lineUp=newMatch.home.lineUp; // store home team lineup in global variable if the stored one is undefined.
+          }catch(e){console.log(e);}
           if(match.home.possession_1 < newMatch.home.possession_1) match.home.possession_1 = newMatch.home.possession_1;
           if(match.home.possession_2 < newMatch.home.possession_2) match.home.possession_2 = newMatch.home.possession_2;
       }
@@ -182,7 +186,9 @@ htlivesight.Match.Update = function (newMatch) {
       if (!match.away) {
     	  match.away=newMatch.away;
           match.away.realGoals=newMatch.away.realGoals;
+          try{
           match.away.lineUp=newMatch.away.lineUp; // store away team lineup in global variable if the stored one is undefined.
+          }catch(e){console.log(e);}
           match.away.free_kick = newMatch.away.free_kick;
           match.away.free_kick_goal = newMatch.away.free_kick_goal;
           match.away.penalty = newMatch.away.penalty;
@@ -213,9 +219,9 @@ htlivesight.Match.Update = function (newMatch) {
           if(match.away.special_event_goal < newMatch.away.special_event_goal) match.away.special_event_goal = newMatch.away.special_event_goal;
           if(match.away.possession_1 < newMatch.away.possession_1) match.away.possession_1 = newMatch.away.possession_1;
           if(match.away.possession_2 < newMatch.away.possession_2) match.away.possession_2 = newMatch.away.possession_2;
-    	  
+    	  try{
     	  if(match.away.lineUp[0].update < newMatch.away.lineUp[0].update) match.away.lineUp= newMatch.away.lineUp;
-
+    	  }catch(e){console.log(e);}
       }
     };
     
