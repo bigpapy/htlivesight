@@ -479,7 +479,7 @@ htlivesight.DOM = {
 		   var possession1=match.getSideById(event.subjectTeamId).possession_1;
 		   var possession2=match.getSideById(event.subjectTeamId).possession_2;
 		   label = document.createElement("td");
-	       label.innerHTML=label.innerHTML=htlivesight.Util.Parse("BallPosses",data[0])+" "+htlivesight.Util.decapitalize(htlivesight.Util.Parse("TimeSecondHalf",data[0]));
+	       label.innerHTML=label.innerHTML=htlivesight.Util.Parse("BallPosses",data[0])+" "+htlivesight.Util.decapitalize(htlivesight.Util.Parse("TimeFirstHalf",data[0]));
 	       label_number = document.createElement("td");
 	      	label_number.innerHTML=+possession1+"%";
 	        hbox.appendChild(label);
@@ -488,7 +488,7 @@ htlivesight.DOM = {
 	        
 	        hbox = document.createElement("tr");
 	        label = document.createElement("td");
-		       label.innerHTML=htlivesight.Util.Parse("BallPosses",data[0])+" "+htlivesight.Util.decapitalize(htlivesight.Util.Parse("TimeFirstHalf",data[0]));
+		       label.innerHTML=htlivesight.Util.Parse("BallPosses",data[0])+" "+htlivesight.Util.decapitalize(htlivesight.Util.Parse("TimeSecondHalf",data[0]));
 		        label_number = document.createElement("td");
 		      	label_number.innerHTML=+possession2+"%";
 		        hbox.appendChild(label);
