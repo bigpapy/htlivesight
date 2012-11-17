@@ -324,14 +324,14 @@
 <PathSoundsWhistle2>Zvižduk za kraj prvog poluvremena</PathSoundsWhistle2>
 <PathSoundsWhistle3>Zvižduk za kraj utakmice</PathSoundsWhistle3>
 <EventYellow2>Drugi žuti karton</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
+<LoggedIn>Prijavljen kao</LoggedIn>
+<latestNews>Provjeri posljednje novosti na</latestNews>
+<HTLSThread>Hattrick forum</HTLSThread>
+<ProjectWebsite>Web stranica projekta</ProjectWebsite>
+<GooglePlusPage>Google+ stranica</GooglePlusPage>
+<TwitterPage>Twitter stranica</TwitterPage>
+<FacebookPage>Facebook stranica</FacebookPage>
+<chatLink>Otvori chat</chatLink>
+<hidesidebar>Sakrij traku sa strane</hidesidebar>
+<addFriend>Klikni za dodati ovaj klub za prijatelje</addFriend>
 </Htlivesight>

@@ -52,7 +52,7 @@ document.getElementById("LoginByEvent").innerHTML=htlivesight.Util.Parse("LoginB
 //alert("About");
 document.getElementById("ui-dialog-title-about-dialog").innerHTML=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);	
 document.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
-document.getElementById("creationDate").innerHTML="29 "+htlivesight.Util.Parse("MonthOctober",htlivesight.data[0])+" 2012";
+document.getElementById("creationDate").innerHTML="17 "+htlivesight.Util.Parse("MonthNovember",htlivesight.data[0])+" 2012";
 document.getElementById("createdBy").innerHTML=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
 
 document.getElementById("TabTranslators").innerHTML=htlivesight.Util.Parse("TabTranslators",htlivesight.data[0]);

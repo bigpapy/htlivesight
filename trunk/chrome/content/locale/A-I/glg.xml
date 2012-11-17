@@ -314,24 +314,24 @@
 <Roof>Asentos baixo teito</Roof>
 <VIP>Palcos VIP</VIP>
 <CrowdinHelp>Axuda a traducir!! Con Crowdin é supersinxelo e moi divertido! Preme aquí!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
+<Error401>Error 401: acceso non autorizado. Tés que obter autorización outra vez. Pulsa Ok para continuar.</Error401>
+<Error404>Error 404: o recurso solicitado non puido ser atopado. Se este error se volve a repetir comprobe que se o servicio CHPP está caído.</Error404>
+<Error0>Error 0: sen conexión a internet.</Error0>
+<Error500>Error 500: erro interno do servidor (de Hattrick)</Error500>
+<Error503>Error 503: servizo CHPP non dispoñible (sobrecarga temporal ou mantemento)</Error503>
+<PathSoundsNote1>Escribe file:/// dianto da ruta ao son en formato .ogg</PathSoundsNote1>
+<PathSoundsNote2>Exemplo: file:///c:\patch\to\thesound.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>Asubío de fin do primeiro tempo</PathSoundsWhistle2>
+<PathSoundsWhistle3>Asubío de fin do partido</PathSoundsWhistle3>
+<EventYellow2>Segundo cartón amarelo</EventYellow2>
+<LoggedIn>Logado como </LoggedIn>
+<latestNews>Revisa al últimas novas en </latestNews>
+<HTLSThread>Conferencia de Hattrick</HTLSThread>
+<ProjectWebsite>Sitio web do proxecto</ProjectWebsite>
+<GooglePlusPage>Páxina de Google+</GooglePlusPage>
+<TwitterPage>Páxina de Twitter</TwitterPage>
+<FacebookPage>Páxina de Facebook</FacebookPage>
+<chatLink>Abrir chat</chatLink>
+<hidesidebar>Agochar barra</hidesidebar>
+<addFriend>Pulsar para engadir este equipo a amigos</addFriend>
 </Htlivesight>
