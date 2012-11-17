@@ -1,123 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Uzstâdîjumi</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuStart>Sākt</MenuStart>
+<MenuOptions>Uzstādījumi</MenuOptions>
+<TooltipButton>Klikšķināt lai atvērtu HTLiveSight izvēlni</TooltipButton>
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Serveris:</MenuServer>
 <MenuDisconnected>Atvienots</MenuDisconnected>
 <MenuAbout>Par HTLiveSight</MenuAbout>
 <LoginLabel>Pievienoties</LoginLabel>
 <LoginTeamId>Ievadiet savas komandas ID</LoginTeamId>
-<LoginUsername>Lietotâjvârds</LoginUsername>
-<LoginRememberMe>Atcerçties mani!</LoginRememberMe>
+<LoginUsername>Lietotājvārds</LoginUsername>
+<LoginRememberMe>Atcerēties mani!</LoginRememberMe>
 <LoginButton>Pievienoties</LoginButton>
 <LoginReLive>Re-Live</LoginReLive>
-<LoginSpeed>Speed</LoginSpeed>
-<LoginByEvent>Per event</LoginByEvent>
-<LeagueMatches>Lîgas spçles</LeagueMatches>
-<LeagueLiveTable>Grupas aktîvâ tabula</LeagueLiveTable>
+<LoginSpeed>Ātrums</LoginSpeed>
+<LoginByEvent>Rādīt pēc notikuma</LoginByEvent>
+<LeagueMatches>Līgas spēles</LeagueMatches>
+<LeagueLiveTable>Grupas interaktīvā tabula</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Komanda</LeagueTeam>
 <LeaguePlayed>S</LeaguePlayed>
 <LeagueGoals>V</LeagueGoals>
 <LeagueGoalDiff>VA</LeagueGoalDiff>
 <LeaguePoints>PTI</LeaguePoints>
-<MatchesList>Spçïu saraksts</MatchesList>
-<MatchesAdd>Pievienot spçli</MatchesAdd>
-<MatchesByMatch>Pçc spçles ID</MatchesByMatch>
-<MatchesByTeam>Pçc komandas ID</MatchesByTeam>
-<MatchesYouth>Jaunieði?</MatchesYouth>
+<MatchesList>Spēļu saraksts</MatchesList>
+<MatchesAdd>Pievienot spēli</MatchesAdd>
+<MatchesByMatch>Pēc spēles ID</MatchesByMatch>
+<MatchesByTeam>Pēc komandas ID</MatchesByTeam>
+<MatchesYouth>Jaunieši?</MatchesYouth>
 <FriendsTitle>Draugi</FriendsTitle>
-<FriendsRemove>Dzçst</FriendsRemove>
-<FriendsOpen>Atvçrt</FriendsOpen>
-<Introduction>Lai saòemtu pieejas kodu, Jûs tiksiet novirzîts uz CHPP lapu. Lûdzu izslçdziet uznirstoðo logu bloíçtâju vai pievienotjiet HTlivesight izòçmumu sarakstam, lai savienotos ar lapu.</Introduction>
-<Insert>Ievadiet savu pieejas kodu ðeit:</Insert>
-<Ending>HTlivesight ir autorizçts. Spiediet OK, lai pârstartçtu programmu.</Ending>
-<Error>Kïûda</Error>
+<FriendsRemove>Dzēst</FriendsRemove>
+<FriendsOpen>Atvērt</FriendsOpen>
+<Introduction>Lai saņemtu pieejas kodu, Jūs tiksiet novirzīts uz CHPP lapu. Lūdzu izslēdziet uznirstošo logu bloķētāju vai pievienotjiet HTlivesight izņēmumu sarakstam, lai savienotos ar lapu.</Introduction>
+<Insert>Ievadiet savu pieejas kodu šeit:</Insert>
+<Ending>HTlivesight ir autorizēts. Spiediet OK, lai pārstartētu programmu.</Ending>
+<Error>Kļūda</Error>
 <ServerON>Savienots</ServerON>
 <ServerOFF>Atvienots</ServerOFF>
-<ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
-<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
-<MatchesMaximum>Nav iespçjams skatîties vairâk kâ 20 spçles!</MatchesMaximum>
-<LeagueRound>Kârta</LeagueRound>
-<MessageHattrickError>Kïûda Hattrick serverî.</MessageHattrickError>
+<ResetToken>Autorizācijas kods ir dzēsts. Pārlādējiet HTLS vai gaidiet nākamo automātisko atjauninājumu (mazāk kā 1 minūte).</ResetToken>
+<NoHTServer>Jūs neesat pareizi izvēlējies Hattrick serveri, kurā šobrīd esiet ielogojies - klikšķiniet ar labo peles taustiņu jebkurā vietā uz fona attēla un spiediet uz galvenie iestatījumi, lai uzstādītu pareizu servera numuru.</NoHTServer>
+<MatchesMaximum>Nav iespējams skatīties vairāk kā 20 spēles!</MatchesMaximum>
+<LeagueRound>Kārta</LeagueRound>
+<MessageHattrickError>Kļūda Hattrick serverī.</MessageHattrickError>
 <MessageAlreadyFriend>Jau ir Tavs draugs!</MessageAlreadyFriend>
-<MessageErrorReading>Kïûda nolasot datus no</MessageErrorReading>
-<MessageLoginNotSuccessful>Neizdevâs pievienoties.</MessageLoginNotSuccessful>
+<MessageErrorReading>Kļūda nolasot datus no</MessageErrorReading>
+<MessageLoginNotSuccessful>Neizdevās pievienoties.</MessageLoginNotSuccessful>
 <TacticPressing>Presings</TacticPressing>
 <TacticCA>Pretuzbrukumi</TacticCA>
 <TacticAIM>Uzbrukumi caur centru</TacticAIM>
 <TacticAOW>Uzbrukumi no flangiem</TacticAOW>
-<TacticPlayCreative>Radoða spçle</TacticPlayCreative>
-<TacticLongShots>Tâlsitieni</TacticLongShots>
+<TacticPlayCreative>Radoša spēle</TacticPlayCreative>
+<TacticLongShots>Tālsitieni</TacticLongShots>
 <TimeFirstHalf>Pirmais puslaiks</TimeFirstHalf>
-<TimeHalfTime>Puslaika pârtraukums</TimeHalfTime>
+<TimeHalfTime>Puslaika pārtraukums</TimeHalfTime>
 <TimeSecondHalf>Otrais puslaiks</TimeSecondHalf>
 <TimeExtraTime>Papildlaiks</TimeExtraTime>
 <TimePenalties>Soda sitieni</TimePenalties>
 <TimeFinish>Beigas</TimeFinish>
-<TimeStartsIn>Sâksies pçc</TimeStartsIn>
-<TimeDays>dienâm</TimeDays>
-<TimeHours>stundâm</TimeHours>
-<TimeMinutes>minûtçm</TimeMinutes>
+<TimeStartsIn>Sāksies pēc</TimeStartsIn>
+<TimeDays>dienām</TimeDays>
+<TimeHours>stundām</TimeHours>
+<TimeMinutes>minūtēm</TimeMinutes>
 <TimeDay>dienas</TimeDay>
 <TimeHour>stundas</TimeHour>
-<TimeMinute>minûtes</TimeMinute>
+<TimeMinute>minūtes</TimeMinute>
 <TimeMin>'</TimeMin>
-<TooltipWindowSound>Activate or deactivate sounds for the match</TooltipWindowSound>
-<TooltipWindowLink>Link to Match Page on Hattrick</TooltipWindowLink>
+<TooltipWindowSound>Ieslēgt vai izslēgt spēles skaņas</TooltipWindowSound>
+<TooltipWindowLink>Saite uz spēles lapu iekš Hattrick</TooltipWindowLink>
 <TooltipWindowInfo>Râdît/nerâdît informatîvo notikumu ziòojumus.</TooltipWindowInfo>
-<TooltipWindowMaximize>Maksimizçt logu</TooltipWindowMaximize>
-<TooltipWindowMinimize>Minimizçt logu</TooltipWindowMinimize>
-<TooltipWindowShade>Paslçpt logu</TooltipWindowShade>
-<TooltipWindowClose>Aizvçrt logu</TooltipWindowClose>
-<TooltipWindowOpen>Atvçrt logu</TooltipWindowOpen>
-<TooltipWindowMoveUp>Pârvietot ðo logu uz augðu</TooltipWindowMoveUp>
-<TooltipWindowMoveDown>Pârvietot ðo logu uz leju</TooltipWindowMoveDown>
-<TooltipFriendRemove>Dzçst draugu no saraksta</TooltipFriendRemove>
-<TooltipFriendMoveUp>Pârvietot draugu uz augðu</TooltipFriendMoveUp>
-<TooltipFriendMoveDown>Pârvietot draugu uz leju</TooltipFriendMoveDown>
+<TooltipWindowMaximize>Maksimizēt logu</TooltipWindowMaximize>
+<TooltipWindowMinimize>Minimizēt logu</TooltipWindowMinimize>
+<TooltipWindowShade>Paslēpt logu</TooltipWindowShade>
+<TooltipWindowClose>Aizvērt logu</TooltipWindowClose>
+<TooltipWindowOpen>Atvērt logu</TooltipWindowOpen>
+<TooltipWindowMoveUp>Pārvietot šo logu uz augšu</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>Pārvietot šo logu uz leju</TooltipWindowMoveDown>
+<TooltipFriendRemove>Dzēst draugu no saraksta</TooltipFriendRemove>
+<TooltipFriendMoveUp>Pārvietot draugu uz augšu</TooltipFriendMoveUp>
+<TooltipFriendMoveDown>Pārvietot draugu uz leju</TooltipFriendMoveDown>
 <MenuAddFriend>Draugs</MenuAddFriend>
-<EventGoal>Vârti</EventGoal>
-<EventPenaltyGoal>Realizçts soda sitiens</EventPenaltyGoal>
-<EventPenaltyMiss>Nerealizçts soda sitiens</EventPenaltyMiss>
+<EventGoal>Vārti</EventGoal>
+<EventPenaltyGoal>Realizēts soda sitiens</EventPenaltyGoal>
+<EventPenaltyMiss>Nerealizēts soda sitiens</EventPenaltyMiss>
 <EventInjury>Savainojums</EventInjury>
-<EventRed>Sarkanâ kartîte</EventRed>
-<EventSideLeft>No kreisâs puses</EventSideLeft>
-<EventSideRight>No labâs puses</EventSideRight>
+<EventRed>Sarkanā kartīte</EventRed>
+<EventSideLeft>No kreisās puses</EventSideLeft>
+<EventSideRight>No labās puses</EventSideRight>
 <EventSideCenter>No centra</EventSideCenter>
-<EventSideFreeKick>Brîvsitiens</EventSideFreeKick>
+<EventSideFreeKick>Brīvsitiens</EventSideFreeKick>
 <EventSidePenalty>Soda sitiens</EventSidePenalty>
-<EventSpecialUnpredictable>Neprognozçjama spçlçtâja speciâlais notikums</EventSpecialUnpredictable>
-<EventSpecialLongShot>Tâlsitiens spçlçtâja speciâlais notikums</EventSpecialLongShot>
-<EventSpecialQuick>Âtra spçlçtâja speciâlais notikums</EventSpecialQuick>
-<EventSpecialLowStamina>Speciâlais notikums zemas izturîbas dçï</EventSpecialLowStamina>
-<EventSpecialSetPieces>Standartsituâcija</EventSpecialSetPieces>
-<EventSpecialHead>Speciâlais notikums: spçle ar galvu</EventSpecialHead>
-<EventSpecialExperience>Augstas pieredzes speciâlais notikums</EventSpecialExperience>
-<EventSpecialLowExperience>Zemas pieredzes speciâlais notikums</EventSpecialLowExperience>
-<EventSpecialWinger>Malçjâ pussarga speciâlais notikums</EventSpecialWinger>
-<EventSpecialTechnical>Tehniska spçlçtâja speciâlais notikums</EventSpecialTechnical>
+<EventSpecialUnpredictable>Neprognozējama spēlētāja speciālais notikums</EventSpecialUnpredictable>
+<EventSpecialLongShot>Tālsitiens spēlētāja speciālais notikums</EventSpecialLongShot>
+<EventSpecialQuick>Ātra spēlētāja speciālais notikums</EventSpecialQuick>
+<EventSpecialLowStamina>Speciālais notikums zemas izturības dēļ</EventSpecialLowStamina>
+<EventSpecialSetPieces>Standartsituācija</EventSpecialSetPieces>
+<EventSpecialHead>Speciālais notikums: spēle ar galvu</EventSpecialHead>
+<EventSpecialExperience>Augstas pieredzes speciālais notikums</EventSpecialExperience>
+<EventSpecialLowExperience>Zemas pieredzes speciālais notikums</EventSpecialLowExperience>
+<EventSpecialWinger>Malējā pussarga speciālais notikums</EventSpecialWinger>
+<EventSpecialTechnical>Tehniska spēlētāja speciālais notikums</EventSpecialTechnical>
 <EventSpecialCounterAttack>Pretuzbrukums</EventSpecialCounterAttack>
-<EventSpecialCornerKick>Stûra sitiens</EventSpecialCornerKick>
+<EventSpecialCornerKick>Stūra sitiens</EventSpecialCornerKick>
 <EventSpecialIndirect>Netieðais brîvsitiens</EventSpecialIndirect>
 <EventSpecialUnpredictableLongPass>+ neprognozējams: tāla piespēle</EventSpecialUnpredictableLongPass>
 <EventSpecialUnpredictableScoresOnHisOwn>+ neprognozējams: sitiens</EventSpecialUnpredictableScoresOnHisOwn>
 <EventSpecialUnpredictableSpecialAction>+ neprognozējams: speciālais notikums</EventSpecialUnpredictableSpecialAction>
-<EventSpecialUnpredictableMistake>- neprognozējams: kļūdījās</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableMistake>- Neprognozējams: kļūda</EventSpecialUnpredictableMistake>
 <EventSpecialUnpredictableOwnGoal>- neprognozējams: iesit savos vārtos</EventSpecialUnpredictableOwnGoal>
 <EventSpecialQuickScoresAfterRush>+ ātrs: sprints un vārti</EventSpecialQuickScoresAfterRush>
 <EventSpecialQuickAssist>+ ātrs: sprints un piespēle</EventSpecialQuickAssist>
-<Pullback>Spçlç vairâk no aizsardzîbas</Pullback>
+<Pullback>Spēlē vairāk no aizsardzības</Pullback>
 <Underestimation>Pašpārliecinātība</Underestimation>
 <UnderestimationRemove>Pašpārliecinātība zudusi</UnderestimationRemove>
 <UnderestimationReduceDouble>Pašpārliecinātība mazinājusies par 2/3</UnderestimationReduceDouble>
 <UnderestimationReduceOnce>Pašpārliecinātība mazinājusies par 1/3</UnderestimationReduceOnce>
-<OrganizationBreaks>Confusion</OrganizationBreaks>
-<Reorganize>Reorganization</Reorganize>
-<NervesImportantThrillingGame>Nerves in important thrilling game</NervesImportantThrillingGame>
+<OrganizationBreaks>apjukums</OrganizationBreaks>
+<Reorganize>Organizācijas līmeņa kritums</Reorganize>
+<NervesImportantThrillingGame>Stress svarīgās, spraigās spēlēs</NervesImportantThrillingGame>
 <Bruised>neliels savainojums</Bruised>
 <Injuried>Savainots</Injuried>
 <ModeratelyInjuried>Vidējs savainojums</ModeratelyInjuried>
@@ -130,71 +130,71 @@
 <EventSpecialLongShotDefended>tālsitiens apturēts</EventSpecialLongShotDefended>
 <EventSpecialQuickVsQuick>ātrs pret ātru</EventSpecialQuickVsQuick>
 <LongShot>tālsitiens</LongShot>
-<MeteoSpecialTechnicalRain>- tehnisks (lietus) (-Scoring -Playmaking)</MeteoSpecialTechnicalRain>
-<MeteoSpecialPowerfulRain>+ atlētisks (lietus) (+Scoring +Defending + Playmaking)</MeteoSpecialPowerfulRain>
-<MeteoSpecialTechnicalSun>+ tehnisks (saule) (+Scoring +Playmaking)</MeteoSpecialTechnicalSun>
-<MeteoSpecialPowerfulSun>- atlētisks (saule) (-Scoring -Stamina)</MeteoSpecialPowerfulSun>
-<MeteoSpecialQuickSun>- ātrs (saule) (-Defending)</MeteoSpecialQuickSun>
-<MeteoSpecialQuickRain>- ātrs (lietus) (-Defending -Scoring)</MeteoSpecialQuickRain>
+<MeteoSpecialTechnicalRain>- tehnisks (lietus) (-Realizācija -Saspēle)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+ atlētisks (lietus) (+Realizācija +Aizsardzība + Saspēle)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+ tehnisks (saule) (+Realizācija +Saspēle)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>- atlētisks (saule) (-Realizācija -Izturība)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>- ātrs (saule) (-Aizsardzība)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>- ātrs (lietus) (-Aizsardzība -Realizācija)</MeteoSpecialQuickRain>
 <YellowNastyPlay>rupja spēle</YellowNastyPlay>
 <YellowCheating>simulācija</YellowCheating>
-<ProgressUpdate>Tiks atjaunots pçc:</ProgressUpdate>
-<ProgressSeconds>s</ProgressSeconds>
-<RequestServer>Pieslçgties rekomendçtajam serverim</RequestServer>
-<RequestLeagueData>Saòemt lîgas datus</RequestLeagueData>
-<RequestLeagueGames>Saòemt lîgas spçles</RequestLeagueGames>
-<RequestLive>Automâtiskâ datu atjaunoðana</RequestLive>
-<RequestAdd>Pievienot spçli</RequestAdd>
-<RequestDelete>Dzçst spçli</RequestDelete>
-<RequestLogin>Pieslçgties</RequestLogin>
-<RequestDetails>Saòemt spçles informâciju</RequestDetails>
-<RequestTeam>Pievienot spçli pçc komandas</RequestTeam>
-<RequestTeamData>Saòemt komandas datus</RequestTeamData>
-<WindowTitle>HTLiveSight uzstâdîjumi</WindowTitle>
-<TabGeneral>Vispârîgi</TabGeneral>
-<TabMatches>Spçles</TabMatches>
-<TabNotifications>Paziòojumi</TabNotifications>
+<ProgressUpdate>Tiks atjaunots pēc:</ProgressUpdate>
+<ProgressSeconds>sek</ProgressSeconds>
+<RequestServer>Pieslēgties rekomendētajam serverim</RequestServer>
+<RequestLeagueData>Saņemt līgas datus</RequestLeagueData>
+<RequestLeagueGames>Saņemt līgas spēles</RequestLeagueGames>
+<RequestLive>Automātiska datu atjaunošana</RequestLive>
+<RequestAdd>Pievienot spēli</RequestAdd>
+<RequestDelete>Dzēst spēli</RequestDelete>
+<RequestLogin>Pieslēgties</RequestLogin>
+<RequestDetails>Saņemt spēles informāciju</RequestDetails>
+<RequestTeam>Pievienot spēli pēc komandas</RequestTeam>
+<RequestTeamData>Saņemt komandas datus</RequestTeamData>
+<WindowTitle>HTLiveSight uzstādījumi</WindowTitle>
+<TabGeneral>Vispārīgi</TabGeneral>
+<TabMatches>Spēles</TabMatches>
+<TabNotifications>Paziņojumi</TabNotifications>
 <TabLanguage>Valoda</TabLanguage>
-<TabOther>Other</TabOther>
-<TabCustom>Customizations</TabCustom>
-<TabGoalSound>Goals sounds</TabGoalSound>
-<TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
-<TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
-<GeneralOpen>Atvçrt HTLiveSight</GeneralOpen>
-<GeneralNewTab>Jaunâ cilnç</GeneralNewTab>
-<GeneralNewWindow>Jaunâ logâ</GeneralNewWindow>
-<GeneralServer>Server settings</GeneralServer>
-<GeneralNote>Insert Hattrick server that you are logged on (ie. www96).</GeneralNote>
-<MatchesLeague>Lîgas spçles</MatchesLeague>
-<MatchesGetLeague>Pievienot lîgas spçles</MatchesGetLeague>
-<MatchesPlayed>Ja spçlçjis</MatchesPlayed>
-<MatchesHours>stundu laikâ.</MatchesHours>
+<TabOther>Citi</TabOther>
+<TabCustom>Personalizācija</TabCustom>
+<TabGoalSound>Gūto vārtu skaņas</TabGoalSound>
+<TabWheatherSound>Laikapstākļu notikumu un traumu skaņas</TabWheatherSound>
+<TabWhistleSound>Tiesneša svilpes un gūtā hettrika skaņas</TabWhistleSound>
+<GeneralOpen>Atvērt HTLiveSight</GeneralOpen>
+<GeneralNewTab>Jaunā cilnē</GeneralNewTab>
+<GeneralNewWindow>Jaunā logā</GeneralNewWindow>
+<GeneralServer>Servera iestatījumi</GeneralServer>
+<GeneralNote>Iestatiet Hattrick serveri, kurā esat ielogojies (piem. www96).</GeneralNote>
+<MatchesLeague>Lîgas spēles</MatchesLeague>
+<MatchesGetLeague>Pievienot līgas spēles</MatchesGetLeague>
+<MatchesPlayed>Ja spēlējis</MatchesPlayed>
+<MatchesHours>stundu laikā.</MatchesHours>
 <MatchesFriends>Draugi</MatchesFriends>
-<MatchesGetFriends>Pievienot drauga spçles</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
-<MatchesScorers>Vârtu guvçji</MatchesScorers>
-<ScorersList>Vârtu guvçju saraksts galvenç</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesGetFriends>Pievienot drauga spēles</MatchesGetFriends>
+<MatchesHeader>Galvene</MatchesHeader>
+<MatchesScorers>Vārtu guvēji</MatchesScorers>
+<ScorersList>Parādīt vārtu guvēju sarakstu galvenē</ScorersList>
+<MatchesBooked>Brīdinātie spēlētāji</MatchesBooked>
+<BookedList>Parādīt brīdinātos spēlētājus galvenē</BookedList>
+<MatchesSentOff>Noraidīti</MatchesSentOff>
+<SentOffList>Parādīt noraidītos spēlētājus galvenē</SentOffList>
+<MatchesInjured>Savainoti</MatchesInjured>
+<InjuredList>Parādīt savainotos spēlētājus galvenē</InjuredList>
 <MatchesWindow>Logs</MatchesWindow>
-<MatchesLines>Attçlotâs informâcijas joslas minimzçtâ reþîmâ</MatchesLines>
-<NotifyNotify>Paziòojumi</NotifyNotify>
-<NotifyEnableSound>Atïaut paziòojumus ar skaòas signâlu</NotifyEnableSound>
-<NotifyOnly>Tikai atvçrtajâs spçlçs</NotifyOnly>
-<NotifyFlash>Mirgojoðas galvenes</NotifyFlash>
-<NotifyStatus>Stâvokïa joslas slaideris</NotifyStatus>
-<OtherAuthorization>Authorization code</OtherAuthorization>
-<OtherReset>Remove authorization</OtherReset>
-<OtherResetButton>Reset</OtherResetButton>
-<OtherReverse>Bottom up display of match events</OtherReverse>
-<OtherReverseNote>Refresh page to see the effect of change.</OtherReverseNote>
-<OtherEvents>Sequence of events</OtherEvents>
-<OtherEventKey>Eventkey</OtherEventKey>
-<OtherEventKeyNote>Show eventkey in the commentary</OtherEventKeyNote>
+<MatchesLines>Attēlotās informācijas joslas minimalizētā režīmā</MatchesLines>
+<NotifyNotify>Paziņojumi</NotifyNotify>
+<NotifyEnableSound>Atļaut paziņojumus ar skaņas signālu</NotifyEnableSound>
+<NotifyOnly>Tikai atvērtajās spēlēs</NotifyOnly>
+<NotifyFlash>Mirgojošas galvenes</NotifyFlash>
+<NotifyStatus>Stāvokļa joslas slaideris</NotifyStatus>
+<OtherAuthorization>Autorizācijas kods</OtherAuthorization>
+<OtherReset>Noņemt autorizāciju</OtherReset>
+<OtherResetButton>Noņemt</OtherResetButton>
+<OtherReverse>Spēles ziņojumu rādīt no apakšas uz augšu</OtherReverse>
+<OtherReverseNote>Pārlādējiet lapu, lai izmaiņas stātos spēkā.</OtherReverseNote>
+<OtherEvents>Notikumu secība</OtherEvents>
+<OtherEventKey>Notikuma kods</OtherEventKey>
+<OtherEventKeyNote>Parādīt notikuma kodu spēles komentāros</OtherEventKeyNote>
 <CustomIcons>Icons</CustomIcons>
 <CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
 <CustomSounds>Sounds</CustomSounds>
@@ -220,31 +220,31 @@
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
-<LanguageSelect>Izvçlçties valodu</LanguageSelect>
-<LanguageNote>Piezîme: Pârstartçjiet Firefox, lai izmaiòas stâtos spçkâ.</LanguageNote>
+<LanguageSelect>Izvēlēties valodu</LanguageSelect>
+<LanguageNote>Piezîme: Pārstartējiet Firefox, lai izmaiņas stātos spēkā.</LanguageNote>
 <ButtonCancel>Atcelt</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
 <WindowAboutTitle>Par HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
-<MonthJanuary>Jan</MonthJanuary>
-<MonthFebruary>Feb</MonthFebruary>
-<MonthMarch>Mar</MonthMarch>
-<MonthApril>Apr</MonthApril>
-<MonthMay>Mai</MonthMay>
-<MonthJune>Jûn</MonthJune>
-<MonthJuly>Jûl</MonthJuly>
-<MonthAugust>Aug</MonthAugust>
-<MonthSeptember>Sep</MonthSeptember>
-<MonthOctober>Okt</MonthOctober>
-<MonthNovember>Nov</MonthNovember>
-<MonthDecember>Dec</MonthDecember>
+<TabTranslators>Tulkotāji</TabTranslators>
+<TabCredits>Autori</TabCredits>
+<MonthJanuary>Janvāris</MonthJanuary>
+<MonthFebruary>Februāris</MonthFebruary>
+<MonthMarch>Marts</MonthMarch>
+<MonthApril>Aprīlis</MonthApril>
+<MonthMay>Maijs</MonthMay>
+<MonthJune>Jūnijs</MonthJune>
+<MonthJuly>Jūlijs</MonthJuly>
+<MonthAugust>Augusts</MonthAugust>
+<MonthSeptember>Septembris</MonthSeptember>
+<MonthOctober>Oktobris</MonthOctober>
+<MonthNovember>Novembris</MonthNovember>
+<MonthDecember>Decembris</MonthDecember>
 <TextCreatedBy>Izveidoja</TextCreatedBy>
 <TextDevelopedBy>Pilnveidoja</TextDevelopedBy>
-<TextHelpOf>ar palîdzîbu no</TextHelpOf>
+<TextHelpOf>Palīdzot</TextHelpOf>
 <TextThanksTo>Liels paldies:</TextThanksTo>
-<ButtonClose>Aizvçrt</ButtonClose>
+<ButtonClose>Aizvērt</ButtonClose>
 <NonExistent>Non existent</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
@@ -269,24 +269,24 @@
 <VeryHigh>very high</VeryHigh>
 <High>high</High>
 <Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
+<VeryLow>ļoti zems</VeryLow>
+<RightDefence>Labās puses aizsardzība</RightDefence>
+<MiddleDefence>Centra aizsardzība</MiddleDefence>
+<LeftDefence>Kreisās puses aizsardzība</LeftDefence>
+<Midfield>Pussargu līnija</Midfield>
+<RightAttack>Labās puses uzbrukums</RightAttack>
+<MiddleAttack>Centra uzbrukums</MiddleAttack>
+<LeftAttack>Kreisās puses aizsardzība</LeftAttack>
 <IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
 <IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
+<TeamAttitude>Spēles svarīgums</TeamAttitude>
+<TacticType>Taktika</TacticType>
+<TacticSkill>Taktikas līmenis</TacticSkill>
+<BallPosses>Bumbas kontrole</BallPosses>
+<SpecialEvent>Īpašais notikums</SpecialEvent>
+<Normal>Parasta spēle</Normal>
+<PIC>Viegla spēle</PIC>
+<MOTS>Sezonas svarīgākā spēle</MOTS>
 <ColorPicker>You can choose your color at </ColorPicker>
 <EventBackground>Event background color</EventBackground>
 <FriendHome>Home (own and friends) color: #</FriendHome>
@@ -297,28 +297,28 @@
 <EventColorTitle>Event text color</EventColorTitle>
 <EventTextColor>Event text color: #</EventTextColor>
 <SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
+<Colors>Krāsas</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
 <Youth>Youth</Youth>
 <Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
+<Tournament>Turnīrs</Tournament>
 <FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
-<Total>Total</Total>
+<RedCards>Sarkanās kartītes</RedCards>
+<YellowCards>Dzeltenās kartītes</YellowCards>
+<Injuries>Savainojumi</Injuries>
+<Goals>Vārti</Goals>
+<Total>Kopā</Total>
 <Terraces>Terraces</Terraces>
 <Basic>Basic seating</Basic>
 <Roof>Seats under roof</Roof>
 <VIP>Seats in VIP boxes</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
+<CrowdinHelp>Palīdzi tulkot! Ar Crowdin tas ir supervienkārši un jautri! Klikšķini šeit!</CrowdinHelp>
+<Error401>Kļūda 401: nesankcionēta piekļuve. Jums jāveic autorizācija vēlreiz. Noklikšķiniet uz Labi, lai turpinātu.</Error401>
+<Error404>404 Kļūda: pieprasītais resurss nav atrasts. Ja šī kļūda parādās atkal, pārliecinieties vai CHPP pakalpojums ir pieejams.</Error404>
+<Error0>0. Kļūda: nav pieejas internetam.</Error0>
+<Error500>500 Kļūda: iekšēja Hattrick servera kļūda</Error500>
+<Error503>Kļūda 503: CHPP pakalpojums nav pieejams (pagaidu pārslodze vai uzturēšana)</Error503>
 <PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
 <PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>

@@ -139,7 +139,7 @@
 <YellowNastyPlay>ebaaus mäng</YellowNastyPlay>
 <YellowCheating>sohk</YellowCheating>
 <ProgressUpdate>Järgmine uuendus:</ProgressUpdate>
-<ProgressSeconds>it</ProgressSeconds>
+<ProgressSeconds>\ s.</ProgressSeconds>
 <RequestServer>Lae soovituslik server</RequestServer>
 <RequestLeagueData>Lae liiga andmed</RequestLeagueData>
 <RequestLeagueGames>Lae liiga mängud</RequestLeagueGames>
