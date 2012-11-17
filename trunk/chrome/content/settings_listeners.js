@@ -1,50 +1,40 @@
-/* beginning script */
 htlivesightPrefs.init();
-
 document.addEventListener('DOMContentLoaded', function () {
 	htlivesight.Settings.startup();
 	htlivesight.Settings.localization();
-	/* ending script */
-	/* beginning listeners */
 	/* tab 1 */
 	document.getElementById("dark_theme").addEventListener('click',function(){htlivesight.Settings.click.switch_style(2);});
 	document.getElementById("light_theme").addEventListener('click',function(){htlivesight.Settings.click.switch_style(3);});
 	document.getElementById("livefox_theme").addEventListener('click',function(){htlivesight.Settings.click.switch_style(4);});
-
 	document.getElementById("openin_tab").addEventListener('click',function(){htlivesight.Settings.click.radopenin(true);});
 	document.getElementById("openin_window").addEventListener('click',function(){htlivesight.Settings.click.radopenin(false);});
 	document.getElementById("hattrickServer").addEventListener('change',function(){htlivesight.Settings.click.txtfixhattrickserver();});
-	
 	/* tab 2 */
 	document.getElementById("chkGetLeague").addEventListener('click',function(){htlivesight.Settings.click.chkgetleague();});
 	document.getElementById("chkGetLeagueWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgetleaguewithin();});
 	document.getElementById("txtGetLeagueWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixleaguehours();});
-	
 	document.getElementById("chkGetFriends").addEventListener('click',function(){htlivesight.Settings.click.chkgetfriends();});
 	document.getElementById("chkGetFriendsWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgetfriendswithin();});
 	document.getElementById("txtGetFriendsWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixfriendshours();});
+	
+	document.getElementById("chkDoNotGetFriendsHointegratedMatches").addEventListener('change',function(){htlivesight.Settings.click.chkDoNotGetFriendsHointegratedMatches();});
 	
 	document.getElementById("chkHdrScorers").addEventListener('click',function(){htlivesight.Settings.click.chkhdrscorers();});
 	document.getElementById("chkHdrBooked").addEventListener('click',function(){htlivesight.Settings.click.chkhdrbooked();});
 	document.getElementById("chkHdrSentOff").addEventListener('click',function(){htlivesight.Settings.click.chkhdrsentoff();});
 	document.getElementById("chkHdrInjured").addEventListener('click',function(){htlivesight.Settings.click.chkhdrinjured();});
-	
 	document.getElementById("txtMatchWindowSize").addEventListener('change',function(){htlivesight.Settings.click.txtfixwindowsize();});
-	
 	/* tab 3 */
 	document.getElementById("chkSound").addEventListener('click',function(){htlivesight.Settings.click.chkSound();});
 	document.getElementById("chkSoundOnlyOpened").addEventListener('click',function(){htlivesight.Settings.click.chkSoundOnlyOpened();});
 	document.getElementById("chkFlash").addEventListener('click',function(){htlivesight.Settings.click.chkFlash();});
 	document.getElementById("chkSlider").addEventListener('click',function(){htlivesight.Settings.click.chkSlider();});
-	
 	/* tab 4 */
 	document.getElementById("removeauth").addEventListener('click',function(){htlivesight.Settings.click.resetToken();});
 	document.getElementById("reverseOrder").addEventListener('click',function(){htlivesight.Settings.click.reverseOrder();});
 	document.getElementById("printEventKey").addEventListener('click',function(){htlivesight.Settings.click.printEventKey();});
-	
 	/* tab 5 */
 	document.getElementById("oldIcons").addEventListener('click',function(){htlivesight.Settings.click.oldIcons();});
-	
 	document.getElementById("weather").addEventListener('click',function(){htlivesight.Settings.click.weather();});
 	document.getElementById("whistleTime").addEventListener('click',function(){htlivesight.Settings.click.whistleTime();});
 	document.getElementById("weatherSE").addEventListener('click',function(){htlivesight.Settings.click.weatherSE();});
@@ -56,25 +46,25 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("label_myGoalButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('myGoalSoundPath');});
 	document.getElementById("myGoalSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'myGoalSoundPath');});
 	document.getElementById("myGoalSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('myGoal');});
-  //op goal
+	//op goal
 	document.getElementById("opGoalCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('opGoal');});
 	document.getElementById("label_opGoalButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('opGoal','sound/cheer1.ogg');});
 	document.getElementById("label_opGoalButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('opGoalSoundPath');});
 	document.getElementById("opGoalSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'opGoalSoundPath');});
 	document.getElementById("opGoalSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('opGoal');});
-  //fr goal
+	//fr goal
 	document.getElementById("frGoalCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('frGoal');});
 	document.getElementById("label_frGoalButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('frGoal','sound/goal.ogg');});
 	document.getElementById("label_frGoalButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('frGoalSoundPath');});
 	document.getElementById("frGoalSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'frGoalSoundPath');});
 	document.getElementById("frGoalSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('frGoal');});
-  //opfr goal
+	//opfr goal
 	document.getElementById("opfrGoalCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('opfrGoal');});
 	document.getElementById("label_opfrGoalButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('opfrGoal','sound/applause.ogg');});
 	document.getElementById("label_opfrGoalButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('opfrGoalSoundPath');});
 	document.getElementById("opfrGoalSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'opfrGoalSoundPath');});
 	document.getElementById("opfrGoalSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('opfrGoal');});
-  //ot goal
+	//ot goal
 	document.getElementById("otGoalCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('otGoal');});
 	document.getElementById("label_otGoalButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('otGoal','sound/ovation.ogg');});
 	document.getElementById("label_otGoalButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('otGoalSoundPath');});
@@ -155,31 +145,31 @@ document.addEventListener('DOMContentLoaded', function () {
 	/* tab 6 */
 	document.getElementById("friendHomeColorCheck").addEventListener('click',function(){htlivesight.Settings.click.friendHomeColorCheck();});
 	document.getElementById("friendHomeColorCode").addEventListener('change',function(){htlivesight.Settings.click.friendHomeColorSet();});
-	
+
 	document.getElementById("friendAwayColorCheck").addEventListener('click',function(){htlivesight.Settings.click.friendAwayColorCheck();});
 	document.getElementById("friendAwayColorCode").addEventListener('change',function(){htlivesight.Settings.click.friendAwayColorSet();});
-	
+
 	document.getElementById("foeHomeColorCheck").addEventListener('click',function(){htlivesight.Settings.click.foeHomeColorCheck();});
 	document.getElementById("foeHomeColorCode").addEventListener('change',function(){htlivesight.Settings.click.foeHomeColorSet();});
-	
+
 	document.getElementById("foeAwayColorCheck").addEventListener('click',function(){htlivesight.Settings.click.foeAwayColorCheck();});
 	document.getElementById("foeAwayColorCode").addEventListener('change',function(){htlivesight.Settings.click.foeAwayColorSet();});
-	
+
 	document.getElementById("foeAwayColorCheck").addEventListener('click',function(){htlivesight.Settings.click.foeAwayColorCheck();});
 	document.getElementById("foeAwayColorCode").addEventListener('change',function(){htlivesight.Settings.click.foeAwayColorSet();});
-	
+
 	document.getElementById("neutralColorCheck").addEventListener('click',function(){htlivesight.Settings.click.neutralColorCheck();});
 	document.getElementById("neutralColorCode").addEventListener('change',function(){htlivesight.Settings.click.neutralColorSet();});
-	
+
 	document.getElementById("textColorCheck").addEventListener('click',function(){htlivesight.Settings.click.textColorCheck();});
 	document.getElementById("textColorCode").addEventListener('change',function(){htlivesight.Settings.click.textColorSet();});
-	
+
 	document.getElementById("seTextColorCheck").addEventListener('click',function(){htlivesight.Settings.click.seTextColorCheck();});
 	document.getElementById("seTextColorCode").addEventListener('change',function(){htlivesight.Settings.click.seTextColorSet();});
 	/* ok cancel buttons*/
 	try{ // because this two buttons are present in settings.html but not in htlivesight.html
-	document.getElementById("ok-option").addEventListener('click',function(){htlivesight.Settings.click.btnOk();});
-	document.getElementById("canc-option").addEventListener('click',function(){htlivesight.Settings.click.btnCancel();});
+		document.getElementById("ok-option").addEventListener('click',function(){htlivesight.Settings.click.btnOk();});
+		document.getElementById("canc-option").addEventListener('click',function(){htlivesight.Settings.click.btnCancel();});
 	}catch(e){}
 	/* ending listeners */	
 });

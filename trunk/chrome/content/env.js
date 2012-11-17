@@ -1,12 +1,8 @@
-if (!htlivesight)
-	var htlivesight={};
-
+if (!htlivesight)	var htlivesight={};
 if (typeof(chrome) == "object") {
 	htlivesight.arch = "Sandboxed";
 	htlivesight.platform = "Chrome";
 	htlivesight.internalPath = htlivesight.resourcePath = chrome.extension.getURL("content/");
-	// to tell which context the chrome script is running at 
-	// either background page, or content script 
 	htlivesight.chromeContext = function() {
 		try {
 			if (chrome.bookmarks) {
@@ -20,7 +16,6 @@ if (typeof(chrome) == "object") {
 			return "content";
 		}
 	};
-
 	// port common functions to sandboxed
 	var sandboxed = {
 		extension : {
@@ -42,10 +37,6 @@ if (typeof(chrome) == "object") {
 	htlivesight.platform = "Opera";
 	htlivesight.internalPath = "chrome://htlivesight/content/";
 	htlivesight.resourcePath = "http://htlivesight.sourceforge.net/test/";
-	//htlivesight.resourcePath = "http//htlivesight.googlecode.com/svn/trunk/chrome/content/";
-	//htlivesight.resourcePath ="/home/lelone/Scrivania/content/";
-	// to tell which context the chrome script is running at 
-	// either background page, or content script 
 	htlivesight.chromeContext = function() {
 		try {
 			if (opera.extension.postMessage) {
@@ -60,7 +51,6 @@ if (typeof(chrome) == "object") {
 		}
 	};
 }
-
 else {
 	htlivesight.arch = "Gecko";
 	htlivesight.resourcePath = "chrome://htlivesight/content/";
@@ -82,9 +72,7 @@ else {
 			return 'background';
 //		}
 	};
-
 }
-
 var htlivesightEnv={
 	platform: htlivesight.platform,
 	contentPath : htlivesight.resourcePath,
@@ -93,6 +81,4 @@ var htlivesightEnv={
 		return htlivesight.chromeContext();
 	},
 //	sandboxed: sandboxed,
-	
 };
-

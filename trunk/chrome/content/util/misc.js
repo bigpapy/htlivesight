@@ -2,7 +2,6 @@
  * misc.js
  * Miscellaneous utilities
  */
-
 if (!htlivesight) var htlivesight = {};
 htlivesight.load = function(url, callback, crossSite) {
 	var req = new XMLHttpRequest();
@@ -30,7 +29,6 @@ htlivesight.load = function(url, callback, crossSite) {
 		req.send();
 	}
 };
-
 htlivesight.loadXml = function(url, callback, crossSite) {
 	if (callback) {
 		htlivesight.load(url, function(text, status) {
@@ -56,7 +54,6 @@ htlivesight.loadXml = function(url, callback, crossSite) {
 			var parser = new DOMParser();
 			var xml = parser.parseFromString(text, "text/xml");
 			return xml;
-
 		}
 		catch (e) {
 			alert("Cannot parse XML:\n" + text + "\n"+ e);
@@ -64,7 +61,6 @@ htlivesight.loadXml = function(url, callback, crossSite) {
 		}
 	}
 };
-
 htlivesight.filePickerForDataUrl = function(doc, callback) {
 	var input = doc.createElement('input');
 	input.type = 'file';
@@ -87,4 +83,16 @@ htlivesight.filePickerForDataUrl = function(doc, callback) {
 	}, false);
 	return input;
 };
-
+htlivesight.copyToClipboard = function(string) {
+	if(htlivesight.platform == "Chrome"){
+		var clipboardStore = document.getElementById('clipboard-store');
+		clipboardStore.value = string;
+		clipboardStore.select();
+		document.execCommand('Copy');
+	}else if(htlivesight.arch = "Gecko") {
+		var gClipboardHelper = Components
+		.classes["@mozilla.org/widget/clipboardhelper;1"]
+		.getService(Components.interfaces.nsIClipboardHelper);
+		gClipboardHelper.copyString(string);
+	};
+};

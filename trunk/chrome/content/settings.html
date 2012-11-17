@@ -22,10 +22,8 @@
 <script type="application/x-javascript" src="util/misc.js"></script>
 <script type="application/x-javascript" src="jquery.js"></script>
 <script type="application/x-javascript" src="settings_listeners.js"></script>
-
 </head>
 <body>
-
 	<div id="options-tabs">
 	<ul>
 	<li><a id="TabGeneral" href="#otabs-1">Y</a></li>
@@ -36,7 +34,6 @@
 	<li><a id="TabColors" href="#otabs-6">Colors</a></li>
 	</ul>
 	<div id="otabs-1">         <!--TAB1-->
-	
 	<fieldset>
 	<legend id="ThemesSelector">Themes</legend>
 	<form>
@@ -45,21 +42,15 @@
 	<input type="radio" name="theme" value="Livefox Theme" id="livefox_theme"><label for="livefox_theme" id="label_livefox_theme" >LiveFox</label>
 	</form>
 	</fieldset>
-	
-	
-	
 	<fieldset>
 	<legend id="GeneralOpen"></legend>
 	<form>
 	<div id="openin" >
 	<input type="radio" id="openin_tab" name="radio" checked="checked" /><label for="openin_tab" id="label_openin_tab" >In a new tab</label>
 	<input type="radio" id="openin_window" name="radio" /><label for="openin_window" id="label_openin_window" >In a new window</label>
-	
 	</div>
 	</form>
 	</fieldset>
-	
-	
 	<fieldset>
 	<legend id="LanguageSelect"></legend>
 	<form>
@@ -129,41 +120,65 @@
 	<label id="GeneralNote"></label>
 	<br />
 	<label for="hattrickServer">Hattrick server:</label>
-	<input type="text" size="5" name="hattrickserver" id="hattrickServer" class="text ui-widget-content ui-corner-all" />
+	<form>
+						<select class="text ui-widget-content ui-corner-all"
+							id="hattrickServer">
+							<option value="www74">www74</option>
+							<option value="www75">www75</option>
+							<option value="www76">www76</option>
+							<option value="www77">www77</option>
+							<option value="www78">www78</option>
+							<option value="www79">www79</option>
+							<option value="www80">www80</option>
+							<option value="www81">www81</option>
+							<option value="www82">www82</option>
+							<option value="www83">www83</option>
+							<option value="www84">www84</option>
+							<option value="www85">www85</option>
+							<option value="www86">www86</option>
+							<option value="www87">www87</option>
+							<option value="www88">www88</option>
+							<option value="www89">www89</option>
+							<option value="www90">www90</option>
+							<option value="www91">www91</option>
+							<option value="www92">www92</option>
+							<option value="www93">www93</option>
+							<option value="www94">www94</option>
+							<option value="www95">www95</option>
+							<option value="www96">www96</option>
+							<option value="www97">www97</option>
+							<option value="www98">www98</option>
+							<option value="stage">stage</option>
+							</select>
+						</form>
 	</fieldset>
-	
 	</div>
 	<div id="otabs-2"> <!--TAB2-->
-	
 	<fieldset>
 	<legend id ="MatchesLeague"> League Matches</legend>
 	<input type="checkbox" id="chkGetLeague" /><label for="chkGetLeague" id="label_chkGetLeague">Load automatically League Matches and League Table</label><br />
-	<input type="checkbox" id="chkGetLeagueWithin" /><label for="chkGetLeagueWithin" id="label_chkGetLeagueWithin">Played in </label> <input value="24" size="3" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all" /> <label id="MatchesHours" for="txtGetLeagueWithinHours">hours</label><br />
+	<input type="checkbox" id="chkGetLeagueWithin" /><label for="chkGetLeagueWithin" id="label_chkGetLeagueWithin">Played in </label> <input type="number" min="0" max="84" step="1" value="24" size="3" id="txtGetLeagueWithinHours"  class="text ui-widget-content ui-corner-all" /> <label id="MatchesHours" for="txtGetLeagueWithinHours">hours</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesFriends">Friends Matches</legend>
 	<input type="checkbox" id="chkGetFriends" /><label for="chkGetFriends" id="label_chkGetFriends">Load automatically matches of your friends</label><br />
-	<input type="checkbox" id="chkGetFriendsWithin" /><label for="chkGetFriendsWithin" id="label_chkGetFriendsWithin">Played in</label> <input value="24" size="3" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" /> <label id="MatchesHours2" for="txtGetFriendsWithinHours">hours</label><br />
+	<input type="checkbox" id="chkGetFriendsWithin" /><label for="chkGetFriendsWithin" id="label_chkGetFriendsWithin">Played in</label> <input type="number" min="0" max="84" step="1" value="24" size="3" id="txtGetFriendsWithinHours" class="text ui-widget-content ui-corner-all" /> <label id="MatchesHours2" for="txtGetFriendsWithinHours">hours</label><br />
+
+  <!-- adding check box to not load friends htointegrated matches -->	
+	<input type="checkbox" id="chkDoNotGetFriendsHointegratedMatches" /><label for="chkDoNotGetFriendsHointegratedMatches" id="label_chkDoNotGetFriendsHointegratedMatches">Don't load single and torunament matches for friends</label><br />
+	
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesHeader">Header</legend>
-	
 	<input type="checkbox" id="chkHdrScorers" /><label for="chkHdrScorers" id="label_chkHdrScorers">Add scorers in header</label><br />
-
-	
 	<input type="checkbox" id="chkHdrBooked" /><label for="chkHdrBooked" id="label_chkHdrBooked">Add booked in header</label><br />
-
-	
 	<input type="checkbox" id="chkHdrSentOff" /><label for="chkHdrSentOff" id="label_chkHdrSentOff">Add sent off in header</label><br />
-
-	
 	<input type="checkbox" id="chkHdrInjured" /><label for="chkHdrInjured" id="label_chkHdrInjured">Add injured in header</label><br />
 	</fieldset>
 	<fieldset>
 	<legend id="MatchesWindow">Live Window</legend>
-	<input value="3" size="2" id="txtMatchWindowSize" class="text ui-widget-content ui-corner-all" /> <label id="MatchesLines">Lines to show in minimized mode</label><br />
+	<input type="number" min="0" max="84" step="1" value="24" size="3" value="3" size="2" id="txtMatchWindowSize" class="text ui-widget-content ui-corner-all" /> <label id="MatchesLines">Lines to show in minimized mode</label><br />
 	</fieldset>
-	
 	</div>
 	<div id="otabs-3"> <!--TAB3-->
 	<fieldset>
@@ -173,7 +188,6 @@
 	<input type="checkbox" id="chkFlash" /><label for="chkFlash" id="label_chkFlash">Flash headers</label><br />
 	<input type="checkbox" id="chkSlider" /><label for="chkSlider" id="label_chkSlider">Status bar slider</label><br />
 	</fieldset>
-	
 	</div>
 	<div id="otabs-4"> <!--TAB4-->
 	<fieldset>
@@ -192,7 +206,6 @@
 	<legend id="OtherEventKey"></legend>
 	<input type="checkbox" id="printEventKey" /><label for="printEventKey" id="label_printEventKey">Show eventkey in the commentary</label><br />
 	</fieldset>
-	
 	</div>
 	<div id="otabs-5">      <!--TAB5-->
 	<fieldset>
@@ -214,162 +227,92 @@
 	<!-- my goal --><br />
 			<input type="checkbox" id="myGoalCheck" /><label for="myGoalCheck" id="label_myGoalCheck">Sound for own goal</label>
 			<br /><button id="label_myGoalButton_reset" class="brestore" >restore</button><button id="label_myGoalButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="myGoalSoundPathBrowse" tabindex="2"  />	
-			
-			
 			<input type="url" id="myGoalSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- op goal --><br />
 					<input type="checkbox" id="opGoalCheck" /><label for="opGoalCheck" id="label_opGoalCheck">Sound for own goal</label>
 					<br /><button id="label_opGoalButton_reset" class="brestore" >restore</button><button id="label_opGoalButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="opGoalSoundPathBrowse" tabindex="2" />	
-			
-			
 			<input type="url" id="opGoalSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- fr goal --><br />
 			<input type="checkbox" id="frGoalCheck" /><label for="frGoalCheck" id="label_frGoalCheck">Sound for own goal</label>
 			<br /><button id="label_frGoalButton_reset" class="brestore" >restore</button><button id="label_frGoalButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="frGoalSoundPathBrowse" tabindex="2" />	
-			
-			
 			<input type="url" id="frGoalSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- opfr goal --><br />
 			<input type="checkbox" id="opfrGoalCheck" /><label for="opfrGoalCheck" id="label_opfrGoalCheck">Sound for own goal</label>
 			<br /><button id="label_opfrGoalButton_reset" class="brestore" >restore</button><button id="label_opfrGoalButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="opfrGoalSoundPathBrowse" tabindex="2" />	
-			
-			
 			<input type="url" id="opfrGoalSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- ot goal --><br />
 			<input type="checkbox" id="otGoalCheck" /><label for="otGoalCheck" id="label_otGoalCheck">Sound for own goal</label>
 			<br /><button id="label_otGoalButton_reset" class="brestore" >restore</button><button id="label_otGoalButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="otGoalSoundPathBrowse" tabindex="2" />	
-			
-			
 			<input type="url" id="otGoalSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- miss goal --><br />
 			<input type="checkbox" id="missGoalCheck" /><label for="missGoalCheck" id="label_missGoalCheck">Sound for own goal</label>
 			<br /><button id="label_missGoalButton_reset" class="brestore" >restore</button><button id="label_missGoalButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="missGoalSoundPathBrowse" tabindex="2" />	
-			
-			
 			<input type="url" id="missGoalSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- sun goal --><br />
 			<label id="TabWheatherSound"></label> <br />
 					<input type="checkbox" id="sunCheck" /><label for="sunCheck" id="label_sunCheck">Sound for own goal</label>
 					<br /><button id="label_sunButton_reset" class="brestore" >restore</button><button id="label_sunButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="sunSoundPathBrowse" tabindex="2" />	
-			
-			
 			<input type="url" id="sunSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- rain goal --><br />
 			<input type="checkbox" id="rainCheck" /><label for="rainCheck" id="label_rainCheck">Sound for own goal</label>
 			<br /><button id="label_rainButton_reset" class="brestore" >restore</button><button id="label_rainButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="rainSoundPathBrowse" tabindex="2" />	
-			
-			
 			<input type="url" id="rainSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- overcast goal --><br />
 			<input type="checkbox" id="overcastCheck" /><label for="overcastCheck" id="label_overcastCheck">Sound for own goal</label>
 			<br /><button id="label_overcastButton_reset" class="brestore" >restore</button><button id="label_overcastButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="overcastSoundPathBrowse" tabindex="2"  />	
-			
-			
 			<input type="url" id="overcastSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- few clouds goal --><br />
 			<input type="checkbox" id="fewCloudsCheck" /><label for="fewCloudsCheck" id="label_fewCloudsCheck">Sound for own goal</label>
 			<br /><button id="label_fewCloudsButton_reset" class="brestore" >restore</button><button id="label_fewCloudsButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="fewCloudsSoundPathBrowse" tabindex="2" />	
-			
-			
 			<input type="url" id="fewCloudsSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- my boo goal --><br />
 			<input type="checkbox" id="myBooCheck" /><label for="myBooCheck" id="label_myBooCheck">Sound for own goal</label>
 			<br /><button id="label_myBooButton_reset" class="brestore" >restore</button><button id="label_myBooButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="myBooSoundPathBrowse" tabindex="2" />	
-			
-			
 			<input type="url" id="myBooSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- op boo goal --><br />
 			<input type="checkbox" id="opBooCheck" /><label for="opBooCheck" id="label_opBooCheck">Sound for own goal</label>
 			<br /><button id="label_opBooButton_reset" class="brestore" >restore</button><button id="label_opBooButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="opBooSoundPathBrowse" tabindex="2" />
-			
-			
 			<input type="url" id="opBooSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- whistlestart --><br />
 			<label id="TabWhistleSound"></label> <br />
 			<input type="checkbox" id="whistleStartCheck" /><label for="whistleStartCheck" id="label_whistleStartCheck">Sound for own goal</label>
 			<br /><button id="label_whistleStartButton_reset" class="brestore" >restore</button><button id="label_whistleStartButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="whistleStartSoundPathBrowse" tabindex="2" />	
-			
-			
 			<input type="url" id="whistleStartSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- double whistle --><br />
 			<input type="checkbox" id="whistle2Check" /><label for="whistle2Check" id="label_whistle2Check">Sound for own goal</label>
 			<br /><button id="label_whistle2Button_reset" class="brestore" >restore</button><button id="label_whistle2Button_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="whistle2SoundPathBrowse" tabindex="2" />	
-			
-			
 			<input type="url" id="whistle2SoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- triple whistle --><br />
 			<input type="checkbox" id="whistle3Check" /><label for="whistle3Check" id="label_whistle3Check">Sound for own goal</label>
 			<br /><button id="label_whistle3Button_reset" class="brestore" >restore</button><button id="label_whistle3Button_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="whistle3SoundPathBrowse" tabindex="2" />	
-			
-			
 			<input type="url" id="whistle3SoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- whistle goal --><br />
 			<input type="checkbox" id="whistleCheck" /><label for="whistleCheck" id="label_whistleCheck">Sound for own goal</label>
 			<br /><button id="label_whistleButton_reset" class="brestore" >restore</button><button id="label_whistleButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="whistleSoundPathBrowse" tabindex="2" />	
-			
-			
 			<input type="url" id="whistleSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 	<!-- hattrick --><br />
 			<input type="checkbox" id="hattrickCheck" /><label for="hattrickCheck" id="label_hattrickCheck">Sound for own goal</label>
 			<br /><button id="label_hattrickButton_reset" class="brestore" >restore</button><button id="label_hattrickButton_play" class="brestore" >play</button>
-			
-			
 	<input type="file" id="hattrickSoundPathBrowse" tabindex="2" />	
-			
-			
 			<input type="url" id="hattrickSoundPath" maxlength="450000" size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 		</fieldset>
-					
 				</div>
-				
 				<div id="otabs-6">
 			<!--TAB5-->
 			<fieldset>
@@ -377,66 +320,42 @@
 				<span id="ChooseColor">You can choose your color at </span><a href="http://www.colorpicker.com/" target="_blank">http://www.colorpicker.com/</a><br /><br />
 				<input type="checkbox" id="friendHomeColorCheck"
 					 />
-					<!--  <label for="friendHomeColorCheck" id="label_friendHomeColorCheck"> Set a custom background color for your
-					 friend's (and your own) events when playing at home</label> -->
 					<label for="friendHomeColorCheck" id="label_friendHomeColorCode">Friend home hex color: #</label> 
-					<input type="text" name="friendHomeColor" id="friendHomeColorCode" class="text ui-widget-content ui-corner-all"
+					<input type="color" name="friendHomeColor" id="friendHomeColorCode" class="text ui-widget-content ui-corner-all"
 					 /><br /><br />
-				
 				<input type="checkbox" id="friendAwayColorCheck"
 					 />
-				<!--	<label for="friendAwayColorCheck" id="label_friendAwayColorCheck"> Set a custom background color for your friend's (and your own) events when playing away</label> -->
 					<label for="friendAwayColorCheck" id="label_friendAwayColorCode">Friend away hex color: #</label> 
-					<input type="text" name="friendAwayColor"	id="friendAwayColorCode" class="text ui-widget-content ui-corner-all"
+					<input type="color" name="friendAwayColor"	id="friendAwayColorCode" class="text ui-widget-content ui-corner-all"
 					 /><br /><br />
-				
 				<input type="checkbox" id="foeHomeColorCheck"
-					 /><!--<label
-					for="foeHomeColorCheck" id="label_foeHomeColorCheck"> Set a
-					custom background color for foreign home team events</label>-->
-					<label for="foeHomeColorCheck" id="label_foeHomeColorCode">Foreign home hex color: #</label><input type="text" name="foeHomeColor"
+					 />
+					<label for="foeHomeColorCheck" id="label_foeHomeColorCode">Foreign home hex color: #</label><input type="color" name="foeHomeColor"
 					id="foeHomeColorCode" class="text ui-widget-content ui-corner-all"
 					 /> <br /> <br />
 				
 				<input type="checkbox" id="foeAwayColorCheck"
-					 /><!--<label
-					for="foeAwayColorCheck" id="label_foeAwayColorCheck"> Set a
-					custom background color for foreign away team events</label> <br /> 
-					 <br /> --><label for="foeAwayColorCheck" id="label_foeAwayColorCode">Foreign away hex color: #</label><input type="text" name="foeAwayColor"
+					 /><label for="foeAwayColorCheck" id="label_foeAwayColorCode">Foreign away hex color: #</label><input type="color" name="foeAwayColor"
 					id="foeAwayColorCode" class="text ui-widget-content ui-corner-all"
 					 /> <br /> <br />
-					
 				<input type="checkbox" id="neutralColorCheck"
-					 /><!-- <label
-					for="neutralColorCheck" id="label_neutralColorCheck"> Set a
-					custom background color for neutral events</label><br /> 
-					 <br />--> <label for="neutralColorCheck" id="label_neutralColorCode">Neutral hex color: #</label><input type="text" name="neutralColor"
+					 /><label for="neutralColorCheck" id="label_neutralColorCode">Neutral hex color: #</label><input type="color" name="neutralColor"
 					id="neutralColorCode" class="text ui-widget-content ui-corner-all"
 					 /> <br /> <br />
-
 				</fieldset>
 	<fieldset>
 	<legend id="CustomEventText">Event text color</legend>					
 				<input type="checkbox" id="textColorCheck"
-					 /><!--<label
-					for="textColorCheck" id="label_textColorCheck"> Set
-					a custom color for event text</label><br /> 
-					 <br />--> <label for="textColorCheck" id="label_textColorCode">Event text hex color: #</label> <input type="text" name="textColor"
+					 /><label for="textColorCheck" id="label_textColorCode">Event text hex color: #</label> <input type="color" name="textColor"
 					id="textColorCode" class="text ui-widget-content ui-corner-all"
 					 /> <br /> <br />
-					
 				<input type="checkbox" id="seTextColorCheck"
-					 /><!--<label
-					for="seTextColorCheck" id="label_seTextColorCheck"> Set a
-					custom color for SE text</label><br /> 
-					 <br />--> <label for="seTextColorCheck" id="label_seTextColorCode">SE text hex color: #</label> <input type="text" name="seTextColor"
+					 /><label for="seTextColorCheck" id="label_seTextColorCode">SE text hex color: #</label> <input type="color" name="seTextColor"
 					id="seTextColorCode" class="text ui-widget-content ui-corner-all"
 					/>  	
 			</fieldset>
 		</div>
-
 	</div>
-
 <div class="ui-dialog-buttonset">
                 <button id="ok-option"
                         class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
@@ -449,17 +368,5 @@
                         <span class="ui-button-text" id="CancelButton">Cancel</span>
                 </button>
         </div>
-
-
-
-	<script type="text/javascript">
-//		htlivesightPrefs.init();
-		//  alert("prima di start");
- //		htlivesight.Settings.startup();
-		//  alert("quasi la fine");
-//		htlivesight.Settings.localization();
-		//  alert("fine");
-	</script>
-
 </body>
 </html>

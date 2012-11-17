@@ -4,32 +4,24 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <title>HTLiveSight</title>
 <link rel="icon" type="image/png" href="./themes/images/48.png" />
-<!--Temporary Trick-->
-<link href='#' rel='stylesheet' type='text/css'>
-<!--Dark Theme-->
-<link rel="stylesheet" type="text/css" href="themes/dark.css" />
-<!--Light Theme-->
-<link rel="stylesheet" type="text/css" href="themes/light.css" />
-<!--Livefox Theme-->
-<link rel="stylesheet" type="text/css" href="themes/livefox.css" />
-<!--Custom Tweaks-->
-<link rel="stylesheet" type="text/css" href="themes/custom.css" />
+<link href='#' rel='stylesheet' type='text/css'><!--Temporary Trick-->
+<link rel="stylesheet" type="text/css" href="themes/dark.css" /><!--Dark Theme-->
+<link rel="stylesheet" type="text/css" href="themes/light.css" /><!--Light Theme-->
+<link rel="stylesheet" type="text/css" href="themes/livefox.css" /><!--Livefox Theme-->
+<link rel="stylesheet" type="text/css" href="themes/custom.css" /><!--Custom Tweaks-->
 <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
 <script type="application/x-javascript" src="htlivesight.js"></script>
 <script type="application/x-javascript" src="env.js"></script>
 <script type="application/x-javascript" src="lang.js"></script>
 <script type="application/x-javascript" src="settings.js"></script>
-<!--<script type="application/x-javascript" src="about.js"></script>-->
 <script type="application/x-javascript" src="preferences.js"></script>
 <script type="application/x-javascript" src="log.js"></script>
 <script type="application/x-javascript" src="sound.js"></script>
-<!-- added by bigpapy (start): necessary because reset button (in other menu) works -->
 <script type="application/x-javascript" src="util.js"></script>
 <script type="application/x-javascript" src="./prefs.js"></script>
 <script type="application/x-javascript" src="./api-proxy.js"></script>
 <script type="application/x-javascript" src="./util/misc.js"></script>
-
 <script type="application/x-javascript" src="image.js"></script>
 <script type="application/x-javascript" src="click.js"></script>
 <script type="application/x-javascript" src="dom.js"></script>
@@ -50,13 +42,9 @@
 <script type="application/x-javascript" src="lineup.js"></script>
 <script type="application/x-javascript" src="htlivesight_listeners.js"></script>
 <script type="application/x-javascript" src="settings_listeners.js"></script>
-<!-- external libraries -->
 <script type="application/x-javascript" src="./lib/oauth.js"></script>
 <script type="application/x-javascript" src="./lib/sha1.js"></script>
-
 <script type="application/x-javascript" src="jquery.js"></script>
-
-
 </head>
 <body id="body">
 	<div id="login-dialog" title="">
@@ -70,25 +58,37 @@
 				<input type="checkbox" id="save_teamId" /><label for="save_teamId"
 					id="LoginSave"></label> <input type="button" id="button_login"
 					value="" />
-
 			</fieldset>
 			<fieldset>
 				<legend id="LoginReLive"></legend>
 				<input type="checkbox" id="reLive" /><label for="reLive"
 					id="LoginReLive2"></label><br /> <label id="LoginSpeed"
-					for="reLiveSpeed"></label> <input type="text" id="reLiveSpeed"
-					value="" class="text ui-widget-content ui-corner-all" /> <input
-					type="checkbox" id="reLiveByEvent" /><label for="reLiveByEvent"
+					for="reLiveSpeed"></label>
+					<form>
+						<select class="text ui-widget-content ui-corner-all"
+							id="reLiveSpeed">
+							<option value="1">1x</option>
+							<option value="2">2x</option>
+							<option value="3">3x</option>
+							<option value="4">4x</option>
+							<option value="5">5x</option>
+							<option value="6">6x</option>
+							<option value="10">10x</option>
+							<option value="12">12x</option>
+							<option value="15">15x</option>
+							<option value="20">20x</option>
+							<option value="30">30x</option>
+							<option value="60">60x</option>					
+					</select>
+					</form>
+					 <input	type="checkbox" id="reLiveByEvent" /><label for="reLiveByEvent"
 					id="LoginByEvent"></label>
 			</fieldset>
 		</form>
 		<img src="./themes/images/oauth.png" alt="HTLiveSight Logo"
 			class="anotherbrick2">
-
 	</div>
 	<div id="options-dialog" title="">
-
-
 		<div id="options-tabs">
 			<ul>
 				<li><a id="TabGeneral" href="#otabs-1">Y</a>
@@ -104,9 +104,7 @@
 				<li><a id="TabColors" href="#otabs-6">Colors</a>
 				</li>
 			</ul>
-			<div id="otabs-1">
-				<!--TAB1-->
-
+			<div id="otabs-1"><!--TAB1-->
 				<fieldset>
 					<legend id="ThemesSelector">Themes</legend>
 					<form>
@@ -120,9 +118,6 @@
 							id="label_livefox_theme">LiveFox</label>
 					</form>
 				</fieldset>
-
-
-
 				<fieldset>
 					<legend id="GeneralOpen"></legend>
 					<form>
@@ -132,12 +127,9 @@
 								id="label_openin_tab">In a new tab</label> <input type="radio"
 								id="openin_window" name="radio" /><label for="openin_window"
 								id="label_openin_window">In a new window</label>
-
 						</div>
 					</form>
 				</fieldset>
-
-
 				<fieldset>
 					<legend id="LanguageSelect"></legend>
 					<form>
@@ -201,8 +193,7 @@
 					</form>
 					<br /> <label id="LanguageNote"></label>
 					<div id="CrowdinLink">
-						<a
-							href="http://crowdin.net/project/htlivesight/invite?token=a41f1ac45795476ca5087af76978fad8"
+						<a href="http://crowdin.net/project/htlivesight/invite?token=a41f1ac45795476ca5087af76978fad8"
 							target="_blank"><img id="CrowdinLogo"
 							src="./themes/images/crowdin.png" />
 						<div id="CrowdinLabel">
@@ -215,15 +206,41 @@
 				<fieldset>
 					<legend id="GeneralServer"></legend>
 					<label id="GeneralNote"></label> <br /> <label
-						for="hattrickServer">Hattrick server:</label> <input type="text"
-						size="5" name="hattrickserver" id="hattrickServer"
-						class="text ui-widget-content ui-corner-all" />
+						for="hattrickServer">Hattrick server:</label>						
+						<form>
+						<select class="text ui-widget-content ui-corner-all"
+							id="hattrickServer">
+							<option value="www74">www74</option>
+							<option value="www75">www75</option>
+							<option value="www76">www76</option>
+							<option value="www77">www77</option>
+							<option value="www78">www78</option>
+							<option value="www79">www79</option>
+							<option value="www80">www80</option>
+							<option value="www81">www81</option>
+							<option value="www82">www82</option>
+							<option value="www83">www83</option>
+							<option value="www84">www84</option>
+							<option value="www85">www85</option>
+							<option value="www86">www86</option>
+							<option value="www87">www87</option>
+							<option value="www88">www88</option>
+							<option value="www89">www89</option>
+							<option value="www90">www90</option>
+							<option value="www91">www91</option>
+							<option value="www92">www92</option>
+							<option value="www93">www93</option>
+							<option value="www94">www94</option>
+							<option value="www95">www95</option>
+							<option value="www96">www96</option>
+							<option value="www97">www97</option>
+							<option value="www98">www98</option>
+							<option value="stage">stage</option>
+							</select>
+						</form>
 				</fieldset>
-
-			</div>
-			<div id="otabs-2">
-				<!--TAB2-->
-
+		</div>
+			<div id="otabs-2">				<!--TAB2-->
 				<fieldset>
 					<legend id="MatchesLeague"> League Matches</legend>
 					<input type="checkbox" id="chkGetLeague" /><label
@@ -231,7 +248,7 @@
 						automatically League Matches and League Table</label><br /> <input
 						type="checkbox" id="chkGetLeagueWithin" /><label
 						for="chkGetLeagueWithin" id="label_chkGetLeagueWithin">Played
-						in </label> <input value="24" size="3" id="txtGetLeagueWithinHours"
+						in </label> <input type="number" min="0" max="84" step="1" value="24" size="3" id="txtGetLeagueWithinHours"
 						class="text ui-widget-content ui-corner-all" /> <label
 						id="MatchesHours" for="txtGetLeagueWithinHours">hours</label><br />
 				</fieldset>
@@ -242,13 +259,20 @@
 						automatically matches of your friends</label><br /> <input
 						type="checkbox" id="chkGetFriendsWithin" /><label
 						for="chkGetFriendsWithin" id="label_chkGetFriendsWithin">Played
-						in</label> <input value="24" size="3" id="txtGetFriendsWithinHours"
+						in</label> <input type="number" min="0" max="84" step="1" value="24" size="3" id="txtGetFriendsWithinHours"
 						class="text ui-widget-content ui-corner-all" /> <label
 						id="MatchesHours2" for="txtGetFriendsWithinHours">hours</label><br />
+						
+						
+						<!-- adding check box to not load friends htointegrated matches -->
+						<input type="checkbox" id="chkDoNotGetFriendsHointegratedMatches" /><label
+						for="chkDoNotGetFriendsHointegratedMatches" id="label_chkDoNotGetFriendsHointegratedMatches">
+						Don't load single and tournament matches for friends</label><br />
+						
+						
 				</fieldset>
 				<fieldset>
 					<legend id="MatchesHeader">Header</legend>
-
 					<input type="checkbox" id="chkHdrScorers" /><label
 						for="chkHdrScorers" id="label_chkHdrScorers">Add scorers
 						in header</label><br /> <input type="checkbox" id="chkHdrBooked" /><label
@@ -261,14 +285,12 @@
 				</fieldset>
 				<fieldset>
 					<legend id="MatchesWindow">Live Window</legend>
-					<input value="3" size="2" id="txtMatchWindowSize"
+					<input type="number" min="0" max="12" step="1" value="3" size="2" id="txtMatchWindowSize"
 						class="text ui-widget-content ui-corner-all" /> <label
 						id="MatchesLines">Lines to show in minimized mode</label><br />
 				</fieldset>
-
 			</div>
-			<div id="otabs-3">
-				<!--TAB3-->
+			<div id="otabs-3">				<!--TAB3-->
 				<fieldset>
 					<legend id="NotifyNotify">Notifications</legend>
 					<input type="checkbox" id="chkSound" /><label for="chkSound"
@@ -280,7 +302,6 @@
 						type="checkbox" id="chkSlider" /><label for="chkSlider"
 						id="label_chkSlider">Status bar slider</label><br />
 				</fieldset>
-
 			</div>
 			<div id="otabs-4">
 				<!--TAB4-->
@@ -304,10 +325,8 @@
 						for="printEventKey" id="label_printEventKey">Show eventkey
 						in the commentary</label><br />
 				</fieldset>
-
 			</div>
-			<div id="otabs-5">
-				<!--TAB5-->
+			<div id="otabs-5">				<!--TAB5-->
 				<fieldset>
 					<legend id="CustomIcons">Icons</legend>
 					<input type="checkbox" id="oldIcons" /><label for="oldIcons"
@@ -337,8 +356,6 @@
 						goal</label> <br />
 					<button id="label_myGoalButton_reset" class="brestore">restore</button>
 					<button id="label_myGoalButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="myGoalSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="myGoalSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -349,8 +366,6 @@
 						goal</label> <br />
 					<button id="label_opGoalButton_reset" class="brestore">restore</button>
 					<button id="label_opGoalButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="opGoalSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="opGoalSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -361,8 +376,6 @@
 						goal</label> <br />
 					<button id="label_frGoalButton_reset" class="brestore">restore</button>
 					<button id="label_frGoalButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="frGoalSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="frGoalSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -373,8 +386,6 @@
 						goal</label> <br />
 					<button id="label_opfrGoalButton_reset" class="brestore">restore</button>
 					<button id="label_opfrGoalButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="opfrGoalSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="opfrGoalSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -385,8 +396,6 @@
 						goal</label> <br />
 					<button id="label_otGoalButton_reset" class="brestore">restore</button>
 					<button id="label_otGoalButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="otGoalSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="otGoalSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -397,8 +406,6 @@
 						goal</label> <br />
 					<button id="label_missGoalButton_reset" class="brestore">restore</button>
 					<button id="label_missGoalButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="missGoalSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="missGoalSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -409,8 +416,6 @@
 						id="label_sunCheck">Sound for own goal</label> <br />
 					<button id="label_sunButton_reset" class="brestore">restore</button>
 					<button id="label_sunButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="sunSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="sunSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -420,8 +425,6 @@
 						for="rainCheck" id="label_rainCheck">Sound for own goal</label> <br />
 					<button id="label_rainButton_reset" class="brestore">restore</button>
 					<button id="label_rainButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="rainSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="rainSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -432,8 +435,6 @@
 						goal</label> <br />
 					<button id="label_overcastButton_reset" class="brestore">restore</button>
 					<button id="label_overcastButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="overcastSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="overcastSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -444,8 +445,6 @@
 						own goal</label> <br />
 					<button id="label_fewCloudsButton_reset" class="brestore">restore</button>
 					<button id="label_fewCloudsButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="fewCloudsSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="fewCloudsSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -456,8 +455,6 @@
 					<br />
 					<button id="label_myBooButton_reset" class="brestore">restore</button>
 					<button id="label_myBooButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="myBooSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="myBooSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -468,8 +465,6 @@
 					<br />
 					<button id="label_opBooButton_reset" class="brestore">restore</button>
 					<button id="label_opBooButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="opBooSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="opBooSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -481,11 +476,7 @@
 						for own goal</label> <br />
 					<button id="label_whistleStartButton_reset" class="brestore">restore</button>
 					<button id="label_whistleStartButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="whistleStartSoundPathBrowse" tabindex="2" />
-
-
 					<input type="url" id="whistleStartSoundPath" maxlength="450000"
 						size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
@@ -495,8 +486,6 @@
 						goal</label> <br />
 					<button id="label_whistle2Button_reset" class="brestore">restore</button>
 					<button id="label_whistle2Button_play" class="brestore">play</button>
-
-
 					<input type="file" id="whistle2SoundPathBrowse" tabindex="2" /> <input
 						type="url" id="whistle2SoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -507,8 +496,6 @@
 						goal</label> <br />
 					<button id="label_whistle3Button_reset" class="brestore">restore</button>
 					<button id="label_whistle3Button_play" class="brestore">play</button>
-
-
 					<input type="file" id="whistle3SoundPathBrowse" tabindex="2" /> <input
 						type="url" id="whistle3SoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -519,8 +506,6 @@
 						goal</label> <br />
 					<button id="label_whistleButton_reset" class="brestore">restore</button>
 					<button id="label_whistleButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="whistleSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="whistleSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
@@ -531,100 +516,56 @@
 						goal</label> <br />
 					<button id="label_hattrickButton_reset" class="brestore">restore</button>
 					<button id="label_hattrickButton_play" class="brestore">play</button>
-
-
 					<input type="file" id="hattrickSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="hattrickSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
 				</fieldset>
-
 			</div>
-
-			<div id="otabs-6">
-				<!--TAB5-->
+			<div id="otabs-6">				<!--TAB5-->
 				<fieldset>
 					<legend id="CustomEventBackground">Event background color</legend>
 					<span id="ChooseColor">You can choose your color at </span><a
 						href="http://www.colorpicker.com/" target="_blank">http://www.colorpicker.com/</a><br />
 					<br /> <input type="checkbox" id="friendHomeColorCheck" />
-					<!--  <label for="friendHomeColorCheck" id="label_friendHomeColorCheck"> Set a custom background color for your
-					 friend's (and your own) events when playing at home</label> -->
 					<label for="friendHomeColorCheck" id="label_friendHomeColorCode">Friend
-						home hex color: #</label> <input type="text" name="friendHomeColor"
+						home hex color: #</label> <input type="color" name="friendHomeColor"
 						id="friendHomeColorCode"
 						class="text ui-widget-content ui-corner-all" /><br />
 					<br /> <input type="checkbox" id="friendAwayColorCheck" />
-					<!--	<label for="friendAwayColorCheck" id="label_friendAwayColorCheck"> Set a custom background color for your friend's (and your own) events when playing away</label> -->
 					<label for="friendAwayColorCheck" id="label_friendAwayColorCode">Friend
-						away hex color: #</label> <input type="text" name="friendAwayColor"
+						away hex color: #</label> <input type="color" name="friendAwayColor"
 						id="friendAwayColorCode"
 						class="text ui-widget-content ui-corner-all" /><br />
 					<br /> <input type="checkbox" id="foeHomeColorCheck" />
-					<!--<label
-					for="foeHomeColorCheck" id="label_foeHomeColorCheck"> Set a
-					custom background color for foreign home team events</label>-->
 					<label for="foeHomeColorCheck" id="label_foeHomeColorCode">Foreign
-						home hex color: #</label><input type="text" name="foeHomeColor"
+						home hex color: #</label><input type="color" name="foeHomeColor"
 						id="foeHomeColorCode" class="text ui-widget-content ui-corner-all" />
 					<br /> <br /> <input type="checkbox" id="foeAwayColorCheck" />
-					<!--<label
-					for="foeAwayColorCheck" id="label_foeAwayColorCheck"> Set a
-					custom background color for foreign away team events</label> <br /> 
-					 <br /> -->
 					<label for="foeAwayColorCheck" id="label_foeAwayColorCode">Foreign
-						away hex color: #</label><input type="text" name="foeAwayColor"
+						away hex color: #</label><input type="color" name="foeAwayColor"
 						id="foeAwayColorCode" class="text ui-widget-content ui-corner-all" />
 					<br /> <br /> <input type="checkbox" id="neutralColorCheck" />
-					<!-- <label
-					for="neutralColorCheck" id="label_neutralColorCheck"> Set a
-					custom background color for neutral events</label><br /> 
-					 <br />-->
 					<label for="neutralColorCheck" id="label_neutralColorCode">Neutral
-						hex color: #</label><input type="text" name="neutralColor"
+						hex color: #</label><input type="color" name="neutralColor"
 						id="neutralColorCode" class="text ui-widget-content ui-corner-all" />
 					<br /> <br />
-
 				</fieldset>
 				<fieldset>
 					<legend id="CustomEventText">Event text color</legend>
 					<input type="checkbox" id="textColorCheck" />
-					<!--<label
-					for="textColorCheck" id="label_textColorCheck"> Set
-					a custom color for event text</label><br /> 
-					 <br />-->
 					<label for="textColorCheck" id="label_textColorCode">Event
-						text hex color: #</label> <input type="text" name="textColor"
+						text hex color: #</label> <input type="color" name="textColor"
 						id="textColorCode" class="text ui-widget-content ui-corner-all" />
 					<br /> <br /> <input type="checkbox" id="seTextColorCheck" />
-					<!--<label
-					for="seTextColorCheck" id="label_seTextColorCheck"> Set a
-					custom color for SE text</label><br /> 
-					 <br />-->
 					<label for="seTextColorCheck" id="label_seTextColorCode">SE
-						text hex color: #</label> <input type="text" name="seTextColor"
+						text hex color: #</label> <input type="color" name="seTextColor"
 						id="seTextColorCode" class="text ui-widget-content ui-corner-all" />
 				</fieldset>
 			</div>
 		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	</div>
 	<div id="about-dialog" title="">
-
 		<div id="about-tabs">
 			<ul>
 				<li><a href="#tabs-1" id="TabInfo"></a>
@@ -724,11 +665,6 @@
 				</a>
 			</div>
 		</div>
-
-
-
-
-
 	</div>
 	<div id="topbar">
 		<div id="left_topbar">
@@ -755,7 +691,6 @@
 			<a title="Open Chat" id="chat_link" href="#"> <img alt="chat"
 				class="socialicon" src="./themes/images/chat.png"> </a>
 			<div id="chat-dialog" title="Chat">
-				<!--<iframe src="http://webchat.quakenet.org/?channels=htlivesight&uio=OT10cnVlJjExPTEyMwb9" width="647" height="400"></iframe>-->
 			</div>
 		</div>
 		<div id="right_topbar">
@@ -770,119 +705,20 @@
 	</div>
 	<div id="thebox">
 		<div id="live_box">
-
-
-
 			<div id="formationpopup" title="Lineup">
 				<span id="label_formationPopupUnavailable">Lineup popup
 					function is temporary deactivated due a CHPP problem.<br />As soon
 					the HTs fix it, we'll re-add this feature.<br /> Sorry for the
 					inconvenience. </span>
 			</div>
-
-			<!--DIV SINGLE MATCH-->
-			<!--<div class="match">
-		<table  cellspacing="0" class="matchheader ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active">
-	<thead>
-	<tr class="ui-accordion-header ui-helper-reset ui-state-default ui-state-active ui-corner-top">
-		<td class="line1header">Data+Ora+Meteo+Stadio</td>
-		<td class="chronoheader" colspan="3">Cronometro</td>
-		<td class="line1header">-->
-			<!--
-		<a href="#" id="idontknow" class="ui-corner-all ui-icon ui-icon-volume-on"></a>
-		<a href="#" id="idontknow" class="ui-corner-all ui-icon ui-icon-extlink"></a>
-		<a href="#" id="idontknow" class="ui-corner-all ui-icon ui-icon-info"></a>
-		<a href="#" id="maxplay" class="ui-corner-all ui-icon ui-icon-circle-zoomin"></a>
-		<a href="#" id="normalplay" class="ui-corner-all ui-icon ui-icon-circle-zoomout"></a>
-		<a href="#" id="togglebutton" class="ui-corner-all ui-icon ui-icon-circle-minus"></a>
-		<a href="#" id="closematch" class="ui-corner-all ui-icon ui-icon-triangle-1-s"></a>
-		<a href="#" id="moveup" class="ui-corner-all ui-icon ui-icon-arrow-n"></a>
-		<a href="#" id="movedown" class="ui-corner-all ui-icon ui-icon-arrow-s"></a>-->
-			<!--
-		</td>
-	</tr>
-	</thead>
-	<tbody class="animation">
-	<tr>
-		<td  class="sxheader">Icone Azioni Home</td>
-		<td  class="line2sxheader">Team Home</td>
-		<td  class="scoreheader" rowspan="2"><h3>25-25</h3></td>
-		<td  class="line2rxheader">Team Away</td>
-		<td  class="rxheader">Icone Azioni Away</td>
-	</tr>
-	<tr>
-	<td class="sxheader" colspan="2">Scorers Home</td>
-	<td class="rxheader" colspan="2">Scorers Away</td>
-	</tr>
-	</tbody>
-	</table>
-	<div id="matchevents">
-	<div id="effect" class="ui-widget-content ui-corner-all">
-	Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
-	</div>
-	<div id="effect2" class="ui-widget-content ui-corner-all">
-	ConquisterÃ² il mondo!!!
-	</div>
-	</div>
-	</div>-->
-			<!-- /DIV SINGLE MATCH-->
-
-
-			<!-- La stanza dei bottoni-->
-			<!--
-	<a href="#" id="button" class="ui-state-default ui-corner-all">Run Effect</a>
-	<a href="#" id="button2" class="ui-state-default ui-corner-all">Run Effect 2</a>
-	<a href="#" id="animator" class="ui-state-default ui-corner-all">Red Card/Injury Animation</a>
-	<a href="#" id="animator2" class="ui-state-default ui-corner-all">Yellow Card Animation</a>
-	<a href="#" id="animator3" class="ui-state-default ui-corner-all">Miss Animation</a>
-	<a href="#" id="animator4" class="ui-state-default ui-corner-all">Goal Animation</a>
-	<a href="#" id="animator5" class="ui-state-default ui-corner-all">Bruised Animation</a>
-	<a href="#" id="warning" class="ui-state-default ui-corner-all">Warning</a>
-	<a href="#" id="error" class="ui-state-default ui-corner-all">Error</a>
-				<div id="warning-dialog" class="ui-widget">
-				<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
-					<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
-					You will be redirected to chpp page to get authorizazion code. If not, please remove temporarely pop up block or grant HTlivesight in the exception list.</p>
-				</div>
-			</div>
-			<br/>
-			<div id="error-dialog" class="ui-widget">
-				<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
-					<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
-					Error 500: internal server error (of Hattrick)</p>
-				</div>
-			</div>-->
-			<!-- La stanza dei bottoni-->
-
-
-
 		</div>
-
-
-
-
-
-
-		<div id="sidebar">
-			<!-- sidebar-->
-
-
+		<div id="sidebar">			<!-- sidebar-->
 			<div id="winbox_leaguematches">
-				<!-- accordion league_matches1-->
 				<h3 id="h3LeagueMatches" style="display: none">
 					<a href="#" id="LeagueMatches" style="display: none"></a>
 				</h3>
-				<!-- CUT HERE 
-	<div id="winboxheader_leaguematches">
-	<img id="imgwinboxopen_leaguematches" class="imgwinboxopen"/>
-	<img id="imgwinboxshade_leaguematches" class="imgwinboxshade"/>
-	</div>
-	 CUT HERE -->
 				<div id="winboxcontent_leaguematches" style="display: none">
-					<!-- accordion league_matches2-->
 					<div id="contentbody_leaguematches">
-						<!-- accordion league_matches2-->
-
 						<table class="match_table">
 							<thead id="contentheader_leaguematches">
 								<tr>
@@ -892,16 +728,6 @@
 								</tr>
 							</thead>
 							<tbody id="league_grid_rows">
-								<!-- id="league_grid" -->
-								<!--<tr class="match_row"> 
-		<td class="hometeam_league"></td>
-		<td class="homescore_league"></td>
-		<td class="separator_league"></td>
-		<td class="awayscore_league"></td>
-		<td class="awayteam_league"></td>
-		<td class="add_league"></td>
-		<td class="remove_league"></td>
-	</tr>-->
 							</tbody>
 							<tfoot id="contentfooter_leaguematches">
 								<tr>
@@ -915,32 +741,14 @@
 							</tfoot>
 						</table>
 					</div>
-					<!-- accordion league_matches2-->
 				</div>
-				<!-- accordion league_matches2-->
 			</div>
-			<!-- accordion league_matches1-->
-
-
-
-
-
 			<div id="winbox_leaguetable" style="display: none">
-				<!-- accordion league_table1-->
 				<h3>
 					<a href="#" id="LeagueLiveTable"></a>
 				</h3>
-				<!-- CUT HERE 
-	<div id="winboxheader_leaguetable">
-	<img id="imgwinboxopen_leaguetable" class="imgwinboxopen"/>
-	<img id="imgwinboxshade_leaguetable" class="imgwinboxshade"/>
-	</div>
-	CUT HERE -->
 				<div id="winboxcontent_leaguetable">
-					<!-- accordion league_table2-->
 					<div id="contentbody_leaguetable">
-						<!-- accordion league_table2-->
-						<!--id="contentbody_leaguetable"-->
 						<table id="leaguetable_grid_rows" class="live_league_table"
 							cellpadding="0">
 							<thead>
@@ -1094,73 +902,28 @@
 							</tbody>
 						</table>
 					</div>
-					<!-- accordion league_table2-->
 				</div>
-				<!-- accordion league_table2-->
 			</div>
-			<!-- accordion league_table1-->
-
-
-
-
-
-
 			<div id="winbox_matchlist">
-				<!-- accordion league_matches1-->
 				<h3>
 					<a href="#" id="MatchesList"></a>
 				</h3>
-				<!-- CUT HERE 
-	<div id="winboxheader_matchlist">
-	<img id="imgwinboxopen_matchlist" class="imgwinboxopen"/>
-	<img id="imgwinboxshade_matchlist" class="imgwinboxshade"/>
-	</div>
-	 CUT HERE -->
 				<div id="winboxcontent_matchlist">
-					<!-- accordion league_matches2-->
 					<div id="contentbody_matchlist">
-						<!-- accordion league_matches2-->
 						<table class="match_table" id="other_grid_rows">
-							<!-- 
-	<tr class="match_row" > 
-		<td class="hometeam_league"></td>
-		<td class="homescore_league"></td>
-		<td class="separator_league"></td>
-		<td class="awayscore_league"></td>
-		<td class="awayteam_league"></td>
-		<td class="add_league"></td>
-		<td class="remove_league"></td> 
-	</tr>-->
 						</table>
 					</div>
-					<!-- accordion league_matches2-->
 				</div>
-				<!-- accordion league_matches2-->
 			</div>
-			<!-- accordion league_matches1-->
-
-
-
-
 			<div id="winbox_friends">
-				<!-- accordion league_table1-->
 				<h3>
 					<a href="#" id="FriendsTitle"></a>
 				</h3>
-				<!-- CUT HERE 
-	<div id="winboxheader_friends">
-	<img id="imgwinboxopen_friends" class="imgwinboxopen"/>
-	<img id="imgwinboxshade_friends" class="imgwinboxshade"/>
-	</div>
-	 CUT HERE -->
 				<div id="winboxcontent_friends">
-					<!-- accordion league_table2-->
 					<div id="contentbody_friends">
-						<!-- accordion league_table2-->
 						<div>
 							<select id="listbox_friends" size="5" multiple="multiple"
 								class="text ui-widget-content ui-corner-all">
-								<!--  <option value="1">example</option>  -->
 							</select>
 						</div>
 						<div id="managefriendsbuttons">
@@ -1170,43 +933,20 @@
 							<label for="btnfriend_addmatch" id="FriendsOpen"></label>
 							<button id="imgup_friend" />
 							<label for="imgup_friend">▲</label>
-							<!-- <img id="imgup_friend"/> -->
 							<button id="imgdown_friend" />
 							<label for="imgdown_friend">▼</label>
-							<!-- <img id="imgdown_friend"/> -->
 						</div>
 					</div>
-					<!-- accordion league_table2-->
-					<!-- <img id="imgup_friend"/> -->
-					<!--<img id="imgdown_friend"/> -->
 				</div>
-				<!-- accordion league_table2-->
-			</div>
-			<!-- accordion league_table1-->
-
-
-
-
-
-
+				</div>	
 			<div id="winbox_addmatch">
-				<!-- accordion league_table1-->
 				<h3>
 					<a href="#" id="MatchesAdd"></a>
 				</h3>
-				<!-- CUT HERE 
-	<div id="winboxheader_addmatch">
-	<img id="imgwinboxopen_addmatch" class="imgwinboxopen"/>
-	<img id="imgwinboxshade_addmatch" class="imgwinboxshade"/>
-	</div>
-	 CUT HERE -->
 				<div id="winboxcontent_addmatch">
-					<!-- accordion league_table2-->
 					<div id="contentbody_addmatch">
-						<!-- accordion league_table2-->
 						<input type="text" id="boxaddmatch"
 							class="text ui-widget-content ui-corner-all" />
-						<!--  <input type="checkbox" id="boxaddyouth" /><label for="boxaddyouth" id="MatchesYouth"></label> -->
 						<select id="sourceSystem">
 							<option id="optionHattrick" value="hattrick">Senior</option>
 							<option id="optionYouth" value="youth">Youth</option>
@@ -1219,31 +959,20 @@
 							<label for="buttonAddTeam" id="MatchesByTeam"></label>
 						</div>
 					</div>
-					<!-- accordion league_table2-->
 				</div>
-				<!-- accordion league_table2-->
 			</div>
-			<!-- accordion league_table1-->
-
-
-
 			<div id="server">
-				<!-- accordion league_table1-->
 				<h3>
 					<a href="#" id="MenuServer"></a>
 				</h3>
 				<div id="serverint">
-					<!-- accordion league_table2-->
 					<span id="ServerStatus"></span> <span id="progresslabel"></span>
 					<div id="clockBox" style="display: none"></div>
 					<progress id="progressmeter"></progress>
 				</div>
-				<!-- accordion league_table2-->
 			</div>
-			<!-- accordion league_table1-->
 		</div>
-		<!-- /sidebar-->
 	</div>
-	<!-- /application troll-->
+	<textarea id="clipboard-store" style="display:block;"></textarea>
 </body>
 </html>
