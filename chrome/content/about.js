@@ -1,37 +1,17 @@
-if (!htlivesight) var htlivesight = {};
-
 document.addEventListener('DOMContentLoaded', function () {
 	htlivesightPrefs.init();
-	// localization part!
-		htlivesight.About.localization();
-	});
-
-htlivesight.About = {contentPath: htlivesight.resourcePath,
-
-startup: function() {},
-  
-localization: function() {
-htlivesight.prefs=htlivesight.Preferences.get();
-htlivesight.url = htlivesight.About.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
-htlivesight.languageXML = htlivesight.loadXml(htlivesight.url);
-htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
-
-//PASTE AFTER HERE
-
-//document.getElementById("about-dialog").attributes.getNamedItem("title").value=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);
-
-document.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
-document.getElementById("creationDate").innerHTML="17 "+htlivesight.Util.Parse("MonthNovember",htlivesight.data[0])+" 2012";
-document.getElementById("createdBy").innerHTML=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
-
-document.getElementById("TabTranslators").innerHTML=htlivesight.Util.Parse("TabTranslators",htlivesight.data[0]);
-document.getElementById("ThanksTo").innerHTML=htlivesight.Util.Parse("TextThanksTo",htlivesight.data[0]);
-
-document.getElementById("TabCredits").innerHTML=htlivesight.Util.Parse("TabCredits",htlivesight.data[0]);
-
-//PASTE BEFORE HERE
-
-}
-
+	htlivesight.Util.selectStyleSheet();
+	htlivesight.About.localization();
+});
+htlivesight.About = {		
+		localization: function() {
+			var doc=document;  
+			var l10nData=htlivesight.Lang.getL10nData(); 
+			doc.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",l10nData[0]);
+			doc.getElementById("creationDate").innerHTML="17 "+htlivesight.Util.Parse("MonthNovember",l10nData[0])+" 2012";
+			doc.getElementById("createdBy").innerHTML=htlivesight.Util.Parse("TextCreatedBy",l10nData[0]);
+			doc.getElementById("TabTranslators").innerHTML=htlivesight.Util.Parse("TabTranslators",l10nData[0]);
+			doc.getElementById("ThanksTo").innerHTML=htlivesight.Util.Parse("TextThanksTo",l10nData[0]);
+			doc.getElementById("TabCredits").innerHTML=htlivesight.Util.Parse("TabCredits",l10nData[0]);
+		}
 };
-

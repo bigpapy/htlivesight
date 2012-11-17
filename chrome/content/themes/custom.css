@@ -347,6 +347,8 @@ font-weight: bold;
 */
 /* bigpapy: fixing select language background */
 #lang-list option{background-color: transparent;}
+#reLiveSpeed option{background-color: transparent;}
+#hattrickServer option{background-color: transparent;}
 
 #listbox_friends{width:100%;}
 
