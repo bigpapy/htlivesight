@@ -446,18 +446,20 @@ htlivesight.LineUp.toClipboard= function(lineup){
   lineuptxt=""+lineup;
   lineup=lineuptxt.split(",");
 //	var lineup=lineuptxt.split(",");
-	var lineupString="[table][tr][td][/td][td][/td]";
+	var lineupString="[table][tr]";
 		for(var i=0;i<lineup.length;i++){
-			if(i==1)lineupString+="[td][/td][td][/td][/tr][tr]";
-			if(i==6)lineupString+="[/tr][tr]";
-			if(i==11)lineupString+="[/tr][tr][td][/td]";
-			lineupString+="[td]"+lineup[i]+"[/td]";
+			if(i==0)lineupString+="[td colspan=5 align=center]"+lineup[i]+"[/td][/tr][tr]";
+			if(i>0 && i<5)lineupString+="[td]"+lineup[i]+"[/td]";
+			if(i==5)lineupString+="[td]"+lineup[i]+"[/td][/tr][tr]";
+			if(i>5 && i<10)lineupString+="[td]"+lineup[i]+"[/td]";
+			if(i==10)lineupString+="[td]"+lineup[i]+"[/td][/tr][tr]";
+			if(i==11)lineupString+="[td colspan=2 align=center]"+lineup[i]+"[/td]";
+			if(i==12)lineupString+="[td]"+lineup[i]+"[/td]";
+			if(i==13)lineupString+="[td colspan=2 align=center]"+lineup[i]+"[/td][/tr][/table]";
 	//		alert("lineup["+i+"]="+lineup[i]);
 			}
 
-		lineupString+="[td][/td][/tr][/table]";
 		htlivesight.copyToClipboard(lineupString);
-//		htlivesight.copyToClipboard(lineupString);
 		alert("copied to clipboard!");
 	}catch(e){alert(e);};
 };

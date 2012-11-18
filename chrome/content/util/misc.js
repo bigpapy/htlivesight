@@ -87,8 +87,10 @@ htlivesight.copyToClipboard = function(string) {
 	if(htlivesight.platform == "Chrome"){
 		var clipboardStore = document.getElementById('clipboard-store');
 		clipboardStore.value = string;
+		clipboardStore.style.display="block";
 		clipboardStore.select();
 		document.execCommand('Copy');
+		clipboardStore.style.display="none";
 	}else if(htlivesight.arch = "Gecko") {
 		var gClipboardHelper = Components
 		.classes["@mozilla.org/widget/clipboardhelper;1"]
