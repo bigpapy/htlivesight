@@ -460,6 +460,7 @@ htlivesight.LineUp.toClipboard= function(lineup,id,minute){
 //	var lineup=lineuptxt.split(",");
 	var lineupString="[table][tr][th colspan=5 align=center]"+teamName+" "+minute+"'[/th][/tr][tr]";
 		for(var i=0;i<lineup.length;i++){
+			if(lineup[i]=="            ") lineup[i]="";
 			if(i==0)lineupString+="[td colspan=5 align=center]"+lineup[i]+"[/td][/tr][tr]";
 			if(i>0 && i<5)lineupString+="[td]"+lineup[i]+"[/td]";
 			if(i==5)lineupString+="[td]"+lineup[i]+"[/td][/tr][tr]";
