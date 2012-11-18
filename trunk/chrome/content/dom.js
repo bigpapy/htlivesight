@@ -191,6 +191,7 @@ htlivesight.DOM = {
 			try{// added by bigpapy to debug from XUL to HTML		  
 				var label, hbox, ul;
 				var mainDiv= document.getElementById(id);
+
 				if (mainDiv == null){
 					mainDiv= document.createElement("div");
 					mainDiv.setAttribute("id", id);
@@ -202,7 +203,7 @@ htlivesight.DOM = {
 					ul = document.createElement("ul");
 					mainDiv.appendChild(ul);
 				}else{
-					ul = mainDiv.getElementsByTagName("ul")[0];	
+					ul = mainDiv.getElementsByTagName("ul")[0];
 				}
 				var li_ = document.createElement("li");
 				ul.appendChild(li_);
@@ -234,9 +235,12 @@ htlivesight.DOM = {
 						label.height="30";
 						if (i==0 && j==0){
 							label_empty = document.createElement("td");
+							
 							var img = new Image();
-							img.setAttribute("src", htlivesight.Image.window.sound.ON);
+							img.setAttribute("src", htlivesight.Image.copy);
+							img.setAttribute("title", "Click to copy lineup in the clipboard");
 							img.addEventListener("click", function(){htlivesight.LineUp.toClipboard(lineup);});
+							
 							label_empty.appendChild(img);
 							hbox.appendChild(label_empty);
 							label_empty1 = document.createElement("td");
