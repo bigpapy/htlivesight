@@ -10,7 +10,7 @@ htlivesight.DOM = {
 		},
 		
 		formationpopup:function(id){
-			matchId=id.replace(/(home|away)_team_formation/,"");
+			var matchId=id.replace(/(home|away)_team_formation/,"");
 			var side=id.substr(0,4);
 			var match = htlivesight.Match.List[matchId];
 			if (side=="home")
@@ -191,7 +191,6 @@ htlivesight.DOM = {
 			try{// added by bigpapy to debug from XUL to HTML		  
 				var label, hbox, ul;
 				var mainDiv= document.getElementById(id);
-
 				if (mainDiv == null){
 					mainDiv= document.createElement("div");
 					mainDiv.setAttribute("id", id);
@@ -235,11 +234,11 @@ htlivesight.DOM = {
 						label.height="30";
 						if (i==0 && j==0){
 							label_empty = document.createElement("td");
-							
+
 							var img = new Image();
 							img.setAttribute("src", htlivesight.Image.copy);
 							img.setAttribute("title", "Click to copy lineup in the clipboard");
-							img.addEventListener("click", function(){htlivesight.LineUp.toClipboard(lineup);});
+							img.addEventListener("click", function(){htlivesight.LineUp.toClipboard(lineup,id, event.minute);});
 							
 							label_empty.appendChild(img);
 							hbox.appendChild(label_empty);

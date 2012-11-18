@@ -440,13 +440,25 @@ htlivesight.LineUp.MissingKeeperEvent= function(event, match){
 	else
 		match.away.lineUp= lineUp;
 };
-htlivesight.LineUp.toClipboard= function(lineup){
+htlivesight.LineUp.toClipboard= function(lineup,id,minute){
 //	alert(lineup);
 	try{
+		// getting team name from id of lineup element (copied from dom.js line 13, make a function of this)
+		var matchId=id.replace(/(home|away)_team_formation/,"");
+		matchId=matchId.replace(/_table/,"");
+		var side=id.substr(0,4);
+		var match = htlivesight.Match.List[matchId];
+		if (side=="home")
+		{
+			teamName=match.home.team.name;
+		}else if (side=="away"){
+			teamName=match.away.team.name;
+		}
+		
   lineuptxt=""+lineup;
   lineup=lineuptxt.split(",");
 //	var lineup=lineuptxt.split(",");
-	var lineupString="[table][tr]";
+	var lineupString="[table][tr][th colspan=5 align=center]"+teamName+" "+minute+"'[/th][/tr][tr]";
 		for(var i=0;i<lineup.length;i++){
 			if(i==0)lineupString+="[td colspan=5 align=center]"+lineup[i]+"[/td][/tr][tr]";
 			if(i>0 && i<5)lineupString+="[td]"+lineup[i]+"[/td]";
