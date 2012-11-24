@@ -34,10 +34,24 @@ htlivesight.LineUp.ParseLineUpFromXml= function (xml){
 		lineUp[index].behaviourString=" ";
 	}
 	lineUp[0].update=1;
-	for (var i=0; i<11; i++) // analyzing 11 players of the lineup in xml
+	for (var i=0; i<13; i++) // analyzing 11 players of the lineup in xml
 	{
 		try{
 			var index= parseInt(xml.getElementsByTagName("RoleID")[i].textContent)-100; // get position
+			if (index == -82){//100-17
+				lineUp[0].captainId=xml.getElementsByTagName("PlayerID")[i].textContent;
+				for(var j=0;j<i; j++){
+					if (lineUp[j].id==lineUp[0].captainId){ lineUp[j].name+=" ♛"; break;}
+				}
+				continue;
+			}
+			if (index == -83){//100-18
+				lineUp[0].setPiecesId=xml.getElementsByTagName("PlayerID")[i].textContent;
+				for(var j=0;j<i; j++){
+					if (lineUp[j].id==lineUp[0].setPiecesId){ lineUp[j].name+=" ●"; break;}
+				}
+				continue;
+			}
 			lineUp[index].name= xml.getElementsByTagName("PlayerName")[i].textContent; // get name
 			lineUp[index].behaviourInt= xml.getElementsByTagName("Behaviour")[i].textContent; // get individual order
 			lineUp[index].id= xml.getElementsByTagName("PlayerID")[i].textContent; // get  playerId.
