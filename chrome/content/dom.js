@@ -556,6 +556,7 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 				var line = 0;
 				var numplayer = 1;
 				for(var player in match.home.scorers) {
+					if ((match.home.scorers[player].name=="")||(typeof match.home.scorers[player].mins=="undefined")){continue; } // to filter empty name or undefined minutes
 					scorerText[line] += match.home.scorers[player].name + match.home.scorers[player].mins + ") ";
 					if (numplayer++ == 3)
 						line++;
@@ -575,6 +576,7 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 				var line = 0;
 				var numplayer = 1;
 				for(var player in match.away.scorers) {
+					if ((match.away.scorers[player].name=="")||(typeof match.away.scorers[player].mins=="undefined")){continue; } // to filter empty name or undefined minutes
 					scorerText[line] += match.away.scorers[player].name + match.away.scorers[player].mins + ") ";
 					if (numplayer++ == 3)
 						line++;

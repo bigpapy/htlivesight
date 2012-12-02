@@ -22,7 +22,8 @@ var htlivesight = {
 				winW2 = window.innerWidth;
 				winH2 = window.innerHeight;
 			}
-			document.getElementById("live_box").setAttribute("style", "width:" + (winW2-320) + "px" );
+			document.getElementById("live_box").setAttribute("style", "width:" + (winW2-370) + "px" );
+			document.getElementById("sidebar").setAttribute("style", "width:" + (320) + "px" );
 		},
 
 		startup: function() {
