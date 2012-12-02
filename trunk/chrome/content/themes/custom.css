@@ -310,6 +310,7 @@ padding: 2px 0;
 }
 img.match_button{}
 img.weather_image{
+padding: 0 6px;
 vertical-align: middle;
 }
 span.arena_name{}
