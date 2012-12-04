@@ -36,6 +36,7 @@ htlivesight.LineUp.ParseLineUpFromXml= function (xml){
 	lineUp[0].update=1;
 
 	try{
+		if (xml.getElementsByTagName("RoleID").length==0) throw "empty"; 
 		for (var i=0, len=xml.getElementsByTagName("RoleID").length; i<len; i++) // analyzing 11 players of the lineup in xml
 		{
 			var index= parseInt(xml.getElementsByTagName("RoleID")[i].textContent)-100; // get position
@@ -59,9 +60,9 @@ htlivesight.LineUp.ParseLineUpFromXml= function (xml){
 
 			lineUp[index].behaviourInt= xml.getElementsByTagName("Behaviour")[i].textContent; // get individual order
 			lineUp[index].id= xml.getElementsByTagName("PlayerID")[i].textContent; // get  playerId.
-			};
-	}catch(e){lineUp[0].update=0;alert("ParseLineUpFromXml"+e);}
+		};
 
+	}catch(e){lineUp[0].update=0;console.log("ParseLineUpFromXml: "+e);}
 	return lineUp;
 };
 htlivesight.LineUp.BehaviourFromIntToString= function (player, index){
