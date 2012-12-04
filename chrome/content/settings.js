@@ -27,7 +27,7 @@ htlivesight.Settings = {
 			prefs.general.theme=2;
 			break;
 			}
-			htlivesight.Settings.click.switch_style(prefs.general.theme);  // enable only choosed css.
+			setTimeout(function(){htlivesight.Settings.click.switch_style(prefs.general.theme);}, 100); // enable only choosed css.
 			if (prefs.general.openInTab){document.getElementById("openin_tab").click();}
 			else{document.getElementById("openin_window").click();}
 			document.getElementById("hattrickServer").value = prefs.general.hattrickServer;

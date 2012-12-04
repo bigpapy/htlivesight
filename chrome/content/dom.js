@@ -887,6 +887,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		link.setAttribute("title", htlivesight.Util.Parse("SchemaTip", htlivesight.data[0]));
 		link.addEventListener("click",function(){htlivesight.DOM.formationpopup(this.id);});
 		$( "#"+"home_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
+		link.style.textDecoration = 'underline';
 		label = document.createElement("td");
 		hometr.appendChild(label);
 		link = document.createElement("a");
@@ -1053,6 +1054,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		link.setAttribute( "title", htlivesight.Util.Parse( "SchemaTip", htlivesight.data[0] ) );
 		link.addEventListener('click',function(){htlivesight.DOM.formationpopup(this.id);});
 		$( "#"+"away_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
+		link.style.textDecoration = 'underline';
 		label = document.createElement("td");
 		awaytr.appendChild(label);
 		label.setAttribute("id", "away_team_tactic_" + match.id + "_" + match.sourceSystem);
