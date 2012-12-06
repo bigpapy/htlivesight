@@ -237,7 +237,8 @@ htlivesight.DOM = {
 
 							var img = new Image();
 							img.setAttribute("src", htlivesight.Image.copy);
-							img.setAttribute("title", "Click to copy lineup in the clipboard");
+							img.setAttribute("id", "copy_to_clipboard_icon");
+							img.setAttribute("title", htlivesight.Util.Parse("TooltipCopyLineUp",htlivesight.data[0]));
 							img.addEventListener("click", function(){htlivesight.LineUp.toClipboard(lineup, id, event.minute);});
 							
 							label_empty.appendChild(img);
