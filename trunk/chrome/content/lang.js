@@ -37,6 +37,11 @@ htlivesight.Lang = {
 			doc.getElementById("TabCredits").innerHTML=htlivesight.Util.Parse("TabCredits",htlivesight.data[0]);
 //			SETTINGS
 			doc.getElementById("ui-dialog-title-options-dialog").innerHTML=htlivesight.Util.Parse("WindowTitle",htlivesight.data[0]);
+			
+			document.getElementById("ThemesSelector").innerHTML=htlivesight.Util.Parse("Themes",htlivesight.data[0]);
+			document.getElementById("label_dark_theme").innerHTML=htlivesight.Util.Parse("Dark",htlivesight.data[0]);
+			document.getElementById("label_light_theme").innerHTML=htlivesight.Util.Parse("Light",htlivesight.data[0]);
+			
 			doc.getElementById("TabGeneral").innerHTML=htlivesight.Util.Parse("TabGeneral",htlivesight.data[0]);
 			doc.getElementById("GeneralOpen").innerHTML=htlivesight.Util.Parse("GeneralOpen",htlivesight.data[0]);
 			doc.getElementById("label_openin_tab").innerHTML=htlivesight.Util.Parse("GeneralNewTab",htlivesight.data[0]);
@@ -57,6 +62,9 @@ htlivesight.Lang = {
 			doc.getElementById("label_chkGetFriendsWithin").innerHTML=htlivesight.Util.Parse("MatchesPlayed",htlivesight.data[0]);
 			doc.getElementById("MatchesHours2").innerHTML=htlivesight.Util.Parse("MatchesHours",htlivesight.data[0]);
 			doc.getElementById("MatchesHeader").innerHTML=htlivesight.Util.Parse("MatchesHeader",htlivesight.data[0]);
+			
+			doc.getElementById("label_chkDoNotGetFriendsHointegratedMatches").innerHTML=htlivesight.Util.Parse("NoTournament",htlivesight.data[0]);
+			
 			doc.getElementById("label_chkHdrScorers").innerHTML=htlivesight.Util.Parse("ScorersList",htlivesight.data[0]);
 			doc.getElementById("label_chkHdrBooked").innerHTML=htlivesight.Util.Parse("BookedList",htlivesight.data[0]);
 			doc.getElementById("label_chkHdrSentOff").innerHTML=htlivesight.Util.Parse("SentOffList",htlivesight.data[0]);

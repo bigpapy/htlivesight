@@ -195,6 +195,11 @@ htlivesight.Settings = {
 			document.getElementById("TabNotifications").innerHTML=htlivesight.Util.Parse("TabNotifications",data[0]);
 			document.getElementById("TabOther").innerHTML=htlivesight.Util.Parse("TabOther",data[0]);
 			document.getElementById("TabCustom").innerHTML=htlivesight.Util.Parse("TabCustom",data[0]);
+			
+			document.getElementById("ThemesSelector").innerHTML=htlivesight.Util.Parse("Themes",data[0]);
+			document.getElementById("label_dark_theme").innerHTML=htlivesight.Util.Parse("Dark",data[0]);
+			document.getElementById("label_light_theme").innerHTML=htlivesight.Util.Parse("Light",data[0]);
+			
 			document.getElementById("GeneralOpen").innerHTML=htlivesight.Util.Parse("GeneralOpen",data[0]);
 			document.getElementById("label_openin_tab").innerHTML=htlivesight.Util.Parse("GeneralNewTab",data[0]);
 			document.getElementById("label_openin_window").innerHTML=htlivesight.Util.Parse("GeneralNewWindow",data[0]);
@@ -211,6 +216,9 @@ htlivesight.Settings = {
 			document.getElementById("label_chkGetFriends").innerHTML=htlivesight.Util.Parse("MatchesGetFriends",data[0]);
 			document.getElementById("label_chkGetFriendsWithin").innerHTML=htlivesight.Util.Parse("MatchesPlayed",data[0]);
 			document.getElementById("MatchesHours2").innerHTML=htlivesight.Util.Parse("MatchesHours",data[0]);
+			
+			document.getElementById("label_chkDoNotGetFriendsHointegratedMatches").innerHTML=htlivesight.Util.Parse("NoTournament",data[0]);
+			
 			document.getElementById("MatchesHeader").innerHTML=htlivesight.Util.Parse("MatchesHeader",data[0]);
 			document.getElementById("label_chkHdrScorers").innerHTML=htlivesight.Util.Parse("ScorersList",data[0]);
 			document.getElementById("label_chkHdrBooked").innerHTML=htlivesight.Util.Parse("BookedList",data[0]);

@@ -334,4 +334,13 @@
 <chatLink>Apri la chat</chatLink>
 <hidesidebar>Nascondi barra laterale</hidesidebar>
 <addFriend>Fare clic per aggiungere questa squadra agli amici</addFriend>
+<TooltipCopyLineUp>Clicca per copiare la formazione negli appunti</TooltipCopyLineUp>
+<Dark>Scuro</Dark>
+<Light>Chiaro</Light>
+<Themes>Temi</Themes>
+<NoTournament>Non caricare le partite singole e i tornei degli amici</NoTournament>
+<DefHatStats>HatStats Difesa</DefHatStats>
+<MidHatStats>HatStats Centrocampo</MidHatStats>
+<AttHatStats>HatStats Attacco</AttHatStats>
+<TotHatStats>HatStats Totali</TotHatStats>
 </Htlivesight>
