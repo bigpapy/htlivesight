@@ -26,19 +26,19 @@
 <LeaguePoints>PTS</LeaguePoints>
 <MatchesList>Lista de partidos</MatchesList>
 <MatchesAdd>Añadir partido</MatchesAdd>
-<MatchesByMatch>Según id partido</MatchesByMatch>
-<MatchesByTeam>Según id equipo</MatchesByTeam>
+<MatchesByMatch>Según ID partido</MatchesByMatch>
+<MatchesByTeam>Según ID equipo</MatchesByTeam>
 <MatchesYouth>¿Juveniles?</MatchesYouth>
 <FriendsTitle>Amigos</FriendsTitle>
 <FriendsRemove>Eliminar</FriendsRemove>
 <FriendsOpen>Abrir</FriendsOpen>
 <Introduction>En un momento serás redirigido a la página CHPP para obtener el código de autorización. Si no es así, por favor deshabilita temporalmente el bloqueo de ventanas emergentes o añade a HTlivesight en la lista de excepciones.</Introduction>
 <Insert>Inserta el código de autorización aquí:</Insert>
-<Ending>HTlivesight ha sido autorizado. Da clic en OK para reiniciar la aplicación.</Ending>
+<Ending>HTlivesight ha sido autorizado. Haz clic en OK para reiniciar la aplicación.</Ending>
 <Error>Error</Error>
 <ServerON>Conectado</ServerON>
 <ServerOFF>Desconectado</ServerOFF>
-<ResetToken>La autorización ha sido revocada. Reinicia HTLS o espera la próxima actualización (less than 1 minute).</ResetToken>
+<ResetToken>La autorización ha sido revocada. Reinicia HTLS o espera la próxima actualización (menos de 1 minuto).</ResetToken>
 <NoHTServer>No has seleccionado en que servidor de Hattrick estas conectado con tu navegador. Da clic derecho en el fondo - Opciones - General - Escribe el número del servidor.</NoHTServer>
 <MatchesMaximum>¡No se pueden ver más de 20 partidos!</MatchesMaximum>
 <LeagueRound>Jornada</LeagueRound>
@@ -80,48 +80,48 @@
 <TooltipFriendMoveUp>Mover amigo arriba</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Mover amigo abajo</TooltipFriendMoveDown>
 <MenuAddFriend>Amigo</MenuAddFriend>
-<EventGoal>GOL!!</EventGoal>
+<EventGoal>GOL</EventGoal>
 <EventPenaltyGoal>Penalti: GOL</EventPenaltyGoal>
-<EventPenaltyMiss>Penalti: FALLADO!</EventPenaltyMiss>
+<EventPenaltyMiss>Penalti: FALLADO</EventPenaltyMiss>
 <EventInjury>Lesión</EventInjury>
 <EventRed>Tarjeta roja</EventRed>
-<EventSideLeft>izquierda</EventSideLeft>
-<EventSideRight>derecha</EventSideRight>
-<EventSideCenter>centro</EventSideCenter>
+<EventSideLeft>Izquierda</EventSideLeft>
+<EventSideRight>Derecha</EventSideRight>
+<EventSideCenter>Centro</EventSideCenter>
 <EventSideFreeKick>Falta directa</EventSideFreeKick>
-<EventSidePenalty>penalti</EventSidePenalty>
+<EventSidePenalty>Penalti</EventSidePenalty>
 <EventSpecialUnpredictable>SE imprevisible</EventSpecialUnpredictable>
 <EventSpecialLongShot>SE tiro lejano</EventSpecialLongShot>
 <EventSpecialQuick>SE rápido</EventSpecialQuick>
-<EventSpecialLowStamina>baja condición</EventSpecialLowStamina>
+<EventSpecialLowStamina>Baja condición</EventSpecialLowStamina>
 <EventSpecialSetPieces>lanzador</EventSpecialSetPieces>
-<EventSpecialHead>cabeceador</EventSpecialHead>
-<EventSpecialExperience>experiencia</EventSpecialExperience>
-<EventSpecialLowExperience>baja experiencia</EventSpecialLowExperience>
-<EventSpecialWinger>+ lateral</EventSpecialWinger>
-<EventSpecialTechnical>técnico</EventSpecialTechnical>
-<EventSpecialCounterAttack>contraataque</EventSpecialCounterAttack>
-<EventSpecialCornerKick>lanzamiento de corner</EventSpecialCornerKick>
+<EventSpecialHead>Cabeceador</EventSpecialHead>
+<EventSpecialExperience>Experiencia</EventSpecialExperience>
+<EventSpecialLowExperience>Baja experiencia</EventSpecialLowExperience>
+<EventSpecialWinger>+ Lateral</EventSpecialWinger>
+<EventSpecialTechnical>Técnico contra Cabeceador</EventSpecialTechnical>
+<EventSpecialCounterAttack>Contraataque</EventSpecialCounterAttack>
+<EventSpecialCornerKick>Lanzamiento de corner</EventSpecialCornerKick>
 <EventSpecialIndirect>Falta indirecta</EventSpecialIndirect>
-<EventSpecialUnpredictableLongPass>+ imprevisible: pase largo</EventSpecialUnpredictableLongPass>
-<EventSpecialUnpredictableScoresOnHisOwn>+ imprevisible: tiro</EventSpecialUnpredictableScoresOnHisOwn>
-<EventSpecialUnpredictableSpecialAction>+ imprevisible: acción especial</EventSpecialUnpredictableSpecialAction>
-<EventSpecialUnpredictableMistake>- imprevisible: error</EventSpecialUnpredictableMistake>
-<EventSpecialUnpredictableOwnGoal>- imprevisible: autogol</EventSpecialUnpredictableOwnGoal>
-<EventSpecialQuickScoresAfterRush>+ rápido: carrera y gol</EventSpecialQuickScoresAfterRush>
-<EventSpecialQuickAssist>+ rápido: carrera y asistencia</EventSpecialQuickAssist>
-<Pullback>pullback</Pullback>
-<Underestimation>exceso de confianza</Underestimation>
-<UnderestimationRemove>exceso de confianza eliminado</UnderestimationRemove>
-<UnderestimationReduceDouble>exceso de confianza reducido 2/3</UnderestimationReduceDouble>
-<UnderestimationReduceOnce>exceso de confianza reducido 1/3</UnderestimationReduceOnce>
-<OrganizationBreaks>confusión</OrganizationBreaks>
-<Reorganize>reorganización</Reorganize>
-<NervesImportantThrillingGame>nerviosismo en juego importante</NervesImportantThrillingGame>
-<Bruised>lastimado</Bruised>
-<Injuried>lesionado</Injuried>
-<ModeratelyInjuried>lesión leve</ModeratelyInjuried>
-<BadlyInjuried>lesión grave</BadlyInjuried>
+<EventSpecialUnpredictableLongPass>+ Imprevisible: pase largo</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ Imprevisible: tiro</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ Imprevisible: acción especial</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- Imprevisible: error</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- Imprevisible: autogol</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ Rápido: carrera y gol</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ Rápido: carrera y asistencia</EventSpecialQuickAssist>
+<Pullback>Pullback</Pullback>
+<Underestimation>Exceso de confianza</Underestimation>
+<UnderestimationRemove>Exceso de confianza eliminado</UnderestimationRemove>
+<UnderestimationReduceDouble>Exceso de confianza reducido 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>Exceso de confianza reducido 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>Confusión</OrganizationBreaks>
+<Reorganize>Reorganización</Reorganize>
+<NervesImportantThrillingGame>Nervios en partido importante</NervesImportantThrillingGame>
+<Bruised>Lastimado</Bruised>
+<Injuried>Lesionado</Injuried>
+<ModeratelyInjuried>Lesión leve</ModeratelyInjuried>
+<BadlyInjuried>Lesión grave</BadlyInjuried>
 <ByHimself>por sí solo</ByHimself>
 <ByFoul>por una falta</ByFoul>
 <ExperiencedForward>delantero experimentado</ExperiencedForward>
@@ -135,7 +135,7 @@
 <MeteoSpecialTechnicalSun>+ técnico (+anotación +jugadas)</MeteoSpecialTechnicalSun>
 <MeteoSpecialPowerfulSun>- potente (-anotación -condición)</MeteoSpecialPowerfulSun>
 <MeteoSpecialQuickSun>- rápido (-defensa)</MeteoSpecialQuickSun>
-<MeteoSpecialQuickRain>- rápido (-defensa -anotación)</MeteoSpecialQuickRain>
+<MeteoSpecialQuickRain>-Rápido (-Defensa -Anotación)</MeteoSpecialQuickRain>
 <YellowNastyPlay>juego sucio</YellowNastyPlay>
 <YellowCheating>engañando</YellowCheating>
 <ProgressUpdate>Próxima actualización:</ProgressUpdate>
@@ -224,10 +224,10 @@
 <LanguageNote>Nota: Es necesario reiniciar HTLiveSight para que los cambios tengan efecto.</LanguageNote>
 <ButtonCancel>Cancelar</ButtonCancel>
 <ButtonOk>Aceptar</ButtonOk>
-<WindowAboutTitle>Acerca de  HTLiveSight</WindowAboutTitle>
+<WindowAboutTitle>Acerca de HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
 <TabTranslators>Traductores</TabTranslators>
-<TabCredits>Creditos</TabCredits>
+<TabCredits>Créditos</TabCredits>
 <MonthJanuary>Ene</MonthJanuary>
 <MonthFebruary>Feb</MonthFebruary>
 <MonthMarch>Mar</MonthMarch>
@@ -334,4 +334,13 @@
 <chatLink>Chat abierto</chatLink>
 <hidesidebar>Ocultar barra lateral</hidesidebar>
 <addFriend>Haga clic para agregar este equipo a Amigos</addFriend>
+<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
+<Dark>Dark</Dark>
+<Light>Light</Light>
+<Themes>Themes</Themes>
+<NoTournament>Don't load single and tournament matches for friends</NoTournament>
+<DefHatStats>HatStats Defending</DefHatStats>
+<MidHatStats>HatStats Midfield</MidHatStats>
+<AttHatStats>HatStats Attacking</AttHatStats>
+<TotHatStats>Total HatStats</TotHatStats>
 </Htlivesight>

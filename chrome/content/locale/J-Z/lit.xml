@@ -56,7 +56,7 @@
 <TimeHalfTime>Pertrauka</TimeHalfTime>
 <TimeSecondHalf>Antrasis kėlinys</TimeSecondHalf>
 <TimeExtraTime>pratęsimas</TimeExtraTime>
-<TimePenalties>baudiniai</TimePenalties>
+<TimePenalties>Baudiniai</TimePenalties>
 <TimeFinish>Pasibaigė</TimeFinish>
 <TimeStartsIn>prasidės po</TimeStartsIn>
 <TimeDays>dienų</TimeDays>
@@ -282,8 +282,8 @@
 <TeamAttitude>Komandos nusiteikimas</TeamAttitude>
 <TacticType>Taktika</TacticType>
 <TacticSkill>Taktikos įgūdis</TacticSkill>
-<BallPosses>Kamuolio valdymas</BallPosses>
-<SpecialEvent>Ypatingasis įvykis</SpecialEvent>
+<BallPosses>Kamuolio valdymas:</BallPosses>
+<SpecialEvent>Ypatingieji įvykiai</SpecialEvent>
 <Normal>Normaliai</Normal>
 <PIC>Žaiskit atsipalaidavę</PIC>
 <MOTS>Lemiamos rungtynės</MOTS>
@@ -292,7 +292,7 @@
 <FriendHome>Namų komandos (savo ir draugų) spalva: #</FriendHome>
 <FriendAway>Svečių komandos (savo ir draugų) spalva: #</FriendAway>
 <FoeHome>Namų komandos (kitos) spalva: #</FoeHome>
-<FoeAway>Į sandėlį užsienio spalva: #</FoeAway>
+<FoeAway>Svečių komandos (kitos) spalva: #</FoeAway>
 <Neutral>Informacinių įvykių spalva: #</Neutral>
 <EventColorTitle>Įvykių teksto spalva</EventColorTitle>
 <EventTextColor>Įvykio aprašymo spalva: #</EventTextColor>
@@ -320,7 +320,7 @@
 <Error500>Klaida Nr. 500: vidinė Hattrick serverio klaida</Error500>
 <Error503>Klaida Nr. 503: CHPP sąsaja nepasiekiama (išjungta arba laikina perkrova)</Error503>
 <PathSoundsNote1>Prirašykite „file:///“ prieš garso failo (ogg formatu) adreso Jūsų kompiuteryje</PathSoundsNote1>
-<PathSoundsNote2>Pavyzdžiui: file:///c:\kelias\iki\garso.ogg</PathSoundsNote2>
+<PathSoundsNote2>Pavyzdžiui: file:///c:\\kelias\\iki\\garso.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Pirmo kėlinio pabaigos švilpukas</PathSoundsWhistle2>
 <PathSoundsWhistle3>Rungtynių pabaigos švilpukas</PathSoundsWhistle3>
 <EventYellow2>Antra geltona kortelė</EventYellow2>
@@ -334,4 +334,13 @@
 <chatLink>Atidaryti pokalbių kambarį</chatLink>
 <hidesidebar>Paslėpti šoninę juostą</hidesidebar>
 <addFriend>Spustelėję pridėsite į draugų sąrašą</addFriend>
+<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
+<Dark>Dark</Dark>
+<Light>Light</Light>
+<Themes>Themes</Themes>
+<NoTournament>Don't load single and tournament matches for friends</NoTournament>
+<DefHatStats>HatStats Defending</DefHatStats>
+<MidHatStats>HatStats Midfield</MidHatStats>
+<AttHatStats>HatStats Attacking</AttHatStats>
+<TotHatStats>Total HatStats</TotHatStats>
 </Htlivesight>

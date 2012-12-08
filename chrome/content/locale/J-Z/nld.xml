@@ -314,24 +314,33 @@
 <Roof>Overdekte zitplaatsen</Roof>
 <VIP>Zitplaatsen in de VIP-boxen</VIP>
 <CrowdinHelp>Help met vertalen! Met CrowdIn is het heel erg makkelijk en erg grappig! Klik hier!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
+<Error401>Fout 401: ongeoorloofde toegang. Je moet je autorisatie opnieuw doen. Klik OK om door te gaan.</Error401>
+<Error404>Fout 404: aangevraagde bron kan niet worden gevonden. Als deze fout zich nogmaals voordoet, controleer dan of de CHPP service wel actief is.</Error404>
+<Error0>Fout 0: geen internetverbinding.</Error0>
+<Error500>Fout 500: interne (Hattrick) server fout.</Error500>
+<Error503>Fout 503: CHPP service niet beschikbaar (tijdelijke overbelasting of gepland onderhoud).</Error503>
+<PathSoundsNote1>Voeg 'file:///' voor het pad van het .ogg-bestandsformaat in.</PathSoundsNote1>
+<PathSoundsNote2>Voorbeeld: 'file:///c:\\path\\to\\the\\sound.ogg'</PathSoundsNote2>
+<PathSoundsWhistle2>Fluitsignaal voor het einde van de 1e helft.</PathSoundsWhistle2>
+<PathSoundsWhistle3>Fluitsignaal voor het eind van de wedstrijd.</PathSoundsWhistle3>
+<EventYellow2>Tweede gele kaart</EventYellow2>
+<LoggedIn>Ingelogd als</LoggedIn>
+<latestNews>Bekijk het laatste nieuws op</latestNews>
 <HTLSThread>Hattrick Forum</HTLSThread>
 <ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
+<GooglePlusPage>Google+ pagina</GooglePlusPage>
+<TwitterPage>Twitter</TwitterPage>
+<FacebookPage>Facebook</FacebookPage>
 <chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
+<hidesidebar>Verberg zijbalk</hidesidebar>
+<addFriend>Klik om dit team als vriend toe te voegen</addFriend>
+<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
+<Dark>Dark</Dark>
+<Light>Light</Light>
+<Themes>Themes</Themes>
+<NoTournament>Don't load single and tournament matches for friends</NoTournament>
+<DefHatStats>HatStats Defending</DefHatStats>
+<MidHatStats>HatStats Midfield</MidHatStats>
+<AttHatStats>HatStats Attacking</AttHatStats>
+<TotHatStats>Total HatStats</TotHatStats>
 </Htlivesight>

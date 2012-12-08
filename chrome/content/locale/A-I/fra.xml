@@ -302,7 +302,7 @@
 <StatisticTip>Cliquez ici pour afficher des statistiques à la fin du match</StatisticTip>
 <Youth>Jeunes</Youth>
 <Senior>Senior</Senior>
-<Tournament>Tournoi</Tournament>
+<Tournament>Tournoi/Duel</Tournament>
 <FreeKicks>Coups francs</FreeKicks>
 <RedCards>Cartons rouges</RedCards>
 <YellowCards>Cartons jaunes</YellowCards>
@@ -320,7 +320,7 @@
 <Error500>Erreur 500 : erreur de serveur interne (venant de Hattrick)</Error500>
 <Error503>Erreur 503 : service CHPP indisponible (surcharge temporaire ou maintenance)</Error503>
 <PathSoundsNote1>Insérer file:/// avant le chemin d'accès du son au format .ogg ou .wav</PathSoundsNote1>
-<PathSoundsNote2>Exemple : file:///c:\chemin\du\son.ogg</PathSoundsNote2>
+<PathSoundsNote2>Exemple : file:///c:\\chemin\\du\\son.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Fin de 1ère mi-temps</PathSoundsWhistle2>
 <PathSoundsWhistle3>Fin du match</PathSoundsWhistle3>
 <EventYellow2>Deuxième carton jaune</EventYellow2>
@@ -334,4 +334,13 @@
 <chatLink>Ouvrir le chat</chatLink>
 <hidesidebar>Masquer la barre latérale</hidesidebar>
 <addFriend>Cliquez ici pour ajouter cette équipe à vos amis</addFriend>
+<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
+<Dark>Dark</Dark>
+<Light>Light</Light>
+<Themes>Themes</Themes>
+<NoTournament>Don't load single and tournament matches for friends</NoTournament>
+<DefHatStats>HatStats Defending</DefHatStats>
+<MidHatStats>HatStats Midfield</MidHatStats>
+<AttHatStats>HatStats Attacking</AttHatStats>
+<TotHatStats>Total HatStats</TotHatStats>
 </Htlivesight>

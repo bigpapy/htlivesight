@@ -320,7 +320,7 @@
 <Error500>Viga 500: (Hattrick) serveri süsteemi viga.</Error500>
 <Error503>Viga 503: CHPP teenus ei ole kättesaadav (ajutine tõrge või hooldustööd).</Error503>
 <PathSoundsNote1>Sisesta .ogg helifaili tee algusesse file:///</PathSoundsNote1>
-<PathSoundsNote2>Näiteks: file:///c:\tee\failini\failinimi.ogg</PathSoundsNote2>
+<PathSoundsNote2>Näiteks: file:///c:\\tee\\failini\\failinimi.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Esimese poolaja lõpuvile</PathSoundsWhistle2>
 <PathSoundsWhistle3>Mängu lõpuvile</PathSoundsWhistle3>
 <EventYellow2>Teine kollane kaart</EventYellow2>
@@ -334,4 +334,13 @@
 <chatLink>Vestluse avamine</chatLink>
 <hidesidebar>Peida külgriba</hidesidebar>
 <addFriend>Kliki, et meeskond sõbraks lisada</addFriend>
+<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
+<Dark>Dark</Dark>
+<Light>Light</Light>
+<Themes>Themes</Themes>
+<NoTournament>Don't load single and tournament matches for friends</NoTournament>
+<DefHatStats>HatStats Defending</DefHatStats>
+<MidHatStats>HatStats Midfield</MidHatStats>
+<AttHatStats>HatStats Attacking</AttHatStats>
+<TotHatStats>Total HatStats</TotHatStats>
 </Htlivesight>

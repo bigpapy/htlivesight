@@ -320,7 +320,7 @@
 <Error500>Eroare 500: Eroare de server (Hattrick) internă</Error500>
 <Error503>Eroare 503: Serviciul CHPP indisponibil (supraîncărcare temporară sau mentenanță)</Error503>
 <PathSoundsNote1>Inserează file:/// înainte de calea către fișierul de sunet .ogg</PathSoundsNote1>
-<PathSoundsNote2>Exemplu: file:///c:\calea\către\sunet.ogg</PathSoundsNote2>
+<PathSoundsNote2>Exemplu: file:///c:\\calea\\către\\sunet.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Fluier de sfârșit al primei reprize</PathSoundsWhistle2>
 <PathSoundsWhistle3>Fluier de final</PathSoundsWhistle3>
 <EventYellow2>Al doilea cartonaș galben</EventYellow2>
@@ -334,4 +334,13 @@
 <chatLink>Open chat</chatLink>
 <hidesidebar>Hide Sidebar</hidesidebar>
 <addFriend>Click to add this team to friends</addFriend>
+<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
+<Dark>Dark</Dark>
+<Light>Light</Light>
+<Themes>Themes</Themes>
+<NoTournament>Don't load single and tournament matches for friends</NoTournament>
+<DefHatStats>HatStats Defending</DefHatStats>
+<MidHatStats>HatStats Midfield</MidHatStats>
+<AttHatStats>HatStats Attacking</AttHatStats>
+<TotHatStats>Total HatStats</TotHatStats>
 </Htlivesight>

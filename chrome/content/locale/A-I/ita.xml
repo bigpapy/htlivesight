@@ -320,7 +320,7 @@
 <Error500>Errore 500: errore interno del server (di Hattrick)</Error500>
 <Error503>Errore 503: servizio CHPP non disponibile (sovraccarico temporaneo o manutenzione)</Error503>
 <PathSoundsNote1>Inserire file:/// prima del percorso del suono in formato. ogg o .wav</PathSoundsNote1>
-<PathSoundsNote2>Esempio: file:///c:path o hesound.ogg</PathSoundsNote2>
+<PathSoundsNote2>Esempio: file:///c:path/of/thesound.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Fischio di fine primo tempo</PathSoundsWhistle2>
 <PathSoundsWhistle3>Fischio di fine partita</PathSoundsWhistle3>
 <EventYellow2>Secondo cartellino giallo</EventYellow2>
@@ -334,13 +334,13 @@
 <chatLink>Apri la chat</chatLink>
 <hidesidebar>Nascondi barra laterale</hidesidebar>
 <addFriend>Fare clic per aggiungere questa squadra agli amici</addFriend>
-<TooltipCopyLineUp>Clicca per copiare la formazione negli appunti</TooltipCopyLineUp>
-<Dark>Scuro</Dark>
-<Light>Chiaro</Light>
-<Themes>Temi</Themes>
-<NoTournament>Non caricare le partite singole e i tornei degli amici</NoTournament>
-<DefHatStats>HatStats Difesa</DefHatStats>
-<MidHatStats>HatStats Centrocampo</MidHatStats>
-<AttHatStats>HatStats Attacco</AttHatStats>
-<TotHatStats>HatStats Totali</TotHatStats>
+<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
+<Dark>Dark</Dark>
+<Light>Light</Light>
+<Themes>Themes</Themes>
+<NoTournament>Don't load single and tournament matches for friends</NoTournament>
+<DefHatStats>HatStats Defending</DefHatStats>
+<MidHatStats>HatStats Midfield</MidHatStats>
+<AttHatStats>HatStats Attacking</AttHatStats>
+<TotHatStats>Total HatStats</TotHatStats>
 </Htlivesight>
