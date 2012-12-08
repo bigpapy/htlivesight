@@ -9,7 +9,7 @@
 <MenuDisconnected>Forbindelsen afbrudt</MenuDisconnected>
 <MenuAbout>Om HTLiveSight</MenuAbout>
 <LoginLabel>Log ind</LoginLabel>
-<LoginTeamId>Indsæt dit TeamId</LoginTeamId>
+<LoginTeamId>Indsæt Hold-ID</LoginTeamId>
 <LoginUsername>Brugernavn</LoginUsername>
 <LoginRememberMe>Husk mig</LoginRememberMe>
 <LoginButton>Log ind</LoginButton>
@@ -33,7 +33,7 @@
 <FriendsRemove>Fjern</FriendsRemove>
 <FriendsOpen>Åben</FriendsOpen>
 <Introduction>Du bliver videresendt til en CHPP side for at få din authorization code. Hvis dette ikke sker, så prøv midlertidigt at deaktivere popup blockere eller tilføj HTlivesight til undtagelses listen.</Introduction>
-<Insert>Indsæt din authorization code her:</Insert>
+<Insert>Indsæt din autorisation kode her:</Insert>
 <Ending>Nu er HTlivesight autoriseret. Klik OK for at genstarte programmet.</Ending>
 <Error>Fejl</Error>
 <ServerON>Tilsluttet</ServerON>
@@ -302,15 +302,15 @@
 <StatisticTip>Klik for at vise Statistiker når kampen er færdigspillet</StatisticTip>
 <Youth>Ungdom</Youth>
 <Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
+<Tournament>Turnering</Tournament>
+<FreeKicks>Frispark</FreeKicks>
+<RedCards>Røde kort</RedCards>
+<YellowCards>Gule kort</YellowCards>
+<Injuries>Skader</Injuries>
+<Goals>Mål</Goals>
 <Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
+<Terraces>Ståpladser</Terraces>
+<Basic>Siddepladser</Basic>
 <Roof>Overdækkede siddepladser</Roof>
 <VIP>Pladser i VIP-bokse</VIP>
 <CrowdinHelp>Hjælp med at oversætte! Med Crowdin er det super nemt og meget sjovt! Klik her!</CrowdinHelp>
@@ -320,18 +320,27 @@
 <Error500>Fejl 500: Intern serverfejl (af Hattrick)</Error500>
 <Error503>Fejl 503: CHPP tjeneste utilgængelig (midlertidig overbelastning eller vedligeholdelse)</Error503>
 <PathSoundsNote1>Indsæt fil:/// før stien til den lyd i .Ogg eller .wav-format</PathSoundsNote1>
-<PathSoundsNote2>Eksempel: fil:///c:\sti\til\lyden.ogg</PathSoundsNote2>
+<PathSoundsNote2>Eksempel: fil:///c:\\sti\\til\\lyden.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>1. halvleg slut fløjte</PathSoundsWhistle2>
 <PathSoundsWhistle3>Kamp slut fløjte</PathSoundsWhistle3>
 <EventYellow2>Anden gul kort</EventYellow2>
 <LoggedIn>Logget ind som</LoggedIn>
-<latestNews>Check latest news on</latestNews>
+<latestNews>Tjek seneste nyheder på</latestNews>
 <HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
+<ProjectWebsite>Projekt Webside</ProjectWebsite>
+<GooglePlusPage>Google+</GooglePlusPage>
+<TwitterPage>Twitter</TwitterPage>
+<FacebookPage>Facebook</FacebookPage>
+<chatLink>Åben Chat</chatLink>
+<hidesidebar>Skjul Sidepanel</hidesidebar>
+<addFriend>Klik her for at tilføje dette hold til venneliste</addFriend>
+<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
+<Dark>Dark</Dark>
+<Light>Light</Light>
+<Themes>Themes</Themes>
+<NoTournament>Don't load single and tournament matches for friends</NoTournament>
+<DefHatStats>HatStats Defending</DefHatStats>
+<MidHatStats>HatStats Midfield</MidHatStats>
+<AttHatStats>HatStats Attacking</AttHatStats>
+<TotHatStats>Total HatStats</TotHatStats>
 </Htlivesight>

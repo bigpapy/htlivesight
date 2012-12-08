@@ -320,7 +320,7 @@
 <Error500>Hiba 500: Belső kiszolgáló hiba (Hattrick)</Error500>
 <Error503>Hiba 503: a CHPP szolgáltatás nem elérhető (ideiglenes túlterheltség vagy karbantartás)</Error503>
 <PathSoundsNote1>Szúrd be az .ogg formátumú hangfájl elérési útja elé: file:///</PathSoundsNote1>
-<PathSoundsNote2>Példa: file:///c:\elérési\útja\a_hang.ogg</PathSoundsNote2>
+<PathSoundsNote2>Példa: file:///c:\\elérési\\útja\\a_hang.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Első félidő vége sípszó</PathSoundsWhistle2>
 <PathSoundsWhistle3>Mérkőzés vége sípszó</PathSoundsWhistle3>
 <EventYellow2>Második sárga lap</EventYellow2>
@@ -334,4 +334,13 @@
 <chatLink>Open chat</chatLink>
 <hidesidebar>Hide Sidebar</hidesidebar>
 <addFriend>Click to add this team to friends</addFriend>
+<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
+<Dark>Dark</Dark>
+<Light>Light</Light>
+<Themes>Themes</Themes>
+<NoTournament>Don't load single and tournament matches for friends</NoTournament>
+<DefHatStats>HatStats Defending</DefHatStats>
+<MidHatStats>HatStats Midfield</MidHatStats>
+<AttHatStats>HatStats Attacking</AttHatStats>
+<TotHatStats>Total HatStats</TotHatStats>
 </Htlivesight>

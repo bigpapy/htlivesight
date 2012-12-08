@@ -195,31 +195,31 @@
 <OtherEvents>Notikumu secība</OtherEvents>
 <OtherEventKey>Notikuma kods</OtherEventKey>
 <OtherEventKeyNote>Parādīt notikuma kodu spēles komentāros</OtherEventKeyNote>
-<CustomIcons>Icons</CustomIcons>
-<CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
-<CustomSounds>Sounds</CustomSounds>
-<CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
-<CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
-<CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
-<CustomSoundsGoal>Original Livefox sounds</CustomSoundsGoal>
-<CustomSoundsNoOpGoal>No sounds for opponent's goals</CustomSoundsNoOpGoal>
-<PathSoundsMyGoal>Sound for own goal</PathSoundsMyGoal>
-<PathSoundsOpGoal>Sound for goal of my opponent</PathSoundsOpGoal>
-<PathSoundsFrGoal>Sound for goal of friend's</PathSoundsFrGoal>
-<PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
-<PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
-<PathSoundsMiss>Missed goal sound</PathSoundsMiss>
-<PathSoundsSun>Sound for sunny weather</PathSoundsSun>
-<PathSoundsRain>Sound for rainy weather</PathSoundsRain>
-<PathSoundsOvercast>Sound for overcast weather</PathSoundsOvercast>
-<PathSoundsFewClouds>Sound for few clouds weather</PathSoundsFewClouds>
-<PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
-<PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
-<PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
-<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
+<CustomIcons>Ikonas</CustomIcons>
+<CustomIconsOld>Oriģinālās Livefox ikonas spēles logā</CustomIconsOld>
+<CustomSounds>Skaņas</CustomSounds>
+<CustomSoundsWeather>Laikapstākļu skaņa spēles sākumā</CustomSoundsWeather>
+<CustomSoundsTime>Skaņas puslaika beigām/sākumam</CustomSoundsTime>
+<CustomSoundsSEW>Laikapstākļu speciālo notikumu skaņas</CustomSoundsSEW>
+<CustomSoundsGoal>Oriģinālās Livefox skaņas</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>Nav skaņas pēc pretinieka iesistajiem vārtiem</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Skaņa pēc iesišanas savos vārtos</PathSoundsMyGoal>
+<PathSoundsOpGoal>Pretinieka gūto vārtu skaņa</PathSoundsOpGoal>
+<PathSoundsFrGoal>Draugu gūto vārtu skaņa</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Draugu pretinieku gūto vārtu skaņa</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Citu komandu gūto vārtu skaņa</PathSoundsOtGoal>
+<PathSoundsMiss>Neiesisto vārtu skaņa</PathSoundsMiss>
+<PathSoundsSun>Skaņa saulainam laikam</PathSoundsSun>
+<PathSoundsRain>Skaņa lietainam laikam</PathSoundsRain>
+<PathSoundsOvercast>Skaņa, apmācies laiks</PathSoundsOvercast>
+<PathSoundsFewClouds>Skaņa mākoņainam laikam</PathSoundsFewClouds>
+<PathSoundsMyBoo>Skaņa savas komandas spēlētāja traumai</PathSoundsMyBoo>
+<PathSoundsOpBoo>Skaņa pretinieka komandas spēlētāja traumai</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Starta svilpe pirmā/otrā puslaika sākumā</PathSoundsWhistleStart>
+<PathSoundsWhistle>Dzeltenās/sarkanās kartītes skaņa</PathSoundsWhistle>
+<PathSoundsHattrick>Hattrick skaņa</PathSoundsHattrick>
+<PathSoundsRestore>Atjaunot</PathSoundsRestore>
+<PathSoundsPlay>Atskaņot</PathSoundsPlay>
 <LanguageSelect>Izvēlēties valodu</LanguageSelect>
 <LanguageNote>Piezîme: Pārstartējiet Firefox, lai izmaiņas stātos spēkā.</LanguageNote>
 <ButtonCancel>Atcelt</ButtonCancel>
@@ -245,30 +245,30 @@
 <TextHelpOf>Palīdzot</TextHelpOf>
 <TextThanksTo>Liels paldies:</TextThanksTo>
 <ButtonClose>Aizvērt</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
+<NonExistent>Neeksistējošs</NonExistent>
+<Disastrous>Katastrofāli</Disastrous>
+<Wretched>Nožēlojami</Wretched>
+<Poor>Draņķīgi</Poor>
+<Weak>Vāji</Weak>
+<Inadequate>Neatbilstoši</Inadequate>
+<Passable>Apmierinoši</Passable>
+<Solid>Labi</Solid>
+<Excellent>Teicami</Excellent>
+<Formidable>Iespaidīgi</Formidable>
+<Outstanding>Izcili</Outstanding>
+<Brilliant>Spīdoši</Brilliant>
+<Magnificent>Diženi</Magnificent>
+<WorldClass>Pasaules klases</WorldClass>
+<Supernatural>Pārdabiski</Supernatural>
+<Titanic>Titāniski</Titanic>
+<ExtraTerrestrial>Kosmiski</ExtraTerrestrial>
+<Mythical>Teiksmaini</Mythical>
+<Magical>Maģiski</Magical>
+<Utopian>Utopiski</Utopian>
+<Divine>Dievišķi</Divine>
+<VeryHigh>ļoti augsts</VeryHigh>
+<High>augsts</High>
+<Low>zems</Low>
 <VeryLow>ļoti zems</VeryLow>
 <RightDefence>Labās puses aizsardzība</RightDefence>
 <MiddleDefence>Centra aizsardzība</MiddleDefence>
@@ -277,8 +277,8 @@
 <RightAttack>Labās puses uzbrukums</RightAttack>
 <MiddleAttack>Centra uzbrukums</MiddleAttack>
 <LeftAttack>Kreisās puses aizsardzība</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
+<IndirectSetPiecesDefence>Netiešās standartsituācijas aizsardzība</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Netiešās standartsituācijas uzbrukums</IndirectSetPiecesAttack>
 <TeamAttitude>Spēles svarīgums</TeamAttitude>
 <TacticType>Taktika</TacticType>
 <TacticSkill>Taktikas līmenis</TacticSkill>
@@ -287,51 +287,60 @@
 <Normal>Parasta spēle</Normal>
 <PIC>Viegla spēle</PIC>
 <MOTS>Sezonas svarīgākā spēle</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
+<ColorPicker>Vari izvēlēties savu krāsu iekš </ColorPicker>
+<EventBackground>Spēles notikumu fona krāsa</EventBackground>
+<FriendHome>Spēlējot mājās (paša un draugu) krāsa: #</FriendHome>
+<FriendAway>Spēlējot izbraukumā (paša un draugu) krāsa: #</FriendAway>
+<FoeHome>Citu komandu mājas spēļu krāsa: #</FoeHome>
+<FoeAway>Citu komandu izbraukuma spēļu krāsa: #</FoeAway>
+<Neutral>Informatīvo ziņojumu fona krāsa: #</Neutral>
+<EventColorTitle>Notikumu teksta krāsa</EventColorTitle>
+<EventTextColor>Notikuma teksta krāsa: #</EventTextColor>
+<SETextColor>Notikumu paskaidrojošā teksta krāsa: #</SETextColor>
 <Colors>Krāsas</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
-<Senior>Senior</Senior>
+<SchemaTip>Klikšķini, lai parādītu sastāvu</SchemaTip>
+<StatisticTip>Klikšķini, lai apskatītu mača beigu statistiku</StatisticTip>
+<Youth>Jaunieši</Youth>
+<Senior>Pieaugušie</Senior>
 <Tournament>Turnīrs</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
+<FreeKicks>Brīvsitieni</FreeKicks>
 <RedCards>Sarkanās kartītes</RedCards>
 <YellowCards>Dzeltenās kartītes</YellowCards>
 <Injuries>Savainojumi</Injuries>
 <Goals>Vārti</Goals>
 <Total>Kopā</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
+<Terraces>Soli</Terraces>
+<Basic>Krēsli</Basic>
+<Roof>Krēsli zem jumta</Roof>
+<VIP>Vietas VIP ložās</VIP>
 <CrowdinHelp>Palīdzi tulkot! Ar Crowdin tas ir supervienkārši un jautri! Klikšķini šeit!</CrowdinHelp>
 <Error401>Kļūda 401: nesankcionēta piekļuve. Jums jāveic autorizācija vēlreiz. Noklikšķiniet uz Labi, lai turpinātu.</Error401>
 <Error404>404 Kļūda: pieprasītais resurss nav atrasts. Ja šī kļūda parādās atkal, pārliecinieties vai CHPP pakalpojums ir pieejams.</Error404>
 <Error0>0. Kļūda: nav pieejas internetam.</Error0>
 <Error500>500 Kļūda: iekšēja Hattrick servera kļūda</Error500>
 <Error503>Kļūda 503: CHPP pakalpojums nav pieejams (pagaidu pārslodze vai uzturēšana)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
+<PathSoundsNote1>Ievieto file:/// pirms .ogg vai .wav skaņas faila adreses</PathSoundsNote1>
+<PathSoundsNote2>Piemērs: file:///c:\\path\\o\\hesound.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>Pirmā puslaika beigu svilpe</PathSoundsWhistle2>
+<PathSoundsWhistle3>Spēles beigu svilpe</PathSoundsWhistle3>
+<EventYellow2>Otra dzeltenā kartīte</EventYellow2>
+<LoggedIn>Ielogojies kā</LoggedIn>
+<latestNews>Uzzini jaunāko iekš</latestNews>
+<HTLSThread>Hattrick forums</HTLSThread>
+<ProjectWebsite>Projekta mājaslapa</ProjectWebsite>
+<GooglePlusPage>Google+</GooglePlusPage>
+<TwitterPage>Twitter</TwitterPage>
+<FacebookPage>Facebook</FacebookPage>
+<chatLink>IRC čats</chatLink>
+<hidesidebar>Paslēpt sānjoslu</hidesidebar>
+<addFriend>Klikšķināt, lai pievienotu šo komandu draugiem</addFriend>
+<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
+<Dark>Dark</Dark>
+<Light>Light</Light>
+<Themes>Themes</Themes>
+<NoTournament>Don't load single and tournament matches for friends</NoTournament>
+<DefHatStats>HatStats Defending</DefHatStats>
+<MidHatStats>HatStats Midfield</MidHatStats>
+<AttHatStats>HatStats Attacking</AttHatStats>
+<TotHatStats>Total HatStats</TotHatStats>
 </Htlivesight>

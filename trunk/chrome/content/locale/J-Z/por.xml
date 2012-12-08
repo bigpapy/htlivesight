@@ -9,10 +9,10 @@
 <MenuDisconnected>desligado</MenuDisconnected>
 <MenuAbout>Acerca do HTLiveSight</MenuAbout>
 <LoginLabel>Ligar</LoginLabel>
-<LoginTeamId>Inserir TeamID da sua equipa</LoginTeamId>
+<LoginTeamId>Insira o ID da sua equipa:</LoginTeamId>
 <LoginUsername>Nome de utilizador</LoginUsername>
 <LoginRememberMe>Lembrar-se de mim</LoginRememberMe>
-<LoginButton>Ligar</LoginButton>
+<LoginButton>Iniciar</LoginButton>
 <LoginReLive>Rever</LoginReLive>
 <LoginSpeed>Velocidade</LoginSpeed>
 <LoginByEvent>Por evento</LoginByEvent>
@@ -38,7 +38,7 @@
 <Error>Erro</Error>
 <ServerON>Ligado</ServerON>
 <ServerOFF>Desligado</ServerOFF>
-<ResetToken>O código de autorização foi apagado. Reinicie o HTLS ou aguarde pela próxima atualização (less than 1 minute).</ResetToken>
+<ResetToken>O código de autorização foi apagado. Reinicie o HTLS ou aguarde pela próxima atualização (menos de 1 minuto).</ResetToken>
 <NoHTServer>Não selecionou corretamente o servidor do Hattrick ao qual está atualmente ligado. Clique com o botão direito em qualquer lugar do fundo e clique em - opções - geral e coloque corretamente o número do servidor do Hattrick.</NoHTServer>
 <MatchesMaximum>Não pode acompanhar mais de 20 jogos!</MatchesMaximum>
 <LeagueRound>Jornada</LeagueRound>
@@ -146,7 +146,7 @@
 <RequestLive>Actualização em directo</RequestLive>
 <RequestAdd>Adicionar jogo</RequestAdd>
 <RequestDelete>Apagar jogo</RequestDelete>
-<RequestLogin>Ligar</RequestLogin>
+<RequestLogin>Início de Sessão</RequestLogin>
 <RequestDetails>A receber Detalhes do Jogo</RequestDetails>
 <RequestTeam>A receber Jogo por Equipa</RequestTeam>
 <RequestTeamData>A receber Dados da equipa</RequestTeamData>
@@ -301,7 +301,7 @@
 <SchemaTip>Clique para visualizar a Formação</SchemaTip>
 <StatisticTip>Clique para visualizar as Estatísticas no final da partida</StatisticTip>
 <Youth>Júnior</Youth>
-<Senior>Senior</Senior>
+<Senior>Sénior</Senior>
 <Tournament>Torneio</Tournament>
 <FreeKicks>Livres diretos</FreeKicks>
 <RedCards>Cartões vermelhos</RedCards>
@@ -324,14 +324,23 @@
 <PathSoundsWhistle2>Fim da 1ª parte</PathSoundsWhistle2>
 <PathSoundsWhistle3>Apito final</PathSoundsWhistle3>
 <EventYellow2>Segundo cartão amarelo</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
+<LoggedIn>Sessão de</LoggedIn>
+<latestNews>Conheça as últimas novidades:</latestNews>
+<HTLSThread>Fórum do Hattrick</HTLSThread>
+<ProjectWebsite>Sítio na Internet do projeto HTLiveSight</ProjectWebsite>
+<GooglePlusPage>Google+</GooglePlusPage>
+<TwitterPage>Twitter</TwitterPage>
+<FacebookPage>Facebook</FacebookPage>
+<chatLink>Iniciar chat</chatLink>
+<hidesidebar>Ocultar barra lateral</hidesidebar>
+<addFriend>Clicar para adicionar esta equipa à lista de amigos</addFriend>
+<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
+<Dark>Dark</Dark>
+<Light>Light</Light>
+<Themes>Themes</Themes>
+<NoTournament>Don't load single and tournament matches for friends</NoTournament>
+<DefHatStats>HatStats Defending</DefHatStats>
+<MidHatStats>HatStats Midfield</MidHatStats>
+<AttHatStats>HatStats Attacking</AttHatStats>
+<TotHatStats>Total HatStats</TotHatStats>
 </Htlivesight>

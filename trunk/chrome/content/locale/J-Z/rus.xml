@@ -320,7 +320,7 @@
 <Error500>Ошибка 500: Внутренняя ошибка сервера (Hattrick)</Error500>
 <Error503>Ошибки 503: Сервис CHPP недоступен (временные перегрузки или обслуживание)</Error503>
 <PathSoundsNote1>Вставьте file:/// перед путём к звуку в формате .ogg</PathSoundsNote1>
-<PathSoundsNote2>Например: file:///c:\path\to\thesound.ogg</PathSoundsNote2>
+<PathSoundsNote2>Например: file:///c:\\path\\to\\thesound.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Свисток на перерыв</PathSoundsWhistle2>
 <PathSoundsWhistle3>Финальный свисток</PathSoundsWhistle3>
 <EventYellow2>Вторая жёлтая карточка</EventYellow2>
@@ -334,4 +334,13 @@
 <chatLink>Открыть чат</chatLink>
 <hidesidebar>Скрыть боковую панель</hidesidebar>
 <addFriend>Нажмите, чтобы добавить эту команду в друзья</addFriend>
+<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
+<Dark>Dark</Dark>
+<Light>Light</Light>
+<Themes>Themes</Themes>
+<NoTournament>Don't load single and tournament matches for friends</NoTournament>
+<DefHatStats>HatStats Defending</DefHatStats>
+<MidHatStats>HatStats Midfield</MidHatStats>
+<AttHatStats>HatStats Attacking</AttHatStats>
+<TotHatStats>Total HatStats</TotHatStats>
 </Htlivesight>

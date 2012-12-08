@@ -320,7 +320,7 @@
 <Error500>Error 500: erro interno do servidor (de Hattrick)</Error500>
 <Error503>Error 503: servizo CHPP non dispoñible (sobrecarga temporal ou mantemento)</Error503>
 <PathSoundsNote1>Escribe file:/// dianto da ruta ao son en formato .ogg</PathSoundsNote1>
-<PathSoundsNote2>Exemplo: file:///c:\patch\to\thesound.ogg</PathSoundsNote2>
+<PathSoundsNote2>Exemplo: file:///c:\\patch\\to\\thesound.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Asubío de fin do primeiro tempo</PathSoundsWhistle2>
 <PathSoundsWhistle3>Asubío de fin do partido</PathSoundsWhistle3>
 <EventYellow2>Segundo cartón amarelo</EventYellow2>
@@ -334,4 +334,13 @@
 <chatLink>Abrir chat</chatLink>
 <hidesidebar>Agochar barra</hidesidebar>
 <addFriend>Pulsar para engadir este equipo a amigos</addFriend>
+<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
+<Dark>Dark</Dark>
+<Light>Light</Light>
+<Themes>Themes</Themes>
+<NoTournament>Don't load single and tournament matches for friends</NoTournament>
+<DefHatStats>HatStats Defending</DefHatStats>
+<MidHatStats>HatStats Midfield</MidHatStats>
+<AttHatStats>HatStats Attacking</AttHatStats>
+<TotHatStats>Total HatStats</TotHatStats>
 </Htlivesight>
