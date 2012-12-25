@@ -62,7 +62,7 @@ htlivesight.LineUp.ParseLineUpFromXml= function (xml){
 			lineUp[index].id= xml.getElementsByTagName("PlayerID")[i].textContent; // get  playerId.
 		};
 
-	}catch(e){lineUp[0].update=0;console.log("ParseLineUpFromXml: "+e);}
+	}catch(e){lineUp[0].update=0;/*console.log("ParseLineUpFromXml: "+e);*/}
 	return lineUp;
 };
 htlivesight.LineUp.BehaviourFromIntToString= function (player, index){
@@ -273,6 +273,7 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 		event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
+		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 		match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
 		lineUp[0].update++;
 		if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
@@ -327,6 +328,7 @@ htlivesight.LineUp.SwapEvent= function(event, match){
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
+	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 	lineUp[0].update++;
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
 		match.home.lineUp= lineUp;
@@ -375,6 +377,7 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 		event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
+		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 		match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
 		lineUp[0].update++;
 		if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
@@ -399,6 +402,7 @@ htlivesight.LineUp.SentOffEvent= function(event, match){
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp), event);
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
+	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 	match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
 	lineUp[0].update++;
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
@@ -427,6 +431,7 @@ htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
+	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 	match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
 	lineUp[0].update++;
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
@@ -465,6 +470,7 @@ htlivesight.LineUp.MissingKeeperEvent= function(event, match){
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
+	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 	match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
 	lineUp[0].update++; // increase counter modification event.
 	if (match.isHomeTeam(event.subjectTeamId)) // updating home/away lineup
@@ -492,6 +498,7 @@ htlivesight.LineUp.newCaptainEvent= function(event, match){
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
+	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 	//match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
 	lineUp[0].update++; // increase counter modification event.
 	if (match.isHomeTeam(event.subjectTeamId)) // updating home/away lineup
@@ -500,7 +507,7 @@ htlivesight.LineUp.newCaptainEvent= function(event, match){
 		match.away.lineUp= lineUp;
 };
 
-htlivesight.LineUp.toClipboard= function(lineup,id,minute){
+htlivesight.LineUp.toClipboard= function(lineup,id,minute,e){
 //	alert(lineup);
 	try{
 		// getting team name from id of lineup element (copied from dom.js line 13, make a function of this)
@@ -536,6 +543,15 @@ htlivesight.LineUp.toClipboard= function(lineup,id,minute){
 			}
 
 		htlivesight.copyToClipboard(lineupString);
+		// opening dialogue box to let user knows lineup is clicked.
+		$( "#lineupCopied" ).dialog({ autoOpen: false, hide: "fadeOut", height: 55, width: "auto", position: [e.pageX+10,e.pageY-20], resizable: false  });
+		var prova= $("#lineupCopied").dialog( "open" )/*.fadeOut(1500)*/;
+		$("#lineupCopied").prev().hide();
+		prova.fadeOut(2500);
+		setTimeout(function(){ $("#lineupCopied").dialog("close"); },2000);
+		setTimeout(function(){ $("#lineupCopied").prev().show(); },2500);
+		
+			
 	//	alert("copied to clipboard!");
 	}catch(e){alert(e);};
 };
