@@ -239,7 +239,7 @@ htlivesight.DOM = {
 							img.setAttribute("src", htlivesight.Image.copy);
 							img.setAttribute("id", "copy_to_clipboard_icon");
 							img.setAttribute("title", htlivesight.Util.Parse("TooltipCopyLineUp",htlivesight.data[0]));
-							img.addEventListener("click", function(){htlivesight.LineUp.toClipboard(lineup, id, event.minute);});
+							img.addEventListener("click", function(e){htlivesight.LineUp.toClipboard(lineup, id, event.minute,e);});
 							
 							label_empty.appendChild(img);
 							hbox.appendChild(label_empty);
@@ -888,7 +888,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		link.setAttribute("title", htlivesight.Util.Parse("SchemaTip", htlivesight.data[0]));
 		link.addEventListener("click",function(){htlivesight.DOM.formationpopup(this.id);});
 		$( "#"+"home_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
-		link.style.textDecoration = 'underline';
+		//link.style.textDecoration = 'underline';
+		link.setAttribute('class','underlined');
 		label = document.createElement("td");
 		hometr.appendChild(label);
 		link = document.createElement("a");
@@ -1055,7 +1056,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		link.setAttribute( "title", htlivesight.Util.Parse( "SchemaTip", htlivesight.data[0] ) );
 		link.addEventListener('click',function(){htlivesight.DOM.formationpopup(this.id);});
 		$( "#"+"away_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
-		link.style.textDecoration = 'underline';
+		//link.style.textDecoration = 'underline';
+		link.setAttribute('class','underlined');
 		label = document.createElement("td");
 		awaytr.appendChild(label);
 		label.setAttribute("id", "away_team_tactic_" + match.id + "_" + match.sourceSystem);
@@ -1435,10 +1437,20 @@ htlivesight.DOM.UpdateElementBoxLeagueTable=function(league) {
 						htlivesight.League.teams[awayId].points -= 1;
 					}
 				};
+  //			if((htlivesight.Time.hattrickTime-htlivesight.League.currentRound.date)>6300000){
+  		if(htlivesight.League.currentRound.number == htlivesight.League.teams[htlivesight.Teams.myTeam.id].matches){
 				htlivesight.League.teams[homeId].liveGoalsFor = htlivesight.League.teams[homeId].goalsFor + parseInt(myMatch.home.goals, 10)- parseInt(myMatch.home.realGoals, 10);
 				htlivesight.League.teams[homeId].liveGoalsAgainst = htlivesight.League.teams[homeId].goalsAgainst + parseInt(myMatch.away.goals, 10)- parseInt(myMatch.away.realGoals, 10);
 				htlivesight.League.teams[awayId].liveGoalsFor = htlivesight.League.teams[awayId].goalsFor + parseInt(myMatch.away.goals, 10)- parseInt(myMatch.away.realGoals, 10);
 				htlivesight.League.teams[awayId].liveGoalsAgainst = htlivesight.League.teams[awayId].goalsAgainst + parseInt(myMatch.home.goals, 10)- parseInt(myMatch.home.realGoals, 10);
+				}else{// if relive start during the match table loaded isn't updated to actual round
+					/*start: new part added to fix wrong number of goals*/
+					htlivesight.League.teams[homeId].liveGoalsFor = htlivesight.League.teams[homeId].goalsFor + parseInt(myMatch.home.goals, 10);
+					htlivesight.League.teams[homeId].liveGoalsAgainst = htlivesight.League.teams[homeId].goalsAgainst + parseInt(myMatch.away.goals, 10);
+					htlivesight.League.teams[awayId].liveGoalsFor = htlivesight.League.teams[awayId].goalsFor + parseInt(myMatch.away.goals, 10);
+					htlivesight.League.teams[awayId].liveGoalsAgainst = htlivesight.League.teams[awayId].goalsAgainst + parseInt(myMatch.home.goals, 10);
+					/*end: new part added to fix wrong number of goals*/
+				}
 				if(myMatch.home.goals > myMatch.away.goals){
 					htlivesight.League.teams[homeId].livePoints = htlivesight.League.teams[homeId].points + 3;
 					htlivesight.League.teams[awayId].livePoints = htlivesight.League.teams[awayId].points;

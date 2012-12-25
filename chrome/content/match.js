@@ -159,7 +159,7 @@ htlivesight.Match.Update = function (newMatch) {
 				if(match.home.special_event < newMatch.home.special_event) match.home.special_event = newMatch.home.special_event;
 				try{
 					if(match.home.lineUp[0].update < newMatch.home.lineUp[0].update) match.home.lineUp=newMatch.home.lineUp; // store home team lineup in global variable if the stored one is undefined.
-				}catch(e){console.log(e);}
+				}catch(e){/*console.log(e);*/}
 				if(match.home.possession_1 < newMatch.home.possession_1) match.home.possession_1 = newMatch.home.possession_1;
 				if(match.home.possession_2 < newMatch.home.possession_2) match.home.possession_2 = newMatch.home.possession_2;
 			}
@@ -202,7 +202,7 @@ htlivesight.Match.Update = function (newMatch) {
 				if(match.away.possession_2 < newMatch.away.possession_2) match.away.possession_2 = newMatch.away.possession_2;
 				try{
 					if(match.away.lineUp[0].update < newMatch.away.lineUp[0].update) match.away.lineUp= newMatch.away.lineUp;
-				}catch(e){console.log(e);}
+				}catch(e){/*console.log(e);*/}
 			}
 		};
 		if (newMatch.event && newMatch.event.list.last > 0) {
