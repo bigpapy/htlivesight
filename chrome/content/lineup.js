@@ -384,7 +384,7 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 			match.home.lineUp= lineUp;
 		else
 			match.away.lineUp= lineUp;
-	}catch(e){console.log("WARNING!!! This is an error, please copy last log message and the following error:"+e);}
+	}catch(e){console.log(e);}
 };
 htlivesight.LineUp.SentOffEvent= function(event, match){
 	var lineUp;
@@ -543,13 +543,7 @@ htlivesight.LineUp.toClipboard= function(lineup,id,minute,e){
 			}
 
 		htlivesight.copyToClipboard(lineupString);
-		// opening dialogue box to let user knows lineup is clicked.
-		$( "#lineupCopied" ).dialog({ autoOpen: false, hide: "fadeOut", height: 55, width: "auto", position: [e.pageX+10,e.pageY-20], resizable: false  });
-		var prova= $("#lineupCopied").dialog( "open" )/*.fadeOut(1500)*/;
-		$("#lineupCopied").prev().hide();
-		prova.fadeOut(2500);
-		setTimeout(function(){ $("#lineupCopied").dialog("close"); },2000);
-		setTimeout(function(){ $("#lineupCopied").prev().show(); },2500);
+		htlivesight.copiedToClipboardNotification(e);
 		
 			
 	//	alert("copied to clipboard!");

@@ -4,7 +4,7 @@
 
 htlivesight.ApiProxy = {
 		consumerKey : "vALLKFL56ChUPnJhUAUzPs",
-		consumerSecret : "B2HURg3LZJy9XObgPbAnPiSytbm1Bv49IW9cwCeuYfO",
+		consumerSecret : "H3FZSh1AYKt5D3hfWvKlRuQndps7Ct94YT2trMycPd6",
 		signatureMethod : "HMAC-SHA1",
 		requestTokenUrl : "https://chpp.hattrick.org/oauth/request_token.ashx",
 		authorizeUrl : "https://chpp.hattrick.org/oauth/authorize.aspx",
@@ -31,6 +31,7 @@ htlivesight.ApiProxy = {
 		authorize : function(doc) {
 			var firstTime = true;
 			var teamId =""+document.getElementById("teamId").value;
+      htlivesight.generateFromSeed();
 			var accessor = {
 					consumerSecret : htlivesight.ApiProxy.consumerSecret,
 					tokenSecret : null
@@ -60,7 +61,7 @@ htlivesight.ApiProxy = {
 				var l10nData=htlivesight.data;
 				var introduction=htlivesight.Util.Parse("Introduction",l10nData[0]);
 				alert(introduction);
-				chppPage=window.open(htlivesight.ApiProxy.authorizeUrl + "?" + text );
+				chppPage=window.open(htlivesight.ApiProxy.authorizeUrl + "?" + text);
 				// add a delay because it doesn't give time in chrome to open chpp authorization page.
 				setTimeout(function(){
 					// when clicking on this tab continue
@@ -118,6 +119,8 @@ htlivesight.ApiProxy = {
 		retrieve : function(doc, parameters, callback) {
 			var l10nData= htlivesight.data;
 			var teamId = document.getElementById("teamId").value;
+      htlivesight.generateFromSeed();
+
 			if (!htlivesight.ApiProxy.authorized(teamId)) { // if not authorized...
 				htlivesight.ApiProxy.authorize(doc); // ...get authorization
 				callback(null);
