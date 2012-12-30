@@ -4,7 +4,7 @@
 
 htlivesight.ApiProxy = {
 		consumerKey : "vALLKFL56ChUPnJhUAUzPs",
-		consumerSecret : "H3FZSh1AYKt5D3hfWvKlRuQndps7Ct94YT2trMycPd6",
+		consumerSecret : "",
 		signatureMethod : "HMAC-SHA1",
 		requestTokenUrl : "https://chpp.hattrick.org/oauth/request_token.ashx",
 		authorizeUrl : "https://chpp.hattrick.org/oauth/authorize.aspx",
@@ -31,7 +31,6 @@ htlivesight.ApiProxy = {
 		authorize : function(doc) {
 			var firstTime = true;
 			var teamId =""+document.getElementById("teamId").value;
-      htlivesight.generateFromSeed();
 			var accessor = {
 					consumerSecret : htlivesight.ApiProxy.consumerSecret,
 					tokenSecret : null
@@ -119,7 +118,6 @@ htlivesight.ApiProxy = {
 		retrieve : function(doc, parameters, callback) {
 			var l10nData= htlivesight.data;
 			var teamId = document.getElementById("teamId").value;
-      htlivesight.generateFromSeed();
 
 			if (!htlivesight.ApiProxy.authorized(teamId)) { // if not authorized...
 				htlivesight.ApiProxy.authorize(doc); // ...get authorization

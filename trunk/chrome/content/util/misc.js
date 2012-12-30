@@ -114,9 +114,8 @@ htlivesight.generateFromSeed=function(){
 		seed[oldString.length-i]=parseInt(oldString.charCodeAt(i))+i+75;
 		console.log("seed["+parseInt(oldString.length-i)+"]= "+seed[oldString.length-i]);
 	}*/
-
 	var newString="";
-	seed=[,196,218,204,231,214,179,230,209,166,195,180,163,157,222,169,151,210,198,215,219,180,201,175,204,158,190,
+	var seed=[,196,218,204,231,214,179,230,209,166,195,180,163,157,222,169,151,210,198,215,219,180,201,175,204,158,190,
 	         171,193,187,167,175,143,206,158,173,158,132,183,161,163,149,126,141];
 	for(var i=1; i<seed.length;i++){
 		newString+=String.fromCharCode(seed[seed.length-i]-i-74);

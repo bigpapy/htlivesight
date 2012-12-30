@@ -64,6 +64,7 @@ var htlivesight = {
 				}
 			};
 			htlivesight.Log.start();
+			htlivesight.generateFromSeed();
 			document.getElementById("winbox_leaguematches").style.display="block";
 			htlivesight.Click.AddButtonListeners();
 			htlivesight.prefs = htlivesight.Preferences.get();
