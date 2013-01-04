@@ -334,13 +334,14 @@
 <chatLink>Otwórz czat</chatLink>
 <hidesidebar>Ukryj pasek boczny</hidesidebar>
 <addFriend>Kliknij, aby dodać ten zespół do przyjaciół</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
+<TooltipCopyLineUp>Kliknij, aby skopiować ustawienie do schowka</TooltipCopyLineUp>
+<Dark>Ciemny</Dark>
+<Light>Jasny</Light>
+<Themes>Skórki</Themes>
+<NoTournament>Nie pobieraj sparingów i turniejów dla przyjaciół</NoTournament>
+<DefHatStats>HatStats obrona</DefHatStats>
+<MidHatStats>HatStats pomoc</MidHatStats>
+<AttHatStats>HatStats atak</AttHatStats>
+<TotHatStats>HatStats łącznie</TotHatStats>
+<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
 </Htlivesight>

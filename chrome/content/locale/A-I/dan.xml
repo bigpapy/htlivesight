@@ -38,16 +38,16 @@
 <Error>Fejl</Error>
 <ServerON>Tilsluttet</ServerON>
 <ServerOFF>Afbrudt</ServerOFF>
-<ResetToken>Autorisationen er fjernet. Genstart HTLS eller vent til næste opdatering (less than 1 minute).</ResetToken>
+<ResetToken>Autorisationen er fjernet. Genstart HTLS eller vent til næste opdatering (Mindre end 1 min).</ResetToken>
 <NoHTServer>Du har ikke valgt den server hvos du er logget ind med din browser. Højreklik på baggrunden - indstillinger - generelt - udfyld med dit servernummer.</NoHTServer>
-<MatchesMaximum>Kan ikke vise mere end 20 kampe!</MatchesMaximum>
+<MatchesMaximum>Du kan ikke følge mere end 20 kampe!</MatchesMaximum>
 <LeagueRound>Runde</LeagueRound>
 <MessageHattrickError>Hattrick server returnerede en fejl.</MessageHattrickError>
-<MessageAlreadyFriend>Allerede din ven.</MessageAlreadyFriend>
-<MessageErrorReading>Fejl i datalæsning fra.</MessageErrorReading>
-<MessageLoginNotSuccessful>Login lykkedes.</MessageLoginNotSuccessful>
+<MessageAlreadyFriend>Allerede din ven!</MessageAlreadyFriend>
+<MessageErrorReading>Fejl i datalæsning fra</MessageErrorReading>
+<MessageLoginNotSuccessful>Login mislykkedes.</MessageLoginNotSuccessful>
 <TacticPressing>Presspil</TacticPressing>
-<TacticCA>Kontra</TacticCA>
+<TacticCA>Kontraangreb</TacticCA>
 <TacticAIM>Angrib over midten</TacticAIM>
 <TacticAOW>Angrib via fløjene</TacticAOW>
 <TacticPlayCreative>Spil kreativt</TacticPlayCreative>
@@ -60,18 +60,18 @@
 <TimeFinish>Slut</TimeFinish>
 <TimeStartsIn>Starter om</TimeStartsIn>
 <TimeDays>Dage</TimeDays>
-<TimeHours>Timer</TimeHours>
-<TimeMinutes>Minutter</TimeMinutes>
-<TimeDay>Dag</TimeDay>
-<TimeHour>Time</TimeHour>
-<TimeMinute>Minut</TimeMinute>
+<TimeHours>timer</TimeHours>
+<TimeMinutes>minutter</TimeMinutes>
+<TimeDay>dag</TimeDay>
+<TimeHour>time</TimeHour>
+<TimeMinute>minut</TimeMinute>
 <TimeMin>'</TimeMin>
 <TooltipWindowSound>Aktiver eller deaktiver lyde for kampen</TooltipWindowSound>
 <TooltipWindowLink>Link til kampsiden på Hattrick</TooltipWindowLink>
-<TooltipWindowInfo>Skift information hændelse besked</TooltipWindowInfo>
+<TooltipWindowInfo>Vis/skjul information-hændelse beskeder</TooltipWindowInfo>
 <TooltipWindowMaximize>Maximer vindue</TooltipWindowMaximize>
 <TooltipWindowMinimize>Minimer vindue</TooltipWindowMinimize>
-<TooltipWindowShade>Shade vindue</TooltipWindowShade>
+<TooltipWindowShade>Vindue nuance</TooltipWindowShade>
 <TooltipWindowClose>Luk vindue</TooltipWindowClose>
 <TooltipWindowOpen>Åbn vindue</TooltipWindowOpen>
 <TooltipWindowMoveUp>Flyt dette vindue op</TooltipWindowMoveUp>
@@ -90,17 +90,17 @@
 <EventSideCenter>Midtfor</EventSideCenter>
 <EventSideFreeKick>Frispark</EventSideFreeKick>
 <EventSidePenalty>Straffe</EventSidePenalty>
-<EventSpecialUnpredictable>SE uberegnelig</EventSpecialUnpredictable>
-<EventSpecialLongShot>SE langskud</EventSpecialLongShot>
-<EventSpecialQuick>SE hurtig</EventSpecialQuick>
+<EventSpecialUnpredictable>SE Uberegnelig</EventSpecialUnpredictable>
+<EventSpecialLongShot>SE Langskud</EventSpecialLongShot>
+<EventSpecialQuick>SE Hurtig</EventSpecialQuick>
 <EventSpecialLowStamina>Lav kondi</EventSpecialLowStamina>
 <EventSpecialSetPieces>Dødbold</EventSpecialSetPieces>
 <EventSpecialHead>Hovedstød</EventSpecialHead>
 <EventSpecialExperience>+ rutine</EventSpecialExperience>
 <EventSpecialLowExperience>- rutine</EventSpecialLowExperience>
-<EventSpecialWinger>+ fløj</EventSpecialWinger>
-<EventSpecialTechnical>tekniker</EventSpecialTechnical>
-<EventSpecialCounterAttack>Kontra</EventSpecialCounterAttack>
+<EventSpecialWinger>+ Fløj</EventSpecialWinger>
+<EventSpecialTechnical>Tekniker vs Hovedstød</EventSpecialTechnical>
+<EventSpecialCounterAttack>Kontraangreb</EventSpecialCounterAttack>
 <EventSpecialCornerKick>Hjørnespark</EventSpecialCornerKick>
 <EventSpecialIndirect>Indirekte frispark</EventSpecialIndirect>
 <EventSpecialUnpredictableLongPass>+ uberegnelig: lang aflevering</EventSpecialUnpredictableLongPass>
@@ -116,7 +116,7 @@
 <UnderestimationReduceDouble>Undervurdering reduceret med 2/3</UnderestimationReduceDouble>
 <UnderestimationReduceOnce>Undervurdering reduceret med 1/3</UnderestimationReduceOnce>
 <OrganizationBreaks>Forvirring</OrganizationBreaks>
-<Reorganize>Taktisk opfriskning</Reorganize>
+<Reorganize>Omorganisering</Reorganize>
 <NervesImportantThrillingGame>Nerver i vigtig medrivende kamp</NervesImportantThrillingGame>
 <Bruised>Mærket</Bruised>
 <Injuried>Skadet</Injuried>
@@ -128,14 +128,14 @@
 <InexperiencedDefender>Urutineret forsvarsspiller</InexperiencedDefender>
 <WingerHead>Fløj: indlæg til hovedstødsspecialist</WingerHead>
 <EventSpecialLongShotDefended>Langskud afværget</EventSpecialLongShotDefended>
-<EventSpecialQuickVsQuick>Hurtig vs hurtig</EventSpecialQuickVsQuick>
+<EventSpecialQuickVsQuick>Hurtig vs Hurtig</EventSpecialQuickVsQuick>
 <LongShot>Langskud</LongShot>
 <MeteoSpecialTechnicalRain>- tekniker (-målscoring -spilfordeling)</MeteoSpecialTechnicalRain>
-<MeteoSpecialPowerfulRain>+ kraftfuld (+målscoring +forsvarsspil +spilfordeling)</MeteoSpecialPowerfulRain>
-<MeteoSpecialTechnicalSun>+ tekniker (+målscoring +spilfordeling)</MeteoSpecialTechnicalSun>
-<MeteoSpecialPowerfulSun>- kraftfuld (-målscoring -kondi)</MeteoSpecialPowerfulSun>
-<MeteoSpecialQuickSun>- hurtig (-forsvarsspil)</MeteoSpecialQuickSun>
-<MeteoSpecialQuickRain>- hurtig (-forsvarsspil -målscoring)</MeteoSpecialQuickRain>
+<MeteoSpecialPowerfulRain>+ Kraftfuld (+Målscoring +Forsvarsspil +Spilfordeling)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+ Tekniker (+Målscoring +Spilfordeling)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>-Kraftfuld (-Målscoring -Kondi)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>-Hurtig (-Forsvarsspil)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>-Hurtig (-forsvarsspil -Målscoring)</MeteoSpecialQuickRain>
 <YellowNastyPlay>Voldsomt spil</YellowNastyPlay>
 <YellowCheating>Usportslig opførsel</YellowCheating>
 <ProgressUpdate>Næste opdatering:</ProgressUpdate>
@@ -184,7 +184,7 @@
 <MatchesLines>Linier vises i minimeret mode</MatchesLines>
 <NotifyNotify>Notifikationer</NotifyNotify>
 <NotifyEnableSound>Aktiver lyd notifikationer</NotifyEnableSound>
-<NotifyOnly>Kun i åbnede kampe</NotifyOnly>
+<NotifyOnly>Kun i åbne kampe</NotifyOnly>
 <NotifyFlash>Flash headere</NotifyFlash>
 <NotifyStatus>Statuslinjen skydeknappen</NotifyStatus>
 <OtherAuthorization>Autorisations kode</OtherAuthorization>
@@ -207,7 +207,7 @@
 <PathSoundsOpGoal>Lyd for modstanderscoring</PathSoundsOpGoal>
 <PathSoundsFrGoal>Lyd for scoring af venner</PathSoundsFrGoal>
 <PathSoundsOpFrGoal>Lyd for scoring af venners modstander</PathSoundsOpFrGoal>
-<PathSoundsOtGoal>Lyd for andre holdscoringer</PathSoundsOtGoal>
+<PathSoundsOtGoal>Lyd for andre hold scoringer</PathSoundsOtGoal>
 <PathSoundsMiss>Lyd for brændt chance</PathSoundsMiss>
 <PathSoundsSun>Lyd for solskin</PathSoundsSun>
 <PathSoundsRain>Lyd for regnvejr</PathSoundsRain>
@@ -221,7 +221,7 @@
 <PathSoundsRestore>Genskab</PathSoundsRestore>
 <PathSoundsPlay>Afspil</PathSoundsPlay>
 <LanguageSelect>Vælg sprog</LanguageSelect>
-<LanguageNote>Note: Genstart HTLiveSight for at dette kan træde i kraft.</LanguageNote>
+<LanguageNote>Note: Genstart Firefox for at dette kan træde i kraft.</LanguageNote>
 <ButtonCancel>Annuller</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
 <WindowAboutTitle>Om HTLiveSight</WindowAboutTitle>
@@ -240,9 +240,9 @@
 <MonthOctober>Okt</MonthOctober>
 <MonthNovember>Nov</MonthNovember>
 <MonthDecember>Dec</MonthDecember>
-<TextCreatedBy>Skabt af</TextCreatedBy>
+<TextCreatedBy>Lavet af</TextCreatedBy>
 <TextDevelopedBy>Udviklet af</TextDevelopedBy>
-<TextHelpOf>med hjælp fra</TextHelpOf>
+<TextHelpOf>Med hjælp fra</TextHelpOf>
 <TextThanksTo>Mange tak til:</TextThanksTo>
 <ButtonClose>Luk</ButtonClose>
 <NonExistent>Håbløs</NonExistent>
@@ -334,13 +334,14 @@
 <chatLink>Åben Chat</chatLink>
 <hidesidebar>Skjul Sidepanel</hidesidebar>
 <addFriend>Klik her for at tilføje dette hold til venneliste</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
+<TooltipCopyLineUp>Klik her for at kopiere opstillingen</TooltipCopyLineUp>
+<Dark>Mørk</Dark>
+<Light>Lys</Light>
+<Themes>Temaer</Themes>
+<NoTournament>Indlæse ikke venners enkelt og turneringens kampe</NoTournament>
+<DefHatStats>HatStats Forsvar</DefHatStats>
+<MidHatStats>HatStats Midtbane</MidHatStats>
+<AttHatStats>HatStats Angreb</AttHatStats>
+<TotHatStats>Samlede HatStats</TotHatStats>
+<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
 </Htlivesight>

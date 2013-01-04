@@ -334,13 +334,14 @@
 <chatLink>Öppna chatt</chatLink>
 <hidesidebar>Dölj sidomenyn</hidesidebar>
 <addFriend>Klicka på lagnamnet för att lägga till som 'Favoritlag'</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
+<TooltipCopyLineUp>Klicka för att kopiera laguppställningen till urklipp</TooltipCopyLineUp>
+<Dark>Mörk</Dark>
+<Light>Ljus</Light>
+<Themes>Teman</Themes>
+<NoTournament>Ladda inte enskilda eller turneringsmatcher för favoritlag</NoTournament>
+<DefHatStats>HatStats Försvar</DefHatStats>
+<MidHatStats>HatStats Mittfält</MidHatStats>
+<AttHatStats>HatStats Anfall</AttHatStats>
+<TotHatStats>HatStats Totalt</TotHatStats>
+<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
 </Htlivesight>

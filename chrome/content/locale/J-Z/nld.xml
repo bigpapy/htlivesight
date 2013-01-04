@@ -334,13 +334,14 @@
 <chatLink>Open chat</chatLink>
 <hidesidebar>Verberg zijbalk</hidesidebar>
 <addFriend>Klik om dit team als vriend toe te voegen</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
+<TooltipCopyLineUp>Klik hier om de opstelling naar het klembord te kopiëren</TooltipCopyLineUp>
+<Dark>Donker</Dark>
+<Light>Licht</Light>
+<Themes>Thema's</Themes>
+<NoTournament>Laad geen enkele en toernooi wedstrijden voor vrienden</NoTournament>
+<DefHatStats>HatStats verdediging</DefHatStats>
+<MidHatStats>HatStats middenveld</MidHatStats>
+<AttHatStats>HatStats aanvaller</AttHatStats>
+<TotHatStats>Totale HatStats</TotHatStats>
+<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
 </Htlivesight>

@@ -324,23 +324,24 @@
 <PathSoundsWhistle2>Fluier de sfârșit al primei reprize</PathSoundsWhistle2>
 <PathSoundsWhistle3>Fluier de final</PathSoundsWhistle3>
 <EventYellow2>Al doilea cartonaș galben</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
+<LoggedIn>Conectat ca</LoggedIn>
+<latestNews>Verifică ultimile noutăți pe</latestNews>
+<HTLSThread>Forumul Hattrick</HTLSThread>
+<ProjectWebsite>Proiectul site-ului</ProjectWebsite>
+<GooglePlusPage>Pagina Google+</GooglePlusPage>
+<TwitterPage>Pagina Twitter</TwitterPage>
+<FacebookPage>Pagina Facebook</FacebookPage>
+<chatLink>Deschide chatul</chatLink>
+<hidesidebar>Ascunde sidebar-ul</hidesidebar>
+<addFriend>Click să adaugi echipa aceasta la prieteni</addFriend>
+<TooltipCopyLineUp>Click să copiezi așezarea</TooltipCopyLineUp>
+<Dark>Culoare închisă</Dark>
+<Light>Culoare deschisă</Light>
+<Themes>Teme</Themes>
+<NoTournament>Nu încărca meciurile individuale și turneele prietenilor</NoTournament>
+<DefHatStats>HatStats Apărare</DefHatStats>
+<MidHatStats>HatStats Mijloc</MidHatStats>
+<AttHatStats>HatStats Atac</AttHatStats>
 <TotHatStats>Total HatStats</TotHatStats>
+<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
 </Htlivesight>

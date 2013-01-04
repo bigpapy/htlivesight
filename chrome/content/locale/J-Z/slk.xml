@@ -334,13 +334,14 @@
 <chatLink>Otvor chat</chatLink>
 <hidesidebar>Skry bočný panel</hidesidebar>
 <addFriend>Klikni pre pridanie tohto tímu medzi priateľov</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
+<TooltipCopyLineUp>Klikni pre skopírovanie zostavy do schránky</TooltipCopyLineUp>
+<Dark>Tmavá</Dark>
+<Light>Svetlá</Light>
+<Themes>Téma</Themes>
+<NoTournament>Nenačítavaj jednorázové a turnajové zápasy priateľov</NoTournament>
+<DefHatStats>HatStats Obrana</DefHatStats>
+<MidHatStats>HatStats Záloha</MidHatStats>
+<AttHatStats>HatStats Útok</AttHatStats>
+<TotHatStats>HatStats Celkovo</TotHatStats>
+<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
 </Htlivesight>

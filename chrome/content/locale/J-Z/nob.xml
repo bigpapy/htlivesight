@@ -32,14 +32,14 @@
 <FriendsTitle>Venner</FriendsTitle>
 <FriendsRemove>Fjern</FriendsRemove>
 <FriendsOpen>Åpne</FriendsOpen>
-<Introduction>Du blir sendt til CHPP-siden der du får en autorisasjonskode. Hvis ikke, de-aktivér din pop-up blocker midlertidig eller legg til HTlivesight i listen for unntak. list.</Introduction>
+<Introduction>Du blir sendt til CHPP-siden der du får en autorisasjonskode. Hvis ikke, de-aktivér din pop-up blocker midlertidig eller legg til HTlivesight i listen for unntak.</Introduction>
 <Insert>Sett inn din autorisasjonskode her:</Insert>
 <Ending>HTlivesight er nå autorisert. Trykk på OK for å starte applikasjonen på nytt.</Ending>
 <Error>Feil</Error>
 <ServerON>Tilkoblet</ServerON>
 <ServerOFF>Frakoblet</ServerOFF>
-<ResetToken>Autorisasjonskoden har blitt slettet.Start HTLS på nytt, eller vent på neste oppdatering (less than 1 minute).</ResetToken>
-<NoHTServer>Du har ikke valgt den samme Hattrick-serveren som du er logget inn på. Høyreklikk hvor som helst på bakgrunnen, og klikk på - alternativer - generelt og skriv inn det rette nummeret på Hattrick-serveren</NoHTServer>
+<ResetToken>Autorisasjonskoden har blitt slettet. Start HTLS på nytt eller vent på neste oppdatering (mindre enn 1 minutt).</ResetToken>
+<NoHTServer>Du har ikke valgt den samme Hattrick-serveren som du er logget inn på. Høyreklikk hvor som helst på bakgrunnen, og klikk på - alternativer - generelt og skriv inn det rette nummeret på Hattrick-serveren.</NoHTServer>
 <MatchesMaximum>Umulig å se flere enn 20 kamper!</MatchesMaximum>
 <LeagueRound>Runde</LeagueRound>
 <MessageHattrickError>Hattrickserveren meldte om en feil.</MessageHattrickError>
@@ -99,7 +99,7 @@
 <EventSpecialExperience>Rutine</EventSpecialExperience>
 <EventSpecialLowExperience>Lav rutine</EventSpecialLowExperience>
 <EventSpecialWinger>+ Ving</EventSpecialWinger>
-<EventSpecialTechnical>Teknisk</EventSpecialTechnical>
+<EventSpecialTechnical>Teknisk vs hodespesialist</EventSpecialTechnical>
 <EventSpecialCounterAttack>Kontring</EventSpecialCounterAttack>
 <EventSpecialCornerKick>Corner</EventSpecialCornerKick>
 <EventSpecialIndirect>Indirekte frispark</EventSpecialIndirect>
@@ -123,23 +123,23 @@
 <ModeratelyInjuried>moderat skade</ModeratelyInjuried>
 <BadlyInjuried>stygg skade</BadlyInjuried>
 <ByHimself>skadet seg på egenhånd</ByHimself>
-<ByFoul>skadet av en motspiller</ByFoul>
+<ByFoul>skadet pga. stygt spill</ByFoul>
 <ExperiencedForward>erfaren spiss</ExperiencedForward>
 <InexperiencedDefender>uerfaren forsvarer</InexperiencedDefender>
-<WingerHead>Ving: kryss for hodespesialist</WingerHead>
+<WingerHead>Ving: Crosspasning til hodespesialist</WingerHead>
 <EventSpecialLongShotDefended>Langskudd stoppet</EventSpecialLongShotDefended>
 <EventSpecialQuickVsQuick>rask vs rask </EventSpecialQuickVsQuick>
 <LongShot>langskudd</LongShot>
 <MeteoSpecialTechnicalRain>- teknisk (-målscoring -ballfordeling)</MeteoSpecialTechnicalRain>
 <MeteoSpecialPowerfulRain>+ kraftfull (+målscoring +forsvar +ballfordeling)</MeteoSpecialPowerfulRain>
 <MeteoSpecialTechnicalSun>+ teknisk (+målscoring +ballfordeling)</MeteoSpecialTechnicalSun>
-<MeteoSpecialPowerfulSun>- powerful (-målscoring -kondisjon)</MeteoSpecialPowerfulSun>
-<MeteoSpecialQuickSun>- rask (-forsvar)</MeteoSpecialQuickSun>
+<MeteoSpecialPowerfulSun>-Kraftfull (-målscoring -kondisjon)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>-rask (-forsvar)</MeteoSpecialQuickSun>
 <MeteoSpecialQuickRain>- rask (-forsvar -målscoring)</MeteoSpecialQuickRain>
 <YellowNastyPlay>stygt spill</YellowNastyPlay>
 <YellowCheating>usportslig opptreden</YellowCheating>
 <ProgressUpdate>Neste oppdatering:</ProgressUpdate>
-<ProgressSeconds>s</ProgressSeconds>
+<ProgressSeconds>er</ProgressSeconds>
 <RequestServer>Henter fra anbefalt server</RequestServer>
 <RequestLeagueData>Henter ligainfo</RequestLeagueData>
 <RequestLeagueGames>Henter ligakamper</RequestLeagueGames>
@@ -171,15 +171,15 @@
 <MatchesHours>timer.</MatchesHours>
 <MatchesFriends>Venner</MatchesFriends>
 <MatchesGetFriends>Hent venners kamper</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Oversikt</MatchesHeader>
 <MatchesScorers>Målscorere</MatchesScorers>
 <ScorersList>Vis målscorere i oversikten</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>Arrangert</MatchesBooked>
+<BookedList>Vis arrangerte i oversikten</BookedList>
+<MatchesSentOff>Utvist</MatchesSentOff>
+<SentOffList>Vis utviste i oversikten</SentOffList>
+<MatchesInjured>Skadet</MatchesInjured>
+<InjuredList>Vis skadede i oversikten</InjuredList>
 <MatchesWindow>Vindu</MatchesWindow>
 <MatchesLines>Antall linjer i de siste hendelsene</MatchesLines>
 <NotifyNotify>Påminnelser</NotifyNotify>
@@ -245,102 +245,103 @@
 <TextHelpOf>Med hjelp av</TextHelpOf>
 <TextThanksTo>Mange takk til:</TextThanksTo>
 <ButtonClose>Lukk</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
+<NonExistent>Fraværende</NonExistent>
+<Disastrous>Katastrofal</Disastrous>
+<Wretched>Elendig</Wretched>
+<Poor>Dårlig</Poor>
+<Weak>Svak</Weak>
+<Inadequate>Middelmådig</Inadequate>
+<Passable>Akseptabel</Passable>
+<Solid>God</Solid>
+<Excellent>Utmerket</Excellent>
+<Formidable>Eminent</Formidable>
+<Outstanding>Fremragende</Outstanding>
+<Brilliant>Briljant</Brilliant>
+<Magnificent>Storslagen</Magnificent>
+<WorldClass>Fantastisk</WorldClass>
+<Supernatural>Eventyrlig</Supernatural>
+<Titanic>Titanisk</Titanic>
+<ExtraTerrestrial>Utenomjordisk</ExtraTerrestrial>
+<Mythical>Mytisk</Mythical>
+<Magical>Magisk</Magical>
+<Utopian>Utopisk</Utopian>
+<Divine>Guddommelig</Divine>
+<VeryHigh>Veldig høy</VeryHigh>
+<High>Høy</High>
+<Low>Lav</Low>
+<VeryLow>Veldig lav</VeryLow>
+<RightDefence>Førsvar høyre side</RightDefence>
+<MiddleDefence>Midtforsvar</MiddleDefence>
+<LeftDefence>Forsvar venstre side</LeftDefence>
+<Midfield>Midtbane</Midfield>
+<RightAttack>Angrep høyre side</RightAttack>
+<MiddleAttack>Midtangrep</MiddleAttack>
+<LeftAttack>Angrep venstre side</LeftAttack>
+<IndirectSetPiecesDefence>Indirekte dødball forsvar</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Indirekte dødball angrep</IndirectSetPiecesAttack>
+<TeamAttitude>Laginnstilling</TeamAttitude>
+<TacticType>Taktikktype</TacticType>
+<TacticSkill>Taktikknivå</TacticSkill>
+<BallPosses>Ballbesittelse</BallPosses>
+<SpecialEvent>Spesiell hendelse</SpecialEvent>
 <Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
+<PIC>Ta det rolig</PIC>
+<MOTS>Sesongens viktigste kamp</MOTS>
+<ColorPicker>Du kan velge din farge på www.colorpicker.com </ColorPicker>
+<EventBackground>Bakgrunnsfarge for hendelse</EventBackground>
+<FriendHome>Hjemmelag (egen og venner) farge: #</FriendHome>
+<FriendAway>Bortelag (egen og venner) farge: #</FriendAway>
+<FoeHome>Annen farge for hjemmelag: #</FoeHome>
+<FoeAway>Annen farge for hjemmelag: #</FoeAway>
+<Neutral>Nøytral farge: #</Neutral>
+<EventColorTitle>Farge for hendelse</EventColorTitle>
+<EventTextColor>Tekstfarge for hendelse: #</EventTextColor>
+<SETextColor>Tekstfarge for spesielle hendelser: #</SETextColor>
+<Colors>Farger</Colors>
+<SchemaTip>Klikk for å vise oppstilling</SchemaTip>
+<StatisticTip>Klikk for å vise statistikk når kampen er ferdig</StatisticTip>
+<Youth>Junior</Youth>
 <Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
+<Tournament>Turnering</Tournament>
+<FreeKicks>Frispark</FreeKicks>
+<RedCards>Røde kort</RedCards>
+<YellowCards>Gule kort</YellowCards>
+<Injuries>Skader</Injuries>
+<Goals>Mål</Goals>
 <Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
+<Terraces>Ståplasser</Terraces>
+<Basic>Sitteplasser</Basic>
+<Roof>Sitteplasser under tak</Roof>
+<VIP>Plasser i VIP-bokser</VIP>
+<CrowdinHelp>Hjelp til med å oversette! Med Crowdin er det superlett og gøy! Klikk her!</CrowdinHelp>
+<Error401>Feil 401: Uautorisert adgang. Du er nødt å få tillatelse på nytt. Klikk for å fortsette.</Error401>
+<Error404>Feil 404: Den forespurte ressursen ble ikke funnet. Hvis feilen dukker opp igjen, sjekk om CHPP tjeneren er nede.</Error404>
+<Error0>Feil 0: Internett ikke tilkoblet.</Error0>
+<Error500>Feil 500: Intern serverfeil (hos Hattrick)</Error500>
+<Error503>Feil 503: CHPP tjeneste utilgjengelig (midlertidig overbelastning eller vedlikehold)</Error503>
+<PathSoundsNote1>Sett inn "file:///" før stien til lyden i ogg-format. Kan også være i .wav-format</PathSoundsNote1>
+<PathSoundsNote2>Eksempel: file:///c:patch o hesound.ogg eller file:///c:path o hesound.wav</PathSoundsNote2>
+<PathSoundsWhistle2>Fløytesignal for slutt på 1. omgang</PathSoundsWhistle2>
+<PathSoundsWhistle3>Fløytesignal for at kampen er ferdigspilt</PathSoundsWhistle3>
+<EventYellow2>Andre gule kort</EventYellow2>
+<LoggedIn>Logget inn som</LoggedIn>
+<latestNews>Sjekk seneste nyheter på</latestNews>
+<HTLSThread>Hattrick forum</HTLSThread>
+<ProjectWebsite>Prosjektets webside</ProjectWebsite>
+<GooglePlusPage>Google+</GooglePlusPage>
+<TwitterPage>Twitter</TwitterPage>
+<FacebookPage>Facebook</FacebookPage>
+<chatLink>Åpne Chat</chatLink>
+<hidesidebar>Skjul sidepanel</hidesidebar>
+<addFriend>Klikk for å legge til lag i vennelisten</addFriend>
+<TooltipCopyLineUp>Klikk for å kopiere lagoppstillingen</TooltipCopyLineUp>
+<Dark>Mørk</Dark>
+<Light>Lys</Light>
+<Themes>Temaer</Themes>
+<NoTournament>Ikke legg til venners enkeltkamper eller turneringer</NoTournament>
+<DefHatStats>HatStats Forsvar</DefHatStats>
+<MidHatStats>HatStats Midtbane</MidHatStats>
+<AttHatStats>HatStats Angrep</AttHatStats>
 <TotHatStats>Total HatStats</TotHatStats>
+<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
 </Htlivesight>
