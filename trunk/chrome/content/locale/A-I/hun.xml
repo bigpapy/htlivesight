@@ -324,23 +324,24 @@
 <PathSoundsWhistle2>Első félidő vége sípszó</PathSoundsWhistle2>
 <PathSoundsWhistle3>Mérkőzés vége sípszó</PathSoundsWhistle3>
 <EventYellow2>Második sárga lap</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
+<LoggedIn>Bejelentkezve</LoggedIn>
+<latestNews>Legújabb hírek</latestNews>
+<HTLSThread>Hattrick Fórum</HTLSThread>
+<ProjectWebsite>Web projekt</ProjectWebsite>
+<GooglePlusPage>Google+ oldal</GooglePlusPage>
+<TwitterPage>Twitter oldal</TwitterPage>
+<FacebookPage>Facebook oldal</FacebookPage>
+<chatLink>Chat indítása</chatLink>
+<hidesidebar>Oldalsáv elrejtése</hidesidebar>
+<addFriend>Ide kattintva hozzáadhatod ezt a csapatot barátként</addFriend>
+<TooltipCopyLineUp>Ide kattintva másolatot készíthetsz a felállásról vágólapra</TooltipCopyLineUp>
+<Dark>Sötét</Dark>
+<Light>Világos</Light>
+<Themes>Témák</Themes>
+<NoTournament>A barátok alkalmi és privát liga mérkőzései nem töltődjenek le</NoTournament>
+<DefHatStats>HatStats védelem</DefHatStats>
+<MidHatStats>HatStats középpálya</MidHatStats>
+<AttHatStats>HatStats támadás</AttHatStats>
+<TotHatStats>Teljes HatStats</TotHatStats>
+<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
 </Htlivesight>

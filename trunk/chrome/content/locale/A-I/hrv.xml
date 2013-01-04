@@ -334,13 +334,14 @@
 <chatLink>Otvori chat</chatLink>
 <hidesidebar>Sakrij traku sa strane</hidesidebar>
 <addFriend>Klikni za dodati ovaj klub za prijatelje</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
+<TooltipCopyLineUp>Klikni za kopirati u međuspremnik</TooltipCopyLineUp>
+<Dark>Tamno</Dark>
+<Light>Svjetlo</Light>
+<Themes>Teme</Themes>
+<NoTournament>Nemojte učitati utakmice dvoboja i turnira za prijatelje</NoTournament>
+<DefHatStats>HatStats obrana</DefHatStats>
+<MidHatStats>HatStats veza</MidHatStats>
+<AttHatStats>Hatstats napad</AttHatStats>
+<TotHatStats>Ukuoni HatStatsa</TotHatStats>
+<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
 </Htlivesight>

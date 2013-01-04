@@ -334,13 +334,14 @@
 <chatLink>Открыть чат</chatLink>
 <hidesidebar>Скрыть боковую панель</hidesidebar>
 <addFriend>Нажмите, чтобы добавить эту команду в друзья</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
+<TooltipCopyLineUp>Нажмите, чтобы скопировать состав в буфер обмена</TooltipCopyLineUp>
+<Dark>Тёмная</Dark>
+<Light>Светлая</Light>
+<Themes>Темы</Themes>
+<NoTournament>Не загружать одиночные и турнирные матчи друзей</NoTournament>
+<DefHatStats>HatStats защиты</DefHatStats>
+<MidHatStats>HatStats полузащиты</MidHatStats>
+<AttHatStats>HatStats атаки</AttHatStats>
+<TotHatStats>Всего HatStats</TotHatStats>
+<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
 </Htlivesight>

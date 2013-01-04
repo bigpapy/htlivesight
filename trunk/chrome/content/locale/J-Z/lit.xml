@@ -334,13 +334,14 @@
 <chatLink>Atidaryti pokalbių kambarį</chatLink>
 <hidesidebar>Paslėpti šoninę juostą</hidesidebar>
 <addFriend>Spustelėję pridėsite į draugų sąrašą</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
+<TooltipCopyLineUp>Paspaudus nukopijuojama sudėtis</TooltipCopyLineUp>
+<Dark>Tamsi</Dark>
+<Light>Šviesi</Light>
+<Themes>Išvaizda</Themes>
+<NoTournament>Nesiųsti draugų dvikovos ir turnyro rungtynių</NoTournament>
+<DefHatStats>Gynyba (HatStats)</DefHatStats>
+<MidHatStats>Saugų linija (HatStats)</MidHatStats>
+<AttHatStats>Ataka (HatStats)</AttHatStats>
+<TotHatStats>Iš viso (HatStats)</TotHatStats>
+<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
 </Htlivesight>

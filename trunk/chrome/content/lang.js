@@ -199,5 +199,6 @@ htlivesight.Lang = {
 			doc.getElementById("hidesidebar").title=htlivesight.Util.Parse("hidesidebar",htlivesight.data[0]);
 			doc.getElementById("options_link").title=htlivesight.Util.Parse("MenuOptions",htlivesight.data[0]);
 			doc.getElementById("about_link").title=htlivesight.Util.Parse("MenuAbout",htlivesight.data[0]);
+			doc.getElementById("copiedToClipboard").innerHTML=htlivesight.Util.Parse("CopiedToClipboard",htlivesight.data[0]);
 		}
 };

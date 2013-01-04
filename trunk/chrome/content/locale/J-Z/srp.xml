@@ -334,13 +334,14 @@
 <chatLink>Отвори чет</chatLink>
 <hidesidebar>Сакриј десни мени</hidesidebar>
 <addFriend>Кликни да додаш овај тим међу пријатеље</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
+<TooltipCopyLineUp>Кликни да ископираш поставу у меморију</TooltipCopyLineUp>
+<Dark>Тамна</Dark>
+<Light>Светла</Light>
+<Themes>Теме</Themes>
+<NoTournament>Не учитавај дуеле и мечеве са турнира својих пријатеља</NoTournament>
+<DefHatStats>Хатстатс одбрана</DefHatStats>
+<MidHatStats>Хатстатс везни ред</MidHatStats>
+<AttHatStats>Хатстатс напад</AttHatStats>
+<TotHatStats>Хатстсатс укупно</TotHatStats>
+<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
 </Htlivesight>

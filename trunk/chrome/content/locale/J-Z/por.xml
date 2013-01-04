@@ -18,18 +18,18 @@
 <LoginByEvent>Por evento</LoginByEvent>
 <LeagueMatches>Jogos do Campeonato</LeagueMatches>
 <LeagueLiveTable>Classificação em direto</LeagueLiveTable>
-<LeaguePosition>Pos</LeaguePosition>
+<LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Equipa</LeagueTeam>
 <LeaguePlayed>J</LeaguePlayed>
 <LeagueGoals>G</LeagueGoals>
-<LeagueGoalDiff>DG</LeagueGoalDiff>
-<LeaguePoints>PTS</LeaguePoints>
+<LeagueGoalDiff>±</LeagueGoalDiff>
+<LeaguePoints>Pts</LeaguePoints>
 <MatchesList>Lista de Jogos</MatchesList>
 <MatchesAdd>Adicionar Jogo</MatchesAdd>
 <MatchesByMatch>Por ID de jogo</MatchesByMatch>
 <MatchesByTeam>Por ID de equipa</MatchesByTeam>
 <MatchesYouth>Jogos da Equipa Júnior?</MatchesYouth>
-<FriendsTitle>Amigos</FriendsTitle>
+<FriendsTitle>Equipas Acompanhadas</FriendsTitle>
 <FriendsRemove>Remover</FriendsRemove>
 <FriendsOpen>Abrir</FriendsOpen>
 <Introduction>Está a ser direcionado à página de CHPP para obter o código de autorização. Se não conseguir, autorize as janelas de pop up ou ponha o HTlivesight na lista de exceções.</Introduction>
@@ -43,7 +43,7 @@
 <MatchesMaximum>Não pode acompanhar mais de 20 jogos!</MatchesMaximum>
 <LeagueRound>Jornada</LeagueRound>
 <MessageHattrickError>O servidor do Hattrick devolveu um erro!</MessageHattrickError>
-<MessageAlreadyFriend>Já está na lista de amigos</MessageAlreadyFriend>
+<MessageAlreadyFriend>Já se encontra na lista de equipas acompanhadas!</MessageAlreadyFriend>
 <MessageErrorReading>Erro a ler os dados</MessageErrorReading>
 <MessageLoginNotSuccessful>O login falhou.</MessageLoginNotSuccessful>
 <TacticPressing>Pressing</TacticPressing>
@@ -52,13 +52,13 @@
 <TacticAOW>ataque pelas alas</TacticAOW>
 <TacticPlayCreative>espontaneidade</TacticPlayCreative>
 <TacticLongShots>remate de longe</TacticLongShots>
-<TimeFirstHalf>primeira parte</TimeFirstHalf>
+<TimeFirstHalf>da primeira parte</TimeFirstHalf>
 <TimeHalfTime>intervalo</TimeHalfTime>
 <TimeSecondHalf>segunda parte</TimeSecondHalf>
 <TimeExtraTime>prolongamento</TimeExtraTime>
 <TimePenalties>penaltis</TimePenalties>
 <TimeFinish>fim</TimeFinish>
-<TimeStartsIn>começa dentro de</TimeStartsIn>
+<TimeStartsIn>Começa dentro de</TimeStartsIn>
 <TimeDays>dias</TimeDays>
 <TimeHours>horas</TimeHours>
 <TimeMinutes>minutos</TimeMinutes>
@@ -334,13 +334,14 @@
 <chatLink>Iniciar chat</chatLink>
 <hidesidebar>Ocultar barra lateral</hidesidebar>
 <addFriend>Clicar para adicionar esta equipa à lista de amigos</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
+<TooltipCopyLineUp>Clique para copiar a formação para a área de transferência</TooltipCopyLineUp>
+<Dark>Escuro</Dark>
+<Light>Claro</Light>
+<Themes>Temas</Themes>
+<NoTournament>Não adicionar duelos e jogos de torneio dos amigos</NoTournament>
+<DefHatStats>HatStats da Defesa</DefHatStats>
+<MidHatStats>HatStats do Meio-Campo</MidHatStats>
+<AttHatStats>HatStats do Ataque</AttHatStats>
+<TotHatStats>HatStats Totais</TotHatStats>
+<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
 </Htlivesight>

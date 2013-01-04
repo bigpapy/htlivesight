@@ -334,13 +334,14 @@
 <chatLink>IRC čats</chatLink>
 <hidesidebar>Paslēpt sānjoslu</hidesidebar>
 <addFriend>Klikšķināt, lai pievienotu šo komandu draugiem</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
+<TooltipCopyLineUp>Klikšķini lai iekopētu sastāvu starpliktuvē</TooltipCopyLineUp>
+<Dark>Tumšs</Dark>
+<Light>Gaišs</Light>
+<Themes>Izskats</Themes>
+<NoTournament>Nelādēt draugu atsevišķās un turnīru spēles</NoTournament>
+<DefHatStats>Aizsardzības HatStats</DefHatStats>
+<MidHatStats>Viduszonas HatStats</MidHatStats>
+<AttHatStats>Uzbrukuma HatStats</AttHatStats>
+<TotHatStats>Kopējais HatStats</TotHatStats>
+<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
 </Htlivesight>
