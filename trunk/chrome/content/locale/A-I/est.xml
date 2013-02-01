@@ -91,7 +91,7 @@
 <EventSideFreeKick>vaba löök</EventSideFreeKick>
 <EventSidePenalty>penalt</EventSidePenalty>
 <EventSpecialUnpredictable>SE ettearvamatu</EventSpecialUnpredictable>
-<EventSpecialLongShot>SE pikk sööt</EventSpecialLongShot>
+<EventSpecialLongShot>SE kauglöök</EventSpecialLongShot>
 <EventSpecialQuick>SE kiire</EventSpecialQuick>
 <EventSpecialLowStamina>madal vastupidavus</EventSpecialLowStamina>
 <EventSpecialSetPieces>standard</EventSpecialSetPieces>
@@ -334,14 +334,14 @@
 <chatLink>Vestluse avamine</chatLink>
 <hidesidebar>Peida külgriba</hidesidebar>
 <addFriend>Kliki, et meeskond sõbraks lisada</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
+<TooltipCopyLineUp>Kliki rivistuse kopeerimiseks</TooltipCopyLineUp>
+<Dark>Tume</Dark>
+<Light>Hele</Light>
+<Themes>Teema</Themes>
+<NoTournament>Ära lae sõprade turniiri- ja üksikmänge</NoTournament>
+<DefHatStats>Kaitse HatStats</DefHatStats>
+<MidHatStats>Keskvälja HatStats</MidHatStats>
+<AttHatStats>Ründe HatStats</AttHatStats>
+<TotHatStats>HatStats kokku</TotHatStats>
+<CopiedToClipboard>Kopeeritud!</CopiedToClipboard>
 </Htlivesight>

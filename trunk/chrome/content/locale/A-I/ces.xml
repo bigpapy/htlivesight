@@ -32,14 +32,14 @@
 <FriendsTitle>Přátelé</FriendsTitle>
 <FriendsRemove>Smazat</FriendsRemove>
 <FriendsOpen>Otevřít</FriendsOpen>
-<Introduction>Jsi přesměrován na stránku CHPP, kde se zobrazí autorizační kód. Pokud ne, zkontroluj prosím, zda nemáš zakázáno automatické otevírání vyskakovacích oken. To buď dočasně vypni, nebo přidej HTLiveSight mezi výjimky.</Introduction>
-<Insert>zadej svůj autorizační kód sem:</Insert>
+<Introduction>Jsi přesměrován(a) na stránku CHPP, kde se zobrazí autorizační kód. Pokud se tak nestane, zkontroluj prosím, zda nemáš zakázáno automatické otevírání vyskakovacích oken. To buď dočasně vypni, nebo přidej HTLiveSight mezi výjimky.</Introduction>
+<Insert>Zadej svůj autorizační kód sem:</Insert>
 <Ending>Nyní je HTLiveSight autorizován. Klikni na OK, aby se aplikace restartovala.</Ending>
 <Error>Chyba</Error>
 <ServerON>Připojeno</ServerON>
 <ServerOFF>Nepřipojeno</ServerOFF>
-<ResetToken>Autorizace byla odstraněna. Restartuj HTLS, nebo počkej na aktualizaci (cca 1 min.).</ResetToken>
-<NoHTServer>Nevybral(a) jsi server Hattricku, na který jsi se přihlásil(a) přes svůj prohlížeč. Klikni pravým tlačítkem myši na pozadí \= možnosti \= obecné \= vyplň číslo serveru.</NoHTServer>
+<ResetToken>Autorizační kód byl odstraněn. Restartuj HTLS, nebo počkej na aktualizaci (cca 1 min.).</ResetToken>
+<NoHTServer>Nevybral(a) jsi správný Hattrick server, na který jsi právě nalogován(a). Klikni kamkoliv na pozadí a vyber - "možnosti" \=> "obecné" a nastav správné číslo serveru.</NoHTServer>
 <MatchesMaximum>Nemůžeš sledovat více než 20 zápasů!</MatchesMaximum>
 <LeagueRound>Kolo</LeagueRound>
 <MessageHattrickError>Server Hattricku hlásí chybu.</MessageHattrickError>
@@ -47,7 +47,7 @@
 <MessageErrorReading>Chyba při čtení dat z</MessageErrorReading>
 <MessageLoginNotSuccessful>Přihlášení se nezdařilo.</MessageLoginNotSuccessful>
 <TacticPressing>nátlaková hra</TacticPressing>
-<TacticCA>protiútoky</TacticCA>
+<TacticCA>protiútok</TacticCA>
 <TacticAIM>útok středem</TacticAIM>
 <TacticAOW>útok po křídlech</TacticAOW>
 <TacticPlayCreative>nápaditá hra</TacticPlayCreative>
@@ -59,9 +59,9 @@
 <TimePenalties>penalty</TimePenalties>
 <TimeFinish>dohráno</TimeFinish>
 <TimeStartsIn>začíná za</TimeStartsIn>
-<TimeDays>dní</TimeDays>
-<TimeHours>hodiny</TimeHours>
-<TimeMinutes>minuty</TimeMinutes>
+<TimeDays>dny/dní</TimeDays>
+<TimeHours>hodin(y)</TimeHours>
+<TimeMinutes>minut(y)</TimeMinutes>
 <TimeDay>den</TimeDay>
 <TimeHour>hodinu</TimeHour>
 <TimeMinute>minutu</TimeMinute>
@@ -70,7 +70,7 @@
 <TooltipWindowLink>Odkaz na stránku se zápasem na Hattricku</TooltipWindowLink>
 <TooltipWindowInfo>Zobrazit/skrýt doplňkové události</TooltipWindowInfo>
 <TooltipWindowMaximize>Maximalizovat okno</TooltipWindowMaximize>
-<TooltipWindowMinimize>Minimalizuj okno</TooltipWindowMinimize>
+<TooltipWindowMinimize>Minimalizovat okno</TooltipWindowMinimize>
 <TooltipWindowShade>Ukrýt okno</TooltipWindowShade>
 <TooltipWindowClose>Zavřít okno</TooltipWindowClose>
 <TooltipWindowOpen>Otevřít okno</TooltipWindowOpen>
@@ -94,12 +94,12 @@
 <EventSpecialLongShot>SE střela z dálky</EventSpecialLongShot>
 <EventSpecialQuick>SE rychlý</EventSpecialQuick>
 <EventSpecialLowStamina>nízká kondice</EventSpecialLowStamina>
-<EventSpecialSetPieces>standardky</EventSpecialSetPieces>
+<EventSpecialSetPieces>standardka</EventSpecialSetPieces>
 <EventSpecialHead>hlavičkář</EventSpecialHead>
 <EventSpecialExperience>zkušenost</EventSpecialExperience>
 <EventSpecialLowExperience>nízká zkušenost</EventSpecialLowExperience>
 <EventSpecialWinger>+ křídlo</EventSpecialWinger>
-<EventSpecialTechnical>technický</EventSpecialTechnical>
+<EventSpecialTechnical>technický vs. hlavičkář</EventSpecialTechnical>
 <EventSpecialCounterAttack>protiútok</EventSpecialCounterAttack>
 <EventSpecialCornerKick>rohový kop</EventSpecialCornerKick>
 <EventSpecialIndirect>nepřímý volný kop</EventSpecialIndirect>
@@ -138,19 +138,19 @@
 <MeteoSpecialQuickRain>- rychlý (-bránění -zakončování)</MeteoSpecialQuickRain>
 <YellowNastyPlay>tvrdý faul</YellowNastyPlay>
 <YellowCheating>faul</YellowCheating>
-<ProgressUpdate>Příští aktualizace:</ProgressUpdate>
+<ProgressUpdate>Příští aktualizace: </ProgressUpdate>
 <ProgressSeconds>s</ProgressSeconds>
 <RequestServer>Zobrazit doporučený server</RequestServer>
 <RequestLeagueData>Zobrazit ligová data</RequestLeagueData>
 <RequestLeagueGames>Zobrazit ligové zápasy</RequestLeagueGames>
-<RequestLive>Pruběžná aktualizace</RequestLive>
+<RequestLive>Průběžná aktualizace</RequestLive>
 <RequestAdd>Přidat zápas</RequestAdd>
 <RequestDelete>Smazat zápas</RequestDelete>
 <RequestLogin>Přihlášení</RequestLogin>
 <RequestDetails>Zobrazit detaily zápasu</RequestDetails>
 <RequestTeam>Zobrazit zápas podle týmu</RequestTeam>
 <RequestTeamData>Zobrazit týmová data</RequestTeamData>
-<WindowTitle>Nastavení HTLiveSight</WindowTitle>
+<WindowTitle>Nastavení HTLiveSightu</WindowTitle>
 <TabGeneral>Obecné</TabGeneral>
 <TabMatches>Zápasy</TabMatches>
 <TabNotifications>Upozornění na události</TabNotifications>
@@ -166,20 +166,20 @@
 <GeneralServer>Nastavení serveru</GeneralServer>
 <GeneralNote>Doplň číslo serveru, na který jsi přihlášen(a) (např. www96).</GeneralNote>
 <MatchesLeague>Ligové zápasy</MatchesLeague>
-<MatchesGetLeague>Zobrazovat zápasy ligy</MatchesGetLeague>
+<MatchesGetLeague>Zobrazit zápasy ligy</MatchesGetLeague>
 <MatchesPlayed>Pokud budou hrány do</MatchesPlayed>
 <MatchesHours>hodin.</MatchesHours>
 <MatchesFriends>Přátelé</MatchesFriends>
 <MatchesGetFriends>Zobrazovat zápasy přátel</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Záhlaví</MatchesHeader>
 <MatchesScorers>Střelci</MatchesScorers>
 <ScorersList>Seznam střelců v záhlaví</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>Karty</MatchesBooked>
+<BookedList>Seznam karet v záhlaví</BookedList>
+<MatchesSentOff>Vyloučení</MatchesSentOff>
+<SentOffList>Seznam vyloučených v záhlaví</SentOffList>
+<MatchesInjured>Zranění</MatchesInjured>
+<InjuredList>Seznam zraněných v záhlaví</InjuredList>
 <MatchesWindow>Okno</MatchesWindow>
 <MatchesLines>Kolik řádků se má zobrazit v minimalizovaném módu</MatchesLines>
 <NotifyNotify>Upozornění na události</NotifyNotify>
@@ -245,103 +245,103 @@
 <TextHelpOf>s pomocí</TextHelpOf>
 <TextThanksTo>Mnohokrát díky:</TextThanksTo>
 <ButtonClose>Zavřít</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
-<Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
-<Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
+<NonExistent>neexistující</NonExistent>
+<Disastrous>odstrašující</Disastrous>
+<Wretched>katastrofální</Wretched>
+<Poor>tristní</Poor>
+<Weak>nedostačující</Weak>
+<Inadequate>neadekvátní</Inadequate>
+<Passable>ucházející</Passable>
+<Solid>solidní</Solid>
+<Excellent>excelentní</Excellent>
+<Formidable>nadstandardní</Formidable>
+<Outstanding>vynikající</Outstanding>
+<Brilliant>brilantní</Brilliant>
+<Magnificent>perfektní</Magnificent>
+<WorldClass>prvotřídní</WorldClass>
+<Supernatural>abnormální</Supernatural>
+<Titanic>kolosální</Titanic>
+<ExtraTerrestrial>impozantní</ExtraTerrestrial>
+<Mythical>dechberoucí</Mythical>
+<Magical>okouzlující</Magical>
+<Utopian>legendární</Utopian>
+<Divine>Boží</Divine>
+<VeryHigh>mnohem lepší</VeryHigh>
+<High>lepší</High>
+<Low>horší</Low>
+<VeryLow>mnohem horší</VeryLow>
+<RightDefence>Pravá strana obrany</RightDefence>
+<MiddleDefence>Střed obrany</MiddleDefence>
+<LeftDefence>Levá strana obrany</LeftDefence>
+<Midfield>Záloha</Midfield>
+<RightAttack>Pravá strana útoku</RightAttack>
+<MiddleAttack>Střed útoku</MiddleAttack>
+<LeftAttack>Levá strana útoku</LeftAttack>
+<IndirectSetPiecesDefence>Bránění nepřímých volných kopů</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Zahrávání nepřímých volných kopů</IndirectSetPiecesAttack>
+<TeamAttitude>Přístup týmu</TeamAttitude>
+<TacticType>Taktika</TacticType>
+<TacticSkill>Stupeň zvládnutí</TacticSkill>
+<BallPosses>Držení míče</BallPosses>
+<SpecialEvent>Speciální událost</SpecialEvent>
+<Normal>Normální</Normal>
+<PIC>O nic nejde</PIC>
+<MOTS>Zápas sezóny</MOTS>
+<ColorPicker>Můžeš si vybrat barvu na </ColorPicker>
+<EventBackground>Barva pozadí události</EventBackground>
+<FriendHome>Barva pro (můj nebo přátel) tým doma: #</FriendHome>
+<FriendAway>Barva pro (můj nebo přátel) tým venku: #</FriendAway>
+<FoeHome>Barva pro cizí tým doma: #</FoeHome>
+<FoeAway>Barva pro cizí tým venku: #</FoeAway>
+<Neutral>Neutrální barva: #</Neutral>
+<EventColorTitle>Barva textu události</EventColorTitle>
+<EventTextColor>Barva textu události: #</EventTextColor>
+<SETextColor>Barva popisku události v hranatých závorkách: #</SETextColor>
+<Colors>Barvy</Colors>
+<SchemaTip>Klikni k zobrazení sestavy</SchemaTip>
+<StatisticTip>Klikni pro zobrazení statistik na konci zápasu</StatisticTip>
+<Youth>mládežnický</Youth>
+<Senior>seniorský</Senior>
+<Tournament>turnajový</Tournament>
+<FreeKicks>Standardní situace</FreeKicks>
+<RedCards>Červené karty</RedCards>
+<YellowCards>Žluté karty</YellowCards>
+<Injuries>Zranění</Injuries>
+<Goals>Góly</Goals>
+<Total>Celkem</Total>
+<Terraces>Místa k stání</Terraces>
+<Basic>Běžná sedadla</Basic>
+<Roof>Krytá sedadla</Roof>
+<VIP>Sedadla ve VIP boxech</VIP>
+<CrowdinHelp>Pomozte s překladem! S Crowdinem je to velmi jednoduché a zábavné! Klikni sem!</CrowdinHelp>
+<Error401>Chyba 401: neautorizovaný přístup. Musíš se znovu projít proces autorizace. Klikni na OK k pokračování.</Error401>
+<Error404>Chyba 404: požadovaný zdroj nemohl být nalezen. Pokud se chyba objeví znovu, zkontroluj, zda nejsou CHPP služby mimo provoz.</Error404>
+<Error0>Chyba 0: žádné připojení k internetu.</Error0>
+<Error500>Chyba 500: interní serverová chyba na Hattricku</Error500>
+<Error503>Chyba 503: Služba CHPP je nedostupná (dočasné přetížení nebo údržba)</Error503>
+<PathSoundsNote1>Vlož file:/// před adresu zvuku ve formátu .ogg nebo .wav</PathSoundsNote1>
+<PathSoundsNote2>Vzor: file:///c:\\cesta\\ke\\zvukovémusouboru.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>Hvizd na konci 1. poločasu</PathSoundsWhistle2>
+<PathSoundsWhistle3>Hvizd na konci zápasu</PathSoundsWhistle3>
+<EventYellow2>Druhá žlutá karta</EventYellow2>
+<LoggedIn>Přihlášen(a) jako</LoggedIn>
+<latestNews>Zkontroluj nejnovější zprávy na</latestNews>
+<HTLSThread>Konference Hattricku</HTLSThread>
+<ProjectWebsite>Webová stránka projektu</ProjectWebsite>
+<GooglePlusPage>Stránka na Google+</GooglePlusPage>
+<TwitterPage>Stránka na Twitteru</TwitterPage>
+<FacebookPage>Stránka na Facebooku</FacebookPage>
+<chatLink>Otevřít chat</chatLink>
+<hidesidebar>Skrýt boční panel</hidesidebar>
+<addFriend>Klikni k přidání tohoto týmu do přátel</addFriend>
+<TooltipCopyLineUp>Klikni ke zkopírování sestavy do schránky</TooltipCopyLineUp>
+<Dark>Tmavá</Dark>
+<Light>Světlá</Light>
+<Themes>Témata</Themes>
+<NoTournament>Nenačítat měření sil a turnajové zápasy přátel</NoTournament>
+<DefHatStats>HatStats obrany</DefHatStats>
+<MidHatStats>HatStats zálohy</MidHatStats>
+<AttHatStats>HatStats útoku</AttHatStats>
+<TotHatStats>Celkové HatStats</TotHatStats>
+<CopiedToClipboard>Zkopírováno do schránky!</CopiedToClipboard>
 </Htlivesight>
