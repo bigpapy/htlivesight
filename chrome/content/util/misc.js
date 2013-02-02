@@ -10,7 +10,7 @@ htlivesight.load = function(url, callback, crossSite) {
 		if (typeof(req.overrideMimeType) == "function")
 			req.overrideMimeType("text/plain");
 		try
-		{req.send(null);}catch(e){alert(e);}
+		{req.send(null);}catch(e){alert(e+" URL = "+url);}
 		var response = req.responseText;
 		return response;
 	}
