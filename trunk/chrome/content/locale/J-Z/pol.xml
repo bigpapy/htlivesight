@@ -203,7 +203,7 @@
 <CustomSoundsSEW>Dźwięk dla pogodowych eventów</CustomSoundsSEW>
 <CustomSoundsGoal>Oryginalne dźwięki LiveFox</CustomSoundsGoal>
 <CustomSoundsNoOpGoal>Brak dźwięku dla bramek przeciwnika</CustomSoundsNoOpGoal>
-<PathSoundsMyGoal>Dźwięk dla gola samobójczego</PathSoundsMyGoal>
+<PathSoundsMyGoal>Dźwięk dla bramki własnego zespołu</PathSoundsMyGoal>
 <PathSoundsOpGoal>Dźwięk bramki mojego przeciwnika</PathSoundsOpGoal>
 <PathSoundsFrGoal>Dźwięk bramki mojego przyjaciela</PathSoundsFrGoal>
 <PathSoundsOpFrGoal>Dźwięk bramki przeciwnika mojego przyjaciela</PathSoundsOpFrGoal>
@@ -343,5 +343,5 @@
 <MidHatStats>HatStats pomoc</MidHatStats>
 <AttHatStats>HatStats atak</AttHatStats>
 <TotHatStats>HatStats łącznie</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
+<CopiedToClipboard>Skopiowane do schowka!</CopiedToClipboard>
 </Htlivesight>

@@ -203,13 +203,13 @@
 						</a>
 					</div>
 				</fieldset>
-				<fieldset>
-					<legend id="GeneralServer"></legend>
-					<label id="GeneralNote"></label> <br /> <label
-						for="hattrickServer">Hattrick server:</label>						
+				<fieldset style="display: none">
+					<legend id="GeneralServer" style="display: none"></legend>
+					<label id="GeneralNote" style="display: none"></label> <br /> <label
+						for="hattrickServer" style="display: none">Hattrick server:</label>						
 						<form>
 						<select class="text ui-widget-content ui-corner-all"
-							id="hattrickServer">
+							id="hattrickServer" style="display: none">
 							<option value="www74">www74</option>
 							<option value="www75">www75</option>
 							<option value="www76">www76</option>
@@ -670,7 +670,7 @@
 		<div id="left_topbar">
 			<span id="latestNews">Check out the latest news on</span> <a
 				title="Hattrick Forum" id="HTLSThread"
-				href=".hattrick.org/Forum/Overview.aspx?v=0&amp;f=796547"
+				href="http://www.hattrick.org/goto.ashx?path=/Forum/Overview.aspx?v=0%26f=796547"
 				target="_blank"> <img alt="hattrick" class="socialicon"
 				src="./themes/images/ht.png"> </a> <a title="Project Website"
 				id="ProjectWebsite" href="http://htlivesight.sourceforge.net"
@@ -692,6 +692,25 @@
 				class="socialicon" src="./themes/images/chat.png"> </a>
 			<div id="chat-dialog" title="Chat">
 			</div>
+   <button type="button" id="playPauseButton" style="display: none">▶</button>
+   <button type="button" id="goToEnd" style="display: none">▶▶▌</button>
+   	<form>
+						<select class="text ui-widget-content ui-corner-all"
+							id="reLiveSpeedPanel" style="display: none">
+							<option value="1">1x</option>
+							<option value="2">2x</option>
+							<option value="3">3x</option>
+							<option value="4">4x</option>
+							<option value="5">5x</option>
+							<option value="6">6x</option>
+							<option value="10">10x</option>
+							<option value="12">12x</option>
+							<option value="15">15x</option>
+							<option value="20">20x</option>
+							<option value="30">30x</option>
+							<option value="60">60x</option>					
+					</select>
+					</form>
 		</div>
 		<div id="right_topbar">
 			<span id="LoggedIn">Logged in as</span> <span id="teamName"></span> <a

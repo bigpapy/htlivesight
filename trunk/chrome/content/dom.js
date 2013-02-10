@@ -133,12 +133,13 @@ htlivesight.DOM = {
 					alert(no_htserver);
 					htServer="www";
 				};
-				var matchLink="http://" + htServer + ".hattrick.org/Club/Matches/Match.aspx?matchID=" + matchId;
+				//var matchLink="http://" + htServer + ".hattrick.org/Club/Matches/Match.aspx?matchID=" + matchId;
+					var matchLink="http://www.hattrick.org/goto.ashx?path=/Club/Matches/Match.aspx?matchID=" + matchId;
 				if (sourceSystem=="Hattrick"||sourceSystem=="False"){ 
 					matchLink=matchLink+"&SourceSystem=Hattrick";
 				}else if (sourceSystem=="youth"||sourceSystem=="Youth"||sourceSystem=="True"){
-					matchLink=matchLink+"&SourceSystem=Youth";
-				}else if(sourceSystem=="htointegrated"||sourceSystem=="HTOIntegrated"){ matchLink=matchLink+"&SourceSystem=HTOIntegrated";};
+					matchLink=matchLink+"%26SourceSystem=Youth";
+				}else if(sourceSystem=="htointegrated"||sourceSystem=="HTOIntegrated"){ matchLink=matchLink+"%26SourceSystem=HTOIntegrated";};
 				var matchpage=window.open(matchLink);
 			}catch(e){alert("toggleLInk: "+e);}// added by bigpapy to debug from XUL to HTML
 		},

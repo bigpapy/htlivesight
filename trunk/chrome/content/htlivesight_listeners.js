@@ -10,4 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	doc.getElementById("reLive").addEventListener('click',function(){htlivesight.reLive();});
 	doc.getElementById("buttonAddMatch").addEventListener('click',function(){htlivesight.Click.AddMatch();});
 	doc.getElementById("buttonAddTeam").addEventListener('click', function(){htlivesight.Click.AddMatchByTeam();});
+	doc.getElementById("playPauseButton").addEventListener('click', function(){htlivesight.Click.PlayPauseSwitcher();});
+	doc.getElementById("goToEnd").addEventListener('click', function(){htlivesight.Click.GoToEnd();});
+	doc.getElementById("reLiveSpeedPanel").addEventListener('click', function(){htlivesight.Click.SetReliveSpeed();});
 });
