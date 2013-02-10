@@ -577,7 +577,7 @@
 			</ul>
 			<div id="tabs-1">
 				<img src="./themes/images/256.png" alt="HTLiveSight Logo"><br />
-				HTLiveSightDEV 0.5.968<br /> <span id="creationDate"></span><br />
+				HTLiveSightDEV 0.5.972<br /> <span id="creationDate"></span><br />
 				<br /> <span id="createdBy"></span><br /> Silkevicious &amp;
 				Bigpapy<br />
 				<br /> <span id="BasedOn">Based on</span> <span id="BasedOnTitle">HattrickLiveFox</span><br />
@@ -686,15 +686,16 @@
 				href="http://www.facebook.com/pages/HTLiveSight/239694369438717"
 				target="_blank"> <img alt="facebook" class="socialicon"
 				src="./themes/images/fb.png"> </a>
-		</div>
-		<div id="central_topbar">
-			<a title="Open Chat" id="chat_link" href="#"> <img alt="chat"
+				<a title="Open Chat" id="chat_link" href="#"> <img alt="chat"
 				class="socialicon" src="./themes/images/chat.png"> </a>
 			<div id="chat-dialog" title="Chat">
 			</div>
-   <button type="button" id="playPauseButton" style="display: none">▶</button>
-   <button type="button" id="goToEnd" style="display: none">▶▶▌</button>
-   	<form>
+		</div>
+		<div id="central_topbar">
+			<span id="ReLiveControls" style="display: none">ReLive Controls</span>
+   <input type="button" class="relivebuttons" id="playPauseButton" style="display: none" value="▶" />
+   <input type="button"  class="relivebuttons" id="goToEnd" style="display: none" value="▶▶▌" />
+   	<form id="reLiveSpeedForm" style="display: none">
 						<select class="text ui-widget-content ui-corner-all"
 							id="reLiveSpeedPanel" style="display: none">
 							<option value="1">1x</option>
