@@ -76,7 +76,7 @@ var htlivesight = {
 			htlivesight.Sound.start();
 			htlivesight.Log.debug("loading username and password");
 			htlivesight.Log.debug("teamId: " + htlivesight.prefs.general.teamId);
-			document.body.style.backgroundImage="url('file:///home/lelone/Scrivania/Schermata.png')";
+			//document.body.style.backgroundImage="url('file:///home/lelone/Scrivania/Schermata.png')";
 			if (htlivesight.prefs.general.teamId != "") {
 				document.getElementById("teamId").value=htlivesight.prefs.general.teamId;    
 			}
