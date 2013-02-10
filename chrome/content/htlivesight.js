@@ -22,8 +22,10 @@ var htlivesight = {
 				winW2 = window.innerWidth;
 				winH2 = window.innerHeight;
 			}
+			console.info(winW);
+			console.info(winH);
 			document.getElementById("live_box").setAttribute("style", "width:" + (winW2-323) + "px" );
-		//	document.getElementById("sidebar").setAttribute("style", "width:" + (320) + "px" );
+			document.getElementById("sidebar").setAttribute("style", "width:" + (320) + "px" );
 		},
 
 		startup: function() {
@@ -45,6 +47,7 @@ var htlivesight = {
 			console.info(winW);
 			console.info(winH);
 			document.getElementById("live_box").setAttribute("style", "width:" + (winW-323) + "px" );
+			document.getElementById("sidebar").setAttribute("style", "width:" + (320) + "px" );
 			var winboxRegister = function(wbList) {
 				var winbox;
 				var i, len;
@@ -73,6 +76,7 @@ var htlivesight = {
 			htlivesight.Sound.start();
 			htlivesight.Log.debug("loading username and password");
 			htlivesight.Log.debug("teamId: " + htlivesight.prefs.general.teamId);
+			document.body.style.backgroundImage="url('file:///home/lelone/Scrivania/Schermata.png')";
 			if (htlivesight.prefs.general.teamId != "") {
 				document.getElementById("teamId").value=htlivesight.prefs.general.teamId;    
 			}
@@ -84,9 +88,9 @@ var htlivesight = {
 				document.getElementById("reLiveByEvent").disabled = true;
 			}
 			if (htlivesight.prefs.general.hattrickServer=="") htlivesight.prefs.general.hattrickServer="www"; 
-			var link=document.getElementById("HTLSThread").getAttribute("href");
-			link="http://"+htlivesight.prefs.general.hattrickServer+link;
-			document.getElementById("HTLSThread").setAttribute("href",link);
+			//var link=document.getElementById("HTLSThread").getAttribute("href");
+			//link="http://"+htlivesight.prefs.general.hattrickServer+link;
+			//document.getElementById("HTLSThread").setAttribute("href",link);
 		},
 		getRecommendedServer: function() {
 			htlivesight.HTTP.getRecommendedServer();
@@ -96,6 +100,10 @@ var htlivesight = {
 				htlivesight.Preferences.teamId.save(document.getElementById("teamId").value);
 			};
 			if(document.getElementById("reLive").checked) {
+				document.getElementById("playPauseButton").style.display="block";
+				document.getElementById("goToEnd").style.display="block";
+				document.getElementById("reLiveSpeedPanel").style.display="block";
+				document.getElementById("reLiveSpeedPanel").value=document.getElementById("reLiveSpeed").value;
 				htlivesight.prefs.other.reLive = true;
 			} else {
 				htlivesight.prefs.other.reLive = false;

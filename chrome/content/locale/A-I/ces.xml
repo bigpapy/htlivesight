@@ -47,7 +47,7 @@
 <MessageErrorReading>Chyba při čtení dat z</MessageErrorReading>
 <MessageLoginNotSuccessful>Přihlášení se nezdařilo.</MessageLoginNotSuccessful>
 <TacticPressing>nátlaková hra</TacticPressing>
-<TacticCA>protiútok</TacticCA>
+<TacticCA>protiútoky</TacticCA>
 <TacticAIM>útok středem</TacticAIM>
 <TacticAOW>útok po křídlech</TacticAOW>
 <TacticPlayCreative>nápaditá hra</TacticPlayCreative>
@@ -194,7 +194,7 @@
 <OtherReverseNote>Pozn. Obnovte stránku, aby byl vidět efekt provedené změny.</OtherReverseNote>
 <OtherEvents>Sekvence událostí</OtherEvents>
 <OtherEventKey>Vysvětlení události</OtherEventKey>
-<OtherEventKeyNote>Ukázat vysvětlení události v komentáři</OtherEventKeyNote>
+<OtherEventKeyNote>Zobrazit klíč (číslo) zápasové události</OtherEventKeyNote>
 <CustomIcons>Ikony</CustomIcons>
 <CustomIconsOld>Originální ikony z Livefoxu</CustomIconsOld>
 <CustomSounds>Zvuky</CustomSounds>
