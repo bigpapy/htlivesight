@@ -100,9 +100,11 @@ var htlivesight = {
 				htlivesight.Preferences.teamId.save(document.getElementById("teamId").value);
 			};
 			if(document.getElementById("reLive").checked) {
-				document.getElementById("playPauseButton").style.display="block";
-				document.getElementById("goToEnd").style.display="block";
-				document.getElementById("reLiveSpeedPanel").style.display="block";
+				document.getElementById("ReLiveControls").style.display="inline-block";
+				document.getElementById("playPauseButton").style.display="inline-block";
+				document.getElementById("goToEnd").style.display="inline-block";
+				document.getElementById("reLiveSpeedForm").style.display="inline-block";
+				document.getElementById("reLiveSpeedPanel").style.display="inline-block";
 				document.getElementById("reLiveSpeedPanel").value=document.getElementById("reLiveSpeed").value;
 				htlivesight.prefs.other.reLive = true;
 			} else {
