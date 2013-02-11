@@ -155,6 +155,7 @@ htlivesight.Lang = {
 			doc.getElementById("label_hattrickButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",htlivesight.data[0]);
 			doc.getElementById("label_hattrickButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",htlivesight.data[0]);
 //			TOPBAR
+			doc.getElementById("ReLiveControls").innerHTML=htlivesight.Util.Parse("ReLiveControls",htlivesight.data[0]);
 //			SIDEBAR
 			doc.getElementById("LeagueMatches").innerHTML=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);
 			doc.getElementById("LeagueLiveTable").innerHTML=htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0]);
