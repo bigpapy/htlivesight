@@ -22,10 +22,10 @@ var htlivesight = {
 				winW2 = window.innerWidth;
 				winH2 = window.innerHeight;
 			}
-			//console.info(winW);
-			//console.info(winH);
-			document.getElementById("live_box").setAttribute("style", "width:" + (winW2-300) + "px" );
-			document.getElementById("sidebar").setAttribute("style", "width:" + (275) + "px" );
+			console.info(winW2);
+			console.info(winH2);
+			document.getElementById("live_box").setAttribute("style", "width:" + (winW2-310) + "px" );
+			document.getElementById("sidebar").setAttribute("style", "width:" + (300) + "px" );
 		},
 
 		startup: function() {
@@ -46,8 +46,8 @@ var htlivesight = {
 			}
 			console.info(winW);
 			console.info(winH);
-			document.getElementById("live_box").setAttribute("style", "width:" + (winW-300) + "px" );
-			document.getElementById("sidebar").setAttribute("style", "width:" + (275) + "px" );
+			document.getElementById("live_box").setAttribute("style", "width:" + (winW-310) + "px" );
+			document.getElementById("sidebar").setAttribute("style", "width:" + (300) + "px" );
 			var winboxRegister = function(wbList) {
 				var winbox;
 				var i, len;
