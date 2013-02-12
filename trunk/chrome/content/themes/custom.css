@@ -57,7 +57,7 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 #right_topbar {display:inline-block;float:right;margin-right:8px;margin-top:3px;}/*{display:inline-block;float:right;margin-top:8px}*/
 #central_topbar {display:inline-block;margin-top:0px;margin-left:8px;}
 .socialicon{width:24px;height:24px;vertical-align:middle;padding: 0 0 0 0;margin: 0 0 0 0;}
-.relivebuttons{height:24px;vertical-align:middle;padding: 0 0 0 0;margin: 0 0 0 0;font-size: 13px}
+.relivebuttons{height:24px;vertical-align:middle;padding: 0 0 0 0;margin: 0px 0px 3px 0px;font-size: 13px}
 #left_topbar,#right_topbar,#central_topbar a:link {text-decoration:none;}
 #left_topbar,#right_topbar,#central_topbar a:visited {text-decoration:none;}
 #left_topbar,#right_topbar,#central_topbar a:hover {text-decoration:none;}
