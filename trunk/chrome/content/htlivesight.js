@@ -23,9 +23,11 @@ var htlivesight = {
 				winH2 = window.innerHeight;
 			}
 			console.info(winW2);
-			console.info(winH2);
-			document.getElementById("live_box").setAttribute("style", "width:" + (winW2-322) + "px" );
-			document.getElementById("sidebar").setAttribute("style", "width:" + (300) + "px" );
+			//console.info(winH2);
+
+		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW2-283) + "px" );
+		  	document.getElementById("sidebar").setAttribute("style", "width:" + (260) + "px" );
+
 		},
 
 		startup: function() {
@@ -46,8 +48,8 @@ var htlivesight = {
 			}
 			console.info(winW);
 			console.info(winH);
-			document.getElementById("live_box").setAttribute("style", "width:" + (winW-322) + "px" );
-			document.getElementById("sidebar").setAttribute("style", "width:" + (300) + "px" );
+		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW-283) + "px" );
+		  	document.getElementById("sidebar").setAttribute("style", "width:" + (260) + "px" );
 			var winboxRegister = function(wbList) {
 				var winbox;
 				var i, len;
@@ -220,5 +222,6 @@ var htlivesight = {
 		},  
 		chatdelay: function() {
 			document.getElementById("chat-dialog").innerHTML = '<iframe src="http://webchat.quakenet.org/?channels=htlivesight&uio=OT10cnVlJjExPTEyMwb9" width="647" height="400"></iframe>';
-		}, 
+		},
+
 };
