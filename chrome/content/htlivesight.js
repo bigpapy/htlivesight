@@ -25,7 +25,7 @@ var htlivesight = {
 			console.info(winW2);
 			//console.info(winH2);
 
-		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW2-283) + "px" );
+		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW2-287) + "px" );
 		  	document.getElementById("sidebar").setAttribute("style", "width:" + (260) + "px" );
 
 		},
@@ -48,7 +48,7 @@ var htlivesight = {
 			}
 			console.info(winW);
 			console.info(winH);
-		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW-283) + "px" );
+		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW-287) + "px" );
 		  	document.getElementById("sidebar").setAttribute("style", "width:" + (260) + "px" );
 			var winboxRegister = function(wbList) {
 				var winbox;

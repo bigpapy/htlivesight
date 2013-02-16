@@ -57,7 +57,7 @@ htlivesight.LineUp.ParseLineUpFromXml= function (xml){
 			}*/
 
 			lineUp[index].name= xml.getElementsByTagName("PlayerName")[i].textContent; // get name
-			lineUp[index].name = lineUp[index].name.replace(",","")
+			lineUp[index].name = lineUp[index].name.replace(",","");
 
 			lineUp[index].behaviourInt= xml.getElementsByTagName("Behaviour")[i].textContent; // get individual order
 			lineUp[index].id= xml.getElementsByTagName("PlayerID")[i].textContent; // get  playerId.
