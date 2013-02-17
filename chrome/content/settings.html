@@ -115,14 +115,26 @@
 	<label id="LanguageNote"></label>
 	<div id="CrowdinLink"><a href="http://crowdin.net/project/htlivesight/invite?token=a41f1ac45795476ca5087af76978fad8" target="_blank"><img id="CrowdinLogo" src="./themes/images/crowdin.png" /><div id="CrowdinLabel"><label id="CrowdinHelp">Help translating! With Crowdin is supereasy and very funny!</label></div></a></div>
 	</fieldset>
+	
 	<fieldset>
-	<legend id="GeneralServer"></legend>
-	<label id="GeneralNote"></label>
+				<legend id="CustomBackground">Background</legend>
+				<br /> 
+				<button id="label_customBackground_try" class="brestore">try</button>
+					<button id="label_customBackground_reset" class="brestore">restore</button>
+					<input type="file" id="customBackgroundPathBrowse" tabindex="2" /> <input
+						type="url" id="customBackgroundPath" maxlength="450000" size="57"
+						value="chrome://htlivesight/content/themes/images/bg.png"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+	</fieldset>
+	
+	<fieldset>
+	<legend id="GeneralServer" style="display: none"></legend>
+	<label id="GeneralNote" style="display: none"></label>
 	<br />
-	<label for="hattrickServer">Hattrick server:</label>
+	<label for="hattrickServer" style="display: none">Hattrick server:</label>
 	<form>
 						<select class="text ui-widget-content ui-corner-all"
-							id="hattrickServer">
+							id="hattrickServer" style="display: none">
 							<option value="www74">www74</option>
 							<option value="www75">www75</option>
 							<option value="www76">www76</option>
