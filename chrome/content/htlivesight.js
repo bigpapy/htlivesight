@@ -79,7 +79,21 @@ var htlivesight = {
 			htlivesight.Sound.start();
 			htlivesight.Log.debug("loading username and password");
 			htlivesight.Log.debug("teamId: " + htlivesight.prefs.general.teamId);
+			
 			document.body.style.backgroundImage="url('"+htlivesight.prefs.general.customBackgroundPath + "')";
+			
+			if(htlivesight.prefs.general.extendBackground){
+				//alert("extend!");
+				document.body.style.backgroundSize="cover";
+		//		document.body.style.backgroundImage="url('"+htlivesight.prefs.general.customBackgroundPath + "')";
+			}
+			
+			if(htlivesight.prefs.general.repeatBackground){
+				//alert("repeat!");
+				document.body.style.backgroundRepeat="repeat";
+		//		document.body.style.backgroundImage="url('"+htlivesight.prefs.general.customBackgroundPath + "')";
+			}
+			
 			if (htlivesight.prefs.general.teamId != "") {
 				document.getElementById("teamId").value=htlivesight.prefs.general.teamId;    
 			}
