@@ -30,6 +30,7 @@ htlivesight.Settings = {
 			setTimeout(function(){htlivesight.Settings.click.switch_style(prefs.general.theme);}, 100); // enable only choosed css.
 			if (prefs.general.openInTab){document.getElementById("openin_tab").click();}
 			else{document.getElementById("openin_window").click();}
+			document.getElementById("customBackgroundPath").value = prefs.general.customBackgroundPath;
 			document.getElementById("hattrickServer").value = prefs.general.hattrickServer;
 			if (prefs.matches.league.get) {
 				document.getElementById("chkGetLeague").checked=true;
@@ -139,7 +140,7 @@ htlivesight.Settings = {
 			document.getElementById("whistleCheck").checked = prefs.personalization.whistleCheck;
 			document.getElementById("whistleSoundPath").disabled = !prefs.personalization.whistleCheck;
 			document.getElementById("hattrickCheck").checked = prefs.personalization.hattrickCheck;
-			document.getElementById("hattrickSoundPath").disabled = !prefs.personalization.hattrickCheck;
+			document.getElementById("hattrickSoundPath").disabled = !prefs.personalization.hattrickCheck;		
 			document.getElementById("friendHomeColorCheck").checked = prefs.colors.friendHomeColorCheck;
 			document.getElementById("friendHomeColorCode").disabled = !prefs.colors.friendHomeColorCheck;
 			document.getElementById("friendHomeColorCode").value = "#"+prefs.colors.friendHomeColorCode;
@@ -776,5 +777,50 @@ htlivesight.Settings = {
 				document.getElementById("label_foeAwayColorCode").style.color= "#" + prefs.colors.seTextColorCode;
 				document.getElementById("label_neutralColorCode").style.color= "#" + prefs.colors.seTextColorCode;
 			},
+			tryBackground: function() {
+				var prefs = htlivesight.Settings.preferences;
+				imagePath = document.getElementById("customBackgroundPath").value;
+				document.body.style.backgroundImage = "url('"+imagePath+"')";
+				prefs.general["customBackgroundPath"] = imagePath;
+			},
+			resetBackground: function() {
+			var prefs = htlivesight.Settings.preferences;
+			imagePath = document.getElementById("customBackgroundPath").value=htlivesightEnv.contentPath+"themes/images/bg.png";
+			document.body.style.backgroundImage = "url('"+imagePath+"')";
+			prefs.general["customBackgroundPath"] = imagePath;
+			},
+			
+			getImageFile: function(file) {
+				var prefs = htlivesight.Settings.preferences;
+				if	(htlivesight.arch == "Sandboxed"){
+					var reader = new FileReader();
+					reader.onerror = function(e) {
+						window.alert('Error code: ' + e.target.error.code);
+						calback(null);
+					};
+					reader.onload = function (oFREvent) {
+						dataUrl = oFREvent.target.result;
+						if (dataUrl.length > 450000) {
+							window.alert('File too large! Max 300kB.');
+							dataUrl = null;
+						}else{
+							document.getElementById("customBackgroundPath").value = dataUrl;
+							prefs.general["customBackgroundPath"] = dataUrl;
+						}
+					};
+					reader.readAsDataURL(file[0]);
+				};
+				if	(htlivesight.arch == "Gecko"){
+					var imagePath=document.getElementById("customBackgroundPathBrowse").value;
+					var userAgent=navigator.userAgent;
+					var windows=/Windows/g;
+					var isWindows=windows.test(userAgent);
+					if(isWindows) imagePath=imagePath.replace(/\\/g,"/");
+					if ((imagePath.search("chrome:")==-1) && (imagePath.search("file:")==-1)) imagePath="file:///"+imagePath;
+					document.getElementById("customBackgroundPath").value=imagePath;
+					prefs.general["customBackgroundPath"] = imagePath;
+				}
+			},
+			
 		}
 };

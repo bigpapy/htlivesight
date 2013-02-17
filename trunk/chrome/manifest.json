@@ -29,7 +29,8 @@
 							],
 "web_accessible_resources":	[
 								"content/img/foxball_32.png",
-								"content/old_img/foxball_32.png"
+								"content/old_img/foxball_32.png",
+								"content/themes/images/bg.png"
 							],        
 "update_url":				"https://htlivesight.c6.ixwebhosting.com/chromedev/updates.xml"
 }

@@ -50,6 +50,7 @@ var htlivesight = {
 			console.info(winH);
 		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW-287) + "px" );
 		  	document.getElementById("sidebar").setAttribute("style", "width:" + (260) + "px" );
+
 			var winboxRegister = function(wbList) {
 				var winbox;
 				var i, len;
@@ -78,7 +79,7 @@ var htlivesight = {
 			htlivesight.Sound.start();
 			htlivesight.Log.debug("loading username and password");
 			htlivesight.Log.debug("teamId: " + htlivesight.prefs.general.teamId);
-			//document.body.style.backgroundImage="url('file:///home/lelone/Scrivania/Schermata.png')";
+			document.body.style.backgroundImage="url('"+htlivesight.prefs.general.customBackgroundPath + "')";
 			if (htlivesight.prefs.general.teamId != "") {
 				document.getElementById("teamId").value=htlivesight.prefs.general.teamId;    
 			}
