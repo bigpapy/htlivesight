@@ -31,6 +31,10 @@ htlivesight.Settings = {
 			if (prefs.general.openInTab){document.getElementById("openin_tab").click();}
 			else{document.getElementById("openin_window").click();}
 			document.getElementById("customBackgroundPath").value = prefs.general.customBackgroundPath;
+			
+			document.getElementById("chkExtendBackground").checked = prefs.general.extendBackground;
+			document.getElementById("chkRepeatBackground").checked = prefs.general.repeatBackground;
+			
 			document.getElementById("hattrickServer").value = prefs.general.hattrickServer;
 			if (prefs.matches.league.get) {
 				document.getElementById("chkGetLeague").checked=true;
@@ -805,6 +809,7 @@ htlivesight.Settings = {
 							dataUrl = null;
 						}else{
 							document.getElementById("customBackgroundPath").value = dataUrl;
+							document.body.style.backgroundImage = "url('"+dataUrl+"')";
 							prefs.general["customBackgroundPath"] = dataUrl;
 						}
 					};
@@ -818,9 +823,36 @@ htlivesight.Settings = {
 					if(isWindows) imagePath=imagePath.replace(/\\/g,"/");
 					if ((imagePath.search("chrome:")==-1) && (imagePath.search("file:")==-1)) imagePath="file:///"+imagePath;
 					document.getElementById("customBackgroundPath").value=imagePath;
+					document.body.style.backgroundImage = "url('"+imagePath+"')";
 					prefs.general["customBackgroundPath"] = imagePath;
 				}
 			},
-			
+			extendBackground: function() {
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("chkExtendBackground").checked) {
+					document.getElementById("chkRepeatBackground").checked=false;
+					htlivesight.Settings.click.repeatBackground();
+				  document.body.style.backgroundSize="cover";
+				}else{
+					imagePath = document.getElementById("customBackgroundPath").value;
+					document.body.style.backgroundImage = "url('"+imagePath+"')";
+					document.body.style.backgroundSize="auto";
+				}
+				prefs.general["extendBackground"] = document.getElementById("chkExtendBackground").checked;
+				},
+				repeatBackground: function() {
+					var prefs = htlivesight.Settings.preferences;
+					if(document.getElementById("chkRepeatBackground").checked) {
+						document.getElementById("chkExtendBackground").checked=false;
+						htlivesight.Settings.click.extendBackground();
+					  document.body.style.backgroundRepeat="repeat";
+					}else{
+						imagePath = document.getElementById("customBackgroundPath").value;
+						document.body.style.backgroundImage = "url('"+imagePath+"')";
+						document.body.style.backgroundRepeat="no-repeat";
+					}
+					//document.body.style.backgroundPosition="left top";
+					prefs.general["repeatBackground"] = document.getElementById("chkRepeatBackground").checked;
+				}
 		}
 };

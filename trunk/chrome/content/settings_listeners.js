@@ -170,6 +170,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("label_customBackground_reset").addEventListener('click',function(){htlivesight.Settings.click.resetBackground();});
 	document.getElementById("customBackgroundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getImageFile(this.files);});
 	
+	document.getElementById("chkExtendBackground").addEventListener('click',function(){htlivesight.Settings.click.extendBackground();});
+	document.getElementById("chkRepeatBackground").addEventListener('click',function(){htlivesight.Settings.click.repeatBackground();});
 	/* ok cancel buttons*/
 	try{ // because this two buttons are present in settings.html but not in htlivesight.html
 		document.getElementById("ok-option").addEventListener('click',function(){htlivesight.Settings.click.btnOk();});
