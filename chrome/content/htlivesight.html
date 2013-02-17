@@ -210,7 +210,7 @@
 				<input type="checkbox" id="chkRepeatBackground" /><label
 						for="chkRepeatBackground" id="label_chkRepeatBackground">Repeat image</label>
 				 <br>
-				<button id="label_customBackground_try" class="brestore">try</button>
+				<button id="label_customBackground_try" class="brestore" style="display: none">try</button>
 					<button id="label_customBackground_reset" class="brestore">restore</button>
 					<input type="file" id="customBackgroundPathBrowse" tabindex="2" /> <input
 						type="url" id="customBackgroundPath" maxlength="450000" size="57"
@@ -728,8 +728,9 @@
 					</form>
 		</div>
 		<div id="right_topbar">
-			<span id="LoggedIn">Logged in as</span> <span id="teamName"></span> <a
-				title="Hide Sidebar" id="hidesidebar" href="#"> <img
+			<span id="LoggedIn">Logged in as</span> <span id="teamName"></span>
+			<a title="Mute All" id="muteAll" href="#"><img id="muteAllImg" alt="Mute All" class="socialicon" src="./img/sound_on.gif"></a>
+			<a	title="Hide Sidebar" id="hidesidebar" href="#"> <img
 				alt="Hide Sidebar" class="socialicon" src="./themes/images/hide.png">
 			</a> <a title="Options" id="options_link" href="#"> <img
 				alt="Options" class="socialicon" src="./themes/images/options.png">

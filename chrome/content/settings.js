@@ -483,9 +483,17 @@ htlivesight.Settings = {
 				if(document.getElementById("chkSound").checked) {
 					document.getElementById("chkSoundOnlyOpened").disabled = false;
 					prefs.notification.sound = true;
+					htlivesight.prefs.notification.sound = true;
+					try{
+					  document.getElementById("muteAllImg").src="./img/sound_on.gif";
+					}catch(e){}
 				} else {
 					document.getElementById("chkSoundOnlyOpened").disabled = true;
 					prefs.notification.sound = false;
+					htlivesight.prefs.notification.sound = false;
+					try{
+					  document.getElementById("muteAllImg").src="./img/sound_off.gif";
+					}catch(e){}
 				};
 			},
 			chkSoundOnlyOpened: function() {
