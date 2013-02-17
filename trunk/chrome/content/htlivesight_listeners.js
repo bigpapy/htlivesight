@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	window.onresize=function(){htlivesight.dynresize();};
 	var doc=document;
 	doc.getElementById("chat_link").addEventListener('click',function(){htlivesight.chatdelay();});
+	doc.getElementById("muteAll").addEventListener('click', function(){htlivesight.Click.MuteAll();});
 	doc.getElementById("button_login").addEventListener('click',function(){htlivesight.Click.Login();});
 	doc.getElementById("reLive").addEventListener('click',function(){htlivesight.reLive();});
 	doc.getElementById("buttonAddMatch").addEventListener('click',function(){htlivesight.Click.AddMatch();});

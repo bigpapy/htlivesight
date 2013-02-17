@@ -50,6 +50,12 @@ var htlivesight = {
 			console.info(winH);
 		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW-297) + "px" );
 		  	document.getElementById("sidebar").setAttribute("style", "width:" + (270) + "px" );
+	// coloring header
+		  	/*document.getElementById("MatchesList").style.backgroundColor="#654321";
+		  	document.getElementById("FriendsTitle").style.backgroundColor="#654321";
+		  	document.getElementById("MatchesAdd").style.backgroundColor="#654321";
+		  	document.getElementById("MenuServer").style.backgroundColor="#654321";*/
+		  	//$(".ui-accordion-header").css("background-color","yellow");
 
 			var winboxRegister = function(wbList) {
 				var winbox;
@@ -93,6 +99,8 @@ var htlivesight = {
 				document.body.style.backgroundRepeat="repeat";
 		//		document.body.style.backgroundImage="url('"+htlivesight.prefs.general.customBackgroundPath + "')";
 			}
+			if(!htlivesight.prefs.notification.sound){
+			document.getElementById("muteAllImg").src="./img/sound_off.gif";}
 			
 			if (htlivesight.prefs.general.teamId != "") {
 				document.getElementById("teamId").value=htlivesight.prefs.general.teamId;    
