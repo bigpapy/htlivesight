@@ -66,7 +66,7 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 
 #thebox{display:block;margin-top:1px;}
 #live_box {display:inline-block;margin-left:3px;margin-top:1px;border-radius:10px;float:left;/*width:74.5%;/*min-width:800px;min-width:600px;*/}
-#sidebar {display:inline-block;margin-right:3px;overflow:auto;float:right;width:260px:/*width:24.5%;/*min-width:200pxmin-width:200px;max-width:300px;*/}
+#sidebar {display:inline-block;margin-right:3px;overflow:auto;float:right;width:270px:/*width:24.5%;/*min-width:200pxmin-width:200px;max-width:300px;*/}
 .fullscreen{width:99% !important;}
 
 /*.match_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;padding:0 0 0 0;border-spacing:0 0 0 0}*/
