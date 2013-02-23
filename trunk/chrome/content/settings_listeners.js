@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	document.getElementById("seTextColorCheck").addEventListener('click',function(){htlivesight.Settings.click.seTextColorCheck();});
 	document.getElementById("seTextColorCode").addEventListener('change',function(){htlivesight.Settings.click.seTextColorSet();});
-	document.getElementById("label_customBackground_try").addEventListener('click',function(){htlivesight.Settings.click.tryBackground();});	
+	//document.getElementById("label_customBackground_try").addEventListener('click',function(){htlivesight.Settings.click.tryBackground();});	
 	document.getElementById("label_customBackground_reset").addEventListener('click',function(){htlivesight.Settings.click.resetBackground();});
 	document.getElementById("customBackgroundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getImageFile(this.files);});
 	
