@@ -201,5 +201,10 @@ htlivesight.Lang = {
 			doc.getElementById("options_link").title=htlivesight.Util.Parse("MenuOptions",htlivesight.data[0]);
 			doc.getElementById("about_link").title=htlivesight.Util.Parse("MenuAbout",htlivesight.data[0]);
 			doc.getElementById("copiedToClipboard").innerHTML=htlivesight.Util.Parse("CopiedToClipboard",htlivesight.data[0]);
+			// background
+			doc.getElementById("label_customBackground_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",htlivesight.data[0]);
+			doc.getElementById("label_chkExtendBackground").innerHTML=htlivesight.Util.Parse("ExtendImage",htlivesight.data[0]);
+			doc.getElementById("label_chkRepeatBackground").innerHTML=htlivesight.Util.Parse("RepeatImage",htlivesight.data[0]);
+			doc.getElementById("CustomBackground").innerHTML=htlivesight.Util.Parse("Background",htlivesight.data[0]);
 		}
 };

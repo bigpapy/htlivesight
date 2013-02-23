@@ -342,6 +342,12 @@ htlivesight.Settings = {
 			document.getElementById("CustomEventText").innerHTML=htlivesight.Util.Parse("EventColorTitle",data[0]);
 			document.getElementById("label_textColorCode").innerHTML=htlivesight.Util.Parse("EventTextColor",data[0]);
 			document.getElementById("label_seTextColorCode").innerHTML=htlivesight.Util.Parse("SETextColor",data[0]);
+			//background
+		// background
+			document.getElementById("label_customBackground_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+			document.getElementById("label_chkExtendBackground").innerHTML=htlivesight.Util.Parse("ExtendImage",data[0]);
+			document.getElementById("label_chkRepeatBackground").innerHTML=htlivesight.Util.Parse("RepeatImage",data[0]);
+			document.getElementById("CustomBackground").innerHTML=htlivesight.Util.Parse("Background",data[0]);
 			try{ //because it's present in settings.html but not in htlivesight.html
 				document.getElementById("OkButton").innerHTML=htlivesight.Util.Parse("ButtonOk",data[0]);
 				document.getElementById("CancelButton").innerHTML=htlivesight.Util.Parse("ButtonCancel",data[0]);

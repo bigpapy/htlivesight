@@ -525,7 +525,10 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 	var label;
 	try {
 		if (match.arena.name) {
+			document.getElementById("match_date_" + match.id + "_" + match.sourceSystem).innerHTML = "";
 			document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).innerHTML = match.arena.name;
+		}else{
+			if(match.date) document.getElementById("match_date_" + match.id + "_" + match.sourceSystem).innerHTML = htlivesight.Time.formatDate(match.date);
 		}
 		if (match.weather.image) {
 			label = document.getElementById("weather_image_" + match.id + "_" + match.sourceSystem);
@@ -764,6 +767,13 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		hboxL.appendChild(label);
 		label.setAttribute("id", "weather_text_" + match.id + "_" + match.sourceSystem);
 		label.setAttribute("class", "weather_text");
+		
+		label = document.createElement("span");
+		hboxL.appendChild(label);
+		label.setAttribute("id", "match_date_" + match.id + "_" + match.sourceSystem);
+		//label.setAttribute("class", "");
+
+		
 		var hboxM = document.createElement("td");
 		hboxM.setAttribute("class", "chronoheader");
 		hbox.appendChild(hboxM);
