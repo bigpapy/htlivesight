@@ -42,6 +42,12 @@ color: rgb(245, 250, 7)!important;
 .sent_off_player{
 color: #FF0F03!important;
 }
+/* reset select color for chrome on windows */
+select 
+{
+    -webkit-appearance: none;
+}
+
 /*!
  * jQuery UI CSS Framework 1.8.23
  *
