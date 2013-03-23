@@ -343,5 +343,10 @@
 <MidHatStats>HatStats veza</MidHatStats>
 <AttHatStats>Hatstats napad</AttHatStats>
 <TotHatStats>Ukuoni HatStatsa</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
+<CopiedToClipboard>Kopirano u međuspremnik!</CopiedToClipboard>
+<ReLiveControls>Kotrole snimke</ReLiveControls>
+<ExtendImage>Proširi sliku</ExtendImage>
+<RepeatImage>Ponovi sliku</RepeatImage>
+<Background>Pozadina</Background>
+<MuteAll>Sound switch</MuteAll>
 </Htlivesight>

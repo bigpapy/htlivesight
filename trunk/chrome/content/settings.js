@@ -372,13 +372,16 @@ htlivesight.Settings = {
 				whichSheet=whichSheet-1;
 				if(document.styleSheets){
 					var c = document.styleSheets.length;
-					for(var i=2;i<c-1;i++){
+					var start=2;
+					if(c==6){start=3;whichSheet++;} // fix to let firefox preference under extension to work properly.
+					for(var i=start;i<c-1;i++){
 						if(i!=whichSheet){
 							document.styleSheets[i].disabled=true;
 						}else{
 							document.styleSheets[i].disabled=false;
 						}
 					}
+					if(c==6)whichSheet--;
 				}
 				var prefs = htlivesight.Settings.preferences;
 				prefs.general.theme = whichSheet+1;

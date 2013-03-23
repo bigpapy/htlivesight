@@ -344,8 +344,9 @@
 <AttHatStats>HatStats attacco</AttHatStats>
 <TotHatStats>HatStats totale</TotHatStats>
 <CopiedToClipboard>Copiato negli Appunti!</CopiedToClipboard>
-<ReLiveControls>Controlli Relive</ReLiveControls>
-<ExtendImage>Estendi l'immagine</ExtendImage>
-<RepeatImage>Ripeti l'immagine</RepeatImage>
+<ReLiveControls>Controlli relive</ReLiveControls>
+<ExtendImage>Estendere l'immagine</ExtendImage>
+<RepeatImage>Ripetere l'immagine</RepeatImage>
 <Background>Sfondo</Background>
+<MuteAll>Sound switch</MuteAll>
 </Htlivesight>

@@ -344,4 +344,9 @@
 <AttHatStats>HatStats Anfall</AttHatStats>
 <TotHatStats>HatStats Totalt</TotHatStats>
 <CopiedToClipboard>Kopierat till urklipp!</CopiedToClipboard>
+<ReLiveControls>Re-Live inställningar</ReLiveControls>
+<ExtendImage>Anpassad</ExtendImage>
+<RepeatImage>Sida vid sida</RepeatImage>
+<Background>Bakgrund</Background>
+<MuteAll>Sound switch</MuteAll>
 </Htlivesight>

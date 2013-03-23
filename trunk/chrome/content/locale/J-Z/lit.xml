@@ -343,5 +343,10 @@
 <MidHatStats>Saugų linija (HatStats)</MidHatStats>
 <AttHatStats>Ataka (HatStats)</AttHatStats>
 <TotHatStats>Iš viso (HatStats)</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
+<CopiedToClipboard>Nukopijuota!</CopiedToClipboard>
+<ReLiveControls>Re-Live valdymas</ReLiveControls>
+<ExtendImage>Ištemti paveiksliuką</ExtendImage>
+<RepeatImage>Kartoti paveiksliuką</RepeatImage>
+<Background>Fonas</Background>
+<MuteAll>Sound switch</MuteAll>
 </Htlivesight>

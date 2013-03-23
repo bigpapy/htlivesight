@@ -344,4 +344,9 @@
 <AttHatStats>HatStats атаки</AttHatStats>
 <TotHatStats>Всего HatStats</TotHatStats>
 <CopiedToClipboard>Скопировано в буфер обмена!</CopiedToClipboard>
+<ReLiveControls>Управление Relive</ReLiveControls>
+<ExtendImage>Расширить изображение</ExtendImage>
+<RepeatImage>Повторить изображение</RepeatImage>
+<Background>Фон</Background>
+<MuteAll>Sound switch</MuteAll>
 </Htlivesight>

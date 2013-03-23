@@ -343,5 +343,10 @@
 <MidHatStats>HatStats mediocmapo</MidHatStats>
 <AttHatStats>HatStats ataque</AttHatStats>
 <TotHatStats>HatStats total</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
+<CopiedToClipboard>¡Copiado al portapapeles!</CopiedToClipboard>
+<ReLiveControls>Controles de Relive</ReLiveControls>
+<ExtendImage>Ampliar imagen</ExtendImage>
+<RepeatImage>Repetir la imagen</RepeatImage>
+<Background>Fondo</Background>
+<MuteAll>Sound switch</MuteAll>
 </Htlivesight>

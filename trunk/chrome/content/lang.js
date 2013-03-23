@@ -206,5 +206,6 @@ htlivesight.Lang = {
 			doc.getElementById("label_chkExtendBackground").innerHTML=htlivesight.Util.Parse("ExtendImage",htlivesight.data[0]);
 			doc.getElementById("label_chkRepeatBackground").innerHTML=htlivesight.Util.Parse("RepeatImage",htlivesight.data[0]);
 			doc.getElementById("CustomBackground").innerHTML=htlivesight.Util.Parse("Background",htlivesight.data[0]);
+			doc.getElementById("muteAll").title=htlivesight.Util.Parse("MuteAll",htlivesight.data[0]);
 		}
 };
