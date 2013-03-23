@@ -100,7 +100,7 @@ htlivesight.copyToClipboard = function(string) {
 };
 htlivesight.copiedToClipboardNotification=function(e){
 	// opening dialogue box to let user knows lineup is clicked.
-	$( "#copiedToClipboard" ).dialog({ autoOpen: false, hide: "fadeOut", height: 55, width: "auto", position: [e.pageX+10,e.pageY-20], resizable: false  });
+	$( "#copiedToClipboard" ).dialog({ autoOpen: false, hide: "fadeOut", height: 55, width: "auto", position: [e.pageX+10,e.pageY-20-document.documentElement.scrollTop], resizable: false  });
 	var prova= $("#copiedToClipboard").dialog( "open" )/*.fadeOut(1500)*/;
 	$("#copiedToClipboard").prev().hide();
 	prova.fadeOut(2500);
