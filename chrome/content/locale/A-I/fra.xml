@@ -344,8 +344,9 @@
 <AttHatStats>HatStats Attaque</AttHatStats>
 <TotHatStats>HatStats Total</TotHatStats>
 <CopiedToClipboard>Copié dans le presse-papiers!</CopiedToClipboard>
-<ReLiveControls>Relive Controls</ReLiveControls>
-<ExtendImage>Extend image</ExtendImage>
-<RepeatImage>Repeat image</RepeatImage>
-<Background>Background</Background>
+<ReLiveControls>Contrôle du Re-Live</ReLiveControls>
+<ExtendImage>Étendue</ExtendImage>
+<RepeatImage>Répétée</RepeatImage>
+<Background>Fond d'écran</Background>
+<MuteAll>Sound switch</MuteAll>
 </Htlivesight>

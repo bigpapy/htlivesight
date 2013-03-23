@@ -69,7 +69,7 @@
 <TooltipWindowSound>Activar o descativar sonidos para el partido</TooltipWindowSound>
 <TooltipWindowLink>Enlace al partido en Hattrick</TooltipWindowLink>
 <TooltipWindowInfo>Poner los mensajes de información</TooltipWindowInfo>
-<TooltipWindowMaximize>Maximizar la ventana</TooltipWindowMaximize>
+<TooltipWindowMaximize>Maximizar ventana</TooltipWindowMaximize>
 <TooltipWindowMinimize>Minimizar ventana</TooltipWindowMinimize>
 <TooltipWindowShade>Ocultar ventana</TooltipWindowShade>
 <TooltipWindowClose>Cerrar ventana</TooltipWindowClose>
@@ -81,7 +81,7 @@
 <TooltipFriendMoveDown>Mover amigo abajo</TooltipFriendMoveDown>
 <MenuAddFriend>Amigo</MenuAddFriend>
 <EventGoal>GOL!!</EventGoal>
-<EventPenaltyGoal>Penalti: GOL</EventPenaltyGoal>
+<EventPenaltyGoal>Penalti: GOL!</EventPenaltyGoal>
 <EventPenaltyMiss>Penalti: FALLADO!</EventPenaltyMiss>
 <EventInjury>Lesión</EventInjury>
 <EventRed>Tarjeta roja</EventRed>
@@ -298,7 +298,7 @@
 <EventTextColor>Color del texto de evento: #</EventTextColor>
 <SETextColor>Color del texto para evento especial:#</SETextColor>
 <Colors>Colores</Colors>
-<SchemaTip>Haz clic para mostrar la alneación</SchemaTip>
+<SchemaTip>Haz clic para mostrar la alineación</SchemaTip>
 <StatisticTip>Haz clic para mostrar estadísticas al final del partido</StatisticTip>
 <Youth>Juveniles</Youth>
 <Senior>Mayor</Senior>
@@ -343,5 +343,10 @@
 <MidHatStats>HatStats mediocmapo</MidHatStats>
 <AttHatStats>HatStats ataque</AttHatStats>
 <TotHatStats>HatStats total</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
+<CopiedToClipboard>¡Copiado al portapapeles!</CopiedToClipboard>
+<ReLiveControls>Controles de Re-live</ReLiveControls>
+<ExtendImage>Ampliar imagen</ExtendImage>
+<RepeatImage>Repetir la imagen</RepeatImage>
+<Background>Fondo</Background>
+<MuteAll>Sound switch</MuteAll>
 </Htlivesight>

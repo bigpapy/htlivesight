@@ -343,5 +343,10 @@
 <MidHatStats>Viduszonas HatStats</MidHatStats>
 <AttHatStats>Uzbrukuma HatStats</AttHatStats>
 <TotHatStats>Kopējais HatStats</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
+<CopiedToClipboard>Iekopēts starpliktuvē!</CopiedToClipboard>
+<ReLiveControls>Re-Live vadīklas</ReLiveControls>
+<ExtendImage>Paplašināt attēlu</ExtendImage>
+<RepeatImage>Atkārtot attēlu</RepeatImage>
+<Background>Fons</Background>
+<MuteAll>Sound switch</MuteAll>
 </Htlivesight>

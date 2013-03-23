@@ -63,8 +63,8 @@
 <TimeHours>hodín</TimeHours>
 <TimeMinutes>minút</TimeMinutes>
 <TimeDay>deň</TimeDay>
-<TimeHour>hodiny</TimeHour>
-<TimeMinute>minúty</TimeMinute>
+<TimeHour>hodina</TimeHour>
+<TimeMinute>minúta</TimeMinute>
 <TimeMin>'</TimeMin>
 <TooltipWindowSound>Zapnúť alebo vypnúť zvuk pre zápas</TooltipWindowSound>
 <TooltipWindowLink>Odkaz na stránku zápasu v Hattricku</TooltipWindowLink>
@@ -344,4 +344,9 @@
 <AttHatStats>HatStats Útok</AttHatStats>
 <TotHatStats>HatStats Celkovo</TotHatStats>
 <CopiedToClipboard>Skopírované do schránky!</CopiedToClipboard>
+<ReLiveControls>HT Re-live ovládacie prvky</ReLiveControls>
+<ExtendImage>Zväčši obrázok</ExtendImage>
+<RepeatImage>Zopakuj obrázok</RepeatImage>
+<Background>Pozadie</Background>
+<MuteAll>Sound switch</MuteAll>
 </Htlivesight>

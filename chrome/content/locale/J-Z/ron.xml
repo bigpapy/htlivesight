@@ -343,5 +343,10 @@
 <MidHatStats>HatStats Mijloc</MidHatStats>
 <AttHatStats>HatStats Atac</AttHatStats>
 <TotHatStats>Total HatStats</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
+<CopiedToClipboard>Copiat în clipboard!</CopiedToClipboard>
+<ReLiveControls>Opțiuni Re-Live</ReLiveControls>
+<ExtendImage>Mărește imaginea</ExtendImage>
+<RepeatImage>Repetă imginea</RepeatImage>
+<Background>Fundal</Background>
+<MuteAll>Sound switch</MuteAll>
 </Htlivesight>

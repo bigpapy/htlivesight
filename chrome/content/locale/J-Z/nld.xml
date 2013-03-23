@@ -343,5 +343,10 @@
 <MidHatStats>HatStats middenveld</MidHatStats>
 <AttHatStats>HatStats aanvaller</AttHatStats>
 <TotHatStats>Totale HatStats</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
+<CopiedToClipboard>Naar klembord gekopieerd!</CopiedToClipboard>
+<ReLiveControls>Relive besturing</ReLiveControls>
+<ExtendImage>Extend image</ExtendImage>
+<RepeatImage>Afbeelding herhalen</RepeatImage>
+<Background>Achtergrond</Background>
+<MuteAll>Sound switch</MuteAll>
 </Htlivesight>

@@ -139,7 +139,7 @@
 <YellowNastyPlay>brzydkie zagranie</YellowNastyPlay>
 <YellowCheating>oszukiwanie</YellowCheating>
 <ProgressUpdate>Następna aktualizacja:</ProgressUpdate>
-<ProgressSeconds>y</ProgressSeconds>
+<ProgressSeconds>s</ProgressSeconds>
 <RequestServer>Łączę z serwerem</RequestServer>
 <RequestLeagueData>Pobieram dane ligi</RequestLeagueData>
 <RequestLeagueGames>Pobieram mecze ligowe</RequestLeagueGames>
@@ -344,4 +344,9 @@
 <AttHatStats>HatStats atak</AttHatStats>
 <TotHatStats>HatStats łącznie</TotHatStats>
 <CopiedToClipboard>Skopiowane do schowka!</CopiedToClipboard>
+<ReLiveControls>Obsługa 're-live'</ReLiveControls>
+<ExtendImage>Rozszerzenie obrazu</ExtendImage>
+<RepeatImage>Powtórz obraz</RepeatImage>
+<Background>Tło</Background>
+<MuteAll>Sound switch</MuteAll>
 </Htlivesight>
