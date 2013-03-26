@@ -287,7 +287,7 @@
 <Normal>Normal</Normal>
 <PIC>Jugar relajados</PIC>
 <MOTS>Partido de la temporada</MOTS>
-<ColorPicker>Escoge tu color para </ColorPicker>
+<ColorPicker>Escoge tu color en </ColorPicker>
 <EventBackground>Color de fondo del evento</EventBackground>
 <FriendHome>Color local (propios y amigos):#</FriendHome>
 <FriendAway>Color visitante (propios y amigos):#</FriendAway>
@@ -348,5 +348,5 @@
 <ExtendImage>Ampliar imagen</ExtendImage>
 <RepeatImage>Repetir la imagen</RepeatImage>
 <Background>Fondo</Background>
-<MuteAll>Sound switch</MuteAll>
+<MuteAll>Interruptor de sonido</MuteAll>
 </Htlivesight>

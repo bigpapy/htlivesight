@@ -344,9 +344,9 @@
 <AttHatStats>Ründe HatStats</AttHatStats>
 <TotHatStats>HatStats kokku</TotHatStats>
 <CopiedToClipboard>Kopeeritud!</CopiedToClipboard>
-<ReLiveControls>Relive Controls</ReLiveControls>
-<ExtendImage>Extend image</ExtendImage>
-<RepeatImage>Repeat image</RepeatImage>
-<Background>Background</Background>
-<MuteAll>Sound switch</MuteAll>
+<ReLiveControls>Taasesituse seaded</ReLiveControls>
+<ExtendImage>Venita pilti</ExtendImage>
+<RepeatImage>Korda pilti</RepeatImage>
+<Background>Taustapilt</Background>
+<MuteAll>Heli lüliti</MuteAll>
 </Htlivesight>
