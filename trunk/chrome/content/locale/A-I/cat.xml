@@ -15,7 +15,7 @@
 <LoginButton>Inici de sessió</LoginButton>
 <LoginReLive>Re-Live</LoginReLive>
 <LoginSpeed>Velocitat</LoginSpeed>
-<LoginByEvent>Per event</LoginByEvent>
+<LoginByEvent>Per esdeveniment</LoginByEvent>
 <LeagueMatches>Partits de lliga</LeagueMatches>
 <LeagueLiveTable>Taula en viu</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
@@ -164,48 +164,48 @@
 <GeneralNewTab>En un nou tabulador</GeneralNewTab>
 <GeneralNewWindow>En una nova finestra</GeneralNewWindow>
 <GeneralServer>Configuració del servidor</GeneralServer>
-<GeneralNote>Insert Hattrick server that you are logged on (ie. www96).</GeneralNote>
+<GeneralNote>Inserte el servidor de Hattrick on estàs connectat (p.ex. www96).</GeneralNote>
 <MatchesLeague>Partits de lliga</MatchesLeague>
 <MatchesGetLeague>Obtenir partits de llige</MatchesGetLeague>
 <MatchesPlayed>Si jugat fa</MatchesPlayed>
 <MatchesHours>hores.</MatchesHours>
 <MatchesFriends>Amics</MatchesFriends>
 <MatchesGetFriends>Obtenir partits d'amics</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Capçalera</MatchesHeader>
 <MatchesScorers>Anotadors</MatchesScorers>
 <ScorersList>Llistar anotadors</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
-<MatchesWindow>Window</MatchesWindow>
-<MatchesLines>Lines to display in minimize mode</MatchesLines>
+<MatchesBooked>Amonestat</MatchesBooked>
+<BookedList>Llistar amonestat a la capçalera</BookedList>
+<MatchesSentOff>Expulsat</MatchesSentOff>
+<SentOffList>Llistat expolsats a la capçalera</SentOffList>
+<MatchesInjured>Lesionats</MatchesInjured>
+<InjuredList>Llistar lesionats a la capçalera</InjuredList>
+<MatchesWindow>Finestra completa</MatchesWindow>
+<MatchesLines>Mostrar línies en detall en minimitzar</MatchesLines>
 <NotifyNotify>Notificacions</NotifyNotify>
 <NotifyEnableSound>Habil·litar notificacions sonores</NotifyEnableSound>
 <NotifyOnly>Només a partits oberts</NotifyOnly>
 <NotifyFlash>Ressaltar capçaleres</NotifyFlash>
 <NotifyStatus>Barra d'estats lliscant</NotifyStatus>
-<OtherAuthorization>Authorization code</OtherAuthorization>
-<OtherReset>Remove authorization</OtherReset>
-<OtherResetButton>Reset</OtherResetButton>
-<OtherReverse>Bottom up display of match events</OtherReverse>
-<OtherReverseNote>Refresh page to see the effect of change.</OtherReverseNote>
-<OtherEvents>Sequence of events</OtherEvents>
-<OtherEventKey>Eventkey</OtherEventKey>
-<OtherEventKeyNote>Show eventkey in the commentary</OtherEventKeyNote>
-<CustomIcons>Icons</CustomIcons>
-<CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
-<CustomSounds>Sounds</CustomSounds>
-<CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
-<CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
-<CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
-<CustomSoundsGoal>Original Livefox sounds</CustomSoundsGoal>
-<CustomSoundsNoOpGoal>No sounds for opponent's goals</CustomSoundsNoOpGoal>
-<PathSoundsMyGoal>Sound for own goal</PathSoundsMyGoal>
-<PathSoundsOpGoal>Sound for goal of my opponent</PathSoundsOpGoal>
-<PathSoundsFrGoal>Sound for goal of friend's</PathSoundsFrGoal>
+<OtherAuthorization>Codi d'autorització</OtherAuthorization>
+<OtherReset>Elimina autorització</OtherReset>
+<OtherResetButton>Restablir</OtherResetButton>
+<OtherReverse>Mostrar esdeveniments del partit d'a baix cap amunt</OtherReverse>
+<OtherReverseNote>Actualitza la pàgina per veure l'efecte dels canvis.</OtherReverseNote>
+<OtherEvents>Seqüència d'esdeveniments</OtherEvents>
+<OtherEventKey>Clau d'esdeveniment</OtherEventKey>
+<OtherEventKeyNote>Mostra el codi d'esdeveniment al comentari</OtherEventKeyNote>
+<CustomIcons>Icones</CustomIcons>
+<CustomIconsOld>Icones originals de Livefox a la finestra del partit</CustomIconsOld>
+<CustomSounds>Sons</CustomSounds>
+<CustomSoundsWeather>So de clima per a l'inici del partit</CustomSoundsWeather>
+<CustomSoundsTime>Sons per a l'inici i final d'un descans</CustomSoundsTime>
+<CustomSoundsSEW>Sons per a esdeveniments especials climàtics</CustomSoundsSEW>
+<CustomSoundsGoal>Sons originals Livefox</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>No hi ha sons per a gols de l'adversari</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>So per a gol en pròpia porta</PathSoundsMyGoal>
+<PathSoundsOpGoal>So per a gol del meu contrincant</PathSoundsOpGoal>
+<PathSoundsFrGoal>So per a gol d'amic</PathSoundsFrGoal>
 <PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
 <PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
 <PathSoundsMiss>Missed goal sound</PathSoundsMiss>
