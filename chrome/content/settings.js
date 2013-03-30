@@ -170,16 +170,44 @@ htlivesight.Settings = {
 			document.getElementById("neutralColorCode").value = "#"+prefs.colors.neutralColorCode;
 			if (prefs.colors.neutralColorCheck)
 				document.getElementById("label_neutralColorCode").style.backgroundColor= "#" + prefs.colors.neutralColorCode;
-			document.getElementById("textColorCheck").checked = prefs.colors.textColorCheck;
-			document.getElementById("textColorCode").disabled = !prefs.colors.textColorCheck;
-			document.getElementById("textColorCode").value = "#"+prefs.colors.textColorCode;
-			if (prefs.colors.textColorCheck){
+			
+			document.getElementById("friendHomeTextColorCheck").checked = prefs.colors.friendHomeTextColorCheck;
+			document.getElementById("friendHomeTextColorCode").disabled = !prefs.colors.friendHomeTextColorCheck;
+			document.getElementById("friendHomeTextColorCode").value = "#"+prefs.colors.friendHomeTextColorCode;
+			if (prefs.colors.friendHomeTextColorCheck)
+				document.getElementById("label_friendHomeColorCode").style.color= "#" + prefs.colors.friendHomeTextColorCode;
+			document.getElementById("friendAwayTextColorCheck").checked = prefs.colors.friendAwayTextColorCheck;
+			document.getElementById("friendAwayTextColorCode").disabled = !prefs.colors.friendAwayTextColorCheck;
+			document.getElementById("friendAwayTextColorCode").value = "#"+prefs.colors.friendAwayTextColorCode;
+			if (prefs.colors.friendAwayTextColorCheck)
+				document.getElementById("label_friendAwayColorCode").style.color= "#" + prefs.colors.friendAwayTextColorCode;
+			document.getElementById("foeHomeTextColorCheck").checked = prefs.colors.foeHomeTextColorCheck;
+			document.getElementById("foeHomeTextColorCode").disabled = !prefs.colors.foeHomeTextColorCheck;
+			document.getElementById("foeHomeTextColorCode").value = "#"+prefs.colors.foeHomeTextColorCode;
+			if (prefs.colors.foeHomeTextColorCheck)
+				document.getElementById("label_foeHomeColorCode").style.color= "#" + prefs.colors.foeHomeTextColorCode;
+			document.getElementById("foeAwayTextColorCheck").checked = prefs.colors.foeAwayTextColorCheck;
+			document.getElementById("foeAwayTextColorCode").disabled = !prefs.colors.foeAwayTextColorCheck;
+			document.getElementById("foeAwayTextColorCode").value = "#"+prefs.colors.foeAwayTextColorCode;
+			if (prefs.colors.foeAwayTextColorCheck)
+				document.getElementById("label_foeAwayColorCode").style.color= "#" + prefs.colors.foeAwayTextColorCode;
+			document.getElementById("neutralTextColorCheck").checked = prefs.colors.neutralTextColorCheck;
+			document.getElementById("neutralTextColorCode").disabled = !prefs.colors.neutralTextColorCheck;
+			document.getElementById("neutralTextColorCode").value = "#"+prefs.colors.neutralTextColorCode;
+			if (prefs.colors.neutralTextColorCheck)
+				document.getElementById("label_neutralColorCode").style.backgroundColor= "#" + prefs.colors.neutralColorCode;
+
+			//document.getElementById("textColorCheck").checked = prefs.colors.textColorCheck;
+			//document.getElementById("textColorCode").disabled = !prefs.colors.textColorCheck;
+			//document.getElementById("textColorCode").value = "#"+prefs.colors.textColorCode;
+			if (prefs.colors.friendHomeTextColorCheck){
 				document.getElementById("label_friendHomeColorCode").style.color= "#" + prefs.colors.textColorCode;
-				document.getElementById("label_friendAwayColorCode").style.color= "#" + prefs.colors.textColorCode;
-				document.getElementById("label_foeHomeColorCode").style.color= "#" + prefs.colors.textColorCode;
-				document.getElementById("label_foeAwayColorCode").style.color= "#" + prefs.colors.textColorCode;
-				document.getElementById("label_neutralColorCode").style.color= "#" + prefs.colors.textColorCode;
 			};
+				//document.getElementById("label_friendAwayColorCode").style.color= "#" + prefs.colors.textColorCode;
+				//document.getElementById("label_foeHomeColorCode").style.color= "#" + prefs.colors.textColorCode;
+				//document.getElementById("label_foeAwayColorCode").style.color= "#" + prefs.colors.textColorCode;
+				//document.getElementById("label_neutralColorCode").style.color= "#" + prefs.colors.textColorCode;
+			//};
 			document.getElementById("seTextColorCheck").checked = prefs.colors.seTextColorCheck;
 			document.getElementById("seTextColorCode").disabled = !prefs.colors.seTextColorCheck;
 			document.getElementById("seTextColorCode").value = "#"+prefs.colors.seTextColorCode;
@@ -340,7 +368,13 @@ htlivesight.Settings = {
 			document.getElementById("label_foeAwayColorCode").innerHTML=htlivesight.Util.Parse("FoeAway",data[0]);
 			document.getElementById("label_neutralColorCode").innerHTML=htlivesight.Util.Parse("Neutral",data[0]);
 			document.getElementById("CustomEventText").innerHTML=htlivesight.Util.Parse("EventColorTitle",data[0]);
-			document.getElementById("label_textColorCode").innerHTML=htlivesight.Util.Parse("EventTextColor",data[0]);
+			
+			document.getElementById("label_friendHomeTextColorCode").innerHTML=htlivesight.Util.Parse("FriendHome",data[0]);
+			document.getElementById("label_friendAwayTextColorCode").innerHTML=htlivesight.Util.Parse("FriendAway",data[0]);
+			document.getElementById("label_foeHomeTextColorCode").innerHTML=htlivesight.Util.Parse("FoeHome",data[0]);
+			document.getElementById("label_foeAwayTextColorCode").innerHTML=htlivesight.Util.Parse("FoeAway",data[0]);
+			document.getElementById("label_neutralTextColorCode").innerHTML=htlivesight.Util.Parse("Neutral",data[0]);
+			//document.getElementById("label_textColorCode").innerHTML=htlivesight.Util.Parse("EventTextColor",data[0]);
 			document.getElementById("label_seTextColorCode").innerHTML=htlivesight.Util.Parse("SETextColor",data[0]);
 			//background
 		// background
@@ -750,29 +784,126 @@ htlivesight.Settings = {
 			},
 			textColorCheck: function() {
 				var prefs = htlivesight.Settings.preferences;
-				if(document.getElementById("textColorCheck").checked) {
-					document.getElementById("textColorCode").disabled = false;
-					prefs.colors.textColorCheck=true;
-					document.getElementById("label_friendHomeColorCode").style.color= "#" + prefs.colors.textColorCode;
-					document.getElementById("label_friendAwayColorCode").style.color= "#" + prefs.colors.textColorCode;
-					document.getElementById("label_foeHomeColorCode").style.color= "#" + prefs.colors.textColorCode;
-					document.getElementById("label_foeAwayColorCode").style.color= "#" + prefs.colors.textColorCode;
-					document.getElementById("label_neutralColorCode").style.color= "#" + prefs.colors.textColorCode;
-				} else {
-					document.getElementById("textColorCode").disabled = true;
-					prefs.colors.textColorCheck=false;
-				}
+				//if(document.getElementById("textColorCheck").checked) {
+				//	document.getElementById("textColorCode").disabled = false;
+				//	prefs.colors.textColorCheck=true;
+				//	document.getElementById("label_friendHomeColorCode").style.color= "#" + prefs.colors.textColorCode;
+				//	document.getElementById("label_friendAwayColorCode").style.color= "#" + prefs.colors.textColorCode;
+				//	document.getElementById("label_foeHomeColorCode").style.color= "#" + prefs.colors.textColorCode;
+				//	document.getElementById("label_foeAwayColorCode").style.color= "#" + prefs.colors.textColorCode;
+				//	document.getElementById("label_neutralColorCode").style.color= "#" + prefs.colors.textColorCode;
+				//} else {
+				//	document.getElementById("textColorCode").disabled = true;
+				//	prefs.colors.textColorCheck=false;
+				//}
 			},
 			textColorSet: function() {
-				var prefs = htlivesight.Settings.preferences;
-				var value = document.getElementById("textColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
-				prefs.colors.textColorCode = value;
-				document.getElementById("label_friendHomeColorCode").style.color= "#" + prefs.colors.textColorCode;
-				document.getElementById("label_friendAwayColorCode").style.color= "#" + prefs.colors.textColorCode;
-				document.getElementById("label_foeHomeColorCode").style.color= "#" + prefs.colors.textColorCode;
-				document.getElementById("label_foeAwayColorCode").style.color= "#" + prefs.colors.textColorCode;
-				document.getElementById("label_neutralColorCode").style.color= "#" + prefs.colors.textColorCode;
+			//	var prefs = htlivesight.Settings.preferences;
+			//	var value = document.getElementById("textColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
+			//	prefs.colors.textColorCode = value;
+			//	document.getElementById("label_friendHomeColorCode").style.color= "#" + prefs.colors.textColorCode;
+			//	document.getElementById("label_friendAwayColorCode").style.color= "#" + prefs.colors.textColorCode;
+			//	document.getElementById("label_foeHomeColorCode").style.color= "#" + prefs.colors.textColorCode;
+			//	document.getElementById("label_foeAwayColorCode").style.color= "#" + prefs.colors.textColorCode;
+			//	document.getElementById("label_neutralColorCode").style.color= "#" + prefs.colors.textColorCode;
 			},
+			friendHomeTextColorCheck: function(){
+				//alert("ciao!");
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("friendHomeTextColorCheck").checked) {
+					document.getElementById("friendHomeTextColorCode").disabled = false;
+					prefs.colors.friendHomeTextColorCheck=true;
+					document.getElementById("label_friendHomeColorCode").style.color= "#" + prefs.colors.friendHomeTextColorCode;
+				} else {
+					document.getElementById("friendHomeTextColorCode").disabled = true;
+					prefs.colors.friendHomeTextColorCheck=false;
+				}
+			},
+			friendHomeTextColorSet: function() {
+				//alert("ciao!");
+				var prefs = htlivesight.Settings.preferences;
+				var value = document.getElementById("friendHomeTextColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
+				prefs.colors.friendHomeTextColorCode = value;
+				document.getElementById("label_friendHomeColorCode").style.color= "#" + prefs.colors.friendHomeTextColorCode;
+			},
+			friendAwayTextColorCheck: function(){
+				//alert("ciao!");
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("friendAwayTextColorCheck").checked) {
+					document.getElementById("friendAwayTextColorCode").disabled = false;
+					prefs.colors.friendAwayTextColorCheck=true;
+					document.getElementById("label_friendAwayColorCode").style.color= "#" + prefs.colors.friendAwayTextColorCode;
+				} else {
+					document.getElementById("friendAwayTextColorCode").disabled = true;
+					prefs.colors.friendAwayTextColorCheck=false;
+				}
+			},
+			friendAwayTextColorSet: function() {
+				//alert("ciao!");
+				var prefs = htlivesight.Settings.preferences;
+				var value = document.getElementById("friendAwayTextColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
+				prefs.colors.friendAwayTextColorCode = value;
+				document.getElementById("label_friendAwayColorCode").style.color= "#" + prefs.colors.friendAwayTextColorCode;
+			},
+			
+			foeHomeTextColorCheck: function(){
+				//alert("ciao!");
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("foeHomeTextColorCheck").checked) {
+					document.getElementById("foeHomeTextColorCode").disabled = false;
+					prefs.colors.foeHomeTextColorCheck=true;
+					document.getElementById("label_foeHomeColorCode").style.color= "#" + prefs.colors.foeHomeTextColorCode;
+				} else {
+					document.getElementById("foeHomeTextColorCode").disabled = true;
+					prefs.colors.foeHomeTextColorCheck=false;
+				}
+			},
+			foeHomeTextColorSet: function() {
+				//alert("ciao!");
+				var prefs = htlivesight.Settings.preferences;
+				var value = document.getElementById("foeHomeTextColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
+				prefs.colors.foeHomeTextColorCode = value;
+				document.getElementById("label_foeHomeColorCode").style.color= "#" + prefs.colors.foeHomeTextColorCode;
+			},
+			foeAwayTextColorCheck: function(){
+				//alert("ciao!");
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("foeAwayTextColorCheck").checked) {
+					document.getElementById("foeAwayTextColorCode").disabled = false;
+					prefs.colors.foeAwayTextColorCheck=true;
+					document.getElementById("label_foeAwayColorCode").style.color= "#" + prefs.colors.foeAwayTextColorCode;
+				} else {
+					document.getElementById("foeAwayTextColorCode").disabled = true;
+					prefs.colors.foeAwayTextColorCheck=false;
+				}
+			},
+			foeAwayTextColorSet: function() {
+				//alert("ciao!");
+				var prefs = htlivesight.Settings.preferences;
+				var value = document.getElementById("foeAwayTextColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
+				prefs.colors.foeAwayTextColorCode = value;
+				document.getElementById("label_foeAwayColorCode").style.color= "#" + prefs.colors.foeAwayTextColorCode;
+			},
+			neutralTextColorCheck: function(){
+				//alert("ciao!");
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("neutralTextColorCheck").checked) {
+					document.getElementById("neutralTextColorCode").disabled = false;
+					prefs.colors.neutralTextColorCheck=true;
+					document.getElementById("label_neutralColorCode").style.color= "#" + prefs.colors.neutralTextColorCode;
+				} else {
+					document.getElementById("neutralTextColorCode").disabled = true;
+					prefs.colors.neutralTextColorCheck=false;
+				}
+			},
+			neutralTextColorSet: function() {
+				//alert("ciao!");
+				var prefs = htlivesight.Settings.preferences;
+				var value = document.getElementById("neutralTextColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
+				prefs.colors.neutralTextColorCode = value;
+				document.getElementById("label_neutralColorCode").style.color= "#" + prefs.colors.neutralTextColorCode;
+			},
+
 			seTextColorCheck: function() {
 				var prefs = htlivesight.Settings.preferences;
 				if(document.getElementById("seTextColorCheck").checked) {

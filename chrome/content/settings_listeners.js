@@ -161,9 +161,23 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("neutralColorCheck").addEventListener('click',function(){htlivesight.Settings.click.neutralColorCheck();});
 	document.getElementById("neutralColorCode").addEventListener('change',function(){htlivesight.Settings.click.neutralColorSet();});
 
-	document.getElementById("textColorCheck").addEventListener('click',function(){htlivesight.Settings.click.textColorCheck();});
-	document.getElementById("textColorCode").addEventListener('change',function(){htlivesight.Settings.click.textColorSet();});
+	//document.getElementById("textColorCheck").addEventListener('click',function(){htlivesight.Settings.click.textColorCheck();});
+	//document.getElementById("textColorCode").addEventListener('change',function(){htlivesight.Settings.click.textColorSet();});
+  document.getElementById("friendHomeTextColorCheck").addEventListener('click',function(){htlivesight.Settings.click.friendHomeTextColorCheck();});
+	document.getElementById("friendHomeTextColorCode").addEventListener('change',function(){htlivesight.Settings.click.friendHomeTextColorSet();});
 
+  document.getElementById("friendAwayTextColorCheck").addEventListener('click',function(){htlivesight.Settings.click.friendAwayTextColorCheck();});
+	document.getElementById("friendAwayTextColorCode").addEventListener('change',function(){htlivesight.Settings.click.friendAwayTextColorSet();});
+	
+  document.getElementById("foeHomeTextColorCheck").addEventListener('click',function(){htlivesight.Settings.click.foeHomeTextColorCheck();});
+	document.getElementById("foeHomeTextColorCode").addEventListener('change',function(){htlivesight.Settings.click.foeHomeTextColorSet();});
+	
+  document.getElementById("foeAwayTextColorCheck").addEventListener('click',function(){htlivesight.Settings.click.foeAwayTextColorCheck();});
+	document.getElementById("foeAwayTextColorCode").addEventListener('change',function(){htlivesight.Settings.click.foeAwayTextColorSet();});
+	
+	document.getElementById("neutralTextColorCheck").addEventListener('click',function(){htlivesight.Settings.click.neutralTextColorCheck();});
+	document.getElementById("neutralTextColorCode").addEventListener('change',function(){htlivesight.Settings.click.neutralTextColorSet();});
+	
 	document.getElementById("seTextColorCheck").addEventListener('click',function(){htlivesight.Settings.click.seTextColorCheck();});
 	document.getElementById("seTextColorCode").addEventListener('change',function(){htlivesight.Settings.click.seTextColorSet();});
 	//document.getElementById("label_customBackground_try").addEventListener('click',function(){htlivesight.Settings.click.tryBackground();});	

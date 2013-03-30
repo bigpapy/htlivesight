@@ -25,8 +25,8 @@ var htlivesight = {
 			console.info(winW2);
 			//console.info(winH2);
 
-		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW2-297) + "px" );
-		  	document.getElementById("sidebar").setAttribute("style", "width:" + (270) + "px" );
+		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW2-317) + "px" );
+		  	document.getElementById("sidebar").setAttribute("style", "width:" + (290) + "px" );
 
 		},
 
@@ -48,8 +48,8 @@ var htlivesight = {
 			}
 			console.info(winW);
 			console.info(winH);
-		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW-297) + "px" );
-		  	document.getElementById("sidebar").setAttribute("style", "width:" + (270) + "px" );
+		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW-317) + "px" );
+		  	document.getElementById("sidebar").setAttribute("style", "width:" + (290) + "px" );
 	// coloring header
 		  	/*document.getElementById("MatchesList").style.backgroundColor="#654321";
 		  	document.getElementById("FriendsTitle").style.backgroundColor="#654321";
