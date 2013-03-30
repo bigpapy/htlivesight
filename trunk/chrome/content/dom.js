@@ -127,12 +127,12 @@ htlivesight.DOM = {
 
 		toggleLink: function(matchId, sourceSystem) {
 			try{ // added by bigpapy to debug from XUL to HTML
-				var htServer=htlivesight.Settings.preferences.general.hattrickServer;
+			/*	var htServer=htlivesight.Settings.preferences.general.hattrickServer;
 				if (!htServer){ 
 					var no_htserver=htlivesight.Util.Parse("NoHTServer",htlivesight.data[0]);
 					alert(no_htserver);
 					htServer="www";
-				};
+				};*/
 				//var matchLink="http://" + htServer + ".hattrick.org/Club/Matches/Match.aspx?matchID=" + matchId;
 					var matchLink="http://www.hattrick.org/goto.ashx?path=/Club/Matches/Match.aspx?matchID=" + matchId;
 				if (sourceSystem=="Hattrick"||sourceSystem=="False"){ 
@@ -1265,6 +1265,8 @@ htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
 		if (event.subjectTeamId == 0){
 			if (prefs.colors.neutralColorCheck)
 				row.style.backgroundColor= "#" + prefs.colors.neutralColorCode;
+			if (prefs.colors.neutralTextColorCheck)
+				row.style.color= "#" + prefs.colors.neutralTextColorCode;
 		}
 		if (prefs.colors.textColorCheck)
 			row.style.color= "#" + prefs.colors.textColorCode;
@@ -1276,18 +1278,26 @@ htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
 				row.setAttribute("class", "friend_home");
 				if (prefs.colors.friendHomeColorCheck)
 					row.style.backgroundColor= "#" + prefs.colors.friendHomeColorCode;
+				if (prefs.colors.friendHomeTextColorCheck)
+					row.style.color= "#" + prefs.colors.friendHomeTextColorCode;
 			} else if(isF && !isHome) {
 				row.setAttribute("class", "friend_away");
 				if (prefs.colors.friendAwayColorCheck)
 					row.style.backgroundColor= "#" + prefs.colors.friendAwayColorCode;
+				if (prefs.colors.friendAwayTextColorCheck)
+					row.style.color= "#" + prefs.colors.friendAwayTextColorCode;
 			} else if(!isF && isHome) {
 				row.setAttribute("class", "foe_home");
 				if (prefs.colors.foeHomeColorCheck)
 					row.style.backgroundColor= "#" + prefs.colors.foeHomeColorCode;
+				if (prefs.colors.foeHomeTextColorCheck)
+					row.style.color= "#" + prefs.colors.foeHomeTextColorCode;
 			} else if(!isF && !isHome) {
 				row.setAttribute("class", "foe_away");
 				if (prefs.colors.foeAwayColorCheck)
 					row.style.backgroundColor= "#" + prefs.colors.foeAwayColorCode;
+				if (prefs.colors.foeAwayTextColorCheck)
+					row.style.color= "#" + prefs.colors.foeAwayTextColorCode;
 			}
 		}
 		else {

@@ -187,7 +187,14 @@ htlivesight.Lang = {
 			doc.getElementById("label_foeAwayColorCode").innerHTML=htlivesight.Util.Parse("FoeAway",htlivesight.data[0]);
 			doc.getElementById("label_neutralColorCode").innerHTML=htlivesight.Util.Parse("Neutral",htlivesight.data[0]);
 			doc.getElementById("CustomEventText").innerHTML=htlivesight.Util.Parse("EventColorTitle",htlivesight.data[0]);
-			doc.getElementById("label_textColorCode").innerHTML=htlivesight.Util.Parse("EventTextColor",htlivesight.data[0]);
+			
+			doc.getElementById("label_friendHomeTextColorCode").innerHTML=htlivesight.Util.Parse("FriendHome",htlivesight.data[0]);
+			doc.getElementById("label_friendAwayTextColorCode").innerHTML=htlivesight.Util.Parse("FriendAway",htlivesight.data[0]);
+			doc.getElementById("label_foeHomeTextColorCode").innerHTML=htlivesight.Util.Parse("FoeHome",htlivesight.data[0]);
+			doc.getElementById("label_foeAwayTextColorCode").innerHTML=htlivesight.Util.Parse("FoeAway",htlivesight.data[0]);
+			doc.getElementById("label_neutralTextColorCode").innerHTML=htlivesight.Util.Parse("Neutral",htlivesight.data[0]);
+						
+			//doc.getElementById("label_textColorCode").innerHTML=htlivesight.Util.Parse("EventTextColor",htlivesight.data[0]);
 			doc.getElementById("label_seTextColorCode").innerHTML=htlivesight.Util.Parse("SETextColor",htlivesight.data[0]);
 			doc.getElementById("LoggedIn").innerHTML=htlivesight.Util.Parse("LoggedIn",htlivesight.data[0]);
 			doc.getElementById("latestNews").innerHTML=htlivesight.Util.Parse("latestNews",htlivesight.data[0]);
