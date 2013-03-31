@@ -1,5 +1,8 @@
 if (!htlivesight) var htlivesight = {};
-htlivesight.League= function League() {
+htlivesight.League= function League(id, name, level) {
+	this.id = id;
+	this.name = name;
+	this.level = level;
 };
 htlivesight.League.Round = function(number, date) {
 	this.number = number;
@@ -35,7 +38,8 @@ htlivesight.League.Round.prototype.ElapsedTime = function(now) {
  * Get League data
  * ---------------------------------------------- */
 htlivesight.League.HTTPGet = function () {
-	var parameters=[["file","leaguedetails"]];
+	var parameters=[["file","leaguedetails"],
+									["leagueLevelUnitID", htlivesight.Teams.myTeam.league.id]];
 	htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.League.ParseGet(xml);});
 };
 htlivesight.League.ParseGet = function(xml) {
@@ -80,7 +84,8 @@ htlivesight.League.ParseTeams = function(xml) {
  * Get League games
  * ---------------------------------------------- */
 htlivesight.League.HTTPFixtures = function () {
-	var parameters=[["file","leaguefixtures"]];
+	var parameters=[["file","leaguefixtures"],
+									["leagueLevelUnitID", htlivesight.Teams.myTeam.league.id]];
 	htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.League.ParseFixtures(xml);});
 };
 htlivesight.League.ParseFixtures = function(xml) {
