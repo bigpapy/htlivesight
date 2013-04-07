@@ -909,8 +909,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		label.setAttribute("class", "formation");
 		link = document.createElement("a");
 		link.href="#";
-		//link.addEventListener('mouseover',  htlivesight.DOM.ShowLink(this));
-		//link.addEventListener('mouseout',  htlivesight.DOM.HideLink(this));
+		link.addEventListener("mouseover",function(){htlivesight.DOM.ShowLink(this);});
+		link.addEventListener("mouseout",function(){htlivesight.DOM.HideLink(this);});
 		link.setAttribute("style", "text-decoration: none");
 		label.appendChild(link);
 		link.setAttribute("id", "home_team_formation_" + match.id + "_" + match.sourceSystem);
@@ -924,9 +924,11 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		link = document.createElement("a");
 		label.appendChild(link);
 		link.setAttribute("id", "home_team_name_" + match.id + "_" + match.sourceSystem);
-		link.href="#";
+	//	link.href="#";
+	//	link.addEventListener("mouseover",function(){htlivesight.DOM.ShowLink(this);});
+	//	link.addEventListener("mouseout",function(){htlivesight.DOM.HideLink(this);});
 		link.setAttribute("style", "text-decoration: none");
-		link.setAttribute("title", htlivesight.Util.Parse("StatisticTip", htlivesight.data[0]));
+	//	link.setAttribute("title", htlivesight.Util.Parse("StatisticTip", htlivesight.data[0]));
 		link.addEventListener("click",function(){htlivesight.DOM.statisticspopup(this.id);});
 		label.setAttribute("class", "team_name");
 		if (htlivesight.prefs.matches.scorers) {  
@@ -1074,9 +1076,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		link = document.createElement("a");
 		label.appendChild(link);
 		link.setAttribute("id", "away_team_name_" + match.id + "_" + match.sourceSystem);
-		link.href="#";
 		link.setAttribute("style", "text-decoration: none");
-		link.setAttribute("title", htlivesight.Util.Parse("StatisticTip", htlivesight.data[0]));
+//		link.setAttribute("title", htlivesight.Util.Parse("StatisticTip", htlivesight.data[0]));
 		link.addEventListener('click', function(){htlivesight.DOM.statisticspopup(this.id);});
 		if (!htlivesight.prefs.matches.scorers  && !htlivesight.prefs.matches.booked && !htlivesight.prefs.matches.sentOff && !htlivesight.prefs.matches.injured) {
 		}
@@ -1086,8 +1087,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		link = document.createElement("a");
 		label.appendChild(link);
 		link.href="#";
-		//link.addEventListener('mouseover',  htlivesight.DOM.ShowLink(this));
-		//link.addEventListener('mouseout',  htlivesight.DOM.HideLink(this));
+		link.addEventListener("mouseover",function(){htlivesight.DOM.ShowLink(this);});
+		link.addEventListener("mouseout",function(){htlivesight.DOM.HideLink(this);});
 		link.setAttribute("style", "text-decoration: none");
 		link.setAttribute("id", "away_team_formation_" + match.id + "_" + match.sourceSystem);
 		link.setAttribute( "title", htlivesight.Util.Parse( "SchemaTip", htlivesight.data[0] ) );
