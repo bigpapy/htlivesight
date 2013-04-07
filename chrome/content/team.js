@@ -5,6 +5,7 @@ htlivesight.Team = function Team(id, name, shortName, youth) {
 	this.shortName = shortName;
 	this.youth = (youth=="youth"||youth=="Youth"||youth=="True")?"True":"False";
 	this.addTeamToFriendsPopup=null;
+	this.playerList = new Object();
 };
 htlivesight.Teams = {
 		myTeam: null,

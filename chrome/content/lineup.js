@@ -21,7 +21,7 @@ htlivesight.LineUp = {};
  *   112	Middle forward
  *   113	Left forward
  */
-htlivesight.LineUp.ParseLineUpFromXml= function (xml){
+htlivesight.LineUp.ParseLineUpFromXml= function (xml,teamId,youth){
 
 	//lineUp contains players name and index is the position (RoleId-100)
 	var lineUp = new Array(14);// because there are 14 position: 1 keeper, 5 defenders,5 midfields, 3 scorers.
@@ -32,6 +32,7 @@ htlivesight.LineUp.ParseLineUpFromXml= function (xml){
 		lineUp[index].behaviourInt="0"; 
 		lineUp[index].id="0";
 		lineUp[index].behaviourString=" ";
+		lineUp[index].youth=youth;
 	}
 	lineUp[0].update=1;
 
@@ -56,14 +57,21 @@ htlivesight.LineUp.ParseLineUpFromXml= function (xml){
 				continue;
 			}*/
 
-			lineUp[index].name= xml.getElementsByTagName("PlayerName")[i].textContent; // get name
-			lineUp[index].name = lineUp[index].name.replace(/,/g,"");
+			var playerName= xml.getElementsByTagName("PlayerName")[i].textContent; // get name
+			lineUp[index].name = playerName.replace(/,/g,"");
 
 			lineUp[index].behaviourInt= xml.getElementsByTagName("Behaviour")[i].textContent; // get individual order
-			lineUp[index].id= xml.getElementsByTagName("PlayerID")[i].textContent; // get  playerId.
+			var playerId= xml.getElementsByTagName("PlayerID")[i].textContent; // get  playerId.
+			lineUp[index].id=playerId;
+			lineUp[index].youth=youth;
+
+			if(typeof htlivesight.Player.List["_"+playerId+"_"+youth] === "undefined"){
+				var player = new htlivesight.Player(playerId, playerName, "", "",teamId,youth);
+				htlivesight.Player.List["_"+playerId+"_"+youth] = player;
+			}
 		};
 
-	}catch(e){lineUp[0].update=0;/*console.log("ParseLineUpFromXml: "+e);*/}
+	}catch(e){lineUp[0].update=0;/*console.log("htlivesight.LineUp.ParseLineUpFromXml: "+e)*/}
 	return lineUp;
 };
 htlivesight.LineUp.BehaviourFromIntToString= function (player, index){
@@ -133,7 +141,7 @@ htlivesight.LineUp.FromArrayToString= function (lineUp){
 	for (var index=0; index<lineUp.length; index++) // building the lineup string
 	{
 		lineUp[index]=htlivesight.LineUp.BehaviourFromIntToString(lineUp[index], index);
-		stringLineUp+=lineUp[index].behaviourString+lineUp[index].name+" "; // adding individual order and player name  
+		stringLineUp+=lineUp[index].behaviourString+lineUp[index].name+" "+"#"+lineUp[index].id+"#"+lineUp[index].youth; // adding individual order and player name  
 		if ((index == 0) || (index==5) || (index==10)) 
 		{
 			stringLineUp+=" - "; // after keeper, defenders and midfields add a minus to separate them
@@ -143,7 +151,7 @@ htlivesight.LineUp.FromArrayToString= function (lineUp){
 			if (index!=lineUp.length-1) stringLineUp+=", "; // add a coma to separate players (except last one)
 		}
 	}
-	return stringLineUp; //returning lineup.
+	return stringLineUp+" "; //returning lineup.
 };
 //used by sent off event and injury without replacement
 htlivesight.LineUp.RemovePlayerFromLineUp= function (lineUp,playerId, player_name){
@@ -154,7 +162,7 @@ htlivesight.LineUp.RemovePlayerFromLineUp= function (lineUp,playerId, player_nam
 			lineUp[index].id= "0";
 			lineUp[index].name= "                   "; // delete name
 			lineUp[index].behaviourInt= "0"; // delete individual order int
-			lineUp[index].behaviourString= " "; // delete individual order string 
+			lineUp[index].behaviourString= " "; // delete individual order string
 			return lineUp;
 		};
 	};
@@ -177,7 +185,7 @@ htlivesight.LineUp.FormationFromLineUp= function (lineUp){
 	return formation; 
 };
 //got substitutions from xml
-htlivesight.LineUp.ParseSubstitutions= function (xml){
+htlivesight.LineUp.ParseSubstitutions= function (xml,youth){
 	var substitutions= new Array();
 	try{ // because substitutions aren't always present in the XML files.
 		var substitutionXml= xml.getElementsByTagName("Substitution");
@@ -191,6 +199,10 @@ htlivesight.LineUp.ParseSubstitutions= function (xml){
 			substitutions[index].newPositionId= parseInt(substitutionXml[index].getElementsByTagName("NewPositionId")[0].textContent); 
 			substitutions[index].newPositionBehaviour= substitutionXml[index].getElementsByTagName("NewPositionBehaviour")[0].textContent; 
 			substitutions[index].matchMinute= substitutionXml[index].getElementsByTagName("MatchMinute")[0].textContent;
+			if(typeof htlivesight.Player.List["_"+substitutions[index].objectPlayerID+"_"+youth] === "undefined"){
+  			var player = new htlivesight.Player(substitutions[index].objectPlayerID, "", "", "",substitutions[index].teamID,youth);
+	  	  htlivesight.Player.List["_"+substitutions[index].objectPlayerID+"_"+youth] = player;
+			}
 		}
 	}catch(e){/*console.log("error parsing substitution:"+e);*/};
 	return substitutions;
@@ -222,10 +234,12 @@ htlivesight.LineUp.SubstitutionPlayerInLineUp= function(lineUp,subjectPlayer,obj
 	// removing player exiting
 	lineUp= htlivesight.LineUp.RemovePlayerFromLineUp(lineUp,subjectPlayer.id);
 	var index=parseInt(objectPlayer.positionId)-100;// inserting position of entering player
+	var youth=lineUp[index].youth;
 	lineUp[index]= new Object;
 	lineUp[index].id=objectPlayer.id;// inserting other data...
 	lineUp[index].name= objectPlayer.name;
 	lineUp[index].behaviourInt= objectPlayer.behaviourInt;
+	lineUp[index].youth=youth;
 	return lineUp;
 };
 htlivesight.LineUp.SubstitutionEvent= function(event, match){
@@ -531,16 +545,21 @@ htlivesight.LineUp.toClipboard= function(lineup,id,minute,e){
 //	var lineup=lineuptxt.split(",");
 	var lineupString="[table][tr][th colspan=5 align=center]"+teamName+" "+minute+"' "+tactic+"[/th][/tr][tr]";
 		for(var i=0;i<lineup.length;i++){
-			if(lineup[i]=="            "||lineup[i]=="                     "||lineup[i]=="           ") lineup[i]="";
-			if(i==0)lineupString+="[td colspan=5 align=center]"+lineup[i]+"[/td][/tr][tr]";
-			if(i>0 && i<5)lineupString+="[td]"+lineup[i]+"[/td]";
-			if(i==5)lineupString+="[td]"+lineup[i]+"[/td][/tr][tr]";
-			if(i>5 && i<10)lineupString+="[td]"+lineup[i]+"[/td]";
-			if(i==10)lineupString+="[td]"+lineup[i]+"[/td][/tr][tr]";
-			if(i==11)lineupString+="[td colspan=2 align=center]"+lineup[i]+"[/td]";
-			if(i==12)lineupString+="[td]"+lineup[i]+"[/td]";
-			if(i==13)lineupString+="[td colspan=2 align=center]"+lineup[i]+"[/td][/tr][/table]";
-	//		alert("lineup["+i+"]="+lineup[i]);
+			var playerNameIdYouth=lineup[i].split("#");
+			var specialty="";
+			if(parseInt(playerNameIdYouth[1])>0){
+			  var player = htlivesight.Player.List["_"+playerNameIdYouth[1]+"_"+playerNameIdYouth[2]];
+				specialty = htlivesight.players.specialtyChar(player.specialty);
+			}
+			if(playerNameIdYouth[0]=="            "||playerNameIdYouth[0]=="                     "||playerNameIdYouth[0]=="           ") playerNameIdYouth[0]="";
+			if(i==0)lineupString+="[td colspan=5 align=center]"+playerNameIdYouth[0]+" "+specialty+"[/td][/tr][tr]";
+			if(i>0 && i<5)lineupString+="[td]"+playerNameIdYouth[0]+" "+specialty+"[/td]";
+			if(i==5)lineupString+="[td]"+playerNameIdYouth[0]+" "+specialty+"[/td][/tr][tr]";
+			if(i>5 && i<10)lineupString+="[td]"+playerNameIdYouth[0]+" "+specialty+"[/td]";
+			if(i==10)lineupString+="[td]"+playerNameIdYouth[0]+" "+specialty+"[/td][/tr][tr]";
+			if(i==11)lineupString+="[td colspan=2 align=center]"+playerNameIdYouth[0]+" "+specialty+"[/td]";
+			if(i==12)lineupString+="[td]"+playerNameIdYouth[0]+" "+specialty+"[/td]";
+			if(i==13)lineupString+="[td colspan=2 align=center]"+playerNameIdYouth[0]+" "+specialty+"[/td][/tr][/table]";
 			}
 
 		htlivesight.copyToClipboard(lineupString);

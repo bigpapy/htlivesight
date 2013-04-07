@@ -19,7 +19,7 @@ htlivesight.DOM = {
 			}else if (side=="away"){
 				teamName=match.away.team.name;
 			}
-			$("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 400, title: teamName, dialogClass: "formationbg" });
+			$("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 430, title: teamName, dialogClass: "formationbg" });
 			return false;
 		},
 
@@ -251,7 +251,21 @@ htlivesight.DOM = {
 							label_empty = document.createElement("td");
 							hbox.appendChild(label_empty);
 						}
-						label.innerHTML= htlivesight.DOM.getTextContent(lineup[i][j]);
+						var playerInfo = lineup[i][j].split("#");// split name and individual order (0) from player id (1) and youth (2)
+						var linkPlayer = document.createElement("a");
+						linkPlayer.addEventListener("click", function(){htlivesight.Click.openPlayerLink(this);},true);
+						//linkPlayer.setAttribute("target","_blank");
+						linkPlayer.setAttribute("href","#");
+						linkPlayer.setAttribute("style", "text-decoration: none");
+						linkPlayer.addEventListener("mouseover", function(){htlivesight.DOM.ShowLink(this);});
+						linkPlayer.addEventListener("mouseout", function(){htlivesight.DOM.HideLink(this);});
+						linkPlayer.innerHTML= htlivesight.DOM.getTextContent(playerInfo[0]);
+						label.appendChild(linkPlayer);
+						if(playerInfo[2].toLowerCase()=="true"){
+						linkPlayer.setAttribute('class',playerInfo[1]+"_youth");
+						}else{
+							linkPlayer.setAttribute('class',playerInfo[1]);
+						}
 						hbox.appendChild(label);
 					}
 				};
@@ -894,6 +908,10 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		hometr.appendChild(label);
 		label.setAttribute("class", "formation");
 		link = document.createElement("a");
+		link.href="#";
+		//link.addEventListener('mouseover',  htlivesight.DOM.ShowLink(this));
+		//link.addEventListener('mouseout',  htlivesight.DOM.HideLink(this));
+		link.setAttribute("style", "text-decoration: none");
 		label.appendChild(link);
 		link.setAttribute("id", "home_team_formation_" + match.id + "_" + match.sourceSystem);
 		link.setAttribute("title", htlivesight.Util.Parse("SchemaTip", htlivesight.data[0]));
@@ -906,6 +924,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		link = document.createElement("a");
 		label.appendChild(link);
 		link.setAttribute("id", "home_team_name_" + match.id + "_" + match.sourceSystem);
+		link.href="#";
+		link.setAttribute("style", "text-decoration: none");
 		link.setAttribute("title", htlivesight.Util.Parse("StatisticTip", htlivesight.data[0]));
 		link.addEventListener("click",function(){htlivesight.DOM.statisticspopup(this.id);});
 		label.setAttribute("class", "team_name");
@@ -1054,6 +1074,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		link = document.createElement("a");
 		label.appendChild(link);
 		link.setAttribute("id", "away_team_name_" + match.id + "_" + match.sourceSystem);
+		link.href="#";
+		link.setAttribute("style", "text-decoration: none");
 		link.setAttribute("title", htlivesight.Util.Parse("StatisticTip", htlivesight.data[0]));
 		link.addEventListener('click', function(){htlivesight.DOM.statisticspopup(this.id);});
 		if (!htlivesight.prefs.matches.scorers  && !htlivesight.prefs.matches.booked && !htlivesight.prefs.matches.sentOff && !htlivesight.prefs.matches.injured) {
@@ -1063,6 +1085,10 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		label.setAttribute("class", "formation");
 		link = document.createElement("a");
 		label.appendChild(link);
+		link.href="#";
+		//link.addEventListener('mouseover',  htlivesight.DOM.ShowLink(this));
+		//link.addEventListener('mouseout',  htlivesight.DOM.HideLink(this));
+		link.setAttribute("style", "text-decoration: none");
 		link.setAttribute("id", "away_team_formation_" + match.id + "_" + match.sourceSystem);
 		link.setAttribute( "title", htlivesight.Util.Parse( "SchemaTip", htlivesight.data[0] ) );
 		link.addEventListener('click',function(){htlivesight.DOM.formationpopup(this.id);});
@@ -1689,4 +1715,10 @@ htlivesight.DOM.CreateElementRowShortGame=function(match) {
 		row.appendChild(cell);
 		return row;
 	}catch(e){alert("htlivesight.DOM.CreateElementRowShortGame: "+e);}//added by bigpapy to debug from XUL to HTML
+};
+htlivesight.DOM.ShowLink=function(element) {
+	element.setAttribute("style", "text-decoration:underline;");
+},
+htlivesight.DOM.HideLink=function(element) {
+	element.setAttribute("style", "text-decoration:none");
 };
