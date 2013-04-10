@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets"
                 id="http://htlivesight.sourceforge.net/"
-                version="0.5.995" network="public private">
+                version="0.5.1001" network="public private">
         <name>HTlivesight</name>
         <description>A viewer for hattrick.org</description>
         <author href="http://htlivesight.sourceforge.net/">Silkevicious and Bigpapy</author>
