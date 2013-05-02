@@ -25,19 +25,24 @@ htlivesight.Teams.update = function(newTeam) {
 	};
 	return team;
 };
-htlivesight.Team.HTTPGetMyData = function () {
+htlivesight.Team.HTTPGetMyData = function (teamId, teamKind) {
 	var parameters=[["file","teamdetails"],
-	                ["teamID", document.getElementById("teamId").value]
+	                ["teamID", teamId]
 	];
-	htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Team.ParseMyData(xml);/*console.log("htlivesight.Team.HTTPGetMyData"+ document.getElementById("teamId").value);*/});
+	htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Team.ParseMyData(xml, teamKind);/*console.log("htlivesight.Team.HTTPGetMyData"+ document.getElementById("teamId").value);*/});
 };
-htlivesight.Team.ParseMyData = function (xml) {
+htlivesight.Team.ParseMyData = function (xml, teamKind) {
 	var myTeam;
 	try {
 		if (xml) {
 			myTeam = htlivesight.Team.ParseTeamData(xml); // return team
-			htlivesight.Teams.myTeam = myTeam;
-			document.getElementById("teamName").innerHTML=myTeam.name;
+			if(teamKind=="myFirstTeam"){
+			  htlivesight.Teams.myTeam = myTeam;
+				document.getElementById("teamName").innerHTML=myTeam.name;
+			}else if(teamKind=="mySecondTeam"){
+				htlivesight.Teams.mySecondTeam = myTeam;
+			}
+
 			htlivesight.Teams.update(myTeam);
 		} else {
 			if (htlivesight.ApiProxy.authorized(document.getElementById("teamId").value)) alert("team data not found");
@@ -46,7 +51,12 @@ htlivesight.Team.ParseMyData = function (xml) {
 	} catch(e) {
 		alert("ParseMyData: " + e);
 	}
+	if(teamKind=="myFirstTeam"){
+		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.LOGIN2);
+		}
+	if(teamKind=="mySecondTeam"){
 	htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TEAM);
+	}
 };
 htlivesight.Team.ParseMyUserData = function (xml) {
 	;// nothing to do yet

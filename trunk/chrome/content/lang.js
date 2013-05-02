@@ -165,6 +165,15 @@ htlivesight.Lang = {
 			doc.getElementById("LeagueGoals").innerHTML=htlivesight.Util.Parse("LeagueGoals",htlivesight.data[0]);
 			doc.getElementById("LeagueGoalDiff").innerHTML=htlivesight.Util.Parse("LeagueGoalDiff",htlivesight.data[0]);
 			doc.getElementById("LeaguePoints").innerHTML=htlivesight.Util.Parse("LeaguePoints",htlivesight.data[0]);
+			
+			doc.getElementById("LeagueMatchesBis").innerHTML=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);
+			doc.getElementById("LeaguePositionBis").innerHTML=htlivesight.Util.Parse("LeaguePosition",htlivesight.data[0]);
+			doc.getElementById("LeagueTeamBis").innerHTML=htlivesight.Util.Parse("LeagueTeam",htlivesight.data[0]);
+			doc.getElementById("LeaguePlayedBis").innerHTML=htlivesight.Util.Parse("LeaguePlayed",htlivesight.data[0]);
+			doc.getElementById("LeagueGoalsBis").innerHTML=htlivesight.Util.Parse("LeagueGoals",htlivesight.data[0]);
+			doc.getElementById("LeagueGoalDiffBis").innerHTML=htlivesight.Util.Parse("LeagueGoalDiff",htlivesight.data[0]);
+			doc.getElementById("LeaguePointsBis").innerHTML=htlivesight.Util.Parse("LeaguePoints",htlivesight.data[0]);
+			
 			doc.getElementById("MatchesList").innerHTML=htlivesight.Util.Parse("MatchesList",htlivesight.data[0]);
 			doc.getElementById("FriendsTitle").innerHTML=htlivesight.Util.Parse("FriendsTitle",htlivesight.data[0]);
 			doc.getElementById("FriendsRemove").innerHTML=htlivesight.Util.Parse("FriendsRemove",htlivesight.data[0]);

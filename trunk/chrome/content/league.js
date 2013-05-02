@@ -37,20 +37,31 @@ htlivesight.League.Round.prototype.ElapsedTime = function(now) {
 /* ----------------------------------------------
  * Get League data
  * ---------------------------------------------- */
-htlivesight.League.HTTPGet = function () {
+htlivesight.League.HTTPGet = function (leagueId,teamKind) {
 	var parameters=[["file","leaguedetails"],
-									["leagueLevelUnitID", htlivesight.Teams.myTeam.league.id]];
-	htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.League.ParseGet(xml);});
+	                ["leagueLevelUnitID", leagueId]];
+	htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.League.ParseGet(xml, teamKind);});
 };
-htlivesight.League.ParseGet = function(xml) {
-	htlivesight.League.countryId =  parseInt(htlivesight.Util.Parse("LeagueID", xml), 10);
-	htlivesight.League.countryName = htlivesight.Util.Parse("LeagueName", xml);
-	htlivesight.League.level = parseInt(htlivesight.Util.Parse("LeagueLevel", xml), 10);
-	htlivesight.League.maxLevel = parseInt(htlivesight.Util.Parse("MaxLevel", xml), 10);
-	htlivesight.League.levelUnitId = parseInt(htlivesight.Util.Parse("LeagueLevelUnitID", xml), 10);
-	htlivesight.League.levelUnitName = htlivesight.Util.Parse("LeagueLevelUnitName", xml);
-	htlivesight.League.teams = htlivesight.League.ParseTeams(xml);
-	htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE);
+htlivesight.League.ParseGet = function(xml, teamKind) {
+	if(teamKind=="myFirstTeam"){
+		htlivesight.League.countryId =  parseInt(htlivesight.Util.Parse("LeagueID", xml), 10);
+		htlivesight.League.countryName = htlivesight.Util.Parse("LeagueName", xml);
+		htlivesight.League.level = parseInt(htlivesight.Util.Parse("LeagueLevel", xml), 10);
+		htlivesight.League.maxLevel = parseInt(htlivesight.Util.Parse("MaxLevel", xml), 10);
+		htlivesight.League.levelUnitId = parseInt(htlivesight.Util.Parse("LeagueLevelUnitID", xml), 10);
+		htlivesight.League.levelUnitName = htlivesight.Util.Parse("LeagueLevelUnitName", xml);
+		htlivesight.League.teams = htlivesight.League.ParseTeams(xml);
+		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TEAM2);
+	}else if(teamKind=="mySecondTeam"){
+		htlivesight.League.countryId2 =  parseInt(htlivesight.Util.Parse("LeagueID", xml), 10);
+		htlivesight.League.countryName2 = htlivesight.Util.Parse("LeagueName", xml);
+		htlivesight.League.level2 = parseInt(htlivesight.Util.Parse("LeagueLevel", xml), 10);
+		htlivesight.League.maxLevel2 = parseInt(htlivesight.Util.Parse("MaxLevel", xml), 10);
+		htlivesight.League.levelUnitId2 = parseInt(htlivesight.Util.Parse("LeagueLevelUnitID", xml), 10);
+		htlivesight.League.levelUnitName2 = htlivesight.Util.Parse("LeagueLevelUnitName", xml);
+		htlivesight.League.teams2 = htlivesight.League.ParseTeams(xml);
+		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE);
+	}
 };
 
 htlivesight.League.ParseTeams = function(xml) {
@@ -83,12 +94,12 @@ htlivesight.League.ParseTeams = function(xml) {
 /* ----------------------------------------------
  * Get League games
  * ---------------------------------------------- */
-htlivesight.League.HTTPFixtures = function () {
+htlivesight.League.HTTPFixtures = function (leagueId,teamKind) {
 	var parameters=[["file","leaguefixtures"],
-									["leagueLevelUnitID", htlivesight.Teams.myTeam.league.id]];
-	htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.League.ParseFixtures(xml);});
+									["leagueLevelUnitID", leagueId]];
+	htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.League.ParseFixtures(xml,teamKind);});
 };
-htlivesight.League.ParseFixtures = function(xml) {
+htlivesight.League.ParseFixtures = function(xml,teamKind) {
 	var fetchDate = htlivesight.Time.parseFetchDate(xml);
 	try {
 		var leagueMatches = xml.getElementsByTagName("Match");
@@ -126,6 +137,8 @@ htlivesight.League.ParseFixtures = function(xml) {
 		alert("htlivesight.League.ParseFixtures (get info): " + e);
 	}
 	try {
+		if(teamKind=="myFirstTeam"){
+		
 		var matchId;
 
 		htlivesight.League.rounds = rounds;
@@ -151,16 +164,78 @@ htlivesight.League.ParseFixtures = function(xml) {
 			document.getElementById("h3LeagueMatches").setAttribute("style", "display:block");
 			htlivesight.DOM.UpdateElementBoxLeagueTable(htlivesight.League);
 			htlivesight.DOM.UpdateElementBoxLeague(htlivesight.League);
-			for (var i=0; i<rounds[currentRound].id.length; i++) {
+			htlivesight.League.matches=rounds[currentRound].id;
+			/*for (var i=0; i<rounds[currentRound].id.length; i++) {
 				matchId = rounds[currentRound].id[i];
 				htlivesight.AddLiveMatch(matchId, "False");
-			}
+			}*/
 		}
+		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE2);
+		}else if(teamKind=="mySecondTeam"){
+			
+			
+			var matchId;
+
+			htlivesight.League.rounds2 = rounds;
+			htlivesight.League.currentRound2 = rounds[currentRound];
+			var p = htlivesight.prefs.matches.league;
+			htlivesight.Time.hattrickTime = htlivesight.Time.parseFetchDate(xml);// bigpapy:this read current time
+			if (
+					//		!(htlivesight.prefs.other.reLive) && //bigpapy: this remove table from relive mode.
+					p.get
+					&& (
+							!p.within
+							|| Math.abs(htlivesight.League.currentRound2.date-htlivesight.Time.hattrickTime) < p.withinHours*htlivesight.Time.HOUR 
+					)
+			) {
+				htlivesight.showLeague2= true;
+			} else {
+				htlivesight.showLeague2= false;
+			}
+			if (htlivesight.showLeague2 && htlivesight.League.currentRound2 != undefined) {
+				document.getElementById("winbox_leaguetableBis").setAttribute("style", "display:block");
+				document.getElementById("winboxcontent_leaguematchesBis").setAttribute("style", "display:block");
+				document.getElementById("LeagueMatchesBis").setAttribute("style", "display:block");
+				document.getElementById("h3LeagueMatchesBis").setAttribute("style", "display:block");
+				htlivesight.DOM.UpdateElementBoxLeagueTable2(htlivesight.League);
+				htlivesight.DOM.UpdateElementBoxLeague2(htlivesight.League);
+				htlivesight.League.matches2=rounds[currentRound].id
+//				for (var i=0; i<rounds[currentRound].id.length; i++) {
+//					matchId = rounds[currentRound].id[i];
+//					htlivesight.AddLiveMatch(matchId, "False");
+//				}
+			}
+			
+		}
+		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES);
+		
 	} catch(e) {
 		// alert("htlivesight.League.ParseFixtures (set info): " + e);
 	}
-	htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES); // punto di fine della copia
+//	if(teamKind==="myFirstTeam"){
+//		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE2);
+//	}else if(teamKind==="mySecondTeam"){
+//		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES); // punto di fine della copia
+//	}
 };
+htlivesight.League.addLeagueMatches= function(){
+	try{
+		for (var i=0; i<htlivesight.League.matches.length; i++) {
+			matchId = htlivesight.League.matches[i];
+			htlivesight.AddLiveMatch(matchId, "False");
+		}
+	}catch(e){}
+};
+
+htlivesight.League.addLeagueMatches2= function(){
+	try{
+		for (var i=0; i<htlivesight.League.matches2.length; i++) {
+			matchId = htlivesight.League.matches2[i];
+			htlivesight.AddLiveMatch(matchId, "False");
+		}
+	}catch(e){}
+};
+
 htlivesight.League.sortTable = function(){
 	var tmp = Array();
 	for(var id in htlivesight.League.teams){
@@ -182,6 +257,29 @@ htlivesight.League.sortTable = function(){
 		htlivesight.League.teams[tmp[j].id].livePosition = j;
 	}
 };
+
+htlivesight.League.sortTable2 = function(){
+	var tmp = Array();
+	for(var id in htlivesight.League.teams2){
+		tmp[htlivesight.League.teams2[id].livePosition] = htlivesight.League.teams2[id];
+	}
+	var change = true;
+	while(change){
+		change = false;
+		for(var i=1; i<8; i++){
+			if(htlivesight.League.compareTeams(tmp[i], tmp[i+1]) < 0){
+				var tmpTeam = tmp[i];
+				tmp[i] = tmp[i+1];
+				tmp[i+1] = tmpTeam;
+				change = true;
+			}
+		}
+	}
+	for(var j=1; j<=8; j++){
+		htlivesight.League.teams2[tmp[j].id].livePosition = j;
+	}
+};
+
 htlivesight.League.compareTeams = function(team1, team2){
 	if(team1.livePoints > team2.livePoints) return 1;
 	else{

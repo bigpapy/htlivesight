@@ -65,7 +65,7 @@ htlivesight.LineUp.ParseLineUpFromXml= function (xml,teamId,youth){
 			lineUp[index].id=playerId;
 			lineUp[index].youth=youth;
 
-			if(typeof htlivesight.Player.List["_"+playerId+"_"+youth] === "undefined"){
+			if(typeof htlivesight.Player.List["_"+playerId+"_"+youth] === "undefined"/*!htlivesight.Player.List.hasOwnProperty("_"+playerId+"_"+youth)*/){
 				var player = new htlivesight.Player(playerId, playerName, "", "",teamId,youth);
 				htlivesight.Player.List["_"+playerId+"_"+youth] = player;
 			}

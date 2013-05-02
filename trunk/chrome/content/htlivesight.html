@@ -55,7 +55,11 @@
 			<fieldset>
 				<legend id="LoginLabel2"></legend>
 				<label id="LoginTeamId" for="teamId"></label> <input type="text"
-					id="teamId" class="text ui-widget-content ui-corner-all"></input> <br />
+					id="teamId" class="text ui-widget-content ui-corner-all"></input> <br /><br />
+					
+				<label id="SecondTeamIdLabel" for="teamId">Insert a second team Id </label> <input type="text"
+					id="secondTeamId" class="text ui-widget-content ui-corner-all"></input> <br />
+					
 				<input type="checkbox" id="save_teamId" /><label for="save_teamId"
 					id="LoginSave"></label> <input type="button" id="button_login"
 					value="" />
@@ -613,7 +617,7 @@
 			</ul>
 			<div id="tabs-1">
 				<img src="./themes/images/256.png" alt="HTLiveSight Logo"><br />
-				HTLiveSightDEV 0.5.1001<br /> <span id="creationDate"></span><br />
+				HTLiveSightDEV 0.5.995<br /> <span id="creationDate"></span><br />
 				<br /> <span id="createdBy"></span><br /> Silkevicious &amp;
 				Bigpapy<br />
 				<br /> <span id="BasedOn">Based on</span> <span id="BasedOnTitle">HattrickLiveFox</span><br />
@@ -961,6 +965,202 @@
 					</div>
 				</div>
 			</div>
+			
+			
+			<div id="winbox_leaguematchesBis">
+				<h3 id="h3LeagueMatchesBis" style="display: none">
+					<a href="#" id="LeagueMatchesBis" style="display: none"></a>
+				</h3>
+				<div id="winboxcontent_leaguematchesBis" style="display: none">
+					<div id="contentbody_leaguematchesBis">
+						<table class="match_table">
+							<thead id="contentheader_leaguematchesBis">
+								<tr>
+									<th colspan="7" class="datetime_league"><span
+										id="league_round_dateBis"></span>
+									</th>
+								</tr>
+							</thead>
+							<tbody id="league_grid_rowsBis">
+							</tbody>
+							<tfoot id="contentfooter_leaguematchesBis">
+								<tr>
+									<td colspan="1" class="round_league"><span
+										id="league_round_numberBis"></span>
+									</td>
+									<td colspan="6" class="chronometer_league"><span
+										id="league_round_timeBis"></span>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div id="winbox_leaguetableBis" style="display: none">
+				<h3>
+					<a href="#" id="LeagueLiveTableBis"></a>
+				</h3>
+				<div id="winboxcontent_leaguetableBis">
+					<div id="contentbody_leaguetableBis">
+						<table id="leaguetable_grid_rowsBis" class="live_league_table"
+							cellpadding="0">
+							<thead>
+								<tr>
+									<th class="header_league_table" id="LeaguePositionBis"></th>
+									<th class="header_league_table" id="LeagueTeamBis"></th>
+									<th class="header_league_table"></th>
+									<th class="header_league_table" id="LeaguePlayedBis"></th>
+									<th class="header_league_table" id="LeagueGoalsBis"></th>
+									<th class="header_league_table" id="LeagueGoalDiffBis"></th>
+									<th class="header_league_table" id="LeaguePointsBis"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="leaguetable_1Bis">
+									<td><span>1.</span>
+									</td>
+									<td><span id="leaguetable_1_nameBis"></span>
+									</td>
+									<td><img id="leaguetable_1_changeBis"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_1_matchesBis"></span>
+									</td>
+									<td><span id="leaguetable_1_goalsBis"></span>
+									</td>
+									<td><span id="leaguetable_1_goaldifBis"></span>
+									</td>
+									<td><span id="leaguetable_1_pointsBis"></span>
+									</td>
+								</tr>
+								<tr id="leaguetable_2Bis">
+									<td><span>2.</span>
+									</td>
+									<td><span id="leaguetable_2_nameBis"></span>
+									</td>
+									<td><img id="leaguetable_2_changeBis"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_2_matchesBis"></span>
+									</td>
+									<td><span id="leaguetable_2_goalsBis"></span>
+									</td>
+									<td><span id="leaguetable_2_goaldifBis"></span>
+									</td>
+									<td><span id="leaguetable_2_pointsBis"></span>
+									</td>
+								</tr>
+								<tr id="leaguetable_3Bis">
+									<td><span>3.</span>
+									</td>
+									<td><span id="leaguetable_3_nameBis"></span>
+									</td>
+									<td><img id="leaguetable_3_changeBis"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_3_matchesBis"></span>
+									</td>
+									<td><span id="leaguetable_3_goalsBis"></span>
+									</td>
+									<td><span id="leaguetable_3_goaldifBis"></span>
+									</td>
+									<td><span id="leaguetable_3_pointsBis"></span>
+									</td>
+								</tr>
+								<tr id="leaguetable_4Bis">
+									<td><span>4.</span>
+									</td>
+									<td><span id="leaguetable_4_nameBis"></span>
+									</td>
+									<td><img id="leaguetable_4_changeBis"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_4_matchesBis"></span>
+									</td>
+									<td><span id="leaguetable_4_goalsBis"></span>
+									</td>
+									<td><span id="leaguetable_4_goaldifBis"></span>
+									</td>
+									<td><span id="leaguetable_4_pointsBis"></span>
+									</td>
+								</tr>
+								<tr id="leaguetable_5Bis">
+									<td><span>5.</span>
+									</td>
+									<td><span id="leaguetable_5_nameBis"></span>
+									</td>
+									<td><img id="leaguetable_5_changeBis"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_5_matchesBis"></span>
+									</td>
+									<td><span id="leaguetable_5_goalsBis"></span>
+									</td>
+									<td><span id="leaguetable_5_goaldifBis"></span>
+									</td>
+									<td><span id="leaguetable_5_pointsBis"></span>
+									</td>
+								</tr>
+								<tr id="leaguetable_6Bis">
+									<td><span>6.</span>
+									</td>
+									<td><span id="leaguetable_6_nameBis"></span>
+									</td>
+									<td><img id="leaguetable_6_changeBis"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_6_matchesBis"></span>
+									</td>
+									<td><span id="leaguetable_6_goalsBis"></span>
+									</td>
+									<td><span id="leaguetable_6_goaldifBis"></span>
+									</td>
+									<td><span id="leaguetable_6_pointsBis"></span>
+									</td>
+								</tr>
+								<tr id="leaguetable_7Bis">
+									<td><span>7.</span>
+									</td>
+									<td><span id="leaguetable_7_nameBis"></span>
+									</td>
+									<td><img id="leaguetable_7_changeBis"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_7_matchesBis"></span>
+									</td>
+									<td><span id="leaguetable_7_goalsBis"></span>
+									</td>
+									<td><span id="leaguetable_7_goaldifBis"></span>
+									</td>
+									<td><span id="leaguetable_7_pointsBis"></span>
+									</td>
+								</tr>
+								<tr id="leaguetable_8Bis">
+									<td><span>8.</span>
+									</td>
+									<td><span id="leaguetable_8_nameBis"></span>
+									</td>
+									<td><img id="leaguetable_8_changeBis"
+										class="leaguetable_equal" />
+									</td>
+									<td><span id="leaguetable_8_matchesBis"></span>
+									</td>
+									<td><span id="leaguetable_8_goalsBis"></span>
+									</td>
+									<td><span id="leaguetable_8_goaldifBis"></span>
+									</td>
+									<td><span id="leaguetable_8_pointsBis"></span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+			
+			
 			<div id="winbox_matchlist">
 				<h3>
 					<a href="#" id="MatchesList"></a>

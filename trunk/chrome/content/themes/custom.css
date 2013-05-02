@@ -97,6 +97,8 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 
 #winbox_leaguematches{/*min-height:140px;*/overflow:auto}
 #winboxcontent_leaguetable{/*min-height:150px;*/overflow:auto}
+#winbox_leaguematchesBis{/*min-height:140px;*/overflow:auto}
+#winboxcontent_leaguetableBis{/*min-height:150px;*/overflow:auto}
 #winboxcontent_matchlist{/*min-height:30px;*/overflow:auto}
 #winboxcontent_friends{/*min-height:110px;*/overflow:auto}
 #managefriendsbuttons{/*margin-top:5px*/height:100%;}
@@ -298,9 +300,19 @@ padding: 2px 0;
 /*border-bottom:thin solid DimGray;*/
 }
 
+#leaguetable_grid_rowsBis td{
+padding: 2px 0;
+/*border-bottom:thin solid DimGray;*/
+}
+
 table.ev_rows,#leaguetable_grid_rows{
 border-collapse: collapse;
 }
+
+table.ev_rows,#leaguetable_grid_rowsBis{
+border-collapse: collapse;
+}
+
 td.short_friend, td.short_own{font-weight: bold;}
 tr.league_own > td:nth-child(2) > span{font-weight: bold;}
 table.ev_rows > tr{
