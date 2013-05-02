@@ -12,6 +12,7 @@ htlivesight.Player = function Team(id, firstName, lastName, specialty, teamId, y
 };
 htlivesight.Player.List = new Object();
 htlivesight.players.HTTPGet = function (playerId,youth) {
+//	console.log(htlivesight.Player.List["_"+playerId+"_"+youth].specialty);
 	if(htlivesight.Player.List["_"+playerId+"_"+youth].specialty!="") return;
 	if(youth=="false"){
 
@@ -32,17 +33,17 @@ htlivesight.players.HTTPGet = function (playerId,youth) {
 
 };
 htlivesight.players.ParseGet = function(xml,playerId, youth){
-	//	var firstName = xml.getElementsByTagName("FirstName")[0].textContent;
+//		var firstName = xml.getElementsByTagName("FirstName")[0].textContent;
 
-	//	var lastName = xml.getElementsByTagName("LastName")[0].textContent;
-
+//		var lastName = xml.getElementsByTagName("LastName")[0].textContent;
+ //   console.log("counter: "+htlivesight.Live.counterPlayers+" downloading "+firstName+" "+lastName);
 //		var playerId;
 //		if(youth=="true"){
 //			playerId = xml.getElementsByTagName("YouthPlayerID")[0].textContent;
 //		}else{
 //			playerId = xml.getElementsByTagName("PlayerID")[0].textContent;	
 //		}
-
+//		console.log(xml.getElementsByTagName("LastName")[0].textContent);
 		var specialty = xml.getElementsByTagName("Specialty")[0].textContent;
 		if(specialty == "" && youth=="true")specialty="0"; 
 

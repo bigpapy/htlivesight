@@ -12,10 +12,18 @@
 padding-left: 3px;
 border-right: thin solid white;
 }
+#leaguetable_grid_rowsBis td:first-child,#leaguetable_grid_rows th:first-child{
+padding-left: 3px;
+border-right: thin solid white;
+}
 tr.league_title, tr.league_promote{background-color: #023702;}
 tr.league_demote{background-color: #750606;}
 tr.league_qualify{background-color: #C57006;}
 #leaguetable_grid_rows td:first-child,#leaguetable_grid_rows th:first-child{
+padding-left: 3px;
+border-right: thin solid white;
+}
+#leaguetable_grid_rowsBis td:first-child,#leaguetable_grid_rowsBis th:first-child{
 padding-left: 3px;
 border-right: thin solid white;
 }

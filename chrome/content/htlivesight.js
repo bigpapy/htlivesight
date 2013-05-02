@@ -105,6 +105,9 @@ var htlivesight = {
 			if (htlivesight.prefs.general.teamId != "") {
 				document.getElementById("teamId").value=htlivesight.prefs.general.teamId;    
 			}
+			if (htlivesight.prefs.general.secondTeamId != "") {
+				document.getElementById("secondTeamId").value=htlivesight.prefs.general.secondTeamId;    
+			}
 			document.getElementById("reLive").checked=htlivesight.prefs.other.reLive;
 			document.getElementById("reLiveSpeed").value=htlivesight.prefs.other.reLiveSpeed;
 			document.getElementById("reLiveByEvent").checked=htlivesight.prefs.other.reLiveByEvent;
@@ -123,6 +126,7 @@ var htlivesight = {
 		Login: function(username, securitycode){// changed
 			if(document.getElementById("save_teamId").checked) {
 				htlivesight.Preferences.teamId.save(document.getElementById("teamId").value);
+				htlivesight.Preferences.secondTeamId.save(document.getElementById("secondTeamId").value);
 			};
 			if(document.getElementById("reLive").checked) {
 				document.getElementById("ReLiveControls").style.display="inline-block";
@@ -174,17 +178,46 @@ var htlivesight = {
 		},
 		GetMyData: function() { 
 			try{
-				htlivesight.Team.HTTPGetMyData();
+				htlivesight.Team.HTTPGetMyData(document.getElementById("teamId").value,"myFirstTeam");
+			}catch(e){alert(e);}
+		},
+		GetMyData2: function() { 
+			try{
+				if(parseInt(document.getElementById("secondTeamId").value)){
+					htlivesight.Team.HTTPGetMyData(document.getElementById("secondTeamId").value,"mySecondTeam");
+				}else{
+					htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TEAM);
+				}
 			}catch(e){alert(e);}
 		},
 		GetLeague: function() {
-			htlivesight.League.HTTPGet();
+			htlivesight.League.HTTPGet(htlivesight.Teams.myTeam.league.id,"myFirstTeam");
+		},
+		GetLeague2: function() {
+			if(parseInt(document.getElementById("secondTeamId").value)){
+			  htlivesight.League.HTTPGet(htlivesight.Teams.mySecondTeam.league.id,"mySecondTeam");
+			}else{
+				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE);
+			}
 		},
 		GetLeagueMatches: function() {
-			htlivesight.League.HTTPFixtures();
+			htlivesight.League.HTTPFixtures(htlivesight.Teams.myTeam.league.id,"myFirstTeam");
+		},
+		GetLeagueMatches2: function() {
+			if(parseInt(document.getElementById("secondTeamId").value)){
+			  htlivesight.League.HTTPFixtures(htlivesight.Teams.mySecondTeam.league.id,"mySecondTeam");
+			}else{
+				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES);
+			}
+		},
+		addLeagueMatches: function(){
+			htlivesight.League.addLeagueMatches();
 		},
 		GetMyMatch: function() { 
 			htlivesight.Matches.HTTPGetByTeam(htlivesight.Teams.myTeam.id, htlivesight.Teams.myTeam.youth);
+			if(parseInt(document.getElementById("secondTeamId").value)){
+			  htlivesight.Matches.HTTPGetByTeam(htlivesight.Teams.mySecondTeam.id, htlivesight.Teams.mySecondTeam.youth);
+			}
 		},
 		winboxOpenByName: function(name) {
 			document.getElementById("winboxcontent_"+name).style.display="block";
@@ -197,12 +230,14 @@ var htlivesight = {
 			document.getElementById("imgwinboxshade_"+name).style.display="none";
 		},
 		AddLiveMatch: function(matchId, sourceSystem) {
+/*			console.log("add match: id: "+matchId+" system: "+sourceSystem);
 			if (htlivesight.liveCount >= 20) {
+				console.log("over matches limit. n ="+htlivesight.liveCount);
 				var message=htlivesight.Util.Parse("MatchesMaximum",htlivesight.data[0]);
 				alert(message);
 				htlivesight.warningShown = true;
 				return;
-			}
+			}*/
 			/*   if (typeof(htlivesight.Match.List["_"+matchId+"_"+youth]) == 'undefined')
     {
       htlivesight.liveCount++;
@@ -210,7 +245,7 @@ var htlivesight = {
       htlivesight.GetMatchDetails(matchId, youth);
     } else { */
 			//     if (htlivesight.Match.List["_"+matchId+"_"+youth].live == false)
-			htlivesight.liveCount++;
+			//htlivesight.liveCount++;
 			htlivesight.Live.HTTPAddMatch(matchId, sourceSystem);
 			htlivesight.GetMatchDetails(matchId, sourceSystem);
 			//   }

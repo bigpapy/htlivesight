@@ -183,6 +183,7 @@ htlivesight.DOM = {
 				img.setAttribute("src", htlivesight.Image.live.OFF);
 				htlivesight.Match.List["_" + matchId + "_" + sourceSystem].live = false;
 				htlivesight.liveCount--;
+				console.log("removed match n ="+htlivesight.liveCount);
 				document.getElementById("short_" + matchId + "_" + sourceSystem).hidden = true;
 				htlivesight.DOM.window.set(matchId, sourceSystem, htlivesight.DOM.mode.minimize);
 			}catch(e){alert("deleteView: "+e);}// added by bigpapy to debug from XUL to HTML
@@ -1570,6 +1571,132 @@ htlivesight.DOM.UpdateElementBoxLeagueTable=function(league) {
 		}
 	}catch(e){alert("UpdateElementBoxLeagueTable: "+e);}// added by bigpapy to debug from XUL to HTML
 };
+
+
+htlivesight.DOM.UpdateElementBoxLeagueTable2=function(league) {
+	var matchLeagueStarted;
+	try{ // added by bigpapy to debug from XUL to HTML
+		if (htlivesight.League.currentRound2 == undefined) return;
+		if (htlivesight.Time.hattrickTime > htlivesight.League.currentRound2.date) {matchLeagueStarted = true; 
+		}
+		else {matchLeagueStarted = false;
+		}
+		for(var matchid in htlivesight.Match.List){
+			var myMatch = htlivesight.Match.List[matchid];
+			if(league.currentRound2.id.has(myMatch.id) 
+					&& htlivesight.League.currentRound2.number > htlivesight.League.teams2[htlivesight.Teams.mySecondTeam.id]
+					&& htlivesight.showLeague
+					&& htlivesight.League.teams2[myMatch.home.team.id]
+					&& htlivesight.League.teams2[myMatch.away.team.id]){
+				var homeId = myMatch.home.team.id;
+				var awayId = myMatch.away.team.id;
+				if (matchLeagueStarted){// if match started take the current round leauge
+					htlivesight.League.teams2[homeId].liveMatches = htlivesight.League.currentRound2.number;
+					htlivesight.League.teams2[awayId].liveMatches = htlivesight.League.currentRound2.number;
+				} else {// if not take the last current round league
+					htlivesight.League.teams2[homeId].liveMatches = htlivesight.League.currentRound2.number-1;
+					htlivesight.League.teams2[awayId].liveMatches = htlivesight.League.currentRound2.number-1;
+				};
+				// if HTLS works in relive mode and last round is ended and lastRound wasn't removed from table remove it from table.
+				if((htlivesight.prefs.other.reLive && (htlivesight.League.currentRound2.number == htlivesight.League.teams2[htlivesight.Teams.mySecondTeam.id].matches)) && (!htlivesight.Live.removedLastRoundFromTable)){
+					if(myMatch.home.realGoals > myMatch.away.realGoals){
+						htlivesight.League.teams2[homeId].points -=  3;
+					}
+					else if(myMatch.home.realGoals < myMatch.away.realGoals){
+						htlivesight.League.teams2[awayId].points -= 3;
+					}
+					else if (myMatch.home.realGoals == myMatch.away.realGoals){// add one point only if matches are started
+						htlivesight.League.teams2[homeId].points -= 1;
+						htlivesight.League.teams2[awayId].points -= 1;
+					}
+				};
+  //			if((htlivesight.Time.hattrickTime-htlivesight.League.currentRound.date)>6300000){
+  		if(htlivesight.League.currentRound2.number == htlivesight.League.teams2[htlivesight.Teams.mySecondTeam.id].matches){
+				htlivesight.League.teams2[homeId].liveGoalsFor = htlivesight.League.teams2[homeId].goalsFor + parseInt(myMatch.home.goals, 10)- parseInt(myMatch.home.realGoals, 10);
+				htlivesight.League.teams2[homeId].liveGoalsAgainst = htlivesight.League.teams2[homeId].goalsAgainst + parseInt(myMatch.away.goals, 10)- parseInt(myMatch.away.realGoals, 10);
+				htlivesight.League.teams2[awayId].liveGoalsFor = htlivesight.League.teams2[awayId].goalsFor + parseInt(myMatch.away.goals, 10)- parseInt(myMatch.away.realGoals, 10);
+				htlivesight.League.teams2[awayId].liveGoalsAgainst = htlivesight.League.teams2[awayId].goalsAgainst + parseInt(myMatch.home.goals, 10)- parseInt(myMatch.home.realGoals, 10);
+				}else{// if relive start during the match table loaded isn't updated to actual round
+					/*start: new part added to fix wrong number of goals*/
+					htlivesight.League.teams2[homeId].liveGoalsFor = htlivesight.League.teams2[homeId].goalsFor + parseInt(myMatch.home.goals, 10);
+					htlivesight.League.teams2[homeId].liveGoalsAgainst = htlivesight.League.teams2[homeId].goalsAgainst + parseInt(myMatch.away.goals, 10);
+					htlivesight.League.teams2[awayId].liveGoalsFor = htlivesight.League.teams2[awayId].goalsFor + parseInt(myMatch.away.goals, 10);
+					htlivesight.League.teams2[awayId].liveGoalsAgainst = htlivesight.League.teams2[awayId].goalsAgainst + parseInt(myMatch.home.goals, 10);
+					/*end: new part added to fix wrong number of goals*/
+				}
+				if(myMatch.home.goals > myMatch.away.goals){
+					htlivesight.League.teams2[homeId].livePoints = htlivesight.League.teams2[homeId].points + 3;
+					htlivesight.League.teams2[awayId].livePoints = htlivesight.League.teams2[awayId].points;
+				}
+				else if(myMatch.home.goals < myMatch.away.goals){
+					htlivesight.League.teams2[awayId].livePoints = htlivesight.League.teams2[awayId].points + 3;
+					htlivesight.League.teams2[homeId].livePoints = htlivesight.League.teams2[homeId].points;
+				}
+				else if (matchLeagueStarted){// add one point only if matches are started
+					htlivesight.League.teams2[homeId].livePoints = htlivesight.League.teams2[homeId].points + 1;
+					htlivesight.League.teams2[awayId].livePoints = htlivesight.League.teams2[awayId].points + 1;
+				}
+			}
+		}
+		htlivesight.League.sortTable2();
+		for(var id in htlivesight.League.teams2){
+			// restoring relive table position to last round and not actual one deleting it and getting position after first call of the function
+			if((htlivesight.prefs.other.reLive && (htlivesight.League.currentRound2.number == htlivesight.League.teams2[htlivesight.Teams.mySecondTeam.id].matches)) && (!htlivesight.Live.removedLastRoundFromTable)){
+				htlivesight.League.teams2[id].position=htlivesight.League.teams2[id].livePosition;
+			};
+			// end part of restoring relive table position to last round and not actual one deleting it and getting position after first call of the function.
+			if(htlivesight.League.teams2[id].livePosition > htlivesight.League.teams2[id].position) htlivesight.League.teams2[id].change = "down.gif";
+			else if(htlivesight.League.teams2[id].livePosition < htlivesight.League.teams2[id].position) htlivesight.League.teams2[id].change = "up.gif" +
+			"";
+			else htlivesight.League.teams2[id].change = "equal.gif";
+		}
+		for(var j=1; j<=8; j++){
+			htlivesight.Util.RemoveClass(document.getElementById("leaguetable_"+j+"Bis"),['league_title','league_promote','league_demote','league_qualify','league_own']);
+		}
+		document.getElementById("LeagueLiveTableBis").innerHTML = htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0])+" ("+league.levelUnitName2+")";
+		if(league.level2 == 1){
+			//title holder
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_1Bis"),'league_title');
+		}
+		else if(league.level2 <= 6 || league.level2 % 2 == 0){
+			//#1 promotes
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_1Bis"),'league_promote');
+		}
+		else{
+			//#1 AND #2 promote
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_1Bis"),'league_promote');
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_2Bis"),'league_promote');
+		}
+		if(league.level2 != league.maxLevel2){
+			//#7 AND #8 demote
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_7Bis"),'league_demote');
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_8Bis"),'league_demote');
+		}
+		if(league.level2 < 6){
+			//#5 AND #8 need to qualify
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_5Bis"),'league_qualify');
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_6Bis"),'league_qualify');
+		}
+		for(var i in htlivesight.League.teams2){
+			if(htlivesight.League.teams2[i].livePosition >= 1 && htlivesight.League.teams2[i].livePosition <= 8){
+				if(i == htlivesight.Teams.mySecondTeam.id){
+					htlivesight.Util.AddClass(document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"Bis"),'league_own');
+				}
+				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_nameBis").innerHTML = htlivesight.DOM.getTextContent(htlivesight.League.teams2[i].name);
+				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_changeBis").setAttribute("src",htlivesight.constants.IMG_PATH + htlivesight.League.teams2[i].change);
+				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_matchesBis").innerHTML = htlivesight.League.teams2[i].liveMatches;
+				var goals = htlivesight.League.teams2[i].liveGoalsFor+"-"+htlivesight.League.teams2[i].liveGoalsAgainst;
+				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goalsBis").innerHTML = goals;
+				var diff = htlivesight.League.teams2[i].liveGoalsFor - htlivesight.League.teams2[i].liveGoalsAgainst;
+				if(diff >= 0) diff = "+"+diff;
+				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goaldifBis").innerHTML = diff;
+				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_pointsBis").innerHTML = htlivesight.League.teams2[i].livePoints;
+			}
+		}
+	}catch(e){alert("UpdateElementBoxLeagueTable2: "+e);}// added by bigpapy to debug from XUL to HTML
+};
+
+
 //End
 htlivesight.DOM.UpdateElementBoxLeague=function(league) {
 	try{ // added by bigpapy to debug from xul to html
@@ -1581,6 +1708,19 @@ htlivesight.DOM.UpdateElementBoxLeague=function(league) {
 		document.getElementById("league_round_date").innerHTML = date;
 	}catch(e){alert("UpdateElementBoxLeague : "+e);} // added by bigpapy to debug from xul to html
 };
+
+
+htlivesight.DOM.UpdateElementBoxLeague2=function(league) {
+	try{ // added by bigpapy to debug from xul to html
+		if (league.currentRound2 == undefined) return;
+		document.getElementById("winbox_leaguematchesBis").style.display="block";
+		var number = htlivesight.Util.Parse("LeagueRound",htlivesight.data[0]) + " " + league.currentRound2.number;
+		var date = htlivesight.Time.formatDate(league.currentRound2.date);
+		document.getElementById("league_round_numberBis").innerHTML = number;
+		document.getElementById("league_round_dateBis").innerHTML = date;
+	}catch(e){alert("UpdateElementBoxLeague2 : "+e);} // added by bigpapy to debug from xul to html
+};
+
 
 htlivesight.DOM.CreateElementRowLeagueGame=function(gameId) {
 	var rows, row;
@@ -1602,7 +1742,12 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 					htlivesight.Util.AddClass(elem,"myLeagueMatch");
 				}
 				document.getElementById("league_grid_rows").appendChild(elem);
-			} else {
+			} else if ((htlivesight.League.currentRound2!= undefined)&&(htlivesight.League.currentRound2.id.has(match.id) && htlivesight.showLeague2)) {
+				if (!(typeof htlivesight.Teams.mySecondTeam === "undefined") && match.getTeamById(htlivesight.Teams.mySecondTeam.id)) {
+					htlivesight.Util.AddClass(elem,"mySecondLeagueMatch");
+				}
+				document.getElementById("league_grid_rowsBis").appendChild(elem);
+			}	else {
 				document.getElementById("other_grid_rows").appendChild(elem);
 			}
 		} else {
@@ -1617,10 +1762,22 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 				if(!htlivesight.Live.removedLastRoundFromTable)  htlivesight.Live.removedLastRoundFromTable=true;
 			}
 		}
+		
+		if(htlivesight.Util.HasClass(elem,"mySecondLeagueMatch")) {
+			document.getElementById("league_round_timeBis").innerHTML = match.timeElapsed;
+			if((htlivesight.League.currentRound2!= undefined)&&(htlivesight.League.currentRound2.number > htlivesight.League.teams2[htlivesight.Teams.mySecondTeam.id].matches)){
+				htlivesight.DOM.UpdateElementBoxLeagueTable2(htlivesight.League);
+			}
+			if(htlivesight.prefs.other.reLive && (htlivesight.League.currentRound2.number == htlivesight.League.teams2[htlivesight.Teams.mySecondTeam.id].matches)){
+				htlivesight.DOM.UpdateElementBoxLeagueTable2(htlivesight.League);
+				if(!htlivesight.Live.removedLastRoundFromTable2)  htlivesight.Live.removedLastRoundFromTable2=true;
+			}
+		}
+		
 		var teamName=document.getElementById("short_home_name_" + match.id + "_" + match.sourceSystem);
 		teamName.innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
 		if(htlivesight.Friends.isFriend(match.home.team.id,match.sourceSystem)){
-			if(match.home.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(teamName,'short_own'); 
+			if(htlivesight.Teams.mySecondTeam &&(match.home.team.id == htlivesight.Teams.mySecondTeam.id)) htlivesight.Util.AddClass(teamName,'short_own'); 
 			else
 				htlivesight.Util.AddClass(teamName,'short_friend');
 			teamName.setAttribute("title","");
@@ -1635,7 +1792,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 		teamName=document.getElementById("short_away_name_" + match.id + "_" + match.sourceSystem);
 		teamName.innerHTML = htlivesight.DOM.getTextContent(match.away.team.shortName);
 		if(htlivesight.Friends.isFriend(match.away.team.id,match.sourceSystem)){
-			if(match.away.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(teamName,'short_own'); 
+			if(htlivesight.Teams.mySecondTeam && match.away.team.id == htlivesight.Teams.mySecondTeam.id) htlivesight.Util.AddClass(teamName,'short_own'); 
 			else
 				htlivesight.Util.AddClass(teamName,'short_friend');
 			teamName.setAttribute("title","");
@@ -1661,7 +1818,7 @@ htlivesight.DOM.CreateElementRowShortGame=function(match) {
 		cell.setAttribute("class", "hometeam_league");
 		htlivesight.Util.RemoveClass(cell,['short_own','short_friend']);//reset styling
 		if(htlivesight.Friends.isFriend(match.home.team.id,match.sourceSystem)){
-			if(match.home.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(cell,'short_own'); 
+			if(match.home.team.id == htlivesight.Teams.myTeam.id || (htlivesight.Teams.mySecondTeam && match.home.team.id == htlivesight.Teams.mySecondTeam.id)) htlivesight.Util.AddClass(cell,'short_own'); 
 			else
 				htlivesight.Util.AddClass(cell,'short_friend');
 		}else{
@@ -1686,7 +1843,7 @@ htlivesight.DOM.CreateElementRowShortGame=function(match) {
 		cell.setAttribute("class", "awayteam_league");
 		htlivesight.Util.RemoveClass(cell,['short_own','short_friend']);//reset styling
 		if(htlivesight.Friends.isFriend(match.away.team.id,match.sourceSystem)){
-			if(match.away.team.id == htlivesight.Teams.myTeam.id) htlivesight.Util.AddClass(cell,'short_own'); 
+			if(match.away.team.id == htlivesight.Teams.myTeam.id || (htlivesight.Teams.mySecondTeam && match.away.team.id == htlivesight.Teams.mySecondTeam.id)) htlivesight.Util.AddClass(cell,'short_own'); 
 			else
 				htlivesight.Util.AddClass(cell,'short_friend');
 		}else{

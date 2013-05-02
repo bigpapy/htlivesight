@@ -12,6 +12,10 @@
 padding-left: 3px;
 border-right: thin solid black;
 }
+#leaguetable_grid_rowsBis td:first-child,#leaguetable_grid_rowsBis th:first-child{
+padding-left: 3px;
+border-right: thin solid black;
+}
 tr.league_title, tr.league_promote{background-color: #02A702;}
 tr.league_demote{background-color: #B50606;}
 tr.league_qualify{background-color: #C57006;}
