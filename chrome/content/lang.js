@@ -27,6 +27,7 @@ htlivesight.Lang = {
 			doc.getElementById("LoginReLive2").innerHTML=htlivesight.Util.Parse("LoginReLive",htlivesight.data[0]);
 			doc.getElementById("LoginSpeed").innerHTML=htlivesight.Util.Parse("LoginSpeed",htlivesight.data[0]);
 			doc.getElementById("LoginByEvent").innerHTML=htlivesight.Util.Parse("LoginByEvent",htlivesight.data[0]);
+			doc.getElementById("SecondTeamIdLabel").innerHTML=htlivesight.Util.Parse("SecondTeamIdLabel",htlivesight.data[0]);
 //			ABOUT
 			doc.getElementById("ui-dialog-title-about-dialog").innerHTML=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);	
 			doc.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
