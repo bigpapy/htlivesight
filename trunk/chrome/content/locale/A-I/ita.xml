@@ -349,10 +349,11 @@
 <RepeatImage>Ripetere l'immagine</RepeatImage>
 <Background>Sfondo</Background>
 <MuteAll>Interruttore suoni</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
+<Technical>Tecnico</Technical>
+<Quick>Veloce</Quick>
+<Powerful>Potente</Powerful>
+<Unpredictable>Imprevedibile</Unpredictable>
 <Header>Header</Header>
 <Regainer>Regainer</Regainer>
+<SecondTeamIdLabel>Inserisci il TeamId della tua seconda squadra</SecondTeamIdLabel>
 </Htlivesight>
