@@ -353,7 +353,7 @@
 <Quick>Veloce</Quick>
 <Powerful>Potente</Powerful>
 <Unpredictable>Imprevedibile</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Inserisci il TeamId della tua seconda squadra</SecondTeamIdLabel>
+<Header>Colpo di Testa</Header>
+<Regainer>Guarigione veloce</Regainer>
+<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
 </Htlivesight>
