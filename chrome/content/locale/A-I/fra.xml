@@ -324,7 +324,7 @@
 <PathSoundsWhistle2>Fin de 1ère mi-temps</PathSoundsWhistle2>
 <PathSoundsWhistle3>Fin du match</PathSoundsWhistle3>
 <EventYellow2>Deuxième carton jaune</EventYellow2>
-<LoggedIn>Connecté :</LoggedIn>
+<LoggedIn>Équipe suivie :</LoggedIn>
 <latestNews>Nos dernières nouvelles sur</latestNews>
 <HTLSThread>Hattrick</HTLSThread>
 <ProjectWebsite>Site du projet</ProjectWebsite>
@@ -349,11 +349,11 @@
 <RepeatImage>Répétée</RepeatImage>
 <Background>Fond d'écran</Background>
 <MuteAll>Activer ou désactiver les sons</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert your second team ID</SecondTeamIdLabel>
+<Technical>Tec</Technical>
+<Quick>Rap</Quick>
+<Powerful>Cos</Powerful>
+<Unpredictable>Imp</Unpredictable>
+<Header>JdT</Header>
+<Regainer>Gué</Regainer>
+<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
 </Htlivesight>

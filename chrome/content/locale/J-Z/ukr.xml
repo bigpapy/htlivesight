@@ -49,7 +49,7 @@
 <TacticPressing>Пресинг</TacticPressing>
 <TacticCA>Контратаки</TacticCA>
 <TacticAIM>Атака по центру</TacticAIM>
-<TacticAOW>Атака по флангах</TacticAOW>
+<TacticAOW>Атака по флангам</TacticAOW>
 <TacticPlayCreative>Грати творчо</TacticPlayCreative>
 <TacticLongShots>Дальні удари</TacticLongShots>
 <TimeFirstHalf>1-ий тайм</TimeFirstHalf>
@@ -348,12 +348,12 @@
 <ExtendImage>Збільшити зображення</ExtendImage>
 <RepeatImage>Повторити зображення</RepeatImage>
 <Background>Фон</Background>
-<MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert your second team ID</SecondTeamIdLabel>
+<MuteAll>Звук</MuteAll>
+<Technical>Технічний</Technical>
+<Quick>Швидкий</Quick>
+<Powerful>Могутній</Powerful>
+<Unpredictable>Непередбачуваний</Unpredictable>
+<Header>Гра головою</Header>
+<Regainer>Регейнер</Regainer>
+<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
 </Htlivesight>

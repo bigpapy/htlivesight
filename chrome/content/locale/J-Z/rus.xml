@@ -348,12 +348,12 @@
 <ExtendImage>Расширить изображение</ExtendImage>
 <RepeatImage>Повторить изображение</RepeatImage>
 <Background>Фон</Background>
-<MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert your second team ID</SecondTeamIdLabel>
+<MuteAll>Звук</MuteAll>
+<Technical>Техничный</Technical>
+<Quick>Быстрый</Quick>
+<Powerful>Мощный</Powerful>
+<Unpredictable>Непредсказуемый</Unpredictable>
+<Header>Игра головой</Header>
+<Regainer>Регейнер</Regainer>
+<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
 </Htlivesight>
