@@ -210,6 +210,8 @@ htlivesight.League.ParseFixtures = function(xml,teamKind) {
 		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES);
 		
 	} catch(e) {
+		if(teamKind=="myFirstTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE2);}
+		if(teamKind=="mySecondTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES);}
 		// alert("htlivesight.League.ParseFixtures (set info): " + e);
 	}
 //	if(teamKind==="myFirstTeam"){

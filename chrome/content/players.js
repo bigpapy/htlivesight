@@ -33,9 +33,10 @@ htlivesight.players.HTTPGet = function (playerId,youth) {
 
 };
 htlivesight.players.ParseGet = function(xml,playerId, youth){
-//		var firstName = xml.getElementsByTagName("FirstName")[0].textContent;
-
-//		var lastName = xml.getElementsByTagName("LastName")[0].textContent;
+		var firstName = xml.getElementsByTagName("FirstName")[0].textContent;
+		var lastName = xml.getElementsByTagName("LastName")[0].textContent;
+		var nickName = xml.getElementsByTagName("NickName")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].firstName= firstName + " "+((nickName!=="")?("'"+nickName+"' "):"") + lastName ;
  //   console.log("counter: "+htlivesight.Live.counterPlayers+" downloading "+firstName+" "+lastName);
 //		var playerId;
 //		if(youth=="true"){
@@ -50,6 +51,57 @@ htlivesight.players.ParseGet = function(xml,playerId, youth){
 	//	var player = new htlivesight.Player(playerId, firstName, lastName, specialty, teamId, youth);
 
 		htlivesight.Player.List["_"+playerId+"_"+youth].specialty = specialty;
+		
+		var age = xml.getElementsByTagName("Age")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].age = age;
+		
+		var ageDays = xml.getElementsByTagName("AgeDays")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].ageDays = ageDays;
+		
+		var tsi = xml.getElementsByTagName("TSI")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].tsi = tsi||'';
+		
+		var form = xml.getElementsByTagName("PlayerForm")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].form = form||'';
+		
+		var stamina = xml.getElementsByTagName("StaminaSkill")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].stamina = stamina||'';
+		
+		var experience = xml.getElementsByTagName("Experience")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].experience = experience||'';
+		
+		var loyalty = xml.getElementsByTagName("Loyalty")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].loyalty = loyalty||'';
+		
+		var motherClubBonus = xml.getElementsByTagName("MotherClubBonus")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].motherClubBonus = motherClubBonus||'';
+		
+		var isAbroad = xml.getElementsByTagName("IsAbroad")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad = isAbroad||'';
+		
+		var keeperSkill = xml.getElementsByTagName("KeeperSkill")[0].textContent;
+		if (keeperSkill !== "undefined"){
+			htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill = keeperSkill;
+
+			var playmakerSkill = xml.getElementsByTagName("PlaymakerSkill")[0].textContent;
+			htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill = playmakerSkill;
+			
+			var scorerSkill = xml.getElementsByTagName("ScorerSkill")[0].textContent;
+			htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill = scorerSkill;
+			
+			var passingSkill = xml.getElementsByTagName("PassingSkill")[0].textContent;
+			htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill = passingSkill;
+			
+			var wingerSkill = xml.getElementsByTagName("WingerSkill")[0].textContent;
+			htlivesight.Player.List["_"+playerId+"_"+youth].wingerSkill = wingerSkill;
+			
+			var defenderSkill = xml.getElementsByTagName("DefenderSkill")[0].textContent;
+			htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill = defenderSkill;
+			
+			var setPiecesSkill = xml.getElementsByTagName("SetPiecesSkill")[0].textContent;
+			htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill = setPiecesSkill;
+			
+		}
 
 		if(parseInt(specialty)>=0 && parseInt(specialty)<=6){
 		  htlivesight.players.addSpecialtyToDom(playerId,youth,specialty);
@@ -89,6 +141,24 @@ htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
 	$("."+playerClass).each(function() {
 		if(!$(this).hasClass("withSpecialty")){
 			$(this).text($(this).text()+" "+htlivesight.players.specialtyChar(specialty));
+			$(this).attr('title', ''+htlivesight.Player.List["_"+playerId+"_"+youth].firstName+'\n'+
+		//			((htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad=="True")?"":" ⚑")+'\n'+
+					'Age: '+htlivesight.Player.List["_"+playerId+"_"+youth].age +
+					' Days: '+htlivesight.Player.List["_"+playerId+"_"+youth].ageDays+'\n' +
+					((youth!=="true")?('Form: '+htlivesight.Player.List["_"+playerId+"_"+youth].form+"\n"):"")+
+				((youth!=="true")?('Stamina: '+htlivesight.Player.List["_"+playerId+"_"+youth].stamina+'\n'):"")+
+					((youth!=="true")?('Experience: '+htlivesight.Player.List["_"+playerId+"_"+youth].experience+'\n'):"")+
+					((youth!=="true")?('Loyalty: '+htlivesight.Player.List["_"+playerId+"_"+youth].loyalty+" "):"")+
+					((youth!=="true")?((htlivesight.Player.List["_"+playerId+"_"+youth].motherClubBonus=="True")?"♥\n":"\n"):"")+
+					((youth!=="true")?('TSI: '+htlivesight.Player.List["_"+playerId+"_"+youth].tsi+'\n'):"") +
+					((htlivesight.players.specialtyChar(specialty)!="")?(''+ htlivesight.players.specialtyChar(specialty)+"\n"):"")+
+					((htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill)?("\nKeeper : "+htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill):"")+
+					((htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill)?("\nDefender : "+htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill):"")+
+					((htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill)?("\nPlaymaker : "+htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill):"")+
+					((htlivesight.Player.List["_"+playerId+"_"+youth].wingerSkill)?("\nWinger : "+htlivesight.Player.List["_"+playerId+"_"+youth].wingerSkill):"")+
+					((htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill)?("\nPassing : "+htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill):"")+
+					((htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill)?("\nScorer : "+htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill):"")+
+					((htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill)?("\nSetPieces : "+htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill):""));
 			$(this).addClass("withSpecialty");
 		}
 	});
