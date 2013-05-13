@@ -349,11 +349,12 @@
 <RepeatImage>Répétée</RepeatImage>
 <Background>Fond d'écran</Background>
 <MuteAll>Activer ou désactiver les sons</MuteAll>
-<Technical>Tec</Technical>
-<Quick>Rap</Quick>
-<Powerful>Cos</Powerful>
-<Unpredictable>Imp</Unpredictable>
-<Header>JdT</Header>
-<Regainer>Gué</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
+<Technical>Technique</Technical>
+<Quick>Rapide</Quick>
+<Powerful>Costaud</Powerful>
+<Unpredictable>Imprévisible</Unpredictable>
+<Header>Joueur de Tête</Header>
+<Regainer>Guérison</Regainer>
+<SecondTeamIdLabel>Insérer l'ID d'une 2nde équipe</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
 </Htlivesight>
