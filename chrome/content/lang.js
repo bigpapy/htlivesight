@@ -102,6 +102,7 @@ htlivesight.Lang = {
 			doc.getElementById("PathSoundsNote1").innerHTML=htlivesight.Util.Parse("PathSoundsNote1",htlivesight.data[0]);
 			doc.getElementById("PathSoundsNote2").innerHTML=htlivesight.Util.Parse("PathSoundsNote2",htlivesight.data[0]);
 			doc.getElementById("TabGoalSound").innerHTML=htlivesight.Util.Parse("TabGoalSound",htlivesight.data[0]);
+			doc.getElementById("label_chkSecondSoundEqualFirst").innerHTML=htlivesight.Util.Parse("SecondSoundEqualFirst",htlivesight.data[0]);
 			doc.getElementById("label_myGoalCheck").innerHTML=htlivesight.Util.Parse("PathSoundsMyGoal",htlivesight.data[0]);
 			doc.getElementById("label_myGoalButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",htlivesight.data[0]);
 			doc.getElementById("label_myGoalButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",htlivesight.data[0]);
