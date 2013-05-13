@@ -356,4 +356,5 @@
 <Header>Colpo di Testa</Header>
 <Regainer>Guarigione veloce</Regainer>
 <SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
 </Htlivesight>
