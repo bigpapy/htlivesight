@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("weatherSE").addEventListener('click',function(){htlivesight.Settings.click.weatherSE();});
 	document.getElementById("livefoxGoal").addEventListener('click',function(){htlivesight.Settings.click.livefoxGoal();});
 	document.getElementById("noOpGoal").addEventListener('click',function(){htlivesight.Settings.click.noOpGoal();});
+	document.getElementById("chkSecondSoundEqualFirst").addEventListener('click',function(){htlivesight.Settings.click.secondSoundEqualFirst();});
 	// my goal
 	document.getElementById("myGoalCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('myGoal');});
 	document.getElementById("label_myGoalButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('myGoal','sound/cheer_8k.ogg');});

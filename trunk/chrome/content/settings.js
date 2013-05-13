@@ -94,6 +94,7 @@ htlivesight.Settings = {
 			document.getElementById("weatherSE").checked =prefs.personalization.weatherSE;
 			document.getElementById("livefoxGoal").checked =prefs.personalization.livefoxGoal;
 			document.getElementById("noOpGoal").checked =prefs.personalization.noOpGoal;
+			document.getElementById("chkSecondSoundEqualFirst").checked =prefs.personalization.secondSoundEqualFirst;
 			document.getElementById("myGoalSoundPath").value = prefs.personalization.myGoalSoundPath;
 			document.getElementById("opGoalSoundPath").value = prefs.personalization.opGoalSoundPath;
 			document.getElementById("frGoalSoundPath").value = prefs.personalization.frGoalSoundPath;
@@ -643,6 +644,16 @@ htlivesight.Settings = {
 					prefs.personalization.noOpGoal = false;
 				};
 			},
+			
+			secondSoundEqualFirst: function() {
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("chkSecondSoundEqualFirst").checked) {
+					prefs.personalization.secondSoundEqualFirst = true;
+				} else {
+					prefs.personalization.secondSoundEqualFirst = false;
+				};
+			},
+			
 			checkSound: function(id) {
 				var prefs = htlivesight.Settings.preferences;
 				if(document.getElementById(id+"Check").checked) {
