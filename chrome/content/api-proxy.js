@@ -158,8 +158,8 @@ htlivesight.ApiProxy = {
 				case 200: // no error
 					var serverON=htlivesight.Util.Parse("ServerON",l10nData[0]);
 					htlivesight.DOM.addServerToPopup(serverON);//update server status in menu
-					console.log("live updating="+htlivesight.Live.updating)
-					console.log(parameters);
+					//console.log("live updating="+htlivesight.Live.updating)
+					//console.log(parameters);
 					callback(x);
 					break;
 
@@ -177,9 +177,9 @@ htlivesight.ApiProxy = {
 					var serverOFF=htlivesight.Util.Parse("ServerOFF",l10nData[0]);
 					htlivesight.DOM.addServerToPopup(serverOFF);//update server status in menu
 					var error404=htlivesight.Util.Parse("Error404",l10nData[0]);
-					console.log(parameters);
-					console.log("live updating="+htlivesight.Live.updating);
-					console.log(htlivesight.Live.lastShownIndexes);
+					//console.log(parameters);
+					//console.log("live updating="+htlivesight.Live.updating);
+					//console.log(htlivesight.Live.lastShownIndexes);
 					alert(error404);//show local error message
 					htlivesight.Live.safeLiveVersionEnabled=true;
 					callback(null);
