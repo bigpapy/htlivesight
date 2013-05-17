@@ -214,9 +214,9 @@ var htlivesight = {
 			htlivesight.League.addLeagueMatches();
 		},
 		GetMyMatch: function() { 
-			htlivesight.Matches.HTTPGetByTeam(htlivesight.Teams.myTeam.id, htlivesight.Teams.myTeam.youth);
+			htlivesight.Matches.HTTPGetByTeam(htlivesight.Teams.myTeam.id, htlivesight.Teams.myTeam.youth, false);
 			if(parseInt(document.getElementById("secondTeamId").value)){
-			  htlivesight.Matches.HTTPGetByTeam(htlivesight.Teams.mySecondTeam.id, htlivesight.Teams.mySecondTeam.youth);
+			  htlivesight.Matches.HTTPGetByTeam(htlivesight.Teams.mySecondTeam.id, htlivesight.Teams.mySecondTeam.youth, false);
 			}
 		},
 		winboxOpenByName: function(name) {
@@ -246,7 +246,7 @@ var htlivesight = {
     } else { */
 			//     if (htlivesight.Match.List["_"+matchId+"_"+youth].live == false)
 			//htlivesight.liveCount++;
-			htlivesight.Live.HTTPAddMatch(matchId, sourceSystem);
+			htlivesight.Live.HTTPAddMatch(matchId, sourceSystem, false);
 			htlivesight.GetMatchDetails(matchId, sourceSystem);
 			//   }
 		},

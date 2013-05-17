@@ -59,19 +59,19 @@ htlivesight.players.ParseGet = function(xml,playerId, youth){
 		htlivesight.Player.List["_"+playerId+"_"+youth].ageDays = ageDays;
 		
 		var tsi = xml.getElementsByTagName("TSI")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].tsi = tsi||'';
+		htlivesight.Player.List["_"+playerId+"_"+youth].tsi = tsi;
 		
 		var form = xml.getElementsByTagName("PlayerForm")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].form = form||'';
+		htlivesight.Player.List["_"+playerId+"_"+youth].form = htlivesight.players.parserMainSkill(form);
 		
 		var stamina = xml.getElementsByTagName("StaminaSkill")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].stamina = stamina||'';
+		htlivesight.Player.List["_"+playerId+"_"+youth].stamina = htlivesight.players.parserMainSkill(stamina);
 		
 		var experience = xml.getElementsByTagName("Experience")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].experience = experience||'';
+		htlivesight.Player.List["_"+playerId+"_"+youth].experience = htlivesight.players.parserMainSkill(experience);
 		
 		var loyalty = xml.getElementsByTagName("Loyalty")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].loyalty = loyalty||'';
+		htlivesight.Player.List["_"+playerId+"_"+youth].loyalty = htlivesight.players.parserMainSkill(loyalty);
 		
 		var motherClubBonus = xml.getElementsByTagName("MotherClubBonus")[0].textContent;
 		htlivesight.Player.List["_"+playerId+"_"+youth].motherClubBonus = motherClubBonus||'';
@@ -81,25 +81,25 @@ htlivesight.players.ParseGet = function(xml,playerId, youth){
 		
 		var keeperSkill = xml.getElementsByTagName("KeeperSkill")[0].textContent;
 		if (keeperSkill !== "undefined"){
-			htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill = keeperSkill;
+			htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill = htlivesight.players.parserMainSkill(keeperSkill);
 
 			var playmakerSkill = xml.getElementsByTagName("PlaymakerSkill")[0].textContent;
-			htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill = playmakerSkill;
+			htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill = htlivesight.players.parserMainSkill(playmakerSkill);
 			
 			var scorerSkill = xml.getElementsByTagName("ScorerSkill")[0].textContent;
-			htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill = scorerSkill;
+			htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill = htlivesight.players.parserMainSkill(scorerSkill);
 			
 			var passingSkill = xml.getElementsByTagName("PassingSkill")[0].textContent;
-			htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill = passingSkill;
+			htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill = htlivesight.players.parserMainSkill(passingSkill);
 			
 			var wingerSkill = xml.getElementsByTagName("WingerSkill")[0].textContent;
-			htlivesight.Player.List["_"+playerId+"_"+youth].wingerSkill = wingerSkill;
+			htlivesight.Player.List["_"+playerId+"_"+youth].wingerSkill = htlivesight.players.parserMainSkill(wingerSkill);
 			
 			var defenderSkill = xml.getElementsByTagName("DefenderSkill")[0].textContent;
-			htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill = defenderSkill;
+			htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill = htlivesight.players.parserMainSkill(defenderSkill);
 			
 			var setPiecesSkill = xml.getElementsByTagName("SetPiecesSkill")[0].textContent;
-			htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill = setPiecesSkill;
+			htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill = htlivesight.players.parserMainSkill(setPiecesSkill);
 			
 		}
 
@@ -162,4 +162,74 @@ htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
 			$(this).addClass("withSpecialty");
 		}
 	});
+};
+
+htlivesight.players.parserMainSkill = function(mainSkill) {
+
+	switch (mainSkill) {
+	case "0": return "non-existent"; // to add localization
+	break;
+
+	case "1": return htlivesight.Util.Parse("Disastrous",htlivesight.data[0]);
+	break;
+
+	case "2": return htlivesight.Util.Parse("Wretched",htlivesight.data[0]);
+	break;
+
+	case "3": return htlivesight.Util.Parse("Poor",htlivesight.data[0]);
+	break;
+
+	case "4": return htlivesight.Util.Parse("Weak",htlivesight.data[0]);
+	break;
+
+	case "5": return htlivesight.Util.Parse("Inadequate",htlivesight.data[0]);
+	break;
+
+	case "6": return htlivesight.Util.Parse("Passable",htlivesight.data[0]);
+	break;
+
+	case "7": return htlivesight.Util.Parse("Solid",htlivesight.data[0]);
+	break;
+
+	case "8": return htlivesight.Util.Parse("Excellent",htlivesight.data[0]);
+	break;
+
+	case "9": return htlivesight.Util.Parse("Formidable",htlivesight.data[0]);
+	break;
+
+	case "10": return htlivesight.Util.Parse("Outstanding",htlivesight.data[0]);
+	break;
+
+	case "11": return htlivesight.Util.Parse("Brilliant",htlivesight.data[0]);
+	break;
+
+	case "12": return htlivesight.Util.Parse("Magnificent",htlivesight.data[0]);
+	break;
+
+	case "13": return htlivesight.Util.Parse("WorldClass",htlivesight.data[0]);
+	break;
+
+	case "14": return htlivesight.Util.Parse("Supernatural",htlivesight.data[0]);
+	break;
+
+	case "15": return htlivesight.Util.Parse("Titanic",htlivesight.data[0]);
+	break;
+
+	case "16": return htlivesight.Util.Parse("ExtraTerrestrial",htlivesight.data[0]);
+	break;
+
+	case "17": return htlivesight.Util.Parse("Mythical",htlivesight.data[0]);
+	break;
+
+	case "18": return htlivesight.Util.Parse("Magical",htlivesight.data[0]);
+	break;
+
+	case "19": return htlivesight.Util.Parse("Utopian",htlivesight.data[0]);
+	break;
+
+	case "20": return htlivesight.Util.Parse("Divine",htlivesight.data[0]);
+	break;
+
+	default: return mainSkill;
+	};
 };
