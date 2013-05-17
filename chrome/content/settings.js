@@ -463,12 +463,12 @@ htlivesight.Settings = {
 				if(document.getElementById("chkGetFriends").checked) {
 					document.getElementById("chkGetFriendsWithin").disabled = false;
 					htlivesight.Settings.click.chkgetfriendswithin();
-					document.getElementById("chkDoNotGetFriendsHointegratedMatches").disabled = false;
+					//document.getElementById("chkDoNotGetFriendsHointegratedMatches").disabled = false;
 					prefs.matches.friends.get = true;
 				} else {
 					document.getElementById("chkGetFriendsWithin").disabled = true;
 					document.getElementById("txtGetFriendsWithinHours").disabled = true;
-					document.getElementById("chkDoNotGetFriendsHointegratedMatches").disabled = true;
+				//	document.getElementById("chkDoNotGetFriendsHointegratedMatches").disabled = true;
 					prefs.matches.friends.get = false;
 				}
 			},
