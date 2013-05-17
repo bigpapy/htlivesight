@@ -441,9 +441,18 @@ htlivesight.DOM = {
 		},
 		createTextEventElement: function(event) {
 			try{ // added by bigpapy to debug from XUL to HTML
+				//console.log("event.text= "+event.text);
 				var cleanedText = htlivesight.Util.cleanTags(event.text);
+				//console.log("cleanedText= "+cleanedText);
 				var prefs = htlivesight.prefs;
-				cleanedText= htlivesight.Util.CleanText2(cleanedText);
+				
+				//fix for sponsors in best player choice (event 041)
+				if (!(event.key.A == 0 && event.key.BC == 41)){
+				  cleanedText= htlivesight.Util.CleanText2(cleanedText);
+				}
+				// end fix for sponsors in best player choice (event 041)
+				
+				//console.log("cleanedText2= "+cleanedText);
 				var resultDoc = htlivesight.DOM.parser.parseFromString("<root>" + cleanedText + "</root>","text/xml");
 				var nodeList = resultDoc.documentElement.childNodes;
 				var retElement = document.createElement("td");
