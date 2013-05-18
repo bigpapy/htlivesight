@@ -143,22 +143,23 @@ htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
 			$(this).text($(this).text()+" "+htlivesight.players.specialtyChar(specialty));
 			$(this).attr('title', ''+htlivesight.Player.List["_"+playerId+"_"+youth].firstName+'\n'+
 		//			((htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad=="True")?"":" ⚑")+'\n'+
-					'Age: '+htlivesight.Player.List["_"+playerId+"_"+youth].age +
-					' Days: '+htlivesight.Player.List["_"+playerId+"_"+youth].ageDays+'\n' +
-					((youth!=="true")?('Form: '+htlivesight.Player.List["_"+playerId+"_"+youth].form+"\n"):"")+
-				((youth!=="true")?('Stamina: '+htlivesight.Player.List["_"+playerId+"_"+youth].stamina+'\n'):"")+
-					((youth!=="true")?('Experience: '+htlivesight.Player.List["_"+playerId+"_"+youth].experience+'\n'):"")+
-					((youth!=="true")?('Loyalty: '+htlivesight.Player.List["_"+playerId+"_"+youth].loyalty+" "):"")+
+					htlivesight.Util.Parse("Age",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].age + ' ' +
+					htlivesight.Util.Parse("TimeDays",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].ageDays+'\n' +
+					((youth!=="true")?(htlivesight.Util.Parse("Form",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].form+"\n"):"")+
+				((youth!=="true")?(htlivesight.Util.Parse("Stamina",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].stamina+'\n'):"")+
+					((youth!=="true")?(htlivesight.Util.Parse("Experience",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].experience+'\n'):"")+
+					((youth!=="true")?(htlivesight.Util.Parse("Loyalty",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].loyalty+" "):"")+
 					((youth!=="true")?((htlivesight.Player.List["_"+playerId+"_"+youth].motherClubBonus=="True")?"♥\n":"\n"):"")+
 					((youth!=="true")?('TSI: '+htlivesight.Player.List["_"+playerId+"_"+youth].tsi+'\n'):"") +
 					((htlivesight.players.specialtyChar(specialty)!="")?(''+ htlivesight.players.specialtyChar(specialty)+"\n"):"")+
-					((htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill)?("\nKeeper : "+htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill):"")+
-					((htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill)?("\nDefender : "+htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill):"")+
-					((htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill)?("\nPlaymaker : "+htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill):"")+
-					((htlivesight.Player.List["_"+playerId+"_"+youth].wingerSkill)?("\nWinger : "+htlivesight.Player.List["_"+playerId+"_"+youth].wingerSkill):"")+
-					((htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill)?("\nPassing : "+htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill):"")+
-					((htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill)?("\nScorer : "+htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill):"")+
-					((htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill)?("\nSetPieces : "+htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill):""));
+					((htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill)?("\n"+htlivesight.Util.Parse("Keeper",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill):"")+
+					((htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill)?("\n"+htlivesight.Util.Parse("Defending",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill):"")+
+					((htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill)?("\n"+htlivesight.Util.Parse("Playmaking",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill):"")+
+					((htlivesight.Player.List["_"+playerId+"_"+youth].wingerSkill)?("\n"+htlivesight.Util.Parse("Winger",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].wingerSkill):"")+
+					((htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill)?("\n"+htlivesight.Util.Parse("Passing",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill):"")+
+					((htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill)?("\n"+htlivesight.Util.Parse("Scoring",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill):"")+
+					((htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill)?("\n"+htlivesight.Util.Parse("SetPieces",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill):""));
+			if (youth=="true")console.log("keeper = "+htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill);
 			$(this).addClass("withSpecialty");
 		}
 	});
@@ -167,67 +168,67 @@ htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
 htlivesight.players.parserMainSkill = function(mainSkill) {
 
 	switch (mainSkill) {
-	case "0": return "non-existent"; // to add localization
+	case "0": return htlivesight.Util.Parse("NonExistent",htlivesight.data[0])+" (0)"; // to add localization
 	break;
 
-	case "1": return htlivesight.Util.Parse("Disastrous",htlivesight.data[0]);
+	case "1": return htlivesight.Util.Parse("Disastrous",htlivesight.data[0])+" (1)";
 	break;
 
-	case "2": return htlivesight.Util.Parse("Wretched",htlivesight.data[0]);
+	case "2": return htlivesight.Util.Parse("Wretched",htlivesight.data[0])+" (2)";
 	break;
 
-	case "3": return htlivesight.Util.Parse("Poor",htlivesight.data[0]);
+	case "3": return htlivesight.Util.Parse("Poor",htlivesight.data[0])+" (3)";
 	break;
 
-	case "4": return htlivesight.Util.Parse("Weak",htlivesight.data[0]);
+	case "4": return htlivesight.Util.Parse("Weak",htlivesight.data[0])+" (4)";
 	break;
 
-	case "5": return htlivesight.Util.Parse("Inadequate",htlivesight.data[0]);
+	case "5": return htlivesight.Util.Parse("Inadequate",htlivesight.data[0])+" (5)";
 	break;
 
-	case "6": return htlivesight.Util.Parse("Passable",htlivesight.data[0]);
+	case "6": return htlivesight.Util.Parse("Passable",htlivesight.data[0])+" (6)";
 	break;
 
-	case "7": return htlivesight.Util.Parse("Solid",htlivesight.data[0]);
+	case "7": return htlivesight.Util.Parse("Solid",htlivesight.data[0])+" (7)";
 	break;
 
-	case "8": return htlivesight.Util.Parse("Excellent",htlivesight.data[0]);
+	case "8": return htlivesight.Util.Parse("Excellent",htlivesight.data[0])+" (8)";
 	break;
 
-	case "9": return htlivesight.Util.Parse("Formidable",htlivesight.data[0]);
+	case "9": return htlivesight.Util.Parse("Formidable",htlivesight.data[0])+" (9)";
 	break;
 
-	case "10": return htlivesight.Util.Parse("Outstanding",htlivesight.data[0]);
+	case "10": return htlivesight.Util.Parse("Outstanding",htlivesight.data[0])+" (10)";
 	break;
 
-	case "11": return htlivesight.Util.Parse("Brilliant",htlivesight.data[0]);
+	case "11": return htlivesight.Util.Parse("Brilliant",htlivesight.data[0])+" (11)";
 	break;
 
-	case "12": return htlivesight.Util.Parse("Magnificent",htlivesight.data[0]);
+	case "12": return htlivesight.Util.Parse("Magnificent",htlivesight.data[0])+" (12)";
 	break;
 
-	case "13": return htlivesight.Util.Parse("WorldClass",htlivesight.data[0]);
+	case "13": return htlivesight.Util.Parse("WorldClass",htlivesight.data[0])+" (13)";
 	break;
 
-	case "14": return htlivesight.Util.Parse("Supernatural",htlivesight.data[0]);
+	case "14": return htlivesight.Util.Parse("Supernatural",htlivesight.data[0])+" (14)";
 	break;
 
-	case "15": return htlivesight.Util.Parse("Titanic",htlivesight.data[0]);
+	case "15": return htlivesight.Util.Parse("Titanic",htlivesight.data[0])+" (15)";
 	break;
 
-	case "16": return htlivesight.Util.Parse("ExtraTerrestrial",htlivesight.data[0]);
+	case "16": return htlivesight.Util.Parse("ExtraTerrestrial",htlivesight.data[0])+" (16)";
 	break;
 
-	case "17": return htlivesight.Util.Parse("Mythical",htlivesight.data[0]);
+	case "17": return htlivesight.Util.Parse("Mythical",htlivesight.data[0])+" (17)";
 	break;
 
-	case "18": return htlivesight.Util.Parse("Magical",htlivesight.data[0]);
+	case "18": return htlivesight.Util.Parse("Magical",htlivesight.data[0])+" (18)";
 	break;
 
-	case "19": return htlivesight.Util.Parse("Utopian",htlivesight.data[0]);
+	case "19": return htlivesight.Util.Parse("Utopian",htlivesight.data[0])+" (19)";
 	break;
 
-	case "20": return htlivesight.Util.Parse("Divine",htlivesight.data[0]);
+	case "20": return htlivesight.Util.Parse("Divine",htlivesight.data[0])+" (20)";
 	break;
 
 	default: return mainSkill;
