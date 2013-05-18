@@ -15,11 +15,15 @@ htlivesight.DOM = {
 			var match = htlivesight.Match.List[matchId];
 			if (side=="home")
 			{
-				teamName=match.home.team.name;
+				var teamName=match.home.team.name;
+				var my="right top";
+			  var at="right bottom"
 			}else if (side=="away"){
-				teamName=match.away.team.name;
+				var teamName=match.away.team.name;
+				var my="left top";
+			  var at="left bottom";
 			}
-			$("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 430, title: teamName, dialogClass: "formationbg" });
+			$("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 430, title: teamName, dialogClass: "formationbg", position: {my: my, at: at, of: $('#'+id) }});
 			return false;
 		},
 
@@ -29,11 +33,15 @@ htlivesight.DOM = {
 			var match = htlivesight.Match.List[matchId];
 			if (side=="home")
 			{
-				teamName=match.home.team.name;
+				var teamName=match.home.team.name;
+				var my="right top";
+			  var at="right bottom"
 			}else if (side=="away"){
-				teamName=match.away.team.name;
+				var teamName=match.away.team.name;
+				var my="left top";
+			  var at="left bottom";
 			}
-			$("#"+id+"_statistics").dialog({ autoOpen: true, width: 350, height: 220, title: teamName });
+			$("#"+id+"_statistics").dialog({ autoOpen: true, width: 350, height: 220, title: teamName, position: {my: my, at: at, of: $('#'+id) } });
 			return false;
 		},
 
@@ -1557,7 +1565,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable=function(league) {
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_7"),'league_demote');
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_8"),'league_demote');
 		}
-		if(league.level < 6){
+		if(league.level < 6 && league.level != league.maxLevel){
 			//#5 AND #8 need to qualify
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_5"),'league_qualify');
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_6"),'league_qualify');
@@ -1681,8 +1689,8 @@ htlivesight.DOM.UpdateElementBoxLeagueTable2=function(league) {
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_7Bis"),'league_demote');
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_8Bis"),'league_demote');
 		}
-		if(league.level2 < 6){
-			//#5 AND #8 need to qualify
+		if(league.level2 < 6 && league.level2 != league.maxLevel2){
+			//#5 AND #6 need to qualify
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_5Bis"),'league_qualify');
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_6Bis"),'league_qualify');
 		}
