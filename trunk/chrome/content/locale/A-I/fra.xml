@@ -357,4 +357,17 @@
 <Regainer>Guérison</Regainer>
 <SecondTeamIdLabel>Insérer l'ID d'une 2nde équipe</SecondTeamIdLabel>
 <SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
+<NonExistent>Non existent</NonExistent>
+<Keeper>Keeper</Keeper>
+<Defending>Defending</Defending>
+<Playmaking>Playmaking</Playmaking>
+<Winger>Winger</Winger>
+<Passing>Passing</Passing>
+<Scoring>Scoring</Scoring>
+<SetPieces>Set Pieces</SetPieces>
+<Age>Age</Age>
+<Form>Form</Form>
+<Stamina>Stamina</Stamina>
+<Experience>Experience</Experience>
+<Loyalty>Loyalty</Loyalty>
 </Htlivesight>
