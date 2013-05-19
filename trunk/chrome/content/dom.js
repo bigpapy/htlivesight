@@ -926,7 +926,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		hometr.appendChild(label);
 		label.setAttribute("class", "formation");
 		link = document.createElement("a");
-		link.href="#";
+		//link.href="#home_team_formation_" + match.id + "_" + match.sourceSystem;
 		link.addEventListener("mouseover",function(){htlivesight.DOM.ShowLink(this);});
 		link.addEventListener("mouseout",function(){htlivesight.DOM.HideLink(this);});
 		link.setAttribute("style", "text-decoration: none");
@@ -1104,7 +1104,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		label.setAttribute("class", "formation");
 		link = document.createElement("a");
 		label.appendChild(link);
-		link.href="#";
+		//link.href="#";
 		link.addEventListener("mouseover",function(){htlivesight.DOM.ShowLink(this);});
 		link.addEventListener("mouseout",function(){htlivesight.DOM.HideLink(this);});
 		link.setAttribute("style", "text-decoration: none");
