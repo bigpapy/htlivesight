@@ -383,3 +383,7 @@ background-repeat:no-repeat;
 background-position:center top;
 background-origin:content-box;}
 .formationplayer{background-color: transparent;border:thin solid white;border-radius:5px;color:white !important;}
+
+.underlined{
+	cursor:pointer;
+}
