@@ -264,16 +264,16 @@ htlivesight.DOM = {
 						var linkPlayer = document.createElement("a");
 						linkPlayer.addEventListener("click", function(){htlivesight.Click.openPlayerLink(this);},true);
 						//linkPlayer.setAttribute("target","_blank");
-						linkPlayer.setAttribute("href","#");
+						//linkPlayer.setAttribute("href","#");
 						linkPlayer.setAttribute("style", "text-decoration: none");
 						linkPlayer.addEventListener("mouseover", function(){htlivesight.DOM.ShowLink(this);});
 						linkPlayer.addEventListener("mouseout", function(){htlivesight.DOM.HideLink(this);});
 						linkPlayer.innerHTML= htlivesight.DOM.getTextContent(playerInfo[0]);
 						label.appendChild(linkPlayer);
 						if(playerInfo[2].toLowerCase()=="true"){
-						linkPlayer.setAttribute('class',playerInfo[1]+"_youth");
+						linkPlayer.setAttribute('class',playerInfo[1]+"_youth underlined");
 						}else{
-							linkPlayer.setAttribute('class',playerInfo[1]);
+							linkPlayer.setAttribute('class',playerInfo[1]+" underlined");
 						}
 						hbox.appendChild(label);
 					}
@@ -1615,7 +1615,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable2=function(league) {
 					htlivesight.League.teams2[awayId].liveMatches = htlivesight.League.currentRound2.number-1;
 				};
 				// if HTLS works in relive mode and last round is ended and lastRound wasn't removed from table remove it from table.
-				if((htlivesight.prefs.other.reLive && (htlivesight.League.currentRound2.number == htlivesight.League.teams2[htlivesight.Teams.mySecondTeam.id].matches)) && (!htlivesight.Live.removedLastRoundFromTable)){
+				if((htlivesight.prefs.other.reLive && (htlivesight.League.currentRound2.number == htlivesight.League.teams2[htlivesight.Teams.mySecondTeam.id].matches)) && (!htlivesight.Live.removedLastRoundFromTable2)){
 					if(myMatch.home.realGoals > myMatch.away.realGoals){
 						htlivesight.League.teams2[homeId].points -=  3;
 					}
@@ -1658,7 +1658,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable2=function(league) {
 		htlivesight.League.sortTable2();
 		for(var id in htlivesight.League.teams2){
 			// restoring relive table position to last round and not actual one deleting it and getting position after first call of the function
-			if((htlivesight.prefs.other.reLive && (htlivesight.League.currentRound2.number == htlivesight.League.teams2[htlivesight.Teams.mySecondTeam.id].matches)) && (!htlivesight.Live.removedLastRoundFromTable)){
+			if((htlivesight.prefs.other.reLive && (htlivesight.League.currentRound2.number == htlivesight.League.teams2[htlivesight.Teams.mySecondTeam.id].matches)) && (!htlivesight.Live.removedLastRoundFromTable2)){
 				htlivesight.League.teams2[id].position=htlivesight.League.teams2[id].livePosition;
 			};
 			// end part of restoring relive table position to last round and not actual one deleting it and getting position after first call of the function.

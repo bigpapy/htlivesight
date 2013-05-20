@@ -65,7 +65,7 @@ htlivesight.Settings = {
 				document.getElementById("chkGetFriendsWithin").disabled=true;
 				document.getElementById("txtGetFriendsWithinHours").disabled=true;
 				
-				document.getElementById("chkDoNotGetFriendsHointegratedMatches").disabled=true;
+				//document.getElementById("chkDoNotGetFriendsHointegratedMatches").disabled=true;
 				
 			}
 			document.getElementById("chkGetFriendsWithin").checked=prefs.matches.friends.within;
