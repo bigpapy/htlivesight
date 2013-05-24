@@ -287,6 +287,7 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 			var side="away";
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 		event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
+		$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+objectPlayer.id+":last").parent().css("font-weight", "bold");
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 		match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
@@ -342,6 +343,8 @@ htlivesight.LineUp.SwapEvent= function(event, match){
 		var side="away";
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
+	$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+objectPlayer.id+":last").parent().css("font-weight", "bold");
+	$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+subjectPlayer.id+":last").parent().css("font-weight", "bold");
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 	lineUp[0].update++;
@@ -391,6 +394,7 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 			var side="away";
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 		event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
+		$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+subjectPlayer.id+":last").parent().css("font-weight", "bold");
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 		match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
@@ -445,6 +449,7 @@ htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
 		var side="away";
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
+	$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+objectPlayer.id+":last").parent().css("font-weight", "bold");
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 	match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
