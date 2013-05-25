@@ -178,6 +178,11 @@ htlivesight.DOM = {
 						next=curr.nextSibling;
 					}
 					box.parentNode.insertBefore(box, next);
+					htlivesight.DOM.closeMatchRelatedWindows(matchId + "_" + sourceSystem);
+					//$("#home_team_formation_"+matchId + "_" + sourceSystem+"_table").dialog("close");
+		  		//$("#away_team_formation_"+matchId + "_" + sourceSystem+"_table").dialog("close");
+			  	//$("#home_team_name_"+matchId + "_" + sourceSystem+"_statistics").dialog("close");
+				  //$("#away_team_name_"+matchId + "_" + sourceSystem+"_statistics").dialog("close");
 				}
 			}catch(e){alert("toggleView: "+e);}// added by bigpapy to debug from XUL to HTML
 		},
@@ -1897,3 +1902,9 @@ htlivesight.DOM.ShowLink=function(element) {
 htlivesight.DOM.HideLink=function(element) {
 	element.setAttribute("style", "text-decoration:none");
 };
+htlivesight.DOM.closeMatchRelatedWindows=function(id){
+	$("#home_team_formation_"+id+"_table").dialog("close");
+	$("#away_team_formation_"+id+"_table").dialog("close");
+	$("#home_team_name_"+id+"_statistics").dialog("close");
+  $("#away_team_name_"+id+"_statistics").dialog("close");
+}

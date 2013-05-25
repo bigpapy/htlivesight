@@ -387,3 +387,6 @@ background-origin:content-box;}
 .underlined{
 	cursor:pointer;
 }
+td.player_changed{
+	font-weight:bold;
+}
