@@ -1903,8 +1903,16 @@ htlivesight.DOM.HideLink=function(element) {
 	element.setAttribute("style", "text-decoration:none");
 };
 htlivesight.DOM.closeMatchRelatedWindows=function(id){
-	$("#home_team_formation_"+id+"_table").dialog("close");
-	$("#away_team_formation_"+id+"_table").dialog("close");
-	$("#home_team_name_"+id+"_statistics").dialog("close");
+	if ($("#home_team_formation_"+id+"_table").dialog("isOpen")){
+		$("#home_team_formation_"+id+"_table").dialog("close");
+	};
+	if ($("#away_team_formation_"+id+"_table").dialog("isOpen")){
+	  $("#away_team_formation_"+id+"_table").dialog("close");
+	};
+	if ($("#home_team_name_"+id+"_statistics").dialog("isOpen")){
+	  $("#home_team_name_"+id+"_statistics").dialog("close");
+	};
+	if ($("#away_team_name_"+id+"_statistics").dialog("isOpen")){
   $("#away_team_name_"+id+"_statistics").dialog("close");
+	};
 }
