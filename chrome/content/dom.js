@@ -1607,7 +1607,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable2=function(league) {
 			var myMatch = htlivesight.Match.List[matchid];
 			if(league.currentRound2.id.has(myMatch.id) 
 					&& htlivesight.League.currentRound2.number > htlivesight.League.teams2[htlivesight.Teams.mySecondTeam.id]
-					&& htlivesight.showLeague
+					&& htlivesight.showLeague2
 					&& htlivesight.League.teams2[myMatch.home.team.id]
 					&& htlivesight.League.teams2[myMatch.away.team.id]){
 				var homeId = myMatch.home.team.id;
