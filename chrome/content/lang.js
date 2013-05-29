@@ -31,7 +31,7 @@ htlivesight.Lang = {
 //			ABOUT
 			doc.getElementById("ui-dialog-title-about-dialog").innerHTML=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);	
 			doc.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
-			doc.getElementById("creationDate").innerHTML="13 "+htlivesight.Util.Parse("MonthMay",htlivesight.data[0])+" 2013";
+			doc.getElementById("creationDate").innerHTML="29 "+htlivesight.Util.Parse("MonthMay",htlivesight.data[0])+" 2013";
 			doc.getElementById("createdBy").innerHTML=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
 			doc.getElementById("TabTranslators").innerHTML=htlivesight.Util.Parse("TabTranslators",htlivesight.data[0]);
 			doc.getElementById("ThanksTo").innerHTML=htlivesight.Util.Parse("TextThanksTo",htlivesight.data[0]);
