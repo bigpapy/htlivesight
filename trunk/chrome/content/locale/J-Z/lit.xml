@@ -355,9 +355,8 @@
 <Unpredictable>Nenuspėjamas</Unpredictable>
 <Header>Aukštas</Header>
 <Regainer>Atsigaunantis</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<NonExistent>Non existent</NonExistent>
+<SecondTeamIdLabel>Įveskite antrosios komandos ID</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Padaryti antrosios komandos garsus tokius pat</SecondSoundEqualFirst>
 <Keeper>Keeper</Keeper>
 <Defending>Defending</Defending>
 <Playmaking>Playmaking</Playmaking>

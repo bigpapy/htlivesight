@@ -9,7 +9,7 @@
 <MenuDisconnected>Frånkopplad</MenuDisconnected>
 <MenuAbout>Om HTLiveSight</MenuAbout>
 <LoginLabel>Inloggning</LoginLabel>
-<LoginTeamId>Ditt lagID</LoginTeamId>
+<LoginTeamId>Ditt primära lagID</LoginTeamId>
 <LoginUsername>Användarnamn</LoginUsername>
 <LoginRememberMe>Kom ihåg mig</LoginRememberMe>
 <LoginButton>Logga in</LoginButton>
@@ -349,25 +349,24 @@
 <RepeatImage>Sida vid sida</RepeatImage>
 <Background>Bakgrund</Background>
 <MuteAll>Allt ljud Av/På</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<NonExistent>Non existent</NonExistent>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
+<Technical>Teknisk</Technical>
+<Quick>Snabb</Quick>
+<Powerful>Kraftfull</Powerful>
+<Unpredictable>Oförutsägbar</Unpredictable>
+<Header>Nickskicklig</Header>
+<Regainer>Återhämtare</Regainer>
+<SecondTeamIdLabel>Ditt sekundära lagID</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Sekundärlagets ljud är samma som det primära lagets</SecondSoundEqualFirst>
+<Keeper>Målvakt</Keeper>
+<Defending>Försvar</Defending>
+<Playmaking>Spelupplägg</Playmaking>
+<Winger>Ytter</Winger>
+<Passing>Framspel</Passing>
+<Scoring>Avslut</Scoring>
+<SetPieces>Fasta sit.</SetPieces>
+<Age>Ålder</Age>
 <Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<Stamina>Kondition</Stamina>
+<Experience>Rutin</Experience>
+<Loyalty>Klubbkänsla</Loyalty>
 </Htlivesight>

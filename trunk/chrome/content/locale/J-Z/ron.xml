@@ -348,26 +348,25 @@
 <ExtendImage>Mărește imaginea</ExtendImage>
 <RepeatImage>Repetă imginea</RepeatImage>
 <Background>Fundal</Background>
-<MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<NonExistent>Non existent</NonExistent>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<MuteAll>Oprire sunete</MuteAll>
+<Technical>Tehnic</Technical>
+<Quick>Rapid</Quick>
+<Powerful>Puternic</Powerful>
+<Unpredictable>Imprevizibil</Unpredictable>
+<Header>Cap</Header>
+<Regainer>Recuperare</Regainer>
+<SecondTeamIdLabel>Introduceți ID-ul pentru a doua echipă</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Nivel sunet pentru a doua echipă la fel ca pentru prima</SecondSoundEqualFirst>
+<Keeper>Portar</Keeper>
+<Defending>Apărare</Defending>
+<Playmaking>Construcție</Playmaking>
+<Winger>Extremă</Winger>
+<Passing>Pase</Passing>
+<Scoring>Atac</Scoring>
+<SetPieces>Faze fixe</SetPieces>
+<Age>Vârstă</Age>
+<Form>Formă</Form>
+<Stamina>Rezistență</Stamina>
+<Experience>Experiență</Experience>
+<Loyalty>Loialitate</Loyalty>
 </Htlivesight>

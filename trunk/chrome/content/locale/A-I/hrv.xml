@@ -355,19 +355,18 @@
 <Unpredictable>Nepredvidiv</Unpredictable>
 <Header>Igra glavom</Header>
 <Regainer>Brz oporavak</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<NonExistent>Non existent</NonExistent>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<SecondTeamIdLabel>Upišite ID svog drugog tima</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Zvukovi drugog tima jednaki prvom timu</SecondSoundEqualFirst>
+<Keeper>Na vratima</Keeper>
+<Defending>U obrani</Defending>
+<Playmaking>Kreiranje igre</Playmaking>
+<Winger>Na krilu</Winger>
+<Passing>Proigravanje</Passing>
+<Scoring>U napadu</Scoring>
+<SetPieces>Iz prekida</SetPieces>
+<Age>Starost</Age>
+<Form>Forma</Form>
+<Stamina>Izdržljivost</Stamina>
+<Experience>Iskustvo</Experience>
+<Loyalty>Odanost</Loyalty>
 </Htlivesight>

@@ -348,26 +348,25 @@
 <ExtendImage>Zväčši obrázok</ExtendImage>
 <RepeatImage>Zopakuj obrázok</RepeatImage>
 <Background>Pozadie</Background>
-<MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<NonExistent>Non existent</NonExistent>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<MuteAll>Zapni/Vypni zvuk</MuteAll>
+<Technical>Technický</Technical>
+<Quick>Rýchly</Quick>
+<Powerful>Silový</Powerful>
+<Unpredictable>Nepredvídateľný</Unpredictable>
+<Header>Hlavičkár</Header>
+<Regainer>Nezmar</Regainer>
+<SecondTeamIdLabel>Vlož ID druhého tímu</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Zvuky druhého tímu rovnaké ako zvuky prvého tímu</SecondSoundEqualFirst>
+<Keeper>Chytanie</Keeper>
+<Defending>Bránenie</Defending>
+<Playmaking>Tvorba hry</Playmaking>
+<Winger>Krídelná hra</Winger>
+<Passing>Prihrávky</Passing>
+<Scoring>Zakončovanie</Scoring>
+<SetPieces>Štandartky</SetPieces>
+<Age>Vek</Age>
+<Form>Forma</Form>
+<Stamina>Kondícia</Stamina>
+<Experience>Skúsenosti</Experience>
+<Loyalty>Vernosť</Loyalty>
 </Htlivesight>

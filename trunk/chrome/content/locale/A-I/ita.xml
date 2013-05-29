@@ -355,9 +355,8 @@
 <Unpredictable>Imprevedibile</Unpredictable>
 <Header>Colpo di Testa</Header>
 <Regainer>Guarigione veloce</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Suoni seconda squadra uguali a quelli della prima</SecondSoundEqualFirst>
-<NonExistent>inesistente</NonExistent>
+<SecondTeamIdLabel>Inserisci il Team ID di una seconda squadra</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Suoni della seconda squadra uguali a quelli della prima</SecondSoundEqualFirst>
 <Keeper>Parate</Keeper>
 <Defending>Difesa</Defending>
 <Playmaking>Regia</Playmaking>

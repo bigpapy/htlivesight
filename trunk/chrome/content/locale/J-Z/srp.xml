@@ -47,7 +47,7 @@
 <MessageErrorReading>Грешка у читању података</MessageErrorReading>
 <MessageLoginNotSuccessful>Логовање није успело.</MessageLoginNotSuccessful>
 <TacticPressing>пресинг</TacticPressing>
-<TacticCA>контра напади</TacticCA>
+<TacticCA>контранапади</TacticCA>
 <TacticAIM>напад по средини</TacticAIM>
 <TacticAOW>напад преко крила</TacticAOW>
 <TacticPlayCreative>креативна игра</TacticPlayCreative>
@@ -100,7 +100,7 @@
 <EventSpecialLowExperience>неискуство</EventSpecialLowExperience>
 <EventSpecialWinger>+ крило</EventSpecialWinger>
 <EventSpecialTechnical>техничар против главоње</EventSpecialTechnical>
-<EventSpecialCounterAttack>контра напад</EventSpecialCounterAttack>
+<EventSpecialCounterAttack>контранапад</EventSpecialCounterAttack>
 <EventSpecialCornerKick>корнер</EventSpecialCornerKick>
 <EventSpecialIndirect>индиректни ударац</EventSpecialIndirect>
 <EventSpecialUnpredictableLongPass>+ непредвидив: дуго додавање</EventSpecialUnpredictableLongPass>
@@ -349,15 +349,14 @@
 <RepeatImage>Понављање слике</RepeatImage>
 <Background>Позадина</Background>
 <MuteAll>Укључи/искључи звук</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<NonExistent>Non existent</NonExistent>
+<Technical>Техничар</Technical>
+<Quick>Брз</Quick>
+<Powerful>Снажан</Powerful>
+<Unpredictable>Непредвидив</Unpredictable>
+<Header>Игра главом</Header>
+<Regainer>Регенерисање</Regainer>
+<SecondTeamIdLabel>Унесите ИД додатног клуба</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Постави исте звуке као за примарни клуб</SecondSoundEqualFirst>
 <Keeper>Keeper</Keeper>
 <Defending>Defending</Defending>
 <Playmaking>Playmaking</Playmaking>

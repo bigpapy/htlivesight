@@ -357,6 +357,18 @@ htlivesight.DOM = {
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
+				
+				hbox = document.createElement("tr");
+				var long_shot=match.getSideById(event.subjectTeamId).long_shot;
+				var long_shot_goal=match.getSideById(event.subjectTeamId).long_shot_goal;
+				label = document.createElement("td");
+				label.innerHTML=htlivesight.Util.capitalize(htlivesight.Util.Parse("LongShot",htlivesight.data[0]));
+				label_number = document.createElement("td");
+				label_number.innerHTML=long_shot_goal+" / "+long_shot;
+				hbox.appendChild(label);
+				hbox.appendChild(label_number);
+				
+				popup.appendChild(hbox);
 				hbox = document.createElement("tr");
 				var special=match.getSideById(event.subjectTeamId).special_event;
 				var special_goal=match.getSideById(event.subjectTeamId).special_event_goal;
