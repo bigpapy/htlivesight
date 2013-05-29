@@ -349,25 +349,24 @@
 <RepeatImage>Repetir la imagen</RepeatImage>
 <Background>Fondo</Background>
 <MuteAll>Interruptor de sonido</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<NonExistent>Non existent</NonExistent>
+<Technical>Técnico</Technical>
+<Quick>Rápido</Quick>
+<Powerful>Potente</Powerful>
+<Unpredictable>Impredecible</Unpredictable>
+<Header>Cabecera</Header>
+<Regainer>Bondeado</Regainer>
+<SecondTeamIdLabel>Insertar una segunda ID de equipo</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Segundo equipo suena igual a los primeros</SecondSoundEqualFirst>
 <Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
+<Defending>Defendiendo</Defending>
 <Playmaking>Playmaking</Playmaking>
 <Winger>Winger</Winger>
 <Passing>Passing</Passing>
 <Scoring>Scoring</Scoring>
 <SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
+<Age>Edad</Age>
 <Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<Stamina>Resistencia</Stamina>
+<Experience>Experiencia</Experience>
+<Loyalty>Lealtad</Loyalty>
 </Htlivesight>

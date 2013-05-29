@@ -15,7 +15,7 @@
 <LoginButton>Logowanie</LoginButton>
 <LoginReLive>Re-Live</LoginReLive>
 <LoginSpeed>Prędkość</LoginSpeed>
-<LoginByEvent>Po wydarzeniut</LoginByEvent>
+<LoginByEvent>Po wydarzeniu</LoginByEvent>
 <LeagueMatches>Moja liga</LeagueMatches>
 <LeagueLiveTable>Tabela</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
@@ -26,14 +26,14 @@
 <LeaguePoints>Pkt</LeaguePoints>
 <MatchesList>Lista meczów</MatchesList>
 <MatchesAdd>Dodaj mecz</MatchesAdd>
-<MatchesByMatch>po id meczu</MatchesByMatch>
-<MatchesByTeam>po id zespołu</MatchesByTeam>
+<MatchesByMatch>Po ID meczu</MatchesByMatch>
+<MatchesByTeam>Po ID zespołu</MatchesByTeam>
 <MatchesYouth>Akademia?</MatchesYouth>
 <FriendsTitle>Znajomi</FriendsTitle>
 <FriendsRemove>Usuń</FriendsRemove>
 <FriendsOpen>Otwórz</FriendsOpen>
 <Introduction>Zostaniesz przekierowany na stronę CHPP, gdzie otrzymasz kod autoryzacji. Jeśli nie, proszę wyłącz blokadę wyskakujących okienek w przeglądarce, lub dodaj HTLiveSight do listy wyjątków.</Introduction>
-<Insert>Wprowadź tutaj swój kod autoryzacji.:</Insert>
+<Insert>Wprowadź tutaj swój kod autoryzacji:</Insert>
 <Ending>Dokonano autoryzacji HTLiveSight. Kliknij OK, żeby zrestartować aplikację.</Ending>
 <Error>Błąd</Error>
 <ServerON>Połączony</ServerON>
@@ -138,7 +138,7 @@
 <MeteoSpecialQuickRain>-szybki (-defensywa -skuteczność)</MeteoSpecialQuickRain>
 <YellowNastyPlay>brzydkie zagranie</YellowNastyPlay>
 <YellowCheating>oszukiwanie</YellowCheating>
-<ProgressUpdate>Następna aktualizacja:</ProgressUpdate>
+<ProgressUpdate>Następna aktualizacja za </ProgressUpdate>
 <ProgressSeconds>s</ProgressSeconds>
 <RequestServer>Łączę z serwerem</RequestServer>
 <RequestLeagueData>Pobieram dane ligi</RequestLeagueData>
@@ -300,9 +300,9 @@
 <Colors>Kolory</Colors>
 <SchemaTip>Kliknij, aby wyświetlić skład</SchemaTip>
 <StatisticTip>Kliknij, aby wyświetlić statystyki z końcem meczu</StatisticTip>
-<Youth>Młodzież</Youth>
-<Senior>Senior</Senior>
-<Tournament>Turniej</Tournament>
+<Youth>Juniorów</Youth>
+<Senior>Seniorów</Senior>
+<Tournament>Turniejowy</Tournament>
 <FreeKicks>Rzuty wolne</FreeKicks>
 <RedCards>Czerwone kartki</RedCards>
 <YellowCards>Żółte kartki</YellowCards>
@@ -348,26 +348,25 @@
 <ExtendImage>Rozszerzenie obrazu</ExtendImage>
 <RepeatImage>Powtórz obraz</RepeatImage>
 <Background>Tło</Background>
-<MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<NonExistent>Non existent</NonExistent>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<MuteAll>Wycisz Dźwięk</MuteAll>
+<Technical>Techniczny</Technical>
+<Quick>Szybki</Quick>
+<Powerful>Atletyczny</Powerful>
+<Unpredictable>Nieprzewidywalny</Unpredictable>
+<Header>Gra głową</Header>
+<Regainer>Witalny</Regainer>
+<SecondTeamIdLabel>Wprowadź ID twojej drugiej drużyny</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Dźwięki dla drugiej drużyny takie same jak dla pierwszej</SecondSoundEqualFirst>
+<Keeper>Bramkarz</Keeper>
+<Defending>Defensywa</Defending>
+<Playmaking>Rozgrywanie</Playmaking>
+<Winger>Skrzydłowy</Winger>
+<Passing>Podania</Passing>
+<Scoring>Skuteczność</Scoring>
+<SetPieces>Stałe fragmenty</SetPieces>
+<Age>Wiek</Age>
+<Form>Forma</Form>
+<Stamina>Kondycja</Stamina>
+<Experience>Doświadczenie</Experience>
+<Loyalty>Lojalność</Loyalty>
 </Htlivesight>

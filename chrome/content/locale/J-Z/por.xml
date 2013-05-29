@@ -344,30 +344,29 @@
 <AttHatStats>HatStats do Ataque</AttHatStats>
 <TotHatStats>HatStats Totais</TotHatStats>
 <CopiedToClipboard>Copiado para a área de transferência!</CopiedToClipboard>
-<ReLiveControls>Relive Controls</ReLiveControls>
-<ExtendImage>Extend image</ExtendImage>
-<RepeatImage>Repeat image</RepeatImage>
-<Background>Background</Background>
-<MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<NonExistent>Non existent</NonExistent>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<ReLiveControls>Controles para Rever</ReLiveControls>
+<ExtendImage>Expandir imagem</ExtendImage>
+<RepeatImage>Mosaico</RepeatImage>
+<Background>Imagem de fundo</Background>
+<MuteAll>Mudar o som</MuteAll>
+<Technical>Técnica</Technical>
+<Quick>Velocidade</Quick>
+<Powerful>Força</Powerful>
+<Unpredictable>Imprevisível</Unpredictable>
+<Header>Jogo Aéreo</Header>
+<Regainer>Reabilitação</Regainer>
+<SecondTeamIdLabel>inserir o ID de uma segunda equipa</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Sons da segunda equipa iguais aos da primeira</SecondSoundEqualFirst>
+<Keeper>Guarda-redes</Keeper>
+<Defending>Defesa</Defending>
+<Playmaking>Criatividade</Playmaking>
+<Winger>Ala</Winger>
+<Passing>Passe</Passing>
+<Scoring>Finalização</Scoring>
+<SetPieces>Bolas Paradas</SetPieces>
+<Age>Idade</Age>
+<Form>Forma</Form>
+<Stamina>Resistência</Stamina>
+<Experience>Experiência</Experience>
+<Loyalty>Lealdade</Loyalty>
 </Htlivesight>

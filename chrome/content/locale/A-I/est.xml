@@ -349,25 +349,24 @@
 <RepeatImage>Korda pilti</RepeatImage>
 <Background>Taustapilt</Background>
 <MuteAll>Heli lüliti</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<NonExistent>Non existent</NonExistent>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<Technical>Tehniline</Technical>
+<Quick>Kiire</Quick>
+<Powerful>Jõuline</Powerful>
+<Unpredictable>Ettearvamatu</Unpredictable>
+<Header>Peamäng</Header>
+<Regainer>Elujõuline</Regainer>
+<SecondTeamIdLabel>Sisesta teise meeskonna ID</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Teise meeskonna helid on samad, mis esimesel meeskonnal</SecondSoundEqualFirst>
+<Keeper>Väravavaht</Keeper>
+<Defending>Kaitsmine</Defending>
+<Playmaking>Mängujuht</Playmaking>
+<Winger>Äär</Winger>
+<Passing>Söötmine</Passing>
+<Scoring>Ründamine</Scoring>
+<SetPieces>Standardolukorrad</SetPieces>
+<Age>Vanus</Age>
+<Form>Vorm</Form>
+<Stamina>Vastupidavus</Stamina>
+<Experience>Kogemus</Experience>
+<Loyalty>Lojaalsus</Loyalty>
 </Htlivesight>

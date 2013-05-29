@@ -344,30 +344,29 @@
 <AttHatStats>HatStats Angrep</AttHatStats>
 <TotHatStats>Total HatStats</TotHatStats>
 <CopiedToClipboard>Kopiert til utklippstavla!</CopiedToClipboard>
-<ReLiveControls>Relive Controls</ReLiveControls>
+<ReLiveControls>Forfrisk Kontroller</ReLiveControls>
 <ExtendImage>Utvid bilde</ExtendImage>
 <RepeatImage>Gjenta bilde</RepeatImage>
 <Background>Bakgrunn</Background>
 <MuteAll>Lydknapp</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<NonExistent>Non existent</NonExistent>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
+<Technical>Teknisk</Technical>
+<Quick>Rask</Quick>
+<Powerful>Kraftfull</Powerful>
+<Unpredictable>Uforutsigbar</Unpredictable>
+<Header>Hodespill</Header>
+<Regainer>Gjenvinner</Regainer>
+<SecondTeamIdLabel>Legg til andre lags ID</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Andre lags lyder er like det første</SecondSoundEqualFirst>
+<Keeper>Målvakt</Keeper>
+<Defending>Forsvar</Defending>
+<Playmaking>Ballfordeling</Playmaking>
+<Winger>Ving</Winger>
+<Passing>Pasning</Passing>
+<Scoring>Målskåring</Scoring>
+<SetPieces>Dødball</SetPieces>
+<Age>Alder</Age>
 <Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<Stamina>Kondisjon</Stamina>
+<Experience>Rutine</Experience>
+<Loyalty>Lojalitet</Loyalty>
 </Htlivesight>

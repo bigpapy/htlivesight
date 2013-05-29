@@ -356,18 +356,17 @@
 <Header>Joueur de Tête</Header>
 <Regainer>Guérison</Regainer>
 <SecondTeamIdLabel>Insérer l'ID d'une 2nde équipe</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<NonExistent>Non existent</NonExistent>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<SecondSoundEqualFirst>Sons 2ème équipe identique à la 1ère</SecondSoundEqualFirst>
+<Keeper>Gardien</Keeper>
+<Defending>Défense</Defending>
+<Playmaking>Construction</Playmaking>
+<Winger>Ailier</Winger>
+<Passing>Passe</Passing>
+<Scoring>Buteur</Scoring>
+<SetPieces>Coup franc</SetPieces>
+<Age>Âge</Age>
+<Form>Forme</Form>
+<Stamina>Endurance</Stamina>
+<Experience>Expérience</Experience>
+<Loyalty>Fidélité</Loyalty>
 </Htlivesight>
