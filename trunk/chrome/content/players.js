@@ -58,56 +58,68 @@ htlivesight.players.ParseGet = function(xml,playerId, youth){
 		var ageDays = xml.getElementsByTagName("AgeDays")[0].textContent;
 		htlivesight.Player.List["_"+playerId+"_"+youth].ageDays = ageDays;
 		
-		var tsi = xml.getElementsByTagName("TSI")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].tsi = tsi;
+		if(youth!="true"){
 		
-		var form = xml.getElementsByTagName("PlayerForm")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].form = htlivesight.players.parserMainSkill(form);
+  		var tsi = xml.getElementsByTagName("TSI")[0].textContent;
+	  	htlivesight.Player.List["_"+playerId+"_"+youth].tsi = tsi;
 		
-		var stamina = xml.getElementsByTagName("StaminaSkill")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].stamina = htlivesight.players.parserMainSkill(stamina);
+  		var form = xml.getElementsByTagName("PlayerForm")[0].textContent;
+	  	htlivesight.Player.List["_"+playerId+"_"+youth].form = htlivesight.players.parserMainSkill(form);
 		
-		var experience = xml.getElementsByTagName("Experience")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].experience = htlivesight.players.parserMainSkill(experience);
+  		var stamina = xml.getElementsByTagName("StaminaSkill")[0].textContent;
+	  	htlivesight.Player.List["_"+playerId+"_"+youth].stamina = htlivesight.players.parserMainSkill(stamina);
 		
-		var loyalty = xml.getElementsByTagName("Loyalty")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].loyalty = htlivesight.players.parserMainSkill(loyalty);
+  		var experience = xml.getElementsByTagName("Experience")[0].textContent;
+	  	htlivesight.Player.List["_"+playerId+"_"+youth].experience = htlivesight.players.parserMainSkill(experience);
 		
-		var motherClubBonus = xml.getElementsByTagName("MotherClubBonus")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].motherClubBonus = motherClubBonus||'';
+  		var loyalty = xml.getElementsByTagName("Loyalty")[0].textContent;
+	  	htlivesight.Player.List["_"+playerId+"_"+youth].loyalty = htlivesight.players.parserMainSkill(loyalty);
 		
-		var isAbroad = xml.getElementsByTagName("IsAbroad")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad = isAbroad||'';
+  		var motherClubBonus = xml.getElementsByTagName("MotherClubBonus")[0].textContent;
+	  	htlivesight.Player.List["_"+playerId+"_"+youth].motherClubBonus = motherClubBonus||'';
 		
-		var keeperSkill = xml.getElementsByTagName("KeeperSkill")[0].textContent;
-		if (keeperSkill !== "undefined"){
-			htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill = htlivesight.players.parserMainSkill(keeperSkill);
-
-			var playmakerSkill = xml.getElementsByTagName("PlaymakerSkill")[0].textContent;
-			htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill = htlivesight.players.parserMainSkill(playmakerSkill);
-			
-			var scorerSkill = xml.getElementsByTagName("ScorerSkill")[0].textContent;
-			htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill = htlivesight.players.parserMainSkill(scorerSkill);
-			
-			var passingSkill = xml.getElementsByTagName("PassingSkill")[0].textContent;
-			htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill = htlivesight.players.parserMainSkill(passingSkill);
-			
-			var wingerSkill = xml.getElementsByTagName("WingerSkill")[0].textContent;
-			htlivesight.Player.List["_"+playerId+"_"+youth].wingerSkill = htlivesight.players.parserMainSkill(wingerSkill);
-			
-			var defenderSkill = xml.getElementsByTagName("DefenderSkill")[0].textContent;
-			htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill = htlivesight.players.parserMainSkill(defenderSkill);
-			
-			var setPiecesSkill = xml.getElementsByTagName("SetPiecesSkill")[0].textContent;
-			htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill = htlivesight.players.parserMainSkill(setPiecesSkill);
-			
+  		var isAbroad = xml.getElementsByTagName("IsAbroad")[0].textContent;
+	  	htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad = isAbroad||'';
 		}
+	
+  		var keeperSkill = xml.getElementsByTagName("KeeperSkill")[0].textContent;
+		
+	  	if (keeperSkill !== "undefined"){
+	  		htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill = htlivesight.players.getSkillFromXML(xml, "KeeperSkill", youth);
+
+	  		htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill = htlivesight.players.getSkillFromXML(xml, "PlaymakerSkill", youth);
+
+	  		htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill = htlivesight.players.getSkillFromXML(xml, "ScorerSkill", youth);
+
+	  		htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill = htlivesight.players.getSkillFromXML(xml, "PassingSkill", youth);
+
+		  	htlivesight.Player.List["_"+playerId+"_"+youth].wingerSkill = htlivesight.players.getSkillFromXML(xml, "WingerSkill", youth);
+
+		  	htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill = htlivesight.players.getSkillFromXML(xml, "DefenderSkill", youth);
+
+		  	htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill = htlivesight.players.getSkillFromXML(xml, "SetPiecesSkill", youth);
+		  }
+
 
 		if(parseInt(specialty)>=0 && parseInt(specialty)<=6){
 		  htlivesight.players.addSpecialtyToDom(playerId,youth,specialty);
 		}
 
 };
+
+htlivesight.players.getSkillFromXML = function (xml, skillName, youth){
+	
+	var xmlSkillText = xml.getElementsByTagName(skillName)[0].textContent;
+	var skillString = htlivesight.players.parserMainSkill(xmlSkillText);
+	
+	if (youth=="true"){
+	  var xmlMaxSkillText = xml.getElementsByTagName(skillName+"Max")[0].textContent;
+	  skillString += " / " + htlivesight.players.parserMainSkill(xmlMaxSkillText);
+	  if(skillString == "- / -") skillString = "";
+	}
+	return skillString;
+};
+
 htlivesight.players.specialtyChar = function (specialty){
 
 	switch (specialty){
@@ -159,7 +171,7 @@ htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
 					((htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill)?("\n"+htlivesight.Util.Parse("Passing",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill):"")+
 					((htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill)?("\n"+htlivesight.Util.Parse("Scoring",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill):"")+
 					((htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill)?("\n"+htlivesight.Util.Parse("SetPieces",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill):""));
-			if (youth=="true")console.log("keeper = "+htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill);
+			//if (youth=="true")console.log("keeper = "+htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill);
 			$(this).addClass("withSpecialty");
 		}
 	});
@@ -231,6 +243,6 @@ htlivesight.players.parserMainSkill = function(mainSkill) {
 	case "20": return htlivesight.Util.Parse("Divine",htlivesight.data[0])+" (20)";
 	break;
 
-	default: return mainSkill;
+	default: return "-";
 	};
 };
