@@ -20,10 +20,10 @@
 <LeagueLiveTable>Classifica</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Squadra</LeagueTeam>
-<LeaguePlayed>P</LeaguePlayed>
-<LeagueGoals>R</LeagueGoals>
+<LeaguePlayed>G</LeaguePlayed>
+<LeagueGoals>F-S</LeagueGoals>
 <LeagueGoalDiff>DR</LeagueGoalDiff>
-<LeaguePoints>P.ti</LeaguePoints>
+<LeaguePoints>P</LeaguePoints>
 <MatchesList>Elenco delle partite</MatchesList>
 <MatchesAdd>Aggiungi partita</MatchesAdd>
 <MatchesByMatch>Per id partita</MatchesByMatch>
