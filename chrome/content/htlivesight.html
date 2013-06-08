@@ -810,8 +810,8 @@
 					<a href="#" id="LeagueLiveTable"></a>
 				</h3>
 				<div id="winboxcontent_leaguetable">
-					<div id="contentbody_leaguetable">
-						<table id="leaguetable_grid_rows" class="live_league_table"
+					<div id="contentbody_leaguetable" class="live_league_table">
+						<table id="leaguetable_grid_rows" 
 							cellpadding="0">
 							<thead>
 								<tr>
@@ -819,7 +819,7 @@
 									<th class="header_league_table" id="LeagueTeam"></th>
 									<th class="header_league_table"></th>
 									<th class="header_league_table" id="LeaguePlayed"></th>
-									<th class="header_league_table" id="LeagueGoals"></th>
+									<th class="header_league_table" id="LeagueGoals" colspan="3"></th>
 									<th class="header_league_table" id="LeagueGoalDiff"></th>
 									<th class="header_league_table" id="LeaguePoints"></th>
 								</tr>
@@ -835,7 +835,11 @@
 									</td>
 									<td><span id="leaguetable_1_matches"></span>
 									</td>
-									<td><span id="leaguetable_1_goals"></span>
+									<td><span id="leaguetable_1_goals_for"></span>
+									</td>
+									<td><span id="leaguetable_1_goals">-</span>
+									</td>
+									<td><span id="leaguetable_1_goals_against"></span>
 									</td>
 									<td><span id="leaguetable_1_goaldif"></span>
 									</td>
@@ -852,7 +856,11 @@
 									</td>
 									<td><span id="leaguetable_2_matches"></span>
 									</td>
-									<td><span id="leaguetable_2_goals"></span>
+									<td><span id="leaguetable_2_goals_for"></span>
+									</td>
+									<td><span id="leaguetable_2_goals">-</span>
+									</td>
+									<td><span id="leaguetable_2_goals_against"></span>
 									</td>
 									<td><span id="leaguetable_2_goaldif"></span>
 									</td>
@@ -869,7 +877,11 @@
 									</td>
 									<td><span id="leaguetable_3_matches"></span>
 									</td>
-									<td><span id="leaguetable_3_goals"></span>
+									<td><span id="leaguetable_3_goals_for"></span>
+									</td>
+									<td><span id="leaguetable_3_goals">-</span>
+									</td>
+									<td><span id="leaguetable_3_goals_against"></span>
 									</td>
 									<td><span id="leaguetable_3_goaldif"></span>
 									</td>
@@ -886,7 +898,11 @@
 									</td>
 									<td><span id="leaguetable_4_matches"></span>
 									</td>
-									<td><span id="leaguetable_4_goals"></span>
+									<td><span id="leaguetable_4_goals_for"></span>
+									</td>
+									<td><span id="leaguetable_4_goals">-</span>
+									</td>
+									<td><span id="leaguetable_4_goals_against"></span>
 									</td>
 									<td><span id="leaguetable_4_goaldif"></span>
 									</td>
@@ -903,7 +919,11 @@
 									</td>
 									<td><span id="leaguetable_5_matches"></span>
 									</td>
-									<td><span id="leaguetable_5_goals"></span>
+									<td><span id="leaguetable_5_goals_for"></span>
+									</td>
+									<td><span id="leaguetable_5_goals">-</span>
+									</td>
+									<td><span id="leaguetable_5_goals_against"></span>
 									</td>
 									<td><span id="leaguetable_5_goaldif"></span>
 									</td>
@@ -920,7 +940,11 @@
 									</td>
 									<td><span id="leaguetable_6_matches"></span>
 									</td>
-									<td><span id="leaguetable_6_goals"></span>
+									<td><span id="leaguetable_6_goals_for"></span>
+									</td>
+									<td><span id="leaguetable_6_goals">-</span>
+									</td>
+									<td><span id="leaguetable_6_goals_against"></span>
 									</td>
 									<td><span id="leaguetable_6_goaldif"></span>
 									</td>
@@ -937,30 +961,38 @@
 									</td>
 									<td><span id="leaguetable_7_matches"></span>
 									</td>
-									<td><span id="leaguetable_7_goals"></span>
+									<td><span id="leaguetable_7_goals_for"></span>
+									</td>
+									<td><span id="leaguetable_7_goals">-</span>
+									</td>
+									<td><span id="leaguetable_7_goals_against"></span>
 									</td>
 									<td><span id="leaguetable_7_goaldif"></span>
 									</td>
 									<td><span id="leaguetable_7_points"></span>
 									</td>
 								</tr>
-								<tr id="leaguetable_8">
-									<td><span>8.</span>
-									</td>
-									<td><span id="leaguetable_8_name"></span>
-									</td>
-									<td><img id="leaguetable_8_change"
-										class="leaguetable_equal" />
-									</td>
-									<td><span id="leaguetable_8_matches"></span>
-									</td>
-									<td><span id="leaguetable_8_goals"></span>
-									</td>
-									<td><span id="leaguetable_8_goaldif"></span>
-									</td>
-									<td><span id="leaguetable_8_points"></span>
-									</td>
-								</tr>
+								  <tr id="leaguetable_8">
+		  							<td><span>8.</span>
+			  						</td>
+				  					<td><span id="leaguetable_8_name"></span>
+					  				</td>
+						  			<td><img id="leaguetable_8_change"
+							  			class="leaguetable_equal" />
+								  	</td>
+									  <td><span id="leaguetable_8_matches"></span>
+  									</td>
+	  								<td><span id="leaguetable_8_goals_for"></span>
+		  							</td>
+			  						<td><span id="leaguetable_8_goals">-</span>
+				  					</td>
+					  				<td><span id="leaguetable_8_goals_against"></span>
+						  			</td>
+							  		<td><span id="leaguetable_8_goaldif"></span>
+								  	</td>
+									  <td><span id="leaguetable_8_points"></span>
+								  	</td>
+								  </tr>
 							</tbody>
 						</table>
 					</div>
@@ -1003,16 +1035,15 @@
 					<a href="#" id="LeagueLiveTableBis"></a>
 				</h3>
 				<div id="winboxcontent_leaguetableBis">
-					<div id="contentbody_leaguetableBis">
-						<table id="leaguetable_grid_rowsBis" class="live_league_table"
-							cellpadding="0">
+					<div id="contentbody_leaguetableBis" class="live_league_table">
+						<table id="leaguetable_grid_rowsBis" cellpadding="0">
 							<thead>
 								<tr>
 									<th class="header_league_table" id="LeaguePositionBis"></th>
 									<th class="header_league_table" id="LeagueTeamBis"></th>
 									<th class="header_league_table"></th>
 									<th class="header_league_table" id="LeaguePlayedBis"></th>
-									<th class="header_league_table" id="LeagueGoalsBis"></th>
+									<th class="header_league_table" id="LeagueGoalsBis" colspan="3"></th>
 									<th class="header_league_table" id="LeagueGoalDiffBis"></th>
 									<th class="header_league_table" id="LeaguePointsBis"></th>
 								</tr>
@@ -1028,7 +1059,11 @@
 									</td>
 									<td><span id="leaguetable_1_matchesBis"></span>
 									</td>
-									<td><span id="leaguetable_1_goalsBis"></span>
+									<td><span id="leaguetable_1_goals_forBis"></span>
+									</td>
+									<td><span id="leaguetable_1_goalsBis">-</span>
+									</td>
+									<td><span id="leaguetable_1_goals_againstBis"></span>
 									</td>
 									<td><span id="leaguetable_1_goaldifBis"></span>
 									</td>
@@ -1045,7 +1080,11 @@
 									</td>
 									<td><span id="leaguetable_2_matchesBis"></span>
 									</td>
-									<td><span id="leaguetable_2_goalsBis"></span>
+									<td><span id="leaguetable_2_goals_forBis"></span>
+									</td>
+									<td><span id="leaguetable_2_goalsBis">-</span>
+									</td>
+									<td><span id="leaguetable_2_goals_againstBis"></span>
 									</td>
 									<td><span id="leaguetable_2_goaldifBis"></span>
 									</td>
@@ -1062,7 +1101,11 @@
 									</td>
 									<td><span id="leaguetable_3_matchesBis"></span>
 									</td>
-									<td><span id="leaguetable_3_goalsBis"></span>
+									<td><span id="leaguetable_3_goals_forBis"></span>
+									</td>
+									<td><span id="leaguetable_3_goalsBis">-</span>
+									</td>
+									<td><span id="leaguetable_3_goals_againstBis"></span>
 									</td>
 									<td><span id="leaguetable_3_goaldifBis"></span>
 									</td>
@@ -1079,7 +1122,11 @@
 									</td>
 									<td><span id="leaguetable_4_matchesBis"></span>
 									</td>
-									<td><span id="leaguetable_4_goalsBis"></span>
+									<td><span id="leaguetable_4_goals_forBis"></span>
+									</td>
+									<td><span id="leaguetable_4_goalsBis">-</span>
+									</td>
+									<td><span id="leaguetable_4_goals_againstBis"></span>
 									</td>
 									<td><span id="leaguetable_4_goaldifBis"></span>
 									</td>
@@ -1096,7 +1143,11 @@
 									</td>
 									<td><span id="leaguetable_5_matchesBis"></span>
 									</td>
-									<td><span id="leaguetable_5_goalsBis"></span>
+									<td><span id="leaguetable_5_goals_forBis"></span>
+									</td>
+									<td><span id="leaguetable_5_goalsBis">-</span>
+									</td>
+									<td><span id="leaguetable_5_goals_againstBis"></span>
 									</td>
 									<td><span id="leaguetable_5_goaldifBis"></span>
 									</td>
@@ -1113,7 +1164,11 @@
 									</td>
 									<td><span id="leaguetable_6_matchesBis"></span>
 									</td>
-									<td><span id="leaguetable_6_goalsBis"></span>
+									<td><span id="leaguetable_6_goals_forBis"></span>
+									</td>
+									<td><span id="leaguetable_6_goalsBis">-</span>
+									</td>
+									<td><span id="leaguetable_6_goals_againstBis"></span>
 									</td>
 									<td><span id="leaguetable_6_goaldifBis"></span>
 									</td>
@@ -1130,7 +1185,11 @@
 									</td>
 									<td><span id="leaguetable_7_matchesBis"></span>
 									</td>
-									<td><span id="leaguetable_7_goalsBis"></span>
+									<td><span id="leaguetable_7_goals_forBis"></span>
+									</td>
+									<td><span id="leaguetable_7_goalsBis">-</span>
+									</td>
+									<td><span id="leaguetable_7_goals_againstBis"></span>
 									</td>
 									<td><span id="leaguetable_7_goaldifBis"></span>
 									</td>
@@ -1147,7 +1206,11 @@
 									</td>
 									<td><span id="leaguetable_8_matchesBis"></span>
 									</td>
-									<td><span id="leaguetable_8_goalsBis"></span>
+									<td><span id="leaguetable_8_goals_forBis"></span>
+									</td>
+									<td><span id="leaguetable_8_goalsBis">-</span>
+									</td>
+									<td><span id="leaguetable_8_goals_againstBis"></span>
 									</td>
 									<td><span id="leaguetable_8_goaldifBis"></span>
 									</td>

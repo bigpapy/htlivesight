@@ -5,28 +5,142 @@
 .datetime_league {text-align:center;border-bottom: thin solid white;}
 .round_league {text-align:left;border-top: thin solid white;}
 .chronometer_league {text-align:right;border-top: thin solid white;}
-.live_league_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;text-align:center;}
+.live_league_table{border: thin solid white;border-radius:5px;-moz-border-radius:5px;text-align:center}
 .header_league_table{text-align:center;border-bottom: thin solid white;}
 #chat_link{color:white !important}
-#leaguetable_grid_rows td:first-child,#leaguetable_grid_rows th:first-child{
+#leaguetable_grid_rows{width:100%;}
+#leaguetable_grid_rows tr:last-child td:first-child{
+	border-radius:0 0 0 4px;
+	-moz-border-radius:0 0 0 4px;
+}
+#leaguetable_grid_rows tr:last-child td:last-child{
+	border-radius:0 0 4px 0;
+	-moz-border-radius:0 0 4px 0;
+}
+#leaguetable_grid_rows td:first-child, #leaguetable_grid_rows th:first-child{
 padding-left: 3px;
 border-right: thin solid white;
+padding-right: 3px;
+
 }
-#leaguetable_grid_rowsBis td:first-child,#leaguetable_grid_rows th:first-child{
+#leaguetable_grid_rows th:nth-child(2){
+	padding-left: 3px;
+	padding-right: 3px;
+	text-align: left;
+}
+#leaguetable_grid_rows td:nth-child(2){
+padding-left: 3px;
+padding-right: 3px;
+text-align: left;
+
+/*border-right: thin solid white;*/
+}
+#leaguetable_grid_rows td:nth-child(2) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100px;	
+}
+#leaguetable_grid_rows td:nth-child(3), #leaguetable_grid_rows th:nth-child(3){
+padding-left: 3px;
+/*border-right: thin solid white;*/
+}
+#leaguetable_grid_rows td:nth-child(4), #leaguetable_grid_rows th:nth-child(4), #leaguetable_grid_rows th:nth-child(5), #leaguetable_grid_rows th:nth-child(6){
 padding-left: 3px;
 border-right: thin solid white;
+padding-right: 3px;
 }
+#leaguetable_grid_rows td:nth-child(5){
+	padding-left: 3px;
+  padding-right: 1px;
+  text-align: right;
+}
+
+#leaguetable_grid_rows td:nth-child(7){
+padding-right: 3px;
+border-right: thin solid white;
+text-align: left;
+}
+#leaguetable_grid_rows td:nth-child(8){
+padding-right: 3px;
+padding-left: 3px;
+border-right: thin solid white;
+text-align: right;
+}
+#leaguetable_grid_rows td:nth-child(9){
+padding-right: 3px;
+padding-left: 3px;
+text-align: right;
+}
+
+#leaguetable_grid_rowsBis{width:100%;}
+#leaguetable_grid_rowsBis tr:last-child td:first-child{
+	border-radius:0 0 0 4px;
+	-moz-border-radius:0 0 0 4px;
+}
+#leaguetable_grid_rowsBis tr:last-child td:last-child{
+	border-radius:0 0 4px 0;
+	-moz-border-radius:0 0 4px 0;
+}
+#leaguetable_grid_rowsBis td:first-child, #leaguetable_grid_rowsBis th:first-child{
+padding-left: 3px;
+border-right: thin solid white;
+padding-right: 3px;
+
+}
+#leaguetable_grid_rowsBis th:nth-child(2){
+	padding-left: 3px;
+	padding-right: 3px;
+	text-align: left;
+}
+#leaguetable_grid_rowsBis td:nth-child(2){
+padding-left: 3px;
+padding-right: 3px;
+text-align: left;
+
+/*border-right: thin solid white;*/
+}
+#leaguetable_grid_rowsBis td:nth-child(2) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100px;	
+}
+#leaguetable_grid_rowsBis td:nth-child(3), #leaguetable_grid_rowsBis th:nth-child(3){
+padding-left: 3px;
+/*border-right: thin solid white;*/
+}
+#leaguetable_grid_rowsBis td:nth-child(4), #leaguetable_grid_rowsBis th:nth-child(4), #leaguetable_grid_rowsBis th:nth-child(5), #leaguetable_grid_rowsBis th:nth-child(6){
+padding-left: 3px;
+border-right: thin solid white;
+padding-right: 3px;
+}
+#leaguetable_grid_rowsBis td:nth-child(5){
+	padding-left: 3px;
+  padding-right: 1px;
+  text-align: right;
+}
+
+#leaguetable_grid_rowsBis td:nth-child(7){
+padding-right: 3px;
+border-right: thin solid white;
+text-align: left;
+}
+#leaguetable_grid_rowsBis td:nth-child(8){
+padding-right: 3px;
+padding-left: 3px;
+border-right: thin solid white;
+text-align: right;
+}
+#leaguetable_grid_rowsBis td:nth-child(9){
+padding-right: 3px;
+padding-left: 3px;
+text-align: right;
+}
+
 tr.league_title, tr.league_promote{background-color: #023702;}
-tr.league_demote{background-color: #750606;}
+.league_demote{background-color: #750606;}
 tr.league_qualify{background-color: #C57006;}
-#leaguetable_grid_rows td:first-child,#leaguetable_grid_rows th:first-child{
-padding-left: 3px;
-border-right: thin solid white;
-}
-#leaguetable_grid_rowsBis td:first-child,#leaguetable_grid_rowsBis th:first-child{
-padding-left: 3px;
-border-right: thin solid white;
-}
 tr.league_title + tr,tr.league_promote + tr:not(.league_promote){border-top: 1px solid green;}
 tr:not(.league_demote) + tr.league_demote{border-top: 1px solid red;}
 tr.foe_away{

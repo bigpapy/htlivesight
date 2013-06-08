@@ -574,10 +574,12 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 	var label;
 	try {
 		if (match.arena.name) {
-			document.getElementById("match_date_" + match.id + "_" + match.sourceSystem).innerHTML = "";
-			document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).innerHTML = match.arena.name;
+			/*label = document.getElementById("match_date_" + match.id + "_" + match.sourceSystem).innerHTML = "";
+			htlivesight.Util.RemoveClass(label, "match_date");*/
+			label = document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).innerHTML = match.arena.name;
+			/*htlivesight.Util.AddClass(label, "arena_name");*/
 		}else{
-			if(match.date) document.getElementById("match_date_" + match.id + "_" + match.sourceSystem).innerHTML = htlivesight.Time.formatDate(match.date);
+			if(match.date) document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).innerHTML = htlivesight.Time.formatDate(match.date);
 		}
 		if (match.weather.image) {
 			label = document.getElementById("weather_image_" + match.id + "_" + match.sourceSystem);
@@ -817,10 +819,10 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		label.setAttribute("id", "weather_text_" + match.id + "_" + match.sourceSystem);
 		label.setAttribute("class", "weather_text");
 		
-		label = document.createElement("span");
+		/*label = document.createElement("span");
 		hboxL.appendChild(label);
 		label.setAttribute("id", "match_date_" + match.id + "_" + match.sourceSystem);
-		//label.setAttribute("class", "");
+		label.setAttribute("class", "match_date");*/
 
 		
 		var hboxM = document.createElement("td");
@@ -1580,7 +1582,8 @@ htlivesight.DOM.UpdateElementBoxLeagueTable=function(league) {
 		if(league.level != league.maxLevel){
 			//#7 AND #8 demote
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_7"),'league_demote');
-			htlivesight.Util.AddClass(document.getElementById("leaguetable_8"),'league_demote');
+			$("#leaguetable_8 td").addClass('league_demote');
+			//htlivesight.Util.AddClass(document.getElementById("leaguetable_8"),'league_demote');
 		}
 		if(league.level < 6 && league.level != league.maxLevel){
 			//#5 AND #8 need to qualify
@@ -1595,8 +1598,12 @@ htlivesight.DOM.UpdateElementBoxLeagueTable=function(league) {
 				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_name").innerHTML = htlivesight.DOM.getTextContent(htlivesight.League.teams[i].name);
 				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_change").setAttribute("src",htlivesight.constants.IMG_PATH + htlivesight.League.teams[i].change);
 				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_matches").innerHTML = htlivesight.League.teams[i].liveMatches;
-				var goals = htlivesight.League.teams[i].liveGoalsFor+"-"+htlivesight.League.teams[i].liveGoalsAgainst;
-				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goals").innerHTML = goals;
+			  var goalsFor = htlivesight.League.teams[i].liveGoalsFor;
+				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goals_for").innerHTML = goalsFor;
+			  var goalsAgainst = htlivesight.League.teams[i].liveGoalsAgainst;
+				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goals_against").innerHTML = goalsAgainst;
+				//var goals = htlivesight.League.teams[i].liveGoalsFor+"-"+htlivesight.League.teams[i].liveGoalsAgainst;
+				//document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goals").innerHTML = goals;
 				var diff = htlivesight.League.teams[i].liveGoalsFor - htlivesight.League.teams[i].liveGoalsAgainst;
 				if(diff >= 0) diff = "+"+diff;
 				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goaldif").innerHTML = diff;
@@ -1704,7 +1711,8 @@ htlivesight.DOM.UpdateElementBoxLeagueTable2=function(league) {
 		if(league.level2 != league.maxLevel2){
 			//#7 AND #8 demote
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_7Bis"),'league_demote');
-			htlivesight.Util.AddClass(document.getElementById("leaguetable_8Bis"),'league_demote');
+			$("#leaguetable_8Bis td").addClass('league_demote');
+			//htlivesight.Util.AddClass(document.getElementById("leaguetable_8Bis"),'league_demote');
 		}
 		if(league.level2 < 6 && league.level2 != league.maxLevel2){
 			//#5 AND #6 need to qualify
@@ -1719,8 +1727,12 @@ htlivesight.DOM.UpdateElementBoxLeagueTable2=function(league) {
 				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_nameBis").innerHTML = htlivesight.DOM.getTextContent(htlivesight.League.teams2[i].name);
 				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_changeBis").setAttribute("src",htlivesight.constants.IMG_PATH + htlivesight.League.teams2[i].change);
 				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_matchesBis").innerHTML = htlivesight.League.teams2[i].liveMatches;
-				var goals = htlivesight.League.teams2[i].liveGoalsFor+"-"+htlivesight.League.teams2[i].liveGoalsAgainst;
-				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goalsBis").innerHTML = goals;
+				var goalsFor = htlivesight.League.teams2[i].liveGoalsFor;
+				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goals_forBis").innerHTML = goalsFor;
+				var goalsAgainst = htlivesight.League.teams2[i].liveGoalsAgainst;
+				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goals_againstBis").innerHTML = goalsAgainst;
+				//var goals = htlivesight.League.teams2[i].liveGoalsFor+"-"+htlivesight.League.teams2[i].liveGoalsAgainst;
+				//document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goalsBis").innerHTML = goals;
 				var diff = htlivesight.League.teams2[i].liveGoalsFor - htlivesight.League.teams2[i].liveGoalsAgainst;
 				if(diff >= 0) diff = "+"+diff;
 				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goaldifBis").innerHTML = diff;

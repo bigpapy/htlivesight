@@ -115,7 +115,7 @@ htlivesight.players.getSkillFromXML = function (xml, skillName, youth){
 	if (youth=="true"){
 	  var xmlMaxSkillText = xml.getElementsByTagName(skillName+"Max")[0].textContent;
 	  skillString += " / " + htlivesight.players.parserMainSkill(xmlMaxSkillText);
-	  if(skillString == "- / -") skillString = "";
+	  if(skillString == " / ") skillString = "";
 	}
 	return skillString;
 };
@@ -243,6 +243,6 @@ htlivesight.players.parserMainSkill = function(mainSkill) {
 	case "20": return htlivesight.Util.Parse("Divine",htlivesight.data[0])+" (20)";
 	break;
 
-	default: return "-";
+	default: return "";
 	};
 };

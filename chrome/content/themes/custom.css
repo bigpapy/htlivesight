@@ -63,20 +63,59 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 #left_topbar,#right_topbar,#central_topbar a:hover {text-decoration:none;}
 #left_topbar,#right_topbar,#central_topbar a:active {text-decoration:none;}
 
+#leaguetable_grid_rows td{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#leaguetable_grid_rows th{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#leaguetable_grid_rowsBis td{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#leaguetable_grid_rowsBis th{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
 
 #thebox{display:block;margin-top:1px;}
 #live_box {display:inline-block;margin-left:3px;margin-top:1px;border-radius:10px;float:left;/*width:74.5%;/*min-width:800px;min-width:600px;*/}
 #sidebar {display:inline-block;margin-right:3px;overflow:auto;float:right;width:290px:/*width:24.5%;/*min-width:200pxmin-width:200px;max-width:300px;*/}
 .fullscreen{width:99% !important;}
-
 /*.match_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;padding:0 0 0 0;border-spacing:0 0 0 0}*/
 .match_row{}
 /*.datetime_league {text-align:center;border-bottom: thin solid white;}*/
-.hometeam_league {text-align:right;width:42%;padding:0 5px;border-spacing:0 0 0 0}
+.hometeam_league {
+	text-align:right;
+	width:70px;
+	padding-top: 5px;
+	padding-right: 4px;
+	padding-left: 4px;
+	border-spacing:0 0 0 0;
+	display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+	}
 .homescore_league {text-align:right;padding:0 0 0 0;border-spacing:0 0 0 0}
 .separator_league {text-align:center;width:2%;padding:0 0 0 0;border-spacing:0 0 0 0}
 .awayscore_league {text-align:left;padding:0 0 0 0;border-spacing:0 0 0 0}
-.awayteam_league {text-align:left;width:42%;padding:0 5px;border-spacing:0 0 0 0}
+.awayteam_league {
+	text-align:left;
+	width:70px;
+	padding-top: 5px;
+	padding-right: 4px;
+	padding-left: 4px;
+	border-spacing:0 0 0 0;
+	display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+	}
 .add_league{text-align:center;width:20px;height:20px;}
 .remove_league{text-align:center;width:20px;height:20px;}
 /*.round_league {text-align:left;border-top: thin solid white;}
@@ -109,9 +148,9 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
 #progresslabel{float:right}
 
 .matchheader{width:100%;border: #fff 0px solid; border-radius:5px;}
-.line1header {width:220px;border: 0 0 0 0;text-align:center;font-size: 13px;float:left;}
+.line1header {width:270px;border: 0 0 0 0;text-align:center;font-size: 13px;float:left; padding-bottom:7px}
 .chronoheader {border: 0 0 0 0;text-align:center;font-size: 13px;min-width:160px;width:36%}
-.iconzone {width:220px;border: 0 0 0 0;text-align:center;font-size: 13px;float:right;}
+.iconzone {width:270px;border: 0 0 0 0;text-align:right;font-size: 13px;float:right;}
 .line2sxheader {width:25%;border-bottom:thin solid white;border-left:medium solid white;border-bottom-left-radius:25px; text-align:center;font-size:16px;font-weight:bold}
 .line2rxheader {width:25%;border-bottom:thin solid white;border-right:medium solid white;border-bottom-right-radius:25px; text-align:center;font-size:16px;font-weight:bold}
 .scoreheader {width:100px;border-left:medium solid white;border-right:medium solid white;border-radius:25px; text-align:center;font-size:16px;font-weight:bold}
@@ -295,15 +334,6 @@ animation-timing-function:ease-in-out;
 #right_topbar > a, #left_topbar > a{
 text-decoration:none;
 }
-#leaguetable_grid_rows td{
-padding: 2px 0;
-/*border-bottom:thin solid DimGray;*/
-}
-
-#leaguetable_grid_rowsBis td{
-padding: 2px 0;
-/*border-bottom:thin solid DimGray;*/
-}
 
 table.ev_rows,#leaguetable_grid_rows{
 border-collapse: collapse;
@@ -323,11 +353,23 @@ padding: 2px 0;
 }
 img.match_button{}
 img.weather_image{
-padding: 0 6px;
-vertical-align: middle;
+padding-right: 6px;
+padding-left: 6px;
+vertical-align: bottom;
 }
-span.arena_name{}
-span.arena_attendance{}
+span.arena_name{
+	vertical-align: bottom;
+	/*padding-top: 6px;*/
+	display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 180px;
+  text-align: right;	
+}
+
+span.arena_attendance{
+	vertical-align: bottom;
+}
 span.weather_text{}
 tr.plackardrow{}
 table.team_home > tr,
