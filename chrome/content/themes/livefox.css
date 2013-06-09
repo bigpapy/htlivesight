@@ -2,9 +2,10 @@
 ----------------------------------*/
 #topbar {width:100%;height:29px;color:black;background:url(images/ui-bg_highlight-hard_100_f5f3e5_1x100.png) repeat-x scroll 50% top #F5F3E5;display:block;font-size:13px;font-weight: 400;}
 .match_table{width:100%;border: thin solid black;border-radius:5px;-moz-border-radius:5px;padding:0 0 0 0;border-spacing:0 0 0 0}
-.datetime_league {text-align:center;border-bottom: thin solid black;}
-.round_league {text-align:left;border-top: thin solid black;}
-.chronometer_league {text-align:right;border-top: thin solid black;}
+.datetime_league {text-align:right; border-bottom: thin solid black; padding-right: 4px;}
+.footer_league{border-top: thin solid black;text-align: center;}
+.round_league {float:left; padding-left: 4px; padding-right: 8px}
+.chronometer_league {text-align: left; padding-left: 4px;}
 .live_league_table{width:100%;border: thin solid black;border-radius:5px;-moz-border-radius:5px;text-align:center;}
 .header_league_table{text-align:center;border-bottom: thin solid black;}
 #chat_link{color:black !important}

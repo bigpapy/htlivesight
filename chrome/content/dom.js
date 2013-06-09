@@ -488,6 +488,8 @@ htlivesight.DOM = {
 					if (child.nodeName == "#text") {
 						newElement = document.createTextNode(child.textContent);		    
 					} else if (child.nodeName == "a") {
+						console.log(child);
+						console.log(child.href)
 						newElement = document.createElementNS("http://www.w3.org/1999/xhtml", "em");
 						newElement.setAttribute("class", "player_name");
 						newElement.appendChild(document.createTextNode(child.firstChild.textContent));		    
@@ -579,7 +581,7 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 			label = document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).innerHTML = match.arena.name;
 			/*htlivesight.Util.AddClass(label, "arena_name");*/
 		}else{
-			if(match.date) document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).innerHTML = htlivesight.Time.formatDate(match.date);
+			if(match.date) document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).innerHTML = htlivesight.Time.shortDateString(match.date);
 		}
 		if (match.weather.image) {
 			label = document.getElementById("weather_image_" + match.id + "_" + match.sourceSystem);
@@ -1751,7 +1753,7 @@ htlivesight.DOM.UpdateElementBoxLeague=function(league) {
 		var number = htlivesight.Util.Parse("LeagueRound",htlivesight.data[0]) + " " + league.currentRound.number;
 		var date = htlivesight.Time.formatDate(league.currentRound.date);
 		document.getElementById("league_round_number").innerHTML = number;
-		document.getElementById("league_round_date").innerHTML = date;
+		document.getElementById("league_round_date").innerHTML = htlivesight.Time.shortDateString(date);
 	}catch(e){alert("UpdateElementBoxLeague : "+e);} // added by bigpapy to debug from xul to html
 };
 
@@ -1763,7 +1765,7 @@ htlivesight.DOM.UpdateElementBoxLeague2=function(league) {
 		var number = htlivesight.Util.Parse("LeagueRound",htlivesight.data[0]) + " " + league.currentRound2.number;
 		var date = htlivesight.Time.formatDate(league.currentRound2.date);
 		document.getElementById("league_round_numberBis").innerHTML = number;
-		document.getElementById("league_round_dateBis").innerHTML = date;
+		document.getElementById("league_round_dateBis").innerHTML = htlivesight.Time.shortDateString(date);
 	}catch(e){alert("UpdateElementBoxLeague2 : "+e);} // added by bigpapy to debug from xul to html
 };
 

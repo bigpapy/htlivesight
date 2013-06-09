@@ -17,6 +17,11 @@ htlivesight.Time = {
 		formatDate: function(date) {
 			return date.toLocaleString();
 		},
+		shortDateString: function(date){
+			var dateString = date.toLocaleString();
+			var datePart = dateString.split(":");
+			return datePart[0]+":"+datePart[1];
+		},
 		parseFetchDate: function (response) {
 			return htlivesight.Time.parseDate(htlivesight.Util.Parse("FetchedDate", response));
 		},
