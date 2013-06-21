@@ -15,8 +15,8 @@
 	-moz-border-radius:0 0 0 4px;
 }
 #leaguetable_grid_rows tr:last-child td:last-child{
-	border-radius:0 0 5px 0;
-	-moz-border-radius:0 0 5px 0;
+	border-radius:0 0 4px 0;
+	-moz-border-radius:0 0 4px 0;
 }
 #leaguetable_grid_rows td:first-child, #leaguetable_grid_rows th:first-child{
 padding-left: 3px;
@@ -26,12 +26,12 @@ padding-right: 3px;
 }
 #leaguetable_grid_rows th:nth-child(2){
 	padding-left: 3px;
-	padding-right: 3px;
+	padding-right: 2px;
 	text-align: left;
 }
 #leaguetable_grid_rows td:nth-child(2){
 padding-left: 3px;
-padding-right: 3px;
+padding-right: 2px;
 text-align: left;
 
 /*border-right: thin solid white;*/
@@ -40,40 +40,75 @@ text-align: left;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  width: 100px;	
+  width: 90px;	
 }
 #leaguetable_grid_rows td:nth-child(3), #leaguetable_grid_rows th:nth-child(3){
-padding-left: 3px;
+padding-left: 2px;
 /*border-right: thin solid white;*/
 }
+
+#leaguetable_grid_rows th:nth-child(1) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 6px;	
+}
+
+#leaguetable_grid_rows th:nth-child(2) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90px;	
+}
+
+#leaguetable_grid_rows th:nth-child(4) span, #leaguetable_grid_rows th:nth-child(7) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 15px;	
+}
+
+#leaguetable_grid_rows th:nth-child(5) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 30px;	
+}
+
+#leaguetable_grid_rows th:nth-child(6) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 22px;	
+}
+
 #leaguetable_grid_rows td:nth-child(4), #leaguetable_grid_rows th:nth-child(4), #leaguetable_grid_rows th:nth-child(5), #leaguetable_grid_rows th:nth-child(6){
-padding-left: 3px;
+padding-left: 2px;
 border-right: thin solid black;
-padding-right: 3px;
+padding-right: 2px;
 }
 #leaguetable_grid_rows td:nth-child(5){
-	padding-left: 3px;
+	padding-left: 2px;
   padding-right: 1px;
   text-align: right;
 }
 
 #leaguetable_grid_rows td:nth-child(7){
-padding-right: 3px;
+padding-right: 2px;
 border-right: thin solid black;
 text-align: left;
 }
 #leaguetable_grid_rows td:nth-child(8){
 padding-right: 3px;
-padding-left: 3px;
+padding-left: 2px;
 border-right: thin solid black;
 text-align: right;
 }
 #leaguetable_grid_rows td:nth-child(9){
 padding-right: 3px;
-padding-left: 3px;
+padding-left: 2px;
 text-align: right;
 }
-
 #leaguetable_grid_rowsBis{width:100%;}
 #leaguetable_grid_rowsBis tr:last-child td:first-child{
 	border-radius:0 0 0 4px;
@@ -91,12 +126,12 @@ padding-right: 3px;
 }
 #leaguetable_grid_rowsBis th:nth-child(2){
 	padding-left: 3px;
-	padding-right: 3px;
+	padding-right: 2px;
 	text-align: left;
 }
 #leaguetable_grid_rowsBis td:nth-child(2){
 padding-left: 3px;
-padding-right: 3px;
+padding-right: 2px;
 text-align: left;
 
 /*border-right: thin solid white;*/
@@ -105,40 +140,75 @@ text-align: left;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  width: 100px;	
+  width: 90px;	
 }
 #leaguetable_grid_rowsBis td:nth-child(3), #leaguetable_grid_rowsBis th:nth-child(3){
-padding-left: 3px;
+padding-left: 2px;
 /*border-right: thin solid white;*/
 }
+
+#leaguetable_grid_rowsBis th:nth-child(1) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 6px;	
+}
+
+#leaguetable_grid_rowsBis th:nth-child(2) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90px;	
+}
+
+#leaguetable_grid_rowsBis th:nth-child(4) span, #leaguetable_grid_rowsBis th:nth-child(7) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 15px;	
+}
+
+#leaguetable_grid_rowsBis th:nth-child(5) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 30px;	
+}
+
+#leaguetable_grid_rowsBis th:nth-child(6) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 22px;	
+}
+
 #leaguetable_grid_rowsBis td:nth-child(4), #leaguetable_grid_rowsBis th:nth-child(4), #leaguetable_grid_rowsBis th:nth-child(5), #leaguetable_grid_rowsBis th:nth-child(6){
-padding-left: 3px;
+padding-left: 2px;
 border-right: thin solid black;
-padding-right: 3px;
+padding-right: 2px;
 }
 #leaguetable_grid_rowsBis td:nth-child(5){
-	padding-left: 3px;
+	padding-left: 2px;
   padding-right: 1px;
   text-align: right;
 }
 
 #leaguetable_grid_rowsBis td:nth-child(7){
-padding-right: 3px;
+padding-right: 2px;
 border-right: thin solid black;
 text-align: left;
 }
 #leaguetable_grid_rowsBis td:nth-child(8){
 padding-right: 3px;
-padding-left: 3px;
+padding-left: 2px;
 border-right: thin solid black;
 text-align: right;
 }
 #leaguetable_grid_rowsBis td:nth-child(9){
 padding-right: 3px;
-padding-left: 3px;
+padding-left: 2px;
 text-align: right;
 }
-
 tr.league_title, tr.league_promote{background-color: #02A702;}
 .league_demote{background-color: #B50606;}
 tr.league_qualify{background-color: #C57006;}

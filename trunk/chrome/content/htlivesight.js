@@ -22,7 +22,7 @@ var htlivesight = {
 				winW2 = window.innerWidth;
 				winH2 = window.innerHeight;
 			}
-			console.info(winW2);
+			//console.info(winW2);
 			//console.info(winH2);
 
 		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW2-317) + "px" );
@@ -46,8 +46,8 @@ var htlivesight = {
 				winW = window.innerWidth;
 				winH = window.innerHeight;
 			}
-			console.info(winW);
-			console.info(winH);
+			//console.info(winW);
+			//console.info(winH);
 		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW-317) + "px" );
 		  	document.getElementById("sidebar").setAttribute("style", "width:" + (290) + "px" );
 	// coloring header
@@ -185,6 +185,22 @@ var htlivesight = {
 			try{
 				if(parseInt(document.getElementById("secondTeamId").value)){
 					htlivesight.Team.HTTPGetMyData(document.getElementById("secondTeamId").value,"mySecondTeam");
+				}else{
+					htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_STADIUM);
+				}
+			}catch(e){alert(e);}
+		},
+		GetMyArena: function(){
+			console.log("loading first team arena details");
+			htlivesight.matchDetails.HTTPGetArena(htlivesight.Teams.myTeam.id);
+			console.log("loaded first team arena details");
+		},
+		GetMyArena2: function(){
+			try{
+				if(parseInt(document.getElementById("secondTeamId").value)){
+					console.log("loading second team arena details");
+					htlivesight.matchDetails.HTTPGetArena(htlivesight.Teams.mySecondTeam.id);
+					console.log("loaded second team arena details");
 				}else{
 					htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TEAM);
 				}

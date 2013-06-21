@@ -207,7 +207,8 @@ htlivesight.Lang = {
 						
 			//doc.getElementById("label_textColorCode").innerHTML=htlivesight.Util.Parse("EventTextColor",htlivesight.data[0]);
 			doc.getElementById("label_seTextColorCode").innerHTML=htlivesight.Util.Parse("SETextColor",htlivesight.data[0]);
-			doc.getElementById("LoggedIn").innerHTML=htlivesight.Util.Parse("LoggedIn",htlivesight.data[0]);
+			//doc.getElementById("LoggedIn").innerHTML=htlivesight.Util.Parse("LoggedIn",htlivesight.data[0]);
+			//doc.getElementById("LoggedIn").innerHTML="Following: ";
 			doc.getElementById("latestNews").innerHTML=htlivesight.Util.Parse("latestNews",htlivesight.data[0]);
 			doc.getElementById("HTLSThread").title=htlivesight.Util.Parse("HTLSThread",htlivesight.data[0]);
 			doc.getElementById("ProjectWebsite").title=htlivesight.Util.Parse("ProjectWebsite",htlivesight.data[0]);

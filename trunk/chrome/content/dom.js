@@ -488,8 +488,9 @@ htlivesight.DOM = {
 					if (child.nodeName == "#text") {
 						newElement = document.createTextNode(child.textContent);		    
 					} else if (child.nodeName == "a") {
-						console.log(child);
-						console.log(child.href)
+						/** log used to build links*/
+						//console.log(child);
+						//console.log(child.href)
 						newElement = document.createElementNS("http://www.w3.org/1999/xhtml", "em");
 						newElement.setAttribute("class", "player_name");
 						newElement.appendChild(document.createTextNode(child.firstChild.textContent));		    

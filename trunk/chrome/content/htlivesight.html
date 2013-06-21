@@ -755,7 +755,7 @@
 					</form>
 		</div>
 		<div id="right_topbar">
-			<span id="LoggedIn">Logged in as</span> <span id="teamName"></span>
+		<!--  <span id="LoggedIn">Logged in as</span>--> <span id="teamName"></span><span id="secondTeamName"></span>
 			<a title="Mute All" id="muteAll" href="#"><img id="muteAllImg" alt="Mute All" class="socialicon" src="./img/sound_on.gif"></a>
 			<a	title="Hide Sidebar" id="hidesidebar" href="#"> <img
 				alt="Hide Sidebar" class="socialicon" src="./themes/images/hide.png">
@@ -813,18 +813,18 @@
 							cellpadding="0">
 							<thead>
 								<tr>
-									<th class="header_league_table" id="LeaguePosition"></th>
-									<th class="header_league_table" id="LeagueTeam"></th>
+									<th class="header_league_table"><span id="LeaguePosition"></span></th>
+									<th class="header_league_table"><span id="LeagueTeam"></span></th>
 									<th class="header_league_table"></th>
-									<th class="header_league_table" id="LeaguePlayed"></th>
-									<th class="header_league_table" id="LeagueGoals" colspan="3"></th>
-									<th class="header_league_table" id="LeagueGoalDiff"></th>
-									<th class="header_league_table" id="LeaguePoints"></th>
+									<th class="header_league_table" ><span id="LeaguePlayed"></span></th>
+									<th class="header_league_table"  colspan="3"><span id="LeagueGoals"></span></th>
+									<th class="header_league_table"><span id="LeagueGoalDiff"></span></th>
+									<th class="header_league_table"><span id="LeaguePoints"></span></th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr id="leaguetable_1">
-									<td><span>1.</span>
+									<td><span>1</span>
 									</td>
 									<td><span id="leaguetable_1_name"></span>
 									</td>
@@ -845,7 +845,7 @@
 									</td>
 								</tr>
 								<tr id="leaguetable_2">
-									<td><span>2.</span>
+									<td><span>2</span>
 									</td>
 									<td><span id="leaguetable_2_name"></span>
 									</td>
@@ -866,7 +866,7 @@
 									</td>
 								</tr>
 								<tr id="leaguetable_3">
-									<td><span>3.</span>
+									<td><span>3</span>
 									</td>
 									<td><span id="leaguetable_3_name"></span>
 									</td>
@@ -887,7 +887,7 @@
 									</td>
 								</tr>
 								<tr id="leaguetable_4">
-									<td><span>4.</span>
+									<td><span>4</span>
 									</td>
 									<td><span id="leaguetable_4_name"></span>
 									</td>
@@ -908,7 +908,7 @@
 									</td>
 								</tr>
 								<tr id="leaguetable_5">
-									<td><span>5.</span>
+									<td><span>5</span>
 									</td>
 									<td><span id="leaguetable_5_name"></span>
 									</td>
@@ -929,7 +929,7 @@
 									</td>
 								</tr>
 								<tr id="leaguetable_6">
-									<td><span>6.</span>
+									<td><span>6</span>
 									</td>
 									<td><span id="leaguetable_6_name"></span>
 									</td>
@@ -950,7 +950,7 @@
 									</td>
 								</tr>
 								<tr id="leaguetable_7">
-									<td><span>7.</span>
+									<td><span>7</span>
 									</td>
 									<td><span id="leaguetable_7_name"></span>
 									</td>
@@ -971,7 +971,7 @@
 									</td>
 								</tr>
 								  <tr id="leaguetable_8">
-		  							<td><span>8.</span>
+		  							<td><span>8</span>
 			  						</td>
 				  					<td><span id="leaguetable_8_name"></span>
 					  				</td>
@@ -1035,18 +1035,18 @@
 						<table id="leaguetable_grid_rowsBis" cellpadding="0">
 							<thead>
 								<tr>
-									<th class="header_league_table" id="LeaguePositionBis"></th>
-									<th class="header_league_table" id="LeagueTeamBis"></th>
+									<th class="header_league_table"><span id="LeaguePositionBis"></span></th>
+									<th class="header_league_table"><span id="LeagueTeamBis"></span></th>
 									<th class="header_league_table"></th>
-									<th class="header_league_table" id="LeaguePlayedBis"></th>
-									<th class="header_league_table" id="LeagueGoalsBis" colspan="3"></th>
-									<th class="header_league_table" id="LeagueGoalDiffBis"></th>
-									<th class="header_league_table" id="LeaguePointsBis"></th>
+									<th class="header_league_table"><span id="LeaguePlayedBis"></span></th>
+									<th class="header_league_table" colspan="3"><span  id="LeagueGoalsBis"></span></th>
+									<th class="header_league_table"><span id="LeagueGoalDiffBis"></span></th>
+									<th class="header_league_table"><span id="LeaguePointsBis"></span></th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr id="leaguetable_1Bis">
-									<td><span>1.</span>
+									<td><span>1</span>
 									</td>
 									<td><span id="leaguetable_1_nameBis"></span>
 									</td>
@@ -1067,7 +1067,7 @@
 									</td>
 								</tr>
 								<tr id="leaguetable_2Bis">
-									<td><span>2.</span>
+									<td><span>2</span>
 									</td>
 									<td><span id="leaguetable_2_nameBis"></span>
 									</td>
@@ -1088,7 +1088,7 @@
 									</td>
 								</tr>
 								<tr id="leaguetable_3Bis">
-									<td><span>3.</span>
+									<td><span>3</span>
 									</td>
 									<td><span id="leaguetable_3_nameBis"></span>
 									</td>
@@ -1109,7 +1109,7 @@
 									</td>
 								</tr>
 								<tr id="leaguetable_4Bis">
-									<td><span>4.</span>
+									<td><span>4</span>
 									</td>
 									<td><span id="leaguetable_4_nameBis"></span>
 									</td>
@@ -1130,7 +1130,7 @@
 									</td>
 								</tr>
 								<tr id="leaguetable_5Bis">
-									<td><span>5.</span>
+									<td><span>5</span>
 									</td>
 									<td><span id="leaguetable_5_nameBis"></span>
 									</td>
@@ -1151,7 +1151,7 @@
 									</td>
 								</tr>
 								<tr id="leaguetable_6Bis">
-									<td><span>6.</span>
+									<td><span>6</span>
 									</td>
 									<td><span id="leaguetable_6_nameBis"></span>
 									</td>
@@ -1172,7 +1172,7 @@
 									</td>
 								</tr>
 								<tr id="leaguetable_7Bis">
-									<td><span>7.</span>
+									<td><span>7</span>
 									</td>
 									<td><span id="leaguetable_7_nameBis"></span>
 									</td>
@@ -1193,7 +1193,7 @@
 									</td>
 								</tr>
 								<tr id="leaguetable_8Bis">
-									<td><span>8.</span>
+									<td><span>8</span>
 									</td>
 									<td><span id="leaguetable_8_nameBis"></span>
 									</td>
