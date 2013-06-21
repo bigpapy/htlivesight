@@ -41,6 +41,7 @@ htlivesight.Team.ParseMyData = function (xml, teamKind) {
 				document.getElementById("teamName").innerHTML=myTeam.name;
 			}else if(teamKind=="mySecondTeam"){
 				htlivesight.Teams.mySecondTeam = myTeam;
+				document.getElementById("secondTeamName").innerHTML=", "+myTeam.name;
 			}
 
 			htlivesight.Teams.update(myTeam);
@@ -55,7 +56,7 @@ htlivesight.Team.ParseMyData = function (xml, teamKind) {
 		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.LOGIN2);
 		}
 	if(teamKind=="mySecondTeam"){
-	htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TEAM);
+	htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_STADIUM);
 	}
 };
 htlivesight.Team.ParseMyUserData = function (xml) {
@@ -67,7 +68,8 @@ htlivesight.Team.ParseTeamData = function (xml) {
 		var name = htlivesight.Team.ParseTeamName(xml);
 		var shortName = htlivesight.Team.ParseShortTeamName(xml);
 		var youth = htlivesight.Team.ParseYouth(xml);
-		team = new htlivesight.Team(id, name, shortName, youth);
+	//	var arena = htlivesight.Team.ParseArena(xml);
+		team = new htlivesight.Team(id, name, shortName, youth/*, arena*/);
 		team.league = htlivesight.Team.ParseLeague(xml); //Team.ParseLeague return league
 		return team;
 	} catch(e) {
@@ -89,13 +91,19 @@ htlivesight.Team.ParseYouth = function (xml) {
 };
 //this function is never used
 htlivesight.Team.ParseArena = function (xml) {
-	var id, name;
+	//var id, name;
 	try {
-		id = parseInt(htlivesight.Util.Parse("ArenaID",xml),10);
-		alert("ArenaID: " + id);
-		name = htlivesight.Util.Parse("ArenaName",xml);
-		alert("Arenaname: "+ name);	  
-		var arena = new Arena(id, name);
+		
+		var arena = new Object();
+		arena.id = parseInt(htlivesight.Util.Parse("ArenaID",xml),10);
+		//alert("ArenaID: " + id);
+		arena.name = htlivesight.Util.Parse("ArenaName",xml);
+		try{
+		arena.id2 = xml.getElementsByTagName("ArenaID")[1].textContent;
+		arena.name2 = xml.getElementsByTagName("ArenaName")[1].textContent;
+		}catch(e){console.log("no second arena");};
+		//alert("Arenaname: "+ name);	  
+		//var arena = new Arena(id, name);
 		return arena;
 	} catch(e) { alert("Team.ParseArena: " + e);
 	}
