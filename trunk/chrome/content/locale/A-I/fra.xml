@@ -283,7 +283,7 @@
 <TacticType>Tactique</TacticType>
 <TacticSkill>Niveau de la tactique</TacticSkill>
 <BallPosses>Possession</BallPosses>
-<SpecialEvent>Situations Exceptionnelles (SE)</SpecialEvent>
+<SpecialEvent>Situation Exceptionnelle</SpecialEvent>
 <Normal>Normal</Normal>
 <PIC>Tranquille (PIC)</PIC>
 <MOTS>Match le plus important (MOTS)</MOTS>

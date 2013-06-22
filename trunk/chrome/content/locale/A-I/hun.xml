@@ -343,30 +343,30 @@
 <MidHatStats>HatStats középpálya</MidHatStats>
 <AttHatStats>HatStats támadás</AttHatStats>
 <TotHatStats>Teljes HatStats</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
-<ReLiveControls>Relive Controls</ReLiveControls>
-<ExtendImage>Extend image</ExtendImage>
-<RepeatImage>Repeat image</RepeatImage>
-<Background>Background</Background>
-<MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<CopiedToClipboard>Vágólapra kimásolva!</CopiedToClipboard>
+<ReLiveControls>Re-Live Irányítópult</ReLiveControls>
+<ExtendImage>Kép nyújtása</ExtendImage>
+<RepeatImage>Kép ismételve</RepeatImage>
+<Background>Háttér</Background>
+<MuteAll>Hang kapcsoló</MuteAll>
+<Technical>Technikás</Technical>
+<Quick>Gyors</Quick>
+<Powerful>Erőteljes</Powerful>
+<Unpredictable>Kiszámíthatatlan</Unpredictable>
+<Header>Jól fejelő</Header>
+<Regainer>Szívós</Regainer>
+<SecondTeamIdLabel>Második csapat azonosítója</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Második csapat hangjai megegyeznek az elsőével</SecondSoundEqualFirst>
+<Keeper>Kapus</Keeper>
+<Defending>Védekezés</Defending>
+<Playmaking>Játékszervezés</Playmaking>
+<Winger>Szélsőjáték</Winger>
+<Passing>Átadás</Passing>
+<Scoring>Gólszerzés</Scoring>
+<SetPieces>Pontrúgás</SetPieces>
+<Age>Kor</Age>
+<Form>Forma</Form>
+<Stamina>Erőnlét</Stamina>
+<Experience>Tapasztalat</Experience>
+<Loyalty>Hűség</Loyalty>
 </Htlivesight>
