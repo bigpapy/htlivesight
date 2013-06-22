@@ -357,16 +357,16 @@
 <Regainer>Atsigaunantis</Regainer>
 <SecondTeamIdLabel>Įveskite antrosios komandos ID</SecondTeamIdLabel>
 <SecondSoundEqualFirst>Padaryti antrosios komandos garsus tokius pat</SecondSoundEqualFirst>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<Keeper>Vartininkas</Keeper>
+<Defending>Gynyba</Defending>
+<Playmaking>Žaidimo org.</Playmaking>
+<Winger>Skersavimas</Winger>
+<Passing>Perdavimai</Passing>
+<Scoring>Puolimas</Scoring>
+<SetPieces>St. Padėtys</SetPieces>
+<Age>Amžius</Age>
+<Form>Forma</Form>
+<Stamina>Ištvermė</Stamina>
+<Experience>Patirtis</Experience>
+<Loyalty>Lojalumas</Loyalty>
 </Htlivesight>

@@ -348,25 +348,25 @@
 <ExtendImage>Paplašināt attēlu</ExtendImage>
 <RepeatImage>Atkārtot attēlu</RepeatImage>
 <Background>Fons</Background>
-<MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<MuteAll>Skaņa</MuteAll>
+<Technical>Tehnisks</Technical>
+<Quick>Ātrs</Quick>
+<Powerful>Atlētisks</Powerful>
+<Unpredictable>Neprognozējams</Unpredictable>
+<Header>Spēle ar galvu</Header>
+<Regainer>Atguvējs</Regainer>
+<SecondTeamIdLabel>Ievadiet otrās komandas ID</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Otrās komandas skaņas identiskas pirmās komandas skaņām</SecondSoundEqualFirst>
+<Keeper>Vārtsargs</Keeper>
+<Defending>Aizsardzība</Defending>
+<Playmaking>Saspēle</Playmaking>
+<Winger>Malējā pussardzība</Winger>
+<Passing>Piespēles</Passing>
+<Scoring>Realizācija</Scoring>
+<SetPieces>Standartsituācijas</SetPieces>
+<Age>Vecums</Age>
+<Form>Gatavība spēlei</Form>
+<Stamina>Izturība</Stamina>
+<Experience>Pieredze</Experience>
+<Loyalty>Lojalitāte</Loyalty>
 </Htlivesight>

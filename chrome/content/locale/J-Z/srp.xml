@@ -357,16 +357,16 @@
 <Regainer>Регенерисање</Regainer>
 <SecondTeamIdLabel>Унесите ИД додатног клуба</SecondTeamIdLabel>
 <SecondSoundEqualFirst>Постави исте звуке као за примарни клуб</SecondSoundEqualFirst>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<Keeper>На голу</Keeper>
+<Defending>Одбрана</Defending>
+<Playmaking>Плејмејкинг</Playmaking>
+<Winger>Крило</Winger>
+<Passing>Додавање</Passing>
+<Scoring>Напад</Scoring>
+<SetPieces>Прекиди</SetPieces>
+<Age>Старост</Age>
+<Form>Форма</Form>
+<Stamina>Кондиција</Stamina>
+<Experience>Искуство</Experience>
+<Loyalty>Оданост</Loyalty>
 </Htlivesight>

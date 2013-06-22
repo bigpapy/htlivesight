@@ -349,24 +349,24 @@
 <RepeatImage>Repetir la imagen</RepeatImage>
 <Background>Fondo</Background>
 <MuteAll>Interruptor de sonido</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<Technical>Técnico</Technical>
+<Quick>Rápido</Quick>
+<Powerful>Potente</Powerful>
+<Unpredictable>Impredecible</Unpredictable>
+<Header>Cabeceador</Header>
+<Regainer>Recuperador</Regainer>
+<SecondTeamIdLabel>Insetar el ID de tu segundo equipo</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Los sonidos del segundo equipo son iguales a los del primero</SecondSoundEqualFirst>
+<Keeper>Portería</Keeper>
+<Defending>Defensa</Defending>
+<Playmaking>Jugadas</Playmaking>
+<Winger>Lateral</Winger>
+<Passing>Pases</Passing>
+<Scoring>Anotación</Scoring>
+<SetPieces>Balón Parado</SetPieces>
+<Age>Edad</Age>
+<Form>Forma</Form>
+<Stamina>Condición</Stamina>
+<Experience>Experiencia</Experience>
+<Loyalty>Lealtad</Loyalty>
 </Htlivesight>

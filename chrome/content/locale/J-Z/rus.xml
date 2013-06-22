@@ -355,18 +355,18 @@
 <Unpredictable>Непредсказуемый</Unpredictable>
 <Header>Игра головой</Header>
 <Regainer>Регейнер</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<SecondTeamIdLabel>Введите ID второй команды</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Звуки для второй команды те же, что у первой</SecondSoundEqualFirst>
+<Keeper>Вратарь</Keeper>
+<Defending>Защита</Defending>
+<Playmaking>Полузащита</Playmaking>
+<Winger>Фланг</Winger>
+<Passing>Пас</Passing>
+<Scoring>Нападение</Scoring>
+<SetPieces>Стандарты</SetPieces>
+<Age>Возраст</Age>
+<Form>Форма</Form>
+<Stamina>Выносливость</Stamina>
+<Experience>Опыт</Experience>
+<Loyalty>Преданность</Loyalty>
 </Htlivesight>

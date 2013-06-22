@@ -355,18 +355,18 @@
 <Unpredictable>Непередбачуваний</Unpredictable>
 <Header>Гра головою</Header>
 <Regainer>Регейнер</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<SecondTeamIdLabel>Введіть ID другої команди</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Ті ж самі звуки для другої команди, що й для першої</SecondSoundEqualFirst>
+<Keeper>Воротарство</Keeper>
+<Defending>Захист</Defending>
+<Playmaking>Створення гри</Playmaking>
+<Winger>Гра на краю</Winger>
+<Passing>Пас</Passing>
+<Scoring>Напад</Scoring>
+<SetPieces>Стандарти</SetPieces>
+<Age>Вік</Age>
+<Form>Стан</Form>
+<Stamina>Витривалість</Stamina>
+<Experience>Досвід</Experience>
+<Loyalty>Вірність</Loyalty>
 </Htlivesight>
