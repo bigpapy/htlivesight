@@ -489,9 +489,17 @@ htlivesight.DOM = {
 						newElement = document.createTextNode(child.textContent);		    
 					} else if (child.nodeName == "a") {
 						/** log used to build links*/
-						console.log(child);
-						console.log(child.href)
+					//	console.log(child);
+					//	var href = child.getAttribute("href");
+					//	console.log("href = "+href);
+					//	hrefArray = href.split("=");
+					//	console.log(hrefArray[1]);
+					//linkArray = stringa.split("\"");
+					//	console.log("linkArray[1] = "+linkArray[1]);
 						newElement = document.createElementNS("http://www.w3.org/1999/xhtml", "em");
+						newElement.addEventListener("click", function(href){ return function(e){window.open("http://www.hattrick.org/goto.ashx?path="+href);};}(href),true);
+						newElement.addEventListener("mouseover", function(){htlivesight.DOM.ShowLink(this);});
+						newElement.addEventListener("mouseout", function(){htlivesight.DOM.HideLink(this);});
 						newElement.setAttribute("class", "player_name");
 						newElement.appendChild(document.createTextNode(child.firstChild.textContent));		    
 					} else {
