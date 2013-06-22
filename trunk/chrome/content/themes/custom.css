@@ -394,7 +394,8 @@ td.event_icon + td.event_icon{
 padding-right: 2px;
 }
 em.player_name{
-font-weight: bold; 
+font-weight: bold;
+cursor:pointer;
 }
 
 
