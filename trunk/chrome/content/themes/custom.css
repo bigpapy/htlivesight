@@ -363,7 +363,7 @@ span.arena_name{
 	display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  width: 180px;
+  width: 190px;
   text-align: right;	
 }
 
@@ -404,6 +404,7 @@ cursor:pointer;
 */
 /* bigpapy: fixing select language background */
 #lang-list option{background-color: transparent;}
+#sourceSystem option{background-color: transparent;}
 #reLiveSpeed option{background-color: transparent;}
 #reLiveSpeedPanel option{background-color: transparent;}
 #hattrickServer option{background-color: transparent;}

@@ -1,9 +1,10 @@
 if (!htlivesight) var htlivesight = {};
-htlivesight.Team = function Team(id, name, shortName, youth) {
+htlivesight.Team = function Team(id, name, shortName, youth, arenaID) {
 	this.id = id;
 	this.name = name;
 	this.shortName = shortName;
 	this.youth = (youth=="youth"||youth=="Youth"||youth=="True")?"True":"False";
+	this.arenaID = arenaID;
 	this.addTeamToFriendsPopup=null;
 	this.playerList = new Object();
 };
@@ -68,8 +69,10 @@ htlivesight.Team.ParseTeamData = function (xml) {
 		var name = htlivesight.Team.ParseTeamName(xml);
 		var shortName = htlivesight.Team.ParseShortTeamName(xml);
 		var youth = htlivesight.Team.ParseYouth(xml);
+		var arenaID = htlivesight.Util.Parse("ArenaID",xml);
+	//	alert("teamName = "+name+"arenaID ="+arenaID);
 	//	var arena = htlivesight.Team.ParseArena(xml);
-		team = new htlivesight.Team(id, name, shortName, youth/*, arena*/);
+		team = new htlivesight.Team(id, name, shortName, youth, arenaID);
 		team.league = htlivesight.Team.ParseLeague(xml); //Team.ParseLeague return league
 		return team;
 	} catch(e) {

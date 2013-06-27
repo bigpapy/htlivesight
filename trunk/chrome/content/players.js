@@ -153,6 +153,9 @@ htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
 	$("."+playerClass).each(function() {
 		if(!$(this).hasClass("withSpecialty")){
 			$(this).text($(this).text()+" "+htlivesight.players.specialtyChar(specialty));
+			$(this).addClass("withSpecialty");
+			}
+		if(!$(this).hasClass("withTitle")){
 			$(this).attr('title', ''+htlivesight.Player.List["_"+playerId+"_"+youth].firstName+'\n'+
 		//			((htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad=="True")?"":" ⚑")+'\n'+
 					htlivesight.Util.Parse("Age",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].age + ' ' +
@@ -172,7 +175,7 @@ htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
 					((htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill)?("\n"+htlivesight.Util.Parse("Scoring",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill):"")+
 					((htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill)?("\n"+htlivesight.Util.Parse("SetPieces",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill):""));
 			//if (youth=="true")console.log("keeper = "+htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill);
-			$(this).addClass("withSpecialty");
+			$(this).addClass("withTitle");
 		}
 	});
 };
