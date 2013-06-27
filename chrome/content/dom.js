@@ -466,19 +466,24 @@ htlivesight.DOM = {
 		},
 		createTextEventElement: function(event) {
 			try{ // added by bigpapy to debug from XUL to HTML
-				//console.log("event.text= "+event.text);
+			//	console.log("event.text= "+event.text);
 				var cleanedText = htlivesight.Util.cleanTags(event.text);
-				//console.log("cleanedText= "+cleanedText);
+			//	console.log("cleanedText= "+cleanedText);
 				var prefs = htlivesight.prefs;
 				
 				//fix for sponsors in best player choice (event 041)
-				if (!(event.key.A == 0 && event.key.BC == 41)){
+			//	if (!(event.key.A == 0 && event.key.BC == 41)){
 				  cleanedText= htlivesight.Util.CleanText2(cleanedText);
-				}
+			//	}
 				// end fix for sponsors in best player choice (event 041)
-				
-				//console.log("cleanedText2= "+cleanedText);
+				/* fix for single quote in sponsor href begin*/
+				//  cleanedText= cleanedText.replace("='/","=\"/");
+				//  cleanedText= cleanedText.replace("'&gt;","\">");
+				  cleanedText = cleanedText.replace(/<a href=('|")\/Goto.ashx\?path=(((?!Club\/Players).)*)<\/a>/,"")
+				  /* fix for single quote in sponsor href end*/  
+			//	console.log("cleanedText2= "+cleanedText);
 				var resultDoc = htlivesight.DOM.parser.parseFromString("<root>" + cleanedText + "</root>","text/xml");
+			//	console.log(resultDoc);
 				var nodeList = resultDoc.documentElement.childNodes;
 				var retElement = document.createElement("td");
 				retElement.setAttribute("class", "event_text");
@@ -489,20 +494,30 @@ htlivesight.DOM = {
 						newElement = document.createTextNode(child.textContent);		    
 					} else if (child.nodeName == "a") {
 						/** log used to build links*/
-					//	console.log(child);
-					//	var href = child.getAttribute("href");
+				//		console.log(child);
+						var href = child.getAttribute("href");
 					//	console.log("href = "+href);
 					//	hrefArray = href.split("=");
 					//	console.log(hrefArray[1]);
 					//linkArray = stringa.split("\"");
 					//	console.log("linkArray[1] = "+linkArray[1]);
+						var classPostfix = "";
+						var playerId = "";
+						if (href.indexOf("playerId") >= 0){
+							classPostfix = " withSpecialty";
+							playerId=href.match(/\d+/);
+						}else if (href.indexOf("YouthPlayerID") >= 0){
+							classPostfix = "_youth withSpecialty";
+							playerId=href.match(/\d+/);
+						}
 						newElement = document.createElementNS("http://www.w3.org/1999/xhtml", "em");
 						newElement.addEventListener("click", function(href){ return function(e){window.open("http://www.hattrick.org/goto.ashx?path="+href);};}(href),true);
 						newElement.addEventListener("mouseover", function(){htlivesight.DOM.ShowLink(this);});
 						newElement.addEventListener("mouseout", function(){htlivesight.DOM.HideLink(this);});
-						newElement.setAttribute("class", "player_name");
+						newElement.setAttribute("class", "player_name"+ " "+playerId+classPostfix);
 						newElement.appendChild(document.createTextNode(child.firstChild.textContent));		    
 					} else {
+					//	console.log(child);
 						newElement = null;
 					}
 					if (newElement) retElement.appendChild(newElement);

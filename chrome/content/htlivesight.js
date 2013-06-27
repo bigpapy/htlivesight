@@ -191,16 +191,16 @@ var htlivesight = {
 			}catch(e){alert(e);}
 		},
 		GetMyArena: function(){
-			console.log("loading first team arena details");
-			htlivesight.matchDetails.HTTPGetArena(htlivesight.Teams.myTeam.id);
-			console.log("loaded first team arena details");
+		//	console.log("loading first team arena details");
+			htlivesight.matchDetails.HTTPGetArena(htlivesight.Teams.myTeam.arenaID,htlivesight.Teams.myTeam.id);
+		//	console.log("loaded first team arena details");
 		},
 		GetMyArena2: function(){
 			try{
 				if(parseInt(document.getElementById("secondTeamId").value)){
-					console.log("loading second team arena details");
-					htlivesight.matchDetails.HTTPGetArena(htlivesight.Teams.mySecondTeam.id);
-					console.log("loaded second team arena details");
+				//	console.log("loading second team arena details with teamId = "+htlivesight.Teams.mySecondTeam.id);
+					htlivesight.matchDetails.HTTPGetArena(htlivesight.Teams.mySecondTeam.arenaID, htlivesight.Teams.mySecondTeam.id);
+				//	console.log("loaded second team arena details with teamId = "+htlivesight.Teams.mySecondTeam.id);
 				}else{
 					htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TEAM);
 				}
