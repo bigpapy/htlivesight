@@ -466,9 +466,9 @@ htlivesight.DOM = {
 		},
 		createTextEventElement: function(event) {
 			try{ // added by bigpapy to debug from XUL to HTML
-			//	console.log("event.text= "+event.text);
+				//console.log("event.text= "+event.text);
 				var cleanedText = htlivesight.Util.cleanTags(event.text);
-			//	console.log("cleanedText= "+cleanedText);
+				//console.log("cleanedText= "+cleanedText);
 				var prefs = htlivesight.prefs;
 				
 				//fix for sponsors in best player choice (event 041)
@@ -483,7 +483,7 @@ htlivesight.DOM = {
 				  /* fix for single quote in sponsor href end*/  
 			//	console.log("cleanedText2= "+cleanedText);
 				var resultDoc = htlivesight.DOM.parser.parseFromString("<root>" + cleanedText + "</root>","text/xml");
-			//	console.log(resultDoc);
+				//console.log(resultDoc);
 				var nodeList = resultDoc.documentElement.childNodes;
 				var retElement = document.createElement("td");
 				retElement.setAttribute("class", "event_text");
@@ -515,7 +515,7 @@ htlivesight.DOM = {
 						newElement.addEventListener("mouseover", function(){htlivesight.DOM.ShowLink(this);});
 						newElement.addEventListener("mouseout", function(){htlivesight.DOM.HideLink(this);});
 						newElement.setAttribute("class", "player_name"+ " "+playerId+classPostfix);
-						newElement.appendChild(document.createTextNode(child.firstChild.textContent));		    
+						newElement.appendChild(document.createTextNode(child.firstChild.textContent));
 					} else {
 					//	console.log(child);
 						newElement = null;
@@ -575,6 +575,7 @@ htlivesight.DOM.CreateElementLiveBox= function(match) {
 		hbox.setAttribute("id", "live_" + match.id + "_" + match.sourceSystem);
   	child = htlivesight.DOM.CreateElementGroupboxLiveMatch(match);
 		hbox.appendChild(child);
+	//	$( "#live_" + match.id + "_" + match.sourceSystem).resizable({containment: "#live_box",handles: "e"}).parent('.ui-wrapper').draggable({snap: "#live_box, table", snapTolerance: 10, cancel: ".ev_rows, .placardrow, .iconzone" });
 	}catch(e){alert("CreateElementGroupboxLiveMatch: ")+e;}// added by bigpapy to debug from XML to HTML
 };
 
@@ -1315,7 +1316,10 @@ htlivesight.DOM.UpdateLiveEvents=function(match) {
 					lastrow=row; // top row is the last one
 				}else{
 					rows.appendChild(row);// insert at the bottom of the list.
-				}	
+				}
+				//$("#ev_row_"+match.id + "_" + match.sourceSystem+"_"+i).effect("highlight","swing", 2000);
+				//$("#ev_row_"+match.id + "_" + match.sourceSystem+"_"+i).effect("highlight",{'color': '#FFFFFF', 'duration': 2000});
+				//$("#ev_row_"+match.id + "_" + match.sourceSystem+"_"+i).show("highlight","swing", 2000);
 				match.event.dom.join(row);
 			}
 		};
@@ -1847,7 +1851,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 		}
 		
 		var teamName=document.getElementById("short_home_name_" + match.id + "_" + match.sourceSystem);
-		teamName.innerHTML = htlivesight.DOM.getTextContent(match.home.team.shortName);
+		teamName.innerHTML = htlivesight.DOM.getTextContent(match.home.team.name);
 		if(htlivesight.Friends.isFriend(match.home.team.id,match.sourceSystem)){
 			if(htlivesight.Teams.mySecondTeam &&(match.home.team.id == htlivesight.Teams.mySecondTeam.id)) htlivesight.Util.AddClass(teamName,'short_own'); 
 			else
@@ -1862,7 +1866,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 		document.getElementById("separator_" + match.id + "_" + match.sourceSystem).innerHTML = ":";
 		document.getElementById("short_away_goals_" + match.id + "_" + match.sourceSystem).innerHTML = match.away.goals;
 		teamName=document.getElementById("short_away_name_" + match.id + "_" + match.sourceSystem);
-		teamName.innerHTML = htlivesight.DOM.getTextContent(match.away.team.shortName);
+		teamName.innerHTML = htlivesight.DOM.getTextContent(match.away.team.name);
 		if(htlivesight.Friends.isFriend(match.away.team.id,match.sourceSystem)){
 			if(htlivesight.Teams.mySecondTeam && match.away.team.id == htlivesight.Teams.mySecondTeam.id) htlivesight.Util.AddClass(teamName,'short_own'); 
 			else

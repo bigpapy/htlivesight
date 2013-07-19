@@ -70,8 +70,6 @@ htlivesight.Team.ParseTeamData = function (xml) {
 		var shortName = htlivesight.Team.ParseShortTeamName(xml);
 		var youth = htlivesight.Team.ParseYouth(xml);
 		var arenaID = htlivesight.Util.Parse("ArenaID",xml);
-	//	alert("teamName = "+name+"arenaID ="+arenaID);
-	//	var arena = htlivesight.Team.ParseArena(xml);
 		team = new htlivesight.Team(id, name, shortName, youth, arenaID);
 		team.league = htlivesight.Team.ParseLeague(xml); //Team.ParseLeague return league
 		return team;
@@ -99,14 +97,11 @@ htlivesight.Team.ParseArena = function (xml) {
 		
 		var arena = new Object();
 		arena.id = parseInt(htlivesight.Util.Parse("ArenaID",xml),10);
-		//alert("ArenaID: " + id);
 		arena.name = htlivesight.Util.Parse("ArenaName",xml);
 		try{
 		arena.id2 = xml.getElementsByTagName("ArenaID")[1].textContent;
 		arena.name2 = xml.getElementsByTagName("ArenaName")[1].textContent;
 		}catch(e){console.log("no second arena");};
-		//alert("Arenaname: "+ name);	  
-		//var arena = new Arena(id, name);
 		return arena;
 	} catch(e) { alert("Team.ParseArena: " + e);
 	}
