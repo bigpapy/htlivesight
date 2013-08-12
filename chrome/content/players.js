@@ -80,6 +80,15 @@ htlivesight.players.ParseGet = function(xml,playerId, youth){
 		
   		var isAbroad = xml.getElementsByTagName("IsAbroad")[0].textContent;
 	  	htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad = isAbroad||'';
+	  	
+	  	var agreeability = xml.getElementsByTagName("Agreeability")[0].textContent;
+	  	htlivesight.Player.List["_"+playerId+"_"+youth].agreeability = htlivesight.players.agreeability(agreeability)||'';
+	  	
+	  	var aggressiveness = xml.getElementsByTagName("Aggressiveness")[0].textContent;
+	  	htlivesight.Player.List["_"+playerId+"_"+youth].aggressiveness = htlivesight.players.aggressiveness(aggressiveness)||'';
+	  	
+	  	var honesty = xml.getElementsByTagName("Honesty")[0].textContent;
+	  	htlivesight.Player.List["_"+playerId+"_"+youth].honesty = htlivesight.players.honesty(honesty)||'';
 		}
 	
   		var keeperSkill = xml.getElementsByTagName("KeeperSkill")[0].textContent;
@@ -141,6 +150,63 @@ htlivesight.players.specialtyChar = function (specialty){
 	};
 };
 
+htlivesight.players.agreeability = function (agreeability){
+
+	switch (agreeability){
+	case "0": return htlivesight.Util.Parse("NastyFellow",htlivesight.data[0])+" (0)";
+	break;
+	case "1": return htlivesight.Util.Parse("ControversialPerson",htlivesight.data[0])+" (1)";
+	break;
+	case "2": return htlivesight.Util.Parse("PleasantGuy",htlivesight.data[0])+" (2)";
+	break;
+	case "3": return htlivesight.Util.Parse("SympatheticGuy",htlivesight.data[0])+" (3)";
+	break;
+	case "4": return htlivesight.Util.Parse("PopularGuy",htlivesight.data[0])+" (4)";
+	break;
+	case "5": return htlivesight.Util.Parse("BelovedTeamMember",htlivesight.data[0])+" (5)";
+	break;
+	default: return "";
+	};
+};
+
+htlivesight.players.honesty = function (honesty){
+
+	switch (honesty){
+	case "0": return htlivesight.Util.Parse("Infamous",htlivesight.data[0])+" (0)";
+	break;
+	case "1": return htlivesight.Util.Parse("Dishonest",htlivesight.data[0])+" (1)";
+	break;
+	case "2": return htlivesight.Util.Parse("Honest",htlivesight.data[0])+" (2)";
+	break;
+	case "3": return htlivesight.Util.Parse("Upright",htlivesight.data[0])+" (3)";
+	break;
+	case "4": return htlivesight.Util.Parse("Righteous",htlivesight.data[0])+" (4)";	
+	break;
+	case "5": return htlivesight.Util.Parse("Saintly",htlivesight.data[0])+" (5)";
+	break;
+	default: return "";
+	};
+};
+
+htlivesight.players.aggressiveness = function (aggressiveness){
+
+	switch (aggressiveness){
+	case "0": return htlivesight.Util.Parse("Tranquil",htlivesight.data[0])+" (0)";
+	break;
+	case "1": return htlivesight.Util.Parse("Calm",htlivesight.data[0])+" (1)";
+	break;
+	case "2": return htlivesight.Util.Parse("Balanced",htlivesight.data[0])+" (2)";
+	break;
+	case "3": return htlivesight.Util.Parse("Temperamental",htlivesight.data[0])+" (3)";
+	break;
+	case "4": return htlivesight.Util.Parse("Fiery",htlivesight.data[0])+" (4)";
+	break;
+	case "5": return htlivesight.Util.Parse("Unstable",htlivesight.data[0])+" (5)";
+	break;
+	default: return "";
+	};
+};
+
 htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
 
 	var playerClass;
@@ -160,6 +226,9 @@ htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
 		//			((htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad=="True")?"":" ⚑")+'\n'+
 					htlivesight.Util.Parse("Age",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].age + ' ' +
 					htlivesight.Util.Parse("TimeDays",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].ageDays+'\n' +
+					((youth!=="true")?(htlivesight.Util.Parse("Agreeability",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].agreeability+"\n"):"")+
+					((youth!=="true")?(htlivesight.Util.Parse("Aggressiveness",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].aggressiveness+"\n"):"")+
+					((youth!=="true")?(htlivesight.Util.Parse("Honesty",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].honesty+"\n"):"")+
 					((youth!=="true")?(htlivesight.Util.Parse("Form",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].form+"\n"):"")+
 				((youth!=="true")?(htlivesight.Util.Parse("Stamina",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].stamina+'\n'):"")+
 					((youth!=="true")?(htlivesight.Util.Parse("Experience",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].experience+'\n'):"")+

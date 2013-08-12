@@ -8,6 +8,9 @@ htlivesight.Settings = {
 		startup: function() {
 			htlivesight.Settings.self = this;
 			this.preferences = htlivesight.Preferences.get();
+		  $(function() {
+		    $( "#tabs" ).tabs();
+		  });
 			htlivesight.Settings.load();
 		}, 
 		load: function() {
@@ -112,6 +115,16 @@ htlivesight.Settings = {
 			document.getElementById("whistle3SoundPath").value = prefs.personalization.whistle3SoundPath;
 			document.getElementById("whistleSoundPath").value = prefs.personalization.whistleSoundPath;
 			document.getElementById("hattrickSoundPath").value = prefs.personalization.hattrickSoundPath;
+			
+			document.getElementById("pressingSoundPath").value = prefs.personalization.pressingSoundPath;
+			document.getElementById("myBruisedSoundPath").value = prefs.personalization.myBruisedSoundPath;
+			document.getElementById("otherBruisedSoundPath").value = prefs.personalization.otherBruisedSoundPath;
+			document.getElementById("mySentOffSoundPath").value = prefs.personalization.mySentOffSoundPath;
+			document.getElementById("otherSentOffSoundPath").value = prefs.personalization.otherSentOffSoundPath;
+
+			document.getElementById("missFriendSoundPath").value = prefs.personalization.missFriendSoundPath;
+			document.getElementById("missOtherSoundPath").value = prefs.personalization.missOtherSoundPath;
+			
 			document.getElementById("myGoalCheck").checked = prefs.personalization.myGoalCheck;
 			document.getElementById("myGoalSoundPath").disabled = !prefs.personalization.myGoalCheck;
 			document.getElementById("opGoalCheck").checked = prefs.personalization.opGoalCheck;
@@ -145,7 +158,29 @@ htlivesight.Settings = {
 			document.getElementById("whistleCheck").checked = prefs.personalization.whistleCheck;
 			document.getElementById("whistleSoundPath").disabled = !prefs.personalization.whistleCheck;
 			document.getElementById("hattrickCheck").checked = prefs.personalization.hattrickCheck;
-			document.getElementById("hattrickSoundPath").disabled = !prefs.personalization.hattrickCheck;		
+			document.getElementById("hattrickSoundPath").disabled = !prefs.personalization.hattrickCheck;
+			
+			document.getElementById("pressingCheck").checked = prefs.personalization.pressingCheck;
+			document.getElementById("pressingSoundPath").disabled = !prefs.personalization.pressingCheck;
+			
+			document.getElementById("myBruisedCheck").checked = prefs.personalization.myBruisedCheck;
+			document.getElementById("myBruisedSoundPath").disabled = !prefs.personalization.myBruisedCheck;
+			
+			document.getElementById("otherBruisedCheck").checked = prefs.personalization.otherBruisedCheck;
+			document.getElementById("otherBruisedSoundPath").disabled = !prefs.personalization.otherBruisedCheck;
+			
+			document.getElementById("mySentOffCheck").checked = prefs.personalization.mySentOffCheck;
+			document.getElementById("mySentOffSoundPath").disabled = !prefs.personalization.mySentOffCheck;
+			
+			document.getElementById("otherSentOffCheck").checked = prefs.personalization.otherSentOffCheck;
+			document.getElementById("otherSentOffSoundPath").disabled = !prefs.personalization.otherSentOffCheck;
+			
+			document.getElementById("missFriendCheck").checked = prefs.personalization.missFriendCheck;
+			document.getElementById("missFriendSoundPath").disabled = !prefs.personalization.missFriendCheck;
+			
+			document.getElementById("missOtherCheck").checked = prefs.personalization.missOtherCheck;
+			document.getElementById("missOtherSoundPath").disabled = !prefs.personalization.missOtherCheck;
+			
 			document.getElementById("friendHomeColorCheck").checked = prefs.colors.friendHomeColorCheck;
 			document.getElementById("friendHomeColorCode").disabled = !prefs.colors.friendHomeColorCheck;
 			document.getElementById("friendHomeColorCode").value = "#"+prefs.colors.friendHomeColorCode;
@@ -228,7 +263,7 @@ htlivesight.Settings = {
 			document.getElementById("TabMatches").innerHTML=htlivesight.Util.Parse("TabMatches",data[0]);
 			document.getElementById("TabNotifications").innerHTML=htlivesight.Util.Parse("TabNotifications",data[0]);
 			document.getElementById("TabOther").innerHTML=htlivesight.Util.Parse("TabOther",data[0]);
-			document.getElementById("TabCustom").innerHTML=htlivesight.Util.Parse("TabCustom",data[0]);
+			document.getElementById("TabCustom").innerHTML=htlivesight.Util.Parse("CustomSounds",data[0]);
 			
 			document.getElementById("ThemesSelector").innerHTML=htlivesight.Util.Parse("Themes",data[0]);
 			document.getElementById("label_dark_theme").innerHTML=htlivesight.Util.Parse("Dark",data[0]);
@@ -278,16 +313,17 @@ htlivesight.Settings = {
 			// customization
 			document.getElementById("CustomIcons").innerHTML=htlivesight.Util.Parse("CustomIcons",data[0]);
 			document.getElementById("label_oldIcons").innerHTML=htlivesight.Util.Parse("CustomIconsOld",data[0]);
-			document.getElementById("CustomSounds").innerHTML=htlivesight.Util.Parse("CustomSounds",data[0]);
+		//	document.getElementById("CustomSounds").innerHTML=htlivesight.Util.Parse("CustomSounds",data[0]);
 			document.getElementById("label_weather").innerHTML=htlivesight.Util.Parse("CustomSoundsWeather",data[0]);
 			document.getElementById("label_whistleTime").innerHTML=htlivesight.Util.Parse("CustomSoundsTime",data[0]);
 			document.getElementById("label_weatherSE").innerHTML=htlivesight.Util.Parse("CustomSoundsSEW",data[0]);
 			document.getElementById("label_livefoxGoal").innerHTML=htlivesight.Util.Parse("CustomSoundsGoal",data[0]);
 			document.getElementById("label_noOpGoal").innerHTML=htlivesight.Util.Parse("CustomSoundsNoOpGoal",data[0]);
-			document.getElementById("PathSoundsNote1").innerHTML=htlivesight.Util.Parse("PathSoundsNote1",data[0]);
-			document.getElementById("PathSoundsNote2").innerHTML=htlivesight.Util.Parse("PathSoundsNote2",data[0]);
+			//document.getElementById("PathSoundsNote1").innerHTML=htlivesight.Util.Parse("PathSoundsNote1",data[0]);
+			//document.getElementById("PathSoundsNote2").innerHTML=htlivesight.Util.Parse("PathSoundsNote2",data[0]);
 //			goalsounds
-			document.getElementById("TabGoalSound").innerHTML=htlivesight.Util.Parse("TabGoalSound",data[0]);
+			document.getElementById("TabOptions").innerHTML=htlivesight.Util.Parse("MenuOptions",data[0]);
+			document.getElementById("TabGoalSound").innerHTML=htlivesight.Util.Parse("Goals",data[0]);
 			// my goals sound labels
 			document.getElementById("label_myGoalCheck").innerHTML=htlivesight.Util.Parse("PathSoundsMyGoal",data[0]);
 			document.getElementById("label_myGoalButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
@@ -313,7 +349,7 @@ htlivesight.Settings = {
 			document.getElementById("label_missGoalButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
 			document.getElementById("label_missGoalButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 //			meteo and injury sounds
-			document.getElementById("TabWheatherSound").innerHTML=htlivesight.Util.Parse("TabWheatherSound",data[0]);
+			document.getElementById("TabWheatherSound").innerHTML=htlivesight.Util.Parse("TabWeather",data[0]);
 			// sun sound
 			document.getElementById("label_sunCheck").innerHTML=htlivesight.Util.Parse("PathSoundsSun",data[0]);
 			document.getElementById("label_sunButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
@@ -339,7 +375,7 @@ htlivesight.Settings = {
 			document.getElementById("label_opBooButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
 			document.getElementById("label_opBooButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 //			begin/end half and booking sounds
-			document.getElementById("TabWhistleSound").innerHTML=htlivesight.Util.Parse("TabWhistleSound",data[0]);
+			document.getElementById("TabWhistleSound").innerHTML=htlivesight.Util.Parse("TabWhistleCard",data[0]);
 			// Whistle start sound
 			document.getElementById("label_whistleStartCheck").innerHTML=htlivesight.Util.Parse("PathSoundsWhistleStart",data[0]);
 			document.getElementById("label_whistleStartButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
@@ -360,6 +396,41 @@ htlivesight.Settings = {
 			document.getElementById("label_hattrickCheck").innerHTML=htlivesight.Util.Parse("PathSoundsHattrick",data[0]);
 			document.getElementById("label_hattrickButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
 			document.getElementById("label_hattrickButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+			document.getElementById("TabInjuries").innerHTML=htlivesight.Util.Parse("TabInjuries",data[0]);
+		// Pressing sound
+			document.getElementById("label_pressingCheck").innerHTML=htlivesight.Util.Parse("PathSoundsPressing",data[0]);
+			document.getElementById("label_pressingButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+			document.getElementById("label_pressingButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+		// my bruised sound
+		  document.getElementById("label_myBruisedCheck").innerHTML=htlivesight.Util.Parse("PathSoundsMyBruised",data[0]);
+			document.getElementById("label_myBruisedButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+			document.getElementById("label_myBruisedButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+		// other bruised sound
+			document.getElementById("label_otherBruisedCheck").innerHTML=htlivesight.Util.Parse("PathSoundsOtherBruised",data[0]);
+			document.getElementById("label_otherBruisedButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+			document.getElementById("label_otherBruisedButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+		// my sent off sound
+			document.getElementById("label_mySentOffCheck").innerHTML=htlivesight.Util.Parse("PathSoundsMySentOff",data[0]);
+			document.getElementById("label_mySentOffButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+			document.getElementById("label_mySentOffButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+		// other Sent Off sound
+			document.getElementById("label_otherSentOffCheck").innerHTML=htlivesight.Util.Parse("PathSoundsOtherSentOff",data[0]);
+			document.getElementById("label_otherSentOffButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+			document.getElementById("label_otherSentOffButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+
+			
+			document.getElementById("TabChances").innerHTML=htlivesight.Util.Parse("TabChances",data[0]);	
+		// miss friend sound labels
+			document.getElementById("label_missFriendCheck").innerHTML=htlivesight.Util.Parse("PathSoundsMissFriend",data[0]);
+			document.getElementById("label_missFriendButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+			document.getElementById("label_missFriendButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+			
+		// miss other sound labels
+			document.getElementById("label_missOtherCheck").innerHTML=htlivesight.Util.Parse("PathSoundsMissOther",data[0]);
+			document.getElementById("label_missOtherButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+			document.getElementById("label_missOtherButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+			
+			
 			document.getElementById("TabColors").innerHTML=htlivesight.Util.Parse("Colors",data[0]);
 			document.getElementById("CustomEventBackground").innerHTML=htlivesight.Util.Parse("EventBackground",data[0]);
 			document.getElementById("ChooseColor").innerHTML=htlivesight.Util.Parse("ColorPicker",data[0]);
@@ -383,6 +454,8 @@ htlivesight.Settings = {
 			document.getElementById("label_chkExtendBackground").innerHTML=htlivesight.Util.Parse("ExtendImage",data[0]);
 			document.getElementById("label_chkRepeatBackground").innerHTML=htlivesight.Util.Parse("RepeatImage",data[0]);
 			document.getElementById("CustomBackground").innerHTML=htlivesight.Util.Parse("Background",data[0]);
+			document.getElementById("visitOurSoundCollection").innerHTML=htlivesight.Util.Parse("VisitOurSoundCollection",data[0]);
+			
 			try{ //because it's present in settings.html but not in htlivesight.html
 				document.getElementById("OkButton").innerHTML=htlivesight.Util.Parse("ButtonOk",data[0]);
 				document.getElementById("CancelButton").innerHTML=htlivesight.Util.Parse("ButtonCancel",data[0]);

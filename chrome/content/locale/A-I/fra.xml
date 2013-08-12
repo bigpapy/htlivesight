@@ -118,7 +118,7 @@
 <OrganizationBreaks>Confusion</OrganizationBreaks>
 <Reorganize>Réorganisation</Reorganize>
 <NervesImportantThrillingGame>Nervosité due à l'enjeu</NervesImportantThrillingGame>
-<Bruised>Égratignure</Bruised>
+<Bruised>Pansement</Bruised>
 <Injuried>Blessure</Injuried>
 <ModeratelyInjuried>Blessure légère</ModeratelyInjuried>
 <BadlyInjuried>Blessure grave</BadlyInjuried>
@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Blessure de nos joueurs</PathSoundsMyBoo>
 <PathSoundsOpBoo>Blessure des joueurs de l'adversaire</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Début 1ère/2ème mi-temps</PathSoundsWhistleStart>
-<PathSoundsWhistle>Cartons jaune ou rouge</PathSoundsWhistle>
+<PathSoundsWhistle>Cartons jaunes</PathSoundsWhistle>
 <PathSoundsHattrick>Coup du chapeau (hattrick)</PathSoundsHattrick>
 <PathSoundsRestore>Restaurer</PathSoundsRestore>
 <PathSoundsPlay>Écouter</PathSoundsPlay>
@@ -369,4 +369,37 @@
 <Stamina>Endurance</Stamina>
 <Experience>Expérience</Experience>
 <Loyalty>Fidélité</Loyalty>
+<PathSoundsPressing>Pressing</PathSoundsPressing>
+<PathSoundsMyBruised>Pansement de nos joueurs</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Pansement des autres joueurs</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Mes cartons rouges</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Autres cartons rouges</PathSoundsOtherSentOff>
+<TabInjuries>Blessure</TabInjuries>
+<TabWeather>Météo</TabWeather>
+<TabWhistleCard>Sifflet/Carton</TabWhistleCard>
+<PathSoundsMissFriend>Occasion manquée de nos amis</PathSoundsMissFriend>
+<PathSoundsMissOther>Occasion manquée d'une autre équipe</PathSoundsMissOther>
+<TabChances>Occasion</TabChances>
+<Agreeability>Popularité</Agreeability>
+<Aggressiveness>Agressivité</Aggressiveness>
+<Honesty>Honnêteté</Honesty>
+<BelovedTeamMember>Type adulé par ses coéquipiers</BelovedTeamMember>
+<PopularGuy>Gars populaire</PopularGuy>
+<SympatheticGuy>Gars sympathique</SympatheticGuy>
+<PleasantGuy>Gars aimable</PleasantGuy>
+<ControversialPerson>Personnage controversé</ControversialPerson>
+<NastyFellow>Type désagréable</NastyFellow>
+<Saintly>Vertueux</Saintly>
+<Righteous>Intègre</Righteous>
+<Upright>Sincère</Upright>
+<Honest>Honnête</Honest>
+<Dishonest>Malhonnête</Dishonest>
+<Infamous>Fourbe</Infamous>
+<Unstable>Instable</Unstable>
+<Fiery>Impulsif</Fiery>
+<Temperamental>Caractériel</Temperamental>
+<Balanced>Équilibré</Balanced>
+<Calm>Calme</Calm>
+<Tranquil>Tranquille</Tranquil>
+<VisitOurSoundCollection>Visitez notre collection de sons</VisitOurSoundCollection>
 </Htlivesight>

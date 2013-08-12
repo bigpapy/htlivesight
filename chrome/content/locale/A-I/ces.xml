@@ -369,4 +369,37 @@
 <Stamina>Kondice</Stamina>
 <Experience>Zkušenosti</Experience>
 <Loyalty>Oddanost klubu</Loyalty>
+<PathSoundsPressing>Zvuk událostí týkající se taktiky pressing</PathSoundsPressing>
+<PathSoundsMyBruised>Zvuk zranění mého hráče</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Zvuk zranění hráče jiného týmu</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Zvuk červené karty mého hráče</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Zvuk červené karty hráče jiného týmu</PathSoundsOtherSentOff>
+<TabInjuries>Zranění</TabInjuries>
+<TabWeather>Počasí</TabWeather>
+<TabWhistleCard>Písknutí a karty</TabWhistleCard>
+<PathSoundsMissFriend>Zvuk neproměněné šance týmu v přátelích</PathSoundsMissFriend>
+<PathSoundsMissOther>Zvuk neproměněné šance jiného týmu</PathSoundsMissOther>
+<TabChances>Šance</TabChances>
+<Agreeability>Příjemnost</Agreeability>
+<Aggressiveness>Temperament</Aggressiveness>
+<Honesty>Čestnost</Honesty>
+<BelovedTeamMember>Miláček týmu </BelovedTeamMember>
+<PopularGuy>Oblíbený hráč</PopularGuy>
+<SympatheticGuy>Sympatický chlapík</SympatheticGuy>
+<PleasantGuy>Příjemný kluk</PleasantGuy>
+<ControversialPerson>Hašteřivý člověk</ControversialPerson>
+<NastyFellow>Protiva</NastyFellow>
+<Saintly>Učiněný andílek</Saintly>
+<Righteous>Spravedlivý</Righteous>
+<Upright>Férový</Upright>
+<Honest>Čestný</Honest>
+<Dishonest>Nečestný</Dishonest>
+<Infamous>Bezectný</Infamous>
+<Unstable>Labilní</Unstable>
+<Fiery>Prchlivý</Fiery>
+<Temperamental>Temperamentní</Temperamental>
+<Balanced>Vyrovnaný</Balanced>
+<Calm>Chladnokrevný</Calm>
+<Tranquil>Ledově klidný</Tranquil>
+<VisitOurSoundCollection>Navštivte náš přehled zvuků</VisitOurSoundCollection>
 </Htlivesight>

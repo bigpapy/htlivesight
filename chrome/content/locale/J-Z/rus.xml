@@ -369,4 +369,37 @@
 <Stamina>Выносливость</Stamina>
 <Experience>Опыт</Experience>
 <Loyalty>Преданность</Loyalty>
+<PathSoundsPressing>Звук для прессинга</PathSoundsPressing>
+<PathSoundsMyBruised>Звук для повреждения моего игрока</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Звук для повреждения чужого игрока</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Звук для удаления моего игрока</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Звук для удаления чужого игрока</PathSoundsOtherSentOff>
+<TabInjuries>Травмы</TabInjuries>
+<TabWeather>Погода</TabWeather>
+<TabWhistleCard>Свистки и карточки</TabWhistleCard>
+<PathSoundsMissFriend>Звук для гола в ворота моего друга</PathSoundsMissFriend>
+<PathSoundsMissOther>Звук для гола в ворота другой команды</PathSoundsMissOther>
+<TabChances>Моменты</TabChances>
+<Agreeability>Характер</Agreeability>
+<Aggressiveness>Темперамент</Aggressiveness>
+<Honesty>Честность</Honesty>
+<BelovedTeamMember>всеобщий любимец </BelovedTeamMember>
+<PopularGuy>популярный парень</PopularGuy>
+<SympatheticGuy>обаятельный парень</SympatheticGuy>
+<PleasantGuy>приятный парень</PleasantGuy>
+<ControversialPerson>неприятный человек</ControversialPerson>
+<NastyFellow>мерзкий тип</NastyFellow>
+<Saintly>святой</Saintly>
+<Righteous>праведный</Righteous>
+<Upright>справедливый</Upright>
+<Honest>честный</Honest>
+<Dishonest>нечестный</Dishonest>
+<Infamous>подлый</Infamous>
+<Unstable>агрессивный</Unstable>
+<Fiery>вспыльчивый</Fiery>
+<Temperamental>темпераментный</Temperamental>
+<Balanced>уравновешенный</Balanced>
+<Calm>спокойный</Calm>
+<Tranquil>безмятежный</Tranquil>
+<VisitOurSoundCollection>Посетите нашу коллекцию звуков</VisitOurSoundCollection>
 </Htlivesight>

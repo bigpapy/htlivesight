@@ -203,7 +203,7 @@
 <CustomSoundsSEW>Lyde for vejrbegivenheder</CustomSoundsSEW>
 <CustomSoundsGoal>Originale Livefox lyde</CustomSoundsGoal>
 <CustomSoundsNoOpGoal>Ingen lyd for modstanders scoring</CustomSoundsNoOpGoal>
-<PathSoundsMyGoal>Lyd ved selvmål</PathSoundsMyGoal>
+<PathSoundsMyGoal>Lyd for dine mål</PathSoundsMyGoal>
 <PathSoundsOpGoal>Lyd for modstanderscoring</PathSoundsOpGoal>
 <PathSoundsFrGoal>Lyd for scoring af venner</PathSoundsFrGoal>
 <PathSoundsOpFrGoal>Lyd for scoring af venners modstander</PathSoundsOpFrGoal>
@@ -343,30 +343,63 @@
 <MidHatStats>HatStats Midtbane</MidHatStats>
 <AttHatStats>HatStats Angreb</AttHatStats>
 <TotHatStats>Samlede HatStats</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
-<ReLiveControls>Relive Controls</ReLiveControls>
-<ExtendImage>Extend image</ExtendImage>
-<RepeatImage>Repeat image</RepeatImage>
-<Background>Background</Background>
-<MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
+<CopiedToClipboard>Kopierede!</CopiedToClipboard>
+<ReLiveControls>Relive kontrolpanel</ReLiveControls>
+<ExtendImage>Udvid billede</ExtendImage>
+<RepeatImage>Gentag billede</RepeatImage>
+<Background>Baggrund</Background>
+<MuteAll>Lyd indstillinger</MuteAll>
+<Technical>Tekniker</Technical>
+<Quick>Hurtig</Quick>
+<Powerful>Kraftfuld</Powerful>
+<Unpredictable>Uberegnelig</Unpredictable>
+<Header>Hovedstød</Header>
 <Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
+<SecondTeamIdLabel>Indsæt ekstra hold ID</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Lydindstillinger for ekstra hold som primær hold</SecondSoundEqualFirst>
+<Keeper>Målmandspil</Keeper>
+<Defending>Forsvarsspil</Defending>
+<Playmaking>Spilfordeling</Playmaking>
+<Winger>Fløjspil</Winger>
+<Passing>Pasningsspil</Passing>
+<Scoring>Målscoring</Scoring>
+<SetPieces>Dødbolde</SetPieces>
+<Age>Alder</Age>
 <Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<Stamina>Kondition</Stamina>
+<Experience>Rutine</Experience>
+<Loyalty>Loyalitet</Loyalty>
+<PathSoundsPressing>Lyd for presspil taktik</PathSoundsPressing>
+<PathSoundsMyBruised>Lyd for min spiller bliver mærket</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Lyd for modstander bliver mærket</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Lyd for udvisning af min spiller</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Lyd for udvisning af modstander</PathSoundsOtherSentOff>
+<TabInjuries>Skader</TabInjuries>
+<TabWeather>Vejr</TabWeather>
+<TabWhistleCard>Fløjte og kort lyde</TabWhistleCard>
+<PathSoundsMissFriend>Lyd for missede chancer for venners hold</PathSoundsMissFriend>
+<PathSoundsMissOther>Lyd for andre holds missede chancer</PathSoundsMissOther>
+<TabChances>Chancer</TabChances>
+<Agreeability>Omgængelighed</Agreeability>
+<Aggressiveness>Pågåenhed</Aggressiveness>
+<Honesty>Hæderlighed</Honesty>
+<BelovedTeamMember>Elsket holdkammerat </BelovedTeamMember>
+<PopularGuy>Populære fyr</PopularGuy>
+<SympatheticGuy>Sympatisk fyr</SympatheticGuy>
+<PleasantGuy>Behagelig fyr</PleasantGuy>
+<ControversialPerson>Kontroversiel Person</ControversialPerson>
+<NastyFellow>Ubehagelig type</NastyFellow>
+<Saintly>helgenagtig</Saintly>
+<Righteous>Retskaffen</Righteous>
+<Upright>Ærlig</Upright>
+<Honest>Hæderlig</Honest>
+<Dishonest>Uærlig</Dishonest>
+<Infamous>Berygtede</Infamous>
+<Unstable>Ustabil</Unstable>
+<Fiery>Ilter</Fiery>
+<Temperamental>Temperamentsfuld</Temperamental>
+<Balanced>Balanceret</Balanced>
+<Calm>Rolig</Calm>
+<Tranquil>Stille</Tranquil>
+<VisitOurSoundCollection>Kig forbi vores lyd samling</VisitOurSoundCollection>
 </Htlivesight>

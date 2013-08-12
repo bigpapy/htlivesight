@@ -143,6 +143,56 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("label_hattrickButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('hattrickSoundPath');});
 	document.getElementById("hattrickSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'hattrickSoundPath');});
 	document.getElementById("hattrickSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('hattrick');});
+	
+//pressing
+	document.getElementById("pressingCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('pressing');});
+	document.getElementById("label_pressingButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('pressing','sound/pressing.ogg');});
+	document.getElementById("label_pressingButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('pressingSoundPath');});
+	document.getElementById("pressingSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'pressingSoundPath');});
+	document.getElementById("pressingSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('pressing');});
+	
+//myBruised
+	document.getElementById("myBruisedCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('myBruised');});
+	document.getElementById("label_myBruisedButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('myBruised','sound/my_bruised.ogg');});
+	document.getElementById("label_myBruisedButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('myBruisedSoundPath');});
+	document.getElementById("myBruisedSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'myBruisedSoundPath');});
+	document.getElementById("myBruisedSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('myBruised');});
+	
+//otherBruised
+	document.getElementById("otherBruisedCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('otherBruised');});
+	document.getElementById("label_otherBruisedButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('otherBruised','sound/other_bruised.ogg');});
+	document.getElementById("label_otherBruisedButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('otherBruisedSoundPath');});
+	document.getElementById("otherBruisedSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'otherBruisedSoundPath');});
+	document.getElementById("otherBruisedSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('otherBruised');});
+	
+//mySentOff
+	document.getElementById("mySentOffCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('mySentOff');});
+	document.getElementById("label_mySentOffButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('mySentOff','sound/my_sent_off.ogg');});
+	document.getElementById("label_mySentOffButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('mySentOffSoundPath');});
+	document.getElementById("mySentOffSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'mySentOffSoundPath');});
+	document.getElementById("mySentOffSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('mySentOff');});
+	
+//otherSentOff
+	document.getElementById("otherSentOffCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('otherSentOff');});
+	document.getElementById("label_otherSentOffButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('otherSentOff','sound/other_sent_off.ogg');});
+	document.getElementById("label_otherSentOffButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('otherSentOffSoundPath');});
+	document.getElementById("otherSentOffSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'otherSentOffSoundPath');});
+	document.getElementById("otherSentOffSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('otherSentOff');});
+	
+//miss friend
+	document.getElementById("missFriendCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('missFriend');});
+	document.getElementById("label_missFriendButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('missFriend','sound/miss_friend.ogg');});
+	document.getElementById("label_missFriendButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('missFriendSoundPath');});
+	document.getElementById("missFriendSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'missFriendSoundPath');});
+	document.getElementById("missFriendSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('missFriend');});
+	
+//miss other
+	document.getElementById("missOtherCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('missOther');});
+	document.getElementById("label_missOtherButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('missOther','sound/miss_other.ogg');});
+	document.getElementById("label_missOtherButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('missOtherSoundPath');});
+	document.getElementById("missOtherSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'missOtherSoundPath');});
+	document.getElementById("missOtherSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('missOther');});
+	
 	/* tab 6 */
 	document.getElementById("friendHomeColorCheck").addEventListener('click',function(){htlivesight.Settings.click.friendHomeColorCheck();});
 	document.getElementById("friendHomeColorCode").addEventListener('change',function(){htlivesight.Settings.click.friendHomeColorSet();});

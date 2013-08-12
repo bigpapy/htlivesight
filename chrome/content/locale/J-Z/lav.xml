@@ -369,4 +369,37 @@
 <Stamina>Izturība</Stamina>
 <Experience>Pieredze</Experience>
 <Loyalty>Lojalitāte</Loyalty>
+<PathSoundsPressing>Presinga skaņa</PathSoundsPressing>
+<PathSoundsMyBruised>Manas komandas spēlētāja ievainošanas skaņa</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Citas komandas spēlētāja ievainošanas skaņa</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Manas komandas spēlētāja noraidīšanas skaņa</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Citas komandas spēlētāja noraidīšanas skaņa</PathSoundsOtherSentOff>
+<TabInjuries>Traumas</TabInjuries>
+<TabWeather>Laikapstākļi</TabWeather>
+<TabWhistleCard>Svilpes un kartiņas</TabWhistleCard>
+<PathSoundsMissFriend>Drauga komandas nerealizētās vārtu gūšanas iespējas skaņa</PathSoundsMissFriend>
+<PathSoundsMissOther>Citas komandas nerealizētās vārtu gūšanas iespējas skaņa</PathSoundsMissOther>
+<TabChances>Iespējas</TabChances>
+<Agreeability>Spēlētāja personība</Agreeability>
+<Aggressiveness>Spēlētāja agresivitāte</Aggressiveness>
+<Honesty>Spēlētāja godīgums</Honesty>
+<BelovedTeamMember>Komandas mīlulis </BelovedTeamMember>
+<PopularGuy>Komandas dvēsele</PopularGuy>
+<SympatheticGuy>Simpātiska persona</SympatheticGuy>
+<PleasantGuy>Patīkams cilvēks</PleasantGuy>
+<ControversialPerson>Strīdīgs puisis</ControversialPerson>
+<NastyFellow>Nešpetns tips</NastyFellow>
+<Saintly>Svētais</Saintly>
+<Righteous>Taisnīgs</Righteous>
+<Upright>Krietns</Upright>
+<Honest>Godprātīgs</Honest>
+<Dishonest>Nekrietns</Dishonest>
+<Infamous>Neģēlis</Infamous>
+<Unstable>Psihopāts</Unstable>
+<Fiery>Karstasinīgs</Fiery>
+<Temperamental>Straujas dabas</Temperamental>
+<Balanced>Līdzsvarots</Balanced>
+<Calm>Mierīgs</Calm>
+<Tranquil>Flegmatisks</Tranquil>
+<VisitOurSoundCollection>Apmeklē mūsu skaņu kolekciju</VisitOurSoundCollection>
 </Htlivesight>
