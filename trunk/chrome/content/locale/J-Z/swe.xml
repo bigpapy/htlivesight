@@ -369,4 +369,37 @@
 <Stamina>Kondition</Stamina>
 <Experience>Rutin</Experience>
 <Loyalty>Klubbkänsla</Loyalty>
+<PathSoundsPressing>Ljud vid press</PathSoundsPressing>
+<PathSoundsMyBruised>Ljud för egen spelare plåstrad</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Ljud för annan spelare plåstrad</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Ljud för egen spelare utvisad</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Ljud för annan spelare utvisad</PathSoundsOtherSentOff>
+<TabInjuries>Skador</TabInjuries>
+<TabWeather>Väder</TabWeather>
+<TabWhistleCard>Avblåsningar och kort</TabWhistleCard>
+<PathSoundsMissFriend>Ljud för missad målchans för favoritlag</PathSoundsMissFriend>
+<PathSoundsMissOther>Ljud för missad målchans för andra lag</PathSoundsMissOther>
+<TabChances>Målchanser</TabChances>
+<Agreeability>Trevlighet</Agreeability>
+<Aggressiveness>Aggressivitet</Aggressiveness>
+<Honesty>Hederlighet</Honesty>
+<BelovedTeamMember>älskad lagkamrat </BelovedTeamMember>
+<PopularGuy>populär kille</PopularGuy>
+<SympatheticGuy>genomsympatisk kille</SympatheticGuy>
+<PleasantGuy>sympatisk kille</PleasantGuy>
+<ControversialPerson>kontroversiell person</ControversialPerson>
+<NastyFellow>otrevlig typ</NastyFellow>
+<Saintly>helgonlik</Saintly>
+<Righteous>genomärlig</Righteous>
+<Upright>ärlig</Upright>
+<Honest>hederlig</Honest>
+<Dishonest>inte alltid helt ärlig</Dishonest>
+<Infamous>skandalomsusad</Infamous>
+<Unstable>instabil</Unstable>
+<Fiery>eldfängd</Fiery>
+<Temperamental>temperamentsfull</Temperamental>
+<Balanced>balanserad</Balanced>
+<Calm>stillsam</Calm>
+<Tranquil>lugn som en filbunke</Tranquil>
+<VisitOurSoundCollection>Besök vår ljudsamling</VisitOurSoundCollection>
 </Htlivesight>

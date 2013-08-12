@@ -369,4 +369,37 @@
 <Stamina>Resistencia</Stamina>
 <Experience>Experiencia</Experience>
 <Loyalty>Lealtad</Loyalty>
+<PathSoundsPressing>Pressing sound</PathSoundsPressing>
+<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
+<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
+<TabInjuries>Lesiones</TabInjuries>
+<TabWeather>Weather</TabWeather>
+<TabWhistleCard>Silbatos y tarjetas</TabWhistleCard>
+<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
+<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
+<TabChances>Chances</TabChances>
+<Agreeability>Agreeability</Agreeability>
+<Aggressiveness>Aggressiveness</Aggressiveness>
+<Honesty>Honestidad</Honesty>
+<BelovedTeamMember>Beloved team member </BelovedTeamMember>
+<PopularGuy>Tío popular</PopularGuy>
+<SympatheticGuy>Tío simpático</SympatheticGuy>
+<PleasantGuy>Tío agradable</PleasantGuy>
+<ControversialPerson>Persona polémica</ControversialPerson>
+<NastyFellow>Tío desagradable</NastyFellow>
+<Saintly>Santo</Saintly>
+<Righteous>Justo</Righteous>
+<Upright>Upright</Upright>
+<Honest>Honesto</Honest>
+<Dishonest>Deshonesto</Dishonest>
+<Infamous>Infame</Infamous>
+<Unstable>Inestable</Unstable>
+<Fiery>Ardiente</Fiery>
+<Temperamental>Temperamental</Temperamental>
+<Balanced>Equilibrado</Balanced>
+<Calm>Calma</Calm>
+<Tranquil>Tranquilo</Tranquil>
+<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
 </Htlivesight>

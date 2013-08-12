@@ -18,12 +18,19 @@ htlivesight.DOM = {
 				var teamName=match.home.team.name;
 				var my="right top";
 			  var at="right bottom"
+			  var teamID=match.home.team.id;
 			}else if (side=="away"){
 				var teamName=match.away.team.name;
 				var my="left top";
 			  var at="left bottom";
+			  var teamID=match.away.team.id;
+			}// add link to youth team too.
+			if(match.sourceSystem.toLowerCase() != 'youth'){
+				var title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/?TeamID="+teamID+"' target='_blank'>"+teamName+"</a>"
+			}else{
+				var title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank'>"+teamName+"</a>"
 			}
-			$("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 430, title: teamName, dialogClass: "formationbg", position: {my: my, at: at, of: $('#'+id) }});
+			$("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 430, title: title, dialogClass: "formationbg", position: {my: my, at: at, of: $('#'+id) }});
 			return false;
 		},
 
@@ -36,12 +43,19 @@ htlivesight.DOM = {
 				var teamName=match.home.team.name;
 				var my="right top";
 			  var at="right bottom"
+			  var teamID=match.home.team.id;
 			}else if (side=="away"){
 				var teamName=match.away.team.name;
 				var my="left top";
 			  var at="left bottom";
+			  var teamID=match.away.team.id;
 			}
-			$("#"+id+"_statistics").dialog({ autoOpen: true, width: 350, height: 220, title: teamName, position: {my: my, at: at, of: $('#'+id) } });
+			if(match.sourceSystem.toLowerCase() != 'youth'){
+				var title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/?TeamID="+teamID+"' target='_blank'>"+teamName+"</a>"
+			}else{
+				var title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank'>"+teamName+"</a>"
+			}
+			$("#"+id+"_statistics").dialog({ autoOpen: true, width: 350, height: 220, title: title, position: {my: my, at: at, of: $('#'+id) } });
 			return false;
 		},
 
@@ -565,17 +579,20 @@ htlivesight.DOM.UpdateLiveBox = function(match) {
 
 };
 htlivesight.DOM.CreateElementLiveBox= function(match) {
-	var livebox, hbox, vbox, child;
+	var livebox, hbox, vbox, child;//, divcontainer;
 
 	try{ //added by bigpapy to debug from xul to html
 		livebox = document.getElementById("live_box");
+		//divcontainer = document.createElement("div");
+		//livebox.appendChild(divcontainer);
 		hbox = document.createElement("div");
 		hbox.hidden=true;
+		//divcontainer.appendChild(hbox);
 		livebox.appendChild(hbox);
 		hbox.setAttribute("id", "live_" + match.id + "_" + match.sourceSystem);
   	child = htlivesight.DOM.CreateElementGroupboxLiveMatch(match);
 		hbox.appendChild(child);
-	//	$( "#live_" + match.id + "_" + match.sourceSystem).resizable({containment: "#live_box",handles: "e"}).parent('.ui-wrapper').draggable({snap: "#live_box, table", snapTolerance: 10, cancel: ".ev_rows, .placardrow, .iconzone" });
+		//$( "#live_" + match.id + "_" + match.sourceSystem).resizable({containment: "#live_box",handles: "e"}).parent().draggable({snap: "#live_box, table", snapTolerance: 10, cancel: ".ev_rows, .placardrow, .iconzone" });
 	}catch(e){alert("CreateElementGroupboxLiveMatch: ")+e;}// added by bigpapy to debug from XML to HTML
 };
 

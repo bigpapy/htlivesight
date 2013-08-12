@@ -345,16 +345,36 @@
 						for="printEventKey" id="label_printEventKey">Show eventkey
 						in the commentary</label><br />
 				</fieldset>
-			</div>
-			<div id="otabs-5">				<!--TAB5-->
 				<fieldset>
-					<legend id="CustomIcons">Icons</legend>
+									<legend id="CustomIcons">Icons</legend>
 					<input type="checkbox" id="oldIcons" /><label for="oldIcons"
 						id="label_oldIcons"> Original Livefox icons in match
 						window</label><br />
 				</fieldset>
-				<fieldset>
-					<legend id="CustomSounds">Sounds</legend>
+				
+			</div>
+			<div id="otabs-5">				<!--TAB5-->
+			<div id="tabs">	
+					<ul>
+					  <li><a href="#tabs-0"><label id="TabOptions">Options</label></a>
+						</li>
+						<li><a href="#tabs-1"><label id="TabGoalSound">Goals sounds</label></a>
+						</li>
+						<li><a href="#tabs-2"><label id="TabChances"></label></a>
+						</li>
+						<li><a href="#tabs-3"><label id="TabWheatherSound"></label></a>
+						</li>
+						<li><a href="#tabs-4"><label id="TabWhistleSound"></label></a>
+						</li>
+						<li><a href="#tabs-5"><label id="TabInjuries"></label></a>
+						</li>
+					</ul>
+					<div id="tabs-0">
+
+
+				<!--  <fieldset> -->
+				<!--  	<legend id="CustomSounds">Sounds</legend> -->
+				  <a href="http://htlivesight.sourceforge.net/dlc.html" id="visitOurSoundCollection" target="_blank">Visit our sounds collection</a><br/><br/>
           <input type="checkbox" id="chkSecondSoundEqualFirst" /><label for="chkSecondSoundEqualFirst" id="label_chkSecondSoundEqualFirst">Second team sounds equal to first ones</label><br />
 					<input type="checkbox" id="weather" /><label for="weather"
 						id="label_weather">Weather sound for start of the match</label><br />
@@ -366,13 +386,15 @@
 						id="label_livefoxGoal">Original Livefox sounds</label><br /> <input
 						type="checkbox" id="noOpGoal" /><label for="noOpGoal"
 						id="label_noOpGoal">No sounds for opponent's goals</label><br />
-				</fieldset>
-				<fieldset>
-					<legend id="TabGoalSound">Goals sounds</legend>
+
+	<!--			<fieldset>
+
 					<span id="PathSoundsNote1"></span><br /> <span
-						id="PathSoundsNote2"></span><br />
+						id="PathSoundsNote2"></span><br /> -->
+					</div>
+					<div id="tabs-1">
 					<!-- my goal -->
-					<br /> <input type="checkbox" id="myGoalCheck" /><label
+					<input type="checkbox" id="myGoalCheck" /><label
 						for="myGoalCheck" id="label_myGoalCheck">Sound for own
 						goal</label> <br />
 					<button id="label_myGoalButton_reset" class="brestore">restore</button>
@@ -421,8 +443,25 @@
 						type="url" id="otGoalSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
+						
+						<!-- hattrick -->
+					<br /> <input type="checkbox" id="hattrickCheck" /><label
+						for="hattrickCheck" id="label_hattrickCheck">Sound for own
+						goal</label> <br />
+					<button id="label_hattrickButton_reset" class="brestore">restore</button>
+					<button id="label_hattrickButton_play" class="brestore">play</button>
+					<input type="file" id="hattrickSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="hattrickSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+	
+						</div>
+						
+						
+					<div id="tabs-2">
+						  
 					<!-- miss goal -->
-					<br /> <input type="checkbox" id="missGoalCheck" /><label
+					<input type="checkbox" id="missGoalCheck" /><label
 						for="missGoalCheck" id="label_missGoalCheck">Sound for own
 						goal</label> <br />
 					<button id="label_missGoalButton_reset" class="brestore">restore</button>
@@ -431,9 +470,47 @@
 						type="url" id="missGoalSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
+						
+						<!-- miss friend -->
+					<br /> <input type="checkbox" id="missFriendCheck" /><label
+						for="missFriendCheck" id="label_missFriendCheck">Sound for missed
+						friend goal</label> <br />
+					<button id="label_missFriendButton_reset" class="brestore">restore</button>
+					<button id="label_missFriendButton_play" class="brestore">play</button>
+					<input type="file" id="missFriendSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="missFriendSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+						
+						<!-- miss other -->
+					<br /> <input type="checkbox" id="missOtherCheck" /><label
+						for="missOtherCheck" id="label_missOtherCheck">Sound for own
+						goal</label> <br />
+					<button id="label_missOtherButton_reset" class="brestore">restore</button>
+					<button id="label_missOtherButton_play" class="brestore">play</button>
+					<input type="file" id="missOtherSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="missOtherSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+						
+												
+					<!-- pressing -->
+					  <br /><input type="checkbox" id="pressingCheck" /><label
+						for="pressingCheck" id="label_pressingCheck">Sound for pressing</label> <br />
+					<button id="label_pressingButton_reset" class="brestore">restore</button>
+					<button id="label_pressingButton_play" class="brestore">play</button>
+					<input type="file" id="pressingSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="pressingSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+						
+						</div>						
+						
+						
+						
+						<div id="tabs-3">
 					<!-- sun goal -->
-					<br /> <label id="TabWheatherSound"></label> <br /> <input
-						type="checkbox" id="sunCheck" /><label for="sunCheck"
+						<input type="checkbox" id="sunCheck" /><label for="sunCheck"
 						id="label_sunCheck">Sound for own goal</label> <br />
 					<button id="label_sunButton_reset" class="brestore">restore</button>
 					<button id="label_sunButton_play" class="brestore">play</button>
@@ -470,29 +547,16 @@
 						type="url" id="fewCloudsSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-					<!-- my boo goal -->
-					<br /> <input type="checkbox" id="myBooCheck" /><label
-						for="myBooCheck" id="label_myBooCheck">Sound for own goal</label>
-					<br />
-					<button id="label_myBooButton_reset" class="brestore">restore</button>
-					<button id="label_myBooButton_play" class="brestore">play</button>
-					<input type="file" id="myBooSoundPathBrowse" tabindex="2" /> <input
-						type="url" id="myBooSoundPath" maxlength="450000" size="63"
-						value="chrome://htlivesight/content/sound/cheer_8k.wav"
-						class="textsnd ui-widget-content ui-corner-all" /> <br />
-					<!-- op boo goal -->
-					<br /> <input type="checkbox" id="opBooCheck" /><label
-						for="opBooCheck" id="label_opBooCheck">Sound for own goal</label>
-					<br />
-					<button id="label_opBooButton_reset" class="brestore">restore</button>
-					<button id="label_opBooButton_play" class="brestore">play</button>
-					<input type="file" id="opBooSoundPathBrowse" tabindex="2" /> <input
-						type="url" id="opBooSoundPath" maxlength="450000" size="63"
-						value="chrome://htlivesight/content/sound/cheer_8k.wav"
-						class="textsnd ui-widget-content ui-corner-all" /> <br />
+
+					
+
+
+
+						</div>
+						<div id="tabs-4">
+
 					<!-- whistlestart -->
-					<br /> <label id="TabWhistleSound"></label> <br /> <input
-						type="checkbox" id="whistleStartCheck" /><label
+					<input type="checkbox" id="whistleStartCheck" /><label
 						for="whistleStartCheck" id="label_whistleStartCheck">Sound
 						for own goal</label> <br />
 					<button id="label_whistleStartButton_reset" class="brestore">restore</button>
@@ -521,7 +585,7 @@
 						type="url" id="whistle3SoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-					<!-- whistle goal -->
+					<!-- whistle -->
 					<br /> <input type="checkbox" id="whistleCheck" /><label
 						for="whistleCheck" id="label_whistleCheck">Sound for own
 						goal</label> <br />
@@ -531,17 +595,78 @@
 						type="url" id="whistleSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-					<!-- hattrick -->
-					<br /> <input type="checkbox" id="hattrickCheck" /><label
-						for="hattrickCheck" id="label_hattrickCheck">Sound for own
-						goal</label> <br />
-					<button id="label_hattrickButton_reset" class="brestore">restore</button>
-					<button id="label_hattrickButton_play" class="brestore">play</button>
-					<input type="file" id="hattrickSoundPathBrowse" tabindex="2" /> <input
-						type="url" id="hattrickSoundPath" maxlength="450000" size="63"
+						
+					<!-- my_sent_off -->
+					<br /> <input type="checkbox" id="mySentOffCheck" /><label
+						for="mySentOffCheck" id="label_mySentOffCheck">Sound for my
+						sent off</label> <br />
+					<button id="label_mySentOffButton_reset" class="brestore">restore</button>
+					<button id="label_mySentOffButton_play" class="brestore">play</button>
+					<input type="file" id="mySentOffSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="mySentOffSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-				</fieldset>
+						
+						<!-- other_sent_off -->
+					<br /> <input type="checkbox" id="otherSentOffCheck" /><label
+						for="otherSentOffCheck" id="label_otherSentOffCheck">Sound for other
+						sent off</label> <br />
+					<button id="label_otherSentOffButton_reset" class="brestore">restore</button>
+					<button id="label_otherSentOffButton_play" class="brestore">play</button>
+					<input type="file" id="otherSentOffSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="otherSentOffSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+						
+				
+						</div>
+						<div id="tabs-5">
+						
+						<!-- my_bruised -->
+					<input type="checkbox" id="myBruisedCheck" /><label
+						for="myBruisedCheck" id="label_myBruisedCheck">Sound for my bruised</label> <br />
+					<button id="label_myBruisedButton_reset" class="brestore">restore</button>
+					<button id="label_myBruisedButton_play" class="brestore">play</button>
+					<input type="file" id="myBruisedSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="myBruisedSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+						
+						<!-- other_bruised -->
+					<br /> <input type="checkbox" id="otherBruisedCheck" /><label
+						for="otherBruisedCheck" id="label_otherBruisedCheck">Sound for other
+						bruised</label> <br />
+					<button id="label_otherBruisedButton_reset" class="brestore">restore</button>
+					<button id="label_otherBruisedButton_play" class="brestore">play</button>
+					<input type="file" id="otherBruisedSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="otherBruisedSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+						
+											<!-- my boo goal -->
+					<br /> <input type="checkbox" id="myBooCheck" /><label
+						for="myBooCheck" id="label_myBooCheck">Sound for own goal</label>
+					<br />
+					<button id="label_myBooButton_reset" class="brestore">restore</button>
+					<button id="label_myBooButton_play" class="brestore">play</button>
+					<input type="file" id="myBooSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="myBooSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+					<!-- op boo goal -->
+					<br /> <input type="checkbox" id="opBooCheck" /><label
+						for="opBooCheck" id="label_opBooCheck">Sound for own goal</label>
+					<br />
+					<button id="label_opBooButton_reset" class="brestore">restore</button>
+					<button id="label_opBooButton_play" class="brestore">play</button>
+					<input type="file" id="opBooSoundPathBrowse" tabindex="2" /> <input
+						type="url" id="opBooSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+						class="textsnd ui-widget-content ui-corner-all" /> <br />
+
+						</div>
+						</div>
+			<!--  	</fieldset> -->
 			</div>
 			<div id="otabs-6">				<!--TAB5-->
 				<fieldset>
@@ -619,9 +744,11 @@
 			</ul>
 			<div id="tabs-1">
 				<img src="./themes/images/256.png" alt="HTLiveSight Logo"><br />
-				HTLiveSightDEV 0.5.1031<br /> <span id="creationDate"></span><br />
-				<br /> <span id="createdBy"></span><br /> Silkevicious &amp;
-				Bigpapy<br />
+				HTLiveSightDEV 0.5.1032<br /> <span id="creationDate"></span><br />
+				<br /> <span id="createdBy"></span><br /><a href="http://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=10246801" target='blank'> Silkevicious</a> &amp;
+				<a href="http://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=7967145" target='blank'>Bigpapy</a><br />
+				<br/><span>Testers</span><br /><a href="http://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=9100817" target='blank'>Davidatorus</a> &amp;
+				<a href="http://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=11288067" target='blank'>Pietrisque</a><br />
 				<br /> <span id="BasedOn">Based on</span> <span id="BasedOnTitle">HattrickLiveFox</span><br />
 				<a href="http://hattricklivefox.mozdev.org" target="_newtab">http://hattricklivefox.mozdev.org</a>
 			</div>

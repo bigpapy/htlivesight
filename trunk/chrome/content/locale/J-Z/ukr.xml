@@ -369,4 +369,37 @@
 <Stamina>Витривалість</Stamina>
 <Experience>Досвід</Experience>
 <Loyalty>Вірність</Loyalty>
+<PathSoundsPressing>Звук для пресингу</PathSoundsPressing>
+<PathSoundsMyBruised>Звук для ушкодження свого гравця</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Звук для ушкодження чужого гравця</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Звук для вилучення мого гравця</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Звук для вилучення чужого гравця</PathSoundsOtherSentOff>
+<TabInjuries>Травми</TabInjuries>
+<TabWeather>Погода</TabWeather>
+<TabWhistleCard>Свистки та картки</TabWhistleCard>
+<PathSoundsMissFriend>Звук для голу, що пропустив друг</PathSoundsMissFriend>
+<PathSoundsMissOther>Звук для голу, що пропустила інша команда</PathSoundsMissOther>
+<TabChances>Моменти</TabChances>
+<Agreeability>Приємність</Agreeability>
+<Aggressiveness>Агресивність</Aggressiveness>
+<Honesty>Щирість</Honesty>
+<BelovedTeamMember>Улюблений член команди </BelovedTeamMember>
+<PopularGuy>Популярна людина</PopularGuy>
+<SympatheticGuy>Симпатичний хлопець</SympatheticGuy>
+<PleasantGuy>Приємний хлопець</PleasantGuy>
+<ControversialPerson>Сумнівна особа</ControversialPerson>
+<NastyFellow>Бридкий тип</NastyFellow>
+<Saintly>Майже святий</Saintly>
+<Righteous>Праведний</Righteous>
+<Upright>Чесний</Upright>
+<Honest>Щирий</Honest>
+<Dishonest>Непорядний</Dishonest>
+<Infamous>Безчесний</Infamous>
+<Unstable>Нестабільний</Unstable>
+<Fiery>Нестриманий</Fiery>
+<Temperamental>Темпераментний</Temperamental>
+<Balanced>Спокійний</Balanced>
+<Calm>Добрий</Calm>
+<Tranquil>Врівноважений</Tranquil>
+<VisitOurSoundCollection>Відвідайте нашу колекцію звуків</VisitOurSoundCollection>
 </Htlivesight>

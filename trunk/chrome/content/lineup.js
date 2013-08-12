@@ -246,7 +246,7 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 	try{ // added because of errors with substitutions. to be removed when fixed.
 		var subjectPlayer= new Object();
 		var objectPlayer= new Object();
-		var found= false; // this variable is used to fix delaly of the subs info against subs event.
+		var found= false; // this variable is used to fix delay of the subs info against subs event.
 		subjectPlayer.id= event.subjectPlayerId;
 		objectPlayer.id= event.objectPlayerId;
 		for (var index=0; index < match.substitutions.length; index++){
@@ -285,9 +285,15 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 			var side="home";
 		else
 			var side="away";
+		
+		if(match.sourceSystem.toLowerCase()=='youth')
+			var postId='_youth';
+		else
+			var postId='';
+		
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 		event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
-		$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+objectPlayer.id+":last").parent().addClass("player_changed");//.css("font-weight", "bold");
+		$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+objectPlayer.id+postId+":last").parent().addClass("player_changed");//.css("font-weight", "bold");
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 		match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
@@ -341,10 +347,16 @@ htlivesight.LineUp.SwapEvent= function(event, match){
 		var side="home";
 	else
 		var side="away";
+	
+	if(match.sourceSystem.toLowerCase()=='youth')
+		var postId='_youth';
+	else
+		var postId='';
+	
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
-	$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+objectPlayer.id+":last").parent().addClass("player_changed");//.css("font-weight", "bold");
-	$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+subjectPlayer.id+":last").parent().addClass("player_changed");//.css("font-weight", "bold");
+	$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+objectPlayer.id+postId+":last").parent().addClass("player_changed");//.css("font-weight", "bold");
+	$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+subjectPlayer.id+postId+":last").parent().addClass("player_changed");//.css("font-weight", "bold");
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 	lineUp[0].update++;
@@ -357,7 +369,7 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 	try{
 		var subjectPlayer= new Object();
 		var objectPlayer= new Object();
-		var found= false; // this variable is used to fix delaly of the individual order info against individual order event.
+		var found= false; // this variable is used to fix delay of the individual order info against individual order event.
 		subjectPlayer.id= event.subjectPlayerId;
 		objectPlayer.id= event.subjectPlayerId;
 		for (var index=0; index < match.substitutions.length; index++){
@@ -392,9 +404,15 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 			var side="home";
 		else
 			var side="away";
+		
+		if(match.sourceSystem.toLowerCase()=='youth')
+			var postId='_youth';
+		else
+			var postId='';
+		
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 		event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
-		$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+subjectPlayer.id+":last").parent().addClass("player_changed");//.css("font-weight", "bold");
+		$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+subjectPlayer.id+postId+":last").parent().addClass("player_changed");//.css("font-weight", "bold");
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 		match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
@@ -447,9 +465,15 @@ htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
 		var side="home";
 	else
 		var side="away";
+	
+	if(match.sourceSystem.toLowerCase()=='youth')
+		var postId='_youth';
+	else
+		var postId='';	
+	
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
-	$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+objectPlayer.id+":last").parent().addClass("player_changed");//.css("font-weight", "bold");
+	$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+objectPlayer.id+postId+":last").parent().addClass("player_changed");//.css("font-weight", "bold");
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 	match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)

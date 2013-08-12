@@ -369,4 +369,37 @@
 <Stamina>Kondícia</Stamina>
 <Experience>Skúsenosti</Experience>
 <Loyalty>Vernosť</Loyalty>
+<PathSoundsPressing>Zvuk pri Pressingu</PathSoundsPressing>
+<PathSoundsMyBruised>Zvuk pri poranení môjho hráča</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Zvuk pri poranení hráča iného tímu</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Zvuk pri vylúčení môjho hráča</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Zvuk pri vylúčení hráča iného tímu</PathSoundsOtherSentOff>
+<TabInjuries>Zranenia</TabInjuries>
+<TabWeather>Počasie</TabWeather>
+<TabWhistleCard>Pískania a karty</TabWhistleCard>
+<PathSoundsMissFriend>Zvuk nepremenenej šance priateľovho tímu</PathSoundsMissFriend>
+<PathSoundsMissOther>Zvuk nepremenenej šance iného tímu</PathSoundsMissOther>
+<TabChances>Šance</TabChances>
+<Agreeability>Obľúbenosť</Agreeability>
+<Aggressiveness>Tempereament</Aggressiveness>
+<Honesty>Čestnosť</Honesty>
+<BelovedTeamMember>Miláčik tímu </BelovedTeamMember>
+<PopularGuy>Obľúbený chlapík</PopularGuy>
+<SympatheticGuy>Sympaťák</SympatheticGuy>
+<PleasantGuy>Príjemný chlapík</PleasantGuy>
+<ControversialPerson>Hašterivý človek</ControversialPerson>
+<NastyFellow>Protivný chlap</NastyFellow>
+<Saintly>svätec</Saintly>
+<Righteous>spravodlivý</Righteous>
+<Upright>férový</Upright>
+<Honest>čestný</Honest>
+<Dishonest>nečestný</Dishonest>
+<Infamous>hanebný</Infamous>
+<Unstable>nestabilný</Unstable>
+<Fiery>výbušný</Fiery>
+<Temperamental>temperamentný</Temperamental>
+<Balanced>vyrovnaný</Balanced>
+<Calm>chladný</Calm>
+<Tranquil>tichý</Tranquil>
+<VisitOurSoundCollection>Pozri našu kolekciu zvukov</VisitOurSoundCollection>
 </Htlivesight>

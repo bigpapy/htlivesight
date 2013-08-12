@@ -369,4 +369,37 @@
 <Stamina>Vastupidavus</Stamina>
 <Experience>Kogemus</Experience>
 <Loyalty>Lojaalsus</Loyalty>
+<PathSoundsPressing>Surumise heli</PathSoundsPressing>
+<PathSoundsMyBruised>Minu mängija vigastuse heli</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Teise meeskonna mängija vigastuse heli</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Minu mängija eemaldamise heli</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Teise meeskonna mängija eemaldamise heli</PathSoundsOtherSentOff>
+<TabInjuries>Vigastused</TabInjuries>
+<TabWeather>Ilm</TabWeather>
+<TabWhistleCard>Viled ja kaardid</TabWhistleCard>
+<PathSoundsMissFriend>Sõbra meeskonna väravavõimaluse heli</PathSoundsMissFriend>
+<PathSoundsMissOther>Teise meeskonna väravavõimaluse heli</PathSoundsMissOther>
+<TabChances>Võimalused</TabChances>
+<Agreeability>Meelepärasus</Agreeability>
+<Aggressiveness>Agressiivsus</Aggressiveness>
+<Honesty>Ausus</Honesty>
+<BelovedTeamMember>Armastatud meeskonnaliige</BelovedTeamMember>
+<PopularGuy>Populaarne sell</PopularGuy>
+<SympatheticGuy>Sümpaatne kuju</SympatheticGuy>
+<PleasantGuy>Meeldiv sell</PleasantGuy>
+<ControversialPerson>Vastuoluline isiksus</ControversialPerson>
+<NastyFellow>Ebameeldiv tüüp</NastyFellow>
+<Saintly>Pühaklik</Saintly>
+<Righteous>Äraostmatu</Righteous>
+<Upright>Õiglane</Upright>
+<Honest>Aus</Honest>
+<Dishonest>Ebaaus</Dishonest>
+<Infamous>Autu</Infamous>
+<Unstable>Ebastabiilne</Unstable>
+<Fiery>Äge</Fiery>
+<Temperamental>Temperamentne</Temperamental>
+<Balanced>Tasakaalukas</Balanced>
+<Calm>Rahulik</Calm>
+<Tranquil>Tasane</Tranquil>
+<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
 </Htlivesight>
