@@ -60,7 +60,12 @@ htlivesight.ApiProxy = {
 				var l10nData=htlivesight.data;
 				var introduction=htlivesight.Util.Parse("Introduction",l10nData[0]);
 				alert(introduction);
-				chppPage=window.open(htlivesight.ApiProxy.authorizeUrl + "?" + text);
+				if (typeof(chrome) == "object") {
+					chrome.tabs.create({url: htlivesight.ApiProxy.authorizeUrl + "?" + text})
+					//var chppPage=???;
+				}else{
+					var chppPage=window.open(htlivesight.ApiProxy.authorizeUrl + "?" + text);
+				}
 				// add a delay because it doesn't give time in chrome to open chpp authorization page.
 				setTimeout(function(){
 					// when clicking on this tab continue
@@ -100,7 +105,12 @@ htlivesight.ApiProxy = {
 								htlivesight.ApiProxy.setAccessTokenSecret(accessTokenSecret,teamId);
 								var ending=htlivesight.Util.Parse("Ending",l10nData[0]);;
 								alert(ending);
-								chppPage.close();// close CHPP pages
+								if (typeof(chrome) == "object") {
+									//close chpp page
+									//chppPage.close();// close CHPP pages
+								}else{
+									chppPage.close();// close CHPP pages
+								}
 								document.location.reload();//reload HTLS
 							}catch(e){};
 						}, true);

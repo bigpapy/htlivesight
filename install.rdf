@@ -6,7 +6,7 @@
 		<em:unpack>true</em:unpack>
 		<em:type>2</em:type>
 		<em:name>HTLiveSightDEV</em:name>
-		<em:version>0.5.1032</em:version>
+		<em:version>0.5.1033</em:version>
 		<em:description>Hattrick Match Viewer based on HattrickLiveFox</em:description>
 		<em:creator>Silkevicious</em:creator>
 		<em:developer>Bigpapy</em:developer>
@@ -17,6 +17,7 @@
 		<em:optionsURL>chrome://htlivesight/content/settings.html</em:optionsURL>
 		<em:aboutURL>chrome://htlivesight/content/about.html</em:aboutURL>
 		<em:updateURL>https://htlivesight.c6.ixwebhosting.com/dev/update.rdf</em:updateURL>
+		
 		<!-- Firefox -->
 		<em:targetApplication>
 			<Description>

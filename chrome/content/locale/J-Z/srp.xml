@@ -369,32 +369,32 @@
 <Stamina>Кондиција</Stamina>
 <Experience>Искуство</Experience>
 <Loyalty>Оданост</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
-<TabWhistleCard>Whistles and Cards</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
-<Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
-<PopularGuy>Popular guy</PopularGuy>
-<SympatheticGuy>Sympathetic guy</SympatheticGuy>
-<PleasantGuy>Pleasant guy</PleasantGuy>
-<ControversialPerson>Controversial Person</ControversialPerson>
-<NastyFellow>Nasty fellow</NastyFellow>
-<Saintly>Saintly</Saintly>
-<Righteous>Righteous</Righteous>
-<Upright>Upright</Upright>
-<Honest>Honest</Honest>
-<Dishonest>Dishonest</Dishonest>
-<Infamous>Infamous</Infamous>
+<PathSoundsPressing>Звук за пресинг</PathSoundsPressing>
+<PathSoundsMyBruised>Звук за мог угруваног играча</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Звук за противничког угруваног играча</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Црвени картон за мог играча</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Црвени картон за противничког играча</PathSoundsOtherSentOff>
+<TabInjuries>Повреде</TabInjuries>
+<TabWeather>Време</TabWeather>
+<TabWhistleCard>Звиждуци и картони</TabWhistleCard>
+<PathSoundsMissFriend>Звук за промашај пријатељевог тима</PathSoundsMissFriend>
+<PathSoundsMissOther>Звук за промашај код осталих тимова</PathSoundsMissOther>
+<TabChances>Шансе</TabChances>
+<Agreeability>Личност</Agreeability>
+<Aggressiveness>Темперамент</Aggressiveness>
+<Honesty>Поштење</Honesty>
+<BelovedTeamMember>вољени члан тима </BelovedTeamMember>
+<PopularGuy>популаран лик</PopularGuy>
+<SympatheticGuy>симпатичан тип</SympatheticGuy>
+<PleasantGuy>пријатан дечко</PleasantGuy>
+<ControversialPerson>контроверзна особа</ControversialPerson>
+<NastyFellow>незгодан момак</NastyFellow>
+<Saintly>као светац</Saintly>
+<Righteous>честит</Righteous>
+<Upright>праведан</Upright>
+<Honest>частан</Honest>
+<Dishonest>нечастан</Dishonest>
+<Infamous>озлоглашен</Infamous>
 <Unstable>Unstable</Unstable>
 <Fiery>Fiery</Fiery>
 <Temperamental>Temperamental</Temperamental>

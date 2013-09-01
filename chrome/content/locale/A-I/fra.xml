@@ -214,7 +214,7 @@
 <PathSoundsOvercast>Météo nuageuse</PathSoundsOvercast>
 <PathSoundsFewClouds>Météo partiellement ensoleillée</PathSoundsFewClouds>
 <PathSoundsMyBoo>Blessure de nos joueurs</PathSoundsMyBoo>
-<PathSoundsOpBoo>Blessure des joueurs de l'adversaire</PathSoundsOpBoo>
+<PathSoundsOpBoo>Blessure des autres joueurs</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Début 1ère/2ème mi-temps</PathSoundsWhistleStart>
 <PathSoundsWhistle>Cartons jaunes</PathSoundsWhistle>
 <PathSoundsHattrick>Coup du chapeau (hattrick)</PathSoundsHattrick>

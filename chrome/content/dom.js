@@ -284,7 +284,7 @@ htlivesight.DOM = {
 						linkPlayer.addEventListener("click", function(){htlivesight.Click.openPlayerLink(this);},true);
 						//linkPlayer.setAttribute("target","_blank");
 						//linkPlayer.setAttribute("href","#");
-						linkPlayer.setAttribute("style", "text-decoration: none");
+						linkPlayer.setAttribute("style", "text-decoration: none; color: white");
 						linkPlayer.addEventListener("mouseover", function(){htlivesight.DOM.ShowLink(this);});
 						linkPlayer.addEventListener("mouseout", function(){htlivesight.DOM.HideLink(this);});
 						linkPlayer.innerHTML= htlivesight.DOM.getTextContent(playerInfo[0]);

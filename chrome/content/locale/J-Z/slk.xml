@@ -100,8 +100,8 @@
 <EventSpecialLowExperience>nízka skúsenosť</EventSpecialLowExperience>
 <EventSpecialWinger>+ krídlo</EventSpecialWinger>
 <EventSpecialTechnical>technický</EventSpecialTechnical>
-<EventSpecialCounterAttack>protiútoky</EventSpecialCounterAttack>
-<EventSpecialCornerKick>protiútoky</EventSpecialCornerKick>
+<EventSpecialCounterAttack>protiútok</EventSpecialCounterAttack>
+<EventSpecialCornerKick>rohový kop</EventSpecialCornerKick>
 <EventSpecialIndirect>nepriamy kop</EventSpecialIndirect>
 <EventSpecialUnpredictableLongPass>+ nepredvítateľný: prihrávka</EventSpecialUnpredictableLongPass>
 <EventSpecialUnpredictableScoresOnHisOwn>+ nepredvítateľný: strela</EventSpecialUnpredictableScoresOnHisOwn>

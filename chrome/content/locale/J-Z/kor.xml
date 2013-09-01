@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
+<MenuStart>시작</MenuStart>
 <MenuOptions>옵션</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<TooltipButton>HTLiveSight 메뉴를 열려면 클릭하세요</TooltipButton>
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>서버:</MenuServer>
 <MenuDisconnected>연결 끊김</MenuDisconnected>
@@ -13,7 +13,7 @@
 <LoginUsername>사용자 이름</LoginUsername>
 <LoginRememberMe>아이디 기억하기</LoginRememberMe>
 <LoginButton>로그인</LoginButton>
-<LoginReLive>Re-Live</LoginReLive>
+<LoginReLive>다시 보기</LoginReLive>
 <LoginSpeed>속도</LoginSpeed>
 <LoginByEvent>Per event</LoginByEvent>
 <LeagueMatches>리그 경기</LeagueMatches>
@@ -42,7 +42,7 @@
 <NoHTServer>현재 로그인한 HT 서버를 선택하지 않았습니다. 백그라운드에서 마우스 우클릭 - options - general 에 들어가셔서, 올바른 서버 번호를 설정해 주십시오.</NoHTServer>
 <MatchesMaximum>20경기 이상을 볼수 없습니다!</MatchesMaximum>
 <LeagueRound>라운드</LeagueRound>
-<MessageHattrickError>Hattrick server returned an error.</MessageHattrickError>
+<MessageHattrickError>Hattrick 서버가 오류 메시지를 반환하였습니다.</MessageHattrickError>
 <MessageAlreadyFriend>이미 당신의 친구입니다.</MessageAlreadyFriend>
 <MessageErrorReading>데이터를 읽는데 오류발생:</MessageErrorReading>
 <MessageLoginNotSuccessful>로그인 실패.</MessageLoginNotSuccessful>
@@ -58,7 +58,7 @@
 <TimeExtraTime>연장전</TimeExtraTime>
 <TimePenalties>페널티</TimePenalties>
 <TimeFinish>경기 종료</TimeFinish>
-<TimeStartsIn>Starts in</TimeStartsIn>
+<TimeStartsIn>경기 시작까지 남은 기간</TimeStartsIn>
 <TimeDays>일</TimeDays>
 <TimeHours>시</TimeHours>
 <TimeMinutes>분</TimeMinutes>
@@ -68,10 +68,10 @@
 <TimeMin>초</TimeMin>
 <TooltipWindowSound>경기에서의 사운드 활성화 또는 비활성화</TooltipWindowSound>
 <TooltipWindowLink>해트트릭 사이트의 경기 페이지로 링크</TooltipWindowLink>
-<TooltipWindowInfo>Toggle information event messages</TooltipWindowInfo>
+<TooltipWindowInfo>정보 이벤트 메시지 숨김/해제</TooltipWindowInfo>
 <TooltipWindowMaximize>창 최대화</TooltipWindowMaximize>
 <TooltipWindowMinimize>창 최소화</TooltipWindowMinimize>
-<TooltipWindowShade>Shade window</TooltipWindowShade>
+<TooltipWindowShade>창 가림</TooltipWindowShade>
 <TooltipWindowClose>창 닫기</TooltipWindowClose>
 <TooltipWindowOpen>창 열기</TooltipWindowOpen>
 <TooltipWindowMoveUp>이 창을 위로 이동</TooltipWindowMoveUp>
@@ -117,7 +117,7 @@
 <UnderestimationReduceOnce>과소평가 1/3만큼 사라짐</UnderestimationReduceOnce>
 <OrganizationBreaks>포메이션 혼란</OrganizationBreaks>
 <Reorganize>포메이션 정비</Reorganize>
-<NervesImportantThrillingGame>Nerves in important thrilling game</NervesImportantThrillingGame>
+<NervesImportantThrillingGame>중요하고 흥분되는 경기에 긴장</NervesImportantThrillingGame>
 <Bruised>타박상</Bruised>
 <Injuried>부상</Injuried>
 <ModeratelyInjuried>약한 부상</ModeratelyInjuried>
@@ -151,15 +151,15 @@
 <RequestTeam>팀에 따라 경기 받기</RequestTeam>
 <RequestTeamData>팀 데이터 받기</RequestTeamData>
 <WindowTitle>HTLiveSight 옵션</WindowTitle>
-<TabGeneral>General</TabGeneral>
+<TabGeneral>일반</TabGeneral>
 <TabMatches>경기들</TabMatches>
 <TabNotifications>알림</TabNotifications>
 <TabLanguage>언어</TabLanguage>
 <TabOther>그 외</TabOther>
-<TabCustom>Customizations</TabCustom>
-<TabGoalSound>Goals sounds</TabGoalSound>
-<TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
-<TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
+<TabCustom>사용자 지정</TabCustom>
+<TabGoalSound>득점 사운드</TabGoalSound>
+<TabWheatherSound>날씨 이벤트 및 부상 사운드</TabWheatherSound>
+<TabWhistleSound>심판 호각 및 해트트릭 사운드</TabWhistleSound>
 <GeneralOpen>HTLiveSight 열기</GeneralOpen>
 <GeneralNewTab>새 탭에 열기</GeneralNewTab>
 <GeneralNewWindow>새 창에 열기</GeneralNewWindow>
@@ -167,66 +167,66 @@
 <GeneralNote>현재 접속중인 서버 번호를 입력하십시오 (ie. www96).</GeneralNote>
 <MatchesLeague>리그경기</MatchesLeague>
 <MatchesGetLeague>리그경기 가져오기</MatchesGetLeague>
-<MatchesPlayed>If played in</MatchesPlayed>
-<MatchesHours>hours.</MatchesHours>
+<MatchesPlayed>다음</MatchesPlayed>
+<MatchesHours>시간 이내에 진행되었던 경기 가져오기.</MatchesHours>
 <MatchesFriends>친구</MatchesFriends>
 <MatchesGetFriends>친구의 경기 가져오기</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>해더</MatchesHeader>
 <MatchesScorers>득점자</MatchesScorers>
-<ScorersList>List scorers in header</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<ScorersList>득점자 명단 포함</ScorersList>
+<MatchesBooked>경고</MatchesBooked>
+<BookedList>경고자 명단 포함</BookedList>
+<MatchesSentOff>퇴장</MatchesSentOff>
+<SentOffList>퇴장 명단 포함</SentOffList>
+<MatchesInjured>부상</MatchesInjured>
+<InjuredList>부상자 명단 포함</InjuredList>
 <MatchesWindow>창</MatchesWindow>
-<MatchesLines>Lines to display in minimize mode</MatchesLines>
+<MatchesLines>최소화 모드에서 표시할 줄 수</MatchesLines>
 <NotifyNotify>알림</NotifyNotify>
-<NotifyEnableSound>소리 알림 켜기</NotifyEnableSound>
+<NotifyEnableSound>알림 사운드 사용</NotifyEnableSound>
 <NotifyOnly>열어 놓은 경기에서만</NotifyOnly>
-<NotifyFlash>Flash headers</NotifyFlash>
-<NotifyStatus>Status bar slider</NotifyStatus>
+<NotifyFlash>플래시 해더</NotifyFlash>
+<NotifyStatus>상태 표시줄 슬라이더</NotifyStatus>
 <OtherAuthorization>인증 코드</OtherAuthorization>
 <OtherReset>인증 코드 제거</OtherReset>
 <OtherResetButton>초기화</OtherResetButton>
 <OtherReverse>경기 이벤트를 아래쪽부터 뜨게 하기</OtherReverse>
 <OtherReverseNote>효과를 적용하려면 페이지를 새로고침 하십시오.</OtherReverseNote>
 <OtherEvents>이벤트 순서</OtherEvents>
-<OtherEventKey>Eventkey</OtherEventKey>
-<OtherEventKeyNote>Show eventkey in the commentary</OtherEventKeyNote>
-<CustomIcons>Icons</CustomIcons>
-<CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
-<CustomSounds>Sounds</CustomSounds>
-<CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
-<CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
-<CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
-<CustomSoundsGoal>Original Livefox sounds</CustomSoundsGoal>
-<CustomSoundsNoOpGoal>No sounds for opponent's goals</CustomSoundsNoOpGoal>
-<PathSoundsMyGoal>Sound for own goal</PathSoundsMyGoal>
-<PathSoundsOpGoal>Sound for goal of my opponent</PathSoundsOpGoal>
-<PathSoundsFrGoal>Sound for goal of friend's</PathSoundsFrGoal>
-<PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
-<PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
-<PathSoundsMiss>Missed goal sound</PathSoundsMiss>
-<PathSoundsSun>Sound for sunny weather</PathSoundsSun>
-<PathSoundsRain>Sound for rainy weather</PathSoundsRain>
-<PathSoundsOvercast>Sound for overcast weather</PathSoundsOvercast>
-<PathSoundsFewClouds>Sound for few clouds weather</PathSoundsFewClouds>
-<PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
-<PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
-<PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle>Yellow/Red card sound</PathSoundsWhistle>
-<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
+<OtherEventKey>이벤트 키</OtherEventKey>
+<OtherEventKeyNote>중계 메시지에 이벤트 키 표시</OtherEventKeyNote>
+<CustomIcons>아이콘</CustomIcons>
+<CustomIconsOld>경기 창에 오리지널 Livefox 아이콘</CustomIconsOld>
+<CustomSounds>사운드</CustomSounds>
+<CustomSoundsWeather>경기 시작 시 날씨 사운드</CustomSoundsWeather>
+<CustomSoundsTime>하프 타임 시작/종료 사운드</CustomSoundsTime>
+<CustomSoundsSEW>날씨 관련 특별 이벤트 사운드</CustomSoundsSEW>
+<CustomSoundsGoal>오리지널 Livefox 사운드</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>상대 팀 득점 사운드 제거</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>우리팀 득점 사운드</PathSoundsMyGoal>
+<PathSoundsOpGoal>상대팀 득점 사운드</PathSoundsOpGoal>
+<PathSoundsFrGoal>친구 팀의 득점 사운드</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>친구의 상대팀 득점 사운드</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>다른 팀 득점 사운드</PathSoundsOtGoal>
+<PathSoundsMiss>득점 실패 사운드</PathSoundsMiss>
+<PathSoundsSun>맑음 날씨 사운드</PathSoundsSun>
+<PathSoundsRain>비오는 날씨 사운드</PathSoundsRain>
+<PathSoundsOvercast>흐린 날씨 사운드</PathSoundsOvercast>
+<PathSoundsFewClouds>약간 흐림 날씨 사운드</PathSoundsFewClouds>
+<PathSoundsMyBoo>우리팀 부상 사운드</PathSoundsMyBoo>
+<PathSoundsOpBoo>상대 팀 선수 부상 사운드</PathSoundsOpBoo>
+<PathSoundsWhistleStart>전/후반 시작 호각</PathSoundsWhistleStart>
+<PathSoundsWhistle>옐로우/레드 카드 사운드</PathSoundsWhistle>
+<PathSoundsHattrick>해트트릭 사운드</PathSoundsHattrick>
+<PathSoundsRestore>복구</PathSoundsRestore>
+<PathSoundsPlay>재생</PathSoundsPlay>
 <LanguageSelect>언어 선택</LanguageSelect>
 <LanguageNote>알림:파이어폭스를 다시 시작할때 설정이 변경됩니다.</LanguageNote>
-<ButtonCancel>Cancel</ButtonCancel>
-<ButtonOk>OK</ButtonOk>
+<ButtonCancel>취소</ButtonCancel>
+<ButtonOk>확인</ButtonOk>
 <WindowAboutTitle>HTLiveSight에 대하여</WindowAboutTitle>
-<TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
+<TabInfo>정보</TabInfo>
+<TabTranslators>번역자</TabTranslators>
 <TabCredits>Credits</TabCredits>
 <MonthJanuary>1월</MonthJanuary>
 <MonthFebruary>2월</MonthFebruary>
@@ -240,53 +240,53 @@
 <MonthOctober>10월</MonthOctober>
 <MonthNovember>11월</MonthNovember>
 <MonthDecember>12월</MonthDecember>
-<TextCreatedBy>Created by</TextCreatedBy>
-<TextDevelopedBy>Developed by</TextDevelopedBy>
-<TextHelpOf>With the help of</TextHelpOf>
-<TextThanksTo>Many thanks to:</TextThanksTo>
+<TextCreatedBy>설립자</TextCreatedBy>
+<TextDevelopedBy>개발자</TextDevelopedBy>
+<TextHelpOf>협력자</TextHelpOf>
+<TextThanksTo>정말 감사합니다:</TextThanksTo>
 <ButtonClose>닫기</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
+<NonExistent>없음</NonExistent>
+<Disastrous>최악</Disastrous>
+<Wretched>형편 없음</Wretched>
+<Poor>나쁨</Poor>
+<Weak>약함</Weak>
+<Inadequate>불충분함</Inadequate>
+<Passable>무난함</Passable>
+<Solid>우수</Solid>
+<Excellent>뛰어남</Excellent>
+<Formidable>강력함</Formidable>
+<Outstanding>걸출함</Outstanding>
+<Brilliant>눈부심</Brilliant>
+<Magnificent>훌륭함</Magnificent>
+<WorldClass>세계 최고</WorldClass>
+<Supernatural>초자연적</Supernatural>
+<Titanic>막강함</Titanic>
+<ExtraTerrestrial>외계인</ExtraTerrestrial>
+<Mythical>전설적</Mythical>
+<Magical>마술적</Magical>
+<Utopian>초월적</Utopian>
+<Divine>신의 경지</Divine>
+<VeryHigh>매우 높음</VeryHigh>
+<High>높음</High>
+<Low>낮음</Low>
+<VeryLow>매우 낮음</VeryLow>
+<RightDefence>우측 수비</RightDefence>
+<MiddleDefence>중앙 수비</MiddleDefence>
+<LeftDefence>좌측 수비</LeftDefence>
+<Midfield>미드필드</Midfield>
+<RightAttack>우측 공격</RightAttack>
+<MiddleAttack>중앙 공격</MiddleAttack>
+<LeftAttack>좌측 공격</LeftAttack>
+<IndirectSetPiecesDefence>간접 세트 피스 수비</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>간접 세트 피스 공격</IndirectSetPiecesAttack>
+<TeamAttitude>팀 태도</TeamAttitude>
+<TacticType>전술</TacticType>
+<TacticSkill>전술 능력</TacticSkill>
+<BallPosses>볼 점유율</BallPosses>
+<SpecialEvent>특별 이벤트</SpecialEvent>
+<Normal>일반적인 경기</Normal>
+<PIC>부담없이 경기</PIC>
+<MOTS>시즌 경기</MOTS>
 <ColorPicker>You can choose your color at </ColorPicker>
 <EventBackground>Event background color</EventBackground>
 <FriendHome>Home (own and friends) color: #</FriendHome>
@@ -297,23 +297,23 @@
 <EventColorTitle>Event text color</EventColorTitle>
 <EventTextColor>Event text color: #</EventTextColor>
 <SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
-<Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
-<Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
+<Colors>색상</Colors>
+<SchemaTip>라인업을 표시하려면 클릭</SchemaTip>
+<StatisticTip>경기 종료 시점의 통계를 표시하려면 클릭</StatisticTip>
+<Youth>유소년</Youth>
+<Senior>성인</Senior>
+<Tournament>토너먼트</Tournament>
+<FreeKicks>프리킥</FreeKicks>
+<RedCards>레드 카드</RedCards>
+<YellowCards>옐로우 카드</YellowCards>
+<Injuries>부상</Injuries>
+<Goals>득점</Goals>
+<Total>총</Total>
+<Terraces>입석</Terraces>
+<Basic>일반 좌석</Basic>
+<Roof>지붕 밑 좌석</Roof>
+<VIP>VIP 회원석</VIP>
+<CrowdinHelp>번역하는 것을 도와주세요! Crowdin을 사용하면 정말 쉽고 즐겁습니다! 여기를 클릭하세요!</CrowdinHelp>
 <Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
 <Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
 <Error0>Error 0: not connected to internet.</Error0>
@@ -321,54 +321,54 @@
 <Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
 <PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
 <PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
+<PathSoundsWhistle2>전반전 종료 호각</PathSoundsWhistle2>
+<PathSoundsWhistle3>경기 종료 호각</PathSoundsWhistle3>
+<EventYellow2>두 번째 옐로우 카드</EventYellow2>
 <LoggedIn>Logged in as</LoggedIn>
 <latestNews>Check latest news on</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
+<HTLSThread>Hattrick 토론장</HTLSThread>
+<ProjectWebsite>프로젝트 웹사이트</ProjectWebsite>
+<GooglePlusPage>Google+ 페이지</GooglePlusPage>
+<TwitterPage>Twitter 페이지</TwitterPage>
+<FacebookPage>Facebook 페이지</FacebookPage>
 <chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
+<hidesidebar>사이드바 숨김</hidesidebar>
+<addFriend>친구 목록에 이 팀을 추가하려면 클릭</addFriend>
+<TooltipCopyLineUp>클립보드에 라인업을 복사하려면 클릭</TooltipCopyLineUp>
 <Dark>Dark</Dark>
 <Light>Light</Light>
 <Themes>Themes</Themes>
 <NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
+<DefHatStats>수비 HatStats</DefHatStats>
+<MidHatStats>미드필드 HatStats</MidHatStats>
+<AttHatStats>공격 HatStats</AttHatStats>
+<TotHatStats>총 HatStats</TotHatStats>
+<CopiedToClipboard>클립보드에 복사했습니다!</CopiedToClipboard>
 <ReLiveControls>Relive Controls</ReLiveControls>
 <ExtendImage>Extend image</ExtendImage>
 <RepeatImage>Repeat image</RepeatImage>
 <Background>Background</Background>
 <MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
+<Technical>공 마술사</Technical>
+<Quick>빠름</Quick>
+<Powerful>힘 있음</Powerful>
+<Unpredictable>예측할 수 없음</Unpredictable>
+<Header>헤딩</Header>
+<Regainer>회복인</Regainer>
+<SecondTeamIdLabel>세컨드 팀 ID 입력</SecondTeamIdLabel>
 <SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
+<Keeper>골키핑</Keeper>
+<Defending>수비력</Defending>
+<Playmaking>플레이메이킹</Playmaking>
+<Winger>윙어</Winger>
+<Passing>패스력</Passing>
+<Scoring>득점력</Scoring>
+<SetPieces>세트 피스</SetPieces>
+<Age>나이</Age>
 <Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<Stamina>체력</Stamina>
+<Experience>경험</Experience>
+<Loyalty>충성도</Loyalty>
 <PathSoundsPressing>Pressing sound</PathSoundsPressing>
 <PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
