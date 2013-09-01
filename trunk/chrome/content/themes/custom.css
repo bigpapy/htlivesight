@@ -2,25 +2,25 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: url('chrome://htlivesight/content/themes/fonts/bold.woff');
+  src: url('./fonts/bold.woff');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 700;
-  src: url('chrome://htlivesight/content/themes/fonts/bolditalic.woff');
+  src: url('./fonts/bolditalic.woff');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
-  src: url('chrome://htlivesight/content/themes/fonts/italic.woff');
+  src: url('./fonts/italic.woff');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('chrome://htlivesight/content/themes/fonts/normal.woff');
+  src: url('./fonts/normal.woff');
   }
 body{
 font-size: 11px;

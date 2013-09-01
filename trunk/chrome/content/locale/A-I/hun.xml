@@ -87,7 +87,7 @@
 <EventRed>Piros lap</EventRed>
 <EventSideLeft>Bal</EventSideLeft>
 <EventSideRight>Jobb</EventSideRight>
-<EventSideCenter>Középső</EventSideCenter>
+<EventSideCenter>Közép</EventSideCenter>
 <EventSideFreeKick>Szabadrúgás</EventSideFreeKick>
 <EventSidePenalty>Büntetõ</EventSidePenalty>
 <EventSpecialUnpredictable>Kiszámíthatatlan SE</EventSpecialUnpredictable>
@@ -103,13 +103,13 @@
 <EventSpecialCounterAttack>Ellentámadás</EventSpecialCounterAttack>
 <EventSpecialCornerKick>Szöglet</EventSpecialCornerKick>
 <EventSpecialIndirect>Közvetett szabadrúgás</EventSpecialIndirect>
-<EventSpecialUnpredictableLongPass>Kiszámíthatatlan+ :hosszú átadás</EventSpecialUnpredictableLongPass>
-<EventSpecialUnpredictableScoresOnHisOwn>Kiszámíthatatlan+ :váratlan lövés</EventSpecialUnpredictableScoresOnHisOwn>
-<EventSpecialUnpredictableSpecialAction>Kiszámíthatatlan+ :különleges akció</EventSpecialUnpredictableSpecialAction>
-<EventSpecialUnpredictableMistake>kiszámíthatatlan- :labdavesztés</EventSpecialUnpredictableMistake>
-<EventSpecialUnpredictableOwnGoal>Kiszámíthatatlan- :öngól</EventSpecialUnpredictableOwnGoal>
-<EventSpecialQuickScoresAfterRush>Gyors+ : elfutás</EventSpecialQuickScoresAfterRush>
-<EventSpecialQuickAssist>Gyors+ :elfutás és átadás</EventSpecialQuickAssist>
+<EventSpecialUnpredictableLongPass>Kiszámíthatatlan + : hosszú átadás</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>Kiszámíthatatlan + : váratlan lövés</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>Kiszámíthatatlan + : különleges akció</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>Kiszámíthatatlan - : labdavesztés</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>Kiszámíthatatlan - : öngól</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>Gyors + : elfutás</EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>Gyors + : elfutás és átadás</EventSpecialQuickAssist>
 <Pullback>Visszahúzódás</Pullback>
 <Underestimation>Túlzott önbizalom</Underestimation>
 <UnderestimationRemove>Túlzott önbizalom visszaállt</UnderestimationRemove>
@@ -130,12 +130,12 @@
 <EventSpecialLongShotDefended>Kivédekezett távoli lövés</EventSpecialLongShotDefended>
 <EventSpecialQuickVsQuick>Gyors VS Gyors</EventSpecialQuickVsQuick>
 <LongShot>Távoli lövés</LongShot>
-<MeteoSpecialTechnicalRain>technikás - (-gólszerzés -játékszervezés)</MeteoSpecialTechnicalRain>
-<MeteoSpecialPowerfulRain>erőteljes + (+gólszerzés +védekezés +játékszervezés)</MeteoSpecialPowerfulRain>
-<MeteoSpecialTechnicalSun>technikás + (+gólszerzés +játékszervezés)</MeteoSpecialTechnicalSun>
-<MeteoSpecialPowerfulSun>erőteljes - (-gólszerzés -erőnlét)</MeteoSpecialPowerfulSun>
-<MeteoSpecialQuickSun>gyors - (-védekezés)</MeteoSpecialQuickSun>
-<MeteoSpecialQuickRain>gyors - (-védekezés -gólszerzés)</MeteoSpecialQuickRain>
+<MeteoSpecialTechnicalRain>Technikás - (-gólszerzés -játékszervezés)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>Erőteljes + (+gólszerzés +védekezés +játékszervezés)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>Technikás + (+gólszerzés +játékszervezés)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>Erőteljes - (-gólszerzés -erőnlét)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>Gyors - (-védekezés)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>Gyors - (-védekezés -gólszerzés)</MeteoSpecialQuickRain>
 <YellowNastyPlay>alattomos játék</YellowNastyPlay>
 <YellowCheating>sportszerűtlen játék</YellowCheating>
 <ProgressUpdate>Következõ frissítés:</ProgressUpdate>
@@ -223,7 +223,7 @@
 <LanguageSelect>Nyelvválasztás</LanguageSelect>
 <LanguageNote>Megj.: A HTLiveSight újraindítása szükséges.</LanguageNote>
 <ButtonCancel>Mégse</ButtonCancel>
-<ButtonOk>Potvrdi</ButtonOk>
+<ButtonOk>OK</ButtonOk>
 <WindowAboutTitle>A HTLiveSight névjegye</WindowAboutTitle>
 <TabInfo>Infó</TabInfo>
 <TabTranslators>Fordítók</TabTranslators>
@@ -369,37 +369,37 @@
 <Stamina>Erőnlét</Stamina>
 <Experience>Tapasztalat</Experience>
 <Loyalty>Hűség</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
-<TabWhistleCard>Whistles and Cards</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
-<Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
-<PopularGuy>Popular guy</PopularGuy>
-<SympatheticGuy>Sympathetic guy</SympatheticGuy>
-<PleasantGuy>Pleasant guy</PleasantGuy>
-<ControversialPerson>Controversial Person</ControversialPerson>
-<NastyFellow>Nasty fellow</NastyFellow>
-<Saintly>Saintly</Saintly>
-<Righteous>Righteous</Righteous>
-<Upright>Upright</Upright>
-<Honest>Honest</Honest>
-<Dishonest>Dishonest</Dishonest>
-<Infamous>Infamous</Infamous>
-<Unstable>Unstable</Unstable>
-<Fiery>Fiery</Fiery>
-<Temperamental>Temperamental</Temperamental>
-<Balanced>Balanced</Balanced>
-<Calm>Calm</Calm>
-<Tranquil>Tranquil</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<PathSoundsPressing>Tördelés hangjelzése</PathSoundsPressing>
+<PathSoundsMyBruised>Saját játékos sérülésének hangjelzése</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Más csapat játékosának sérülés hangjelzése</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Saját játékos kiállítva hangjelzés</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Más csapat játékosa kiállítva hangjelzés</PathSoundsOtherSentOff>
+<TabInjuries>Sérülések</TabInjuries>
+<TabWeather>Időjárás</TabWeather>
+<TabWhistleCard>Sípszó és lapok</TabWhistleCard>
+<PathSoundsMissFriend>Barát csapat kihagyott helyzetének hangjelzése</PathSoundsMissFriend>
+<PathSoundsMissOther>Más csapat kihagyott helyzetének hangjelzése</PathSoundsMissOther>
+<TabChances>Helyzetek</TabChances>
+<Agreeability>Együttműködőkészség</Agreeability>
+<Aggressiveness>Agresszivitás</Aggressiveness>
+<Honesty>Becsületesség</Honesty>
+<BelovedTeamMember>Imádott csapattag</BelovedTeamMember>
+<PopularGuy>Népszerű fickó</PopularGuy>
+<SympatheticGuy>Szimpatikus fickó</SympatheticGuy>
+<PleasantGuy>Kedves fickó</PleasantGuy>
+<ControversialPerson>Öntörvényű ember</ControversialPerson>
+<NastyFellow>Bajkeverő alak</NastyFellow>
+<Saintly>Angyali</Saintly>
+<Righteous>Igazságos</Righteous>
+<Upright>Egyenes</Upright>
+<Honest>Becsületes</Honest>
+<Dishonest>Sunyi</Dishonest>
+<Infamous>Balhés</Infamous>
+<Unstable>Bizonytalan</Unstable>
+<Fiery>Lobbanékony</Fiery>
+<Temperamental>Temperamentumos</Temperamental>
+<Balanced>Kiegyensúlyozott</Balanced>
+<Calm>Higgadt</Calm>
+<Tranquil>Jámbor</Tranquil>
+<VisitOurSoundCollection>Nézd meg a hanggyűjteményünket</VisitOurSoundCollection>
 </Htlivesight>
