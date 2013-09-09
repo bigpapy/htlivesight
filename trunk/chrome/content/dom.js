@@ -285,8 +285,8 @@ htlivesight.DOM = {
 						//linkPlayer.setAttribute("target","_blank");
 						//linkPlayer.setAttribute("href","#");
 						linkPlayer.setAttribute("style", "text-decoration: none; color: white");
-						linkPlayer.addEventListener("mouseover", function(){htlivesight.DOM.ShowLink(this);});
-						linkPlayer.addEventListener("mouseout", function(){htlivesight.DOM.HideLink(this);});
+						linkPlayer.addEventListener("mouseover", function(){this.setAttribute("style", "text-decoration:underline; color: white");});
+						linkPlayer.addEventListener("mouseout", function(){this.setAttribute("style", "text-decoration:underline; color: white");});
 						linkPlayer.innerHTML= htlivesight.DOM.getTextContent(playerInfo[0]);
 						label.appendChild(linkPlayer);
 						if(playerInfo[2].toLowerCase()=="true"){
