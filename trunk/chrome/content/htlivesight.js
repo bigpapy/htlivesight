@@ -24,9 +24,14 @@ var htlivesight = {
 			}
 			//console.info(winW2);
 			//console.info(winH2);
-
-		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW2-317) + "px" );
+			if(htlivesight.platform == 'Android'){
+				document.getElementById("live_box").setAttribute("style", "width:" + (winW-288) + "px; margin-left:2px");
+		  	document.getElementById("sidebar").setAttribute("style", "width:" + (250) + "px; margin-right:2px");
+			}else{
+				document.getElementById("live_box").setAttribute("style", "width:" + (winW2-317) + "px" );
 		  	document.getElementById("sidebar").setAttribute("style", "width:" + (290) + "px" );
+			}
+		  	
 
 		},
 
@@ -48,8 +53,29 @@ var htlivesight = {
 			}
 			//console.info(winW);
 			//console.info(winH);
-		  	document.getElementById("live_box").setAttribute("style", "width:" + (winW-317) + "px" );
-		  	document.getElementById("sidebar").setAttribute("style", "width:" + (290) + "px" );
+		  	//document.getElementById("live_box").setAttribute("style", "width:" + (winW-3/17) + "px" );
+		  	//document.getElementById("sidebar").setAttribute("style", "width:" + (290) + "px" );
+		  	
+		  	if(htlivesight.platform == 'Android'){
+		  		document.getElementById("live_box").setAttribute("style", "width:" + (winW-288) + "px; margin-left:2px");
+			  	document.getElementById("sidebar").setAttribute("style", "width:" + (250) + "px; margin-right:2px");
+			  	
+			  	document.getElementById("contentbody_leaguematches").setAttribute("style", "margin-left: -13px");
+			  	document.getElementById("contentbody_leaguetable").setAttribute("style", "margin-left: -10px; width: 222px;");
+			  	
+			  	document.getElementById("contentbody_leaguematchesBis").setAttribute("style", "margin-left: -13px");
+			  	document.getElementById("contentbody_leaguetableBis").setAttribute("style", "margin-left: -10px; width: 222px;");
+
+			  	
+			  	document.getElementById("contentbody_matchlist").setAttribute("style", "margin-left: -13px");
+			  	document.getElementById("ServerStatus").setAttribute("style", "margin-left: -13px");
+			  	document.getElementById("progresslabel").setAttribute("style", "margin-right: -13px");
+					document.getElementById("topbar").setAttribute("style", "z-index: -1; position: absolute; top: 0;");
+
+		  	}else{
+		  		document.getElementById("live_box").setAttribute("style", "width:" + (winW-317) + "px");
+			  	document.getElementById("sidebar").setAttribute("style", "width:" + (290) + "px");
+		  	}
 	// coloring header
 		  	/*document.getElementById("MatchesList").style.backgroundColor="#654321";
 		  	document.getElementById("FriendsTitle").style.backgroundColor="#654321";
@@ -85,7 +111,6 @@ var htlivesight = {
 			htlivesight.Sound.start();
 			htlivesight.Log.debug("loading username and password");
 			htlivesight.Log.debug("teamId: " + htlivesight.prefs.general.teamId);
-			
 			document.body.style.backgroundImage="url('"+htlivesight.prefs.general.customBackgroundPath + "')";
 			
 			if(htlivesight.prefs.general.extendBackground){
@@ -119,6 +144,12 @@ var htlivesight = {
 			//var link=document.getElementById("HTLSThread").getAttribute("href");
 			//link="http://"+htlivesight.prefs.general.hattrickServer+link;
 			//document.getElementById("HTLSThread").setAttribute("href",link);
+			if(htlivesight.platform == "Safari"){
+				$('#safari-warning').show();
+			}
+			if(htlivesight.platform == "Android"){
+				$('#android-warning').show();
+			}
 		},
 		getRecommendedServer: function() {
 			htlivesight.HTTP.getRecommendedServer();

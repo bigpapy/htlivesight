@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Skaņa savas komandas spēlētāja traumai</PathSoundsMyBoo>
 <PathSoundsOpBoo>Skaņa pretinieka komandas spēlētāja traumai</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Starta svilpe pirmā/otrā puslaika sākumā</PathSoundsWhistleStart>
-<PathSoundsWhistle>Dzeltenās/sarkanās kartītes skaņa</PathSoundsWhistle>
+<PathSoundsWhistle>Dzeltenās kartītes skaņa</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick skaņa</PathSoundsHattrick>
 <PathSoundsRestore>Atjaunot</PathSoundsRestore>
 <PathSoundsPlay>Atskaņot</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Mierīgs</Calm>
 <Tranquil>Flegmatisks</Tranquil>
 <VisitOurSoundCollection>Apmeklē mūsu skaņu kolekciju</VisitOurSoundCollection>
+<SafariWarning>Ja HTLivesight cilne ir neaktīva, tad skaņas signāli tiks bloķēti. Lūdzu atver HTLivesight jaunā logā, ja paralēli spēlēm ir vēlme sērfot internetā</SafariWarning>
+<OnlyHTTPFiles>Darbojas tikai http URL</OnlyHTTPFiles>
+<Warning>Brīdinājums</Warning>
 </Htlivesight>

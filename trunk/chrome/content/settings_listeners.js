@@ -234,6 +234,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	//document.getElementById("label_customBackground_try").addEventListener('click',function(){htlivesight.Settings.click.tryBackground();});	
 	document.getElementById("label_customBackground_reset").addEventListener('click',function(){htlivesight.Settings.click.resetBackground();});
 	document.getElementById("customBackgroundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getImageFile(this.files);});
+	document.getElementById("customBackgroundPath").addEventListener('change',function(){htlivesight.Settings.click.tryBackground();});	
 	
 	document.getElementById("chkExtendBackground").addEventListener('click',function(){htlivesight.Settings.click.extendBackground();});
 	document.getElementById("chkRepeatBackground").addEventListener('click',function(){htlivesight.Settings.click.repeatBackground();});

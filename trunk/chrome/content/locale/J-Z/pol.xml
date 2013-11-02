@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Dźwięk dla kontuzji w moim zespole</PathSoundsMyBoo>
 <PathSoundsOpBoo>Dźwięk dla kontuzji w zespole rywala</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Dźwięk dla rozpoczęcia pierwszej/drugiej połowy spotkania</PathSoundsWhistleStart>
-<PathSoundsWhistle>Dźwięk żółtej/czerwonej kartki</PathSoundsWhistle>
+<PathSoundsWhistle>Dźwięk dla żółtej kartki</PathSoundsWhistle>
 <PathSoundsHattrick>Dźwięki Hattricka</PathSoundsHattrick>
 <PathSoundsRestore>Przywróć</PathSoundsRestore>
 <PathSoundsPlay>Graj</PathSoundsPlay>
@@ -369,37 +369,40 @@
 <Stamina>Kondycja</Stamina>
 <Experience>Doświadczenie</Experience>
 <Loyalty>Lojalność</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
-<TabWhistleCard>Whistles and Cards</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
-<Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
-<PopularGuy>Popular guy</PopularGuy>
-<SympatheticGuy>Sympathetic guy</SympatheticGuy>
-<PleasantGuy>Pleasant guy</PleasantGuy>
-<ControversialPerson>Controversial Person</ControversialPerson>
-<NastyFellow>Nasty fellow</NastyFellow>
-<Saintly>Saintly</Saintly>
-<Righteous>Righteous</Righteous>
-<Upright>Upright</Upright>
-<Honest>Honest</Honest>
-<Dishonest>Dishonest</Dishonest>
-<Infamous>Infamous</Infamous>
-<Unstable>Unstable</Unstable>
-<Fiery>Fiery</Fiery>
-<Temperamental>Temperamental</Temperamental>
-<Balanced>Balanced</Balanced>
-<Calm>Calm</Calm>
-<Tranquil>Tranquil</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<PathSoundsPressing>Dźwięk dla gry pressingiem</PathSoundsPressing>
+<PathSoundsMyBruised>Mój zawodnik został lekko kontuzjowany</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Zawodnik przeciwnika został lekko kontuzjowany</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Wyrzucenie mojego zawodnika z boiska</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Wyrzucenie innego zawodnika z boiska</PathSoundsOtherSentOff>
+<TabInjuries>Kontuzje</TabInjuries>
+<TabWeather>Pogoda</TabWeather>
+<TabWhistleCard>Gwizdki i Kartki</TabWhistleCard>
+<PathSoundsMissFriend>Dźwięk dla zmarnowanej okazji drużyny przyjaciela</PathSoundsMissFriend>
+<PathSoundsMissOther>Dźwięk zmarnowanej okazji innego zespołu</PathSoundsMissOther>
+<TabChances>Zdarzenia</TabChances>
+<Agreeability>Usposobienie</Agreeability>
+<Aggressiveness>Agresywność</Aggressiveness>
+<Honesty>Uczciwość</Honesty>
+<BelovedTeamMember>uwielbiany przez zespół </BelovedTeamMember>
+<PopularGuy>popularny</PopularGuy>
+<SympatheticGuy>sympatyczny</SympatheticGuy>
+<PleasantGuy>przyjemny</PleasantGuy>
+<ControversialPerson>kontrowersyjny</ControversialPerson>
+<NastyFellow>złośliwy</NastyFellow>
+<Saintly>świątobliwy</Saintly>
+<Righteous>szlachetny</Righteous>
+<Upright>prawy</Upright>
+<Honest>uczciwy</Honest>
+<Dishonest>nieuczciwy</Dishonest>
+<Infamous>podły</Infamous>
+<Unstable>niezrównoważony</Unstable>
+<Fiery>porywczy</Fiery>
+<Temperamental>z charakterem</Temperamental>
+<Balanced>zrównoważony</Balanced>
+<Calm>opanowany</Calm>
+<Tranquil>spokojny</Tranquil>
+<VisitOurSoundCollection>Nasza kolekcja dzwięków</VisitOurSoundCollection>
+<SafariWarning>Jeżeli okno z HTLivesight nie będzie aktywne, dźwięki powiadomień będą zablokowane. Proszę otworzyć nowe okno, jeżeli chcesz przeglądać Internet podczas meczu</SafariWarning>
+<OnlyHTTPFiles>Działają tylko linki http</OnlyHTTPFiles>
+<Warning>Uwaga</Warning>
 </Htlivesight>

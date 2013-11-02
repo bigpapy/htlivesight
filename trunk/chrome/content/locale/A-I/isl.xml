@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Hljóð fyrir meiðsli hjá mínu liði</PathSoundsMyBoo>
 <PathSoundsOpBoo>Hljóð fyrir meiðsli hjá mótherjunum</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Flautað til leiks byrjun/hálfleik</PathSoundsWhistleStart>
-<PathSoundsWhistle>Hljóð fyrir Gul/Rauð spjöld</PathSoundsWhistle>
+<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick hljóð</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Calm</Calm>
 <Tranquil>Tranquil</Tranquil>
 <VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
+<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
+<Warning>Warning</Warning>
 </Htlivesight>

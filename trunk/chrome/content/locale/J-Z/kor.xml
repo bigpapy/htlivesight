@@ -7,7 +7,7 @@
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>서버:</MenuServer>
 <MenuDisconnected>연결 끊김</MenuDisconnected>
-<MenuAbout>HTLiveSight에 대하여</MenuAbout>
+<MenuAbout>HTLiveSight 소개</MenuAbout>
 <LoginLabel>로그인</LoginLabel>
 <LoginTeamId>팀의 ID를 입력하세요.</LoginTeamId>
 <LoginUsername>사용자 이름</LoginUsername>
@@ -15,16 +15,16 @@
 <LoginButton>로그인</LoginButton>
 <LoginReLive>다시 보기</LoginReLive>
 <LoginSpeed>속도</LoginSpeed>
-<LoginByEvent>Per event</LoginByEvent>
+<LoginByEvent>이벤트 하나 당</LoginByEvent>
 <LeagueMatches>리그 경기</LeagueMatches>
 <LeagueLiveTable>현재 리그상황</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>팀</LeagueTeam>
-<LeaguePlayed>경기수</LeaguePlayed>
-<LeagueGoals>득점</LeagueGoals>
-<LeagueGoalDiff>득실차</LeagueGoalDiff>
-<LeaguePoints>승점</LeaguePoints>
-<MatchesList>경기 리스트</MatchesList>
+<LeaguePlayed>P</LeaguePlayed>
+<LeagueGoals>G</LeagueGoals>
+<LeagueGoalDiff>GD</LeagueGoalDiff>
+<LeaguePoints>PTS</LeaguePoints>
+<MatchesList>경기 목록</MatchesList>
 <MatchesAdd>경기 추가</MatchesAdd>
 <MatchesByMatch>경기 ID로</MatchesByMatch>
 <MatchesByTeam>팀 ID로</MatchesByTeam>
@@ -58,14 +58,14 @@
 <TimeExtraTime>연장전</TimeExtraTime>
 <TimePenalties>페널티</TimePenalties>
 <TimeFinish>경기 종료</TimeFinish>
-<TimeStartsIn>경기 시작까지 남은 기간</TimeStartsIn>
+<TimeStartsIn>경기 시작까지 남은 시간</TimeStartsIn>
 <TimeDays>일</TimeDays>
 <TimeHours>시</TimeHours>
 <TimeMinutes>분</TimeMinutes>
 <TimeDay>일</TimeDay>
 <TimeHour>시</TimeHour>
 <TimeMinute>분</TimeMinute>
-<TimeMin>초</TimeMin>
+<TimeMin>분</TimeMin>
 <TooltipWindowSound>경기에서의 사운드 활성화 또는 비활성화</TooltipWindowSound>
 <TooltipWindowLink>해트트릭 사이트의 경기 페이지로 링크</TooltipWindowLink>
 <TooltipWindowInfo>정보 이벤트 메시지 숨김/해제</TooltipWindowInfo>
@@ -167,7 +167,7 @@
 <GeneralNote>현재 접속중인 서버 번호를 입력하십시오 (ie. www96).</GeneralNote>
 <MatchesLeague>리그경기</MatchesLeague>
 <MatchesGetLeague>리그경기 가져오기</MatchesGetLeague>
-<MatchesPlayed>다음</MatchesPlayed>
+<MatchesPlayed>최근</MatchesPlayed>
 <MatchesHours>시간 이내에 진행되었던 경기 가져오기.</MatchesHours>
 <MatchesFriends>친구</MatchesFriends>
 <MatchesGetFriends>친구의 경기 가져오기</MatchesGetFriends>
@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>우리팀 부상 사운드</PathSoundsMyBoo>
 <PathSoundsOpBoo>상대 팀 선수 부상 사운드</PathSoundsOpBoo>
 <PathSoundsWhistleStart>전/후반 시작 호각</PathSoundsWhistleStart>
-<PathSoundsWhistle>옐로우/레드 카드 사운드</PathSoundsWhistle>
+<PathSoundsWhistle>옐로우 카드 사운드</PathSoundsWhistle>
 <PathSoundsHattrick>해트트릭 사운드</PathSoundsHattrick>
 <PathSoundsRestore>복구</PathSoundsRestore>
 <PathSoundsPlay>재생</PathSoundsPlay>
@@ -224,10 +224,10 @@
 <LanguageNote>알림:파이어폭스를 다시 시작할때 설정이 변경됩니다.</LanguageNote>
 <ButtonCancel>취소</ButtonCancel>
 <ButtonOk>확인</ButtonOk>
-<WindowAboutTitle>HTLiveSight에 대하여</WindowAboutTitle>
+<WindowAboutTitle>HTLiveSight 소개</WindowAboutTitle>
 <TabInfo>정보</TabInfo>
 <TabTranslators>번역자</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabCredits>크레딧</TabCredits>
 <MonthJanuary>1월</MonthJanuary>
 <MonthFebruary>2월</MonthFebruary>
 <MonthMarch>3월</MonthMarch>
@@ -287,16 +287,16 @@
 <Normal>일반적인 경기</Normal>
 <PIC>부담없이 경기</PIC>
 <MOTS>시즌 경기</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
+<ColorPicker>다음 사이트에서 색상을 선택할 수 있습니다 </ColorPicker>
+<EventBackground>이벤트 배경 색상</EventBackground>
+<FriendHome>홈 (본인 및 친구) 색상: #</FriendHome>
+<FriendAway>원정 (본인 및 친구) 색상: #</FriendAway>
+<FoeHome>다른 팀 홈 색상: #</FoeHome>
+<FoeAway>다른 팀 원정 색상: #</FoeAway>
+<Neutral>중립 색상: #</Neutral>
+<EventColorTitle>이벤트 문장 색상</EventColorTitle>
+<EventTextColor>이벤트 문장 색상: #</EventTextColor>
+<SETextColor>태그 문장 색상: #</SETextColor>
 <Colors>색상</Colors>
 <SchemaTip>라인업을 표시하려면 클릭</SchemaTip>
 <StatisticTip>경기 종료 시점의 통계를 표시하려면 클릭</StatisticTip>
@@ -314,41 +314,41 @@
 <Roof>지붕 밑 좌석</Roof>
 <VIP>VIP 회원석</VIP>
 <CrowdinHelp>번역하는 것을 도와주세요! Crowdin을 사용하면 정말 쉽고 즐겁습니다! 여기를 클릭하세요!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
+<Error401>401 오류: 접근을 허가받지 않았습니다. 다시 인증을 받을 필요가 있습니다. 계속하려면 확인 버튼을 클릭하세요.</Error401>
+<Error404>404 오류: 요청된 리소르를 찾을 수 없습니다. 이 오류가 다시 나타날 경우 chpp 서비스가 다운되었는지 확인하세요.</Error404>
+<Error0>0 오류: 인터넷이 연결되어 있지 않습니다.</Error0>
+<Error500>500 오류: (Hattrick) 내부 서버 오류</Error500>
+<Error503>503 오류: (일시적인 과부화 또는 점검으로 인하여) CHPP 서비스를 사용할 수 없음</Error503>
+<PathSoundsNote1>.ogg 포맷의 사운드 파일 경로 앞에 file:///을 입력하세요</PathSoundsNote1>
+<PathSoundsNote2>예시: file:///c:path\to\thesound.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>전반전 종료 호각</PathSoundsWhistle2>
 <PathSoundsWhistle3>경기 종료 호각</PathSoundsWhistle3>
 <EventYellow2>두 번째 옐로우 카드</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
+<LoggedIn>로그인 팀 -</LoggedIn>
+<latestNews>최신 뉴스 확인</latestNews>
 <HTLSThread>Hattrick 토론장</HTLSThread>
 <ProjectWebsite>프로젝트 웹사이트</ProjectWebsite>
 <GooglePlusPage>Google+ 페이지</GooglePlusPage>
 <TwitterPage>Twitter 페이지</TwitterPage>
 <FacebookPage>Facebook 페이지</FacebookPage>
-<chatLink>Open chat</chatLink>
+<chatLink>채팅 열기</chatLink>
 <hidesidebar>사이드바 숨김</hidesidebar>
 <addFriend>친구 목록에 이 팀을 추가하려면 클릭</addFriend>
 <TooltipCopyLineUp>클립보드에 라인업을 복사하려면 클릭</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
+<Dark>어두운</Dark>
+<Light>밝은</Light>
+<Themes>테마</Themes>
+<NoTournament>친구들의 단판 경기 및 토너먼트 경기를 불러오지 않기</NoTournament>
 <DefHatStats>수비 HatStats</DefHatStats>
 <MidHatStats>미드필드 HatStats</MidHatStats>
 <AttHatStats>공격 HatStats</AttHatStats>
 <TotHatStats>총 HatStats</TotHatStats>
 <CopiedToClipboard>클립보드에 복사했습니다!</CopiedToClipboard>
-<ReLiveControls>Relive Controls</ReLiveControls>
-<ExtendImage>Extend image</ExtendImage>
-<RepeatImage>Repeat image</RepeatImage>
-<Background>Background</Background>
-<MuteAll>Sound switch</MuteAll>
+<ReLiveControls>Re-Live 컨트롤</ReLiveControls>
+<ExtendImage>이미지 확장</ExtendImage>
+<RepeatImage>이미지 반복</RepeatImage>
+<Background>배경</Background>
+<MuteAll>사운드 스위치</MuteAll>
 <Technical>공 마술사</Technical>
 <Quick>빠름</Quick>
 <Powerful>힘 있음</Powerful>
@@ -356,7 +356,7 @@
 <Header>헤딩</Header>
 <Regainer>회복인</Regainer>
 <SecondTeamIdLabel>세컨드 팀 ID 입력</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
+<SecondSoundEqualFirst>세컨드 팀은 퍼스트 팀과 동일한 사운드</SecondSoundEqualFirst>
 <Keeper>골키핑</Keeper>
 <Defending>수비력</Defending>
 <Playmaking>플레이메이킹</Playmaking>
@@ -369,37 +369,40 @@
 <Stamina>체력</Stamina>
 <Experience>경험</Experience>
 <Loyalty>충성도</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
-<TabWhistleCard>Whistles and Cards</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
-<Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
-<PopularGuy>Popular guy</PopularGuy>
-<SympatheticGuy>Sympathetic guy</SympatheticGuy>
-<PleasantGuy>Pleasant guy</PleasantGuy>
-<ControversialPerson>Controversial Person</ControversialPerson>
-<NastyFellow>Nasty fellow</NastyFellow>
-<Saintly>Saintly</Saintly>
-<Righteous>Righteous</Righteous>
-<Upright>Upright</Upright>
-<Honest>Honest</Honest>
-<Dishonest>Dishonest</Dishonest>
-<Infamous>Infamous</Infamous>
-<Unstable>Unstable</Unstable>
-<Fiery>Fiery</Fiery>
-<Temperamental>Temperamental</Temperamental>
-<Balanced>Balanced</Balanced>
-<Calm>Calm</Calm>
-<Tranquil>Tranquil</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<PathSoundsPressing>압박 이벤트 사운드</PathSoundsPressing>
+<PathSoundsMyBruised>내 선수가 부상을 입을 때 사운드</PathSoundsMyBruised>
+<PathSoundsOtherBruised>다른 팀 선수가 부상을 입을 때 사운드</PathSoundsOtherBruised>
+<PathSoundsMySentOff>내 선수가 퇴장되었을 때 사운드</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>다른 팀 선수가 퇴장되었을 때 사운드</PathSoundsOtherSentOff>
+<TabInjuries>부상</TabInjuries>
+<TabWeather>날씨</TabWeather>
+<TabWhistleCard>호각 및 카드</TabWhistleCard>
+<PathSoundsMissFriend>친구 팀이 득점에 실패했을 때 사운드</PathSoundsMissFriend>
+<PathSoundsMissOther>다른 팀이 득점에 실패했을 때 사운드</PathSoundsMissOther>
+<TabChances>득점 기회</TabChances>
+<Agreeability>호감도</Agreeability>
+<Aggressiveness>적극성</Aggressiveness>
+<Honesty>공정함</Honesty>
+<BelovedTeamMember>사랑스러운 선수 </BelovedTeamMember>
+<PopularGuy>인기 있는 사람</PopularGuy>
+<SympatheticGuy>인정 있는 사람</SympatheticGuy>
+<PleasantGuy>유쾌한 사람</PleasantGuy>
+<ControversialPerson>논쟁상의 사람</ControversialPerson>
+<NastyFellow>심술궂은 사람</NastyFellow>
+<Saintly>신성한</Saintly>
+<Righteous>공정한</Righteous>
+<Upright>고결한</Upright>
+<Honest>정직한</Honest>
+<Dishonest>부정직한</Dishonest>
+<Infamous>악명높은</Infamous>
+<Unstable>무책임한</Unstable>
+<Fiery>불같은 성질</Fiery>
+<Temperamental>변덕스러운</Temperamental>
+<Balanced>침착한</Balanced>
+<Calm>평온한</Calm>
+<Tranquil>조용한</Tranquil>
+<VisitOurSoundCollection>사운드 컬렉션 방문</VisitOurSoundCollection>
+<SafariWarning>HTLivesight  화면을 보고 있지 않으면 알림 사운드는 차단됩니다. 따라서 경기 중에 인터넷 서핑을 하고 싶으시면 새 창을 열어주세요</SafariWarning>
+<OnlyHTTPFiles>오직 http URL만 동작</OnlyHTTPFiles>
+<Warning>경고</Warning>
 </Htlivesight>

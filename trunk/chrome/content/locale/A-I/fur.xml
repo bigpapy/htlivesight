@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Suono infortunio della mia squadra</PathSoundsMyBoo>
 <PathSoundsOpBoo>Suono infortunio della squadra avversaria</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Suono inizio 1° e 2° tempo</PathSoundsWhistleStart>
-<PathSoundsWhistle>Suono ammonizione/espulsione</PathSoundsWhistle>
+<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Suono hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Ripristina</PathSoundsRestore>
 <PathSoundsPlay>Suona</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Calm</Calm>
 <Tranquil>Tranquil</Tranquil>
 <VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
+<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
+<Warning>Warning</Warning>
 </Htlivesight>

@@ -591,8 +591,10 @@ htlivesight.LineUp.toClipboard= function(lineup,id,minute,e){
 			if(i==13)lineupString+="[td colspan=2 align=center]"+playerNameIdYouth[0]+" "+specialty+"[/td][/tr][/table]";
 			}
 
-		htlivesight.copyToClipboard(lineupString);
-		htlivesight.copiedToClipboardNotification(e);
+		htlivesight.copyToClipboard(lineupString,e);
+		if (htlivesight.platform != "Safari"){
+		  htlivesight.copiedToClipboardNotification(e);
+		 }
 		
 			
 	//	alert("copied to clipboard!");

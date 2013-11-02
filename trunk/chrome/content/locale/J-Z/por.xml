@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Som para lesão de nosso jogador</PathSoundsMyBoo>
 <PathSoundsOpBoo>Som para lesão de adversário</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Apito para início da 1ª/2ª parte</PathSoundsWhistleStart>
-<PathSoundsWhistle>Som para cartão Amarelo/Vermelho</PathSoundsWhistle>
+<PathSoundsWhistle>Som para cartão amarelo</PathSoundsWhistle>
 <PathSoundsHattrick>Som de hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Repor</PathSoundsRestore>
 <PathSoundsPlay>Ouvir</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Calma</Calm>
 <Tranquil>Tranquila</Tranquil>
 <VisitOurSoundCollection>Visite a nossa coleção de sons</VisitOurSoundCollection>
+<SafariWarning>Se o painel de HTLivesight não estiver aberto, os sons das notificações serão bloqueadas. Por favor abra uma nova janela, se quiser navegar na internet durante um jogo</SafariWarning>
+<OnlyHTTPFiles>Só o URL http é que funciona</OnlyHTTPFiles>
+<Warning>Aviso</Warning>
 </Htlivesight>

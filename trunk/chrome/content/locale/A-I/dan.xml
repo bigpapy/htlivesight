@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Lyd for skade på eget hold</PathSoundsMyBoo>
 <PathSoundsOpBoo>Lyd for skade hos modstander</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Fløjte for kickoff 1. og 2. halvleg</PathSoundsWhistleStart>
-<PathSoundsWhistle>Lyd for gult/rødt kort</PathSoundsWhistle>
+<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Lyd for hattrick scoring</PathSoundsHattrick>
 <PathSoundsRestore>Genskab</PathSoundsRestore>
 <PathSoundsPlay>Afspil</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Rolig</Calm>
 <Tranquil>Stille</Tranquil>
 <VisitOurSoundCollection>Kig forbi vores lyd samling</VisitOurSoundCollection>
+<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
+<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
+<Warning>Warning</Warning>
 </Htlivesight>

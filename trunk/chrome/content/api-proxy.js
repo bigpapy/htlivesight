@@ -60,9 +60,18 @@ htlivesight.ApiProxy = {
 				var l10nData=htlivesight.data;
 				var introduction=htlivesight.Util.Parse("Introduction",l10nData[0]);
 				alert(introduction);
-				if (typeof(chrome) == "object") {
+				if (htlivesight.platform == "Chrome") {
 					chrome.tabs.create({url: htlivesight.ApiProxy.authorizeUrl + "?" + text})
 					//var chppPage=???;
+				}else	if (htlivesight.platform == "Safari"){
+					//try{
+					//alert("1");
+					//var chppPage = safari.application.activeBrowserWindow.openTab(); // Open a new tab  
+					var chppPage = safari.self.tab.dispatchMessage('openUrlInNewTab', htlivesight.ApiProxy.authorizeUrl + "?" + text);
+					//alert("2");
+					//chppPage.url = htlivesight.ApiProxy.authorizeUrl + "?" + text; // Set tab 
+					//alert("3");
+					//}catch(e){alert(e);}
 				}else{
 					var chppPage=window.open(htlivesight.ApiProxy.authorizeUrl + "?" + text);
 				}
@@ -105,12 +114,7 @@ htlivesight.ApiProxy = {
 								htlivesight.ApiProxy.setAccessTokenSecret(accessTokenSecret,teamId);
 								var ending=htlivesight.Util.Parse("Ending",l10nData[0]);;
 								alert(ending);
-								if (typeof(chrome) == "object") {
-									//close chpp page
-									//chppPage.close();// close CHPP pages
-								}else{
-									chppPage.close();// close CHPP pages
-								}
+								chppPage.close();// close CHPP pages
 								document.location.reload();//reload HTLS
 							}catch(e){};
 						}, true);

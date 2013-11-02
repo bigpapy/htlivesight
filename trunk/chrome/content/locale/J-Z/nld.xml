@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Geluid bij blessure in eigen team</PathSoundsMyBoo>
 <PathSoundsOpBoo>Geluid bij blessure voor de tegenstander</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Fluitsignaal start eerste en tweede helft</PathSoundsWhistleStart>
-<PathSoundsWhistle>Geluid bij gele/rode kaart</PathSoundsWhistle>
+<PathSoundsWhistle>Geluid bij gele kaart</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick geluid</PathSoundsHattrick>
 <PathSoundsRestore>Herstellen</PathSoundsRestore>
 <PathSoundsPlay>Afspelen</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Kalm</Calm>
 <Tranquil>Rustig</Tranquil>
 <VisitOurSoundCollection>Bekijk onze verzameling geluiden</VisitOurSoundCollection>
+<SafariWarning>Als het HTLivesight panel geen focus heeft, worden geluiden niet afgespeeld. Open een nieuw scherm als je andere sites wilt bezoeken tijdens een wedstrijd</SafariWarning>
+<OnlyHTTPFiles>Alleen een http URL werkt</OnlyHTTPFiles>
+<Warning>Waarschuwing</Warning>
 </Htlivesight>

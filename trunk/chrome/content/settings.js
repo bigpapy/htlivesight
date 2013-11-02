@@ -455,6 +455,9 @@ htlivesight.Settings = {
 			document.getElementById("label_chkRepeatBackground").innerHTML=htlivesight.Util.Parse("RepeatImage",data[0]);
 			document.getElementById("CustomBackground").innerHTML=htlivesight.Util.Parse("Background",data[0]);
 			document.getElementById("visitOurSoundCollection").innerHTML=htlivesight.Util.Parse("VisitOurSoundCollection",data[0]);
+			/*if(htlivesight.platform == "Safari"){
+			  $("[type='file']").replaceWith("<span>"+htlivesight.Util.Parse("OnlyHTTPFiles",data[0])+"</span>");
+			}*/
 			
 			try{ //because it's present in settings.html but not in htlivesight.html
 				document.getElementById("OkButton").innerHTML=htlivesight.Util.Parse("ButtonOk",data[0]);
@@ -745,7 +748,13 @@ htlivesight.Settings = {
 				var prefix="@";
 				if(document.getElementById(id+"Check").checked) prefix="";
 				var prefs = htlivesight.Settings.preferences;
-				document.getElementById(id+"SoundPath").value=prefix+htlivesightEnv.contentPath+defaultFile;
+				if(htlivesight.platform == "Safari"){
+				  defaultFile = defaultFile.replace("ogg","mp3");
+				  defaultFile = defaultFile.replace("wav","mp3");
+				  document.getElementById(id+"SoundPath").value=prefix+'http://htlivesight.googlecode.com/svn/trunk/chrome/content/'+defaultFile;
+				}else{
+				  document.getElementById(id+"SoundPath").value=prefix+htlivesightEnv.contentPath+defaultFile;
+				}
 				prefs.personalization[id+"SoundPath"] = document.getElementById(id+"SoundPath").value;
 				document.getElementById(id+"SoundPathBrowse").value="";
 			},
@@ -1021,7 +1030,12 @@ htlivesight.Settings = {
 			},
 			resetBackground: function() {
 			var prefs = htlivesight.Settings.preferences;
-			imagePath = document.getElementById("customBackgroundPath").value=htlivesightEnv.contentPath+"themes/images/bg.png";
+			
+			if(htlivesight.platform == "Safari"){
+			  var imagePath = document.getElementById("customBackgroundPath").value="./themes/images/bg.png";
+			}else{
+			  var imagePath = document.getElementById("customBackgroundPath").value=htlivesightEnv.contentPath+"themes/images/bg.png";
+			}
 			document.body.style.backgroundImage = "url('"+imagePath+"')";
 			prefs.general["customBackgroundPath"] = imagePath;
 			},

@@ -284,9 +284,9 @@ htlivesight.DOM = {
 						linkPlayer.addEventListener("click", function(){htlivesight.Click.openPlayerLink(this);},true);
 						//linkPlayer.setAttribute("target","_blank");
 						//linkPlayer.setAttribute("href","#");
-						linkPlayer.setAttribute("style", "text-decoration: none; color: white");
-						linkPlayer.addEventListener("mouseover", function(){this.setAttribute("style", "text-decoration:underline; color: white");});
-						linkPlayer.addEventListener("mouseout", function(){this.setAttribute("style", "text-decoration:underline; color: white");});
+						linkPlayer.setAttribute("style", "text-decoration: none; color: white !important");
+						linkPlayer.addEventListener("mouseover", function(){this.setAttribute("style", "text-decoration:underline;color: white !important");});
+						linkPlayer.addEventListener("mouseout", function(){this.setAttribute("style", "text-decoration:none;color: white !important");});
 						linkPlayer.innerHTML= htlivesight.DOM.getTextContent(playerInfo[0]);
 						label.appendChild(linkPlayer);
 						if(playerInfo[2].toLowerCase()=="true"){

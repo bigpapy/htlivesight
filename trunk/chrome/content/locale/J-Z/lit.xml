@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Mano žaidėjo trauma</PathSoundsMyBoo>
 <PathSoundsOpBoo>Varžovo žaidėjo trauma</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Kėlinio pradžia</PathSoundsWhistleStart>
-<PathSoundsWhistle>Gauta kortelė</PathSoundsWhistle>
+<PathSoundsWhistle>Geltona kortelė</PathSoundsWhistle>
 <PathSoundsHattrick>Hat-trick'as</PathSoundsHattrick>
 <PathSoundsRestore>Atstatyti</PathSoundsRestore>
 <PathSoundsPlay>Groti</PathSoundsPlay>
@@ -369,37 +369,40 @@
 <Stamina>Ištvermė</Stamina>
 <Experience>Patirtis</Experience>
 <Loyalty>Lojalumas</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
-<TabWhistleCard>Whistles and Cards</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
-<Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
-<PopularGuy>Popular guy</PopularGuy>
-<SympatheticGuy>Sympathetic guy</SympatheticGuy>
-<PleasantGuy>Pleasant guy</PleasantGuy>
-<ControversialPerson>Controversial Person</ControversialPerson>
-<NastyFellow>Nasty fellow</NastyFellow>
-<Saintly>Saintly</Saintly>
-<Righteous>Righteous</Righteous>
-<Upright>Upright</Upright>
-<Honest>Honest</Honest>
-<Dishonest>Dishonest</Dishonest>
-<Infamous>Infamous</Infamous>
-<Unstable>Unstable</Unstable>
-<Fiery>Fiery</Fiery>
-<Temperamental>Temperamental</Temperamental>
-<Balanced>Balanced</Balanced>
-<Calm>Calm</Calm>
-<Tranquil>Tranquil</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<PathSoundsPressing>Spaudimas</PathSoundsPressing>
+<PathSoundsMyBruised>Mano žaidėjas susižeidė</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Kitos komandos žaidėjas susižeidė</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Mano žaidėjas gavo raudoną kortelę</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Kitos komandos žaidėjas gavo raudoną kortelę</PathSoundsOtherSentOff>
+<TabInjuries>Traumos</TabInjuries>
+<TabWeather>Orai</TabWeather>
+<TabWhistleCard>Švilpukai ir kortelės</TabWhistleCard>
+<PathSoundsMissFriend>Draugo komanda neįmušė</PathSoundsMissFriend>
+<PathSoundsMissOther>Kita komanda neįmušė</PathSoundsMissOther>
+<TabChances>Progos</TabChances>
+<Agreeability>Suderinamumas</Agreeability>
+<Aggressiveness>Agresyvumas</Aggressiveness>
+<Honesty>Sąžiningumas</Honesty>
+<BelovedTeamMember>mylimas komandos narys</BelovedTeamMember>
+<PopularGuy>populiarus vaikinas</PopularGuy>
+<SympatheticGuy>simpatiškas vaikinas</SympatheticGuy>
+<PleasantGuy>malonus vaikinas</PleasantGuy>
+<ControversialPerson>kontroversiška asmenybė</ControversialPerson>
+<NastyFellow>bjaurus vaikinas</NastyFellow>
+<Saintly>šventasis</Saintly>
+<Righteous>teisingas</Righteous>
+<Upright>doras</Upright>
+<Honest>sąžiningas</Honest>
+<Dishonest>nesąžiningas</Dishonest>
+<Infamous>prastos reputacijos</Infamous>
+<Unstable>nepastovus</Unstable>
+<Fiery>karštakošis</Fiery>
+<Temperamental>temperamentingas</Temperamental>
+<Balanced>subalansuotas</Balanced>
+<Calm>ramus</Calm>
+<Tranquil>pasyvus</Tranquil>
+<VisitOurSoundCollection>Aplankykite mūsų garso įrašų kolekciją</VisitOurSoundCollection>
+<SafariWarning>Jei HTLivesight panelė praranda fokusą, pranešimų garsai yra blokuojami. Atidarykite naują langą, jei norite naršyti internetą per rungtynes</SafariWarning>
+<OnlyHTTPFiles>Veikia tik http nuorodos (URL)</OnlyHTTPFiles>
+<Warning>Įspėjimas</Warning>
 </Htlivesight>

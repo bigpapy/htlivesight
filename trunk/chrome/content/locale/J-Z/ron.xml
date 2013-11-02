@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Sunet pentru accidentare a propriului jucător</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sunet pentru accidentare a jucătorului advers</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Fluier pentru începutul primei/celei de-a doua reprize</PathSoundsWhistleStart>
-<PathSoundsWhistle>Sunet pentru cartonaş galben/roşu</PathSoundsWhistle>
+<PathSoundsWhistle>Sunet pentru cartonaș galben</PathSoundsWhistle>
 <PathSoundsHattrick>Sunet hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Restabilește</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
@@ -369,37 +369,40 @@
 <Stamina>Rezistență</Stamina>
 <Experience>Experiență</Experience>
 <Loyalty>Loialitate</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
-<TabWhistleCard>Whistles and Cards</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
-<Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
-<PopularGuy>Popular guy</PopularGuy>
-<SympatheticGuy>Sympathetic guy</SympatheticGuy>
-<PleasantGuy>Pleasant guy</PleasantGuy>
-<ControversialPerson>Controversial Person</ControversialPerson>
-<NastyFellow>Nasty fellow</NastyFellow>
-<Saintly>Saintly</Saintly>
-<Righteous>Righteous</Righteous>
-<Upright>Upright</Upright>
-<Honest>Honest</Honest>
-<Dishonest>Dishonest</Dishonest>
-<Infamous>Infamous</Infamous>
-<Unstable>Unstable</Unstable>
-<Fiery>Fiery</Fiery>
+<PathSoundsPressing>Sunet eveniment pressing</PathSoundsPressing>
+<PathSoundsMyBruised>Sunet accidentare jucător propriu</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Sunet accidentare jucător advers</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Sunet eliminare jucător propriu</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Sunet eliminare jucător advers</PathSoundsOtherSentOff>
+<TabInjuries>Accidentări</TabInjuries>
+<TabWeather>Vreme</TabWeather>
+<TabWhistleCard>Cartonașe</TabWhistleCard>
+<PathSoundsMissFriend>Sunet ratare echipă prietenă</PathSoundsMissFriend>
+<PathSoundsMissOther>Sunet ratare altă echipă</PathSoundsMissOther>
+<TabChances>Ocazii</TabChances>
+<Agreeability>Simpatie</Agreeability>
+<Aggressiveness>Agresivitate</Aggressiveness>
+<Honesty>Cinstea</Honesty>
+<BelovedTeamMember>Membru iubit al echipei</BelovedTeamMember>
+<PopularGuy>Tip popular</PopularGuy>
+<SympatheticGuy>Tip simpatic</SympatheticGuy>
+<PleasantGuy>Tip plăcut</PleasantGuy>
+<ControversialPerson>Tip controversat</ControversialPerson>
+<NastyFellow>Tip antipatic</NastyFellow>
+<Saintly>Angelic</Saintly>
+<Righteous>Incoruptibil</Righteous>
+<Upright>Integru</Upright>
+<Honest>Cinstit</Honest>
+<Dishonest>Necinstit</Dishonest>
+<Infamous>Infam</Infamous>
+<Unstable>Instabil</Unstable>
+<Fiery>Irascibil</Fiery>
 <Temperamental>Temperamental</Temperamental>
-<Balanced>Balanced</Balanced>
+<Balanced>Echilibrat</Balanced>
 <Calm>Calm</Calm>
-<Tranquil>Tranquil</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<Tranquil>Potolit</Tranquil>
+<VisitOurSoundCollection>Vizitează colecția noastră de sunete</VisitOurSoundCollection>
+<SafariWarning>Dacă tabul HTLivesight nu este în prim-plan, sunetele de notificare vor fi blocate. Vă rugăm sa deschideți o alta sesiune de browser daca vreți să navigați pe internet în timpul unui meci</SafariWarning>
+<OnlyHTTPFiles>Funcționează doar URL http</OnlyHTTPFiles>
+<Warning>Atenționare</Warning>
 </Htlivesight>
