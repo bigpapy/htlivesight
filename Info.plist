@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>silkevicious &amp; bigpapy</string>
+	<key>Builder Version</key>
+	<string>534.57.2</string>
+	<key>CFBundleDisplayName</key>
+	<string>HTLivesight</string>
+	<key>CFBundleIdentifier</key>
+	<string>net.sourceforge.htlivesight</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.5.1036</string>
+	<key>CFBundleVersion</key>
+	<string>0.5.1036</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Database Quota</key>
+		<real>10485760</real>
+		<key>Global Page</key>
+		<string>chrome/content/safari_global_page.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>open-htlivesight</string>
+				<key>Identifier</key>
+				<string>htlivesight</string>
+				<key>Image</key>
+				<string>safariIconButton.png</string>
+				<key>Label</key>
+				<string>HTLivesight</string>
+				<key>Tool Tip</key>
+				<string>Launch HTLivesight</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict/>
+		<key>Stylesheets</key>
+		<array>
+			<string>chrome/content/themes/custom.css</string>
+			<string>chrome/content/themes/dark.css</string>
+			<string>chrome/content/themes/light.css</string>
+			<string>chrome/content/themes/livefox.css</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>Hattrick match viewer</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://htlivesight.c6.ixwebhosting.com/safaridev/update.plist</string>
+	<key>Website</key>
+	<string>http://htlivesight.sourceforge.net</string>
+</dict>
+</plist>
