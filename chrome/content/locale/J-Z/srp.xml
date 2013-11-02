@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Звук за повреде мојих играча</PathSoundsMyBoo>
 <PathSoundsOpBoo>Звук за повреде противничких играча</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Звиждук за почетак првог и другог полувремена</PathSoundsWhistleStart>
-<PathSoundsWhistle>Звук за жуте и црвене картоне</PathSoundsWhistle>
+<PathSoundsWhistle>Звук за жути картон</PathSoundsWhistle>
 <PathSoundsHattrick>Звук за хет-трик</PathSoundsHattrick>
 <PathSoundsRestore>Поништи</PathSoundsRestore>
 <PathSoundsPlay>Преслушај</PathSoundsPlay>
@@ -395,11 +395,14 @@
 <Honest>частан</Honest>
 <Dishonest>нечастан</Dishonest>
 <Infamous>озлоглашен</Infamous>
-<Unstable>Unstable</Unstable>
-<Fiery>Fiery</Fiery>
-<Temperamental>Temperamental</Temperamental>
-<Balanced>Balanced</Balanced>
-<Calm>Calm</Calm>
-<Tranquil>Tranquil</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<Unstable>нестабилан</Unstable>
+<Fiery>пргав</Fiery>
+<Temperamental>темпераментан</Temperamental>
+<Balanced>уравнотежен</Balanced>
+<Calm>миран</Calm>
+<Tranquil>спокојан</Tranquil>
+<VisitOurSoundCollection>Погледајте нашу колекцију звукова</VisitOurSoundCollection>
+<SafariWarning>Уколико HTLivesight таб није у фокусу звуци за обавештења ће бити блокирани. Отворите посебан, нови прозор, само за HTLivesight, уколико хоћете да прегледате друге интернет странице током праћења мечева</SafariWarning>
+<OnlyHTTPFiles>Само линкови  који почињу са "http" раде</OnlyHTTPFiles>
+<Warning>Упозорење</Warning>
 </Htlivesight>

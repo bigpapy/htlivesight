@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Zvok za poškodbo v lastni ekipi</PathSoundsMyBoo>
 <PathSoundsOpBoo>Zvok za poškodbo v nasprotnikovi ekipi</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Žvižg ob začetku 1./2. polčasa</PathSoundsWhistleStart>
-<PathSoundsWhistle>Zvok rumenega/rdečega kartona</PathSoundsWhistle>
+<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Zvok hattricka</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Calm</Calm>
 <Tranquil>Tranquil</Tranquil>
 <VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
+<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
+<Warning>Warning</Warning>
 </Htlivesight>

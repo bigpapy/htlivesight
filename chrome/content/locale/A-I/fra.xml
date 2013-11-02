@@ -93,7 +93,7 @@
 <EventSpecialUnpredictable>SE imprévisible</EventSpecialUnpredictable>
 <EventSpecialLongShot>SE tir lointain</EventSpecialLongShot>
 <EventSpecialQuick>SE rapide</EventSpecialQuick>
-<EventSpecialLowStamina>SE Faible endurance</EventSpecialLowStamina>
+<EventSpecialLowStamina>SE Fatigue</EventSpecialLowStamina>
 <EventSpecialSetPieces>Coup franc</EventSpecialSetPieces>
 <EventSpecialHead>SE Joueur de Tête</EventSpecialHead>
 <EventSpecialExperience>SE Expérience</EventSpecialExperience>
@@ -402,4 +402,7 @@
 <Calm>Calme</Calm>
 <Tranquil>Tranquille</Tranquil>
 <VisitOurSoundCollection>Visitez notre collection de sons</VisitOurSoundCollection>
+<SafariWarning>Si HTLivesight n'est pas dans un onglet actif, les sons ne pourront être entendus. Ouvrez une nouvelle fenêtre de safari si vous voulez surfer durant un match.</SafariWarning>
+<OnlyHTTPFiles>Seul un lien URL http fonctionne</OnlyHTTPFiles>
+<Warning>Attention</Warning>
 </Htlivesight>

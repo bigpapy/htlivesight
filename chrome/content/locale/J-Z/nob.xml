@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Lyd for skade til eget lag</PathSoundsMyBoo>
 <PathSoundsOpBoo>Lyd for skade til motstanderen</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Lyd for start av 1. og 2. omgang</PathSoundsWhistleStart>
-<PathSoundsWhistle>Lyd for gult og/eller rødt kort</PathSoundsWhistle>
+<PathSoundsWhistle>Gult kort lyd</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick-lyd</PathSoundsHattrick>
 <PathSoundsRestore>Gjenopprett</PathSoundsRestore>
 <PathSoundsPlay>Spill av</PathSoundsPlay>
@@ -369,37 +369,40 @@
 <Stamina>Kondisjon</Stamina>
 <Experience>Rutine</Experience>
 <Loyalty>Lojalitet</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
-<TabWhistleCard>Whistles and Cards</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
-<Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
-<PopularGuy>Popular guy</PopularGuy>
-<SympatheticGuy>Sympathetic guy</SympatheticGuy>
-<PleasantGuy>Pleasant guy</PleasantGuy>
-<ControversialPerson>Controversial Person</ControversialPerson>
-<NastyFellow>Nasty fellow</NastyFellow>
-<Saintly>Saintly</Saintly>
-<Righteous>Righteous</Righteous>
-<Upright>Upright</Upright>
-<Honest>Honest</Honest>
-<Dishonest>Dishonest</Dishonest>
-<Infamous>Infamous</Infamous>
-<Unstable>Unstable</Unstable>
-<Fiery>Fiery</Fiery>
-<Temperamental>Temperamental</Temperamental>
-<Balanced>Balanced</Balanced>
-<Calm>Calm</Calm>
-<Tranquil>Tranquil</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<PathSoundsPressing>Viktig beskjed lyd</PathSoundsPressing>
+<PathSoundsMyBruised>Lyd for min spiller småskadet</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Lyd for motstanders spiller småskadet</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Min spiller sendt av banen lyd</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Motstanders spiller sendt av banen lyd</PathSoundsOtherSentOff>
+<TabInjuries>Skader</TabInjuries>
+<TabWeather>Vær</TabWeather>
+<TabWhistleCard>Dommerfløyter og Kort</TabWhistleCard>
+<PathSoundsMissFriend>Venns lag bommet på mål lyd</PathSoundsMissFriend>
+<PathSoundsMissOther>Motstanders lag bommet på mål lyd</PathSoundsMissOther>
+<TabChances>Sjanser</TabChances>
+<Agreeability>Omgjengelighet</Agreeability>
+<Aggressiveness>Aggressivitet</Aggressiveness>
+<Honesty>Ærlighet</Honesty>
+<BelovedTeamMember>Elsket lagkamerat</BelovedTeamMember>
+<PopularGuy>Populær fyr</PopularGuy>
+<SympatheticGuy>Sympatisk fyr</SympatheticGuy>
+<PleasantGuy>Hyggelig fyr</PleasantGuy>
+<ControversialPerson>Kontroversielle fyr</ControversialPerson>
+<NastyFellow>Ufordragelig fyr</NastyFellow>
+<Saintly>Hellig</Saintly>
+<Righteous>Rettferdig</Righteous>
+<Upright>Oppriktig</Upright>
+<Honest>Ærlig</Honest>
+<Dishonest>Uærlig</Dishonest>
+<Infamous>Berykted</Infamous>
+<Unstable>Ustabil</Unstable>
+<Fiery>Hissig</Fiery>
+<Temperamental>Temperamentsfull</Temperamental>
+<Balanced>Balansert</Balanced>
+<Calm>Rolig</Calm>
+<Tranquil>Rolig</Tranquil>
+<VisitOurSoundCollection>Besøk vår lyd samling</VisitOurSoundCollection>
+<SafariWarning>Hvis HTLivesight panelet ikke fokusert, blokkeres lyd meldinger. Åpne et nytt vindu hvis du vil surfe på Internett under kampen</SafariWarning>
+<OnlyHTTPFiles>Bare http URL fungerer</OnlyHTTPFiles>
+<Warning>Advarsel</Warning>
 </Htlivesight>

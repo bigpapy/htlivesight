@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Zvuk pre zranenie v mojom tíme</PathSoundsMyBoo>
 <PathSoundsOpBoo>Zvuk pre zranenie v súperovom tíme</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Zvuk pre začiatok 1./2. polčasu</PathSoundsWhistleStart>
-<PathSoundsWhistle>Zvuk pre žltú/červenú kartu</PathSoundsWhistle>
+<PathSoundsWhistle>Zvuk pre žltú kartu</PathSoundsWhistle>
 <PathSoundsHattrick>Zvuk pre hetrik</PathSoundsHattrick>
 <PathSoundsRestore>Obnov</PathSoundsRestore>
 <PathSoundsPlay>Prehraj</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>chladný</Calm>
 <Tranquil>tichý</Tranquil>
 <VisitOurSoundCollection>Pozri našu kolekciu zvukov</VisitOurSoundCollection>
+<SafariWarning>AK HTLiveSight panel nie je aktívný, oznamovacie zvuky budú blokované. Ak chceš surfovať na internete počas zápasu, otvor si prosím nové okno</SafariWarning>
+<OnlyHTTPFiles>Iba http URL funguje</OnlyHTTPFiles>
+<Warning>Upozornenie</Warning>
 </Htlivesight>

@@ -28,10 +28,15 @@ htlivesight.Lang = {
 			doc.getElementById("LoginSpeed").innerHTML=htlivesight.Util.Parse("LoginSpeed",htlivesight.data[0]);
 			doc.getElementById("LoginByEvent").innerHTML=htlivesight.Util.Parse("LoginByEvent",htlivesight.data[0]);
 			doc.getElementById("SecondTeamIdLabel").innerHTML=htlivesight.Util.Parse("SecondTeamIdLabel",htlivesight.data[0]);
+			doc.getElementById("warning").innerHTML=htlivesight.Util.Parse("Warning",htlivesight.data[0]);
+			doc.getElementById("safari-warning-text").innerHTML=htlivesight.Util.Parse("SafariWarning",htlivesight.data[0]);
+			doc.getElementById("warning2").innerHTML=htlivesight.Util.Parse("Warning",htlivesight.data[0]);
+			//doc.getElementById("android-warning-text").innerHTML=htlivesight.Util.Parse("AndroidWarning",htlivesight.data[0]);
+			//todo: add android warning text localization.
 //			ABOUT
 			doc.getElementById("ui-dialog-title-about-dialog").innerHTML=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);	
 			doc.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
-			doc.getElementById("creationDate").innerHTML="31 "+htlivesight.Util.Parse("MonthAugust",htlivesight.data[0])+" 2013";
+			doc.getElementById("creationDate").innerHTML="11 "+htlivesight.Util.Parse("MonthNovember",htlivesight.data[0])+" 2013";
 			doc.getElementById("createdBy").innerHTML=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
 			doc.getElementById("TabTranslators").innerHTML=htlivesight.Util.Parse("TabTranslators",htlivesight.data[0]);
 			doc.getElementById("ThanksTo").innerHTML=htlivesight.Util.Parse("TextThanksTo",htlivesight.data[0]);
@@ -156,6 +161,13 @@ htlivesight.Lang = {
 			doc.getElementById("label_hattrickCheck").innerHTML=htlivesight.Util.Parse("PathSoundsHattrick",htlivesight.data[0]);
 			doc.getElementById("label_hattrickButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",htlivesight.data[0]);
 			doc.getElementById("label_hattrickButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",htlivesight.data[0]);
+			if(htlivesight.platform == "Safari"){
+			  $("[type='file']").hide();
+			  $("[type='file']").parent().prepend("<div class='warning'>"+htlivesight.Util.Parse("OnlyHTTPFiles",htlivesight.data[0])+"</div><br/>");
+			}
+			if(htlivesight.platform == 'Android'){
+				$("[type='file']").hide();
+			}
 //			TOPBAR
 			doc.getElementById("ReLiveControls").innerHTML=htlivesight.Util.Parse("ReLiveControls",htlivesight.data[0]);
 //			SIDEBAR

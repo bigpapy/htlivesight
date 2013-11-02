@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Oma meeskonna vigastuse heli</PathSoundsMyBoo>
 <PathSoundsOpBoo>Vastase meeskonna vigastuse heli</PathSoundsOpBoo>
 <PathSoundsWhistleStart>I/II poolaja alguse vile</PathSoundsWhistleStart>
-<PathSoundsWhistle>Punase/kollase kaardi heli</PathSoundsWhistle>
+<PathSoundsWhistle>Kollase kaardi heli</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick heli</PathSoundsHattrick>
 <PathSoundsRestore>Taasta</PathSoundsRestore>
 <PathSoundsPlay>Mängi</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Rahulik</Calm>
 <Tranquil>Tasane</Tranquil>
 <VisitOurSoundCollection>Külasta meie heli kogu</VisitOurSoundCollection>
+<SafariWarning>Kui HTLiveSight kaart ei ole pealmine, siis teavitushelid blokeeritakse. Kui sa soovid HTLiveSight kasutada taustal, siis ava ta mängude ajaks teises aknas ainukese kaardiga</SafariWarning>
+<OnlyHTTPFiles>Ainult http aadressid töötavad</OnlyHTTPFiles>
+<Warning>Hoiatus</Warning>
 </Htlivesight>

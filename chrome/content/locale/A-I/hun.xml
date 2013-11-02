@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Hangjelzés saját csapat sérülésénél</PathSoundsMyBoo>
 <PathSoundsOpBoo>Hangjelzés ellenfél játékosának sérülésénél</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Sípszó első/második félidő kezdésnél</PathSoundsWhistleStart>
-<PathSoundsWhistle>Hangjelzés sárga/piros lapnál</PathSoundsWhistle>
+<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Mesterhármas hangjelzés</PathSoundsHattrick>
 <PathSoundsRestore>Visszaállítás</PathSoundsRestore>
 <PathSoundsPlay>Lejátszás</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Higgadt</Calm>
 <Tranquil>Jámbor</Tranquil>
 <VisitOurSoundCollection>Nézd meg a hanggyűjteményünket</VisitOurSoundCollection>
+<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
+<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
+<Warning>Warning</Warning>
 </Htlivesight>

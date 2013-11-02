@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>צליל לפציעה של שחקן שלי</PathSoundsMyBoo>
 <PathSoundsOpBoo>צליל לפציעה של שחקן היריבה</PathSoundsOpBoo>
 <PathSoundsWhistleStart>שריקה להתחלת מחצית ראשונה או שנייה</PathSoundsWhistleStart>
-<PathSoundsWhistle>צליל לכרטיס צהוב או אדום</PathSoundsWhistle>
+<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
 <PathSoundsHattrick>צליל לשלושער</PathSoundsHattrick>
 <PathSoundsRestore>שחזר</PathSoundsRestore>
 <PathSoundsPlay>השמע</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Calm</Calm>
 <Tranquil>Tranquil</Tranquil>
 <VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
+<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
+<Warning>Warning</Warning>
 </Htlivesight>

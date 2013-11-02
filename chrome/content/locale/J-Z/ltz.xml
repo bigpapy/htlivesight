@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Toun fir eege Verletzung</PathSoundsMyBoo>
 <PathSoundsOpBoo>Toun fir Verletzung vum Géigner</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start-Toun vun 1./2. Halbzait</PathSoundsWhistleStart>
-<PathSoundsWhistle>Toun fir giel/roud Kaart</PathSoundsWhistle>
+<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick Toun</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Calm</Calm>
 <Tranquil>Tranquil</Tranquil>
 <VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
+<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
+<Warning>Warning</Warning>
 </Htlivesight>

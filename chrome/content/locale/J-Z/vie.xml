@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Âm thanh khi đội nhà chấn thương</PathSoundsMyBoo>
 <PathSoundsOpBoo>Âm thanh khi đối thủ chấn thương</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Tiếng còi bắt đầu hiệp 1/2 của trận đấu</PathSoundsWhistleStart>
-<PathSoundsWhistle>Âm thanh khi thẻ đỏ/thẻ vàng</PathSoundsWhistle>
+<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Âm thanh Hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Khôi phục</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Calm</Calm>
 <Tranquil>Tranquil</Tranquil>
 <VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
+<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
+<Warning>Warning</Warning>
 </Htlivesight>

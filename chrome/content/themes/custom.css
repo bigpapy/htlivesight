@@ -22,7 +22,7 @@
   font-weight: 400;
   src: url('./fonts/normal.woff');
   }
-body{
+#htlivesight-body{
 font-size: 11px;
 font-family: 'Open Sans', Arial, sans-serif; font-weight: 400;
 /*font-family: 'Ubuntu', Arial, sans-serif; font-weight: 400;*/
@@ -35,67 +35,67 @@ padding: 0 0 0 0;
 margin: 0 0 0 0;
 }
 
-.anotherbrick1 { float:left;margin-right:10px;}
-.anotherbrick2 { position: absolute;right:10px;top:15px}
-.demoHeaders { margin-top: 2em; }
-#site_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
-#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+#htlivesight-body  .anotherbrick1 { float:left;margin-right:10px;}
+#htlivesight-body  .anotherbrick2 { position: absolute;right:10px;top:15px}
+#htlivesight-body  .demoHeaders { margin-top: 2em; }
+#htlivesight-body  #site_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+#htlivesight-body  #dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
 /*#options_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}*/
 /*#about_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}*/
-#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+#htlivesight-body  #dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
 /*#options_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}*/
 /*#about_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}*/
-ul#icons {margin: 0; padding: 0;}
-ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
-ul#icons span.ui-icon {float: left; margin: 0 4px;}
+#htlivesight-body  ul#icons {margin: 0; padding: 0;}
+#htlivesight-body  ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+#htlivesight-body  ul#icons span.ui-icon {float: left; margin: 0 4px;}
 
-fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin-top:10px;}
-#login-dialog fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin-top:10px; margin-right:120px;}
+#htlivesight-body  fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin-top:10px;}
+#htlivesight-body  #login-dialog fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin-top:10px; margin-right:120px;}
 
-#topbar{position: fixed; z-index:1;top:0;}
+#htlivesight-body  #topbar{position: fixed; z-index:1;top:0;}
 /*#topbar {width:100%;height:37px;color:white;background-color:black;display:block;font-size:13px;font-weight: 400;}*/
-#left_topbar {display:inline-block;float:left;margin-left:8px;margin-top:3px;} /*margin-top:8px*/
-#right_topbar {display:inline-block;float:right;margin-right:8px;margin-top:3px;}/*{display:inline-block;float:right;margin-top:8px}*/
-#central_topbar {display:inline-block;margin-top:0px;margin-left:8px;}
-.socialicon{width:24px;height:24px;vertical-align:middle;padding: 0 0 0 0;margin: 0 0 0 0;}
-.relivebuttons{height:24px;vertical-align:middle;padding: 0 0 0 0;margin: 0px 0px 3px 0px;font-size: 13px}
-#left_topbar,#right_topbar,#central_topbar a:link {text-decoration:none;}
-#left_topbar,#right_topbar,#central_topbar a:visited {text-decoration:none;}
-#left_topbar,#right_topbar,#central_topbar a:hover {text-decoration:none;}
-#left_topbar,#right_topbar,#central_topbar a:active {text-decoration:none;}
+#htlivesight-body  #left_topbar {display:inline-block;float:left;margin-left:8px;margin-top:3px;} /*margin-top:8px*/
+#htlivesight-body  #right_topbar {display:inline-block;float:right;margin-right:8px;margin-top:3px;}/*{display:inline-block;float:right;margin-top:8px}*/
+#htlivesight-body  #central_topbar {display:inline-block;margin-top:0px;margin-left:8px;}
+#htlivesight-body  .socialicon{width:24px;height:24px;vertical-align:middle;padding: 0 0 0 0;margin: 0 0 0 0;}
+#htlivesight-body  .relivebuttons{height:24px;vertical-align:middle;padding: 0 0 0 0;margin: 0px 0px 3px 0px;font-size: 13px}
+#htlivesight-body  #left_topbar, #htlivesight-body  #right_topbar, #htlivesight-body  #central_topbar a:link {text-decoration:none;}
+#htlivesight-body  #left_topbar, #htlivesight-body  #right_topbar, #htlivesight-body  #central_topbar a:visited {text-decoration:none;}
+#htlivesight-body  #left_topbar, #htlivesight-body  #right_topbar, #htlivesight-body  #central_topbar a:hover {text-decoration:none;}
+#htlivesight-body  #left_topbar, #htlivesight-body  #right_topbar, #htlivesight-body  #central_topbar a:active {text-decoration:none;}
 
-#leaguetable_grid_rows td{
+#htlivesight-body  #leaguetable_grid_rows td{
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
 
-#leaguetable_grid_rows th{
+#htlivesight-body  #leaguetable_grid_rows th{
 	padding-top: 3px;
 	padding-bottom: 3px;
 }
 
-#leaguetable_grid_rowsBis td{
+#htlivesight-body  #leaguetable_grid_rowsBis td{
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
 
-#leaguetable_grid_rowsBis th{
+#htlivesight-body  #leaguetable_grid_rowsBis th{
 	padding-top: 3px;
 	padding-bottom: 3px;
 }
 
 
-#thebox{display:block;margin-top:1px;}
-#live_box {display:inline-block;margin-left:3px;margin-top:30px;border-radius:10px;float:left;/*width:74.5%;/*min-width:800px;min-width:600px;*/}
-#sidebar {display:inline-block;margin-right:3px;margin-top:30px;overflow:auto;float:right;width:290px:/*width:24.5%;/*min-width:200pxmin-width:200px;max-width:300px;*/}
-.fullscreen{width:99% !important;}
+#htlivesight-body  #thebox{display:block;margin-top:1px;}
+#htlivesight-body  #live_box {display:inline-block;margin-left:3px;margin-top:30px;border-radius:10px;float:left;/*width:74.5%;/*min-width:800px;min-width:600px;*/}
+#htlivesight-body  #sidebar {display:inline-block;margin-right:3px;margin-top:30px;overflow:auto;float:right;width:290px:/*width:24.5%;/*min-width:200pxmin-width:200px;max-width:300px;*/}
+#htlivesight-body  .fullscreen{width:99% !important;}
 /*.match_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;padding:0 0 0 0;border-spacing:0 0 0 0}*/
-.match_row{}
+#htlivesight-body  .match_row{}
 /*.datetime_league {text-align:center;border-bottom: thin solid white;}*/
-.hometeam_league {
+#htlivesight-body  .hometeam_league {
 	text-align:right;
 	width:70px;
-	padding-top: 5px;
+	padding-top: 5px !important;
 	padding-right: 4px;
 	padding-left: 4px;
 	border-spacing:0 0 0 0;
@@ -103,13 +103,13 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
   overflow: hidden;
   white-space: nowrap;
 	}
-.homescore_league {text-align:right;padding:0 0 0 0;border-spacing:0 0 0 0}
-.separator_league {text-align:center;width:2%;padding:0 0 0 0;border-spacing:0 0 0 0}
-.awayscore_league {text-align:left;padding:0 0 0 0;border-spacing:0 0 0 0}
-.awayteam_league {
+#htlivesight-body  .homescore_league {text-align:right;padding:0 0 0 0;border-spacing:0 0 0 0}
+#htlivesight-body  .separator_league {text-align:center;width:2%;padding:0 0 0 0;border-spacing:0 0 0 0}
+#htlivesight-body  .awayscore_league {text-align:left;padding:0 0 0 0;border-spacing:0 0 0 0}
+#htlivesight-body  .awayteam_league {
 	text-align:left;
 	width:70px;
-	padding-top: 5px;
+	padding-top: 5px !important;
 	padding-right: 4px;
 	padding-left: 4px;
 	border-spacing:0 0 0 0;
@@ -117,48 +117,48 @@ fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin
   overflow: hidden;
   white-space: nowrap;
 	}
-.add_league{text-align:center;width:20px;height:20px;}
-.remove_league{text-align:center;width:20px;height:20px;}
+#htlivesight-body  .add_league{text-align:center;width:20px;height:20px;}
+#htlivesight-body  .remove_league{text-align:center;width:20px;height:20px;}
 /*.round_league {text-align:left;border-top: thin solid white;}
 .chronometer_league {text-align:right;border-top: thin solid white;}*/
 
-.team_name{font-size:16px;font-weight: 700;}
-.big_score{font-size:24px;font-weight: 700;}
+#htlivesight-body  .team_name{font-size:16px;font-weight: 700;}
+#htlivesight-body  .big_score{font-size:24px;font-weight: 700;}
 
-.imgwinboxopen {background: url("chrome://htlivesight/content/img/wboxopen0.png") transparent;border:0;width:20px;height:20px;}
-.imgwinboxopen:hover {background: url("chrome://htlivesight/content/img/wboxopen1.png") transparent;border:0;width:20px;height:20px;}
-.imgwinboxshade {background: url("chrome://htlivesight/content/img/wboxshade0.png") transparent;border:0;width:20px;height:20px;}
-.imgwinboxshade:hover {background: url("chrome://htlivesight/content/img/wboxshade1.png") transparent;border:0;width:20px;height:20px;}
-.imgwinboxclose {background: url("chrome://htlivesight/content/img/wboxclose0.png") transparent;border:0;width:20px;height:20px;}
-.imgwinboxclose:hover {background: url("chrome://htlivesight/content/img/wboxclose1.png") transparent;border:0;width:20px;height:20px;}
+#htlivesight-body  .imgwinboxopen {background: url("../img/wboxopen0.png") transparent;border:0;width:20px;height:20px;}
+#htlivesight-body  .imgwinboxopen:hover {background: url("../img/wboxopen1.png") transparent;border:0;width:20px;height:20px;}
+#htlivesight-body  .imgwinboxshade {background: url("../img/wboxshade0.png") transparent;border:0;width:20px;height:20px;}
+#htlivesight-body  .imgwinboxshade:hover {background: url("../img/wboxshade1.png") transparent;border:0;width:20px;height:20px;}
+#htlivesight-body  .imgwinboxclose {background: url("../img/wboxclose0.png") transparent;border:0;width:20px;height:20px;}
+#htlivesight-body  .imgwinboxclose:hover {background: url("../img/wboxclose1.png") transparent;border:0;width:20px;height:20px;}
 
 /*.live_league_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;text-align:center;}
 .header_league_table{text-align:center;border-bottom: thin solid white;}*/
 
-#winbox_leaguematches{/*min-height:140px;*/overflow:auto}
-#winboxcontent_leaguetable{/*min-height:150px;*/overflow:auto}
-#winbox_leaguematchesBis{/*min-height:140px;*/overflow:auto}
-#winboxcontent_leaguetableBis{/*min-height:150px;*/overflow:auto}
-#winboxcontent_matchlist{/*min-height:30px;*/overflow:auto}
-#winboxcontent_friends{/*min-height:110px;*/overflow:auto}
-#managefriendsbuttons{/*margin-top:5px*/height:100%;}
-#winboxcontent_addmatch{/*min-height:50px;*/overflow:auto}
-#addmatchbuttons{/*margin-top:5px*/height:100%;}
-#serverint{/*min-height:60px;*/overflow:auto}
-#progressmeter{width:100%;}
-#progresslabel{float:right}
+#htlivesight-body  #winbox_leaguematches{/*min-height:140px;*/overflow:auto}
+#htlivesight-body  #winboxcontent_leaguetable{/*min-height:150px;*/overflow:auto}
+#htlivesight-body  #winbox_leaguematchesBis{/*min-height:140px;*/overflow:auto}
+#htlivesight-body  #winboxcontent_leaguetableBis{/*min-height:150px;*/overflow:auto}
+#htlivesight-body  #winboxcontent_matchlist{/*min-height:30px;*/overflow:auto}
+#htlivesight-body  #winboxcontent_friends{/*min-height:110px;*/overflow:auto}
+#htlivesight-body  #managefriendsbuttons{/*margin-top:5px*/height:100%;}
+#htlivesight-body  #winboxcontent_addmatch{/*min-height:50px;*/overflow:auto}
+#htlivesight-body  #addmatchbuttons{/*margin-top:5px*/height:100%;}
+#htlivesight-body  #serverint{/*min-height:60px;*/overflow:auto}
+#htlivesight-body  #progressmeter{width:100%;}
+#htlivesight-body  #progresslabel{float:right}
 
-.matchheader{width:100%;border: #fff 0px solid; border-radius:5px;}
-.line1header {width:270px;border: 0 0 0 0;text-align:center;font-size: 13px;float:left; padding-bottom:7px}
-.chronoheader {border: 0 0 0 0;text-align:center;font-size: 13px;min-width:160px;width:36%}
-.iconzone {width:270px;border: 0 0 0 0;text-align:right;font-size: 13px;float:right;}
-.line2sxheader {width:25%;border-bottom:thin solid white;border-left:medium solid white;border-bottom-left-radius:25px; text-align:center;font-size:16px;font-weight:bold}
-.line2rxheader {width:25%;border-bottom:thin solid white;border-right:medium solid white;border-bottom-right-radius:25px; text-align:center;font-size:16px;font-weight:bold}
-.scoreheader {width:100px;border-left:medium solid white;border-right:medium solid white;border-radius:25px; text-align:center;font-size:16px;font-weight:bold}
-.rxheader {text-align:left}
-.sxheader {text-align:right}
+#htlivesight-body  .matchheader{width:100%;border: #fff 0px solid; border-radius:5px;}
+#htlivesight-body  .line1header {width:270px;border: 0 0 0 0;text-align:center;font-size: 13px;float:left; padding-bottom:7px}
+#htlivesight-body  .chronoheader {border: 0 0 0 0;text-align:center;font-size: 13px;min-width:160px;width:36%}
+#htlivesight-body  .iconzone {width:270px;border: 0 0 0 0;text-align:right;font-size: 13px;float:right;}
+#htlivesight-body  .line2sxheader {width:25%;border-bottom:thin solid white;border-left:medium solid white;border-bottom-left-radius:25px; text-align:center;font-size:16px;font-weight:bold}
+#htlivesight-body  .line2rxheader {width:25%;border-bottom:thin solid white;border-right:medium solid white;border-bottom-right-radius:25px; text-align:center;font-size:16px;font-weight:bold}
+#htlivesight-body  .scoreheader {width:100px;border-left:medium solid white;border-right:medium solid white;border-radius:25px; text-align:center;font-size:16px;font-weight:bold}
+#htlivesight-body  .rxheader {text-align:left}
+#htlivesight-body  .sxheader {text-align:right}
 
-.newClass {animation:myfirst 3s;
+#htlivesight-body  .newClass {animation:myfirst 3s;
 -moz-animation:myfirst 3s; /* Firefox */
 -webkit-animation:myfirst 3s; /* Safari and Chrome */
 animation-iteration-count: 5;
@@ -192,7 +192,7 @@ animation-timing-function:ease-in-out;
 100% {background:transparent;}
 }
 
-.newClass2 {animation:myfirst2 3s;
+#htlivesight-body  .newClass2 {animation:myfirst2 3s;
 -moz-animation:myfirst2 3s; /* Firefox */
 -webkit-animation:myfirst2 3s; /* Safari and Chrome */
 animation-iteration-count: 5;
@@ -226,7 +226,7 @@ animation-timing-function:ease-in-out;
 100% {background:transparent;}
 }
 
-.newClass3 {animation:myfirst3 3s;
+#htlivesight-body  .newClass3 {animation:myfirst3 3s;
 -moz-animation:myfirst3 3s; /* Firefox */
 -webkit-animation:myfirst3 3s; /* Safari and Chrome */
 animation-iteration-count: 5;
@@ -260,7 +260,7 @@ animation-timing-function:ease-in-out;
 100% {background:transparent;}
 }
 
-.newClass4 {animation:myfirst4 3s;
+#htlivesight-body  .newClass4 {animation:myfirst4 3s;
 -moz-animation:myfirst4 3s; /* Firefox */
 -webkit-animation:myfirst4 3s; /* Safari and Chrome */
 animation-iteration-count: 5;
@@ -294,7 +294,7 @@ animation-timing-function:ease-in-out;
 100% {background:transparent;}
 }
 
-.newClass5 {animation:myfirst5 3s;
+#htlivesight-body  .newClass5 {animation:myfirst5 3s;
 -moz-animation:myfirst5 3s; /* Firefox */
 -webkit-animation:myfirst5 3s; /* Safari and Chrome */
 animation-iteration-count: 5;
@@ -331,34 +331,34 @@ animation-timing-function:ease-in-out;
 /* CSS customisation by LA-MJ 
 	START
 */
-#button_login{float: right;}
-#right_topbar > a, #left_topbar > a{
+#htlivesight-body  #button_login{float: right;}
+#htlivesight-body  #right_topbar > a, #htlivesight-body  #left_topbar > a{
 text-decoration:none;
 }
 
-table.ev_rows,#leaguetable_grid_rows{
+#htlivesight-body  table.ev_rows, #htlivesight-body  #leaguetable_grid_rows{
 border-collapse: collapse;
 }
 
-table.ev_rows,#leaguetable_grid_rowsBis{
+#htlivesight-body  table.ev_rows, #htlivesight-body  #leaguetable_grid_rowsBis{
 border-collapse: collapse;
 }
 
-td.short_friend, td.short_own{font-weight: bold;}
-tr.league_own > td:nth-child(2) > span{font-weight: bold;}
-table.ev_rows > tr{
+#htlivesight-body  td.short_friend, #htlivesight-body  td.short_own{font-weight: bold;}
+#htlivesight-body  tr.league_own > td:nth-child(2) > span{font-weight: bold;}
+#htlivesight-body  table.ev_rows > tr{
 border-bottom: 2px solid black;
 }
-table.ev_rows > tr > td{
+#htlivesight-body  table.ev_rows > tr > td{
 padding: 2px 0;
 }
-img.match_button{}
-img.weather_image{
+#htlivesight-body  img.match_button{}
+#htlivesight-body  img.weather_image{
 padding-right: 6px;
 padding-left: 6px;
 vertical-align: bottom;
 }
-span.arena_name{
+#htlivesight-body  span.arena_name{
 	vertical-align: bottom;
 	/*padding-top: 6px;*/
 	display: inline-block;
@@ -368,33 +368,33 @@ span.arena_name{
   text-align: right;	
 }
 
-span.arena_attendance{
+#htlivesight-body  span.arena_attendance{
 	vertical-align: bottom;
 }
-span.weather_text{}
-tr.plackardrow{}
-table.team_home > tr,
-table.team_away > tr{vertical-align: top;}
-tr.scorers{}
-td.scorers_home{}
-td.scorers_away{}
-tr.info_row{}
+#htlivesight-body  span.weather_text{}
+#htlivesight-body  tr.plackardrow{}
+#htlivesight-body  table.team_home > tr,
+#htlivesight-body  table.team_away > tr{vertical-align: top;}
+#htlivesight-body  tr.scorers{}
+#htlivesight-body  td.scorers_home{}
+#htlivesight-body  td.scorers_away{}
+#htlivesight-body  tr.info_row{}
 
-td.event_minute{
+#htlivesight-body  td.event_minute{
 text-align:right;
 width:25px;
 }
-td.event_icon{
+#htlivesight-body  td.event_icon{
 width:25px;
 text-align: center;
 }
-td.event_icon > img{
+t#htlivesight-body  td.event_icon > img{
 vertical-align: middle;
 }
-td.event_icon + td.event_icon{
+#htlivesight-body  td.event_icon + td.event_icon{
 padding-right: 2px;
 }
-em.player_name{
+#htlivesight-body  em.player_name{
 font-weight: bold;
 cursor:pointer;
 }
@@ -404,189 +404,193 @@ cursor:pointer;
 	END
 */
 /* bigpapy: fixing select language background */
-#lang-list option{background-color: transparent;}
-#sourceSystem option{background-color: transparent;}
-#reLiveSpeed option{background-color: transparent;}
-#reLiveSpeedPanel option{background-color: transparent;}
-#hattrickServer option{background-color: transparent;}
+#htlivesight-body  #lang-list option{background-color: transparent;}
+#htlivesight-body  #sourceSystem option{background-color: transparent;}
+#htlivesight-body  #reLiveSpeed option{background-color: transparent;}
+#htlivesight-body  #reLiveSpeedPanel option{background-color: transparent;}
+#htlivesight-body  #hattrickServer option{background-color: transparent;}
 
-#listbox_friends{width:100%;}
+#htlivesight-body  #listbox_friends{width:100%;}
 
-#CrowdinLogo{float:left}
-#CrowdinLabel{margin-top:5px;margin-left:220px;}
+#htlivesight-body  #CrowdinLogo{float:left}
+#htlivesight-body  #CrowdinLabel{margin-top:5px;margin-left:220px;}
 
-.scinheader{font-weight:bold !important;}
-.ycinheader{color:#E8AE00 !important; font-weight:bold !important;}
-.rcinheader{color:#FF0000 !important; font-weight:bold !important;}
-.injinheader{color:#DCA675 !important; font-weight:bold !important;}
+#htlivesight-body  .scinheader{font-weight:bold !important;}
+#htlivesight-body  .ycinheader{color:#E8AE00 !important; font-weight:bold !important;}
+#htlivesight-body  .rcinheader{color:#FF0000 !important; font-weight:bold !important;}
+#htlivesight-body  .injinheader{color:#DCA675 !important; font-weight:bold !important;}
 
-.formationbg{
-background:url("images/field1.jpg") !important;
+#htlivesight-body  .formationbg{
+background:url("./images/field1.jpg") !important;
 -moz-background-size:100% 100%; /* Firefox 3.6 */
 background-size:100% 100%;
 background-repeat:no-repeat;
 background-position:center top;
 background-origin:content-box;}
-.formationplayer{background-color: transparent;border:thin solid white;border-radius:5px;color:white !important;}
+#htlivesight-body  .formationplayer{background-color: transparent;border:thin solid white !important;border-radius:5px;color:white !important;}
 
-.underlined{
+#htlivesight-body  .underlined{
 	cursor:pointer;
 }
-td.player_changed{
+#htlivesight-body td.player_changed{
 	font-weight:bold;
 }
 
-.round_league {float:left; padding-left: 4px; padding-right: 8px}
-.chronometer_league {text-align: left; padding-left: 4px;}
-#leaguetable_grid_rows{width:100%;}
-#leaguetable_grid_rows tr:last-child td:first-child{
+#htlivesight-body  .round_league {float:left; padding-left: 4px; padding-right: 8px}
+#htlivesight-body  .chronometer_league {text-align: left; padding-left: 4px;}
+#htlivesight-body  #leaguetable_grid_rows{width:100%;}
+#htlivesight-body  #leaguetable_grid_rows tr:last-child td:first-child{
 	border-radius:0 0 0 4px;
 	-moz-border-radius:0 0 0 4px;
 }
-#leaguetable_grid_rows tr:last-child td:last-child{
+#htlivesight-body  #leaguetable_grid_rows tr:last-child td:last-child{
 	border-radius:0 0 4px 0;
 	-moz-border-radius:0 0 4px 0;
 }
-#leaguetable_grid_rows th:nth-child(2){
+#htlivesight-body  #leaguetable_grid_rows th:nth-child(2){
 	padding-left: 3px;
 	padding-right: 2px;
 	text-align: left;
 }
-#leaguetable_grid_rows td:nth-child(2){
+#htlivesight-body  #leaguetable_grid_rows td:nth-child(2){
 padding-left: 3px;
 padding-right: 2px;
 text-align: left;
 
 /*border-right: thin solid white;*/
 }
-#leaguetable_grid_rows td:nth-child(2) span{
+#htlivesight-body  #leaguetable_grid_rows td:nth-child(2) span{
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   width: 90px;	
 }
-#leaguetable_grid_rows td:nth-child(3), #leaguetable_grid_rows th:nth-child(3){
+#htlivesight-body  #leaguetable_grid_rows td:nth-child(3), #htlivesight-body #leaguetable_grid_rows  th:nth-child(3){
 padding-left: 2px;
 /*border-right: thin solid white;*/
 }
 
-#leaguetable_grid_rows th:nth-child(1) span{
+#htlivesight-body  #leaguetable_grid_rows th:nth-child(1) span{
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   width: 6px;	
 }
 
-#leaguetable_grid_rows th:nth-child(2) span{
+#htlivesight-body  #leaguetable_grid_rows th:nth-child(2) span{
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   width: 90px;	
 }
 
-#leaguetable_grid_rows th:nth-child(4) span, #leaguetable_grid_rows th:nth-child(7) span{
+#htlivesight-body  #leaguetable_grid_rows th:nth-child(4) span, #htlivesight-body  #leaguetable_grid_rows th:nth-child(7) span{
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   width: 15px;	
 }
 
-#leaguetable_grid_rows th:nth-child(5) span{
+#htlivesight-body  #leaguetable_grid_rows th:nth-child(5) span{
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   width: 30px;	
 }
 
-#leaguetable_grid_rows th:nth-child(6) span{
+#htlivesight-body  #leaguetable_grid_rows th:nth-child(6) span{
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   width: 22px;	
 }
-#leaguetable_grid_rows td:nth-child(5){
+#htlivesight-body  #leaguetable_grid_rows td:nth-child(5){
 	padding-left: 2px;
   padding-right: 1px;
   text-align: right;
 }
-#leaguetable_grid_rows td:nth-child(9){
+#htlivesight-body  #leaguetable_grid_rows td:nth-child(9){
 padding-right: 3px;
 padding-left: 2px;
 text-align: right;
 }
-#leaguetable_grid_rowsBis{width:100%;}
-#leaguetable_grid_rowsBis tr:last-child td:first-child{
+#htlivesight-body  #leaguetable_grid_rowsBis{width:100%;}
+#htlivesight-body  #leaguetable_grid_rowsBis tr:last-child td:first-child{
 	border-radius:0 0 0 4px;
 	-moz-border-radius:0 0 0 4px;
 }
-#leaguetable_grid_rowsBis tr:last-child td:last-child{
+#htlivesight-body  #leaguetable_grid_rowsBis tr:last-child td:last-child{
 	border-radius:0 0 4px 0;
 	-moz-border-radius:0 0 4px 0;
 }
-#leaguetable_grid_rowsBis th:nth-child(2){
+#htlivesight-body  #leaguetable_grid_rowsBis th:nth-child(2){
 	padding-left: 3px;
 	padding-right: 2px;
 	text-align: left;
 }
-#leaguetable_grid_rowsBis td:nth-child(2){
+#htlivesight-body  #leaguetable_grid_rowsBis td:nth-child(2){
 padding-left: 3px;
 padding-right: 2px;
 text-align: left;
 
 /*border-right: thin solid white;*/
 }
-#leaguetable_grid_rowsBis td:nth-child(2) span{
+#htlivesight-body  #leaguetable_grid_rowsBis td:nth-child(2) span{
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   width: 90px;	
 }
-#leaguetable_grid_rowsBis td:nth-child(3), #leaguetable_grid_rowsBis th:nth-child(3){
+#htlivesight-body  #leaguetable_grid_rowsBis td:nth-child(3), #htlivesight-body  #leaguetable_grid_rowsBis th:nth-child(3){
 padding-left: 2px;
 /*border-right: thin solid white;*/
 }
 
-#leaguetable_grid_rowsBis th:nth-child(1) span{
+#htlivesight-body  #leaguetable_grid_rowsBis th:nth-child(1) span{
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   width: 6px;	
 }
 
-#leaguetable_grid_rowsBis th:nth-child(2) span{
+#htlivesight-body  #leaguetable_grid_rowsBis th:nth-child(2) span{
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   width: 90px;	
 }
 
-#leaguetable_grid_rowsBis th:nth-child(4) span, #leaguetable_grid_rowsBis th:nth-child(7) span{
+#htlivesight-body  #leaguetable_grid_rowsBis th:nth-child(4) span, #htlivesight-body  #leaguetable_grid_rowsBis th:nth-child(7) span{
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   width: 15px;	
 }
 
-#leaguetable_grid_rowsBis th:nth-child(5) span{
+#htlivesight-body  #leaguetable_grid_rowsBis th:nth-child(5) span{
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   width: 30px;	
 }
 
-#leaguetable_grid_rowsBis th:nth-child(6) span{
+#htlivesight-body  #leaguetable_grid_rowsBis th:nth-child(6) span{
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   width: 22px;	
 }
-#leaguetable_grid_rowsBis td:nth-child(5){
+#htlivesight-body  #leaguetable_grid_rowsBis td:nth-child(5){
 	padding-left: 2px;
   padding-right: 1px;
   text-align: right;
 }
-#leaguetable_grid_rowsBis td:nth-child(9){
+#htlivesight-body  #leaguetable_grid_rowsBis td:nth-child(9){
 padding-right: 3px;
 padding-left: 2px;
 text-align: right;
+}
+#htlivesight-body .warning{
+background-color: yellow;
+color: red;
 }

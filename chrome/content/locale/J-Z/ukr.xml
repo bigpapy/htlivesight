@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Звук для травми в моїй команді</PathSoundsMyBoo>
 <PathSoundsOpBoo>Звук для травми в команді суперника</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Свисток для початку таймів</PathSoundsWhistleStart>
-<PathSoundsWhistle>Звук для жовтої/червоної картки</PathSoundsWhistle>
+<PathSoundsWhistle>Звук для жовтої картки</PathSoundsWhistle>
 <PathSoundsHattrick>Звук для хеттріка</PathSoundsHattrick>
 <PathSoundsRestore>Відновити</PathSoundsRestore>
 <PathSoundsPlay>Програти</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Добрий</Calm>
 <Tranquil>Врівноважений</Tranquil>
 <VisitOurSoundCollection>Відвідайте нашу колекцію звуків</VisitOurSoundCollection>
+<SafariWarning>Якщо панель HTLivesight не є активною, то звуки будуть блоковані. Будь ласка, відкрийте нове окно, якщо бажаєте дивитись інші сторінки під час матчу</SafariWarning>
+<OnlyHTTPFiles>Працюють лише http URL</OnlyHTTPFiles>
+<Warning>Попередження</Warning>
 </Htlivesight>

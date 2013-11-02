@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Ljud - Skada i mitt lag</PathSoundsMyBoo>
 <PathSoundsOpBoo>Ljud - Skada för motståndaren</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Ljud - Avspark i 1:a och 2:a halvlek</PathSoundsWhistleStart>
-<PathSoundsWhistle>Ljud - Gula/Röda kort</PathSoundsWhistle>
+<PathSoundsWhistle>Ljud - Gult kort</PathSoundsWhistle>
 <PathSoundsHattrick>Ljud - Hattrick (3 mål av samma spelare)</PathSoundsHattrick>
 <PathSoundsRestore>Återställ</PathSoundsRestore>
 <PathSoundsPlay>Lyssna</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>stillsam</Calm>
 <Tranquil>lugn som en filbunke</Tranquil>
 <VisitOurSoundCollection>Besök vår ljudsamling</VisitOurSoundCollection>
+<SafariWarning>Om HTLS-panelen (fliken) inte är fokuserad kommer notifieringar att blockeras. Om du vill surfa runt på nätet under en match och samtidigt ha lyxen av ljudnotifieringar från matcherna bör du öppna ett nytt fönster för det</SafariWarning>
+<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
+<Warning>Warning</Warning>
 </Htlivesight>

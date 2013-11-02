@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Suara tim sendiri cedera</PathSoundsMyBoo>
 <PathSoundsOpBoo>Suara tim lawan cedera</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Peluit mulai babak pertama/kedua</PathSoundsWhistleStart>
-<PathSoundsWhistle>Suara kartu kuning/merah</PathSoundsWhistle>
+<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Suara Hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Calm</Calm>
 <Tranquil>Tranquil</Tranquil>
 <VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
+<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
+<Warning>Warning</Warning>
 </Htlivesight>

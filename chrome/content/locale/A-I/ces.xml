@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Zvuk zranění tvého hráče</PathSoundsMyBoo>
 <PathSoundsOpBoo>Zvuk zranění hráče soupeře</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Zvuk pro začátek poločasu</PathSoundsWhistleStart>
-<PathSoundsWhistle>Zvuk žluté či červené karty</PathSoundsWhistle>
+<PathSoundsWhistle>Zvuk udělení žluté karty</PathSoundsWhistle>
 <PathSoundsHattrick>Zvuk vstřeleného hattricku</PathSoundsHattrick>
 <PathSoundsRestore>Vrátit zpět</PathSoundsRestore>
 <PathSoundsPlay>Přehrát</PathSoundsPlay>
@@ -402,4 +402,7 @@
 <Calm>Chladnokrevný</Calm>
 <Tranquil>Ledově klidný</Tranquil>
 <VisitOurSoundCollection>Navštivte náš přehled zvuků</VisitOurSoundCollection>
+<SafariWarning>Pokud panel s HTLivesightem není aktivní, zvuky při událostech v zápase se nepřehrávají. Otevřete si prosím nové okno, pokud chcete surfovat na internetu během zápasu</SafariWarning>
+<OnlyHTTPFiles>Pouze URL s http funguje</OnlyHTTPFiles>
+<Warning>Varování</Warning>
 </Htlivesight>
