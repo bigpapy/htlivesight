@@ -1,0 +1,35 @@
+<script>  
+// Set up the Listener  
+safari.application.addEventListener("command", performCommand, false);  
+  
+// Function to perform when event is received  
+function performCommand(event) {  
+    // Make sure event comes from the button  
+    if (event.command == "open-htlivesight") {  
+        //var newTab = safari.application.activeBrowserWindow.openTab(); // Open a new tab
+		//var newTab = safari.application.openBrowserWindow().activeTab;		
+        
+		if(localStorage['extensions.Htlivesight.prefs.openInTab']=== 'true'){
+		  var newTab = safari.application.activeBrowserWindow.openTab(); // Open a new tab
+		}else{
+		  var newTab = safari.application.openBrowserWindow().activeTab;
+		}
+		newTab.url = safari.extension.baseURI +"chrome/content/htlivesight.html"; // Set tab URL to htlivesight
+		//newTab.addEventListener("deactivate", handleDeactivate, false);
+    }  
+}
+
+//function handleDeactivate(){
+  //if(localStorage['extensions.Htlivesight.prefs.warningTabBlurShown']=== 'true') return;
+//  alert('Warning! If HTLivesight panel isn\'t focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match');
+  //localStorage['extensions.Htlivesight.prefs.warningTabBlurShown']= true;
+//}
+
+function handleMessage(msgEvent) {
+    if (msgEvent.name == 'openUrlInNewTab') {
+        safari.application.activeBrowserWindow.openTab().url = msgEvent.message;
+    }
+}
+
+safari.application.addEventListener('message', handleMessage, false);  
+</script>  
