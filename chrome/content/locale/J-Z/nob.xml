@@ -405,4 +405,11 @@
 <SafariWarning>Hvis HTLivesight panelet ikke fokusert, blokkeres lyd meldinger. Åpne et nytt vindu hvis du vil surfe på Internett under kampen</SafariWarning>
 <OnlyHTTPFiles>Bare http URL fungerer</OnlyHTTPFiles>
 <Warning>Advarsel</Warning>
+<Testers>Testers</Testers>
+<BasedOn>Based on</BasedOn>
+<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
+<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
+<License>Our License</License>
+<Tech>Our Technology</Tech>
+<Supporter>Project support</Supporter>
 </Htlivesight>

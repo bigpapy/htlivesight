@@ -405,4 +405,11 @@
 <SafariWarning>Si el panel de HTLivesight no esta enfocado, los sonidos de notificaciones serán bloqueados. Por favor, abre una nueva ventana si deseas navegar por internet durante un partido</SafariWarning>
 <OnlyHTTPFiles>Sólo la URL http funciona</OnlyHTTPFiles>
 <Warning>Advertencia</Warning>
+<Testers>Testers</Testers>
+<BasedOn>Based on</BasedOn>
+<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
+<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
+<License>Our License</License>
+<Tech>Our Technology</Tech>
+<Supporter>Project support</Supporter>
 </Htlivesight>

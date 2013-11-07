@@ -405,4 +405,11 @@
 <SafariWarning>Kui HTLiveSight kaart ei ole pealmine, siis teavitushelid blokeeritakse. Kui sa soovid HTLiveSight kasutada taustal, siis ava ta mängude ajaks teises aknas ainukese kaardiga</SafariWarning>
 <OnlyHTTPFiles>Ainult http aadressid töötavad</OnlyHTTPFiles>
 <Warning>Hoiatus</Warning>
+<Testers>Testers</Testers>
+<BasedOn>Based on</BasedOn>
+<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
+<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
+<License>Our License</License>
+<Tech>Our Technology</Tech>
+<Supporter>Project support</Supporter>
 </Htlivesight>

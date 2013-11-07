@@ -405,4 +405,11 @@
 <SafariWarning>Se il pannello di HTLivesight non è in primo piano, le notifiche sonore saranno bloccate. Per favore apri una nuova finestra se vuoi navigare su internet durante la partita</SafariWarning>
 <OnlyHTTPFiles>Solo URL  http funzionano</OnlyHTTPFiles>
 <Warning>Avviso</Warning>
+<Testers>Testers</Testers>
+<BasedOn>Basato su</BasedOn>
+<AndroidWarning>Se la scheda di HTLIvesight non è la scheda attualmente selezionata, le notifiche saranno bloccate, esse verranno eseguite al primo aggiornamento dopo che sarai tornato alla scheda di HTLivesight</AndroidWarning>
+<SafariClipboardTitle>premere ctrl/cmd + c per copiare il testo selezionato</SafariClipboardTitle>
+<License>La nostra licenza</License>
+<Tech>La nostra tecnologia</Tech>
+<Supporter>Supporti al progetto</Supporter>
 </Htlivesight>

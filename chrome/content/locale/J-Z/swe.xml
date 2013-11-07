@@ -405,4 +405,11 @@
 <SafariWarning>Om HTLS-panelen (fliken) inte är fokuserad kommer notifieringar att blockeras. Om du vill surfa runt på nätet under en match och samtidigt ha lyxen av ljudnotifieringar från matcherna bör du öppna ett nytt fönster för det</SafariWarning>
 <OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
 <Warning>Warning</Warning>
+<Testers>Testers</Testers>
+<BasedOn>Based on</BasedOn>
+<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
+<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
+<License>Our License</License>
+<Tech>Our Technology</Tech>
+<Supporter>Project support</Supporter>
 </Htlivesight>

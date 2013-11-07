@@ -7,7 +7,7 @@
 		<em:type>2</em:type>
 		<em:bootstrap>true</em:bootstrap>
 		<em:name>HTLiveSightDEV</em:name>
-		<em:version>0.5.1033</em:version>
+		<em:version>0.5.1038</em:version>
 		<em:description>Hattrick Match Viewer based on HattrickLiveFox</em:description>
 		<em:creator>Silkevicious</em:creator>
 		<em:developer>Bigpapy</em:developer>
@@ -17,13 +17,13 @@
 		<em:icon64URL>chrome://htlivesight/skin/64.png</em:icon64URL>
 		<em:optionsURL>chrome://htlivesight/content/settings.html</em:optionsURL>
 		<em:aboutURL>chrome://htlivesight/content/about.html</em:aboutURL>
-		<em:updateURL>https://htlivesight.c6.ixwebhosting.com/dev/update.rdf</em:updateURL>
+		<em:updateURL>https://htlivesight.c6.ixsecure.com/dev/update.rdf</em:updateURL>
 		<!-- Firefox -->
 		<em:targetApplication>
 			<Description>
 				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
 				<em:minVersion>4.0</em:minVersion>
-				<em:maxVersion>26.0</em:maxVersion>
+				<em:maxVersion>28.0</em:maxVersion>
 			</Description>
 		</em:targetApplication>
 		<!-- SeaMonkey -->
@@ -31,7 +31,7 @@
 			<Description>
 				<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
 				<em:minVersion>2.2</em:minVersion>
-				<em:maxVersion>2.23</em:maxVersion>
+				<em:maxVersion>2.25</em:maxVersion>
 			</Description>
 		</em:targetApplication>
 		<!-- Android -->
@@ -39,7 +39,7 @@
 			<Description>
 				<em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
 				<em:minVersion>10.0a1</em:minVersion>
-				<em:maxVersion>26.0</em:maxVersion>
+				<em:maxVersion>28.0</em:maxVersion>
 			</Description>
 		</em:targetApplication>	
 	</Description>      

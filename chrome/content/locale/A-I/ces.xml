@@ -405,4 +405,11 @@
 <SafariWarning>Pokud panel s HTLivesightem není aktivní, zvuky při událostech v zápase se nepřehrávají. Otevřete si prosím nové okno, pokud chcete surfovat na internetu během zápasu</SafariWarning>
 <OnlyHTTPFiles>Pouze URL s http funguje</OnlyHTTPFiles>
 <Warning>Varování</Warning>
+<Testers>Testers</Testers>
+<BasedOn>Based on</BasedOn>
+<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
+<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
+<License>Our License</License>
+<Tech>Our Technology</Tech>
+<Supporter>Project support</Supporter>
 </Htlivesight>
