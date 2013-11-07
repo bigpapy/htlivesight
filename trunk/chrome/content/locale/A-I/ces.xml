@@ -355,7 +355,7 @@
 <Unpredictable>Nepředvídatelný</Unpredictable>
 <Header>Hlavičkář</Header>
 <Regainer>Nezmar</Regainer>
-<SecondTeamIdLabel>Vložte ID druhého týmu</SecondTeamIdLabel>
+<SecondTeamIdLabel>Zadej ID druhého týmu</SecondTeamIdLabel>
 <SecondSoundEqualFirst>Zvuky pro druhý tým stejné jako pro první</SecondSoundEqualFirst>
 <Keeper>Chytání</Keeper>
 <Defending>Bránění</Defending>
@@ -370,7 +370,7 @@
 <Experience>Zkušenosti</Experience>
 <Loyalty>Oddanost klubu</Loyalty>
 <PathSoundsPressing>Zvuk událostí týkající se taktiky pressing</PathSoundsPressing>
-<PathSoundsMyBruised>Zvuk zranění mého hráče</PathSoundsMyBruised>
+<PathSoundsMyBruised>Zvuk poranění mého hráče (náplast)</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Zvuk zranění hráče jiného týmu</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Zvuk červené karty mého hráče</PathSoundsMySentOff>
 <PathSoundsOtherSentOff>Zvuk červené karty hráče jiného týmu</PathSoundsOtherSentOff>
@@ -405,11 +405,11 @@
 <SafariWarning>Pokud panel s HTLivesightem není aktivní, zvuky při událostech v zápase se nepřehrávají. Otevřete si prosím nové okno, pokud chcete surfovat na internetu během zápasu</SafariWarning>
 <OnlyHTTPFiles>Pouze URL s http funguje</OnlyHTTPFiles>
 <Warning>Varování</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
+<Testers>Testeři</Testers>
+<BasedOn>Na základě</BasedOn>
+<AndroidWarning>Pokud panel HTLiveSightu není navrchu, upozornění budou schována a objeví se až se vrátíš zpátky na tento panel</AndroidWarning>
+<SafariClipboardTitle>ke zkopírování vybraného textu stiskni ctrl/cmd + c</SafariClipboardTitle>
+<License>Naše licence</License>
+<Tech>Naše technologie</Tech>
+<Supporter>Podpora projektu</Supporter>
 </Htlivesight>

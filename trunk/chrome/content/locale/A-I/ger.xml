@@ -176,7 +176,7 @@
 <ScorersList>Zeige Torschützen in der Kopfzeile</ScorersList>
 <MatchesBooked>Gebucht</MatchesBooked>
 <BookedList>List booked in header</BookedList>
-<MatchesSentOff>Rote Karte</MatchesSentOff>
+<MatchesSentOff>Platzverweise</MatchesSentOff>
 <SentOffList>Zeige Platzverweise im Kopf</SentOffList>
 <MatchesInjured>Verletzt</MatchesInjured>
 <InjuredList>Zeige Verletzte in der Kopfzeile</InjuredList>
@@ -195,9 +195,9 @@
 <OtherEvents>Reihenfolge der Ereignisse</OtherEvents>
 <OtherEventKey>Ereignissnummer</OtherEventKey>
 <OtherEventKeyNote>Zeige Ereignisnummer im Kommentar</OtherEventKeyNote>
-<CustomIcons>Icons</CustomIcons>
+<CustomIcons>Symbole</CustomIcons>
 <CustomIconsOld>Originale Livefox icons im Spielfenster</CustomIconsOld>
-<CustomSounds>Sounds</CustomSounds>
+<CustomSounds>Töne</CustomSounds>
 <CustomSoundsWeather>Wetter sound am Anfang eines Spiels</CustomSoundsWeather>
 <CustomSoundsTime>Sounds am Beginn/Ende einer Halbzeit</CustomSoundsTime>
 <CustomSoundsSEW>Sounds für Wetter SEs</CustomSoundsSEW>
@@ -216,18 +216,18 @@
 <PathSoundsMyBoo>Sound für Verletzung im eigenen Team</PathSoundsMyBoo>
 <PathSoundsOpBoo>Sound für Verletzung im gegnerischen team</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Anpfiff der ersten und zweiten Halbzeit</PathSoundsWhistleStart>
-<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
-<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsWhistle>Ton für Gelbe Karte</PathSoundsWhistle>
+<PathSoundsHattrick>Ton für Hattrick</PathSoundsHattrick>
+<PathSoundsRestore>Wiederherstellen</PathSoundsRestore>
+<PathSoundsPlay>Abspielen</PathSoundsPlay>
 <LanguageSelect>Sprache wählen</LanguageSelect>
 <LanguageNote>Bemerkung: Bitte HTLiveSight neu starten, um die Änderungen zu übernehmen.</LanguageNote>
 <ButtonCancel>Abbrechen</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
 <WindowAboutTitle>Über HTLiveSight</WindowAboutTitle>
-<TabInfo>Info</TabInfo>
+<TabInfo>Information</TabInfo>
 <TabTranslators>Übersetzer</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabCredits>Impressum</TabCredits>
 <MonthJanuary>Jan</MonthJanuary>
 <MonthFebruary>Feb</MonthFebruary>
 <MonthMarch>Mär</MonthMarch>
@@ -279,7 +279,7 @@
 <LeftAttack>Linke Angriffsseite</LeftAttack>
 <IndirectSetPiecesDefence>Indirekte Freistöße Verteidigung</IndirectSetPiecesDefence>
 <IndirectSetPiecesAttack>Indirekte Freistöße Angriff</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
+<TeamAttitude>Einstellung des Teams</TeamAttitude>
 <TacticType>Ausgewählte Taktik</TacticType>
 <TacticSkill>Taktikstärke</TacticSkill>
 <BallPosses>Ballbesitz</BallPosses>
@@ -288,42 +288,42 @@
 <PIC>Kraft sparen</PIC>
 <MOTS>Spiel des Jahres</MOTS>
 <ColorPicker>Du kannst deine Farbe hier wählen </ColorPicker>
-<EventBackground>Event background color</EventBackground>
+<EventBackground>Hintergrundfarbe für Events</EventBackground>
 <FriendHome>Farbe der Heimmannschaft (eigenes oder befreundetes Team): #</FriendHome>
 <FriendAway>Farbe der Auswärtsmannschaft (eigenes oder befreundetes Team): #</FriendAway>
 <FoeHome>Farbe des Heimteams (fremdes Team): #</FoeHome>
 <FoeAway>Farbe des Auswärtsteams (fremdes Team): #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
+<Neutral>Neutrale Farbe: #</Neutral>
+<EventColorTitle>Textfarbe für Events</EventColorTitle>
+<EventTextColor>Textfarbe für Event: #</EventTextColor>
+<SETextColor>Textfarbe Sonderereignis: #</SETextColor>
 <Colors>Farben</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
-<Senior>Senior</Senior>
+<SchemaTip>Klicke hier, um die Aufstellung anzuzeigen</SchemaTip>
+<StatisticTip>Klicke hier, um die Statistiken nach dem Spiel anzuzeigen</StatisticTip>
+<Youth>Jugend</Youth>
+<Senior>Senioren</Senior>
 <Tournament>Turnier</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
+<FreeKicks>Freistöße</FreeKicks>
+<RedCards>Platzverweise</RedCards>
+<YellowCards>Gelbe Karten</YellowCards>
+<Injuries>Verletzungen</Injuries>
 <Goals>Tore</Goals>
-<Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
+<Total>Insgesamt</Total>
+<Terraces>Stehplätze</Terraces>
+<Basic>Nicht überdachte Sitzplätze</Basic>
+<Roof>Überdachte Sitzplätze</Roof>
+<VIP>VIP-Lounges</VIP>
+<CrowdinHelp>Hilf uns beim Übersetzen! Mit Crowdin ist das superleicht und sehr lustig. Klicke hier!</CrowdinHelp>
+<Error401>Fehler 401: Unbefugter Zugriff. Du brauchst eine Erlaubnis hierfür. Klicke ok, um fortzufahren.</Error401>
+<Error404>Fehler 404: die gesuchte Ressource wurde nicht gefunden. Wenn dieser Fehler wiederholt auftritt, prüfe, ob CHPP evtl. nicht verfügbar ist.</Error404>
+<Error0>Fehler 0: Du bist nicht mit dem Internet verbunden.</Error0>
+<Error500>Fehler 500: Interner Serverfehler (Hattrick)</Error500>
+<Error503>Fehler 503: CHPP ist derzeit nicht verfügbar (temporäre Überlastung oder Wartung)</Error503>
 <PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
 <PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
+<PathSoundsWhistle2>Pfiff zum Ende der ersten Halbzeit</PathSoundsWhistle2>
+<PathSoundsWhistle3>Pfiff zum Ende des Spiels</PathSoundsWhistle3>
+<EventYellow2>zweite gelbe Karte</EventYellow2>
 <LoggedIn>Eingeloggt als</LoggedIn>
 <latestNews>Check latest news on</latestNews>
 <HTLSThread>Hattrick-Forum</HTLSThread>
@@ -344,11 +344,11 @@
 <AttHatStats>HatStats Angriff</AttHatStats>
 <TotHatStats>Summe der HatStats</TotHatStats>
 <CopiedToClipboard>In die Zwischenablage kopiert!</CopiedToClipboard>
-<ReLiveControls>Relive Controls</ReLiveControls>
+<ReLiveControls>Re-Live Steuerung</ReLiveControls>
 <ExtendImage>Bild vergrößern</ExtendImage>
-<RepeatImage>Repeat image</RepeatImage>
-<Background>Background</Background>
-<MuteAll>Sound switch</MuteAll>
+<RepeatImage>Bildwiederholung</RepeatImage>
+<Background>Hintergrund</Background>
+<MuteAll>Töne an/aus</MuteAll>
 <Technical>Ballzauberer</Technical>
 <Quick>Schnell</Quick>
 <Powerful>Durchsetzungsstark</Powerful>
@@ -369,47 +369,47 @@
 <Stamina>Kondition</Stamina>
 <Experience>Erfahrung</Experience>
 <Loyalty>Treue</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
-<TabWhistleCard>Whistles and Cards</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
-<Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
-<PopularGuy>Popular guy</PopularGuy>
-<SympatheticGuy>Sympathetic guy</SympatheticGuy>
-<PleasantGuy>Pleasant guy</PleasantGuy>
-<ControversialPerson>Controversial Person</ControversialPerson>
-<NastyFellow>Nasty fellow</NastyFellow>
-<Saintly>Saintly</Saintly>
-<Righteous>Righteous</Righteous>
-<Upright>Upright</Upright>
-<Honest>Honest</Honest>
-<Dishonest>Dishonest</Dishonest>
-<Infamous>Infamous</Infamous>
-<Unstable>Unstable</Unstable>
-<Fiery>Fiery</Fiery>
-<Temperamental>Temperamental</Temperamental>
-<Balanced>Balanced</Balanced>
-<Calm>Calm</Calm>
-<Tranquil>Tranquil</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<PathSoundsPressing>Ton für Pressing</PathSoundsPressing>
+<PathSoundsMyBruised>Ton für Verletzung eines eigenen Spielers</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Ton für Verletzung eines gegnerischen Spielers</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Ton bei Platzverweis für eigenen Spieler</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Ton bei Platzverweis für gegnerischen Spieler</PathSoundsOtherSentOff>
+<TabInjuries>Verletzungen</TabInjuries>
+<TabWeather>Wetter</TabWeather>
+<TabWhistleCard>Töne für Karten</TabWhistleCard>
+<PathSoundsMissFriend>Ton für vergebene Chance befreundetes Team</PathSoundsMissFriend>
+<PathSoundsMissOther>Ton für vergebene Chance anderes Team</PathSoundsMissOther>
+<TabChances>Chancen</TabChances>
+<Agreeability>Beliebtheit</Agreeability>
+<Aggressiveness>Psyche</Aggressiveness>
+<Honesty>Charakter</Honesty>
+<BelovedTeamMember>eine Integrationsfigur </BelovedTeamMember>
+<PopularGuy>Beliebt</PopularGuy>
+<SympatheticGuy>Sympathisch</SympatheticGuy>
+<PleasantGuy>Angenehm</PleasantGuy>
+<ControversialPerson>Umstritten</ControversialPerson>
+<NastyFellow>Ekel</NastyFellow>
+<Saintly>herzensgut</Saintly>
+<Righteous>rechtschaffen</Righteous>
+<Upright>aufrichtig</Upright>
+<Honest>ehrlich</Honest>
+<Dishonest>unehrlich</Dishonest>
+<Infamous>niederträchtig</Infamous>
+<Unstable>hitzköpfig</Unstable>
+<Fiery>aufbrausend</Fiery>
+<Temperamental>temperamentvoll</Temperamental>
+<Balanced>ausgeglichen</Balanced>
+<Calm>ruhig</Calm>
+<Tranquil>introvertiert</Tranquil>
+<VisitOurSoundCollection>Schau dir unsere Töne-Sammlung an</VisitOurSoundCollection>
 <SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
 <OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
-<Warning>Warning</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
+<Warning>Warnung</Warning>
+<Testers>Tester</Testers>
+<BasedOn>Auf der Grundlage von</BasedOn>
 <AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
+<SafariClipboardTitle>Drücke ctrl/cmd + c, um den ausgwählten Text zu kopieren</SafariClipboardTitle>
+<License>Unsere Lizenz</License>
+<Tech>Unsere Technologie</Tech>
+<Supporter>Projektunterstützung</Supporter>
 </Htlivesight>

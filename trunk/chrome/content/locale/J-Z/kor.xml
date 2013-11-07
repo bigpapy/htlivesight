@@ -405,11 +405,11 @@
 <SafariWarning>HTLivesight  화면을 보고 있지 않으면 알림 사운드는 차단됩니다. 따라서 경기 중에 인터넷 서핑을 하고 싶으시면 새 창을 열어주세요</SafariWarning>
 <OnlyHTTPFiles>오직 http URL만 동작</OnlyHTTPFiles>
 <Warning>경고</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
+<Testers>테스터</Testers>
+<BasedOn>기반 프로그램</BasedOn>
+<AndroidWarning>HTLiveSight 탭으로 포커스가 되어 있지 않으면, 알림은 차단됩니다. 그리고 다시 탭으로 돌아오면 첫 번째 업데이트에서 알림이 나타날 것입니다</AndroidWarning>
+<SafariClipboardTitle>선택한 텍스트를 복사하려면 ctrl/cmd + c 를 누르세요</SafariClipboardTitle>
+<License>라이센스</License>
+<Tech>기술</Tech>
+<Supporter>프로젝트 지원</Supporter>
 </Htlivesight>

@@ -405,11 +405,11 @@
 <SafariWarning>Dacă tabul HTLivesight nu este în prim-plan, sunetele de notificare vor fi blocate. Vă rugăm sa deschideți o alta sesiune de browser daca vreți să navigați pe internet în timpul unui meci</SafariWarning>
 <OnlyHTTPFiles>Funcționează doar URL http</OnlyHTTPFiles>
 <Warning>Atenționare</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
+<Testers>Testeri</Testers>
+<BasedOn>Bazat pe</BasedOn>
+<AndroidWarning>Dacă HTLiveSight nu este în prim-plan, notificările vor fi blocate și vor apărea la prima actualizare când veți fi din nou pe tabul respectiv</AndroidWarning>
+<SafariClipboardTitle>Apăsați Ctrl/Cmd + c pentru a copia textul selectat</SafariClipboardTitle>
+<License>Licența noastră</License>
+<Tech>Tehnologia noastră</Tech>
+<Supporter>Asistență proiect</Supporter>
 </Htlivesight>
