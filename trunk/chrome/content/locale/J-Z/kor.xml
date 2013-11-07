@@ -405,4 +405,11 @@
 <SafariWarning>HTLivesight  화면을 보고 있지 않으면 알림 사운드는 차단됩니다. 따라서 경기 중에 인터넷 서핑을 하고 싶으시면 새 창을 열어주세요</SafariWarning>
 <OnlyHTTPFiles>오직 http URL만 동작</OnlyHTTPFiles>
 <Warning>경고</Warning>
+<Testers>Testers</Testers>
+<BasedOn>Based on</BasedOn>
+<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
+<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
+<License>Our License</License>
+<Tech>Our Technology</Tech>
+<Supporter>Project support</Supporter>
 </Htlivesight>

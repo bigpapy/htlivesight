@@ -405,4 +405,11 @@
 <SafariWarning>Если панель HTLivesight неактивна, то звуки будут заблокированы. Пожалуйста, открывайте новое окно, если хотите смотреть другие страницы во время матча</SafariWarning>
 <OnlyHTTPFiles>Работают только http URL</OnlyHTTPFiles>
 <Warning>Предупреждение</Warning>
+<Testers>Testers</Testers>
+<BasedOn>Based on</BasedOn>
+<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
+<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
+<License>Our License</License>
+<Tech>Our Technology</Tech>
+<Supporter>Project support</Supporter>
 </Htlivesight>

@@ -86,11 +86,12 @@ htlivesight.filePickerForDataUrl = function(doc, callback) {
 htlivesight.copyToClipboard = function(string,e) {
 	if(htlivesight.platform == "Safari"){
 		if ($( "#clipboard-store" ).dialog( "isOpen" )){
-		  $("#clipboard-store").dialog('close')
+		  $("#clipboard-store").dialog('close');
 		}
 	  	var clipboardStore = document.getElementById('clipboard-store');
 		clipboardStore.value = string;
-		clipboardStore.title  = "press ctrl/cmd + c to copy selected text";
+		//clipboardStore.title  = "press ctrl/cmd + c to copy selected text";
+		clipboardStore.title  = htlivesight.Util.Parse("SafariClipboardTitle",htlivesight.data[0]);
         $( "#clipboard-store" ).dialog({ autoOpen: false, hide: "fadeOut", height: "auto", width: 45, position: [e.pageX+10,e.pageY-20-document.documentElement.scrollTop-document.body.scrollTop], resizable: true  });
 		setTimeout(function(){ $("#clipboard-store").dialog( "open" ); clipboardStore.select();},500);
 		//var dialog= $("#clipboard-store").dialog( "open" )/*.fadeOut(1500)*/;

@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.5.1036</string>
+	<string>0.5.1038</string>
 	<key>CFBundleVersion</key>
-	<string>0.5.1036</string>
+	<string>0.5.1038</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Database Quota</key>
@@ -65,7 +65,7 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>https://htlivesight.c6.ixwebhosting.com/safaridev/update.plist</string>
+	<string>https://htlivesight.c6.ixsecure.com/safaridev/update.plist</string>
 	<key>Website</key>
 	<string>http://htlivesight.sourceforge.net</string>
 </dict>

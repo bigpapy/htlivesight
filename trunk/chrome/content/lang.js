@@ -31,13 +31,18 @@ htlivesight.Lang = {
 			doc.getElementById("warning").innerHTML=htlivesight.Util.Parse("Warning",htlivesight.data[0]);
 			doc.getElementById("safari-warning-text").innerHTML=htlivesight.Util.Parse("SafariWarning",htlivesight.data[0]);
 			doc.getElementById("warning2").innerHTML=htlivesight.Util.Parse("Warning",htlivesight.data[0]);
-			//doc.getElementById("android-warning-text").innerHTML=htlivesight.Util.Parse("AndroidWarning",htlivesight.data[0]);
+			doc.getElementById("android-warning-text").innerHTML=htlivesight.Util.Parse("AndroidWarning",htlivesight.data[0]);
 			//todo: add android warning text localization.
 //			ABOUT
 			doc.getElementById("ui-dialog-title-about-dialog").innerHTML=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);	
 			doc.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
-			doc.getElementById("creationDate").innerHTML="11 "+htlivesight.Util.Parse("MonthNovember",htlivesight.data[0])+" 2013";
+			doc.getElementById("creationDate").innerHTML="4 "+htlivesight.Util.Parse("MonthNovember",htlivesight.data[0])+" 2013";
 			doc.getElementById("createdBy").innerHTML=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
+			doc.getElementById("testers").innerHTML=htlivesight.Util.Parse("Testers",htlivesight.data[0]);
+			doc.getElementById("BasedOn").innerHTML=htlivesight.Util.Parse("BasedOn",htlivesight.data[0]);
+			doc.getElementById("License").innerHTML=htlivesight.Util.Parse("License",htlivesight.data[0]);
+			doc.getElementById("Tech").innerHTML=htlivesight.Util.Parse("Tech",htlivesight.data[0]);
+			doc.getElementById("Supporter").innerHTML=htlivesight.Util.Parse("Supporter",htlivesight.data[0]);
 			doc.getElementById("TabTranslators").innerHTML=htlivesight.Util.Parse("TabTranslators",htlivesight.data[0]);
 			doc.getElementById("ThanksTo").innerHTML=htlivesight.Util.Parse("TextThanksTo",htlivesight.data[0]);
 			doc.getElementById("TabCredits").innerHTML=htlivesight.Util.Parse("TabCredits",htlivesight.data[0]);

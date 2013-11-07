@@ -405,4 +405,11 @@
 <SafariWarning>Уколико HTLivesight таб није у фокусу звуци за обавештења ће бити блокирани. Отворите посебан, нови прозор, само за HTLivesight, уколико хоћете да прегледате друге интернет странице током праћења мечева</SafariWarning>
 <OnlyHTTPFiles>Само линкови  који почињу са "http" раде</OnlyHTTPFiles>
 <Warning>Упозорење</Warning>
+<Testers>Testers</Testers>
+<BasedOn>Based on</BasedOn>
+<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
+<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
+<License>Our License</License>
+<Tech>Our Technology</Tech>
+<Supporter>Project support</Supporter>
 </Htlivesight>

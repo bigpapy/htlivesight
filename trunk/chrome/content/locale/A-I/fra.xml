@@ -405,4 +405,11 @@
 <SafariWarning>Si HTLivesight n'est pas dans un onglet actif, les sons ne pourront être entendus. Ouvrez une nouvelle fenêtre de safari si vous voulez surfer durant un match.</SafariWarning>
 <OnlyHTTPFiles>Seul un lien URL http fonctionne</OnlyHTTPFiles>
 <Warning>Attention</Warning>
+<Testers>Testeurs</Testers>
+<BasedOn>Basé sur</BasedOn>
+<AndroidWarning>Si l'onglet où se trouve HTLiveSight n'est pas actif, les notifications seront bloquées, elles s'afficheront à la première mise à jour une fois que vous serez de retour dans son onglet</AndroidWarning>
+<SafariClipboardTitle>CTRL/CMD + C pour copier le texte sélectionné</SafariClipboardTitle>
+<License>Licence</License>
+<Tech>Technologie</Tech>
+<Supporter>Soutien du projet</Supporter>
 </Htlivesight>
