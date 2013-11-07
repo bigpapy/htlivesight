@@ -375,13 +375,13 @@
 <PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
 <PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
 <TabInjuries>Lesiones</TabInjuries>
-<TabWeather>Weather</TabWeather>
+<TabWeather>Clima</TabWeather>
 <TabWhistleCard>Silbatos y tarjetas</TabWhistleCard>
 <PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
 <PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
+<TabChances>Posibilidades</TabChances>
+<Agreeability>Personalidad</Agreeability>
+<Aggressiveness>Agresividad</Aggressiveness>
 <Honesty>Honestidad</Honesty>
 <BelovedTeamMember>Beloved team member </BelovedTeamMember>
 <PopularGuy>Tío popular</PopularGuy>
@@ -401,9 +401,9 @@
 <Balanced>Equilibrado</Balanced>
 <Calm>Calma</Calm>
 <Tranquil>Tranquilo</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
+<VisitOurSoundCollection>Visita nuestra colección de sonidos</VisitOurSoundCollection>
 <SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
-<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
+<OnlyHTTPFiles>Solo funcionan direcciones http</OnlyHTTPFiles>
 <Warning>Advertencia</Warning>
 <Testers>Testers</Testers>
 <BasedOn>Based on</BasedOn>

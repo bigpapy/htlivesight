@@ -403,13 +403,13 @@
 <Tranquil>lugn som en filbunke</Tranquil>
 <VisitOurSoundCollection>Besök vår ljudsamling</VisitOurSoundCollection>
 <SafariWarning>Om HTLS-panelen (fliken) inte är fokuserad kommer notifieringar att blockeras. Om du vill surfa runt på nätet under en match och samtidigt ha lyxen av ljudnotifieringar från matcherna bör du öppna ett nytt fönster för det</SafariWarning>
-<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
-<Warning>Warning</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
+<OnlyHTTPFiles>Endast http -länkar fungerar</OnlyHTTPFiles>
+<Warning>Varning</Warning>
+<Testers>Testare</Testers>
+<BasedOn>Baserat på</BasedOn>
+<AndroidWarning>Om HTLS-panelen (fliken) inte är fokuserad kommer notifieringar att blockeras och kommer dyka upp på första uppdateringen efter att fliken åter är aktiv.</AndroidWarning>
+<SafariClipboardTitle>Tryck ctrl/cmd + c för att kopiera markerad text</SafariClipboardTitle>
+<License>Vår licens</License>
+<Tech>Vår teknik</Tech>
+<Supporter>Projektsupport</Supporter>
 </Htlivesight>

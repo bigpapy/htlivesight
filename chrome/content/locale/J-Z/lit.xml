@@ -405,11 +405,11 @@
 <SafariWarning>Jei HTLivesight panelė praranda fokusą, pranešimų garsai yra blokuojami. Atidarykite naują langą, jei norite naršyti internetą per rungtynes</SafariWarning>
 <OnlyHTTPFiles>Veikia tik http nuorodos (URL)</OnlyHTTPFiles>
 <Warning>Įspėjimas</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
+<Testers>Bandytojai</Testers>
+<BasedOn>Remiantis</BasedOn>
+<AndroidWarning>Jei „HTLiveSight“ naršyklės kortelė nesufokusuota, pranešimai blokuojami: juos pamatysite sugrįžę į kortelę</AndroidWarning>
+<SafariClipboardTitle>Tekstą nukopijuosite paspaudę cmd/ctrl + c</SafariClipboardTitle>
+<License>Mūsų licencija</License>
+<Tech>Mūsų technologijos</Tech>
+<Supporter>Projektą remia</Supporter>
 </Htlivesight>

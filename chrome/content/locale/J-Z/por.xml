@@ -402,14 +402,14 @@
 <Calm>Calma</Calm>
 <Tranquil>Tranquila</Tranquil>
 <VisitOurSoundCollection>Visite a nossa coleção de sons</VisitOurSoundCollection>
-<SafariWarning>Se o painel de HTLivesight não estiver aberto, os sons das notificações serão bloqueadas. Por favor abra uma nova janela, se quiser navegar na internet durante um jogo</SafariWarning>
+<SafariWarning>Se o painel de HTLivesight não estiver aberto, os sons das notificações serão bloqueados. Por favor abra uma nova janela, se quiser navegar na internet durante um jogo</SafariWarning>
 <OnlyHTTPFiles>Só o URL http é que funciona</OnlyHTTPFiles>
 <Warning>Aviso</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
+<Testers>Avaliadores</Testers>
+<BasedOn>Com base em</BasedOn>
+<AndroidWarning>Se o painel do HTLiveSight não estiver aberto, as notificações serão bloqueadas; elas aparecerão na primeira atualização, após regressar ao painel</AndroidWarning>
+<SafariClipboardTitle>Pressione ctrl/cmd + c para copiar o texto selecionado</SafariClipboardTitle>
+<License>Nossa licença</License>
+<Tech>Nossa tecnologia</Tech>
+<Supporter>Apoio ao projeto</Supporter>
 </Htlivesight>

@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Son para lesión no propio equipo</PathSoundsMyBoo>
 <PathSoundsOpBoo>Son para lesión do rival</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Asubío para inicio da primeira/segunda metade</PathSoundsWhistleStart>
-<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
+<PathSoundsWhistle>Son da tarxeta vermella</PathSoundsWhistle>
 <PathSoundsHattrick>Son de Hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Restaurar</PathSoundsRestore>
 <PathSoundsPlay>Reproducir</PathSoundsPlay>
@@ -343,19 +343,19 @@
 <MidHatStats>HatStats de Medio</MidHatStats>
 <AttHatStats>HatStats de Ataque</AttHatStats>
 <TotHatStats>HatStats Totales</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
+<CopiedToClipboard>Copiado ó portapapeis!</CopiedToClipboard>
 <ReLiveControls>Relive Controls</ReLiveControls>
-<ExtendImage>Extend image</ExtendImage>
-<RepeatImage>Repeat image</RepeatImage>
-<Background>Background</Background>
+<ExtendImage>Extender a imaxe</ExtendImage>
+<RepeatImage>Mosaico</RepeatImage>
+<Background>Fondo</Background>
 <MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
+<Technical>Técnico</Technical>
+<Quick>Rápido</Quick>
+<Powerful>Potente</Powerful>
+<Unpredictable>Imprevisible</Unpredictable>
+<Header>Xogo aéreo</Header>
+<Regainer>Recuperador</Regainer>
+<SecondTeamIdLabel>Introduce a ID do segundo equipo</SecondTeamIdLabel>
 <SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
 <Keeper>Keeper</Keeper>
 <Defending>Defending</Defending>
@@ -379,7 +379,7 @@
 <TabWhistleCard>Whistles and Cards</TabWhistleCard>
 <PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
 <PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
+<TabChances>Ocasións</TabChances>
 <Agreeability>Agreeability</Agreeability>
 <Aggressiveness>Aggressiveness</Aggressiveness>
 <Honesty>Honesty</Honesty>
