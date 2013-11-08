@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Hangjelzés saját csapat sérülésénél</PathSoundsMyBoo>
 <PathSoundsOpBoo>Hangjelzés ellenfél játékosának sérülésénél</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Sípszó első/második félidő kezdésnél</PathSoundsWhistleStart>
-<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
+<PathSoundsWhistle>Sárga lapos hangjelzés</PathSoundsWhistle>
 <PathSoundsHattrick>Mesterhármas hangjelzés</PathSoundsHattrick>
 <PathSoundsRestore>Visszaállítás</PathSoundsRestore>
 <PathSoundsPlay>Lejátszás</PathSoundsPlay>
@@ -402,14 +402,14 @@
 <Calm>Higgadt</Calm>
 <Tranquil>Jámbor</Tranquil>
 <VisitOurSoundCollection>Nézd meg a hanggyűjteményünket</VisitOurSoundCollection>
-<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
-<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
-<Warning>Warning</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
+<SafariWarning>Ha a HTLivesight ablakon nincs fókusz, az értesítések hangjelzései blokkolásra kerülnek. Kérlek nyiss új ablakot, ha a mérkőzések alatt böngészel az interneten</SafariWarning>
+<OnlyHTTPFiles>Csak a http URL-ek működnek</OnlyHTTPFiles>
+<Warning>Figyelmeztetés</Warning>
+<Testers>Tesztelők</Testers>
+<BasedOn>Alábbi alapján:</BasedOn>
+<AndroidWarning>Ha a HTLivesight fül nem aktív, az értesítések blokkolásra kerülnek, majd leghamarabbi frissítés után kerülnek aktiválásra visszatérve a fülre</AndroidWarning>
+<SafariClipboardTitle>Nyomd meg a ctrl/cmd + c billentyűkombinációt a szöveg másolásához</SafariClipboardTitle>
+<License>A licenszünk</License>
+<Tech>A Technológiánk</Tech>
+<Supporter>Projekt támogatás</Supporter>
 </Htlivesight>
