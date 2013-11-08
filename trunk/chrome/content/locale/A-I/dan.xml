@@ -203,20 +203,20 @@
 <CustomSoundsSEW>Lyde for vejrbegivenheder</CustomSoundsSEW>
 <CustomSoundsGoal>Originale Livefox lyde</CustomSoundsGoal>
 <CustomSoundsNoOpGoal>Ingen lyd for modstanders scoring</CustomSoundsNoOpGoal>
-<PathSoundsMyGoal>Lyd for dine mål</PathSoundsMyGoal>
+<PathSoundsMyGoal>Lyd for dine scoringer</PathSoundsMyGoal>
 <PathSoundsOpGoal>Lyd for modstanderscoring</PathSoundsOpGoal>
 <PathSoundsFrGoal>Lyd for scoring af venner</PathSoundsFrGoal>
 <PathSoundsOpFrGoal>Lyd for scoring af venners modstander</PathSoundsOpFrGoal>
 <PathSoundsOtGoal>Lyd for andre hold scoringer</PathSoundsOtGoal>
-<PathSoundsMiss>Lyd for brændt chance</PathSoundsMiss>
+<PathSoundsMiss>Lyd ved brændt chance</PathSoundsMiss>
 <PathSoundsSun>Lyd for solskin</PathSoundsSun>
 <PathSoundsRain>Lyd for regnvejr</PathSoundsRain>
 <PathSoundsOvercast>Lyd for overskyet</PathSoundsOvercast>
 <PathSoundsFewClouds>Lyd for let skyet vejr</PathSoundsFewClouds>
 <PathSoundsMyBoo>Lyd for skade på eget hold</PathSoundsMyBoo>
 <PathSoundsOpBoo>Lyd for skade hos modstander</PathSoundsOpBoo>
-<PathSoundsWhistleStart>Fløjte for kickoff 1. og 2. halvleg</PathSoundsWhistleStart>
-<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
+<PathSoundsWhistleStart>kickoff fløjt 1. & 2. halvleg</PathSoundsWhistleStart>
+<PathSoundsWhistle>Lyd ved Gul Kort</PathSoundsWhistle>
 <PathSoundsHattrick>Lyd for hattrick scoring</PathSoundsHattrick>
 <PathSoundsRestore>Genskab</PathSoundsRestore>
 <PathSoundsPlay>Afspil</PathSoundsPlay>
@@ -402,14 +402,14 @@
 <Calm>Rolig</Calm>
 <Tranquil>Stille</Tranquil>
 <VisitOurSoundCollection>Kig forbi vores lyd samling</VisitOurSoundCollection>
-<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
-<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
-<Warning>Warning</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
+<SafariWarning>Hvis panellet/fanen HTLivesight ikke er valgt som primær, blokeres lyd beskeder. Åbn et nyt vindue, hvis du ønsker at surfe på internettet i løbet af en kamp</SafariWarning>
+<OnlyHTTPFiles>Kun http URL virker</OnlyHTTPFiles>
+<Warning>Advarsel</Warning>
+<Testers>Testere</Testers>
+<BasedOn>Baseret på</BasedOn>
+<AndroidWarning>Hvis fanen HTLiveSight ikke er valgt som primær, vil meddelelser blive blokeret. De vises igen ved første opdatering når du er tilbage på fanen</AndroidWarning>
+<SafariClipboardTitle>Tryk ctrl/cmd + c for at kopiere den markerede tekst</SafariClipboardTitle>
+<License>Vores licens</License>
+<Tech>Vores teknologi</Tech>
+<Supporter>Projektstøtte</Supporter>
 </Htlivesight>
