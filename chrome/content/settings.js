@@ -751,7 +751,7 @@ htlivesight.Settings = {
 				if(htlivesight.platform == "Safari"){
 				  defaultFile = defaultFile.replace("ogg","mp3");
 				  defaultFile = defaultFile.replace("wav","mp3");
-				  document.getElementById(id+"SoundPath").value=prefix+'http://htlivesight.googlecode.com/svn/trunk/chrome/content/'+defaultFile;
+				  document.getElementById(id+"SoundPath").value=prefix+'https://sourceforge.net/projects/htlivesight/files/Sounds/default/mp3/'+defaultFile;
 				}else{
 				  document.getElementById(id+"SoundPath").value=prefix+htlivesightEnv.contentPath+defaultFile;
 				}
