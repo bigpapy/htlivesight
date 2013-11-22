@@ -353,37 +353,37 @@
 <Quick>Rápido</Quick>
 <Powerful>Potente</Powerful>
 <Unpredictable>Impredecible</Unpredictable>
-<Header>Cabecera</Header>
+<Header>Cabeceador</Header>
 <Regainer>Bondeado</Regainer>
 <SecondTeamIdLabel>Insertar una segunda ID de equipo</SecondTeamIdLabel>
 <SecondSoundEqualFirst>Segundo equipo suena igual a los primeros</SecondSoundEqualFirst>
 <Keeper>Portero</Keeper>
 <Defending>Defendiendo</Defending>
 <Playmaking>Jugadas</Playmaking>
-<Winger>Winger</Winger>
+<Winger>Lateral</Winger>
 <Passing>Pase</Passing>
 <Scoring>Puntuación</Scoring>
-<SetPieces>Set Pieces</SetPieces>
+<SetPieces>Balón parado</SetPieces>
 <Age>Edad</Age>
-<Form>Form</Form>
+<Form>Forma</Form>
 <Stamina>Resistencia</Stamina>
 <Experience>Experiencia</Experience>
 <Loyalty>Lealtad</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
+<PathSoundsPressing>Sonido evento de presión</PathSoundsPressing>
+<PathSoundsMyBruised>Sonido de mi jugador lastimado</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Sonido de jugador de otro equipo lastimado</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Sonido de mi jugador expulsado</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Sonido de jugador rival expulsado</PathSoundsOtherSentOff>
 <TabInjuries>Lesiones</TabInjuries>
 <TabWeather>Clima</TabWeather>
 <TabWhistleCard>Silbatos y tarjetas</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
+<PathSoundsMissFriend>Sonido de oportunidad fallada de equipos amigos</PathSoundsMissFriend>
+<PathSoundsMissOther>Sonido de oportunidad fallada de otros equipos</PathSoundsMissOther>
 <TabChances>Posibilidades</TabChances>
 <Agreeability>Personalidad</Agreeability>
 <Aggressiveness>Agresividad</Aggressiveness>
 <Honesty>Honestidad</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
+<BelovedTeamMember>Querido compañero de equipo </BelovedTeamMember>
 <PopularGuy>Tío popular</PopularGuy>
 <SympatheticGuy>Tío simpático</SympatheticGuy>
 <PleasantGuy>Tío agradable</PleasantGuy>
@@ -391,7 +391,7 @@
 <NastyFellow>Tío desagradable</NastyFellow>
 <Saintly>Santo</Saintly>
 <Righteous>Justo</Righteous>
-<Upright>Upright</Upright>
+<Upright>Justo</Upright>
 <Honest>Honesto</Honest>
 <Dishonest>Deshonesto</Dishonest>
 <Infamous>Infame</Infamous>
@@ -402,14 +402,14 @@
 <Calm>Calma</Calm>
 <Tranquil>Tranquilo</Tranquil>
 <VisitOurSoundCollection>Visita nuestra colección de sonidos</VisitOurSoundCollection>
-<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
+<SafariWarning>Si el panel de HTLivesight no esta enfocado, los sonidos de notificaciones serán bloqueados. Por favor, abre una nueva ventana si deseas navegar por internet durante un partido</SafariWarning>
 <OnlyHTTPFiles>Solo funcionan direcciones http</OnlyHTTPFiles>
 <Warning>Advertencia</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
+<Testers>Evaluadores</Testers>
+<BasedOn>Basado en</BasedOn>
+<AndroidWarning>Si la pestaña de HTLiveSight no esta enfocada, las notificaciones serán bloqueadas, aparecerán en la primera actualización después de que regreses a la pestaña</AndroidWarning>
+<SafariClipboardTitle>Presiona ctrl/cmd + c para copiar el texto seleccionado</SafariClipboardTitle>
+<License>Nuestra licencia</License>
+<Tech>Nuestra tecnología</Tech>
+<Supporter>Apoyo al proyecto</Supporter>
 </Htlivesight>
