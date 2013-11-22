@@ -46,19 +46,19 @@
 <MessageAlreadyFriend>Xa é o teu amigo.</MessageAlreadyFriend>
 <MessageErrorReading>Houbo un erro lendo os datos</MessageErrorReading>
 <MessageLoginNotSuccessful>Erro ó conectar.</MessageLoginNotSuccessful>
-<TacticPressing>presión</TacticPressing>
-<TacticCA>contraataques</TacticCA>
-<TacticAIM>atacar polo centro</TacticAIM>
-<TacticAOW>atacar polas bandas</TacticAOW>
-<TacticPlayCreative>xogar creativamente</TacticPlayCreative>
-<TacticLongShots>tiros de lonxe</TacticLongShots>
+<TacticPressing>Presión</TacticPressing>
+<TacticCA>Contraataques</TacticCA>
+<TacticAIM>Atacar polo centro</TacticAIM>
+<TacticAOW>Atacar polas bandas</TacticAOW>
+<TacticPlayCreative>Xogar creativamente</TacticPlayCreative>
+<TacticLongShots>Tiros de lonxe</TacticLongShots>
 <TimeFirstHalf>1º tempo</TimeFirstHalf>
-<TimeHalfTime>descanso</TimeHalfTime>
+<TimeHalfTime>Descanso</TimeHalfTime>
 <TimeSecondHalf>2º tempo</TimeSecondHalf>
-<TimeExtraTime>prórroga</TimeExtraTime>
-<TimePenalties>penaltis</TimePenalties>
-<TimeFinish>final</TimeFinish>
-<TimeStartsIn>comeza en</TimeStartsIn>
+<TimeExtraTime>Prórroga</TimeExtraTime>
+<TimePenalties>Penaltis</TimePenalties>
+<TimeFinish>Final</TimeFinish>
+<TimeStartsIn>Comeza en</TimeStartsIn>
 <TimeDays>días</TimeDays>
 <TimeHours>horas</TimeHours>
 <TimeMinutes>minutos</TimeMinutes>
@@ -69,75 +69,75 @@
 <TooltipWindowSound>Activar ou desactivar sons para os encontros</TooltipWindowSound>
 <TooltipWindowLink>Enlace á páxina do encontro en Hattrick</TooltipWindowLink>
 <TooltipWindowInfo>Ferramenta de información de eventos</TooltipWindowInfo>
-<TooltipWindowMaximize>Maximizar ventá</TooltipWindowMaximize>
-<TooltipWindowMinimize>Minimizar ventá</TooltipWindowMinimize>
-<TooltipWindowShade>Escurecer ventá</TooltipWindowShade>
-<TooltipWindowClose>Pechar ventá</TooltipWindowClose>
-<TooltipWindowOpen>Abrir ventá</TooltipWindowOpen>
-<TooltipWindowMoveUp>Mover esta ventá arriba</TooltipWindowMoveUp>
-<TooltipWindowMoveDown>Mover esta ventá abaixo </TooltipWindowMoveDown>
+<TooltipWindowMaximize>Maximizar xanela</TooltipWindowMaximize>
+<TooltipWindowMinimize>Minimizar xanela</TooltipWindowMinimize>
+<TooltipWindowShade>Escurecer xanela</TooltipWindowShade>
+<TooltipWindowClose>Pechar xanela</TooltipWindowClose>
+<TooltipWindowOpen>Abrir xanela</TooltipWindowOpen>
+<TooltipWindowMoveUp>Mover esta xanela arriba</TooltipWindowMoveUp>
+<TooltipWindowMoveDown>Mover esta xanela abaixo </TooltipWindowMoveDown>
 <TooltipFriendRemove>Borrar amigo da lista</TooltipFriendRemove>
 <TooltipFriendMoveUp>Mover amigo arriba</TooltipFriendMoveUp>
 <TooltipFriendMoveDown>Mover amigo abaixo</TooltipFriendMoveDown>
 <MenuAddFriend>Amigo</MenuAddFriend>
 <EventGoal>GOL</EventGoal>
 <EventPenaltyGoal>Penalti: GOL</EventPenaltyGoal>
-<EventPenaltyMiss>Penalti: FALLO</EventPenaltyMiss>
+<EventPenaltyMiss>Penalti: ERRO</EventPenaltyMiss>
 <EventInjury>Lesión</EventInjury>
 <EventRed>Cartón vermello</EventRed>
-<EventSideLeft>esquerda</EventSideLeft>
-<EventSideRight>dereita</EventSideRight>
-<EventSideCenter>medio</EventSideCenter>
-<EventSideFreeKick>lanzamento de falta</EventSideFreeKick>
-<EventSidePenalty>penalti</EventSidePenalty>
-<EventSpecialUnpredictable>evento especial: imprevisible</EventSpecialUnpredictable>
-<EventSpecialLongShot>evento especial: tiro de lonxe</EventSpecialLongShot>
-<EventSpecialQuick>evento especial: rápido</EventSpecialQuick>
-<EventSpecialLowStamina>baixa resistencia</EventSpecialLowStamina>
-<EventSpecialSetPieces>balón parado</EventSpecialSetPieces>
-<EventSpecialHead>xogo aéreo</EventSpecialHead>
-<EventSpecialExperience>experiencia</EventSpecialExperience>
-<EventSpecialLowExperience>baixa experiencia</EventSpecialLowExperience>
-<EventSpecialWinger>+ extremo</EventSpecialWinger>
-<EventSpecialTechnical>técnico</EventSpecialTechnical>
-<EventSpecialCounterAttack>contraataque</EventSpecialCounterAttack>
-<EventSpecialCornerKick>lanzamento de esquina</EventSpecialCornerKick>
-<EventSpecialIndirect>lanzamento de falta indirecta</EventSpecialIndirect>
-<EventSpecialUnpredictableLongPass>+ imprevisible: pase longo</EventSpecialUnpredictableLongPass>
-<EventSpecialUnpredictableScoresOnHisOwn>+ imprevisible: disparo</EventSpecialUnpredictableScoresOnHisOwn>
-<EventSpecialUnpredictableSpecialAction>+ imprevisible: acción especial</EventSpecialUnpredictableSpecialAction>
-<EventSpecialUnpredictableMistake>- imprevisible: erro</EventSpecialUnpredictableMistake>
-<EventSpecialUnpredictableOwnGoal>- imprevisible: autogol</EventSpecialUnpredictableOwnGoal>
-<EventSpecialQuickScoresAfterRush>+ rápido: carreira e gol </EventSpecialQuickScoresAfterRush>
-<EventSpecialQuickAssist>+ rápido: carreira e asistencia</EventSpecialQuickAssist>
-<Pullback>botarse atrás</Pullback>
-<Underestimation>sobreconfianza</Underestimation>
-<UnderestimationRemove>sáese da sobreconfianza</UnderestimationRemove>
-<UnderestimationReduceDouble>sobreconfianza reducida en 2/3</UnderestimationReduceDouble>
-<UnderestimationReduceOnce>sobreconfianza reducida en 1/3</UnderestimationReduceOnce>
-<OrganizationBreaks>confusión</OrganizationBreaks>
-<Reorganize>reorganización</Reorganize>
-<NervesImportantThrillingGame>nervos en encontro importante e emocionante</NervesImportantThrillingGame>
-<Bruised>mancado</Bruised>
-<Injuried>lesionado</Injuried>
-<ModeratelyInjuried>lesión moderada</ModeratelyInjuried>
-<BadlyInjuried>lesión grave</BadlyInjuried>
-<ByHimself>por si mesmo</ByHimself>
-<ByFoul>por falta</ByFoul>
-<ExperiencedForward>dianteiro experimentado</ExperiencedForward>
-<InexperiencedDefender>defensor sen experiencia</InexperiencedDefender>
-<WingerHead>extremo: centro dun extremo para un cabeceador</WingerHead>
-<EventSpecialLongShotDefended>tiro de lonxe detido</EventSpecialLongShotDefended>
-<EventSpecialQuickVsQuick>rápido vs rápido</EventSpecialQuickVsQuick>
-<LongShot>tiro de lonxe</LongShot>
-<MeteoSpecialTechnicalRain>-técnico (-anotación -xogadas)</MeteoSpecialTechnicalRain>
-<MeteoSpecialPowerfulRain>+potente (+anotación +defensa +xogadas)</MeteoSpecialPowerfulRain>
-<MeteoSpecialTechnicalSun>+técnico (+anotación +xogadas)</MeteoSpecialTechnicalSun>
-<MeteoSpecialPowerfulSun>-potente (-anotación -resistencia)</MeteoSpecialPowerfulSun>
-<MeteoSpecialQuickSun>-rápido (-defensa)</MeteoSpecialQuickSun>
-<MeteoSpecialQuickRain>-rápido (-defensa -anotación)</MeteoSpecialQuickRain>
-<YellowNastyPlay>carácter</YellowNastyPlay>
-<YellowCheating>honestidade</YellowCheating>
+<EventSideLeft>Esquerda</EventSideLeft>
+<EventSideRight>Dereita</EventSideRight>
+<EventSideCenter>Centro</EventSideCenter>
+<EventSideFreeKick>Lanzamento de falta</EventSideFreeKick>
+<EventSidePenalty>Penalti</EventSidePenalty>
+<EventSpecialUnpredictable>Evento especial: imprevisible</EventSpecialUnpredictable>
+<EventSpecialLongShot>Evento especial: tiro de lonxe</EventSpecialLongShot>
+<EventSpecialQuick>Evento especial: rápido</EventSpecialQuick>
+<EventSpecialLowStamina>Baixa resistencia</EventSpecialLowStamina>
+<EventSpecialSetPieces>Balón parado</EventSpecialSetPieces>
+<EventSpecialHead>Xogo aéreo</EventSpecialHead>
+<EventSpecialExperience>Experiencia</EventSpecialExperience>
+<EventSpecialLowExperience>Baixa experiencia</EventSpecialLowExperience>
+<EventSpecialWinger>+ Extremo</EventSpecialWinger>
+<EventSpecialTechnical>Técnico vs Xogo aéreo</EventSpecialTechnical>
+<EventSpecialCounterAttack>Contraataque</EventSpecialCounterAttack>
+<EventSpecialCornerKick>Lanzamento de esquina</EventSpecialCornerKick>
+<EventSpecialIndirect>Lanzamento de falta indirecta</EventSpecialIndirect>
+<EventSpecialUnpredictableLongPass>+ Imprevisible: pase longo</EventSpecialUnpredictableLongPass>
+<EventSpecialUnpredictableScoresOnHisOwn>+ Imprevisible: disparo</EventSpecialUnpredictableScoresOnHisOwn>
+<EventSpecialUnpredictableSpecialAction>+ Imprevisible: acción especial</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableMistake>- Imprevisible: erro</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- Imprevisible: autogol</EventSpecialUnpredictableOwnGoal>
+<EventSpecialQuickScoresAfterRush>+ Rápido: carreira e gol </EventSpecialQuickScoresAfterRush>
+<EventSpecialQuickAssist>+ Rápido: carreira e asistencia</EventSpecialQuickAssist>
+<Pullback>Botarse atrás</Pullback>
+<Underestimation>Sobreconfianza</Underestimation>
+<UnderestimationRemove>Sáese da sobreconfianza</UnderestimationRemove>
+<UnderestimationReduceDouble>Sobreconfianza reducida en 2/3</UnderestimationReduceDouble>
+<UnderestimationReduceOnce>Sobreconfianza reducida en 1/3</UnderestimationReduceOnce>
+<OrganizationBreaks>Confusión</OrganizationBreaks>
+<Reorganize>Reorganización</Reorganize>
+<NervesImportantThrillingGame>Nervos en encontro importante e emocionante</NervesImportantThrillingGame>
+<Bruised>Mancado</Bruised>
+<Injuried>Lesionado</Injuried>
+<ModeratelyInjuried>Lesión moderada</ModeratelyInjuried>
+<BadlyInjuried>Lesión grave</BadlyInjuried>
+<ByHimself>Por si mesmo</ByHimself>
+<ByFoul>Por falta</ByFoul>
+<ExperiencedForward>Dianteiro experimentado</ExperiencedForward>
+<InexperiencedDefender>Defensor sen experiencia</InexperiencedDefender>
+<WingerHead>Extremo: centro dun extremo para un cabeceador</WingerHead>
+<EventSpecialLongShotDefended>Tiro de lonxe detido</EventSpecialLongShotDefended>
+<EventSpecialQuickVsQuick>Rápido vs Rápido</EventSpecialQuickVsQuick>
+<LongShot>Tiro de lonxe</LongShot>
+<MeteoSpecialTechnicalRain>-Técnico (-Anotación -Xogadas)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+Potente (+Anotación +Defensa +Xogadas)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+Técnico (+Anotación +Xogadas)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>-Potente (-Anotación -Resistencia)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>-Rápido (-Defensa)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>-Rápido (-Defensa -Anotación)</MeteoSpecialQuickRain>
+<YellowNastyPlay>Xogo sucio</YellowNastyPlay>
+<YellowCheating>Enganar</YellowCheating>
 <ProgressUpdate>Próxima actualización:</ProgressUpdate>
 <ProgressSeconds>s</ProgressSeconds>
 <RequestServer>Obter servidor recomendado</RequestServer>
@@ -344,11 +344,11 @@
 <AttHatStats>HatStats de Ataque</AttHatStats>
 <TotHatStats>HatStats Totales</TotHatStats>
 <CopiedToClipboard>Copiado ó portapapeis!</CopiedToClipboard>
-<ReLiveControls>Relive Controls</ReLiveControls>
+<ReLiveControls>Controis do Re-live</ReLiveControls>
 <ExtendImage>Extender a imaxe</ExtendImage>
 <RepeatImage>Mosaico</RepeatImage>
 <Background>Fondo</Background>
-<MuteAll>Sound switch</MuteAll>
+<MuteAll>Activar ou desactivar sons</MuteAll>
 <Technical>Técnico</Technical>
 <Quick>Rápido</Quick>
 <Powerful>Potente</Powerful>
@@ -356,60 +356,60 @@
 <Header>Xogo aéreo</Header>
 <Regainer>Recuperador</Regainer>
 <SecondTeamIdLabel>Introduce a ID do segundo equipo</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
-<TabWhistleCard>Whistles and Cards</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
+<SecondSoundEqualFirst>Sons para o segundo equipo iguais ós do primeiro</SecondSoundEqualFirst>
+<Keeper>Portería</Keeper>
+<Defending>Defensa</Defending>
+<Playmaking>Xogadas</Playmaking>
+<Winger>Extremo</Winger>
+<Passing>Pases</Passing>
+<Scoring>Anotación</Scoring>
+<SetPieces>Balón Parado</SetPieces>
+<Age>Idade</Age>
+<Form>Forma</Form>
+<Stamina>Resistencia</Stamina>
+<Experience>Experiencia</Experience>
+<Loyalty>Lealtade</Loyalty>
+<PathSoundsPressing>Son cando ocorre o evento de presión</PathSoundsPressing>
+<PathSoundsMyBruised>Son para lesión propia</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Son para lesión de outro equipo</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Son cando expulsan un xogador meu</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Son cando expulsan a un xogador de outro equipo</PathSoundsOtherSentOff>
+<TabInjuries>Lesións</TabInjuries>
+<TabWeather>Climatoloxía</TabWeather>
+<TabWhistleCard>Asubíos e tarxetas</TabWhistleCard>
+<PathSoundsMissFriend>Son para gol errado dun equipo amigo</PathSoundsMissFriend>
+<PathSoundsMissOther>Son para gol errado de outro equipo</PathSoundsMissOther>
 <TabChances>Ocasións</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
-<Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
-<PopularGuy>Popular guy</PopularGuy>
-<SympatheticGuy>Sympathetic guy</SympatheticGuy>
-<PleasantGuy>Pleasant guy</PleasantGuy>
-<ControversialPerson>Controversial Person</ControversialPerson>
-<NastyFellow>Nasty fellow</NastyFellow>
-<Saintly>Saintly</Saintly>
-<Righteous>Righteous</Righteous>
-<Upright>Upright</Upright>
-<Honest>Honest</Honest>
-<Dishonest>Dishonest</Dishonest>
-<Infamous>Infamous</Infamous>
-<Unstable>Unstable</Unstable>
-<Fiery>Fiery</Fiery>
+<Agreeability>Carácter</Agreeability>
+<Aggressiveness>Agresividade</Aggressiveness>
+<Honesty>Honestidade</Honesty>
+<BelovedTeamMember>Querido compañeiro de equipo </BelovedTeamMember>
+<PopularGuy>Popular</PopularGuy>
+<SympatheticGuy>Simpático</SympatheticGuy>
+<PleasantGuy>Agradable</PleasantGuy>
+<ControversialPerson>Polémico</ControversialPerson>
+<NastyFellow>Porcallán</NastyFellow>
+<Saintly>Santo</Saintly>
+<Righteous>Honorable</Righteous>
+<Upright>Xusto</Upright>
+<Honest>Honesto</Honest>
+<Dishonest>Deshonesto</Dishonest>
+<Infamous>Infame</Infamous>
+<Unstable>Inestable</Unstable>
+<Fiery>Rabudo</Fiery>
 <Temperamental>Temperamental</Temperamental>
-<Balanced>Balanced</Balanced>
-<Calm>Calm</Calm>
-<Tranquil>Tranquil</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
-<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
-<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
-<Warning>Warning</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
+<Balanced>Equilibrado</Balanced>
+<Calm>Calmo</Calm>
+<Tranquil>Tranquilo</Tranquil>
+<VisitOurSoundCollection>Visita a nosa colección de sons</VisitOurSoundCollection>
+<SafariWarning>Se a páxina de HTLivesight non é a principal, as notificacións bloquearanse. Por avor, abre unha nova xanela se queres navegar pola Internet durante o encontro</SafariWarning>
+<OnlyHTTPFiles>Só funcionan direccións URL http</OnlyHTTPFiles>
+<Warning>Coidado</Warning>
+<Testers>Probadores</Testers>
+<BasedOn>Basado en</BasedOn>
+<AndroidWarning>Se a lapela do HTLiveSight non está en primeiro plano, as notificacións bloquearanse e aparecerán trala primeira actualización tras regresar á lapela</AndroidWarning>
+<SafariClipboardTitle>Presiona Ctrl + C para copiar o texto seleccionado</SafariClipboardTitle>
+<License>A Nosa Licencia</License>
+<Tech>A Nosa Tecnoloxía</Tech>
+<Supporter>Apoio ó proxecto</Supporter>
 </Htlivesight>

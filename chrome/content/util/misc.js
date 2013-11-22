@@ -40,6 +40,8 @@ htlivesight.loadXml = function(url, callback, crossSite) {
 				}
 				catch (e) {
 					console.log("Uncaught callback error:"+ e);
+					console.log(xml);
+					console.log(text);
 				}
 			}
 			catch (e) {

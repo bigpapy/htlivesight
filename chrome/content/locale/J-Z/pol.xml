@@ -405,11 +405,11 @@
 <SafariWarning>Jeżeli okno z HTLivesight nie będzie aktywne, dźwięki powiadomień będą zablokowane. Proszę otworzyć nowe okno, jeżeli chcesz przeglądać Internet podczas meczu</SafariWarning>
 <OnlyHTTPFiles>Działają tylko linki http</OnlyHTTPFiles>
 <Warning>Uwaga</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
+<Testers>Testerzy</Testers>
+<BasedOn>Na podstawie</BasedOn>
+<AndroidWarning>Jeśli karta z HTLiveSight nie będzie aktywna, powiadomienia zostaną zablokowane, pojawią się przy pierwszej aktualizacji, gdy wrócisz na kartę</AndroidWarning>
+<SafariClipboardTitle>Naciśnij klawisz ctrl + c, aby skopiować zaznaczony tekst</SafariClipboardTitle>
+<License>Licencja</License>
+<Tech>Użyte technologie</Tech>
+<Supporter>Projekt wspieraja</Supporter>
 </Htlivesight>
