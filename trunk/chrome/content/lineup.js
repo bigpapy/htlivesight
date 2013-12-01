@@ -186,6 +186,7 @@ htlivesight.LineUp.FormationFromLineUp= function (lineUp){
 };
 //got substitutions from xml
 htlivesight.LineUp.ParseSubstitutions= function (xml,youth){
+	if(!xml) return []; 
 	var substitutions= new Array();
 	try{ // because substitutions aren't always present in the XML files.
 		var substitutionXml= xml.getElementsByTagName("Substitution");
@@ -204,7 +205,13 @@ htlivesight.LineUp.ParseSubstitutions= function (xml,youth){
 	  	  htlivesight.Player.List["_"+substitutions[index].objectPlayerID+"_"+youth] = player;
 			}
 		}
-	}catch(e){/*console.log("error parsing substitution:"+e);*/};
+	}catch(e){console.log("error parsing substitution:"+e);};
+	if(xml){
+		var now = new Date();
+		console.log(now);
+		console.log(xml);
+	}
+
 	return substitutions;
 };
 //used to update lineup with injuries event.
