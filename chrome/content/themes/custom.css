@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
@@ -21,7 +21,7 @@
   font-style: normal;
   font-weight: 400;
   src: url('./fonts/normal.woff');
-  }
+  }*/
 #htlivesight-body{
 font-size: 11px;
 /*font-family: 'Open Sans', Arial, sans-serif ; font-weight: 400;*/
