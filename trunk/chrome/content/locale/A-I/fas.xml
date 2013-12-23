@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
+<MenuStart>شروع</MenuStart>
 <MenuOptions>تنظيمات</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<TooltipButton>برای بازکردن منوی HTLiveSight کلیک کنید</TooltipButton>
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>درگاه:</MenuServer>
 <MenuDisconnected>اتصال قطع شده است</MenuDisconnected>
@@ -14,8 +14,8 @@
 <LoginRememberMe>مرا به خاطر بسپار</LoginRememberMe>
 <LoginButton>ورود</LoginButton>
 <LoginReLive>Re-Live</LoginReLive>
-<LoginSpeed>Speed</LoginSpeed>
-<LoginByEvent>Per event</LoginByEvent>
+<LoginSpeed>سرعت</LoginSpeed>
+<LoginByEvent>برحسب رویداد</LoginByEvent>
 <LeagueMatches>بازي هاي ليگ</LeagueMatches>
 <LeagueLiveTable>جدول پویا</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
@@ -67,7 +67,7 @@
 <TimeMinute>دقیقه</TimeMinute>
 <TimeMin>'</TimeMin>
 <TooltipWindowSound>Activate or deactivate sounds for the match</TooltipWindowSound>
-<TooltipWindowLink>Link to Match Page on Hattrick</TooltipWindowLink>
+<TooltipWindowLink>لینک به صفحه بازی در Hattrick</TooltipWindowLink>
 <TooltipWindowInfo>زبانه ی اتفاقات بازی </TooltipWindowInfo>
 <TooltipWindowMaximize>بزرگ نمایی پنجره</TooltipWindowMaximize>
 <TooltipWindowMinimize>کوچک نمایی پنجره</TooltipWindowMinimize>
@@ -155,7 +155,7 @@
 <TabMatches>مسابقات</TabMatches>
 <TabNotifications>اخطار</TabNotifications>
 <TabLanguage>زبان</TabLanguage>
-<TabOther>Other</TabOther>
+<TabOther>دیگر</TabOther>
 <TabCustom>Customizations</TabCustom>
 <TabGoalSound>Goals sounds</TabGoalSound>
 <TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
@@ -163,7 +163,7 @@
 <GeneralOpen>HTLiveSightباز کردن</GeneralOpen>
 <GeneralNewTab>در يک زبانه ي جديد</GeneralNewTab>
 <GeneralNewWindow>در يک پنجره ي جديد</GeneralNewWindow>
-<GeneralServer>Server settings</GeneralServer>
+<GeneralServer>تنظیمات سرور</GeneralServer>
 <GeneralNote>Insert Hattrick server that you are logged on (ie. www96).</GeneralNote>
 <MatchesLeague>بازي هاي ليگ</MatchesLeague>
 <MatchesGetLeague>ديدن بازي هاي ليگ</MatchesGetLeague>
@@ -189,7 +189,7 @@
 <NotifyStatus>نوار حالت لغزشي</NotifyStatus>
 <OtherAuthorization>Authorization code</OtherAuthorization>
 <OtherReset>Remove authorization</OtherReset>
-<OtherResetButton>Reset</OtherResetButton>
+<OtherResetButton>تنظیم مجدد</OtherResetButton>
 <OtherReverse>Bottom up display of match events</OtherReverse>
 <OtherReverseNote>Refresh page to see the effect of change.</OtherReverseNote>
 <OtherEvents>Sequence of events</OtherEvents>

@@ -9,7 +9,7 @@
 <MenuDisconnected>nicht verbunden</MenuDisconnected>
 <MenuAbout>Über HTLiveSight</MenuAbout>
 <LoginLabel>Anmelden</LoginLabel>
-<LoginTeamId>Tragen Sie Ihre Team-ID hier ein</LoginTeamId>
+<LoginTeamId>Trage deine Team-ID hier ein</LoginTeamId>
 <LoginUsername>Benutzername</LoginUsername>
 <LoginRememberMe>Team-ID speichern</LoginRememberMe>
 <LoginButton>Anmelden</LoginButton>
@@ -32,14 +32,14 @@
 <FriendsTitle>Freunde</FriendsTitle>
 <FriendsRemove>Entfernen</FriendsRemove>
 <FriendsOpen>Öffnen</FriendsOpen>
-<Introduction>Sie werden zum Autorisierungscode auf der CHPP-Seite weitergeleitet. Fall Sie nicht weitergeleitet werden, deaktivieren Sie bitte vorübergehend Ihren Pop-up-Blocker oder fügen Sie HTlivesight Ihren Ausnahmen hinzu.</Introduction>
-<Insert>Tragen Sie Ihren Autorisierungscode hier ein:</Insert>
-<Ending>HTlivesight ist jetzt autorisiert. Klicken Sie auf OK um die Anwendung neu zu starten.</Ending>
+<Introduction>Du wirst zum Autorisierungscode auf der CHPP-Seite weitergeleitet. Fall du nicht weitergeleitet wirst, deaktiviere bitte vorübergehend deinen Pop-up-Blocker oder füge HTlivesight zu deinen Ausnahmen hinzu.</Introduction>
+<Insert>Trage deinen Autorisierungscode hier ein:</Insert>
+<Ending>HTlivesight ist jetzt autorisiert. Klicke auf OK um die Anwendung neu zu starten.</Ending>
 <Error>Fehler</Error>
 <ServerON>Verbunden</ServerON>
 <ServerOFF>Nicht verbunden</ServerOFF>
-<ResetToken>Autorisierung wurde gelöscht. Starten Sie HTLS neu oder warten Sie auf das nächste Update (less than 1 min).</ResetToken>
-<NoHTServer>Sie sind mit ihrem Browser auf einem anderen Server eingelogged. Rechtsklick auf den Hintergrund - Optionen - Allgemein - Servernummer eintragen</NoHTServer>
+<ResetToken>Autorisierung wurde gelöscht. Starte HTLS neu oder warte auf das nächste Update (weniger als 1 min).</ResetToken>
+<NoHTServer>Du bist mit deinem Browser auf einem anderen Server eingelogged. Mache einen Rechtsklick irgendwo auf den Hintergrund, wähle Optionen/Allgemein und trage die korrekte Hattrick-Servernummer ein.</NoHTServer>
 <MatchesMaximum>HTLiveSight kann maximal 20 Spiele anzeigen!</MatchesMaximum>
 <LeagueRound>Spieltag</LeagueRound>
 <MessageHattrickError>Der Hattrick-Server lieferte einen Fehler.</MessageHattrickError>
@@ -90,18 +90,18 @@
 <EventSideCenter>mitte</EventSideCenter>
 <EventSideFreeKick>Freistoß</EventSideFreeKick>
 <EventSidePenalty>Elfmeter</EventSidePenalty>
-<EventSpecialUnpredictable>SE unberechenbar</EventSpecialUnpredictable>
-<EventSpecialLongShot>Weitschuss (SE)</EventSpecialLongShot>
-<EventSpecialQuick>SE schnell</EventSpecialQuick>
+<EventSpecialUnpredictable>Unberechenbar-SE</EventSpecialUnpredictable>
+<EventSpecialLongShot>Weitschuss-SE</EventSpecialLongShot>
+<EventSpecialQuick>Schnell-SE</EventSpecialQuick>
 <EventSpecialLowStamina>wenig Kondition</EventSpecialLowStamina>
 <EventSpecialSetPieces>Standard</EventSpecialSetPieces>
-<EventSpecialHead>Kopf</EventSpecialHead>
+<EventSpecialHead>Kopfballstark</EventSpecialHead>
 <EventSpecialExperience>Erfahrung</EventSpecialExperience>
 <EventSpecialLowExperience>wenig Erfahrung</EventSpecialLowExperience>
 <EventSpecialWinger>+ Flügel</EventSpecialWinger>
-<EventSpecialTechnical>Ballzauberer</EventSpecialTechnical>
+<EventSpecialTechnical>Ballzauberer-gegen-Kopfballstark-SE</EventSpecialTechnical>
 <EventSpecialCounterAttack>Konter</EventSpecialCounterAttack>
-<EventSpecialCornerKick>Ecke</EventSpecialCornerKick>
+<EventSpecialCornerKick>Eckball</EventSpecialCornerKick>
 <EventSpecialIndirect>indirekter Freistoß</EventSpecialIndirect>
 <EventSpecialUnpredictableLongPass>+ unberechenbar: langer Pass</EventSpecialUnpredictableLongPass>
 <EventSpecialUnpredictableScoresOnHisOwn>+ unberechenbar: Torschuss</EventSpecialUnpredictableScoresOnHisOwn>
@@ -116,8 +116,8 @@
 <UnderestimationReduceDouble>Unterschätzung um 2/3 reduziert</UnderestimationReduceDouble>
 <UnderestimationReduceOnce>Unterschätzung um 1/3 reduziert</UnderestimationReduceOnce>
 <OrganizationBreaks>Verwirrung</OrganizationBreaks>
-<Reorganize>neu organisiert</Reorganize>
-<NervesImportantThrillingGame>- Erfahrung, wichtiges Spiel</NervesImportantThrillingGame>
+<Reorganize>Neuorganisation</Reorganize>
+<NervesImportantThrillingGame>Fehlende Erfahrung in einem wichtigen Spiel</NervesImportantThrillingGame>
 <Bruised>angeschlagen</Bruised>
 <Injuried>Verletzung</Injuried>
 <ModeratelyInjuried>leichte Verletzung</ModeratelyInjuried>
@@ -157,25 +157,25 @@
 <TabLanguage>Sprache</TabLanguage>
 <TabOther>Anderes</TabOther>
 <TabCustom>Anpassungen</TabCustom>
-<TabGoalSound>Tor sounds</TabGoalSound>
-<TabWheatherSound>Wetterereignisse und Verletzungen (sounds)</TabWheatherSound>
-<TabWhistleSound>Schiedsrichterpfeife und Hattrick sounds</TabWhistleSound>
-<GeneralOpen>HTLiveSight öffnen</GeneralOpen>
+<TabGoalSound>Töne für Tore</TabGoalSound>
+<TabWheatherSound>Töne für Wetterereignisse und Verletzungen</TabWheatherSound>
+<TabWhistleSound>Schiedsrichterpfeife und Hattrick-Töne</TabWhistleSound>
+<GeneralOpen>Öffne HTLiveSight</GeneralOpen>
 <GeneralNewTab>In einem neuen Tab</GeneralNewTab>
 <GeneralNewWindow>In einem neuen Fenster</GeneralNewWindow>
 <GeneralServer>Servereinstellungen</GeneralServer>
-<GeneralNote>Tragen Sie Ihren Hattrick Server ein (z.B. www96).</GeneralNote>
+<GeneralNote>Trage deinen Hattrick Server ein (z.B. www96).</GeneralNote>
 <MatchesLeague>Liga-Spiele</MatchesLeague>
 <MatchesGetLeague>Hole Liga-Spiele</MatchesGetLeague>
 <MatchesPlayed>Falls Anstoß in</MatchesPlayed>
-<MatchesHours>Stunde(n).</MatchesHours>
+<MatchesHours>Stunden.</MatchesHours>
 <MatchesFriends>Freunde</MatchesFriends>
-<MatchesGetFriends>Hole Freundes-Spiele</MatchesGetFriends>
+<MatchesGetFriends>Hole Spiele von Freunden</MatchesGetFriends>
 <MatchesHeader>Kopfzeile</MatchesHeader>
 <MatchesScorers>Torschützen</MatchesScorers>
 <ScorersList>Zeige Torschützen in der Kopfzeile</ScorersList>
 <MatchesBooked>Gebucht</MatchesBooked>
-<BookedList>List booked in header</BookedList>
+<BookedList>Zeige Spieler mit gelben Karten in der Kopfzeile</BookedList>
 <MatchesSentOff>Platzverweise</MatchesSentOff>
 <SentOffList>Zeige Platzverweise im Kopf</SentOffList>
 <MatchesInjured>Verletzt</MatchesInjured>
@@ -188,40 +188,40 @@
 <NotifyFlash>Blinkende Kopfzeilen</NotifyFlash>
 <NotifyStatus>Statusbox-Slider</NotifyStatus>
 <OtherAuthorization>Autorisierungscode</OtherAuthorization>
-<OtherReset>Autorisierung zurücksetzen</OtherReset>
+<OtherReset>Autorisierung entfernen</OtherReset>
 <OtherResetButton>Zurücksetzen</OtherResetButton>
 <OtherReverse>Anzeige der Spielereignisse von unten nach oben</OtherReverse>
-<OtherReverseNote>Seite neu laden um die Veränderungen zu sehen.</OtherReverseNote>
+<OtherReverseNote>Seite neu laden, um die Veränderungen zu sehen.</OtherReverseNote>
 <OtherEvents>Reihenfolge der Ereignisse</OtherEvents>
-<OtherEventKey>Ereignissnummer</OtherEventKey>
-<OtherEventKeyNote>Zeige Ereignisnummer im Kommentar</OtherEventKeyNote>
+<OtherEventKey>Ereignis-Nummer</OtherEventKey>
+<OtherEventKeyNote>Zeige Ereignis-Nummer im Kommentar</OtherEventKeyNote>
 <CustomIcons>Symbole</CustomIcons>
-<CustomIconsOld>Originale Livefox icons im Spielfenster</CustomIconsOld>
+<CustomIconsOld>Original Livefox-Symbole im Spielfenster</CustomIconsOld>
 <CustomSounds>Töne</CustomSounds>
-<CustomSoundsWeather>Wetter sound am Anfang eines Spiels</CustomSoundsWeather>
-<CustomSoundsTime>Sounds am Beginn/Ende einer Halbzeit</CustomSoundsTime>
-<CustomSoundsSEW>Sounds für Wetter SEs</CustomSoundsSEW>
-<CustomSoundsGoal>Originale Livefox sounds</CustomSoundsGoal>
-<CustomSoundsNoOpGoal>Keine sounds for Tore des Gegners</CustomSoundsNoOpGoal>
-<PathSoundsMyGoal>Sound für eigenes Tor</PathSoundsMyGoal>
-<PathSoundsOpGoal>Sound für gegnerisches Tor</PathSoundsOpGoal>
-<PathSoundsFrGoal>Sound für Tor eines Freundes</PathSoundsFrGoal>
-<PathSoundsOpFrGoal>Sound für Tor des Gegners eines Freundes</PathSoundsOpFrGoal>
-<PathSoundsOtGoal>Sound für Tore anderer Teams</PathSoundsOtGoal>
-<PathSoundsMiss>Sound für Fehlschuss</PathSoundsMiss>
-<PathSoundsSun>Sound für sonniges Wetter</PathSoundsSun>
-<PathSoundsRain>Sound für regnerisches Wetter</PathSoundsRain>
-<PathSoundsOvercast>Sound für bedecktes Wetter</PathSoundsOvercast>
-<PathSoundsFewClouds>Sound für schönes Wetter</PathSoundsFewClouds>
-<PathSoundsMyBoo>Sound für Verletzung im eigenen Team</PathSoundsMyBoo>
-<PathSoundsOpBoo>Sound für Verletzung im gegnerischen team</PathSoundsOpBoo>
+<CustomSoundsWeather>Wetter-Ton am Anfang eines Spiels</CustomSoundsWeather>
+<CustomSoundsTime>Töne am Beginn/Ende einer Halbzeit</CustomSoundsTime>
+<CustomSoundsSEW>Töne für Wetter SEs</CustomSoundsSEW>
+<CustomSoundsGoal>Original Livefox-Töne</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>Keine Töne für Gegentore</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Ton für eigenes Tor</PathSoundsMyGoal>
+<PathSoundsOpGoal>Ton für Gegentor</PathSoundsOpGoal>
+<PathSoundsFrGoal>Ton für Tor eines Freundes</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Ton für Gegentor eines Freundes</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Ton für Tore anderer Teams</PathSoundsOtGoal>
+<PathSoundsMiss>Ton für Fehlschuss</PathSoundsMiss>
+<PathSoundsSun>Ton für sonniges Wetter</PathSoundsSun>
+<PathSoundsRain>Ton für regnerisches Wetter</PathSoundsRain>
+<PathSoundsOvercast>Ton für bedecktes Wetter</PathSoundsOvercast>
+<PathSoundsFewClouds>Ton für schönes Wetter</PathSoundsFewClouds>
+<PathSoundsMyBoo>Ton für Verletzung im eigenen Team</PathSoundsMyBoo>
+<PathSoundsOpBoo>Ton für Verletzung im gegnerischen Team</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Anpfiff der ersten und zweiten Halbzeit</PathSoundsWhistleStart>
 <PathSoundsWhistle>Ton für Gelbe Karte</PathSoundsWhistle>
-<PathSoundsHattrick>Ton für Hattrick</PathSoundsHattrick>
+<PathSoundsHattrick>Ton für einen Hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Wiederherstellen</PathSoundsRestore>
 <PathSoundsPlay>Abspielen</PathSoundsPlay>
 <LanguageSelect>Sprache wählen</LanguageSelect>
-<LanguageNote>Bemerkung: Bitte HTLiveSight neu starten, um die Änderungen zu übernehmen.</LanguageNote>
+<LanguageNote>Anmerkung: Bitte HTLiveSight neu starten, um die Änderungen zu übernehmen.</LanguageNote>
 <ButtonCancel>Abbrechen</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
 <WindowAboutTitle>Über HTLiveSight</WindowAboutTitle>
@@ -240,7 +240,7 @@
 <MonthOctober>Okt</MonthOctober>
 <MonthNovember>Nov</MonthNovember>
 <MonthDecember>Dez</MonthDecember>
-<TextCreatedBy>Geschrieben von</TextCreatedBy>
+<TextCreatedBy>Erstellt von</TextCreatedBy>
 <TextDevelopedBy>Entwickelt von</TextDevelopedBy>
 <TextHelpOf>mit der Hilfe von</TextHelpOf>
 <TextThanksTo>Vielen Dank an:</TextThanksTo>
@@ -319,13 +319,13 @@
 <Error0>Fehler 0: Du bist nicht mit dem Internet verbunden.</Error0>
 <Error500>Fehler 500: Interner Serverfehler (Hattrick)</Error500>
 <Error503>Fehler 503: CHPP ist derzeit nicht verfügbar (temporäre Überlastung oder Wartung)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
+<PathSoundsNote1>Füge "file:///" vor dem Pfad deines Sounds im .ogg-Format ein</PathSoundsNote1>
+<PathSoundsNote2>Beispiel: file:///c:\\path\\to\\thesound.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Pfiff zum Ende der ersten Halbzeit</PathSoundsWhistle2>
 <PathSoundsWhistle3>Pfiff zum Ende des Spiels</PathSoundsWhistle3>
 <EventYellow2>zweite gelbe Karte</EventYellow2>
 <LoggedIn>Eingeloggt als</LoggedIn>
-<latestNews>Check latest news on</latestNews>
+<latestNews>Erhalte Neuigkeiten auf</latestNews>
 <HTLSThread>Hattrick-Forum</HTLSThread>
 <ProjectWebsite>Webseiten-Projekt</ProjectWebsite>
 <GooglePlusPage>Google+-Seite</GooglePlusPage>
@@ -355,8 +355,8 @@
 <Unpredictable>Unberechenbar</Unpredictable>
 <Header>Kopfballstark</Header>
 <Regainer>Geneser</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
+<SecondTeamIdLabel>Gib die ID deines Zweitteams ein</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Gleiche Töne für das Zweitteam wie für das Erstteam</SecondSoundEqualFirst>
 <Keeper>Torhüter</Keeper>
 <Defending>Verteidigung</Defending>
 <Playmaking>Spielaufbau</Playmaking>
@@ -402,12 +402,12 @@
 <Calm>ruhig</Calm>
 <Tranquil>introvertiert</Tranquil>
 <VisitOurSoundCollection>Schau dir unsere Töne-Sammlung an</VisitOurSoundCollection>
-<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
-<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
+<SafariWarning>Wenn der HTLivesight-Tab nicht aktiv ist, sind die Töne blockiert. Bitte öffne HTLivesight in einem separaten Fenster, wenn du während des Spiels auf anderen Seiten browsen möchtest</SafariWarning>
+<OnlyHTTPFiles>Nur http-URLs funktionieren</OnlyHTTPFiles>
 <Warning>Warnung</Warning>
 <Testers>Tester</Testers>
 <BasedOn>Auf der Grundlage von</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
+<AndroidWarning>Wenn der HTLiveSight-Tab nicht im Vordergrund ist, sind die Töne blockiert. Sie kommen wieder, sobald du diesen Tab in den Vordergrund geholt hast</AndroidWarning>
 <SafariClipboardTitle>Drücke ctrl/cmd + c, um den ausgwählten Text zu kopieren</SafariClipboardTitle>
 <License>Unsere Lizenz</License>
 <Tech>Unsere Technologie</Tech>

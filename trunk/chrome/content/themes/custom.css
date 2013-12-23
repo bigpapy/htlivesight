@@ -1,27 +1,3 @@
-/*@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('./fonts/bold.woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: url('./fonts/bolditalic.woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: url('./fonts/italic.woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/normal.woff');
-  }*/
 #htlivesight-body{
 font-size: 11px;
 /*font-family: 'Open Sans', Arial, sans-serif ; font-weight: 400;*/
@@ -428,6 +404,7 @@ background-repeat:no-repeat;
 background-position:center top;
 background-origin:content-box;}
 #htlivesight-body  .formationplayer{background-color: transparent;border:thin solid white !important;border-radius:5px;color:white !important;}
+#htlivesight-body  .formationplayer .withRating div{white-space:nowrap;}
 
 #htlivesight-body  .underlined{
 	cursor:pointer;

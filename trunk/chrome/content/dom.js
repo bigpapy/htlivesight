@@ -30,7 +30,7 @@ htlivesight.DOM = {
 			}else{
 				var title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank'>"+teamName+"</a>"
 			}
-			$("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 430, title: title, dialogClass: "formationbg", position: {my: my, at: at, of: $('#'+id) }});
+			$("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 510, title: title, dialogClass: "formationbg", position: {my: my, at: at, of: $('#'+id) }});
 			return false;
 		},
 
@@ -239,12 +239,17 @@ htlivesight.DOM = {
 				if (event.minute=="0") var index=1;
 				else index= ul.getElementsByTagName("li").length;
 				a.setAttribute("href","#"+id+"-"+index);
-				a.innerHTML=event.minute+"'";
+				if(event.minute == '★'){
+						a.innerHTML=event.minute;	
+				}else{
+				  a.innerHTML=event.minute+"'";
+				}
 				li_.appendChild(a);
 				var popup = document.createElement("table");
 				popup.cellSpacing="25px";
 				popup.cellPadding="2px";
 				popup.width="97%";
+				popup.style.padding="0px";
 				popup.style.marginLeft="auto";
 				popup.style.marginRight="auto";
 				mainDiv.appendChild(popup);
@@ -264,13 +269,15 @@ htlivesight.DOM = {
 						if (i==0 && j==0){
 							label_empty = document.createElement("td");
 
-							var img = new Image();
-							img.setAttribute("src", htlivesight.Image.copy);
-							img.setAttribute("id", "copy_to_clipboard_icon");
-							img.setAttribute("title", htlivesight.Util.Parse("TooltipCopyLineUp",htlivesight.data[0]));
-							img.addEventListener("click", function(e){htlivesight.LineUp.toClipboard(lineup, id, event.minute,e);});
-							
-							label_empty.appendChild(img);
+							if(event.minute!="★"){
+								var img = new Image();
+								img.setAttribute("src", htlivesight.Image.copy);
+								img.setAttribute("id", "copy_to_clipboard_icon");
+								img.setAttribute("title", htlivesight.Util.Parse("TooltipCopyLineUp",htlivesight.data[0]));
+								img.addEventListener("click", function(e){htlivesight.LineUp.toClipboard(lineup, id, event.minute,e);});
+
+								label_empty.appendChild(img);
+							}
 							hbox.appendChild(label_empty);
 							label_empty1 = document.createElement("td");
 							hbox.appendChild(label_empty1);
