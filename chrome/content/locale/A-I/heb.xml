@@ -26,9 +26,9 @@
 <LeaguePoints>'נק</LeaguePoints>
 <MatchesList>רשימת משחקים</MatchesList>
 <MatchesAdd>הוסף משחק</MatchesAdd>
-<MatchesByMatch>בעזרת מספר משחק</MatchesByMatch>
-<MatchesByTeam>בעזרת מספר קבוצה</MatchesByTeam>
-<MatchesYouth>?נוער</MatchesYouth>
+<MatchesByMatch>לפי מספר משחק</MatchesByMatch>
+<MatchesByTeam>לפי מספר קבוצה</MatchesByTeam>
+<MatchesYouth>נוער?</MatchesYouth>
 <FriendsTitle>חברים</FriendsTitle>
 <FriendsRemove>הסר</FriendsRemove>
 <FriendsOpen>פתח</FriendsOpen>
@@ -57,7 +57,7 @@
 <TimeSecondHalf>מחצית שנייה</TimeSecondHalf>
 <TimeExtraTime>הארכה</TimeExtraTime>
 <TimePenalties>פנדלים</TimePenalties>
-<TimeFinish>סיום</TimeFinish>
+<TimeFinish>הסתיים</TimeFinish>
 <TimeStartsIn>מתחיל בעוד</TimeStartsIn>
 <TimeDays>ימים</TimeDays>
 <TimeHours>שעות</TimeHours>
@@ -66,7 +66,7 @@
 <TimeHour>שעה</TimeHour>
 <TimeMinute>דקה</TimeMinute>
 <TimeMin>'</TimeMin>
-<TooltipWindowSound>הפעלבטל צלילים</TooltipWindowSound>
+<TooltipWindowSound>הפעל\\בטל את צלילי המשחק</TooltipWindowSound>
 <TooltipWindowLink>קישור לדף המשחק בהאטריק</TooltipWindowLink>
 <TooltipWindowInfo>הפעל הודעות מידע על אירועים</TooltipWindowInfo>
 <TooltipWindowMaximize>הגדל חלון</TooltipWindowMaximize>
@@ -88,18 +88,18 @@
 <EventSideLeft>שמאל</EventSideLeft>
 <EventSideRight>ימין</EventSideRight>
 <EventSideCenter>מרכז</EventSideCenter>
-<EventSideFreeKick>בעיטה חופשית</EventSideFreeKick>
+<EventSideFreeKick>מצב נייח</EventSideFreeKick>
 <EventSidePenalty>פנדל</EventSidePenalty>
-<EventSpecialUnpredictable>SE בלתי צפויי</EventSpecialUnpredictable>
-<EventSpecialLongShot>SE אירוע מיוחד - בעיטה מרחוק</EventSpecialLongShot>
-<EventSpecialQuick>SE מהיר</EventSpecialQuick>
+<EventSpecialUnpredictable>אירוע מיוחד: בלתי צפויי</EventSpecialUnpredictable>
+<EventSpecialLongShot>אירוע מיוחד: בעיטה מרחוק</EventSpecialLongShot>
+<EventSpecialQuick>אירוע מיוחד: מהיר</EventSpecialQuick>
 <EventSpecialLowStamina>כושר גופני נמוך</EventSpecialLowStamina>
 <EventSpecialSetPieces>מצב נייח</EventSpecialSetPieces>
 <EventSpecialHead>ראש</EventSpecialHead>
 <EventSpecialExperience>ניסיון</EventSpecialExperience>
 <EventSpecialLowExperience>ניסיון נמוך</EventSpecialLowExperience>
 <EventSpecialWinger>קיצוני +</EventSpecialWinger>
-<EventSpecialTechnical>טכני</EventSpecialTechnical>
+<EventSpecialTechnical>טכני נגד ראש</EventSpecialTechnical>
 <EventSpecialCounterAttack>התקפה מתפרצת</EventSpecialCounterAttack>
 <EventSpecialCornerKick>קרן</EventSpecialCornerKick>
 <EventSpecialIndirect>בעיטה חופשית לא ישירה</EventSpecialIndirect>
@@ -171,15 +171,15 @@
 <MatchesHours>שעות</MatchesHours>
 <MatchesFriends>חברים</MatchesFriends>
 <MatchesGetFriends>ייבא משחקי חברים</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>כותרת</MatchesHeader>
 <MatchesScorers>מבקיעים</MatchesScorers>
 <ScorersList>רשימת מבקיעים בכותרת</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>מוצהבים</MatchesBooked>
+<BookedList>הצג מוצהבים בכותרת</BookedList>
+<MatchesSentOff>מורחקים</MatchesSentOff>
+<SentOffList>הצג מורחקים בכותרת</SentOffList>
+<MatchesInjured>פצועים</MatchesInjured>
+<InjuredList>הצג פצועים בכותרת</InjuredList>
 <MatchesWindow>חלון</MatchesWindow>
 <MatchesLines>שורות להצגה במצב ממוזער</MatchesLines>
 <NotifyNotify>התראות</NotifyNotify>
@@ -199,7 +199,7 @@
 <CustomIconsOld>אייקונים מקוריים של לייב-פוקס בחלון המשחק</CustomIconsOld>
 <CustomSounds>צלילים</CustomSounds>
 <CustomSoundsWeather>צליל מזג אוויר בתחילת המשחק</CustomSoundsWeather>
-<CustomSoundsTime>צלילים להתחלהסיום מחצית</CustomSoundsTime>
+<CustomSoundsTime>צלילים להתחלת\\סיום מחצית</CustomSoundsTime>
 <CustomSoundsSEW>צלילים לאירועי מזג אוויר</CustomSoundsSEW>
 <CustomSoundsGoal>צלילי לייב-פוקס המקוריים</CustomSoundsGoal>
 <CustomSoundsNoOpGoal>ללא צלילים לשערי היריבה</CustomSoundsNoOpGoal>
@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>צליל לפציעה של שחקן שלי</PathSoundsMyBoo>
 <PathSoundsOpBoo>צליל לפציעה של שחקן היריבה</PathSoundsOpBoo>
 <PathSoundsWhistleStart>שריקה להתחלת מחצית ראשונה או שנייה</PathSoundsWhistleStart>
-<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
+<PathSoundsWhistle>צליל לכרטיס צהוב</PathSoundsWhistle>
 <PathSoundsHattrick>צליל לשלושער</PathSoundsHattrick>
 <PathSoundsRestore>שחזר</PathSoundsRestore>
 <PathSoundsPlay>השמע</PathSoundsPlay>
@@ -245,171 +245,171 @@
 <TextHelpOf>בעזרתו של</TextHelpOf>
 <TextThanksTo>רוב תודות ל:</TextThanksTo>
 <ButtonClose>סגור</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
-<Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
-<Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
-<ReLiveControls>Relive Controls</ReLiveControls>
-<ExtendImage>Extend image</ExtendImage>
-<RepeatImage>Repeat image</RepeatImage>
-<Background>Background</Background>
-<MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
-<TabWhistleCard>Whistles and Cards</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
-<Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
-<PopularGuy>Popular guy</PopularGuy>
-<SympatheticGuy>Sympathetic guy</SympatheticGuy>
-<PleasantGuy>Pleasant guy</PleasantGuy>
-<ControversialPerson>Controversial Person</ControversialPerson>
-<NastyFellow>Nasty fellow</NastyFellow>
-<Saintly>Saintly</Saintly>
-<Righteous>Righteous</Righteous>
-<Upright>Upright</Upright>
-<Honest>Honest</Honest>
-<Dishonest>Dishonest</Dishonest>
-<Infamous>Infamous</Infamous>
-<Unstable>Unstable</Unstable>
-<Fiery>Fiery</Fiery>
-<Temperamental>Temperamental</Temperamental>
-<Balanced>Balanced</Balanced>
-<Calm>Calm</Calm>
-<Tranquil>Tranquil</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
-<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
-<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
-<Warning>Warning</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
+<NonExistent>לא קיים</NonExistent>
+<Disastrous>איום</Disastrous>
+<Wretched>גרוע</Wretched>
+<Poor>עלוב</Poor>
+<Weak>חלש</Weak>
+<Inadequate>בינוני</Inadequate>
+<Passable>סביר</Passable>
+<Solid>טוב</Solid>
+<Excellent>מצוין</Excellent>
+<Formidable>מעולה</Formidable>
+<Outstanding>יוצא מן הכלל</Outstanding>
+<Brilliant>מבריק</Brilliant>
+<Magnificent>נהדר</Magnificent>
+<WorldClass>עולמי</WorldClass>
+<Supernatural>על טבעי</Supernatural>
+<Titanic>אימתני</Titanic>
+<ExtraTerrestrial>שמיימי</ExtraTerrestrial>
+<Mythical>אגדי</Mythical>
+<Magical>קסום</Magical>
+<Utopian>אוטופי</Utopian>
+<Divine>עילאי</Divine>
+<VeryHigh>גבוה מאוד</VeryHigh>
+<High>גבוה</High>
+<Low>נמוך</Low>
+<VeryLow>נמוך מאוד</VeryLow>
+<RightDefence>הגנה ימנית</RightDefence>
+<MiddleDefence>הגנה מרכזית</MiddleDefence>
+<LeftDefence>הגנה שמאלית</LeftDefence>
+<Midfield>קישור</Midfield>
+<RightAttack>התקפה ימנית</RightAttack>
+<MiddleAttack>התקפה מרכזית</MiddleAttack>
+<LeftAttack>התקפה שמאלית</LeftAttack>
+<IndirectSetPiecesDefence>בעיטות בלתי ישירות: הגנה</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>בעיטות בלתי ישירות: התקפה</IndirectSetPiecesAttack>
+<TeamAttitude>גישת הקבוצה</TeamAttitude>
+<TacticType>טקטיקה</TacticType>
+<TacticSkill>היכולת בטקטיקה</TacticSkill>
+<BallPosses>החזקה בכדור</BallPosses>
+<SpecialEvent>אירוע מיוחד</SpecialEvent>
+<Normal>רגיל</Normal>
+<PIC>משחק רגוע</PIC>
+<MOTS>משחק עונה</MOTS>
+<ColorPicker>אתה יכול לבחור צבע ב </ColorPicker>
+<EventBackground>צבע רקע לאירוע</EventBackground>
+<FriendHome>צבע בית (שלך ושל חבריך):#</FriendHome>
+<FriendAway>צבע חוץ (שלך ושל חבריך):#</FriendAway>
+<FoeHome>צבע קבוצת בית זרה:#</FoeHome>
+<FoeAway>צבע קבוצת חוץ זרה:#</FoeAway>
+<Neutral>צבע ניטרלי:#</Neutral>
+<EventColorTitle>צבע כתב לאירוע</EventColorTitle>
+<EventTextColor>צבע כתב לאירוע:#</EventTextColor>
+<SETextColor>צבע כתב לאירוע מיוחד:#</SETextColor>
+<Colors>צבעים</Colors>
+<SchemaTip>לחץ בכדי להראות הרכב</SchemaTip>
+<StatisticTip>לחץ בכדי להראות סטטיסטיקה בסיום המשחק</StatisticTip>
+<Youth>נוער</Youth>
+<Senior>בוגרים</Senior>
+<Tournament>טורניר</Tournament>
+<FreeKicks>מצבים נייחים</FreeKicks>
+<RedCards>כרטיסים אדומים</RedCards>
+<YellowCards>כרטיסים צהובים</YellowCards>
+<Injuries>פציעות</Injuries>
+<Goals>שערים</Goals>
+<Total>סך הכל</Total>
+<Terraces>מקומות עמידה</Terraces>
+<Basic>מושבים בסיסיים</Basic>
+<Roof>מושבים מקורים</Roof>
+<VIP>מושבים ביציע הכבוד</VIP>
+<CrowdinHelp>עזור לתרגם! עם קראודין זו עבודה קלה ומהנה! לחץ כאן!</CrowdinHelp>
+<Error401>שגיאה 401: כניסה לא מאושרת. עליך לקבל הרשאה חוזרת. לחץ "אשר" בכדי להמשיך.</Error401>
+<Error404>שגיאה 404: המקור המבוקש לא נמצא. אם שגיאה זו חוזרת, בדוק אם שירות הCHPP נפל.</Error404>
+<Error0>שגיאה 0: לא מחובר לאינטרנט.</Error0>
+<Error500>שגיאה 500: שגיאת שרת פנימי (של האטריק).</Error500>
+<Error503>שגיאה 503: שירות הCHPP לא זמין (עומס יתר זמני או תיקונים)</Error503>
+<PathSoundsNote1>הכנס קובץ:\\\\\\ לפני נתיב הצליל בסיומת ogg.</PathSoundsNote1>
+<PathSoundsNote2>דוגמה: file:///c:path o hesound.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>שריקה לסיום המחצית הראשונה</PathSoundsWhistle2>
+<PathSoundsWhistle3>שריקה לסיום המשחק</PathSoundsWhistle3>
+<EventYellow2>כרטיס צהוב שני</EventYellow2>
+<LoggedIn>מחובר כ</LoggedIn>
+<latestNews>בדוק את החדשות האחרונות ב</latestNews>
+<HTLSThread>פורום האטריק</HTLSThread>
+<ProjectWebsite>אתר הפרוייקט</ProjectWebsite>
+<GooglePlusPage>עמוד ה+Google</GooglePlusPage>
+<TwitterPage>עמוד הTwitter</TwitterPage>
+<FacebookPage>עמוד הFacebook</FacebookPage>
+<chatLink>פתח צ'אט</chatLink>
+<hidesidebar>החבא תפריט צד</hidesidebar>
+<addFriend>לחץ בכדי להוסיף קבוצה זו לחברים</addFriend>
+<TooltipCopyLineUp>לחץ בכדי להעתיק את ההרכב ללוח העריכה</TooltipCopyLineUp>
+<Dark>כהה</Dark>
+<Light>בהיר</Light>
+<Themes>ערכת נושא</Themes>
+<NoTournament>אל תטען משחקים בודדים ומשחקי טורניר לחברים</NoTournament>
+<DefHatStats>רייטינג הגנה</DefHatStats>
+<MidHatStats>רייטינג קישור</MidHatStats>
+<AttHatStats>רייטינג התקפה</AttHatStats>
+<TotHatStats>סה"כ רייטינג</TotHatStats>
+<CopiedToClipboard>הועתק ללוח העריכה!</CopiedToClipboard>
+<ReLiveControls>שליטה בשידור חוזר</ReLiveControls>
+<ExtendImage>מתח תמונה</ExtendImage>
+<RepeatImage>פרוש תמונה</RepeatImage>
+<Background>רקע</Background>
+<MuteAll>מתג צלילים</MuteAll>
+<Technical>טכני</Technical>
+<Quick>מהיר</Quick>
+<Powerful>חזק</Powerful>
+<Unpredictable>בלתי צפוי</Unpredictable>
+<Header>משחק ראש</Header>
+<Regainer>משתקם</Regainer>
+<SecondTeamIdLabel>הכנס את מספר הקבוצה השניה</SecondTeamIdLabel>
+<SecondSoundEqualFirst>צלילי הקבוצה השנייה זהים לקבוצה הראשונה</SecondSoundEqualFirst>
+<Keeper>עמידה בשער</Keeper>
+<Defending>הגנה</Defending>
+<Playmaking>עשיית משחק</Playmaking>
+<Winger>אגפים</Winger>
+<Passing>מסירה</Passing>
+<Scoring>הבקעה</Scoring>
+<SetPieces>מצבים נייחים</SetPieces>
+<Age>גיל</Age>
+<Form>כושר משחק</Form>
+<Stamina>כושר גופני</Stamina>
+<Experience>ניסיון</Experience>
+<Loyalty>נאמנות</Loyalty>
+<PathSoundsPressing>צליל לאירוע לחץ</PathSoundsPressing>
+<PathSoundsMyBruised>צליל לשחקן חבול שלי</PathSoundsMyBruised>
+<PathSoundsOtherBruised>צליל לשחקן חבול של קבוצה אחרת</PathSoundsOtherBruised>
+<PathSoundsMySentOff>צליל להרחקה של שחקן שלי</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>צליל להרחקה של שחקן מקבוצה אחרת</PathSoundsOtherSentOff>
+<TabInjuries>פציעות</TabInjuries>
+<TabWeather>מזג אוויר</TabWeather>
+<TabWhistleCard>שריקות וכרטיסים</TabWhistleCard>
+<PathSoundsMissFriend>צליל להחמצה של חבר</PathSoundsMissFriend>
+<PathSoundsMissOther>צליל להחמצה של קבוצה אחרת</PathSoundsMissOther>
+<TabChances>הזדמנויות</TabChances>
+<Agreeability>מקובלות</Agreeability>
+<Aggressiveness>אגרסיביות</Aggressiveness>
+<Honesty>יושר</Honesty>
+<BelovedTeamMember>אהוב הקבוצה </BelovedTeamMember>
+<PopularGuy>מקובל</PopularGuy>
+<SympatheticGuy>נחמד</SympatheticGuy>
+<PleasantGuy>נעים</PleasantGuy>
+<ControversialPerson>שנוי במחלוקת</ControversialPerson>
+<NastyFellow>בעייתי</NastyFellow>
+<Saintly>קדוש</Saintly>
+<Righteous>צדיק</Righteous>
+<Upright>ישר</Upright>
+<Honest>הגון</Honest>
+<Dishonest>בלתי הגון</Dishonest>
+<Infamous>ידוע לשמצה</Infamous>
+<Unstable>פרוע</Unstable>
+<Fiery>סוער</Fiery>
+<Temperamental>חם מזג</Temperamental>
+<Balanced>מאוזן</Balanced>
+<Calm>רגוע</Calm>
+<Tranquil>שליו</Tranquil>
+<VisitOurSoundCollection>בקר בקולקציית הצלילים שלנו</VisitOurSoundCollection>
+<SafariWarning>אם לוח הבקרה של HTLivesight לא בחלונית הפתוחה, צלילי ההתראות יהיו חסומים. אנא פתח חלון חדש אם ברצונך לשוטט באינטרנט במהלך משחק.</SafariWarning>
+<OnlyHTTPFiles>רק http URL עובד</OnlyHTTPFiles>
+<Warning>אזהרה</Warning>
+<Testers>בודקים</Testers>
+<BasedOn>מבוסס על</BasedOn>
+<AndroidWarning>אם לשונית הHTLivesight לא פתוחה, ההתראות יהיו חסומות. הן יופיעו בעדכון הראשון לאחר החזרה ללשונית</AndroidWarning>
+<SafariClipboardTitle>לחץ ctrl/cmd + c בכדי להעתיק את הטקסט הנבחר</SafariClipboardTitle>
+<License>הרישיון שלנו</License>
+<Tech>הטכנולוגיה שלנו</Tech>
+<Supporter>תמיכה בפרויקט</Supporter>
 </Htlivesight>

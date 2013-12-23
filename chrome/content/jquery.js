@@ -91,6 +91,7 @@ $(function(){
 					return false;
 				});
 				$('#about_link').click(function(){
+					$('#about-dialog').dialog({ position: { my: "top", at: "top"}});
 					$('#about-dialog').dialog('open');
 					return false;
 				});

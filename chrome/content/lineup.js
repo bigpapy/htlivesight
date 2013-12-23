@@ -206,11 +206,11 @@ htlivesight.LineUp.ParseSubstitutions= function (xml,youth){
 			}
 		}
 	}catch(e){console.log("error parsing substitution:"+e);};
-	if(xml){
+/*	if(xml){
 		var now = new Date();
 		console.log(now);
 		console.log(xml);
-	}
+	}*/
 
 	return substitutions;
 };

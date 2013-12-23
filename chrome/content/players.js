@@ -186,6 +186,26 @@ htlivesight.players.specialtyChar = function (specialty){
 	};
 };
 
+htlivesight.players.specialtyImage = function(specialty){
+	switch (specialty){
+	case "0": return "";
+	break;
+	case "1": return htlivesight.Image.spec.spec1;
+	break;
+	case "2": return htlivesight.Image.spec.spec2;
+	break;
+	case "3": return htlivesight.Image.spec.spec3;
+	break;
+	case "4": return htlivesight.Image.spec.spec4;
+	break;
+	case "5": return htlivesight.Image.spec.spec5;
+	break;
+	case "6": return htlivesight.Image.spec.spec6;
+	break;
+	default: return "";
+	};
+}
+
 htlivesight.players.agreeability = function (agreeability){
 
 	switch (agreeability){
@@ -254,10 +274,12 @@ htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
 	}
 	$("."+playerClass).each(function() {
 		if(!$(this).hasClass("withSpecialty")){
-			$(this).text($(this).text()+" "+htlivesight.players.specialtyChar(specialty));
+			$(this).append('<br/>');
+			if(specialty!='0') $(this).append('<image src="'+htlivesight.players.specialtyImage(specialty)+'"</image>');
+			//$(this).text($(this).text()+" "+htlivesight.players.specialtyChar(specialty));
 			$(this).addClass("withSpecialty");
 			}
-		if(!$(this).hasClass("withTitle")){
+		if(!$(this).hasClass("withTitle")&& htlivesight.Player.List["_"+playerId+"_"+youth].age>14){
 			$(this).attr('title', ''+htlivesight.Player.List["_"+playerId+"_"+youth].firstName+'\n'+
 		//			((htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad=="True")?"":" ⚑")+'\n'+
 					htlivesight.Util.Parse("Age",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].age + ' ' +
