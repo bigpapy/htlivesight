@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Zvuk ozljede vlastitog tima</PathSoundsMyBoo>
 <PathSoundsOpBoo>Zvuk za ozljedu protivnikovog tima</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Zvižduk za početak 1pol/2pol</PathSoundsWhistleStart>
-<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
+<PathSoundsWhistle>Zvuk žutog kartona</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick zvuk</PathSoundsHattrick>
 <PathSoundsRestore>Vrati</PathSoundsRestore>
 <PathSoundsPlay>Sviraj</PathSoundsPlay>
@@ -369,47 +369,47 @@
 <Stamina>Izdržljivost</Stamina>
 <Experience>Iskustvo</Experience>
 <Loyalty>Odanost</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
-<TabWhistleCard>Whistles and Cards</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
-<Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
-<PopularGuy>Popular guy</PopularGuy>
-<SympatheticGuy>Sympathetic guy</SympatheticGuy>
-<PleasantGuy>Pleasant guy</PleasantGuy>
-<ControversialPerson>Controversial Person</ControversialPerson>
-<NastyFellow>Nasty fellow</NastyFellow>
-<Saintly>Saintly</Saintly>
-<Righteous>Righteous</Righteous>
-<Upright>Upright</Upright>
-<Honest>Honest</Honest>
-<Dishonest>Dishonest</Dishonest>
-<Infamous>Infamous</Infamous>
-<Unstable>Unstable</Unstable>
-<Fiery>Fiery</Fiery>
-<Temperamental>Temperamental</Temperamental>
-<Balanced>Balanced</Balanced>
-<Calm>Calm</Calm>
-<Tranquil>Tranquil</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
-<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
-<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
-<Warning>Warning</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
+<PathSoundsPressing>Zvuk pritiska</PathSoundsPressing>
+<PathSoundsMyBruised>Zvuk mog povrijeđenog igrača</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Zvuk povrijeđenog igrača iz drugog tima</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Zvuk mog izbačenog igrača</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Zvuk izbačenog igrača iz drugog tima</PathSoundsOtherSentOff>
+<TabInjuries>Ozljede</TabInjuries>
+<TabWeather>Vrijeme</TabWeather>
+<TabWhistleCard>Zvižduci i kartoni</TabWhistleCard>
+<PathSoundsMissFriend>Zvuk promašaja gola prijateljevog tima</PathSoundsMissFriend>
+<PathSoundsMissOther>Zvuk promašaja gola drugog tima</PathSoundsMissOther>
+<TabChances>Šanse</TabChances>
+<Agreeability>Karakter</Agreeability>
+<Aggressiveness>Narav</Aggressiveness>
+<Honesty>Poštenje</Honesty>
+<BelovedTeamMember>Voljeni član tima </BelovedTeamMember>
+<PopularGuy>Popularan tip</PopularGuy>
+<SympatheticGuy>Simpatičan tip</SympatheticGuy>
+<PleasantGuy>Ugodan tip</PleasantGuy>
+<ControversialPerson>Kontroverzana osoba</ControversialPerson>
+<NastyFellow>Gadan kolega</NastyFellow>
+<Saintly>Duša od čovjeka</Saintly>
+<Righteous>Pravedan</Righteous>
+<Upright>Pošten</Upright>
+<Honest>Iskren</Honest>
+<Dishonest>Neiskren</Dishonest>
+<Infamous>Ozloglašen</Infamous>
+<Unstable>Nestabilan</Unstable>
+<Fiery>Prgav</Fiery>
+<Temperamental>Temperamentan</Temperamental>
+<Balanced>Uravnotežen</Balanced>
+<Calm>Smiren</Calm>
+<Tranquil>Spokojan</Tranquil>
+<VisitOurSoundCollection>Pogledajte našu kolekciju zvukova</VisitOurSoundCollection>
+<SafariWarning>Ukoliko HTLivesight ploča nije u fokusu zvukovi obavijesti će biti blokirani. Otvorite poseban, novi prozor, ukoliko želite surfati po internet stranicama tijekom utakmica</SafariWarning>
+<OnlyHTTPFiles>Samo linkovi koji počinju sa "http" rade</OnlyHTTPFiles>
+<Warning>Upozorenje</Warning>
+<Testers>Ispitvači</Testers>
+<BasedOn>Na temelju</BasedOn>
+<AndroidWarning>Ako HTLiveSight tab nije aktivan, obaviještenja će biti blokirana, pojavit će se prilikom prvog narednog ažuriranja kada se vratite na HTLiveSight tab</AndroidWarning>
+<SafariClipboardTitle>Pritisni ctrl/cmd +c da biste kopirali označeni tekst</SafariClipboardTitle>
+<License>Naša Licenca</License>
+<Tech>Naša Tehnologija</Tech>
+<Supporter>Podrška projekta</Supporter>
 </Htlivesight>
