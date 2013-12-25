@@ -38,8 +38,8 @@
 <Error>خطا</Error>
 <ServerON>وصل شده</ServerON>
 <ServerOFF>قطع شده</ServerOFF>
-<ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
-<NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
+<ResetToken>مجوز کد حذف شده است. برنامه را دوباره راه اندازی کنیدیا منتظر بمانید تا بروز رسانی بعدی (کمتر از 1 دقیقه).</ResetToken>
+<NoHTServer>شما سرور هتریکی که در آن وارد شده اید را درست انتخاب نکرده اید، هرجایی از پس زمینه راست کلیک رده و تنظیمات - عمومی را کلیک کنید و شماره درست سرور هتریک را انتخاب کنید.</NoHTServer>
 <MatchesMaximum>نمی توانید بیشتر از 20 بازی مشاهده کنید!</MatchesMaximum>
 <LeagueRound>بازی ها</LeagueRound>
 <MessageHattrickError>درگاه هت تریک با خطا مواجه شده است.</MessageHattrickError>
@@ -66,7 +66,7 @@
 <TimeHour>ساعت</TimeHour>
 <TimeMinute>دقیقه</TimeMinute>
 <TimeMin>'</TimeMin>
-<TooltipWindowSound>Activate or deactivate sounds for the match</TooltipWindowSound>
+<TooltipWindowSound>فعال یا غیر فعال کردن صداها برای مسابقه</TooltipWindowSound>
 <TooltipWindowLink>لینک به صفحه بازی در Hattrick</TooltipWindowLink>
 <TooltipWindowInfo>زبانه ی اتفاقات بازی </TooltipWindowInfo>
 <TooltipWindowMaximize>بزرگ نمایی پنجره</TooltipWindowMaximize>
@@ -117,7 +117,7 @@
 <UnderestimationReduceOnce>دست کم گرفتن به میزان 1/3 کاهش یافت</UnderestimationReduceOnce>
 <OrganizationBreaks>سردرگم شدن</OrganizationBreaks>
 <Reorganize>بازیابی</Reorganize>
-<NervesImportantThrillingGame>Nerves in important thrilling game</NervesImportantThrillingGame>
+<NervesImportantThrillingGame>اعصاب در بازی هیجانی مهم</NervesImportantThrillingGame>
 <Bruised>ضرب دیده</Bruised>
 <Injuried>مصدوم</Injuried>
 <ModeratelyInjuried>مصدومیت متوسط</ModeratelyInjuried>
@@ -156,9 +156,9 @@
 <TabNotifications>اخطار</TabNotifications>
 <TabLanguage>زبان</TabLanguage>
 <TabOther>دیگر</TabOther>
-<TabCustom>Customizations</TabCustom>
-<TabGoalSound>Goals sounds</TabGoalSound>
-<TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
+<TabCustom>سفارشی سازی</TabCustom>
+<TabGoalSound>صدای گل ها</TabGoalSound>
+<TabWheatherSound>صداهای آب و هوا و صداهای صدمات</TabWheatherSound>
 <TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
 <GeneralOpen>HTLiveSightباز کردن</GeneralOpen>
 <GeneralNewTab>در يک زبانه ي جديد</GeneralNewTab>
