@@ -275,7 +275,7 @@ htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
 	$("."+playerClass).each(function() {
 		if(!$(this).hasClass("withSpecialty")){
 			$(this).append('<br/>');
-			if(specialty!='0') $(this).append('<image src="'+htlivesight.players.specialtyImage(specialty)+'"</image>');
+			if(specialty!='0') $(this).append('<image class="player_icons" src="'+htlivesight.players.specialtyImage(specialty)+'"</image>');
 			//$(this).text($(this).text()+" "+htlivesight.players.specialtyChar(specialty));
 			$(this).addClass("withSpecialty");
 			}

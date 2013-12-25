@@ -239,11 +239,21 @@ htlivesight.DOM = {
 				if (event.minute=="0") var index=1;
 				else index= ul.getElementsByTagName("li").length;
 				a.setAttribute("href","#"+id+"-"+index);
+				var img = new Image();
 				if(event.minute == '★'){
-						a.innerHTML=event.minute;	
+					//a.innerHTML=event.minute;
+					img.setAttribute("src", htlivesight.Image.star.yellow);
+					img.setAttribute("class", "image_star_tab");
 				}else{
 				  a.innerHTML=event.minute+"'";
+				  if(htlivesight.prefs.personalization.oldIcons && event.type.imageSrcOld){
+						img.setAttribute("src", event.type.imageSrcOld);
+					}else{
+						img.setAttribute("src", event.type.imageSrc);
+					};
+					img.setAttribute("class", "image_tab");
 				}
+				a.appendChild(img);
 				li_.appendChild(a);
 				var popup = document.createElement("table");
 				popup.cellSpacing="25px";

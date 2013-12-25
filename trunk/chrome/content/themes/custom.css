@@ -10,7 +10,9 @@ background-position:center center;
 padding: 0 0 0 0;
 margin: 0 0 0 0;
 }
-
+#htlivesight-body  .player_icons{padding: 3px}
+#htlivesight-body  .image_star_tab{margin: -6px;padding-left: 4px;padding-right: 4px;}
+#htlivesight-body  .image_tab{margin: -6px; padding-left: 10px;}
 #htlivesight-body  .anotherbrick1 { float:left;margin-right:10px;}
 #htlivesight-body  .anotherbrick2 { position: absolute;right:10px;top:15px}
 #htlivesight-body  .demoHeaders { margin-top: 2em; }
