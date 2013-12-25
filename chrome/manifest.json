@@ -1,21 +1,23 @@
 {
 "manifest_version":			2,
 "name":						"HTLiveSightDEV",
-"version":					"0.6.1044",
+"version":					"0.6.1050",
 "description":				"An Hattrick Live Match Viewer",
 "icons":					{
 								"16": "skin/16.png",
 								"48": "skin/48.png",
 								"128": "skin/128.png"
 							},
-"app":						{
-							"launch":
+"browser_action":
 								{
-									"default_icon": "24.png",
-									"default_title": "Launch HTLiveSight",
-									"local_path": "content/htlivesight.html"
-								}
+									"default_icon": "skin/24.png",
+									"default_title": "Launch HTLiveSight" 
+
 							},
+ "background": {
+    "scripts": ["content/button/startButton.js"],
+    "persistent": false
+  },
 "homepage_url":				"http://htlivesight.sourceforge.net",
 "incognito":				"spanning",
 "minimum_chrome_version":	"13",
