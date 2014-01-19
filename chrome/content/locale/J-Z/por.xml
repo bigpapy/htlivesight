@@ -412,4 +412,6 @@
 <License>Nossa licença</License>
 <Tech>Nossa tecnologia</Tech>
 <Supporter>Apoio ao projeto</Supporter>
+<HeaderBarColor>Header bar color</HeaderBarColor>
+<HeaderBarTextColor>Header bar text color</HeaderBarTextColor>
 </Htlivesight>

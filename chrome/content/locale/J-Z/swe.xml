@@ -412,4 +412,6 @@
 <License>Vår licens</License>
 <Tech>Vår teknik</Tech>
 <Supporter>Projektsupport</Supporter>
+<HeaderBarColor>Rubrikfält, bakgrundsfärg</HeaderBarColor>
+<HeaderBarTextColor>Rubrikfält, textfärg</HeaderBarTextColor>
 </Htlivesight>

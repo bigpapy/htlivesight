@@ -412,4 +412,6 @@
 <License>A Nosa Licencia</License>
 <Tech>A Nosa Tecnoloxía</Tech>
 <Supporter>Apoio ó proxecto</Supporter>
+<HeaderBarColor>Cor da barra de cabeceira</HeaderBarColor>
+<HeaderBarTextColor>Cor do texto da barra de cabeceira</HeaderBarTextColor>
 </Htlivesight>

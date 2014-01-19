@@ -412,4 +412,6 @@
 <License>Naša licencia</License>
 <Tech>Naša technológia</Tech>
 <Supporter>Podpora projektu</Supporter>
+<HeaderBarColor>Farba hlavičky</HeaderBarColor>
+<HeaderBarTextColor>Farba textu hlavičky</HeaderBarTextColor>
 </Htlivesight>

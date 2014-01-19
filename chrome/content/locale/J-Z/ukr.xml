@@ -412,4 +412,6 @@
 <License>Наша ліцензія</License>
 <Tech>Наша технологія</Tech>
 <Supporter>Підтримка проекту</Supporter>
+<HeaderBarColor>Колір заголовка</HeaderBarColor>
+<HeaderBarTextColor>Колір тексту заголовка</HeaderBarTextColor>
 </Htlivesight>

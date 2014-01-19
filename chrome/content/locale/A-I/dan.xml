@@ -412,4 +412,6 @@
 <License>Vores licens</License>
 <Tech>Vores teknologi</Tech>
 <Supporter>Projektstøtte</Supporter>
+<HeaderBarColor>Farve på navigationsbar</HeaderBarColor>
+<HeaderBarTextColor>Tekstfarve på navigationsbar</HeaderBarTextColor>
 </Htlivesight>

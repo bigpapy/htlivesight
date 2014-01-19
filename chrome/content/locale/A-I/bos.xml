@@ -412,4 +412,6 @@
 <License>Licenca</License>
 <Tech>Tehnologija koju koristimo</Tech>
 <Supporter>Projektna podrška</Supporter>
+<HeaderBarColor>Boja pozadine zaglavlja</HeaderBarColor>
+<HeaderBarTextColor>Boja teksta u zaglavlju</HeaderBarTextColor>
 </Htlivesight>

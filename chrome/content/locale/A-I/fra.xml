@@ -412,4 +412,6 @@
 <License>Licence</License>
 <Tech>Technologie</Tech>
 <Supporter>Soutien du projet</Supporter>
+<HeaderBarColor>Couleur des entêtes</HeaderBarColor>
+<HeaderBarTextColor>Couleur du texte</HeaderBarTextColor>
 </Htlivesight>

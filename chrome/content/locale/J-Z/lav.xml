@@ -412,4 +412,6 @@
 <License>Mūsu licence</License>
 <Tech>Mūsu tehnoloģija</Tech>
 <Supporter>Projekta atbalsts</Supporter>
+<HeaderBarColor>Header bar color</HeaderBarColor>
+<HeaderBarTextColor>Header bar text color</HeaderBarTextColor>
 </Htlivesight>

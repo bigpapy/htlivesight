@@ -412,4 +412,6 @@
 <License>הרישיון שלנו</License>
 <Tech>הטכנולוגיה שלנו</Tech>
 <Supporter>תמיכה בפרויקט</Supporter>
+<HeaderBarColor>צבע רקע לכותרת</HeaderBarColor>
+<HeaderBarTextColor>צבע טקסט לכותרת</HeaderBarTextColor>
 </Htlivesight>

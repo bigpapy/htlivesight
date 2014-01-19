@@ -412,4 +412,6 @@
 <License>Mūsų licencija</License>
 <Tech>Mūsų technologijos</Tech>
 <Supporter>Projektą remia</Supporter>
+<HeaderBarColor>Antraštės spalva</HeaderBarColor>
+<HeaderBarTextColor>Antraštės teksto spalva</HeaderBarTextColor>
 </Htlivesight>

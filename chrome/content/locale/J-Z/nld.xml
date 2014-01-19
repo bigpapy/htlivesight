@@ -412,4 +412,6 @@
 <License>Onze licentie</License>
 <Tech>Onze technologie</Tech>
 <Supporter>Projectondersteuning</Supporter>
+<HeaderBarColor>Kleur balk bovenaan</HeaderBarColor>
+<HeaderBarTextColor>Tekst kleur balk bovenaan</HeaderBarTextColor>
 </Htlivesight>

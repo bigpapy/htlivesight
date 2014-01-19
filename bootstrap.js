@@ -79,7 +79,7 @@ function loadIntoWindow(window) {
 	// load overlay file used in no-restart installation
 	window.document.loadOverlay('chrome://htlivesight/content/overlay.xul', null);
 	// add button to nav-bar to launch htls
-  addButton('nav-bar', "htls-button-1", "launch HTLivesight", 'chrome://htlivesight/skin/24.png', 'chrome://htlivesight/skin/16.png', true, window.document) 
+  addButton('nav-bar', "htls-button-1", "launch HTLivesight", 'chrome://htlivesight/skin/24.png', 'chrome://htlivesight/skin/16.png', true, window.document)
   }
 }
 
@@ -136,6 +136,7 @@ function isAndroid() {
 // add button launch for htls
 function addButton(toolbarId, buttonId, label, iconPath24, iconPath16, firstRun, document) {
   var toolbar = document.getElementById(toolbarId);
+  var addOnBar = document.getElementById("addon-bar");
   var toolbarButton = document.createElement("toolbarbutton");
   toolbarButton.setAttribute("id", buttonId);
   toolbarButton.setAttribute("type", "button");
@@ -151,11 +152,28 @@ function addButton(toolbarId, buttonId, label, iconPath24, iconPath16, firstRun,
   var currentset = toolbar.getAttribute("currentset").split(",");
   var index = currentset.indexOf(buttonId);
   if (index == -1) {
-    if (firstRun) {
-      // No button yet so add it to the toolbar.
-      toolbar.appendChild(toolbarButton);
-      toolbar.setAttribute("currentset", toolbar.currentSet);
-      document.persist(toolbar.id, "currentset");
+  	var currentset = addOnBar.getAttribute("currentset").split(",");
+    var index = currentset.indexOf(buttonId);
+    if (index == -1) {
+      if (firstRun) {
+        // No button yet so add it to the toolbar.
+        toolbar.appendChild(toolbarButton);
+        toolbar.setAttribute("currentset", toolbar.currentSet);
+        document.persist(toolbar.id, "currentset");
+      }
+    }else{
+   // insert the button there.
+      var before = null;
+      for (var i=index+1; i<currentset.length; i++) {
+        before = document.getElementById(currentset[i]);
+        if (before) {
+        	addOnBar.insertItem(buttonId, before);
+          break;
+        }
+      }
+      if (!before) {
+      	addOnBar.insertItem(buttonId);
+      }
     }
   }
   else {
