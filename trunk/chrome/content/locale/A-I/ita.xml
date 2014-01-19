@@ -412,4 +412,6 @@
 <License>La nostra licenza</License>
 <Tech>La nostra tecnologia</Tech>
 <Supporter>Supporti al progetto</Supporter>
+<HeaderBarColor>Colore barra di intestazione</HeaderBarColor>
+<HeaderBarTextColor>Colore del testo della barra di intestazione</HeaderBarTextColor>
 </Htlivesight>

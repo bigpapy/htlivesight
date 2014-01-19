@@ -182,6 +182,11 @@ htlivesight.DOM = {
 					box.hidden = false;
 					img.setAttribute("src", htlivesight.Image.live.ON);
 					htlivesight.DOM.window.repaint(matchId, sourceSystem);
+					htlivesight.DOM.setHeaderColor();
+					//if (document.getElementById("headerBarColorCheck").checked){
+					//	$('.ui-accordion-header').css('background-image','none');
+					//	$('.ui-accordion-header').css('background-color','#'+htlivesight.prefs.colors.headerBarColorCode);
+					//}
 				} else {      
 					box.hidden = true;
 					img.setAttribute("src", htlivesight.Image.live.OFF);
@@ -2003,4 +2008,14 @@ htlivesight.DOM.closeMatchRelatedWindows=function(id){
 	if ($("#away_team_name_"+id+"_statistics").dialog("isOpen")){
   $("#away_team_name_"+id+"_statistics").dialog("close");
 	};
-}
+};
+htlivesight.DOM.setHeaderColor=function(){
+  if (document.getElementById("headerBarColorCheck").checked){
+	  $('.ui-accordion-header').css('background-image','none');
+	  $('.ui-accordion-header, #label_headerBarColorCode, #label_headerBarTextColorCode').css('background-color','#'+htlivesight.prefs.colors.headerBarColorCode);
+  }
+  if (document.getElementById("headerBarTextColorCheck").checked){
+	  //$('.ui-accordion-header').css('background-image','none');
+	  $('.ui-accordion-header, .ui-accordion-header span, .ui-accordion-header a , #label_headerBarColorCode, #label_headerBarTextColorCode').css('color','#'+htlivesight.prefs.colors.headerBarTextColorCode);
+  }
+};

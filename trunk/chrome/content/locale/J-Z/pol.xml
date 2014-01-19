@@ -412,4 +412,6 @@
 <License>Licencja</License>
 <Tech>Użyte technologie</Tech>
 <Supporter>Projekt wspieraja</Supporter>
+<HeaderBarColor>Kolor paska nagłówka</HeaderBarColor>
+<HeaderBarTextColor>Kolor tekstu nagłówka</HeaderBarTextColor>
 </Htlivesight>

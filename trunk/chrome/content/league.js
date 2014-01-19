@@ -162,6 +162,8 @@ htlivesight.League.ParseFixtures = function(xml,teamKind) {
 			document.getElementById("winboxcontent_leaguematches").setAttribute("style", "display:block");
 			document.getElementById("LeagueMatches").setAttribute("style", "display:block");
 			document.getElementById("h3LeagueMatches").setAttribute("style", "display:block");
+			//htlivesight.Settings.click.headerBarColorSet();
+			htlivesight.DOM.setHeaderColor();
 			htlivesight.DOM.UpdateElementBoxLeagueTable(htlivesight.League);
 			htlivesight.DOM.UpdateElementBoxLeague(htlivesight.League);
 			htlivesight.League.matches=rounds[currentRound].id;
@@ -197,6 +199,7 @@ htlivesight.League.ParseFixtures = function(xml,teamKind) {
 				document.getElementById("winboxcontent_leaguematchesBis").setAttribute("style", "display:block");
 				document.getElementById("LeagueMatchesBis").setAttribute("style", "display:block");
 				document.getElementById("h3LeagueMatchesBis").setAttribute("style", "display:block");
+				htlivesight.DOM.setHeaderColor();
 				htlivesight.DOM.UpdateElementBoxLeagueTable2(htlivesight.League);
 				htlivesight.DOM.UpdateElementBoxLeague2(htlivesight.League);
 				htlivesight.League.matches2=rounds[currentRound].id

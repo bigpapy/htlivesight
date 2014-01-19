@@ -247,6 +247,27 @@ htlivesight.Settings = {
 			document.getElementById("seTextColorCheck").checked = prefs.colors.seTextColorCheck;
 			document.getElementById("seTextColorCode").disabled = !prefs.colors.seTextColorCheck;
 			document.getElementById("seTextColorCode").value = "#"+prefs.colors.seTextColorCode;
+			
+			document.getElementById("headerBarColorCheck").checked = prefs.colors.headerBarColorCheck;
+			document.getElementById("headerBarColorCode").disabled = !prefs.colors.headerBarColorCheck;
+			document.getElementById("headerBarColorCode").value = "#"+prefs.colors.headerBarColorCode;
+			
+			document.getElementById("headerBarTextColorCheck").checked = prefs.colors.headerBarTextColorCheck;
+			document.getElementById("headerBarTextColorCode").disabled = !prefs.colors.headerBarTextColorCheck;
+			document.getElementById("headerBarTextColorCode").value = "#"+prefs.colors.headerBarTextColorCode;
+  	  if (document.getElementById("headerBarColorCheck").checked){
+			  $('.ui-accordion-header').css('background-image','none');
+			  $('.ui-accordion-header, #label_headerBarColorCode, #label_headerBarTextColorCode').css('background-color','#'+prefs.colors.headerBarColorCode);
+		  }
+		  if (document.getElementById("headerBarTextColorCheck").checked){
+			  //$('.ui-accordion-header').css('background-image','none');
+			  $('.ui-accordion-header, .ui-accordion-header span, .ui-accordion-header a , #label_headerBarColorCode, #label_headerBarTextColorCode').css('color','#'+prefs.colors.headerBarTextColorCode);
+		  }
+				//if (prefs.colors.headerBarColorCheck){
+			//	$('.ui-accordion-header').css('background-image','none');
+			//	$('.ui-accordion-header').css('background-color','#'+prefs.colors.headerBarColorCode);
+			//} 
+			
 		},
 		save: function() {
 			htlivesight.Log.properties(this.preferences.notification);
@@ -448,6 +469,9 @@ htlivesight.Settings = {
 			document.getElementById("label_neutralTextColorCode").innerHTML=htlivesight.Util.Parse("Neutral",data[0]);
 			//document.getElementById("label_textColorCode").innerHTML=htlivesight.Util.Parse("EventTextColor",data[0]);
 			document.getElementById("label_seTextColorCode").innerHTML=htlivesight.Util.Parse("SETextColor",data[0]);
+			document.getElementById("HeaderBarColor").innerHTML=htlivesight.Util.Parse("HeaderBarColor",data[0]);
+			document.getElementById("label_headerBarColorCode").innerHTML=htlivesight.Util.Parse("HeaderBarColor",data[0]);
+			document.getElementById("label_headerBarTextColorCode").innerHTML=htlivesight.Util.Parse("HeaderBarTextColor",data[0]);
 			//background
 		// background
 			document.getElementById("label_customBackground_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
@@ -800,6 +824,7 @@ htlivesight.Settings = {
 				} else {
 					document.getElementById("friendHomeColorCode").disabled = true;
 					prefs.colors.friendHomeColorCheck=false;
+					document.getElementById("label_friendHomeColorCode").style.backgroundColor= "";
 				}
 			},
 			friendHomeColorSet: function() {
@@ -817,6 +842,7 @@ htlivesight.Settings = {
 				} else {
 					document.getElementById("friendAwayColorCode").disabled = true;
 					prefs.colors.friendAwayColorCheck=false;
+					document.getElementById("label_friendAwayColorCode").style.backgroundColor= "";
 				}
 			},
 			friendAwayColorSet: function() {
@@ -834,6 +860,7 @@ htlivesight.Settings = {
 				} else {
 					document.getElementById("foeHomeColorCode").disabled = true;
 					prefs.colors.foeHomeColorCheck=false;
+					document.getElementById("label_foeHomeColorCode").style.backgroundColor= "";
 				}
 			},
 			foeHomeColorSet: function() {
@@ -851,6 +878,7 @@ htlivesight.Settings = {
 				} else {
 					document.getElementById("foeAwayColorCode").disabled = true;
 					prefs.colors.foeAwayColorCheck=false;
+					document.getElementById("label_foeAwayColorCode").style.backgroundColor= "";
 				}
 			},
 			foeAwayColorSet: function() {
@@ -868,6 +896,7 @@ htlivesight.Settings = {
 				} else {
 					document.getElementById("neutralColorCode").disabled = true;
 					prefs.colors.neutralColorCheck=false;
+					document.getElementById("label_neutralColorCode").style.backgroundColor= "";
 				}
 			},
 			neutralColorSet: function() {
@@ -911,6 +940,7 @@ htlivesight.Settings = {
 				} else {
 					document.getElementById("friendHomeTextColorCode").disabled = true;
 					prefs.colors.friendHomeTextColorCheck=false;
+					document.getElementById("label_friendHomeColorCode").style.color= "";
 				}
 			},
 			friendHomeTextColorSet: function() {
@@ -930,6 +960,7 @@ htlivesight.Settings = {
 				} else {
 					document.getElementById("friendAwayTextColorCode").disabled = true;
 					prefs.colors.friendAwayTextColorCheck=false;
+					document.getElementById("label_friendAwayColorCode").style.color= "";
 				}
 			},
 			friendAwayTextColorSet: function() {
@@ -950,6 +981,7 @@ htlivesight.Settings = {
 				} else {
 					document.getElementById("foeHomeTextColorCode").disabled = true;
 					prefs.colors.foeHomeTextColorCheck=false;
+					document.getElementById("label_foeHomeColorCode").style.color= "";
 				}
 			},
 			foeHomeTextColorSet: function() {
@@ -969,6 +1001,7 @@ htlivesight.Settings = {
 				} else {
 					document.getElementById("foeAwayTextColorCode").disabled = true;
 					prefs.colors.foeAwayTextColorCheck=false;
+					document.getElementById("label_foeAwayColorCode").style.color= "";
 				}
 			},
 			foeAwayTextColorSet: function() {
@@ -988,6 +1021,7 @@ htlivesight.Settings = {
 				} else {
 					document.getElementById("neutralTextColorCode").disabled = true;
 					prefs.colors.neutralTextColorCheck=false;
+					document.getElementById("label_neutralColorCode").style.color= "";
 				}
 			},
 			neutralTextColorSet: function() {
@@ -1011,6 +1045,11 @@ htlivesight.Settings = {
 				} else {
 					document.getElementById("seTextColorCode").disabled = true;
 					prefs.colors.seTextColorCheck=false;
+					document.getElementById("label_friendHomeColorCode").style.color= "";
+					document.getElementById("label_friendAwayColorCode").style.color= "";
+					document.getElementById("label_foeHomeColorCode").style.color= "";
+					document.getElementById("label_foeAwayColorCode").style.color= "";
+					document.getElementById("label_neutralColorCode").style.color= "";
 				}
 			},
 			seTextColorSet: function() {
@@ -1100,6 +1139,71 @@ htlivesight.Settings = {
 					}
 					//document.body.style.backgroundPosition="left top";
 					prefs.general["repeatBackground"] = document.getElementById("chkRepeatBackground").checked;
-				}
+				},
+				
+				headerBarColorCheck: function(){
+					//alert("ciao!");
+					var prefs = htlivesight.Settings.preferences;
+					if(document.getElementById("headerBarColorCheck").checked) {
+						document.getElementById("headerBarColorCode").disabled = false;
+						prefs.colors.headerBarColorCheck=true;
+						//document.getElementById("label_headerBarColorCode").style.color= "#" + prefs.colors.headerBarColorCode;
+						$('.ui-accordion-header').css('background-image','none');
+						var value = document.getElementById("headerBarColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
+						$('.ui-accordion-header, #label_headerBarColorCode, #label_headerBarTextColorCode').css('background-color','#'+value);
+					} else {
+						document.getElementById("headerBarColorCode").disabled = true;
+						prefs.colors.headerBarColorCheck=false;
+						$('.ui-accordion-header').css('background-image','');
+						//$('.ui-accordion-header').removeAttr('style');
+						$('.ui-accordion-header, #label_headerBarColorCode, #label_headerBarTextColorCode').css('background-color','');
+						/*if(document.getElementById("livefox_theme").checked){
+							$('.ui-accordion-header').removeAttr('style');
+						}else{
+							$('.ui-accordion-header').removeAttr('style');	
+						}*/
+						
+					}
+				},
+				headerBarColorSet: function() {
+					//alert("ciao!");
+					var prefs = htlivesight.Settings.preferences;
+					var value = document.getElementById("headerBarColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
+					prefs.colors.headerBarColorCode = value;
+					$('.ui-accordion-header').css('background-color','#'+value);
+				},
+				
+				headerBarTextColorCheck: function(){
+					//alert("ciao!");
+					var prefs = htlivesight.Settings.preferences;
+					if(document.getElementById("headerBarTextColorCheck").checked) {
+						document.getElementById("headerBarTextColorCode").disabled = false;
+						prefs.colors.headerBarTextColorCheck=true;
+						//document.getElementById("label_headerBarColorCode").style.color= "#" + prefs.colors.headerBarColorCode;
+						//$('.ui-accordion-header').css('background-image','none');
+						var value = document.getElementById("headerBarTextColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
+						$('.ui-accordion-header, .ui-accordion-header span, .ui-accordion-header a, #label_headerBarColorCode, #label_headerBarTextColorCode').css('color','#'+value);
+					} else {
+						document.getElementById("headerBarTextColorCode").disabled = true;
+						prefs.colors.headerBarTextColorCheck=false;
+						//$('.ui-accordion-header').css('background-image','images/ui-bg_highlight-hard_33_459e00_1x100.png');
+						//$('.ui-accordion-header, .ui-accordion-header span, .ui-accordion-header a').removeAttr('style');
+						$('.ui-accordion-header, .ui-accordion-header span, .ui-accordion-header a, #label_headerBarColorCode, #label_headerBarTextColorCode').css('color','');
+						/*if(document.getElementById("livefox_theme").checked){
+							$('.ui-accordion-header').removeAttr('style');
+						}else{
+							$('.ui-accordion-header').removeAttr('style');	
+						}*/
+						
+					}
+				},
+				headerBarTextColorSet: function() {
+					//alert("ciao!");
+					var prefs = htlivesight.Settings.preferences;
+					var value = document.getElementById("headerBarTextColorCode").value.replace(/(\W|[g-zG-Z]|_)/g, "");
+					prefs.colors.headerBarTextColorCode = value;
+					$('.ui-accordion-header, .ui-accordion-header span, .ui-accordion-header a').css('color','#'+value);
+				},
+
 		}
 };

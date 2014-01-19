@@ -314,10 +314,11 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 			match.home.lineUp= lineUp;
 		else
 			match.away.lineUp= lineUp;
-	}catch(e){}
+	}catch(e){alert(e);}
 };
 
 htlivesight.LineUp.SwapEvent= function(event, match){
+	var foundSubject = false, foundObject = false;
 	var subjectPlayer= new Object();
 	var objectPlayer= new Object();
 	subjectPlayer.id= event.subjectPlayerId;
@@ -341,19 +342,23 @@ htlivesight.LineUp.SwapEvent= function(event, match){
 	for (var index=0; index < lineUp.length; index++){
 		if (lineUp[index].id==subjectPlayer.id){
 			lineUp[index].name=objectPlayer.name;
-		}
+			lineUp[index].id=objectPlayer.id;
+		}else
 		if (lineUp[index].id==objectPlayer.id){
 			lineUp[index].name=subjectPlayer.name;
-		}
-	}
-	for (var index=0; index < lineUp.length; index++){
-		if (lineUp[index].name==subjectPlayer.name){
 			lineUp[index].id=subjectPlayer.id;
 		}
-		if (lineUp[index].name==objectPlayer.name){
-			lineUp[index].id=objectPlayer.id;
-		}
 	}
+
+	/*	for (var index=0; index < lineUp.length; index++){
+			if (lineUp[index].name==subjectPlayer.name){
+				lineUp[index].id=subjectPlayer.id;
+			}
+			if (lineUp[index].name==objectPlayer.name){
+				lineUp[index].id=objectPlayer.id;
+			}
+		}*/
+
 	var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
 		var side="home";

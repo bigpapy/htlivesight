@@ -36,7 +36,7 @@ htlivesight.Lang = {
 //			ABOUT
 			doc.getElementById("ui-dialog-title-about-dialog").innerHTML=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);	
 			doc.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
-			doc.getElementById("creationDate").innerHTML="30 "+htlivesight.Util.Parse("MonthDecember",htlivesight.data[0])+" 2013";
+			doc.getElementById("creationDate").innerHTML="20 "+htlivesight.Util.Parse("MonthJanuary",htlivesight.data[0])+" 2014";
 			doc.getElementById("createdBy").innerHTML=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
 			doc.getElementById("testers").innerHTML=htlivesight.Util.Parse("Testers",htlivesight.data[0]);
 			doc.getElementById("BasedOn").innerHTML=htlivesight.Util.Parse("BasedOn",htlivesight.data[0]);
@@ -221,6 +221,11 @@ htlivesight.Lang = {
 			doc.getElementById("label_foeHomeTextColorCode").innerHTML=htlivesight.Util.Parse("FoeHome",htlivesight.data[0]);
 			doc.getElementById("label_foeAwayTextColorCode").innerHTML=htlivesight.Util.Parse("FoeAway",htlivesight.data[0]);
 			doc.getElementById("label_neutralTextColorCode").innerHTML=htlivesight.Util.Parse("Neutral",htlivesight.data[0]);
+			
+			doc.getElementById("label_headerBarColorCode").innerHTML=htlivesight.Util.Parse("HeaderBarColor",htlivesight.data[0]);
+			doc.getElementById("HeaderBarColor").innerHTML=htlivesight.Util.Parse("HeaderBarColor",htlivesight.data[0]);
+			doc.getElementById("label_headerBarTextColorCode").innerHTML=htlivesight.Util.Parse("HeaderBarTextColor",htlivesight.data[0]);
+			//doc.getElementById("HeaderBarTextColor").innerHTML=htlivesight.Util.Parse("HeaderBarTextColor",htlivesight.data[0]);
 						
 			//doc.getElementById("label_textColorCode").innerHTML=htlivesight.Util.Parse("EventTextColor",htlivesight.data[0]);
 			doc.getElementById("label_seTextColorCode").innerHTML=htlivesight.Util.Parse("SETextColor",htlivesight.data[0]);

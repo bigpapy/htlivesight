@@ -412,4 +412,6 @@
 <License>라이센스</License>
 <Tech>기술</Tech>
 <Supporter>프로젝트 지원</Supporter>
+<HeaderBarColor>머리글 표시줄 색상</HeaderBarColor>
+<HeaderBarTextColor>머리글 표시줄 글자색</HeaderBarTextColor>
 </Htlivesight>
