@@ -383,7 +383,7 @@
 <Agreeability>Agreeability</Agreeability>
 <Aggressiveness>Aggressiveness</Aggressiveness>
 <Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
+<BelovedTeamMember>Beloved team member</BelovedTeamMember>
 <PopularGuy>Popular guy</PopularGuy>
 <SympatheticGuy>Sympathetic guy</SympatheticGuy>
 <PleasantGuy>Pleasant guy</PleasantGuy>
@@ -414,4 +414,5 @@
 <Supporter>Project support</Supporter>
 <HeaderBarColor>Header bar color</HeaderBarColor>
 <HeaderBarTextColor>Header bar text color</HeaderBarTextColor>
+<Volume>Volume</Volume>
 </Htlivesight>

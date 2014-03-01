@@ -412,6 +412,7 @@
 <License>Nossa licença</License>
 <Tech>Nossa tecnologia</Tech>
 <Supporter>Apoio ao projeto</Supporter>
-<HeaderBarColor>Header bar color</HeaderBarColor>
-<HeaderBarTextColor>Header bar text color</HeaderBarTextColor>
+<HeaderBarColor>Cor da barra do cabeçalho</HeaderBarColor>
+<HeaderBarTextColor>Cor do texto da barra de cabeçalho</HeaderBarTextColor>
+<Volume>Volume</Volume>
 </Htlivesight>

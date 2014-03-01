@@ -46,10 +46,10 @@
 <MessageAlreadyFriend>On juba sõber.</MessageAlreadyFriend>
 <MessageErrorReading>Viga andmete lugemisel</MessageErrorReading>
 <MessageLoginNotSuccessful>Sisse logimine ebaõnnestus.</MessageLoginNotSuccessful>
-<TacticPressing>surumine</TacticPressing>
-<TacticCA>vasturünnakud</TacticCA>
-<TacticAIM>ründa keskelt</TacticAIM>
-<TacticAOW>ründa äärtelt</TacticAOW>
+<TacticPressing>Surumine</TacticPressing>
+<TacticCA>Vasturünnakud</TacticCA>
+<TacticAIM>Ründa keskelt</TacticAIM>
+<TacticAOW>Ründa äärtelt</TacticAOW>
 <TacticPlayCreative>mängi loovalt</TacticPlayCreative>
 <TacticLongShots>pikad söödud</TacticLongShots>
 <TimeFirstHalf>1. poolaeg</TimeFirstHalf>
@@ -414,4 +414,5 @@
 <Supporter>Projekti tugi</Supporter>
 <HeaderBarColor>Päise taustavärv</HeaderBarColor>
 <HeaderBarTextColor>Päise teksti värv</HeaderBarTextColor>
+<Volume>Volume</Volume>
 </Htlivesight>
