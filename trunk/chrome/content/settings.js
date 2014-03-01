@@ -267,7 +267,23 @@ htlivesight.Settings = {
 			//	$('.ui-accordion-header').css('background-image','none');
 			//	$('.ui-accordion-header').css('background-color','#'+prefs.colors.headerBarColorCode);
 			//} 
-			
+		  
+		  $( "#volume_slider" ).slider({
+	      orientation: "horizontal",
+	      range: "min",
+	      min: 0,
+	      max: 100,
+	      value: isNaN(parseInt(prefs.general.volume))?"100":prefs.general.volume,
+	     // slide: function( event, ui ) {
+	     //   $( "#volume_value" ).val( ui.value );
+	     // },
+		  	stop: function( event, ui ) {
+		  		htlivesight.Preferences.start();
+		  		htlivesightPrefs.setInt("general.volume", ui.value);
+		  		htlivesight.Settings.click.soundPlay('whistleSoundPath');
+		  	}
+	    });
+	    //$( "#volume_value" ).val( $( "#volume_slider" ).slider( "value" ) );
 		},
 		save: function() {
 			htlivesight.Log.properties(this.preferences.notification);

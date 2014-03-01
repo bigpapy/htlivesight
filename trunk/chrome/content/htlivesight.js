@@ -150,6 +150,20 @@ var htlivesight = {
 			if(htlivesight.platform == "Android"){
 				$('#android-warning').show();
 			}
+			
+		  $( "#volume_slider" ).slider({
+	      orientation: "horizontal",
+	      range: "min",
+	      min: 0,
+	      max: 100,
+	      value: isNaN(parseInt(htlivesight.prefs.general.volume))?"100":htlivesight.prefs.general.volume,
+	     	stop: function( event, ui ) {
+		  		htlivesightPrefs.setInt("general.volume", ui.value);
+		  		//htlivesight.Settings.click.soundPlay(htlivesight.Sound.samplePath+'whistle.ogg');
+		  		htlivesight.Sound.play(htlivesight.Sound.samplePath+'whistle.ogg', document);
+		  	}
+	    });
+			
 		},
 		getRecommendedServer: function() {
 			htlivesight.HTTP.getRecommendedServer();

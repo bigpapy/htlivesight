@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
+<MenuStart>Aloita</MenuStart>
 <MenuOptions>Valinnat</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<TooltipButton>Klikkaa avataksesi HTLivesight valikko</TooltipButton>
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Palvelin:</MenuServer>
 <MenuDisconnected>ei yhteyttä</MenuDisconnected>
-<MenuAbout>Tiedot HTLiveSight</MenuAbout>
+<MenuAbout>Tietoja HTLiveSight</MenuAbout>
 <LoginLabel>Kirjaudu</LoginLabel>
-<LoginTeamId>Insert TeamId of your team</LoginTeamId>
-<LoginUsername>Käyttäjänimi</LoginUsername>
+<LoginTeamId>Lisää joukkueesi TeamId "JoukkueId"</LoginTeamId>
+<LoginUsername>Käyttäjätunnus</LoginUsername>
 <LoginRememberMe>Muista minut</LoginRememberMe>
 <LoginButton>Kirjaudu</LoginButton>
 <LoginReLive>Re-Live</LoginReLive>
@@ -156,10 +156,10 @@
 <TabNotifications>Ilmoitukset</TabNotifications>
 <TabLanguage>Kieli</TabLanguage>
 <TabOther>Muu</TabOther>
-<TabCustom>Customizations</TabCustom>
-<TabGoalSound>Goals sounds</TabGoalSound>
-<TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
-<TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
+<TabCustom>Räätälöinnit</TabCustom>
+<TabGoalSound>Maaliäänet</TabGoalSound>
+<TabWheatherSound>Säätapahtumat ja loukkaantumisäänet</TabWheatherSound>
+<TabWhistleSound>Tuomarin vihellykset ja HT:n äänet</TabWhistleSound>
 <GeneralOpen>Avaa HTLiveSight</GeneralOpen>
 <GeneralNewTab>Uudessa välilehdessä</GeneralNewTab>
 <GeneralNewWindow>Uudessa ikkunassa</GeneralNewWindow>
@@ -171,15 +171,15 @@
 <MatchesHours>tunnin sisällä.</MatchesHours>
 <MatchesFriends>Ystävät</MatchesFriends>
 <MatchesGetFriends>Hae ystävien ottelut</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Tunniste</MatchesHeader>
 <MatchesScorers>Maalintekijät</MatchesScorers>
 <ScorersList>Listaa maalintekijät yläpalkissa</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>Varoitettu</MatchesBooked>
+<BookedList>Näytä varoitetut tunnisteessa</BookedList>
+<MatchesSentOff>Ulosajo</MatchesSentOff>
+<SentOffList>Näytä ulosajo tunnisteessa</SentOffList>
+<MatchesInjured>Loukkaantunut</MatchesInjured>
+<InjuredList>Näytä loukkaantunut tunnisteessa</InjuredList>
 <MatchesWindow>Ikkuna</MatchesWindow>
 <MatchesLines>Rivejä pienennetyssä muodossa</MatchesLines>
 <NotifyNotify>Ilmoitukset</NotifyNotify>
@@ -189,44 +189,44 @@
 <NotifyStatus>Liukuva alapalkki</NotifyStatus>
 <OtherAuthorization>Valtuutuskoodi</OtherAuthorization>
 <OtherReset>Poista valtuutus</OtherReset>
-<OtherResetButton>Reset</OtherResetButton>
+<OtherResetButton>Palauta</OtherResetButton>
 <OtherReverse>Ottelutapahtumien näyttö alhaalta ylös</OtherReverse>
 <OtherReverseNote>Päivitä sivu muutosten päivittämiseksi.</OtherReverseNote>
 <OtherEvents>Tapahtumien järjestys</OtherEvents>
 <OtherEventKey>Tapahtuma-avain</OtherEventKey>
 <OtherEventKeyNote>Näytä tapahtuma-avain kommenteissa</OtherEventKeyNote>
-<CustomIcons>Icons</CustomIcons>
-<CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
-<CustomSounds>Sounds</CustomSounds>
-<CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
-<CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
-<CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
-<CustomSoundsGoal>Original Livefox sounds</CustomSoundsGoal>
-<CustomSoundsNoOpGoal>No sounds for opponent's goals</CustomSoundsNoOpGoal>
-<PathSoundsMyGoal>Sound for own goal</PathSoundsMyGoal>
-<PathSoundsOpGoal>Sound for goal of my opponent</PathSoundsOpGoal>
-<PathSoundsFrGoal>Sound for goal of friend's</PathSoundsFrGoal>
-<PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
-<PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
-<PathSoundsMiss>Missed goal sound</PathSoundsMiss>
-<PathSoundsSun>Sound for sunny weather</PathSoundsSun>
-<PathSoundsRain>Sound for rainy weather</PathSoundsRain>
-<PathSoundsOvercast>Sound for overcast weather</PathSoundsOvercast>
-<PathSoundsFewClouds>Sound for few clouds weather</PathSoundsFewClouds>
-<PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
-<PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
-<PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
-<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
+<CustomIcons>Kuvakkeet</CustomIcons>
+<CustomIconsOld>Alkuperäiset Livefox -kuvakkeet otteluikkunassa</CustomIconsOld>
+<CustomSounds>Äänet</CustomSounds>
+<CustomSoundsWeather>Sää-äänet ottelun alussa</CustomSoundsWeather>
+<CustomSoundsTime>Äänet puoliajan alussa/lopussa</CustomSoundsTime>
+<CustomSoundsSEW>Äänet sääerikoistapahtumille</CustomSoundsSEW>
+<CustomSoundsGoal>Alkuperäiset Livefox -äänet</CustomSoundsGoal>
+<CustomSoundsNoOpGoal>Ei ääniä vastustajan maaleille</CustomSoundsNoOpGoal>
+<PathSoundsMyGoal>Ääni omille maaleille</PathSoundsMyGoal>
+<PathSoundsOpGoal>Ääni vastustajan maaleille</PathSoundsOpGoal>
+<PathSoundsFrGoal>Ääni ystävän maaleille</PathSoundsFrGoal>
+<PathSoundsOpFrGoal>Ääni ystävän vastustajan maaleille</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Ääni muun joukkueen maaleille</PathSoundsOtGoal>
+<PathSoundsMiss>Ääni hukatulle maalipaikalle</PathSoundsMiss>
+<PathSoundsSun>Ääni aurinkoiselle säälle</PathSoundsSun>
+<PathSoundsRain>Ääni sateiselle säälle</PathSoundsRain>
+<PathSoundsOvercast>Ääni pilviselle säälle</PathSoundsOvercast>
+<PathSoundsFewClouds>Ääni poutasäälle</PathSoundsFewClouds>
+<PathSoundsMyBoo>Ääni oman joukkueen loukkaantumiselle</PathSoundsMyBoo>
+<PathSoundsOpBoo>Ääni vastustajan loukkaantumiselle</PathSoundsOpBoo>
+<PathSoundsWhistleStart>1. / 2. puoliajan alun vihellys</PathSoundsWhistleStart>
+<PathSoundsWhistle>Ääni keltaiselle kortille</PathSoundsWhistle>
+<PathSoundsHattrick>Hattrick ääni</PathSoundsHattrick>
+<PathSoundsRestore>Palauta</PathSoundsRestore>
+<PathSoundsPlay>Soita</PathSoundsPlay>
 <LanguageSelect>Valitse kieli</LanguageSelect>
 <LanguageNote>Huom: Käynnistä Firefox uudelleen.</LanguageNote>
 <ButtonCancel>Peruuta</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
 <WindowAboutTitle>HTLiveSight tiedot</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
+<TabTranslators>Kääntäjät</TabTranslators>
 <TabCredits>Credits</TabCredits>
 <MonthJanuary>Tammi</MonthJanuary>
 <MonthFebruary>Helmi</MonthFebruary>
@@ -245,173 +245,174 @@
 <TextHelpOf>apuna</TextHelpOf>
 <TextThanksTo>Suuret kiitokset:</TextThanksTo>
 <ButtonClose>Sulje</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
-<Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
-<Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
-<Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
+<NonExistent>Olematon</NonExistent>
+<Disastrous>Surkea</Disastrous>
+<Wretched>Kurja</Wretched>
+<Poor>Kehno</Poor>
+<Weak>Heikko</Weak>
+<Inadequate>Välttävä</Inadequate>
+<Passable>Kelvollinen</Passable>
+<Solid>Hyvä</Solid>
+<Excellent>Erinomainen</Excellent>
+<Formidable>Mahtava</Formidable>
+<Outstanding>Loistava</Outstanding>
+<Brilliant>Häikäisevä</Brilliant>
+<Magnificent>Armoitettu</Magnificent>
+<WorldClass>Unohtumaton</WorldClass>
+<Supernatural>Yliluonnollinen</Supernatural>
+<Titanic>Titaaninen</Titanic>
+<ExtraTerrestrial>Uskomaton</ExtraTerrestrial>
+<Mythical>Myyttinen</Mythical>
+<Magical>Maaginen</Magical>
+<Utopian>Utopinen</Utopian>
+<Divine>Jumalainen</Divine>
+<VeryHigh>erittäin korkea</VeryHigh>
+<High>korkea</High>
+<Low>matala</Low>
+<VeryLow>erittäin matala</VeryLow>
+<RightDefence>Oikea puolustus</RightDefence>
+<MiddleDefence>Keskuspuolustus</MiddleDefence>
+<LeftDefence>Vasen puolustus</LeftDefence>
+<Midfield>Keskikenttä</Midfield>
+<RightAttack>Oikea hyökkäys</RightAttack>
+<MiddleAttack>Keskushyökkäys</MiddleAttack>
+<LeftAttack>Vasen hyökkäys</LeftAttack>
+<IndirectSetPiecesDefence>Epäsuora vapaapotku puolustus</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Epäsuora vapaapotku hyökkäys</IndirectSetPiecesAttack>
+<TeamAttitude>Joukkueen asenne</TeamAttitude>
+<TacticType>Taktiikkatyyppi</TacticType>
+<TacticSkill>Taktiikkataito</TacticSkill>
+<BallPosses>Hallinta</BallPosses>
+<SpecialEvent>Erikoistilanne</SpecialEvent>
+<Normal>Normaali</Normal>
+<PIC>Rento peli</PIC>
+<MOTS>MOTS</MOTS>
+<ColorPicker>Voit valita värisi </ColorPicker>
+<EventBackground>Tapahtuman taustaväri</EventBackground>
+<FriendHome>Koti (oma ja ystävät) väri: #</FriendHome>
+<FriendAway>Vieras (oma ja ystävät) väri: #</FriendAway>
+<FoeHome>Koti (muu) väri: #</FoeHome>
+<FoeAway>Vieras (muu) väri: #</FoeAway>
+<Neutral>Neutraali väri: #</Neutral>
+<EventColorTitle>Tapahtuman tekstiväri</EventColorTitle>
+<EventTextColor>Tapahtuman tekstiväri: #</EventTextColor>
+<SETextColor>Tapahtumatyypin tekstiväri: #</SETextColor>
+<Colors>Värit</Colors>
+<SchemaTip>Klikkaa nähdäksesi kokoonpano</SchemaTip>
+<StatisticTip>Klikkaa nähdäksesi Tilastot ottelun lopussa</StatisticTip>
+<Youth>Juniori</Youth>
+<Senior>Aikuis</Senior>
+<Tournament>Turnaus</Tournament>
+<FreeKicks>Vapaapotkut</FreeKicks>
+<RedCards>Punaiset kortit</RedCards>
+<YellowCards>Keltaiset kortit</YellowCards>
+<Injuries>Loukkaantumiset</Injuries>
+<Goals>Maalit</Goals>
+<Total>Yhteensä</Total>
+<Terraces>Seisomapaikat</Terraces>
+<Basic>Istumapaikat</Basic>
+<Roof>Katetut istumapaikat</Roof>
+<VIP>VIP-istuimet</VIP>
+<CrowdinHelp>Auta kääntämistä! Crowdin on todella helppo ja erittäin hauska! Klikkaa tästä!</CrowdinHelp>
+<Error401>Virhe 401: luvaton käyttö. Sinun täytyy saada valtuutus uudelleen. Jatka valitsemalla ok.</Error401>
+<Error404>Virhe 404: Pyydettyä resurssia ei löytynyt. Jos tämä virhesanoma tulee uudelleen, tarkasta onko chpp -palvelu alhaalla.</Error404>
+<Error0>Virhe 0: ei kytketty Internetiin.</Error0>
+<Error500>Virhe 500: Sisäinen palvelinvirhe (Hattrick)</Error500>
+<Error503>Virhe 503: CHPP -palvelu ei ole käytettävissä (tilapäinen ylikuormitus tai huolto)</Error503>
+<PathSoundsNote1>Lisää "file:///" ennen äänipolkua ".ogg" -muodossa</PathSoundsNote1>
+<PathSoundsNote2>Esimerkki: file:///c:polku o hesound.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>1. puoliajan päätöksen vihellys</PathSoundsWhistle2>
+<PathSoundsWhistle3>Ottelun lopun vihellys</PathSoundsWhistle3>
+<EventYellow2>Toinen keltainen kortti</EventYellow2>
+<LoggedIn>Kirjautunut käyttäjä</LoggedIn>
+<latestNews>Tarkista uusimmat uutiset</latestNews>
 <HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
-<ReLiveControls>Relive Controls</ReLiveControls>
-<ExtendImage>Extend image</ExtendImage>
-<RepeatImage>Repeat image</RepeatImage>
-<Background>Background</Background>
-<MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
-<TabWhistleCard>Whistles and Cards</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
-<Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
-<PopularGuy>Popular guy</PopularGuy>
-<SympatheticGuy>Sympathetic guy</SympatheticGuy>
-<PleasantGuy>Pleasant guy</PleasantGuy>
-<ControversialPerson>Controversial Person</ControversialPerson>
-<NastyFellow>Nasty fellow</NastyFellow>
-<Saintly>Saintly</Saintly>
-<Righteous>Righteous</Righteous>
-<Upright>Upright</Upright>
-<Honest>Honest</Honest>
-<Dishonest>Dishonest</Dishonest>
-<Infamous>Infamous</Infamous>
-<Unstable>Unstable</Unstable>
-<Fiery>Fiery</Fiery>
-<Temperamental>Temperamental</Temperamental>
-<Balanced>Balanced</Balanced>
-<Calm>Calm</Calm>
-<Tranquil>Tranquil</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
-<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
-<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
-<Warning>Warning</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
-<HeaderBarColor>Header bar color</HeaderBarColor>
-<HeaderBarTextColor>Header bar text color</HeaderBarTextColor>
+<ProjectWebsite>Sivustoprojekti</ProjectWebsite>
+<GooglePlusPage>Google +-sivu</GooglePlusPage>
+<TwitterPage>Twitter sivu</TwitterPage>
+<FacebookPage>Facebook-sivu</FacebookPage>
+<chatLink>Avaa chat</chatLink>
+<hidesidebar>Piilota sivupalkki</hidesidebar>
+<addFriend>Lisää joukkue ystäväksi klikkaamalla</addFriend>
+<TooltipCopyLineUp>Klikkaa kopioidaksesi kokoonpano leikepöydälle</TooltipCopyLineUp>
+<Dark>Tumma</Dark>
+<Light>Vaalea</Light>
+<Themes>Teemat</Themes>
+<NoTournament>Älä lataa ystävien yksittäisiä- ja turnausotteluita</NoTournament>
+<DefHatStats>HatStats Puolustus</DefHatStats>
+<MidHatStats>HatStats Keskikenttä</MidHatStats>
+<AttHatStats>HatStats Hyökkäys</AttHatStats>
+<TotHatStats>HatStats Yhteensä</TotHatStats>
+<CopiedToClipboard>Kopioitu leikepöydälle!</CopiedToClipboard>
+<ReLiveControls>Re-Live valinnat</ReLiveControls>
+<ExtendImage>Laajenna kuva</ExtendImage>
+<RepeatImage>Toista kuva</RepeatImage>
+<Background>Tausta</Background>
+<MuteAll>Äänikytkin</MuteAll>
+<Technical>Tekninen</Technical>
+<Quick>Nopea</Quick>
+<Powerful>Voimakas</Powerful>
+<Unpredictable>Arvaamaton</Unpredictable>
+<Header>Pääpeli</Header>
+<Regainer>Toipuja</Regainer>
+<SecondTeamIdLabel>Lisää kakkosjoukkueen ID</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Kakkosjoukkueen äänet samat kuin ykkösjoukkueen</SecondSoundEqualFirst>
+<Keeper>Maalivahti</Keeper>
+<Defending>Puolustus</Defending>
+<Playmaking>Pelinrakennus</Playmaking>
+<Winger>Laituri</Winger>
+<Passing>Syöttäminen</Passing>
+<Scoring>Maalinteko</Scoring>
+<SetPieces>Erikoistilanteet</SetPieces>
+<Age>Ikä</Age>
+<Form>Kunto</Form>
+<Stamina>Kestävyys</Stamina>
+<Experience>Kokemus</Experience>
+<Loyalty>Uskollisuus</Loyalty>
+<PathSoundsPressing>Painostus -ääni</PathSoundsPressing>
+<PathSoundsMyBruised>Oma pelaaja kolhiintuu</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Muun joukkueen pelaaja kolhiintuu</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Oma pelaaja ulosajo</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Muu pelaaja ulosajo</PathSoundsOtherSentOff>
+<TabInjuries>Loukkaantumiset</TabInjuries>
+<TabWeather>Sää</TabWeather>
+<TabWhistleCard>Vihellykset ja kortit</TabWhistleCard>
+<PathSoundsMissFriend>Ystäväjoukkueen hukattu maalipaikka</PathSoundsMissFriend>
+<PathSoundsMissOther>Muun joukkueen hukattu maalipaikka</PathSoundsMissOther>
+<TabChances>Mahdollisuudet</TabChances>
+<Agreeability>Yhteistyökykyisyys</Agreeability>
+<Aggressiveness>Aggressiivisuus</Aggressiveness>
+<Honesty>Rehellisyys</Honesty>
+<BelovedTeamMember>Rakastettu joukkueen jäsen </BelovedTeamMember>
+<PopularGuy>Suosittu kaveri</PopularGuy>
+<SympatheticGuy>Sympaattinen kaveri</SympatheticGuy>
+<PleasantGuy>Miellyttävä heppu</PleasantGuy>
+<ControversialPerson>Kiistelty henkilö</ControversialPerson>
+<NastyFellow>Ilkeä tyyppi</NastyFellow>
+<Saintly>Pyhimys</Saintly>
+<Righteous>Oikeudentuntoinen</Righteous>
+<Upright>Suoraselkäinen</Upright>
+<Honest>Rehellinen</Honest>
+<Dishonest>Epärehellinen</Dishonest>
+<Infamous>Täysin arvaamaton</Infamous>
+<Unstable>Epävakaa</Unstable>
+<Fiery>Tulisieluinen</Fiery>
+<Temperamental>Temperamenttinen</Temperamental>
+<Balanced>Tasapainoinen</Balanced>
+<Calm>Levollinen</Calm>
+<Tranquil>Seesteinen</Tranquil>
+<VisitOurSoundCollection>Vieraile äänikokoelmassa</VisitOurSoundCollection>
+<SafariWarning>Jos HTLivesight paneeli ei ole valittu, estetään ilmoitusäänet. Avaa uusi ikkuna, jos haluat selata internetiä ottelun aikana</SafariWarning>
+<OnlyHTTPFiles>Vain http URL toimii</OnlyHTTPFiles>
+<Warning>Varoitus</Warning>
+<Testers>Testaajat</Testers>
+<BasedOn>Perustuu</BasedOn>
+<AndroidWarning>Jos HTLiveSight välilehti ei ole valittuna, ilmoitukset on estetty. Ne näkyvät ensimmäisessä päivityksessä, kun olet takaisin välilehdellä</AndroidWarning>
+<SafariClipboardTitle>paina "ctrl/cmd + c" kopioidaksesi valitun tekstin</SafariClipboardTitle>
+<License>Lisenssimme</License>
+<Tech>Teknologiamme</Tech>
+<Supporter>Projektin tuki</Supporter>
+<HeaderBarColor>Viitteen palkin väri</HeaderBarColor>
+<HeaderBarTextColor>Viitteen palkin tekstin väri</HeaderBarTextColor>
+<Volume>Ääni</Volume>
 </Htlivesight>

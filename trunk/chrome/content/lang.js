@@ -36,7 +36,7 @@ htlivesight.Lang = {
 //			ABOUT
 			doc.getElementById("ui-dialog-title-about-dialog").innerHTML=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);	
 			doc.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
-			doc.getElementById("creationDate").innerHTML="20 "+htlivesight.Util.Parse("MonthJanuary",htlivesight.data[0])+" 2014";
+			doc.getElementById("creationDate").innerHTML="06 "+htlivesight.Util.Parse("MonthFebruary",htlivesight.data[0])+" 2014";
 			doc.getElementById("createdBy").innerHTML=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
 			doc.getElementById("testers").innerHTML=htlivesight.Util.Parse("Testers",htlivesight.data[0]);
 			doc.getElementById("BasedOn").innerHTML=htlivesight.Util.Parse("BasedOn",htlivesight.data[0]);
@@ -175,6 +175,7 @@ htlivesight.Lang = {
 			}
 //			TOPBAR
 			doc.getElementById("ReLiveControls").innerHTML=htlivesight.Util.Parse("ReLiveControls",htlivesight.data[0]);
+			doc.getElementById("volume_slider").title=htlivesight.Util.Parse("Volume",htlivesight.data[0]);
 //			SIDEBAR
 			doc.getElementById("LeagueMatches").innerHTML=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);
 			doc.getElementById("LeagueLiveTable").innerHTML=htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0]);

@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("headerBarColorCode").addEventListener('change',function(){htlivesight.Settings.click.headerBarColorSet();});
 	
 	document.getElementById("headerBarTextColorCheck").addEventListener('click',function(){htlivesight.Settings.click.headerBarTextColorCheck();});
-	document.getElementById("headerBarTextColorCode").addEventListener('change',function(){htlivesight.Settings.click.headerBarTextColorSet();});
+	document.getElementById("headerBarTextColorCode").addEventListener('change',function(){htlivesight.Settings.click.headerBarTextColorSet();});	
 	/* ok cancel buttons*/
 	try{ // because this two buttons are present in settings.html but not in htlivesight.html
 		document.getElementById("ok-option").addEventListener('click',function(){htlivesight.Settings.click.btnOk();});

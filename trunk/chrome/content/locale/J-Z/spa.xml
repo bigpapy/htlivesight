@@ -39,7 +39,7 @@
 <ServerON>Conectado</ServerON>
 <ServerOFF>Desconectado</ServerOFF>
 <ResetToken>La autorización ha sido revocada. Reinicia HTLS o espera la próxima actualización (menos de 1 minuto).</ResetToken>
-<NoHTServer>No has seleccionado en que servidor de Hattrick estas conectado con tu navegador. Da clic derecho en el fondo - Opciones - General - Escribe el número del servidor.</NoHTServer>
+<NoHTServer>No has seleccionado en que servidor de Hattrick estas conectado con tu navegador. Haz clic derecho en el fondo - Opciones - General - Escribe el número del servidor.</NoHTServer>
 <MatchesMaximum>¡No se pueden ver más de 20 partidos!</MatchesMaximum>
 <LeagueRound>Jornada</LeagueRound>
 <MessageHattrickError>El servidor de Hattrick devuelve un error.</MessageHattrickError>
@@ -358,11 +358,11 @@
 <SecondTeamIdLabel>Insertar una segunda ID de equipo</SecondTeamIdLabel>
 <SecondSoundEqualFirst>Segundo equipo suena igual a los primeros</SecondSoundEqualFirst>
 <Keeper>Portero</Keeper>
-<Defending>Defendiendo</Defending>
+<Defending>Defensa</Defending>
 <Playmaking>Jugadas</Playmaking>
 <Winger>Lateral</Winger>
-<Passing>Pase</Passing>
-<Scoring>Puntuación</Scoring>
+<Passing>Pases</Passing>
+<Scoring>Anotación</Scoring>
 <SetPieces>Balón parado</SetPieces>
 <Age>Edad</Age>
 <Form>Forma</Form>
@@ -414,4 +414,5 @@
 <Supporter>Apoyo al proyecto</Supporter>
 <HeaderBarColor>Color de la barra de encabezado</HeaderBarColor>
 <HeaderBarTextColor>Color del texto de la barra de encabezado</HeaderBarTextColor>
+<Volume>Volumen</Volume>
 </Htlivesight>
