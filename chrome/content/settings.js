@@ -267,7 +267,7 @@ htlivesight.Settings = {
 			//	$('.ui-accordion-header').css('background-image','none');
 			//	$('.ui-accordion-header').css('background-color','#'+prefs.colors.headerBarColorCode);
 			//} 
-		  
+		  /*
 		  $( "#volume_slider" ).slider({
 	      orientation: "horizontal",
 	      range: "min",
@@ -282,7 +282,7 @@ htlivesight.Settings = {
 		  		htlivesightPrefs.setInt("general.volume", ui.value);
 		  		htlivesight.Settings.click.soundPlay('whistleSoundPath');
 		  	}
-	    });
+	    });*/
 	    //$( "#volume_value" ).val( $( "#volume_slider" ).slider( "value" ) );
 		},
 		save: function() {
