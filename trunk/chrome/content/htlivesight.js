@@ -124,6 +124,12 @@ var htlivesight = {
 				document.body.style.backgroundRepeat="repeat";
 		//		document.body.style.backgroundImage="url('"+htlivesight.prefs.general.customBackgroundPath + "')";
 			}
+			htlivesight.setvolume(htlivesight.prefs.general.volume);
+			//if(htlivesight.prefs.general.volume==0)	$("#muteAllImg").attr('src', "./img/sound_off.gif");
+  		//if(htlivesight.prefs.general.volume!=0 && htlivesight.prefs.general.volume<=33)	$("#muteAllImg").attr('src', "./img/sound_on.gif");
+  		//if(htlivesight.prefs.general.volume>33 && htlivesight.prefs.general.volume<=66)	$("#muteAllImg").attr('src', "./img/sound_on_1.gif");
+  		//if(htlivesight.prefs.general.volume>66)	$("#muteAllImg").attr('src', "./img/sound_on_2.gif");
+			
 			if(!htlivesight.prefs.notification.sound){
 			document.getElementById("muteAllImg").src="./img/sound_off.gif";}
 			
@@ -150,17 +156,43 @@ var htlivesight = {
 			if(htlivesight.platform == "Android"){
 				$('#android-warning').show();
 			}
-			
+			var volume_tooltip = $('.volume_tooltip');
+			volume_tooltip.hide();
 		  $( "#volume_slider" ).slider({
 	      orientation: "horizontal",
 	      range: "min",
 	      min: 0,
 	      max: 100,
 	      value: isNaN(parseInt(htlivesight.prefs.general.volume))?"100":htlivesight.prefs.general.volume,
+	      slide: function(event, ui){
+	      	htlivesight.setvolume(ui.value);
+	      	//var value = slider.slider('value');  
+	      	volume_tooltip.css('left', ui.value).text(ui.value);  
+	      	//if(ui.value==0)	$("#muteAllImg").attr('src', "./img/sound_off.gif");
+		  		//if(ui.value!=0 && ui.value<=33)	$("#muteAllImg").attr('src', "./img/sound_on.gif");
+		  		//if(ui.value>33 && ui.value<=66)	$("#muteAllImg").attr('src', "./img/sound_on_1.gif");
+		  		//if(ui.value>66)	$("#muteAllImg").attr('src', "./img/sound_on_2.gif");
+	      },
+	      start: function(event, ui){
+	      	volume_tooltip.fadeIn('fast');
+	      },
 	     	stop: function( event, ui ) {
+	     		volume_tooltip.fadeOut('fast'); 
 		  		htlivesightPrefs.setInt("general.volume", ui.value);
+		  		//if(ui.value==0)	$("#muteAllImg").attr('src', "./img/sound_off.gif");
+		  		//if(ui.value!=0 && ui.value<=33)	$("#muteAllImg").attr('src', "./img/sound_on.gif");
+		  		//if(ui.value>33 && ui.value<=66)	$("#muteAllImg").attr('src', "./img/sound_on_1.gif");
+		  		//if(ui.value>66)	$("#muteAllImg").attr('src', "./img/sound_on_2.gif");
+		  		//if((!document.getElementById("chkSound").checked && ui.value!=0)||(document.getElementById("chkSound").checked && ui.value==0)){
+		  		//	htlivesight.Click.MuteAll();
+		  		//}
 		  		//htlivesight.Settings.click.soundPlay(htlivesight.Sound.samplePath+'whistle.ogg');
-		  		htlivesight.Sound.play(htlivesight.Sound.samplePath+'whistle.ogg', document);
+		  		if(htlivesight.platform == "Safari"){
+		  			htlivesight.Sound.play("http://htlivesight.googlecode.com/svn/trunk/chrome/content/sound/whistle.mp3", document);
+		  		}else{
+		  			htlivesight.Sound.play(htlivesight.Sound.samplePath+'whistle.ogg', document);
+		  		}
+		  		
 		  	}
 	    });
 			
@@ -341,6 +373,12 @@ var htlivesight = {
 		},  
 		chatdelay: function() {
 			document.getElementById("chat-dialog").innerHTML = '<iframe src="http://webchat.quakenet.org/?channels=htlivesight&uio=OT10cnVlJjExPTEyMwb9" width="647" height="400"></iframe>';
+		},
+		setvolume: function(volume){
+			if(volume==0)	$("#muteAllImg").attr('src', "./img/sound_off.gif");
+  		if(volume!=0 && volume<=33)	$("#muteAllImg").attr('src', "./img/sound_on_1.gif");
+  		if(volume>33 && volume<=66)	$("#muteAllImg").attr('src', "./img/sound_on_2.gif");
+  		if(volume>66 || volume == undefined)	$("#muteAllImg").attr('src', "./img/sound_on_3.gif");
 		},
 
 };

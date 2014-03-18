@@ -35,9 +35,11 @@ margin: 0 0 0 0;
 #htlivesight-body  #left_topbar {display:inline-block;float:left;margin-left:8px;margin-top:3px;} /*margin-top:8px*/
 #htlivesight-body  #right_topbar {display:inline-block;float:right;margin-right:8px;margin-top:3px; width:180}/*{display:inline-block;float:right;margin-top:8px}*/
 #htlivesight-body  #central_topbar {display:inline-block;margin-top:0px;margin-left:8px;}
-#htlivesight-body #teamName{float:left}
-#htlivesight-body #secondTeamName{float:left}
+#htlivesight-body #teamName {float:left}
+#htlivesight-body #secondTeamName {float:left}
 #htlivesight-body  #volume_slider {width:50px;float:left;margin-top:5px;margin-right:12px; margin-left:10px}
+#htlivesight-body  .volume_tooltip{float:left;margin-left: 6px;}
+#htlivesight-body  .ui-slider-handle{border-radius: 9px;}
 #htlivesight-body  .socialicon{width:24px;height:24px;vertical-align:middle;padding: 0 0 0 0;margin: 0 0 0 0;}
 #htlivesight-body  .relivebuttons{height:24px;vertical-align:middle;padding: 0 0 0 0;margin: 0px 0px 3px 0px;font-size: 13px}
 #htlivesight-body  #left_topbar, #htlivesight-body  #right_topbar, #htlivesight-body  #central_topbar a:link {text-decoration:none;}
@@ -68,7 +70,7 @@ margin: 0 0 0 0;
 
 #htlivesight-body  #thebox{display:block;margin-top:1px;}
 #htlivesight-body  #live_box {display:inline-block;margin-left:3px;margin-top:30px;border-radius:10px;float:left;/*width:74.5%;/*min-width:800px;min-width:600px;*/}
-#htlivesight-body  #sidebar {display:inline-block;margin-right:3px;margin-top:30px;overflow:auto;float:right;width:290px:/*width:24.5%;/*min-width:200pxmin-width:200px;max-width:300px;*/}
+#htlivesight-body  #sidebar {display:inline-block;margin-right:3px;margin-top:30px;overflow-y:hidden;;float:right;width:290px:/*width:24.5%;/*min-width:200pxmin-width:200px;max-width:300px;*/}
 #htlivesight-body  .fullscreen{width:99% !important;}
 /*.match_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;padding:0 0 0 0;border-spacing:0 0 0 0}*/
 #htlivesight-body  .match_row{}
@@ -116,9 +118,9 @@ margin: 0 0 0 0;
 /*.live_league_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;text-align:center;}
 .header_league_table{text-align:center;border-bottom: thin solid white;}*/
 
-#htlivesight-body  #winbox_leaguematches{/*min-height:140px;*/overflow:auto}
+#htlivesight-body  #winbox_leaguematches{/*min-height:140px;*/overflow-x:auto; overflow-y: hidden;}
 #htlivesight-body  #winboxcontent_leaguetable{/*min-height:150px;*/overflow:auto}
-#htlivesight-body  #winbox_leaguematchesBis{/*min-height:140px;*/overflow:auto}
+#htlivesight-body  #winbox_leaguematchesBis{/*min-height:140px;*/overflow-x:auto; overflow-y: hidden;}
 #htlivesight-body  #winboxcontent_leaguetableBis{/*min-height:150px;*/overflow:auto}
 #htlivesight-body  #winboxcontent_matchlist{/*min-height:30px;*/overflow:auto}
 #htlivesight-body  #winboxcontent_friends{/*min-height:110px;*/overflow:auto}
