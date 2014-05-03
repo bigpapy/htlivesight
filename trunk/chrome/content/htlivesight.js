@@ -187,10 +187,12 @@ var htlivesight = {
 		  		//	htlivesight.Click.MuteAll();
 		  		//}
 		  		//htlivesight.Settings.click.soundPlay(htlivesight.Sound.samplePath+'whistle.ogg');
-		  		if(htlivesight.platform == "Safari"){
-		  			htlivesight.Sound.play("http://htlivesight.googlecode.com/svn/trunk/chrome/content/sound/whistle.mp3", document);
-		  		}else{
-		  			htlivesight.Sound.play(htlivesight.Sound.samplePath+'whistle.ogg', document);
+		  		if(htlivesightPrefs.getBool("personalization.settingVolumeSound")){
+		  			if(htlivesight.platform == "Safari"){
+		  				htlivesight.Sound.play("http://sourceforge.net/projects/htlivesight/files/Sounds/default/mp3/whistle.mp3", document);
+		  			}else{
+		  				htlivesight.Sound.play(htlivesight.Sound.samplePath+'whistle.ogg', document);
+		  			}
 		  		}
 		  		
 		  	}

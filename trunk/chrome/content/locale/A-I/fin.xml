@@ -415,4 +415,13 @@
 <HeaderBarColor>Viitteen palkin väri</HeaderBarColor>
 <HeaderBarTextColor>Viitteen palkin tekstin väri</HeaderBarTextColor>
 <Volume>Ääni</Volume>
+<PlayVolumeSetting>Soita ääni asetuksen säädön jälkeen</PlayVolumeSetting>
+<Import>Tuo</Import>
+<Export>Vie</Export>
+<ExportOauth>Vie Oauth</ExportOauth>
+<ExportBackground>Vie tausta</ExportBackground>
+<ExportSounds>Vie äänet</ExportSounds>
+<ImportOk>Asetukset ladattu onnistuneesti!</ImportOk>
+<PrefsRestart>Jotkin asetukset vaativat uudelleenkäynnistyksen!</PrefsRestart>
+<ClickToSave>Klikkaa OK asetukset ikkunassa tallentaaksesi ne.</ClickToSave>
 </Htlivesight>

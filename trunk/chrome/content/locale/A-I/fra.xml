@@ -105,7 +105,7 @@
 <EventSpecialIndirect>Coup franc indirect</EventSpecialIndirect>
 <EventSpecialUnpredictableLongPass>SE+ imprévisible: longue passe</EventSpecialUnpredictableLongPass>
 <EventSpecialUnpredictableScoresOnHisOwn>SE+ imprévisible: tir</EventSpecialUnpredictableScoresOnHisOwn>
-<EventSpecialUnpredictableSpecialAction>SE+ imprévisible: action inattendue</EventSpecialUnpredictableSpecialAction>
+<EventSpecialUnpredictableSpecialAction>SE+ imprévisible: passe</EventSpecialUnpredictableSpecialAction>
 <EventSpecialUnpredictableMistake>SE- imprévisible: passe à l'adversaire</EventSpecialUnpredictableMistake>
 <EventSpecialUnpredictableOwnGoal>SE- imprévisible: but contre son camp</EventSpecialUnpredictableOwnGoal>
 <EventSpecialQuickScoresAfterRush>SE+ rapide: accélération et tir</EventSpecialQuickScoresAfterRush>
@@ -415,4 +415,13 @@
 <HeaderBarColor>Couleur des entêtes</HeaderBarColor>
 <HeaderBarTextColor>Couleur du texte</HeaderBarTextColor>
 <Volume>Volume</Volume>
+<PlayVolumeSetting>Son lors du réglage du volume</PlayVolumeSetting>
+<Import>Import</Import>
+<Export>Export</Export>
+<ExportOauth>Exporter l'Oauth</ExportOauth>
+<ExportBackground>Exporter le fond d'écran</ExportBackground>
+<ExportSounds>Exporter les sons</ExportSounds>
+<ImportOk>Préférences importées avec succès !</ImportOk>
+<PrefsRestart>Certaines nécessitent un redémarrage de HTLiveSight !</PrefsRestart>
+<ClickToSave>Cliquez sur OK sous les options pour les sauvegarder.</ClickToSave>
 </Htlivesight>

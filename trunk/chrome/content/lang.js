@@ -36,7 +36,7 @@ htlivesight.Lang = {
 //			ABOUT
 			doc.getElementById("ui-dialog-title-about-dialog").innerHTML=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);	
 			doc.getElementById("TabInfo").innerHTML=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
-			doc.getElementById("creationDate").innerHTML="18 "+htlivesight.Util.Parse("MonthMarch",htlivesight.data[0])+" 2014";
+			doc.getElementById("creationDate").innerHTML="1 "+htlivesight.Util.Parse("MonthMay",htlivesight.data[0])+" 2014";
 			doc.getElementById("createdBy").innerHTML=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
 			doc.getElementById("testers").innerHTML=htlivesight.Util.Parse("Testers",htlivesight.data[0]);
 			doc.getElementById("BasedOn").innerHTML=htlivesight.Util.Parse("BasedOn",htlivesight.data[0]);
@@ -166,6 +166,15 @@ htlivesight.Lang = {
 			doc.getElementById("label_hattrickCheck").innerHTML=htlivesight.Util.Parse("PathSoundsHattrick",htlivesight.data[0]);
 			doc.getElementById("label_hattrickButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",htlivesight.data[0]);
 			doc.getElementById("label_hattrickButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",htlivesight.data[0]);
+			doc.getElementById("label_volumeSound").innerHTML=htlivesight.Util.Parse("PlayVolumeSetting",htlivesight.data[0]);
+			doc.getElementById("import").innerHTML=htlivesight.Util.Parse("Import",htlivesight.data[0]);
+			doc.getElementById("import_button").innerHTML=htlivesight.Util.Parse("Import",htlivesight.data[0]);
+			doc.getElementById("export").innerHTML=htlivesight.Util.Parse("Export",htlivesight.data[0]);
+			doc.getElementById("export_button").innerHTML=htlivesight.Util.Parse("Export",htlivesight.data[0]);
+			doc.getElementById("label_chkExportOauth").innerHTML=htlivesight.Util.Parse("ExportOauth",htlivesight.data[0]);
+			doc.getElementById("label_chkExportBackground").innerHTML=htlivesight.Util.Parse("ExportBackground",htlivesight.data[0]);
+			doc.getElementById("label_chkExportSounds").innerHTML=htlivesight.Util.Parse("ExportSounds",htlivesight.data[0]);
+			
 			if(htlivesight.platform == "Safari"){
 			  $("[type='file']").hide();
 			  $("[type='file']").parent().prepend("<div class='warning'>"+htlivesight.Util.Parse("OnlyHTTPFiles",htlivesight.data[0])+"</div><br/>");

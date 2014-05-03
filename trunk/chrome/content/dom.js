@@ -198,10 +198,6 @@ htlivesight.DOM = {
 					}
 					box.parentNode.insertBefore(box, next);
 					htlivesight.DOM.closeMatchRelatedWindows(matchId + "_" + sourceSystem);
-					//$("#home_team_formation_"+matchId + "_" + sourceSystem+"_table").dialog("close");
-		  		//$("#away_team_formation_"+matchId + "_" + sourceSystem+"_table").dialog("close");
-			  	//$("#home_team_name_"+matchId + "_" + sourceSystem+"_statistics").dialog("close");
-				  //$("#away_team_name_"+matchId + "_" + sourceSystem+"_statistics").dialog("close");
 				}
 			}catch(e){alert("toggleView: "+e);}// added by bigpapy to debug from XUL to HTML
 		},
@@ -1648,14 +1644,23 @@ htlivesight.DOM.UpdateElementBoxLeagueTable=function(league) {
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_1"),'league_promote');
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_2"),'league_promote');
 		}
+		
+		if(league.level > 6 && league.level % 2 == 0){
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_2"),'league_promote_qualify');
+		}
+		if(league.level > 6 && league.level % 2 == 1){
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_3"),'league_promote_qualify');
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_4"),'league_promote_qualify');
+		}
+		
 		if(league.level != league.maxLevel){
 			//#7 AND #8 demote
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_7"),'league_demote');
 			$("#leaguetable_8 td").addClass('league_demote');
 			//htlivesight.Util.AddClass(document.getElementById("leaguetable_8"),'league_demote');
 		}
-		if(league.level < 6 && league.level != league.maxLevel){
-			//#5 AND #8 need to qualify
+		if(/*league.level < 6 &&*/ league.level != league.maxLevel){
+			//#5 AND #6 need to qualify
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_5"),'league_qualify');
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_6"),'league_qualify');
 		}
@@ -1770,12 +1775,19 @@ htlivesight.DOM.UpdateElementBoxLeagueTable2=function(league) {
 		}
 		else if(league.level2 <= 6 || league.level2 % 2 == 0){
 			//#1 promotes
-			htlivesight.Util.AddClass(document.getElementById("leaguetable_1Bis"),'league_promote');
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_1Bis"),'league_promote');			
 		}
 		else{
 			//#1 AND #2 promote
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_1Bis"),'league_promote');
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_2Bis"),'league_promote');
+		}
+		if(league.level2 > 6 && league.level2 % 2 == 0){
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_2Bis"),'league_promote_qualify');
+		}
+		if(league.level2 > 6 && league.level2 % 2 == 1){
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_3Bis"),'league_promote_qualify');
+			htlivesight.Util.AddClass(document.getElementById("leaguetable_4Bis"),'league_promote_qualify');
 		}
 		if(league.level2 != league.maxLevel2){
 			//#7 AND #8 demote
@@ -1783,7 +1795,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable2=function(league) {
 			$("#leaguetable_8Bis td").addClass('league_demote');
 			//htlivesight.Util.AddClass(document.getElementById("leaguetable_8Bis"),'league_demote');
 		}
-		if(league.level2 < 6 && league.level2 != league.maxLevel2){
+		if(/*league.level2 < 6 &&*/ league.level2 != league.maxLevel2){
 			//#5 AND #6 need to qualify
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_5Bis"),'league_qualify');
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_6Bis"),'league_qualify');

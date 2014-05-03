@@ -288,10 +288,11 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 			lineUp=htlivesight.LineUp.InjurySubstitution(lineUp,subjectPlayer,objectPlayer);
 		}
 		var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
+		var side
 		if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-			var side="home";
+			side="home";
 		else
-			var side="away";
+			side="away";
 		
 		if(match.sourceSystem.toLowerCase()=='youth')
 			var postId='_youth';
@@ -321,20 +322,21 @@ htlivesight.LineUp.SwapEvent= function(event, match){
 	var foundSubject = false, foundObject = false;
 	var subjectPlayer= new Object();
 	var objectPlayer= new Object();
+	var lineUp;
 	subjectPlayer.id= event.subjectPlayerId;
 	objectPlayer.id= event.objectPlayerId;
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-		var lineUp=match.home.lineUp;
+		lineUp=match.home.lineUp;
 	if (match.isAwayTeam(event.subjectTeamId))
-		var lineUp=match.away.lineUp;
+		lineUp=match.away.lineUp;
 	subjectPlayer.name= htlivesight.Events.translate.parseScorer(event.text, event.subjectPlayerId);
 	objectPlayer.name= htlivesight.Events.translate.parseScorer(event.text, event.objectPlayerId);
-	if ((subjectPlayer.name== undefined)||(objectPlayer.name== undefined)){
+	if ((subjectPlayer.name === undefined)||(objectPlayer.name === undefined)){
 		for (var index=0; index < lineUp.length; index++){
-			if ((lineUp[index].id==subjectPlayer.id)&&(subjectPlayer.name== undefined)){
+			if ((lineUp[index].id==subjectPlayer.id)&&(subjectPlayer.name === undefined)){
 				subjectPlayer.name=lineUp[index].name;
 			}
-			if ((lineUp[index].id==objectPlayer.id)&&(objectPlayer.name== undefined)){
+			if ((lineUp[index].id==objectPlayer.id)&&(objectPlayer.name === undefined)){
 				objectPlayer.name=lineUp[index].name;
 			}
 		}
@@ -364,17 +366,17 @@ htlivesight.LineUp.SwapEvent= function(event, match){
 		var side="home";
 	else
 		var side="away";
-	
+	var postId;
 	if(match.sourceSystem.toLowerCase()=='youth')
-		var postId='_youth';
+		postId='_youth';
 	else
-		var postId='';
+		postId='';
 	
 	if(htlivesight.prefs.personalization.oldIcons && event.type.imageSrcOld){
 		image_source= event.type.imageSrcOld;
 	}else{
 		image_source= event.type.imageSrc;
-	};
+	}
 	
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);

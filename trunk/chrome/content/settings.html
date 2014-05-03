@@ -32,7 +32,7 @@
 	<li><a id="TabOther" href="#otabs-4">A</a></li>
 	<li><a id="TabCustom" href="#otabs-5">!</a></li>
 	<li><a id="TabColors" href="#otabs-6">Colors</a></li>
-	</ul>
+  </ul>
 		<div id="otabs-1"><!--TAB1-->
 				<fieldset>
 					<legend id="ThemesSelector">Themes</legend>
@@ -275,6 +275,22 @@
 						id="label_oldIcons"> Original Livefox icons in match
 						window</label><br />
 				</fieldset>
+  		  <fieldset>
+			    <legend id="import">Import</legend>
+			    <textarea id="import_text"></textarea>
+			    <button id="import_button" class="brestore">Import</button>
+			  </fieldset>
+			  <fieldset>
+			  <legend id="export">Export</legend>
+			  <input type="checkbox" id="chkExportOauth" /><label for="chkExportOauth"
+				id="label_chkExportOauth">Export Oauth</label><br />
+				<input type="checkbox" id="chkExportBackground" /><label for="chkExportBackground"
+				id="label_chkExportBackground">Export Background</label><br />
+				<input type="checkbox" id="chkExportSounds" /><label for="chkExportSounds"
+				id="label_chkExportSounds">Export Sounds</label><br />
+			  <textarea id="export_text"></textarea>
+			  <button id="export_button" class="brestore">Export</button>
+			  </fieldset>
 				
 			</div>
 	<div id="otabs-5">				<!--TAB5-->
@@ -309,7 +325,10 @@
 					<input type="checkbox" id="livefoxGoal" /><label for="livefoxGoal"
 						id="label_livefoxGoal">Original Livefox sounds</label><br /> <input
 						type="checkbox" id="noOpGoal" /><label for="noOpGoal"
-						id="label_noOpGoal">No sounds for opponent's goals</label><br />
+						id="label_noOpGoal">No sounds for opponent's goals</label><br/>
+						<input	type="checkbox" id="volumeSound" /><label for="volumeSound"
+						id="label_volumeSound">Play sound after volume setting</label><br />
+						<br /><br/>
 
 	<!--			<fieldset>
 

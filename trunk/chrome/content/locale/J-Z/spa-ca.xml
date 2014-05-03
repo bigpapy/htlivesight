@@ -415,4 +415,13 @@
 <HeaderBarColor>Color de la barra de encabezado</HeaderBarColor>
 <HeaderBarTextColor>Color del texto de la barra de encabezado</HeaderBarTextColor>
 <Volume>Volumen</Volume>
+<PlayVolumeSetting>Reproducir un sonido despúes de ajustar el volumen</PlayVolumeSetting>
+<Import>Importar</Import>
+<Export>Exportar</Export>
+<ExportOauth>Exportar Oauth</ExportOauth>
+<ExportBackground>Exportar fondo</ExportBackground>
+<ExportSounds>Exportar sonidos</ExportSounds>
+<ImportOk>¡Se han importado las preferencias!</ImportOk>
+<PrefsRestart>¡Algunas preferencias requiere reiniciar!</PrefsRestart>
+<ClickToSave>Haz clic en OK en la ventana de preferencias para guardarlas.</ClickToSave>
 </Htlivesight>

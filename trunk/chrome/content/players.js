@@ -111,7 +111,7 @@ htlivesight.players.ParseGet = function(xml,playerId, youth){
 	  		htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill = htlivesight.players.getSkillFromXML(xml, "ScorerSkill", youth);
 	  	}
 
-	  	
+
 	  	var passingSkill = xml.getElementsByTagName("PassingSkill")[0];
 			
 	  	if (passingSkill !== undefined){

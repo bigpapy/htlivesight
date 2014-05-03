@@ -55,7 +55,7 @@
 <TimeFirstHalf>1:a</TimeFirstHalf>
 <TimeHalfTime>Halvtid</TimeHalfTime>
 <TimeSecondHalf>2:a</TimeSecondHalf>
-<TimeExtraTime>Stopptid</TimeExtraTime>
+<TimeExtraTime>Förlängning</TimeExtraTime>
 <TimePenalties>Straffar</TimePenalties>
 <TimeFinish>Färdigspelad</TimeFinish>
 <TimeStartsIn>Avspark om </TimeStartsIn>
@@ -415,4 +415,13 @@
 <HeaderBarColor>Rubrikfält, bakgrundsfärg</HeaderBarColor>
 <HeaderBarTextColor>Rubrikfält, textfärg</HeaderBarTextColor>
 <Volume>Volym</Volume>
+<PlayVolumeSetting>Spela upp ljud efter volumjustering</PlayVolumeSetting>
+<Import>Importera</Import>
+<Export>Exportera</Export>
+<ExportOauth>Exportera Oauth</ExportOauth>
+<ExportBackground>Exportera bakgrund</ExportBackground>
+<ExportSounds>Exportera ljud</ExportSounds>
+<ImportOk>Inställningarna har importerats!</ImportOk>
+<PrefsRestart>En del inställningar kräver en omstart!</PrefsRestart>
+<ClickToSave>Spara genom att klicka på OK.</ClickToSave>
 </Htlivesight>

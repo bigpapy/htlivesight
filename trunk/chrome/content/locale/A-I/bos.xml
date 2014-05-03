@@ -415,4 +415,13 @@
 <HeaderBarColor>Boja pozadine zaglavlja</HeaderBarColor>
 <HeaderBarTextColor>Boja teksta u zaglavlju</HeaderBarTextColor>
 <Volume>Jačina zvuka</Volume>
+<PlayVolumeSetting>Pusti zvuk poslije podešavanja</PlayVolumeSetting>
+<Import>Uvezi</Import>
+<Export>Izvezi</Export>
+<ExportOauth>Izvezi Oauth </ExportOauth>
+<ExportBackground>Izvezi podešenja za pozadinu</ExportBackground>
+<ExportSounds>Izvezi podešenja za zvuk</ExportSounds>
+<ImportOk>Podešavanja su uspješno ubačena</ImportOk>
+<PrefsRestart>Neka od podešenja zahtjevaju restart!</PrefsRestart>
+<ClickToSave>Kliknuti na OK u prozoru za podešavanja da ista sačuvaš.</ClickToSave>
 </Htlivesight>

@@ -55,6 +55,7 @@ text-align: right;
 #htlivesight-body tr.league_title, #htlivesight-body tr.league_promote{background-color: #02A702;}
 #htlivesight-body .league_demote{background-color: #B50606;}
 #htlivesight-body tr.league_qualify{background-color: #C57006;}
+#htlivesight-body  tr.league_promote_qualify{background-color: #459E00;}
 #htlivesight-body tr.league_title + tr, #htlivesight-body tr.league_promote + tr:not(.league_promote){border-top: 1px solid darkgreen;}
 #htlivesight-body tr:not(.league_demote) + tr.league_demote{border-top: 1px solid darkred;}
 #htlivesight-body tr.foe_away{

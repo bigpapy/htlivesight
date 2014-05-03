@@ -415,4 +415,13 @@
 <HeaderBarColor>Farve på navigationsbar</HeaderBarColor>
 <HeaderBarTextColor>Tekstfarve på navigationsbar</HeaderBarTextColor>
 <Volume>Lydstyrke</Volume>
+<PlayVolumeSetting>Afspil lyde, efter lydstyrkeindstilling</PlayVolumeSetting>
+<Import>Importere</Import>
+<Export>Eksportere</Export>
+<ExportOauth>Eksportér Oauth</ExportOauth>
+<ExportBackground>Eksportér baggrund</ExportBackground>
+<ExportSounds>Eksportér lyde</ExportSounds>
+<ImportOk>Indstillinger importeret!</ImportOk>
+<PrefsRestart>Nogle indstillinger kræver genstart!</PrefsRestart>
+<ClickToSave>Klik på OK i indstillingsvinduet for at gemme dem.</ClickToSave>
 </Htlivesight>

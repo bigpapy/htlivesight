@@ -415,4 +415,13 @@
 <HeaderBarColor>Culoare bară de antet</HeaderBarColor>
 <HeaderBarTextColor>Culoare text bară de antet</HeaderBarTextColor>
 <Volume>Volum</Volume>
+<PlayVolumeSetting>Rulează sunet după setarea volumului</PlayVolumeSetting>
+<Import>Importă</Import>
+<Export>Exportă</Export>
+<ExportOauth>Exportă Oauth</ExportOauth>
+<ExportBackground>Exportă fundalul</ExportBackground>
+<ExportSounds>Exportă sunete</ExportSounds>
+<ImportOk>Preferințele importate cu succes!</ImportOk>
+<PrefsRestart>Câteva preferințe necesită restart!</PrefsRestart>
+<ClickToSave>Apasă OK în fereastra preferințelor pentru a le salva.</ClickToSave>
 </Htlivesight>
