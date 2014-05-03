@@ -407,7 +407,7 @@
 <Warning>Avviso</Warning>
 <Testers>Testers</Testers>
 <BasedOn>Basato su</BasedOn>
-<AndroidWarning>Se la scheda di HTLIvesight non è la scheda attualmente selezionata, le notifiche saranno bloccate, esse verranno eseguite al primo aggiornamento dopo che sarai tornato alla scheda di HTLivesight</AndroidWarning>
+<AndroidWarning>Se la scheda di HTLivesight non è la scheda attualmente selezionata, le notifiche saranno bloccate, esse verranno eseguite al primo aggiornamento dopo che sarai tornato alla scheda di HTLivesight</AndroidWarning>
 <SafariClipboardTitle>premere ctrl/cmd + c per copiare il testo selezionato</SafariClipboardTitle>
 <License>La nostra licenza</License>
 <Tech>La nostra tecnologia</Tech>
@@ -415,4 +415,13 @@
 <HeaderBarColor>Colore barra di intestazione</HeaderBarColor>
 <HeaderBarTextColor>Colore del testo della barra di intestazione</HeaderBarTextColor>
 <Volume>Volume</Volume>
+<PlayVolumeSetting>Riproduci suono dopo l'impostazione del volume</PlayVolumeSetting>
+<Import>Importa</Import>
+<Export>Esporta</Export>
+<ExportOauth>Esporta Oauth</ExportOauth>
+<ExportBackground>Esporta sfondo</ExportBackground>
+<ExportSounds>Esporta suoni</ExportSounds>
+<ImportOk>Impostazioni importate con successo!</ImportOk>
+<PrefsRestart>Alcune impostazioni richiedono un riavvio!</PrefsRestart>
+<ClickToSave>Clicca su OK nella finestra delle preferenze per salvarle.</ClickToSave>
 </Htlivesight>

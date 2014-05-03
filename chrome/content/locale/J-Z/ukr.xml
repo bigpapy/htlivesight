@@ -415,4 +415,13 @@
 <HeaderBarColor>Колір заголовка</HeaderBarColor>
 <HeaderBarTextColor>Колір тексту заголовка</HeaderBarTextColor>
 <Volume>Гучність</Volume>
+<PlayVolumeSetting>Програвати звук після налаштування гучності</PlayVolumeSetting>
+<Import>Імпорт</Import>
+<Export>Експорт</Export>
+<ExportOauth>Експорт Oauth</ExportOauth>
+<ExportBackground>Експорт фону</ExportBackground>
+<ExportSounds>Експорт звуків</ExportSounds>
+<ImportOk>Настройки успішно імпортовано!</ImportOk>
+<PrefsRestart>Деякі параметри потребують перезапуску!</PrefsRestart>
+<ClickToSave>Натисніть кнопку ОК у вікні налаштувань, щоб зберегти їх.</ClickToSave>
 </Htlivesight>

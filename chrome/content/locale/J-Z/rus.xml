@@ -415,4 +415,13 @@
 <HeaderBarColor>Цвет заголовка</HeaderBarColor>
 <HeaderBarTextColor>Цвет текста заголовка</HeaderBarTextColor>
 <Volume>Громкость</Volume>
+<PlayVolumeSetting>Проигрывать звук после настройки громкости</PlayVolumeSetting>
+<Import>Импорт</Import>
+<Export>Экспорт</Export>
+<ExportOauth>Экспорт Oauth</ExportOauth>
+<ExportBackground>Экспорт фона</ExportBackground>
+<ExportSounds>Экспорт звуков</ExportSounds>
+<ImportOk>Настройки успешно импортированы!</ImportOk>
+<PrefsRestart>Для некоторых настроек необходим перезапуск!</PrefsRestart>
+<ClickToSave>Нажмите кнопку ОК в окне настроек, чтобы сохранить их.</ClickToSave>
 </Htlivesight>

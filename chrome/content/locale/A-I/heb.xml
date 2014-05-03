@@ -415,4 +415,13 @@
 <HeaderBarColor>צבע רקע לכותרת</HeaderBarColor>
 <HeaderBarTextColor>צבע טקסט לכותרת</HeaderBarTextColor>
 <Volume>עוצמה</Volume>
+<PlayVolumeSetting>השמע צליל לאחר הגדרת עוצמת הקול</PlayVolumeSetting>
+<Import>יבא</Import>
+<Export>יצא</Export>
+<ExportOauth>Export Oauth</ExportOauth>
+<ExportBackground>ייצוא הרקע</ExportBackground>
+<ExportSounds>ייצוא צלילים</ExportSounds>
+<ImportOk>העדפות יובאו בהצלחה!</ImportOk>
+<PrefsRestart>העדפות מסוימות דורשות הפעלה מחדש!</PrefsRestart>
+<ClickToSave>לחץ על אישור בהעדפות חלון כדי לשמור אותם.</ClickToSave>
 </Htlivesight>

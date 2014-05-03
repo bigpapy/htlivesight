@@ -263,6 +263,10 @@ htlivesight.Settings = {
 			  //$('.ui-accordion-header').css('background-image','none');
 			  $('.ui-accordion-header, .ui-accordion-header span, .ui-accordion-header a , #label_headerBarColorCode, #label_headerBarTextColorCode').css('color','#'+prefs.colors.headerBarTextColorCode);
 		  }
+		  document.getElementById("volumeSound").checked = prefs.personalization.settingVolumeSound;
+		  document.getElementById("chkExportOauth").checked = prefs.other.exportOauth;
+		  document.getElementById("chkExportBackground").checked = prefs.other.exportBackground;
+		  document.getElementById("chkExportSounds").checked = prefs.other.exportSounds;
 				//if (prefs.colors.headerBarColorCheck){
 			//	$('.ui-accordion-header').css('background-image','none');
 			//	$('.ui-accordion-header').css('background-color','#'+prefs.colors.headerBarColorCode);
@@ -495,6 +499,15 @@ htlivesight.Settings = {
 			document.getElementById("label_chkRepeatBackground").innerHTML=htlivesight.Util.Parse("RepeatImage",data[0]);
 			document.getElementById("CustomBackground").innerHTML=htlivesight.Util.Parse("Background",data[0]);
 			document.getElementById("visitOurSoundCollection").innerHTML=htlivesight.Util.Parse("VisitOurSoundCollection",data[0]);
+			document.getElementById("label_volumeSound").innerHTML=htlivesight.Util.Parse("PlayVolumeSetting",data[0]);
+			
+			document.getElementById("import").innerHTML=htlivesight.Util.Parse("Import",data[0]);
+			document.getElementById("import_button").innerHTML=htlivesight.Util.Parse("Import",data[0]);
+			document.getElementById("export").innerHTML=htlivesight.Util.Parse("Export",data[0]);
+			document.getElementById("export_button").innerHTML=htlivesight.Util.Parse("Export",data[0]);
+			document.getElementById("label_chkExportOauth").innerHTML=htlivesight.Util.Parse("ExportOauth",data[0]);
+			document.getElementById("label_chkExportBackground").innerHTML=htlivesight.Util.Parse("ExportBackground",data[0]);
+			document.getElementById("label_chkExportSounds").innerHTML=htlivesight.Util.Parse("ExportSounds",data[0]);
 			/*if(htlivesight.platform == "Safari"){
 			  $("[type='file']").replaceWith("<span>"+htlivesight.Util.Parse("OnlyHTTPFiles",data[0])+"</span>");
 			}*/
@@ -718,7 +731,7 @@ htlivesight.Settings = {
 					prefs.personalization.oldIcons = true;
 				} else {
 					prefs.personalization.oldIcons = false;
-				};
+				}
 			},
 			weather: function() {
 				var prefs = htlivesight.Settings.preferences;
@@ -726,7 +739,7 @@ htlivesight.Settings = {
 					prefs.personalization.weather = true;
 				} else {
 					prefs.personalization.weather = false;
-				};
+				}
 			},
 			whistleTime: function() {
 				var prefs = htlivesight.Settings.preferences;
@@ -734,7 +747,7 @@ htlivesight.Settings = {
 					prefs.personalization.whistleTime = true;
 				} else {
 					prefs.personalization.whistleTime = false;
-				};
+				}
 			},
 			weatherSE: function() {
 				var prefs = htlivesight.Settings.preferences;
@@ -742,7 +755,7 @@ htlivesight.Settings = {
 					prefs.personalization.weatherSE = true;
 				} else {
 					prefs.personalization.weatherSE = false;
-				};
+				}
 			},
 			livefoxGoal: function() {
 				var prefs = htlivesight.Settings.preferences;
@@ -750,7 +763,7 @@ htlivesight.Settings = {
 					prefs.personalization.livefoxGoal = true;
 				} else {
 					prefs.personalization.livefoxGoal = false;
-				};
+				}
 			},
 			noOpGoal: function() {
 				var prefs = htlivesight.Settings.preferences;
@@ -758,7 +771,7 @@ htlivesight.Settings = {
 					prefs.personalization.noOpGoal = true;
 				} else {
 					prefs.personalization.noOpGoal = false;
-				};
+				}
 			},
 			
 			secondSoundEqualFirst: function() {
@@ -767,7 +780,16 @@ htlivesight.Settings = {
 					prefs.personalization.secondSoundEqualFirst = true;
 				} else {
 					prefs.personalization.secondSoundEqualFirst = false;
-				};
+				}
+			},
+			
+			settingVolumeSound: function() {
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("volumeSound").checked) {
+					prefs.personalization.settingVolumeSound = true;
+				} else {
+					prefs.personalization.settingVolumeSound = false;
+				}
 			},
 			
 			checkSound: function(id) {
@@ -782,19 +804,19 @@ htlivesight.Settings = {
 					document.getElementById(id+"SoundPath").value="@"+document.getElementById(id+"SoundPath").value;
 					document.getElementById(id+"SoundPath").disabled = true;
 					prefs.personalization[id+"Check"] = false;
-				};
+				}
 			},
 			soundReset: function(id, defaultFile) {
 				var prefix="@";
 				if(document.getElementById(id+"Check").checked) prefix="";
 				var prefs = htlivesight.Settings.preferences;
 				if(htlivesight.platform == "Safari"){
-				  defaultFile = defaultFile.replace("ogg","mp3");
-				  defaultFile = defaultFile.replace("wav","mp3");
-				  defaultFile = defaultFile.replace("sound/","");
-				  document.getElementById(id+"SoundPath").value=prefix+'https://sourceforge.net/projects/htlivesight/files/Sounds/default/mp3/'+defaultFile;
+					defaultFile = defaultFile.replace("ogg","mp3");
+					defaultFile = defaultFile.replace("wav","mp3");
+					defaultFile = defaultFile.replace("sound/","");
+					document.getElementById(id+"SoundPath").value=prefix+'https://sourceforge.net/projects/htlivesight/files/Sounds/default/mp3/'+defaultFile;
 				}else{
-				  document.getElementById(id+"SoundPath").value=prefix+htlivesightEnv.contentPath+defaultFile;
+					document.getElementById(id+"SoundPath").value=prefix+htlivesightEnv.contentPath+defaultFile;
 				}
 				prefs.personalization[id+"SoundPath"] = document.getElementById(id+"SoundPath").value;
 				document.getElementById(id+"SoundPathBrowse").value="";
@@ -818,7 +840,7 @@ htlivesight.Settings = {
 						}
 					};
 					reader.readAsDataURL(file[0]);
-				};
+				}
 				if	(htlivesight.arch == "Gecko"){
 					var browseId=id+"Browse";
 					var soundPath=document.getElementById(browseId).value;
@@ -1082,18 +1104,18 @@ htlivesight.Settings = {
 				var prefs = htlivesight.Settings.preferences;
 				imagePath = document.getElementById("customBackgroundPath").value;
 				document.body.style.backgroundImage = "url('"+imagePath+"')";
-				prefs.general["customBackgroundPath"] = imagePath;
+				prefs.general.customBackgroundPath = imagePath;
 			},
 			resetBackground: function() {
 			var prefs = htlivesight.Settings.preferences;
-			
+			var imagePath;
 			if(htlivesight.platform == "Safari"){
-			  var imagePath = document.getElementById("customBackgroundPath").value="./themes/images/bg.png";
+				imagePath = document.getElementById("customBackgroundPath").value="./themes/images/bg.png";
 			}else{
-			  var imagePath = document.getElementById("customBackgroundPath").value=htlivesightEnv.contentPath+"themes/images/bg.png";
+				imagePath = document.getElementById("customBackgroundPath").value=htlivesightEnv.contentPath+"themes/images/bg.png";
 			}
 			document.body.style.backgroundImage = "url('"+imagePath+"')";
-			prefs.general["customBackgroundPath"] = imagePath;
+			prefs.general.customBackgroundPath = imagePath;
 			},
 			
 			getImageFile: function(file) {
@@ -1112,11 +1134,11 @@ htlivesight.Settings = {
 						}else{
 							document.getElementById("customBackgroundPath").value = dataUrl;
 							document.body.style.backgroundImage = "url('"+dataUrl+"')";
-							prefs.general["customBackgroundPath"] = dataUrl;
+							prefs.general.customBackgroundPath = dataUrl;
 						}
 					};
 					reader.readAsDataURL(file[0]);
-				};
+				}
 				if	(htlivesight.arch == "Gecko"){
 					var imagePath=document.getElementById("customBackgroundPathBrowse").value;
 					var userAgent=navigator.userAgent;
@@ -1126,7 +1148,7 @@ htlivesight.Settings = {
 					if ((imagePath.search("chrome:")==-1) && (imagePath.search("file:")==-1)) imagePath="file:///"+imagePath;
 					document.getElementById("customBackgroundPath").value=imagePath;
 					document.body.style.backgroundImage = "url('"+imagePath+"')";
-					prefs.general["customBackgroundPath"] = imagePath;
+					prefs.general.customBackgroundPath = imagePath;
 				}
 			},
 			extendBackground: function() {
@@ -1134,27 +1156,27 @@ htlivesight.Settings = {
 				if(document.getElementById("chkExtendBackground").checked) {
 					document.getElementById("chkRepeatBackground").checked=false;
 					htlivesight.Settings.click.repeatBackground();
-				  document.body.style.backgroundSize="cover";
+					document.body.style.backgroundSize="cover";
 				}else{
 					imagePath = document.getElementById("customBackgroundPath").value;
 					document.body.style.backgroundImage = "url('"+imagePath+"')";
 					document.body.style.backgroundSize="auto";
 				}
-				prefs.general["extendBackground"] = document.getElementById("chkExtendBackground").checked;
+				prefs.general.extendBackground = document.getElementById("chkExtendBackground").checked;
 				},
 				repeatBackground: function() {
 					var prefs = htlivesight.Settings.preferences;
 					if(document.getElementById("chkRepeatBackground").checked) {
 						document.getElementById("chkExtendBackground").checked=false;
 						htlivesight.Settings.click.extendBackground();
-					  document.body.style.backgroundRepeat="repeat";
+						document.body.style.backgroundRepeat="repeat";
 					}else{
 						imagePath = document.getElementById("customBackgroundPath").value;
 						document.body.style.backgroundImage = "url('"+imagePath+"')";
 						document.body.style.backgroundRepeat="no-repeat";
 					}
 					//document.body.style.backgroundPosition="left top";
-					prefs.general["repeatBackground"] = document.getElementById("chkRepeatBackground").checked;
+					prefs.general.repeatBackground = document.getElementById("chkRepeatBackground").checked;
 				},
 				
 				headerBarColorCheck: function(){
@@ -1220,6 +1242,198 @@ htlivesight.Settings = {
 					prefs.colors.headerBarTextColorCode = value;
 					$('.ui-accordion-header, .ui-accordion-header span, .ui-accordion-header a').css('color','#'+value);
 				},
+				exportPreferences: function(){
+					var prefs = htlivesight.Settings.preferences;
+					document.getElementById("export_text").value = "";
+					if(document.getElementById("chkExportOauth").checked){
+						prefs.oauth={};
+						prefs.oauth[prefs.general.teamId]={};
+						prefs.oauth[prefs.general.teamId].accessToken=htlivesight.ApiProxy.getAccessToken(prefs.general.teamId);
+						prefs.oauth[prefs.general.teamId].accessTokenSecret=htlivesight.ApiProxy.getAccessTokenSecret(prefs.general.teamId);
+					}
+					var jsonPrefs = JSON.stringify(prefs);
+					if(!document.getElementById("chkExportOauth").checked){
+						jsonPrefs = jsonPrefs.replace(/,"oauth":{"\d+":{"accessToken":"\w+","accessTokenSecret":"\w+"}}/,"");
+					}
+					if(!document.getElementById("chkExportBackground").checked){
+					//	delete prefs.general.customBackgroundPath;
+						jsonPrefs = jsonPrefs.replace(/"customBackgroundPath":"[^"]+",/,"");
+						jsonPrefs = jsonPrefs.replace(/"extendBackground":\w+,"repeatBackground":\w+,/,"");
+					}
+					if(!document.getElementById("chkExportSounds").checked){
+						//delete prefs.personalization.myGoalSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"myGoalSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.opGoalSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"opGoalSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.frGoalSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"frGoalSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.opfrGoalSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"opfrGoalSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.otGoalSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"otGoalSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.missGoalSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"missGoalSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.sunSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"sunSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.rainSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"rainSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.overcastSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"overcastSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.fewCloudsSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"fewCloudsSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.myBooSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"myBooSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.opBooSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"opBooSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.whistleStartSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"whistleStartSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.whistle2SoundPath;
+						jsonPrefs = jsonPrefs.replace(/"whistle2SoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.whistle3SoundPath;
+						jsonPrefs = jsonPrefs.replace(/"whistle3SoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.whistleSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"whistleSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.hattrickSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"hattrickSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.pressingSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"pressingSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.myBruisedSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"myBruisedSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.otherBruisedSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"otherBruisedSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.mySentOffSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"mySentOffSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.otherSentOffSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"otherSentOffSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.missFriendSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"missFriendSoundPath":"[^"]+",/,"");
+//						delete prefs.personalization.missOtherSoundPath;
+						jsonPrefs = jsonPrefs.replace(/"missOtherSoundPath":"[^"]+",/,"");
+					}
+					document.getElementById("export_text").value = jsonPrefs;
+					document.getElementById("export_text").select();
+					prefs = htlivesight.Settings.preferences;
+				},
+				importPreferences: function(){
+					var old_prefs = htlivesight.Settings.preferences;
+					try{
+						htlivesight.Settings.preferences = JSON.parse(document.getElementById("import_text").value);
+					
+						if (!htlivesight.Settings.preferences.general.customBackgroundPath){
+							htlivesight.Settings.preferences.general.customBackgroundPath = old_prefs.general.customBackgroundPath;
+							htlivesight.Settings.preferences.general.extendBackground = old_prefs.general.extendBackground;
+							htlivesight.Settings.preferences.general.repeatBackground = old_prefs.general.repeatBackground;
+						}
+
+						if (!htlivesight.Settings.preferences.personalization.myGoalSoundPath){
+//							delete prefs.personalization.myGoalSoundPath;
+							htlivesight.Settings.preferences.personalization.myGoalSoundPath = old_prefs.personalization.myGoalSoundPath;					 
+//							delete prefs.personalization.opGoalSoundPath;
+							htlivesight.Settings.preferences.personalization.opGoalSoundPath = old_prefs.personalization.opGoalSoundPath;					 
+//							delete prefs.personalization.frGoalSoundPath;
+							htlivesight.Settings.preferences.personalization.frGoalSoundPath = old_prefs.personalization.frGoalSoundPath;
+//							delete prefs.personalization.opfrGoalSoundPath;
+							htlivesight.Settings.preferences.personalization.opfrGoalSoundPath = old_prefs.personalization.opfrGoalSoundPath;
+//							delete prefs.personalization.otGoalSoundPath;
+							htlivesight.Settings.preferences.personalization.otGoalSoundPath = old_prefs.personalization.otGoalSoundPath;
+//							delete prefs.personalization.missGoalSoundPath;
+							htlivesight.Settings.preferences.personalization.missGoalSoundPath = old_prefs.personalization.missGoalSoundPath;
+//							delete prefs.personalization.sunSoundPath;
+							htlivesight.Settings.preferences.personalization.sunSoundPath = old_prefs.personalization.sunSoundPath;
+//							delete prefs.personalization.rainSoundPath;
+							htlivesight.Settings.preferences.personalization.rainSoundPath = old_prefs.personalization.rainSoundPath;
+//							delete prefs.personalization.overcastSoundPath;
+							htlivesight.Settings.preferences.personalization.overcastSoundPath = old_prefs.personalization.overcastSoundPath;
+//							delete prefs.personalization.fewCloudsSoundPath;
+							htlivesight.Settings.preferences.personalization.fewCloudsSoundPath = old_prefs.personalization.fewCloudsSoundPath;
+//							delete prefs.personalization.myBooSoundPath;
+							htlivesight.Settings.preferences.personalization.myBooSoundPath = old_prefs.personalization.myBooSoundPath;
+//							delete prefs.personalization.opBooSoundPath;
+							htlivesight.Settings.preferences.personalization.opBooSoundPath = old_prefs.personalization.opBooSoundPath;
+//							delete prefs.personalization.whistleStartSoundPath;
+							htlivesight.Settings.preferences.personalization.whistleStartSoundPath = old_prefs.personalization.whistleStartSoundPath;
+//							delete prefs.personalization.whistle2SoundPath;
+							htlivesight.Settings.preferences.personalization.whistle2SoundPath = old_prefs.personalization.whistle2SoundPath;
+//							delete prefs.personalization.whistle3SoundPath;
+							htlivesight.Settings.preferences.personalization.whistle3SoundPath = old_prefs.personalization.whistle3SoundPath;
+//							delete prefs.personalization.whistleSoundPath;
+							htlivesight.Settings.preferences.personalization.whistleSoundPath = old_prefs.personalization.whistleSoundPath;
+//							delete prefs.personalization.hattrickSoundPath;
+							htlivesight.Settings.preferences.personalization.hattrickSoundPath = old_prefs.personalization.hattrickSoundPath;
+//							delete prefs.personalization.pressingSoundPath;
+							htlivesight.Settings.preferences.personalization.pressingSoundPath = old_prefs.personalization.pressingSoundPath;
+//							delete prefs.personalization.myBruisedSoundPath;
+							htlivesight.Settings.preferences.personalization.myBruisedSoundPath = old_prefs.personalization.myBruisedSoundPath;
+//							delete prefs.personalization.otherBruisedSoundPath;
+							htlivesight.Settings.preferences.personalization.otherBruisedSoundPath = old_prefs.personalization.otherBruisedSoundPath;
+//							delete prefs.personalization.mySentOffSoundPath;
+							htlivesight.Settings.preferences.personalization.mySentOffSoundPath = old_prefs.personalization.mySentOffSoundPath;
+//							delete prefs.personalization.otherSentOffSoundPath;
+							htlivesight.Settings.preferences.personalization.otherSentOffSoundPath = old_prefs.personalization.otherSentOffSoundPath;
+//							delete prefs.personalization.missFriendSoundPath;
+							htlivesight.Settings.preferences.personalization.missFriendSoundPath = old_prefs.personalization.missFriendSoundPath;
+//							delete prefs.personalization.missOtherSoundPath;
+							htlivesight.Settings.preferences.personalization.missOtherSoundPath = old_prefs.personalization.missOtherSoundPath;
+						}
+					
+						htlivesight.Settings.save();
+						if(htlivesight.Settings.preferences.oauth){
+							for (var key in htlivesight.Settings.preferences.oauth) {
+								if (htlivesight.Settings.preferences.oauth.hasOwnProperty(key)) {
+									htlivesight.ApiProxy.setAccessToken(htlivesight.Settings.preferences.oauth[key].accessToken,key);
+									htlivesight.ApiProxy.setAccessTokenSecret(htlivesight.Settings.preferences.oauth[key].accessTokenSecret,key);
+//									alert(key);
+//									alert(htlivesight.Settings.preferences.oauth[key]['accessToken']);
+//									alert(htlivesight.Settings.preferences.oauth[key]['accessTokenSecret']);
+								}
+							}
+						}
+						htlivesight.Settings.load();
+//						htlivesight.Settings.click.tryBackground();
+						document.body.style.backgroundImage = "url('"+htlivesight.Settings.preferences.general.customBackgroundPath+"')";
+						htlivesight.Settings.click.extendBackground();
+						htlivesight.Settings.click.repeatBackground();
+						if(htlivesight.Settings.preferences.colors.headerBarColorCheck){
+							$('.ui-accordion-header').css('background-color','#'+htlivesight.Settings.preferences.colors.headerBarColorCode);
+						}
+						if(htlivesight.Settings.preferences.colors.headerBarTextColorCheck){
+							$('.ui-accordion-header, .ui-accordion-header span, .ui-accordion-header a').css('color','#'+htlivesight.Settings.preferences.colors.headerBarTextColorCode);
+						}
+						var  prefs=htlivesight.Preferences.get();
+						var url = htlivesightEnv.contentPath+"locale/"+ prefs.language.locale +".xml";
+						var languageXML = htlivesight.loadXml(url);
+						var data=languageXML.getElementsByTagName("Htlivesight");
+						var msg = htlivesight.Util.Parse("ImportOk",data[0]) +"\n"+ htlivesight.Util.Parse("ClickToSave",data[0])+ "\n" +htlivesight.Util.Parse("PrefsRestart",data[0]); 
+						alert(msg);
+					}catch(e){alert(e);}
+				},
+				exportOauth: function(){
+					//alert("export Oauth!");
+					var prefs = htlivesight.Settings.preferences;
+					if(document.getElementById("chkExportOauth").checked) {
+						prefs.other.exportOauth= true;
+					}else{
+						prefs.other.exportOauth= false;
+					}
+				},
+				exportBackground: function(){
+					//alert("export Background!");
+					var prefs = htlivesight.Settings.preferences;
+					if(document.getElementById("chkExportBackground").checked) {
+						prefs.other.exportBackground= true;
+					}else{
+						prefs.other.exportBackground= false;
+					}
+				},
+				exportSounds: function(){
+					//alert("export Sounds!");
+					var prefs = htlivesight.Settings.preferences;
+					if(document.getElementById("chkExportSounds").checked) {
+						prefs.other.exportSounds= true;
+					}else{
+						prefs.other.exportSounds= false;
+					}
+				}
 
 		}
 };

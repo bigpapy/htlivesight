@@ -414,5 +414,14 @@
 <Supporter>Projekt wspieraja</Supporter>
 <HeaderBarColor>Kolor paska nagłówka</HeaderBarColor>
 <HeaderBarTextColor>Kolor tekstu nagłówka</HeaderBarTextColor>
-<Volume>Volume</Volume>
+<Volume>Głośność</Volume>
+<PlayVolumeSetting>Play sound after volume setting</PlayVolumeSetting>
+<Import>Import</Import>
+<Export>Export</Export>
+<ExportOauth>Export Oauth</ExportOauth>
+<ExportBackground>Export Background</ExportBackground>
+<ExportSounds>Exportuj dzwięki</ExportSounds>
+<ImportOk>Preferences imported successfully!</ImportOk>
+<PrefsRestart>Some preferences need a restart!</PrefsRestart>
+<ClickToSave>Kliknij przycisk OK w oknie preferencje, aby je zapisać.</ClickToSave>
 </Htlivesight>

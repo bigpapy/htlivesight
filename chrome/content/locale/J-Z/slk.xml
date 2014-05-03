@@ -415,4 +415,13 @@
 <HeaderBarColor>Farba hlavičky</HeaderBarColor>
 <HeaderBarTextColor>Farba textu hlavičky</HeaderBarTextColor>
 <Volume>Zvuk</Volume>
+<PlayVolumeSetting>Prehraj zvuk po zmene hlasitosti</PlayVolumeSetting>
+<Import>Import</Import>
+<Export>Export</Export>
+<ExportOauth>Export Oauth</ExportOauth>
+<ExportBackground>Export pozadia</ExportBackground>
+<ExportSounds>Export zvukov</ExportSounds>
+<ImportOk>Nastavenia úspešne importované!</ImportOk>
+<PrefsRestart>Niektoré nastavenia potrebujú reštart!</PrefsRestart>
+<ClickToSave>Klikni na OK v nastaveniach pre uloženie.</ClickToSave>
 </Htlivesight>

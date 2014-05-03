@@ -139,7 +139,7 @@
 <YellowNastyPlay>ebaaus mäng</YellowNastyPlay>
 <YellowCheating>sohk</YellowCheating>
 <ProgressUpdate>Järgmine uuendus:</ProgressUpdate>
-<ProgressSeconds>\ s.</ProgressSeconds>
+<ProgressSeconds>s.</ProgressSeconds>
 <RequestServer>Lae soovituslik server</RequestServer>
 <RequestLeagueData>Lae liiga andmed</RequestLeagueData>
 <RequestLeagueGames>Lae liiga mängud</RequestLeagueGames>
@@ -415,4 +415,13 @@
 <HeaderBarColor>Päise taustavärv</HeaderBarColor>
 <HeaderBarTextColor>Päise teksti värv</HeaderBarTextColor>
 <Volume>Hääle tugevus</Volume>
+<PlayVolumeSetting>Mängi heli peale hääletugevuse seadistamist</PlayVolumeSetting>
+<Import>Impordi</Import>
+<Export>Ekspordi</Export>
+<ExportOauth>Ekspordi Oauth</ExportOauth>
+<ExportBackground>Ekspordi taust</ExportBackground>
+<ExportSounds>Ekspordi heli</ExportSounds>
+<ImportOk>Seadistused edukalt imporditud!</ImportOk>
+<PrefsRestart>Mõned seadistused vajavad taaskäivitust!</PrefsRestart>
+<ClickToSave>Salvestamiseks kliki OK seadistuste aknas.</ClickToSave>
 </Htlivesight>

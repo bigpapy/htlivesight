@@ -415,4 +415,13 @@
 <HeaderBarColor>머리글 표시줄 색상</HeaderBarColor>
 <HeaderBarTextColor>머리글 표시줄 글자색</HeaderBarTextColor>
 <Volume>볼륨</Volume>
+<PlayVolumeSetting>사운드 볼륨 설정 뒤에 재생</PlayVolumeSetting>
+<Import>가져오기</Import>
+<Export>내보내기</Export>
+<ExportOauth>Oauth 내보내기</ExportOauth>
+<ExportBackground>배경 내보내기</ExportBackground>
+<ExportSounds>사운드 내보내기</ExportSounds>
+<ImportOk>환경 설정을 성공적으로 가져왔습니다!</ImportOk>
+<PrefsRestart>일부 설정은 재시작이 필요합니다!</PrefsRestart>
+<ClickToSave>저장하려면 환경 설정 창의 확인 버튼을 클릭하세요.</ClickToSave>
 </Htlivesight>

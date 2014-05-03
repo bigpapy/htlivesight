@@ -415,4 +415,13 @@
 <HeaderBarColor>Barva pruhu v záhlaví</HeaderBarColor>
 <HeaderBarTextColor>Barva textu v záhlaví</HeaderBarTextColor>
 <Volume>Hlasitost</Volume>
+<PlayVolumeSetting>Přehrát zvuk po nastavení hlasitosti</PlayVolumeSetting>
+<Import>Importovat</Import>
+<Export>Exportovat</Export>
+<ExportOauth>Exportovat Oauth</ExportOauth>
+<ExportBackground>Exportovat pozadí</ExportBackground>
+<ExportSounds>Exportovat zvuky</ExportSounds>
+<ImportOk>Nastavení úspěšně importováno!</ImportOk>
+<PrefsRestart>Některá nastavení vyžadují restart programu!</PrefsRestart>
+<ClickToSave>Klikni na tlačítko OK v okně nastavení, aby došlo k uložení.</ClickToSave>
 </Htlivesight>

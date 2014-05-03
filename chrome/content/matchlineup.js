@@ -222,34 +222,34 @@ htlivesight.matchLineup.SeniorStar = function(that, ratingStars, ratingStarsEnd)
 		  ratingStars-=1;
 		}
 		while(ratingStars>=1){
-		  $("div", that).append('<image src="'+htlivesight.Image.star.brown+'"</image>');
-		  ratingStars-=1;
+			$("div", that).append('<image src="'+htlivesight.Image.star.brown+'"</image>');
+			ratingStars-=1;
 		}
 		if(ratingStars>0) $("div", that).append('<image src="'+htlivesight.Image.star.half_brown+'"</image>');
 		
 	}else{
 		while(ratingStars>=5){
-		  $("div", that).append('<image src="'+htlivesight.Image.star.big_yellow+'"</image>');
-		  ratingStars-=5;
-		  ratingStarsEnd-=5;
+			$("div", that).append('<image src="'+htlivesight.Image.star.big_yellow+'"</image>');
+			ratingStars-=5;
+			ratingStarsEnd-=5;
 		}
 		while(ratingStars>=1){
-		  $("div", that).append('<image src="'+htlivesight.Image.star.yellow+'"</image>');
-		  ratingStars-=1;
-		  ratingStarsEnd-=1;
+			$("div", that).append('<image src="'+htlivesight.Image.star.yellow+'"</image>');
+			ratingStars-=1;
+			ratingStarsEnd-=1;
 		}
 		if(ratingStars>0 && ratingStarsEnd<1){
 			$("div", that).append('<image src="'+htlivesight.Image.star.half_yellow+'"</image>');
-		  ratingStars-=0.5;
-		  ratingStarsEnd-=0.5;
+			ratingStars-=0.5;
+			ratingStarsEnd-=0.5;
 		}else if(ratingStars>0 && ratingStarsEnd>=1){
 			$("div", that).append('<image src="'+htlivesight.Image.star.yellow_to_red+'"</image>');
-		  ratingStars-=0.5;
-		  ratingStarsEnd-=1;
+			ratingStars-=0.5;
+			ratingStarsEnd-=1;
 		}
 		while(ratingStarsEnd>=1){
-		  $("div", that).append('<image src="'+htlivesight.Image.star.red+'"</image>');
-		  ratingStarsEnd-=1;
+			$("div", that).append('<image src="'+htlivesight.Image.star.red+'"</image>');
+			ratingStarsEnd-=1;
 		}
 		if(ratingStarsEnd>0) $("div", that).append('<image src="'+htlivesight.Image.star.half_red+'"</image>');
 	}
