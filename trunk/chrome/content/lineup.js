@@ -285,10 +285,11 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 		if (found){
 			lineUp=htlivesight.LineUp.SubstitutionPlayerInLineUp(lineUp,subjectPlayer,objectPlayer);
 		}else{
+		    	alert("CHPP Data error! Substitution data missing. Substitution position and order shown are wrong, please restart HTLivesight");
 			lineUp=htlivesight.LineUp.InjurySubstitution(lineUp,subjectPlayer,objectPlayer);
 		}
 		var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
-		var side
+		var side;
 		if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
 			side="home";
 		else
@@ -320,9 +321,9 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 
 htlivesight.LineUp.SwapEvent= function(event, match){
 	var foundSubject = false, foundObject = false;
-	var subjectPlayer= new Object();
-	var objectPlayer= new Object();
-	var lineUp;
+	var subjectPlayer= {};
+	var objectPlayer= {};
+	var lineUp=[];
 	subjectPlayer.id= event.subjectPlayerId;
 	objectPlayer.id= event.objectPlayerId;
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
@@ -362,10 +363,11 @@ htlivesight.LineUp.SwapEvent= function(event, match){
 		}*/
 
 	var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
+	var side;
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-		var side="home";
+		side="home";
 	else
-		var side="away";
+		side="away";
 	var postId;
 	if(match.sourceSystem.toLowerCase()=='youth')
 		postId='_youth';
@@ -392,26 +394,27 @@ htlivesight.LineUp.SwapEvent= function(event, match){
 };
 htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 	try{
-		var subjectPlayer= new Object();
-		var objectPlayer= new Object();
+		var subjectPlayer= {};
+		var objectPlayer= {};
 		var found= false; // this variable is used to fix delay of the individual order info against individual order event.
+		var index;
 		subjectPlayer.id= event.subjectPlayerId;
 		objectPlayer.id= event.subjectPlayerId;
-		for (var index=0; index < match.substitutions.length; index++){
+		for (index=0; index < match.substitutions.length; index++){
 			if(subjectPlayer.id==match.substitutions[index].subjectPlayerID &&
 					objectPlayer.id==match.substitutions[index].objectPlayerID &&
 					event.minute==match.substitutions[index].matchMinute){
 				objectPlayer.positionId=parseInt(match.substitutions[index].newPositionId);
 				objectPlayer.behaviourInt=match.substitutions[index].newPositionBehaviour;
 				found= true;
-			};
-		};
+			}
+		}
 		var lineUp;
 		if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
 			lineUp=match.home.lineUp;
 		else
 			lineUp=match.away.lineUp;
-		for (var index=0; index<lineUp.length; index++) // building the lineup string
+		for (index=0; index<lineUp.length; index++) // building the lineup string
 		{
 			if (lineUp[index].id==subjectPlayer.id) 
 			{
@@ -423,23 +426,25 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 		if (found){
 			lineUp=htlivesight.LineUp.SubstitutionPlayerInLineUp(lineUp,subjectPlayer,objectPlayer);
 		}else{
+		    alert("CHPP Data error! Individual order data missing. Individual orders shown are wrong, please restart HTLivesight");
 		}
 		var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
+		var side;
 		if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-			var side="home";
+			side="home";
 		else
-			var side="away";
-		
+			side="away";
+		var postId;
 		if(match.sourceSystem.toLowerCase()=='youth')
-			var postId='_youth';
+			postId='_youth';
 		else
-			var postId='';
+			postId='';
 		
 		if(htlivesight.prefs.personalization.oldIcons && event.type.imageSrcOld){
 			image_source= event.type.imageSrcOld;
 		}else{
 			image_source= event.type.imageSrc;
-		};
+		}
 		
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 		event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
@@ -456,6 +461,7 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 };
 htlivesight.LineUp.SentOffEvent= function(event, match){
 	var lineUp;
+	var side;
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
 		lineUp=match.home.lineUp;
 	else
@@ -464,9 +470,9 @@ htlivesight.LineUp.SentOffEvent= function(event, match){
 	lineUp=htlivesight.LineUp.RemovePlayerFromLineUp(lineUp, event.subjectPlayerId, player_name);
 	var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-		var side="home";
+		side="home";
 	else
-		var side="away";
+		side="away";
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp), event);
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
@@ -479,8 +485,8 @@ htlivesight.LineUp.SentOffEvent= function(event, match){
 		match.away.lineUp= lineUp;
 };
 htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
-	var subjectPlayer= new Object();
-	var objectPlayer= new Object();
+	var subjectPlayer= {};
+	var objectPlayer= {};
 	subjectPlayer.id= event.subjectPlayerId;
 	objectPlayer.id= event.objectPlayerId;
 	var lineUp;
@@ -492,21 +498,22 @@ htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
 	objectPlayer.name= htlivesight.Events.translate.parseScorer(event.text, event.objectPlayerId, lineUp);
 	lineUp=htlivesight.LineUp.InjurySubstitution(lineUp,subjectPlayer,objectPlayer);
 	var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
+	var side;
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-		var side="home";
+		side="home";
 	else
-		var side="away";
-	
+		side="away";
+	var postId;
 	if(match.sourceSystem.toLowerCase()=='youth')
-		var postId='_youth';
+		postId='_youth';
 	else
-		var postId='';
+		postId='';
 	
 	if(htlivesight.prefs.personalization.oldIcons && event.type.imageSrcOld){
 		image_source= htlivesight.ImageOld.event.substitute;
 	}else{
 		image_source= htlivesight.ImageOld.event.substitute;
-	};
+	}
 	
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
@@ -531,7 +538,7 @@ htlivesight.LineUp.LineUpEvent= function(event, match){
 	return stringLineUp;
 };
 htlivesight.LineUp.MissingKeeperEvent= function(event, match){
-	var objectPlayer= new Object();
+	var objectPlayer= {};
 	objectPlayer.id= event.objectPlayerId; // get player id moving to goal
 	objectPlayer.name= htlivesight.Events.translate.parseScorer(event.text, event.objectPlayerId); //got player name from event text
 	var lineUp;
@@ -544,10 +551,11 @@ htlivesight.LineUp.MissingKeeperEvent= function(event, match){
 	lineUp[0].id= objectPlayer.id;
 	lineUp[0].behaviourInt= 0;
 	var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp); // create lineup string
+	var side;
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-		var side="home";
+		side="home";
 	else
-		var side="away";
+		side="away";
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
@@ -569,13 +577,14 @@ htlivesight.LineUp.newCaptainEvent= function(event, match){
 	
 	lineUp[0].captainId= event.objectPlayerId;
 	for(var j=0, len=lineUp.length; j<len; j++){
-		if (lineUp[j].id==lineUp[0].captainId && lineUp[j].name.match("♛")==null){ lineUp[j].name+=" ♛"; break;}
+		if (lineUp[j].id==lineUp[0].captainId && lineUp[j].name.match("♛")===null){ lineUp[j].name+=" ♛"; break;}
 	}
 	var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp); // create lineup string
+	var side;
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-		var side="home";
+		side="home";
 	else
-		var side="away";
+		side="away";
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
@@ -613,12 +622,12 @@ htlivesight.LineUp.toClipboard= function(lineup,id,minute,e){
 		for(var i=0;i<lineup.length;i++){
 			var playerNameIdYouth=lineup[i].split("#");
 			var specialty="";
-			if(parseInt(playerNameIdYouth[1])>0){
-			  var player = htlivesight.Player.List["_"+playerNameIdYouth[1]+"_"+playerNameIdYouth[2]];
+			if(parseInt(playerNameIdYouth[1],10)>0){
+				var player = htlivesight.Player.List["_"+playerNameIdYouth[1]+"_"+playerNameIdYouth[2]];
 				specialty = htlivesight.players.specialtyChar(player.specialty);
 			}
 			if(playerNameIdYouth[0]=="            "||playerNameIdYouth[0]=="                     "||playerNameIdYouth[0]=="           ") playerNameIdYouth[0]="";
-			if(i==0)lineupString+="[td colspan=5 align=center]"+playerNameIdYouth[0]+" "+specialty+"[/td][/tr][tr]";
+			if(i===0)lineupString+="[td colspan=5 align=center]"+playerNameIdYouth[0]+" "+specialty+"[/td][/tr][tr]";
 			if(i>0 && i<5)lineupString+="[td]"+playerNameIdYouth[0]+" "+specialty+"[/td]";
 			if(i==5)lineupString+="[td]"+playerNameIdYouth[0]+" "+specialty+"[/td][/tr][tr]";
 			if(i>5 && i<10)lineupString+="[td]"+playerNameIdYouth[0]+" "+specialty+"[/td]";
@@ -630,10 +639,10 @@ htlivesight.LineUp.toClipboard= function(lineup,id,minute,e){
 
 		htlivesight.copyToClipboard(lineupString,e);
 		if (htlivesight.platform != "Safari"){
-		  htlivesight.copiedToClipboardNotification(e);
-		 }
+			htlivesight.copiedToClipboardNotification(e);
+		}
 		
 			
 	//	alert("copied to clipboard!");
-	}catch(e){alert(e);};
+	}catch(error){alert(error);}
 };

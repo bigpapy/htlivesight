@@ -1,6 +1,7 @@
 var htlivesight = {
 		constants: function() {
-		}, 
+		},
+		addedMatchList: {}, // list of match added by HTLS (used to fix CHPP cache when all match are cleaned up but persist in live.xml
 		Settings: null,
 		showLeague: false,
 		liveCount: 0,
@@ -146,7 +147,8 @@ var htlivesight = {
 				document.getElementById("reLiveSpeed").disabled = true;
 				document.getElementById("reLiveByEvent").disabled = true;
 			}
-			if (htlivesight.prefs.general.hattrickServer=="") htlivesight.prefs.general.hattrickServer="www"; 
+			document.getElementById("clearAllMatches").checked = htlivesight.prefs.other.clearAllMatches;
+			if (htlivesight.prefs.general.hattrickServer==="") htlivesight.prefs.general.hattrickServer="www"; 
 			//var link=document.getElementById("HTLSThread").getAttribute("href");
 			//link="http://"+htlivesight.prefs.general.hattrickServer+link;
 			//document.getElementById("HTLSThread").setAttribute("href",link);
@@ -158,46 +160,46 @@ var htlivesight = {
 			}
 			var volume_tooltip = $('.volume_tooltip');
 			volume_tooltip.hide();
-		  $( "#volume_slider" ).slider({
-	      orientation: "horizontal",
-	      range: "min",
-	      min: 0,
-	      max: 100,
-	      value: isNaN(parseInt(htlivesight.prefs.general.volume))?"100":htlivesight.prefs.general.volume,
-	      slide: function(event, ui){
-	      	htlivesight.setvolume(ui.value);
-	      	//var value = slider.slider('value');  
-	      	volume_tooltip.css('left', ui.value).text(ui.value);  
-	      	//if(ui.value==0)	$("#muteAllImg").attr('src', "./img/sound_off.gif");
-		  		//if(ui.value!=0 && ui.value<=33)	$("#muteAllImg").attr('src', "./img/sound_on.gif");
-		  		//if(ui.value>33 && ui.value<=66)	$("#muteAllImg").attr('src', "./img/sound_on_1.gif");
-		  		//if(ui.value>66)	$("#muteAllImg").attr('src', "./img/sound_on_2.gif");
-	      },
-	      start: function(event, ui){
-	      	volume_tooltip.fadeIn('fast');
-	      },
-	     	stop: function( event, ui ) {
-	     		volume_tooltip.fadeOut('fast'); 
-		  		htlivesightPrefs.setInt("general.volume", ui.value);
-		  		//if(ui.value==0)	$("#muteAllImg").attr('src', "./img/sound_off.gif");
-		  		//if(ui.value!=0 && ui.value<=33)	$("#muteAllImg").attr('src', "./img/sound_on.gif");
-		  		//if(ui.value>33 && ui.value<=66)	$("#muteAllImg").attr('src', "./img/sound_on_1.gif");
-		  		//if(ui.value>66)	$("#muteAllImg").attr('src', "./img/sound_on_2.gif");
-		  		//if((!document.getElementById("chkSound").checked && ui.value!=0)||(document.getElementById("chkSound").checked && ui.value==0)){
-		  		//	htlivesight.Click.MuteAll();
-		  		//}
-		  		//htlivesight.Settings.click.soundPlay(htlivesight.Sound.samplePath+'whistle.ogg');
-		  		if(htlivesightPrefs.getBool("personalization.settingVolumeSound")){
-		  			if(htlivesight.platform == "Safari"){
-		  				htlivesight.Sound.play("http://sourceforge.net/projects/htlivesight/files/Sounds/default/mp3/whistle.mp3", document);
-		  			}else{
-		  				htlivesight.Sound.play(htlivesight.Sound.samplePath+'whistle.ogg', document);
-		  			}
-		  		}
-		  		
-		  	}
-	    });
-			
+			$( "#volume_slider" ).slider({
+				orientation: "horizontal",
+				range: "min",
+				min: 0,
+				max: 100,
+				value: isNaN(parseInt(htlivesight.prefs.general.volume))?"100":htlivesight.prefs.general.volume,
+						slide: function(event, ui){
+							htlivesight.setvolume(ui.value);
+//							var value = slider.slider('value');  
+							volume_tooltip.css('left', ui.value).text(ui.value);  
+//							if(ui.value==0)	$("#muteAllImg").attr('src', "./img/sound_off.gif");
+//							if(ui.value!=0 && ui.value<=33)	$("#muteAllImg").attr('src', "./img/sound_on.gif");
+//							if(ui.value>33 && ui.value<=66)	$("#muteAllImg").attr('src', "./img/sound_on_1.gif");
+//							if(ui.value>66)	$("#muteAllImg").attr('src', "./img/sound_on_2.gif");
+						},
+						start: function(event, ui){
+							volume_tooltip.fadeIn('fast');
+},
+stop: function( event, ui ) {
+	volume_tooltip.fadeOut('fast'); 
+	htlivesightPrefs.setInt("general.volume", ui.value);
+	//if(ui.value==0)	$("#muteAllImg").attr('src', "./img/sound_off.gif");
+	//if(ui.value!=0 && ui.value<=33)	$("#muteAllImg").attr('src', "./img/sound_on.gif");
+	//if(ui.value>33 && ui.value<=66)	$("#muteAllImg").attr('src', "./img/sound_on_1.gif");
+	//if(ui.value>66)	$("#muteAllImg").attr('src', "./img/sound_on_2.gif");
+	//if((!document.getElementById("chkSound").checked && ui.value!=0)||(document.getElementById("chkSound").checked && ui.value==0)){
+	//	htlivesight.Click.MuteAll();
+	//}
+	//htlivesight.Settings.click.soundPlay(htlivesight.Sound.samplePath+'whistle.ogg');
+	if(htlivesightPrefs.getBool("personalization.settingVolumeSound")){
+		if(htlivesight.platform == "Safari"){
+			htlivesight.Sound.play("http://sourceforge.net/projects/htlivesight/files/Sounds/default/mp3/whistle.mp3", document);
+		}else{
+			htlivesight.Sound.play(htlivesight.Sound.samplePath+'whistle.ogg', document);
+		}
+	}
+
+}
+			});
+
 		},
 		getRecommendedServer: function() {
 			htlivesight.HTTP.getRecommendedServer();
@@ -225,7 +227,13 @@ var htlivesight = {
 			} else {
 				htlivesight.prefs.other.reLiveByEvent = false;
 			};
-			htlivesight.Preferences.ReLive.save(htlivesight.prefs.other.reLive,htlivesight.prefs.other.reLiveSpeed, htlivesight.prefs.other.reLiveByEvent);
+			if(document.getElementById("clearAllMatches").checked){
+				
+			}
+			if(document.getElementById("save_teamId").checked){
+				htlivesight.Preferences.ReLive.save(htlivesight.prefs.other.reLive,htlivesight.prefs.other.reLiveSpeed, htlivesight.prefs.other.reLiveByEvent);
+				htlivesight.Preferences.clearAllMatches.save(document.getElementById("clearAllMatches").checked);
+			}
 			htlivesight.LogIn.Fakesuccess();
 		},
 		Logout: function() {
@@ -378,9 +386,9 @@ var htlivesight = {
 		},
 		setvolume: function(volume){
 			if(volume==0)	$("#muteAllImg").attr('src', "./img/sound_off.gif");
-  		if(volume!=0 && volume<=33)	$("#muteAllImg").attr('src', "./img/sound_on_1.gif");
-  		if(volume>33 && volume<=66)	$("#muteAllImg").attr('src', "./img/sound_on_2.gif");
-  		if(volume>66 || volume == undefined)	$("#muteAllImg").attr('src', "./img/sound_on_3.gif");
+			if(volume!==0 && volume<=33)	$("#muteAllImg").attr('src', "./img/sound_on_1.gif");
+			if(volume>33 && volume<=66)	$("#muteAllImg").attr('src', "./img/sound_on_2.gif");
+			if(volume>66 || volume === undefined)	$("#muteAllImg").attr('src', "./img/sound_on_3.gif");
 		},
 
 };

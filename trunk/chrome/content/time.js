@@ -67,14 +67,16 @@ htlivesight.Time = {
 				match.nextEventTime=new Date();
 				match.nextEventTime.setDate(match.nextEventTime.getDate()+7);
 				return htlivesight.Util.Parse("TimeFinish",htlivesight.data[0]);
-			};
+			}
 			var startTime = match.date;
 			var time = htlivesight.Time.hattrickTime - startTime; // time difference in miliseconds
 			var now = new Date();
+			var seconds;
+			var minutes;
 			var noWhistleTime=htlivesight.Time.noWhistleTime;
 			if (time<0) {
-				var seconds = Math.round(Math.abs(time)/1000); // time to go in seconds
-				var minutes = Math.round(seconds/60); // time to go in minutes
+				seconds = Math.round(Math.abs(time)/1000); // time to go in seconds
+				minutes = Math.round(seconds/60); // time to go in minutes
 				var hours = Math.round(minutes/60); // time to go in hours
 				var days = Math.round(hours/24); // time to go in days
 				// next event time (next update):
@@ -91,9 +93,9 @@ htlivesight.Time = {
 				if (minutes > 1)
 					return htlivesight.Util.Parse("TimeStartsIn",htlivesight.data[0]) + " " + minutes + " " + htlivesight.Util.Parse("TimeMinutes",htlivesight.data[0]); 
 				return htlivesight.Util.Parse("TimeStartsIn",htlivesight.data[0]) + " " + minutes + " " + htlivesight.Util.Parse("TimeMinute",htlivesight.data[0]); 
-			};
-			var seconds = Math.round(time/1000); // time elapsed in seconds
-			var minutes = Math.round(seconds/60); // time elapsed in minutes
+			}
+			seconds = Math.round(time/1000); // time elapsed in seconds
+			minutes = Math.round(seconds/60); // time elapsed in minutes
 			var m = minutes; // first half
 			if(htlivesight.prefs.other.reLive){
 				noWhistleTime=htlivesight.Time.noWhistleTime/htlivesight.prefs.other.reLiveSpeed+htlivesight.prefs.other.reLiveSpeed*100;
@@ -109,19 +111,18 @@ htlivesight.Time = {
 					}
 				}
 				if (m>htlivesight.Time.reLiveMinute && m>0)	m=htlivesight.Time.reLiveMinute;
-			};
+			}
 			// sounds of beginning first half and second half. (added by bigpapy)
 			//var temp= now-htlivesight.Time.whistleTime;
 			//console.log("now - htlivesight.Time.whistleTime = "+temp+ " htlivesight.Time.whistleTime = "+htlivesight.Time.whistleTime+" noWhistleTime = " + noWhistleTime);	
-			if((m==0 || m==60)&&((now-htlivesight.Time.whistleTime)> Math.max(noWhistleTime,60000)) && (htlivesight.Live.relivePlay||!htlivesight.Live.whistleBeginFirstHalfPlayed||!htlivesight.prefs.other.reLive)){
+			if((m===0 || m==60)&&((now-htlivesight.Time.whistleTime)> Math.max(noWhistleTime,60000)) && (htlivesight.Live.relivePlay||!htlivesight.Live.whistleBeginFirstHalfPlayed||!htlivesight.prefs.other.reLive)){
 				//console.log("beginning half time: passed first if");
 				if (htlivesight.prefs.personalization.whistleTime &&
 						htlivesight.prefs.notification.sound &&
 						!htlivesight.Match.List["_"+match.id+"_"+match.sourceSystem].window.mute) {
 					//console.log("beginning half time: passed second if");
 					try{
-						if (!htlivesight.prefs.notification.soundOnlyOpened
-								|| document.getElementById("live_"+match.id+"_"+match.sourceSystem).hidden==false) {
+						if (!htlivesight.prefs.notification.soundOnlyOpened	|| document.getElementById("live_"+match.id+"_"+match.sourceSystem).hidden===false) {
 							//console.log("beginning half time: passed third if");
 							htlivesight.Sound.sample.beginning.play();
 							htlivesight.Time.whistleTime=0-(0-now);

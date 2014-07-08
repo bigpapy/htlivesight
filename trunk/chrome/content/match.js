@@ -29,7 +29,7 @@ htlivesight.Match= function(id, date, home, away, event, arena, sourceSystem, su
 	this.lastShownEventIndex= [-1,-1];
 	this.nextEventTime= 0;
 };
-htlivesight.Match.List = new Object();
+htlivesight.Match.List = {};
 htlivesight.Match.Team = function (id, name, shortName) {
 	this.id = id;
 	this.name = htlivesight.Util.RemoveAmpersand(name);
@@ -68,7 +68,7 @@ htlivesight.Match.side = function(team, goals, formation, tactic) {
 };
 htlivesight.Match.events = function(evList) {
 	this.list = evList;
-	this.dom = new Array();
+	this.dom = [];
 };
 htlivesight.Match.prototype.updateTime = function() {
 	this.timeElapsed = htlivesight.Time.getMatchTime(this);
@@ -102,6 +102,7 @@ htlivesight.Match.prototype.isAwayTeam = function(teamId) {
 	return false;
 };
 htlivesight.Match.Update = function (newMatch) {
+	var i;
 	var match = htlivesight.Match.List["_"+newMatch.id+"_"+newMatch.sourceSystem];
 	if (!match) {
 		// new match!
@@ -118,10 +119,10 @@ htlivesight.Match.Update = function (newMatch) {
 			} else {
 				if (newMatch.arena.name) {
 					match.arena.name = newMatch.arena.name;
-				};
+				}
 				if (newMatch.arena.attendance) {
 					match.arena.attendance = newMatch.arena.attendance;
-				};
+				}
 			}
 		}
 		if (newMatch.home) {
@@ -169,7 +170,7 @@ htlivesight.Match.Update = function (newMatch) {
 				if(match.home.possession_1 < newMatch.home.possession_1) match.home.possession_1 = newMatch.home.possession_1;
 				if(match.home.possession_2 < newMatch.home.possession_2) match.home.possession_2 = newMatch.home.possession_2;
 			}
-		};
+		}
 		if (newMatch.away) {
 			if (!match.away) {
 				match.away=newMatch.away;
@@ -214,9 +215,9 @@ htlivesight.Match.Update = function (newMatch) {
 					if(match.away.lineUp[0].update < newMatch.away.lineUp[0].update) match.away.lineUp= newMatch.away.lineUp;
 				}catch(e){/*console.log(e);*/}
 			}
-		};
+		}
 		if (newMatch.event && newMatch.event.list.last > 0) {
-			var i = match.event.list.last+1;
+			i = match.event.list.last+1;
 			if (i == 1)
 				i = 0;
 			match.event.list.first = i;
@@ -230,11 +231,11 @@ htlivesight.Match.Update = function (newMatch) {
 		for (i=match.event.list.first; i <= match.event.list.last; i++) {
 			if (match.event.list["_"+i])
 				htlivesight.Events.translate(match, match.event.list["_"+i]);
-		};
+		}
 	}
 	if (newMatch.lastShownEventIndex) {
 		match.lastShownEventIndex=newMatch.lastShownEventIndex;
-	};
+	}
 	if (newMatch.reLiveByEventEnd) {
 		match.reLiveByEventEnd=newMatch.reLiveByEventEnd;
 	}else if(match.reLiveByEventEnd){
@@ -242,6 +243,6 @@ htlivesight.Match.Update = function (newMatch) {
 	}
 	if (newMatch.nextEventTime) {
 		match.nextEventTime=newMatch.nextEventTime;
-	};
+	}
 	return match;
 };

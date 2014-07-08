@@ -10,157 +10,146 @@ htlivesight.Player = function Team(id, firstName, lastName, specialty, teamId, y
 	this.youth = youth;
 
 };
-htlivesight.Player.List = new Object();
+htlivesight.Player.List = {};
 htlivesight.players.HTTPGet = function (playerId,youth) {
 //	console.log(htlivesight.Player.List["_"+playerId+"_"+youth].specialty);
-	if(htlivesight.Player.List["_"+playerId+"_"+youth].specialty!="") return;
+	var parameters;
+	if(htlivesight.Player.List["_"+playerId+"_"+youth].specialty!=="") return;
 	if(youth=="false"){
-
-	var parameters=[["file","playerdetails"],
-	                ["version", "2.4"],
-	                ["playerID",playerId],
-	                ];
+		parameters=[["file","playerdetails"],["version", "2.4"],["playerID",playerId],];
 	}else{
-
-		var parameters=[["file","youthplayerdetails"],
-		                ["version", "1.0"],
-		                ["youthPlayerId",playerId],
-		                ];
-			
+		parameters=[["file","youthplayerdetails"],["version", "1.0"],["youthPlayerId",playerId],];
 	}
-	if(playerId!=0){
-	  htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.players.ParseGet(xml,playerId, youth);});
+	if(playerId!==0){
+		htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.players.ParseGet(xml,playerId, youth);});
 	}
 };
 htlivesight.players.ParseGet = function(xml,playerId, youth){
-		var firstName = xml.getElementsByTagName("FirstName")[0].textContent;
-		var lastName = xml.getElementsByTagName("LastName")[0].textContent;
-		var nickName = xml.getElementsByTagName("NickName")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].firstName= firstName + " "+((nickName!=="")?("'"+nickName+"' "):"") + lastName ;
- //   console.log("counter: "+htlivesight.Live.counterPlayers+" downloading "+firstName+" "+lastName);
-//		var playerId;
-//		if(youth=="true"){
-//			playerId = xml.getElementsByTagName("YouthPlayerID")[0].textContent;
-//		}else{
-//			playerId = xml.getElementsByTagName("PlayerID")[0].textContent;	
-//		}
-//		console.log(xml.getElementsByTagName("LastName")[0].textContent);
-		var specialty = xml.getElementsByTagName("Specialty")[0].textContent;
-		if(specialty == "" && youth=="true")specialty="0"; 
+	var firstName = xml.getElementsByTagName("FirstName")[0].textContent;
+	var lastName = xml.getElementsByTagName("LastName")[0].textContent;
+	var nickName = xml.getElementsByTagName("NickName")[0].textContent;
+	htlivesight.Player.List["_"+playerId+"_"+youth].firstName= firstName + " "+((nickName!=="")?("'"+nickName+"' "):"") + lastName ;
+	//   console.log("counter: "+htlivesight.Live.counterPlayers+" downloading "+firstName+" "+lastName);
+//	var playerId;
+//	if(youth=="true"){
+//	playerId = xml.getElementsByTagName("YouthPlayerID")[0].textContent;
+//	}else{
+//	playerId = xml.getElementsByTagName("PlayerID")[0].textContent;	
+//	}
+//	console.log(xml.getElementsByTagName("LastName")[0].textContent);
+	var specialty = xml.getElementsByTagName("Specialty")[0].textContent;
+	if(specialty === "" && youth=="true")specialty="0"; 
 
 	//	var player = new htlivesight.Player(playerId, firstName, lastName, specialty, teamId, youth);
 
-		htlivesight.Player.List["_"+playerId+"_"+youth].specialty = specialty;
-		
-		var age = xml.getElementsByTagName("Age")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].age = age;
-		
-		var ageDays = xml.getElementsByTagName("AgeDays")[0].textContent;
-		htlivesight.Player.List["_"+playerId+"_"+youth].ageDays = ageDays;
-		
-		if(youth!="true"){
-		
-  		var tsi = xml.getElementsByTagName("TSI")[0].textContent;
-	  	htlivesight.Player.List["_"+playerId+"_"+youth].tsi = tsi;
-		
-  		var form = xml.getElementsByTagName("PlayerForm")[0].textContent;
-	  	htlivesight.Player.List["_"+playerId+"_"+youth].form = htlivesight.players.parserMainSkill(form);
-		
-  		var stamina = xml.getElementsByTagName("StaminaSkill")[0].textContent;
-	  	htlivesight.Player.List["_"+playerId+"_"+youth].stamina = htlivesight.players.parserMainSkill(stamina);
-		
-  		var experience = xml.getElementsByTagName("Experience")[0].textContent;
-	  	htlivesight.Player.List["_"+playerId+"_"+youth].experience = htlivesight.players.parserMainSkill(experience);
-		
-  		var loyalty = xml.getElementsByTagName("Loyalty")[0].textContent;
-	  	htlivesight.Player.List["_"+playerId+"_"+youth].loyalty = htlivesight.players.parserMainSkill(loyalty);
-		
-  		var motherClubBonus = xml.getElementsByTagName("MotherClubBonus")[0].textContent;
-	  	htlivesight.Player.List["_"+playerId+"_"+youth].motherClubBonus = motherClubBonus||'';
-		
-  		var isAbroad = xml.getElementsByTagName("IsAbroad")[0].textContent;
-	  	htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad = isAbroad||'';
-	  	
-	  	var agreeability = xml.getElementsByTagName("Agreeability")[0].textContent;
-	  	htlivesight.Player.List["_"+playerId+"_"+youth].agreeability = htlivesight.players.agreeability(agreeability)||'';
-	  	
-	  	var aggressiveness = xml.getElementsByTagName("Aggressiveness")[0].textContent;
-	  	htlivesight.Player.List["_"+playerId+"_"+youth].aggressiveness = htlivesight.players.aggressiveness(aggressiveness)||'';
-	  	
-	  	var honesty = xml.getElementsByTagName("Honesty")[0].textContent;
-	  	htlivesight.Player.List["_"+playerId+"_"+youth].honesty = htlivesight.players.honesty(honesty)||'';
-		}
-	
-  		var keeperSkill = xml.getElementsByTagName("KeeperSkill")[0];
-		
-	  	if (keeperSkill !== undefined){
-	  		htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill = htlivesight.players.getSkillFromXML(xml, "KeeperSkill", youth);
-	  	}
-	  	
-	  	var playmakerSkill = xml.getElementsByTagName("PlaymakerSkill")[0];
-			
-	  	if (playmakerSkill !== undefined){
+	htlivesight.Player.List["_"+playerId+"_"+youth].specialty = specialty;
 
-	  		htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill = htlivesight.players.getSkillFromXML(xml, "PlaymakerSkill", youth);
-	  	}
+	var age = xml.getElementsByTagName("Age")[0].textContent;
+	htlivesight.Player.List["_"+playerId+"_"+youth].age = age;
 
-	  	var scorerSkill = xml.getElementsByTagName("ScorerSkill")[0];
-			
-	  	if (scorerSkill !== undefined){
+	var ageDays = xml.getElementsByTagName("AgeDays")[0].textContent;
+	htlivesight.Player.List["_"+playerId+"_"+youth].ageDays = ageDays;
 
-	  		htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill = htlivesight.players.getSkillFromXML(xml, "ScorerSkill", youth);
-	  	}
+	if(youth!="true"){
 
+		var tsi = xml.getElementsByTagName("TSI")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].tsi = tsi;
 
-	  	var passingSkill = xml.getElementsByTagName("PassingSkill")[0];
-			
-	  	if (passingSkill !== undefined){
-	  	
-	  		htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill = htlivesight.players.getSkillFromXML(xml, "PassingSkill", youth);
-	  	}
-	  	
-	  	var wingerSkill = xml.getElementsByTagName("WingerSkill")[0];
-			
-	  	if (wingerSkill !== undefined){
-	  	
-		  	htlivesight.Player.List["_"+playerId+"_"+youth].wingerSkill = htlivesight.players.getSkillFromXML(xml, "WingerSkill", youth);
-	  	}
-	  	
-	  	var defenderSkill = xml.getElementsByTagName("DefenderSkill")[0];
-			
-	  	if (defenderSkill !== undefined){
-	  	
-		  	htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill = htlivesight.players.getSkillFromXML(xml, "DefenderSkill", youth);
-	  	}
+		var form = xml.getElementsByTagName("PlayerForm")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].form = htlivesight.players.parserMainSkill(form);
 
-	  	var setPiecesSkill = xml.getElementsByTagName("SetPiecesSkill")[0];
-			
-	  	if (setPiecesSkill !== undefined){
-	  	
-		  	htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill = htlivesight.players.getSkillFromXML(xml, "SetPiecesSkill", youth);
-		  }
+		var stamina = xml.getElementsByTagName("StaminaSkill")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].stamina = htlivesight.players.parserMainSkill(stamina);
+
+		var experience = xml.getElementsByTagName("Experience")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].experience = htlivesight.players.parserMainSkill(experience);
+
+		var loyalty = xml.getElementsByTagName("Loyalty")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].loyalty = htlivesight.players.parserMainSkill(loyalty);
+
+		var motherClubBonus = xml.getElementsByTagName("MotherClubBonus")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].motherClubBonus = motherClubBonus||'';
+
+		var isAbroad = xml.getElementsByTagName("IsAbroad")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad = isAbroad||'';
+
+		var agreeability = xml.getElementsByTagName("Agreeability")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].agreeability = htlivesight.players.agreeability(agreeability)||'';
+
+		var aggressiveness = xml.getElementsByTagName("Aggressiveness")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].aggressiveness = htlivesight.players.aggressiveness(aggressiveness)||'';
+
+		var honesty = xml.getElementsByTagName("Honesty")[0].textContent;
+		htlivesight.Player.List["_"+playerId+"_"+youth].honesty = htlivesight.players.honesty(honesty)||'';
+	}
+
+	var keeperSkill = xml.getElementsByTagName("KeeperSkill")[0];
+
+	if (keeperSkill !== undefined){
+		htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill = htlivesight.players.getSkillFromXML(xml, "KeeperSkill", youth);
+	}
+
+	var playmakerSkill = xml.getElementsByTagName("PlaymakerSkill")[0];
+
+	if (playmakerSkill !== undefined){
+
+		htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill = htlivesight.players.getSkillFromXML(xml, "PlaymakerSkill", youth);
+	}
+
+	var scorerSkill = xml.getElementsByTagName("ScorerSkill")[0];
+
+	if (scorerSkill !== undefined){
+
+		htlivesight.Player.List["_"+playerId+"_"+youth].scorerSkill = htlivesight.players.getSkillFromXML(xml, "ScorerSkill", youth);
+	}
+	var passingSkill = xml.getElementsByTagName("PassingSkill")[0];
+	if (passingSkill !== undefined){
+
+		htlivesight.Player.List["_"+playerId+"_"+youth].passingSkill = htlivesight.players.getSkillFromXML(xml, "PassingSkill", youth);
+	}
+
+	var wingerSkill = xml.getElementsByTagName("WingerSkill")[0];
+
+	if (wingerSkill !== undefined){
+
+		htlivesight.Player.List["_"+playerId+"_"+youth].wingerSkill = htlivesight.players.getSkillFromXML(xml, "WingerSkill", youth);
+	}
+
+	var defenderSkill = xml.getElementsByTagName("DefenderSkill")[0];
+
+	if (defenderSkill !== undefined){
+
+		htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill = htlivesight.players.getSkillFromXML(xml, "DefenderSkill", youth);
+	}
+
+	var setPiecesSkill = xml.getElementsByTagName("SetPiecesSkill")[0];
+
+	if (setPiecesSkill !== undefined){
+
+		htlivesight.Player.List["_"+playerId+"_"+youth].setPiecesSkill = htlivesight.players.getSkillFromXML(xml, "SetPiecesSkill", youth);
+	}
 
 
-		if(parseInt(specialty)>=0 && parseInt(specialty)<=6){
-		  htlivesight.players.addSpecialtyToDom(playerId,youth,specialty);
-		}
+	if(parseInt(specialty,10)>=0 && parseInt(specialty,10)<=6){
+		htlivesight.players.addSpecialtyToDom(playerId,youth,specialty);
+	}
 
 };
 
 htlivesight.players.getSkillFromXML = function (xml, skillName, youth){
-	
+
 	var xmlSkillText = xml.getElementsByTagName(skillName)[0].textContent;
 	var skillString = htlivesight.players.parserMainSkill(xmlSkillText);
-	
+
 	if (youth=="true"){
 		if(xml.getElementsByTagName(skillName+"Max")[0]!==undefined){
-	    var xmlMaxSkillText = xml.getElementsByTagName(skillName+"Max")[0].textContent;
-	    skillString += " / " + htlivesight.players.parserMainSkill(xmlMaxSkillText);
+			var xmlMaxSkillText = xml.getElementsByTagName(skillName+"Max")[0].textContent;
+			skillString += " / " + htlivesight.players.parserMainSkill(xmlMaxSkillText);
 		}else{
 			skillString = " / ";
 		}
-	  
-	  if(skillString == " / ") skillString = "";
+
+		if(skillString == " / ") skillString = "";
 	}
 	return skillString;
 };
@@ -169,98 +158,98 @@ htlivesight.players.specialtyChar = function (specialty){
 
 	switch (specialty){
 	case "0": return "";
-	break;
+
 	case "1": return "["+htlivesight.Util.Parse("Technical",htlivesight.data[0])+"] ";
-	break;
+
 	case "2": return "["+htlivesight.Util.Parse("Quick",htlivesight.data[0])+"] ";
-	break;
+
 	case "3": return "["+htlivesight.Util.Parse("Powerful",htlivesight.data[0])+"] ";
-	break;
+
 	case "4": return "["+htlivesight.Util.Parse("Unpredictable",htlivesight.data[0])+"] ";
-	break;
+
 	case "5": return "["+htlivesight.Util.Parse("Header",htlivesight.data[0])+"] ";
-	break;
+
 	case "6": return "["+htlivesight.Util.Parse("Regainer",htlivesight.data[0])+"] ";
-	break;
+
 	default: return "";
-	};
+	}
 };
 
 htlivesight.players.specialtyImage = function(specialty){
 	switch (specialty){
 	case "0": return "";
-	break;
+
 	case "1": return htlivesight.Image.spec.spec1;
-	break;
+
 	case "2": return htlivesight.Image.spec.spec2;
-	break;
+
 	case "3": return htlivesight.Image.spec.spec3;
-	break;
+
 	case "4": return htlivesight.Image.spec.spec4;
-	break;
+
 	case "5": return htlivesight.Image.spec.spec5;
-	break;
+
 	case "6": return htlivesight.Image.spec.spec6;
-	break;
+
 	default: return "";
-	};
-}
+	}
+};
 
 htlivesight.players.agreeability = function (agreeability){
 
 	switch (agreeability){
 	case "0": return htlivesight.Util.Parse("NastyFellow",htlivesight.data[0])+" (0)";
-	break;
+
 	case "1": return htlivesight.Util.Parse("ControversialPerson",htlivesight.data[0])+" (1)";
-	break;
+
 	case "2": return htlivesight.Util.Parse("PleasantGuy",htlivesight.data[0])+" (2)";
-	break;
+
 	case "3": return htlivesight.Util.Parse("SympatheticGuy",htlivesight.data[0])+" (3)";
-	break;
+
 	case "4": return htlivesight.Util.Parse("PopularGuy",htlivesight.data[0])+" (4)";
-	break;
+
 	case "5": return htlivesight.Util.Parse("BelovedTeamMember",htlivesight.data[0])+" (5)";
-	break;
+
 	default: return "";
-	};
+	}
 };
 
 htlivesight.players.honesty = function (honesty){
 
 	switch (honesty){
 	case "0": return htlivesight.Util.Parse("Infamous",htlivesight.data[0])+" (0)";
-	break;
+
 	case "1": return htlivesight.Util.Parse("Dishonest",htlivesight.data[0])+" (1)";
-	break;
+
 	case "2": return htlivesight.Util.Parse("Honest",htlivesight.data[0])+" (2)";
-	break;
+
 	case "3": return htlivesight.Util.Parse("Upright",htlivesight.data[0])+" (3)";
-	break;
+
 	case "4": return htlivesight.Util.Parse("Righteous",htlivesight.data[0])+" (4)";	
-	break;
+
 	case "5": return htlivesight.Util.Parse("Saintly",htlivesight.data[0])+" (5)";
-	break;
+
 	default: return "";
-	};
+	}
 };
 
 htlivesight.players.aggressiveness = function (aggressiveness){
 
 	switch (aggressiveness){
 	case "0": return htlivesight.Util.Parse("Tranquil",htlivesight.data[0])+" (0)";
-	break;
+
 	case "1": return htlivesight.Util.Parse("Calm",htlivesight.data[0])+" (1)";
-	break;
+
 	case "2": return htlivesight.Util.Parse("Balanced",htlivesight.data[0])+" (2)";
-	break;
+
 	case "3": return htlivesight.Util.Parse("Temperamental",htlivesight.data[0])+" (3)";
-	break;
+
 	case "4": return htlivesight.Util.Parse("Fiery",htlivesight.data[0])+" (4)";
-	break;
+
 	case "5": return htlivesight.Util.Parse("Unstable",htlivesight.data[0])+" (5)";
-	break;
+
 	default: return "";
-	};
+	}
 };
 
 htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
@@ -278,22 +267,22 @@ htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
 			if(specialty!='0') $(this).append('<image class="player_icons" src="'+htlivesight.players.specialtyImage(specialty)+'"</image>');
 			//$(this).text($(this).text()+" "+htlivesight.players.specialtyChar(specialty));
 			$(this).addClass("withSpecialty");
-			}
+		}
 		if(!$(this).hasClass("withTitle")&& htlivesight.Player.List["_"+playerId+"_"+youth].age>14){
 			$(this).attr('title', ''+htlivesight.Player.List["_"+playerId+"_"+youth].firstName+'\n'+
-		//			((htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad=="True")?"":" ⚑")+'\n'+
+					//			((htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad=="True")?"":" ⚑")+'\n'+
 					htlivesight.Util.Parse("Age",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].age + ' ' +
 					htlivesight.Util.Parse("TimeDays",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].ageDays+'\n' +
 					((youth!=="true")?(htlivesight.Util.Parse("Agreeability",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].agreeability+"\n"):"")+
 					((youth!=="true")?(htlivesight.Util.Parse("Aggressiveness",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].aggressiveness+"\n"):"")+
 					((youth!=="true")?(htlivesight.Util.Parse("Honesty",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].honesty+"\n"):"")+
 					((youth!=="true")?(htlivesight.Util.Parse("Form",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].form+"\n"):"")+
-				((youth!=="true")?(htlivesight.Util.Parse("Stamina",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].stamina+'\n'):"")+
+					((youth!=="true")?(htlivesight.Util.Parse("Stamina",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].stamina+'\n'):"")+
 					((youth!=="true")?(htlivesight.Util.Parse("Experience",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].experience+'\n'):"")+
 					((youth!=="true")?(htlivesight.Util.Parse("Loyalty",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].loyalty+" "):"")+
 					((youth!=="true")?((htlivesight.Player.List["_"+playerId+"_"+youth].motherClubBonus=="True")?"♥\n":"\n"):"")+
 					((youth!=="true")?('TSI: '+htlivesight.Player.List["_"+playerId+"_"+youth].tsi+'\n'):"") +
-					((htlivesight.players.specialtyChar(specialty)!="")?(''+ htlivesight.players.specialtyChar(specialty)+"\n"):"")+
+					((htlivesight.players.specialtyChar(specialty)!=="")?(''+ htlivesight.players.specialtyChar(specialty)+"\n"):"")+
 					((htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill)?("\n"+htlivesight.Util.Parse("Keeper",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill):"")+
 					((htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill)?("\n"+htlivesight.Util.Parse("Defending",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].defenderSkill):"")+
 					((htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill)?("\n"+htlivesight.Util.Parse("Playmaking",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].playmakerSkill):"")+
@@ -311,68 +300,47 @@ htlivesight.players.parserMainSkill = function(mainSkill) {
 
 	switch (mainSkill) {
 	case "0": return htlivesight.Util.Parse("NonExistent",htlivesight.data[0])+" (0)"; // to add localization
-	break;
 
 	case "1": return htlivesight.Util.Parse("Disastrous",htlivesight.data[0])+" (1)";
-	break;
 
 	case "2": return htlivesight.Util.Parse("Wretched",htlivesight.data[0])+" (2)";
-	break;
 
 	case "3": return htlivesight.Util.Parse("Poor",htlivesight.data[0])+" (3)";
-	break;
 
 	case "4": return htlivesight.Util.Parse("Weak",htlivesight.data[0])+" (4)";
-	break;
 
 	case "5": return htlivesight.Util.Parse("Inadequate",htlivesight.data[0])+" (5)";
-	break;
 
 	case "6": return htlivesight.Util.Parse("Passable",htlivesight.data[0])+" (6)";
-	break;
 
 	case "7": return htlivesight.Util.Parse("Solid",htlivesight.data[0])+" (7)";
-	break;
 
 	case "8": return htlivesight.Util.Parse("Excellent",htlivesight.data[0])+" (8)";
-	break;
 
 	case "9": return htlivesight.Util.Parse("Formidable",htlivesight.data[0])+" (9)";
-	break;
 
 	case "10": return htlivesight.Util.Parse("Outstanding",htlivesight.data[0])+" (10)";
-	break;
 
 	case "11": return htlivesight.Util.Parse("Brilliant",htlivesight.data[0])+" (11)";
-	break;
 
 	case "12": return htlivesight.Util.Parse("Magnificent",htlivesight.data[0])+" (12)";
-	break;
 
 	case "13": return htlivesight.Util.Parse("WorldClass",htlivesight.data[0])+" (13)";
-	break;
 
 	case "14": return htlivesight.Util.Parse("Supernatural",htlivesight.data[0])+" (14)";
-	break;
 
 	case "15": return htlivesight.Util.Parse("Titanic",htlivesight.data[0])+" (15)";
-	break;
 
 	case "16": return htlivesight.Util.Parse("ExtraTerrestrial",htlivesight.data[0])+" (16)";
-	break;
 
 	case "17": return htlivesight.Util.Parse("Mythical",htlivesight.data[0])+" (17)";
-	break;
 
 	case "18": return htlivesight.Util.Parse("Magical",htlivesight.data[0])+" (18)";
-	break;
 
 	case "19": return htlivesight.Util.Parse("Utopian",htlivesight.data[0])+" (19)";
-	break;
 
 	case "20": return htlivesight.Util.Parse("Divine",htlivesight.data[0])+" (20)";
-	break;
 
 	default: return "";
-	};
+	}
 };

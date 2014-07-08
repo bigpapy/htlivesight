@@ -8,9 +8,9 @@ htlivesight.Settings = {
 		startup: function() {
 			htlivesight.Settings.self = this;
 			this.preferences = htlivesight.Preferences.get();
-		  $(function() {
-		    $( "#tabs" ).tabs();
-		  });
+			$(function(){
+				$("#tabs").tabs();
+			});
 			htlivesight.Settings.load();
 		}, 
 		load: function() {
@@ -62,7 +62,7 @@ htlivesight.Settings = {
 					document.getElementById("txtGetFriendsWithinHours").disabled=false;
 				} else {
 					document.getElementById("txtGetFriendsWithinHours").disabled=true;
-				};
+				}
 			} else {
 				document.getElementById("chkGetFriends").checked=false;
 				document.getElementById("chkGetFriendsWithin").disabled=true;
@@ -238,7 +238,7 @@ htlivesight.Settings = {
 			//document.getElementById("textColorCode").value = "#"+prefs.colors.textColorCode;
 			if (prefs.colors.friendHomeTextColorCheck){
 				document.getElementById("label_friendHomeColorCode").style.color= "#" + prefs.colors.textColorCode;
-			};
+			}
 				//document.getElementById("label_friendAwayColorCode").style.color= "#" + prefs.colors.textColorCode;
 				//document.getElementById("label_foeHomeColorCode").style.color= "#" + prefs.colors.textColorCode;
 				//document.getElementById("label_foeAwayColorCode").style.color= "#" + prefs.colors.textColorCode;
@@ -255,39 +255,18 @@ htlivesight.Settings = {
 			document.getElementById("headerBarTextColorCheck").checked = prefs.colors.headerBarTextColorCheck;
 			document.getElementById("headerBarTextColorCode").disabled = !prefs.colors.headerBarTextColorCheck;
 			document.getElementById("headerBarTextColorCode").value = "#"+prefs.colors.headerBarTextColorCode;
-  	  if (document.getElementById("headerBarColorCheck").checked){
-			  $('.ui-accordion-header').css('background-image','none');
-			  $('.ui-accordion-header, #label_headerBarColorCode, #label_headerBarTextColorCode').css('background-color','#'+prefs.colors.headerBarColorCode);
-		  }
-		  if (document.getElementById("headerBarTextColorCheck").checked){
-			  //$('.ui-accordion-header').css('background-image','none');
-			  $('.ui-accordion-header, .ui-accordion-header span, .ui-accordion-header a , #label_headerBarColorCode, #label_headerBarTextColorCode').css('color','#'+prefs.colors.headerBarTextColorCode);
-		  }
-		  document.getElementById("volumeSound").checked = prefs.personalization.settingVolumeSound;
-		  document.getElementById("chkExportOauth").checked = prefs.other.exportOauth;
-		  document.getElementById("chkExportBackground").checked = prefs.other.exportBackground;
-		  document.getElementById("chkExportSounds").checked = prefs.other.exportSounds;
-				//if (prefs.colors.headerBarColorCheck){
-			//	$('.ui-accordion-header').css('background-image','none');
-			//	$('.ui-accordion-header').css('background-color','#'+prefs.colors.headerBarColorCode);
-			//} 
-		  /*
-		  $( "#volume_slider" ).slider({
-	      orientation: "horizontal",
-	      range: "min",
-	      min: 0,
-	      max: 100,
-	      value: isNaN(parseInt(prefs.general.volume))?"100":prefs.general.volume,
-	     // slide: function( event, ui ) {
-	     //   $( "#volume_value" ).val( ui.value );
-	     // },
-		  	stop: function( event, ui ) {
-		  		htlivesight.Preferences.start();
-		  		htlivesightPrefs.setInt("general.volume", ui.value);
-		  		htlivesight.Settings.click.soundPlay('whistleSoundPath');
-		  	}
-	    });*/
-	    //$( "#volume_value" ).val( $( "#volume_slider" ).slider( "value" ) );
+			if (document.getElementById("headerBarColorCheck").checked){
+				$('.ui-accordion-header').css('background-image','none');
+				$('.ui-accordion-header, #label_headerBarColorCode, #label_headerBarTextColorCode').css('background-color','#'+prefs.colors.headerBarColorCode);
+			}
+			if (document.getElementById("headerBarTextColorCheck").checked){
+//				$('.ui-accordion-header').css('background-image','none');
+				$('.ui-accordion-header, .ui-accordion-header span, .ui-accordion-header a , #label_headerBarColorCode, #label_headerBarTextColorCode').css('color','#'+prefs.colors.headerBarTextColorCode);
+			}
+			document.getElementById("volumeSound").checked = prefs.personalization.settingVolumeSound;
+			document.getElementById("chkExportOauth").checked = prefs.other.exportOauth;
+			document.getElementById("chkExportBackground").checked = prefs.other.exportBackground;
+			document.getElementById("chkExportSounds").checked = prefs.other.exportSounds;
 		},
 		save: function() {
 			htlivesight.Log.properties(this.preferences.notification);
@@ -443,7 +422,7 @@ htlivesight.Settings = {
 			document.getElementById("label_pressingButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
 			document.getElementById("label_pressingButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 		// my bruised sound
-		  document.getElementById("label_myBruisedCheck").innerHTML=htlivesight.Util.Parse("PathSoundsMyBruised",data[0]);
+			document.getElementById("label_myBruisedCheck").innerHTML=htlivesight.Util.Parse("PathSoundsMyBruised",data[0]);
 			document.getElementById("label_myBruisedButton_reset").innerHTML=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
 			document.getElementById("label_myBruisedButton_play").innerHTML=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 		// other bruised sound
@@ -508,9 +487,6 @@ htlivesight.Settings = {
 			document.getElementById("label_chkExportOauth").innerHTML=htlivesight.Util.Parse("ExportOauth",data[0]);
 			document.getElementById("label_chkExportBackground").innerHTML=htlivesight.Util.Parse("ExportBackground",data[0]);
 			document.getElementById("label_chkExportSounds").innerHTML=htlivesight.Util.Parse("ExportSounds",data[0]);
-			/*if(htlivesight.platform == "Safari"){
-			  $("[type='file']").replaceWith("<span>"+htlivesight.Util.Parse("OnlyHTTPFiles",data[0])+"</span>");
-			}*/
 			
 			try{ //because it's present in settings.html but not in htlivesight.html
 				document.getElementById("OkButton").innerHTML=htlivesight.Util.Parse("ButtonOk",data[0]);
@@ -555,7 +531,6 @@ htlivesight.Settings = {
 				prefs.general.openInTab = value;
 			},
 			txtfixhattrickserver: function() {
-				var prefs = htlivesight.Settings.preferences;
 				var value = document.getElementById("hattrickServer").value;
 				htlivesight.Settings.preferences.general.hattrickServer = value;
 			},
@@ -944,7 +919,7 @@ htlivesight.Settings = {
 				document.getElementById("label_neutralColorCode").style.backgroundColor= "#" + prefs.colors.neutralColorCode;
 			},
 			textColorCheck: function() {
-				var prefs = htlivesight.Settings.preferences;
+				//var prefs = htlivesight.Settings.preferences;
 				//if(document.getElementById("textColorCheck").checked) {
 				//	document.getElementById("textColorCode").disabled = false;
 				//	prefs.colors.textColorCheck=true;

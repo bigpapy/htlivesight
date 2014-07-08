@@ -51,8 +51,9 @@ htlivesight.loadXml = function(url, callback, crossSite) {
 		}, crossSite);
 	}
 	else {
+	    var text = "";
 		try {
-			var text = htlivesight.load(url);
+			text = htlivesight.load(url);
 			var parser = new DOMParser();
 			var xml = parser.parseFromString(text, "text/xml");
 			return xml;
@@ -86,31 +87,32 @@ htlivesight.filePickerForDataUrl = function(doc, callback) {
 	return input;
 };
 htlivesight.copyToClipboard = function(string,e) {
+	var clipboardStore;
 	if(htlivesight.platform == "Safari"){
 		if ($( "#clipboard-store" ).dialog( "isOpen" )){
-		  $("#clipboard-store").dialog('close');
+			$("#clipboard-store").dialog('close');
 		}
-	  	var clipboardStore = document.getElementById('clipboard-store');
+		clipboardStore = document.getElementById('clipboard-store');
 		clipboardStore.value = string;
 		//clipboardStore.title  = "press ctrl/cmd + c to copy selected text";
 		clipboardStore.title  = htlivesight.Util.Parse("SafariClipboardTitle",htlivesight.data[0]);
-        $( "#clipboard-store" ).dialog({ autoOpen: false, hide: "fadeOut", height: "auto", width: 45, position: [e.pageX+10,e.pageY-20-document.documentElement.scrollTop-document.body.scrollTop], resizable: true  });
+		$( "#clipboard-store" ).dialog({ autoOpen: false, hide: "fadeOut", height: "auto", width: 45, position: [e.pageX+10,e.pageY-20-document.documentElement.scrollTop-document.body.scrollTop], resizable: true  });
 		setTimeout(function(){ $("#clipboard-store").dialog( "open" ); clipboardStore.select();},500);
 		//var dialog= $("#clipboard-store").dialog( "open" )/*.fadeOut(1500)*/;
 		//clipboardStore.select();
-		}else if(htlivesight.platform == "Chrome"){
-		var clipboardStore = document.getElementById('clipboard-store');
+	}else if(htlivesight.platform == "Chrome"){
+		clipboardStore = document.getElementById('clipboard-store');
 		clipboardStore.value = string;
 		clipboardStore.style.display="block";
 		clipboardStore.select();
 		document.execCommand('Copy');
 		clipboardStore.style.display="none";
-	}else if(htlivesight.arch = "Gecko") {
+	}else if(htlivesight.arch == "Gecko") {
 		var gClipboardHelper = Components
 		.classes["@mozilla.org/widget/clipboardhelper;1"]
 		.getService(Components.interfaces.nsIClipboardHelper);
 		gClipboardHelper.copyString(string);
-	};
+	}
 };
 htlivesight.copiedToClipboardNotification=function(e){
 	// opening dialogue box to let user knows lineup is clicked.
@@ -130,7 +132,7 @@ htlivesight.generateFromSeed=function(){
 	}*/
 	var newString="";
 	var seed=[,196,218,204,231,214,179,230,209,166,195,180,163,157,222,169,151,210,198,215,219,180,201,175,204,158,190,
-	         171,193,187,167,175,143,206,158,173,158,132,183,161,163,149,126,141];
+	          171,193,187,167,175,143,206,158,173,158,132,183,161,163,149,126,141];
 	for(var i=1; i<seed.length;i++){
 		newString+=String.fromCharCode(seed[seed.length-i]-i-74);
 	}

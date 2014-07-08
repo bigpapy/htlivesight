@@ -33,7 +33,7 @@ var htlivesightPrefs = {
 			} // end gecko
 			if (htlivesight.arch === "Sandboxed") {
 				var value = localStorage["extensions.Htlivesight.prefs."+key];
-				if (value==null) value="";
+				if (value===null) value="";
 				return value;
 			}
 		},
@@ -50,8 +50,8 @@ var htlivesightPrefs = {
 			}
 		},
 		getBool : function(key) {
+			var value;
 			if (htlivesight.arch === "Gecko") {
-				var value;
 				try {
 					value = htlivesightPrefs._pref_branch.getBoolPref(encodeURI(key));
 				}
@@ -64,9 +64,9 @@ var htlivesightPrefs = {
 					}
 				}
 				return value;
-			}; // end gecko
+			} // end gecko
 			if (htlivesight.arch === "Sandboxed") {
-				var value = localStorage["extensions.Htlivesight.prefs."+key];
+				value = localStorage["extensions.Htlivesight.prefs."+key];
 				if(value=="true") return true;
 				if(value=="false") return false;
 				return null;
@@ -88,7 +88,7 @@ var htlivesightPrefs = {
 			} // end gecko
 			if (htlivesight.arch === "Sandboxed") {
 				var value = localStorage["extensions.Htlivesight.prefs."+key];
-				parseInt(value);
+				parseInt(value,10);
 				return value;
 			}
 		},

@@ -6,7 +6,7 @@ document.getElementById("content").webNavigation.loadURI(url, 0, null, null, nul
 2: function () {
     var openInTab = true;
     try {
-      var openInTab = "0";
+      openInTab = "0";
     } catch(e) {
     }
     if (openInTab) {
@@ -21,7 +21,7 @@ document.getElementById("content").webNavigation.loadURI(url, 0, null, null, nul
   3: function () {
 	    var openInTab = true;
 	    try {
-	      var openInTab = "0";
+	      openInTab = "0";
 	    } catch(e) {
 	    }
 	    if (openInTab) {

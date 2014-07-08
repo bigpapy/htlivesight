@@ -60,7 +60,7 @@ function shutdown(aData, aReason) {
   while (windows.hasMoreElements()) {
     let domWindow = windows.getNext().QueryInterface(Ci.nsIDOMWindow);
     unloadFromWindow(domWindow, aReason);
-  }
+  };
 }
 
 function install(aData, aReason) {}
@@ -79,8 +79,8 @@ function loadIntoWindow(window) {
 	// load overlay file used in no-restart installation
 	window.document.loadOverlay('chrome://htlivesight/content/overlay.xul', null);
 	// add button to nav-bar to launch htls
-  addButton('nav-bar', "htls-button-1", "launch HTLivesight", 'chrome://htlivesight/skin/24.png', 'chrome://htlivesight/skin/16.png', true, window.document)
-  }
+  addButton('nav-bar', "htls-button-1", "launch HTLivesight", 'chrome://htlivesight/skin/24.png', 'chrome://htlivesight/skin/16.png', true, window.document);
+  };
 }
 
 function unloadFromWindow(window, aReason) {
@@ -91,7 +91,7 @@ function unloadFromWindow(window, aReason) {
     window.NativeWindow.menu.remove(menuId);
 	}else{
 		// get htls button in firefox desktop navbar...
-	  var toolbarButton = window.document.getElementById("htls-button-1") 
+	  var toolbarButton = window.document.getElementById("htls-button-1"); 
 		// and remove it.
     toolbarButton.parentNode.removeChild(toolbarButton);
 		// get menuitem in tool -> hattrick -> htls menu...
@@ -107,8 +107,8 @@ function unloadFromWindow(window, aReason) {
 			// it's possible to remove it and hattrick menu
       hattrick_menupopup.parentNode.removeChild(hattrick_menupopup);
       hattrick_menu.parentNode.removeChild(hattrick_menu);
-	  }
-	}
+	  };
+	};
 }
 
 // converto url to a format compatible with bootstrap
@@ -117,7 +117,7 @@ function resolveGeckoURI(aURI) {
     
   if (aURI.startsWith("chrome://"))
   {
-    let registry = Cc['@mozilla.org/chrome/chrome-registry;1'].getService(Ci["nsIChromeRegistry"]);
+    let registry = Cc['@mozilla.org/chrome/chrome-registry;1'].getService(Ci.nsIChromeRegistry);
     return registry.convertChromeURL(Services.io.newURI(aURI, null, null)).spec;
   }
     else if (aURI.startsWith("resource://")) {
@@ -145,7 +145,7 @@ function addButton(toolbarId, buttonId, label, iconPath24, iconPath16, firstRun,
     "toolbarbutton-1 chromeclass-toolbar-additional");
   toolbarButton.setAttribute("label", label);
 	// this css permit to change htls button size to be used with icon and icon small size.
-  toolbarButton.style.cssText= "#htls-button-1 {margin-left:2px; list-style-image: url("+iconPath24+");} toolbar[iconsize='small'] #htls-button-1 {list-style-image: url("+iconPath16+");}"
+  toolbarButton.style.cssText= "#htls-button-1 {margin-left:2px; list-style-image: url("+iconPath24+");} toolbar[iconsize='small'] #htls-button-1 {list-style-image: url("+iconPath16+");}";
 
   var palette = document.getElementById("navigator-toolbox").palette;
   palette.appendChild(toolbarButton);
@@ -160,7 +160,7 @@ function addButton(toolbarId, buttonId, label, iconPath24, iconPath16, firstRun,
         toolbar.appendChild(toolbarButton);
         toolbar.setAttribute("currentset", toolbar.currentSet);
         document.persist(toolbar.id, "currentset");
-      }
+      };
     }else{
    // insert the button there.
       var before = null;
@@ -169,12 +169,12 @@ function addButton(toolbarId, buttonId, label, iconPath24, iconPath16, firstRun,
         if (before) {
         	addOnBar.insertItem(buttonId, before);
           break;
-        }
+        };
       }
       if (!before) {
       	addOnBar.insertItem(buttonId);
-      }
-    }
+      };
+    };
   }
   else {
     // The ID is in the currentset, so find the position and
@@ -185,11 +185,11 @@ function addButton(toolbarId, buttonId, label, iconPath24, iconPath16, firstRun,
       if (before) {
         toolbar.insertItem(buttonId, before);
         break;
-      }
+      };
     }
     if (!before) {
       toolbar.insertItem(buttonId);
-    }
-  }
-}
+    };
+  };
+};
 

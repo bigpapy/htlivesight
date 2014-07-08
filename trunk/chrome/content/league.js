@@ -27,9 +27,7 @@ htlivesight.League.Round.prototype.ElapsedTime = function(now) {
 	} else if (h > 2) {
 		str = h + " hours to kick off.";
 	} else {
-		str = h > 0 
-		? h + " hour" + (h > 1 ? "s and " : " and ")
-				: "";
+		str = h > 0 ? h + " hour" + (h > 1 ? "s and " : " and ") : "";
 		str += m%60 + " minute" + (m > 1 ? "s" : "") + " to kick off.";
 	}
 	this.diff = str;
@@ -73,7 +71,7 @@ htlivesight.League.ParseTeams = function(xml) {
 			var leagueTeam = leagueTeams[j];
 			var i=parseInt(htlivesight.Util.Parse("TeamID", leagueTeam), 10);
 			teams[i] = new Array();
-			teams[i].name = htlivesight.Util.Parse("TeamName", leagueTeam)//.slice(0,19);
+			teams[i].name = htlivesight.Util.Parse("TeamName", leagueTeam); //.slice(0,19);
 			teams[i].id = i;
 			teams[i].position = parseInt(htlivesight.Util.Parse("Position", leagueTeam), 10);
 			teams[i].livePosition = teams[i].position;
@@ -147,10 +145,10 @@ htlivesight.League.ParseFixtures = function(xml,teamKind) {
 		htlivesight.Time.hattrickTime = htlivesight.Time.parseFetchDate(xml);// bigpapy:this read current time
 		if (
 				//		!(htlivesight.prefs.other.reLive) && //bigpapy: this remove table from relive mode.
-				p.get
-				&& (
-						!p.within
-						|| Math.abs(htlivesight.League.currentRound.date-htlivesight.Time.hattrickTime) < p.withinHours*htlivesight.Time.HOUR 
+				p.get &&
+				(
+						!p.within || 
+						Math.abs(htlivesight.League.currentRound.date-htlivesight.Time.hattrickTime) < p.withinHours*htlivesight.Time.HOUR 
 				)
 		) {
 			htlivesight.showLeague= true;
@@ -184,10 +182,10 @@ htlivesight.League.ParseFixtures = function(xml,teamKind) {
 			htlivesight.Time.hattrickTime = htlivesight.Time.parseFetchDate(xml);// bigpapy:this read current time
 			if (
 					//		!(htlivesight.prefs.other.reLive) && //bigpapy: this remove table from relive mode.
-					p.get
-					&& (
-							!p.within
-							|| Math.abs(htlivesight.League.currentRound2.date-htlivesight.Time.hattrickTime) < p.withinHours*htlivesight.Time.HOUR 
+					p.get &&
+					(
+							!p.within || 
+							Math.abs(htlivesight.League.currentRound2.date-htlivesight.Time.hattrickTime) < p.withinHours*htlivesight.Time.HOUR 
 					)
 			) {
 				htlivesight.showLeague2= true;
@@ -202,7 +200,7 @@ htlivesight.League.ParseFixtures = function(xml,teamKind) {
 				htlivesight.DOM.setHeaderColor();
 				htlivesight.DOM.UpdateElementBoxLeagueTable2(htlivesight.League);
 				htlivesight.DOM.UpdateElementBoxLeague2(htlivesight.League);
-				htlivesight.League.matches2=rounds[currentRound].id
+				htlivesight.League.matches2=rounds[currentRound].id;
 //				for (var i=0; i<rounds[currentRound].id.length; i++) {
 //					matchId = rounds[currentRound].id[i];
 //					htlivesight.AddLiveMatch(matchId, "False");
@@ -227,7 +225,7 @@ htlivesight.League.addLeagueMatches= function(){
 	try{
 		for (var i=0; i<htlivesight.League.matches.length; i++) {
 			matchId = htlivesight.League.matches[i];
-			htlivesight.AddLiveMatch(matchId, "False");
+			htlivesight.AddLiveMatch(matchId, "hattrick");
 		}
 	}catch(e){}
 };
@@ -236,7 +234,7 @@ htlivesight.League.addLeagueMatches2= function(){
 	try{
 		for (var i=0; i<htlivesight.League.matches2.length; i++) {
 			matchId = htlivesight.League.matches2[i];
-			htlivesight.AddLiveMatch(matchId, "False");
+			htlivesight.AddLiveMatch(matchId, "hattrick");
 		}
 	}catch(e){}
 };
