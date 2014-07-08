@@ -6,11 +6,11 @@ htlivesight.Team = function Team(id, name, shortName, youth, arenaID) {
 	this.youth = (youth=="youth"||youth=="Youth"||youth=="True")?"True":"False";
 	this.arenaID = arenaID;
 	this.addTeamToFriendsPopup=null;
-	this.playerList = new Object();
+	this.playerList = {};
 };
 htlivesight.Teams = {
 		myTeam: null,
-		list: new Object(),
+		list: {},
 };
 htlivesight.Teams.update = function(newTeam) {
 	var team = htlivesight.Teams.list["_"+newTeam.id+"_"+newTeam.youth]; 
@@ -19,17 +19,15 @@ htlivesight.Teams.update = function(newTeam) {
 		htlivesight.Teams.list["_"+team.id+"_"+team.youth] = team;
 		if (htlivesight.Friends.isFriend(team.id, team.youth, !htlivesight.Friends.STRICT)) {
 			htlivesight.Friends.update(team.id, team.name);
-		};
+		}
 	} else {
 		if (!team.name) team.name=newTeam.name;
 		if (!team.shortName) team.shortName=newTeam.shortName;
-	};
+	}
 	return team;
 };
 htlivesight.Team.HTTPGetMyData = function (teamId, teamKind) {
-	var parameters=[["file","teamdetails"],
-	                ["teamID", teamId]
-	];
+	var parameters=[["file","teamdetails"],["teamID", teamId]];
 	htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Team.ParseMyData(xml, teamKind);/*console.log("htlivesight.Team.HTTPGetMyData"+ document.getElementById("teamId").value);*/});
 };
 htlivesight.Team.ParseMyData = function (xml, teamKind) {
@@ -38,7 +36,7 @@ htlivesight.Team.ParseMyData = function (xml, teamKind) {
 		if (xml) {
 			myTeam = htlivesight.Team.ParseTeamData(xml); // return team
 			if(teamKind=="myFirstTeam"){
-			  htlivesight.Teams.myTeam = myTeam;
+				htlivesight.Teams.myTeam = myTeam;
 				document.getElementById("teamName").innerHTML=myTeam.name;
 			}else if(teamKind=="mySecondTeam"){
 				htlivesight.Teams.mySecondTeam = myTeam;
@@ -49,7 +47,7 @@ htlivesight.Team.ParseMyData = function (xml, teamKind) {
 		} else {
 			if (htlivesight.ApiProxy.authorized(document.getElementById("teamId").value)) alert("team data not found");
 			return;
-		};
+		}
 	} catch(e) {
 		alert("ParseMyData: " + e);
 	}
@@ -61,7 +59,7 @@ htlivesight.Team.ParseMyData = function (xml, teamKind) {
 	}
 };
 htlivesight.Team.ParseMyUserData = function (xml) {
-	;// nothing to do yet
+// nothing to do yet
 };
 htlivesight.Team.ParseTeamData = function (xml) {
 	try {
@@ -95,13 +93,13 @@ htlivesight.Team.ParseArena = function (xml) {
 	//var id, name;
 	try {
 		
-		var arena = new Object();
+		var arena = {};
 		arena.id = parseInt(htlivesight.Util.Parse("ArenaID",xml),10);
 		arena.name = htlivesight.Util.Parse("ArenaName",xml);
 		try{
 		arena.id2 = xml.getElementsByTagName("ArenaID")[1].textContent;
 		arena.name2 = xml.getElementsByTagName("ArenaName")[1].textContent;
-		}catch(e){console.log("no second arena");};
+		}catch(e){console.log("no second arena");}
 		return arena;
 	} catch(e) { alert("Team.ParseArena: " + e);
 	}

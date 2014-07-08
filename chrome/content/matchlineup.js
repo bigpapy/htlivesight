@@ -3,14 +3,14 @@ htlivesight.matchLineup=  {
 htlivesight.matchLineup.view= function(){
 	for (var key in htlivesight.Match.List) {
 		var match=htlivesight.Match.List[key];
-		if (match.isFinish==true && match.areStarsLoaded!=true){
+		if (match.isFinish === true && match.areStarsLoaded !== true){
 			try{
 				htlivesight.matchLineup.HTTPGet(match, match.home.team.id, "home");
 				htlivesight.matchLineup.HTTPGet(match, match.away.team.id, "away");
 				htlivesight.Match.List[key].areStarsLoaded= true;
 			}catch(e){alert(e);}
-		};
-	};
+		}
+	}
 };
 htlivesight.matchLineup.HTTPGet = function (match,teamId, side) {
 	var parameters=[["file","matchlineup"],
@@ -26,6 +26,7 @@ htlivesight.matchLineup.ParseGet = function(xml, match, side) {
 		var lineup = xml.getElementsByTagName("Lineup")[0]; //
 		var playerNodes = lineup.getElementsByTagName("Player");
 		htlivesight.matchLineup.addRatingTab(match, side, lineup);
+		var ratingStars="";
 		for(var j = 0, len = playerNodes.length; j< len ;j++){
 			var ratingString = "";
 			try{
@@ -34,10 +35,10 @@ htlivesight.matchLineup.ParseGet = function(xml, match, side) {
 				ratingString = " ★:" + ratingStarsEnd;
 			}catch(e){ratingStarsEnd = "";/*console.log("ratingStarsEnd error:"+e);*/}
 			try{
-				var ratingStars = playerNodes[j].getElementsByTagName("RatingStars")[0].textContent;
+				ratingStars = playerNodes[j].getElementsByTagName("RatingStars")[0].textContent;
 				ratingStars = parseFloat(ratingStars);
 				ratingString += "✩:"+ ratingStars;
-			}catch(e){var ratingStars ="";/*console.log("ratingStars error:"+e);*/}
+			}catch(e){ratingStars ="";/*console.log("ratingStars error:"+e);*/}
 
 			//var ratingString = " ★:" + ratingStarsEnd + "☆:"+ ratingStars;
 			var playerID = playerNodes[j].getElementsByTagName("PlayerID")[0].textContent;
@@ -63,7 +64,7 @@ htlivesight.matchLineup.ParseGet = function(xml, match, side) {
 
 	} catch(e) {
 		console.log("Parse htlivesight.MatchLineup: " + e);
-	};
+	}
 };
 
 htlivesight.matchLineup.addRatingTab= function(match, side, xml){
@@ -94,11 +95,11 @@ htlivesight.matchLineup.addRatingTab= function(match, side, xml){
  * event 21 (lineup in events.js) in order to use createLineupElement which works with 
  * lineup string extracted from event 21 text showing lineup from keeper (up) to scorers (down).
  * 
- *  MatchRoleID      								MatchBehaviourID
+ *  MatchRoleID                                     MatchBehaviourID
  *  Value	Description								Value	Description
- *   100	Keeper 										0	Normal
- *   101	Right back 									1	Offensive
- *   102	Right central defender 						2	Defensive
+ *   100    Keeper										0	Normal
+ *   101    Right back                                  1	Offensive
+ *   102    Right central defender						2	Defensive
  *   103	Middle central defender						3	Towards middle
  *   104	Left central defender						4	Towards wing
  *   105	Left back
@@ -116,9 +117,11 @@ htlivesight.matchLineup.ParseLineUpFromXml= function(xml,teamId,youth){
 
 	//lineUp contains players name and index is the position (RoleId-100)
 	var lineUp = new Array(19);// because there are 19 position: 1 keeper, 5 defenders,5 midfields, 3 scorers, 5 bench warmers.
+	var playerId = 0;
+	var playerName = "";
 	for (var index=0; index<lineUp.length; index++) // initializing with empty positions
 	{
-		lineUp[index]=new Object();
+		lineUp[index]={};
 		lineUp[index].name="          "; 
 		lineUp[index].behaviourInt="0"; 
 		lineUp[index].id="0";
@@ -128,18 +131,18 @@ htlivesight.matchLineup.ParseLineUpFromXml= function(xml,teamId,youth){
 	lineUp[0].update=1;
 
 	try{
-		if (xml.getElementsByTagName("PlayerID").length==0) throw "empty";
+		if (xml.getElementsByTagName("PlayerID").length===0) throw "empty";
 		for (var i=0, len=xml.getElementsByTagName("PlayerID").length; i<len; i++) // analyzing 11 players of the lineup in xml
 		{
 			if(xml.getElementsByTagName("RoleID")[i]){
-				var index= parseInt(xml.getElementsByTagName("RoleID")[i].textContent)-100; // get position
+				index= parseInt(xml.getElementsByTagName("RoleID")[i].textContent,10)-100; // get position
 			}else{index= -81;}
 			if(index==-81 || index==-80 || index==-79){
 				for(var k=14; k<19; k++){
 					if(lineUp[k].id == "0"){
-						var playerName= xml.getElementsByTagName("FirstName")[i].textContent+" "+xml.getElementsByTagName("LastName")[i].textContent; // get name
+						playerName= xml.getElementsByTagName("FirstName")[i].textContent+" "+xml.getElementsByTagName("LastName")[i].textContent; // get name
 						lineUp[k].name = playerName.replace(/,/g,"");
-						var playerId= xml.getElementsByTagName("PlayerID")[i].textContent; // get  playerId.
+						playerId= xml.getElementsByTagName("PlayerID")[i].textContent; // get  playerId.
 						lineUp[k].id=playerId;
 						lineUp[k].youth=youth;
 						break;
@@ -148,14 +151,14 @@ htlivesight.matchLineup.ParseLineUpFromXml= function(xml,teamId,youth){
 				continue;
 			}
 			if(index>=0){
-  			var playerName= xml.getElementsByTagName("FirstName")[i].textContent+" "+xml.getElementsByTagName("LastName")[i].textContent; // get name
-	  		lineUp[index].name = playerName.replace(/,/g,"");
+				playerName= xml.getElementsByTagName("FirstName")[i].textContent+" "+xml.getElementsByTagName("LastName")[i].textContent; // get name
+				lineUp[index].name = playerName.replace(/,/g,"");
 
-		  	lineUp[index].behaviourInt= xml.getElementsByTagName("Behaviour")[i].textContent; // get individual order
-			 
-	  		var playerId= xml.getElementsByTagName("PlayerID")[i].textContent; // get  playerId.
-		  	lineUp[index].id=playerId;
-			  lineUp[index].youth=youth;
+				lineUp[index].behaviourInt= xml.getElementsByTagName("Behaviour")[i].textContent; // get individual order
+
+				playerId= xml.getElementsByTagName("PlayerID")[i].textContent; // get  playerId.
+				lineUp[index].id=playerId;
+				lineUp[index].youth=youth;
 			}
 			if(typeof htlivesight.Player.List["_"+playerId+"_"+youth] === "undefined"/*!htlivesight.Player.List.hasOwnProperty("_"+playerId+"_"+youth)*/){
 				var player = new htlivesight.Player(playerId, playerName, "", "",teamId,youth);
@@ -173,7 +176,7 @@ htlivesight.matchLineup.FromArrayToString= function (lineUp){
 	{
 		lineUp[index]=htlivesight.LineUp.BehaviourFromIntToString(lineUp[index], index);
 		stringLineUp+=lineUp[index].behaviourString+lineUp[index].name+" "+"#"+lineUp[index].id+"#"+lineUp[index].youth; // adding individual order and player name  
-		if ((index == 0) || (index==5) || (index==10) || (index==13)) 
+		if ((index === 0) || (index==5) || (index==10) || (index==13)) 
 		{
 			stringLineUp+=" - "; // after keeper, defenders and midfields add a minus to separate them
 		}
@@ -187,15 +190,15 @@ htlivesight.matchLineup.FromArrayToString= function (lineUp){
 
 htlivesight.matchLineup.YouthStar = function(that, ratingStars){
 
-	while(ratingStars>=5){
-	  $("div", that).append('<image src="'+htlivesight.Image.star.big_blue+'"</image>');
-	  ratingStars-=5;
-	}
-	while(ratingStars>=1){
-	  $("div", that).append('<image src="'+htlivesight.Image.star.blue+'"</image>');
-	  ratingStars-=1;
-	}
-	if(ratingStars>0) $("div", that).append('<image src="'+htlivesight.Image.star.half_blue+'"</image>');
+    while(ratingStars>=5){
+	$("div", that).append('<image src="'+htlivesight.Image.star.big_blue+'"</image>');
+	ratingStars-=5;
+    }
+    while(ratingStars>=1){
+	$("div", that).append('<image src="'+htlivesight.Image.star.blue+'"</image>');
+	ratingStars-=1;
+    }
+    if(ratingStars>0) $("div", that).append('<image src="'+htlivesight.Image.star.half_blue+'"</image>');
 
 };
 

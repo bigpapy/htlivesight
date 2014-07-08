@@ -10,25 +10,26 @@ htlivesight.DOM = {
 		},
 		
 		formationpopup:function(id){
+			var teamName,my,at,teamID,title;
 			var matchId=id.replace(/(home|away)_team_formation/,"");
 			var side=id.substr(0,4);
 			var match = htlivesight.Match.List[matchId];
 			if (side=="home")
 			{
-				var teamName=match.home.team.name;
-				var my="right top";
-			  var at="right bottom"
-			  var teamID=match.home.team.id;
+				teamName=match.home.team.name;
+				my="right top";
+				at="right bottom";
+				teamID=match.home.team.id;
 			}else if (side=="away"){
-				var teamName=match.away.team.name;
-				var my="left top";
-			  var at="left bottom";
-			  var teamID=match.away.team.id;
+				teamName=match.away.team.name;
+				my="left top";
+				at="left bottom";
+				teamID=match.away.team.id;
 			}// add link to youth team too.
 			if(match.sourceSystem.toLowerCase() != 'youth'){
-				var title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/?TeamID="+teamID+"' target='_blank'>"+teamName+"</a>"
+				title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/?TeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
 			}else{
-				var title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank'>"+teamName+"</a>"
+				title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
 			}
 			$("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 510, title: title, dialogClass: "formationbg", position: {my: my, at: at, of: $('#'+id) }});
 			return false;
@@ -42,7 +43,7 @@ htlivesight.DOM = {
 			{
 				var teamName=match.home.team.name;
 				var my="right top";
-			  var at="right bottom"
+			  var at="right bottom";
 			  var teamID=match.home.team.id;
 			}else if (side=="away"){
 				var teamName=match.away.team.name;
@@ -51,9 +52,9 @@ htlivesight.DOM = {
 			  var teamID=match.away.team.id;
 			}
 			if(match.sourceSystem.toLowerCase() != 'youth'){
-				var title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/?TeamID="+teamID+"' target='_blank'>"+teamName+"</a>"
+				var title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/?TeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
 			}else{
-				var title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank'>"+teamName+"</a>"
+				var title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
 			}
 			$("#"+id+"_statistics").dialog({ autoOpen: true, width: 350, height: 220, title: title, position: {my: my, at: at, of: $('#'+id) } });
 			return false;
@@ -192,7 +193,7 @@ htlivesight.DOM = {
 					img.setAttribute("src", htlivesight.Image.live.OFF);
 					var curr=box;
 					var next=curr.nextSibling;
-					while (next != null && next.hidden == false) {
+					while (next !== null && next.hidden === false) {
 						curr=next;
 						next=curr.nextSibling;
 					}
@@ -221,7 +222,7 @@ htlivesight.DOM = {
 			try{// added by bigpapy to debug from XUL to HTML		  
 				var label, hbox, ul;
 				var mainDiv= document.getElementById(id);
-				if (mainDiv == null){
+				if (mainDiv === null){
 					mainDiv= document.createElement("div");
 					mainDiv.setAttribute("id", id);
 					mainDiv.style.display='none';
@@ -237,7 +238,8 @@ htlivesight.DOM = {
 				var li_ = document.createElement("li");
 				ul.appendChild(li_);
 				var a = document.createElement("a");
-				if (event.minute=="0") var index=1;
+				var index;
+				if (event.minute=="0") index=1;
 				else index= ul.getElementsByTagName("li").length;
 				a.setAttribute("href","#"+id+"-"+index);
 				var img = new Image();
@@ -246,12 +248,12 @@ htlivesight.DOM = {
 					img.setAttribute("src", htlivesight.Image.star.yellow);
 					img.setAttribute("class", "image_star_tab");
 				}else{
-				  a.innerHTML=event.minute+"'";
-				  if(htlivesight.prefs.personalization.oldIcons && event.type.imageSrcOld){
+					a.innerHTML=event.minute+"'";
+					if(htlivesight.prefs.personalization.oldIcons && event.type.imageSrcOld){
 						img.setAttribute("src", event.type.imageSrcOld);
 					}else{
 						img.setAttribute("src", event.type.imageSrc);
-					};
+					}
 					img.setAttribute("class", "image_tab");
 				}
 				a.appendChild(img);
@@ -277,11 +279,11 @@ htlivesight.DOM = {
 						label.setAttribute('class','formationplayer');
 						label.width="130";
 						label.height="30";
-						if (i==0 && j==0){
+						if (i===0 && j===0){
 							label_empty = document.createElement("td");
 
 							if(event.minute!="★"){
-								var img = new Image();
+								img = new Image();
 								img.setAttribute("src", htlivesight.Image.copy);
 								img.setAttribute("id", "copy_to_clipboard_icon");
 								img.setAttribute("title", htlivesight.Util.Parse("TooltipCopyLineUp",htlivesight.data[0]));
@@ -511,7 +513,7 @@ htlivesight.DOM = {
 				/* fix for single quote in sponsor href begin*/
 				//  cleanedText= cleanedText.replace("='/","=\"/");
 				//  cleanedText= cleanedText.replace("'&gt;","\">");
-				  cleanedText = cleanedText.replace(/<a href=('|")\/Goto.ashx\?path=(((?!Club\/Players).)*)<\/a>/,"")
+				  cleanedText = cleanedText.replace(/<a href=('|")\/Goto.ashx\?path=(((?!Club\/Players).)*)<\/a>/,"");
 				  /* fix for single quote in sponsor href end*/  
 			//	console.log("cleanedText2= "+cleanedText);
 				var resultDoc = htlivesight.DOM.parser.parseFromString("<root>" + cleanedText + "</root>","text/xml");
@@ -611,7 +613,7 @@ htlivesight.DOM.CreateElementLiveBox= function(match) {
   	child = htlivesight.DOM.CreateElementGroupboxLiveMatch(match);
 		hbox.appendChild(child);
 		//$( "#live_" + match.id + "_" + match.sourceSystem).resizable({containment: "#live_box",handles: "e"}).parent().draggable({snap: "#live_box, table", snapTolerance: 10, cancel: ".ev_rows, .placardrow, .iconzone" });
-	}catch(e){alert("CreateElementGroupboxLiveMatch: ")+e;}// added by bigpapy to debug from XML to HTML
+	}catch(e){alert("CreateElementGroupboxLiveMatch: "+e);}// added by bigpapy to debug from XML to HTML
 };
 
 htlivesight.DOM.CreateElementGroupboxLiveMatch=function(match) {
@@ -667,18 +669,20 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 			label = document.getElementById("home_team_scorers1_" + match.id + "_" + match.sourceSystem);  
 			var label2 = document.getElementById("home_team_scorers2_" + match.id + "_" + match.sourceSystem);
 			var label3 = document.getElementById("away_team_scorers2_" + match.id + "_" + match.sourceSystem);
+			var scoreText, numplayer, player;
 			if (match.home.scorers) {
-				var scorerText = new Array;
+				scorerText = [];
 				scorerText[0] = "";
 				scorerText[1] = "";
 				var line = 0;
-				var numplayer = 1;
-				for(var player in match.home.scorers) {
-					if ((match.home.scorers[player].name=="")||(typeof match.home.scorers[player].mins=="undefined")){continue; } // to filter empty name or undefined minutes
+				numplayer = 1;
+				for(player in match.home.scorers) {
+					if ((match.home.scorers[player].name==="")||(typeof match.home.scorers[player].mins===undefined)){continue; } // to filter empty name or undefined minutes
 					scorerText[line] += match.home.scorers[player].name + match.home.scorers[player].mins + ") ";
 					if (numplayer++ == 3)
 						line++;
 				}
+				console.log(scorerText[0]);
 				label.innerHTML= htlivesight.DOM.getTextContent(scorerText[0]);
 				if (numplayer > 4) {
 					label2.innerHTML= htlivesight.DOM.getTextContent(scorerText[1]);
@@ -688,13 +692,13 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 			}
 			label = document.getElementById("away_team_scorers1_" + match.id + "_" + match.sourceSystem);  
 			if (match.away.scorers) {
-				var scorerText = new Array;
+				scorerText = [];
 				scorerText[0] = "";
 				scorerText[1] = "";
 				var line = 0;
-				var numplayer = 1;
-				for(var player in match.away.scorers) {
-					if ((match.away.scorers[player].name=="")||(typeof match.away.scorers[player].mins=="undefined")){continue; } // to filter empty name or undefined minutes
+				numplayer = 1;
+				for(player in match.away.scorers) {
+					if ((match.away.scorers[player].name==="")||(typeof match.away.scorers[player].mins===undefined)){continue; } // to filter empty name or undefined minutes
 					scorerText[line] += match.away.scorers[player].name + match.away.scorers[player].mins + ") ";
 					if (numplayer++ == 3)
 						line++;
