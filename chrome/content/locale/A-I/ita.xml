@@ -424,4 +424,6 @@
 <ImportOk>Impostazioni importate con successo!</ImportOk>
 <PrefsRestart>Alcune impostazioni richiedono un riavvio!</PrefsRestart>
 <ClickToSave>Clicca su OK nella finestra delle preferenze per salvarle.</ClickToSave>
+<TooltipWindowSpeech>Attiva e disattiva la sintesi vocale degli eventi della partita</TooltipWindowSpeech>
+<NotifyEnableSpeech>Enable text to speech notifications</NotifyEnableSpeech>
 </Htlivesight>
