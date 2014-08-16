@@ -22,13 +22,15 @@
 "incognito":				"spanning",
 "minimum_chrome_version":	"13",
 "options_page":				"content/settings.html",
-"permissions":				[
-								"tabs",
+"permissions":				[	"tabs",
 								"contextMenus",
 								"notifications",
 								"clipboardWrite",
-								"*://chpp.hattrick.org/*"
+								"*://chpp.hattrick.org/*",
+								"http://translate.google.com/*"
 							],
+
+
 "web_accessible_resources":	[
 								"content/img/foxball_32.png",
 								"content/old_img/foxball_32.png",

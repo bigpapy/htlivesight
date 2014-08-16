@@ -640,10 +640,12 @@ htlivesight.Settings = {
 					prefs.notification.sound = false;
 					htlivesight.prefs.notification.sound = false;
 					try{
-					  document.getElementById("muteAllImg").src="./img/sound_off.gif";
+					    document.getElementById("muteAllImg").src="./img/sound_off.gif";
+					    
 					}catch(e){}
 				};
 			},
+						
 			chkSoundOnlyOpened: function() {
 				var prefs = htlivesight.Settings.preferences;
 				if(document.getElementById("chkSoundOnlyOpened").checked) {

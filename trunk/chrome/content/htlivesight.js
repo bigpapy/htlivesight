@@ -7,6 +7,7 @@ var htlivesight = {
 		liveCount: 0,
 		warningShown: false,
 		strings: null,
+		playingtts: false,
 		dynresize: function() {
 			var winW2 = 630, winH2 = 460;
 			if (document.body && document.body.offsetWidth) {
@@ -37,6 +38,16 @@ var htlivesight = {
 		},
 
 		startup: function() {
+		    
+		    // initialize soundmanager2 (for TextToSpeech)
+		    soundManager.setup({
+			  // where to find flash audio SWFs, as needed
+			  url: htlivesightEnv.contentPath+'/lib',
+			  onready: function() {
+			    // SM2 is ready to play audio!
+			  }
+			});
+		    
 			var winW = 630, winH = 460;
 			if (document.body && document.body.offsetWidth) {
 				winW = document.body.offsetWidth;

@@ -424,4 +424,6 @@
 <ImportOk>Préférences importées avec succès !</ImportOk>
 <PrefsRestart>Certaines nécessitent un redémarrage de HTLiveSight !</PrefsRestart>
 <ClickToSave>Cliquez sur OK sous les options pour les sauvegarder.</ClickToSave>
+<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<NotifyEnableSpeech>Enable text to speech notifications</NotifyEnableSpeech>
 </Htlivesight>

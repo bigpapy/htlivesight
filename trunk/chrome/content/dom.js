@@ -16,12 +16,12 @@ htlivesight.DOM = {
 			var match = htlivesight.Match.List[matchId];
 			if (side=="home")
 			{
-				teamName=match.home.team.name;
+				teamName=htlivesight.Util.CleanText(match.home.team.name);
 				my="right top";
 				at="right bottom";
 				teamID=match.home.team.id;
 			}else if (side=="away"){
-				teamName=match.away.team.name;
+				teamName=htlivesight.Util.CleanText(match.away.team.name);
 				my="left top";
 				at="left bottom";
 				teamID=match.away.team.id;
@@ -41,12 +41,12 @@ htlivesight.DOM = {
 			var match = htlivesight.Match.List[matchId];
 			if (side=="home")
 			{
-				var teamName=match.home.team.name;
+				var teamName= htlivesight.Util.CleanText(match.home.team.name);
 				var my="right top";
 			  var at="right bottom";
 			  var teamID=match.home.team.id;
 			}else if (side=="away"){
-				var teamName=match.away.team.name;
+				var teamName= htlivesight.Util.CleanText(match.away.team.name);
 				var my="left top";
 			  var at="left bottom";
 			  var teamID=match.away.team.id;
@@ -146,6 +146,14 @@ htlivesight.DOM = {
 			var img = document.getElementById("sound_" + matchId + "_" + sourceSystem);
 			htlivesight.Match.List["_"+matchId+"_"+sourceSystem].window.mute = sound;
 			img.setAttribute("src", sound ? htlivesight.Image.window.sound.OFF : htlivesight.Image.window.sound.ON);
+		},
+		
+		toggleSpeech: function(matchId, sourceSystem) {
+		    //console.log("speech toggle!");
+			var speech = !htlivesight.Match.List["_"+matchId+"_"+sourceSystem].window.speech;
+			var img = document.getElementById("speech_" + matchId + "_" + sourceSystem);
+			htlivesight.Match.List["_"+matchId+"_"+sourceSystem].window.speech = speech;
+			img.setAttribute("src", speech ? htlivesight.Image.window.speech.ON : htlivesight.Image.window.speech.OFF);
 		},
 
 		toggleLink: function(matchId, sourceSystem) {
@@ -516,6 +524,7 @@ htlivesight.DOM = {
 				  cleanedText = cleanedText.replace(/<a href=('|")\/Goto.ashx\?path=(((?!Club\/Players).)*)<\/a>/,"");
 				  /* fix for single quote in sponsor href end*/  
 			//	console.log("cleanedText2= "+cleanedText);
+				  
 				var resultDoc = htlivesight.DOM.parser.parseFromString("<root>" + cleanedText + "</root>","text/xml");
 				//console.log(resultDoc);
 				var nodeList = resultDoc.documentElement.childNodes;
@@ -642,6 +651,10 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 			htlivesight.Util.RemoveClass(label, "match_date");*/
 			label = document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).innerHTML = match.arena.name;
 			/*htlivesight.Util.AddClass(label, "arena_name");*/
+			label = document.getElementById("weather_image_" + match.id + "_" + match.sourceSystem);
+			//label.setAttribute("src", htlivesight.Image.calendar);
+			//label.setAttribute("class", "weather_image");
+			label.setAttribute("title", htlivesight.Time.shortDateString(match.date));
 		}else{
 			if(match.date) document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).innerHTML = htlivesight.Time.shortDateString(match.date);
 		}
@@ -682,7 +695,7 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 					if (numplayer++ == 3)
 						line++;
 				}
-				console.log(scorerText[0]);
+				//console.log(scorerText[0]);
 				label.innerHTML= htlivesight.DOM.getTextContent(scorerText[0]);
 				if (numplayer > 4) {
 					label2.innerHTML= htlivesight.DOM.getTextContent(scorerText[1]);
@@ -844,10 +857,10 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 			}
 		}
 		document.getElementById("time_" + match.id + "_" + match.sourceSystem).innerHTML = match.timeElapsed;    
-		document.getElementById("home_team_name_" + match.id + "_" + match.sourceSystem).innerHTML = match.home.team.name;
+		document.getElementById("home_team_name_" + match.id + "_" + match.sourceSystem).innerHTML = htlivesight.Util.CleanText(match.home.team.name);
 		document.getElementById("home_team_goals_" + match.id + "_" + match.sourceSystem).innerHTML = match.home.goals;
 		document.getElementById("away_team_goals_" + match.id + "_" + match.sourceSystem).innerHTML = match.away.goals;
-		document.getElementById("away_team_name_" + match.id + "_" + match.sourceSystem).innerHTML =match.away.team.name;
+		document.getElementById("away_team_name_" + match.id + "_" + match.sourceSystem).innerHTML = htlivesight.Util.CleanText(match.away.team.name);
 	} catch(e) {
 		alert("DOM.UpdateLiveHeader\n" + e);
 	}
@@ -867,6 +880,9 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		hboxL.setAttribute("class", "line1header");
 		hbox.appendChild(hboxL);
 		hboxL.setAttribute("align", "left");
+		
+		
+		
 		label = document.createElement("span");
 		hboxL.appendChild(label);
 		label.setAttribute("id", "arena_name_" + match.id + "_" + match.sourceSystem);
@@ -880,6 +896,13 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		hboxL.appendChild(label);
 		label.setAttribute("id", "arena_attendance_" + match.id + "_" + match.sourceSystem);
 		label.setAttribute("class", "arena_attendance");
+		
+		//img = document.createElement("img");
+		//hboxL.appendChild(img);
+		//img.setAttribute("src", htlivesight.Image.transparent);
+		//img.setAttribute("id", "calendar_image_" + match.id + "_" + match.sourceSystem);
+		//img.setAttribute("class", "weather_image");
+		
 		label = document.createElement("span");
 		hboxL.appendChild(label);
 		label.setAttribute("id", "weather_text_" + match.id + "_" + match.sourceSystem);
@@ -901,6 +924,15 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		hboxR.setAttribute("class", "iconzone");
 		hbox.appendChild(hboxR);
 		box = hboxR;
+		
+		img = document.createElement("img");
+		box.appendChild(img);
+		img.setAttribute("class", "match_button");
+		img.setAttribute("src", htlivesight.Image.window.speech.OFF);
+		img.setAttribute("id", "speech_" + match.id + "_" + match.sourceSystem);
+		img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowSpeech",htlivesight.data[0]));
+		img.addEventListener('click',  htlivesight.Click.speech, true);
+		
 		img = document.createElement("img");
 		box.appendChild(img);
 		img.setAttribute("class", "match_button");
