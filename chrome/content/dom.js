@@ -927,10 +927,11 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		
 		img = document.createElement("img");
 		box.appendChild(img);
-		img.setAttribute("class", "match_button");
+		img.setAttribute("class", "match_button speech");
 		img.setAttribute("src", htlivesight.Image.window.speech.OFF);
 		img.setAttribute("id", "speech_" + match.id + "_" + match.sourceSystem);
 		img.setAttribute("title",htlivesight.Util.Parse("TooltipWindowSpeech",htlivesight.data[0]));
+		img.style.visibility = 'hidden';
 		img.addEventListener('click',  htlivesight.Click.speech, true);
 		
 		img = document.createElement("img");
