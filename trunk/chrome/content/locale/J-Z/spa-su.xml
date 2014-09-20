@@ -415,14 +415,14 @@
 <HeaderBarColor>Color de la barra de encabezado</HeaderBarColor>
 <HeaderBarTextColor>Color del texto de la barra de encabezado</HeaderBarTextColor>
 <Volume>Volumen</Volume>
-<PlayVolumeSetting>Play sound after volume setting</PlayVolumeSetting>
-<Import>Import</Import>
-<Export>Export</Export>
-<ExportOauth>Export Oauth</ExportOauth>
-<ExportBackground>Export Background</ExportBackground>
-<ExportSounds>Export Sounds</ExportSounds>
-<ImportOk>Preferences imported successfully!</ImportOk>
-<PrefsRestart>Some preferences need a restart!</PrefsRestart>
-<ClickToSave>Click OK on preferences window to save them.</ClickToSave>
-<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<PlayVolumeSetting>Emitir un sonido después de ajustar el volumen</PlayVolumeSetting>
+<Import>Importar</Import>
+<Export>Exportar</Export>
+<ExportOauth>Exportar Oauth</ExportOauth>
+<ExportBackground>Exportar fondo</ExportBackground>
+<ExportSounds>Exportar sonidos</ExportSounds>
+<ImportOk>¡Preferencias importadas con éxito!</ImportOk>
+<PrefsRestart>¡Algunas preferencias requieren reiniciar!</PrefsRestart>
+<ClickToSave>Haga clic en Aceptar en la ventana para guardar las preferencias.</ClickToSave>
+<TooltipWindowSpeech>Habilitar y deshabilitar las notificaciones texto a voz de eventos de partido</TooltipWindowSpeech>
 </Htlivesight>

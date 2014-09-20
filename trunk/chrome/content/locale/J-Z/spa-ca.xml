@@ -424,5 +424,5 @@
 <ImportOk>¡Se han importado las preferencias!</ImportOk>
 <PrefsRestart>¡Algunas preferencias requiere reiniciar!</PrefsRestart>
 <ClickToSave>Haz clic en OK en la ventana de preferencias para guardarlas.</ClickToSave>
-<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<TooltipWindowSpeech>Habilitar y deshabilitar las notificaciones texto a voz de eventos de partido</TooltipWindowSpeech>
 </Htlivesight>

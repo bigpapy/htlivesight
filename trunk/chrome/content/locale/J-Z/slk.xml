@@ -424,5 +424,5 @@
 <ImportOk>Nastavenia úspešne importované!</ImportOk>
 <PrefsRestart>Niektoré nastavenia potrebujú reštart!</PrefsRestart>
 <ClickToSave>Klikni na OK v nastaveniach pre uloženie.</ClickToSave>
-<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<TooltipWindowSpeech>Zapnúť a vypnúť prevod textu na reč k zápasovej udalosti</TooltipWindowSpeech>
 </Htlivesight>
