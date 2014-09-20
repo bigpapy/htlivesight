@@ -16,7 +16,7 @@
 <LoginReLive>Re-Live</LoginReLive>
 <LoginSpeed>Hastighed</LoginSpeed>
 <LoginByEvent>Pr. hændelse</LoginByEvent>
-<LeagueMatches>Liga kampe</LeagueMatches>
+<LeagueMatches>Ligakampe</LeagueMatches>
 <LeagueLiveTable>Live stilling</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Hold</LeagueTeam>
@@ -32,13 +32,13 @@
 <FriendsTitle>Venner</FriendsTitle>
 <FriendsRemove>Fjern</FriendsRemove>
 <FriendsOpen>Åben</FriendsOpen>
-<Introduction>Du bliver videresendt til en CHPP side for at få din authorization code. Hvis dette ikke sker, så prøv midlertidigt at deaktivere popup blockere eller tilføj HTlivesight til undtagelses listen.</Introduction>
+<Introduction>Du bliver videresendt til en CHPP-side for, at få din godkendelseskode. Hvis dette ikke sker, skal du midlertidigt deaktiver blokering af pop-up vinduer,  eller tilføje HTlivesight til undtagelseslisten.</Introduction>
 <Insert>Indsæt din autorisation kode her:</Insert>
-<Ending>Nu er HTlivesight autoriseret. Klik OK for at genstarte programmet.</Ending>
+<Ending>HTlivesight er godkendt. Klik OK for at genstarte programmet.</Ending>
 <Error>Fejl</Error>
 <ServerON>Tilsluttet</ServerON>
 <ServerOFF>Afbrudt</ServerOFF>
-<ResetToken>Autorisationen er fjernet. Genstart HTLS eller vent til næste opdatering (Mindre end 1 min).</ResetToken>
+<ResetToken>Godkendelse er slettet. Genstart HTLS eller vent til næste opdatering (Mindre end 1 min).</ResetToken>
 <NoHTServer>Du har ikke valgt den server hvos du er logget ind med din browser. Højreklik på baggrunden - indstillinger - generelt - udfyld med dit servernummer.</NoHTServer>
 <MatchesMaximum>Du kan ikke følge mere end 20 kampe!</MatchesMaximum>
 <LeagueRound>Runde</LeagueRound>
@@ -67,11 +67,11 @@
 <TimeMinute>minut</TimeMinute>
 <TimeMin>'</TimeMin>
 <TooltipWindowSound>Aktiver eller deaktiver lyde for kampen</TooltipWindowSound>
-<TooltipWindowLink>Link til kampsiden på Hattrick</TooltipWindowLink>
-<TooltipWindowInfo>Vis/skjul information-hændelse beskeder</TooltipWindowInfo>
-<TooltipWindowMaximize>Maximer vindue</TooltipWindowMaximize>
-<TooltipWindowMinimize>Minimer vindue</TooltipWindowMinimize>
-<TooltipWindowShade>Vindue nuance</TooltipWindowShade>
+<TooltipWindowLink>Link til kampside på Hattrick</TooltipWindowLink>
+<TooltipWindowInfo>Vælg om information og hændelser skal være synlig eller skjules</TooltipWindowInfo>
+<TooltipWindowMaximize>Vis alle kamphændelser</TooltipWindowMaximize>
+<TooltipWindowMinimize>Vis seneste kamphændelser</TooltipWindowMinimize>
+<TooltipWindowShade>Skjul kamprapport</TooltipWindowShade>
 <TooltipWindowClose>Luk vindue</TooltipWindowClose>
 <TooltipWindowOpen>Åbn vindue</TooltipWindowOpen>
 <TooltipWindowMoveUp>Flyt dette vindue op</TooltipWindowMoveUp>
@@ -142,7 +142,7 @@
 <ProgressSeconds>s</ProgressSeconds>
 <RequestServer>Få anbefalet server</RequestServer>
 <RequestLeagueData>Hent Liga data</RequestLeagueData>
-<RequestLeagueGames>Hent Liga kampe</RequestLeagueGames>
+<RequestLeagueGames>Hent Ligakampe</RequestLeagueGames>
 <RequestLive>Live opdatering</RequestLive>
 <RequestAdd>Tilføj kamp</RequestAdd>
 <RequestDelete>Slet kamp</RequestDelete>
@@ -165,36 +165,36 @@
 <GeneralNewWindow>I nyt vindue</GeneralNewWindow>
 <GeneralServer>Server indstillinger</GeneralServer>
 <GeneralNote>Indsæt den Hattrick server som du er logget på (fx. www96).</GeneralNote>
-<MatchesLeague>Liga kampe</MatchesLeague>
-<MatchesGetLeague>Hent liga kampe</MatchesGetLeague>
+<MatchesLeague>Ligakampe</MatchesLeague>
+<MatchesGetLeague>Hent ligakampe</MatchesGetLeague>
 <MatchesPlayed>Hvis der spilles i</MatchesPlayed>
 <MatchesHours>Timer</MatchesHours>
 <MatchesFriends>Venner</MatchesFriends>
 <MatchesGetFriends>Hent venners kampe</MatchesGetFriends>
 <MatchesHeader>Overskrift</MatchesHeader>
 <MatchesScorers>Score</MatchesScorers>
-<ScorersList>List score i header</ScorersList>
+<ScorersList>Vis målscorer på toppen af siden</ScorersList>
 <MatchesBooked>Reserveret</MatchesBooked>
-<BookedList>Vis advarsels hændelse i overskiften</BookedList>
+<BookedList>Vis advarsler på toppen af siden</BookedList>
 <MatchesSentOff>Udvist</MatchesSentOff>
-<SentOffList>Vis udvisning i overskriften</SentOffList>
+<SentOffList>Vis udvisning på toppen af siden</SentOffList>
 <MatchesInjured>Skadet</MatchesInjured>
-<InjuredList>Vis skadet i overskriften</InjuredList>
+<InjuredList>Vis tilskadekomne på toppen af siden</InjuredList>
 <MatchesWindow>Vindue</MatchesWindow>
 <MatchesLines>Linier vises i minimeret mode</MatchesLines>
 <NotifyNotify>Notifikationer</NotifyNotify>
-<NotifyEnableSound>Aktiver lyd notifikationer</NotifyEnableSound>
-<NotifyOnly>Kun i åbne kampe</NotifyOnly>
-<NotifyFlash>Flash headere</NotifyFlash>
-<NotifyStatus>Statuslinjen skydeknappen</NotifyStatus>
-<OtherAuthorization>Autorisations kode</OtherAuthorization>
-<OtherReset>Fjern autorisation</OtherReset>
+<NotifyEnableSound>Aktiver underretninger med lyd</NotifyEnableSound>
+<NotifyOnly>Kun i kampe der er tilføjet til simulatoren</NotifyOnly>
+<NotifyFlash>Vis blinkene sidehoved</NotifyFlash>
+<NotifyStatus>Statuslinjen skyder</NotifyStatus>
+<OtherAuthorization>Godkendelseskode</OtherAuthorization>
+<OtherReset>Fjern godkendelse</OtherReset>
 <OtherResetButton>Nulstil</OtherResetButton>
 <OtherReverse>Nyeste hændelser øverst i kampreferat</OtherReverse>
 <OtherReverseNote>Genindlæs siden for at se effekten af dine ændringer.</OtherReverseNote>
 <OtherEvents>Rækkefølge af begivenheder.</OtherEvents>
-<OtherEventKey>Hændelses ID</OtherEventKey>
-<OtherEventKeyNote>Vis eventkey i kommentarerne</OtherEventKeyNote>
+<OtherEventKey>Hændelses-id</OtherEventKey>
+<OtherEventKeyNote>Vis hændelsesreferencer i kamprapporten</OtherEventKeyNote>
 <CustomIcons>Ikoner</CustomIcons>
 <CustomIconsOld>Originale Livefox ikoner i kamp vinduet</CustomIconsOld>
 <CustomSounds>Lyde</CustomSounds>
@@ -215,13 +215,13 @@
 <PathSoundsFewClouds>Lyd for let skyet vejr</PathSoundsFewClouds>
 <PathSoundsMyBoo>Lyd for skade på eget hold</PathSoundsMyBoo>
 <PathSoundsOpBoo>Lyd for skade hos modstander</PathSoundsOpBoo>
-<PathSoundsWhistleStart>kickoff fløjt 1. og 2. halvleg</PathSoundsWhistleStart>
-<PathSoundsWhistle>Lyd ved Gul Kort</PathSoundsWhistle>
+<PathSoundsWhistleStart>1. og 2. halvleg fløjtes igang</PathSoundsWhistleStart>
+<PathSoundsWhistle>Lyd ved gulkort</PathSoundsWhistle>
 <PathSoundsHattrick>Lyd for hattrick scoring</PathSoundsHattrick>
 <PathSoundsRestore>Genskab</PathSoundsRestore>
 <PathSoundsPlay>Afspil</PathSoundsPlay>
 <LanguageSelect>Vælg sprog</LanguageSelect>
-<LanguageNote>Note: Genstart Firefox for at dette kan træde i kraft.</LanguageNote>
+<LanguageNote>Bemærk: Genstart browser for at dette kan træde i kraft.</LanguageNote>
 <ButtonCancel>Annuller</ButtonCancel>
 <ButtonOk>OK</ButtonOk>
 <WindowAboutTitle>Om HTLiveSight</WindowAboutTitle>
@@ -299,7 +299,7 @@
 <SETextColor>Tekstfarve for begivenhed:#</SETextColor>
 <Colors>Farver</Colors>
 <SchemaTip>Klik for at vise Opstillingen</SchemaTip>
-<StatisticTip>Klik for at vise Statistiker når kampen er færdigspillet</StatisticTip>
+<StatisticTip>Klik for at vise statistiker når kampen er færdigspillet</StatisticTip>
 <Youth>Ungdom</Youth>
 <Senior>Senior</Senior>
 <Tournament>Turnering</Tournament>
@@ -326,19 +326,19 @@
 <EventYellow2>Anden gul kort</EventYellow2>
 <LoggedIn>Logget ind som</LoggedIn>
 <latestNews>Tjek seneste nyheder på</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Projekt Webside</ProjectWebsite>
+<HTLSThread>Hattrick forum</HTLSThread>
+<ProjectWebsite>HTLiveSight-hjemmeside</ProjectWebsite>
 <GooglePlusPage>Google+</GooglePlusPage>
 <TwitterPage>Twitter</TwitterPage>
 <FacebookPage>Facebook</FacebookPage>
-<chatLink>Åben Chat</chatLink>
-<hidesidebar>Skjul Sidepanel</hidesidebar>
+<chatLink>Åben chat</chatLink>
+<hidesidebar>Skjul menuen</hidesidebar>
 <addFriend>Klik her for at tilføje dette hold til venneliste</addFriend>
 <TooltipCopyLineUp>Klik her for at kopiere opstillingen</TooltipCopyLineUp>
 <Dark>Mørk</Dark>
 <Light>Lys</Light>
 <Themes>Temaer</Themes>
-<NoTournament>Indlæse ikke venners enkelt og turneringens kampe</NoTournament>
+<NoTournament>Indlæse ikke venners enkelt- og turneringenskampe</NoTournament>
 <DefHatStats>HatStats Forsvar</DefHatStats>
 <MidHatStats>HatStats Midtbane</MidHatStats>
 <AttHatStats>HatStats Angreb</AttHatStats>
@@ -356,7 +356,7 @@
 <Header>Hovedstød</Header>
 <Regainer>Regainer</Regainer>
 <SecondTeamIdLabel>Indsæt ekstra hold ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Lydindstillinger for ekstra hold som primær hold</SecondSoundEqualFirst>
+<SecondSoundEqualFirst>Lydindstillinger for ekstrahold og primærhold skal være ens</SecondSoundEqualFirst>
 <Keeper>Målmandspil</Keeper>
 <Defending>Forsvarsspil</Defending>
 <Playmaking>Spilfordeling</Playmaking>
@@ -376,7 +376,7 @@
 <PathSoundsOtherSentOff>Lyd for udvisning af modstander</PathSoundsOtherSentOff>
 <TabInjuries>Skader</TabInjuries>
 <TabWeather>Vejr</TabWeather>
-<TabWhistleCard>Fløjte og kort lyde</TabWhistleCard>
+<TabWhistleCard>Fløjte- og kortlyde</TabWhistleCard>
 <PathSoundsMissFriend>Lyd for missede chancer for venners hold</PathSoundsMissFriend>
 <PathSoundsMissOther>Lyd for andre holds missede chancer</PathSoundsMissOther>
 <TabChances>Chancer</TabChances>
@@ -415,7 +415,7 @@
 <HeaderBarColor>Farve på navigationsbar</HeaderBarColor>
 <HeaderBarTextColor>Tekstfarve på navigationsbar</HeaderBarTextColor>
 <Volume>Lydstyrke</Volume>
-<PlayVolumeSetting>Afspil lyde, efter lydstyrkeindstilling</PlayVolumeSetting>
+<PlayVolumeSetting>Afspil lyd efter justering af lydstyrke</PlayVolumeSetting>
 <Import>Importer</Import>
 <Export>Eksporter</Export>
 <ExportOauth>Eksporter Oauth</ExportOauth>
@@ -424,5 +424,5 @@
 <ImportOk>Indstillinger importeret!</ImportOk>
 <PrefsRestart>Nogle indstillinger kræver genstart!</PrefsRestart>
 <ClickToSave>Klik på OK i indstillingsvinduet for at gemme dem.</ClickToSave>
-<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<TooltipWindowSpeech>Slå tekst-til-tale for kamphændelser fra eller til</TooltipWindowSpeech>
 </Htlivesight>

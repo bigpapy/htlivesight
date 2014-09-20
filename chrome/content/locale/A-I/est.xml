@@ -424,5 +424,5 @@
 <ImportOk>Seadistused edukalt imporditud!</ImportOk>
 <PrefsRestart>Mõned seadistused vajavad taaskäivitust!</PrefsRestart>
 <ClickToSave>Salvestamiseks kliki OK seadistuste aknas.</ClickToSave>
-<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<TooltipWindowSpeech>Luba või keela tekst-kõneks funktsioon mängu kirjelduste kohta</TooltipWindowSpeech>
 </Htlivesight>

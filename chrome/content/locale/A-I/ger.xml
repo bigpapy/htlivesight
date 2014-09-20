@@ -424,5 +424,5 @@
 <ImportOk>Einstellungen erfolgreich importiert!</ImportOk>
 <PrefsRestart>Einige Einstellungen erfordern einen Neustart!</PrefsRestart>
 <ClickToSave>Auf OK im Einstellungsfenster klicken um sie zu speichern.</ClickToSave>
-<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<TooltipWindowSpeech>Aktivieren und Deaktivieren von Text-zu-Sprache-Benachrichtigungen bei Spielereignissen</TooltipWindowSpeech>
 </Htlivesight>
