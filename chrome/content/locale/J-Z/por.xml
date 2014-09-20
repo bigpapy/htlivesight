@@ -424,4 +424,5 @@
 <ImportOk>Preferências importadas com sucesso!</ImportOk>
 <PrefsRestart>É necessário reiniciar algumas das preferências!</PrefsRestart>
 <ClickToSave>Clique OK na janela de preferências para as salvar.</ClickToSave>
+<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
 </Htlivesight>

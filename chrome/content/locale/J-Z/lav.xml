@@ -68,7 +68,7 @@
 <TimeMin>'</TimeMin>
 <TooltipWindowSound>Ieslēgt vai izslēgt spēles skaņas</TooltipWindowSound>
 <TooltipWindowLink>Saite uz spēles lapu iekš Hattrick</TooltipWindowLink>
-<TooltipWindowInfo>Râdît/nerâdît informatîvo notikumu ziòojumus.</TooltipWindowInfo>
+<TooltipWindowInfo>Rādīt/nerādīt informatīvo notikumu ziņojumus</TooltipWindowInfo>
 <TooltipWindowMaximize>Maksimizēt logu</TooltipWindowMaximize>
 <TooltipWindowMinimize>Minimizēt logu</TooltipWindowMinimize>
 <TooltipWindowShade>Paslēpt logu</TooltipWindowShade>
@@ -415,13 +415,14 @@
 <HeaderBarColor>Galvenes krāsa</HeaderBarColor>
 <HeaderBarTextColor>Galvenes teksta krāsa</HeaderBarTextColor>
 <Volume>Skaļums</Volume>
-<PlayVolumeSetting>Play sound after volume setting</PlayVolumeSetting>
-<Import>Import</Import>
-<Export>Export</Export>
-<ExportOauth>Export Oauth</ExportOauth>
-<ExportBackground>Export Background</ExportBackground>
-<ExportSounds>Export Sounds</ExportSounds>
-<ImportOk>Preferences imported successfully!</ImportOk>
-<PrefsRestart>Some preferences need a restart!</PrefsRestart>
-<ClickToSave>Click OK on preferences window to save them.</ClickToSave>
+<PlayVolumeSetting>Atskaņot skaņu pēc skaņas iestatījumu veikšanas</PlayVolumeSetting>
+<Import>Importēt</Import>
+<Export>Eksportēt</Export>
+<ExportOauth>Eksportēt Oauth</ExportOauth>
+<ExportBackground>Eksportēt fonu</ExportBackground>
+<ExportSounds>Eksportēt skaņas</ExportSounds>
+<ImportOk>Iestatījumi veiksmīgi importēti!</ImportOk>
+<PrefsRestart>Dažu iestatījumu maiņai nepieciešams restarts!</PrefsRestart>
+<ClickToSave>Nospiediet OK iestatījumu logā, lai tie tiktu saglabāti.</ClickToSave>
+<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
 </Htlivesight>

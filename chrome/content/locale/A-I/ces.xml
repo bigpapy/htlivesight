@@ -424,4 +424,5 @@
 <ImportOk>Nastavení úspěšně importováno!</ImportOk>
 <PrefsRestart>Některá nastavení vyžadují restart programu!</PrefsRestart>
 <ClickToSave>Klikni na tlačítko OK v okně nastavení, aby došlo k uložení.</ClickToSave>
+<TooltipWindowSpeech>Povolit a zakázat text k mluvené události zápasových notifikací</TooltipWindowSpeech>
 </Htlivesight>

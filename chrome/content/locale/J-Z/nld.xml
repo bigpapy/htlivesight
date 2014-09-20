@@ -424,4 +424,5 @@
 <ImportOk>Voorkeuren succesvol geïmporteerd!</ImportOk>
 <PrefsRestart>Enkele voorkeuren vereisen een herstart!</PrefsRestart>
 <ClickToSave>Klik op OK in het voorkeuren venster om deze op te slaan.</ClickToSave>
+<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
 </Htlivesight>

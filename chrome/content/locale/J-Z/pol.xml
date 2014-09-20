@@ -52,7 +52,7 @@
 <TacticAOW>Atak skrzydłami</TacticAOW>
 <TacticPlayCreative>Gra kreatywna</TacticPlayCreative>
 <TacticLongShots>Strzały z dystansu</TacticLongShots>
-<TimeFirstHalf>I połowy</TimeFirstHalf>
+<TimeFirstHalf>I połowa</TimeFirstHalf>
 <TimeHalfTime>Przerwa</TimeHalfTime>
 <TimeSecondHalf>II połowy</TimeSecondHalf>
 <TimeExtraTime>Dogrywki</TimeExtraTime>
@@ -415,13 +415,14 @@
 <HeaderBarColor>Kolor paska nagłówka</HeaderBarColor>
 <HeaderBarTextColor>Kolor tekstu nagłówka</HeaderBarTextColor>
 <Volume>Głośność</Volume>
-<PlayVolumeSetting>Play sound after volume setting</PlayVolumeSetting>
+<PlayVolumeSetting>Odtwórz dźwięk po zmianie ustawień głośności</PlayVolumeSetting>
 <Import>Import</Import>
 <Export>Export</Export>
-<ExportOauth>Export Oauth</ExportOauth>
-<ExportBackground>Export Background</ExportBackground>
+<ExportOauth>Eksport Oauth</ExportOauth>
+<ExportBackground>Eksport tła</ExportBackground>
 <ExportSounds>Exportuj dzwięki</ExportSounds>
-<ImportOk>Preferences imported successfully!</ImportOk>
-<PrefsRestart>Some preferences need a restart!</PrefsRestart>
+<ImportOk>Ustawienia został zaimportowane pomyślnie!</ImportOk>
+<PrefsRestart>Niektóre ustawienia wymagają ponownego uruchomienia!</PrefsRestart>
 <ClickToSave>Kliknij przycisk OK w oknie preferencje, aby je zapisać.</ClickToSave>
+<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
 </Htlivesight>

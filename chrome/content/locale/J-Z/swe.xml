@@ -424,4 +424,5 @@
 <ImportOk>Inställningarna har importerats!</ImportOk>
 <PrefsRestart>En del inställningar kräver en omstart!</PrefsRestart>
 <ClickToSave>Spara genom att klicka på OK.</ClickToSave>
+<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
 </Htlivesight>

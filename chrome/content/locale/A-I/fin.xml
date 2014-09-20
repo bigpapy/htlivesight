@@ -424,4 +424,5 @@
 <ImportOk>Asetukset ladattu onnistuneesti!</ImportOk>
 <PrefsRestart>Jotkin asetukset vaativat uudelleenkäynnistyksen!</PrefsRestart>
 <ClickToSave>Klikkaa OK asetukset ikkunassa tallentaaksesi ne.</ClickToSave>
+<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
 </Htlivesight>
