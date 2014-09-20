@@ -123,7 +123,7 @@
 <ModeratelyInjuried>Blessure légère</ModeratelyInjuried>
 <BadlyInjuried>Blessure grave</BadlyInjuried>
 <ByHimself>Tout seul</ByHimself>
-<ByFoul>Due à la faute</ByFoul>
+<ByFoul>due à la faute</ByFoul>
 <ExperiencedForward>SE Attaquant expérimenté</ExperiencedForward>
 <InexperiencedDefender>Défenseur inexpérimenté</InexperiencedDefender>
 <WingerHead>SE ailier: centre pour Joueur de tête</WingerHead>
@@ -424,6 +424,5 @@
 <ImportOk>Préférences importées avec succès !</ImportOk>
 <PrefsRestart>Certaines nécessitent un redémarrage de HTLiveSight !</PrefsRestart>
 <ClickToSave>Cliquez sur OK sous les options pour les sauvegarder.</ClickToSave>
-<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
-<NotifyEnableSpeech>Enable text to speech notifications</NotifyEnableSpeech>
+<TooltipWindowSpeech>Activer ou désactiver le Text To Speech de ce match</TooltipWindowSpeech>
 </Htlivesight>

@@ -424,4 +424,5 @@
 <ImportOk>Podešavanja su uspješno ubačena</ImportOk>
 <PrefsRestart>Neka od podešenja zahtjevaju restart!</PrefsRestart>
 <ClickToSave>Kliknuti na OK u prozoru za podešavanja da ista sačuvaš.</ClickToSave>
+<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
 </Htlivesight>

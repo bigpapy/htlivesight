@@ -177,7 +177,7 @@
 <MatchesBooked>Gebucht</MatchesBooked>
 <BookedList>Zeige Spieler mit gelben Karten in der Kopfzeile</BookedList>
 <MatchesSentOff>Platzverweise</MatchesSentOff>
-<SentOffList>Zeige Platzverweise im Kopf</SentOffList>
+<SentOffList>Zeige Platzverweise in der Kopfzeile</SentOffList>
 <MatchesInjured>Verletzt</MatchesInjured>
 <InjuredList>Zeige Verletzte in der Kopfzeile</InjuredList>
 <MatchesWindow>Fenster</MatchesWindow>
@@ -412,16 +412,17 @@
 <License>Unsere Lizenz</License>
 <Tech>Unsere Technologie</Tech>
 <Supporter>Projektunterstützung</Supporter>
-<HeaderBarColor>Header bar color</HeaderBarColor>
-<HeaderBarTextColor>Header bar text color</HeaderBarTextColor>
-<Volume>Volume</Volume>
-<PlayVolumeSetting>Play sound after volume setting</PlayVolumeSetting>
+<HeaderBarColor>Kopfzeilenfarbe</HeaderBarColor>
+<HeaderBarTextColor>Textfarbe der Kopfzeile</HeaderBarTextColor>
+<Volume>Lautstärke</Volume>
+<PlayVolumeSetting>Ton abspielen nach Lautstärkeeinstellung</PlayVolumeSetting>
 <Import>Import</Import>
 <Export>Export</Export>
-<ExportOauth>Export Oauth</ExportOauth>
-<ExportBackground>Export Background</ExportBackground>
-<ExportSounds>Export Sounds</ExportSounds>
-<ImportOk>Preferences imported successfully!</ImportOk>
-<PrefsRestart>Some preferences need a restart!</PrefsRestart>
-<ClickToSave>Click OK on preferences window to save them.</ClickToSave>
+<ExportOauth>Oauth exportieren</ExportOauth>
+<ExportBackground>Hintergrund exportieren</ExportBackground>
+<ExportSounds>Töne exportieren</ExportSounds>
+<ImportOk>Einstellungen erfolgreich importiert!</ImportOk>
+<PrefsRestart>Einige Einstellungen erfordern einen Neustart!</PrefsRestart>
+<ClickToSave>Auf OK im Einstellungsfenster klicken um sie zu speichern.</ClickToSave>
+<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
 </Htlivesight>

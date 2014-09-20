@@ -424,4 +424,5 @@
 <ImportOk>Настройки успешно импортированы!</ImportOk>
 <PrefsRestart>Для некоторых настроек необходим перезапуск!</PrefsRestart>
 <ClickToSave>Нажмите кнопку ОК в окне настроек, чтобы сохранить их.</ClickToSave>
+<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
 </Htlivesight>

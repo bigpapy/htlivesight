@@ -383,7 +383,7 @@
 <Agreeability>Agreeability</Agreeability>
 <Aggressiveness>Aggressiveness</Aggressiveness>
 <Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member </BelovedTeamMember>
+<BelovedTeamMember>Beloved team member</BelovedTeamMember>
 <PopularGuy>Popular guy</PopularGuy>
 <SympatheticGuy>Sympathetic guy</SympatheticGuy>
 <PleasantGuy>Pleasant guy</PleasantGuy>
@@ -412,4 +412,17 @@
 <License>Our License</License>
 <Tech>Our Technology</Tech>
 <Supporter>Project support</Supporter>
+<HeaderBarColor>Header bar color</HeaderBarColor>
+<HeaderBarTextColor>Header bar text color</HeaderBarTextColor>
+<Volume>Volume</Volume>
+<PlayVolumeSetting>Play sound after volume setting</PlayVolumeSetting>
+<Import>Import</Import>
+<Export>Export</Export>
+<ExportOauth>Export Oauth</ExportOauth>
+<ExportBackground>Export Background</ExportBackground>
+<ExportSounds>Export Sounds</ExportSounds>
+<ImportOk>Preferences imported successfully!</ImportOk>
+<PrefsRestart>Some preferences need a restart!</PrefsRestart>
+<ClickToSave>Click OK on preferences window to save them.</ClickToSave>
+<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
 </Htlivesight>

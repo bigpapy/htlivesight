@@ -424,4 +424,5 @@
 <ImportOk>Preferințele importate cu succes!</ImportOk>
 <PrefsRestart>Câteva preferințe necesită restart!</PrefsRestart>
 <ClickToSave>Apasă OK în fereastra preferințelor pentru a le salva.</ClickToSave>
+<TooltipWindowSpeech>Activează și dezactivează notificarea vocală a evenimentelor de meci</TooltipWindowSpeech>
 </Htlivesight>
