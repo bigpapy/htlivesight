@@ -12,7 +12,7 @@ document.getElementById("content").webNavigation.loadURI(url, 0, null, null, nul
     if (openInTab) {
       var browser = top.document.getElementById("content");
       var theTab = browser.addTab(htlivesightEnv.contentPath+'htlivesight.html');
-      theTab.label = "HTLiveSight";
+      theTab.label = "Htlivesight";
       browser.selectedTab = theTab;
     } else {
     toOpenWindowByType('mozilla:htlivesight', htlivesightEnv.contentPath+'htlivesight.html');

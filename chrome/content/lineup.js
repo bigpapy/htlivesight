@@ -285,7 +285,7 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 		if (found){
 			lineUp=htlivesight.LineUp.SubstitutionPlayerInLineUp(lineUp,subjectPlayer,objectPlayer);
 		}else{
-		    	alert("CHPP Data error! Substitution data missing. Substitution position and order shown are wrong, please restart HTLivesight");
+		    	alert("HATTRICK CHPP Data error! Substitution data missing. Substitution position and order shown are wrong, please restart HTLivesight");
 			lineUp=htlivesight.LineUp.InjurySubstitution(lineUp,subjectPlayer,objectPlayer);
 		}
 		var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
