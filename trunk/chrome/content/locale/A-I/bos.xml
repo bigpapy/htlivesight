@@ -14,12 +14,12 @@
 <LoginRememberMe>prijava zapamti me</LoginRememberMe>
 <LoginButton>dugme za prijavu</LoginButton>
 <LoginReLive>Prijava Re uživo</LoginReLive>
-<LoginSpeed>brzina prijave</LoginSpeed>
-<LoginByEvent>prijava kraja događaja</LoginByEvent>
-<LeagueMatches>Ligaška utakmica</LeagueMatches>
-<LeagueLiveTable>Ligaška tabela uživo</LeagueLiveTable>
+<LoginSpeed>Brzina</LoginSpeed>
+<LoginByEvent>po događaju</LoginByEvent>
+<LeagueMatches>Ligaške utakmica</LeagueMatches>
+<LeagueLiveTable>Tabela Lige uživo</LeagueLiveTable>
 <LeaguePosition>Ligaška pozicija</LeaguePosition>
-<LeagueTeam>Ekipe Lige</LeagueTeam>
+<LeagueTeam>Ekipa</LeagueTeam>
 <LeaguePlayed>Igrao Ligu</LeaguePlayed>
 <LeagueGoals>Golovi Lige</LeagueGoals>
 <LeagueGoalDiff>Ligaški Golovi razlika</LeagueGoalDiff>

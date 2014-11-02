@@ -9,7 +9,7 @@
 <MenuDisconnected>Forbindelsen afbrudt</MenuDisconnected>
 <MenuAbout>Om HTLiveSight</MenuAbout>
 <LoginLabel>Log ind</LoginLabel>
-<LoginTeamId>Indsæt Hold-ID</LoginTeamId>
+<LoginTeamId>Indsæt hold-ID</LoginTeamId>
 <LoginUsername>Brugernavn</LoginUsername>
 <LoginRememberMe>Husk mig</LoginRememberMe>
 <LoginButton>Log ind</LoginButton>
@@ -33,7 +33,7 @@
 <FriendsRemove>Fjern</FriendsRemove>
 <FriendsOpen>Åben</FriendsOpen>
 <Introduction>Du bliver videresendt til en CHPP-side for, at få din godkendelseskode. Hvis dette ikke sker, skal du midlertidigt deaktiver blokering af pop-up vinduer,  eller tilføje HTlivesight til undtagelseslisten.</Introduction>
-<Insert>Indsæt din autorisation kode her:</Insert>
+<Insert>Indsæt autorisationskode her:</Insert>
 <Ending>HTlivesight er godkendt. Klik OK for at genstarte programmet.</Ending>
 <Error>Fejl</Error>
 <ServerON>Tilsluttet</ServerON>
@@ -181,12 +181,12 @@
 <MatchesInjured>Skadet</MatchesInjured>
 <InjuredList>Vis tilskadekomne på toppen af siden</InjuredList>
 <MatchesWindow>Vindue</MatchesWindow>
-<MatchesLines>Linier vises i minimeret mode</MatchesLines>
+<MatchesLines>Linjer vises i minimeret tilstand\n</MatchesLines>
 <NotifyNotify>Notifikationer</NotifyNotify>
 <NotifyEnableSound>Aktiver underretninger med lyd</NotifyEnableSound>
 <NotifyOnly>Kun i kampe der er tilføjet til simulatoren</NotifyOnly>
 <NotifyFlash>Vis blinkene sidehoved</NotifyFlash>
-<NotifyStatus>Statuslinjen skyder</NotifyStatus>
+<NotifyStatus>Statuslinje boks</NotifyStatus>
 <OtherAuthorization>Godkendelseskode</OtherAuthorization>
 <OtherReset>Fjern godkendelse</OtherReset>
 <OtherResetButton>Nulstil</OtherResetButton>
@@ -319,7 +319,7 @@
 <Error0>Fejl 0: er ikke forbundet til internettet.</Error0>
 <Error500>Fejl 500: Intern serverfejl (af Hattrick)</Error500>
 <Error503>Fejl 503: CHPP tjeneste utilgængelig (midlertidig overbelastning eller vedligeholdelse)</Error503>
-<PathSoundsNote1>Indsæt fil:/// før stien til den lyd i .Ogg eller .wav-format</PathSoundsNote1>
+<PathSoundsNote1>Indsæt, fil:/// før linket til lyden, som skal være i .Ogg format</PathSoundsNote1>
 <PathSoundsNote2>Eksempel: fil:///c:\\sti\\til\\lyden.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>1. halvleg slut fløjte</PathSoundsWhistle2>
 <PathSoundsWhistle3>Kamp slut fløjte</PathSoundsWhistle3>
@@ -355,7 +355,7 @@
 <Unpredictable>Uberegnelig</Unpredictable>
 <Header>Hovedstød</Header>
 <Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Indsæt ekstra hold ID</SecondTeamIdLabel>
+<SecondTeamIdLabel>Indsæt ekstra hold-ID</SecondTeamIdLabel>
 <SecondSoundEqualFirst>Lydindstillinger for ekstrahold og primærhold skal være ens</SecondSoundEqualFirst>
 <Keeper>Målmandspil</Keeper>
 <Defending>Forsvarsspil</Defending>
@@ -405,7 +405,7 @@
 <SafariWarning>Hvis panellet/fanen HTLivesight ikke er valgt som primær, blokeres lyd beskeder. Åbn et nyt vindue, hvis du ønsker at surfe på internettet i løbet af en kamp</SafariWarning>
 <OnlyHTTPFiles>Kun http URL virker</OnlyHTTPFiles>
 <Warning>Advarsel</Warning>
-<Testers>Testere</Testers>
+<Testers>Testpersoner</Testers>
 <BasedOn>Baseret på</BasedOn>
 <AndroidWarning>Hvis fanen HTLiveSight ikke er valgt som primær, vil meddelelser blive blokeret. De vises igen ved første opdatering når du er tilbage på fanen</AndroidWarning>
 <SafariClipboardTitle>Tryk ctrl/cmd + c for at kopiere den markerede tekst</SafariClipboardTitle>
