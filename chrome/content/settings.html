@@ -4,11 +4,16 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title id="htlivesight-options">HTLiveSight</title>
 <link rel="icon" type="image/png" href="./themes/images/48.png" />
-<!--Temporary Trick--><link rel='stylesheet' href='#' type='text/css'>
-<!--Dark Theme--> <link rel="stylesheet"  type="text/css"  href="themes/dark.css" /> 
-<!--Light Theme--> <link rel="stylesheet"  type="text/css"  href="themes/light.css" />
-<!--Livefox Theme--> <link rel="stylesheet"  type="text/css"  href="themes/livefox.css" />
-<!--Custom Tweaks--> <link rel="stylesheet" type="text/css" href="themes/custom.css" />
+<!--Temporary Trick-->
+<link rel='stylesheet' href='#' type='text/css'>
+<!--Dark Theme-->
+<link rel="stylesheet" type="text/css" href="themes/dark.css" />
+<!--Light Theme-->
+<link rel="stylesheet" type="text/css" href="themes/light.css" />
+<!--Livefox Theme-->
+<link rel="stylesheet" type="text/css" href="themes/livefox.css" />
+<!--Custom Tweaks-->
+<link rel="stylesheet" type="text/css" href="themes/custom.css" />
 <script type="text/javascript" src="lib/jquery-1.8.0.min.js"></script>
 <script type="text/javascript" src="lib/jquery-ui-1.8.23.custom.min.js"></script>
 <script type="application/x-javascript" src="env.js"></script>
@@ -25,321 +30,341 @@
 </head>
 <body id="htlivesight-body">
 	<div id="options-tabs">
-	<ul>
-	<li><a id="TabGeneral" href="#otabs-1">Y</a></li>
-	<li><a id="TabMatches" href="#otabs-2">M</a></li>
-	<li><a id="TabNotifications" href="#otabs-3">C</a></li>
-	<li><a id="TabOther" href="#otabs-4">A</a></li>
-	<li><a id="TabCustom" href="#otabs-5">!</a></li>
-	<li><a id="TabColors" href="#otabs-6">Colors</a></li>
-  </ul>
-		<div id="otabs-1"><!--TAB1-->
-				<fieldset>
-					<legend id="ThemesSelector">Themes</legend>
-					<form>
-						<input type="radio" name="theme" value="Dark Theme"
-							id="dark_theme"><label for="dark_theme"
-							id="label_dark_theme">Dark</label> <input type="radio"
-							name="theme" value="Light Theme" id="light_theme"><label
-							for="light_theme" id="label_light_theme">Light</label> <input
-							type="radio" name="theme" value="Livefox Theme"
-							id="livefox_theme"><label for="livefox_theme"
-							id="label_livefox_theme">LiveFox</label>
-					</form>
-				</fieldset>
-				<fieldset>
-					<legend id="GeneralOpen"></legend>
-					<form>
-						<div id="openin">
-							<input type="radio" id="openin_tab" name="radio"
-								 /><label for="openin_tab"
-								id="label_openin_tab">In a new tab</label> <input type="radio"
-								id="openin_window" name="radio" /><label for="openin_window"
-								id="label_openin_window">In a new window</label>
-						</div>
-					</form>
-				</fieldset>
-				<fieldset>
-					<legend id="LanguageSelect"></legend>
-					<form>
-						<select class="text ui-widget-content ui-corner-all"
-							id="lang-list">
-							<option value="A-I/ara">[ara] العربية</option>
-							<option value="A-I/aze">[aze] Azərbaycanlı</option>
-							<option value="A-I/bel">[bel] Беларуская</option>
-							<option value="A-I/bul">[bul] Български</option>
-							<option value="A-I/bos">[bos] Bosanski</option>
-							<option value="A-I/cat">[cat] Català</option>
-							<option value="A-I/ces">[ces] Čeština</option>
-							<option value="A-I/dan">[dan] Dansk</option>
-							<option value="A-I/ger">[ger] Deutsch</option>
-							<option value="A-I/eng">[eng] English</option>
-							<option value="A-I/eng-us">[eng-us] American</option>
-							<option value="A-I/ell">[ell] Ελληνικά</option>
-							<option value="J-Z/spa">[spa] Español</option>
-							<option value="J-Z/spa-ca">[spa-ca] Centroamericano</option>
-							<option value="J-Z/spa-su">[spa-su] Sudamericano</option>
-							<option value="A-I/est">[est] Eesti</option>
-							<option value="A-I/eus">[eus] Euskara</option>
-							<option value="A-I/fas">[fas] فارسی</option>
-							<option value="A-I/fin">[fin] Suomi</option>
-							<option value="A-I/fra">[fra] Français</option>
-							<option value="A-I/fry">[fry] Frysk</option>
-							<option value="A-I/fur">[fur] Furlan</option>
-							<option value="A-I/glg">[glg] Galego</option>
-							<option value="A-I/heb">[heb] עברית</option>
-							<option value="A-I/hrv">[hrv] Hrvatski</option>
-							<option value="A-I/hun">[hun] Magyar</option>
-							<option value="A-I/ind">[ind] Bahasa Indonesia</option>
-							<option value="A-I/isl">[isl] Islenska</option>
-							<option value="A-I/ita">[ita] Italiano</option>
-							<option value="J-Z/jpn">[jpn] 日本語</option>
-							<option value="J-Z/kat">[kat] ქართული</option>
-							<option value="J-Z/kor">[kor] 한국어</option>
-							<option value="J-Z/ltz">[ltz] Lëtzebuergesch</option>
-							<option value="J-Z/lit">[lit] Lietuvių</option>
-							<option value="J-Z/lav">[lav] Latviešu</option>
-							<option value="J-Z/mkd">[mkd] Македонски</option>
-							<option value="J-Z/mlt">[mlt] Malti</option>
-							<option value="J-Z/nld">[nld] Nederlands</option>
-							<option value="J-Z/nob">[nob] Norsk-Bokmål</option>
-							<option value="J-Z/nno">[nno] Norsk-Nynorsk</option>
-							<option value="J-Z/pol">[pol] Polski</option>
-							<option value="J-Z/por">[por] Português</option>
-							<option value="J-Z/por-br">[por-br] Brasileiro</option>
-							<option value="J-Z/ron">[ron] Română</option>
-							<option value="J-Z/rus">[rus] Русский</option>
-							<option value="J-Z/slk">[slk] Slovenčina</option>
-							<option value="J-Z/slv">[slv] Slovenčina</option>
-							<option value="J-Z/sqi">[sqi] Shqip</option>
-							<option value="J-Z/srp">[srp] Српски</option>
-							<option value="J-Z/swe">[swe] Svenska</option>
-							<option value="J-Z/tur">[tur] Türkçe</option>
-							<option value="J-Z/vie">[vie] Tiếng Việt</option>
-							<option value="J-Z/vls">[vls] Vlaams</option>
-							<option value="J-Z/ukr">[ukr] Українська</option>
-							<option value="J-Z/zho">[zho] 中文（简体）</option>
-						</select>
-					</form>
-					<br /> <label id="LanguageNote"></label>
-					<div id="CrowdinLink">
-						<a href="http://crowdin.net/project/htlivesight/invite?token=a41f1ac45795476ca5087af76978fad8"
-							target="_blank"><img id="CrowdinLogo"
-							src="./themes/images/crowdin.png" />
-						<div id="CrowdinLabel">
-								<label id="CrowdinHelp">Help translating! With Crowdin
-									is supereasy and very funny!</label>
-							</div>
-						</a>
+		<ul>
+			<li><a id="TabGeneral" href="#otabs-1">Y</a></li>
+			<li><a id="TabMatches" href="#otabs-2">M</a></li>
+			<li><a id="TabNotifications" href="#otabs-3">C</a></li>
+			<li><a id="TabOther" href="#otabs-4">A</a></li>
+			<li><a id="TabCustom" href="#otabs-5">!</a></li>
+			<li><a id="TabColors" href="#otabs-6">Colors</a></li>
+		</ul>
+		<div id="otabs-1">
+			<!--TAB1-->
+			<fieldset>
+				<legend id="ThemesSelector">Themes</legend>
+				<form>
+					<input type="radio" name="theme" value="Dark Theme" id="dark_theme"><label
+						for="dark_theme" id="label_dark_theme">Dark</label> <input
+						type="radio" name="theme" value="Light Theme" id="light_theme"><label
+						for="light_theme" id="label_light_theme">Light</label> <input
+						type="radio" name="theme" value="Livefox Theme" id="livefox_theme"><label
+						for="livefox_theme" id="label_livefox_theme">LiveFox</label>
+				</form>
+			</fieldset>
+			<fieldset>
+				<legend id="GeneralOpen"></legend>
+				<form>
+					<div id="openin">
+						<input type="radio" id="openin_tab" name="radio" /><label
+							for="openin_tab" id="label_openin_tab">In a new tab</label> <input
+							type="radio" id="openin_window" name="radio" /><label
+							for="openin_window" id="label_openin_window">In a new
+							window</label>
 					</div>
-				</fieldset>
-				<fieldset>
+				</form>
+			</fieldset>
+			<fieldset>
+				<legend id="LanguageSelect"></legend>
+				<form>
+					<select class="text ui-widget-content ui-corner-all" id="lang-list">
+						<option value="A-I/ara">[ara] العربية</option>
+						<option value="A-I/aze">[aze] Azərbaycanlı</option>
+						<option value="A-I/bel">[bel] Беларуская</option>
+						<option value="A-I/bul">[bul] Български</option>
+						<option value="A-I/bos">[bos] Bosanski</option>
+						<option value="A-I/cat">[cat] Català</option>
+						<option value="A-I/ces">[ces] Čeština</option>
+						<option value="A-I/dan">[dan] Dansk</option>
+						<option value="A-I/ger">[ger] Deutsch</option>
+						<option value="A-I/eng">[eng] English</option>
+						<option value="A-I/eng-us">[eng-us] American</option>
+						<option value="A-I/ell">[ell] Ελληνικά</option>
+						<option value="J-Z/spa">[spa] Español</option>
+						<option value="J-Z/spa-ca">[spa-ca] Centroamericano</option>
+						<option value="J-Z/spa-su">[spa-su] Sudamericano</option>
+						<option value="A-I/est">[est] Eesti</option>
+						<option value="A-I/eus">[eus] Euskara</option>
+						<option value="A-I/fas">[fas] فارسی</option>
+						<option value="A-I/fin">[fin] Suomi</option>
+						<option value="A-I/fra">[fra] Français</option>
+						<option value="A-I/fry">[fry] Frysk</option>
+						<option value="A-I/fur">[fur] Furlan</option>
+						<option value="A-I/glg">[glg] Galego</option>
+						<option value="A-I/heb">[heb] עברית</option>
+						<option value="A-I/hrv">[hrv] Hrvatski</option>
+						<option value="A-I/hun">[hun] Magyar</option>
+						<option value="A-I/ind">[ind] Bahasa Indonesia</option>
+						<option value="A-I/isl">[isl] Islenska</option>
+						<option value="A-I/ita">[ita] Italiano</option>
+						<option value="J-Z/jpn">[jpn] 日本語</option>
+						<option value="J-Z/kat">[kat] ქართული</option>
+						<option value="J-Z/kor">[kor] 한국어</option>
+						<option value="J-Z/ltz">[ltz] Lëtzebuergesch</option>
+						<option value="J-Z/lit">[lit] Lietuvių</option>
+						<option value="J-Z/lav">[lav] Latviešu</option>
+						<option value="J-Z/mkd">[mkd] Македонски</option>
+						<option value="J-Z/mlt">[mlt] Malti</option>
+						<option value="J-Z/nld">[nld] Nederlands</option>
+						<option value="J-Z/nob">[nob] Norsk-Bokmål</option>
+						<option value="J-Z/nno">[nno] Norsk-Nynorsk</option>
+						<option value="J-Z/pol">[pol] Polski</option>
+						<option value="J-Z/por">[por] Português</option>
+						<option value="J-Z/por-br">[por-br] Brasileiro</option>
+						<option value="J-Z/ron">[ron] Română</option>
+						<option value="J-Z/rus">[rus] Русский</option>
+						<option value="J-Z/slk">[slk] Slovenčina</option>
+						<option value="J-Z/slv">[slv] Slovenčina</option>
+						<option value="J-Z/sqi">[sqi] Shqip</option>
+						<option value="J-Z/srp">[srp] Српски</option>
+						<option value="J-Z/swe">[swe] Svenska</option>
+						<option value="J-Z/tur">[tur] Türkçe</option>
+						<option value="J-Z/vie">[vie] Tiếng Việt</option>
+						<option value="J-Z/vls">[vls] Vlaams</option>
+						<option value="J-Z/ukr">[ukr] Українська</option>
+						<option value="J-Z/zho">[zho] 中文（简体）</option>
+					</select>
+				</form>
+				<br /> <label id="LanguageNote"></label>
+				<div id="CrowdinLink">
+					<a
+						href="http://crowdin.net/project/htlivesight/invite?token=a41f1ac45795476ca5087af76978fad8"
+						target="_blank"><img id="CrowdinLogo"
+						src="./themes/images/crowdin.png" />
+						<div id="CrowdinLabel">
+							<label id="CrowdinHelp">Help translating! With Crowdin is
+								supereasy and very funny!</label>
+						</div> </a>
+				</div>
+			</fieldset>
+			<fieldset>
 				<legend id="CustomBackground">Background</legend>
 				<input type="checkbox" id="chkExtendBackground" /><label
-						for="chkExtendBackground" id="label_chkExtendBackground">Extend image</label>
-				<input type="checkbox" id="chkRepeatBackground" /><label
-						for="chkRepeatBackground" id="label_chkRepeatBackground">Repeat image</label>
-				 <br>
-				<button id="label_customBackground_try" class="brestore" style="display: none">try</button>
-					<button id="label_customBackground_reset" class="brestore">restore</button>
-					<input type="file" id="customBackgroundPathBrowse" tabindex="2" /> <input
-						type="url" id="customBackgroundPath" maxlength="450000" size="57"
-						value="chrome://htlivesight/content/themes/images/bg.png"
-						class="textsnd ui-widget-content ui-corner-all" /> <br />
-				</fieldset>
-				<fieldset style="display: none">
-					<legend id="GeneralServer" style="display: none"></legend>
-					<label id="GeneralNote" style="display: none"></label> <br /> <label
-						for="hattrickServer" style="display: none">Hattrick server:</label>						
-						<form>
-						<select class="text ui-widget-content ui-corner-all"
-							id="hattrickServer" style="display: none">
-							<option value="www74">www74</option>
-							<option value="www75">www75</option>
-							<option value="www76">www76</option>
-							<option value="www77">www77</option>
-							<option value="www78">www78</option>
-							<option value="www79">www79</option>
-							<option value="www80">www80</option>
-							<option value="www81">www81</option>
-							<option value="www82">www82</option>
-							<option value="www83">www83</option>
-							<option value="www84">www84</option>
-							<option value="www85">www85</option>
-							<option value="www86">www86</option>
-							<option value="www87">www87</option>
-							<option value="www88">www88</option>
-							<option value="www89">www89</option>
-							<option value="www90">www90</option>
-							<option value="www91">www91</option>
-							<option value="www92">www92</option>
-							<option value="www93">www93</option>
-							<option value="www94">www94</option>
-							<option value="www95">www95</option>
-							<option value="www96">www96</option>
-							<option value="www97">www97</option>
-							<option value="www98">www98</option>
-							<option value="stage">stage</option>
-							</select>
-						</form>
-				</fieldset>
+					for="chkExtendBackground" id="label_chkExtendBackground">Extend
+					image</label> <input type="checkbox" id="chkRepeatBackground" /><label
+					for="chkRepeatBackground" id="label_chkRepeatBackground">Repeat
+					image</label> <br>
+				<button id="label_customBackground_try" class="brestore"
+					style="display: none">try</button>
+				<button id="label_customBackground_reset" class="brestore">restore</button>
+				<input type="file" id="customBackgroundPathBrowse" tabindex="2" />
+				<input type="url" id="customBackgroundPath" maxlength="450000"
+					size="57" value="chrome://htlivesight/content/themes/images/bg.png"
+					class="textsnd ui-widget-content ui-corner-all" /> <br />
+			</fieldset>
+			<fieldset style="display: none">
+				<legend id="GeneralServer" style="display: none"></legend>
+				<label id="GeneralNote" style="display: none"></label> <br /> <label
+					for="hattrickServer" style="display: none">Hattrick server:</label>
+				<form>
+					<select class="text ui-widget-content ui-corner-all"
+						id="hattrickServer" style="display: none">
+						<option value="www74">www74</option>
+						<option value="www75">www75</option>
+						<option value="www76">www76</option>
+						<option value="www77">www77</option>
+						<option value="www78">www78</option>
+						<option value="www79">www79</option>
+						<option value="www80">www80</option>
+						<option value="www81">www81</option>
+						<option value="www82">www82</option>
+						<option value="www83">www83</option>
+						<option value="www84">www84</option>
+						<option value="www85">www85</option>
+						<option value="www86">www86</option>
+						<option value="www87">www87</option>
+						<option value="www88">www88</option>
+						<option value="www89">www89</option>
+						<option value="www90">www90</option>
+						<option value="www91">www91</option>
+						<option value="www92">www92</option>
+						<option value="www93">www93</option>
+						<option value="www94">www94</option>
+						<option value="www95">www95</option>
+						<option value="www96">www96</option>
+						<option value="www97">www97</option>
+						<option value="www98">www98</option>
+						<option value="stage">stage</option>
+					</select>
+				</form>
+			</fieldset>
 		</div>
-			<div id="otabs-2">				<!--TAB2-->
-				<fieldset>
-					<legend id="MatchesLeague"> League Matches</legend>
-					<input type="checkbox" id="chkGetLeague" /><label
-						for="chkGetLeague" id="label_chkGetLeague">Load
-						automatically League Matches and League Table</label><br /> <input
-						type="checkbox" id="chkGetLeagueWithin" /><label
-						for="chkGetLeagueWithin" id="label_chkGetLeagueWithin">Played
-						in </label> <input type="number" min="0" max="84" step="1" value="24" size="3" id="txtGetLeagueWithinHours"
-						class="text ui-widget-content ui-corner-all" /> <label
-						id="MatchesHours" for="txtGetLeagueWithinHours">hours</label><br />
-				</fieldset>
-				<fieldset>
-					<legend id="MatchesFriends">Friends Matches</legend>
-					<input type="checkbox" id="chkGetFriends" /><label
-						for="chkGetFriends" id="label_chkGetFriends">Load
-						automatically matches of your friends</label><br /> <input
-						type="checkbox" id="chkGetFriendsWithin" /><label
-						for="chkGetFriendsWithin" id="label_chkGetFriendsWithin">Played
-						in</label> <input type="number" min="0" max="84" step="1" value="24" size="3" id="txtGetFriendsWithinHours"
-						class="text ui-widget-content ui-corner-all" /> <label
-						id="MatchesHours2" for="txtGetFriendsWithinHours">hours</label><br />
-						
-						
-						<!-- adding check box to not load friends htointegrated matches -->
-						<input type="checkbox" id="chkDoNotGetFriendsHointegratedMatches" /><label
-						for="chkDoNotGetFriendsHointegratedMatches" id="label_chkDoNotGetFriendsHointegratedMatches">
-						Don't load single and tournament matches for friends</label><br />
-						
-						
-				</fieldset>
-				<fieldset>
-					<legend id="MatchesHeader">Header</legend>
-					<input type="checkbox" id="chkHdrScorers" /><label
-						for="chkHdrScorers" id="label_chkHdrScorers">Add scorers
-						in header</label><br /> <input type="checkbox" id="chkHdrBooked" /><label
-						for="chkHdrBooked" id="label_chkHdrBooked">Add booked in
-						header</label><br /> <input type="checkbox" id="chkHdrSentOff" /><label
-						for="chkHdrSentOff" id="label_chkHdrSentOff">Add sent off
-						in header</label><br /> <input type="checkbox" id="chkHdrInjured" /><label
-						for="chkHdrInjured" id="label_chkHdrInjured">Add injured
-						in header</label><br />
-				</fieldset>
-				<fieldset>
-					<legend id="MatchesWindow">Live Window</legend>
-					<input type="number" min="0" max="12" step="1" value="3" size="2" id="txtMatchWindowSize"
-						class="text ui-widget-content ui-corner-all" /> <label
-						id="MatchesLines">Lines to show in minimized mode</label><br />
-				</fieldset>
-			</div>
-			<div id="otabs-3">				<!--TAB3-->
-				<fieldset>
-					<legend id="NotifyNotify">Notifications</legend>
-					<input type="checkbox" id="chkSound" /><label for="chkSound"
-						id="label_chkSound">Enable sound notifications</label><br /> <input
-						type="checkbox" id="chkSoundOnlyOpened" /><label
-						for="chkSoundOnlyOpened" id="label_chkSoundOnlyOpened">Only
-						in opened matches</label><br /> <input type="checkbox" id="chkFlash" /><label
-						for="chkFlash" id="label_chkFlash">Flash headers</label><br /> <input
-						type="checkbox" id="chkSlider" /><label for="chkSlider"
-						id="label_chkSlider">Status bar slider</label><br />
-				</fieldset>
-			</div>
-			<div id="otabs-4">
-				<!--TAB4-->
-				<fieldset>
-					<legend id="OtherAuthorization">Authorization code</legend>
-					<form id="ResetAuth">
-						<span id="OtherReset">Remove authorization</span>
-						<button id="removeauth" form="ResetAuth" />
-						<label for="removeauth" form="ResetAuth" id="button_reset"></label>
-					</form>
-				</fieldset>
-				<fieldset>
-					<legend id="OtherEvents">Sequence of events</legend>
-					<input type="checkbox" id="reverseOrder" /><label
-						for="reverseOrder" id="label_reverseOrder">Bottom up
-						display of match events</label><br /> <label id="OtherReverseNote"></label>
-				</fieldset>
-				<fieldset>
-					<legend id="OtherEventKey"></legend>
-					<input type="checkbox" id="printEventKey" /><label
-						for="printEventKey" id="label_printEventKey">Show eventkey
-						in the commentary</label><br />
-				</fieldset>
-				<fieldset>
-									<legend id="CustomIcons">Icons</legend>
-					<input type="checkbox" id="oldIcons" /><label for="oldIcons"
-						id="label_oldIcons"> Original Livefox icons in match
-						window</label><br />
-				</fieldset>
-  		  <fieldset>
-			    <legend id="import">Import</legend>
-			    <textarea id="import_text"></textarea>
-			    <button id="import_button" class="brestore">Import</button>
-			  </fieldset>
-			  <fieldset>
-			  <legend id="export">Export</legend>
-			  <input type="checkbox" id="chkExportOauth" /><label for="chkExportOauth"
-				id="label_chkExportOauth">Export Oauth</label><br />
-				<input type="checkbox" id="chkExportBackground" /><label for="chkExportBackground"
-				id="label_chkExportBackground">Export Background</label><br />
-				<input type="checkbox" id="chkExportSounds" /><label for="chkExportSounds"
-				id="label_chkExportSounds">Export Sounds</label><br />
-			  <textarea id="export_text"></textarea>
-			  <button id="export_button" class="brestore">Export</button>
-			  </fieldset>
-				
-			</div>
-	<div id="otabs-5">				<!--TAB5-->
-			<div id="tabs">	
-					<ul>
-					  <li><a href="#tabs-0"><label id="TabOptions">Options</label></a>
-						</li>
-						<li><a href="#tabs-1"><label id="TabGoalSound">Goals sounds</label></a>
-						</li>
-						<li><a href="#tabs-2"><label id="TabChances"></label></a>
-						</li>
-						<li><a href="#tabs-3"><label id="TabWheatherSound"></label></a>
-						</li>
-						<li><a href="#tabs-4"><label id="TabWhistleSound"></label></a>
-						</li>
-						<li><a href="#tabs-5"><label id="TabInjuries"></label></a>
-						</li>
-					</ul>
-					<div id="tabs-0">
+		<div id="otabs-2">
+			<!--TAB2-->
+			<fieldset>
+				<legend id="MatchesLeague"> League Matches</legend>
+				<input type="checkbox" id="chkGetLeague" /><label
+					for="chkGetLeague" id="label_chkGetLeague">Load
+					automatically League Matches and League Table</label><br /> <input
+					type="checkbox" id="chkGetLeagueWithin" /><label
+					for="chkGetLeagueWithin" id="label_chkGetLeagueWithin">Played
+					in </label> <input type="number" min="0" max="84" step="1" value="24"
+					size="3" id="txtGetLeagueWithinHours"
+					class="text ui-widget-content ui-corner-all" /> <label
+					id="MatchesHours" for="txtGetLeagueWithinHours">hours</label><br />
+			</fieldset>
+			<fieldset>
+				<legend id="MatchesTournament"> Tournament Matches</legend>
+				<input type="checkbox" id="chkGetTournament" /><label
+					for="chkGetTournament" id="label_chkGetTournament">Load
+					automatically Tournament Matches</label><br /> <input type="checkbox"
+					id="chkGetTournamentWithin" /><label for="chkGetTournamentWithin"
+					id="label_chkGetTournamentWithin">Played in </label> <input
+					type="number" min="0" max="84" step="1" value="24" size="2" maxlength="2"
+					id="txtGetTournamentWithinHours"
+					class="text ui-widget-content ui-corner-all" /> <label
+					id="MatchesHours" for="txtGetTournamentWithinHours">hours</label><br />
+			</fieldset>
+			<fieldset>
+				<legend id="MatchesFriends">Friends Matches</legend>
+				<input type="checkbox" id="chkGetFriends" /><label
+					for="chkGetFriends" id="label_chkGetFriends">Load
+					automatically matches of your friends</label><br /> <input type="checkbox"
+					id="chkGetFriendsWithin" /><label for="chkGetFriendsWithin"
+					id="label_chkGetFriendsWithin">Played in</label> <input
+					type="number" min="0" max="84" step="1" value="24" size="3"
+					id="txtGetFriendsWithinHours"
+					class="text ui-widget-content ui-corner-all" /> <label
+					id="MatchesHours2" for="txtGetFriendsWithinHours">hours</label><br />
 
 
-				<!--  <fieldset> -->
-				<!--  	<legend id="CustomSounds">Sounds</legend> -->
-				  <a href="http://htlivesight.sourceforge.net/dlc.html" id="visitOurSoundCollection" target="_blank">Visit our sounds collection</a><br/><br/>
-          <input type="checkbox" id="chkSecondSoundEqualFirst" /><label for="chkSecondSoundEqualFirst" id="label_chkSecondSoundEqualFirst">Second team sounds equal to first ones</label><br />
-					<input type="checkbox" id="weather" /><label for="weather"
-						id="label_weather">Weather sound for start of the match</label><br />
-					<input type="checkbox" id="whistleTime" /><label for="whistleTime"
+				<!-- adding check box to not load friends htointegrated matches -->
+				<input type="checkbox" id="chkDoNotGetFriendsHointegratedMatches" /><label
+					for="chkDoNotGetFriendsHointegratedMatches"
+					id="label_chkDoNotGetFriendsHointegratedMatches"> Don't
+					load single and tournament matches for friends</label><br />
+
+
+			</fieldset>
+			<fieldset>
+				<legend id="MatchesHeader">Header</legend>
+				<input type="checkbox" id="chkHdrScorers" /><label
+					for="chkHdrScorers" id="label_chkHdrScorers">Add scorers in
+					header</label><br /> <input type="checkbox" id="chkHdrBooked" /><label
+					for="chkHdrBooked" id="label_chkHdrBooked">Add booked in
+					header</label><br /> <input type="checkbox" id="chkHdrSentOff" /><label
+					for="chkHdrSentOff" id="label_chkHdrSentOff">Add sent off
+					in header</label><br /> <input type="checkbox" id="chkHdrInjured" /><label
+					for="chkHdrInjured" id="label_chkHdrInjured">Add injured in
+					header</label><br />
+			</fieldset>
+			<fieldset>
+				<legend id="MatchesWindow">Live Window</legend>
+				<input type="number" min="0" max="12" step="1" value="3" size="2"
+					id="txtMatchWindowSize"
+					class="text ui-widget-content ui-corner-all" /> <label
+					id="MatchesLines">Lines to show in minimized mode</label><br />
+			</fieldset>
+		</div>
+		<div id="otabs-3">
+			<!--TAB3-->
+			<fieldset>
+				<legend id="NotifyNotify">Notifications</legend>
+				<input type="checkbox" id="chkSound" /><label for="chkSound"
+					id="label_chkSound">Enable sound notifications</label><br /> <input
+					type="checkbox" id="chkSoundOnlyOpened" /><label
+					for="chkSoundOnlyOpened" id="label_chkSoundOnlyOpened">Only
+					in opened matches</label><br /> <input type="checkbox" id="chkFlash" /><label
+					for="chkFlash" id="label_chkFlash">Flash headers</label><br /> <input
+					type="checkbox" id="chkSlider" /><label for="chkSlider"
+					id="label_chkSlider">Status bar slider</label><br />
+			</fieldset>
+		</div>
+		<div id="otabs-4">
+			<!--TAB4-->
+			<fieldset>
+				<legend id="OtherAuthorization">Authorization code</legend>
+				<form id="ResetAuth">
+					<span id="OtherReset">Remove authorization</span>
+					<button id="removeauth" form="ResetAuth" />
+					<label for="removeauth" form="ResetAuth" id="button_reset"></label>
+				</form>
+			</fieldset>
+			<fieldset>
+				<legend id="OtherEvents">Sequence of events</legend>
+				<input type="checkbox" id="reverseOrder" /><label
+					for="reverseOrder" id="label_reverseOrder">Bottom up
+					display of match events</label><br /> <label id="OtherReverseNote"></label>
+			</fieldset>
+			<fieldset>
+				<legend id="OtherEventKey"></legend>
+				<input type="checkbox" id="printEventKey" /><label
+					for="printEventKey" id="label_printEventKey">Show eventkey
+					in the commentary</label><br />
+			</fieldset>
+			<fieldset>
+				<legend id="CustomIcons">Icons</legend>
+				<input type="checkbox" id="oldIcons" /><label for="oldIcons"
+					id="label_oldIcons"> Original Livefox icons in match window</label><br />
+			</fieldset>
+			<fieldset>
+				<legend id="import">Import</legend>
+				<textarea id="import_text"></textarea>
+				<button id="import_button" class="brestore">Import</button>
+			</fieldset>
+			<fieldset>
+				<legend id="export">Export</legend>
+				<input type="checkbox" id="chkExportOauth" /><label
+					for="chkExportOauth" id="label_chkExportOauth">Export Oauth</label><br />
+				<input type="checkbox" id="chkExportBackground" /><label
+					for="chkExportBackground" id="label_chkExportBackground">Export
+					Background</label><br /> <input type="checkbox" id="chkExportSounds" /><label
+					for="chkExportSounds" id="label_chkExportSounds">Export
+					Sounds</label><br />
+				<textarea id="export_text"></textarea>
+				<button id="export_button" class="brestore">Export</button>
+			</fieldset>
+
+		</div>
+		<div id="otabs-5">
+			<!--TAB5-->
+			<div id="tabs">
+				<ul>
+					<li><a href="#tabs-0"><label id="TabOptions">Options</label></a>
+					</li>
+					<li><a href="#tabs-1"><label id="TabGoalSound">Goals
+								sounds</label></a></li>
+					<li><a href="#tabs-2"><label id="TabChances"></label></a></li>
+					<li><a href="#tabs-3"><label id="TabWheatherSound"></label></a>
+					</li>
+					<li><a href="#tabs-4"><label id="TabWhistleSound"></label></a>
+					</li>
+					<li><a href="#tabs-5"><label id="TabInjuries"></label></a></li>
+				</ul>
+				<div id="tabs-0">
+
+
+					<!--  <fieldset> -->
+					<!--  	<legend id="CustomSounds">Sounds</legend> -->
+					<a href="http://htlivesight.sourceforge.net/dlc.html"
+						id="visitOurSoundCollection" target="_blank">Visit our sounds
+						collection</a><br />
+					<br /> <input type="checkbox" id="chkSecondSoundEqualFirst" /><label
+						for="chkSecondSoundEqualFirst" id="label_chkSecondSoundEqualFirst">Second
+						team sounds equal to first ones</label><br /> <input type="checkbox"
+						id="weather" /><label for="weather" id="label_weather">Weather
+						sound for start of the match</label><br /> <input type="checkbox"
+						id="whistleTime" /><label for="whistleTime"
 						id="label_whistleTime">Sound for start/end of an halftime</label><br />
 					<input type="checkbox" id="weatherSE" /><label for="weatherSE"
 						id="label_weatherSE">Sound for weather special events</label><br />
 					<input type="checkbox" id="livefoxGoal" /><label for="livefoxGoal"
 						id="label_livefoxGoal">Original Livefox sounds</label><br /> <input
 						type="checkbox" id="noOpGoal" /><label for="noOpGoal"
-						id="label_noOpGoal">No sounds for opponent's goals</label><br/>
-						<input	type="checkbox" id="volumeSound" /><label for="volumeSound"
+						id="label_noOpGoal">No sounds for opponent's goals</label><br /> <input
+						type="checkbox" id="volumeSound" /><label for="volumeSound"
 						id="label_volumeSound">Play sound after volume setting</label><br />
-						<br /><br/>
+					<br />
+					<br />
 
-	<!--			<fieldset>
+					<!--			<fieldset>
 
 					<span id="PathSoundsNote1"></span><br /> <span
 						id="PathSoundsNote2"></span><br /> -->
-					</div>
-					<div id="tabs-1">
+				</div>
+				<div id="tabs-1">
 					<!-- my goal -->
-					<input type="checkbox" id="myGoalCheck" /><label
-						for="myGoalCheck" id="label_myGoalCheck">Sound for own
-						goal</label> <br />
+					<input type="checkbox" id="myGoalCheck" /><label for="myGoalCheck"
+						id="label_myGoalCheck">Sound for own goal</label> <br />
 					<button id="label_myGoalButton_reset" class="brestore">restore</button>
 					<button id="label_myGoalButton_play" class="brestore">play</button>
 					<input type="file" id="myGoalSoundPathBrowse" tabindex="2" /> <input
@@ -386,8 +411,8 @@
 						type="url" id="otGoalSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-						
-						<!-- hattrick -->
+
+					<!-- hattrick -->
 					<br /> <input type="checkbox" id="hattrickCheck" /><label
 						for="hattrickCheck" id="label_hattrickCheck">Sound for own
 						goal</label> <br />
@@ -397,14 +422,14 @@
 						type="url" id="hattrickSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-	
-						</div>
-						
-						
-					<div id="tabs-2">
-						  
+
+				</div>
+
+
+				<div id="tabs-2">
+
 					<!-- miss goal -->
-					 <input type="checkbox" id="missGoalCheck" /><label
+					<input type="checkbox" id="missGoalCheck" /><label
 						for="missGoalCheck" id="label_missGoalCheck">Sound for own
 						goal</label> <br />
 					<button id="label_missGoalButton_reset" class="brestore">restore</button>
@@ -413,47 +438,49 @@
 						type="url" id="missGoalSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-						
-						<!-- miss friend -->
+
+					<!-- miss friend -->
 					<br /> <input type="checkbox" id="missFriendCheck" /><label
-						for="missFriendCheck" id="label_missFriendCheck">Sound for missed
-						friend goal</label> <br />
+						for="missFriendCheck" id="label_missFriendCheck">Sound for
+						missed friend goal</label> <br />
 					<button id="label_missFriendButton_reset" class="brestore">restore</button>
 					<button id="label_missFriendButton_play" class="brestore">play</button>
-					<input type="file" id="missFriendSoundPathBrowse" tabindex="2" /> <input
-						type="url" id="missFriendSoundPath" maxlength="450000" size="63"
-						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+					<input type="file" id="missFriendSoundPathBrowse" tabindex="2" />
+					<input type="url" id="missFriendSoundPath" maxlength="450000"
+						size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-						
-						<!-- miss other -->
+
+					<!-- miss other -->
 					<br /> <input type="checkbox" id="missOtherCheck" /><label
-						for="missOtherCheck" id="label_missOtherCheck">Sound for own
-						goal</label> <br />
+						for="missOtherCheck" id="label_missOtherCheck">Sound for
+						own goal</label> <br />
 					<button id="label_missOtherButton_reset" class="brestore">restore</button>
 					<button id="label_missOtherButton_play" class="brestore">play</button>
 					<input type="file" id="missOtherSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="missOtherSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-						
-												
+
+
 					<!-- pressing -->
-					  <br /><input type="checkbox" id="pressingCheck" /><label
-						for="pressingCheck" id="label_pressingCheck">Sound for pressing</label> <br />
+					<br />
+					<input type="checkbox" id="pressingCheck" /><label
+						for="pressingCheck" id="label_pressingCheck">Sound for
+						pressing</label> <br />
 					<button id="label_pressingButton_reset" class="brestore">restore</button>
 					<button id="label_pressingButton_play" class="brestore">play</button>
 					<input type="file" id="pressingSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="pressingSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-						
-						</div>						
-						
-						
-						
-						<div id="tabs-3">
+
+				</div>
+
+
+
+				<div id="tabs-3">
 					<!-- sun goal -->
-						<input type="checkbox" id="sunCheck" /><label for="sunCheck"
+					<input type="checkbox" id="sunCheck" /><label for="sunCheck"
 						id="label_sunCheck">Sound for own goal</label> <br />
 					<button id="label_sunButton_reset" class="brestore">restore</button>
 					<button id="label_sunButton_play" class="brestore">play</button>
@@ -491,12 +518,12 @@
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
 
-					
 
 
 
-						</div>
-						<div id="tabs-4">
+
+				</div>
+				<div id="tabs-4">
 
 					<!-- whistlestart -->
 					<input type="checkbox" id="whistleStartCheck" /><label
@@ -538,55 +565,56 @@
 						type="url" id="whistleSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-						
+
 					<!-- my_sent_off -->
 					<br /> <input type="checkbox" id="mySentOffCheck" /><label
-						for="mySentOffCheck" id="label_mySentOffCheck">Sound for my
-						sent off</label> <br />
+						for="mySentOffCheck" id="label_mySentOffCheck">Sound for
+						my sent off</label> <br />
 					<button id="label_mySentOffButton_reset" class="brestore">restore</button>
 					<button id="label_mySentOffButton_play" class="brestore">play</button>
 					<input type="file" id="mySentOffSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="mySentOffSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-						
-						<!-- other_sent_off -->
+
+					<!-- other_sent_off -->
 					<br /> <input type="checkbox" id="otherSentOffCheck" /><label
-						for="otherSentOffCheck" id="label_otherSentOffCheck">Sound for other
-						sent off</label> <br />
+						for="otherSentOffCheck" id="label_otherSentOffCheck">Sound
+						for other sent off</label> <br />
 					<button id="label_otherSentOffButton_reset" class="brestore">restore</button>
 					<button id="label_otherSentOffButton_play" class="brestore">play</button>
-					<input type="file" id="otherSentOffSoundPathBrowse" tabindex="2" /> <input
-						type="url" id="otherSentOffSoundPath" maxlength="450000" size="63"
-						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+					<input type="file" id="otherSentOffSoundPathBrowse" tabindex="2" />
+					<input type="url" id="otherSentOffSoundPath" maxlength="450000"
+						size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-						
-				
-						</div>
-						<div id="tabs-5">
-						
-						<!-- my_bruised -->
+
+
+				</div>
+				<div id="tabs-5">
+
+					<!-- my_bruised -->
 					<input type="checkbox" id="myBruisedCheck" /><label
-						for="myBruisedCheck" id="label_myBruisedCheck">Sound for my bruised</label> <br />
+						for="myBruisedCheck" id="label_myBruisedCheck">Sound for
+						my bruised</label> <br />
 					<button id="label_myBruisedButton_reset" class="brestore">restore</button>
 					<button id="label_myBruisedButton_play" class="brestore">play</button>
 					<input type="file" id="myBruisedSoundPathBrowse" tabindex="2" /> <input
 						type="url" id="myBruisedSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-						
-						<!-- other_bruised -->
+
+					<!-- other_bruised -->
 					<br /> <input type="checkbox" id="otherBruisedCheck" /><label
-						for="otherBruisedCheck" id="label_otherBruisedCheck">Sound for other
-						bruised</label> <br />
+						for="otherBruisedCheck" id="label_otherBruisedCheck">Sound
+						for other bruised</label> <br />
 					<button id="label_otherBruisedButton_reset" class="brestore">restore</button>
 					<button id="label_otherBruisedButton_play" class="brestore">play</button>
-					<input type="file" id="otherBruisedSoundPathBrowse" tabindex="2" /> <input
-						type="url" id="otherBruisedSoundPath" maxlength="450000" size="63"
-						value="chrome://htlivesight/content/sound/cheer_8k.wav"
+					<input type="file" id="otherBruisedSoundPathBrowse" tabindex="2" />
+					<input type="url" id="otherBruisedSoundPath" maxlength="450000"
+						size="63" value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
-						
-											<!-- my boo goal -->
+
+					<!-- my boo goal -->
 					<br /> <input type="checkbox" id="myBooCheck" /><label
 						for="myBooCheck" id="label_myBooCheck">Sound for own goal</label>
 					<br />
@@ -607,94 +635,98 @@
 						value="chrome://htlivesight/content/sound/cheer_8k.wav"
 						class="textsnd ui-widget-content ui-corner-all" /> <br />
 
-						</div>
-						</div>
+				</div>
+			</div>
 			<!--  	</fieldset> -->
-			</div>			<div id="otabs-6">				<!--TAB5-->
-				<fieldset>
-					<legend id="CustomEventBackground">Event background color</legend>
-					<span id="ChooseColor">You can choose your color at </span><a
-						href="http://www.colorpicker.com/" target="_blank">http://www.colorpicker.com/</a><br />
-					<br /> <input type="checkbox" id="friendHomeColorCheck" />
-					<label for="friendHomeColorCheck" id="label_friendHomeColorCode">Friend
-						home hex color: #</label> <input type="color" name="friendHomeColor"
-						id="friendHomeColorCode"
-						class="text ui-widget-content ui-corner-all" /><br />
-					<br /> <input type="checkbox" id="friendAwayColorCheck" />
-					<label for="friendAwayColorCheck" id="label_friendAwayColorCode">Friend
-						away hex color: #</label> <input type="color" name="friendAwayColor"
-						id="friendAwayColorCode"
-						class="text ui-widget-content ui-corner-all" /><br />
-					<br /> <input type="checkbox" id="foeHomeColorCheck" />
-					<label for="foeHomeColorCheck" id="label_foeHomeColorCode">Foreign
-						home hex color: #</label><input type="color" name="foeHomeColor"
-						id="foeHomeColorCode" class="text ui-widget-content ui-corner-all" />
-					<br /> <br /> <input type="checkbox" id="foeAwayColorCheck" />
-					<label for="foeAwayColorCheck" id="label_foeAwayColorCode">Foreign
-						away hex color: #</label><input type="color" name="foeAwayColor"
-						id="foeAwayColorCode" class="text ui-widget-content ui-corner-all" />
-					<br /> <br /> <input type="checkbox" id="neutralColorCheck" />
-					<label for="neutralColorCheck" id="label_neutralColorCode">Neutral
-						hex color: #</label><input type="color" name="neutralColor"
-						id="neutralColorCode" class="text ui-widget-content ui-corner-all" />
-					<br /> <br />
-				</fieldset>
-				<fieldset>
-					<legend id="CustomEventText">Event text color</legend>
-					<input type="checkbox" id="friendHomeTextColorCheck" />
-					<label for="friendHomeTextColorCheck" id="label_friendHomeTextColorCode">Friend home
-						text hex color: #</label> <input type="color" name="friendHomeTextColor"
-						id="friendHomeTextColorCode" class="text ui-widget-content ui-corner-all" />
-					<br /> <br />
-					<input type="checkbox" id="friendAwayTextColorCheck" />
-					<label for="friendAwayTextColorCheck" id="label_friendAwayTextColorCode">Friend away
-						text hex color: #</label> <input type="color" name="friendAwayTextColor"
-						id="friendAwayTextColorCode" class="text ui-widget-content ui-corner-all" />
-					<br /> <br /> 
-					<input type="checkbox" id="foeHomeTextColorCheck" />
-					<label for="foeHomeTextColorCheck" id="label_foeHomeTextColorCode">Foe home
-						text hex color: #</label> <input type="color" name="foeHomeTextColor"
-						id="foeHomeTextColorCode" class="text ui-widget-content ui-corner-all" />
-					<br /> <br /> 
-					<input type="checkbox" id="foeAwayTextColorCheck" />
-					<label for="foeAwayTextColorCheck" id="label_foeAwayTextColorCode">Foe away
-						text hex color: #</label> <input type="color" name="foeAwayTextColor"
-						id="foeAwayTextColorCode" class="text ui-widget-content ui-corner-all" />
-					<br /> <br /> 
-					<input type="checkbox" id="neutralTextColorCheck" />
-					<label for="neutralTextColorCheck" id="label_neutralTextColorCode">Neutral
-						text hex color: #</label> <input type="color" name="neutralTextColor"
-						id="neutralTextColorCode" class="text ui-widget-content ui-corner-all" />
-					<br /> <br /> 
-					 <input type="checkbox" id="seTextColorCheck" />
-					<label for="seTextColorCheck" id="label_seTextColorCode">SE
-						text hex color: #</label> <input type="color" name="seTextColor"
-						id="seTextColorCode" class="text ui-widget-content ui-corner-all" />
-				</fieldset>
-				<fieldset>
-					<legend id="HeaderBarColor">Header bar color</legend>
-					<input type="checkbox" id="headerBarColorCheck" />
-					<label for="headerBarColorCheck" id="label_headerBarColorCode">Header bar
-						hex color: #</label> <input type="color" name="headerBarColor"
-						id="headerBarColorCode" class="text ui-widget-content ui-corner-all" /><br/><br/>
-						<input type="checkbox" id="headerBarTextColorCheck" />
-					<label for="headerBarTextColorCheck" id="label_headerBarTextColorCode">Header bar
-						text hex color: #</label> <input type="color" name="headerBarTextColor"
-						id="headerBarTextColorCode" class="text ui-widget-content ui-corner-all" />
-				</fieldset>
+		</div>
+		<div id="otabs-6">
+			<!--TAB5-->
+			<fieldset>
+				<legend id="CustomEventBackground">Event background color</legend>
+				<span id="ChooseColor">You can choose your color at </span><a
+					href="http://www.colorpicker.com/" target="_blank">http://www.colorpicker.com/</a><br />
+				<br /> <input type="checkbox" id="friendHomeColorCheck" /> <label
+					for="friendHomeColorCheck" id="label_friendHomeColorCode">Friend
+					home hex color: #</label> <input type="color" name="friendHomeColor"
+					id="friendHomeColorCode"
+					class="text ui-widget-content ui-corner-all" /><br /> <br /> <input
+					type="checkbox" id="friendAwayColorCheck" /> <label
+					for="friendAwayColorCheck" id="label_friendAwayColorCode">Friend
+					away hex color: #</label> <input type="color" name="friendAwayColor"
+					id="friendAwayColorCode"
+					class="text ui-widget-content ui-corner-all" /><br /> <br /> <input
+					type="checkbox" id="foeHomeColorCheck" /> <label
+					for="foeHomeColorCheck" id="label_foeHomeColorCode">Foreign
+					home hex color: #</label><input type="color" name="foeHomeColor"
+					id="foeHomeColorCode" class="text ui-widget-content ui-corner-all" />
+				<br /> <br /> <input type="checkbox" id="foeAwayColorCheck" /> <label
+					for="foeAwayColorCheck" id="label_foeAwayColorCode">Foreign
+					away hex color: #</label><input type="color" name="foeAwayColor"
+					id="foeAwayColorCode" class="text ui-widget-content ui-corner-all" />
+				<br /> <br /> <input type="checkbox" id="neutralColorCheck" /> <label
+					for="neutralColorCheck" id="label_neutralColorCode">Neutral
+					hex color: #</label><input type="color" name="neutralColor"
+					id="neutralColorCode" class="text ui-widget-content ui-corner-all" />
+				<br /> <br />
+			</fieldset>
+			<fieldset>
+				<legend id="CustomEventText">Event text color</legend>
+				<input type="checkbox" id="friendHomeTextColorCheck" /> <label
+					for="friendHomeTextColorCheck" id="label_friendHomeTextColorCode">Friend
+					home text hex color: #</label> <input type="color"
+					name="friendHomeTextColor" id="friendHomeTextColorCode"
+					class="text ui-widget-content ui-corner-all" /> <br /> <br /> <input
+					type="checkbox" id="friendAwayTextColorCheck" /> <label
+					for="friendAwayTextColorCheck" id="label_friendAwayTextColorCode">Friend
+					away text hex color: #</label> <input type="color"
+					name="friendAwayTextColor" id="friendAwayTextColorCode"
+					class="text ui-widget-content ui-corner-all" /> <br /> <br /> <input
+					type="checkbox" id="foeHomeTextColorCheck" /> <label
+					for="foeHomeTextColorCheck" id="label_foeHomeTextColorCode">Foe
+					home text hex color: #</label> <input type="color" name="foeHomeTextColor"
+					id="foeHomeTextColorCode"
+					class="text ui-widget-content ui-corner-all" /> <br /> <br /> <input
+					type="checkbox" id="foeAwayTextColorCheck" /> <label
+					for="foeAwayTextColorCheck" id="label_foeAwayTextColorCode">Foe
+					away text hex color: #</label> <input type="color" name="foeAwayTextColor"
+					id="foeAwayTextColorCode"
+					class="text ui-widget-content ui-corner-all" /> <br /> <br /> <input
+					type="checkbox" id="neutralTextColorCheck" /> <label
+					for="neutralTextColorCheck" id="label_neutralTextColorCode">Neutral
+					text hex color: #</label> <input type="color" name="neutralTextColor"
+					id="neutralTextColorCode"
+					class="text ui-widget-content ui-corner-all" /> <br /> <br /> <input
+					type="checkbox" id="seTextColorCheck" /> <label
+					for="seTextColorCheck" id="label_seTextColorCode">SE text
+					hex color: #</label> <input type="color" name="seTextColor"
+					id="seTextColorCode" class="text ui-widget-content ui-corner-all" />
+			</fieldset>
+			<fieldset>
+				<legend id="HeaderBarColor">Header bar color</legend>
+				<input type="checkbox" id="headerBarColorCheck" /> <label
+					for="headerBarColorCheck" id="label_headerBarColorCode">Header
+					bar hex color: #</label> <input type="color" name="headerBarColor"
+					id="headerBarColorCode"
+					class="text ui-widget-content ui-corner-all" /><br />
+				<br /> <input type="checkbox" id="headerBarTextColorCheck" /> <label
+					for="headerBarTextColorCheck" id="label_headerBarTextColorCode">Header
+					bar text hex color: #</label> <input type="color" name="headerBarTextColor"
+					id="headerBarTextColorCode"
+					class="text ui-widget-content ui-corner-all" />
+			</fieldset>
 		</div>
 	</div>
-<div class="ui-dialog-buttonset">
-                <button id="ok-option"
-                        class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
-                        type="button" role="button" aria-disabled="false">
-                        <span class="ui-button-text" id="OkButton">Ok</span>
-                </button>
-                <button id="canc-option"
-                        class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
-                        type="button" role="button" aria-disabled="false">
-                        <span class="ui-button-text" id="CancelButton">Cancel</span>
-                </button>
-        </div>
+	<div class="ui-dialog-buttonset">
+		<button id="ok-option"
+			class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+			type="button" role="button" aria-disabled="false">
+			<span class="ui-button-text" id="OkButton">Ok</span>
+		</button>
+		<button id="canc-option"
+			class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+			type="button" role="button" aria-disabled="false">
+			<span class="ui-button-text" id="CancelButton">Cancel</span>
+		</button>
+	</div>
 </body>
 </html>

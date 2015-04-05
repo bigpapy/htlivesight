@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="chrome/content/alert/|chrome/content/button/|chrome/content/lib/|chrome/content/|chrome/content/util/" kind="src" path=""/>
+	<classpathentry excluding="alert/|button/|lib/|util/" kind="src" path="chrome/content"/>
+	<classpathentry kind="src" path="chrome/content/alert"/>
+	<classpathentry kind="src" path="chrome/content/button"/>
+	<classpathentry kind="src" path="chrome/content/lib"/>
+	<classpathentry kind="src" path="chrome/content/util"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
