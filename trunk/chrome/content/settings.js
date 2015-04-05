@@ -53,6 +53,22 @@ htlivesight.Settings = {
 			}
 			document.getElementById("chkGetLeagueWithin").checked=prefs.matches.league.within;
 			document.getElementById("txtGetLeagueWithinHours").value=prefs.matches.league.withinHours;
+			
+			if (prefs.matches.tournament.get) {
+				document.getElementById("chkGetTournament").checked=true;
+				if (prefs.matches.tournament.within) {
+					document.getElementById("txtGetTournamentWithinHours").disabled=false;
+				} else {
+					document.getElementById("txtGetTournamentWithinHours").disabled=true;
+				}
+			} else {
+				document.getElementById("chkGetTournament").checked=false;
+				document.getElementById("chkGetTournamentWithin").disabled=true;
+				document.getElementById("txtGetTournamentWithinHours").disabled=true;
+			}
+			document.getElementById("chkGetTournamentWithin").checked=prefs.matches.tournament.within;
+			document.getElementById("txtGetTournamentWithinHours").value=prefs.matches.tournament.withinHours;
+			
 			if (prefs.matches.friends.get) {
 				document.getElementById("chkGetFriends").checked=true;
 				
@@ -559,9 +575,47 @@ htlivesight.Settings = {
 			txtfixleaguehours: function() {
 				var prefs = htlivesight.Settings.preferences;
 				var value = document.getElementById("txtGetLeagueWithinHours").value.replace(/\D/g, "");
+				if(value===""){
+					value = prefs.matches.league.withinHours;
+				}
+				value = Math.max(0,Math.min(84,parseInt(value,10)));
 				document.getElementById("txtGetLeagueWithinHours").value = value;
 				prefs.matches.league.withinHours = value;
 			},
+			
+			chkgettournament: function() {
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("chkGetTournament").checked) {
+					document.getElementById("chkGetTournamentWithin").disabled = false;
+					htlivesight.Settings.click.chkgettournamentwithin();
+					prefs.matches.tournament.get = true;
+				} else {
+					document.getElementById("chkGetTournamentWithin").disabled = true;
+					document.getElementById("txtGetTournamentWithinHours").disabled = true;
+					prefs.matches.tournament.get = false;
+				}
+			},
+			chkgettournamentwithin: function() {
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("chkGetTournamentWithin").checked) {
+					document.getElementById("txtGetTournamentWithinHours").disabled = false;
+					prefs.matches.tournament.within = true;
+				} else {
+					document.getElementById("txtGetTournamentWithinHours").disabled = true;
+					prefs.matches.tournament.within = false;
+				};
+			},
+			txtfixtournamenthours: function() {
+				var prefs = htlivesight.Settings.preferences;
+				var value = document.getElementById("txtGetTournamentWithinHours").value.replace(/\D/g, "");
+				if(value===""){
+					value = prefs.matches.tournament.withinHours;
+				}
+				value = Math.max(0,Math.min(84,parseInt(value,10)));
+				document.getElementById("txtGetTournamentWithinHours").value = value;
+				prefs.matches.tournament.withinHours = value;
+			},
+			
 			chkgetfriends: function() {
 				var prefs = htlivesight.Settings.preferences;
 				if(document.getElementById("chkGetFriends").checked) {
@@ -589,6 +643,10 @@ htlivesight.Settings = {
 			txtfixfriendshours: function() {
 				var prefs = htlivesight.Settings.preferences;
 				var value = document.getElementById("txtGetFriendsWithinHours").value.replace(/\D/g, "");
+				if(value===""){
+					value = prefs.matches.friends.withinHours;
+				}
+				value = Math.max(0,Math.min(84,parseInt(value,10)));
 				document.getElementById("txtGetFriendsWithinHours").value = value;
 				prefs.matches.friends.withinHours = value;
 			},

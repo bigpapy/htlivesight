@@ -13,6 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("chkGetLeague").addEventListener('click',function(){htlivesight.Settings.click.chkgetleague();});
 	document.getElementById("chkGetLeagueWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgetleaguewithin();});
 	document.getElementById("txtGetLeagueWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixleaguehours();});
+	
+	document.getElementById("chkGetTournament").addEventListener('click',function(){htlivesight.Settings.click.chkgettournament();});
+	document.getElementById("chkGetTournamentWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgettournamentwithin();});
+	document.getElementById("txtGetTournamentWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixtournamenthours();});
+	
 	document.getElementById("chkGetFriends").addEventListener('click',function(){htlivesight.Settings.click.chkgetfriends();});
 	document.getElementById("chkGetFriendsWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgetfriendswithin();});
 	document.getElementById("txtGetFriendsWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixfriendshours();});

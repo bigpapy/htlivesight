@@ -208,11 +208,11 @@ htlivesight.League.ParseFixtures = function(xml,teamKind) {
 			}
 			
 		}
-		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES);
+		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TOURNAMENTS);
 		
 	} catch(e) {
 		if(teamKind=="myFirstTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE2);}
-		if(teamKind=="mySecondTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES);}
+		if(teamKind=="mySecondTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TOURNAMENTS);}
 		// alert("htlivesight.League.ParseFixtures (set info): " + e);
 	}
 //	if(teamKind==="myFirstTeam"){

@@ -13,29 +13,29 @@ htlivesight.Speech={
 			if (this.lang === ""){this.lang = this.language();}
 			//console.log(this.lang);
 			try{
-				console.log("1: htlivesight.platform != 'Safari' is "+(htlivesight.platform != "Safari"));
+			//	console.log("1: htlivesight.platform != 'Safari' is "+(htlivesight.platform != "Safari"));
 				if(htlivesight.platform != "Safari" && !htlivesight.Speech.checked){
-					console.log("2: hiding TTS button");
+					//console.log("2: hiding TTS button");
 					$(".speech").css("visibility", "hidden");
 				}
 				window.speechSynthesis.onvoiceschanged = function () {
-					console.log("3: voice changed");
-					console.log("3.1: htlivesight.Speech.isHTML5TTSSupported() is "+htlivesight.Speech.isHTML5TTSSupported());
-					console.log("3.2: htlivesight.platform != 'Safari' is "+ (htlivesight.platform != "Safari"));
+					//console.log("3: voice changed");
+					//console.log("3.1: htlivesight.Speech.isHTML5TTSSupported() is "+htlivesight.Speech.isHTML5TTSSupported());
+					//console.log("3.2: htlivesight.platform != 'Safari' is "+ (htlivesight.platform != "Safari"));
 					if(!htlivesight.Speech.isHTML5TTSSupported() && htlivesight.platform != "Safari"){
-						console.log("4: hiding TTS button");
+						//console.log("4: hiding TTS button");
 						$(".speech").css("visibility", "hidden"); // hide TTS buttons if TTS is not supported.
 					}else{
-						console.log("5: showing TTS button");
+						//console.log("5: showing TTS button");
 						$(".speech").css("visibility", "visible");
 						htlivesight.Speech.checked = true;
 					};
 				};
 			}catch(e){
-				console.log("6: error in try block: "+ e);
-				console.log("6.1: htlivesight.platform != 'Safari' is "+ (htlivesight.platform != "Safari"));
+				//console.log("6: error in try block: "+ e);
+				//console.log("6.1: htlivesight.platform != 'Safari' is "+ (htlivesight.platform != "Safari"));
 				if(htlivesight.platform != "Safari"){
-					console.log("7: hiding TTS button");
+					//console.log("7: hiding TTS button");
 					$(".speech").css("visibility", "hidden"); // show TTS buttons for all safari version (I don't own a mac!).
 				}
 			}
@@ -76,10 +76,10 @@ htlivesight.Speech={
 				event = htlivesight.Speech.eventList.shift();
 				text = htlivesight.Speech.getCleanText(event);
 				if(!text){return;}
-				if (text.length > 220){	// it seems that text over 220 chars will freeze HTML5 TTS on Google Chrome
+				if (text.length > 215){	// it seems that text over 215 chars will freeze HTML5 TTS on Google Chrome
 					text = htlivesight.Speech.splittingEvent(text);
-					text1 = text.slice(0,199);
-					event.text = text.slice(200);
+					text1 = text.slice(0,194);
+					event.text = text.slice(195);
 					htlivesight.Speech.eventList.unshift(event);
 					text = text1;
 				}
@@ -91,7 +91,7 @@ htlivesight.Speech={
 					msg.onerror = function(e){ console.log("Error in HTML5 Text to speech: "+e); };
 				};
 				msg.onend = function(e){console.log("[htlivesight:Trace] Event speeched with HTML5 TTS"); };
-				console.log("[htlivesight:Trace] Event to speech with HTML5 TTS: "+text);
+				//console.log("[htlivesight:Trace] Event to speech with HTML5 TTS: "+text);
 				window.speechSynthesis.speak(msg);
 				htlivesight.Speech.eventspeeching();
 			}else{	// otherwise use Google TTS library.
@@ -111,7 +111,7 @@ htlivesight.Speech={
 				//	htlivesight.Speech.eventspeeching();
 				//    });
 				//};
-				console.log("[htlivesight:Trace] HTML5 TTS not supported from the browser ");
+				//console.log("[htlivesight:Trace] HTML5 TTS not supported from the browser ");
 			};
 		},
 		getCleanText: function(event){
@@ -132,25 +132,25 @@ htlivesight.Speech={
 		//    return false;
 		//},
 		isHTML5TTSSupported: function(){
-			console.log("'speechSynthesis' in window = "+('speechSynthesis' in window));
+			//console.log("'speechSynthesis' in window = "+('speechSynthesis' in window));
 			if(!('speechSynthesis' in window)){ return false; }
-			console.log("'SpeechSynthesisUtterance' in window = "+('SpeechSynthesisUtterance' in window));
+			//console.log("'SpeechSynthesisUtterance' in window = "+('SpeechSynthesisUtterance' in window));
 			if(!('SpeechSynthesisUtterance' in window)) { return false; }
-			console.log("isLanguageSupported() = "+this.isLanguageSupported());
+			//console.log("isLanguageSupported() = "+this.isLanguageSupported());
 			return this.isLanguageSupported();
 		},
 		isLanguageSupported: function(){
 			if (this.lang === ""){
 				this.lang = this.language();
-				console.log("set language to :" + htlivesight.Speech.lang);
+				//console.log("set language to :" + htlivesight.Speech.lang);
 			}
 			var voices = window.speechSynthesis.getVoices();
 
 			for(i in voices){
-				console.log("language = "+this.lang);
-				console.log("Voice language = "+voices[i].lang);
+				//console.log("language = "+this.lang);
+				//console.log("Voice language = "+voices[i].lang);
 				if (voices[i].lang === this.language()){
-					console.log("got it! "+voices[i].lang);
+					//console.log("got it! "+voices[i].lang);
 					return true;
 				}
 			}

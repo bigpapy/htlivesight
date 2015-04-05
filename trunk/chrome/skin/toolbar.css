@@ -1,0 +1,15 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@-moz-document url("chrome://browser/content/browser.xul") {
+#htls-button-1 {
+list-style-image: url("chrome://htlivesight/skin/16.png");
+}
+#htls-button-1[cui-areatype="menu-panel"],
+toolbarpaletteitem[place="palette"] > #htls-button-1 {
+list-style-image: url("chrome://htlivesight/skin/32.png");
+}
+/* Necessary to mimic the behavior of all other buttons, which are darker when
+pressed.
+#htls-button-1:hover:active:not([disabled="true"]):not([cui-areatype="menu-panel"]) {
+list-style-image: url("chrome://aus-hello/skin/icon32-dark.png");
+}*/
+}
