@@ -1,6 +1,6 @@
-# htlivesight
+# HTLivesight
 
-Welcome to the HTLiveSight Project
+Welcome to the HTLiveSight Project.
 With HTLiveSight, you can view your matches in a new way: you have explanations near the actions, live league table, popups and sound to notify you that something is happening in matches, even if you're doing other things on your PC or Android device!
 
 You can also add friends, so their matches are automatically added when you launch the program!
