@@ -13,6 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("chkGetLeague").addEventListener('click',function(){htlivesight.Settings.click.chkgetleague();});
 	document.getElementById("chkGetLeagueWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgetleaguewithin();});
 	document.getElementById("txtGetLeagueWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixleaguehours();});
+
+	document.getElementById("chkGetYouthLeague").addEventListener('click',function(){htlivesight.Settings.click.chkgetyouthleague();});
+	document.getElementById("chkGetYouthLeagueWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgetyouthleaguewithin();});
+	document.getElementById("txtGetYouthLeagueWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixyouthleaguehours();});
+
 	
 	document.getElementById("chkGetTournament").addEventListener('click',function(){htlivesight.Settings.click.chkgettournament();});
 	document.getElementById("chkGetTournamentWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgettournamentwithin();});
@@ -24,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	document.getElementById("chkDoNotGetFriendsHointegratedMatches").addEventListener('change',function(){htlivesight.Settings.click.chkDoNotGetFriendsHointegratedMatches();});
 	
+	document.getElementById("chkGetYouthNearestMatch").addEventListener('click',function(){htlivesight.Settings.click.chkMyYouthMatch();});
 	document.getElementById("chkHdrScorers").addEventListener('click',function(){htlivesight.Settings.click.chkhdrscorers();});
 	document.getElementById("chkHdrBooked").addEventListener('click',function(){htlivesight.Settings.click.chkhdrbooked();});
 	document.getElementById("chkHdrSentOff").addEventListener('click',function(){htlivesight.Settings.click.chkhdrsentoff();});

@@ -133,7 +133,6 @@ htlivesight.ApiProxy = {
 	    var serverOFF;
 	    var l10nData= htlivesight.data;
 	    var teamId = document.getElementById("teamId").value;
-
 	    if (!htlivesight.ApiProxy.authorized(teamId)) { // if not authorized...
 		htlivesight.ApiProxy.authorize(doc); // ...get authorization
 		callback(null);

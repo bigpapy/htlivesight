@@ -53,6 +53,22 @@ htlivesight.Settings = {
 			}
 			document.getElementById("chkGetLeagueWithin").checked=prefs.matches.league.within;
 			document.getElementById("txtGetLeagueWithinHours").value=prefs.matches.league.withinHours;
+			document.getElementById("chkGetYouthNearestMatch").checked=prefs.matches.myYouthMatch;
+			if (prefs.matches.youthLeague.get) {
+				document.getElementById("chkGetYouthLeague").checked=true;
+				if (prefs.matches.youthLeague.within) {
+					document.getElementById("txtGetYouthLeagueWithinHours").disabled=false;
+				} else {
+					document.getElementById("txtGetYouthLeagueWithinHours").disabled=true;
+				}
+			} else {
+				document.getElementById("chkGetYouthLeague").checked=false;
+				document.getElementById("chkGetYouthLeagueWithin").disabled=true;
+				document.getElementById("txtGetYouthLeagueWithinHours").disabled=true;
+			}
+			document.getElementById("chkGetYouthLeagueWithin").checked=prefs.matches.youthLeague.within;
+			document.getElementById("txtGetYouthLeagueWithinHours").value=prefs.matches.youthLeague.withinHours;
+			
 			
 			if (prefs.matches.tournament.get) {
 				document.getElementById("chkGetTournament").checked=true;
@@ -583,6 +599,39 @@ htlivesight.Settings = {
 				prefs.matches.league.withinHours = value;
 			},
 			
+			chkgetyouthleague: function() {
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("chkGetYouthLeague").checked) {
+					document.getElementById("chkGetYouthLeagueWithin").disabled = false;
+					htlivesight.Settings.click.chkgetyouthleaguewithin();
+					prefs.matches.youthLeague.get = true;
+				} else {
+					document.getElementById("chkGetYouthLeagueWithin").disabled = true;
+					document.getElementById("txtGetYouthLeagueWithinHours").disabled = true;
+					prefs.matches.youthLeague.get = false;
+				}
+			},
+			chkgetyouthleaguewithin: function() {
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("chkGetYouthLeagueWithin").checked) {
+					document.getElementById("txtGetYouthLeagueWithinHours").disabled = false;
+					prefs.matches.youthLeague.within = true;
+				} else {
+					document.getElementById("txtGetLeagueWithinHours").disabled = true;
+					prefs.matches.youthLeague.within = false;
+				};
+			},
+			txtfixyouthleaguehours: function() {
+				var prefs = htlivesight.Settings.preferences;
+				var value = document.getElementById("txtGetYouthLeagueWithinHours").value.replace(/\D/g, "");
+				if(value===""){
+					value = prefs.matches.youthLeague.withinHours;
+				}
+				value = Math.max(0,Math.min(84,parseInt(value,10)));
+				document.getElementById("txtGetYouthLeagueWithinHours").value = value;
+				prefs.matches.youthLeague.withinHours = value;
+			},
+			
 			chkgettournament: function() {
 				var prefs = htlivesight.Settings.preferences;
 				if(document.getElementById("chkGetTournament").checked) {
@@ -660,7 +709,10 @@ htlivesight.Settings = {
 					prefs.matches.friends.doNotGetFriendsHointegratedMatches = false;
 				};
 			},
-			
+			chkMyYouthMatch: function() {
+				var prefs = htlivesight.Settings.preferences;
+				prefs.matches.myYouthMatch = document.getElementById("chkGetYouthNearestMatch").checked;
+			},
 			
 			chkhdrscorers: function() {
 				var prefs = htlivesight.Settings.preferences;

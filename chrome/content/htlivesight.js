@@ -274,6 +274,13 @@ var htlivesight = {
 			}while(htlivesight.errorLoadingXML);
 			htlivesight.Live.startView();
 		},
+		
+		GetManagerCompendium: function() { 
+			try{
+				htlivesight.ManagerCompendium.HTTPGetMyData();
+			}catch(e){alert(e);}
+		},
+		
 		GetMyData: function() { 
 			try{
 				htlivesight.Team.HTTPGetMyData(document.getElementById("teamId").value,"myFirstTeam");
@@ -339,9 +346,27 @@ var htlivesight = {
 				//FUNCTION HERE TO ADD MATCHES OF SECOND TEAM TOURNAMENTS
 				htlivesight.Tournaments.HTTPTournamentsList(htlivesight.Teams.mySecondTeam.id, "mySecondTeam");
 			}else{
+				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE);
+			}
+		},
+		
+		GetYouthLeagueMatches: function() {
+			//console.log("LeagueId = "+htlivesight.ManagerCompendium.data.youthTeams[0].youthLegueId);
+			if(htlivesight.ManagerCompendium.data.youthTeams[0]){
+				htlivesight.YouthLeague.HTTPFixtures(htlivesight.ManagerCompendium.data.youthTeams[0].youthLegueId,"myFirstYouthTeam");
+			}else{
+				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE2);
+			}
+			//console.log("b");
+		},
+		GetYouthLeagueMatches2: function() {
+			if(htlivesight.ManagerCompendium.data.youthTeams[1]){
+				htlivesight.YouthLeague.HTTPFixtures(htlivesight.ManagerCompendium.data.youthTeams[1].youthLegueId,"mySecondYouthTeam");
+			}else{
 				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES);
 			}
 		},
+		
 		addLeagueMatches: function(){
 			htlivesight.League.addLeagueMatches();
 		},
@@ -349,6 +374,45 @@ var htlivesight = {
 			htlivesight.Matches.HTTPGetByTeam(htlivesight.Teams.myTeam.id, htlivesight.Teams.myTeam.youth, false);
 			if(parseInt(document.getElementById("secondTeamId").value)){
 				htlivesight.Matches.HTTPGetByTeam(htlivesight.Teams.mySecondTeam.id, htlivesight.Teams.mySecondTeam.youth, false);
+			}
+		},
+		GetMyYouthMatch1: function() {
+			//console.log(htlivesight.Settings.preferences);
+			//console.log("htlivesight.Prefs.Matches.myYouthMarch"+htlivesight.Prefs.Matches.myYouthMarch);
+			var prefs = htlivesight.Settings.preferences;
+			//console.log("CARICARE MATCH GIOVANILI?");
+			//console.log(prefs.matches.myYouthMatch)
+			console.log("checking for prefs to get youth team nearest match");
+			if(!prefs.matches.myYouthMatch) return;
+			console.log("Prefs was set to get first youth team nearest match. Checking if team id is present to do a request for 1st youth team...");
+			console.log("htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId = "+ htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId);
+			if(htlivesight.ManagerCompendium.data.youthTeams[0] && parseInt(htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId)){
+				try{
+					console.log("getting 1st youth team match...");
+					htlivesight.Matches.HTTPGetByTeam(htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId, "youth", true);
+					console.log("after getting 1st youth team match");
+				}catch(e){console.log("Error getting first youth team nearest match: "+e);}
+			}
+			
+		},
+		GetMyYouthMatch2: function() {
+			//console.log(htlivesight.Settings.preferences);
+			//console.log("htlivesight.Prefs.Matches.myYouthMarch"+htlivesight.Prefs.Matches.myYouthMarch);
+
+			var prefs = htlivesight.Settings.preferences;
+			console.log("checking for prefs to get youth team nearest match");
+			//console.log("CARICARE MATCH GIOVANILI?");
+
+			//console.log(prefs.matches.myYouthMatch)
+			if(!prefs.matches.myYouthMatch) return;
+			console.log("Prefs was set to get second youth team nearest match. Checking if team id is present to do a request for 2nd youth team...");
+			console.log("htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId = "+ htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId);
+			if(htlivesight.ManagerCompendium.data.youthTeams[1] && parseInt(htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId)){
+				try{
+					console.log("getting 2nd youth team match...");
+					htlivesight.Matches.HTTPGetByTeam(htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId, "youth", true);
+					console.log("after getting 2nd youth team match");
+				}catch(e){console.log("Error getting second youth team nearest match: "+e);}
 			}
 		},
 		winboxOpenByName: function(name) {
