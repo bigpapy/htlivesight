@@ -428,7 +428,8 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 		if (found){
 			lineUp=htlivesight.LineUp.SubstitutionPlayerInLineUp(lineUp,subjectPlayer,objectPlayer);
 		}else{
-		    alert("CHPP Data error! Individual order data missing. Individual orders shown are wrong, please restart HTLivesight");
+		    //alert("CHPP Data error! Individual order data missing. Individual orders shown are wrong, please restart HTLivesight");
+		    noty({type: 'warning', maxVisible: 1, text: "HATTRICK CHPP Data error! Individual order data missing. Individual orders shown are wrong, sorry, we are waiting a fix from hattrick. Details: " + match.home.team.shortName + " - " + match.away.team.shortName + ' ' + event.minute + '\''});
 		}
 		var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
 		var side;
