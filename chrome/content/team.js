@@ -37,10 +37,10 @@ htlivesight.Team.ParseMyData = function (xml, teamKind) {
 			myTeam = htlivesight.Team.ParseTeamData(xml); // return team
 			if(teamKind=="myFirstTeam"){
 				htlivesight.Teams.myTeam = myTeam;
-				document.getElementById("teamName").innerHTML=myTeam.name;
+				document.getElementById("teamName").textContent=myTeam.name;
 			}else if(teamKind=="mySecondTeam"){
 				htlivesight.Teams.mySecondTeam = myTeam;
-				document.getElementById("secondTeamName").innerHTML=", "+myTeam.name;
+				document.getElementById("secondTeamName").textContent=", "+myTeam.name;
 			}
 
 			htlivesight.Teams.update(myTeam);

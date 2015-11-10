@@ -6,13 +6,14 @@ if (!htlivesight) var htlivesight = {};
 htlivesight.load = function(url, callback, crossSite) {
 	var req = new XMLHttpRequest();
 	if (!callback) {
-		req.open("GET", url, false);
+		alert("WARNING: there is a Synch call!!");
+		/*req.open("GET", url, false);
 		if (typeof(req.overrideMimeType) == "function")
 			req.overrideMimeType("text/plain");
 		try
 		{req.send(null);}catch(e){alert(e+" URL = "+url);}
 		var response = req.responseText;
-		return response;
+		return response;*/
 	}
 	else {
 		req.open("GET", url, true);

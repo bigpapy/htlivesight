@@ -27,9 +27,9 @@ htlivesight.DOM = {
 				teamID=match.away.team.id;
 			}// add link to youth team too.
 			if(match.sourceSystem.toLowerCase() != 'youth'){
-				title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/?TeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
+				title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/?TeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
 			}else{
-				title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
+				title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
 			}
 			$("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 510, title: title, dialogClass: "formationbg", position: {my: my, at: at, of: $('#'+id) }});
 			return false;
@@ -52,9 +52,9 @@ htlivesight.DOM = {
 			  var teamID=match.away.team.id;
 			}
 			if(match.sourceSystem.toLowerCase() != 'youth'){
-				var title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/?TeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
+				var title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/?TeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
 			}else{
-				var title = "<a href='http://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
+				var title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
 			}
 			$("#"+id+"_statistics").dialog({ autoOpen: true, width: 350, height: 220, title: title, position: {my: my, at: at, of: $('#'+id) } });
 			return false;
@@ -165,7 +165,7 @@ htlivesight.DOM = {
 					htServer="www";
 				};*/
 				//var matchLink="http://" + htServer + ".hattrick.org/Club/Matches/Match.aspx?matchID=" + matchId;
-					var matchLink="http://www.hattrick.org/goto.ashx?path=/Club/Matches/Match.aspx?matchID=" + matchId;
+					var matchLink="https://www.hattrick.org/goto.ashx?path=/Club/Matches/Match.aspx?matchID=" + matchId;
 				if (sourceSystem=="Hattrick"||sourceSystem=="False"){ 
 					matchLink=matchLink+"&SourceSystem=Hattrick";
 				}else if (sourceSystem=="youth"||sourceSystem=="Youth"||sourceSystem=="True"){
@@ -252,11 +252,11 @@ htlivesight.DOM = {
 				a.setAttribute("href","#"+id+"-"+index);
 				var img = new Image();
 				if(event.minute == '★'){
-					//a.innerHTML=event.minute;
+					//a.textContent=event.minute;
 					img.setAttribute("src", htlivesight.Image.star.yellow);
 					img.setAttribute("class", "image_star_tab");
 				}else{
-					a.innerHTML=event.minute+"'";
+					a.textContent=event.minute+"'";
 					if(htlivesight.prefs.personalization.oldIcons && event.type.imageSrcOld){
 						img.setAttribute("src", event.type.imageSrcOld);
 					}else{
@@ -315,7 +315,7 @@ htlivesight.DOM = {
 						linkPlayer.setAttribute("style", "text-decoration: none; color: white !important");
 						linkPlayer.addEventListener("mouseover", function(){this.setAttribute("style", "text-decoration:underline;color: white !important");});
 						linkPlayer.addEventListener("mouseout", function(){this.setAttribute("style", "text-decoration:none;color: white !important");});
-						linkPlayer.innerHTML= htlivesight.DOM.getTextContent(playerInfo[0]);
+						linkPlayer.textContent= htlivesight.DOM.getTextContent(playerInfo[0]);
 						label.appendChild(linkPlayer);
 						if(playerInfo[2].toLowerCase()=="true"){
 						linkPlayer.setAttribute('class',playerInfo[1]+"_youth underlined");
@@ -342,9 +342,9 @@ htlivesight.DOM = {
 				var occasion=match.getSideById(event.subjectTeamId).occasion;
 				var goals=match.getSideById(event.subjectTeamId).goals;
 				label = document.createElement("td");
-				label.innerHTML=htlivesight.Util.Parse("Goals",htlivesight.data[0]);
+				label.textContent=htlivesight.Util.Parse("Goals",htlivesight.data[0]);
 				label_number = document.createElement("td");
-				label_number.innerHTML=goals+" / "+occasion;
+				label_number.textContent=goals+" / "+occasion;
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
@@ -353,9 +353,9 @@ htlivesight.DOM = {
 				var free_kick=match.getSideById(event.subjectTeamId).free_kick;
 				var free_kick_goal=match.getSideById(event.subjectTeamId).free_kick_goal;
 				label = document.createElement("td");
-				label.innerHTML=htlivesight.Util.Parse("FreeKicks",htlivesight.data[0]);
+				label.textContent=htlivesight.Util.Parse("FreeKicks",htlivesight.data[0]);
 				label_number = document.createElement("td");
-				label_number.innerHTML=free_kick_goal+" / "+free_kick;
+				label_number.textContent=free_kick_goal+" / "+free_kick;
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
@@ -363,9 +363,9 @@ htlivesight.DOM = {
 				var penalty=match.getSideById(event.subjectTeamId).penalty;
 				var penalty_goal=match.getSideById(event.subjectTeamId).penalty_goal;
 				label = document.createElement("td");
-				label.innerHTML=htlivesight.Util.Parse("TimePenalties",htlivesight.data[0]);
+				label.textContent=htlivesight.Util.Parse("TimePenalties",htlivesight.data[0]);
 				label_number = document.createElement("td");
-				label_number.innerHTML=penalty_goal+" / "+penalty;
+				label_number.textContent=penalty_goal+" / "+penalty;
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
@@ -373,9 +373,9 @@ htlivesight.DOM = {
 				var left=match.getSideById(event.subjectTeamId).left;
 				var left_goal=match.getSideById(event.subjectTeamId).left_goal;
 				label = document.createElement("td");
-				label.innerHTML=htlivesight.Util.capitalize(htlivesight.Util.Parse("EventSideLeft",htlivesight.data[0]));
+				label.textContent=htlivesight.Util.capitalize(htlivesight.Util.Parse("EventSideLeft",htlivesight.data[0]));
 				label_number = document.createElement("td");
-				label_number.innerHTML=left_goal+" / "+left;
+				label_number.textContent=left_goal+" / "+left;
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
@@ -383,9 +383,9 @@ htlivesight.DOM = {
 				var center=match.getSideById(event.subjectTeamId).center;
 				var center_goal=match.getSideById(event.subjectTeamId).center_goal;
 				label = document.createElement("td");
-				label.innerHTML=htlivesight.Util.capitalize(htlivesight.Util.Parse("EventSideCenter",htlivesight.data[0]));
+				label.textContent=htlivesight.Util.capitalize(htlivesight.Util.Parse("EventSideCenter",htlivesight.data[0]));
 				label_number = document.createElement("td");
-				label_number.innerHTML=center_goal+" / "+center;
+				label_number.textContent=center_goal+" / "+center;
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
@@ -393,9 +393,9 @@ htlivesight.DOM = {
 				var right=match.getSideById(event.subjectTeamId).right;
 				var right_goal=match.getSideById(event.subjectTeamId).right_goal;
 				label = document.createElement("td");
-				label.innerHTML=htlivesight.Util.capitalize(htlivesight.Util.Parse("EventSideRight",htlivesight.data[0]));
+				label.textContent=htlivesight.Util.capitalize(htlivesight.Util.Parse("EventSideRight",htlivesight.data[0]));
 				label_number = document.createElement("td");
-				label_number.innerHTML=right_goal+" / "+right;
+				label_number.textContent=right_goal+" / "+right;
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
@@ -404,9 +404,9 @@ htlivesight.DOM = {
 				var long_shot=match.getSideById(event.subjectTeamId).long_shot;
 				var long_shot_goal=match.getSideById(event.subjectTeamId).long_shot_goal;
 				label = document.createElement("td");
-				label.innerHTML=htlivesight.Util.capitalize(htlivesight.Util.Parse("LongShot",htlivesight.data[0]));
+				label.textContent=htlivesight.Util.capitalize(htlivesight.Util.Parse("LongShot",htlivesight.data[0]));
 				label_number = document.createElement("td");
-				label_number.innerHTML=long_shot_goal+" / "+long_shot;
+				label_number.textContent=long_shot_goal+" / "+long_shot;
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				
@@ -415,36 +415,36 @@ htlivesight.DOM = {
 				var special=match.getSideById(event.subjectTeamId).special_event;
 				var special_goal=match.getSideById(event.subjectTeamId).special_event_goal;
 				label = document.createElement("td");
-				label.innerHTML=htlivesight.Util.Parse("SpecialEvent",htlivesight.data[0]);;
+				label.textContent=htlivesight.Util.Parse("SpecialEvent",htlivesight.data[0]);;
 				label_number = document.createElement("td");
-				label_number.innerHTML=special_goal+" / "+special;
+				label_number.textContent=special_goal+" / "+special;
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
 				hbox = document.createElement("tr");
 				var yellow=match.getSideById(event.subjectTeamId).yellow;
 				label = document.createElement("td");
-				label.innerHTML=htlivesight.Util.Parse("YellowCards",htlivesight.data[0]);
+				label.textContent=htlivesight.Util.Parse("YellowCards",htlivesight.data[0]);
 				label_number = document.createElement("td");
-				label_number.innerHTML=yellow;
+				label_number.textContent=yellow;
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
 				hbox = document.createElement("tr");
 				var red=match.getSideById(event.subjectTeamId).red;
 				label = document.createElement("td");
-				label.innerHTML=htlivesight.Util.Parse("RedCards",htlivesight.data[0]);
+				label.textContent=htlivesight.Util.Parse("RedCards",htlivesight.data[0]);
 				label_number = document.createElement("td");
-				label_number.innerHTML=red;
+				label_number.textContent=red;
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
 				hbox = document.createElement("tr");
 				var injured=match.getSideById(event.subjectTeamId).injured;
 				label = document.createElement("td");
-				label.innerHTML=htlivesight.Util.Parse("Injuries",htlivesight.data[0]);
+				label.textContent=htlivesight.Util.Parse("Injuries",htlivesight.data[0]);
 				label_number = document.createElement("td");
-				label_number.innerHTML=injured;
+				label_number.textContent=injured;
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
@@ -452,17 +452,17 @@ htlivesight.DOM = {
 				var possession1=match.getSideById(event.subjectTeamId).possession_1;
 				var possession2=match.getSideById(event.subjectTeamId).possession_2;
 				label = document.createElement("td");
-				label.innerHTML=label.innerHTML=htlivesight.Util.Parse("BallPosses",htlivesight.data[0])+" "+htlivesight.Util.decapitalize(htlivesight.Util.Parse("TimeFirstHalf",htlivesight.data[0]));
+				label.textContent=label.textContent=htlivesight.Util.Parse("BallPosses",htlivesight.data[0])+" "+htlivesight.Util.decapitalize(htlivesight.Util.Parse("TimeFirstHalf",htlivesight.data[0]));
 				label_number = document.createElement("td");
-				label_number.innerHTML=+possession1+"%";
+				label_number.textContent=+possession1+"%";
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
 				hbox = document.createElement("tr");
 				label = document.createElement("td");
-				label.innerHTML=htlivesight.Util.Parse("BallPosses",htlivesight.data[0])+" "+htlivesight.Util.decapitalize(htlivesight.Util.Parse("TimeSecondHalf",htlivesight.data[0]));
+				label.textContent=htlivesight.Util.Parse("BallPosses",htlivesight.data[0])+" "+htlivesight.Util.decapitalize(htlivesight.Util.Parse("TimeSecondHalf",htlivesight.data[0]));
 				label_number = document.createElement("td");
-				label_number.innerHTML=+possession2+"%";
+				label_number.textContent=+possession2+"%";
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
@@ -488,7 +488,7 @@ htlivesight.DOM = {
 		},
 		
 		addServerToPopup: function(server) {
-			document.getElementById("ServerStatus").innerHTML=server;
+			document.getElementById("ServerStatus").textContent=server;
 		},
 		createTextElement: function (text, doClean) {
 			try{//added by bigpapy to debug from XUL to HTML
@@ -554,7 +554,7 @@ htlivesight.DOM = {
 							playerId=href.match(/\d+/);
 						}
 						newElement = document.createElementNS("http://www.w3.org/1999/xhtml", "em");
-						newElement.addEventListener("click", function(href){ return function(e){window.open("http://www.hattrick.org/goto.ashx?path="+href);};}(href),true);
+						newElement.addEventListener("click", function(href){ return function(e){window.open("https://www.hattrick.org/goto.ashx?path="+href);};}(href),true);
 						newElement.addEventListener("mouseover", function(){htlivesight.DOM.ShowLink(this);});
 						newElement.addEventListener("mouseout", function(){htlivesight.DOM.HideLink(this);});
 						newElement.setAttribute("class", "player_name"+ " "+playerId+classPostfix);
@@ -647,16 +647,16 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 	var label;
 	try {
 		if (match.arena.name) {
-			/*label = document.getElementById("match_date_" + match.id + "_" + match.sourceSystem).innerHTML = "";
+			/*label = document.getElementById("match_date_" + match.id + "_" + match.sourceSystem).textContent = "";
 			htlivesight.Util.RemoveClass(label, "match_date");*/
-			label = document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).innerHTML = match.arena.name;
+			label = document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).textContent = match.arena.name;
 			/*htlivesight.Util.AddClass(label, "arena_name");*/
 			label = document.getElementById("weather_image_" + match.id + "_" + match.sourceSystem);
 			//label.setAttribute("src", htlivesight.Image.calendar);
 			//label.setAttribute("class", "weather_image");
 			label.setAttribute("title", htlivesight.Time.shortDateString(match.date));
 		}else{
-			if(match.date) document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).innerHTML = htlivesight.Time.shortDateString(match.date);
+			if(match.date) document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).textContent = htlivesight.Time.shortDateString(match.date);
 		}
 		if (match.weather.image) {
 			label = document.getElementById("weather_image_" + match.id + "_" + match.sourceSystem);
@@ -664,19 +664,19 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 			label.setAttribute("class", "weather_image");
 		}
 		if (match.arena.attendance) {
-			document.getElementById("arena_attendance_" + match.id + "_" + match.sourceSystem).innerHTML = match.arena.attendance;
+			document.getElementById("arena_attendance_" + match.id + "_" + match.sourceSystem).textContent = match.arena.attendance;
 		}
 		if (match.home.tactic) {
-			document.getElementById("home_team_tactic_" + match.id + "_" + match.sourceSystem).innerHTML = match.home.tactic;
+			document.getElementById("home_team_tactic_" + match.id + "_" + match.sourceSystem).textContent = match.home.tactic;
 		}
 		if (match.home.formation) {
-			document.getElementById("home_team_formation_" + match.id + "_" + match.sourceSystem).innerHTML = match.home.formation;
+			document.getElementById("home_team_formation_" + match.id + "_" + match.sourceSystem).textContent = match.home.formation;
 		}
 		if (match.away.formation) {
-			document.getElementById("away_team_formation_" + match.id + "_" + match.sourceSystem).innerHTML = match.away.formation;
+			document.getElementById("away_team_formation_" + match.id + "_" + match.sourceSystem).textContent = match.away.formation;
 		}
 		if (match.away.tactic) {
-			document.getElementById("away_team_tactic_" + match.id + "_" + match.sourceSystem).innerHTML = match.away.tactic;
+			document.getElementById("away_team_tactic_" + match.id + "_" + match.sourceSystem).textContent = match.away.tactic;
 		}
 		if (htlivesight.prefs.matches.scorers) {
 			label = document.getElementById("home_team_scorers1_" + match.id + "_" + match.sourceSystem);  
@@ -696,9 +696,9 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 						line++;
 				}
 				//console.log(scorerText[0]);
-				label.innerHTML= htlivesight.DOM.getTextContent(scorerText[0]);
+				label.textContent= htlivesight.DOM.getTextContent(scorerText[0]);
 				if (numplayer > 4) {
-					label2.innerHTML= htlivesight.DOM.getTextContent(scorerText[1]);
+					label2.textContent= htlivesight.DOM.getTextContent(scorerText[1]);
 					label2.setAttribute("style", "display:block");
 					label3.setAttribute("style", "display:block");
 				}
@@ -716,9 +716,9 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 					if (numplayer++ == 3)
 						line++;
 				}
-				label.innerHTML= htlivesight.DOM.getTextContent(scorerText[0]);
+				label.textContent= htlivesight.DOM.getTextContent(scorerText[0]);
 				if (numplayer > 4) {
-					label3.innerHTML= htlivesight.DOM.getTextContent(scorerText[1]);
+					label3.textContent= htlivesight.DOM.getTextContent(scorerText[1]);
 					label2.setAttribute("style", "display:block");
 					label3.setAttribute("style", "display:block");
 				}
@@ -740,9 +740,9 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 					if (numplayer++ == 3)
 						line++;
 				}
-				label.innerHTML= htlivesight.DOM.getTextContent(bookedText[0]);
+				label.textContent= htlivesight.DOM.getTextContent(bookedText[0]);
 				if (numplayer > 4) {
-					label2.innerHTML= htlivesight.DOM.getTextContent(bookedText[1]);
+					label2.textContent= htlivesight.DOM.getTextContent(bookedText[1]);
 					label2.setAttribute("style", "display:block");
 					label3.setAttribute("style", "display:block");
 				}
@@ -760,9 +760,9 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 					if (numplayer++ == 3)
 						line++;
 				}
-				label.innerHTML= htlivesight.DOM.getTextContent(bookedText[0]);
+				label.textContent= htlivesight.DOM.getTextContent(bookedText[0]);
 				if (numplayer > 4) {
-					label3.innerHTML= htlivesight.DOM.getTextContent(bookedText[1]);
+					label3.textContent= htlivesight.DOM.getTextContent(bookedText[1]);
 					label3.setAttribute("style", "display:block");
 					label2.setAttribute("style", "display:block");
 				}
@@ -784,9 +784,9 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 					if (numplayer++ == 3)
 						line++;
 				}
-				label.innerHTML= htlivesight.DOM.getTextContent(sent_offText[0]);
+				label.textContent= htlivesight.DOM.getTextContent(sent_offText[0]);
 				if (numplayer > 4) {
-					label2.innerHTML= htlivesight.DOM.getTextContent(sent_offText[1]);
+					label2.textContent= htlivesight.DOM.getTextContent(sent_offText[1]);
 					label2.setAttribute("style", "display:block");
 					label3.setAttribute("style", "display:block");
 				}
@@ -804,9 +804,9 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 					if (numplayer++ == 3)
 						line++;
 				}
-				label.innerHTML= htlivesight.DOM.getTextContent(sent_offText[0]);
+				label.textContent= htlivesight.DOM.getTextContent(sent_offText[0]);
 				if (numplayer > 4) {
-					label3.innerHTML= htlivesight.DOM.getTextContent(sent_offText[1]);
+					label3.textContent= htlivesight.DOM.getTextContent(sent_offText[1]);
 					label3.setAttribute("style", "display:block");
 					label2.setAttribute("style", "display:block");
 				}
@@ -828,9 +828,9 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 					if (numplayer++ == 3)
 						line++;
 				}
-				label.innerHTML= htlivesight.DOM.getTextContent(injuredText[0]);
+				label.textContent= htlivesight.DOM.getTextContent(injuredText[0]);
 				if (numplayer > 4) {
-					label2.innerHTML= htlivesight.DOM.getTextContent(injuredText[1]);
+					label2.textContent= htlivesight.DOM.getTextContent(injuredText[1]);
 					label2.setAttribute("style", "display:block");
 					label3.setAttribute("style", "display:block");
 				}
@@ -848,19 +848,19 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 					if (numplayer++ == 3)
 						line++;
 				}
-				label.innerHTML= htlivesight.DOM.getTextContent(injuredText[0]);
+				label.textContent= htlivesight.DOM.getTextContent(injuredText[0]);
 				if (numplayer > 4) {
-					label3.innerHTML= htlivesight.DOM.getTextContent(injuredText[1]);
+					label3.textContent= htlivesight.DOM.getTextContent(injuredText[1]);
 					label3.setAttribute("style", "display:block");
 					label2.setAttribute("style", "display:block");
 				}
 			}
 		}
-		document.getElementById("time_" + match.id + "_" + match.sourceSystem).innerHTML = match.timeElapsed;    
-		document.getElementById("home_team_name_" + match.id + "_" + match.sourceSystem).innerHTML = htlivesight.Util.CleanText(match.home.team.name);
-		document.getElementById("home_team_goals_" + match.id + "_" + match.sourceSystem).innerHTML = match.home.goals;
-		document.getElementById("away_team_goals_" + match.id + "_" + match.sourceSystem).innerHTML = match.away.goals;
-		document.getElementById("away_team_name_" + match.id + "_" + match.sourceSystem).innerHTML = htlivesight.Util.CleanText(match.away.team.name);
+		document.getElementById("time_" + match.id + "_" + match.sourceSystem).textContent = match.timeElapsed;    
+		document.getElementById("home_team_name_" + match.id + "_" + match.sourceSystem).textContent = htlivesight.Util.CleanText(match.home.team.name);
+		document.getElementById("home_team_goals_" + match.id + "_" + match.sourceSystem).textContent = match.home.goals;
+		document.getElementById("away_team_goals_" + match.id + "_" + match.sourceSystem).textContent = match.away.goals;
+		document.getElementById("away_team_name_" + match.id + "_" + match.sourceSystem).textContent = htlivesight.Util.CleanText(match.away.team.name);
 	} catch(e) {
 		alert("DOM.UpdateLiveHeader\n" + e);
 	}
@@ -1080,7 +1080,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			box1.appendChild(label);
 			label.setAttribute("id", "home_team_scorers1_" + match.id + "_" + match.sourceSystem);
 			label.setAttribute("class", "scinheader");
-			label.innerHTML= " ";
+			label.textContent= " ";
 			hbox2 = document.createElement("tr"); //bigpapy add to fix it
 			hbox2.setAttribute("class", "scorers");
 			vbox.appendChild(hbox2);
@@ -1093,7 +1093,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			box21.appendChild(label);
 			label.setAttribute("id", "home_team_scorers2_" + match.id + "_" + match.sourceSystem);
 			label.setAttribute("class", "scinheader");
-			label.innerHTML= " ";
+			label.textContent= " ";
 			label.setAttribute("style", "display:none");
 		}
 		if (htlivesight.prefs.matches.booked) {
@@ -1110,7 +1110,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			label.setAttribute("class", "ycinheader");
 			box31.appendChild(label);
 			label.setAttribute("id", "home_team_booked1_" + match.id + "_" + match.sourceSystem);
-			label.innerHTML= " ";
+			label.textContent= " ";
 			hbox4 = document.createElement("tr"); //bigpapy add to fix it
 			hbox4.setAttribute("class", "scorers");
 			vbox.appendChild(hbox4);
@@ -1123,7 +1123,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			box41.setAttribute("class", "ycinheader");
 			box41.appendChild(label);
 			label.setAttribute("id", "home_team_booked2_" + match.id + "_" + match.sourceSystem);
-			label.innerHTML= " ";
+			label.textContent= " ";
 			label.setAttribute("style", "display:none");
 		}
 		if (htlivesight.prefs.matches.sentOff) {
@@ -1139,7 +1139,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			label.setAttribute("class", "rcinheader");
 			box51.appendChild(label);
 			label.setAttribute("id", "home_team_sent_off1_" + match.id + "_" + match.sourceSystem);
-			label.innerHTML= " ";
+			label.textContent= " ";
 			hbox6 = document.createElement("tr"); //bigpapy add to fix it
 			hbox6.setAttribute("class", "sent_off");
 			vbox.appendChild(hbox6);
@@ -1152,7 +1152,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			box61.setAttribute("class", "rcinheader");
 			box61.appendChild(label);
 			label.setAttribute("id", "home_team_sent_off2_" + match.id + "_" + match.sourceSystem);
-			label.innerHTML= " ";
+			label.textContent= " ";
 			label.setAttribute("style", "display:none");
 		}
 		if (htlivesight.prefs.matches.injured) {
@@ -1168,7 +1168,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			label.setAttribute("class", "injinheader");
 			box71.appendChild(label);
 			label.setAttribute("id", "home_team_injured1_" + match.id + "_" + match.sourceSystem);
-			label.innerHTML= " ";
+			label.textContent= " ";
 			hbox8 = document.createElement("tr"); //bigpapy add to fix it
 			hbox8.setAttribute("class", "injured");
 			vbox.appendChild(hbox8);
@@ -1181,7 +1181,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			box81.setAttribute("class", "injinheader");
 			box81.appendChild(label);
 			label.setAttribute("id", "home_team_injured2_" + match.id + "_" + match.sourceSystem);
-			label.innerHTML= " ";
+			label.textContent= " ";
 			label.setAttribute("style", "display:none");
 		}
 		box = document.createElement("td");//bigpapy add to fix it
@@ -1194,7 +1194,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		label.setAttribute("id", "home_team_goals_" + match.id + "_" + match.sourceSystem);
 		label = document.createElement("span");
 		box.appendChild(label);
-		label.innerHTML= ":";
+		label.textContent= ":";
 		label = document.createElement("span");
 		box.appendChild(label);
 		label.setAttribute("id", "away_team_goals_" + match.id + "_" + match.sourceSystem);
@@ -1254,7 +1254,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			box3.appendChild(label);
 			label.setAttribute("id", "away_team_scorers1_" + match.id + "_" + match.sourceSystem);
 			label.setAttribute("class", "scinheader");
-			label.innerHTML= " ";
+			label.textContent= " ";
 			box22 = document.createElement("td");
 			box22.setAttribute("width", "6%");
 			box22.setAttribute("align", "center");
@@ -1268,7 +1268,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			box23.appendChild(label);
 			label.setAttribute("id", "away_team_scorers2_" + match.id + "_" + match.sourceSystem);
 			label.setAttribute("class", "scinheader");
-			label.innerHTML= " ";
+			label.textContent= " ";
 			label.setAttribute("style", "display:none");
 		}
 		if (htlivesight.prefs.matches.booked) {
@@ -1284,7 +1284,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			label.setAttribute("class", "ycinheader");
 			box33.appendChild(label);
 			label.setAttribute("id", "away_team_booked1_" + match.id + "_" + match.sourceSystem);
-			label.innerHTML= " ";
+			label.textContent= " ";
 			box42 = document.createElement("td");
 			box42.setAttribute("width", "6%");
 			hbox4.appendChild(box42);
@@ -1297,7 +1297,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			box43.setAttribute("class", "ycinheader");
 			box43.appendChild(label);
 			label.setAttribute("id", "away_team_booked2_" + match.id + "_" + match.sourceSystem);
-			label.innerHTML= " ";
+			label.textContent= " ";
 			label.setAttribute("style", "display:none");
 		}
 		if (htlivesight.prefs.matches.sentOff) {
@@ -1313,7 +1313,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			label.setAttribute("class", "rcinheader");
 			box53.appendChild(label);
 			label.setAttribute("id", "away_team_sent_off1_" + match.id + "_" + match.sourceSystem);
-			label.innerHTML= " ";
+			label.textContent= " ";
 			box62 = document.createElement("td");
 			box62.setAttribute("width", "6%");
 			hbox6.appendChild(box62);
@@ -1326,7 +1326,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			box63.setAttribute("class", "rcinheader");
 			box63.appendChild(label);
 			label.setAttribute("id", "away_team_sent_off2_" + match.id + "_" + match.sourceSystem);
-			label.innerHTML= " ";
+			label.textContent= " ";
 			label.setAttribute("style", "display:none");
 		}
 		if (htlivesight.prefs.matches.injured) {
@@ -1342,7 +1342,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			label.setAttribute("class", "injinheader");
 			box73.appendChild(label);
 			label.setAttribute("id", "away_team_injured1_" + match.id + "_" + match.sourceSystem);
-			label.innerHTML= " ";
+			label.textContent= " ";
 			box82 = document.createElement("td");
 			box82.setAttribute("width", "6%");
 			hbox8.appendChild(box82);
@@ -1355,7 +1355,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 			box83.setAttribute("class", "injinheader");
 			box83.appendChild(label);
 			label.setAttribute("id", "away_team_injured2_" + match.id + "_" + match.sourceSystem);
-			label.innerHTML= " ";
+			label.textContent= " ";
 			label.setAttribute("style", "display:none");
 		}
 		return header;
@@ -1496,7 +1496,7 @@ htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
 			l = document.createElement("td");
 			l.setAttribute("class","event_minute");
 			row.appendChild(l);
-			l.innerHTML= event.minute;
+			l.textContent= event.minute;
 			l = document.createElement("td");
 			l1 = document.createElement("td");
 			row.appendChild(l);
@@ -1597,7 +1597,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable=function(league) {
 		}
 		for(var matchid in htlivesight.Match.List){
 			var myMatch = htlivesight.Match.List[matchid];
-			if(league.currentRound.id.has(myMatch.id) 
+			if(htlivesight.Util.isInArray(league.currentRound.id, myMatch.id)//league.currentRound.id.has(myMatch.id) 
 					&& htlivesight.League.currentRound.number > htlivesight.League.teams[htlivesight.Teams.myTeam.id]
 					&& htlivesight.showLeague
 					&& htlivesight.League.teams[myMatch.home.team.id]
@@ -1667,7 +1667,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable=function(league) {
 		for(var j=1; j<=8; j++){
 			htlivesight.Util.RemoveClass(document.getElementById("leaguetable_"+j+""),['league_title','league_promote','league_demote','league_qualify','league_own']);
 		}
-		document.getElementById("LeagueLiveTable").innerHTML = htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0])+" ("+league.levelUnitName+")";
+		document.getElementById("LeagueLiveTable").textContent = htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0])+" ("+league.levelUnitName+")";
 		if(league.level == 1){
 			//title holder
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_1"),'league_title');
@@ -1706,19 +1706,19 @@ htlivesight.DOM.UpdateElementBoxLeagueTable=function(league) {
 				if(i == htlivesight.Teams.myTeam.id){
 					htlivesight.Util.AddClass(document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition),'league_own');
 				}
-				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_name").innerHTML = htlivesight.DOM.getTextContent(htlivesight.League.teams[i].name);
+				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_name").textContent = htlivesight.DOM.getTextContent(htlivesight.League.teams[i].name);
 				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_change").setAttribute("src",htlivesight.constants.IMG_PATH + htlivesight.League.teams[i].change);
-				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_matches").innerHTML = htlivesight.League.teams[i].liveMatches;
+				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_matches").textContent = htlivesight.League.teams[i].liveMatches;
 			  var goalsFor = htlivesight.League.teams[i].liveGoalsFor;
-				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goals_for").innerHTML = goalsFor;
+				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goals_for").textContent = goalsFor;
 			  var goalsAgainst = htlivesight.League.teams[i].liveGoalsAgainst;
-				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goals_against").innerHTML = goalsAgainst;
+				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goals_against").textContent = goalsAgainst;
 				//var goals = htlivesight.League.teams[i].liveGoalsFor+"-"+htlivesight.League.teams[i].liveGoalsAgainst;
-				//document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goals").innerHTML = goals;
+				//document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goals").textContent = goals;
 				var diff = htlivesight.League.teams[i].liveGoalsFor - htlivesight.League.teams[i].liveGoalsAgainst;
 				if(diff >= 0) diff = "+"+diff;
-				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goaldif").innerHTML = diff;
-				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_points").innerHTML = htlivesight.League.teams[i].livePoints;
+				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_goaldif").textContent = diff;
+				document.getElementById("leaguetable_"+htlivesight.League.teams[i].livePosition+"_points").textContent = htlivesight.League.teams[i].livePoints;
 			}
 		}
 	}catch(e){alert("UpdateElementBoxLeagueTable: "+e);}// added by bigpapy to debug from XUL to HTML
@@ -1735,7 +1735,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable2=function(league) {
 		}
 		for(var matchid in htlivesight.Match.List){
 			var myMatch = htlivesight.Match.List[matchid];
-			if(league.currentRound2.id.has(myMatch.id) 
+			if(htlivesight.Util.isInArray(league.currentRound2.id, myMatch.id)//league.currentRound2.id.has(myMatch.id) 
 					&& htlivesight.League.currentRound2.number > htlivesight.League.teams2[htlivesight.Teams.mySecondTeam.id]
 					&& htlivesight.showLeague2
 					&& htlivesight.League.teams2[myMatch.home.team.id]
@@ -1805,7 +1805,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable2=function(league) {
 		for(var j=1; j<=8; j++){
 			htlivesight.Util.RemoveClass(document.getElementById("leaguetable_"+j+"Bis"),['league_title','league_promote','league_demote','league_qualify','league_own']);
 		}
-		document.getElementById("LeagueLiveTableBis").innerHTML = htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0])+" ("+league.levelUnitName2+")";
+		document.getElementById("LeagueLiveTableBis").textContent = htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0])+" ("+league.levelUnitName2+")";
 		if(league.level2 == 1){
 			//title holder
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_1Bis"),'league_title');
@@ -1842,19 +1842,19 @@ htlivesight.DOM.UpdateElementBoxLeagueTable2=function(league) {
 				if(i == htlivesight.Teams.mySecondTeam.id){
 					htlivesight.Util.AddClass(document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"Bis"),'league_own');
 				}
-				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_nameBis").innerHTML = htlivesight.DOM.getTextContent(htlivesight.League.teams2[i].name);
+				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_nameBis").textContent = htlivesight.DOM.getTextContent(htlivesight.League.teams2[i].name);
 				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_changeBis").setAttribute("src",htlivesight.constants.IMG_PATH + htlivesight.League.teams2[i].change);
-				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_matchesBis").innerHTML = htlivesight.League.teams2[i].liveMatches;
+				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_matchesBis").textContent = htlivesight.League.teams2[i].liveMatches;
 				var goalsFor = htlivesight.League.teams2[i].liveGoalsFor;
-				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goals_forBis").innerHTML = goalsFor;
+				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goals_forBis").textContent = goalsFor;
 				var goalsAgainst = htlivesight.League.teams2[i].liveGoalsAgainst;
-				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goals_againstBis").innerHTML = goalsAgainst;
+				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goals_againstBis").textContent = goalsAgainst;
 				//var goals = htlivesight.League.teams2[i].liveGoalsFor+"-"+htlivesight.League.teams2[i].liveGoalsAgainst;
-				//document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goalsBis").innerHTML = goals;
+				//document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goalsBis").textContent = goals;
 				var diff = htlivesight.League.teams2[i].liveGoalsFor - htlivesight.League.teams2[i].liveGoalsAgainst;
 				if(diff >= 0) diff = "+"+diff;
-				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goaldifBis").innerHTML = diff;
-				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_pointsBis").innerHTML = htlivesight.League.teams2[i].livePoints;
+				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_goaldifBis").textContent = diff;
+				document.getElementById("leaguetable_"+htlivesight.League.teams2[i].livePosition+"_pointsBis").textContent = htlivesight.League.teams2[i].livePoints;
 			}
 		}
 	}catch(e){alert("UpdateElementBoxLeagueTable2: "+e);}// added by bigpapy to debug from XUL to HTML
@@ -1868,8 +1868,8 @@ htlivesight.DOM.UpdateElementBoxLeague=function(league) {
 		document.getElementById("winbox_leaguematches").style.display="block";
 		var number = htlivesight.Util.Parse("LeagueRound",htlivesight.data[0]) + " " + league.currentRound.number;
 		var date = htlivesight.Time.formatDate(league.currentRound.date);
-		document.getElementById("league_round_number").innerHTML = number;
-		document.getElementById("league_round_date").innerHTML = htlivesight.Time.shortDateString(date);
+		document.getElementById("league_round_number").textContent = number;
+		document.getElementById("league_round_date").textContent = htlivesight.Time.shortDateString(date);
 	}catch(e){alert("UpdateElementBoxLeague : "+e);} // added by bigpapy to debug from xul to html
 };
 
@@ -1880,8 +1880,8 @@ htlivesight.DOM.UpdateElementBoxLeague2=function(league) {
 		document.getElementById("winbox_leaguematchesBis").style.display="block";
 		var number = htlivesight.Util.Parse("LeagueRound",htlivesight.data[0]) + " " + league.currentRound2.number;
 		var date = htlivesight.Time.formatDate(league.currentRound2.date);
-		document.getElementById("league_round_numberBis").innerHTML = number;
-		document.getElementById("league_round_dateBis").innerHTML = htlivesight.Time.shortDateString(date);
+		document.getElementById("league_round_numberBis").textContent = number;
+		document.getElementById("league_round_dateBis").textContent = htlivesight.Time.shortDateString(date);
 	}catch(e){alert("UpdateElementBoxLeague2 : "+e);} // added by bigpapy to debug from xul to html
 };
 
@@ -1901,12 +1901,12 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 		elem = document.getElementById("short_" + match.id + "_" + match.sourceSystem);
 		if (!elem) {
 			elem = htlivesight.DOM.CreateElementRowShortGame(match);
-			if ((htlivesight.League.currentRound!= undefined)&&(htlivesight.League.currentRound.id.has(match.id) && htlivesight.showLeague)) {
+			if ((htlivesight.League.currentRound!= undefined)&&(htlivesight.Util.isInArray(htlivesight.League.currentRound.id, match.id)/*htlivesight.League.currentRound.id.has(match.id)*/ && htlivesight.showLeague)) {
 				if (match.getTeamById(htlivesight.Teams.myTeam.id)) {
 					htlivesight.Util.AddClass(elem,"myLeagueMatch");
 				}
 				document.getElementById("league_grid_rows").appendChild(elem);
-			} else if ((htlivesight.League.currentRound2!= undefined)&&(htlivesight.League.currentRound2.id.has(match.id) && htlivesight.showLeague2)) {
+			} else if ((htlivesight.League.currentRound2!= undefined)&&(htlivesight.Util.isInArray(htlivesight.League.currentRound2.id, match.id)/*htlivesight.League.currentRound2.id.has(match.id)*/ && htlivesight.showLeague2)) {
 				if (!(typeof htlivesight.Teams.mySecondTeam === "undefined") && match.getTeamById(htlivesight.Teams.mySecondTeam.id)) {
 					htlivesight.Util.AddClass(elem,"mySecondLeagueMatch");
 				}
@@ -1917,7 +1917,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 		} else {
 		}
 		if(htlivesight.Util.HasClass(elem,"myLeagueMatch")) {
-			document.getElementById("league_round_time").innerHTML = match.timeElapsed;
+			document.getElementById("league_round_time").textContent = match.timeElapsed;
 			if((htlivesight.League.currentRound!= undefined)&&(htlivesight.League.currentRound.number > htlivesight.League.teams[htlivesight.Teams.myTeam.id].matches)){
 				htlivesight.DOM.UpdateElementBoxLeagueTable(htlivesight.League);
 			}
@@ -1928,7 +1928,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 		}
 		
 		if(htlivesight.Util.HasClass(elem,"mySecondLeagueMatch")) {
-			document.getElementById("league_round_timeBis").innerHTML = match.timeElapsed;
+			document.getElementById("league_round_timeBis").textContent = match.timeElapsed;
 			if((htlivesight.League.currentRound2!= undefined)&&(htlivesight.League.currentRound2.number > htlivesight.League.teams2[htlivesight.Teams.mySecondTeam.id].matches)){
 				htlivesight.DOM.UpdateElementBoxLeagueTable2(htlivesight.League);
 			}
@@ -1939,7 +1939,7 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 		}
 		
 		var teamName=document.getElementById("short_home_name_" + match.id + "_" + match.sourceSystem);
-		teamName.innerHTML = htlivesight.DOM.getTextContent(match.home.team.name);
+		teamName.textContent = htlivesight.DOM.getTextContent(match.home.team.name);
 		if(htlivesight.Friends.isFriend(match.home.team.id,match.sourceSystem)){
 			if(htlivesight.Teams.mySecondTeam &&(match.home.team.id == htlivesight.Teams.mySecondTeam.id)) htlivesight.Util.AddClass(teamName,'short_own'); 
 			else
@@ -1950,11 +1950,11 @@ htlivesight.DOM.UpdateShortBox = function(match) {
 			teamName.setAttribute("title", htlivesight.Util.Parse("addFriend",htlivesight.data[0]));
 			teamName.addEventListener("click", function(){htlivesight.Click.addTeamToFriendsList(match.home.team.id,match.sourceSystem);},false);
 		}
-		document.getElementById("short_home_goals_" + match.id + "_" + match.sourceSystem).innerHTML = match.home.goals;
-		document.getElementById("separator_" + match.id + "_" + match.sourceSystem).innerHTML = ":";
-		document.getElementById("short_away_goals_" + match.id + "_" + match.sourceSystem).innerHTML = match.away.goals;
+		document.getElementById("short_home_goals_" + match.id + "_" + match.sourceSystem).textContent = match.home.goals;
+		document.getElementById("separator_" + match.id + "_" + match.sourceSystem).textContent = ":";
+		document.getElementById("short_away_goals_" + match.id + "_" + match.sourceSystem).textContent = match.away.goals;
 		teamName=document.getElementById("short_away_name_" + match.id + "_" + match.sourceSystem);
-		teamName.innerHTML = htlivesight.DOM.getTextContent(match.away.team.name);
+		teamName.textContent = htlivesight.DOM.getTextContent(match.away.team.name);
 		if(htlivesight.Friends.isFriend(match.away.team.id,match.sourceSystem)){
 			if(htlivesight.Teams.mySecondTeam && match.away.team.id == htlivesight.Teams.mySecondTeam.id) htlivesight.Util.AddClass(teamName,'short_own'); 
 			else

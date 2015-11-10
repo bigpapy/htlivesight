@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-/* Here's some JavaScript software for implementing htlivesight.OAuth.
+/* Here's some JavaScript software for implementing OAuth.
 
-   This isn't as useful as you might hope.  htlivesight.OAuth is based around
+   This isn't as useful as you might hope.  OAuth is based around
    allowing tools and websites to talk to each other.  However,
    JavaScript running in web browsers is hampered by security
    restrictions that prevent code running on one website from
@@ -49,10 +49,10 @@
    {method: "GET", action: "http://server/path", parameters: {p: "x y"}}
    ... can be transmitted as an HTTP request that begins:
    GET /path?p=x%20y HTTP/1.0
-   (This isn't a valid htlivesight.OAuth request, since it lacks a signature etc.)
+   (This isn't a valid OAuth request, since it lacks a signature etc.)
    Note that the object "x y" is transmitted as x%20y.  To encode
-   parameters, you can call htlivesight.OAuth.addToURL, htlivesight.OAuth.formEncode or
-   htlivesight.OAuth.getAuthorization.
+   parameters, you can call OAuth.addToURL, OAuth.formEncode or
+   OAuth.getAuthorization.
 
    This message object model harmonizes with the browser object model for
    input elements of an form, whose value property isn't percent encoded.
@@ -68,31 +68,21 @@
 
    <script src="oauth.js?oauth_timestamp=<?=time()?>" ...
 
-   Another option is to call htlivesight.OAuth.correctTimestamp with a Unix timestamp.
+   Another option is to call OAuth.correctTimestamp with a Unix timestamp.
  */
 
-/* Change Log
- * 
- * 2011-08-12 Bigpapy 
- *   * Add rename OAuth to htlivesight.OAuth to prevent namespace conflicts
- *     in Firefox.
- */
+var OAuth; if (OAuth == null) OAuth = {};
 
-if (!htlivesight)
-	var htlivesight = {};
-
-htlivesight.OAuth = {};
-
-htlivesight.OAuth.setProperties = function setProperties(into, from) {
+OAuth.setProperties = function setProperties(into, from) {
     if (into != null && from != null) {
         for (var key in from) {
             into[key] = from[key];
         }
     }
     return into;
-};
+}
 
-htlivesight.OAuth.setProperties(htlivesight.OAuth, // utility functions
+OAuth.setProperties(OAuth, // utility functions
 {
     percentEncode: function percentEncode(s) {
         if (s == null) {
@@ -102,7 +92,7 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth, // utility functions
             var e = "";
             for (var i = 0; i < s.length; ++s) {
                 if (e != "") e += '&';
-                e += htlivesight.OAuth.percentEncode(s[i]);
+                e += OAuth.percentEncode(s[i]);
             }
             return e;
         }
@@ -134,7 +124,7 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth, // utility functions
             return [];
         }
         if (typeof parameters != "object") {
-            return htlivesight.OAuth.decodeForm(parameters + "");
+            return OAuth.decodeForm(parameters + "");
         }
         if (parameters instanceof Array) {
             return parameters;
@@ -152,7 +142,7 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth, // utility functions
             return {};
         }
         if (typeof parameters != "object") {
-            return htlivesight.OAuth.getParameterMap(htlivesight.OAuth.decodeForm(parameters + ""));
+            return OAuth.getParameterMap(OAuth.decodeForm(parameters + ""));
         }
         if (parameters instanceof Array) {
             var map = {};
@@ -175,20 +165,20 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth, // utility functions
                 }
             }
         } else {
-            return htlivesight.OAuth.getParameterMap(parameters)[name];
+            return OAuth.getParameterMap(parameters)[name];
         }
         return null;
     }
 ,
     formEncode: function formEncode(parameters) {
         var form = "";
-        var list = htlivesight.OAuth.getParameterList(parameters);
+        var list = OAuth.getParameterList(parameters);
         for (var p = 0; p < list.length; ++p) {
             var value = list[p][1];
             if (value == null) value = "";
             if (form != "") form += '&';
-            form += htlivesight.OAuth.percentEncode(list[p][0])
-              +'='+ htlivesight.OAuth.percentEncode(value);
+            form += OAuth.percentEncode(list[p][0])
+              +'='+ OAuth.percentEncode(value);
         }
         return form;
     }
@@ -205,11 +195,11 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth, // utility functions
             var name;
             var value;
             if (equals < 0) {
-                name = htlivesight.OAuth.decodePercent(nvp);
+                name = OAuth.decodePercent(nvp);
                 value = null;
             } else {
-                name = htlivesight.OAuth.decodePercent(nvp.substring(0, equals));
-                value = htlivesight.OAuth.decodePercent(nvp.substring(equals + 1));
+                name = OAuth.decodePercent(nvp.substring(0, equals));
+                value = OAuth.decodePercent(nvp.substring(equals + 1));
             }
             list.push([name, value]);
         }
@@ -233,16 +223,16 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth, // utility functions
                 parameters.push([name, value]);
             }
         } else {
-            parameters = htlivesight.OAuth.getParameterMap(parameters);
+            parameters = OAuth.getParameterMap(parameters);
             parameters[name] = value;
             message.parameters = parameters;
         }
     }
 ,
     setParameters: function setParameters(message, parameters) {
-        var list = htlivesight.OAuth.getParameterList(parameters);
+        var list = OAuth.getParameterList(parameters);
         for (var i = 0; i < list.length; ++i) {
-            htlivesight.OAuth.setParameter(message, list[i][0], list[i][1]);
+            OAuth.setParameter(message, list[i][0], list[i][1]);
         }
     }
 ,
@@ -256,34 +246,34 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth, // utility functions
         if (message.method == null) {
             message.method = "GET";
         }
-        var map = htlivesight.OAuth.getParameterMap(message.parameters);
+        var map = OAuth.getParameterMap(message.parameters);
         if (map.oauth_consumer_key == null) {
-            htlivesight.OAuth.setParameter(message, "oauth_consumer_key", accessor.consumerKey || "");
+            OAuth.setParameter(message, "oauth_consumer_key", accessor.consumerKey || "");
         }
         if (map.oauth_token == null && accessor.token != null) {
-            htlivesight.OAuth.setParameter(message, "oauth_token", accessor.token);
+            OAuth.setParameter(message, "oauth_token", accessor.token);
         }
         if (map.oauth_version == null) {
-            htlivesight.OAuth.setParameter(message, "oauth_version", "1.0");
+            OAuth.setParameter(message, "oauth_version", "1.0");
         }
         if (map.oauth_timestamp == null) {
-            htlivesight.OAuth.setParameter(message, "oauth_timestamp", htlivesight.OAuth.timestamp());
+            OAuth.setParameter(message, "oauth_timestamp", OAuth.timestamp());
         }
         if (map.oauth_nonce == null) {
-            htlivesight.OAuth.setParameter(message, "oauth_nonce", htlivesight.OAuth.nonce(6));
+            OAuth.setParameter(message, "oauth_nonce", OAuth.nonce(6));
         }
-        htlivesight.OAuth.SignatureMethod.sign(message, accessor);
+        OAuth.SignatureMethod.sign(message, accessor);
     }
 ,
     setTimestampAndNonce: function setTimestampAndNonce(message) {
-        htlivesight.OAuth.setParameter(message, "oauth_timestamp", htlivesight.OAuth.timestamp());
-        htlivesight.OAuth.setParameter(message, "oauth_nonce", htlivesight.OAuth.nonce(6));
+        OAuth.setParameter(message, "oauth_timestamp", OAuth.timestamp());
+        OAuth.setParameter(message, "oauth_nonce", OAuth.nonce(6));
     }
 ,
     addToURL: function addToURL(url, parameters) {
         newURL = url;
         if (parameters != null) {
-            var toAdd = htlivesight.OAuth.formEncode(parameters);
+            var toAdd = OAuth.formEncode(parameters);
             if (toAdd.length > 0) {
                 var q = url.indexOf('?');
                 if (q < 0) newURL += '?';
@@ -296,13 +286,13 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth, // utility functions
 ,
     /** Construct the value of the Authorization header for an HTTP request. */
     getAuthorizationHeader: function getAuthorizationHeader(realm, parameters) {
-        var header = 'Htlivesight.OAuth realm="' + htlivesight.OAuth.percentEncode(realm) + '"';
-        var list = htlivesight.OAuth.getParameterList(parameters);
+        var header = 'OAuth realm="' + OAuth.percentEncode(realm) + '"';
+        var list = OAuth.getParameterList(parameters);
         for (var p = 0; p < list.length; ++p) {
             var parameter = list[p];
             var name = parameter[0];
             if (name.indexOf("oauth_") == 0) {
-                header += ',' + htlivesight.OAuth.percentEncode(name) + '="' + htlivesight.OAuth.percentEncode(parameter[1]) + '"';
+                header += ',' + OAuth.percentEncode(name) + '="' + OAuth.percentEncode(parameter[1]) + '"';
             }
         }
         return header;
@@ -317,27 +307,27 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth, // utility functions
         if (!src) return;
         var q = src.indexOf("?");
         if (q < 0) return;
-        parameters = htlivesight.OAuth.getParameterMap(htlivesight.OAuth.decodeForm(src.substring(q+1)));
+        parameters = OAuth.getParameterMap(OAuth.decodeForm(src.substring(q+1)));
         var t = parameters[parameterName];
         if (t == null) return;
-        htlivesight.OAuth.correctTimestamp(t);
+        OAuth.correctTimestamp(t);
     }
 ,
     /** Generate timestamps starting with the given value. */
     correctTimestamp: function correctTimestamp(timestamp) {
-        htlivesight.OAuth.timeCorrectionMsec = (timestamp * 1000) - (new Date()).getTime();
+        OAuth.timeCorrectionMsec = (timestamp * 1000) - (new Date()).getTime();
     }
 ,
     /** The difference between the correct time and my clock. */
     timeCorrectionMsec: 0
 ,
     timestamp: function timestamp() {
-        var t = (new Date()).getTime() + htlivesight.OAuth.timeCorrectionMsec;
+        var t = (new Date()).getTime() + OAuth.timeCorrectionMsec;
         return Math.floor(t / 1000);
     }
 ,
     nonce: function nonce(length) {
-        var chars = htlivesight.OAuth.nonce.CHARS;
+        var chars = OAuth.nonce.CHARS;
         var result = "";
         for (var i = 0; i < length; ++i) {
             var rnum = Math.floor(Math.random() * chars.length);
@@ -347,14 +337,14 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth, // utility functions
     }
 });
 
-htlivesight.OAuth.nonce.CHARS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+OAuth.nonce.CHARS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
 
 /** Define a constructor function,
     without causing trouble to anyone who was using it as a namespace.
     That is, if parent[name] already existed and had properties,
     copy those properties into the new constructor.
  */
-htlivesight.OAuth.declareClass = function declareClass(parent, name, newConstructor) {
+OAuth.declareClass = function declareClass(parent, name, newConstructor) {
     var previous = parent[name];
     parent[name] = newConstructor;
     if (newConstructor != null && previous != null) {
@@ -365,22 +355,18 @@ htlivesight.OAuth.declareClass = function declareClass(parent, name, newConstruc
         }
     }
     return newConstructor;
-};
+}
 
 /** An abstract algorithm for signing messages. */
-htlivesight.OAuth.declareClass(htlivesight.OAuth, "SignatureMethod", function OAuthSignatureMethod(){});
+OAuth.declareClass(OAuth, "SignatureMethod", function OAuthSignatureMethod(){});
 
-htlivesight.OAuth.setProperties(htlivesight.OAuth.SignatureMethod.prototype, // instance members
+OAuth.setProperties(OAuth.SignatureMethod.prototype, // instance members
 {
     /** Add a signature to the message. */
     sign: function sign(message) {
-    	//alert("sign bis1");
-        var baseString = htlivesight.OAuth.SignatureMethod.getBaseString(message);
-        //alert("sign bis2");
+        var baseString = OAuth.SignatureMethod.getBaseString(message);
         var signature = this.getSignature(baseString);
-        //alert("sign bis3");
-        htlivesight.OAuth.setParameter(message, "oauth_signature", signature);
-        //alert("sign bis4");
+        OAuth.setParameter(message, "oauth_signature", signature);
         return signature; // just in case someone's interested
     }
 ,
@@ -395,8 +381,8 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth.SignatureMethod.prototype, // 
         } else {
             consumerSecret = accessor.consumerSecret;
         }
-        this.key = htlivesight.OAuth.percentEncode(consumerSecret)
-             +"&"+ htlivesight.OAuth.percentEncode(accessor.tokenSecret);
+        this.key = OAuth.percentEncode(consumerSecret)
+             +"&"+ OAuth.percentEncode(accessor.tokenSecret);
     }
 });
 
@@ -405,47 +391,33 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth.SignatureMethod.prototype, // 
    The accessorSecret property is optional.
  */
 // Class members:
-htlivesight.OAuth.setProperties(htlivesight.OAuth.SignatureMethod, // class members
+OAuth.setProperties(OAuth.SignatureMethod, // class members
 {
-    sign: function sign(message, accessor) {//alert("sign1");
-        var name = htlivesight.OAuth.getParameterMap(message.parameters).oauth_signature_method;
-        //alert("sign2");
+    sign: function sign(message, accessor) {
+        var name = OAuth.getParameterMap(message.parameters).oauth_signature_method;
         if (name == null || name == "") {
             name = "HMAC-SHA1";
-            htlivesight.OAuth.setParameter(message, "oauth_signature_method", name);
+            OAuth.setParameter(message, "oauth_signature_method", name);
         }
-        //alert("sign3");
-        htlivesight.OAuth.SignatureMethod.newMethod(name, accessor).sign(message);
-        //alert("sign4");
+        OAuth.SignatureMethod.newMethod(name, accessor).sign(message);
     }
 ,
     /** Instantiate a SignatureMethod for the given method name. */
     newMethod: function newMethod(name, accessor) {
-    	//alert("newMethod1");
-        var impl = htlivesight.OAuth.SignatureMethod.REGISTERED[name];
-        //alert("newMethod2");
+        var impl = OAuth.SignatureMethod.REGISTERED[name];
         if (impl != null) {
-        	//alert("newMethod3");
             var method = new impl();
-            //alert("newMethod4");
             method.initialize(name, accessor);
-            //alert("newMethod5");
             return method;
         }
-        //alert("newMethod6");
         var err = new Error("signature_method_rejected");
-        //alert("newMethod7");
         var acceptable = "";
-        //alert("newMethod8");
-        for (var r in htlivesight.OAuth.SignatureMethod.REGISTERED) {
+        for (var r in OAuth.SignatureMethod.REGISTERED) {
             if (acceptable != "") acceptable += '&';
-            acceptable += htlivesight.OAuth.percentEncode(r);
+            acceptable += OAuth.percentEncode(r);
         }
-        //alert("newMethod9");
         err.oauth_acceptable_signature_methods = acceptable;
-        //alert("newMethod10");
         throw err;
-        //alert("newMethod11");
     }
 ,
     /** A map from signature method name to constructor. */
@@ -458,13 +430,13 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth.SignatureMethod, // class memb
      */
     registerMethodClass: function registerMethodClass(names, classConstructor) {
         for (var n = 0; n < names.length; ++n) {
-            htlivesight.OAuth.SignatureMethod.REGISTERED[names[n]] = classConstructor;
+            OAuth.SignatureMethod.REGISTERED[names[n]] = classConstructor;
         }
     }
 ,
-    /** Create a subclass of htlivesight.OAuth.SignatureMethod, with the given getSignature function. */
+    /** Create a subclass of OAuth.SignatureMethod, with the given getSignature function. */
     makeSubclass: function makeSubclass(getSignatureFunction) {
-        var superClass = htlivesight.OAuth.SignatureMethod;
+        var superClass = OAuth.SignatureMethod;
         var subClass = function() {
             superClass.call(this);
         };
@@ -484,19 +456,19 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth.SignatureMethod, // class memb
             parameters = message.parameters;
         } else {
             // Combine the URL query string with the other parameters:
-            parameters = htlivesight.OAuth.decodeForm(URL.substring(q + 1));
-            var toAdd = htlivesight.OAuth.getParameterList(message.parameters);
+            parameters = OAuth.decodeForm(URL.substring(q + 1));
+            var toAdd = OAuth.getParameterList(message.parameters);
             for (var a = 0; a < toAdd.length; ++a) {
                 parameters.push(toAdd[a]);
             }
         }
-        return htlivesight.OAuth.percentEncode(message.method.toUpperCase())
-         +'&'+ htlivesight.OAuth.percentEncode(htlivesight.OAuth.SignatureMethod.normalizeUrl(URL))
-         +'&'+ htlivesight.OAuth.percentEncode(htlivesight.OAuth.SignatureMethod.normalizeParameters(parameters));
+        return OAuth.percentEncode(message.method.toUpperCase())
+         +'&'+ OAuth.percentEncode(OAuth.SignatureMethod.normalizeUrl(URL))
+         +'&'+ OAuth.percentEncode(OAuth.SignatureMethod.normalizeParameters(parameters));
     }
 ,
     normalizeUrl: function normalizeUrl(url) {
-        var uri = htlivesight.OAuth.SignatureMethod.parseUri(url);
+        var uri = OAuth.SignatureMethod.parseUri(url);
         var scheme = uri.protocol.toLowerCase();
         var authority = uri.authority.toLowerCase();
         var dropPort = (scheme == "http" && uri.port == 80)
@@ -533,14 +505,14 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth.SignatureMethod, // class memb
         if (parameters == null) {
             return "";
         }
-        var list = htlivesight.OAuth.getParameterList(parameters);
+        var list = OAuth.getParameterList(parameters);
         var sortable = [];
         for (var p = 0; p < list.length; ++p) {
             var nvp = list[p];
             if (nvp[0] != "oauth_signature") {
-                sortable.push([ htlivesight.OAuth.percentEncode(nvp[0])
+                sortable.push([ OAuth.percentEncode(nvp[0])
                               + " " // because it comes before any character that can appear in a percentEncoded string.
-                              + htlivesight.OAuth.percentEncode(nvp[1])
+                              + OAuth.percentEncode(nvp[1])
                               , nvp]);
             }
         }
@@ -553,30 +525,27 @@ htlivesight.OAuth.setProperties(htlivesight.OAuth.SignatureMethod, // class memb
         for (var s = 0; s < sortable.length; ++s) {
             sorted.push(sortable[s][1]);
         }
-        return htlivesight.OAuth.formEncode(sorted);
+        return OAuth.formEncode(sorted);
     }
 });
 
-htlivesight.OAuth.SignatureMethod.registerMethodClass(["PLAINTEXT", "PLAINTEXT-Accessor"],
-    htlivesight.OAuth.SignatureMethod.makeSubclass(
+OAuth.SignatureMethod.registerMethodClass(["PLAINTEXT", "PLAINTEXT-Accessor"],
+    OAuth.SignatureMethod.makeSubclass(
         function getSignature(baseString) {
             return this.key;
         }
     ));
 
-htlivesight.OAuth.SignatureMethod.registerMethodClass(["HMAC-SHA1", "HMAC-SHA1-Accessor"],
-    htlivesight.OAuth.SignatureMethod.makeSubclass(
+OAuth.SignatureMethod.registerMethodClass(["HMAC-SHA1", "HMAC-SHA1-Accessor"],
+    OAuth.SignatureMethod.makeSubclass(
         function getSignature(baseString) {
-        	//alert("getsignature1");
-            htlivesight.SHA1.b64pad = '=';
-            //alert("getsignature2");
-            var signature = htlivesight.SHA1.b64_hmac_sha1(this.key, baseString);
-            //alert("getsignature3");
+            b64pad = '=';
+            var signature = b64_hmac_sha1(this.key, baseString);
             return signature;
         }
     ));
 
 try {
-    htlivesight.OAuth.correctTimestampFromSrc();
+    OAuth.correctTimestampFromSrc();
 } catch(e) {
 }

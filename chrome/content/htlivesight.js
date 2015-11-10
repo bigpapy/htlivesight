@@ -328,7 +328,7 @@ var htlivesight = {
 			if(parseInt(document.getElementById("secondTeamId").value)){
 				htlivesight.League.HTTPFixtures(htlivesight.Teams.mySecondTeam.league.id,"mySecondTeam");
 			}else{
-				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TOURNAMENTS);
+				htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_YOUTHLEAGUE);//disabled tournaments
 			}
 		},
 		GetTournaments: function() {
@@ -467,15 +467,19 @@ var htlivesight = {
 		localization: function() {
 			htlivesight.prefs=htlivesight.Preferences.get();
 			htlivesight.url = htlivesightEnv.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
-			htlivesight.languageXML = htlivesight.loadXml(htlivesight.url);
-			htlivesight.data=htlivesight.languageXML.getElementsByTagName("Htlivesight");
-			if (!htlivesightPrefs.getBool("HtlsFirstStart")){
-				var optionsPage=window.open(htlivesightEnv.contentPath+"settings.html","_blank");
-				htlivesightPrefs.setBool("HtlsFirstStart",true);
-			};
+			//htlivesight.languageXML = htlivesight.loadXml(htlivesight.url);
+			htlivesight.loadXml(htlivesight.url, function(xml, status){
+				if(status != 200){return}
+				htlivesight.data = xml.getElementsByTagName("Htlivesight");
+				if (!htlivesightPrefs.getBool("HtlsFirstStart")){
+					var optionsPage=window.open(htlivesightEnv.contentPath+"settings.html","_blank");
+					htlivesightPrefs.setBool("HtlsFirstStart",true);
+				};	
+			});
+			
 		},  
 		chatdelay: function() {
-			document.getElementById("chat-dialog").innerHTML = '<iframe src="http://webchat.quakenet.org/?channels=htlivesight&uio=OT10cnVlJjExPTEyMwb9" width="647" height="400"></iframe>';
+			document.getElementById("chat-dialog").innerHTML = '<iframe type="content" src="http://webchat.quakenet.org/?channels=htlivesight&uio=OT10cnVlJjExPTEyMwb9" width="647" height="400"></iframe>';
 		},
 		setvolume: function(volume){
 			if(volume == 0){

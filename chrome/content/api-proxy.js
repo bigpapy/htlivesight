@@ -46,9 +46,9 @@ htlivesight.ApiProxy = {
 		                  ["oauth_callback", "oob"] // no callback
 		                  ]
 	    };
-	    htlivesight.OAuth.setTimestampAndNonce(msg);
-	    htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
-	    var requestTokenUrl = htlivesight.OAuth.addToURL(htlivesight.ApiProxy.requestTokenUrl, msg.parameters);
+	    OAuth.setTimestampAndNonce(msg);
+	    OAuth.SignatureMethod.sign(msg, accessor);
+	    var requestTokenUrl = OAuth.addToURL(htlivesight.ApiProxy.requestTokenUrl, msg.parameters);
 	    htlivesight.load(requestTokenUrl, function(text, status) {
 		if (status != 200) { // failed to fetch link
 		    alert("status: "+ status);
@@ -102,9 +102,9 @@ htlivesight.ApiProxy = {
 				              ["oauth_verifier", oauthVerifier]
 				              ]
 			};
-			htlivesight.OAuth.setTimestampAndNonce(msg);
-			htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
-			var query = htlivesight.OAuth.formEncode(msg.parameters);
+			OAuth.setTimestampAndNonce(msg);
+			OAuth.SignatureMethod.sign(msg, accessor);
+			var query = OAuth.formEncode(msg.parameters);
 			var accessTokenUrl = htlivesight.ApiProxy.accessTokenUrl + "?" + query;
 			htlivesight.load(accessTokenUrl, function(text) {
 			    try{// added because of error not influent to the target of the function
@@ -147,7 +147,7 @@ htlivesight.ApiProxy = {
 		    method : "get",
 		    parameters : parameters
 	    };
-	    htlivesight.OAuth.setParameters(msg, [
+	    OAuth.setParameters(msg, [
                                                  ["oauth_consumer_key", htlivesight.ApiProxy.consumerKey],
                                                  ["oauth_token", htlivesight.ApiProxy.getAccessToken(teamId)],
                                                  ["oauth_signature_method", htlivesight.ApiProxy.signatureMethod],
@@ -155,9 +155,9 @@ htlivesight.ApiProxy = {
                                                  ["oauth_timestamp", ""],
                                                  ["oauth_nonce", ""],
                                                  ]);
-	    htlivesight.OAuth.setTimestampAndNonce(msg);
-	    htlivesight.OAuth.SignatureMethod.sign(msg, accessor);
-	    var url = htlivesight.OAuth.addToURL(htlivesight.ApiProxy.resourceUrl, msg.parameters);
+	    OAuth.setTimestampAndNonce(msg);
+	    OAuth.SignatureMethod.sign(msg, accessor);
+	    var url = OAuth.addToURL(htlivesight.ApiProxy.resourceUrl, msg.parameters);
 	    htlivesight.loadXml(url, function(x, status) {
 		switch (status){
 

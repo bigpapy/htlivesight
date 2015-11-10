@@ -619,7 +619,7 @@ htlivesight.LineUp.toClipboard= function(lineup,id,minute,e){
   lineup=lineuptxt.split(",");
   var tacticId=id.replace(/formation/,"tactic").replace(/_table/,"");
   //alert(tacticId);
-  var tactic=document.getElementById(tacticId).innerHTML;
+  var tactic=document.getElementById(tacticId).textContent;
 //	var lineup=lineuptxt.split(",");
 	var lineupString="[table][tr][th colspan=5 align=center]"+teamName+" "+minute+"' "+tactic+"[/th][/tr][tr]";
 		for(var i=0;i<lineup.length;i++){

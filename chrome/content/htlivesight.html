@@ -14,8 +14,9 @@
 <!--Livefox Theme-->
 <link rel="stylesheet" type="text/css" href="./themes/custom.css" />
 <!--Custom Tweaks-->
-<script type="text/javascript" src="lib/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="lib/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javascript" src="lib/jquery-1.8.3.min.js"></script>
+<!-- <script type="text/javascript" src="lib/jquery-ui-1.8.23.custom.min.js"></script>-->
+<script type="text/javascript" src="lib/jquery-ui.min.js"></script>
 <script type="application/x-javascript" src="htlivesight.js"></script>
 <script type="application/x-javascript" src="env.js"></script>
 <script type="application/x-javascript" src="lang.js"></script>
@@ -48,6 +49,7 @@
 <script type="application/x-javascript" src="lineup.js"></script>
 <script type="application/x-javascript" src="htlivesight_listeners.js"></script>
 <script type="application/x-javascript" src="settings_listeners.js"></script>
+<!-- source of oauth.js and sha1.js: https://oauth.googlecode.com/svn/code/javascript/ -->
 <script type="application/x-javascript" src="./lib/oauth.js"></script>
 <script type="application/x-javascript" src="./lib/sha1.js"></script>
 <script type="application/x-javascript" src="jquery.js"></script>
@@ -319,7 +321,7 @@
 						class="text ui-widget-content ui-corner-all" /> <label
 						id="YouthMatchesHours" for="txtGetYouthLeagueWithinHours">hours</label><br />
 				</fieldset>
-				<fieldset>
+				<fieldset style="display: none;">
 					<legend id="MatchesTournament"> Tournament Matches</legend>
 					<input type="checkbox" id="chkGetTournament" /><label
 						for="chkGetTournament" id="label_chkGetTournament">Load
@@ -845,18 +847,18 @@
 			</ul>
 			<div id="tabs-1">
 				<img src="./themes/images/256.png" alt="HTLiveSight Logo"><br />
-				HTLiveSightDEV 0.6.1063<br /> <span id="creationDate"></span><br />
+				HTLiveSightDEV 0.7.1065<br /> <span id="creationDate"></span><br />
 				<br /> <span id="createdBy"></span><br />
 				<a
-					href="http://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=10246801"
+					href="https://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=10246801"
 					target='blank'> Silkevicious</a> &amp; <a
-					href="http://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=7967145"
+					href="https://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=7967145"
 					target='blank'>Bigpapy</a><br /> <br />
 				<span id='testers'>Testers</span><br />
 				<a
-					href="http://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=9100817"
+					href="https://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=9100817"
 					target='blank'>Davidatorus</a> &amp; <a
-					href="http://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=11288067"
+					href="https://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=11288067"
 					target='blank'>Pietrisque</a><br /> <br /> <span id="BasedOn">Based
 					on</span> <span id="BasedOnTitle"> HattrickLiveFox</span><br /> <a
 					href="http://hattricklivefox.mozdev.org" target="_newtab">http://hattricklivefox.mozdev.org</a>
@@ -947,7 +949,7 @@
 		<div id="left_topbar">
 			<span id="latestNews">Check out the latest news on</span> <a
 				title="Hattrick Forum" id="HTLSThread"
-				href="http://www.hattrick.org/goto.ashx?path=/Forum/Overview.aspx?v=0%26f=796547"
+				href="https://www.hattrick.org/goto.ashx?path=/Forum/Overview.aspx?v=0%26f=796547"
 				target="_blank"> <img alt="hattrick" class="socialicon"
 				src="./themes/images/ht.png">
 			</a> <a title="Project Website" id="ProjectWebsite"
