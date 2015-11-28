@@ -87,6 +87,13 @@ htlivesight.Lang = {
 				doc.getElementById("label_chkHdrInjured").textContent=htlivesight.Util.Parse("InjuredList",htlivesight.data[0]);
 				doc.getElementById("MatchesWindow").textContent=htlivesight.Util.Parse("MatchesWindow",htlivesight.data[0]);
 				doc.getElementById("MatchesLines").textContent=htlivesight.Util.Parse("MatchesLines",htlivesight.data[0]);
+				
+				doc.getElementById("label_chkGetYouthLeague").textContent=htlivesight.Util.Parse("MatchesGetLeague",htlivesight.data[0]);
+				doc.getElementById("label_chkGetYouthLeagueWithin").textContent=htlivesight.Util.Parse("MatchesPlayed",htlivesight.data[0]);
+				doc.getElementById("YouthMatchesHours").textContent=htlivesight.Util.Parse("MatchesHours",htlivesight.data[0]);
+				doc.getElementById("MatchesYouth").textContent=htlivesight.Util.Parse("YouthMatches",htlivesight.data[0]);
+				doc.getElementById("label_chkGetYouthNearestMatch").textContent=htlivesight.Util.Parse("GetYouthNearestMatch",htlivesight.data[0]);
+				doc.getElementById("MatchesYouthLeague").textContent=htlivesight.Util.Parse("MatchesYouthLeague",htlivesight.data[0]);
 		//			alert("Settings tab 3");
 				doc.getElementById("TabNotifications").textContent=htlivesight.Util.Parse("TabNotifications",htlivesight.data[0]);
 				doc.getElementById("NotifyNotify").textContent=htlivesight.Util.Parse("NotifyNotify",htlivesight.data[0]);

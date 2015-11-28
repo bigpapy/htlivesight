@@ -425,4 +425,7 @@
 <PrefsRestart>Alcune impostazioni richiedono un riavvio!</PrefsRestart>
 <ClickToSave>Clicca su OK nella finestra delle preferenze per salvarle.</ClickToSave>
 <TooltipWindowSpeech>Attiva e disattiva la sintesi vocale degli eventi della partita</TooltipWindowSpeech>
+<YouthMatches>Partite giovanili</YouthMatches>
+<GetYouthNearestMatch>Carica automaticamente le partite della tua squadra giovanile</GetYouthNearestMatch>
+<MatchesYouthLeague>Partite del campionato giovanile</MatchesYouthLeague>
 </Htlivesight>
