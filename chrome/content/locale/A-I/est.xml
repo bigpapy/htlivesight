@@ -425,4 +425,7 @@
 <PrefsRestart>Mõned seadistused vajavad taaskäivitust!</PrefsRestart>
 <ClickToSave>Salvestamiseks kliki OK seadistuste aknas.</ClickToSave>
 <TooltipWindowSpeech>Luba või keela tekst-kõneks funktsioon mängu kirjelduste kohta</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

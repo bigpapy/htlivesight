@@ -425,4 +425,7 @@
 <PrefsRestart>Nogle indstillinger kræver genstart!</PrefsRestart>
 <ClickToSave>Klik på OK i indstillingsvinduet for at gemme dem.</ClickToSave>
 <TooltipWindowSpeech>Slå tekst-til-tale for kamphændelser fra eller til</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

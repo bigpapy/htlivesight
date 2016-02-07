@@ -425,4 +425,7 @@
 <PrefsRestart>É necessário reiniciar algumas das preferências!</PrefsRestart>
 <ClickToSave>Clique OK na janela de preferências para as salvar.</ClickToSave>
 <TooltipWindowSpeech>Ativar e desativar sintese de voz nas notificações de eventos de jogo</TooltipWindowSpeech>
+<YouthMatches>Jogos de juniores</YouthMatches>
+<GetYouthNearestMatch>Carrega automaticamente os teus jogos de juniores</GetYouthNearestMatch>
+<MatchesYouthLeague>Jogos da Liga de Juniores</MatchesYouthLeague>
 </Htlivesight>

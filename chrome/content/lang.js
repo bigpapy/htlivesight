@@ -186,6 +186,7 @@ htlivesight.Lang = {
 				doc.getElementById("label_chkExportOauth").textContent=htlivesight.Util.Parse("ExportOauth",htlivesight.data[0]);
 				doc.getElementById("label_chkExportBackground").textContent=htlivesight.Util.Parse("ExportBackground",htlivesight.data[0]);
 				doc.getElementById("label_chkExportSounds").textContent=htlivesight.Util.Parse("ExportSounds",htlivesight.data[0]);
+				doc.getElementById("label_chkYouthSoundEqualSenior").textContent=htlivesight.Util.Parse("YouthSoundEqualSenior",htlivesight.data[0]);
 				
 				if(htlivesight.platform == "Safari"){
 				  $("[type='file']").hide();
@@ -198,7 +199,7 @@ htlivesight.Lang = {
 				doc.getElementById("ReLiveControls").textContent=htlivesight.Util.Parse("ReLiveControls",htlivesight.data[0]);
 				doc.getElementById("volume_slider").title=htlivesight.Util.Parse("Volume",htlivesight.data[0]);
 		//			SIDEBAR
-				doc.getElementById("LeagueMatches").textContent=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);
+				doc.getElementById("LeagueMatches").textContent=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);				
 				doc.getElementById("LeagueLiveTable").textContent=htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0]);
 				doc.getElementById("LeaguePosition").textContent=htlivesight.Util.Parse("LeaguePosition",htlivesight.data[0]);
 				doc.getElementById("LeagueTeam").textContent=htlivesight.Util.Parse("LeagueTeam",htlivesight.data[0]);
@@ -214,6 +215,24 @@ htlivesight.Lang = {
 				doc.getElementById("LeagueGoalsBis").textContent=htlivesight.Util.Parse("LeagueGoals",htlivesight.data[0]);
 				doc.getElementById("LeagueGoalDiffBis").textContent=htlivesight.Util.Parse("LeagueGoalDiff",htlivesight.data[0]);
 				doc.getElementById("LeaguePointsBis").textContent=htlivesight.Util.Parse("LeaguePoints",htlivesight.data[0]);
+				
+				doc.getElementById("YouthLeagueMatches").textContent=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);
+				doc.getElementById("YouthLeagueLiveTable").textContent=htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0]);
+				doc.getElementById("YouthLeaguePosition").textContent=htlivesight.Util.Parse("LeaguePosition",htlivesight.data[0]);
+				doc.getElementById("YouthLeagueTeam").textContent=htlivesight.Util.Parse("LeagueTeam",htlivesight.data[0]);
+				doc.getElementById("YouthLeaguePlayed").textContent=htlivesight.Util.Parse("LeaguePlayed",htlivesight.data[0]);
+				doc.getElementById("YouthLeagueGoals").textContent=htlivesight.Util.Parse("LeagueGoals",htlivesight.data[0]);
+				doc.getElementById("YouthLeagueGoalDiff").textContent=htlivesight.Util.Parse("LeagueGoalDiff",htlivesight.data[0]);
+				doc.getElementById("YouthLeaguePoints").textContent=htlivesight.Util.Parse("LeaguePoints",htlivesight.data[0]);
+				
+				doc.getElementById("YouthLeagueMatchesBis").textContent=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);
+				doc.getElementById("YouthLeagueLiveTableBis").textContent=htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0]);
+				doc.getElementById("YouthLeaguePositionBis").textContent=htlivesight.Util.Parse("LeaguePosition",htlivesight.data[0]);
+				doc.getElementById("YouthLeagueTeamBis").textContent=htlivesight.Util.Parse("LeagueTeam",htlivesight.data[0]);
+				doc.getElementById("YouthLeaguePlayedBis").textContent=htlivesight.Util.Parse("LeaguePlayed",htlivesight.data[0]);
+				doc.getElementById("YouthLeagueGoalsBis").textContent=htlivesight.Util.Parse("LeagueGoals",htlivesight.data[0]);
+				doc.getElementById("YouthLeagueGoalDiffBis").textContent=htlivesight.Util.Parse("LeagueGoalDiff",htlivesight.data[0]);
+				doc.getElementById("YouthLeaguePointsBis").textContent=htlivesight.Util.Parse("LeaguePoints",htlivesight.data[0]);
 				
 				doc.getElementById("MatchesList").textContent=htlivesight.Util.Parse("MatchesList",htlivesight.data[0]);
 				doc.getElementById("FriendsTitle").textContent=htlivesight.Util.Parse("FriendsTitle",htlivesight.data[0]);

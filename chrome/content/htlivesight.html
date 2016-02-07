@@ -461,7 +461,12 @@
 						<br /> <input type="checkbox" id="chkSecondSoundEqualFirst" /><label
 							for="chkSecondSoundEqualFirst"
 							id="label_chkSecondSoundEqualFirst">Second team sounds
-							equal to first ones</label><br /> <input type="checkbox" id="weather" /><label
+							equal to first ones</label><br />
+							<input type="checkbox" id="chkYouthSoundEqualSenior" /><label for="chkYouthSoundEqualSenior"
+							id="label_chkYouthSoundEqualSenior">Youth team sounds
+							equal to senior ones</label><br />
+							
+							<input type="checkbox" id="weather" /><label
 							for="weather" id="label_weather">Weather sound for start
 							of the match</label><br /> <input type="checkbox" id="whistleTime" /><label
 							for="whistleTime" id="label_whistleTime">Sound for
@@ -1362,17 +1367,16 @@
 									<th class="header_league_table"><span id="YouthLeagueTeam"></span></th>
 									<th class="header_league_table"></th>
 									<th class="header_league_table"><span id="YouthLeaguePlayed"></span></th>
-									<th class="header_league_table" colspan="3"><span
-										id="LeagueGoals"></span></th>
+									<th class="header_league_table" colspan="3"><span	id="YouthLeagueGoals"></span></th>
 									<th class="header_league_table"><span id="YouthLeagueGoalDiff"></span></th>
 									<th class="header_league_table"><span id="YouthLeaguePoints"></span></th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr id="youthleaguetable_1">
+								<tr id="youthleaguetable_1" style="display:none">
 									<td><span>1</span></td>
 									<td><span id="youthleaguetable_1_name"></span></td>
-									<td><img id="youthLeaguetable_1_change"
+									<td><img id="youthleaguetable_1_change"
 										class="leaguetable_equal" /></td>
 									<td><span id="youthleaguetable_1_matches"></span></td>
 									<td><span id="youthleaguetable_1_goals_for"></span></td>
@@ -1381,7 +1385,7 @@
 									<td><span id="youthleaguetable_1_goaldif"></span></td>
 									<td><span id="youthleaguetable_1_points"></span></td>
 								</tr>
-								<tr id="youthleaguetable_2">
+								<tr id="youthleaguetable_2" style="display:none">
 									<td><span>2</span></td>
 									<td><span id="youthleaguetable_2_name"></span></td>
 									<td><img id="youthleaguetable_2_change"
@@ -1393,7 +1397,7 @@
 									<td><span id="youthleaguetable_2_goaldif"></span></td>
 									<td><span id="youthleaguetable_2_points"></span></td>
 								</tr>
-								<tr id="youthleaguetable_3">
+								<tr id="youthleaguetable_3" style="display:none">
 									<td><span>3</span></td>
 									<td><span id="youthleaguetable_3_name"></span></td>
 									<td><img id="youthleaguetable_3_change"
@@ -1405,7 +1409,7 @@
 									<td><span id="youthleaguetable_3_goaldif"></span></td>
 									<td><span id="youthleaguetable_3_points"></span></td>
 								</tr>
-								<tr id="youthleaguetable_4">
+								<tr id="youthleaguetable_4" style="display:none">
 									<td><span>4</span></td>
 									<td><span id="youthleaguetable_4_name"></span></td>
 									<td><img id="youthleaguetable_4_change"
@@ -1417,7 +1421,7 @@
 									<td><span id="youthleaguetable_4_goaldif"></span></td>
 									<td><span id="youthleaguetable_4_points"></span></td>
 								</tr>
-								<tr id="youthleaguetable_5">
+								<tr id="youthleaguetable_5" style="display:none">
 									<td><span>5</span></td>
 									<td><span id="youthleaguetable_5_name"></span></td>
 									<td><img id="youthleaguetable_5_change"
@@ -1429,7 +1433,7 @@
 									<td><span id="youthleaguetable_5_goaldif"></span></td>
 									<td><span id="youthleaguetable_5_points"></span></td>
 								</tr>
-								<tr id="youthleaguetable_6">
+								<tr id="youthleaguetable_6" style="display:none">
 									<td><span>6</span></td>
 									<td><span id="youthleaguetable_6_name"></span></td>
 									<td><img id="youthleaguetable_6_change"
@@ -1441,7 +1445,7 @@
 									<td><span id="youthleaguetable_6_goaldif"></span></td>
 									<td><span id="youthleaguetable_6_points"></span></td>
 								</tr>
-								<tr id="youthleaguetable_7">
+								<tr id="youthleaguetable_7" style="display:none">
 									<td><span>7</span></td>
 									<td><span id="youthleaguetable_7_name"></span></td>
 									<td><img id="youthleaguetable_7_change"
@@ -1453,7 +1457,7 @@
 									<td><span id="youthleaguetable_7_goaldif"></span></td>
 									<td><span id="youthleaguetable_7_points"></span></td>
 								</tr>
-								<tr id="youthleaguetable_8">
+								<tr id="youthleaguetable_8" style="display:none">
 									<td><span>8</span></td>
 									<td><span id="youthleaguetable_8_name"></span></td>
 									<td><img id="youthleaguetable_8_change"
@@ -1465,6 +1469,102 @@
 									<td><span id="youthleaguetable_8_goaldif"></span></td>
 									<td><span id="youthleaguetable_8_points"></span></td>
 								</tr>
+								<tr id="youthleaguetable_9" style="display:none">
+									<td><span>9</span></td>
+									<td><span id="youthleaguetable_9_name"></span></td>
+									<td><img id="youthleaguetable_9_change"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_9_matches"></span></td>
+									<td><span id="youthleaguetable_9_goals_for"></span></td>
+									<td><span id="youthleaguetable_9_goals">-</span></td>
+									<td><span id="youthleaguetable_9_goals_against"></span></td>
+									<td><span id="youthleaguetable_9_goaldif"></span></td>
+									<td><span id="youthleaguetable_9_points"></span></td>
+								</tr>
+								<tr id="youthleaguetable_10" style="display:none">
+									<td><span>10</span></td>
+									<td><span id="youthleaguetable_10_name"></span></td>
+									<td><img id="youthleaguetable_10_change"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_10_matches"></span></td>
+									<td><span id="youthleaguetable_10_goals_for"></span></td>
+									<td><span id="youthleaguetable_10_goals">-</span></td>
+									<td><span id="youthleaguetable_10_goals_against"></span></td>
+									<td><span id="youthleaguetable_10_goaldif"></span></td>
+									<td><span id="youthleaguetable_10_points"></span></td>
+								</tr>
+								<tr id="youthleaguetable_11" style="display:none">
+									<td><span>11</span></td>
+									<td><span id="youthleaguetable_11_name"></span></td>
+									<td><img id="youthleaguetable_11_change"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_11_matches"></span></td>
+									<td><span id="youthleaguetable_11_goals_for"></span></td>
+									<td><span id="youthleaguetable_11_goals">-</span></td>
+									<td><span id="youthleaguetable_11_goals_against"></span></td>
+									<td><span id="youthleaguetable_11_goaldif"></span></td>
+									<td><span id="youthleaguetable_11_points"></span></td>
+								</tr>
+								<tr id="youthleaguetable_12" style="display:none">
+									<td><span>12</span></td>
+									<td><span id="youthleaguetable_12_name"></span></td>
+									<td><img id="youthleaguetable_12_change"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_12_matches"></span></td>
+									<td><span id="youthleaguetable_12_goals_for"></span></td>
+									<td><span id="youthleaguetable_12_goals">-</span></td>
+									<td><span id="youthleaguetable_12_goals_against"></span></td>
+									<td><span id="youthleaguetable_12_goaldif"></span></td>
+									<td><span id="youthleaguetable_12_points"></span></td>
+								</tr>
+								<tr id="youthleaguetable_13" style="display:none">
+									<td><span>13</span></td>
+									<td><span id="youthleaguetable_13_name"></span></td>
+									<td><img id="youthleaguetable_13_change"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_13_matches"></span></td>
+									<td><span id="youthleaguetable_13_goals_for"></span></td>
+									<td><span id="youthleaguetable_13_goals">-</span></td>
+									<td><span id="youthleaguetable_13_goals_against"></span></td>
+									<td><span id="youthleaguetable_13_goaldif"></span></td>
+									<td><span id="youthleaguetable_13_points"></span></td>
+								</tr>
+								<tr id="youthleaguetable_14" style="display:none">
+									<td><span>14</span></td>
+									<td><span id="youthleaguetable_14_name"></span></td>
+									<td><img id="youthleaguetable_14_change"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_14_matches"></span></td>
+									<td><span id="youthleaguetable_14_goals_for"></span></td>
+									<td><span id="youthleaguetable_14_goals">-</span></td>
+									<td><span id="youthleaguetable_14_goals_against"></span></td>
+									<td><span id="youthleaguetable_14_goaldif"></span></td>
+									<td><span id="youthleaguetable_14_points"></span></td>
+								</tr>
+								<tr id="youthleaguetable_15" style="display:none">
+									<td><span>15</span></td>
+									<td><span id="youthleaguetable_15_name"></span></td>
+									<td><img id="youthleaguetable_15_change"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_15_matches"></span></td>
+									<td><span id="youthleaguetable_15_goals_for"></span></td>
+									<td><span id="youthleaguetable_15_goals">-</span></td>
+									<td><span id="youthleaguetable_15_goals_against"></span></td>
+									<td><span id="youthleaguetable_15_goaldif"></span></td>
+									<td><span id="youthleaguetable_15_points"></span></td>
+								</tr>
+								<tr id="youthleaguetable_16" style="display:none">
+									<td><span>16</span></td>
+									<td><span id="youthleaguetable_16_name"></span></td>
+									<td><img id="youthleaguetable_16_change"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_16_matches"></span></td>
+									<td><span id="youthleaguetable_16_goals_for"></span></td>
+									<td><span id="youthleaguetable_16_goals">-</span></td>
+									<td><span id="youthleaguetable_16_goals_against"></span></td>
+									<td><span id="youthleaguetable_16_goaldif"></span></td>
+									<td><span id="youthleaguetable_16_points"></span></td>
+								</tr>
 							</tbody>
 						</table>
 					</div>
@@ -1472,9 +1572,9 @@
 			</div>
 
 
-			<div id="winbox_youthLeaguematchesBis">
-				<h3 id="h3LeagueMatchesBis" style="display: none">
-					<a href="#" id="LeagueMatchesBis" style="display: none"></a>
+			<div id="winbox_youthleaguematchesBis">
+				<h3 id="h3YouthLeagueMatchesBis" style="display: none">
+					<a href="#" id="YouthLeagueMatchesBis" style="display: none"></a>
 				</h3>
 				<div id="winboxcontent_youthLeaguematchesBis" style="display: none">
 					<div id="contentbody_youthLeaguematchesBis">
@@ -1520,7 +1620,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr id="youthleaguetable_1Bis">
+								<tr id="youthleaguetable_1Bis" style="display: none">
 									<td><span>1</span></td>
 									<td><span id="youthleaguetable_1_nameBis"></span></td>
 									<td><img id="youthleaguetable_1_changeBis"
@@ -1532,7 +1632,7 @@
 									<td><span id="youthleaguetable_1_goaldifBis"></span></td>
 									<td><span id="youthleaguetable_1_pointsBis"></span></td>
 								</tr>
-								<tr id="youthleaguetable_2Bis">
+								<tr id="youthleaguetable_2Bis" style="display: none">
 									<td><span>2</span></td>
 									<td><span id="youthleaguetable_2_nameBis"></span></td>
 									<td><img id="youthleaguetable_2_changeBis"
@@ -1544,7 +1644,7 @@
 									<td><span id="youthleaguetable_2_goaldifBis"></span></td>
 									<td><span id="youthleaguetable_2_pointsBis"></span></td>
 								</tr>
-								<tr id="youthleaguetable_3Bis">
+								<tr id="youthleaguetable_3Bis" style="display: none">
 									<td><span>3</span></td>
 									<td><span id="youthleaguetable_3_nameBis"></span></td>
 									<td><img id="youthleaguetable_3_changeBis"
@@ -1556,7 +1656,7 @@
 									<td><span id="youthleaguetable_3_goaldifBis"></span></td>
 									<td><span id="youthleaguetable_3_pointsBis"></span></td>
 								</tr>
-								<tr id="youthleaguetable_4Bis">
+								<tr id="youthleaguetable_4Bis" style="display: none">
 									<td><span>4</span></td>
 									<td><span id="youthleaguetable_4_nameBis"></span></td>
 									<td><img id="youthleaguetable_4_changeBis"
@@ -1568,7 +1668,7 @@
 									<td><span id="youthleaguetable_4_goaldifBis"></span></td>
 									<td><span id="youthleaguetable_4_pointsBis"></span></td>
 								</tr>
-								<tr id="youthleaguetable_5Bis">
+								<tr id="youthleaguetable_5Bis" style="display: none">
 									<td><span>5</span></td>
 									<td><span id="youthleaguetable_5_nameBis"></span></td>
 									<td><img id="youthleaguetable_5_changeBis"
@@ -1580,7 +1680,7 @@
 									<td><span id="youthleaguetable_5_goaldifBis"></span></td>
 									<td><span id="youthleaguetable_5_pointsBis"></span></td>
 								</tr>
-								<tr id="youthleaguetable_6Bis">
+								<tr id="youthleaguetable_6Bis" style="display: none">
 									<td><span>6</span></td>
 									<td><span id="youthleaguetable_6_nameBis"></span></td>
 									<td><img id="youthleaguetable_6_changeBis"
@@ -1592,7 +1692,7 @@
 									<td><span id="youthleaguetable_6_goaldifBis"></span></td>
 									<td><span id="youthleaguetable_6_pointsBis"></span></td>
 								</tr>
-								<tr id="youthleaguetable_7Bis">
+								<tr id="youthleaguetable_7Bis" style="display: none">
 									<td><span>7</span></td>
 									<td><span id="youthleaguetable_7_nameBis"></span></td>
 									<td><img id="youthleaguetable_7_changeBis"
@@ -1604,7 +1704,7 @@
 									<td><span id="youthleaguetable_7_goaldifBis"></span></td>
 									<td><span id="youthleaguetable_7_pointsBis"></span></td>
 								</tr>
-								<tr id="youthleaguetable_8Bis">
+								<tr id="youthleaguetable_8Bis" style="display: none">
 									<td><span>8</span></td>
 									<td><span id="youthleaguetable_8_nameBis"></span></td>
 									<td><img id="youthleaguetable_8_changeBis"
@@ -1615,6 +1715,102 @@
 									<td><span id="youthleaguetable_8_goals_againstBis"></span></td>
 									<td><span id="youthleaguetable_8_goaldifBis"></span></td>
 									<td><span id="youthleaguetable_8_pointsBis"></span></td>
+								</tr>
+																<tr id="youthleaguetable_9Bis" style="display: none">
+									<td><span>9</span></td>
+									<td><span id="youthleaguetable_9_nameBis"></span></td>
+									<td><img id="youthleaguetable_9_changeBis"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_9_matchesBis"></span></td>
+									<td><span id="youthleaguetable_9_goals_forBis"></span></td>
+									<td><span id="youthleaguetable_9_goalsBis">-</span></td>
+									<td><span id="youthleaguetable_9_goals_againstBis"></span></td>
+									<td><span id="youthleaguetable_9_goaldifBis"></span></td>
+									<td><span id="youthleaguetable_9_pointsBis"></span></td>
+								</tr>
+																<tr id="youthleaguetable_10Bis" style="display: none">
+									<td><span>10</span></td>
+									<td><span id="youthleaguetable_10_nameBis"></span></td>
+									<td><img id="youthleaguetable_10_changeBis"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_10_matchesBis"></span></td>
+									<td><span id="youthleaguetable_10_goals_forBis"></span></td>
+									<td><span id="youthleaguetable_10_goalsBis">-</span></td>
+									<td><span id="youthleaguetable_10_goals_againstBis"></span></td>
+									<td><span id="youthleaguetable_10_goaldifBis"></span></td>
+									<td><span id="youthleaguetable_10_pointsBis"></span></td>
+								</tr>
+																<tr id="youthleaguetable_11Bis" style="display: none">
+									<td><span>11</span></td>
+									<td><span id="youthleaguetable_11_nameBis"></span></td>
+									<td><img id="youthleaguetable_11_changeBis"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_11_matchesBis"></span></td>
+									<td><span id="youthleaguetable_11_goals_forBis"></span></td>
+									<td><span id="youthleaguetable_11_goalsBis">-</span></td>
+									<td><span id="youthleaguetable_11_goals_againstBis"></span></td>
+									<td><span id="youthleaguetable_11_goaldifBis"></span></td>
+									<td><span id="youthleaguetable_11_pointsBis"></span></td>
+								</tr>
+																<tr id="youthleaguetable_12Bis" style="display: none">
+									<td><span>12</span></td>
+									<td><span id="youthleaguetable_12_nameBis"></span></td>
+									<td><img id="youthleaguetable_12_changeBis"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_12_matchesBis"></span></td>
+									<td><span id="youthleaguetable_12_goals_forBis"></span></td>
+									<td><span id="youthleaguetable_12_goalsBis">-</span></td>
+									<td><span id="youthleaguetable_12_goals_againstBis"></span></td>
+									<td><span id="youthleaguetable_12_goaldifBis"></span></td>
+									<td><span id="youthleaguetable_12_pointsBis"></span></td>
+								</tr>
+																<tr id="youthleaguetable_13Bis" style="display: none">
+									<td><span>13</span></td>
+									<td><span id="youthleaguetable_13_nameBis"></span></td>
+									<td><img id="youthleaguetable_13_changeBis"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_13_matchesBis"></span></td>
+									<td><span id="youthleaguetable_13_goals_forBis"></span></td>
+									<td><span id="youthleaguetable_13_goalsBis">-</span></td>
+									<td><span id="youthleaguetable_13_goals_againstBis"></span></td>
+									<td><span id="youthleaguetable_13_goaldifBis"></span></td>
+									<td><span id="youthleaguetable_13_pointsBis"></span></td>
+								</tr>
+																<tr id="youthleaguetable_14Bis" style="display: none">
+									<td><span>14</span></td>
+									<td><span id="youthleaguetable_14_nameBis"></span></td>
+									<td><img id="youthleaguetable_14_changeBis"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_14_matchesBis"></span></td>
+									<td><span id="youthleaguetable_14_goals_forBis"></span></td>
+									<td><span id="youthleaguetable_14_goalsBis">-</span></td>
+									<td><span id="youthleaguetable_14_goals_againstBis"></span></td>
+									<td><span id="youthleaguetable_14_goaldifBis"></span></td>
+									<td><span id="youthleaguetable_14_pointsBis"></span></td>
+								</tr>
+																<tr id="youthleaguetable_15Bis" style="display: none">
+									<td><span>15</span></td>
+									<td><span id="youthleaguetable_15_nameBis"></span></td>
+									<td><img id="youthleaguetable_15_changeBis"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_15_matchesBis"></span></td>
+									<td><span id="youthleaguetable_15_goals_forBis"></span></td>
+									<td><span id="youthleaguetable_15_goalsBis">-</span></td>
+									<td><span id="youthleaguetable_15_goals_againstBis"></span></td>
+									<td><span id="youthleaguetable_15_goaldifBis"></span></td>
+									<td><span id="youthleaguetable_15_pointsBis"></span></td>
+								</tr>
+																<tr id="youthleaguetable_16Bis" style="display: none">
+									<td><span>16</span></td>
+									<td><span id="youthleaguetable_16_nameBis"></span></td>
+									<td><img id="youthleaguetable_16_changeBis"
+										class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_16_matchesBis"></span></td>
+									<td><span id="youthleaguetable_16_goals_forBis"></span></td>
+									<td><span id="youthleaguetable_16_goalsBis">-</span></td>
+									<td><span id="youthleaguetable_16_goals_againstBis"></span></td>
+									<td><span id="youthleaguetable_16_goaldifBis"></span></td>
+									<td><span id="youthleaguetable_16_pointsBis"></span></td>
 								</tr>
 							</tbody>
 						</table>

@@ -425,4 +425,8 @@
 <PrefsRestart>Certaines nécessitent un redémarrage de HTLiveSight !</PrefsRestart>
 <ClickToSave>Cliquez sur OK sous les options pour les sauvegarder.</ClickToSave>
 <TooltipWindowSpeech>Activer ou désactiver le Text To Speech de ce match</TooltipWindowSpeech>
+<YouthMatches>Matchs des jeunes</YouthMatches>
+<GetYouthNearestMatch>Afficher les matchs de vos jeunes</GetYouthNearestMatch>
+<MatchesYouthLeague>Match de ligue de jeunes</MatchesYouthLeague>
+<YouthSoundEqualSenior>My youth team sounds equal to my senior one :P</YouthSoundEqualSenior>
 </Htlivesight>

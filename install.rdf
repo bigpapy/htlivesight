@@ -4,6 +4,7 @@
 	<Description about="urn:mozilla:install-manifest">
 		<em:id>{469b7d40-de9a-11e0-9572-0800200c9a66}</em:id>
 		<em:unpack>true</em:unpack>
+		<em:multiprocessCompatible>true</em:multiprocessCompatible>
 		<em:type>2</em:type>
 		<em:bootstrap>true</em:bootstrap>
 		<em:name>HTLiveSightDEV</em:name>

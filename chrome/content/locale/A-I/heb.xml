@@ -425,4 +425,7 @@
 <PrefsRestart>העדפות מסוימות דורשות הפעלה מחדש!</PrefsRestart>
 <ClickToSave>לחץ על אישור בהעדפות חלון כדי לשמור אותם.</ClickToSave>
 <TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

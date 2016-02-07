@@ -424,5 +424,8 @@
 <ImportOk>Подешавања су успешно убачена!</ImportOk>
 <PrefsRestart>Нека од подешавања захтевају рестарт!</PrefsRestart>
 <ClickToSave>Кликни на ОК у прозору за подешавања да их сачуваш.</ClickToSave>
-<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<TooltipWindowSpeech>Укључи или искључи говорно ишчитавање текста за догађаје на мечевима</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

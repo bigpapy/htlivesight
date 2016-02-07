@@ -425,4 +425,7 @@
 <PrefsRestart>Enkele voorkeuren vereisen een herstart!</PrefsRestart>
 <ClickToSave>Klik op OK in het voorkeuren venster om deze op te slaan.</ClickToSave>
 <TooltipWindowSpeech>In- en uitschakelen van tekst naar spraak wedstrijdgebeurtenissen</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

@@ -425,4 +425,7 @@
 <PrefsRestart>Einige Einstellungen erfordern einen Neustart!</PrefsRestart>
 <ClickToSave>Auf OK im Einstellungsfenster klicken um sie zu speichern.</ClickToSave>
 <TooltipWindowSpeech>Aktivieren und Deaktivieren von Text-zu-Sprache-Benachrichtigungen bei Spielereignissen</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

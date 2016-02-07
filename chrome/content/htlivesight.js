@@ -328,7 +328,7 @@ var htlivesight = {
 			if(parseInt(document.getElementById("secondTeamId").value)){
 				htlivesight.League.HTTPFixtures(htlivesight.Teams.mySecondTeam.league.id,"mySecondTeam");
 			}else{
-				htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_YOUTHLEAGUE);//disabled tournaments
+				htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_YOUTHTEAM);//disabled tournaments
 			}
 		},
 		GetTournaments: function() {
@@ -346,6 +346,25 @@ var htlivesight = {
 				//FUNCTION HERE TO ADD MATCHES OF SECOND TEAM TOURNAMENTS
 				htlivesight.Tournaments.HTTPTournamentsList(htlivesight.Teams.mySecondTeam.id, "mySecondTeam");
 			}else{
+				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHTEAM);
+			}
+		},
+		
+		GetYouthLeague: function() {
+			if(htlivesight.ManagerCompendium.data.youthTeams[0]){
+				htlivesight.YouthLeague.HTTPGet(htlivesight.ManagerCompendium.data.youthTeams[0].youthLegueId,"myFirstYouthTeam");
+				console.log("end of getYouthLeague");
+			}else{
+				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHTEAM2);
+			}
+		},
+		GetYouthLeague2: function() {
+			console.log("GetYouthLeague2");
+			if(htlivesight.ManagerCompendium.data.youthTeams[1]){
+				console.log("calling htlivesight.League.HTTPGet for second youth league");
+				htlivesight.YouthLeague.HTTPGet(htlivesight.ManagerCompendium.data.youthTeams[1].youthLegueId,"mySecondYouthTeam");
+			}else{
+				console.log("Passing into MY_YOUTHLEAGUE");
 				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE);
 			}
 		},
@@ -406,8 +425,9 @@ var htlivesight = {
 			//console.log(prefs.matches.myYouthMatch)
 			if(!prefs.matches.myYouthMatch) return;
 			console.log("Prefs was set to get second youth team nearest match. Checking if team id is present to do a request for 2nd youth team...");
-			console.log("htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId = "+ htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId);
+			
 			if(htlivesight.ManagerCompendium.data.youthTeams[1] && parseInt(htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId)){
+				console.log("htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId = "+ htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId);
 				try{
 					console.log("getting 2nd youth team match...");
 					htlivesight.Matches.HTTPGetByTeam(htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId, "youth", true);

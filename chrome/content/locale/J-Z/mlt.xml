@@ -425,4 +425,7 @@
 <PrefsRestart>Some preferences need a restart!</PrefsRestart>
 <ClickToSave>Click OK on preferences window to save them.</ClickToSave>
 <TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

@@ -229,7 +229,7 @@ htlivesight.Speech={
 				return "hu";	//Hungarian
 				break;
 			case "A-I/ind":
-				return "id";	//Indonesian
+				return "id-ID";	//Indonesian
 				break;
 			case "A-I/isl":
 				return "is";	//Icelandic
@@ -271,7 +271,7 @@ htlivesight.Speech={
 				return "no-NO";	//Norwegian
 				break;
 			case "J-Z/pol":
-				return "pl";	//Polish
+				return "pl-PL";	//Polish
 				break;
 			case "J-Z/por-br":
 				return "pt-BR";	//Portuguese (Brazil)
@@ -283,7 +283,7 @@ htlivesight.Speech={
 				return "ro-RO";	//Romanian
 				break;
 			case "J-Z/rus":
-				return "ru";	//Russian
+				return "ru-RU";	//Russian
 				break;
 			case "J-Z/slk":
 				return "sk";	//Slovak

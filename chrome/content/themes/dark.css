@@ -44,12 +44,61 @@ padding-right: 2px;
 }
 
 
-#htlivesight-body  #leaguetable_grid_rowsBis td:nth-child(7){
+#htlivesight-body #leaguetable_grid_rowsBis td:nth-child(7){
 padding-right: 2px;
 border-right: thin solid white !important;
 text-align: left;
 }
-#htlivesight-body  #leaguetable_grid_rowsBis td:nth-child(8){
+#htlivesight-body #leaguetable_grid_rowsBis td:nth-child(8){
+padding-right: 3px;
+padding-left: 2px;
+border-right: thin solid white !important;
+text-align: right;
+}
+
+#htlivesight-body  #youthleaguetable_grid_rows td:first-child, #htlivesight-body  #youthleaguetable_grid_rows th:first-child{
+padding-left: 3px;
+border-right: thin solid white !important;
+padding-right: 3px;
+}
+
+#htlivesight-body  #youthleaguetable_grid_rows td:nth-child(4), #htlivesight-body  #youthleaguetable_grid_rows th:nth-child(4), #htlivesight-body  #youthleaguetable_grid_rows th:nth-child(5), #htlivesight-body  #youthleaguetable_grid_rows th:nth-child(6){
+padding-left: 2px;
+border-right: thin solid white !important;
+padding-right: 2px;
+}
+
+#htlivesight-body  #youthleaguetable_grid_rows td:nth-child(7){
+padding-right: 2px;
+border-right: thin solid white !important;
+text-align: left;
+}
+#htlivesight-body  #youthleaguetable_grid_rows td:nth-child(8){
+padding-right: 3px;
+padding-left: 2px;
+border-right: thin solid white !important;
+text-align: right;
+}
+
+#htlivesight-body  #youthLeaguetable_grid_rowsBis td:first-child, #htlivesight-body  #youthLeaguetable_grid_rowsBis th:first-child{
+padding-left: 3px;
+border-right: thin solid white !important;
+padding-right: 3px;
+}
+
+#htlivesight-body  #youthLeaguetable_grid_rowsBis td:nth-child(4), #htlivesight-body  #youthLeaguetable_grid_rowsBis th:nth-child(4), #htlivesight-body  #youthLeaguetable_grid_rowsBis th:nth-child(5), #htlivesight-body #youthLeaguetable_grid_rowsBis th:nth-child(6){
+padding-left: 2px;
+border-right: thin solid white !important;
+padding-right: 2px;
+}
+
+
+#htlivesight-body  #youthLeaguetable_grid_rowsBis td:nth-child(7){
+padding-right: 2px;
+border-right: thin solid white !important;
+text-align: left;
+}
+#htlivesight-body  #youthLeaguetable_grid_rowsBis td:nth-child(8){
 padding-right: 3px;
 padding-left: 2px;
 border-right: thin solid white !important;

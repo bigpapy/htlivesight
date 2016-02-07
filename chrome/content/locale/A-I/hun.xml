@@ -415,14 +415,17 @@
 <HeaderBarColor>Fejléc színe</HeaderBarColor>
 <HeaderBarTextColor>Fejlécszöveg színe</HeaderBarTextColor>
 <Volume>Hangerő</Volume>
-<PlayVolumeSetting>Play sound after volume setting</PlayVolumeSetting>
-<Import>Import</Import>
-<Export>Export</Export>
-<ExportOauth>Export Oauth</ExportOauth>
-<ExportBackground>Export Background</ExportBackground>
-<ExportSounds>Export Sounds</ExportSounds>
-<ImportOk>Preferences imported successfully!</ImportOk>
-<PrefsRestart>Some preferences need a restart!</PrefsRestart>
-<ClickToSave>Click OK on preferences window to save them.</ClickToSave>
-<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<PlayVolumeSetting>Hangerő beállítása után hangjelzés lejátszása</PlayVolumeSetting>
+<Import>Importálás</Import>
+<Export>Exportálás</Export>
+<ExportOauth>OAuth exportálása</ExportOauth>
+<ExportBackground>Háttér mentése</ExportBackground>
+<ExportSounds>Hangok mentése</ExportSounds>
+<ImportOk>Sikeresen betöltötted a beállításokat!</ImportOk>
+<PrefsRestart>Újraindítás szükséges néhány beállítás miatt!</PrefsRestart>
+<ClickToSave>A beállítások mentéséhez kattints az OK gombra.</ClickToSave>
+<TooltipWindowSpeech>Mérkőzés értesítések szövegfelolvasásának engedélyezése és tiltása</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

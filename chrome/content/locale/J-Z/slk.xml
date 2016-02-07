@@ -425,4 +425,7 @@
 <PrefsRestart>Niektoré nastavenia potrebujú reštart!</PrefsRestart>
 <ClickToSave>Klikni na OK v nastaveniach pre uloženie.</ClickToSave>
 <TooltipWindowSpeech>Zapnúť a vypnúť prevod textu na reč k zápasovej udalosti</TooltipWindowSpeech>
+<YouthMatches>Zápasy dorastu</YouthMatches>
+<GetYouthNearestMatch>Automaticky načítaj zápasy tvojho dorastu</GetYouthNearestMatch>
+<MatchesYouthLeague>Ligové zápasy dorastu</MatchesYouthLeague>
 </Htlivesight>

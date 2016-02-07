@@ -425,4 +425,7 @@
 <PrefsRestart>Neka od podešenja zahtjevaju restart!</PrefsRestart>
 <ClickToSave>Kliknuti na OK u prozoru za podešavanja da ista sačuvaš.</ClickToSave>
 <TooltipWindowSpeech>Omogućavanje i onemogućavanje teksta u govoru događaja obavijesti utakmica</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

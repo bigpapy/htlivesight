@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("livefoxGoal").addEventListener('click',function(){htlivesight.Settings.click.livefoxGoal();});
 	document.getElementById("noOpGoal").addEventListener('click',function(){htlivesight.Settings.click.noOpGoal();});
 	document.getElementById("chkSecondSoundEqualFirst").addEventListener('click',function(){htlivesight.Settings.click.secondSoundEqualFirst();});
+	document.getElementById("chkYouthSoundEqualSenior").addEventListener('click',function(){htlivesight.Settings.click.youthSoundEqualSenior();});
 	document.getElementById("volumeSound").addEventListener('click',function(){htlivesight.Settings.click.settingVolumeSound();});
 	// my goal
 	document.getElementById("myGoalCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('myGoal');});

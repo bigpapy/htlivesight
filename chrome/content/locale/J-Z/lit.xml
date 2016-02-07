@@ -414,15 +414,18 @@
 <Supporter>Projektą remia</Supporter>
 <HeaderBarColor>Antraštės spalva</HeaderBarColor>
 <HeaderBarTextColor>Antraštės teksto spalva</HeaderBarTextColor>
-<Volume>Volume</Volume>
-<PlayVolumeSetting>Play sound after volume setting</PlayVolumeSetting>
-<Import>Import</Import>
-<Export>Export</Export>
-<ExportOauth>Export Oauth</ExportOauth>
-<ExportBackground>Export Background</ExportBackground>
-<ExportSounds>Export Sounds</ExportSounds>
-<ImportOk>Preferences imported successfully!</ImportOk>
-<PrefsRestart>Some preferences need a restart!</PrefsRestart>
-<ClickToSave>Click OK on preferences window to save them.</ClickToSave>
-<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<Volume>Garsumas</Volume>
+<PlayVolumeSetting>Paleisti garsą pakeitus garsumą</PlayVolumeSetting>
+<Import>Importuoti</Import>
+<Export>Eksportuoti</Export>
+<ExportOauth>Eksportuoti oAuth</ExportOauth>
+<ExportBackground>Eksportuoti fono nustatymus</ExportBackground>
+<ExportSounds>Eksportuoti garsus</ExportSounds>
+<ImportOk>Nustatymai sėkmingai importuoti!</ImportOk>
+<PrefsRestart>Kai kuriems nustatymams pakeisti reikalingas perkrovimas!</PrefsRestart>
+<ClickToSave>Nustatymus išsaugosite nustatymų lange spustelėję ant mygtuko „Gerai“.</ClickToSave>
+<TooltipWindowSpeech>Įjungti/išjungti rungtynių įvykių pranešimų skaitymą</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

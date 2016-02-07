@@ -37,26 +37,20 @@ htlivesight.YouthLeague.Round.prototype.ElapsedTime = function(now) {
  * ---------------------------------------------- */
 htlivesight.YouthLeague.HTTPGet = function (youthLeagueId, teamKind) {
 	var parameters=[["file","youthLeaguedetails"],
-	                ["youthLeagueLevelUnitID", youthLeagueId]];
+	                ["youthleagueid", youthLeagueId]];
+	console.log("Parameters: ");console.log(parameters);
 	htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.YouthLeague.ParseGet(xml, teamKind);});
 };
-htlivesight.YouthLeague.ParseGet = function(xml, teamKind) {
-	if(teamKind=="myFirstYouthTeam"){
-		htlivesight.YouthLeague.countryId =  parseInt(htlivesight.Util.Parse("LeagueID", xml), 10);
-		htlivesight.YouthLeague.countryName = htlivesight.Util.Parse("LeagueName", xml);
-		htlivesight.YouthLeague.level = parseInt(htlivesight.Util.Parse("LeagueLevel", xml), 10);
-		htlivesight.YouthLeague.maxLevel = parseInt(htlivesight.Util.Parse("MaxLevel", xml), 10);
-		htlivesight.YouthLeague.levelUnitId = parseInt(htlivesight.Util.Parse("LeagueLevelUnitID", xml), 10);
-		htlivesight.YouthLeague.levelUnitName = htlivesight.Util.Parse("LeagueLevelUnitName", xml);
-		htlivesight.YouthLeague.teams = htlivesight.YouthLeague.ParseTeams(xml);
-		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TEAM2);
+htlivesight.YouthLeague.ParseGet = function(xml, teamKind) { console.log("htlivesight.YouthLeague.ParseGet response");
+	if(teamKind=="myFirstYouthTeam"){ console.log(xml);
+		htlivesight.YouthLeague.youthLeagueId =  parseInt(htlivesight.Util.Parse("YouthLeagueID", xml), 10);
+		htlivesight.YouthLeague.youthLeagueName = htlivesight.Util.Parse("YouthLeagueName", xml);
+		htlivesight.YouthLeague.teams = htlivesight.YouthLeague.ParseTeams(xml);console.log("***** BEFORE CHANGING YOUTH TEAM");
+		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHTEAM2);
+		console.log("set htlivesight.EventSystem.ev.MY_YOUTHTEAM2 into youthleagueParseGet");
 	}else if(teamKind=="mySecondYouthTeam"){
-		htlivesight.YouthLeague.countryId2 =  parseInt(htlivesight.Util.Parse("LeagueID", xml), 10);
-		htlivesight.YouthLeague.countryName2 = htlivesight.Util.Parse("LeagueName", xml);
-		htlivesight.YouthLeague.level2 = parseInt(htlivesight.Util.Parse("LeagueLevel", xml), 10);
-		htlivesight.YouthLeague.maxLevel2 = parseInt(htlivesight.Util.Parse("MaxLevel", xml), 10);
-		htlivesight.YouthLeague.levelUnitId2 = parseInt(htlivesight.Util.Parse("LeagueLevelUnitID", xml), 10);
-		htlivesight.YouthLeague.levelUnitName2 = htlivesight.Util.Parse("LeagueLevelUnitName", xml);
+		htlivesight.YouthLeague.youthLeagueId2 =  parseInt(htlivesight.Util.Parse("YouthLeagueID", xml), 10);
+		htlivesight.YouthLeague.youthLeagueName2 = htlivesight.Util.Parse("YouthLeagueName", xml);
 		htlivesight.YouthLeague.teams2 = htlivesight.YouthLeague.ParseTeams(xml);
 		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE);
 	}
@@ -173,21 +167,24 @@ htlivesight.YouthLeague.ParseFixtures = function(xml,teamKind) {
 		//console.log("htlivesight.showYouthLeague = " + htlivesight.showYouthLeague);
 		//console.log("htlivesight.YouthLeague.currentRound = " + htlivesight.YouthLeague.currentRound);
 		if (htlivesight.showYouthLeague && htlivesight.YouthLeague.currentRound != undefined) {
-			/*document.getElementById("winbox_youthLeaguetable").setAttribute("style", "display:block");
-			document.getElementById("winboxcontent_youthLeaguematches").setAttribute("style", "display:block");
-			document.getElementById("YouthLeagueMatches").setAttribute("style", "display:block");
-			document.getElementById("h3YouthLeagueMatches").setAttribute("style", "display:block");
-			htlivesight.Settings.click.headerBarColorSet();
-			htlivesight.DOM.setHeaderColor();
-			htlivesight.DOM.UpdateElementBoxYouthLeagueTable(htlivesight.YouthLeague);
-			htlivesight.DOM.UpdateElementBoxYouthLeague(htlivesight.YouthLeague);
-			console.log("before adding youthleague matches");
-			console.log(rounds[currentRound].id);*/
-			htlivesight.YouthLeague.matches=rounds[currentRound].id;
-			/*for (var i=0; i<rounds[currentRound].id.length; i++) {
-				matchId = rounds[currentRound].id[i];
-				htlivesight.AddLiveMatch(matchId, "False");
-			}*/
+			try{
+				htlivesight.DOM.UpdateElementBoxYouthLeagueTable(htlivesight.YouthLeague);
+				htlivesight.DOM.UpdateElementBoxYouthLeague(htlivesight.YouthLeague);
+				console.log("before adding youthleague matches");
+				console.log(rounds[currentRound].id);
+				htlivesight.YouthLeague.matches=rounds[currentRound].id;
+				htlivesight.Settings.click.headerBarColorSet();
+				htlivesight.DOM.setHeaderColor();
+				document.getElementById("winbox_youthleaguetable").setAttribute("style", "display:block");
+				document.getElementById("winboxcontent_youthleaguematches").setAttribute("style", "display:block");
+				document.getElementById("YouthLeagueMatches").setAttribute("style", "display:block");
+				document.getElementById("h3YouthLeagueMatches").setAttribute("style", "display:block");
+	
+			}catch(e){
+				//document.getElementById("winbox_youthleaguetable").setAttribute("style", "display:none");
+				//htlivesight.showYouthLeague= false;
+				console.log(e);
+			}
 		}
 		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE2);
 		}else if(teamKind=="mySecondYouthTeam"){
@@ -212,18 +209,21 @@ htlivesight.YouthLeague.ParseFixtures = function(xml,teamKind) {
 				htlivesight.showYouthLeague2= false;
 			}
 			if (htlivesight.showYouthLeague2 && htlivesight.YouthLeague.currentRound2 != undefined) {
-				/*document.getElementById("winbox_youthLeaguetableBis").setAttribute("style", "display:block");
-				document.getElementById("winboxcontent_youthLeaguematchesBis").setAttribute("style", "display:block");
-				document.getElementById("YouthLeagueMatchesBis").setAttribute("style", "display:block");
-				document.getElementById("h3YouthLeagueMatchesBis").setAttribute("style", "display:block");
-				htlivesight.DOM.setHeaderColor();
-				htlivesight.DOM.UpdateElementBoxYouthLeagueTable2(htlivesight.YouthLeague);
-				htlivesight.DOM.UpdateElementBoxYouthLeague2(htlivesight.YouthLeague);*/
-				htlivesight.YouthLeague.matches2=rounds[currentRound].id;
-//				for (var i=0; i<rounds[currentRound].id.length; i++) {
-//					matchId = rounds[currentRound].id[i];
-//					htlivesight.AddLiveMatch(matchId, "False");
-//				}
+				try{
+					htlivesight.DOM.UpdateElementBoxYouthLeagueTable2(htlivesight.YouthLeague);
+					htlivesight.DOM.UpdateElementBoxYouthLeague2(htlivesight.YouthLeague);
+					htlivesight.YouthLeague.matches2=rounds[currentRound].id;
+					htlivesight.DOM.setHeaderColor();
+					document.getElementById("winbox_youthLeaguetableBis").setAttribute("style", "display:block");
+					document.getElementById("winboxcontent_youthLeaguematchesBis").setAttribute("style", "display:block");
+					document.getElementById("YouthLeagueMatchesBis").setAttribute("style", "display:block");
+					document.getElementById("h3YouthLeagueMatchesBis").setAttribute("style", "display:block");
+				}catch(e){
+					//document.getElementById("winbox_youthleaguetableBis").setAttribute("style", "display:none");
+					//htlivesight.showYouthLeague2= false;
+					console.log(e);
+					
+				}
 			}
 			
 		}
@@ -232,7 +232,7 @@ htlivesight.YouthLeague.ParseFixtures = function(xml,teamKind) {
 	} catch(e) {
 		console.log(e);
 		if(teamKind=="myFirstYouthTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE2);}
-		if(teamKind=="mySecondYouthTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES);}
+		if(teamKind=="mySecondYouthTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE_MATCHES);}
 		// alert("htlivesight.YouthLeague.ParseFixtures (set info): " + e);
 	}
 //	if(teamKind==="myFirstTeam"){
@@ -261,13 +261,15 @@ htlivesight.YouthLeague.addYouthLeagueMatches2= function(){
 
 htlivesight.YouthLeague.sortTable = function(){
 	var tmp = Array();
+	var length = 0;
 	for(var id in htlivesight.YouthLeague.teams){
 		tmp[htlivesight.YouthLeague.teams[id].livePosition] = htlivesight.YouthLeague.teams[id];
+		length++;
 	}
 	var change = true;
 	while(change){
 		change = false;
-		for(var i=1; i<8; i++){
+		for(var i=1; i<length; i++){
 			if(htlivesight.YouthLeague.compareTeams(tmp[i], tmp[i+1]) < 0){
 				var tmpTeam = tmp[i];
 				tmp[i] = tmp[i+1];
@@ -276,20 +278,22 @@ htlivesight.YouthLeague.sortTable = function(){
 			}
 		}
 	}
-	for(var j=1; j<=8; j++){
+	for(var j=1; j<=length; j++){
 		htlivesight.YouthLeague.teams[tmp[j].id].livePosition = j;
 	}
 };
 
 htlivesight.YouthLeague.sortTable2 = function(){
 	var tmp = Array();
+	var length = 0;
 	for(var id in htlivesight.YouthLeague.teams2){
 		tmp[htlivesight.YouthLeague.teams2[id].livePosition] = htlivesight.YouthLeague.teams2[id];
+		length++;
 	}
 	var change = true;
 	while(change){
 		change = false;
-		for(var i=1; i<8; i++){
+		for(var i=1; i<length; i++){
 			if(htlivesight.YouthLeague.compareTeams(tmp[i], tmp[i+1]) < 0){
 				var tmpTeam = tmp[i];
 				tmp[i] = tmp[i+1];
@@ -298,12 +302,13 @@ htlivesight.YouthLeague.sortTable2 = function(){
 			}
 		}
 	}
-	for(var j=1; j<=8; j++){
+	for(var j=1; j<=length; j++){
 		htlivesight.YouthLeague.teams2[tmp[j].id].livePosition = j;
 	}
 };
 
 htlivesight.YouthLeague.compareTeams = function(team1, team2){
+	if((!team1)||(!team2)) return 0;
 	if(team1.livePoints > team2.livePoints) return 1;
 	else{
 		if(team1.livePoints < team2.livePoints) return -1;

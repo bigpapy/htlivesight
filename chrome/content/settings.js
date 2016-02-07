@@ -299,6 +299,7 @@ htlivesight.Settings = {
 			document.getElementById("chkExportOauth").checked = prefs.other.exportOauth;
 			document.getElementById("chkExportBackground").checked = prefs.other.exportBackground;
 			document.getElementById("chkExportSounds").checked = prefs.other.exportSounds;
+			document.getElementById("chkYouthSoundEqualSenior").checked =prefs.personalization.youthSoundEqualSenior;
 		},
 		save: function() {
 			htlivesight.Log.properties(this.preferences.notification);
@@ -878,6 +879,15 @@ htlivesight.Settings = {
 					prefs.personalization.secondSoundEqualFirst = true;
 				} else {
 					prefs.personalization.secondSoundEqualFirst = false;
+				}
+			},
+			
+			youthSoundEqualSenior: function() {
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("chkYouthSoundEqualSenior").checked) {
+					prefs.personalization.youthSoundEqualSenior = true;
+				} else {
+					prefs.personalization.youthSoundEqualSenior = false;
 				}
 			},
 			

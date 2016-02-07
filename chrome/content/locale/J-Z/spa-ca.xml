@@ -26,8 +26,8 @@
 <LeaguePoints>PTS</LeaguePoints>
 <MatchesList>Lista de partidos</MatchesList>
 <MatchesAdd>Añadir partido</MatchesAdd>
-<MatchesByMatch>Según id partido</MatchesByMatch>
-<MatchesByTeam>Según id equipo</MatchesByTeam>
+<MatchesByMatch>Según ID partido</MatchesByMatch>
+<MatchesByTeam>Según ID equipo</MatchesByTeam>
 <MatchesYouth>¿Juveniles?</MatchesYouth>
 <FriendsTitle>Amigos</FriendsTitle>
 <FriendsRemove>Eliminar</FriendsRemove>
@@ -53,7 +53,7 @@
 <TacticPlayCreative>Jugar creativamente</TacticPlayCreative>
 <TacticLongShots>Tiros largos</TacticLongShots>
 <TimeFirstHalf>1ª mitad</TimeFirstHalf>
-<TimeHalfTime>descanso</TimeHalfTime>
+<TimeHalfTime>Medio tiempo</TimeHalfTime>
 <TimeSecondHalf>2ª mitad</TimeSecondHalf>
 <TimeExtraTime>prórroga</TimeExtraTime>
 <TimePenalties>penaltis</TimePenalties>
@@ -425,4 +425,7 @@
 <PrefsRestart>¡Algunas preferencias requiere reiniciar!</PrefsRestart>
 <ClickToSave>Haz clic en OK en la ventana de preferencias para guardarlas.</ClickToSave>
 <TooltipWindowSpeech>Habilitar y deshabilitar las notificaciones texto a voz de eventos de partido</TooltipWindowSpeech>
+<YouthMatches>Partidos juveniles</YouthMatches>
+<GetYouthNearestMatch>Cargar automáticamente los partidos juveniles de tu equipo</GetYouthNearestMatch>
+<MatchesYouthLeague>Partidos Juveniles de liga</MatchesYouthLeague>
 </Htlivesight>

@@ -36,6 +36,30 @@ htlivesight.ManagerCompendium.ParseMyData = function (xml) {
 				youthTeams[i].youthLeagueName = htlivesight.Util.Parse("YouthLeagueName", teamsNode[i]);
 			}
 			htlivesight.ManagerCompendium.data = new htlivesight.ManagerCompendium(userId, loginName, languageId, languageName, teams, youthTeams);
+			//just to test second youth team, because I don't get one:
+			//htlivesight.ManagerCompendium.data.youthTeams[0] = {};
+			//htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId='2100512';
+			//htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamName='davidirkikipouspous';
+			//htlivesight.ManagerCompendium.data.youthTeams[0].youthLegueId='536557';
+			//htlivesight.ManagerCompendium.data.youthTeams[0].youthLeagueName='Les minis FHJ-NJistes';
+			
+			//htlivesight.ManagerCompendium.data.youthTeams[1] = {};
+			//htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId='1485283';
+			//htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamName='IFK GM';
+			//htlivesight.ManagerCompendium.data.youthTeams[1].youthLegueId='207696';
+			//htlivesight.ManagerCompendium.data.youthTeams[1].youthLeagueName='Delphi B';
+		/*	htlivesight.ManagerCompendium.data.youthTeams[1] = {};
+			htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId=htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId;
+			htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamName=htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamName;
+			htlivesight.ManagerCompendium.data.youthTeams[1].youthLegueId=htlivesight.ManagerCompendium.data.youthTeams[0].youthLegueId;
+			htlivesight.ManagerCompendium.data.youthTeams[1].youthLeagueName=htlivesight.ManagerCompendium.data.youthTeams[0].youthLeagueName;
+			
+			htlivesight.ManagerCompendium.data.youthTeams[0] = {};
+			htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId='1485283';
+			htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamName='IFK GM';
+			htlivesight.ManagerCompendium.data.youthTeams[0].youthLegueId='207696';
+			htlivesight.ManagerCompendium.data.youthTeams[0].youthLeagueName='Delphi B';*/
+			// end injecting second youth team data: to be removed after tests.
 			htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.LOGIN);
 		}
 	} catch(e) {
@@ -43,4 +67,13 @@ htlivesight.ManagerCompendium.ParseMyData = function (xml) {
 		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.LOGIN);
 	}
 	
+};
+htlivesight.ManagerCompendium.isMyYouthTeam = function (id) {
+	if(htlivesight.ManagerCompendium.data.youthTeams[0] && (id == htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId)){
+		return true;
+	}
+	if(htlivesight.ManagerCompendium.data.youthTeams[1] && (id == htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId)){
+		return true;
+	}
+	return false;
 };

@@ -425,4 +425,7 @@
 <PrefsRestart>Některá nastavení vyžadují restart programu!</PrefsRestart>
 <ClickToSave>Klikni na tlačítko OK v okně nastavení, aby došlo k uložení.</ClickToSave>
 <TooltipWindowSpeech>Povolit a zakázat text k mluvené události zápasových notifikací</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

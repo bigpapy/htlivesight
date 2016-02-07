@@ -9,7 +9,7 @@
 <MenuDisconnected>Frånkopplad</MenuDisconnected>
 <MenuAbout>Om HTLiveSight</MenuAbout>
 <LoginLabel>Inloggning</LoginLabel>
-<LoginTeamId>Ditt primära lagID</LoginTeamId>
+<LoginTeamId>LagID (Seniorlag 1)</LoginTeamId>
 <LoginUsername>Användarnamn</LoginUsername>
 <LoginRememberMe>Kom ihåg mig</LoginRememberMe>
 <LoginButton>Logga in</LoginButton>
@@ -26,8 +26,8 @@
 <LeaguePoints>P</LeaguePoints>
 <MatchesList>Matchlista</MatchesList>
 <MatchesAdd>Lägg till match</MatchesAdd>
-<MatchesByMatch>Med MatchID</MatchesByMatch>
-<MatchesByTeam>Med lagID</MatchesByTeam>
+<MatchesByMatch>...matchID</MatchesByMatch>
+<MatchesByTeam>...lagID</MatchesByTeam>
 <MatchesYouth>Junior?</MatchesYouth>
 <FriendsTitle>Favoritlag</FriendsTitle>
 <FriendsRemove>Ta bort</FriendsRemove>
@@ -165,7 +165,7 @@
 <GeneralNewWindow>I ett nytt fönster</GeneralNewWindow>
 <GeneralServer>Serverinställningar</GeneralServer>
 <GeneralNote>Infoga Hattricks webserver som du är inloggad på (Ex. www78, www96, stage o.s.v.).</GeneralNote>
-<MatchesLeague>Seriematcher</MatchesLeague>
+<MatchesLeague>Seniorserie(r)</MatchesLeague>
 <MatchesGetLeague>Hämta mina seriematcher</MatchesGetLeague>
 <MatchesPlayed>Om spelade inom</MatchesPlayed>
 <MatchesHours>timmar.</MatchesHours>
@@ -173,7 +173,7 @@
 <MatchesGetFriends>Hämta matcher för mina favoritlag</MatchesGetFriends>
 <MatchesHeader>Sidhuvud</MatchesHeader>
 <MatchesScorers>Målgörare</MatchesScorers>
-<ScorersList>Visa målgörare i matchens sidhuvud</ScorersList>
+<ScorersList>Visa målgörare i sidhuvudet</ScorersList>
 <MatchesBooked>Varningar</MatchesBooked>
 <BookedList>Visa varningar i sidhuvudet</BookedList>
 <MatchesSentOff>Utvisad</MatchesSentOff>
@@ -315,7 +315,7 @@
 <VIP>Platser i VIP-boxar</VIP>
 <CrowdinHelp>Hjälp till att översätta! Med Crowdin är det jättelätt och väldigt roligt! Klicka här!</CrowdinHelp>
 <Error401>Error 401: obehörig åtkomst. Du måste få tillstånd igen. Klicka på ok för att fortsätta.</Error401>
-<Error404>Error 404: begärda resursen kunde inte hittas. Om detta felmeddelande visas igen, kontrollera om CHPP är nere.</Error404>
+<Error404>Error 404: Den begärda resursen kunde inte hittas. Om detta felmeddelande visas igen, kontrollera om CHPP är nere.</Error404>
 <Error0>Error 0: ej ansluten till internet.</Error0>
 <Error500>Error 500: Internt serverfel (av Hattrick)</Error500>
 <Error503>Error 503: CHPP tjänsten är inte tillgänglig (tillfällig överbelastning eller underhåll)</Error503>
@@ -355,7 +355,7 @@
 <Unpredictable>Oförutsägbar</Unpredictable>
 <Header>Nickskicklig</Header>
 <Regainer>Återhämtare</Regainer>
-<SecondTeamIdLabel>Ditt sekundära lagID</SecondTeamIdLabel>
+<SecondTeamIdLabel>LagID (Seniorlag 2)</SecondTeamIdLabel>
 <SecondSoundEqualFirst>Sekundärlagets ljud är samma som det primära lagets</SecondSoundEqualFirst>
 <Keeper>Målvakt</Keeper>
 <Defending>Försvar</Defending>
@@ -425,4 +425,7 @@
 <PrefsRestart>En del inställningar kräver en omstart!</PrefsRestart>
 <ClickToSave>Spara genom att klicka på OK.</ClickToSave>
 <TooltipWindowSpeech>Aktivera och inaktivera talsyntes (text-till-tal) för matchhändelser</TooltipWindowSpeech>
+<YouthMatches>Juniormatcher</YouthMatches>
+<GetYouthNearestMatch>Hämta matcher för mitt juniorlag</GetYouthNearestMatch>
+<MatchesYouthLeague>Juniorserie(r)</MatchesYouthLeague>
 </Htlivesight>

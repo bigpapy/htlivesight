@@ -46,6 +46,10 @@ $(function(){
 	$("#winbox_leaguetable").accordion({ header: "h3", collapsible: true, autoHeight: false });
 	$("#winbox_leaguematchesBis").accordion({ header: "h3", collapsible: true, autoHeight: false });
 	$("#winbox_leaguetableBis").accordion({ header: "h3", collapsible: true, autoHeight: false });
+	$("#winbox_youthleaguematches").accordion({ header: "h3", collapsible: true, autoHeight: false });
+	$("#winbox_youthleaguetable").accordion({ header: "h3", collapsible: true, autoHeight: false });
+	$("#winbox_youthleaguematchesBis").accordion({ header: "h3", collapsible: true, autoHeight: false });
+	$("#winbox_youthLeaguetableBis").accordion({ header: "h3", collapsible: true, autoHeight: false });
 	$("#winbox_matchlist").accordion({ header: "h3", collapsible: true, autoHeight: false });
 	$("#winbox_friends").accordion({ header: "h3", collapsible: true, autoHeight: false });
 	$("#winbox_addmatch").accordion({ header: "h3", collapsible: true, autoHeight: false });

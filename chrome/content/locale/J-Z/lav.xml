@@ -425,4 +425,7 @@
 <PrefsRestart>Dažu iestatījumu maiņai nepieciešams restarts!</PrefsRestart>
 <ClickToSave>Nospiediet OK iestatījumu logā, lai tie tiktu saglabāti.</ClickToSave>
 <TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

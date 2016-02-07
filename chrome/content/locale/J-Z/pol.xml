@@ -425,4 +425,7 @@
 <PrefsRestart>Niektóre ustawienia wymagają ponownego uruchomienia!</PrefsRestart>
 <ClickToSave>Kliknij przycisk OK w oknie preferencje, aby je zapisać.</ClickToSave>
 <TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

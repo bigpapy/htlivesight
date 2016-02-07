@@ -424,5 +424,8 @@
 <ImportOk>Asetukset ladattu onnistuneesti!</ImportOk>
 <PrefsRestart>Jotkin asetukset vaativat uudelleenkäynnistyksen!</PrefsRestart>
 <ClickToSave>Klikkaa OK asetukset ikkunassa tallentaaksesi ne.</ClickToSave>
-<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<TooltipWindowSpeech>Ota käyttöön tai poista tekstistä puheeksi ottelutapahtumailmoituksissa</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

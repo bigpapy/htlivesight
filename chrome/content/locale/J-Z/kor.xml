@@ -425,4 +425,7 @@
 <PrefsRestart>일부 설정은 재시작이 필요합니다!</PrefsRestart>
 <ClickToSave>저장하려면 환경 설정 창의 확인 버튼을 클릭하세요.</ClickToSave>
 <TooltipWindowSpeech>이벤트 경기 알림에 대한 문자 음성 변환을 활성화 또는 비활성화</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

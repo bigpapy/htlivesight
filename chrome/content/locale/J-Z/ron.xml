@@ -425,4 +425,7 @@
 <PrefsRestart>Câteva preferințe necesită restart!</PrefsRestart>
 <ClickToSave>Apasă OK în fereastra preferințelor pentru a le salva.</ClickToSave>
 <TooltipWindowSpeech>Activează și dezactivează notificarea vocală a evenimentelor de meci</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

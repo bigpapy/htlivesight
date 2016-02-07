@@ -424,5 +424,8 @@
 <ImportOk>Настройки успішно імпортовано!</ImportOk>
 <PrefsRestart>Деякі параметри потребують перезапуску!</PrefsRestart>
 <ClickToSave>Натисніть кнопку ОК у вікні налаштувань, щоб зберегти їх.</ClickToSave>
-<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
+<TooltipWindowSpeech>Вмикнути або вимкнути голосове озвучування тексту події матчу</TooltipWindowSpeech>
+<YouthMatches>Youth Matches</YouthMatches>
+<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
+<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 </Htlivesight>

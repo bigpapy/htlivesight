@@ -208,11 +208,11 @@ htlivesight.League.ParseFixtures = function(xml,teamKind) {
 			}
 			
 		}
-		htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_YOUTHLEAGUE);//disabled tournaments
+		htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_YOUTHTEAM);//disabled tournaments
 		
 	} catch(e) {
 		if(teamKind=="myFirstTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE2);}
-		if(teamKind=="mySecondTeam"){htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_YOUTHLEAGUE);}//disabled tournaments
+		if(teamKind=="mySecondTeam"){htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_YOUTHTEAM);}//disabled tournaments
 		// alert("htlivesight.League.ParseFixtures (set info): " + e);
 	}
 //	if(teamKind==="myFirstTeam"){
