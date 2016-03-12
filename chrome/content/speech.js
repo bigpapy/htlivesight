@@ -11,7 +11,7 @@ htlivesight.Speech={
 		eventspeeching: function(){
 			var length, text, text1, event, msg;
 			if (this.lang === ""){this.lang = this.language();}
-			//console.log(this.lang);
+			console.log(this.lang);
 			try{
 			//	console.log("1: htlivesight.platform != 'Safari' is "+(htlivesight.platform != "Safari"));
 				if(htlivesight.platform != "Safari" && !htlivesight.Speech.checked){
@@ -91,9 +91,10 @@ htlivesight.Speech={
 					msg.onerror = function(e){ console.log("Error in HTML5 Text to speech: "+e); };
 				};
 				msg.onend = function(e){console.log("[htlivesight:Trace] Event speeched with HTML5 TTS"); };
-				//console.log("[htlivesight:Trace] Event to speech with HTML5 TTS: "+text);
+				console.log("[htlivesight:Trace] Event to speech with HTML5 TTS: "+text);
 				window.speechSynthesis.speak(msg);
 				htlivesight.Speech.eventspeeching();
+				console.log("[htlivesight:Trace] Event speeched with HTML5 TTS: "+text);
 			}else{	// otherwise use Google TTS library.
 				//if(!htlivesight.Speech.speeching){
 				//    event = htlivesight.Speech.eventList.shift();
@@ -111,7 +112,7 @@ htlivesight.Speech={
 				//	htlivesight.Speech.eventspeeching();
 				//    });
 				//};
-				//console.log("[htlivesight:Trace] HTML5 TTS not supported from the browser ");
+				console.log("[htlivesight:Trace] HTML5 TTS not supported from the browser ");
 			};
 		},
 		getCleanText: function(event){
@@ -145,19 +146,19 @@ htlivesight.Speech={
 				//console.log("set language to :" + htlivesight.Speech.lang);
 			}
 			var voices = window.speechSynthesis.getVoices();
-
+			console.log(voices);
 			for(i in voices){
-				//console.log("language = "+this.lang);
-				//console.log("Voice language = "+voices[i].lang);
+				console.log("language = "+this.lang);
+				console.log("Voice language = "+voices[i].lang);
 				if (voices[i].lang === this.language()){
-					//console.log("got it! "+voices[i].lang);
+					console.log("got it! "+voices[i].lang);
 					return true;
 				}
 			}
 			return false;
 		},
 		language: function(){
-			//console.log(htlivesight.prefs.language.locale);
+			console.log(htlivesight.prefs.language.locale);
 			switch (htlivesight.prefs.language.locale) {
 			case "A-I/ara":
 				return "ar-EG";	//Arabic
