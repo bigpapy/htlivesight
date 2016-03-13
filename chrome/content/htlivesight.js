@@ -85,7 +85,7 @@ var htlivesight = {
 				document.getElementById("topbar").setAttribute("style", "z-index: -1; position: absolute; top: 0;");
 
 			}else{
-				document.getElementById("live_box").setAttribute("style", "width:" + (winW-317) + "px");
+				document.getElementById("live_box").setAttribute("style", "width:" + (winW-300) + "px");
 				document.getElementById("sidebar").setAttribute("style", "width:" + (290) + "px");
 			}
 			// coloring header
