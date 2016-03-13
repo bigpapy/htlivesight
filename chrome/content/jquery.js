@@ -57,6 +57,7 @@ $(function(){
 	// Tabs
 	$('#options-tabs').tabs();
 	$('#about-tabs').tabs();
+	$("#sidebar-tabs").tabs();
 	// Login Dialog
 	$( "#button_login" ).button();
 	$('#chat-dialog').dialog({
