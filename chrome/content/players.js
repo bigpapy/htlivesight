@@ -341,6 +341,6 @@ htlivesight.players.parserMainSkill = function(mainSkill) {
 
 	case "20": return htlivesight.Util.Parse("Divine",htlivesight.data[0])+" (20)";
 
-	default: return "";
+	default: return '(' + mainSkill + ')';
 	}
 };

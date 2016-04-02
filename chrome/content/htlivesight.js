@@ -30,7 +30,7 @@ var htlivesight = {
 				document.getElementById("live_box").setAttribute("style", "width:" + (winW-288) + "px; margin-left:2px");
 				document.getElementById("sidebar").setAttribute("style", "width:" + (250) + "px; margin-right:2px");
 			}else{
-				document.getElementById("live_box").setAttribute("style", "width:" + (winW2-300) + "px" );
+				document.getElementById("live_box").setAttribute("style", "width:" + (winW2-298) + "px" );
 				document.getElementById("sidebar").setAttribute("style", "width:" + (290) + "px" );
 			}
 
@@ -85,7 +85,7 @@ var htlivesight = {
 				document.getElementById("topbar").setAttribute("style", "z-index: -1; position: absolute; top: 0;");
 
 			}else{
-				document.getElementById("live_box").setAttribute("style", "width:" + (winW-300) + "px");
+				document.getElementById("live_box").setAttribute("style", "width:" + (winW-298) + "px");
 				document.getElementById("sidebar").setAttribute("style", "width:" + (290) + "px");
 			}
 			// coloring header
