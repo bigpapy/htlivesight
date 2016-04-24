@@ -1938,7 +1938,7 @@ htlivesight.DOM.UpdateElementBoxYouthLeagueTable=function(league) {
 			else htlivesight.YouthLeague.teams[id].change = "equal.gif";
 		}
 		for(var j=1; j<=16; j++){
-			htlivesight.Util.RemoveClass(document.getElementById("leaguetable_"+j+""),['league_title','league_promote','league_demote','league_qualify','league_own']);
+			htlivesight.Util.RemoveClass(document.getElementById("youthleaguetable_"+j+""),['league_title','league_promote','league_demote','league_qualify','league_own']);
 		}
 		document.getElementById("YouthLeagueLiveTable").textContent = htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0])+" ("+league.youthLeagueName+")";
 		/*if(league.level == 1){
@@ -2081,7 +2081,7 @@ htlivesight.DOM.UpdateElementBoxYouthLeagueTable2=function(league) {
 			else htlivesight.YouthLeague.teams2[id].change = "equal.gif";
 		}
 		for(var j=1; j<=16; j++){
-			htlivesight.Util.RemoveClass(document.getElementById("leaguetable_"+j+""),['league_title','league_promote','league_demote','league_qualify','league_own']);
+			htlivesight.Util.RemoveClass(document.getElementById("youthleaguetable_"+j+"Bis"),['league_title','league_promote','league_demote','league_qualify','league_own']);
 		}
 		document.getElementById("YouthLeagueLiveTableBis").textContent = htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0])+" ("+league.youthLeagueName2+")";
 		/*if(league.level == 1){
