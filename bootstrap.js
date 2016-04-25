@@ -66,11 +66,12 @@ function loadIntoWindow(window) {
 		menuId = window.NativeWindow.menu.add("HTLivesight", resolveGeckoURI('chrome://htlivesight/skin/24.png'), function() {
 			window.BrowserApp.addTab('chrome://htlivesight/content/htlivesight.html');
 		});}else{
-
+			//removed because XUL will be deprecated
+			/*	
 			// load overlay file used in no-restart installation
 			window.document.loadOverlay('chrome://htlivesight/content/overlay.xul', null);
 			// add button to nav-bar to launch htls
-			HTLS.init();			
+			HTLS.init();	*/		
 		};
 }
 
