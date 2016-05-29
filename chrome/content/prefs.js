@@ -99,13 +99,15 @@ var htlivesightPrefs = {
 				htlivesightPrefs._pref_branch.setIntPref(encodeURI(key), value);
 		},
 		delKey : function(key) {
-			if (htlivesight.arch === "Sandboxed")
+			if (htlivesight.arch === "Sandboxed"){
 				//localStorage["extensions.Htlivesight.prefs."+key] = value;
 				delete window.localStorage["extensions.Htlivesight.prefs."+key];
-			if (htlivesight.arch === "Gecko")
+			}
+			if (htlivesight.arch === "Gecko"){
 				//htlivesightPrefs._pref_branch.setIntPref(encodeURI(key), value);
 				console.log("before deleting :"+ key);
 				htlivesightPrefs._pref_branch.deleteBranch(key);
 				console.log("after deleting :"+ key);
+			}
 		},
 };

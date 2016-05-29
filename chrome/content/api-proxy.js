@@ -243,7 +243,7 @@ htlivesight.ApiProxy = {
 			//console.log("into if: "+ accessToken);
 			return accessToken;
 		}
-		console.log("decrypted: "+ htlivesightPrefs.getString("oauth." + teamId + ".t1"));
+		//console.log("decrypted: "+ htlivesight.decrypt(htlivesightPrefs.getString("oauth." + teamId + ".t1")));
 		return htlivesight.decrypt(htlivesightPrefs.getString("oauth." + teamId + ".t1"));
 
 	    //return htlivesightPrefs.getString("oauth." + teamId + ".accessToken");
@@ -262,6 +262,7 @@ htlivesight.ApiProxy = {
 			htlivesightPrefs.delKey("oauth." + teamId + ".accessTokenSecret");
 			return accessTokenSecret
 		}
+		//console.log(htlivesight.decrypt(htlivesightPrefs.getString("oauth." + teamId + ".t2")));
 		return htlivesight.decrypt(htlivesightPrefs.getString("oauth." + teamId + ".t2"));
 	    //return htlivesightPrefs.getString("oauth." + teamId + ".accessTokenSecret");
 	},
