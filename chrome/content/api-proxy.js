@@ -234,18 +234,40 @@ htlivesight.ApiProxy = {
 	},
 
 	getAccessToken : function(teamId) {
-	    return htlivesightPrefs.getString("oauth." + teamId + ".accessToken");
+		var accessToken = htlivesightPrefs.getString("oauth." + teamId + ".accessToken");
+		//console.log(accessToken)
+		if (accessToken){
+			htlivesightPrefs.setString("oauth." + teamId + ".t1", htlivesight.encrypt(accessToken));
+			//delete window.localStorage["oauth." + teamId + ".accessToken"];
+			htlivesightPrefs.delKey("oauth." + teamId + ".accessToken");
+			//console.log("into if: "+ accessToken);
+			return accessToken;
+		}
+		console.log("decrypted: "+ htlivesightPrefs.getString("oauth." + teamId + ".t1"));
+		return htlivesight.decrypt(htlivesightPrefs.getString("oauth." + teamId + ".t1"));
+
+	    //return htlivesightPrefs.getString("oauth." + teamId + ".accessToken");
 	},
 
 	setAccessToken : function(token,teamId) {
-	    htlivesightPrefs.setString("oauth." + teamId + ".accessToken", token);
+	    //htlivesightPrefs.setString("oauth." + teamId + ".accessToken", token);
+	    htlivesightPrefs.setString("oauth." + teamId + ".t1", htlivesight.encrypt(token));
 	},
 
 	getAccessTokenSecret : function(teamId) {
-	    return htlivesightPrefs.getString("oauth." + teamId + ".accessTokenSecret");
+		var accessTokenSecret = htlivesightPrefs.getString("oauth." + teamId + ".accessTokenSecret");
+		if (accessTokenSecret){
+			htlivesightPrefs.setString("oauth." + teamId + ".t2", htlivesight.encrypt(accessTokenSecret));
+			//delete window.localStorage["oauth." + teamId + ".accessTokenSecret"];
+			htlivesightPrefs.delKey("oauth." + teamId + ".accessTokenSecret");
+			return accessTokenSecret
+		}
+		return htlivesight.decrypt(htlivesightPrefs.getString("oauth." + teamId + ".t2"));
+	    //return htlivesightPrefs.getString("oauth." + teamId + ".accessTokenSecret");
 	},
 
 	setAccessTokenSecret : function(secret,teamId) {
-	    htlivesightPrefs.setString("oauth." + teamId + ".accessTokenSecret", secret);
+	    //htlivesightPrefs.setString("oauth." + teamId + ".accessTokenSecret", secret);
+		htlivesightPrefs.setString("oauth." + teamId + ".t2", htlivesight.encrypt(secret));
 	},
 };

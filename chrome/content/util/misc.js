@@ -142,36 +142,43 @@ htlivesight.generateFromSeed=function(){
 	//alert("old string= "+oldString+"\nnew String= "+newString);
 };
 htlivesight.encrypt = function(stringToCrypt){
-	console.log("stringToCrypt = " + stringToCrypt);
+	//console.log("stringToCrypt = " + stringToCrypt);
+	// check if argument is undefined to avoid errors.
+	if(!stringToCrypt){
+		return stringToCrypt;
+	}
 	var reverseStrin = new Array();
 	for(var i=0; i<stringToCrypt.length;i++){
 		reverseStrin.unshift(stringToCrypt[i]);
 	}
-	console.log("reverseStrin = " + reverseStrin);
+	//console.log("reverseStrin = " + reverseStrin);
 	var CharCodeIndexed = new Array();
 	for(var i=0; i<reverseStrin.length;i++){
 		CharCodeIndexed.push(reverseStrin[i].charCodeAt(0)+i);
 	}
-	console.log("CharCodeIndexed = "+CharCodeIndexed);
+	//console.log("CharCodeIndexed = "+CharCodeIndexed);
 	return ""+CharCodeIndexed
 }
 htlivesight.decrypt = function(stringToDecrypt){
-	console.log("stringToDecrypt = "+stringToDecrypt);
+	if(!stringToDecrypt){
+		return stringToDecrypt;
+	}
+	//console.log("stringToDecrypt = "+stringToDecrypt);
 	var arrayToDecrypt = stringToDecrypt.split(',');
 	var reverseString = new Array();
 	for(var i=0; i<arrayToDecrypt.length;i++){
 		reverseString.push(String.fromCharCode(parseInt(arrayToDecrypt[i])-i));
 	}
-	console.log("reverseString =" + reverseString);
+	//console.log("reverseString =" + reverseString);
 	var decryptedString = new Array();
 	for(var i=0; i<reverseString.length;i++){
 		decryptedString.unshift(reverseString[i]);
 	}
-	console.log("decryptedString = " +  decryptedString.concat());
+	//console.log("decryptedString = " +  decryptedString.concat());
 	var lastString='';
 	for(var i=0; i<decryptedString.length;i++){
 		lastString += decryptedString[i]; 
 	}
-	console.log("lastString = " + lastString);
+	//console.log("lastString = " + lastString);
 	return lastString;
 }

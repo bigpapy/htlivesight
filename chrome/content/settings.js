@@ -1356,12 +1356,15 @@ htlivesight.Settings = {
 					if(document.getElementById("chkExportOauth").checked){
 						prefs.oauth={};
 						prefs.oauth[prefs.general.teamId]={};
-						prefs.oauth[prefs.general.teamId].accessToken=htlivesight.ApiProxy.getAccessToken(prefs.general.teamId);
-						prefs.oauth[prefs.general.teamId].accessTokenSecret=htlivesight.ApiProxy.getAccessTokenSecret(prefs.general.teamId);
+						//prefs.oauth[prefs.general.teamId].accessToken=htlivesight.ApiProxy.getAccessToken(prefs.general.teamId);
+						//prefs.oauth[prefs.general.teamId].accessTokenSecret=htlivesight.ApiProxy.getAccessTokenSecret(prefs.general.teamId);
+						prefs.oauth[prefs.general.teamId].t1=htlivesight.encrypt(htlivesight.ApiProxy.getAccessToken(prefs.general.teamId));
+						prefs.oauth[prefs.general.teamId].t2=htlivesight.encrypt(htlivesight.ApiProxy.getAccessTokenSecret(prefs.general.teamId));
 					}
 					var jsonPrefs = JSON.stringify(prefs);
 					if(!document.getElementById("chkExportOauth").checked){
-						jsonPrefs = jsonPrefs.replace(/,"oauth":{"\d+":{"accessToken":"\w+","accessTokenSecret":"\w+"}}/,"");
+						//jsonPrefs = jsonPrefs.replace(/,"oauth":{"\d+":{"accessToken":"\w+","accessTokenSecret":"\w+"}}/,"");
+						jsonPrefs = jsonPrefs.replace(/,"oauth":{"\d+":{"t1":"\w+","t2":"\w+"}}/,"");
 					}
 					if(!document.getElementById("chkExportBackground").checked){
 					//	delete prefs.general.customBackgroundPath;
@@ -1488,8 +1491,10 @@ htlivesight.Settings = {
 						if(htlivesight.Settings.preferences.oauth){
 							for (var key in htlivesight.Settings.preferences.oauth) {
 								if (htlivesight.Settings.preferences.oauth.hasOwnProperty(key)) {
-									htlivesight.ApiProxy.setAccessToken(htlivesight.Settings.preferences.oauth[key].accessToken,key);
-									htlivesight.ApiProxy.setAccessTokenSecret(htlivesight.Settings.preferences.oauth[key].accessTokenSecret,key);
+									//htlivesight.ApiProxy.setAccessToken(htlivesight.Settings.preferences.oauth[key].accessToken,key);
+									//htlivesight.ApiProxy.setAccessTokenSecret(htlivesight.Settings.preferences.oauth[key].accessTokenSecret,key);
+									htlivesight.ApiProxy.setAccessToken(htlivesight.decrypt(htlivesight.Settings.preferences.oauth[key].t1),key);
+									htlivesight.ApiProxy.setAccessTokenSecret(htlivesight.decrypt(htlivesight.Settings.preferences.oauth[key].t2),key);
 //									alert(key);
 //									alert(htlivesight.Settings.preferences.oauth[key]['accessToken']);
 //									alert(htlivesight.Settings.preferences.oauth[key]['accessTokenSecret']);
