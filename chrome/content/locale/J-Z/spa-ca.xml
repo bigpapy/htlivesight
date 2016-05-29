@@ -184,7 +184,7 @@
 <MatchesLines>Mostrar líneas de detalle al minimizar</MatchesLines>
 <NotifyNotify>Notificaciones</NotifyNotify>
 <NotifyEnableSound>Habilitar notificaciones de sonido</NotifyEnableSound>
-<NotifyOnly>Sólo en partidos abiertos</NotifyOnly>
+<NotifyOnly>Solo en partidos abiertos</NotifyOnly>
 <NotifyFlash>Titulares rápidos</NotifyFlash>
 <NotifyStatus>Avisos en barra de estado</NotifyStatus>
 <OtherAuthorization>Código de autorización</OtherAuthorization>
@@ -403,7 +403,7 @@
 <Tranquil>Tranquilo</Tranquil>
 <VisitOurSoundCollection>Visite nuestra colección de sonidos</VisitOurSoundCollection>
 <SafariWarning>Si el panel de HTLivesight no esta enfocado, los sonidos de notificaciones serán bloqueados. Por favor, abre una nueva ventana si deseas navegar por internet durante un partido</SafariWarning>
-<OnlyHTTPFiles>Sólo la URL http funciona</OnlyHTTPFiles>
+<OnlyHTTPFiles>Solo la URL http funciona</OnlyHTTPFiles>
 <Warning>Advertencia</Warning>
 <Testers>Evaluadores</Testers>
 <BasedOn>Basado en</BasedOn>
@@ -426,6 +426,7 @@
 <ClickToSave>Haz clic en OK en la ventana de preferencias para guardarlas.</ClickToSave>
 <TooltipWindowSpeech>Habilitar y deshabilitar las notificaciones texto a voz de eventos de partido</TooltipWindowSpeech>
 <YouthMatches>Partidos juveniles</YouthMatches>
-<GetYouthNearestMatch>Cargar automáticamente los partidos juveniles de tu equipo</GetYouthNearestMatch>
+<GetYouthNearestMatch>Carga automáticamente los partidos juveniles de tu equipo</GetYouthNearestMatch>
 <MatchesYouthLeague>Partidos Juveniles de liga</MatchesYouthLeague>
+<YouthSoundEqualSenior>Mismo sonido para equipo juvenil y equipo mayor</YouthSoundEqualSenior>
 </Htlivesight>

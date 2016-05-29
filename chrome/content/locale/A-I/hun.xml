@@ -425,7 +425,8 @@
 <PrefsRestart>Újraindítás szükséges néhány beállítás miatt!</PrefsRestart>
 <ClickToSave>A beállítások mentéséhez kattints az OK gombra.</ClickToSave>
 <TooltipWindowSpeech>Mérkőzés értesítések szövegfelolvasásának engedélyezése és tiltása</TooltipWindowSpeech>
-<YouthMatches>Youth Matches</YouthMatches>
-<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
-<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
+<YouthMatches>Ifimérkőzések</YouthMatches>
+<GetYouthNearestMatch>Az ifimérkőzéseid automatikus betöltése</GetYouthNearestMatch>
+<MatchesYouthLeague>Ifibajnokság mérkőzései</MatchesYouthLeague>
+<YouthSoundEqualSenior>Az ificsapatom egyforma hangokkal jelez, mint a felnőttcsapatom</YouthSoundEqualSenior>
 </Htlivesight>

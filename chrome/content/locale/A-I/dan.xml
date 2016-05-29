@@ -32,14 +32,14 @@
 <FriendsTitle>Venner</FriendsTitle>
 <FriendsRemove>Fjern</FriendsRemove>
 <FriendsOpen>Åben</FriendsOpen>
-<Introduction>Du bliver videresendt til en CHPP-side for, at få din godkendelseskode. Hvis dette ikke sker, skal du midlertidigt deaktiver blokering af pop-up vinduer,  eller tilføje HTlivesight til undtagelseslisten.</Introduction>
+<Introduction>Du bliver videresendt til en CHPP-side for at få din godkendelseskode. Hvis dette ikke sker, skal du midlertidigt deaktiver blokering af pop-up vinduer, eller tilføje HTlivesight til undtagelseslisten.</Introduction>
 <Insert>Indsæt autorisationskode her:</Insert>
 <Ending>HTlivesight er godkendt. Klik OK for at genstarte programmet.</Ending>
 <Error>Fejl</Error>
 <ServerON>Tilsluttet</ServerON>
 <ServerOFF>Afbrudt</ServerOFF>
 <ResetToken>Godkendelse er slettet. Genstart HTLS eller vent til næste opdatering (Mindre end 1 min).</ResetToken>
-<NoHTServer>Du har ikke valgt den server hvos du er logget ind med din browser. Højreklik på baggrunden - indstillinger - generelt - udfyld med dit servernummer.</NoHTServer>
+<NoHTServer>Du har ikke valgt den korrekte server som du benytter på nuværende tidspunkt. Du kan vælge den korrekte server ved, at højreklikke et sted på baggrund skærmen, klik på - indstillinger og vælg generel.</NoHTServer>
 <MatchesMaximum>Du kan ikke følge mere end 20 kampe!</MatchesMaximum>
 <LeagueRound>Runde</LeagueRound>
 <MessageHattrickError>Hattrick server returnerede en fejl.</MessageHattrickError>
@@ -87,7 +87,7 @@
 <EventRed>Rødt kort</EventRed>
 <EventSideLeft>Venstre</EventSideLeft>
 <EventSideRight>Højre</EventSideRight>
-<EventSideCenter>Midtfor</EventSideCenter>
+<EventSideCenter>Midten</EventSideCenter>
 <EventSideFreeKick>Frispark</EventSideFreeKick>
 <EventSidePenalty>Straffe</EventSidePenalty>
 <EventSpecialUnpredictable>SE Uberegnelig</EventSpecialUnpredictable>
@@ -340,7 +340,7 @@
 <Themes>Temaer</Themes>
 <NoTournament>Indlæse ikke venners enkelt- og turneringenskampe</NoTournament>
 <DefHatStats>HatStats Forsvar</DefHatStats>
-<MidHatStats>HatStats Midtbane</MidHatStats>
+<MidHatStats>HatStats midtbane</MidHatStats>
 <AttHatStats>HatStats Angreb</AttHatStats>
 <TotHatStats>Samlede HatStats</TotHatStats>
 <CopiedToClipboard>Kopierede!</CopiedToClipboard>
@@ -425,7 +425,8 @@
 <PrefsRestart>Nogle indstillinger kræver genstart!</PrefsRestart>
 <ClickToSave>Klik på OK i indstillingsvinduet for at gemme dem.</ClickToSave>
 <TooltipWindowSpeech>Slå tekst-til-tale for kamphændelser fra eller til</TooltipWindowSpeech>
-<YouthMatches>Youth Matches</YouthMatches>
-<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
-<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
+<YouthMatches>Ungdomskampe</YouthMatches>
+<GetYouthNearestMatch>Indlæs dine ungdomskampe automatisk</GetYouthNearestMatch>
+<MatchesYouthLeague>Ungdomsliga kampe</MatchesYouthLeague>
+<YouthSoundEqualSenior>Lyde for mit ungdomshold er det samme som mit seniorhold</YouthSoundEqualSenior>
 </Htlivesight>

@@ -17,7 +17,7 @@
 <LoginSpeed>Vitesse</LoginSpeed>
 <LoginByEvent>Par évènement</LoginByEvent>
 <LeagueMatches>Matchs de ligue</LeagueMatches>
-<LeagueLiveTable>Classement de la division</LeagueLiveTable>
+<LeagueLiveTable>Classement</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Équipe</LeagueTeam>
 <LeaguePlayed>J</LeaguePlayed>
@@ -428,5 +428,5 @@
 <YouthMatches>Matchs des jeunes</YouthMatches>
 <GetYouthNearestMatch>Afficher les matchs de vos jeunes</GetYouthNearestMatch>
 <MatchesYouthLeague>Match de ligue de jeunes</MatchesYouthLeague>
-<YouthSoundEqualSenior>My youth team sounds equal to my senior one :P</YouthSoundEqualSenior>
+<YouthSoundEqualSenior>Sons équipe jeunes identique à la 1ère senior</YouthSoundEqualSenior>
 </Htlivesight>

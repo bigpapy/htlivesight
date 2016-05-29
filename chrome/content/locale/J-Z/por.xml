@@ -46,18 +46,18 @@
 <MessageAlreadyFriend>Já se encontra na lista de equipas acompanhadas!</MessageAlreadyFriend>
 <MessageErrorReading>Erro a ler os dados</MessageErrorReading>
 <MessageLoginNotSuccessful>O login falhou.</MessageLoginNotSuccessful>
-<TacticPressing>Pressing</TacticPressing>
-<TacticCA>contra-ataque</TacticCA>
-<TacticAIM>ataque pelo meio</TacticAIM>
-<TacticAOW>ataque pelas alas</TacticAOW>
-<TacticPlayCreative>espontaneidade</TacticPlayCreative>
-<TacticLongShots>remate de longe</TacticLongShots>
+<TacticPressing>Pressão</TacticPressing>
+<TacticCA>Contra-ataque</TacticCA>
+<TacticAIM>Ataque pelo meio</TacticAIM>
+<TacticAOW>Ataque pelas alas</TacticAOW>
+<TacticPlayCreative>Espontaneidade</TacticPlayCreative>
+<TacticLongShots>Remates de longe</TacticLongShots>
 <TimeFirstHalf>da primeira parte</TimeFirstHalf>
-<TimeHalfTime>intervalo</TimeHalfTime>
-<TimeSecondHalf>segunda parte</TimeSecondHalf>
-<TimeExtraTime>prolongamento</TimeExtraTime>
-<TimePenalties>penaltis</TimePenalties>
-<TimeFinish>fim</TimeFinish>
+<TimeHalfTime>Intervalo</TimeHalfTime>
+<TimeSecondHalf>Segunda parte</TimeSecondHalf>
+<TimeExtraTime>Prolongamento</TimeExtraTime>
+<TimePenalties>Penáltis</TimePenalties>
+<TimeFinish>Terminado</TimeFinish>
 <TimeStartsIn>Começa dentro de</TimeStartsIn>
 <TimeDays>dias</TimeDays>
 <TimeHours>horas</TimeHours>
@@ -81,15 +81,15 @@
 <TooltipFriendMoveDown>Mover amigo para baixo</TooltipFriendMoveDown>
 <MenuAddFriend>Amigo</MenuAddFriend>
 <EventGoal>GOLO</EventGoal>
-<EventPenaltyGoal>Penalti: GOLO</EventPenaltyGoal>
-<EventPenaltyMiss>Penalti: FALHOU</EventPenaltyMiss>
+<EventPenaltyGoal>Penálti: GOLO</EventPenaltyGoal>
+<EventPenaltyMiss>Penálti: FALHOU</EventPenaltyMiss>
 <EventInjury>Lesão</EventInjury>
 <EventRed>Cartão vermelho</EventRed>
 <EventSideLeft>esquerda</EventSideLeft>
 <EventSideRight>direita</EventSideRight>
 <EventSideCenter>centro</EventSideCenter>
 <EventSideFreeKick>livre</EventSideFreeKick>
-<EventSidePenalty>penalti</EventSidePenalty>
+<EventSidePenalty>Penálti</EventSidePenalty>
 <EventSpecialUnpredictable>SE imprevisível</EventSpecialUnpredictable>
 <EventSpecialLongShot>SE remate de longe</EventSpecialLongShot>
 <EventSpecialQuick>SE velocidade</EventSpecialQuick>
@@ -118,7 +118,7 @@
 <OrganizationBreaks>confusão</OrganizationBreaks>
 <Reorganize>reorganização</Reorganize>
 <NervesImportantThrillingGame>nervos em jogo importante e dramático</NervesImportantThrillingGame>
-<Bruised>lesão de penso</Bruised>
+<Bruised>Magoado</Bruised>
 <Injuried>lesionado</Injuried>
 <ModeratelyInjuried>lesão moderada</ModeratelyInjuried>
 <BadlyInjuried>lesão grave</BadlyInjuried>
@@ -173,11 +173,11 @@
 <MatchesGetFriends>Mostrar jogos dos amigos</MatchesGetFriends>
 <MatchesHeader>Cabeçalho</MatchesHeader>
 <MatchesScorers>Marcadores</MatchesScorers>
-<ScorersList>Listar marcadores no cabeçalho</ScorersList>
+<ScorersList>Mostrar marcadores</ScorersList>
 <MatchesBooked>Cartões</MatchesBooked>
-<BookedList>Mostrar cartões no cabeçalho</BookedList>
+<BookedList>Mostrar cartões</BookedList>
 <MatchesSentOff>Expulso</MatchesSentOff>
-<SentOffList>Mostrar expulsões no cabeçalho</SentOffList>
+<SentOffList>Mostrar expulsões</SentOffList>
 <MatchesInjured>Lesões</MatchesInjured>
 <InjuredList>Mostrar lesões no cabeçalho</InjuredList>
 <MatchesWindow>Janela</MatchesWindow>
@@ -428,4 +428,5 @@
 <YouthMatches>Jogos de juniores</YouthMatches>
 <GetYouthNearestMatch>Carrega automaticamente os teus jogos de juniores</GetYouthNearestMatch>
 <MatchesYouthLeague>Jogos da Liga de Juniores</MatchesYouthLeague>
+<YouthSoundEqualSenior>My youth team sounds equal to my senior one</YouthSoundEqualSenior>
 </Htlivesight>

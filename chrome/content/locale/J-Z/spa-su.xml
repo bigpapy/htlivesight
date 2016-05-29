@@ -184,7 +184,7 @@
 <MatchesLines>Mostrar líneas de detalle al minimizar</MatchesLines>
 <NotifyNotify>Notificaciones</NotifyNotify>
 <NotifyEnableSound>Habilitar notificaciones sonoras</NotifyEnableSound>
-<NotifyOnly>Sólo en partidos abiertos</NotifyOnly>
+<NotifyOnly>Solo en partidos abiertos</NotifyOnly>
 <NotifyFlash>Titulares rápidos</NotifyFlash>
 <NotifyStatus>Avisos en barra de estado</NotifyStatus>
 <OtherAuthorization>Código de autorización</OtherAuthorization>
@@ -425,7 +425,8 @@
 <PrefsRestart>¡Algunas preferencias requieren reiniciar!</PrefsRestart>
 <ClickToSave>Haga clic en Aceptar en la ventana para guardar las preferencias.</ClickToSave>
 <TooltipWindowSpeech>Habilitar y deshabilitar las notificaciones texto a voz de eventos de partido</TooltipWindowSpeech>
-<YouthMatches>Youth Matches</YouthMatches>
-<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
-<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
+<YouthMatches>Partidos de las inferiores</YouthMatches>
+<GetYouthNearestMatch>Carga automáticamente los partidos de las inferiores de tu equipo</GetYouthNearestMatch>
+<MatchesYouthLeague>Partidos de liga de las inferiores</MatchesYouthLeague>
+<YouthSoundEqualSenior>Mismo sonido para equipo de inferiores y equipo adulto</YouthSoundEqualSenior>
 </Htlivesight>

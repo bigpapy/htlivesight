@@ -21,8 +21,8 @@
 <LeaguePosition>#</LeaguePosition>
 <LeagueTeam>Lag</LeagueTeam>
 <LeaguePlayed>S</LeaguePlayed>
-<LeagueGoals>M</LeagueGoals>
-<LeagueGoalDiff>MS</LeagueGoalDiff>
+<LeagueGoals>Mål</LeagueGoals>
+<LeagueGoalDiff>±</LeagueGoalDiff>
 <LeaguePoints>P</LeaguePoints>
 <MatchesList>Matchlista</MatchesList>
 <MatchesAdd>Lägg till match</MatchesAdd>
@@ -356,7 +356,7 @@
 <Header>Nickskicklig</Header>
 <Regainer>Återhämtare</Regainer>
 <SecondTeamIdLabel>LagID (Seniorlag 2)</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Sekundärlagets ljud är samma som det primära lagets</SecondSoundEqualFirst>
+<SecondSoundEqualFirst>Sekundärlagets ljud är samma som primärlagets</SecondSoundEqualFirst>
 <Keeper>Målvakt</Keeper>
 <Defending>Försvar</Defending>
 <Playmaking>Spelupplägg</Playmaking>
@@ -428,4 +428,5 @@
 <YouthMatches>Juniormatcher</YouthMatches>
 <GetYouthNearestMatch>Hämta matcher för mitt juniorlag</GetYouthNearestMatch>
 <MatchesYouthLeague>Juniorserie(r)</MatchesYouthLeague>
+<YouthSoundEqualSenior>Mitt juniorlags ljud är detsamma som seniorlagets</YouthSoundEqualSenior>
 </Htlivesight>
