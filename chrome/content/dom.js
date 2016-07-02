@@ -1380,18 +1380,12 @@ htlivesight.DOM.UpdateLiveEvents=function(match) {
 				row.setAttribute("id", "ev_row_"+match.id + "_" + match.sourceSystem+"_"+i );
 				if (htlivesight.prefs.other.bottomUp){ // reverse order
 					var countBack=0;
-					if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.sourceSystem+"_"+(i));// last event
-					if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.sourceSystem+"_"+(i-1));// last event
-					if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.sourceSystem+"_"+(i-2));// last event
-					if (!lastrow) lastrow=document.getElementById("ev_row_"+match.id + "_" + match.sourceSystem+"_"+(i-3));// last event (before two "")*/
+					if (!lastrow) lastrow =  rows.firstChild;
 					rows.insertBefore(row,lastrow);// inserting new row at the top of the list
 					lastrow=row; // top row is the last one
 				}else{
 					rows.appendChild(row);// insert at the bottom of the list.
 				}
-				//$("#ev_row_"+match.id + "_" + match.sourceSystem+"_"+i).effect("highlight","swing", 2000);
-				//$("#ev_row_"+match.id + "_" + match.sourceSystem+"_"+i).effect("highlight",{'color': '#FFFFFF', 'duration': 2000});
-				//$("#ev_row_"+match.id + "_" + match.sourceSystem+"_"+i).show("highlight","swing", 2000);
 				match.event.dom.join(row);
 			}
 		};
