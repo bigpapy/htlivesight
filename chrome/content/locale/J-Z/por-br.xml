@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
+<MenuStart>Iniciar</MenuStart>
 <MenuOptions>Opções</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<TooltipButton>Clique para abrir o menu do HTLiveSight</TooltipButton>
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Servidor:</MenuServer>
 <MenuDisconnected>desligado</MenuDisconnected>
@@ -13,7 +13,7 @@
 <LoginUsername>Nome de Usuário</LoginUsername>
 <LoginRememberMe>Conexão Automatica</LoginRememberMe>
 <LoginButton>Entrar</LoginButton>
-<LoginReLive>Re-Live</LoginReLive>
+<LoginReLive>Rever</LoginReLive>
 <LoginSpeed>Velocidade</LoginSpeed>
 <LoginByEvent>Por evento</LoginByEvent>
 <LeagueMatches>Jogos do Campeonato</LeagueMatches>
@@ -23,7 +23,7 @@
 <LeaguePlayed>J</LeaguePlayed>
 <LeagueGoals>G</LeagueGoals>
 <LeagueGoalDiff>SG</LeagueGoalDiff>
-<LeaguePoints>PTS</LeaguePoints>
+<LeaguePoints>Pts</LeaguePoints>
 <MatchesList>Lista de Jogos</MatchesList>
 <MatchesAdd>Adicionar Jogo</MatchesAdd>
 <MatchesByMatch>Por ID de jogo</MatchesByMatch>
@@ -216,18 +216,18 @@
 <PathSoundsMyBoo>Som para lesão de nosso jogador</PathSoundsMyBoo>
 <PathSoundsOpBoo>Som para lesão de adversário</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Apito para início da 1ª/2ª parte</PathSoundsWhistleStart>
-<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
+<PathSoundsWhistle>Som para cartão amarelo</PathSoundsWhistle>
 <PathSoundsHattrick>Som de hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Restore</PathSoundsRestore>
 <PathSoundsPlay>Play</PathSoundsPlay>
 <LanguageSelect>Seleccionar idioma</LanguageSelect>
 <LanguageNote>Nota: Deve reiniciar o HTLiveSight para as opções terem efeito.</LanguageNote>
 <ButtonCancel>Cancelar</ButtonCancel>
-<ButtonOk>OK</ButtonOk>
+<ButtonOk>Ok</ButtonOk>
 <WindowAboutTitle>Sobre o HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabTranslators>Tradutores</TabTranslators>
+<TabCredits>Créditos</TabCredits>
 <MonthJanuary>Jan</MonthJanuary>
 <MonthFebruary>Fev</MonthFebruary>
 <MonthMarch>Mar</MonthMarch>
@@ -235,8 +235,8 @@
 <MonthMay>Mai</MonthMay>
 <MonthJune>Jun</MonthJune>
 <MonthJuly>Jul</MonthJuly>
-<MonthAugust>Aug</MonthAugust>
-<MonthSeptember>Sep</MonthSeptember>
+<MonthAugust>Ago</MonthAugust>
+<MonthSeptember>Set</MonthSeptember>
 <MonthOctober>Out</MonthOctober>
 <MonthNovember>Nov</MonthNovember>
 <MonthDecember>Dez</MonthDecember>
@@ -245,45 +245,45 @@
 <TextHelpOf>com a ajuda de</TextHelpOf>
 <TextThanksTo>Agradecimentos:</TextThanksTo>
 <ButtonClose>Fechar</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
+<NonExistent>Inexistente</NonExistent>
+<Disastrous>Péssimo</Disastrous>
+<Wretched>Terrível</Wretched>
+<Poor>Ruim</Poor>
+<Weak>Fraco</Weak>
+<Inadequate>Inadequado</Inadequate>
+<Passable>Razoável</Passable>
+<Solid>Bom</Solid>
+<Excellent>Excelente</Excellent>
+<Formidable>Formidável</Formidable>
+<Outstanding>Fenomenal</Outstanding>
+<Brilliant>Brilhante</Brilliant>
+<Magnificent>Magnífico</Magnificent>
+<WorldClass>Genial</WorldClass>
+<Supernatural>Sobrenatural</Supernatural>
+<Titanic>Titânico</Titanic>
+<ExtraTerrestrial>Colossal</ExtraTerrestrial>
+<Mythical>Mítico</Mythical>
+<Magical>Mágico</Magical>
+<Utopian>Utópico</Utopian>
+<Divine>Lendário</Divine>
+<VeryHigh>muito alto</VeryHigh>
+<High>alto</High>
+<Low>baixo</Low>
+<VeryLow>muito baixo</VeryLow>
+<RightDefence>Defesa direita</RightDefence>
+<MiddleDefence>Defesa central</MiddleDefence>
+<LeftDefence>Defesa esquerda</LeftDefence>
+<Midfield>Meio-campo</Midfield>
+<RightAttack>Ataque direito</RightAttack>
+<MiddleAttack>Ataque central</MiddleAttack>
+<LeftAttack>Ataque esquerdo</LeftAttack>
 <IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
 <IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
+<TeamAttitude>Atitude da equipe</TeamAttitude>
+<TacticType>Tática</TacticType>
+<TacticSkill>Nível da tática</TacticSkill>
+<BallPosses>Posse de bola</BallPosses>
+<SpecialEvent>Evento especial</SpecialEvent>
 <Normal>Normal</Normal>
 <PIC>Play it cool</PIC>
 <MOTS>Match of the season</MOTS>
@@ -297,17 +297,17 @@
 <EventColorTitle>Event text color</EventColorTitle>
 <EventTextColor>Event text color: #</EventTextColor>
 <SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
+<Colors>Cores</Colors>
 <SchemaTip>Click to show Lineup</SchemaTip>
 <StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
+<Youth>Júnior</Youth>
 <Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
+<Tournament>Torneio</Tournament>
+<FreeKicks>Livres diretos</FreeKicks>
+<RedCards>Cartões vermelhos</RedCards>
+<YellowCards>Cartões amarelos</YellowCards>
+<Injuries>Lesões</Injuries>
+<Goals>Gols</Goals>
 <Total>Total</Total>
 <Terraces>Terraces</Terraces>
 <Basic>Basic seating</Basic>
@@ -326,33 +326,33 @@
 <EventYellow2>Second yellow card</EventYellow2>
 <LoggedIn>Logged in as</LoggedIn>
 <latestNews>Check latest news on</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
+<HTLSThread>Fórum do Hattrick</HTLSThread>
 <ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
+<GooglePlusPage>Google+</GooglePlusPage>
+<TwitterPage>Twitter</TwitterPage>
+<FacebookPage>Facebook</FacebookPage>
+<chatLink>Iniciar chat</chatLink>
+<hidesidebar>Ocultar barra lateral</hidesidebar>
+<addFriend>Clique para adicionar esta equipe à lista de amigos</addFriend>
 <TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
+<Dark>Escuro</Dark>
+<Light>Claro</Light>
+<Themes>Temas</Themes>
 <NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
-<TotHatStats>Total HatStats</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
+<DefHatStats>HatStats da Defesa</DefHatStats>
+<MidHatStats>HatStats do Meio-Campo</MidHatStats>
+<AttHatStats>HatStats do Ataque</AttHatStats>
+<TotHatStats>HatStats total</TotHatStats>
+<CopiedToClipboard>Copiado para a área de transferência!</CopiedToClipboard>
 <ReLiveControls>Relive Controls</ReLiveControls>
 <ExtendImage>Extend image</ExtendImage>
 <RepeatImage>Repeat image</RepeatImage>
-<Background>Background</Background>
-<MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
+<Background>Imagem de fundo</Background>
+<MuteAll>Mudar o som</MuteAll>
+<Technical>Técnica</Technical>
+<Quick>Velocidade</Quick>
+<Powerful>Força</Powerful>
+<Unpredictable>Imprevisível</Unpredictable>
 <Header>Header</Header>
 <Regainer>Regainer</Regainer>
 <SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
@@ -360,14 +360,14 @@
 <Keeper>Keeper</Keeper>
 <Defending>Defending</Defending>
 <Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
+<Winger>Ala</Winger>
 <Passing>Passing</Passing>
 <Scoring>Scoring</Scoring>
 <SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
+<Age>Idade</Age>
+<Form>Forma</Form>
+<Stamina>Resistência</Stamina>
+<Experience>Experiência</Experience>
 <Loyalty>Loyalty</Loyalty>
 <PathSoundsPressing>Pressing sound</PathSoundsPressing>
 <PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>

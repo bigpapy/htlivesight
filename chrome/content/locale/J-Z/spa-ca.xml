@@ -38,8 +38,8 @@
 <Error>Error</Error>
 <ServerON>Conectado</ServerON>
 <ServerOFF>Desconectado</ServerOFF>
-<ResetToken>La autorización ha sido revocada. Reinicia HTLS o espera la próxima actualización (less than 1 minute).</ResetToken>
-<NoHTServer>No has seleccionado en que servidor de Hattrick al que estas conectado con tu navegador. Da clic derecho en el fondo y elige - "Opciones" - "General" - y escribe el número del servidor.</NoHTServer>
+<ResetToken>La autorización ha sido revocada. Reinicia HTLS o espera la próxima actualización (menos de 1 minuto).</ResetToken>
+<NoHTServer>No has seleccionado el servidor correcto de Hattrick al que estas actualmente conectado. Da clic derecho en el fondo y elige - "Opciones" - "General" - y escribe el número del servidor.</NoHTServer>
 <MatchesMaximum>¡No se pueden ver más de 20 partidos!</MatchesMaximum>
 <LeagueRound>Jornada</LeagueRound>
 <MessageHattrickError>El servidor de Hattrick devuelve un error.</MessageHattrickError>
@@ -101,7 +101,7 @@
 <EventSpecialWinger>+ lateral</EventSpecialWinger>
 <EventSpecialTechnical>técnico</EventSpecialTechnical>
 <EventSpecialCounterAttack>contraataque</EventSpecialCounterAttack>
-<EventSpecialCornerKick>lanzamiento de corner</EventSpecialCornerKick>
+<EventSpecialCornerKick>Tiro de esquina</EventSpecialCornerKick>
 <EventSpecialIndirect>Falta indirecta</EventSpecialIndirect>
 <EventSpecialUnpredictableLongPass>+ impredecible: pase largo</EventSpecialUnpredictableLongPass>
 <EventSpecialUnpredictableScoresOnHisOwn>+ impredecible: tiro</EventSpecialUnpredictableScoresOnHisOwn>
@@ -145,11 +145,11 @@
 <RequestLeagueGames>Bajando los datos de la liga</RequestLeagueGames>
 <RequestLive>Actualización en vivo</RequestLive>
 <RequestAdd>Añadir partido</RequestAdd>
-<RequestDelete>Borrar partido</RequestDelete>
+<RequestDelete>Eliminar partido</RequestDelete>
 <RequestLogin>Iniciar sesión</RequestLogin>
-<RequestDetails>Bajando detalles del partido</RequestDetails>
-<RequestTeam>Bajando partido por equipo</RequestTeam>
-<RequestTeamData>Bajando datos equipo</RequestTeamData>
+<RequestDetails>Obtener detalles del partido</RequestDetails>
+<RequestTeam>Obtener partido por equipo</RequestTeam>
+<RequestTeamData>Obtener datos equipo</RequestTeamData>
 <WindowTitle>Opciones HTLiveSight</WindowTitle>
 <TabGeneral>General</TabGeneral>
 <TabMatches>Partidos</TabMatches>
@@ -318,7 +318,7 @@
 <Error404>Error 404: no se encontró el recurso solicitado. Si este error aparece nuevamente revisa si el servicio de CHPP esta caído.</Error404>
 <Error0>Error 0: no conectado a internet.</Error0>
 <Error500>Error 500: error interno del servidor (de Hattrick)</Error500>
-<Error503>Error 503: CHPP servicio no disponible (sobrecarga temporal o en mantenimiento)</Error503>
+<Error503>Error 503: Servicio de CHPP no disponible (sobrecarga temporal o en mantenimiento)</Error503>
 <PathSoundsNote1>Insertar file:/// antes de la ruta del sonido en formato .ogg</PathSoundsNote1>
 <PathSoundsNote2>Ejemplo: file:///c:path o hesound.ogg</PathSoundsNote2>
 <PathSoundsWhistle2>Silbatazo Final de la 1ra mitad</PathSoundsWhistle2>
@@ -340,7 +340,7 @@
 <Themes>Temas</Themes>
 <NoTournament>No mostrar desafíos y/o partidos de torneos de mis Amigos</NoTournament>
 <DefHatStats>HatStats defensa</DefHatStats>
-<MidHatStats>HatStats mediocmapo</MidHatStats>
+<MidHatStats>HatStats mediocampo</MidHatStats>
 <AttHatStats>HatStats ataque</AttHatStats>
 <TotHatStats>HatStats total</TotHatStats>
 <CopiedToClipboard>¡Copiado al portapapeles!</CopiedToClipboard>
@@ -422,7 +422,7 @@
 <ExportBackground>Exportar fondo</ExportBackground>
 <ExportSounds>Exportar sonidos</ExportSounds>
 <ImportOk>¡Se han importado las preferencias!</ImportOk>
-<PrefsRestart>¡Algunas preferencias requiere reiniciar!</PrefsRestart>
+<PrefsRestart>¡Algunas preferencias requieren reiniciar!</PrefsRestart>
 <ClickToSave>Haz clic en OK en la ventana de preferencias para guardarlas.</ClickToSave>
 <TooltipWindowSpeech>Habilitar y deshabilitar las notificaciones texto a voz de eventos de partido</TooltipWindowSpeech>
 <YouthMatches>Partidos juveniles</YouthMatches>
