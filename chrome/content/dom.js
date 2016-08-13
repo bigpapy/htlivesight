@@ -1512,6 +1512,7 @@ htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
 			}else{
 				img.setAttribute("src", event.type.imageSrc);
 			}
+			img.setAttribute("title", event.key.txt  + ((htlivesight.Events.eventMap[event.key.ABC] != null) ? (" " + htlivesight.Events.eventMap[event.key.ABC]) : ""));
 			t = htlivesight.DOM.createTextEventElement(event);
 			row.appendChild(t);
 			return row;
