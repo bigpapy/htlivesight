@@ -558,7 +558,7 @@ htlivesight.DOM = {
 						newElement.addEventListener("mouseover", function(){htlivesight.DOM.ShowLink(this);});
 						newElement.addEventListener("mouseout", function(){htlivesight.DOM.HideLink(this);});
 						newElement.setAttribute("class", "player_name"+ " "+playerId+classPostfix);
-						newElement.appendChild(document.createTextNode(child.firstChild.textContent));
+						newElement.appendChild(document.createTextNode((child.firstChild?child.firstChild.textContent:"???")));//??? appears when player name is missing, it allows to open player link for a quick check
 					} else {
 					//	console.log(child);
 						newElement = null;
@@ -1422,7 +1422,7 @@ htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
 		var row, l, img, t, empty_img;
 		var prefs=htlivesight.prefs;
 		row = document.createElement("tr");
-		if (event.subjectTeamId == 0){
+		if (!match.isHomeTeam(event.subjectTeamId) && !match.isAwayTeam(event.subjectTeamId)){
 			if (prefs.colors.neutralColorCheck)
 				row.style.backgroundColor= "#" + prefs.colors.neutralColorCode;
 			if (prefs.colors.neutralTextColorCheck)
@@ -1430,7 +1430,7 @@ htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
 		}
 		if (prefs.colors.textColorCheck)
 			row.style.color= "#" + prefs.colors.textColorCode;
-		if (event.subjectTeamId != 0) {
+		if (match.isHomeTeam(event.subjectTeamId) || match.isAwayTeam(event.subjectTeamId)) {
 			var isF;
 			isF = htlivesight.Friends.isFriend(event.subjectTeamId, match.sourceSystem, !htlivesight.Friends.STRICT);
 			var isHome = match.isHomeTeam(event.subjectTeamId);
