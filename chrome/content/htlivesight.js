@@ -26,13 +26,25 @@ var htlivesight = {
 			}
 			//console.info(winW2);
 			//console.info(winH2);
-			if(htlivesight.platform == 'Android'){
-				document.getElementById("live_box").setAttribute("style", "width:" + (winW-288) + "px; margin-left:2px");
-				document.getElementById("sidebar").setAttribute("style", "width:" + (250) + "px; margin-right:2px");
+			if($(".fullscreen").length == 1){
+				if(htlivesight.platform == 'Android'){
+					document.getElementById("live_box").setAttribute("style", "width:" + (winW) + "px; margin-left:2px");
+					//document.getElementById("sidebar").setAttribute("style", "width:" + (250) + "px; margin-right:2px");
+				}else{
+					document.getElementById("live_box").setAttribute("style", "width:" + (winW2) + "px" );
+					//document.getElementById("sidebar").setAttribute("style", "width:" + (290) + "px" );
+				}
+				
 			}else{
-				document.getElementById("live_box").setAttribute("style", "width:" + (winW2-298) + "px" );
-				document.getElementById("sidebar").setAttribute("style", "width:" + (290) + "px" );
+				if(htlivesight.platform == 'Android'){
+					document.getElementById("live_box").setAttribute("style", "width:" + (winW-288) + "px; margin-left:2px");
+					document.getElementById("sidebar").setAttribute("style", "width:" + (250) + "px; margin-right:2px");
+				}else{
+					document.getElementById("live_box").setAttribute("style", "width:" + (winW2-298) + "px" );
+					document.getElementById("sidebar").setAttribute("style", "width:" + (290) + "px" );
+				}
 			}
+
 
 
 		},
