@@ -365,18 +365,18 @@ var htlivesight = {
 		GetYouthLeague: function() {
 			if(htlivesight.ManagerCompendium.data.youthTeams[0]){
 				htlivesight.YouthLeague.HTTPGet(htlivesight.ManagerCompendium.data.youthTeams[0].youthLegueId,"myFirstYouthTeam");
-				console.log("end of getYouthLeague");
+				//console.log("end of getYouthLeague");
 			}else{
 				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHTEAM2);
 			}
 		},
 		GetYouthLeague2: function() {
-			console.log("GetYouthLeague2");
+			//console.log("GetYouthLeague2");
 			if(htlivesight.ManagerCompendium.data.youthTeams[1]){
-				console.log("calling htlivesight.League.HTTPGet for second youth league");
+				//console.log("calling htlivesight.League.HTTPGet for second youth league");
 				htlivesight.YouthLeague.HTTPGet(htlivesight.ManagerCompendium.data.youthTeams[1].youthLegueId,"mySecondYouthTeam");
 			}else{
-				console.log("Passing into MY_YOUTHLEAGUE");
+				//console.log("Passing into MY_YOUTHLEAGUE");
 				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE);
 			}
 		},
@@ -413,15 +413,15 @@ var htlivesight = {
 			var prefs = htlivesight.Settings.preferences;
 			//console.log("CARICARE MATCH GIOVANILI?");
 			//console.log(prefs.matches.myYouthMatch)
-			console.log("checking for prefs to get youth team nearest match");
+			//console.log("checking for prefs to get youth team nearest match");
 			if(!prefs.matches.myYouthMatch) return;
-			console.log("Prefs was set to get first youth team nearest match. Checking if team id is present to do a request for 1st youth team...");
-			console.log("htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId = "+ htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId);
+			//console.log("Prefs was set to get first youth team nearest match. Checking if team id is present to do a request for 1st youth team...");
+			//console.log("htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId = "+ htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId);
 			if(htlivesight.ManagerCompendium.data.youthTeams[0] && parseInt(htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId)){
 				try{
-					console.log("getting 1st youth team match...");
+					//console.log("getting 1st youth team match...");
 					htlivesight.Matches.HTTPGetByTeam(htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId, "youth", true);
-					console.log("after getting 1st youth team match");
+					//console.log("after getting 1st youth team match");
 				}catch(e){console.log("Error getting first youth team nearest match: "+e);}
 			}
 			
@@ -431,19 +431,19 @@ var htlivesight = {
 			//console.log("htlivesight.Prefs.Matches.myYouthMarch"+htlivesight.Prefs.Matches.myYouthMarch);
 
 			var prefs = htlivesight.Settings.preferences;
-			console.log("checking for prefs to get youth team nearest match");
+			//console.log("checking for prefs to get youth team nearest match");
 			//console.log("CARICARE MATCH GIOVANILI?");
 
 			//console.log(prefs.matches.myYouthMatch)
 			if(!prefs.matches.myYouthMatch) return;
-			console.log("Prefs was set to get second youth team nearest match. Checking if team id is present to do a request for 2nd youth team...");
+			//console.log("Prefs was set to get second youth team nearest match. Checking if team id is present to do a request for 2nd youth team...");
 			
 			if(htlivesight.ManagerCompendium.data.youthTeams[1] && parseInt(htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId)){
-				console.log("htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId = "+ htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId);
+				//console.log("htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId = "+ htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId);
 				try{
-					console.log("getting 2nd youth team match...");
+					//console.log("getting 2nd youth team match...");
 					htlivesight.Matches.HTTPGetByTeam(htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId, "youth", true);
-					console.log("after getting 2nd youth team match");
+					//console.log("after getting 2nd youth team match");
 				}catch(e){console.log("Error getting second youth team nearest match: "+e);}
 			}
 		},

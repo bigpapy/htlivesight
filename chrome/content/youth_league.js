@@ -38,16 +38,16 @@ htlivesight.YouthLeague.Round.prototype.ElapsedTime = function(now) {
 htlivesight.YouthLeague.HTTPGet = function (youthLeagueId, teamKind) {
 	var parameters=[["file","youthLeaguedetails"],
 	                ["youthleagueid", youthLeagueId]];
-	console.log("Parameters: ");console.log(parameters);
+	//console.log("Parameters: ");console.log(parameters);
 	htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.YouthLeague.ParseGet(xml, teamKind);});
 };
-htlivesight.YouthLeague.ParseGet = function(xml, teamKind) { console.log("htlivesight.YouthLeague.ParseGet response");
-	if(teamKind=="myFirstYouthTeam"){ console.log(xml);
+htlivesight.YouthLeague.ParseGet = function(xml, teamKind) { //console.log("htlivesight.YouthLeague.ParseGet response");
+	if(teamKind=="myFirstYouthTeam"){ //console.log(xml);
 		htlivesight.YouthLeague.youthLeagueId =  parseInt(htlivesight.Util.Parse("YouthLeagueID", xml), 10);
 		htlivesight.YouthLeague.youthLeagueName = htlivesight.Util.Parse("YouthLeagueName", xml);
-		htlivesight.YouthLeague.teams = htlivesight.YouthLeague.ParseTeams(xml);console.log("***** BEFORE CHANGING YOUTH TEAM");
+		htlivesight.YouthLeague.teams = htlivesight.YouthLeague.ParseTeams(xml);//console.log("***** BEFORE CHANGING YOUTH TEAM");
 		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHTEAM2);
-		console.log("set htlivesight.EventSystem.ev.MY_YOUTHTEAM2 into youthleagueParseGet");
+		//console.log("set htlivesight.EventSystem.ev.MY_YOUTHTEAM2 into youthleagueParseGet");
 	}else if(teamKind=="mySecondYouthTeam"){
 		htlivesight.YouthLeague.youthLeagueId2 =  parseInt(htlivesight.Util.Parse("YouthLeagueID", xml), 10);
 		htlivesight.YouthLeague.youthLeagueName2 = htlivesight.Util.Parse("YouthLeagueName", xml);
@@ -170,8 +170,8 @@ htlivesight.YouthLeague.ParseFixtures = function(xml,teamKind) {
 			try{
 				htlivesight.DOM.UpdateElementBoxYouthLeagueTable(htlivesight.YouthLeague);
 				htlivesight.DOM.UpdateElementBoxYouthLeague(htlivesight.YouthLeague);
-				console.log("before adding youthleague matches");
-				console.log(rounds[currentRound].id);
+				//console.log("before adding youthleague matches");
+				//console.log(rounds[currentRound].id);
 				htlivesight.YouthLeague.matches=rounds[currentRound].id;
 				htlivesight.Settings.click.headerBarColorSet();
 				htlivesight.DOM.setHeaderColor();

@@ -189,6 +189,7 @@ htlivesight.DOM = {
 					}
 					box.parentNode.insertBefore(box, curr);
 					box.hidden = false;
+					box.className = "live_match_shown";
 					img.setAttribute("src", htlivesight.Image.live.ON);
 					htlivesight.DOM.window.repaint(matchId, sourceSystem);
 					htlivesight.DOM.setHeaderColor();
@@ -615,6 +616,7 @@ htlivesight.DOM.CreateElementLiveBox= function(match) {
 		//divcontainer = document.createElement("div");
 		//livebox.appendChild(divcontainer);
 		hbox = document.createElement("div");
+		hbox.className = "live_match_hidden";
 		hbox.hidden=true;
 		//divcontainer.appendChild(hbox);
 		livebox.appendChild(hbox);
@@ -1470,7 +1472,7 @@ htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
 					htlivesight.DOM.createStatisticElement("home_team_name_"+match.id+"_"+match.sourceSystem+"_statistics", match, event);
 					l1.addEventListener('click',function(){htlivesight.DOM.statisticspopup(this.id);});
 					l1.setAttribute("contextmenu", "home_team_statistics_"+match.id+"_"+match.sourceSystem);
-
+				}else if(match.away.team.id==event.subjectTeamId){
 					var l2 = document.getElementById("away_team_name_" + match.id + "_" + match.sourceSystem);    	          
 					htlivesight.DOM.createStatisticElement("away_team_name_"+match.id+"_"+match.sourceSystem+"_statistics", match, event);
 					l2.addEventListener('click',function(){htlivesight.DOM.statisticspopup(this.id);});
@@ -1496,6 +1498,7 @@ htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
 			row.appendChild(l);
 			row.appendChild(l1);
 			img = document.createElement("img");
+			img.addEventListener("click", function(e){htlivesight.Events.toClipboard(event, e);});
 			empty_img = document.createElement("img");
 			l.setAttribute("class","event_icon");
 			l1.setAttribute("class","event_icon");
