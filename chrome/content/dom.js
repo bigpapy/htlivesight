@@ -1067,7 +1067,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 	//	link.addEventListener("mouseout",function(){htlivesight.DOM.HideLink(this);});
 		link.setAttribute("style", "text-decoration: none");
 	//	link.setAttribute("title", htlivesight.Util.Parse("StatisticTip", htlivesight.data[0]));
-		link.addEventListener("click",function(){htlivesight.DOM.statisticspopup(this.id);});
+	//	link.addEventListener("click",function(){htlivesight.DOM.statisticspopup(this.id);});
 		label.setAttribute("class", "team_name");
 		if (htlivesight.prefs.matches.scorers) {  
 			hbox1 = document.createElement("tr"); //bigpapy add to fix it
@@ -1216,7 +1216,7 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		link.setAttribute("id", "away_team_name_" + match.id + "_" + match.sourceSystem);
 		link.setAttribute("style", "text-decoration: none");
 //		link.setAttribute("title", htlivesight.Util.Parse("StatisticTip", htlivesight.data[0]));
-		link.addEventListener('click', function(){htlivesight.DOM.statisticspopup(this.id);});
+//		link.addEventListener('click', function(){htlivesight.DOM.statisticspopup(this.id);});
 		if (!htlivesight.prefs.matches.scorers  && !htlivesight.prefs.matches.booked && !htlivesight.prefs.matches.sentOff && !htlivesight.prefs.matches.injured) {
 		}
 		label = document.createElement("td");
@@ -1472,7 +1472,10 @@ htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
 					htlivesight.DOM.createStatisticElement("home_team_name_"+match.id+"_"+match.sourceSystem+"_statistics", match, event);
 					l1.addEventListener('click',function(){htlivesight.DOM.statisticspopup(this.id);});
 					l1.setAttribute("contextmenu", "home_team_statistics_"+match.id+"_"+match.sourceSystem);
-				}else if(match.away.team.id==event.subjectTeamId){
+				}else /*if(match.away.team.id==event.subjectTeamId)*/{
+					console.log("*** match.away.team.id = " + match.away.team.id);
+					console.log("*** event.subjectTeamId = " + event.subjectTeamId);
+					console.log("*** match.away.team.id is equal to event.subjectTeamId? If not it's a bug from Hattrick!!!");
 					var l2 = document.getElementById("away_team_name_" + match.id + "_" + match.sourceSystem);    	          
 					htlivesight.DOM.createStatisticElement("away_team_name_"+match.id+"_"+match.sourceSystem+"_statistics", match, event);
 					l2.addEventListener('click',function(){htlivesight.DOM.statisticspopup(this.id);});
