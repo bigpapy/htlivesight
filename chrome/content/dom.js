@@ -1468,18 +1468,18 @@ htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
 		try{
 			if(""+event.key.A + event.key.BC=="041") {
 				if (match.home.team.id==event.subjectTeamId) {
-					var l1 = document.getElementById("home_team_name_" + match.id + "_" + match.sourceSystem);
+					//var l1 = document.getElementById("home_team_name_" + match.id + "_" + match.sourceSystem);
 					htlivesight.DOM.createStatisticElement("home_team_name_"+match.id+"_"+match.sourceSystem+"_statistics", match, event);
-					l1.addEventListener('click',function(){htlivesight.DOM.statisticspopup(this.id);});
-					l1.setAttribute("contextmenu", "home_team_statistics_"+match.id+"_"+match.sourceSystem);
+					//l1.addEventListener('click',function(){htlivesight.DOM.statisticspopup(this.id);});
+					//l1.setAttribute("contextmenu", "home_team_statistics_"+match.id+"_"+match.sourceSystem);
 				}else /*if(match.away.team.id==event.subjectTeamId)*/{
 					console.log("*** match.away.team.id = " + match.away.team.id);
 					console.log("*** event.subjectTeamId = " + event.subjectTeamId);
 					console.log("*** match.away.team.id is equal to event.subjectTeamId? If not it's a bug from Hattrick!!!");
-					var l2 = document.getElementById("away_team_name_" + match.id + "_" + match.sourceSystem);    	          
+					//var l2 = document.getElementById("away_team_name_" + match.id + "_" + match.sourceSystem);    	          
 					htlivesight.DOM.createStatisticElement("away_team_name_"+match.id+"_"+match.sourceSystem+"_statistics", match, event);
-					l2.addEventListener('click',function(){htlivesight.DOM.statisticspopup(this.id);});
-					l2.setAttribute("contextmenu", "away_team_statistics_"+match.id+"_"+match.sourceSystem);
+					//l2.addEventListener('click',function(){htlivesight.DOM.statisticspopup(this.id);});
+					//l2.setAttribute("contextmenu", "away_team_statistics_"+match.id+"_"+match.sourceSystem);
 				};
 			}; }catch(e){alert("errore stats:"+e);}
 
