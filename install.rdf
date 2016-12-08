@@ -8,7 +8,7 @@
 		<em:type>2</em:type>
 		<em:bootstrap>true</em:bootstrap>
 		<em:name>HTLiveSightDEV</em:name>
-		<em:version>0.8.862</em:version>
+		<em:version>0.8.869</em:version>
 		<em:description>Hattrick Match Viewer based on HattrickLiveFox</em:description>
 		<em:creator>Silkevicious</em:creator>
 		<em:developer>Bigpapy</em:developer>
@@ -24,7 +24,7 @@
 			<Description>
 				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
 				<em:minVersion>10.0</em:minVersion>
-				<em:maxVersion>51.0</em:maxVersion>
+				<em:maxVersion>54.0</em:maxVersion>
 			</Description>
 		</em:targetApplication>
 		<!-- SeaMonkey -->
@@ -32,7 +32,7 @@
 			<Description>
 				<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
 				<em:minVersion>2.2</em:minVersion>
-				<em:maxVersion>2.48</em:maxVersion>
+				<em:maxVersion>2.51</em:maxVersion>
 			</Description>
 		</em:targetApplication>
 		<!-- Android -->
@@ -40,7 +40,7 @@
 			<Description>
 				<em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
 				<em:minVersion>10.0a1</em:minVersion>
-				<em:maxVersion>51.0</em:maxVersion>
+				<em:maxVersion>54.0</em:maxVersion>
 			</Description>
 		</em:targetApplication>	
 	</Description>      

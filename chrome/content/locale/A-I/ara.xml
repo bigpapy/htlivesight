@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
+<MenuStart>بدأ</MenuStart>
 <MenuOptions>الخيارات</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<TooltipButton>أنقر لفتح قائمة HTLiveSight</TooltipButton>
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>الخادم:</MenuServer>
 <MenuDisconnected>قطع الاتصال</MenuDisconnected>
@@ -14,7 +14,7 @@
 <LoginRememberMe>تذكرني</LoginRememberMe>
 <LoginButton>دخول</LoginButton>
 <LoginReLive>Re-Live</LoginReLive>
-<LoginSpeed>Speed</LoginSpeed>
+<LoginSpeed>السرعة</LoginSpeed>
 <LoginByEvent>Per event</LoginByEvent>
 <LeagueMatches>مباريات الدوري</LeagueMatches>
 <LeagueLiveTable>الجدول المباشر</LeagueLiveTable>
@@ -35,8 +35,8 @@
 <Introduction>سوف يتم إعادة توجيهك الى صفحة اخرى للحصول على كود التصريح، من فضلك اغلق مانعات الظهور أو قم بمنح الاذن للبرنامج في قائمة الاستثناءات.</Introduction>
 <Insert>أدخل كود التصريح هنا:</Insert>
 <Ending>تم الان منح التصريح للبرنامج. اضغط موافق لاعادة تشغيل البرنامج.</Ending>
-<Error>Error</Error>
-<ServerON>Connected</ServerON>
+<Error>خطأ</Error>
+<ServerON>متصل</ServerON>
 <ServerOFF>تم قطع الاتصال</ServerOFF>
 <ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
 <NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
@@ -138,7 +138,7 @@
 <MeteoSpecialQuickRain>-Quick (-Defending -Scoring)</MeteoSpecialQuickRain>
 <YellowNastyPlay>Nasty play</YellowNastyPlay>
 <YellowCheating>Cheating</YellowCheating>
-<ProgressUpdate>Next update:</ProgressUpdate>
+<ProgressUpdate>التحديث التالي:</ProgressUpdate>
 <ProgressSeconds>s</ProgressSeconds>
 <RequestServer>الخادم المفضل</RequestServer>
 <RequestLeagueData>الحصول على بيانات الدوري</RequestLeagueData>
@@ -251,9 +251,9 @@
 <Poor>Poor</Poor>
 <Weak>Weak</Weak>
 <Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
+<Passable>مقبول</Passable>
+<Solid>صلب</Solid>
+<Excellent>متميز</Excellent>
 <Formidable>Formidable</Formidable>
 <Outstanding>Outstanding</Outstanding>
 <Brilliant>Brilliant</Brilliant>

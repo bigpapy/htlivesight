@@ -171,14 +171,14 @@
 <MatchesHours>giờ.</MatchesHours>
 <MatchesFriends>Bạn</MatchesFriends>
 <MatchesGetFriends>Lấy dữ liệu trận đấu của bạn mình</MatchesGetFriends>
-<MatchesHeader>Header</MatchesHeader>
+<MatchesHeader>Đánh đầu</MatchesHeader>
 <MatchesScorers>Các cầu thủ ghi bàn</MatchesScorers>
 <ScorersList>Hiển thị các cầu thủ ghi bàn trên cùng</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
+<MatchesBooked>Thẻ phạt</MatchesBooked>
 <BookedList>List booked in header</BookedList>
 <MatchesSentOff>Sent off</MatchesSentOff>
 <SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
+<MatchesInjured>Chấn thương</MatchesInjured>
 <InjuredList>List injured in header</InjuredList>
 <MatchesWindow>Cửa sổ</MatchesWindow>
 <MatchesLines>Dòng hiển thị trong chế độ thu nhỏ</MatchesLines>
@@ -216,16 +216,16 @@
 <PathSoundsMyBoo>Âm thanh khi đội nhà chấn thương</PathSoundsMyBoo>
 <PathSoundsOpBoo>Âm thanh khi đối thủ chấn thương</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Tiếng còi bắt đầu hiệp 1/2 của trận đấu</PathSoundsWhistleStart>
-<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
+<PathSoundsWhistle>Âm thanh thẻ vàng</PathSoundsWhistle>
 <PathSoundsHattrick>Âm thanh Hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Khôi phục</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsPlay>Chơi</PathSoundsPlay>
 <LanguageSelect>Chọn ngôn ngữ</LanguageSelect>
 <LanguageNote>Chú ý: Khởi động lại Firefox để kích hoạt.</LanguageNote>
 <ButtonCancel>Hủy</ButtonCancel>
 <ButtonOk>Chấp nhận</ButtonOk>
 <WindowAboutTitle>Thông tin về HTLiveSight</WindowAboutTitle>
-<TabInfo>Info</TabInfo>
+<TabInfo>Thông tin</TabInfo>
 <TabTranslators>Người dịch</TabTranslators>
 <TabCredits>Tín dụng</TabCredits>
 <MonthJanuary>Tháng 1</MonthJanuary>

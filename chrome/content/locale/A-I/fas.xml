@@ -225,8 +225,8 @@
 <ButtonCancel>انصراف</ButtonCancel>
 <ButtonOk>تاييد</ButtonOk>
 <WindowAboutTitle>HTLiveSight درباره ي</WindowAboutTitle>
-<TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
+<TabInfo>اطلاعات</TabInfo>
+<TabTranslators>مترجم‌ها</TabTranslators>
 <TabCredits>Credits</TabCredits>
 <MonthJanuary>ژانويه</MonthJanuary>
 <MonthFebruary>فوريه</MonthFebruary>
@@ -245,12 +245,12 @@
 <TextHelpOf>با کمک</TextHelpOf>
 <TextThanksTo>با سپاس فراوان از:</TextThanksTo>
 <ButtonClose>بستن</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
+<NonExistent>بدون مهارت</NonExistent>
+<Disastrous>افتضاح</Disastrous>
+<Wretched>اسفبار</Wretched>
+<Poor>ناچیز</Poor>
+<Weak>ضعیف</Weak>
+<Inadequate>ناکافی</Inadequate>
 <Passable>Passable</Passable>
 <Solid>Solid</Solid>
 <Excellent>Excellent</Excellent>
@@ -270,9 +270,9 @@
 <High>high</High>
 <Low>low</Low>
 <VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
+<RightDefence>دفاع راست</RightDefence>
+<MiddleDefence>دفاع وسط</MiddleDefence>
+<LeftDefence>دفاع چپ</LeftDefence>
 <Midfield>Midfield</Midfield>
 <RightAttack>Right attack</RightAttack>
 <MiddleAttack>Middle attack</MiddleAttack>

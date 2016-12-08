@@ -136,8 +136,12 @@ htlivesight.Time = {
 			if(!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent && m==htlivesight.Time.reLiveMinute) && m == 59) return /*strings.getString("time.half_time")*/htlivesight.Util.Parse("TimeHalfTime",htlivesight.data[0]) + ". " + /*strings.getString("time.second_half")*/htlivesight.Util.Parse("TimeSecondHalf",htlivesight.data[0]) + " "+ /*strings.getString("time.starts_in")*/htlivesight.Util.Parse("TimeStartsIn",htlivesight.data[0]) + " " + (60-m) + " " + htlivesight.Util.Parse("TimeMinute",htlivesight.data[0]);
 			if(!(htlivesight.prefs.other.reLive && htlivesight.prefs.other.reLiveByEvent && m==htlivesight.Time.reLiveMinute)) m = m-15; // second half
 			if(m <= 90) return "" + m + htlivesight.Util.Parse("TimeMin",htlivesight.data[0]) + " " + htlivesight.Util.Parse("TimeSecondHalf",htlivesight.data[0]);
+			// addded time
+			if(m <= 120 && match.extended != true) return ""+ m + htlivesight.Util.Parse("TimeMin",htlivesight.data[0]) + " " + htlivesight.Util.Parse("TimeSecondHalf",htlivesight.data[0]);
+			
 			// extra time
-			if(m <= 120) return "" + m + htlivesight.Util.Parse("TimeMin",htlivesight.data[0]) + " " + htlivesight.Util.Parse("TimeExtraTime",htlivesight.data[0]);
+			if(m <= 120 && match.extended == true && !htlivesight.prefs.other.reLiveByEvent) return "" + (m-match.addedTime) + htlivesight.Util.Parse("TimeMin",htlivesight.data[0]) + " " + htlivesight.Util.Parse("TimeExtraTime",htlivesight.data[0]);
+			if(m <= 120 && match.extended == true && htlivesight.prefs.other.reLiveByEvent) return "" + m + htlivesight.Util.Parse("TimeMin",htlivesight.data[0]) + " " + htlivesight.Util.Parse("TimeExtraTime",htlivesight.data[0]);
 			return htlivesight.Util.Parse("TimePenalties",htlivesight.data[0]);
 		}
 };

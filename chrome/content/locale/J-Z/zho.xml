@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
+<MenuStart>开始</MenuStart>
 <MenuOptions>选项</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<TooltipButton>点击打开 HTLiveSight 菜单</TooltipButton>
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>服务器:</MenuServer>
 <MenuDisconnected>未连接</MenuDisconnected>
@@ -14,7 +14,7 @@
 <LoginRememberMe>记住用户名</LoginRememberMe>
 <LoginButton>登陆</LoginButton>
 <LoginReLive>Re-Live</LoginReLive>
-<LoginSpeed>Speed</LoginSpeed>
+<LoginSpeed>速度</LoginSpeed>
 <LoginByEvent>Per event</LoginByEvent>
 <LeagueMatches>联赛比赛</LeagueMatches>
 <LeagueLiveTable>实时积分榜</LeagueLiveTable>
@@ -156,7 +156,7 @@
 <TabNotifications>提示设置</TabNotifications>
 <TabLanguage>语言</TabLanguage>
 <TabOther>其它</TabOther>
-<TabCustom>Customizations</TabCustom>
+<TabCustom>自定义</TabCustom>
 <TabGoalSound>Goals sounds</TabGoalSound>
 <TabWheatherSound>Weather events and injuries sounds</TabWheatherSound>
 <TabWhistleSound>Referee whistles and hattrick sounds</TabWhistleSound>
@@ -176,9 +176,9 @@
 <ScorersList>在标题栏列出进球者</ScorersList>
 <MatchesBooked>Booked</MatchesBooked>
 <BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
+<MatchesSentOff>红牌</MatchesSentOff>
 <SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
+<MatchesInjured>受伤</MatchesInjured>
 <InjuredList>List injured in header</InjuredList>
 <MatchesWindow>窗口</MatchesWindow>
 <MatchesLines>在最小化模式显示行数</MatchesLines>
@@ -195,9 +195,9 @@
 <OtherEvents>事件顺序</OtherEvents>
 <OtherEventKey>关键事件</OtherEventKey>
 <OtherEventKeyNote>在评述中显示关键事件</OtherEventKeyNote>
-<CustomIcons>Icons</CustomIcons>
+<CustomIcons>图标</CustomIcons>
 <CustomIconsOld>Original Livefox icons in match window</CustomIconsOld>
-<CustomSounds>Sounds</CustomSounds>
+<CustomSounds>声音</CustomSounds>
 <CustomSoundsWeather>Weather sound for start of the match</CustomSoundsWeather>
 <CustomSoundsTime>Sounds for start/end of an halftime</CustomSoundsTime>
 <CustomSoundsSEW>Sounds for weather special events</CustomSoundsSEW>
@@ -218,16 +218,16 @@
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
 <PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
 <PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsRestore>还原</PathSoundsRestore>
+<PathSoundsPlay>播放</PathSoundsPlay>
 <LanguageSelect>选择语言</LanguageSelect>
 <LanguageNote>提示: 重启HTLiveSight以保存生效.</LanguageNote>
 <ButtonCancel>取消</ButtonCancel>
 <ButtonOk>确认</ButtonOk>
 <WindowAboutTitle>关于 HTLiveSight</WindowAboutTitle>
-<TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabInfo>信息</TabInfo>
+<TabTranslators>译者</TabTranslators>
+<TabCredits>制作人员</TabCredits>
 <MonthJanuary>1月</MonthJanuary>
 <MonthFebruary>2月</MonthFebruary>
 <MonthMarch>3月</MonthMarch>
@@ -245,7 +245,7 @@
 <TextHelpOf>提供了帮助的</TextHelpOf>
 <TextThanksTo>特别鸣谢:</TextThanksTo>
 <ButtonClose>关闭</ButtonClose>
-<NonExistent>Non existent</NonExistent>
+<NonExistent>不存在</NonExistent>
 <Disastrous>Disastrous</Disastrous>
 <Wretched>Wretched</Wretched>
 <Poor>Poor</Poor>

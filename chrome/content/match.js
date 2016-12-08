@@ -244,5 +244,8 @@ htlivesight.Match.Update = function (newMatch) {
 	if (newMatch.nextEventTime) {
 		match.nextEventTime=newMatch.nextEventTime;
 	}
+	if (newMatch.extended) {
+		match.extended=newMatch.extended;
+	}
 	return match;
 };
