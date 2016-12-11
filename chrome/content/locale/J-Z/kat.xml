@@ -9,11 +9,11 @@
 <MenuDisconnected>გათიშული</MenuDisconnected>
 <MenuAbout>HTLiveSight-ის შესახებ</MenuAbout>
 <LoginLabel>შესვლა</LoginLabel>
-<LoginTeamId>შეიყვანეთ თქვენი გუნდის საიდენტიფიკაციო ნომერი (TeamId)</LoginTeamId>
+<LoginTeamId>შეიყვანეთ თქვენი გუნდის საიდენტიფიკაციო ნომერი (გუნდის ID)</LoginTeamId>
 <LoginUsername>მომხმარებლის სახელი</LoginUsername>
 <LoginRememberMe>დამიმახსოვრე</LoginRememberMe>
 <LoginButton>შესვლა</LoginButton>
-<LoginReLive>Re-Live</LoginReLive>
+<LoginReLive>მატჩის გამეორება</LoginReLive>
 <LoginSpeed>სიჩქარე</LoginSpeed>
 <LoginByEvent>მოვლენების მიხედვით</LoginByEvent>
 <LeagueMatches>ლიგის მატჩები</LeagueMatches>
@@ -185,7 +185,7 @@
 <NotifyNotify>შეტყობინებები</NotifyNotify>
 <NotifyEnableSound>ხმოვანი შეტყობინების ჩართვა</NotifyEnableSound>
 <NotifyOnly>მხოლოდ გახსნილ მატჩებში</NotifyOnly>
-<NotifyFlash>Flash headers</NotifyFlash>
+<NotifyFlash>სათაურებად</NotifyFlash>
 <NotifyStatus>სტატუსი</NotifyStatus>
 <OtherAuthorization>ავტორიზაციის კოდი</OtherAuthorization>
 <OtherReset>ავტორიზაციის წაშლა</OtherReset>
