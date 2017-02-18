@@ -579,8 +579,24 @@ htlivesight.LineUp.MissingKeeperEvent= function(event, match){
 		side="home";
 	else
 		side="away";
+	
+	var postId;
+	if(match.sourceSystem.toLowerCase()=='youth')
+		postId='_youth';
+	else
+		postId='';
+	
+	var image_source;
+	if(htlivesight.prefs.personalization.oldIcons && event.type.imageSrcOld){
+		image_source= event.type.imageOldSrc;
+	}else{
+		image_source= event.type.imageSrc;
+	}
+
+	
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
+	$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+event.objectPlayerId+postId+":last").parent().addClass("player_changed").append('<image class="player_icons" src="'+image_source+'"</image>');//.css("font-weight", "bold");
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 	match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
