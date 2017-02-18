@@ -236,6 +236,7 @@ htlivesight.LineUp.InjurySubstitution= function(lineUp,subjectPlayer,objectPlaye
 			};
 		};
 	};
+	return lineUp;
 };
 htlivesight.LineUp.SubstitutionPlayerInLineUp= function(lineUp,subjectPlayer,objectPlayer){
 	// removing player exiting
@@ -254,6 +255,11 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 		var subjectPlayer= new Object();
 		var objectPlayer= new Object();
 		var found= false; // this variable is used to fix delay of the subs info against subs event.
+		var lineUp;
+		if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
+			lineUp=match.home.lineUp;
+		else
+			lineUp=match.away.lineUp;
 		subjectPlayer.id= event.subjectPlayerId;
 		objectPlayer.id= event.objectPlayerId;
 		for (var index=0; index < match.substitutions.length; index++){
@@ -277,13 +283,14 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 				}
 			}
 		}
-		var lineUp;
+		/*var lineUp;
 		if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
 			lineUp=match.home.lineUp;
 		else
-			lineUp=match.away.lineUp;
+			lineUp=match.away.lineUp;*/
 		if (found){
 			lineUp=htlivesight.LineUp.SubstitutionPlayerInLineUp(lineUp,subjectPlayer,objectPlayer);
+			
 			
 		}else{
 		   // alert("HATTRICK CHPP Data error!, the subsitution at minute " + event.minute + " in this match " + match.home.team.shortName + " - " + match.away.team.shortName + " isn't well displayed in lineup tab, sorry, we are waiting a fix from hattrick");
@@ -318,7 +325,7 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 			match.home.lineUp= lineUp;
 		else
 			match.away.lineUp= lineUp;
-	}catch(e){alert(e);}
+	}catch(e){console.log(e);alert(e);}
 };
 
 htlivesight.LineUp.SwapEvent= function(event, match){
@@ -463,23 +470,36 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 	}catch(e){console.log(e);}
 };
 htlivesight.LineUp.SentOffEvent= function(event, match){
-	var lineUp;
+	var lineUp, postId;
 	var side;
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
 		lineUp=match.home.lineUp;
 	else
 		lineUp=match.away.lineUp;
 	player_name= htlivesight.Events.translate.parseScorer(event.text, event.subjectPlayerId, lineUp);
-	lineUp=htlivesight.LineUp.RemovePlayerFromLineUp(lineUp, event.subjectPlayerId, player_name);
+	//lineUp = htlivesight.LineUp.RemovePlayerFromLineUp(lineUp, event.subjectPlayerId, player_name);
 	var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
 		side="home";
 	else
 		side="away";
+	if(htlivesight.prefs.personalization.oldIcons && event.type.imageSrcOld){
+		image_source= event.type.imageOldSrc;
+	}else{
+		image_source= event.type.imageSrc;
+	}
+	if(match.sourceSystem.toLowerCase()=='youth')
+		postId='_youth';
+	else
+		postId='';
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp), event);
+	$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+event.subjectPlayerId+postId+":last").parent().addClass("player_changed").append('<image class="player_icons" src="'+image_source+'"</image>');//.css("font-weight", "bold");
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
+	
+	lineUp = htlivesight.LineUp.RemovePlayerFromLineUp(lineUp, event.subjectPlayerId, player_name);
+	
 	match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
 	lineUp[0].update++;
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup

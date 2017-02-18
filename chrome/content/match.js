@@ -245,7 +245,10 @@ htlivesight.Match.Update = function (newMatch) {
 		match.nextEventTime=newMatch.nextEventTime;
 	}
 	if (newMatch.extended) {
-		match.extended=newMatch.extended;
+		match.extended = newMatch.extended;
+	}
+	if (newMatch.addedTime){
+		match.addedTime = newMatch.addedTime;
 	}
 	return match;
 };
