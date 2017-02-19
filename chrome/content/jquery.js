@@ -53,7 +53,7 @@ $(function() {
 
 	});
 	// Accordion
-	$("#accordion1").accordion({
+/*	$("#accordion1").accordion({
 		header : "h3",
 		collapsible : true
 	});
@@ -64,66 +64,67 @@ $(function() {
 	$("#accordion3").accordion({
 		header : "h3",
 		collapsible : true
-	});
+	});*/
 	$("#winbox_leaguematches").accordion({
 		header : "h3",
 		collapsible : true,
-		autoHeight : false
-	});
+		heightStyle : "content",
+		active: false
+	}).hide();
 	$("#winbox_leaguetable").accordion({
 		header : "h3",
 		collapsible : true,
-		autoHeight : false
-	});
+		heightStyle : "content"
+	}).hide();
 	$("#winbox_leaguematchesBis").accordion({
 		header : "h3",
 		collapsible : true,
-		autoHeight : false
-	});
+		heightStyle : "content"
+	}).hide();
 	$("#winbox_leaguetableBis").accordion({
 		header : "h3",
 		collapsible : true,
-		autoHeight : false
-	});
+		heightStyle : "content"
+	}).hide();
 	$("#winbox_youthleaguematches").accordion({
 		header : "h3",
 		collapsible : true,
-		autoHeight : false
-	});
+		heightStyle : "content"
+	}).hide();
 	$("#winbox_youthleaguetable").accordion({
 		header : "h3",
 		collapsible : true,
-		autoHeight : false
-	});
+		heightStyle : "content"
+	}).hide();
 	$("#winbox_youthleaguematchesBis").accordion({
 		header : "h3",
 		collapsible : true,
-		autoHeight : false
-	});
+		heightStyle : "content"
+	}).hide();
 	$("#winbox_youthLeaguetableBis").accordion({
 		header : "h3",
 		collapsible : true,
-		autoHeight : false
-	});
+		heightStyle : "content"
+	}).hide();
 	$("#winbox_matchlist").accordion({
 		header : "h3",
 		collapsible : true,
-		autoHeight : false
+		heightStyle : "content",
 	});
 	$("#winbox_friends").accordion({
 		header : "h3",
 		collapsible : true,
-		autoHeight : false
+		heightStyle : "content",
 	});
 	$("#winbox_addmatch").accordion({
 		header : "h3",
 		collapsible : true,
-		autoHeight : false
+		heightStyle : "content",
 	});
 	$("#server").accordion({
 		header : "h3",
 		collapsible : true,
-		autoHeight : false
+		heightStyle : "content",
 	});
 	// Tabs
 	$('#options-tabs').tabs();

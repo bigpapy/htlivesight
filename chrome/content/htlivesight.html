@@ -16,7 +16,8 @@
 <!--Custom Tweaks-->
 <script type="text/javascript" src="lib/jquery-1.8.3.min.js"></script>
 <!-- <script type="text/javascript" src="lib/jquery-ui-1.8.23.custom.min.js"></script>-->
-<script type="text/javascript" src="lib/jquery-ui.min.js"></script>
+<!-- <script type="text/javascript" src="lib/jquery-ui.min.js"></script>-->
+<script type="text/javascript" src="lib/jquery-ui-1.9.2.custom.js"></script>
 <script type="application/x-javascript" src="htlivesight.js"></script>
 <script type="application/x-javascript" src="env.js"></script>
 <script type="application/x-javascript" src="lang.js"></script>
@@ -773,9 +774,10 @@
 		</div>
 		<div id="sidebar">
 			<!-- sidebar-->
-			<div id="winbox_leaguematches">
+			<div id="winbox_leaguematches" style="display: none">
 				<h3 id="h3LeagueMatches" style="display: none">
-					<a href="#" id="LeagueMatches" style="display: none"></a>
+					<!-- <a href="#" id="LeagueMatches" style="display: none"></a> --><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="LeagueMatches" style="display: none"></span>
 				</h3>
 				<div id="winboxcontent_leaguematches" style="display: none">
 					<div id="contentbody_leaguematches">
@@ -798,7 +800,8 @@
 			</div>
 			<div id="winbox_leaguetable" style="display: none">
 				<h3>
-					<a href="#" id="LeagueLiveTable"></a>
+					<!-- <a href="#" id="LeagueLiveTable"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="LeagueLiveTable"></span>
 				</h3>
 				<div id="winboxcontent_leaguetable">
 					<div id="contentbody_leaguetable" class="live_league_table">
@@ -912,7 +915,8 @@
 
 			<div id="winbox_leaguematchesBis">
 				<h3 id="h3LeagueMatchesBis" style="display: none">
-					<a href="#" id="LeagueMatchesBis" style="display: none"></a>
+					<!-- <a href="#" id="LeagueMatchesBis" style="display: none"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="LeagueMatchesBis" style="display: none"></span>
 				</h3>
 				<div id="winboxcontent_leaguematchesBis" style="display: none">
 					<div id="contentbody_leaguematchesBis">
@@ -935,7 +939,8 @@
 			</div>
 			<div id="winbox_leaguetableBis" style="display: none">
 				<h3>
-					<a href="#" id="LeagueLiveTableBis"></a>
+					<!-- <a href="#" id="LeagueLiveTableBis"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="LeagueLiveTableBis"></span>
 				</h3>
 				<div id="winboxcontent_leaguetableBis">
 					<div id="contentbody_leaguetableBis" class="live_league_table">
@@ -1049,7 +1054,8 @@
 
 			<div id="winbox_youthleaguematches">
 				<h3 id="h3YouthLeagueMatches" style="display: none">
-					<a href="#" id="YouthLeagueMatches" style="display: none"></a>
+					<!-- <a href="#" id="YouthLeagueMatches" style="display: none"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="YouthLeagueMatches" style="display: none"></span>
 				</h3>
 				<div id="winboxcontent_youthleaguematches" style="display: none">
 					<div id="contentbody_youthleaguematches">
@@ -1072,7 +1078,8 @@
 			</div>
 			<div id="winbox_youthleaguetable" style="display: none">
 				<h3>
-					<a href="#" id="YouthLeagueLiveTable"></a>
+					<!-- <a href="#" id="YouthLeagueLiveTable"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="YouthLeagueLiveTable"></span>
 				</h3>
 				<div id="winboxcontent_youthleaguetable">
 					<div id="contentbody_youthleaguetable" class="live_league_table">
@@ -1274,7 +1281,8 @@
 
 			<div id="winbox_youthleaguematchesBis">
 				<h3 id="h3YouthLeagueMatchesBis" style="display: none">
-					<a href="#" id="YouthLeagueMatchesBis" style="display: none"></a>
+					<!--<a href="#" id="YouthLeagueMatchesBis" style="display: none"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="YouthLeagueMatchesBis" style="display: none"></span>
 				</h3>
 				<div id="winboxcontent_youthLeaguematchesBis" style="display: none">
 					<div id="contentbody_youthLeaguematchesBis">
@@ -1297,7 +1305,8 @@
 			</div>
 			<div id="winbox_youthLeaguetableBis" style="display: none">
 				<h3>
-					<a href="#" id="YouthLeagueLiveTableBis"></a>
+					<!--<a href="#" id="YouthLeagueLiveTableBis"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="YouthLeagueLiveTableBis"></span>
 				</h3>
 				<div id="winboxcontent_youthLeaguetableBis">
 					<div id="contentbody_youthLeaguetableBis" class="live_league_table">
@@ -1499,18 +1508,20 @@
 
 			<div id="winbox_matchlist">
 				<h3>
-					<a href="#" id="MatchesList"></a>
+					<!--<a href="#" id="MatchesList"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="MatchesList"></span>
 				</h3>
 				<div id="winboxcontent_matchlist">
 					<div id="contentbody_matchlist">
-						<table class="match_table" id="other_grid_rows">
+						<table class="match_table" id="other_grid_rows" >
 						</table>
 					</div>
 				</div>
 			</div>
 			<div id="winbox_friends">
 				<h3>
-					<a href="#" id="FriendsTitle"></a>
+					<!--<a href="#" id="FriendsTitle"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="FriendsTitle"></span>
 				</h3>
 				<div id="winboxcontent_friends">
 					<div id="contentbody_friends">
@@ -1533,7 +1544,8 @@
 			</div>
 			<div id="winbox_addmatch">
 				<h3>
-					<a href="#" id="MatchesAdd"></a>
+					<!-- <a href="#" id="MatchesAdd"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="MatchesAdd"></span>
 				</h3>
 				<div id="winboxcontent_addmatch">
 					<div id="contentbody_addmatch">
@@ -1554,7 +1566,8 @@
 			</div>
 			<div id="server">
 				<h3>
-					<a href="#" id="MenuServer"></a>
+					<!--<a href="#" id="MenuServer"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="MenuServer"></span>
 				</h3>
 				<div id="serverint">
 					<span id="ServerStatus"></span> <span id="progresslabel"></span>

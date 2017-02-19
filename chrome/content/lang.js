@@ -23,7 +23,7 @@ htlivesight.Lang = {
 				};
 		//			LOGIN
 				var doc=document;
-				doc.getElementById("ui-dialog-title-login-dialog").textContent=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);	
+				doc.getElementById("ui-id-2").textContent=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);	
 				doc.getElementById("LoginLabel2").textContent=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);
 				doc.getElementById("LoginTeamId").textContent=htlivesight.Util.Parse("LoginTeamId",htlivesight.data[0]);
 				doc.getElementById("LoginSave").textContent=htlivesight.Util.Parse("LoginRememberMe",htlivesight.data[0]);
@@ -39,7 +39,7 @@ htlivesight.Lang = {
 				doc.getElementById("android-warning-text").textContent=htlivesight.Util.Parse("AndroidWarning",htlivesight.data[0]);
 				//todo: add android warning text localization.
 		//			ABOUT
-				doc.getElementById("ui-dialog-title-about-dialog").textContent=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);	
+				doc.getElementById("ui-id-3").textContent=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);	
 				doc.getElementById("TabInfo").textContent=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
 				doc.getElementById("creationDate").textContent="11 "+htlivesight.Util.Parse("MonthDecember",htlivesight.data[0])+" 2016";
 				doc.getElementById("createdBy").textContent=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
@@ -52,7 +52,7 @@ htlivesight.Lang = {
 				doc.getElementById("ThanksTo").textContent=htlivesight.Util.Parse("TextThanksTo",htlivesight.data[0]);
 				doc.getElementById("TabCredits").textContent=htlivesight.Util.Parse("TabCredits",htlivesight.data[0]);
 		//			SETTINGS
-				doc.getElementById("ui-dialog-title-options-dialog").textContent=htlivesight.Util.Parse("WindowTitle",htlivesight.data[0]);
+				doc.getElementById("ui-id-11").textContent=htlivesight.Util.Parse("WindowTitle",htlivesight.data[0]);
 				
 				document.getElementById("ThemesSelector").textContent=htlivesight.Util.Parse("Themes",htlivesight.data[0]);
 				document.getElementById("label_dark_theme").textContent=htlivesight.Util.Parse("Dark",htlivesight.data[0]);
