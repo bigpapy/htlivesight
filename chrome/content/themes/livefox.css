@@ -395,24 +395,43 @@ color: #FF0F03!important;
  */
 #htlivesight-body .ui-selectable-helper { position: absolute; z-index: 100; border:1px dotted black; }
 /*!
- * jQuery UI Accordion 1.8.23
+ * jQuery UI Accordion 1.10.4
+ * http://jqueryui.com
  *
- * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
- * Dual licensed under the MIT or GPL Version 2 licenses.
+ * Copyright 2014 jQuery Foundation and other contributors
+ * Released under the MIT license.
  * http://jquery.org/license
  *
- * http://docs.jquery.com/UI/Accordion#theming
+ * http://api.jqueryui.com/accordion/#theming
  */
-/* IE/Win - Fix animation bug - #4615 */
-#htlivesight-body .ui-accordion { width: 100%; }
-#htlivesight-body .ui-accordion .ui-accordion-header { cursor: pointer; position: relative; margin-top: 1px; zoom: 1; }
-#htlivesight-body .ui-accordion .ui-accordion-li-fix { display: inline; }
-#htlivesight-body .ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
-#htlivesight-body .ui-accordion .ui-accordion-header a { display: block; font-size: 1em; font-weight:700; padding: .5em .5em .5em .7em; }
-#htlivesight-body .ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }
-#htlivesight-body .ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
-#htlivesight-body .ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; }
-#htlivesight-body .ui-accordion .ui-accordion-content-active { display: block; }
+#htlivesight-body .ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin-top: 2px;
+	padding: .5em .5em .5em .7em;
+	min-height: 0; /* support: IE7 */
+}
+#htlivesight-body .ui-accordion .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+#htlivesight-body .ui-accordion .ui-accordion-noicons {
+	padding-left: .7em;
+}
+#htlivesight-body .ui-accordion .ui-accordion-icons .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+#htlivesight-body .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	position: absolute;
+	left: .5em;
+	top: 50%;
+	margin-top: -8px;
+}
+#htlivesight-body .ui-accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	border-top: 0;
+	overflow: auto;
+}
 /*!
  * jQuery UI Autocomplete 1.8.23
  *
@@ -505,26 +524,75 @@ color: #FF0F03!important;
 /* workarounds */
 #htlivesight-body button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
 /*!
- * jQuery UI Dialog 1.8.23
+ * jQuery UI Dialog 1.10.4
+ * http://jqueryui.com
  *
- * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
- * Dual licensed under the MIT or GPL Version 2 licenses.
+ * Copyright 2014 jQuery Foundation and other contributors
+ * Released under the MIT license.
  * http://jquery.org/license
  *
- * http://docs.jquery.com/UI/Dialog#theming
+ * http://api.jqueryui.com/dialog/#theming
  */
-#htlivesight-body .ui-dialog { position: absolute; padding: .2em; width: 300px; overflow: hidden; }
-#htlivesight-body .ui-dialog .ui-dialog-titlebar { padding: .4em 1em; position: relative;  }
-#htlivesight-body .ui-dialog .ui-dialog-title { float: left; margin: .1em 16px .1em 0; } 
-#htlivesight-body .ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
-#htlivesight-body .ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; }
-#htlivesight-body .ui-dialog .ui-dialog-titlebar-close:hover, #htlivesight-body .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
-#htlivesight-body .ui-dialog .ui-dialog-content { position: relative; border: 0; padding: .5em 1em; background: none; overflow: auto; zoom: 1; }
-#htlivesight-body .ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
-#htlivesight-body .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }
-#htlivesight-body .ui-dialog .ui-dialog-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; }
-#htlivesight-body .ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
-#htlivesight-body .ui-draggable .ui-dialog-titlebar { cursor: move; }
+#htlivesight-body .ui-dialog {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: .2em;
+	outline: 0;
+}
+#htlivesight-body .ui-dialog .ui-dialog-titlebar {
+	padding: .4em 1em;
+	position: relative;
+}
+#htlivesight-body .ui-dialog .ui-dialog-title {
+	float: left;
+	margin: .1em 0;
+	white-space: nowrap;
+	width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#htlivesight-body .ui-dialog .ui-dialog-titlebar-close {
+	position: absolute;
+	right: .3em;
+	top: 50%;
+	width: 20px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+	height: 20px;
+}
+#htlivesight-body .ui-dialog .ui-dialog-content {
+	position: relative;
+	border: 0;
+	padding: .5em 1em;
+	background: none;
+	overflow: auto;
+}
+#htlivesight-body .ui-dialog .ui-dialog-buttonpane {
+	text-align: left;
+	border-width: 1px 0 0 0;
+	background-image: none;
+	margin-top: .5em;
+	padding: .3em 1em .5em .4em;
+}
+#htlivesight-body .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float: right;
+}
+#htlivesight-body .ui-dialog .ui-dialog-buttonpane button {
+	margin: .5em .4em .5em 0;
+	cursor: pointer;
+}
+#htlivesight-body .ui-dialog .ui-resizable-se {
+	width: 12px;
+	height: 12px;
+	right: -5px;
+	bottom: -5px;
+	background-position: 16px 16px;
+}
+#htlivesight-body .ui-draggable .ui-dialog-titlebar {
+	cursor: move;
+}
 /*!
  * jQuery UI Slider 1.8.23
  *

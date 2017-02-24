@@ -97,7 +97,7 @@ htlivesight.copyToClipboard = function(string,e) {
 		clipboardStore.value = string;
 		//clipboardStore.title  = "press ctrl/cmd + c to copy selected text";
 		clipboardStore.title  = htlivesight.Util.Parse("SafariClipboardTitle",htlivesight.data[0]);
-		$( "#clipboard-store" ).dialog({ autoOpen: false, hide: "fadeOut", height: "auto", width: 45, position: [e.pageX+10,e.pageY-20-document.documentElement.scrollTop-document.body.scrollTop], resizable: true  });
+		$( "#clipboard-store" ).dialog({ autoOpen: false, hide: "fadeOut", height: "auto", width: 45, position: {my: "left top", at:"left+"+e.pageX+10+" top+"+e.pageY-20-document.documentElement.scrollTop-document.body.scrollTop , of: e} /*[e.pageX+10,e.pageY-20-document.documentElement.scrollTop-document.body.scrollTop]*/, resizable: true  });
 		setTimeout(function(){ $("#clipboard-store").dialog( "open" ); clipboardStore.select();},500);
 		//var dialog= $("#clipboard-store").dialog( "open" )/*.fadeOut(1500)*/;
 		//clipboardStore.select();
@@ -117,7 +117,7 @@ htlivesight.copyToClipboard = function(string,e) {
 };
 htlivesight.copiedToClipboardNotification=function(e){
 	// opening dialogue box to let user knows lineup is clicked.
-	$( "#copiedToClipboard" ).dialog({ autoOpen: false, hide: "fadeOut", height: 55, width: "auto", position: [e.pageX+10,e.pageY-20-document.documentElement.scrollTop-document.body.scrollTop], resizable: false  });
+	$( "#copiedToClipboard" ).dialog({ autoOpen: false, hide: "fadeOut", height: 55, width: "auto", position: {my: "left top", at:"left+"+e.pageX+10+" top+"+e.pageY-20-document.documentElement.scrollTop-document.body.scrollTop, of: e}/* [e.pageX+10,e.pageY-20-document.documentElement.scrollTop-document.body.scrollTop]*/, resizable: false  });
 	var dialog= $("#copiedToClipboard").dialog( "open" )/*.fadeOut(1500)*/;
 	$("#copiedToClipboard").prev().hide();
 	dialog.fadeOut(2500);
