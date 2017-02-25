@@ -467,7 +467,7 @@ color: #FF0F03!important;
 	display: block;
 	cursor: pointer;
 	position: relative;
-	margin-top: 2px;
+	margin: 2px 0 0 0;
 	padding: .5em .5em .5em .7em;
 	min-height: 0; /* support: IE7 */
 }
@@ -600,6 +600,7 @@ color: #FF0F03!important;
 	left: 0;
 	padding: .2em;
 	outline: 0;
+	z-index: 1000;
 }
 #htlivesight-body .ui-dialog .ui-dialog-titlebar {
 	padding: .4em 1em;

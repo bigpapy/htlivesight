@@ -28,7 +28,7 @@ margin: 0 0 0 0;
 #htlivesight-body  ul#icons span.ui-icon {float: left; margin: 0 4px;}
 
 #htlivesight-body  fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin-top:10px;}
-#htlivesight-body  #login-dialog fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin-top:10px; margin-right:120px;}
+#htlivesight-body  #login-dialog fieldset {border:thin solid #aaa;border-radius:5px;padding:0 8px 8px 8px; margin-top:10px; margin-right:120px}
 
 #htlivesight-body  #topbar{position: fixed; z-index:1;top:0;}
 /*#topbar {width:100%;height:37px;color:white;background-color:black;display:block;font-size:13px;font-weight: 400;}*/
