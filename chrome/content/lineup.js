@@ -290,11 +290,8 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 			lineUp=match.away.lineUp;*/
 		if (found){
 			lineUp=htlivesight.LineUp.SubstitutionPlayerInLineUp(lineUp,subjectPlayer,objectPlayer);
-			
-			
 		}else{
-		   // alert("HATTRICK CHPP Data error!, the subsitution at minute " + event.minute + " in this match " + match.home.team.shortName + " - " + match.away.team.shortName + " isn't well displayed in lineup tab, sorry, we are waiting a fix from hattrick");
-		    noty({type: 'warning', maxVisible: 1, text: "HATTRICK CHPP Data error! Missing info about a substitution, sorry, we are waiting a fix from hattrick. Details: " + match.home.team.shortName + " - " + match.away.team.shortName + ' ' + event.minute + '\''});	
+			noty({type: 'warning', maxVisible: 1, text: "HATTRICK CHPP Data error! Missing info about a substitution, sorry, we are waiting a fix from hattrick. Details: " + match.home.team.shortName + " - " + match.away.team.shortName + ' ' + event.minute + '\''});	
 			lineUp=htlivesight.LineUp.InjurySubstitution(lineUp,subjectPlayer,objectPlayer);
 		}
 		var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);

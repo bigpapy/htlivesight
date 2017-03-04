@@ -26,12 +26,15 @@ htlivesight.DOM = {
 				at="left bottom";
 				teamID=match.away.team.id;
 			}// add link to youth team too.
-			if(match.sourceSystem.toLowerCase() != 'youth'){
+			if(htlivesight.Team.IsNationalTeam(teamID)){
+				title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/NationalTeam/NationalTeam.aspx?teamId="+teamID+"' target='_blank'>"+teamName+"</a>";
+			}else if(match.sourceSystem.toLowerCase() != 'youth'){
 				title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/?TeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
 			}else{
-				title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
+				title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank' >"+teamName+"</a>";
 			}
-			$("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 510, title: title, dialogClass: "formationbg", position: {my: my, at: at, of: $('#'+id) }});
+			$("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 510, title: title, classes: {"ui-dialog": "formationbg"} , position: {my: my, at: at, of: $('#'+id) }});
+			$("span:contains(" + title + ")").html(title);
 			return false;
 		},
 
@@ -51,12 +54,17 @@ htlivesight.DOM = {
 			  var at="left bottom";
 			  var teamID=match.away.team.id;
 			}
-			if(match.sourceSystem.toLowerCase() != 'youth'){
+			if(htlivesight.Team.IsNationalTeam(teamID)){
+					var title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/NationalTeam/NationalTeam.aspx?teamId="+teamID+"' target='_blank'>"+teamName+"</a>";
+			}else if(match.sourceSystem.toLowerCase() != 'youth'){
 				var title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/?TeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
 			}else{
 				var title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
 			}
+			// fix to avoid link as a text in stats dialog title header
+			//title = teamName;
 			$("#"+id+"_statistics").dialog({ autoOpen: true, width: 350, height: 220, title: title, position: {my: my, at: at, of: $('#'+id) } });
+			$("span:contains(" + title + ")").html(title);
 			return false;
 		},
 
@@ -2385,16 +2393,16 @@ htlivesight.DOM.HideLink=function(element) {
 	element.setAttribute("style", "text-decoration:none");
 };
 htlivesight.DOM.closeMatchRelatedWindows=function(id){
-	if ($("#home_team_formation_"+id+"_table").dialog("isOpen")){
+	if ($("#home_team_formation_"+id+"_table").dialog("instance")  && $("#home_team_formation_"+id+"_table").dialog("isOpen")){
 		$("#home_team_formation_"+id+"_table").dialog("close");
 	};
-	if ($("#away_team_formation_"+id+"_table").dialog("isOpen")){
+	if ($("#away_team_formation_"+id+"_table").dialog("instance") && $("#away_team_formation_"+id+"_table").dialog("isOpen")){
 	  $("#away_team_formation_"+id+"_table").dialog("close");
 	};
-	if ($("#home_team_name_"+id+"_statistics").dialog("isOpen")){
+	if ($("#home_team_name_"+id+"_statistics").dialog("instance") && $("#home_team_name_"+id+"_statistics").dialog("isOpen")){
 	  $("#home_team_name_"+id+"_statistics").dialog("close");
 	};
-	if ($("#away_team_name_"+id+"_statistics").dialog("isOpen")){
+	if ($("#away_team_name_"+id+"_statistics").dialog("instance") && $("#away_team_name_"+id+"_statistics").dialog("isOpen")){
   $("#away_team_name_"+id+"_statistics").dialog("close");
 	};
 };

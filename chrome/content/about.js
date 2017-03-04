@@ -5,16 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 htlivesight.About = {		
 	localization: function() {
-	    var doc=document;  
-	    //var l10nData=htlivesight.Lang.getL10nData();
-	    var prefs=htlivesight.Preferences.get();
+	    var doc = document;  
+	    var prefs = htlivesight.Preferences.get();
 		var url = htlivesight.resourcePath+"locale/"+ prefs.language.locale +".xml";
-		//var languageXML = htlivesight.loadXml(url);
+		
 		htlivesight.loadXml(url, function(xml, status){
 			if(status != 200){return}
-			var l10ndata=xml.getElementsByTagName("Htlivesight");
-			htlivesight.data=data;
-			//var l10ndata=languageXML.getElementsByTagName("Htlivesight");
+
+			var l10nData=xml.getElementsByTagName("Htlivesight");
 			
 		    doc.getElementById("TabInfo").textContent=htlivesight.Util.Parse("TabInfo",l10nData[0]);
 		    doc.getElementById("creationDate").textContent="08 "+htlivesight.Util.Parse("MonthNovember",l10nData[0])+" 2015";

@@ -132,3 +132,11 @@ htlivesight.Team.ParseLeague = function (xml) {
 	}
 	return null;
 };
+htlivesight.Team.IsNationalTeam = function (id) {
+	var teamId = parseInt(id, 10);
+	if(teamId >= 3000 && teamId <= 3300){
+		return true;
+	}else{
+		return false;
+	}
+}
