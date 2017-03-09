@@ -466,7 +466,7 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 			match.away.lineUp= lineUp;
 	}catch(e){console.log(e);}
 };
-htlivesight.LineUp.SentOffEvent= function(event, match){
+htlivesight.LineUp.AddIconEvent= function(event, match, toBeRemoved){
 	var lineUp, postId;
 	var side;
 	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
@@ -495,14 +495,17 @@ htlivesight.LineUp.SentOffEvent= function(event, match){
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem).effect("pulsate","swing", 400);
 	
-	lineUp = htlivesight.LineUp.RemovePlayerFromLineUp(lineUp, event.subjectPlayerId, player_name);
-	
-	match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
-	lineUp[0].update++;
-	if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
-		match.home.lineUp= lineUp;
-	else
-		match.away.lineUp= lineUp;
+	if(toBeRemoved){
+		lineUp = htlivesight.LineUp.RemovePlayerFromLineUp(lineUp, event.subjectPlayerId, player_name);
+		
+		match.getSideById(event.subjectTeamId).formation = htlivesight.LineUp.FormationFromLineUp(lineUp); // updating formation (3-5-2, 4-4-2 etc.)
+		lineUp[0].update++;
+		if (match.isHomeTeam(event.subjectTeamId)) // choosing home/away lineup
+			match.home.lineUp= lineUp;
+		else
+			match.away.lineUp= lineUp;
+	}
+
 };
 htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
 	var subjectPlayer= {};

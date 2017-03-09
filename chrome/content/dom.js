@@ -33,7 +33,7 @@ htlivesight.DOM = {
 			}else{
 				title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank' >"+teamName+"</a>";
 			}
-			$("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 510, title: title, classes: {"ui-dialog": "formationbg"} , position: {my: my, at: at, of: $('#'+id) }});
+			$("#"+id+"_table").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 510, title: title, classes: {"ui-dialog": "formationbg"} , position: {my: my, at: at, of: $('#'+id), collision: 'fit' }});
 			$("span:contains(" + title + ")").html(title);
 			return false;
 		},
@@ -63,7 +63,7 @@ htlivesight.DOM = {
 			}
 			// fix to avoid link as a text in stats dialog title header
 			//title = teamName;
-			$("#"+id+"_statistics").dialog({ autoOpen: true, width: 350, height: 220, title: title, position: {my: my, at: at, of: $('#'+id) } });
+			$("#"+id+"_statistics").dialog({ autoOpen: true, width: 350, height: 220, title: title, position: {my: my, at: at, of: $('#'+id), collision: 'fit' } });
 			$("span:contains(" + title + ")").html(title);
 			return false;
 		},

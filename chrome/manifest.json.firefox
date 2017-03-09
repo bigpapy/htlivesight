@@ -20,13 +20,18 @@
 	"homepage_url":				"http://htlivesight.sourceforge.net",
 	"incognito":				"spanning",
 	"minimum_chrome_version":	"13",
-	"options_page":				"content/settings.html",
+
 	"permissions":				[	
 									"contextMenus",
 									"notifications",
 									"clipboardWrite",
 									"*://chpp.hattrick.org/*"
 								],
+	"options_ui" : {
+		"page": "content/settings.html",
+		"chrome_style": false,
+		"open_in_tab": true
+	},
 
 	"web_accessible_resources":	[
 								"content/img/foxball_32.png",
@@ -34,6 +39,10 @@
 								"content/themes/images/bg.png",
 								"skin/128.png"
 							],        
-	"update_url":				"https://htlivesight.c6.ixsecure.com/chromedev/updates.xml"
 
+	"applications": {
+  	"gecko": {
+    	"update_url": "https://htlivesight.c6.ixsecure.com/dev/update.json"
+  	}
+	}
 }
