@@ -1,4 +1,4 @@
-if (!htlivesight)	var htlivesight={};
+if (!htlivesight)	var htlivesight={}; //check this file again to find unused code and remove it.
 if (typeof(chrome) == "object") {
     htlivesight.arch = "Sandboxed";
     htlivesight.platform = "Chrome";
@@ -17,14 +17,18 @@ if (typeof(chrome) == "object") {
 	}
     };
 //  port common functions to sandboxed
+ // It seems next variable is never used, check if it's to be deleted
     var sandboxed = {
 	    extension : {
-		sendRequest: function (data, callback) {
-		    if (callback) chrome.extension.sendRequest(data, callback);
-		    else chrome.extension.sendRequest(data);
+		sendRequest: function (data, callback) { // It seems next function is never used, check if it's to be deleted
+		    //if (callback) chrome.extension.sendRequest(data, callback);
+			//else chrome.extension.sendRequest(data);
+			console.log("sendRequest!");
+			if (callback) chrome.extension.runtime.sendMessage(data, callback);
+		    else chrome.extension.runtime.sendMessage(data);
 		},
-		onRequest : {
-		    addListener : function (listener) {chrome.extension.onRequest.addListener(listener);},
+		onRequest : { // It seems next function is never used, check if it's to be deleted
+		    addListener : function (listener) { console.log("onRequest!");/*chrome.extension.onRequest.addListener(listener);*/chrome.runtime.onMessage.addListener(listener);},
 		},
 		getURL : function (path) {chrome.extension.getURL(path);},
 	    },

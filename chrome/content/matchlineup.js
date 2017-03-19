@@ -86,9 +86,11 @@ htlivesight.matchLineup.addRatingTab= function(match, side, xml){
 	var event = {};
 	event.minute = "★";
 	htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(htlivesight.Util.CleanText(stringLineUp)),event);
-	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
+	if ($( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("instance")){
+		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
+	}
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs();
-	}catch(e){alert(e);}
+	}catch(e){console.log(e);alert(e);}
 };
 /**
  * This function (ParseLineUp) extract lineup from live.xml and build a string similar to 

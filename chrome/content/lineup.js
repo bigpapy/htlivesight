@@ -310,7 +310,6 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 		}else{
 			image_source= event.type.imageSrc;
 		};
-		
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 		event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
 		$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+objectPlayer.id+postId+":last").parent().addClass("player_changed").append('<image class="player_icons" src="'+image_source+'"</image>');//.css("font-weight", "bold");
@@ -385,7 +384,6 @@ htlivesight.LineUp.SwapEvent= function(event, match){
 	}else{
 		image_source= event.type.imageSrc;
 	}
-	
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
 	$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+objectPlayer.id+postId+":last").parent().addClass("player_changed").append('<image class="player_icons" src="'+image_source+'"</image>');//.css("font-weight", "bold");
@@ -452,7 +450,6 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 		}else{
 			image_source= event.type.imageSrc;
 		}
-		
 		$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 		event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
 		$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+subjectPlayer.id+postId+":last").parent().addClass("player_changed").append('<image class="player_icons" src="'+image_source+'"</image>');//.css("font-weight", "bold");
@@ -537,7 +534,6 @@ htlivesight.LineUp.InjuryWithReplaceEvent= function(event, match){
 	}else{
 		image_source= htlivesight.ImageOld.event.substitute;
 	}
-	
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
 	$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+objectPlayer.id+postId+":last").parent().addClass("player_changed").append('<image class="player_icons" src="'+image_source+'"</image>');//.css("font-weight", "bold");
@@ -593,7 +589,6 @@ htlivesight.LineUp.MissingKeeperEvent= function(event, match){
 		image_source= event.type.imageSrc;
 	}
 
-	
 	$( "#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table").tabs("destroy");
 	event.lineupElement = htlivesight.DOM.createLineupElement(side+"_team_formation_"+match.id+"_"+match.sourceSystem+"_table", htlivesight.Events.translate.parseLineup(stringLineUp),event);
 	$("#"+side+"_team_formation_" + match.id + "_" + match.sourceSystem+"_table ."+event.objectPlayerId+postId+":last").parent().addClass("player_changed").append('<image class="player_icons" src="'+image_source+'"</image>');//.css("font-weight", "bold");

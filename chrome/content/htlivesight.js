@@ -8,6 +8,7 @@ var htlivesight = {
 		warningShown: false,
 		strings: null,
 		playingtts: false,
+		channel: "dev",
 		dynresize: function() {
 			var winW2 = 630, winH2 = 460;
 			if (document.body && document.body.offsetWidth) {
@@ -264,16 +265,23 @@ var htlivesight = {
 				htlivesight.LogOut.HTTP();
 			}
 		},
+		// It seems next function is never used, check if it's to be deleted
 		Options: function() {
-			var features = "chrome,titlebar,toolbar,centerscreen,modal,resizable";
+			//var features = "chrome,titlebar,toolbar,centerscreen,modal,resizable";
+			var features = "chrome=no,titlebar=yes,toolbar=yes,centerscreen=yes,modal=yes,resizable=yes";
 			var url = htlivesightEnv.contentPath+"settings.html";
-			window.openDialog(url, "Options", features);
+			//window.openDialog(url, "Options", features);
+			window.open(url, "Options", features);
 			htlivesight.prefs = htlivesight.Preferences.get();
 		},
+		// It seems next function is never used, check if it's to be deleted
 		About: function() {
-			var features = "chrome,titlebar,toolbar,centerscreen,modal,resizable";
+			//var features = "chrome,titlebar,toolbar,centerscreen,modal,resizable";
+			var features = "chrome=no,titlebar=yes,toolbar=yes,centerscreen=yes,modal=yes,resizable=yes";
 			var url = htlivesightEnv.contentPath+"about.html";
-			window.openDialog(url, "About", features);
+			//window.openDialog(url, "About", features);
+			window.open(url, "About", features);
+			alert("Open About!");
 		},
 		Reconnect: function() {
 			document.getElementById("login_box").hidden = false;

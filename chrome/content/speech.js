@@ -14,7 +14,7 @@ htlivesight.Speech={
 			//console.log(this.lang);
 			try{
 			//	console.log("1: htlivesight.platform != 'Safari' is "+(htlivesight.platform != "Safari"));
-				if(htlivesight.platform != "Safari" && !htlivesight.Speech.checked){
+				if(htlivesight.platform != "Safari" && !htlivesight.Speech.isHTML5TTSSupported()){
 					//console.log("2: hiding TTS button");
 					$(".speech").css("visibility", "hidden");
 				}
