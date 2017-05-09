@@ -4,7 +4,7 @@
 #htlivesight-body .match_table{width:100%;border: thin solid black;border-radius:5px;-moz-border-radius:5px;padding:0 0 0 0;border-spacing:0 0 0 0}
 #htlivesight-body .datetime_league {text-align:right; border-bottom: thin solid black !important; padding-right: 4px;}
 #htlivesight-body .footer_league{border-top: thin solid black !important;text-align: center;}
-#htlivesight-body .live_league_table{width:100%;border: thin solid black;border-radius:5px;-moz-border-radius:5px;text-align:center;}
+#htlivesight-body .live_league_table{width:105%;border: thin solid black;border-radius:5px;-moz-border-radius:5px;text-align:center;}
 #htlivesight-body .header_league_table{text-align:center;border-bottom: thin solid black !important;}
 #htlivesight-body #chat_link{color:black !important}
 #htlivesight-body #leaguetable_grid_rows td:first-child, #htlivesight-body #leaguetable_grid_rows th:first-child{

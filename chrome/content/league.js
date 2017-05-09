@@ -58,6 +58,15 @@ htlivesight.League.ParseGet = function(xml, teamKind) {
 		htlivesight.League.levelUnitId2 = parseInt(htlivesight.Util.Parse("LeagueLevelUnitID", xml), 10);
 		htlivesight.League.levelUnitName2 = htlivesight.Util.Parse("LeagueLevelUnitName", xml);
 		htlivesight.League.teams2 = htlivesight.League.ParseTeams(xml);
+		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TEAM3);
+	}else if(teamKind=="myThirdTeam"){
+		htlivesight.League.countryId3 =  parseInt(htlivesight.Util.Parse("LeagueID", xml), 10);
+		htlivesight.League.countryName3 = htlivesight.Util.Parse("LeagueName", xml);
+		htlivesight.League.level3 = parseInt(htlivesight.Util.Parse("LeagueLevel", xml), 10);
+		htlivesight.League.maxLevel3 = parseInt(htlivesight.Util.Parse("MaxLevel", xml), 10);
+		htlivesight.League.levelUnitId3 = parseInt(htlivesight.Util.Parse("LeagueLevelUnitID", xml), 10);
+		htlivesight.League.levelUnitName3 = htlivesight.Util.Parse("LeagueLevelUnitName", xml);
+		htlivesight.League.teams3 = htlivesight.League.ParseTeams(xml);
 		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE);
 	}
 };
@@ -206,13 +215,50 @@ htlivesight.League.ParseFixtures = function(xml,teamKind) {
 //					htlivesight.AddLiveMatch(matchId, "False");
 //				}
 			}
+			htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE3);
+		}else if(teamKind=="myThirdTeam"){
 			
+			
+			var matchId;
+
+			htlivesight.League.rounds3 = rounds;
+			htlivesight.League.currentRound3 = rounds[currentRound];
+			var p = htlivesight.prefs.matches.league;
+			htlivesight.Time.hattrickTime = htlivesight.Time.parseFetchDate(xml);// bigpapy:this read current time
+			if (
+					//		!(htlivesight.prefs.other.reLive) && //bigpapy: this remove table from relive mode.
+					p.get &&
+					(
+							!p.within || 
+							Math.abs(htlivesight.League.currentRound3.date-htlivesight.Time.hattrickTime) < p.withinHours*htlivesight.Time.HOUR 
+					)
+			) {
+				htlivesight.showLeague3= true;
+			} else {
+				htlivesight.showLeague3= false;
+			}
+			if (htlivesight.showLeague3 && htlivesight.League.currentRound3 != undefined) {
+				document.getElementById("winbox_leaguetableTer").setAttribute("style", "display:block");
+				document.getElementById("winboxcontent_leaguematchesTer").setAttribute("style", "display:block");
+				document.getElementById("LeagueMatchesTer").setAttribute("style", "display:block");
+				document.getElementById("h3LeagueMatchesTer").setAttribute("style", "display:block");
+				htlivesight.DOM.setHeaderColor();
+				htlivesight.DOM.UpdateElementBoxLeagueTable3(htlivesight.League);
+				htlivesight.DOM.UpdateElementBoxLeague3(htlivesight.League);
+				htlivesight.League.matches3=rounds[currentRound].id;
+//				for (var i=0; i<rounds[currentRound].id.length; i++) {
+//					matchId = rounds[currentRound].id[i];
+//					htlivesight.AddLiveMatch(matchId, "False");
+//				}
+			}
+			htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_YOUTHTEAM);//disabled tournaments
 		}
-		htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_YOUTHTEAM);//disabled tournaments
+		
 		
 	} catch(e) {
 		if(teamKind=="myFirstTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE2);}
-		if(teamKind=="mySecondTeam"){htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_YOUTHTEAM);}//disabled tournaments
+		if(teamKind=="mySecondTeam"){htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_LEAGUE3);}//disabled tournaments
+		if(teamKind=="myThirdTeam"){htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_YOUTHTEAM);}//disabled tournaments
 		// alert("htlivesight.League.ParseFixtures (set info): " + e);
 	}
 //	if(teamKind==="myFirstTeam"){
@@ -239,6 +285,15 @@ htlivesight.League.addLeagueMatches2= function(){
 	}catch(e){}
 };
 
+htlivesight.League.addLeagueMatches3= function(){
+	try{
+		for (var i=0; i<htlivesight.League.matches3.length; i++) {
+			matchId = htlivesight.League.matches3[i];
+			htlivesight.AddLiveMatch(matchId, "hattrick");
+		}
+	}catch(e){}
+};
+//TODO: refactor this to have only one method to sort all tables
 htlivesight.League.sortTable = function(){
 	var tmp = Array();
 	for(var id in htlivesight.League.teams){
@@ -280,6 +335,28 @@ htlivesight.League.sortTable2 = function(){
 	}
 	for(var j=1; j<=8; j++){
 		htlivesight.League.teams2[tmp[j].id].livePosition = j;
+	}
+};
+
+htlivesight.League.sortTable3 = function(){
+	var tmp = Array();
+	for(var id in htlivesight.League.teams3){
+		tmp[htlivesight.League.teams3[id].livePosition] = htlivesight.League.teams3[id];
+	}
+	var change = true;
+	while(change){
+		change = false;
+		for(var i=1; i<8; i++){
+			if(htlivesight.League.compareTeams(tmp[i], tmp[i+1]) < 0){
+				var tmpTeam = tmp[i];
+				tmp[i] = tmp[i+1];
+				tmp[i+1] = tmpTeam;
+				change = true;
+			}
+		}
+	}
+	for(var j=1; j<=8; j++){
+		htlivesight.League.teams3[tmp[j].id].livePosition = j;
 	}
 };
 

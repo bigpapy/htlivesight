@@ -40,6 +40,9 @@ htlivesight.Tournaments.ParseTournamentList = function(xml,teamId,teamKind) {
 		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TOURNAMENTS2);
 	}
 	if(teamKind==="mySecondTeam"){
+		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TOURNAMENTS3);
+	}
+	if(teamKind==="myThirdTeam"){
 		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHTEAM);
 	}
 }

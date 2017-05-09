@@ -1,10 +1,11 @@
 if (!htlivesight) var htlivesight = {};
-htlivesight.Team = function Team(id, name, shortName, youth, arenaID) {
+htlivesight.Team = function Team(id, name, shortName, youth, arenaID, logoURL) {
 	this.id = id;
 	this.name = name;
 	this.shortName = shortName;
 	this.youth = (youth=="youth"||youth=="Youth"||youth=="True")?"True":"False";
 	this.arenaID = arenaID;
+	this.logoURL = logoURL;
 	this.addTeamToFriendsPopup=null;
 	this.playerList = {};
 };
@@ -23,27 +24,33 @@ htlivesight.Teams.update = function(newTeam) {
 	} else {
 		if (!team.name) team.name=newTeam.name;
 		if (!team.shortName) team.shortName=newTeam.shortName;
+		if (!team.logoURL) team.logoURL=newTeam.logoURL;
 	}
 	return team;
 };
 htlivesight.Team.HTTPGetMyData = function (teamId, teamKind) {
-	var parameters=[["file","teamdetails"],["teamID", teamId]];
-	htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Team.ParseMyData(xml, teamKind);/*console.log("htlivesight.Team.HTTPGetMyData"+ document.getElementById("teamId").value);*/});
+	var parameters=[["file","teamdetails"],["version", "3.4"], ["teamID", teamId]];
+	htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.Team.ParseMyData(xml, teamKind, teamId);/*console.log("htlivesight.Team.HTTPGetMyData"+ document.getElementById("teamId").value);*/});
 };
-htlivesight.Team.ParseMyData = function (xml, teamKind) {
+htlivesight.Team.ParseMyData = function (xml, teamKind, teamId) {
 	var myTeam;
 	try {
 		if (xml) {
-			myTeam = htlivesight.Team.ParseTeamData(xml); // return team
+			myTeam = htlivesight.Team.ParseTeamData(xml, teamId); // return team
 			if(teamKind=="myFirstTeam"){
 				htlivesight.Teams.myTeam = myTeam;
-				document.getElementById("teamName").textContent=myTeam.name;
+				document.getElementById("teamName").textContent = myTeam.name;
 			}else if(teamKind=="mySecondTeam"){
 				htlivesight.Teams.mySecondTeam = myTeam;
-				document.getElementById("secondTeamName").textContent=", "+myTeam.name;
+				document.getElementById("secondTeamName").textContent = ", " + myTeam.name;
+			}else if(teamKind=="myThirdTeam"){
+				htlivesight.Teams.myThirdTeam = myTeam;
+				document.getElementById("thirdTeamName").textContent = ", " + myTeam.name;
 			}
-
-			htlivesight.Teams.update(myTeam);
+			if(myTeam)
+			{
+				htlivesight.Teams.update(myTeam);
+			}
 		} else {
 			if (htlivesight.ApiProxy.authorized(document.getElementById("teamId").value)) alert("team data not found");
 			return;
@@ -55,22 +62,31 @@ htlivesight.Team.ParseMyData = function (xml, teamKind) {
 		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.LOGIN2);
 		}
 	if(teamKind=="mySecondTeam"){
-	htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_STADIUM);
+	htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.LOGIN3);
+	}
+	if(teamKind=="myThirdTeam"){
+		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_STADIUM);
 	}
 };
 htlivesight.Team.ParseMyUserData = function (xml) {
 // nothing to do yet
 };
-htlivesight.Team.ParseTeamData = function (xml) {
+htlivesight.Team.ParseTeamData = function (xml, teamId) {
 	try {
-		var id = htlivesight.Team.ParseTeamId(xml);
-		var name = htlivesight.Team.ParseTeamName(xml);
-		var shortName = htlivesight.Team.ParseShortTeamName(xml);
-		var youth = htlivesight.Team.ParseYouth(xml);
-		var arenaID = htlivesight.Util.Parse("ArenaID",xml);
-		team = new htlivesight.Team(id, name, shortName, youth, arenaID);
-		team.league = htlivesight.Team.ParseLeague(xml); //Team.ParseLeague return league
-		return team;
+		var teamNodes = xml.getElementsByTagName("Team");
+		for(var j = 0, len = teamNodes.length; j< len ;j++){
+			var id = htlivesight.Team.ParseTeamId(teamNodes[j]);
+			if(teamId != id) continue;
+			var name = htlivesight.Team.ParseTeamName(teamNodes[j]);
+			var shortName = htlivesight.Team.ParseShortTeamName(teamNodes[j]);
+			var youth = htlivesight.Team.ParseYouth(teamNodes[j]);
+			var arenaID = htlivesight.Util.Parse("ArenaID",teamNodes[j]);
+			var logoURL = htlivesight.Util.Parse("LogoURL",teamNodes[j]);
+			if(!logoURL){ logoURL = htlivesight.Image.window.link.ON; }; 
+			team = new htlivesight.Team(id, name, shortName, youth, arenaID, logoURL);
+			team.league = htlivesight.Team.ParseLeague(teamNodes[j]); //Team.ParseLeague return league
+			return team;
+		}
 	} catch(e) {
 		alert("ParseTeamData: " + e);
 	}

@@ -50,7 +50,6 @@
 <script type="application/x-javascript" src="lineup.js"></script>
 <script type="application/x-javascript" src="htlivesight_listeners.js"></script>
 <script type="application/x-javascript" src="settings_listeners.js"></script>
-<!-- source of oauth.js and sha1.js: https://oauth.googlecode.com/svn/code/javascript/ -->
 <script type="application/x-javascript" src="./lib/oauth.js"></script>
 <script type="application/x-javascript" src="./lib/sha1.js"></script>
 <script type="application/x-javascript" src="jquery.js"></script>
@@ -60,8 +59,7 @@
 <script type="application/x-javascript" src="manager_compendium.js"></script>
 <script type="application/x-javascript" src="youth_league.js"></script>
 <script type="application/x-javascript" src="./lib/jquery.noty.packaged.min.js"></script>
-<!--  <script type="text/javascript" src="./lib/google-tts.js"></script>
-<script type="application/x-javascript" src="./lib/soundmanager2-nodebug-jsmin.js"></script>-->
+
 
 </head>
 <body id="htlivesight-body">
@@ -70,11 +68,27 @@
 			<img src="./themes/images/chpp.png" alt="HTLiveSight Logo" class="anotherbrick1">
 			<fieldset>
 				<legend id="LoginLabel2"></legend>
-				<label id="LoginTeamId" for="teamId"></label> <input type="text" id="teamId" class="text ui-widget-content ui-corner-all"></input> <br /> <br /> <label
-					id="SecondTeamIdLabel" for="teamId">Insert a second team Id </label> <input type="text" id="secondTeamId" class="text ui-widget-content ui-corner-all"></input>
-				<br /> <input type="checkbox" id="clearAllMatches" style='display: none' /><label for="clearAllMatches" id="labelClearAllMatches" style='display: none'>Clear
-					all old matches before start</label> <br /> <input type="checkbox" id="save_teamId" /><label for="save_teamId" id="LoginSave"></label> <input type="button"
-					id="button_login" value="" />
+				<br />
+
+				<label id="LoginTeamId" for="teamId"></label>
+				<input type="text" id="teamId" class="text ui-widget-content ui-corner-all"></input> 
+				<br /><br />
+				<div id="manualLoginFields">
+					<label id="SecondTeamIdLabel" for="secondTeamId">Insert a second team Id</label>
+					<input type="text" id="secondTeamId" class="text ui-widget-content ui-corner-all"></input>
+					<br /><br />
+					<label id="ThirdTeamIdLabel" for="thirdTeamId">Insert a third team Id</label>
+					<input type="text" id="thirdTeamId" class="text ui-widget-content ui-corner-all"></input>
+					<br /><br />
+				</div>
+				<input type="checkbox" id="getMyDataAutomatically" style='display: inline'/>
+				<label for="getMyDataAutomatically" id="labelGetMyDataAutomatically" style='display: inline'>Get my other senior team id automatically from Hattrick</label>  
+				<input type="checkbox" id="clearAllMatches" style='display: none' />
+				<label for="clearAllMatches" id="labelClearAllMatches" style='display: none'>Clear all old matches before start</label>
+				<br /> 
+				<input type="checkbox" id="save_teamId" />
+				<label for="save_teamId" id="LoginSave"></label>
+				<input type="button" id="button_login" value="" />
 			</fieldset>
 			<fieldset>
 				<legend id="LoginReLive"></legend>
@@ -620,7 +634,7 @@
 				<li><a href="#tabs-3" id="TabCredits"></a></li>
 			</ul>
 			<div id="tabs-1">
-				<img src="./themes/images/256.png" alt="HTLiveSight Logo"><br /> HTLiveSightDEV 0.8.877<br /> <span id="creationDate"></span><br /> <br /> <span
+				<img src="./themes/images/256.png" alt="HTLiveSight Logo"><br /> HTLiveSightDEV 0.8.882<br /> <span id="creationDate"></span><br /> <br /> <span
 					id="createdBy"></span><br /> <a href="https://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=10246801" target='blank'> Silkevicious</a> &amp; <a
 					href="https://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=7967145" target='blank'>Bigpapy</a><br /> <br /> <span id='testers'>Testers</span><br />
 				<a href="https://www.hattrick.org/goto.ashx?path=/Club/Manager/?userId=9100817" target='blank'>Davidatorus</a> &amp; <a
@@ -755,7 +769,7 @@
 		</div>
 		<div id="right_topbar">
 			<!--  <span id="LoggedIn">Logged in as</span>-->
-			<span id="teamName"></span><span id="secondTeamName"></span> <span class="volume_tooltip"></span>
+			<span id="teamName"></span><span id="secondTeamName"></span><span id="thirdTeamName"></span> <span class="volume_tooltip"></span>
 			<div id="volume_slider" title="volume"></div>
 			<a title="Mute All" id="muteAll" href="#"><img id="muteAllImg" alt="Mute All" class="socialicon" src="./img/sound_on.gif"></a> <a title="Hide Sidebar"
 				id="hidesidebar" href="#"> <img alt="Hide Sidebar" class="socialicon" src="./themes/images/hide.png">
@@ -784,14 +798,14 @@
 						<table class="match_table">
 							<thead id="contentheader_leaguematches">
 								<tr>
-									<th colspan="7" class="datetime_league"><span id="league_round_number" class="round_league"></span> <span id="league_round_date"></span></th>
+									<th colspan="8" class="datetime_league"><span id="league_round_number" class="round_league"></span> <span id="league_round_date"></span></th>
 								</tr>
 							</thead>
 							<tbody id="league_grid_rows">
 							</tbody>
 							<tfoot id="contentfooter_leaguematches">
 								<tr>
-									<td colspan="7" class="footer_league"><span id="league_round_time" class="chronometer_league"></span></td>
+									<td colspan="8" class="footer_league"><span id="league_round_time" class="chronometer_league"></span></td>
 								</tr>
 							</tfoot>
 						</table>
@@ -923,14 +937,14 @@
 						<table class="match_table">
 							<thead id="contentheader_leaguematchesBis">
 								<tr>
-									<th colspan="7" class="datetime_league"><span id="league_round_numberBis" class="round_league"></span> <span id="league_round_dateBis"></span></th>
+									<th colspan="8" class="datetime_league"><span id="league_round_numberBis" class="round_league"></span> <span id="league_round_dateBis"></span></th>
 								</tr>
 							</thead>
 							<tbody id="league_grid_rowsBis">
 							</tbody>
 							<tfoot id="contentfooter_leaguematchesBis">
 								<tr>
-									<td colspan="7" class="footer_league"><span id="league_round_timeBis" class="chronometer_league"></span></td>
+									<td colspan="8" class="footer_league"><span id="league_round_timeBis" class="chronometer_league"></span></td>
 								</tr>
 							</tfoot>
 						</table>
@@ -1050,6 +1064,145 @@
 					</div>
 				</div>
 			</div>
+			
+			
+					<div id="winbox_leaguematchesTer">
+				<h3 id="h3LeagueMatchesTer" style="display: none">
+					<!-- <a href="#" id="LeagueMatchesTer" style="display: none"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="LeagueMatchesTer" style="display: none"></span>
+				</h3>
+				<div id="winboxcontent_leaguematchesTer" style="display: none">
+					<div id="contentbody_leaguematchesTer">
+						<table class="match_table">
+							<thead id="contentheader_leaguematchesTer">
+								<tr>
+									<th colspan="8" class="datetime_league"><span id="league_round_numberTer" class="round_league"></span> <span id="league_round_dateTer"></span></th>
+								</tr>
+							</thead>
+							<tbody id="league_grid_rowsTer">
+							</tbody>
+							<tfoot id="contentfooter_leaguematchesTer">
+								<tr>
+									<td colspan="8" class="footer_league"><span id="league_round_timeTer" class="chronometer_league"></span></td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div id="winbox_leaguetableTer" style="display: none">
+				<h3>
+					<!-- <a href="#" id="LeagueLiveTableTer"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="LeagueLiveTableTer"></span>
+				</h3>
+				<div id="winboxcontent_leaguetableTer">
+					<div id="contentbody_leaguetableTer" class="live_league_table">
+						<table id="leaguetable_grid_rowsTer" cellpadding="0">
+							<thead>
+								<tr>
+									<th class="header_league_table"><span id="LeaguePositionTer"></span></th>
+									<th class="header_league_table"><span id="LeagueTeamTer"></span></th>
+									<th class="header_league_table"></th>
+									<th class="header_league_table"><span id="LeaguePlayedTer"></span></th>
+									<th class="header_league_table" colspan="3"><span id="LeagueGoalsTer"></span></th>
+									<th class="header_league_table"><span id="LeagueGoalDiffTer"></span></th>
+									<th class="header_league_table"><span id="LeaguePointsTer"></span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="leaguetable_1Ter">
+									<td><span>1</span></td>
+									<td><span id="leaguetable_1_nameTer"></span></td>
+									<td><img id="leaguetable_1_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="leaguetable_1_matchesTer"></span></td>
+									<td><span id="leaguetable_1_goals_forTer"></span></td>
+									<td><span id="leaguetable_1_goalsTer">-</span></td>
+									<td><span id="leaguetable_1_goals_againstTer"></span></td>
+									<td><span id="leaguetable_1_goaldifTer"></span></td>
+									<td><span id="leaguetable_1_pointsTer"></span></td>
+								</tr>
+								<tr id="leaguetable_2Ter">
+									<td><span>2</span></td>
+									<td><span id="leaguetable_2_nameTer"></span></td>
+									<td><img id="leaguetable_2_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="leaguetable_2_matchesTer"></span></td>
+									<td><span id="leaguetable_2_goals_forTer"></span></td>
+									<td><span id="leaguetable_2_goalsTer">-</span></td>
+									<td><span id="leaguetable_2_goals_againstTer"></span></td>
+									<td><span id="leaguetable_2_goaldifTer"></span></td>
+									<td><span id="leaguetable_2_pointsTer"></span></td>
+								</tr>
+								<tr id="leaguetable_3Ter">
+									<td><span>3</span></td>
+									<td><span id="leaguetable_3_nameTer"></span></td>
+									<td><img id="leaguetable_3_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="leaguetable_3_matchesTer"></span></td>
+									<td><span id="leaguetable_3_goals_forTer"></span></td>
+									<td><span id="leaguetable_3_goalsTer">-</span></td>
+									<td><span id="leaguetable_3_goals_againstTer"></span></td>
+									<td><span id="leaguetable_3_goaldifTer"></span></td>
+									<td><span id="leaguetable_3_pointsTer"></span></td>
+								</tr>
+								<tr id="leaguetable_4Ter">
+									<td><span>4</span></td>
+									<td><span id="leaguetable_4_nameTer"></span></td>
+									<td><img id="leaguetable_4_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="leaguetable_4_matchesTer"></span></td>
+									<td><span id="leaguetable_4_goals_forTer"></span></td>
+									<td><span id="leaguetable_4_goalsTer">-</span></td>
+									<td><span id="leaguetable_4_goals_againstTer"></span></td>
+									<td><span id="leaguetable_4_goaldifTer"></span></td>
+									<td><span id="leaguetable_4_pointsTer"></span></td>
+								</tr>
+								<tr id="leaguetable_5Ter">
+									<td><span>5</span></td>
+									<td><span id="leaguetable_5_nameTer"></span></td>
+									<td><img id="leaguetable_5_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="leaguetable_5_matchesTer"></span></td>
+									<td><span id="leaguetable_5_goals_forTer"></span></td>
+									<td><span id="leaguetable_5_goalsTer">-</span></td>
+									<td><span id="leaguetable_5_goals_againstTer"></span></td>
+									<td><span id="leaguetable_5_goaldifTer"></span></td>
+									<td><span id="leaguetable_5_pointsTer"></span></td>
+								</tr>
+								<tr id="leaguetable_6Ter">
+									<td><span>6</span></td>
+									<td><span id="leaguetable_6_nameTer"></span></td>
+									<td><img id="leaguetable_6_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="leaguetable_6_matchesTer"></span></td>
+									<td><span id="leaguetable_6_goals_forTer"></span></td>
+									<td><span id="leaguetable_6_goalsTer">-</span></td>
+									<td><span id="leaguetable_6_goals_againstTer"></span></td>
+									<td><span id="leaguetable_6_goaldifTer"></span></td>
+									<td><span id="leaguetable_6_pointsTer"></span></td>
+								</tr>
+								<tr id="leaguetable_7Ter">
+									<td><span>7</span></td>
+									<td><span id="leaguetable_7_nameTer"></span></td>
+									<td><img id="leaguetable_7_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="leaguetable_7_matchesTer"></span></td>
+									<td><span id="leaguetable_7_goals_forTer"></span></td>
+									<td><span id="leaguetable_7_goalsTer">-</span></td>
+									<td><span id="leaguetable_7_goals_againstTer"></span></td>
+									<td><span id="leaguetable_7_goaldifTer"></span></td>
+									<td><span id="leaguetable_7_pointsTer"></span></td>
+								</tr>
+								<tr id="leaguetable_8Ter">
+									<td><span>8</span></td>
+									<td><span id="leaguetable_8_nameTer"></span></td>
+									<td><img id="leaguetable_8_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="leaguetable_8_matchesTer"></span></td>
+									<td><span id="leaguetable_8_goals_forTer"></span></td>
+									<td><span id="leaguetable_8_goalsTer">-</span></td>
+									<td><span id="leaguetable_8_goals_againstTer"></span></td>
+									<td><span id="leaguetable_8_goaldifTer"></span></td>
+									<td><span id="leaguetable_8_pointsTer"></span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
 
 
 			<div id="winbox_youthleaguematches">
@@ -1062,14 +1215,14 @@
 						<table class="match_table">
 							<thead id="contentheader_youthleaguematches">
 								<tr>
-									<th colspan="7" class="datetime_league"><span id="youthleague_round_number" class="round_league"></span> <span id="youthleague_round_date"></span></th>
+									<th colspan="8" class="datetime_league"><span id="youthleague_round_number" class="round_league"></span> <span id="youthleague_round_date"></span></th>
 								</tr>
 							</thead>
 							<tbody id="youthleague_grid_rows">
 							</tbody>
 							<tfoot id="contentfooter_youthleaguematches">
 								<tr>
-									<td colspan="7" class="footer_league"><span id="youthleague_round_time" class="chronometer_league"></span></td>
+									<td colspan="8" class="footer_league"><span id="youthleague_round_time" class="chronometer_league"></span></td>
 								</tr>
 							</tfoot>
 						</table>
@@ -1289,14 +1442,14 @@
 						<table class="match_table">
 							<thead id="contentheader_youthLeaguematchesBis">
 								<tr>
-									<th colspan="7" class="datetime_league"><span id="youthleague_round_numberBis" class="round_league"></span> <span id="youthleague_round_dateBis"></span></th>
+									<th colspan="8" class="datetime_league"><span id="youthleague_round_numberBis" class="round_league"></span> <span id="youthleague_round_dateBis"></span></th>
 								</tr>
 							</thead>
 							<tbody id="youthleague_grid_rowsBis">
 							</tbody>
 							<tfoot id="contentfooter_youthLeaguematchesBis">
 								<tr>
-									<td colspan="7" class="footer_league"><span id="youthleague_round_timeBis" class="chronometer_league"></span></td>
+									<td colspan="8" class="footer_league"><span id="youthleague_round_timeBis" class="chronometer_league"></span></td>
 								</tr>
 							</tfoot>
 						</table>
@@ -1504,6 +1657,234 @@
 					</div>
 				</div>
 			</div>
+			
+			
+			<div id="winbox_youthleaguematchesTer">
+				<h3 id="h3YouthLeagueMatchesTer" style="display: none">
+					<!--<a href="#" id="YouthLeagueMatchesTer" style="display: none"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="YouthLeagueMatchesTer" style="display: none"></span>
+				</h3>
+				<div id="winboxcontent_youthLeaguematchesTer" style="display: none">
+					<div id="contentbody_youthLeaguematchesTer">
+						<table class="match_table">
+							<thead id="contentheader_youthLeaguematchesTer">
+								<tr>
+									<th colspan="8" class="datetime_league"><span id="youthleague_round_numberTer" class="round_league"></span> <span id="youthleague_round_dateTer"></span></th>
+								</tr>
+							</thead>
+							<tbody id="youthleague_grid_rowsTer">
+							</tbody>
+							<tfoot id="contentfooter_youthLeaguematchesTer">
+								<tr>
+									<td colspan="8" class="footer_league"><span id="youthleague_round_timeTer" class="chronometer_league"></span></td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div id="winbox_youthLeaguetableTer" style="display: none">
+				<h3>
+					<!--<a href="#" id="YouthLeagueLiveTableTer"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="YouthLeagueLiveTableTer"></span>
+				</h3>
+				<div id="winboxcontent_youthLeaguetableTer">
+					<div id="contentbody_youthLeaguetableTer" class="live_league_table">
+						<table id="youthLeaguetable_grid_rowsTer" cellpadding="0">
+							<thead>
+								<tr>
+									<th class="header_league_table"><span id="YouthLeaguePositionTer"></span></th>
+									<th class="header_league_table"><span id="YouthLeagueTeamTer"></span></th>
+									<th class="header_league_table"></th>
+									<th class="header_league_table"><span id="YouthLeaguePlayedTer"></span></th>
+									<th class="header_league_table" colspan="3"><span id="YouthLeagueGoalsTer"></span></th>
+									<th class="header_league_table"><span id="YouthLeagueGoalDiffTer"></span></th>
+									<th class="header_league_table"><span id="YouthLeaguePointsTer"></span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="youthleaguetable_1Ter" style="display: none">
+									<td><span>1</span></td>
+									<td><span id="youthleaguetable_1_nameTer"></span></td>
+									<td><img id="youthleaguetable_1_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_1_matchesTer"></span></td>
+									<td><span id="youthleaguetable_1_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_1_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_1_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_1_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_1_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_2Ter" style="display: none">
+									<td><span>2</span></td>
+									<td><span id="youthleaguetable_2_nameTer"></span></td>
+									<td><img id="youthleaguetable_2_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_2_matchesTer"></span></td>
+									<td><span id="youthleaguetable_2_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_2_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_2_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_2_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_2_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_3Ter" style="display: none">
+									<td><span>3</span></td>
+									<td><span id="youthleaguetable_3_nameTer"></span></td>
+									<td><img id="youthleaguetable_3_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_3_matchesTer"></span></td>
+									<td><span id="youthleaguetable_3_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_3_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_3_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_3_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_3_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_4Ter" style="display: none">
+									<td><span>4</span></td>
+									<td><span id="youthleaguetable_4_nameTer"></span></td>
+									<td><img id="youthleaguetable_4_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_4_matchesTer"></span></td>
+									<td><span id="youthleaguetable_4_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_4_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_4_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_4_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_4_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_5Ter" style="display: none">
+									<td><span>5</span></td>
+									<td><span id="youthleaguetable_5_nameTer"></span></td>
+									<td><img id="youthleaguetable_5_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_5_matchesTer"></span></td>
+									<td><span id="youthleaguetable_5_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_5_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_5_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_5_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_5_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_6Ter" style="display: none">
+									<td><span>6</span></td>
+									<td><span id="youthleaguetable_6_nameTer"></span></td>
+									<td><img id="youthleaguetable_6_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_6_matchesTer"></span></td>
+									<td><span id="youthleaguetable_6_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_6_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_6_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_6_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_6_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_7Ter" style="display: none">
+									<td><span>7</span></td>
+									<td><span id="youthleaguetable_7_nameTer"></span></td>
+									<td><img id="youthleaguetable_7_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_7_matchesTer"></span></td>
+									<td><span id="youthleaguetable_7_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_7_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_7_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_7_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_7_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_8Ter" style="display: none">
+									<td><span>8</span></td>
+									<td><span id="youthleaguetable_8_nameTer"></span></td>
+									<td><img id="youthleaguetable_8_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_8_matchesTer"></span></td>
+									<td><span id="youthleaguetable_8_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_8_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_8_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_8_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_8_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_9Ter" style="display: none">
+									<td><span>9</span></td>
+									<td><span id="youthleaguetable_9_nameTer"></span></td>
+									<td><img id="youthleaguetable_9_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_9_matchesTer"></span></td>
+									<td><span id="youthleaguetable_9_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_9_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_9_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_9_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_9_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_10Ter" style="display: none">
+									<td><span>10</span></td>
+									<td><span id="youthleaguetable_10_nameTer"></span></td>
+									<td><img id="youthleaguetable_10_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_10_matchesTer"></span></td>
+									<td><span id="youthleaguetable_10_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_10_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_10_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_10_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_10_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_11Ter" style="display: none">
+									<td><span>11</span></td>
+									<td><span id="youthleaguetable_11_nameTer"></span></td>
+									<td><img id="youthleaguetable_11_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_11_matchesTer"></span></td>
+									<td><span id="youthleaguetable_11_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_11_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_11_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_11_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_11_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_12Ter" style="display: none">
+									<td><span>12</span></td>
+									<td><span id="youthleaguetable_12_nameTer"></span></td>
+									<td><img id="youthleaguetable_12_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_12_matchesTer"></span></td>
+									<td><span id="youthleaguetable_12_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_12_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_12_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_12_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_12_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_13Ter" style="display: none">
+									<td><span>13</span></td>
+									<td><span id="youthleaguetable_13_nameTer"></span></td>
+									<td><img id="youthleaguetable_13_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_13_matchesTer"></span></td>
+									<td><span id="youthleaguetable_13_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_13_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_13_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_13_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_13_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_14Ter" style="display: none">
+									<td><span>14</span></td>
+									<td><span id="youthleaguetable_14_nameTer"></span></td>
+									<td><img id="youthleaguetable_14_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_14_matchesTer"></span></td>
+									<td><span id="youthleaguetable_14_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_14_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_14_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_14_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_14_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_15Ter" style="display: none">
+									<td><span>15</span></td>
+									<td><span id="youthleaguetable_15_nameTer"></span></td>
+									<td><img id="youthleaguetable_15_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_15_matchesTer"></span></td>
+									<td><span id="youthleaguetable_15_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_15_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_15_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_15_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_15_pointsTer"></span></td>
+								</tr>
+								<tr id="youthleaguetable_16Ter" style="display: none">
+									<td><span>16</span></td>
+									<td><span id="youthleaguetable_16_nameTer"></span></td>
+									<td><img id="youthleaguetable_16_changeTer" class="leaguetable_equal" /></td>
+									<td><span id="youthleaguetable_16_matchesTer"></span></td>
+									<td><span id="youthleaguetable_16_goals_forTer"></span></td>
+									<td><span id="youthleaguetable_16_goalsTer">-</span></td>
+									<td><span id="youthleaguetable_16_goals_againstTer"></span></td>
+									<td><span id="youthleaguetable_16_goaldifTer"></span></td>
+									<td><span id="youthleaguetable_16_pointsTer"></span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			
 
 
 			<div id="winbox_matchlist">

@@ -4,7 +4,7 @@
 #htlivesight-body  .match_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;padding:0 0 0 0;border-spacing:0 0 0 0}
 #htlivesight-body  .datetime_league {text-align:right; border-bottom: thin solid white !important; padding-right: 4px;}
 #htlivesight-body  .footer_league{border-top: thin solid white !important;text-align: center;}
-#htlivesight-body  .live_league_table{border: thin solid white;border-radius:5px;-moz-border-radius:5px;text-align:center; width:100%}
+#htlivesight-body  .live_league_table{border: 1px solid white;border-radius:5px;-moz-border-radius:5px;text-align:center; width:105%}
 #htlivesight-body  .header_league_table{text-align:center;border-bottom: thin solid white !important;}
 #htlivesight-body  #chat_link{color:white !important}
 #htlivesight-body  #leaguetable_grid_rows td:first-child, #htlivesight-body  #leaguetable_grid_rows th:first-child{
@@ -43,13 +43,36 @@ border-right: thin solid white !important;
 padding-right: 2px;
 }
 
-
 #htlivesight-body #leaguetable_grid_rowsBis td:nth-child(7){
 padding-right: 2px;
 border-right: thin solid white !important;
 text-align: left;
 }
 #htlivesight-body #leaguetable_grid_rowsBis td:nth-child(8){
+padding-right: 3px;
+padding-left: 2px;
+border-right: thin solid white !important;
+text-align: right;
+}
+
+#htlivesight-body  #leaguetable_grid_rowsTer td:first-child, #htlivesight-body  #leaguetable_grid_rowsTer th:first-child{
+padding-left: 3px;
+border-right: thin solid white !important;
+padding-right: 3px;
+}
+
+#htlivesight-body  #leaguetable_grid_rowsTer td:nth-child(4), #htlivesight-body  #leaguetable_grid_rowsTer th:nth-child(4), #htlivesight-body  #leaguetable_grid_rowsTer th:nth-child(5), #htlivesight-body #leaguetable_grid_rowsTer th:nth-child(6){
+padding-left: 2px;
+border-right: thin solid white !important;
+padding-right: 2px;
+}
+
+#htlivesight-body #leaguetable_grid_rowsTer td:nth-child(7){
+padding-right: 2px;
+border-right: thin solid white !important;
+text-align: left;
+}
+#htlivesight-body #leaguetable_grid_rowsTer td:nth-child(8){
 padding-right: 3px;
 padding-left: 2px;
 border-right: thin solid white !important;
@@ -104,6 +127,33 @@ padding-left: 2px;
 border-right: thin solid white !important;
 text-align: right;
 }
+
+
+#htlivesight-body  #youthLeaguetable_grid_rowsTer td:first-child, #htlivesight-body  #youthLeaguetable_grid_rowsTer th:first-child{
+padding-left: 3px;
+border-right: thin solid white !important;
+padding-right: 3px;
+}
+
+#htlivesight-body  #youthLeaguetable_grid_rowsTer td:nth-child(4), #htlivesight-body  #youthLeaguetable_grid_rowsTer th:nth-child(4), #htlivesight-body  #youthLeaguetable_grid_rowsTer th:nth-child(5), #htlivesight-body #youthLeaguetable_grid_rowsTer th:nth-child(6){
+padding-left: 2px;
+border-right: thin solid white !important;
+padding-right: 2px;
+}
+
+
+#htlivesight-body  #youthLeaguetable_grid_rowsTer td:nth-child(7){
+padding-right: 2px;
+border-right: thin solid white !important;
+text-align: left;
+}
+#htlivesight-body  #youthLeaguetable_grid_rowsTer td:nth-child(8){
+padding-right: 3px;
+padding-left: 2px;
+border-right: thin solid white !important;
+text-align: right;
+}
+
 
 #htlivesight-body  tr.league_title, #htlivesight-body  tr.league_promote{background-color: #023702;}
 #htlivesight-body  .league_demote{background-color: #750606;}

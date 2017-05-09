@@ -8,7 +8,7 @@ var htlivesight = {
 		warningShown: false,
 		strings: null,
 		playingtts: false,
-		channel: "dev",
+		channel: "stable", //used only for notification icon
 		dynresize: function() {
 			var winW2 = 630, winH2 = 460;
 			if (document.body && document.body.offsetWidth) {
@@ -161,8 +161,11 @@ var htlivesight = {
 			if (htlivesight.prefs.general.teamId) {
 				document.getElementById("teamId").value=htlivesight.prefs.general.teamId;    
 			}
-			if (htlivesight.prefs.general.secondTeamId && htlivesight.prefs.general.secondTeamId != 'undefined') {
+			if (htlivesight.prefs.general.secondTeamId) {
 				document.getElementById("secondTeamId").value=htlivesight.prefs.general.secondTeamId;    
+			}
+			if (htlivesight.prefs.general.thirdTeamId) {
+				document.getElementById("thirdTeamId").value=htlivesight.prefs.general.thirdTeamId;    
 			}
 			document.getElementById("reLive").checked=htlivesight.prefs.other.reLive;
 			document.getElementById("reLiveSpeed").value=htlivesight.prefs.other.reLiveSpeed;
@@ -172,6 +175,10 @@ var htlivesight = {
 				document.getElementById("reLiveByEvent").disabled = true;
 			}
 			document.getElementById("clearAllMatches").checked = htlivesight.prefs.other.clearAllMatches;
+			document.getElementById("getMyDataAutomatically").checked=htlivesight.prefs.other.getMyDataAutomatically;
+			if(document.getElementById("getMyDataAutomatically").checked){
+				htlivesight.Click.getMyDataAutomatically()
+			}
 			if (htlivesight.prefs.general.hattrickServer==="") htlivesight.prefs.general.hattrickServer="www"; 
 			//var link=document.getElementById("HTLSThread").getAttribute("href");
 			//link="http://"+htlivesight.prefs.general.hattrickServer+link;
@@ -223,7 +230,6 @@ var htlivesight = {
 
 						}
 			});
-
 		},
 		getRecommendedServer: function() {
 			htlivesight.HTTP.getRecommendedServer();
@@ -232,6 +238,7 @@ var htlivesight = {
 			if(document.getElementById("save_teamId").checked) {
 				htlivesight.Preferences.teamId.save(document.getElementById("teamId").value);
 				htlivesight.Preferences.secondTeamId.save(document.getElementById("secondTeamId").value);
+				htlivesight.Preferences.thirdTeamId.save(document.getElementById("thirdTeamId").value);
 			};
 			if(document.getElementById("reLive").checked) {
 				document.getElementById("ReLiveControls").style.display="inline-block";
@@ -257,6 +264,7 @@ var htlivesight = {
 			if(document.getElementById("save_teamId").checked){
 				htlivesight.Preferences.ReLive.save(htlivesight.prefs.other.reLive,htlivesight.prefs.other.reLiveSpeed, htlivesight.prefs.other.reLiveByEvent);
 				htlivesight.Preferences.clearAllMatches.save(document.getElementById("clearAllMatches").checked);
+				htlivesight.Preferences.getMyDataAutomatically.save(document.getElementById("getMyDataAutomatically").checked);
 			}
 			htlivesight.LogIn.Fakesuccess();
 		},
@@ -311,6 +319,15 @@ var htlivesight = {
 				if(parseInt(document.getElementById("secondTeamId").value)){
 					htlivesight.Team.HTTPGetMyData(document.getElementById("secondTeamId").value,"mySecondTeam");
 				}else{
+					htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.LOGIN3);//???
+				}
+			}catch(e){alert(e);}
+		},
+		GetMyData3: function() { 
+			try{
+				if(parseInt(document.getElementById("thirdTeamId").value)){
+					htlivesight.Team.HTTPGetMyData(document.getElementById("thirdTeamId").value,"myThirdTeam");
+				}else{
 					htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_STADIUM);
 				}
 			}catch(e){alert(e);}
@@ -327,6 +344,17 @@ var htlivesight = {
 					htlivesight.matchDetails.HTTPGetArena(htlivesight.Teams.mySecondTeam.arenaID, htlivesight.Teams.mySecondTeam.id);
 					//	console.log("loaded second team arena details with teamId = "+htlivesight.Teams.mySecondTeam.id);
 				}else{
+					htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_STADIUM3);//???
+				}
+			}catch(e){alert(e);}
+		},
+		GetMyArena3: function(){
+			try{
+				if(parseInt(document.getElementById("thirdTeamId").value)){
+					//	console.log("loading second team arena details with teamId = "+htlivesight.Teams.mySecondTeam.id);
+					htlivesight.matchDetails.HTTPGetArena(htlivesight.Teams.myThirdTeam.arenaID, htlivesight.Teams.myThirdTeam.id);
+					//	console.log("loaded second team arena details with teamId = "+htlivesight.Teams.mySecondTeam.id);
+				}else{
 					htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TEAM);
 				}
 			}catch(e){alert(e);}
@@ -338,6 +366,13 @@ var htlivesight = {
 			if(parseInt(document.getElementById("secondTeamId").value)){
 				htlivesight.League.HTTPGet(htlivesight.Teams.mySecondTeam.league.id,"mySecondTeam");
 			}else{
+				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TEAM3);
+			}
+		},
+		GetLeague3: function() {
+			if(parseInt(document.getElementById("thirdTeamId").value)){
+				htlivesight.League.HTTPGet(htlivesight.Teams.myThirdTeam.league.id,"myThirdTeam");
+			}else{
 				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE);
 			}
 		},
@@ -348,7 +383,14 @@ var htlivesight = {
 			if(parseInt(document.getElementById("secondTeamId").value)){
 				htlivesight.League.HTTPFixtures(htlivesight.Teams.mySecondTeam.league.id,"mySecondTeam");
 			}else{
-				htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_YOUTHTEAM);//disabled tournaments
+				htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_LEAGUE3);//???
+			}
+		},
+		GetLeagueMatches3: function() {
+			if(parseInt(document.getElementById("thirdTeamId").value)){
+				htlivesight.League.HTTPFixtures(htlivesight.Teams.myThirdTeam.league.id,"myThirdTeam");
+			}else{
+				htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_YOUTHTEAM);
 			}
 		},
 		GetTournaments: function() {
@@ -365,6 +407,15 @@ var htlivesight = {
 				//htlivesight.League.HTTPFixtures(htlivesight.Teams.mySecondTeam.league.id,"mySecondTeam");
 				//FUNCTION HERE TO ADD MATCHES OF SECOND TEAM TOURNAMENTS
 				htlivesight.Tournaments.HTTPTournamentsList(htlivesight.Teams.mySecondTeam.id, "mySecondTeam");
+			}else{
+				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_TOURNAMENTS3);
+			}
+		},
+		GetTournaments3: function() {
+			if(parseInt(document.getElementById("thirdTeamId").value)){
+				//htlivesight.League.HTTPFixtures(htlivesight.Teams.mySecondTeam.league.id,"mySecondTeam");
+				//FUNCTION HERE TO ADD MATCHES OF SECOND TEAM TOURNAMENTS
+				htlivesight.Tournaments.HTTPTournamentsList(htlivesight.Teams.myThirdTeam.id, "myThirdTeam");
 			}else{
 				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHTEAM);
 			}
@@ -385,6 +436,16 @@ var htlivesight = {
 				htlivesight.YouthLeague.HTTPGet(htlivesight.ManagerCompendium.data.youthTeams[1].youthLegueId,"mySecondYouthTeam");
 			}else{
 				//console.log("Passing into MY_YOUTHLEAGUE");
+				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHTEAM3);
+			}
+		},
+		GetYouthLeague3: function() {
+			//console.log("GetYouthLeague2");
+			if(htlivesight.ManagerCompendium.data.youthTeams[2]){
+				//console.log("calling htlivesight.League.HTTPGet for second youth league");
+				htlivesight.YouthLeague.HTTPGet(htlivesight.ManagerCompendium.data.youthTeams[2].youthLegueId,"myThirdYouthTeam");
+			}else{
+				//console.log("Passing into MY_YOUTHLEAGUE");
 				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE);
 			}
 		},
@@ -402,6 +463,13 @@ var htlivesight = {
 			if(htlivesight.ManagerCompendium.data.youthTeams[1]){
 				htlivesight.YouthLeague.HTTPFixtures(htlivesight.ManagerCompendium.data.youthTeams[1].youthLegueId,"mySecondYouthTeam");
 			}else{
+				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE3);
+			}
+		},
+		GetYouthLeagueMatches3: function() {
+			if(htlivesight.ManagerCompendium.data.youthTeams[2]){
+				htlivesight.YouthLeague.HTTPFixtures(htlivesight.ManagerCompendium.data.youthTeams[2].youthLegueId,"myThirdYouthTeam");
+			}else{
 				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES);
 			}
 		},
@@ -413,6 +481,9 @@ var htlivesight = {
 			htlivesight.Matches.HTTPGetByTeam(htlivesight.Teams.myTeam.id, htlivesight.Teams.myTeam.youth, false);
 			if(parseInt(document.getElementById("secondTeamId").value)){
 				htlivesight.Matches.HTTPGetByTeam(htlivesight.Teams.mySecondTeam.id, htlivesight.Teams.mySecondTeam.youth, false);
+			}
+			if(parseInt(document.getElementById("thirdTeamId").value)){
+				htlivesight.Matches.HTTPGetByTeam(htlivesight.Teams.myThirdTeam.id, htlivesight.Teams.myThirdTeam.youth, false);
 			}
 		},
 		GetMyYouthMatch1: function() {
@@ -451,6 +522,27 @@ var htlivesight = {
 				try{
 					//console.log("getting 2nd youth team match...");
 					htlivesight.Matches.HTTPGetByTeam(htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId, "youth", true);
+					//console.log("after getting 2nd youth team match");
+				}catch(e){console.log("Error getting second youth team nearest match: "+e);}
+			}
+		},
+		GetMyYouthMatch3: function() {
+			//console.log(htlivesight.Settings.preferences);
+			//console.log("htlivesight.Prefs.Matches.myYouthMarch"+htlivesight.Prefs.Matches.myYouthMarch);
+
+			var prefs = htlivesight.Settings.preferences;
+			//console.log("checking for prefs to get youth team nearest match");
+			//console.log("CARICARE MATCH GIOVANILI?");
+
+			//console.log(prefs.matches.myYouthMatch)
+			if(!prefs.matches.myYouthMatch) return;
+			//console.log("Prefs was set to get second youth team nearest match. Checking if team id is present to do a request for 2nd youth team...");
+			
+			if(htlivesight.ManagerCompendium.data.youthTeams[2] && parseInt(htlivesight.ManagerCompendium.data.youthTeams[2].youthTeamId)){
+				//console.log("htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId = "+ htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId);
+				try{
+					//console.log("getting 2nd youth team match...");
+					htlivesight.Matches.HTTPGetByTeam(htlivesight.ManagerCompendium.data.youthTeams[2].youthTeamId, "youth", true);
 					//console.log("after getting 2nd youth team match");
 				}catch(e){console.log("Error getting second youth team nearest match: "+e);}
 			}

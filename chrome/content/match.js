@@ -252,3 +252,126 @@ htlivesight.Match.Update = function (newMatch) {
 	}
 	return match;
 };
+
+htlivesight.Match.setMatchTypeImage = function (match) {
+	var img;
+	switch (match.matchType) {
+
+	case "1": // League match
+	    img = htlivesight.Image.matchType.league;
+	    break;
+	    
+	case "2": // Qualification match
+	    img = htlivesight.Image.matchType.qualification;
+	    break;
+	    
+	case "3": // Cup match
+		switch (match.cupLevel) {
+		case "1": //National Cup
+			img = htlivesight.Image.matchType.cup;
+			break;
+			
+		case "2": //Challenger Cup
+			switch (match.cupLevelIndex){
+			case "1": //Emerald
+				img = htlivesight.Image.matchType.cupEmerald;
+				break;
+				
+			case "2": //Ruby
+				img = htlivesight.Image.matchType.cupRuby;
+				break;
+				
+			case "3": //Sapphire
+				img = htlivesight.Image.matchType.cupSapphire;
+				break;
+			};
+			break;
+			
+		case "3": //Consolation Cup
+			img = htlivesight.Image.matchType.cupConsolation;
+			break;	
+		}
+		break;
+	    
+	case "4": //Friendly
+		img = htlivesight.Image.matchType.friendly;
+		break;
+		
+	case "5": //Friendly
+		img = htlivesight.Image.matchType.friendly;
+		break;
+		
+	case "7": //Masters
+		img = htlivesight.Image.matchType.masters;
+		break;
+
+	case "8": //Friendly
+		img = htlivesight.Image.matchType.friendly;
+		break;
+		
+	case "9": //Friendly
+		img = htlivesight.Image.matchType.friendly;
+		break;
+		
+	case "10": //National normal rules
+		img = htlivesight.Image.matchType.league;
+		break;
+		
+	case "11": //National cup rules
+		img = htlivesight.Image.matchType.cup;
+		break;
+		
+	case "12": //National friendly
+		img = htlivesight.Image.matchType.friendly;
+		break;
+
+	case "50": //Tournament
+		img = htlivesight.Image.matchType.tournament;
+		break;
+		
+	case "51": //Tournament
+		img = htlivesight.Image.matchType.tournament;
+		break;
+		
+	case "61": //Single match
+		img = htlivesight.Image.matchType.single;
+		break;
+		
+	case "62": //Ladder
+		img = htlivesight.Image.matchType.tournamentLadder;
+		break;
+		
+	case "80": //Preparation
+		img = htlivesight.Image.matchType.newbie;
+		break;
+		
+	case "100": // Youth League match
+	    img = htlivesight.Image.matchType.league;
+	    break;
+	    
+	case "101": // Youth League friendly
+	    img = htlivesight.Image.matchType.friendly;
+	    break;
+	    
+	case "103": // Youth League friendly
+	    img = htlivesight.Image.matchType.friendly;
+	    break;
+	    
+	case "105": // Youth League friendly
+	    img = htlivesight.Image.matchType.friendly;
+	    break;
+	    
+	case "106": // Youth League friendly
+	    img = htlivesight.Image.matchType.friendly;
+	    break;
+		
+	default: 
+		img = htlivesight.Image.transparent;
+		break;
+	}
+	document.getElementById("match_type_image_" + match.id + "_" + match.sourceSystem).src = img;
+	document.getElementById("short_match_type_image_" + match.id + "_" + match.sourceSystem).src = img;
+	//htlivesight.Match.List[key].matchType = matchType;
+	//htlivesight.Match.List[key].cupLevel = cupLevel;
+	//htlivesight.Match.List[key].cupLevelIndex = cupLevelIndex;
+}

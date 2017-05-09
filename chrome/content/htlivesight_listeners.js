@@ -14,4 +14,5 @@ document.addEventListener('DOMContentLoaded', function () {
 	doc.getElementById("playPauseButton").addEventListener('click', function(){htlivesight.Click.PlayPauseSwitcher();});
 	doc.getElementById("goToEnd").addEventListener('click', function(){htlivesight.Click.GoToEnd();});
 	doc.getElementById("reLiveSpeedPanel").addEventListener('click', function(){htlivesight.Click.SetReliveSpeed();});
-});
+	doc.getElementById("getMyDataAutomatically").addEventListener('click',function(){htlivesight.Click.getMyDataAutomatically();});
+});//TODO: move all the function under Click file!!

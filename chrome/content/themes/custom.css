@@ -35,8 +35,7 @@ margin: 0 0 0 0;
 #htlivesight-body  #left_topbar {display:inline-block;float:left;margin-left:8px;margin-top:3px;} /*margin-top:8px*/
 #htlivesight-body  #right_topbar {display:inline-block;float:right;margin-right:8px;margin-top:3px; width:180}/*{display:inline-block;float:right;margin-top:8px}*/
 #htlivesight-body  #central_topbar {display:inline-block;margin-top:0px;margin-left:8px;}
-#htlivesight-body #teamName {float:left}
-#htlivesight-body #secondTeamName {float:left}
+#htlivesight-body #teamName, #secondTeamName, #thirdTeamName {float:left}
 #htlivesight-body  #volume_slider {width:50px;float:left;margin-top:5px;margin-right:12px; margin-left:10px}
 #htlivesight-body  .volume_tooltip{float:left;margin-left: 6px;}
 #htlivesight-body  .ui-slider-handle{border-radius: 9px;}
@@ -67,6 +66,18 @@ margin: 0 0 0 0;
 	padding-bottom: 3px;
 }
 
+
+#htlivesight-body  #leaguetable_grid_rowsTer td{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#htlivesight-body  #leaguetable_grid_rowsTer th{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+
 #htlivesight-body  #youthLeaguetable_grid_rows td{
 	padding-top: 2px;
 	padding-bottom: 2px;
@@ -87,6 +98,16 @@ margin: 0 0 0 0;
 	padding-bottom: 3px;
 }
 
+#htlivesight-body  #youthLeaguetable_grid_rowsTer td{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#htlivesight-body  #youthLeaguetable_grid_rowsTer th{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
 
 #htlivesight-body  #thebox{display:block;margin-top:1px;}
 #htlivesight-body  #live_box {display:inline-block;margin-left:3px;margin-top:30px;border-radius:10px;overflow-y:auto;position:fixed;width:290px;top:0;bottom:0;left:0/*width:74.5%;/*min-width:800px;min-width:600px;*/}
@@ -98,7 +119,7 @@ margin: 0 0 0 0;
 /*.datetime_league {text-align:center;border-bottom: thin solid white;}*/
 #htlivesight-body  .hometeam_league {
 	text-align:right;
-	width:70px;
+	width:57px;
 	padding-top: 5px !important;
 	padding-right: 4px;
 	padding-left: 4px;
@@ -112,7 +133,7 @@ margin: 0 0 0 0;
 #htlivesight-body  .awayscore_league {text-align:left;padding:0 0 0 0;border-spacing:0 0 0 0}
 #htlivesight-body  .awayteam_league {
 	text-align:left;
-	width:70px;
+	width:57px;
 	padding-top: 5px !important;
 	padding-right: 4px;
 	padding-left: 4px;
@@ -126,8 +147,9 @@ margin: 0 0 0 0;
 /*.round_league {text-align:left;border-top: thin solid white;}
 .chronometer_league {text-align:right;border-top: thin solid white;}*/
 
-#htlivesight-body  .team_name{font-size:16px;font-weight: 700;}
-#htlivesight-body  .big_score{font-size:24px;font-weight: 700;}
+#htlivesight-body  .team_name{font-size:16px;font-weight: 700;vertical-align:middle}
+#htlivesight-body  .big_score{font-size:24px;font-weight: 700;vertical-align:baseline}
+#htlivesight-body  .header_team_logo{max-height:20px; cursor:pointer}
 
 #htlivesight-body  .imgwinboxopen {background: url("../img/wboxopen0.png") transparent;border:0;width:20px;height:20px;}
 #htlivesight-body  .imgwinboxopen:hover {background: url("../img/wboxopen1.png") transparent;border:0;width:20px;height:20px;}
@@ -139,14 +161,10 @@ margin: 0 0 0 0;
 /*.live_league_table{width:100%;border: thin solid white;border-radius:5px;-moz-border-radius:5px;text-align:center;}
 .header_league_table{text-align:center;border-bottom: thin solid white;}*/
 
-#htlivesight-body  #winbox_leaguematches{/*min-height:140px;*/overflow-x:auto; overflow-y: hidden;}
-#htlivesight-body  #winboxcontent_leaguetable{/*min-height:150px;*/overflow:auto}
-#htlivesight-body  #winbox_leaguematchesBis{/*min-height:140px;*/overflow-x:auto; overflow-y: hidden;}
-#htlivesight-body  #winboxcontent_leaguetableBis{/*min-height:150px;*/overflow:auto}
-#htlivesight-body  #winbox_youthleaguematches{/*min-height:140px;*/overflow-x:auto; overflow-y: hidden;}
-#htlivesight-body  #winboxcontent_youthleaguetable{/*min-height:150px;*/overflow:auto}
-#htlivesight-body  #winbox_youthleaguematchesBis{/*min-height:140px;*/overflow-x:auto; overflow-y: hidden;}
-#htlivesight-body  #winboxcontent_youthLeaguetableBis{/*min-height:150px;*/overflow:auto}
+#htlivesight-body  #winbox_leaguematches, #winbox_leaguematchesBis, #winbox_leaguematchesTer{/*min-height:140px;*/overflow-x:auto; overflow-y: hidden;}
+#htlivesight-body  #winboxcontent_leaguetable, #winboxcontent_leaguetableBis, #winboxcontent_leaguetableTer{/*min-height:150px;*/overflow:auto}
+#htlivesight-body  #winbox_youthleaguematches, #winbox_youthleaguematchesBis, #winbox_youthleaguematchesTer{/*min-height:140px;*/overflow-x:auto; overflow-y: hidden;}
+#htlivesight-body  #winboxcontent_youthleaguetable, #winboxcontent_youthLeaguetableBis, #winboxcontent_youthLeaguetableTer{/*min-height:150px;*/overflow:auto}
 
 #htlivesight-body  #winboxcontent_matchlist{/*min-height:30px;*/overflow:auto}
 #htlivesight-body  #winboxcontent_friends{/*min-height:110px;*/overflow:auto}
@@ -345,19 +363,11 @@ animation-timing-function:ease-in-out;
 text-decoration:none;
 }
 
-#htlivesight-body  table.ev_rows, #htlivesight-body  #leaguetable_grid_rows{
+#htlivesight-body  table.ev_rows, #htlivesight-body  #leaguetable_grid_rows, #htlivesight-body  #leaguetable_grid_rowsBis, #htlivesight-body  #leaguetable_grid_rowsTer{
 border-collapse: collapse;
 }
 
-#htlivesight-body  table.ev_rows, #htlivesight-body  #leaguetable_grid_rowsBis{
-border-collapse: collapse;
-}
-
-#htlivesight-body  table.ev_rows, #htlivesight-body  #youthleaguetable_grid_rows{
-border-collapse: collapse;
-}
-
-#htlivesight-body  table.ev_rows, #htlivesight-body  #youthLeaguetable_grid_rowsBis{
+#htlivesight-body  table.ev_rows, #htlivesight-body  #youthleaguetable_grid_rows, #htlivesight-body  #youthLeaguetable_grid_rowsBis, #htlivesight-body  #youthLeaguetable_grid_rowsTer{
 border-collapse: collapse;
 }
 
@@ -610,6 +620,85 @@ text-align: right;
 }
 
 
+#htlivesight-body  #leaguetable_grid_rowsTer{width:100%;}
+#htlivesight-body  #leaguetable_grid_rowsTer tr:last-child td:first-child{
+	border-radius:0 0 0 4px;
+	-moz-border-radius:0 0 0 4px;
+}
+#htlivesight-body  #leaguetable_grid_rowsTer tr:last-child td:last-child{
+	border-radius:0 0 4px 0;
+	-moz-border-radius:0 0 4px 0;
+}
+#htlivesight-body  #leaguetable_grid_rowsTer th:nth-child(2){
+	padding-left: 3px;
+	padding-right: 2px;
+	text-align: left;
+}
+#htlivesight-body  #leaguetable_grid_rowsTer td:nth-child(2){
+padding-left: 3px;
+padding-right: 2px;
+text-align: left;
+
+/*border-right: thin solid white;*/
+}
+#htlivesight-body  #leaguetable_grid_rowsTer td:nth-child(2) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90px;	
+}
+#htlivesight-body  #leaguetable_grid_rowsTer td:nth-child(3), #htlivesight-body  #leaguetable_grid_rowsTer th:nth-child(3){
+padding-left: 2px;
+/*border-right: thin solid white;*/
+}
+
+#htlivesight-body  #leaguetable_grid_rowsTer th:nth-child(1) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 6px;	
+}
+
+#htlivesight-body  #leaguetable_grid_rowsTer th:nth-child(2) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90px;	
+}
+
+#htlivesight-body  #leaguetable_grid_rowsTer th:nth-child(4) span, #htlivesight-body  #leaguetable_grid_rowsTer th:nth-child(7) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 15px;	
+}
+
+#htlivesight-body  #leaguetable_grid_rowsTer th:nth-child(5) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 30px;	
+}
+
+#htlivesight-body  #leaguetable_grid_rowsTer th:nth-child(6) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 22px;	
+}
+#htlivesight-body  #leaguetable_grid_rowsTer td:nth-child(5){
+	padding-left: 2px;
+  padding-right: 1px;
+  text-align: right;
+}
+#htlivesight-body  #leaguetable_grid_rowsTer td:nth-child(9){
+padding-right: 3px;
+padding-left: 2px;
+text-align: right;
+}
+
+
+
 #htlivesight-body  #youthleaguetable_grid_rows{width:100%;}
 #htlivesight-body  #youthleaguetable_grid_rows tr:last-child td:first-child{
 	border-radius:0 0 0 4px;
@@ -686,6 +775,7 @@ padding-right: 3px;
 padding-left: 2px;
 text-align: right;
 }
+
 #htlivesight-body  #youthLeaguetable_grid_rowsBis{width:100%;}
 #htlivesight-body  #youthLeaguetable_grid_rowsBis tr:last-child td:first-child{
 	border-radius:0 0 0 4px;
@@ -762,6 +852,85 @@ padding-right: 3px;
 padding-left: 2px;
 text-align: right;
 }
+
+
+#htlivesight-body  #youthLeaguetable_grid_rowsTer{width:100%;}
+#htlivesight-body  #youthLeaguetable_grid_rowsTer tr:last-child td:first-child{
+	border-radius:0 0 0 4px;
+	-moz-border-radius:0 0 0 4px;
+}
+#htlivesight-body  #youthLeaguetable_grid_rowsTer tr:last-child td:last-child{
+	border-radius:0 0 4px 0;
+	-moz-border-radius:0 0 4px 0;
+}
+#htlivesight-body  #youthLeaguetable_grid_rowsTer th:nth-child(2){
+	padding-left: 3px;
+	padding-right: 2px;
+	text-align: left;
+}
+#htlivesight-body  #youthLeaguetable_grid_rowsTer td:nth-child(2){
+padding-left: 3px;
+padding-right: 2px;
+text-align: left;
+
+/*border-right: thin solid white;*/
+}
+#htlivesight-body  #youthLeaguetable_grid_rowsTer td:nth-child(2) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90px;	
+}
+#htlivesight-body  #youthLeaguetable_grid_rowsTer td:nth-child(3), #htlivesight-body  #youthLeaguetable_grid_rowsTer th:nth-child(3){
+padding-left: 2px;
+/*border-right: thin solid white;*/
+}
+
+#htlivesight-body  #youthLeaguetable_grid_rowsTer th:nth-child(1) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 6px;	
+}
+
+#htlivesight-body  #youthLeaguetable_grid_rowsTer th:nth-child(2) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90px;	
+}
+
+#htlivesight-body  #youthLeaguetable_grid_rowsTer th:nth-child(4) span, #htlivesight-body  #youthLeaguetable_grid_rowsTer th:nth-child(7) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 15px;	
+}
+
+#htlivesight-body  #youthLeaguetable_grid_rowsTer th:nth-child(5) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 30px;	
+}
+
+#htlivesight-body  #youthLeaguetable_grid_rowsTer th:nth-child(6) span{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 22px;	
+}
+#htlivesight-body  #youthLeaguetable_grid_rowsTer td:nth-child(5){
+	padding-left: 2px;
+  padding-right: 1px;
+  text-align: right;
+}
+#htlivesight-body  #youthLeaguetable_grid_rowsTer td:nth-child(9){
+padding-right: 3px;
+padding-left: 2px;
+text-align: right;
+}
+
 
 #htlivesight-body .warning{
 background-color: yellow;

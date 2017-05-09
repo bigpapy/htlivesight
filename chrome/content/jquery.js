@@ -86,6 +86,16 @@ $(function() {
 		collapsible : true,
 		heightStyle : "content"
 	}).hide();
+	$("#winbox_leaguematchesTer").accordion({
+		header : "h3",
+		collapsible : true,
+		heightStyle : "content"
+	}).hide();
+	$("#winbox_leaguetableTer").accordion({
+		header : "h3",
+		collapsible : true,
+		heightStyle : "content"
+	}).hide();
 	$("#winbox_youthleaguematches").accordion({
 		header : "h3",
 		collapsible : true,
@@ -102,6 +112,16 @@ $(function() {
 		heightStyle : "content"
 	}).hide();
 	$("#winbox_youthLeaguetableBis").accordion({
+		header : "h3",
+		collapsible : true,
+		heightStyle : "content"
+	}).hide();
+	$("#winbox_youthleaguematchesTer").accordion({
+		header : "h3",
+		collapsible : true,
+		heightStyle : "content"
+	}).hide();
+	$("#winbox_youthLeaguetableTer").accordion({
 		header : "h3",
 		collapsible : true,
 		heightStyle : "content"

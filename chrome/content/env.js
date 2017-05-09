@@ -18,24 +18,24 @@ if (typeof(chrome) == "object") {
     };
 //  port common functions to sandboxed
  // It seems next variable is never used, check if it's to be deleted
-    var sandboxed = {
-	    extension : {
-		sendRequest: function (data, callback) { // It seems next function is never used, check if it's to be deleted
+  //  var sandboxed = {
+  //	    extension : {
+  //		sendRequest: function (data, callback) { // It seems next function is never used, check if it's to be deleted
 		    //if (callback) chrome.extension.sendRequest(data, callback);
 			//else chrome.extension.sendRequest(data);
-			console.log("sendRequest!");
-			if (callback) chrome.extension.runtime.sendMessage(data, callback);
-		    else chrome.extension.runtime.sendMessage(data);
-		},
-		onRequest : { // It seems next function is never used, check if it's to be deleted
-		    addListener : function (listener) { console.log("onRequest!");/*chrome.extension.onRequest.addListener(listener);*/chrome.runtime.onMessage.addListener(listener);},
-		},
-		getURL : function (path) {chrome.extension.getURL(path);},
-	    },
-	    tabs : {
-		create : function (url) {chrome.tabs.create(url);},
-	    },
-    };
+  //			console.log("sendRequest!");
+  //			if (callback) chrome.extension.runtime.sendMessage(data, callback);
+  //		    else chrome.extension.runtime.sendMessage(data);
+  //		},
+  //		onRequest : { // It seems next function is never used, check if it's to be deleted
+  //		    addListener : function (listener) { console.log("onRequest!");/*chrome.extension.onRequest.addListener(listener);*/chrome.runtime.onMessage.addListener(listener);},
+  //		},
+  //		getURL : function (path) {chrome.extension.getURL(path);},
+  //	    },
+  //	    tabs : {
+  //		create : function (url) {chrome.tabs.create(url);},
+  //	    },
+  //  };
 }else if (typeof(opera) == "object") {
     htlivesight.arch = "Sandboxed";
     htlivesight.platform = "Opera";

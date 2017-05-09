@@ -23,7 +23,7 @@ htlivesight.Lang = {
 				};
 		//			LOGIN
 				var doc=document;
-				doc.getElementById("ui-id-10").textContent=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);	
+				doc.getElementById("ui-id-12").textContent=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);	
 				doc.getElementById("LoginLabel2").textContent=htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]);
 				doc.getElementById("LoginTeamId").textContent=htlivesight.Util.Parse("LoginTeamId",htlivesight.data[0]);
 				doc.getElementById("LoginSave").textContent=htlivesight.Util.Parse("LoginRememberMe",htlivesight.data[0]);
@@ -33,15 +33,16 @@ htlivesight.Lang = {
 				doc.getElementById("LoginSpeed").textContent=htlivesight.Util.Parse("LoginSpeed",htlivesight.data[0]);
 				doc.getElementById("LoginByEvent").textContent=htlivesight.Util.Parse("LoginByEvent",htlivesight.data[0]);
 				doc.getElementById("SecondTeamIdLabel").textContent=htlivesight.Util.Parse("SecondTeamIdLabel",htlivesight.data[0]);
+				//doc.getElementById("ThirdTeamIdLabel").textContent=htlivesight.Util.Parse("SecondTeamIdLabel",htlivesight.data[0]);//TODO: change to Third and add a label into XML
 				doc.getElementById("warning").textContent=htlivesight.Util.Parse("Warning",htlivesight.data[0]);
 				doc.getElementById("safari-warning-text").textContent=htlivesight.Util.Parse("SafariWarning",htlivesight.data[0]);
 				doc.getElementById("warning2").textContent=htlivesight.Util.Parse("Warning",htlivesight.data[0]);
 				doc.getElementById("android-warning-text").textContent=htlivesight.Util.Parse("AndroidWarning",htlivesight.data[0]);
 				//todo: add android warning text localization.
 		//			ABOUT
-				doc.getElementById("ui-id-11").textContent=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);	
+				doc.getElementById("ui-id-13").textContent=htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]);	
 				doc.getElementById("TabInfo").textContent=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
-				doc.getElementById("creationDate").textContent="12 "+htlivesight.Util.Parse("MonthMarch",htlivesight.data[0])+" 2017";
+				doc.getElementById("creationDate").textContent="09 "+htlivesight.Util.Parse("MonthMay",htlivesight.data[0])+" 2017";
 				doc.getElementById("createdBy").textContent=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
 				doc.getElementById("testers").textContent=htlivesight.Util.Parse("Testers",htlivesight.data[0]);
 				doc.getElementById("BasedOn").textContent=htlivesight.Util.Parse("BasedOn",htlivesight.data[0]);
@@ -52,7 +53,7 @@ htlivesight.Lang = {
 				doc.getElementById("ThanksTo").textContent=htlivesight.Util.Parse("TextThanksTo",htlivesight.data[0]);
 				doc.getElementById("TabCredits").textContent=htlivesight.Util.Parse("TabCredits",htlivesight.data[0]);
 		//			SETTINGS
-				doc.getElementById("ui-id-19").textContent=htlivesight.Util.Parse("WindowTitle",htlivesight.data[0]);
+				doc.getElementById("ui-id-21").textContent=htlivesight.Util.Parse("WindowTitle",htlivesight.data[0]);
 				
 				document.getElementById("ThemesSelector").textContent=htlivesight.Util.Parse("Themes",htlivesight.data[0]);
 				document.getElementById("label_dark_theme").textContent=htlivesight.Util.Parse("Dark",htlivesight.data[0]);
@@ -216,6 +217,14 @@ htlivesight.Lang = {
 				doc.getElementById("LeagueGoalDiffBis").textContent=htlivesight.Util.Parse("LeagueGoalDiff",htlivesight.data[0]);
 				doc.getElementById("LeaguePointsBis").textContent=htlivesight.Util.Parse("LeaguePoints",htlivesight.data[0]);
 				
+				doc.getElementById("LeagueMatchesTer").textContent=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);
+				doc.getElementById("LeaguePositionTer").textContent=htlivesight.Util.Parse("LeaguePosition",htlivesight.data[0]);
+				doc.getElementById("LeagueTeamTer").textContent=htlivesight.Util.Parse("LeagueTeam",htlivesight.data[0]);
+				doc.getElementById("LeaguePlayedTer").textContent=htlivesight.Util.Parse("LeaguePlayed",htlivesight.data[0]);
+				doc.getElementById("LeagueGoalsTer").textContent=htlivesight.Util.Parse("LeagueGoals",htlivesight.data[0]);
+				doc.getElementById("LeagueGoalDiffTer").textContent=htlivesight.Util.Parse("LeagueGoalDiff",htlivesight.data[0]);
+				doc.getElementById("LeaguePointsTer").textContent=htlivesight.Util.Parse("LeaguePoints",htlivesight.data[0]);
+				
 				doc.getElementById("YouthLeagueMatches").textContent=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);
 				doc.getElementById("YouthLeagueLiveTable").textContent=htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0]);
 				doc.getElementById("YouthLeaguePosition").textContent=htlivesight.Util.Parse("LeaguePosition",htlivesight.data[0]);
@@ -233,6 +242,16 @@ htlivesight.Lang = {
 				doc.getElementById("YouthLeagueGoalsBis").textContent=htlivesight.Util.Parse("LeagueGoals",htlivesight.data[0]);
 				doc.getElementById("YouthLeagueGoalDiffBis").textContent=htlivesight.Util.Parse("LeagueGoalDiff",htlivesight.data[0]);
 				doc.getElementById("YouthLeaguePointsBis").textContent=htlivesight.Util.Parse("LeaguePoints",htlivesight.data[0]);
+				
+				doc.getElementById("YouthLeagueMatchesTer").textContent=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);
+				doc.getElementById("YouthLeagueLiveTableTer").textContent=htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0]);
+				doc.getElementById("YouthLeaguePositionTer").textContent=htlivesight.Util.Parse("LeaguePosition",htlivesight.data[0]);
+				doc.getElementById("YouthLeagueTeamTer").textContent=htlivesight.Util.Parse("LeagueTeam",htlivesight.data[0]);
+				doc.getElementById("YouthLeaguePlayedTer").textContent=htlivesight.Util.Parse("LeaguePlayed",htlivesight.data[0]);
+				doc.getElementById("YouthLeagueGoalsTer").textContent=htlivesight.Util.Parse("LeagueGoals",htlivesight.data[0]);
+				doc.getElementById("YouthLeagueGoalDiffTer").textContent=htlivesight.Util.Parse("LeagueGoalDiff",htlivesight.data[0]);
+				doc.getElementById("YouthLeaguePointsTer").textContent=htlivesight.Util.Parse("LeaguePoints",htlivesight.data[0]);
+
 				
 				doc.getElementById("MatchesList").textContent=htlivesight.Util.Parse("MatchesList",htlivesight.data[0]);
 				doc.getElementById("FriendsTitle").textContent=htlivesight.Util.Parse("FriendsTitle",htlivesight.data[0]);

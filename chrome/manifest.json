@@ -1,7 +1,7 @@
 {  
    "manifest_version":2,
    "name":"HTLiveSightDEV",
-   "version":"0.8.878",
+   "version":"0.9.882",
    "description":"A Hattrick Live Match Viewer",
    "icons":{  
       "16":"skin/16dev.png",
@@ -32,7 +32,8 @@
       "content/img/foxball_32.png",
       "content/old_img/foxball_32.png",
       "content/themes/images/bg.png",
-      "skin/128.png"
+      "skin/128.png",
+      "content/img/flag/*.png"
    ],
    "update_url":"https://htlivesight.c6.ixsecure.com/chromedev/updates.xml"
 }

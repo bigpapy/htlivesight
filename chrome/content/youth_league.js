@@ -52,6 +52,11 @@ htlivesight.YouthLeague.ParseGet = function(xml, teamKind) { //console.log("htli
 		htlivesight.YouthLeague.youthLeagueId2 =  parseInt(htlivesight.Util.Parse("YouthLeagueID", xml), 10);
 		htlivesight.YouthLeague.youthLeagueName2 = htlivesight.Util.Parse("YouthLeagueName", xml);
 		htlivesight.YouthLeague.teams2 = htlivesight.YouthLeague.ParseTeams(xml);
+		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHTEAM3);
+	}else if(teamKind=="myThirdYouthTeam"){
+		htlivesight.YouthLeague.youthLeagueId3 =  parseInt(htlivesight.Util.Parse("YouthLeagueID", xml), 10);
+		htlivesight.YouthLeague.youthLeagueName3 = htlivesight.Util.Parse("YouthLeagueName", xml);
+		htlivesight.YouthLeague.teams3 = htlivesight.YouthLeague.ParseTeams(xml);
 		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE);
 	}
 };
@@ -173,13 +178,12 @@ htlivesight.YouthLeague.ParseFixtures = function(xml,teamKind) {
 				//console.log("before adding youthleague matches");
 				//console.log(rounds[currentRound].id);
 				htlivesight.YouthLeague.matches=rounds[currentRound].id;
-				htlivesight.Settings.click.headerBarColorSet();
-				htlivesight.DOM.setHeaderColor();
 				document.getElementById("winbox_youthleaguetable").setAttribute("style", "display:block");
 				document.getElementById("winboxcontent_youthleaguematches").setAttribute("style", "display:block");
 				document.getElementById("YouthLeagueMatches").setAttribute("style", "display:block");
 				document.getElementById("h3YouthLeagueMatches").setAttribute("style", "display:block");
-	
+				htlivesight.Settings.click.headerBarColorSet();
+				htlivesight.DOM.setHeaderColor();
 			}catch(e){
 				//document.getElementById("winbox_youthleaguetable").setAttribute("style", "display:none");
 				//htlivesight.showYouthLeague= false;
@@ -213,11 +217,12 @@ htlivesight.YouthLeague.ParseFixtures = function(xml,teamKind) {
 					htlivesight.DOM.UpdateElementBoxYouthLeagueTable2(htlivesight.YouthLeague);
 					htlivesight.DOM.UpdateElementBoxYouthLeague2(htlivesight.YouthLeague);
 					htlivesight.YouthLeague.matches2=rounds[currentRound].id;
-					htlivesight.DOM.setHeaderColor();
 					document.getElementById("winbox_youthLeaguetableBis").setAttribute("style", "display:block");
 					document.getElementById("winboxcontent_youthLeaguematchesBis").setAttribute("style", "display:block");
 					document.getElementById("YouthLeagueMatchesBis").setAttribute("style", "display:block");
 					document.getElementById("h3YouthLeagueMatchesBis").setAttribute("style", "display:block");
+					htlivesight.Settings.click.headerBarColorSet();
+					htlivesight.DOM.setHeaderColor();
 				}catch(e){
 					//document.getElementById("winbox_youthleaguetableBis").setAttribute("style", "display:none");
 					//htlivesight.showYouthLeague2= false;
@@ -225,14 +230,56 @@ htlivesight.YouthLeague.ParseFixtures = function(xml,teamKind) {
 					
 				}
 			}
+			htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE3);
+		}else if(teamKind=="myThirdYouthTeam"){
 			
+			
+			var matchId;
+
+			htlivesight.YouthLeague.rounds3 = rounds;
+			htlivesight.YouthLeague.currentRound3 = rounds[currentRound];
+			var p = htlivesight.prefs.matches.youthLeague;
+			htlivesight.Time.hattrickTime = htlivesight.Time.parseFetchDate(xml);// bigpapy:this read current time
+			if (
+					//		!(htlivesight.prefs.other.reLive) && //bigpapy: this remove table from relive mode.
+					p.get &&
+					(
+							!p.within || 
+							Math.abs(htlivesight.YouthLeague.currentRound3.date-htlivesight.Time.hattrickTime) < p.withinHours*htlivesight.Time.HOUR 
+					)
+			) {
+				htlivesight.showYouthLeague3= true;
+			} else {
+				htlivesight.showYouthLeague3= false;
+			}
+			if (htlivesight.showYouthLeague3 && htlivesight.YouthLeague.currentRound3 != undefined) {
+				try{
+					htlivesight.DOM.UpdateElementBoxYouthLeagueTable3(htlivesight.YouthLeague);
+					htlivesight.DOM.UpdateElementBoxYouthLeague3(htlivesight.YouthLeague);
+					htlivesight.YouthLeague.matches3=rounds[currentRound].id;
+
+					document.getElementById("winbox_youthLeaguetableTer").setAttribute("style", "display:block");
+					document.getElementById("winboxcontent_youthLeaguematchesTer").setAttribute("style", "display:block");
+					document.getElementById("YouthLeagueMatchesTer").setAttribute("style", "display:block");
+					document.getElementById("h3YouthLeagueMatchesTer").setAttribute("style", "display:block");
+					htlivesight.Settings.click.headerBarColorSet();
+					htlivesight.DOM.setHeaderColor();
+				}catch(e){
+					//document.getElementById("winbox_youthleaguetableBis").setAttribute("style", "display:none");
+					//htlivesight.showYouthLeague2= false;
+					console.log(e);
+					
+				}
+			}
+			htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES);
 		}
-		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES);
+
 		
 	} catch(e) {
 		console.log(e);
 		if(teamKind=="myFirstYouthTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE2);}
-		if(teamKind=="mySecondYouthTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE_MATCHES);}
+		if(teamKind=="mySecondYouthTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE3);}
+		if(teamKind=="myThirdYouthTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE_MATCHES);}
 		// alert("htlivesight.YouthLeague.ParseFixtures (set info): " + e);
 	}
 //	if(teamKind==="myFirstTeam"){
@@ -259,6 +306,15 @@ htlivesight.YouthLeague.addYouthLeagueMatches2= function(){
 	}catch(e){}
 };
 
+htlivesight.YouthLeague.addYouthLeagueMatches3= function(){
+	try{
+		for (var i=0; i<htlivesight.YouthLeague.matches3.length; i++) {
+			matchId = htlivesight.YouthLeague.matches3[i];
+			htlivesight.AddLiveMatch(matchId, "youth");
+		}
+	}catch(e){}
+};
+// TODO: make next three functions one.
 htlivesight.YouthLeague.sortTable = function(){
 	var tmp = Array();
 	var length = 0;
@@ -306,6 +362,31 @@ htlivesight.YouthLeague.sortTable2 = function(){
 		htlivesight.YouthLeague.teams2[tmp[j].id].livePosition = j;
 	}
 };
+
+htlivesight.YouthLeague.sortTable3 = function(){
+	var tmp = Array();
+	var length = 0;
+	for(var id in htlivesight.YouthLeague.teams3){
+		tmp[htlivesight.YouthLeague.teams3[id].livePosition] = htlivesight.YouthLeague.teams3[id];
+		length++;
+	}
+	var change = true;
+	while(change){
+		change = false;
+		for(var i=1; i<length; i++){
+			if(htlivesight.YouthLeague.compareTeams(tmp[i], tmp[i+1]) < 0){
+				var tmpTeam = tmp[i];
+				tmp[i] = tmp[i+1];
+				tmp[i+1] = tmpTeam;
+				change = true;
+			}
+		}
+	}
+	for(var j=1; j<=length; j++){
+		htlivesight.YouthLeague.teams3[tmp[j].id].livePosition = j;
+	}
+};
+
 
 htlivesight.YouthLeague.compareTeams = function(team1, team2){
 	if((!team1)||(!team2)) return 0;

@@ -1428,7 +1428,11 @@ htlivesight.Settings = {
 				importPreferences: function(){
 					var old_prefs = htlivesight.Settings.preferences;
 					try{
-						htlivesight.Settings.preferences = JSON.parse(document.getElementById("import_text").value);
+						var importText = document.getElementById("import_text").value
+						
+						// replace all the reference to other browser or HTLS channel (dev or stable) to this browser and channel:
+						importText = importText.replace(/([a-z]*-extension|chrome):\/\/[^\/]*\/content\//g, htlivesightEnv.contentPath);
+						htlivesight.Settings.preferences = JSON.parse(importText);
 					
 						if (!htlivesight.Settings.preferences.general.customBackgroundPath){
 							htlivesight.Settings.preferences.general.customBackgroundPath = old_prefs.general.customBackgroundPath;
