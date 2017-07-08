@@ -429,4 +429,6 @@
 <GetYouthNearestMatch>Hämta matcher för mitt juniorlag</GetYouthNearestMatch>
 <MatchesYouthLeague>Juniorserie(r)</MatchesYouthLeague>
 <YouthSoundEqualSenior>Mitt juniorlags ljud är detsamma som seniorlagets</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>LagID (Seniorlag 3)</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Hämta mitt/mina andra lagID automatiskt från Hattrick</SeniorTeamIdAutomatically>
 </Htlivesight>

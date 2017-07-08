@@ -429,4 +429,6 @@
 <GetYouthNearestMatch>Načíst automaticky zápasy mládeže</GetYouthNearestMatch>
 <MatchesYouthLeague>Zápasy mládeže</MatchesYouthLeague>
 <YouthSoundEqualSenior>Zvuky mého mládežnického týmu stejné jako u mého seniorského týmu</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Zadej ID třetího týmu</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Získat ID mého dalšího seniorského týmu automaticky</SeniorTeamIdAutomatically>
 </Htlivesight>

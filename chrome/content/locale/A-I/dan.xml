@@ -429,4 +429,6 @@
 <GetYouthNearestMatch>Indlæs dine ungdomskampe automatisk</GetYouthNearestMatch>
 <MatchesYouthLeague>Ungdomsliga kampe</MatchesYouthLeague>
 <YouthSoundEqualSenior>Lyde for mit ungdomshold er det samme som mit seniorhold</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Insert a third team ID</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Get my other senior team id automatically</SeniorTeamIdAutomatically>
 </Htlivesight>

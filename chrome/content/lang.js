@@ -188,7 +188,8 @@ htlivesight.Lang = {
 				doc.getElementById("label_chkExportBackground").textContent=htlivesight.Util.Parse("ExportBackground",htlivesight.data[0]);
 				doc.getElementById("label_chkExportSounds").textContent=htlivesight.Util.Parse("ExportSounds",htlivesight.data[0]);
 				doc.getElementById("label_chkYouthSoundEqualSenior").textContent=htlivesight.Util.Parse("YouthSoundEqualSenior",htlivesight.data[0]);
-				
+				doc.getElementById("labelGetMyDataAutomatically").textContent=htlivesight.Util.Parse("SeniorTeamIdAutomatically",htlivesight.data[0]);
+				doc.getElementById("ThirdTeamIdLabel").textContent=htlivesight.Util.Parse("ThirdTeamIdLabel",htlivesight.data[0]);
 				if(htlivesight.platform == "Safari"){
 				  $("[type='file']").hide();
 				  $("[type='file']").parent().prepend("<div class='warning'>"+htlivesight.Util.Parse("OnlyHTTPFiles",htlivesight.data[0])+"</div><br/>");

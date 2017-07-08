@@ -425,8 +425,10 @@
 <PrefsRestart>Câteva preferințe necesită restart!</PrefsRestart>
 <ClickToSave>Apasă OK în fereastra preferințelor pentru a le salva.</ClickToSave>
 <TooltipWindowSpeech>Activează și dezactivează notificarea vocală a evenimentelor de meci</TooltipWindowSpeech>
-<YouthMatches>Youth Matches</YouthMatches>
-<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
-<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
-<YouthSoundEqualSenior>My youth team sounds equal to my senior one</YouthSoundEqualSenior>
+<YouthMatches>Meciuri de tineret</YouthMatches>
+<GetYouthNearestMatch>Încarcă automat meciurile echipei tale de tineret</GetYouthNearestMatch>
+<MatchesYouthLeague>Meciuri Liga de tineret</MatchesYouthLeague>
+<YouthSoundEqualSenior>Sunetele echipei mele de tineret la fel cu cele ale echipei de seniori</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Introduceți ID-ul pentru a treia echipă</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Obține automat ID-ul celeilalte echipe de seniori</SeniorTeamIdAutomatically>
 </Htlivesight>

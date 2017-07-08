@@ -429,4 +429,6 @@
 <GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
 <MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
 <YouthSoundEqualSenior>My youth team sounds equal to my senior one</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Insert a third team ID</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Get my other senior team id automatically</SeniorTeamIdAutomatically>
 </Htlivesight>

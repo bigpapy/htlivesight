@@ -429,4 +429,6 @@
 <GetYouthNearestMatch>자동으로 유소년 팀 경기 불러오기</GetYouthNearestMatch>
 <MatchesYouthLeague>유소년 리그 경기</MatchesYouthLeague>
 <YouthSoundEqualSenior>유소년 팀 사운드를 성인 팀과 동일하게</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>서드 팀의 ID 입력</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>나의 다른 성인 팀 id를 자동으로 가져오기</SeniorTeamIdAutomatically>
 </Htlivesight>

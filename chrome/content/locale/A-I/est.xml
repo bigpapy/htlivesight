@@ -425,8 +425,10 @@
 <PrefsRestart>Mõned seadistused vajavad taaskäivitust!</PrefsRestart>
 <ClickToSave>Salvestamiseks kliki OK seadistuste aknas.</ClickToSave>
 <TooltipWindowSpeech>Luba või keela tekst-kõneks funktsioon mängu kirjelduste kohta</TooltipWindowSpeech>
-<YouthMatches>Youth Matches</YouthMatches>
-<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
-<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
-<YouthSoundEqualSenior>My youth team sounds equal to my senior one</YouthSoundEqualSenior>
+<YouthMatches>Noorte mängud</YouthMatches>
+<GetYouthNearestMatch>Lae noorte mängud automaatselt</GetYouthNearestMatch>
+<MatchesYouthLeague>Noorte Liiga Mängud</MatchesYouthLeague>
+<YouthSoundEqualSenior>Minu noortemeeskonna helid on samad kui põhimeeskonnal</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Sisesta kolmanda meeskonna ID</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Lae mu teise meeskonna id automaatselt</SeniorTeamIdAutomatically>
 </Htlivesight>

@@ -429,4 +429,6 @@
 <GetYouthNearestMatch>Laad automatisch uw jeugdteam wedstrijden</GetYouthNearestMatch>
 <MatchesYouthLeague>Jeugd Competitie wedstrijden</MatchesYouthLeague>
 <YouthSoundEqualSenior>Jeugd team klinkt als A-Ploeg</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Voeg derde team id IN</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Haal mijn ander senior-id op</SeniorTeamIdAutomatically>
 </Htlivesight>

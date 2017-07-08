@@ -428,5 +428,7 @@
 <YouthMatches>Jogos de juniores</YouthMatches>
 <GetYouthNearestMatch>Carrega automaticamente os teus jogos de juniores</GetYouthNearestMatch>
 <MatchesYouthLeague>Jogos da Liga de Juniores</MatchesYouthLeague>
-<YouthSoundEqualSenior>My youth team sounds equal to my senior one</YouthSoundEqualSenior>
+<YouthSoundEqualSenior>Os sons da equipa júnior iguais aos da sénior</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Inserir ID duma terceira equipa</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Obter automaticamente o ID de minha outra equipa sénior</SeniorTeamIdAutomatically>
 </Htlivesight>

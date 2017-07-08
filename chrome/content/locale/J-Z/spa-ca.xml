@@ -429,4 +429,6 @@
 <GetYouthNearestMatch>Carga automáticamente los partidos juveniles de tu equipo</GetYouthNearestMatch>
 <MatchesYouthLeague>Partidos Juveniles de liga</MatchesYouthLeague>
 <YouthSoundEqualSenior>Mismo sonido para equipo juvenil y equipo mayor</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Insertar el ID de tu tercer equipo</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Obtener el ID de mis otros equipos automáticamente</SeniorTeamIdAutomatically>
 </Htlivesight>

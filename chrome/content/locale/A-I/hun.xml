@@ -429,4 +429,6 @@
 <GetYouthNearestMatch>Az ifimérkőzéseid automatikus betöltése</GetYouthNearestMatch>
 <MatchesYouthLeague>Ifibajnokság mérkőzései</MatchesYouthLeague>
 <YouthSoundEqualSenior>Az ificsapatom egyforma hangokkal jelez, mint a felnőttcsapatom</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Insert a third team ID</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Get my other senior team id automatically</SeniorTeamIdAutomatically>
 </Htlivesight>

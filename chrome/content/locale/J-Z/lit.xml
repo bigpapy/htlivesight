@@ -425,8 +425,10 @@
 <PrefsRestart>Kai kuriems nustatymams pakeisti reikalingas perkrovimas!</PrefsRestart>
 <ClickToSave>Nustatymus išsaugosite nustatymų lange spustelėję ant mygtuko „Gerai“.</ClickToSave>
 <TooltipWindowSpeech>Įjungti/išjungti rungtynių įvykių pranešimų skaitymą</TooltipWindowSpeech>
-<YouthMatches>Youth Matches</YouthMatches>
-<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
-<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
-<YouthSoundEqualSenior>My youth team sounds equal to my senior one</YouthSoundEqualSenior>
+<YouthMatches>Jaunių rungtynės</YouthMatches>
+<GetYouthNearestMatch>Automatiškai įkelti jaunių rungtynes</GetYouthNearestMatch>
+<MatchesYouthLeague>Jaunių lygos rungtynės</MatchesYouthLeague>
+<YouthSoundEqualSenior>Jaunių rungtynėms naudoti tuos pačius garsus</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Įveskite trečiosios komandos ID</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Surasti kitos komandos ID automatiškai</SeniorTeamIdAutomatically>
 </Htlivesight>

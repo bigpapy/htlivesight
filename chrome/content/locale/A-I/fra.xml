@@ -200,7 +200,7 @@
 <CustomSounds>Sons</CustomSounds>
 <CustomSoundsWeather>Son de la météo en début de match</CustomSoundsWeather>
 <CustomSoundsTime>Sons de début et de fin de la mi-temps</CustomSoundsTime>
-<CustomSoundsSEW>Sons des évènements spéciaux du à la météo</CustomSoundsSEW>
+<CustomSoundsSEW>Sons des événements spéciaux du à la météo</CustomSoundsSEW>
 <CustomSoundsGoal>Sons originels de Livefox</CustomSoundsGoal>
 <CustomSoundsNoOpGoal>Pas de sons des buts de l'adversaire</CustomSoundsNoOpGoal>
 <PathSoundsMyGoal>Nos buts</PathSoundsMyGoal>
@@ -354,7 +354,7 @@
 <Powerful>Costaud</Powerful>
 <Unpredictable>Imprévisible</Unpredictable>
 <Header>Joueur de Tête</Header>
-<Regainer>Guérison</Regainer>
+<Regainer>Résistant</Regainer>
 <SecondTeamIdLabel>Insérer l'ID d'une 2nde équipe</SecondTeamIdLabel>
 <SecondSoundEqualFirst>Sons 2ème équipe identique à la 1ère</SecondSoundEqualFirst>
 <Keeper>Gardien</Keeper>
@@ -429,4 +429,6 @@
 <GetYouthNearestMatch>Afficher les matchs de vos jeunes</GetYouthNearestMatch>
 <MatchesYouthLeague>Match de ligue de jeunes</MatchesYouthLeague>
 <YouthSoundEqualSenior>Sons équipe jeunes identique à la 1ère senior</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Insérer l'ID d'une 3ème équipe</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Obtenir mes autres équipes senior automatiquement</SeniorTeamIdAutomatically>
 </Htlivesight>

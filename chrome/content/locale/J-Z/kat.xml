@@ -429,4 +429,6 @@
 <GetYouthNearestMatch>თქვენი ახალგაზრდული გნდის მატჩბის ხელით ჩატვირთვა</GetYouthNearestMatch>
 <MatchesYouthLeague>ახალგაზრდული ლიგის მატჩები</MatchesYouthLeague>
 <YouthSoundEqualSenior>ჩემი ახალგაზრდული გუნდის ხმება ტოლია ჩემი უფროს გუნდის</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Insert a third team ID</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Get my other senior team id automatically</SeniorTeamIdAutomatically>
 </Htlivesight>

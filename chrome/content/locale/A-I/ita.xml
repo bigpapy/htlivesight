@@ -23,7 +23,7 @@
 <LeaguePlayed>G</LeaguePlayed>
 <LeagueGoals>F-S</LeagueGoals>
 <LeagueGoalDiff>DR</LeagueGoalDiff>
-<LeaguePoints>P</LeaguePoints>
+<LeaguePoints>P.ti</LeaguePoints>
 <MatchesList>Elenco delle partite</MatchesList>
 <MatchesAdd>Aggiungi partita</MatchesAdd>
 <MatchesByMatch>Per id partita</MatchesByMatch>
@@ -429,4 +429,6 @@
 <GetYouthNearestMatch>Carica automaticamente le partite della tua squadra giovanile</GetYouthNearestMatch>
 <MatchesYouthLeague>Partite del campionato giovanile</MatchesYouthLeague>
 <YouthSoundEqualSenior>Suoni della mia squadra giovanile uguali a quella principale</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Inserisci il Team ID di una terza squadra</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Ottieni automaticamente gli altri id delle mie squadre</SeniorTeamIdAutomatically>
 </Htlivesight>
