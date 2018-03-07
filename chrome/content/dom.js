@@ -1533,7 +1533,15 @@ htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
 			empty_img = document.createElement("img");
 			l.setAttribute("class","event_icon");
 			l1.setAttribute("class","event_icon");
-			if (match.isHomeTeam(event.subjectTeamId)|| event.subjectTeamId == 0){
+			if(event.key.BC == "25" && (event.key.A == "1" || event.key.A == "2")){ //own goal should switch icon position
+				if(match.isHomeTeam(event.subjectTeamId)){
+					l.appendChild(empty_img);
+					l1.appendChild(img);
+				}else{
+					l.appendChild(img);
+					l1.appendChild(empty_img);					
+				}				
+			}else if (match.isHomeTeam(event.subjectTeamId)|| event.subjectTeamId == 0){
 				l.appendChild(img);
 				l1.appendChild(empty_img);}
 			else{
@@ -2541,7 +2549,7 @@ htlivesight.DOM.UpdateElementBoxYouthLeague=function(league) {
 
 htlivesight.DOM.UpdateElementBoxYouthLeague2=function(league) {
 	try{ // added by bigpapy to debug from xul to html
-		if (league.currentRound == undefined) return;
+		if (league.currentRound2 == undefined) return;
 		document.getElementById("winbox_youthleaguematchesBis").style.display="block";
 		var number = htlivesight.Util.Parse("LeagueRound",htlivesight.data[0]) + " " + league.currentRound2.number;
 		var date = htlivesight.Time.formatDate(league.currentRound2.date);
@@ -2552,7 +2560,7 @@ htlivesight.DOM.UpdateElementBoxYouthLeague2=function(league) {
 
 htlivesight.DOM.UpdateElementBoxYouthLeague3=function(league) {
 	try{ // added by bigpapy to debug from xul to html
-		if (league.currentRound == undefined) return;
+		if (league.currentRound3 == undefined) return;
 		document.getElementById("winbox_youthleaguematchesTer").style.display="block";
 		var number = htlivesight.Util.Parse("LeagueRound",htlivesight.data[0]) + " " + league.currentRound3.number;
 		var date = htlivesight.Time.formatDate(league.currentRound3.date);

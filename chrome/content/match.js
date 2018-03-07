@@ -89,6 +89,14 @@ htlivesight.Match.prototype.getSideById = function(teamId) {
 	}
 	return null;
 };
+htlivesight.Match.prototype.getOppositeSideById = function(teamId) {
+	if (this.home.team.id==teamId) {
+		return this.away;
+	} else if (this.away.team.id==teamId){
+		return this.home; 
+	}
+	return null;
+};
 htlivesight.Match.prototype.isHomeTeam = function(teamId) {
 	if (this.home.team.id==teamId) {
 		return true;
