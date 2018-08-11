@@ -118,7 +118,7 @@ htlivesight.matchLineup.addRatingTab= function(match, side, xml){
 htlivesight.matchLineup.ParseLineUpFromXml= function(xml,teamId,youth){
 
 	//lineUp contains players name and index is the position (RoleId-100)
-	var lineUp = new Array(19);// because there are 19 position: 1 keeper, 5 defenders,5 midfields, 3 scorers, 5 bench warmers.
+	var lineUp = new Array(21);// because there are 19 position: 1 keeper, 5 defenders,5 midfields, 3 scorers, 5 bench warmers.
 	var playerId = 0;
 	var playerName = "";
 	for (var index=0; index<lineUp.length; index++) // initializing with empty positions
@@ -140,7 +140,7 @@ htlivesight.matchLineup.ParseLineUpFromXml= function(xml,teamId,youth){
 				index= parseInt(xml.getElementsByTagName("RoleID")[i].textContent,10)-100; // get position
 			}else{index= -81;}
 			if(index==-81 || index==-80 || index==-79){
-				for(var k=14; k<19; k++){
+				for(var k=14; k<21; k++){
 					if(lineUp[k].id == "0"){
 						playerName= xml.getElementsByTagName("FirstName")[i].textContent+" "+xml.getElementsByTagName("LastName")[i].textContent; // get name
 						lineUp[k].name = playerName.replace(/,/g,"");
@@ -168,7 +168,7 @@ htlivesight.matchLineup.ParseLineUpFromXml= function(xml,teamId,youth){
 			}
 		};
 
-	}catch(e){lineUp[0].update=0;console.log("htlivesight.LineUp.ParseLineUpFromXml: "+e);}
+	}catch(e){lineUp[0].update=0;console.log("htlivesight.LineUp.ParseLineUpFromXml: "+e);console.log(index);}
 	return lineUp;
 };
 

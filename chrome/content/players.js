@@ -130,7 +130,7 @@ htlivesight.players.ParseGet = function(xml,playerId, youth){
 	}
 
 
-	if(parseInt(specialty,10)>=0 && parseInt(specialty,10)<=6){
+	if(parseInt(specialty,10)>=0 && parseInt(specialty,10)<=8 && parseInt(specialty,10) != 7){
 		htlivesight.players.addSpecialtyToDom(playerId,youth,specialty);
 	}
 
@@ -170,6 +170,8 @@ htlivesight.players.specialtyChar = function (specialty){
 	case "5": return "["+htlivesight.Util.Parse("Header",htlivesight.data[0])+"] ";
 
 	case "6": return "["+htlivesight.Util.Parse("Regainer",htlivesight.data[0])+"] ";
+	
+	case "8": return "[Support] "; // TODO: enable translation
 
 	default: return "";
 	}
@@ -190,6 +192,8 @@ htlivesight.players.specialtyImage = function(specialty){
 	case "5": return htlivesight.Image.spec.spec5;
 
 	case "6": return htlivesight.Image.spec.spec6;
+	
+	case "8": return htlivesight.Image.spec.spec8;
 
 	default: return "";
 	}
@@ -269,8 +273,9 @@ htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
 			$(this).addClass("withSpecialty");
 		}
 		if(!$(this).hasClass("withTitle")&& htlivesight.Player.List["_"+playerId+"_"+youth].age>14){
-			$(this).attr('title', ''+htlivesight.Player.List["_"+playerId+"_"+youth].firstName+'\n'+
-					//			((htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad=="True")?"":" ⚑")+'\n'+
+			$(this).attr('title', ''+htlivesight.Player.List["_"+playerId+"_"+youth].firstName+/*'\n'+*/
+					((htlivesight.Player.List["_"+playerId+"_"+youth].isAbroad=="True")?"":" ⚑ ")+
+					((youth!=="true")?((htlivesight.Player.List["_"+playerId+"_"+youth].motherClubBonus=="True")?"♥\n":"\n"):"")+
 					htlivesight.Util.Parse("Age",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].age + ' ' +
 					htlivesight.Util.Parse("TimeDays",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].ageDays+'\n' +
 					((youth!=="true")?(htlivesight.Util.Parse("Agreeability",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].agreeability+"\n"):"")+
@@ -280,7 +285,6 @@ htlivesight.players.addSpecialtyToDom = function (playerId, youth, specialty){
 					((youth!=="true")?(htlivesight.Util.Parse("Stamina",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].stamina+'\n'):"")+
 					((youth!=="true")?(htlivesight.Util.Parse("Experience",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].experience+'\n'):"")+
 					((youth!=="true")?(htlivesight.Util.Parse("Loyalty",htlivesight.data[0])+': '+htlivesight.Player.List["_"+playerId+"_"+youth].loyalty+" "):"")+
-					((youth!=="true")?((htlivesight.Player.List["_"+playerId+"_"+youth].motherClubBonus=="True")?"♥\n":"\n"):"")+
 					((youth!=="true")?('TSI: '+htlivesight.Player.List["_"+playerId+"_"+youth].tsi+'\n'):"") +
 					((htlivesight.players.specialtyChar(specialty)!=="")?(''+ htlivesight.players.specialtyChar(specialty)+"\n"):"")+
 					((htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill)?("\n"+htlivesight.Util.Parse("Keeper",htlivesight.data[0])+" : "+htlivesight.Player.List["_"+playerId+"_"+youth].keeperSkill):"")+
