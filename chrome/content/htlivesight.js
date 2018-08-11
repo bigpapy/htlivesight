@@ -161,10 +161,10 @@ var htlivesight = {
 			if (htlivesight.prefs.general.teamId) {
 				document.getElementById("teamId").value=htlivesight.prefs.general.teamId;    
 			}
-			if (htlivesight.prefs.general.secondTeamId) {
+			if (htlivesight.prefs.general.secondTeamId && htlivesight.prefs.general.secondTeamId != 'undefined') {
 				document.getElementById("secondTeamId").value=htlivesight.prefs.general.secondTeamId;    
 			}
-			if (htlivesight.prefs.general.thirdTeamId) {
+			if (htlivesight.prefs.general.thirdTeamId && htlivesight.prefs.general.thirdTeamId != 'undefined') {
 				document.getElementById("thirdTeamId").value=htlivesight.prefs.general.thirdTeamId;    
 			}
 			document.getElementById("reLive").checked=htlivesight.prefs.other.reLive;
