@@ -13,6 +13,7 @@ $(function() {
 			width : 500,
 			show : "fold",
 			hide : "fold",
+			title: htlivesight.Util.Parse("WindowTitle",htlivesight.data[0]),
 			buttons : [ {
 				text : htlivesight.Util.Parse("ButtonOk", htlivesight.data[0]),/*
 																				 * function() {
@@ -176,6 +177,7 @@ $(function() {
 		width : 750,
 		show : "fold",
 		hide : "fold",
+		title : htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]),
 	});
 	$('#about-dialog').dialog({
 		autoOpen : false,
@@ -183,6 +185,7 @@ $(function() {
 		// width: 500,
 		show : "fold",
 		hide : "fold",
+		title : htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]),
 	});
 	$("#formationpopup").dialog({
 		autoOpen : false,
@@ -273,7 +276,7 @@ $(function() {
 	$("#buttonAddMatch").button();
 	$("#buttonAddTeam").button();
 	// Options buttons
-	$("#openin").buttonset();
+	//$("#openin").buttonset();
 	$("#removeauth").button();
 	$(".brestore").button();
 	// hover states on the static widgets .........#options_link, #about_link,

@@ -931,8 +931,17 @@ padding-left: 2px;
 text-align: right;
 }
 
-
 #htlivesight-body .warning{
 background-color: yellow;
 color: red;
+}
+#htlivesight-body input[type=checkbox]{
+	vertical-align: middle;
+    position: relative;
+}
+#htlivesight-body input[type=url]{
+	margin-top: 6px;
+}
+#htlivesight-body legend{
+    margin-bottom: 4px;
 }
