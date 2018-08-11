@@ -657,14 +657,8 @@ htlivesight.DOM.UpdateLiveHeader= function(match) {
 	var label;
 	try {
 		if (match.arena.name) {
-			/*label = document.getElementById("match_date_" + match.id + "_" + match.sourceSystem).textContent = "";
-			htlivesight.Util.RemoveClass(label, "match_date");*/
 			label = document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).textContent = match.arena.name;
-			/*htlivesight.Util.AddClass(label, "arena_name");*/
 			label = document.getElementById("weather_image_" + match.id + "_" + match.sourceSystem);
-			//label.setAttribute("src", htlivesight.Image.calendar);
-			//label.setAttribute("class", "weather_image");
-			label.setAttribute("title", htlivesight.Time.shortDateString(match.date));
 		}else{
 			if(match.date) document.getElementById("arena_name_" + match.id + "_" + match.sourceSystem).textContent = htlivesight.Time.shortDateString(match.date);
 		}
@@ -912,18 +906,8 @@ htlivesight.DOM.createElementBoxLiveMatchHeader = function(match) {
 		img.setAttribute("src", htlivesight.Image.transparent);
 		img.setAttribute("id", "match_type_image_" + match.id + "_" + match.sourceSystem);
 		img.setAttribute("class", "weather_image");
-		
-		/*label = document.createElement("span");
-		hboxL.appendChild(label);
-		label.setAttribute("id", "weather_text_" + match.id + "_" + match.sourceSystem);
-		label.setAttribute("class", "weather_text");*/
-		
-		/*label = document.createElement("span");
-		hboxL.appendChild(label);
-		label.setAttribute("id", "match_date_" + match.id + "_" + match.sourceSystem);
-		label.setAttribute("class", "match_date");*/
+		img.setAttribute("title", htlivesight.Time.shortDateString(match.date));
 
-		
 		var hboxM = document.createElement("td");
 		hboxM.setAttribute("class", "chronoheader");
 		hbox.appendChild(hboxM);
