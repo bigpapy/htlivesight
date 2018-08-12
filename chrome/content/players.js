@@ -170,8 +170,8 @@ htlivesight.players.specialtyChar = function (specialty){
 	case "5": return "["+htlivesight.Util.Parse("Header",htlivesight.data[0])+"] ";
 
 	case "6": return "["+htlivesight.Util.Parse("Regainer",htlivesight.data[0])+"] ";
-	
-	case "8": return "[Support] "; // TODO: enable translation
+
+	case "8": return "["+htlivesight.Util.Parse("Support",htlivesight.data[0])+"] ";
 
 	default: return "";
 	}
