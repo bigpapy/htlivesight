@@ -229,7 +229,6 @@ htlivesight.DOM = {
 				img.setAttribute("src", htlivesight.Image.live.OFF);
 				htlivesight.Match.List["_" + matchId + "_" + sourceSystem].live = false;
 				htlivesight.liveCount--;
-				console.log("removed match n ="+htlivesight.liveCount);
 				document.getElementById("short_" + matchId + "_" + sourceSystem).hidden = true;
 				htlivesight.DOM.window.set(matchId, sourceSystem, htlivesight.DOM.mode.minimize);
 			}catch(e){alert("deleteView: "+e);}// added by bigpapy to debug from XUL to HTML

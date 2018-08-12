@@ -178,7 +178,7 @@ htlivesight.matchLineup.FromArrayToString= function (lineUp){
 	{
 		lineUp[index]=htlivesight.LineUp.BehaviourFromIntToString(lineUp[index], index);
 		stringLineUp+=lineUp[index].behaviourString+lineUp[index].name+" "+"#"+lineUp[index].id+"#"+lineUp[index].youth; // adding individual order and player name  
-		if ((index === 0) || (index==5) || (index==10) || (index==13)) 
+		if ((index === 0) || (index==5) || (index==10) || (index==13) || (index==18)) 
 		{
 			stringLineUp+=" - "; // after keeper, defenders and midfields add a minus to separate them
 		}
