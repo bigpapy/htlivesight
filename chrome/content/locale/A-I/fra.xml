@@ -432,5 +432,6 @@
 <ThirdTeamIdLabel>Insérer l'ID d'une 3ème équipe</ThirdTeamIdLabel>
 <SeniorTeamIdAutomatically>Obtenir mes autres équipes senior automatiquement</SeniorTeamIdAutomatically>
 <Support>Support</Support>
-<EventSpecialPowerfulForward>Powerful, extra chance</EventSpecialPowerfulForward>
+<EventSpecialPowerfulForward>powerful, extra chance</EventSpecialPowerfulForward>
+<PowerfulPressing>powerful: pressing</PowerfulPressing>
 </Htlivesight>
