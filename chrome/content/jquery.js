@@ -335,4 +335,8 @@ $(function() {
 			$(".animation").removeClass("newClass5");
 		}, 15000);
 	}
+	
+	$( "#other_grid_rows, #league_grid_rows, #live_box, league_grid_rowsBis, league_grid_rowsTer, " +
+			"youthleague_grid_rows, youthleague_grid_rowsBis, youthleague_grid_rowsTer" ).sortable();
+
 });

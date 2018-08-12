@@ -945,3 +945,6 @@ color: red;
 #htlivesight-body legend{
     margin-bottom: 4px;
 }
+.ui-sortable-helper {
+    display: table;
+}
