@@ -437,4 +437,9 @@
 <SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
 <SupportBoostFailed>support: boost failed</SupportBoostFailed>
 <SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
+<ManMarkingSuccessShort>man marking: success short distance</ManMarkingSuccessShort>
+<ManMarkingSuccessLong>man marking: success long distance</ManMarkingSuccessLong>
+<ManMarkingChangedLongToShort>man marking: changed from short to long distance</ManMarkingChangedLongToShort>
+<ManMarkingChangedShortToLong>man marking: changed from long to short distance</ManMarkingChangedShortToLong>
+<ManMarkingPenalty>man marking: penalty</ManMarkingPenalty>
 </Htlivesight>

@@ -437,4 +437,9 @@
 <SupportBoostSucceeded>trascinatore: boost OK</SupportBoostSucceeded>
 <SupportBoostFailed>trascinatore: boost KO</SupportBoostFailed>
 <SupportOrganizationDropped>trascinatore: diminuzione organizzazione</SupportOrganizationDropped>
+<ManMarkingSuccessShort>man marking: success short distance</ManMarkingSuccessShort>
+<ManMarkingSuccessLong>man marking: success long distance</ManMarkingSuccessLong>
+<ManMarkingChangedLongToShort>man marking: changed from short to long distance</ManMarkingChangedLongToShort>
+<ManMarkingChangedShortToLong>man marking: changed from long to short distance</ManMarkingChangedShortToLong>
+<ManMarkingPenalty>man marking: penalty</ManMarkingPenalty>
 </Htlivesight>
