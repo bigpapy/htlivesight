@@ -276,10 +276,10 @@ htlivesight.YouthLeague.ParseFixtures = function(xml,teamKind) {
 
 		
 	} catch(e) {
-		console.log(e);
+		console.log(e); console.log(teamKind);
 		if(teamKind=="myFirstYouthTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE2);}
 		if(teamKind=="mySecondYouthTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE3);}
-		if(teamKind=="myThirdYouthTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_YOUTHLEAGUE_MATCHES);}
+		if(teamKind=="myThirdYouthTeam"){htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE_MATCHES);}
 		// alert("htlivesight.YouthLeague.ParseFixtures (set info): " + e);
 	}
 //	if(teamKind==="myFirstTeam"){

@@ -26,6 +26,7 @@
       "contextMenus",
       "notifications",
       "clipboardWrite",
+      "tabs",
       "*://chpp.hattrick.org/*"
    ],
    "web_accessible_resources":[  
