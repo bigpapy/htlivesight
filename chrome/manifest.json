@@ -1,7 +1,7 @@
 {  
    "manifest_version":2,
    "name":"HTLiveSightDEV",
-   "version":"0.9.0883",
+   "version":"0.9.0897",
    "description":"A Hattrick Live Match Viewer",
    "icons":{  
       "16":"skin/16dev.png",
@@ -26,7 +26,6 @@
       "contextMenus",
       "notifications",
       "clipboardWrite",
-      "tabs",
       "*://chpp.hattrick.org/*"
    ],
    "web_accessible_resources":[  

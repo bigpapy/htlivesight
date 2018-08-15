@@ -336,7 +336,8 @@ $(function() {
 		}, 15000);
 	}
 	
-	$( "#other_grid_rows, #league_grid_rows, #live_box, league_grid_rowsBis, league_grid_rowsTer, " +
+	$( "#other_grid_rows, #league_grid_rows, league_grid_rowsBis, league_grid_rowsTer, " +
 			"youthleague_grid_rows, youthleague_grid_rowsBis, youthleague_grid_rowsTer" ).sortable();
+	$("#live_box").sortable({handle: ".box_header_header"});
 
 });
