@@ -177,7 +177,7 @@ $(function() {
 		width : 750,
 		show : "fold",
 		hide : "fold",
-		title : htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]),
+		title : (htlivesight.data!= undefined?htlivesight.Util.Parse("LoginLabel",htlivesight.data[0]):""),
 	});
 	$('#about-dialog').dialog({
 		autoOpen : false,
@@ -185,7 +185,7 @@ $(function() {
 		// width: 500,
 		show : "fold",
 		hide : "fold",
-		title : htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]),
+		title :  (htlivesight.data!= undefined?htlivesight.Util.Parse("WindowAboutTitle",htlivesight.data[0]):""),
 	});
 	$("#formationpopup").dialog({
 		autoOpen : false,
