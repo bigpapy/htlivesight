@@ -431,4 +431,10 @@
 <YouthSoundEqualSenior>Mismo sonido para equipo de inferiores y equipo adulto</YouthSoundEqualSenior>
 <ThirdTeamIdLabel>Insertar el ID de tu tercer equipo</ThirdTeamIdLabel>
 <SeniorTeamIdAutomatically>Obtener el ID de mis otros equipos automáticamente</SeniorTeamIdAutomatically>
+<Support>Support</Support>
+<EventSpecialPowerfulForward>potente, chance extra</EventSpecialPowerfulForward>
+<PowerfulPressing>potente: presionar</PowerfulPressing>
+<SupportBoostSucceeded>solidario: aumento de nivel exitoso</SupportBoostSucceeded>
+<SupportBoostFailed>solidario: aumento falla</SupportBoostFailed>
+<SupportOrganizationDropped>solidario: nivel de organización cayo</SupportOrganizationDropped>
 </Htlivesight>

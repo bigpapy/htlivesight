@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Opsi</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuStart>Mulai</MenuStart>
+<MenuOptions>Pilihan</MenuOptions>
+<TooltipButton>Klik untuk membuka menu HTLiveSight</TooltipButton>
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
 <MenuDisconnected>terputus</MenuDisconnected>
@@ -15,7 +15,7 @@
 <LoginButton>Masuk</LoginButton>
 <LoginReLive>Live ulang</LoginReLive>
 <LoginSpeed>Kecepatan</LoginSpeed>
-<LoginByEvent>Per event</LoginByEvent>
+<LoginByEvent>Per acara</LoginByEvent>
 <LeagueMatches>Pertandingan Liga</LeagueMatches>
 <LeagueLiveTable>Tabel Live</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
@@ -28,7 +28,7 @@
 <MatchesAdd>Tambahkan pertandingan</MatchesAdd>
 <MatchesByMatch>Berdasarkan id pertandingan</MatchesByMatch>
 <MatchesByTeam>Berdasarkan id tim</MatchesByTeam>
-<MatchesYouth>Youth?</MatchesYouth>
+<MatchesYouth>Pemuda?</MatchesYouth>
 <FriendsTitle>Teman</FriendsTitle>
 <FriendsRemove>Hapus</FriendsRemove>
 <FriendsOpen>Buka</FriendsOpen>
@@ -65,7 +65,7 @@
 <TimeDay>hari</TimeDay>
 <TimeHour>jam</TimeHour>
 <TimeMinute>menit</TimeMinute>
-<TimeMin>'</TimeMin>
+<TimeMin>,</TimeMin>
 <TooltipWindowSound>Aktifkan atau matikan suara pertandingan</TooltipWindowSound>
 <TooltipWindowLink>Tautkan dengan Halaman Pertandingan di Hattrick</TooltipWindowLink>
 <TooltipWindowInfo>Tombol informasi event</TooltipWindowInfo>
@@ -90,16 +90,16 @@
 <EventSideCenter>tengah</EventSideCenter>
 <EventSideFreeKick>tendangan bebas</EventSideFreeKick>
 <EventSidePenalty>pinalti</EventSidePenalty>
-<EventSpecialUnpredictable>SE Unpredictable</EventSpecialUnpredictable>
+<EventSpecialUnpredictable>SE tidak bisa diprediksi</EventSpecialUnpredictable>
 <EventSpecialLongShot>SE tendangan jarak jauh</EventSpecialLongShot>
-<EventSpecialQuick>SE Quick</EventSpecialQuick>
+<EventSpecialQuick>SE cepat</EventSpecialQuick>
 <EventSpecialLowStamina>stamina rendah</EventSpecialLowStamina>
 <EventSpecialSetPieces>bola mati</EventSpecialSetPieces>
-<EventSpecialHead>Head</EventSpecialHead>
+<EventSpecialHead>Kepala</EventSpecialHead>
 <EventSpecialExperience>pengalaman</EventSpecialExperience>
 <EventSpecialLowExperience>pengalaman rendah</EventSpecialLowExperience>
 <EventSpecialWinger>+ sayap</EventSpecialWinger>
-<EventSpecialTechnical>Technical vs Head</EventSpecialTechnical>
+<EventSpecialTechnical>Teknis vs Kepala</EventSpecialTechnical>
 <EventSpecialCounterAttack>serangan-balik</EventSpecialCounterAttack>
 <EventSpecialCornerKick>sepak pojok</EventSpecialCornerKick>
 <EventSpecialIndirect>tendangan bebas tak langsung</EventSpecialIndirect>
@@ -128,14 +128,14 @@
 <InexperiencedDefender>bek kurang pengalaman</InexperiencedDefender>
 <WingerHead>sayap: umpan silang untuk spesialis head</WingerHead>
 <EventSpecialLongShotDefended>tendangan jarak jauh dihentikan</EventSpecialLongShotDefended>
-<EventSpecialQuickVsQuick>Quick vs Quick</EventSpecialQuickVsQuick>
+<EventSpecialQuickVsQuick>Cepat vs Cepat</EventSpecialQuickVsQuick>
 <LongShot>tendangan jarak jauh</LongShot>
-<MeteoSpecialTechnicalRain>-Technical (-Scoring -Playmaking)</MeteoSpecialTechnicalRain>
-<MeteoSpecialPowerfulRain>+Powerful (+Scoring +Defending + Playmaking)</MeteoSpecialPowerfulRain>
-<MeteoSpecialTechnicalSun>+Technical (+Scoring +Playmaking)</MeteoSpecialTechnicalSun>
-<MeteoSpecialPowerfulSun>-Powerful (-Scoring -Stamina)</MeteoSpecialPowerfulSun>
-<MeteoSpecialQuickSun>-Quick (-Defending)</MeteoSpecialQuickSun>
-<MeteoSpecialQuickRain>-Quick (-Defending -Scoring)</MeteoSpecialQuickRain>
+<MeteoSpecialTechnicalRain>-Teknis (-Penilaian -Playmaking)</MeteoSpecialTechnicalRain>
+<MeteoSpecialPowerfulRain>+ kekuatan penuh (+ penilaian + pertahanan + Playmaking)</MeteoSpecialPowerfulRain>
+<MeteoSpecialTechnicalSun>+ Teknis (+ Scoring + Playmaking)</MeteoSpecialTechnicalSun>
+<MeteoSpecialPowerfulSun>-Powerfull (-Penilaian-Stamina)</MeteoSpecialPowerfulSun>
+<MeteoSpecialQuickSun>-Cepat (-Pertahanan)</MeteoSpecialQuickSun>
+<MeteoSpecialQuickRain>-Cepat (membela-penilaian)</MeteoSpecialQuickRain>
 <YellowNastyPlay>permainan kasar</YellowNastyPlay>
 <YellowCheating>curang</YellowCheating>
 <ProgressUpdate>Pembaruan berikutnya:</ProgressUpdate>
@@ -156,7 +156,7 @@
 <TabNotifications>Pemberitahuan</TabNotifications>
 <TabLanguage>Bahasa</TabLanguage>
 <TabOther>Lain-lain</TabOther>
-<TabCustom>Customizations</TabCustom>
+<TabCustom>Penyesuaian</TabCustom>
 <TabGoalSound>Suara gol</TabGoalSound>
 <TabWheatherSound>Event cuaca dan suara cedera</TabWheatherSound>
 <TabWhistleSound>Peluit wasit dan suara hattrick</TabWhistleSound>
@@ -167,19 +167,19 @@
 <GeneralNote>Masukkan server Hattrick dimana kamu sedang terhubung (mis. www96).</GeneralNote>
 <MatchesLeague>Pertandingan liga</MatchesLeague>
 <MatchesGetLeague>Ambil pertandingan liga</MatchesGetLeague>
-<MatchesPlayed>If played in</MatchesPlayed>
+<MatchesPlayed>Jika dimainkan</MatchesPlayed>
 <MatchesHours>jam.</MatchesHours>
 <MatchesFriends>Teman</MatchesFriends>
 <MatchesGetFriends>Ambil pertandingan teman</MatchesGetFriends>
 <MatchesHeader>Header</MatchesHeader>
 <MatchesScorers>Skorer</MatchesScorers>
 <ScorersList>Daftar skorer dengan kepala</ScorersList>
-<MatchesBooked>Booked</MatchesBooked>
-<BookedList>List booked in header</BookedList>
-<MatchesSentOff>Sent off</MatchesSentOff>
-<SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
-<InjuredList>List injured in header</InjuredList>
+<MatchesBooked>Memesan</MatchesBooked>
+<BookedList>Daftar dipesan di header</BookedList>
+<MatchesSentOff>Terkirim</MatchesSentOff>
+<SentOffList>Daftar dikirim di tajuk</SentOffList>
+<MatchesInjured>Terluka</MatchesInjured>
+<InjuredList>Daftar terluka di tajuk</InjuredList>
 <MatchesWindow>Jendela</MatchesWindow>
 <MatchesLines>Baris yang ditampilkan pada mode minimal</MatchesLines>
 <NotifyNotify>Pemberitahuan</NotifyNotify>
@@ -189,7 +189,7 @@
 <NotifyStatus>Batang status geser</NotifyStatus>
 <OtherAuthorization>Kode otorisasi</OtherAuthorization>
 <OtherReset>Hapus otorisasi</OtherReset>
-<OtherResetButton>Reset</OtherResetButton>
+<OtherResetButton>Setel ulang</OtherResetButton>
 <OtherReverse>Tampilan bawah ke atas untuk event pertandingan</OtherReverse>
 <OtherReverseNote>Segarkan halaman untuk melihat efek perubahan.</OtherReverseNote>
 <OtherEvents>Event lanjutan</OtherEvents>
@@ -216,219 +216,225 @@
 <PathSoundsMyBoo>Suara tim sendiri cedera</PathSoundsMyBoo>
 <PathSoundsOpBoo>Suara tim lawan cedera</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Peluit mulai babak pertama/kedua</PathSoundsWhistleStart>
-<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
+<PathSoundsWhistle>Suara kartu kuning</PathSoundsWhistle>
 <PathSoundsHattrick>Suara Hattrick</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsRestore>Mengembalikan</PathSoundsRestore>
+<PathSoundsPlay>Bermain</PathSoundsPlay>
 <LanguageSelect>Pilih bahasa</LanguageSelect>
 <LanguageNote>Catatan: Hidupkan ulang Firefox untuk memberlakukan perubahan.</LanguageNote>
 <ButtonCancel>Batal</ButtonCancel>
-<ButtonOk>OK</ButtonOk>
+<ButtonOk>Oke</ButtonOk>
 <WindowAboutTitle>Tentang HTLiveSight</WindowAboutTitle>
 <TabInfo>Info</TabInfo>
-<TabTranslators>Translators</TabTranslators>
-<TabCredits>Credits</TabCredits>
-<MonthJanuary>Jan</MonthJanuary>
-<MonthFebruary>Feb</MonthFebruary>
-<MonthMarch>Mar</MonthMarch>
-<MonthApril>Apr</MonthApril>
+<TabTranslators>Penerjemah</TabTranslators>
+<TabCredits>Kredit</TabCredits>
+<MonthJanuary>Januari</MonthJanuary>
+<MonthFebruary>Februari</MonthFebruary>
+<MonthMarch>Maret</MonthMarch>
+<MonthApril>April</MonthApril>
 <MonthMay>Mei</MonthMay>
-<MonthJune>Jun</MonthJune>
-<MonthJuly>Jul</MonthJuly>
+<MonthJune>Juni</MonthJune>
+<MonthJuly>Juli</MonthJuly>
 <MonthAugust>Agu</MonthAugust>
-<MonthSeptember>Sep</MonthSeptember>
+<MonthSeptember>September</MonthSeptember>
 <MonthOctober>Okt</MonthOctober>
-<MonthNovember>Nov</MonthNovember>
+<MonthNovember>November</MonthNovember>
 <MonthDecember>Des</MonthDecember>
 <TextCreatedBy>Dibuat oleh</TextCreatedBy>
 <TextDevelopedBy>Dikembangkan oleh</TextDevelopedBy>
 <TextHelpOf>dengan bantuan</TextHelpOf>
 <TextThanksTo>Terima kasih banyak kepada:</TextThanksTo>
 <ButtonClose>Tutup</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
-<Wretched>Wretched</Wretched>
-<Poor>Poor</Poor>
-<Weak>Weak</Weak>
-<Inadequate>Inadequate</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
-<Brilliant>Brilliant</Brilliant>
-<Magnificent>Magnificent</Magnificent>
-<WorldClass>World class</WorldClass>
-<Supernatural>Supernatural</Supernatural>
-<Titanic>Titanic</Titanic>
-<ExtraTerrestrial>Extra-terrestrial</ExtraTerrestrial>
-<Mythical>Mythical</Mythical>
-<Magical>Magical</Magical>
-<Utopian>Utopian</Utopian>
-<Divine>Divine</Divine>
-<VeryHigh>very high</VeryHigh>
-<High>high</High>
-<Low>low</Low>
-<VeryLow>very low</VeryLow>
-<RightDefence>Right defence</RightDefence>
-<MiddleDefence>Middle defence</MiddleDefence>
-<LeftDefence>Left defence</LeftDefence>
-<Midfield>Midfield</Midfield>
-<RightAttack>Right attack</RightAttack>
-<MiddleAttack>Middle attack</MiddleAttack>
-<LeftAttack>Left attack</LeftAttack>
-<IndirectSetPiecesDefence>Indirect Set pieces defence</IndirectSetPiecesDefence>
-<IndirectSetPiecesAttack>Indirect set pieces attack</IndirectSetPiecesAttack>
-<TeamAttitude>Team attitude</TeamAttitude>
-<TacticType>Tactic type</TacticType>
-<TacticSkill>Tactic skill</TacticSkill>
-<BallPosses>Ball posses</BallPosses>
-<SpecialEvent>Special event</SpecialEvent>
+<NonExistent>Tidak ada</NonExistent>
+<Disastrous>Bencana</Disastrous>
+<Wretched>Malang</Wretched>
+<Poor>Miskin</Poor>
+<Weak>Lemah</Weak>
+<Inadequate>Tidak memadai</Inadequate>
+<Passable>Mendingan</Passable>
+<Solid>Padat</Solid>
+<Excellent>Sangat baik</Excellent>
+<Formidable>Hebat</Formidable>
+<Outstanding>Luar biasa</Outstanding>
+<Brilliant>Cemerlang</Brilliant>
+<Magnificent>Indah</Magnificent>
+<WorldClass>Kelas dunia</WorldClass>
+<Supernatural>Super alami</Supernatural>
+<Titanic>Raksasa</Titanic>
+<ExtraTerrestrial>Makhluk luar angkasa</ExtraTerrestrial>
+<Mythical>Mitos</Mythical>
+<Magical>Ajaib</Magical>
+<Utopian>Utopis</Utopian>
+<Divine>Ilahi</Divine>
+<VeryHigh>sangat tinggi</VeryHigh>
+<High>tinggi</High>
+<Low>rendah</Low>
+<VeryLow>sangat rendah</VeryLow>
+<RightDefence>Pertahanan kanan</RightDefence>
+<MiddleDefence>Pertahanan tengah</MiddleDefence>
+<LeftDefence>Pertahanan kiri</LeftDefence>
+<Midfield>Gelandang</Midfield>
+<RightAttack>Serangan yang benar</RightAttack>
+<MiddleAttack>Serangan tengah</MiddleAttack>
+<LeftAttack>Serangan kiri</LeftAttack>
+<IndirectSetPiecesDefence>Tidak langsung Setel bagian pertahanan</IndirectSetPiecesDefence>
+<IndirectSetPiecesAttack>Serangan langsung bagian pertahanan</IndirectSetPiecesAttack>
+<TeamAttitude>Sikap tim</TeamAttitude>
+<TacticType>Jenis taktik</TacticType>
+<TacticSkill>Keterampilan taktis</TacticSkill>
+<BallPosses>Dimiliki bola</BallPosses>
+<SpecialEvent>Acara spesial</SpecialEvent>
 <Normal>Normal</Normal>
-<PIC>Play it cool</PIC>
-<MOTS>Match of the season</MOTS>
-<ColorPicker>You can choose your color at </ColorPicker>
-<EventBackground>Event background color</EventBackground>
-<FriendHome>Home (own and friends) color: #</FriendHome>
-<FriendAway>Away (own and friends) color: #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
-<Neutral>Neutral color: #</Neutral>
-<EventColorTitle>Event text color</EventColorTitle>
-<EventTextColor>Event text color: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
-<Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
+<PIC>Berlaku tenang</PIC>
+<MOTS>Pertandingan musim ini</MOTS>
+<ColorPicker>Anda bisa memilih warna Anda di </ColorPicker>
+<EventBackground>Warna latar belakang acara</EventBackground>
+<FriendHome>Warna rumah (milik dan teman): #</FriendHome>
+<FriendAway>Warna pergi (sendiri dan teman): #</FriendAway>
+<FoeHome>Rumah warna asing: #</FoeHome>
+<FoeAway>Jauh warna asing: #</FoeAway>
+<Neutral>Warna netral: #</Neutral>
+<EventColorTitle>Warna teks acara</EventColorTitle>
+<EventTextColor>Warna teks acara: #</EventTextColor>
+<SETextColor>Warna teks acara khusus: #</SETextColor>
+<Colors>Warna</Colors>
+<SchemaTip>Klik untuk menampilkan berbaris</SchemaTip>
+<StatisticTip>Klik untuk menampilkan statisik pada akhir pertandingan</StatisticTip>
+<Youth>Pemuda</Youth>
 <Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
+<Tournament>Turnamen</Tournament>
+<FreeKicks>Tendangan bebas</FreeKicks>
+<RedCards>Kartu merah</RedCards>
+<YellowCards>Kartu kuning</YellowCards>
+<Injuries>Cedera</Injuries>
+<Goals>Tujuan</Goals>
 <Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
+<Terraces>Teras</Terraces>
+<Basic>Dasar tempat duduk</Basic>
+<Roof>Kursi di bawah atap</Roof>
+<VIP>Kursi VIP di kotak</VIP>
+<CrowdinHelp>Membantu menerjemahkan! dengan crowdin adalah sangat mudah dan sangat lucu! klik di sini!</CrowdinHelp>
+<Error401>Kesalahan 401: Akses tidak sah. Anda mendapatkan otorisasi lagi. klik oke melanjutkan.</Error401>
+<Error404>Kesalahan 404: Sumber daya yang diminta tidak dapat ditemukan. jika kesalahan ini muncul lagi kontrol jika layanan chpp turun.</Error404>
+<Error0>Eror 0: tidak terhubung ke internet.</Error0>
+<Error500>Kesalah 500: kesalahan server internal (pada Hattrick)</Error500>
+<Error503>Eror 503: chpp layanan tidak tersedia (sementara kelebihan atau pemeliharaan)</Error503>
+<PathSoundsNote1>Menyisipkan berkas: /// sebelum itu path dari suara di .ogg format</PathSoundsNote1>
+<PathSoundsNote2>Contoh: berkas: /// c: path o hesound.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>Akhir dari 1 setengah peluit</PathSoundsWhistle2>
+<PathSoundsWhistle3>Akhir dari pertandingan peluit</PathSoundsWhistle3>
+<EventYellow2>Kartu kuning kedua</EventYellow2>
+<LoggedIn>Masuk sebagai</LoggedIn>
+<latestNews>Memeriksa berita terbaru di</latestNews>
+<HTLSThread>Forum Hattrick</HTLSThread>
+<ProjectWebsite>Proyek situs web</ProjectWebsite>
+<GooglePlusPage>Laman google +</GooglePlusPage>
+<TwitterPage>Halaman twitter</TwitterPage>
+<FacebookPage>Halaman facebook</FacebookPage>
+<chatLink>Buka pesan</chatLink>
+<hidesidebar>Menyembunyikan sidebar</hidesidebar>
+<addFriend>Klik untuk menambahkan tim ini untuk teman</addFriend>
+<TooltipCopyLineUp>Klik untuk menyalin barisan dalam clipboard</TooltipCopyLineUp>
+<Dark>Gelap</Dark>
+<Light>Cahaya</Light>
+<Themes>Tema</Themes>
+<NoTournament>Jangan memuat pertandingan tunggal dan turnamen untuk teman</NoTournament>
+<DefHatStats>HatStats Membela</DefHatStats>
+<MidHatStats>HatStats Bidang tengah</MidHatStats>
+<AttHatStats>HatStats Menyerang</AttHatStats>
 <TotHatStats>Total HatStats</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
-<ReLiveControls>Relive Controls</ReLiveControls>
-<ExtendImage>Extend image</ExtendImage>
-<RepeatImage>Repeat image</RepeatImage>
-<Background>Background</Background>
-<MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
+<CopiedToClipboard>Disalin ke clipboard!</CopiedToClipboard>
+<ReLiveControls>Kontrol yang Relatif</ReLiveControls>
+<ExtendImage>Perluas gambar</ExtendImage>
+<RepeatImage>Ulangi gambar</RepeatImage>
+<Background>Latar Belakang</Background>
+<MuteAll>Beralih suara</MuteAll>
+<Technical>Teknis</Technical>
+<Quick>Cepat</Quick>
+<Powerful>Sangat kuat</Powerful>
+<Unpredictable>Tidak terduga</Unpredictable>
 <Header>Header</Header>
 <Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
+<SecondTeamIdLabel>Masukkan ID tim kedua</SecondTeamIdLabel>
+<SecondSoundEqualFirst>Tim kedua terdengar sama dengan yang pertama</SecondSoundEqualFirst>
+<Keeper>Penjaga</Keeper>
+<Defending>Bertahan</Defending>
+<Playmaking>Pembuatan permainan</Playmaking>
+<Winger>Sayap</Winger>
+<Passing>Lewat</Passing>
+<Scoring>Penilaian</Scoring>
+<SetPieces>Mengatur potongan</SetPieces>
+<Age>Umur</Age>
+<Form>Bentuk</Form>
 <Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
-<TabWhistleCard>Whistles and Cards</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
-<Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member</BelovedTeamMember>
-<PopularGuy>Popular guy</PopularGuy>
-<SympatheticGuy>Sympathetic guy</SympatheticGuy>
-<PleasantGuy>Pleasant guy</PleasantGuy>
-<ControversialPerson>Controversial Person</ControversialPerson>
-<NastyFellow>Nasty fellow</NastyFellow>
-<Saintly>Saintly</Saintly>
-<Righteous>Righteous</Righteous>
-<Upright>Upright</Upright>
-<Honest>Honest</Honest>
-<Dishonest>Dishonest</Dishonest>
-<Infamous>Infamous</Infamous>
-<Unstable>Unstable</Unstable>
-<Fiery>Fiery</Fiery>
-<Temperamental>Temperamental</Temperamental>
-<Balanced>Balanced</Balanced>
-<Calm>Calm</Calm>
-<Tranquil>Tranquil</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
-<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
-<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
-<Warning>Warning</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
-<HeaderBarColor>Header bar color</HeaderBarColor>
-<HeaderBarTextColor>Header bar text color</HeaderBarTextColor>
+<Experience>Pengalaman</Experience>
+<Loyalty>Kesetiaan</Loyalty>
+<PathSoundsPressing>Menekan suara</PathSoundsPressing>
+<PathSoundsMyBruised>Pemainan saya suara memar</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Pemain tim lainnya suara memar</PathSoundsOtherBruised>
+<PathSoundsMySentOff>Pemain saya mengirim suara</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>Pemain tim lainnya mengirimkan suara</PathSoundsOtherSentOff>
+<TabInjuries>Cedera</TabInjuries>
+<TabWeather>Cuaca</TabWeather>
+<TabWhistleCard>Peluit dan kartu</TabWhistleCard>
+<PathSoundsMissFriend>Tim teman melewatkan suara gol</PathSoundsMissFriend>
+<PathSoundsMissOther>Tim lain melewatkan suara gol</PathSoundsMissOther>
+<TabChances>Kemungkinan</TabChances>
+<Agreeability>Ketekunan</Agreeability>
+<Aggressiveness>Agresivitas</Aggressiveness>
+<Honesty>Kejujuran</Honesty>
+<BelovedTeamMember>Anggota tim tercinta</BelovedTeamMember>
+<PopularGuy>Pria yang populer</PopularGuy>
+<SympatheticGuy>Pria simpatik</SympatheticGuy>
+<PleasantGuy>Pria yang menyenangkan</PleasantGuy>
+<ControversialPerson>Orang kontroversial</ControversialPerson>
+<NastyFellow>Jahat sesama</NastyFellow>
+<Saintly>Suci</Saintly>
+<Righteous>Orang benar</Righteous>
+<Upright>Tegak</Upright>
+<Honest>Jujur</Honest>
+<Dishonest>Tidak jujur</Dishonest>
+<Infamous>Tidak terkenal</Infamous>
+<Unstable>Tidak stabil</Unstable>
+<Fiery>Berapi</Fiery>
+<Temperamental>Emosional</Temperamental>
+<Balanced>Seimbang</Balanced>
+<Calm>Tenang</Calm>
+<Tranquil>Tenang</Tranquil>
+<VisitOurSoundCollection>Kunjungi koleksi suara kami</VisitOurSoundCollection>
+<SafariWarning>Jika panel HTLivesight tidak fokus, pemberitahuan suara akan diblokir. Silahkan buka jendela baru jika ingin meramban di internet saat pertandingan berlangsung</SafariWarning>
+<OnlyHTTPFiles>Hanya URL http yang bekerja</OnlyHTTPFiles>
+<Warning>Peringatan</Warning>
+<Testers>Penguji</Testers>
+<BasedOn>Berdasarkan</BasedOn>
+<AndroidWarning>Jika tab HTLiveSight tidak difokuskan, pemberitahuan akan diblokir, maka akan muncul pada pembaruan pertama setelah kembali ke tabnya</AndroidWarning>
+<SafariClipboardTitle>tekan ctrl/cmd + untuk menyalin teks yang dipilih</SafariClipboardTitle>
+<License>Lisensi kami</License>
+<Tech>Teknologi kami</Tech>
+<Supporter>Dukungan proyek</Supporter>
+<HeaderBarColor>Warna header bar</HeaderBarColor>
+<HeaderBarTextColor>Warna header teks bar</HeaderBarTextColor>
 <Volume>Volume</Volume>
-<PlayVolumeSetting>Play sound after volume setting</PlayVolumeSetting>
-<Import>Import</Import>
-<Export>Export</Export>
-<ExportOauth>Export Oauth</ExportOauth>
-<ExportBackground>Export Background</ExportBackground>
-<ExportSounds>Export Sounds</ExportSounds>
-<ImportOk>Preferences imported successfully!</ImportOk>
-<PrefsRestart>Some preferences need a restart!</PrefsRestart>
-<ClickToSave>Click OK on preferences window to save them.</ClickToSave>
-<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
-<YouthMatches>Youth Matches</YouthMatches>
-<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
-<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
-<YouthSoundEqualSenior>My youth team sounds equal to my senior one</YouthSoundEqualSenior>
-<ThirdTeamIdLabel>Insert a third team ID</ThirdTeamIdLabel>
-<SeniorTeamIdAutomatically>Get my other senior team id automatically</SeniorTeamIdAutomatically>
+<PlayVolumeSetting>Putar suara setelah pengaturan volume</PlayVolumeSetting>
+<Import>Impor</Import>
+<Export>Ekspor</Export>
+<ExportOauth>Ekspor Oauth</ExportOauth>
+<ExportBackground>Latar Belakang Ekspor</ExportBackground>
+<ExportSounds>Suara Ekspor</ExportSounds>
+<ImportOk>Preferensi berhasil diimpor!</ImportOk>
+<PrefsRestart>Beberapa preferensi membutuhkan megulang kembali!</PrefsRestart>
+<ClickToSave>Klik OK pada jendela preferensi untuk menyimpannya.</ClickToSave>
+<TooltipWindowSpeech>Aktifkan dan nonaktifkan pemberitahuan pencocokan acara teks ke ucapan</TooltipWindowSpeech>
+<YouthMatches>Pertandingan Pemuda</YouthMatches>
+<GetYouthNearestMatch>Muat secara otomatis pertandingan tim muda Anda</GetYouthNearestMatch>
+<MatchesYouthLeague>Pertandingan Liga Pemuda</MatchesYouthLeague>
+<YouthSoundEqualSenior>Tim pemuda saya terdengar sama dengan senior saya</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Masukkan ID tim ketiga</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Dapatkan id tim senior saya yang lain secara otomatis</SeniorTeamIdAutomatically>
+<Support>Support</Support>
+<EventSpecialPowerfulForward>powerful, extra chance</EventSpecialPowerfulForward>
+<PowerfulPressing>powerful: pressing</PowerfulPressing>
+<SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
+<SupportBoostFailed>support: boost failed</SupportBoostFailed>
+<SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
 </Htlivesight>

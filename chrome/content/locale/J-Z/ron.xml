@@ -431,4 +431,10 @@
 <YouthSoundEqualSenior>Sunetele echipei mele de tineret la fel cu cele ale echipei de seniori</YouthSoundEqualSenior>
 <ThirdTeamIdLabel>Introduceți ID-ul pentru a treia echipă</ThirdTeamIdLabel>
 <SeniorTeamIdAutomatically>Obține automat ID-ul celeilalte echipe de seniori</SeniorTeamIdAutomatically>
+<Support>Support</Support>
+<EventSpecialPowerfulForward>powerful, extra chance</EventSpecialPowerfulForward>
+<PowerfulPressing>powerful: pressing</PowerfulPressing>
+<SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
+<SupportBoostFailed>support: boost failed</SupportBoostFailed>
+<SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
 </Htlivesight>

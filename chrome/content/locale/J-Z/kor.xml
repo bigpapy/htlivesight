@@ -431,4 +431,10 @@
 <YouthSoundEqualSenior>유소년 팀 사운드를 성인 팀과 동일하게</YouthSoundEqualSenior>
 <ThirdTeamIdLabel>서드 팀의 ID 입력</ThirdTeamIdLabel>
 <SeniorTeamIdAutomatically>나의 다른 성인 팀 id를 자동으로 가져오기</SeniorTeamIdAutomatically>
+<Support>조력자</Support>
+<EventSpecialPowerfulForward>힘 있음, 추가 득점 기회</EventSpecialPowerfulForward>
+<PowerfulPressing>힘 있음: 압박</PowerfulPressing>
+<SupportBoostSucceeded>조력자: 경기력 버프 성공</SupportBoostSucceeded>
+<SupportBoostFailed>조력자: 경기력 버프 실패</SupportBoostFailed>
+<SupportOrganizationDropped>조력자: 팀 조직력 하락</SupportOrganizationDropped>
 </Htlivesight>

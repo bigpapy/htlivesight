@@ -13,9 +13,9 @@
 <LoginUsername>اسم المستخدم</LoginUsername>
 <LoginRememberMe>تذكرني</LoginRememberMe>
 <LoginButton>دخول</LoginButton>
-<LoginReLive>Re-Live</LoginReLive>
+<LoginReLive>إعادة البث</LoginReLive>
 <LoginSpeed>السرعة</LoginSpeed>
-<LoginByEvent>Per event</LoginByEvent>
+<LoginByEvent>لكل حدث</LoginByEvent>
 <LeagueMatches>مباريات الدوري</LeagueMatches>
 <LeagueLiveTable>الجدول المباشر</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
@@ -94,8 +94,8 @@
 <EventSpecialLongShot>SE تسديدة بعيدة</EventSpecialLongShot>
 <EventSpecialQuick>SE سريع</EventSpecialQuick>
 <EventSpecialLowStamina>لياقة ضعيفة</EventSpecialLowStamina>
-<EventSpecialSetPieces>ضربات ثابتة</EventSpecialSetPieces>
-<EventSpecialHead>ضربة رأس</EventSpecialHead>
+<EventSpecialSetPieces>الركلات الثابتة</EventSpecialSetPieces>
+<EventSpecialHead>ضربات الرأس</EventSpecialHead>
 <EventSpecialExperience>الخبرة</EventSpecialExperience>
 <EventSpecialLowExperience>خبرة قليلة</EventSpecialLowExperience>
 <EventSpecialWinger>+ جناح</EventSpecialWinger>
@@ -118,8 +118,8 @@
 <OrganizationBreaks>Confusion</OrganizationBreaks>
 <Reorganize>Reorganization</Reorganize>
 <NervesImportantThrillingGame>Nerves in important thrilling game</NervesImportantThrillingGame>
-<Bruised>Bruised</Bruised>
-<Injuried>Injury</Injuried>
+<Bruised>مصاب بكدمة</Bruised>
+<Injuried>مصاب</Injuried>
 <ModeratelyInjuried>Moderate injury</ModeratelyInjuried>
 <BadlyInjuried>Bad injury</BadlyInjuried>
 <ByHimself>By himself</ByHimself>
@@ -307,8 +307,8 @@
 <RedCards>Red cards</RedCards>
 <YellowCards>Yellow cards</YellowCards>
 <Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
-<Total>Total</Total>
+<Goals>أهداف</Goals>
+<Total>مجموع</Total>
 <Terraces>Terraces</Terraces>
 <Basic>Basic seating</Basic>
 <Roof>Seats under roof</Roof>
@@ -359,27 +359,27 @@
 <SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
 <Keeper>Keeper</Keeper>
 <Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
+<Playmaking>صناعة اللعب</Playmaking>
+<Winger>جناح</Winger>
+<Passing>تمرير</Passing>
+<Scoring>تهديف</Scoring>
+<SetPieces>ركلات ثابتة</SetPieces>
+<Age>عمر</Age>
+<Form>تكوين بدني</Form>
+<Stamina>لياقة بدنية</Stamina>
+<Experience>خبرة</Experience>
+<Loyalty>ولاء</Loyalty>
 <PathSoundsPressing>Pressing sound</PathSoundsPressing>
 <PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
 <PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
 <PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
+<TabInjuries>إصابات</TabInjuries>
+<TabWeather>طقس</TabWeather>
 <TabWhistleCard>Whistles and Cards</TabWhistleCard>
 <PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
 <PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
+<TabChances>فرص</TabChances>
 <Agreeability>Agreeability</Agreeability>
 <Aggressiveness>Aggressiveness</Aggressiveness>
 <Honesty>Honesty</Honesty>
@@ -431,4 +431,10 @@
 <YouthSoundEqualSenior>My youth team sounds equal to my senior one</YouthSoundEqualSenior>
 <ThirdTeamIdLabel>Insert a third team ID</ThirdTeamIdLabel>
 <SeniorTeamIdAutomatically>Get my other senior team id automatically</SeniorTeamIdAutomatically>
+<Support>Support</Support>
+<EventSpecialPowerfulForward>powerful, extra chance</EventSpecialPowerfulForward>
+<PowerfulPressing>powerful: pressing</PowerfulPressing>
+<SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
+<SupportBoostFailed>support: boost failed</SupportBoostFailed>
+<SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
 </Htlivesight>

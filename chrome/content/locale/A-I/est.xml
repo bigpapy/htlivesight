@@ -431,4 +431,10 @@
 <YouthSoundEqualSenior>Minu noortemeeskonna helid on samad kui põhimeeskonnal</YouthSoundEqualSenior>
 <ThirdTeamIdLabel>Sisesta kolmanda meeskonna ID</ThirdTeamIdLabel>
 <SeniorTeamIdAutomatically>Lae mu teise meeskonna id automaatselt</SeniorTeamIdAutomatically>
+<Support>Support</Support>
+<EventSpecialPowerfulForward>powerful, extra chance</EventSpecialPowerfulForward>
+<PowerfulPressing>powerful: pressing</PowerfulPressing>
+<SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
+<SupportBoostFailed>support: boost failed</SupportBoostFailed>
+<SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
 </Htlivesight>

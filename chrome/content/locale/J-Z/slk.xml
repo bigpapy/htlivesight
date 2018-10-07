@@ -428,7 +428,13 @@
 <YouthMatches>Zápasy dorastu</YouthMatches>
 <GetYouthNearestMatch>Automaticky načítaj zápasy tvojho dorastu</GetYouthNearestMatch>
 <MatchesYouthLeague>Ligové zápasy dorastu</MatchesYouthLeague>
-<YouthSoundEqualSenior>My youth team sounds equal to my senior one</YouthSoundEqualSenior>
-<ThirdTeamIdLabel>Insert a third team ID</ThirdTeamIdLabel>
-<SeniorTeamIdAutomatically>Get my other senior team id automatically</SeniorTeamIdAutomatically>
+<YouthSoundEqualSenior>Zvuky dorastu rovnaké ako u seniorov</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Zadaj ID tretieho tímu</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Získaj ID môjho ďalšieho seniorského tímu automaticky</SeniorTeamIdAutomatically>
+<Support>Podpora</Support>
+<EventSpecialPowerfulForward>silový, extra šanca</EventSpecialPowerfulForward>
+<PowerfulPressing>silový, pressing</PowerfulPressing>
+<SupportBoostSucceeded>podpora: zlepšenie úspešné</SupportBoostSucceeded>
+<SupportBoostFailed>podpora: zlepšenie neúšpešné</SupportBoostFailed>
+<SupportOrganizationDropped>podpora: organizácia spadla</SupportOrganizationDropped>
 </Htlivesight>

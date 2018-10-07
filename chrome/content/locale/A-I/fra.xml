@@ -121,7 +121,7 @@
 <Bruised>Pansement</Bruised>
 <Injuried>Blessure</Injuried>
 <ModeratelyInjuried>Blessure légère</ModeratelyInjuried>
-<BadlyInjuried>Blessure grave</BadlyInjuried>
+<BadlyInjuried>Blessure aggravée</BadlyInjuried>
 <ByHimself>Tout seul</ByHimself>
 <ByFoul>due à la faute</ByFoul>
 <ExperiencedForward>SE Attaquant expérimenté</ExperiencedForward>
@@ -431,10 +431,10 @@
 <YouthSoundEqualSenior>Sons équipe jeunes identique à la 1ère senior</YouthSoundEqualSenior>
 <ThirdTeamIdLabel>Insérer l'ID d'une 3ème équipe</ThirdTeamIdLabel>
 <SeniorTeamIdAutomatically>Obtenir mes autres équipes senior automatiquement</SeniorTeamIdAutomatically>
-<Support>Support</Support>
-<EventSpecialPowerfulForward>powerful, extra chance</EventSpecialPowerfulForward>
-<PowerfulPressing>powerful: pressing</PowerfulPressing>
-<SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
-<SupportBoostFailed>support: boost failed</SupportBoostFailed>
-<SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
+<Support>Chef d'orchestre</Support>
+<EventSpecialPowerfulForward>Costaud, chance supplémentaire</EventSpecialPowerfulForward>
+<PowerfulPressing>Costaud: pressing</PowerfulPressing>
+<SupportBoostSucceeded>Chef d'orchestre: boost réussi</SupportBoostSucceeded>
+<SupportBoostFailed>Chef d'orchestre: échec du boost</SupportBoostFailed>
+<SupportOrganizationDropped>Chef d'orchestre: chute du niveau d'organisation</SupportOrganizationDropped>
 </Htlivesight>

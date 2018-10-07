@@ -431,4 +431,10 @@
 <YouthSoundEqualSenior>Mismo sonido para equipo juvenil y equipo mayor</YouthSoundEqualSenior>
 <ThirdTeamIdLabel>Insertar el ID de tu tercer equipo</ThirdTeamIdLabel>
 <SeniorTeamIdAutomatically>Obtener el ID de mis otros equipos automáticamente</SeniorTeamIdAutomatically>
+<Support>Conductor</Support>
+<EventSpecialPowerfulForward>potente, ocasión extra</EventSpecialPowerfulForward>
+<PowerfulPressing>potente: presión</PowerfulPressing>
+<SupportBoostSucceeded>conductor: aumento de nivel exitoso</SupportBoostSucceeded>
+<SupportBoostFailed>conductor: aumento de nivel falla</SupportBoostFailed>
+<SupportOrganizationDropped>conductor: nivel de organización cae</SupportOrganizationDropped>
 </Htlivesight>

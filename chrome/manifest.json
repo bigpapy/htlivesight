@@ -1,7 +1,7 @@
 {  
    "manifest_version":2,
    "name":"HTLiveSightDEV",
-   "version":"0.9.0899",
+   "version":"0.9.0900",
    "description":"A Hattrick Live Match Viewer",
    "icons":{  
       "16":"skin/16dev.png",

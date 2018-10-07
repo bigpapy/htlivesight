@@ -216,7 +216,7 @@
 <PathSoundsMyBoo>Hangjelzés saját csapat sérülésénél</PathSoundsMyBoo>
 <PathSoundsOpBoo>Hangjelzés ellenfél játékosának sérülésénél</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Sípszó első/második félidő kezdésnél</PathSoundsWhistleStart>
-<PathSoundsWhistle>Sárga lapos hangjelzés</PathSoundsWhistle>
+<PathSoundsWhistle>Sárga lap hangjelzése</PathSoundsWhistle>
 <PathSoundsHattrick>Mesterhármas hangjelzés</PathSoundsHattrick>
 <PathSoundsRestore>Visszaállítás</PathSoundsRestore>
 <PathSoundsPlay>Lejátszás</PathSoundsPlay>
@@ -429,6 +429,12 @@
 <GetYouthNearestMatch>Az ifimérkőzéseid automatikus betöltése</GetYouthNearestMatch>
 <MatchesYouthLeague>Ifibajnokság mérkőzései</MatchesYouthLeague>
 <YouthSoundEqualSenior>Az ificsapatom egyforma hangokkal jelez, mint a felnőttcsapatom</YouthSoundEqualSenior>
-<ThirdTeamIdLabel>Insert a third team ID</ThirdTeamIdLabel>
-<SeniorTeamIdAutomatically>Get my other senior team id automatically</SeniorTeamIdAutomatically>
+<ThirdTeamIdLabel>Harmadik csapat ID beszűrása</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>A többi felnőttcsapatom azonosítójának megszerzése</SeniorTeamIdAutomatically>
+<Support>Csapatjátékos</Support>
+<EventSpecialPowerfulForward>erőteljes, extra helyzet</EventSpecialPowerfulForward>
+<PowerfulPressing>erőteljes: tördelés</PowerfulPressing>
+<SupportBoostSucceeded>csapatjátékos: sikeres támogatás</SupportBoostSucceeded>
+<SupportBoostFailed>csapatjátékos: támogatás sikertelen</SupportBoostFailed>
+<SupportOrganizationDropped>csapatjátékos: szervezettség csökkent</SupportOrganizationDropped>
 </Htlivesight>

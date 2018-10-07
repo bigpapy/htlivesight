@@ -178,7 +178,7 @@
 <BookedList>List booked in header</BookedList>
 <MatchesSentOff>Sent off</MatchesSentOff>
 <SentOffList>List sent off in header</SentOffList>
-<MatchesInjured>Injured</MatchesInjured>
+<MatchesInjured>مصدوم</MatchesInjured>
 <InjuredList>List injured in header</InjuredList>
 <MatchesWindow>پنجره</MatchesWindow>
 <MatchesLines>نشان دادن خطوط در حالت کوچک سازي شده</MatchesLines>
@@ -217,9 +217,9 @@
 <PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
 <PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
 <PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
-<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsHattrick>صدای هتتریک</PathSoundsHattrick>
+<PathSoundsRestore>بازیابی</PathSoundsRestore>
+<PathSoundsPlay>بازی</PathSoundsPlay>
 <LanguageSelect>انتخاب زبان</LanguageSelect>
 <LanguageNote>توجه: فايرفاکس را از نو بازکنيد کنيد تا تغييرات اعمال شود</LanguageNote>
 <ButtonCancel>انصراف</ButtonCancel>
@@ -227,7 +227,7 @@
 <WindowAboutTitle>HTLiveSight درباره ي</WindowAboutTitle>
 <TabInfo>اطلاعات</TabInfo>
 <TabTranslators>مترجم‌ها</TabTranslators>
-<TabCredits>Credits</TabCredits>
+<TabCredits>اعتبار</TabCredits>
 <MonthJanuary>ژانويه</MonthJanuary>
 <MonthFebruary>فوريه</MonthFebruary>
 <MonthMarch>مارس</MonthMarch>
@@ -251,11 +251,11 @@
 <Poor>ناچیز</Poor>
 <Weak>ضعیف</Weak>
 <Inadequate>ناکافی</Inadequate>
-<Passable>Passable</Passable>
-<Solid>Solid</Solid>
-<Excellent>Excellent</Excellent>
-<Formidable>Formidable</Formidable>
-<Outstanding>Outstanding</Outstanding>
+<Passable>قابل قبول</Passable>
+<Solid>خوب</Solid>
+<Excellent>عالی</Excellent>
+<Formidable>توانمند</Formidable>
+<Outstanding>برجسته</Outstanding>
 <Brilliant>Brilliant</Brilliant>
 <Magnificent>Magnificent</Magnificent>
 <WorldClass>World class</WorldClass>
@@ -431,4 +431,10 @@
 <YouthSoundEqualSenior>My youth team sounds equal to my senior one</YouthSoundEqualSenior>
 <ThirdTeamIdLabel>Insert a third team ID</ThirdTeamIdLabel>
 <SeniorTeamIdAutomatically>Get my other senior team id automatically</SeniorTeamIdAutomatically>
+<Support>Support</Support>
+<EventSpecialPowerfulForward>powerful, extra chance</EventSpecialPowerfulForward>
+<PowerfulPressing>powerful: pressing</PowerfulPressing>
+<SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
+<SupportBoostFailed>support: boost failed</SupportBoostFailed>
+<SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
 </Htlivesight>

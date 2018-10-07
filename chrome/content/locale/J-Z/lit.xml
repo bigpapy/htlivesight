@@ -431,4 +431,10 @@
 <YouthSoundEqualSenior>Jaunių rungtynėms naudoti tuos pačius garsus</YouthSoundEqualSenior>
 <ThirdTeamIdLabel>Įveskite trečiosios komandos ID</ThirdTeamIdLabel>
 <SeniorTeamIdAutomatically>Surasti kitos komandos ID automatiškai</SeniorTeamIdAutomatically>
+<Support>Support</Support>
+<EventSpecialPowerfulForward>powerful, extra chance</EventSpecialPowerfulForward>
+<PowerfulPressing>powerful: pressing</PowerfulPressing>
+<SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
+<SupportBoostFailed>support: boost failed</SupportBoostFailed>
+<SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
 </Htlivesight>

@@ -434,7 +434,7 @@
 <Support>Trascinatore</Support>
 <EventSpecialPowerfulForward>potente: occasione extra</EventSpecialPowerfulForward>
 <PowerfulPressing>potente: pressing</PowerfulPressing>
-<SupportBoostSucceeded>trascinatore: boost OK</SupportBoostSucceeded>
-<SupportBoostFailed>trascinatore: boost KO</SupportBoostFailed>
-<SupportOrganizationDropped>trascinatore: diminuzione organizzazione</SupportOrganizationDropped>
+<SupportBoostSucceeded>trascinatore: boost riuscito</SupportBoostSucceeded>
+<SupportBoostFailed>trascinatore: boost fallito</SupportBoostFailed>
+<SupportOrganizationDropped>trascinatore: calo organizzazione</SupportOrganizationDropped>
 </Htlivesight>
