@@ -437,4 +437,8 @@
 <SupportBoostSucceeded>trascinatore: boost riuscito</SupportBoostSucceeded>
 <SupportBoostFailed>trascinatore: boost fallito</SupportBoostFailed>
 <SupportOrganizationDropped>trascinatore: calo organizzazione</SupportOrganizationDropped>
+<PathSoundsInfo>Suono per gli altri eventi</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>Suono goal miei giocatori preferiti</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>Lista id dei miei giocatori preferiti</MyFavouritePlayerList>
+<TabPlayers>Giocatori</TabPlayers>
 </Htlivesight>

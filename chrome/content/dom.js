@@ -9,6 +9,39 @@ htlivesight.DOM = {
 			movedown:5
 		},
 		
+		ratingpopup: function(id){
+			console.log("id: " +id);
+			id = id.replace(/goals/,"name");
+			var teamName,my,at,teamID,title;
+			var matchId=id.replace(/(home|away)_team_name/,"");
+			var side=id.substr(0,4);
+			var match = htlivesight.Match.List[matchId];
+			if (side=="home")
+			{
+				teamName=htlivesight.Util.CleanText(match.home.team.name);
+				my="right top";
+				at="right bottom";
+				teamID=match.home.team.id;
+			}else if (side=="away"){
+				teamName=htlivesight.Util.CleanText(match.away.team.name);
+				my="left top";
+				at="left bottom";
+				teamID=match.away.team.id;
+			}// add link to youth team too.
+			if(htlivesight.Team.IsNationalTeam(teamID)){
+				title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/NationalTeam/NationalTeam.aspx?teamId="+teamID+"' target='_blank'>"+teamName+"</a>";
+			}else if(match.sourceSystem.toLowerCase() != 'youth'){
+				title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/?TeamID="+teamID+"' target='_blank'>"+teamName+"</a>";
+			}else{
+				title = "<a href='https://www.hattrick.org/goto.ashx?path=/Club/Youth/?YouthTeamID="+teamID+"' target='_blank' >"+teamName+"</a>";
+			}
+			console.log("#"+id+"_ratings");
+			console.log("away_team_name_"+match.id+"_"+match.sourceSystem+"_ratings");
+			$("#"+id+"_ratings").dialog({ autoOpen: true, show: "fold", hide: "fold", width: 700, height: 510, title: title, classes: {"ui-dialog": "formationbg"} /*, position: {my: my, at: at, of: $('#'+id), collision: 'fit' }*/});
+			$("span:contains(" + title + ")").html(title);
+			return false;
+		},
+		
 		formationpopup:function(id){
 			var teamName,my,at,teamID,title;
 			var matchId=id.replace(/(home|away)_team_formation/,"");
@@ -232,6 +265,108 @@ htlivesight.DOM = {
 				document.getElementById("short_" + matchId + "_" + sourceSystem).hidden = true;
 				htlivesight.DOM.window.set(matchId, sourceSystem, htlivesight.DOM.mode.minimize);
 			}catch(e){alert("deleteView: "+e);}// added by bigpapy to debug from XUL to HTML
+		},
+		
+		createRatingElement: function(id, match){
+			try{
+				var label, hbox, ul;
+				var mainDiv= document.getElementById(id);
+				if (mainDiv === null){
+					mainDiv= document.createElement("div");
+					mainDiv.setAttribute("id", id);
+					mainDiv.style.display='none';
+					mainDiv.style.marginLeft="auto";
+					mainDiv.style.marginRight="auto";
+					var popupset = document.getElementById("live_box");
+					popupset.appendChild(mainDiv);
+					ul = document.createElement("ul");
+					mainDiv.appendChild(ul);
+				}else{
+					ul = mainDiv.getElementsByTagName("ul")[0];
+				}
+				
+				var li_ = document.createElement("li");
+				ul.appendChild(li_);
+				var a = document.createElement("a");
+				var index;
+				if (event.minute=="0") index=1;
+				else index= ul.getElementsByTagName("li").length;
+				a.setAttribute("href","#"+id+"-"+index);
+				var img = new Image();
+				//a.textContent=event.minute;
+				img.setAttribute("src", htlivesight.Image.event.predominance);
+				img.setAttribute("class", "image_star_tab");
+				
+				a.appendChild(img);
+				li_.appendChild(a);
+				
+				
+				var popup = document.createElement("table");
+				popup.cellSpacing="25px";
+				popup.cellPadding="2px";
+				popup.style.font="14px";
+				popup.style.padding="0px";
+				popup.style.marginLeft="auto";
+				popup.style.marginRight="auto";
+				mainDiv.appendChild(popup);
+				var index= ul.getElementsByTagName("li").length;
+				popup.setAttribute("id", id+"-"+index);
+				popup.style.textAlign="center";
+				var team;
+				if(id.includes("home")){
+					team = match.home.ratings;
+				}else{
+					team = match.away.ratings;
+				}
+				for(var i = 0; i < 3; i++) {
+					hbox = document.createElement("tr");
+					hbox.style.marginLeft="auto";
+					hbox.style.marginRight="auto";
+					hbox.style.width="699px";
+					popup.appendChild(hbox);
+					for(var j = 0; j<3; j++){
+						vbox = document.createElement("td");
+						vbox.style.marginLeft="auto";
+						vbox.style.marginRight="auto";
+						var textRating = '';
+
+						if(i==0 && j == 0){
+							var rate = Math.round(parseInt(team.ratingRightDef)/(parseInt(team.ratingRightDef)+ parseInt(team.ratingLeftAttOpp))*100);
+							textRating = htlivesight.Util.Parse("RightDefence",htlivesight.data[0]) + "<br>" + htlivesight.matchDetails.parserRating(team.ratingRightDef)+" "+ rate + "%";
+						}else if(i==0 && j == 1){
+							rate = Math.round(parseInt(team.ratingMidDef)/(parseInt(team.ratingMidDef)+ parseInt(team.ratingMidAttOpp))*100);
+							textRating = htlivesight.Util.Parse("MiddleDefence",htlivesight.data[0]) + "<br>" + htlivesight.matchDetails.parserRating(team.ratingMidDef)+" "+ rate + "%";
+						}else if(i==0 && j == 2){
+							rate = Math.round(parseInt(team.ratingLeftDef)/(parseInt(team.ratingLeftDef)+ parseInt(team.ratingRightAttOpp))*100);
+							textRating = htlivesight.Util.Parse("LeftDefence",htlivesight.data[0]) + "<br>" + htlivesight.matchDetails.parserRating(team.ratingLeftDef)+" "+ rate + "%";
+						}else if(i==1){
+							var rate = Math.round(parseInt(team.ratingMidfield)/(parseInt(team.ratingMidfield)+ parseInt(team.ratingMidfieldOpp))*100);
+							textRating= htlivesight.Util.Parse("Midfield",htlivesight.data[0]) + "<br>" + htlivesight.matchDetails.parserRating(team.ratingMidfield)+" "+ rate + "%";
+						}else if(i==2 && j == 0){
+							rate = Math.round(parseInt(team.ratingRightAtt)/(parseInt(team.ratingRightAtt)+ parseInt(team.ratingLeftDefOpp))*100);
+							textRating = htlivesight.Util.Parse("RightAttack",htlivesight.data[0]) + "<br>" + htlivesight.matchDetails.parserRating(team.ratingRightAtt)+" "+ rate + "%";
+						}else if(i==2 && j == 1){
+							rate = Math.round(parseInt(team.ratingMidAtt)/(parseInt(team.ratingMidAtt)+ parseInt(team.ratingMidDefOpp))*100);
+							textRating = htlivesight.Util.Parse("MiddleAttack",htlivesight.data[0]) + "<br>" + htlivesight.matchDetails.parserRating(team.ratingMidAtt)+" "+ rate + "%";
+						}else if(i==2 && j == 2){
+							rate = Math.round(parseInt(team.ratingLeftAtt)/(parseInt(team.ratingLeftAtt)+ parseInt(team.ratingRightDefOpp))*100);
+							textRating = htlivesight.Util.Parse("LeftAttack",htlivesight.data[0]) + "<br>" + htlivesight.matchDetails.parserRating(team.ratingLeftAtt)+" "+ rate + "%";
+						}
+						vbox.innerHTML = textRating;
+						if(i==1 && (j==0 || j== 2)){
+							vbox.style.visibility = "hidden";
+						}
+						vbox.className= "formationplayer";
+						vbox.style.width = "233px";
+						hbox.appendChild(vbox);
+
+					}
+					
+				}
+				console.log("createRatingElement");
+				return popup;
+			}catch(e){alert("createRatingElement: "+e);}// added by bigpapy to debug from XUL to HTML
+			
 		},
 		
 		createLineupElement: function(id, lineup, event) {
@@ -1483,12 +1618,14 @@ htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
 				if (match.home.team.id==event.subjectTeamId) {
 					//var l1 = document.getElementById("home_team_name_" + match.id + "_" + match.sourceSystem);
 					htlivesight.DOM.createStatisticElement("home_team_name_"+match.id+"_"+match.sourceSystem+"_statistics", match, event);
+					//htlivesight.DOM.createRatingElement("home_team_name_"+match.id+"_"+match.sourceSystem+"_ratings", match, event);
 					//l1.addEventListener('click',function(){htlivesight.DOM.statisticspopup(this.id);});
 					//l1.setAttribute("contextmenu", "home_team_statistics_"+match.id+"_"+match.sourceSystem);
 				}else /*if(match.away.team.id==event.subjectTeamId)*/{
 	
 					//var l2 = document.getElementById("away_team_name_" + match.id + "_" + match.sourceSystem);    	          
 					htlivesight.DOM.createStatisticElement("away_team_name_"+match.id+"_"+match.sourceSystem+"_statistics", match, event);
+					//htlivesight.DOM.createRatingElement("away_team_name_"+match.id+"_"+match.sourceSystem+"_ratings", match, event);
 					//l2.addEventListener('click',function(){htlivesight.DOM.statisticspopup(this.id);});
 					//l2.setAttribute("contextmenu", "away_team_statistics_"+match.id+"_"+match.sourceSystem);
 				};

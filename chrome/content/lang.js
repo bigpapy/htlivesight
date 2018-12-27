@@ -114,6 +114,7 @@ htlivesight.Lang = {
 				doc.getElementById("TabCustom").textContent=htlivesight.Util.Parse("TabCustom",htlivesight.data[0]);
 				doc.getElementById("CustomIcons").textContent=htlivesight.Util.Parse("CustomIcons",htlivesight.data[0]);
 				doc.getElementById("label_oldIcons").textContent=htlivesight.Util.Parse("CustomIconsOld",htlivesight.data[0]);
+				doc.getElementById("myFavouritePlayerIdsLabel").textContent=htlivesight.Util.Parse("MyFavouritePlayerList",data[0]);
 			//	doc.getElementById("CustomSounds").textContent=htlivesight.Util.Parse("CustomSounds",htlivesight.data[0]);
 				doc.getElementById("label_weather").textContent=htlivesight.Util.Parse("CustomSoundsWeather",htlivesight.data[0]);
 				doc.getElementById("label_whistleTime").textContent=htlivesight.Util.Parse("CustomSoundsTime",htlivesight.data[0]);

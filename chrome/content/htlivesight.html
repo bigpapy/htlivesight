@@ -380,6 +380,7 @@
 						<li><a href="#tabs-3"><label id="TabWheatherSound"></label></a></li>
 						<li><a href="#tabs-4"><label id="TabWhistleSound"></label></a></li>
 						<li><a href="#tabs-5"><label id="TabInjuries"></label></a></li>
+						<li><a href="#tabs-6"><label id="TabPlayers">Players</label></a></li>
 					</ul>
 					<div id="tabs-0">
 
@@ -395,13 +396,23 @@
 							id="label_weatherSE">Sound for weather special events</label><br /> <input type="checkbox" id="livefoxGoal" /><label for="livefoxGoal"
 							id="label_livefoxGoal">Original Livefox sounds</label><br /> <input type="checkbox" id="noOpGoal" /><label for="noOpGoal" id="label_noOpGoal">No
 							sounds for opponent's goals</label><br /> <input type="checkbox" id="volumeSound" /><label for="volumeSound" id="label_volumeSound">Play sound after
-							volume setting</label><br /> <br /> <br />
+							volume setting</label><br />
+
+						
+							
+						<!-- info sound -->
+						<input type="checkbox" id="infoCheck" /><label for="infoCheck" id="label_infoCheck">Sound for info</label> <br />
+						<button id="label_infoButton_reset" class="brestore">restore</button>
+						<button id="label_infoButton_play" class="brestore">play</button>
+						<input type="file" id="infoSoundPathBrowse" tabindex="2" /> <input type="url" id="infoSoundPath" maxlength="450000" size="63"
+							value="chrome://htlivesight/content/sound/crowd.ogg" class="textsnd ui-widget-content ui-corner-all" /> <br />
 						<!--			<fieldset>
 
 					<span id="PathSoundsNote1"></span><br /> <span
 						id="PathSoundsNote2"></span><br /> -->
 					</div>
 					<div id="tabs-1">
+													
 						<!-- my goal -->
 						<input type="checkbox" id="myGoalCheck" /><label for="myGoalCheck" id="label_myGoalCheck">Sound for own goal</label> <br />
 						<button id="label_myGoalButton_reset" class="brestore">restore</button>
@@ -438,7 +449,10 @@
 						<button id="label_hattrickButton_reset" class="brestore">restore</button>
 						<button id="label_hattrickButton_play" class="brestore">play</button>
 						<input type="file" id="hattrickSoundPathBrowse" tabindex="2" /> <input type="url" id="hattrickSoundPath" maxlength="450000" size="63"
-							value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
+							value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br /><br />
+							
+						
+							
 
 					</div>
 
@@ -582,6 +596,18 @@
 							value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 
 					</div>
+					<div id="tabs-6">
+						<fieldset>
+							<legend id="myFavouritePlayerIdsLabel">List of my favourite players id</legend>
+							<textarea id="myFavouritePlayersId"></textarea>	
+						</fieldset><br />
+						<!-- my favourite players -->
+						<input type="checkbox" id="myFavouriteGoalCheck" /><label for="myFavouriteGoalCheck" id="label_myFavouriteGoalCheck">Sound for my favourites player goal</label> <br />
+						<button id="label_myFavouriteGoalButton_reset" class="brestore">restore</button>
+						<button id="label_myFavouriteGoalButton_play" class="brestore">play</button>
+						<input type="file" id="myFavouriteGoalSoundPathBrowse" tabindex="2" /> <input type="url" id="myFavouriteGoalSoundPath" maxlength="450000" size="63"
+							value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br /> 
+					</div>
 				</div>
 				<!--  	</fieldset> -->
 			</div>
@@ -718,8 +744,7 @@
 			<div id="tabs-3">
 				<span id="Supporter">Project support:</span><br /> <a href="https://github.com/bigpapy/htlivesight" target="_newtab"><img
 					src="./themes/images/github.png" alt="Github"> </a><br /> <a href="http://sourceforge.net/projects/htlivesight" target="_newtab"><img
-					src="./themes/images/sf.png" alt="Sourceforge"> </a><br /> <a href="http://htlivesight.symbiosis.org.gr" target="_newtab"><img
-					src="./themes/images/Symbiosis.png" alt="Symbiosys"> </a><br /> <a href="http://www.fatcow.com/free-icons" target="_newtab"><img
+					src="./themes/images/sf.png" alt="Sourceforge"> </a><br /> <a href="http://www.fatcow.com/free-icons" target="_newtab"><img
 					src="./themes/images/FatCow.png" alt="FatCow"> </a><br /> <br /> <label id="Tech">Our Technology:</label><br /> <a
 					href="http://wikipedia.org/wiki/HTML5" target="_newtab"><img src="./themes/images/html5.png" alt="HTML5"> </a><br /> <a href="http://jqueryui.com"
 					target="_newtab"><img src="./themes/images/jquery.png" alt="JQuery"> </a><br /> <br /> <label id="License">Our License:</label><br /> <a

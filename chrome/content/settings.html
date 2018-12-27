@@ -285,6 +285,7 @@
 					<li><a href="#tabs-3"><label id="TabWheatherSound"></label></a></li>
 					<li><a href="#tabs-4"><label id="TabWhistleSound"></label></a></li>
 					<li><a href="#tabs-5"><label id="TabInjuries"></label></a></li>
+					<li><a href="#tabs-6"><label id="TabPlayers">Players</label></a></li>
 				</ul>
 				<div id="tabs-0">
 
@@ -301,6 +302,14 @@
 						id="label_livefoxGoal">Original Livefox sounds</label><br /> <input type="checkbox" id="noOpGoal" /><label for="noOpGoal" id="label_noOpGoal">No
 						sounds for opponent's goals</label><br /> <input type="checkbox" id="volumeSound" /><label for="volumeSound" id="label_volumeSound">Play sound after
 						volume setting</label><br /> <br /> <br />
+
+						
+					<!-- info sound -->
+					<input type="checkbox" id="infoCheck" /><label for="infoCheck" id="label_infoCheck">Sound for info</label> <br />
+					<button id="label_infoButton_reset" class="brestore">restore</button>
+					<button id="label_infoButton_play" class="brestore">play</button>
+					<input type="file" id="infoSoundPathBrowse" tabindex="2" /> <input type="url" id="infoSoundPath" maxlength="450000" size="63"
+						value="chrome://htlivesight/content/sound/crowd.ogg" class="textsnd ui-widget-content ui-corner-all" /> <br />
 
 					<!--			<fieldset>
 
@@ -344,8 +353,7 @@
 					<button id="label_hattrickButton_reset" class="brestore">restore</button>
 					<button id="label_hattrickButton_play" class="brestore">play</button>
 					<input type="file" id="hattrickSoundPathBrowse" tabindex="2" /> <input type="url" id="hattrickSoundPath" maxlength="450000" size="63"
-						value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
-
+						value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br /> <br />
 				</div>
 
 
@@ -487,6 +495,18 @@
 					<input type="file" id="opBooSoundPathBrowse" tabindex="2" /> <input type="url" id="opBooSoundPath" maxlength="450000" size="63"
 						value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br />
 
+				</div>
+				<div id="tabs-6">
+						<fieldset>
+							<legend id="myFavouritePlayerIdsLabel">List of my favourite players id</legend>
+							<textarea id="myFavouritePlayersId"></textarea>	
+						</fieldset><br />
+						<!-- my favourite players -->
+						<input type="checkbox" id="myFavouriteGoalCheck" /><label for="myFavouriteGoalCheck" id="label_myFavouriteGoalCheck">Sound for my favourites player goal</label> <br />
+						<button id="label_myFavouriteGoalButton_reset" class="brestore">restore</button>
+						<button id="label_myFavouriteGoalButton_play" class="brestore">play</button>
+						<input type="file" id="myFavouriteGoalSoundPathBrowse" tabindex="2" /> <input type="url" id="myFavouriteGoalSoundPath" maxlength="450000" size="63"
+							value="chrome://htlivesight/content/sound/cheer_8k.wav" class="textsnd ui-widget-content ui-corner-all" /> <br /> 
 				</div>
 			</div>
 			<!--  	</fieldset> -->

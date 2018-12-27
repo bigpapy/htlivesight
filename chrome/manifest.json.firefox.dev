@@ -42,10 +42,5 @@
       "content/old_img/foxball_32.png",
       "content/themes/images/bg.png",
       "skin/128dev.png"
-   ],
-   "applications":{  
-      "gecko":{  
-         "update_url":"https://htlivesight.c6.ixsecure.com/dev/update.json"
-      }
-   }
+   ]
 }

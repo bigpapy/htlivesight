@@ -206,6 +206,22 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("missOtherSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'missOtherSoundPath');});
 	document.getElementById("missOtherSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('missOther');});
 	
+//info
+	document.getElementById("infoCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('info');});
+	document.getElementById("label_infoButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('info','sound/crowd.ogg');});
+	document.getElementById("label_infoButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('infoSoundPath');});
+	document.getElementById("infoSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'infoSoundPath');});
+	document.getElementById("infoSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('info');});
+	
+	//my favourite goal
+	document.getElementById("myFavouriteGoalCheck").addEventListener('click',function(){htlivesight.Settings.click.checkSound('myFavouriteGoal');});
+	document.getElementById("label_myFavouriteGoalButton_reset").addEventListener('click',function(){htlivesight.Settings.click.soundReset('myFavouriteGoal','sound/tarzan.ogg');});
+	document.getElementById("label_myFavouriteGoalButton_play").addEventListener('click',function(){htlivesight.Settings.click.soundPlay('myFavouriteGoalSoundPath');});
+	document.getElementById("myFavouriteGoalSoundPathBrowse").addEventListener('change',function(){htlivesight.Settings.click.getSoundFile(this.files,'myFavouriteGoalSoundPath');});
+	document.getElementById("myFavouriteGoalSoundPath").addEventListener('change',function(){htlivesight.Settings.click.checkSound('myFavouriteGoal');});
+	
+	document.getElementById("myFavouritePlayersId").addEventListener('change',function(){htlivesight.Settings.click.myFavouritePlayersIdSet('myFavouritePlayersId');});
+	
 	/* tab 6 */
 	document.getElementById("friendHomeColorCheck").addEventListener('click',function(){htlivesight.Settings.click.friendHomeColorCheck();});
 	document.getElementById("friendHomeColorCode").addEventListener('change',function(){htlivesight.Settings.click.friendHomeColorSet();});

@@ -34,6 +34,5 @@
       "content/themes/images/bg.png",
       "skin/128.png",
       "content/img/flag/*.png"
-   ],
-   "update_url":"https://htlivesight.c6.ixsecure.com/chromedev/updates.xml"
+   ]
 }

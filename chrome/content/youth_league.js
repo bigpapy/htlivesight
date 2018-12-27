@@ -335,7 +335,9 @@ htlivesight.YouthLeague.sortTable = function(){
 		}
 	}
 	for(var j=1; j<=length; j++){
-		htlivesight.YouthLeague.teams[tmp[j].id].livePosition = j;
+		if(tmp[j]){
+			htlivesight.YouthLeague.teams[tmp[j].id].livePosition = j;
+		}
 	}
 };
 
@@ -359,7 +361,9 @@ htlivesight.YouthLeague.sortTable2 = function(){
 		}
 	}
 	for(var j=1; j<=length; j++){
-		htlivesight.YouthLeague.teams2[tmp[j].id].livePosition = j;
+		if(tmp[j]){
+			htlivesight.YouthLeague.teams2[tmp[j].id].livePosition = j;
+		}
 	}
 };
 
@@ -383,7 +387,9 @@ htlivesight.YouthLeague.sortTable3 = function(){
 		}
 	}
 	for(var j=1; j<=length; j++){
-		htlivesight.YouthLeague.teams3[tmp[j].id].livePosition = j;
+		if(tmp[j]){
+			htlivesight.YouthLeague.teams3[tmp[j].id].livePosition = j;
+		}
 	}
 };
 

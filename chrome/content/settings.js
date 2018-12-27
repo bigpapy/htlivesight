@@ -156,6 +156,8 @@ htlivesight.Settings = {
 
 			document.getElementById("missFriendSoundPath").value = prefs.personalization.missFriendSoundPath;
 			document.getElementById("missOtherSoundPath").value = prefs.personalization.missOtherSoundPath;
+			document.getElementById("infoSoundPath").value = prefs.personalization.infoSoundPath;
+			document.getElementById("myFavouriteGoalSoundPath").value = prefs.personalization.myFavouriteGoalSoundPath;
 			
 			document.getElementById("myGoalCheck").checked = prefs.personalization.myGoalCheck;
 			document.getElementById("myGoalSoundPath").disabled = !prefs.personalization.myGoalCheck;
@@ -212,6 +214,14 @@ htlivesight.Settings = {
 			
 			document.getElementById("missOtherCheck").checked = prefs.personalization.missOtherCheck;
 			document.getElementById("missOtherSoundPath").disabled = !prefs.personalization.missOtherCheck;
+			
+			document.getElementById("infoCheck").checked = prefs.personalization.infoCheck;
+			document.getElementById("infoSoundPath").disabled = !prefs.personalization.infoCheck;
+			
+			document.getElementById("myFavouriteGoalCheck").checked = prefs.personalization.myFavouriteGoalCheck;
+			document.getElementById("myFavouriteGoalSoundPath").disabled = !prefs.personalization.myFavouriteGoalCheck;
+			
+			document.getElementById("myFavouritePlayersId").value = prefs.personalization.myFavouritePlayersId;
 			
 			document.getElementById("friendHomeColorCheck").checked = prefs.colors.friendHomeColorCheck;
 			document.getElementById("friendHomeColorCode").disabled = !prefs.colors.friendHomeColorCheck;
@@ -300,6 +310,7 @@ htlivesight.Settings = {
 			document.getElementById("chkExportBackground").checked = prefs.other.exportBackground;
 			document.getElementById("chkExportSounds").checked = prefs.other.exportSounds;
 			document.getElementById("chkYouthSoundEqualSenior").checked =prefs.personalization.youthSoundEqualSenior;
+			document.getElementById("myFavouritePlayersId").value = prefs.personalization.myFavouritePlayersId;
 		},
 		save: function() {
 			htlivesight.Log.properties(this.preferences.notification);
@@ -485,6 +496,19 @@ htlivesight.Settings = {
 				document.getElementById("label_missOtherButton_reset").textContent=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
 				document.getElementById("label_missOtherButton_play").textContent=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
 				
+				// info sound
+				document.getElementById("label_infoCheck").textContent=htlivesight.Util.Parse("PathSoundsInfo",data[0]);
+				document.getElementById("label_infoButton_reset").textContent=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+				document.getElementById("label_infoButton_play").textContent=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+				
+				document.getElementById("TabPlayers").textContent=htlivesight.Util.Parse("TabPlayers",data[0]);
+				// my favourite goal sound
+				document.getElementById("label_myFavouriteGoalCheck").textContent=htlivesight.Util.Parse("PathSoundsMyFavouriteGoal",data[0]);
+				document.getElementById("label_myFavouriteGoalButton_reset").textContent=htlivesight.Util.Parse("PathSoundsRestore",data[0]);
+				document.getElementById("label_myFavouriteGoalButton_play").textContent=htlivesight.Util.Parse("PathSoundsPlay",data[0]);
+				
+				//my favourite player list
+				document.getElementById("myFavouritePlayerIdsLabel").textContent=htlivesight.Util.Parse("MyFavouritePlayerList",data[0]);
 				
 				document.getElementById("TabColors").textContent=htlivesight.Util.Parse("Colors",data[0]);
 				document.getElementById("CustomEventBackground").textContent=htlivesight.Util.Parse("EventBackground",data[0]);
@@ -1420,6 +1444,8 @@ htlivesight.Settings = {
 						jsonPrefs = jsonPrefs.replace(/"missFriendSoundPath":"[^"]+",/,"");
 //						delete prefs.personalization.missOtherSoundPath;
 						jsonPrefs = jsonPrefs.replace(/"missOtherSoundPath":"[^"]+",/,"");
+						jsonPrefs = jsonPrefs.replace(/"infoSoundPath":"[^"]+",/,"");
+						jsonPrefs = jsonPrefs.replace(/"myFavouriteGoalSoundPath":"[^"]+",/,"");
 					}
 					document.getElementById("export_text").value = jsonPrefs;
 					document.getElementById("export_text").select();
@@ -1489,6 +1515,9 @@ htlivesight.Settings = {
 							htlivesight.Settings.preferences.personalization.missFriendSoundPath = old_prefs.personalization.missFriendSoundPath;
 //							delete prefs.personalization.missOtherSoundPath;
 							htlivesight.Settings.preferences.personalization.missOtherSoundPath = old_prefs.personalization.missOtherSoundPath;
+							htlivesight.Settings.preferences.personalization.infoSoundPath = old_prefs.personalization.infoSoundPath;
+							htlivesight.Settings.preferences.personalization.myFavouriteGoalSoundPath = old_prefs.personalization.myFavouriteGoalSoundPath;
+							htlivesight.Settings.preferences.personalization.myFavouritePlayersId = old_prefs.personalization.myFavouritePlayersId;
 						}
 					
 						htlivesight.Settings.save();
@@ -1557,6 +1586,12 @@ htlivesight.Settings = {
 					}else{
 						prefs.other.exportSounds= false;
 					}
+				},
+				
+				myFavouritePlayersIdSet: function() {
+					var prefs = htlivesight.Settings.preferences;
+					var value = document.getElementById("myFavouritePlayersId").value;
+					prefs.personalization.myFavouritePlayersId = value;
 				}
 
 		}
