@@ -1,7 +1,7 @@
 {  
    "manifest_version":2,
    "name":"HTLiveSightDEV",
-   "version":"0.9.900",
+   "version":"0.9.0903",
    "description":"A Hattrick Live Match Viewer",
    "icons":{  
       "16":"skin/16dev.png",
@@ -9,13 +9,8 @@
       "128":"skin/128dev.png"
    },
    "browser_action":{  
-      "default_icon":{
-		"16":"skin/16dev.png",
-		"24":"skin/24dev.png",
-		"32":"skin/32dev.png",
-		"48":"skin/48dev.png"
-	  },
-      "default_title":"Launch HTLiveSightDEV"
+      "default_icon":"skin/24dev.png",
+      "default_title":"Launch HTLiveSight"
    },
    "background":{  
       "scripts":[  
@@ -26,21 +21,18 @@
    "homepage_url":"http://htlivesight.sourceforge.net",
    "incognito":"spanning",
    "minimum_chrome_version":"13",
+   "options_page":"content/settings.html",
    "permissions":[  
       "contextMenus",
       "notifications",
       "clipboardWrite",
       "*://chpp.hattrick.org/*"
    ],
-   "options_ui":{  
-      "page":"content/settings.html",
-      "chrome_style":false,
-      "open_in_tab":true
-   },
    "web_accessible_resources":[  
       "content/img/foxball_32.png",
       "content/old_img/foxball_32.png",
       "content/themes/images/bg.png",
-      "skin/128dev.png"
+      "skin/128.png",
+      "content/img/flag/*.png"
    ]
 }

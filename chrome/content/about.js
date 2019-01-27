@@ -15,7 +15,7 @@ htlivesight.About = {
 			var l10nData=xml.getElementsByTagName("Htlivesight");
 			
 		    doc.getElementById("TabInfo").textContent=htlivesight.Util.Parse("TabInfo",l10nData[0]);
-		    doc.getElementById("creationDate").textContent="10 "+htlivesight.Util.Parse("MonthOctober",l10nData[0])+" 2017";
+		    doc.getElementById("creationDate").textContent="27 "+htlivesight.Util.Parse("MonthJanuary",l10nData[0])+" 2019";
 		    doc.getElementById("createdBy").textContent=htlivesight.Util.Parse("TextCreatedBy",l10nData[0]);
 		    doc.getElementById("testers").textContent=htlivesight.Util.Parse("Testers",l10nData[0]);
 		    doc.getElementById("BasedOn").textContent=htlivesight.Util.Parse("BasedOn",l10nData[0]);

@@ -289,8 +289,8 @@ htlivesight.DOM = {
 				ul.appendChild(li_);
 				var a = document.createElement("a");
 				var index;
-				if (event.minute=="0") index=1;
-				else index= ul.getElementsByTagName("li").length;
+				/*if (event && event.minute=="0") index=1;
+				else*/ index= ul.getElementsByTagName("li").length;
 				a.setAttribute("href","#"+id+"-"+index);
 				var img = new Image();
 				//a.textContent=event.minute;
