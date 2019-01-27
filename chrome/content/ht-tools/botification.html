@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>botification</title>
+    <link rel="shortcut icon" type="image/png" href="static/images/favicon.png"/>
+
+<!-- Bootstrap style --> 
+    <link href="static/css/materialize.min.css" rel="stylesheet"/>
+    <link href="static/css/ht-tools.css" rel="stylesheet"/>
+
+  </head>
+
+  
+<body>
+
+	<navber >
+		<object data="header.html" style="position:fixed;top:0;left:0;width:200px;height:100%;background-color:#EEE;padding-top:80px"> 
+
+		</object>
+	</navbar>
+<main style="margin-left:200px">
+
+  <div>
+    <div class="row">
+
+      <div class="row">
+        <div class="col s12" style="padding:0">
+      <ul class="tabs">
+        <li class="tab col s6" style="background-color:#277F31"><a class="active" style="color:#ffffff" href="#tool">botification</a></li>
+        <li class="tab col s6" style="background-color:#277F31"><a  style="color:#ffffff" href="#info">info</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
+        
+      <div class="col l5 m6 s12" style="background: none repeat scroll 0% 0% #FFF; border-radius: 15px; padding: 20px; margin-bottom: 5px">
+      <!--{% if login %}
+        <form id="my-form-1" style="overflow:hidden" class="col s12">
+          <div class="input-field col s12 m6 l8">
+              <input id="teamid" type="text" class="validate" value="{{param['teamid']}}">
+              <label for="teamid">{{pagestr["searchbyteamid"]|safe}}</label>
+          </div>
+            <button class="btn green waves-effect waves-light" style="float:right" type="submit">{{pagestr["Submit"]|safe}}</button>
+          <div class="progress" id="progress" style="display:none">
+            <div class="indeterminate"></div>
+          </div>    
+        </form>      
+       <br>
+      {% endif %} -->
+      <form id="my-form-2" style="overflow:hidden" class="col s12">
+        
+        <div class="input-field col s12 m6 l8">
+          <label for="date">search by last login</label>
+          <input type="text" id="date" class="datepicker" value="last login">
+        </div>
+            <button class="btn green waves-effect waves-light" style="float:right" type="submit">Submit</button>
+      </form>        
+      </div>
+
+    <div class="col l7 m6 s12">
+      <div class="card-panel green darken-3 white-text" style="display:none" id="message1">ownerless date:</div>
+      <div class="card-panel green darken-3 white-text" style="display:none" id="message2">ownerless date today:</div>
+
+      <table class="table bordered centered" id="resultstable" style="background-color:#fff">
+            <thead>
+              <tr style="background-color: #277F31; color:#fff">
+                <th>last login</th>
+                <th>ownerless</th>
+                <th>botification</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr >
+                <td><b></b></td>
+                <td style="color: #31708f;background-color: #d9edf7;border-color: #bce8f1;"><b></b></td>
+                <td style="color: #a94442;background-color: #f2dede;border-color: #ebccd1;"><b></b></td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+
+  </div>
+  
+    <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
+        <h5><b>botification</b></h5>
+        <img src="static/images/botification.png" style="float:left;margin-right:15px"><span><b>info:</b> description</span>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+</main>
+
+
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/noUiSlider/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="static/js/materialize.min.js"></script>
+<script type="text/javascript" src="static/js/cookies.js"></script>
+
+<script type="text/javascript" src="static/js/botification.js"></script>
+
+
+
+</body>
+</html>

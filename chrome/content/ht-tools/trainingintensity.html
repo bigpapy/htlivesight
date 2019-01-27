@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>training intensity</title>
+    <link rel="shortcut icon" type="image/png" href="static/images/favicon.png"/>
+
+<!-- Bootstrap style --> 
+    <link href="static/css/materialize.min.css" rel="stylesheet"/>
+    <link href="static/css/ht-tools.css" rel="stylesheet"/>
+
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="static/images/favicon.png">
+
+  </head>
+
+  
+<body>
+	<navber >
+		<object data="header.html" style="position:fixed;top:0;left:0;width:200px;height:100%;background-color:#EEE;padding-top:80px"> 
+
+		</object>
+	</navbar>
+<main style="margin-left:200px">
+
+  <div>
+    <div class="row">
+
+
+
+      <div class="row">
+        <div class="col s12" style="padding:0">
+      <ul class="tabs">
+        <li class="tab col s6" style="background-color:#277F31"><a class="active" style="color:#ffffff" href="#tool">training intensity</a></li>
+        <li class="tab col s6" style="background-color:#277F31"><a  style="color:#ffffff" href="#info">info</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
+        
+      <div class="col l5 m6 s12" style="background: none repeat scroll 0% 0% #FFF; border-radius: 15px; padding: 20px; margin-bottom: 5px">
+
+      <form id="my-form-1">
+
+        <div class="input-field col s12">
+          <input id="TIbefore" type="number" min="1" max="100" step="1" class="validate" value="100">
+          <label for="TIbefore">Training intensity before</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="TSbefore" type="number" min="1" max="10" step="0.01" class="validate" value="4.5">
+          <label for="TSbefore">Team spirt before</label>
+        </div>
+
+        <div class="row">
+          <div class="col s2" style="margin-top: 20px;">
+            <input class="with-gap red" type="radio" name="radiotype" value="TI" id="TIradio" />
+            <label for="TIradio"></label>
+          </div>
+          <div class="input-field col s10">
+            <input id="TIafter" type="number" min="1" max="100" step="1" class="validate">
+            <label for="TIafter">Training intensity after</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s2" style="margin-top: 20px;">
+            <input class="with-gap" type="radio" name="radiotype" value="TS" id="TSradio" />
+            <label for="TSradio"></label>
+          </div>
+          <div class="input-field col s10">
+            <input id="TSafter" type="number" min="0" max="10" step="0.01" class="validate">
+            <label for="TSafter">Team spirit after</label>
+          </div>
+        </div>
+
+        <button class="btn green waves-effect waves-light" style="float:right" type="submit">Submit</button>
+      </form>
+        
+      </div>
+
+    <div class="col l7 m6 s12">
+      <table class="table bordered centered" id="resultstable" style="background-color:#fff">
+            <tbody>
+              <tr>
+                <th style="color: #fff;background-color: #277f31;border-color: #277f31;width: 50%;" scope="row">Training intensity before</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th style="color: #fff;background-color: #277f31;border-color: #277f31;" scope="row">Team spirt before</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th style="color: #fff;background-color: #277f31;border-color: #277f31;" scope="row">Training intensity after</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th style="color: #fff;background-color: #277f31;border-color: #277f31;" scope="row">Team spirit after</th>
+                <td></td>
+              </tr>
+              
+            </tbody>
+        </table>
+
+        <!--<div id="ad3" class="col s12 m12 l12" style="margin-top:35px;text-align:center">{% include "responsiveRect.html" %}</div>-->
+    </div>
+
+  </div>
+  
+    <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
+        <h5><b>Training intensity</b></h5>
+        <img src="static/images/trainingintensitytrick.png" style="float:left;margin-right:15px"><span><b>Info:</b> description </span>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+    
+</main>
+
+<script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="static/noUiSlider/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="static/js/materialize.min.js"></script>
+<script type="text/javascript" src="static/js/cookies.js"></script>
+<script type="text/javascript" src="static/js/trainingintensity.js"></script>
+
+</body>
+</html>

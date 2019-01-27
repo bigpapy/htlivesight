@@ -15,6 +15,7 @@ htlivesight.ManagerCompendium.HTTPGetMyData = function () {
 htlivesight.ManagerCompendium.ParseMyData = function (xml) {
 	var userId, loginName, languageId, languageName, teams, youthTeams, teamsNode;
 	teams = []; youthTeams = [];
+	console.log(xml);
 	try {
 		if (xml) {
 			userId = parseInt(htlivesight.Util.Parse("UserId",xml),10);

@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>training estimation</title>
+    <link rel="shortcut icon" type="image/png" href="static/images/favicon.png"/>
+
+<!-- Bootstrap style --> 
+    <link href="static/css/materialize.min.css" rel="stylesheet"/>
+    <link href="static/css/ht-tools.css" rel="stylesheet"/>
+    <link href="static/css/adsense.css" rel="stylesheet"/>
+    <!--<link href="static/noUiSlider/jquery.nouislider.min.css" rel="stylesheet"/> -->
+
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="static/images/favicon.png">
+
+  </head>
+
+  
+<body>
+	<navber >
+		<object data="header.html" style="position:fixed;top:0;left:0;width:200px;height:100%;background-color:#EEE;padding-top:80px"> 
+
+		</object>
+	</navbar>
+<main style="margin-left:200px">
+
+  <div>
+    <div class="row">
+      <div class="row">
+        <div class="col s12" style="padding:0">
+      <ul class="tabs">
+        <li class="tab col s6" style="background-color:#277F31"><a class="active" style="color:#ffffff" href="#tool">training estimation</a></li>
+        <li class="tab col s6" style="background-color:#277F31"><a  style="color:#ffffff" href="#info">info</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
+        <div class="col l5 m6 s12">
+          <form id="my-form">
+        <div><b>skill</b></div>
+        <select class="browser-default" id="skill">
+          <option value="" disabled selected>option</option>
+          <option value="SP">SP</option>
+          <option value="SP 25%">SP 25%</option>
+          <option value="Def">Def</option>
+          <option value="Sco">Sco</option>
+          <option value="Cross">Cross</option>
+          <option value="Cross 50%">Cross 50%</option>
+          <option value="Shoot">Shoot</option>
+          <option value="Pass">Pass</option>
+          <option value="PM">PM</option>
+          <option value="PM 50%">PM 50%</option>
+          <option value="GK">GK</option>
+          <option value="ThPass">ThPass</option>
+          <option value="DefPos">DefPos</option>
+          <option value="WingAtt">WingAtt</option>
+                           
+        </select>
+
+        <div><b>years</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-years" class="slider-success" style="width:80%;float:left"></div><input type="text" id="years-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+        <div><b>days</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-days" class="slider-success" style="width:80%;float:left"></div><input type="text" id="days-value" style="float:right;width:40px;height:25px;text-align:right;" value="0"/>
+        </div>
+
+        <div class="row slidercls"><b>skill level</b><span id="skilllevelval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-skilllevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="skilllevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+        <div><b>sub skill</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-subskill" class="slider-success" style="width:80%;float:left"></div><input type="text" id="subskill-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+
+        <div class="row slidercls"><b>coachlevel</b><span id="coachlevelval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-coachlevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="coachlevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+        <div><b>assistants level</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-assistants" class="slider-success" style="width:80%;float:left"></div><input type="text" id="assistantslevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>  
+        <div><b>training intensity</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-intensity" class="slider-success" style="width:80%;float:left"></div><input type="text" id="trainingintensity-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+        <div><b>stamina share</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-stamina" class="slider-success" style="width:80%;float:left"></div><input type="text" id="staminashare-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+
+         <button class="btn green waves-effect waves-light" style="float:right" type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="col l7 m6 s12">
+      <table class="table bordered centered striped" id="resultstable">
+            <thead>
+              <tr style="background-color: #277F31; color:#fff">
+                  <th>skill</th>
+                  <th>weeks</th>
+                  <th>age</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            </tr>
+
+             <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            </tr>
+
+             <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+  </div>
+  
+    <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
+        <h5><b>training estimation</b></h5>
+        <img src="static/images/training.jpg" style="float:left;margin-right:15px"><span><b>info</b> description</span>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+  </div>
+
+</main>
+
+
+<script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="static/noUiSlider/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="static/js/materialize.min.js"></script>
+<script type="text/javascript" src="static/js/cookies.js"></script>
+
+<script type="text/javascript" src="static/js/training.js"></script>
+
+
+</body>
+</html>

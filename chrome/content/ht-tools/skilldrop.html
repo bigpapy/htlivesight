@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>skill drop</title>
+
+    <link rel="shortcut icon" type="image/png" href="static/images/favicon.png"/>
+
+<!-- Bootstrap style --> 
+    <link href="static/css/materialize.min.css" rel="stylesheet"/>
+    <link href="static/css/ht-tools.css" rel="stylesheet"/>
+
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="static/images/favicon.png">
+
+  </head>
+
+  
+<body>
+	<navber >
+		<object data="header.html" style="position:fixed;top:0;left:0;width:200px;height:100%;background-color:#EEE;padding-top:80px"> 
+
+		</object>
+	</navbar>
+<main style="margin-left:200px">
+
+  <div>
+    <div class="row">
+
+      
+
+      <div class="row">
+        <div class="col s12" style="padding:0">
+      <ul class="tabs">
+        <li class="tab col s6" style="background-color:#277F31"><a class="active" style="color:#ffffff" href="#tool">skill drop</a></li>
+        <li class="tab col s6" style="background-color:#277F31"><a  style="color:#ffffff" href="#info">info</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
+        <div id="container" style="margin: 0 auto; overflow:hidden; display:none"></div>
+        <div class="col l5 m6 s12">
+          <form id="my-form">
+
+        <div class="row slidercls"><b>skill level</b><span id="skilllevelval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-skilllevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="skilllevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
+        </div>
+
+         <button class="btn green waves-effect waves-light" style="float:right" type="submit">Submit</button>
+      </form>
+
+    </div>
+    <div class="col l7 m6 s12">
+      <table class="table bordered centered striped" id="resultstable">
+        <thead>
+          <tr>
+            <th>week</th>
+            <th>skill level</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  
+    <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
+        <h5><b>skill drop</b></h5>
+        <img src="static/images/skilldrop.png" style="float:left;margin-right:15px"><span><b>info:</b> description</span>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+</main>
+
+<script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="static/noUiSlider/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="static/js/materialize.min.js"></script>
+<script type="text/javascript" src="static/js/cookies.js"></script>
+
+<script src="static/js/highcharts.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript" src="static/js/skilldrop.js"></script>
+
+
+
+</body>
+</html>

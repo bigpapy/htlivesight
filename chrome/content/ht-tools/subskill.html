@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>sub skill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HT-Tools is a database of helper functions for the online Hattrick Football manager. Training estimation, health estimation and many other tools are available">
+    <meta name="keywords" content="hattrick, football manager, online games, football, training, chpp">
+    <meta property="og:image" content="static/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="static/images/favicon.png"/>
+
+<!-- Bootstrap style --> 
+    <link href="static/css/materialize.min.css" rel="stylesheet"/>
+    <link href="static/css/ht-tools.css" rel="stylesheet"/>
+    <link href="static/css/adsense.css" rel="stylesheet"/>
+    <!--<link href="static/noUiSlider/jquery.nouislider.min.css" rel="stylesheet"/> -->
+
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="static/images/favicon.png">
+
+  </head>
+
+  
+<body>
+
+	<navber >
+		<object data="header.html" style="position:fixed;top:0;left:0;width:200px;height:100%;background-color:#EEE;padding-top:80px"> 
+
+		</object>
+	</navbar>
+<main style="margin-left:200px">
+
+  <div>
+    <div class="row">
+		<!--
+      <div class="col s12 m12 l2">
+      {% if not login %}
+              <div class="card-panel" style="background-color:#fcf6df;border:1px solid orange;margin-top:50px">{{headerstr["loginmessage"]|safe}}</div>
+      {% endif %}
+
+      <div id="ad1" class="adslot1" style="margin-top:35px;text-align:center">{% include "responsive_left.html" %}</div>
+    </div>
+
+      <div class="col s12 m12 l10">-->
+
+    
+
+      <div class="row">
+        <div class="col s12" style="padding:0">
+      <ul class="tabs">
+        <li class="tab col s6" style="background-color:#277F31"><a class="active" style="color:#ffffff" href="#tool">sub skill</a></li>
+        <li class="tab col s6" style="background-color:#277F31"><a  style="color:#ffffff" href="#info">info</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
+        <div class="col l5 m6 s12">
+          <form id="my-form">
+
+    <!--    {% if login %}
+          <div class="col s12">
+              <select class="browser-default" name="players" id="teams" onchange="getValue(this)">
+                <option value="" disabled selected>{{pagestr["chooseyourplayer"]|safe}}</option>
+                  {% for i in players %}
+                     <option value="{{i[0]}}">{{i[1]}}</option>
+                  {% endfor %}
+               </select>
+             </div>
+           <br><br><br>
+          <div class="progress" id="progress" style="display:none">
+            <div class="indeterminate"></div>
+          </div>          
+       {% endif %} -->
+       
+        <div><b>Age</b></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-age" class="slider-success" style="width:80%;float:left"></div><input type="text" id="age-value" style="float:right;width:40px;height:25px;text-align:right" value="17"/>
+        </div>
+        <div class="row slidercls"><b>Keeper</b><span id="keeperval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-keeper" class="slider-success" style="width:80%;float:left"></div><input type="text" id="keeper-value" style="float:right;width:40px;height:25px;text-align:right;" value="1"/>
+        </div>
+
+        <div class="row slidercls"><b>Defender</b><span id="defendingval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-defending" class="slider-success" style="width:80%;float:left"></div><input type="text" id="defending-value" style="float:right;width:40px;height:25px;text-align:right" value="1"/>
+        </div>
+        
+        <div class="row slidercls"><b>Playmaker</b><span id="playmakingval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-playmaking" class="slider-success" style="width:80%;float:left"></div><input type="text" id="playmaking-value" style="float:right;width:40px;height:25px;text-align:right" value="1"/>
+        </div>
+
+        <div class="row slidercls"><b>Winger</b><span id="wingerval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-winger" class="slider-success" style="width:80%;float:left"></div><input type="text" id="winger-value" style="float:right;width:40px;height:25px;text-align:right" value="1"/>
+        </div>
+
+        <div class="row slidercls"><b>Passer</b><span id="passingval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-passing" class="slider-success" style="width:80%;float:left"></div><input type="text" id="passing-value" style="float:right;width:40px;height:25px;text-align:right" value="1"/>
+        </div>
+
+        <div class="row slidercls"><b>Scorer</b><span id="scoringval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-scoring" class="slider-success" style="width:80%;float:left"></div><input type="text" id="scoring-value" style="float:right;width:40px;height:25px;text-align:right" value="1"/>
+        </div>
+
+        <div class="row slidercls"><b>Set pieces</b><span id="setpiecesval" style="float:right;text-align:right;font-weight:bold"></span></div>
+        <div class="col l12 m12 s12 slidercls">
+          <div id="slider-setpieces" class="slider-success" style="width:80%;float:left"></div><input type="text" id="setpieces-value" style="float:right;width:40px;height:25px;text-align:right" value="1"/>
+        </div>
+
+        <div class="input-field col s12 m8 l8">
+          <input id="wage" type="text" class="validate" value="" required>
+          <label for="wage">wage</label>
+        </div>
+
+         <button class="btn green waves-effect waves-light" style="float:right" type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="col l7 m6 s12">
+      <table class="table bordered centered striped" id="resultstable">
+            <thead>
+              <tr style="background-color: #277F31; color:#fff">
+                  <th>main skill</th>
+                  <th>sub level</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td></td>
+            <td></td>
+            </tr>
+
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+  </div>
+  
+    <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
+        <h5><b>sub skill</b></h5>
+        <img src="static/images/subskill.png" style="float:left;margin-right:15px"><span><b>info:</b> description</span>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+</main>
+
+<script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="static/noUiSlider/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="static/js/materialize.min.js"></script>
+<script type="text/javascript" src="static/js/cookies.js"></script>
+
+<script type="text/javascript" src="static/js/subskill.js"></script>
+
+
+</body>
+</html>
