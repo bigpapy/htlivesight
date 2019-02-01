@@ -30,7 +30,7 @@ function addformation(){
     }
 
     var bar = document.getElementById('progressbar'+(form));
-    bar.innerHTML = lvl.concat("/10");
+    bar.innerText = lvl.concat("/10");
 
     var m = lvl*10;
     var width = m + "%";
@@ -45,7 +45,7 @@ function resetformation() {
 	
 	for (var i=0; i < lines.length; i++) {
 		var bar = document.getElementById('progressbar'+lines[i]);
-    	bar.innerHTML = "3/10";
+    	bar.innerText = "3/10";
 
    
     	bar.setAttribute("style","width: 30%");
@@ -146,7 +146,7 @@ function formationexperiencecalc() {
 		var bar = document.getElementById('progressbar'+lines[i]);
 		lvl = result[lines[i]];
 
-		bar.innerHTML = lvl.toFixed(1) + "/10";
+		bar.innerText = lvl.toFixed(1) + "/10";
 
     	var m = lvl*10;
     	var width = m + "%";

@@ -58,8 +58,8 @@ var guessmainskillcalc = function(skill) {
 
     /**create table with results**/
     var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
-    tableobj.rows[0].cells[0].innerHTML = skill;
-    tableobj.rows[0].cells[1].innerHTML = sublevel.toFixed(2);
+    tableobj.rows[0].cells[0].innerText = skill;
+    tableobj.rows[0].cells[1].innerText = sublevel.toFixed(2);
 }
 
 // put guessmainskill.html js inline here:

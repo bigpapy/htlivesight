@@ -59,8 +59,8 @@ var futurecoach = function(exptolow) {
         return;
     } else {
         var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
-        tableobj.rows[0].cells[0].innerHTML = cost + "€";
-        tableobj.rows[0].cells[1].innerHTML = saving + "€";
+        tableobj.rows[0].cells[0].innerText = cost + "€";
+        tableobj.rows[0].cells[1].innerText = saving + "€";
     }
 }
 

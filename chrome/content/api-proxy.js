@@ -130,7 +130,6 @@ htlivesight.ApiProxy = {
 	 */	
 
 	retrieve : function(doc, parameters, callback) {
-		console.log("into retrieve!");
 	    var serverOFF;
 	    var l10nData= htlivesight.data;
 	    var teamId = document.getElementById("teamId").value;

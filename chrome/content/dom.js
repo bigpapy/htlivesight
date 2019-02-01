@@ -363,7 +363,6 @@ htlivesight.DOM = {
 					}
 					
 				}
-				console.log("createRatingElement");
 				return popup;
 			}catch(e){alert("createRatingElement: "+e);}// added by bigpapy to debug from XUL to HTML
 			

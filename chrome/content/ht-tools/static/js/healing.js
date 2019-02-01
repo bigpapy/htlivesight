@@ -94,12 +94,12 @@ var healingcalc = function() {
 
     /**create table with results**/
     var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
-    tableobj.rows[0].cells[1].innerHTML = update_b;
-    tableobj.rows[0].cells[2].innerHTML = week_b;
-    tableobj.rows[0].cells[3].innerHTML = day_b;
-    tableobj.rows[1].cells[1].innerHTML = update;
-    tableobj.rows[1].cells[2].innerHTML = week;
-    tableobj.rows[1].cells[3].innerHTML = day;
+    tableobj.rows[0].cells[1].innerText = update_b;
+    tableobj.rows[0].cells[2].innerText = week_b;
+    tableobj.rows[0].cells[3].innerText = day_b;
+    tableobj.rows[1].cells[1].innerText = update;
+    tableobj.rows[1].cells[2].innerText = week;
+    tableobj.rows[1].cells[3].innerText = day;
 
 }
 

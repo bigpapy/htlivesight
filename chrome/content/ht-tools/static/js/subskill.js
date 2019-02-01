@@ -138,8 +138,8 @@ var subskillcalc = function() {
     
 
     var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
-    tableobj.rows[0].cells[0].innerHTML = mainskill;
-    tableobj.rows[0].cells[1].innerHTML = sublevel.toFixed(2);
+    tableobj.rows[0].cells[0].innerText = mainskill;
+    tableobj.rows[0].cells[1].innerText = sublevel.toFixed(2);
 }
 
 // put subskill.html inline js here:
@@ -156,8 +156,8 @@ $(document).ready(function(){
 $('#my-form').on('submit', function () {
 subskillcalc();
 var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
-if ( tableobj.rows[0].cells[0].innerHTML !== "" ) {
-  var mainskill = tableobj.rows[0].cells[0].innerHTML;
+if ( tableobj.rows[0].cells[0].innerText !== "" ) {
+  var mainskill = tableobj.rows[0].cells[0].innerText;
   //var skills = {{htlang["skills"]|tojson|safe}};
   var keeper = parseInt(document.getElementById('keeper-value').value);
   var defending = parseInt(document.getElementById('defending-value').value);
@@ -167,7 +167,7 @@ if ( tableobj.rows[0].cells[0].innerHTML !== "" ) {
   var scoring = parseInt(document.getElementById('scoring-value').value);
   var setpieces = parseInt(document.getElementById('setpieces-value').value);
   var skills = {"Keeper": keeper,"Defender":defending,"Playmaker":playmaking,"Passer":passing,"Winger":winger,"Scorer":scoring}
-  tableobj.rows[0].cells[0].innerHTML = skills[mainskill];
+  tableobj.rows[0].cells[0].innerText = skills[mainskill];
 }
 return false;
 });

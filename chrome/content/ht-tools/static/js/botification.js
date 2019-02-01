@@ -75,9 +75,9 @@ var botification = function() {
 	
 	last = new Date(lastlogin);
 
-	tableobj.rows[0].cells[0].innerHTML = last.getDate() + "/" + (last.getMonth() + 1) + "/" + last.getFullYear();
-	tableobj.rows[0].cells[1].innerHTML = res1.getDate() + "/" + (res1.getMonth() + 1) + "/" + res1.getFullYear();
-	tableobj.rows[0].cells[2].innerHTML = botificationcalc( ownerless );
+	tableobj.rows[0].cells[0].innerText = last.getDate() + "/" + (last.getMonth() + 1) + "/" + last.getFullYear();
+	tableobj.rows[0].cells[1].innerText = res1.getDate() + "/" + (res1.getMonth() + 1) + "/" + res1.getFullYear();
+	tableobj.rows[0].cells[2].innerText = botificationcalc( ownerless );
 }
 
 var botification2 = function(last,ownerlesstr) {
@@ -99,9 +99,9 @@ var botification2 = function(last,ownerlesstr) {
 
 	var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
 	
-	tableobj.rows[0].cells[0].innerHTML = last;
-	tableobj.rows[0].cells[1].innerHTML = res1;
-	tableobj.rows[0].cells[2].innerHTML = botificationcalc( ownerless );
+	tableobj.rows[0].cells[0].innerText = last;
+	tableobj.rows[0].cells[1].innerText = res1;
+	tableobj.rows[0].cells[2].innerText = botificationcalc( ownerless );
 }
 
 var today = new Date().getTime();
@@ -158,9 +158,9 @@ $('#my-form-2').on('submit', function() {
             
             var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
             last = new Date(data.lastlogin);
-            tableobj.rows[0].cells[0].innerHTML = last.getDate() + "/" + (last.getMonth() + 1) + "/" + last.getFullYear();
-            tableobj.rows[0].cells[1].innerHTML = "";
-            tableobj.rows[0].cells[2].innerHTML = "";
+            tableobj.rows[0].cells[0].innerText = last.getDate() + "/" + (last.getMonth() + 1) + "/" + last.getFullYear();
+            tableobj.rows[0].cells[1].innerText = "";
+            tableobj.rows[0].cells[2].innerText = "";
 
           } else {
             botification2(data.lastlogin,'ownerlessmessage') 

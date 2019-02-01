@@ -47,10 +47,10 @@ var trainingintensity = function() {
 
 
 	var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
-    tableobj.rows[0].cells[1].innerHTML = TIbefore +"%";
-    tableobj.rows[1].cells[1].innerHTML = TSbefore;
-    tableobj.rows[2].cells[1].innerHTML = TIafter +"%";
-    tableobj.rows[3].cells[1].innerHTML = TSafter;
+    tableobj.rows[0].cells[1].innerText = TIbefore +"%";
+    tableobj.rows[1].cells[1].innerText = TSbefore;
+    tableobj.rows[2].cells[1].innerText = TIafter +"%";
+    tableobj.rows[3].cells[1].innerText = TSafter;
 
 }
 
@@ -65,12 +65,12 @@ $(document).ready(function(){
 $('#my-form-1').on('submit', function () {
     trainingintensity();
     var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
-    TSbefore = parseInt(tableobj.rows[1].cells[1].innerHTML).toString();
-    TSafter = parseInt(tableobj.rows[3].cells[1].innerHTML).toString();
+    TSbefore = parseInt(tableobj.rows[1].cells[1].innerText).toString();
+    TSafter = parseInt(tableobj.rows[3].cells[1].innerText).toString();
     //var spirit = jQuery.parseJSON({{htlang['spirit']|safe|tojson}});
 	var spirit = ['like the Cold War','murderous','furious','irritated','composed','calm','content','satisfied','delirious','walking on clouds','Paradise on Earth!'];
 
-    tableobj.rows[1].cells[1].innerHTML = tableobj.rows[1].cells[1].innerHTML + " (" + spirit[TSbefore] + ")";
-    tableobj.rows[3].cells[1].innerHTML = tableobj.rows[3].cells[1].innerHTML + " (" + spirit[TSafter] + ")";
+    tableobj.rows[1].cells[1].innerText = tableobj.rows[1].cells[1].innerText + " (" + spirit[TSbefore] + ")";
+    tableobj.rows[3].cells[1].innerText = tableobj.rows[3].cells[1].innerText + " (" + spirit[TSafter] + ")";
     return false;
 });

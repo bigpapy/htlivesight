@@ -62,11 +62,11 @@ var fancalc = function() {
     var weekly_cost = Math.ceil(0.5 * terraces + 0.7 * basic + roof + 2.5 * vip);
 
     var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
-    realterraces = tableobj.rows[0].cells[1].innerHTML;
-    realbasic = tableobj.rows[1].cells[1].innerHTML;
-    realroof = tableobj.rows[2].cells[1].innerHTML;
-    realvip = tableobj.rows[3].cells[1].innerHTML;
-    realtotal = tableobj.rows[4].cells[1].innerHTML;
+    realterraces = tableobj.rows[0].cells[1].innerText;
+    realbasic = tableobj.rows[1].cells[1].innerText;
+    realroof = tableobj.rows[2].cells[1].innerText;
+    realvip = tableobj.rows[3].cells[1].innerText;
+    realtotal = tableobj.rows[4].cells[1].innerText;
 
     if (realterraces != "") {
         var newterrances = terraces - realterraces;
@@ -74,21 +74,21 @@ var fancalc = function() {
         var newroof = roof - realroof;
         var newvip = vip - realvip;
 
-        tableobj.rows[0].cells[2].innerHTML = newterrances;
-        tableobj.rows[1].cells[2].innerHTML = newbasic;
-        tableobj.rows[2].cells[2].innerHTML = newroof;
-        tableobj.rows[3].cells[2].innerHTML = newvip;
-        tableobj.rows[4].cells[2].innerHTML = (terraces + basic + roof + vip) - realtotal;
-        tableobj.rows[7].cells[2].innerHTML = constructioncost(newterrances, newbasic , newroof, newvip) + "€";
+        tableobj.rows[0].cells[2].innerText = newterrances;
+        tableobj.rows[1].cells[2].innerText = newbasic;
+        tableobj.rows[2].cells[2].innerText = newroof;
+        tableobj.rows[3].cells[2].innerText = newvip;
+        tableobj.rows[4].cells[2].innerText = (terraces + basic + roof + vip) - realtotal;
+        tableobj.rows[7].cells[2].innerText = constructioncost(newterrances, newbasic , newroof, newvip) + "€";
     }
 
-    tableobj.rows[0].cells[3].innerHTML = terraces;
-    tableobj.rows[1].cells[3].innerHTML = basic;
-    tableobj.rows[2].cells[3].innerHTML = roof;
-    tableobj.rows[3].cells[3].innerHTML = vip;
-    tableobj.rows[4].cells[3].innerHTML = terraces + basic + roof + vip;
-    tableobj.rows[5].cells[3].innerHTML = income + "€";
-    tableobj.rows[6].cells[3].innerHTML = weekly_cost + "€";
+    tableobj.rows[0].cells[3].innerText = terraces;
+    tableobj.rows[1].cells[3].innerText = basic;
+    tableobj.rows[2].cells[3].innerText = roof;
+    tableobj.rows[3].cells[3].innerText = vip;
+    tableobj.rows[4].cells[3].innerText = terraces + basic + roof + vip;
+    tableobj.rows[5].cells[3].innerText = income + "€";
+    tableobj.rows[6].cells[3].innerText = weekly_cost + "€";
 
 
 
@@ -118,11 +118,11 @@ var sizecalc = function() {
     var weekly_cost = Math.ceil(0.5 * terraces + 0.7 * basic + roof + 2.5 * vip);
 
     var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
-    realterraces = tableobj.rows[0].cells[1].innerHTML;
-    realbasic = tableobj.rows[1].cells[1].innerHTML;
-    realroof = tableobj.rows[2].cells[1].innerHTML;
-    realvip = tableobj.rows[3].cells[1].innerHTML;
-    realtotal = tableobj.rows[4].cells[1].innerHTML;
+    realterraces = tableobj.rows[0].cells[1].innerText;
+    realbasic = tableobj.rows[1].cells[1].innerText;
+    realroof = tableobj.rows[2].cells[1].innerText;
+    realvip = tableobj.rows[3].cells[1].innerText;
+    realtotal = tableobj.rows[4].cells[1].innerText;
 
     if (realterraces != "") {
         var newterrances = terraces - realterraces;
@@ -130,21 +130,21 @@ var sizecalc = function() {
         var newroof = roof - realroof;
         var newvip = vip - realvip;
 
-        tableobj.rows[0].cells[2].innerHTML = newterrances;
-        tableobj.rows[1].cells[2].innerHTML = newbasic;
-        tableobj.rows[2].cells[2].innerHTML = newroof;
-        tableobj.rows[3].cells[2].innerHTML = newvip;
-        tableobj.rows[4].cells[2].innerHTML = (terraces + basic + roof + vip) - realtotal;
-        tableobj.rows[7].cells[2].innerHTML = constructioncost(newterrances, newbasic , newroof, newvip) + "€";
+        tableobj.rows[0].cells[2].innerText = newterrances;
+        tableobj.rows[1].cells[2].innerText = newbasic;
+        tableobj.rows[2].cells[2].innerText = newroof;
+        tableobj.rows[3].cells[2].innerText = newvip;
+        tableobj.rows[4].cells[2].innerText = (terraces + basic + roof + vip) - realtotal;
+        tableobj.rows[7].cells[2].innerText = constructioncost(newterrances, newbasic , newroof, newvip) + "€";
     }
 
-    tableobj.rows[0].cells[3].innerHTML = terraces;
-    tableobj.rows[1].cells[3].innerHTML = basic;
-    tableobj.rows[2].cells[3].innerHTML = roof;
-    tableobj.rows[3].cells[3].innerHTML = vip;
-    tableobj.rows[4].cells[3].innerHTML = terraces + basic + roof + vip;
-    tableobj.rows[5].cells[3].innerHTML = income + "€";
-    tableobj.rows[6].cells[3].innerHTML = weekly_cost + "€";
+    tableobj.rows[0].cells[3].innerText = terraces;
+    tableobj.rows[1].cells[3].innerText = basic;
+    tableobj.rows[2].cells[3].innerText = roof;
+    tableobj.rows[3].cells[3].innerText = vip;
+    tableobj.rows[4].cells[3].innerText = terraces + basic + roof + vip;
+    tableobj.rows[5].cells[3].innerText = income + "€";
+    tableobj.rows[6].cells[3].innerText = weekly_cost + "€";
 }
 
 
@@ -183,13 +183,13 @@ var constructioncost = function(terraces,basic,roof,vip) {
 $('#arenas').change(function(){
 	var data = JSON.parse(localStorage['extensions.Htlivesight.data.' + this.value]);
 	var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
-	tableobj.rows[0].cells[1].innerHTML = data.terraces; //terraces
-    tableobj.rows[1].cells[1].innerHTML = data.basic; //basic
-    tableobj.rows[2].cells[1].innerHTML = data.roof; //roof
-    tableobj.rows[3].cells[1].innerHTML = data.vip; //vip
-    tableobj.rows[4].cells[1].innerHTML = data.total; //total
-    tableobj.rows[5].cells[1].innerHTML = 7*data.terraces + 10*data.basic + 19*data.roof + 35*data.vip + "€"
-    tableobj.rows[6].cells[1].innerHTML = 0.5*parseFloat(data.terraces) + 0.7*parseFloat(data.basic) + parseFloat(data.roof) + 2.5*parseFloat(data.vip) + "€"
+	tableobj.rows[0].cells[1].innerText = data.terraces; //terraces
+    tableobj.rows[1].cells[1].innerText = data.basic; //basic
+    tableobj.rows[2].cells[1].innerText = data.roof; //roof
+    tableobj.rows[3].cells[1].innerText = data.vip; //vip
+    tableobj.rows[4].cells[1].innerText = data.total; //total
+    tableobj.rows[5].cells[1].innerText = 7*data.terraces + 10*data.basic + 19*data.roof + 35*data.vip + "€"
+    tableobj.rows[6].cells[1].innerText = 0.5*parseFloat(data.terraces) + 0.7*parseFloat(data.basic) + parseFloat(data.roof) + 2.5*parseFloat(data.vip) + "€"
 })
 
 
@@ -279,13 +279,13 @@ $("#slider-fansmood").Link().to($("#fansmood"), function(value) {
           $('#fans').focus();
           
           var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
-          tableobj.rows[0].cells[1].innerHTML = data.realterraces;
-          tableobj.rows[1].cells[1].innerHTML = data.realbasic;
-          tableobj.rows[2].cells[1].innerHTML = data.realroof;
-          tableobj.rows[3].cells[1].innerHTML = data.realvip;
-          tableobj.rows[4].cells[1].innerHTML = data.realtotal;
-          tableobj.rows[5].cells[1].innerHTML = 7*data.realterraces + 10*data.realbasic + 19*data.realroof + 35*data.realvip + "€"
-          tableobj.rows[6].cells[1].innerHTML = 0.5*data.realterraces + 0.7*data.realbasic + data.realroof + 2.5*data.realvip + "€"
+          tableobj.rows[0].cells[1].innerText = data.realterraces;
+          tableobj.rows[1].cells[1].innerText = data.realbasic;
+          tableobj.rows[2].cells[1].innerText = data.realroof;
+          tableobj.rows[3].cells[1].innerText = data.realvip;
+          tableobj.rows[4].cells[1].innerText = data.realtotal;
+          tableobj.rows[5].cells[1].innerText = 7*data.realterraces + 10*data.realbasic + 19*data.realroof + 35*data.realvip + "€"
+          tableobj.rows[6].cells[1].innerText = 0.5*data.realterraces + 0.7*data.realbasic + data.realroof + 2.5*data.realvip + "€"
 
           $("#progress").hide();
 

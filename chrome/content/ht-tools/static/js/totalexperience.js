@@ -41,8 +41,8 @@ function totalexperiencecalc(){
         });
 
         var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
-        tableobj.rows[0].cells[0].innerHTML = Math.round(maxScorePart * 100) / 100;
-        tableobj.rows[0].cells[1].innerHTML = bestProductName;  
+        tableobj.rows[0].cells[0].innerText = Math.round(maxScorePart * 100) / 100;
+        tableobj.rows[0].cells[1].innerText = bestProductName;  
 
         return false;
 }
