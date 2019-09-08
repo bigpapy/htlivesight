@@ -437,4 +437,8 @@
 <SupportBoostSucceeded>csapatjátékos: sikeres támogatás</SupportBoostSucceeded>
 <SupportBoostFailed>csapatjátékos: támogatás sikertelen</SupportBoostFailed>
 <SupportOrganizationDropped>csapatjátékos: szervezettség csökkent</SupportOrganizationDropped>
+<PathSoundsInfo>Sound about other events</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>Sound my favourite players goal</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>My favourite players id list</MyFavouritePlayerList>
+<TabPlayers>Players</TabPlayers>
 </Htlivesight>

@@ -9,7 +9,7 @@ htlivesight.ApiProxy = {
 	requestTokenUrl : "https://chpp.hattrick.org/oauth/request_token.ashx",
 	authorizeUrl : "https://chpp.hattrick.org/oauth/authorize.aspx",
 	accessTokenUrl : "https://chpp.hattrick.org/oauth/access_token.ashx",
-	resourceUrl : "http://chpp.hattrick.org/chppxml.ashx",
+	resourceUrl : "https://chpp.hattrick.org/chppxml.ashx",
 
 	/**
 	 * authorized: verify if HTLS is already authorized.

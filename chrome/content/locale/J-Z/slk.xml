@@ -437,4 +437,8 @@
 <SupportBoostSucceeded>podpora: zlepšenie úspešné</SupportBoostSucceeded>
 <SupportBoostFailed>podpora: zlepšenie neúšpešné</SupportBoostFailed>
 <SupportOrganizationDropped>podpora: organizácia spadla</SupportOrganizationDropped>
+<PathSoundsInfo>Zvuk pri iných udalostiach</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>Zvuk pri góle mojich obľúbených hráčov</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>Zoznam mojich obľúbených hráčov</MyFavouritePlayerList>
+<TabPlayers>Hráči</TabPlayers>
 </Htlivesight>

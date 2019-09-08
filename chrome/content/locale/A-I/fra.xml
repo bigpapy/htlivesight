@@ -437,8 +437,8 @@
 <SupportBoostSucceeded>Chef d'orchestre: boost réussi</SupportBoostSucceeded>
 <SupportBoostFailed>Chef d'orchestre: échec du boost</SupportBoostFailed>
 <SupportOrganizationDropped>Chef d'orchestre: chute du niveau d'organisation</SupportOrganizationDropped>
-<PathSoundsInfo>Sound about other events</PathSoundsInfo>
-<PathSoundsMyFavouriteGoal>Sound my favourite players goal</PathSoundsMyFavouriteGoal>
-<MyFavouritePlayerList>My favourite players id list</MyFavouritePlayerList>
-<TabPlayers>Players</TabPlayers>
+<PathSoundsInfo>Son pour tout autre événement</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>Buts de mes joueurs favoris</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>Liste des id des joueurs favoris</MyFavouritePlayerList>
+<TabPlayers>Joueurs</TabPlayers>
 </Htlivesight>

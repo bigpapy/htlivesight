@@ -431,10 +431,14 @@
 <YouthSoundEqualSenior>Zvuky mého mládežnického týmu stejné jako u mého seniorského týmu</YouthSoundEqualSenior>
 <ThirdTeamIdLabel>Zadej ID třetího týmu</ThirdTeamIdLabel>
 <SeniorTeamIdAutomatically>Získat ID mého dalšího seniorského týmu automaticky</SeniorTeamIdAutomatically>
-<Support>Support</Support>
-<EventSpecialPowerfulForward>powerful, extra chance</EventSpecialPowerfulForward>
-<PowerfulPressing>powerful: pressing</PowerfulPressing>
-<SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
-<SupportBoostFailed>support: boost failed</SupportBoostFailed>
-<SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
+<Support>Podpora</Support>
+<EventSpecialPowerfulForward>silový, extra šance</EventSpecialPowerfulForward>
+<PowerfulPressing>silový: nátlaková hra</PowerfulPressing>
+<SupportBoostSucceeded>podpora: boost byl úspěšný</SupportBoostSucceeded>
+<SupportBoostFailed>podpora: boost selhal</SupportBoostFailed>
+<SupportOrganizationDropped>podpora: organizace poklesla</SupportOrganizationDropped>
+<PathSoundsInfo>Zvuk ostatních událostí</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>Zvuk gólu mého oblíbeného hráče</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>Můj seznam oblíbených hráčů podle jejich ID</MyFavouritePlayerList>
+<TabPlayers>Hráči</TabPlayers>
 </Htlivesight>

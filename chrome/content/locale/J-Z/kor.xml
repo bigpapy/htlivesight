@@ -437,4 +437,8 @@
 <SupportBoostSucceeded>조력자: 경기력 버프 성공</SupportBoostSucceeded>
 <SupportBoostFailed>조력자: 경기력 버프 실패</SupportBoostFailed>
 <SupportOrganizationDropped>조력자: 팀 조직력 하락</SupportOrganizationDropped>
+<PathSoundsInfo>Sound about other events</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>Sound my favourite players goal</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>My favourite players id list</MyFavouritePlayerList>
+<TabPlayers>Players</TabPlayers>
 </Htlivesight>

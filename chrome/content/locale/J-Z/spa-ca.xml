@@ -437,4 +437,8 @@
 <SupportBoostSucceeded>conductor: aumento de nivel exitoso</SupportBoostSucceeded>
 <SupportBoostFailed>conductor: aumento de nivel falla</SupportBoostFailed>
 <SupportOrganizationDropped>conductor: nivel de organización cae</SupportOrganizationDropped>
+<PathSoundsInfo>Sonido para otros eventos</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>Sonido para goles de jugadores favoritos</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>IDs de mis jugadores favoritos</MyFavouritePlayerList>
+<TabPlayers>Jugadores</TabPlayers>
 </Htlivesight>

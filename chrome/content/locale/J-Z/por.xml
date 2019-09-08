@@ -112,7 +112,7 @@
 <EventSpecialQuickAssist>+ velocidade: velocidade e assistência</EventSpecialQuickAssist>
 <Pullback>defender o resultado</Pullback>
 <Underestimation>excesso de confiança</Underestimation>
-<UnderestimationRemove>excesso de confiança removido</UnderestimationRemove>
+<UnderestimationRemove>Excesso de confiança removido</UnderestimationRemove>
 <UnderestimationReduceDouble>excesso de confiança reduzido por 2/3</UnderestimationReduceDouble>
 <UnderestimationReduceOnce>excesso de confiança reduzido por 1/3</UnderestimationReduceOnce>
 <OrganizationBreaks>confusão</OrganizationBreaks>
@@ -431,10 +431,14 @@
 <YouthSoundEqualSenior>Os sons da equipa júnior iguais aos da sénior</YouthSoundEqualSenior>
 <ThirdTeamIdLabel>Inserir ID duma terceira equipa</ThirdTeamIdLabel>
 <SeniorTeamIdAutomatically>Obter automaticamente o ID de minha outra equipa sénior</SeniorTeamIdAutomatically>
-<Support>Support</Support>
-<EventSpecialPowerfulForward>powerful, extra chance</EventSpecialPowerfulForward>
-<PowerfulPressing>powerful: pressing</PowerfulPressing>
-<SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
-<SupportBoostFailed>support: boost failed</SupportBoostFailed>
-<SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
+<Support>Apoio</Support>
+<EventSpecialPowerfulForward>força, oportunidade extra</EventSpecialPowerfulForward>
+<PowerfulPressing>força: pressionando</PowerfulPressing>
+<SupportBoostSucceeded>apoio: aumento sucedido</SupportBoostSucceeded>
+<SupportBoostFailed>apoio: aumento falhado</SupportBoostFailed>
+<SupportOrganizationDropped>apoio: organização reduzida</SupportOrganizationDropped>
+<PathSoundsInfo>Som sobre outros eventos</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>Som para golos dos meus jogadores favoritos</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>Lista dos meus jogadores favoritos</MyFavouritePlayerList>
+<TabPlayers>Jogadores</TabPlayers>
 </Htlivesight>

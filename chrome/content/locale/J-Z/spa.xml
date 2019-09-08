@@ -437,4 +437,8 @@
 <SupportBoostSucceeded>influyente: aumento tuvo éxito</SupportBoostSucceeded>
 <SupportBoostFailed>influyente: aumento de nivel falló</SupportBoostFailed>
 <SupportOrganizationDropped>influyente: organización cayo</SupportOrganizationDropped>
+<PathSoundsInfo>Sonido para otros eventos</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>Sonido para goles de jugadores favoritos</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>IDs de mis jugadores favoritos</MyFavouritePlayerList>
+<TabPlayers>Jugadores</TabPlayers>
 </Htlivesight>

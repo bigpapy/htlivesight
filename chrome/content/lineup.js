@@ -291,7 +291,7 @@ htlivesight.LineUp.SubstitutionEvent= function(event, match){
 		if (found){
 			lineUp=htlivesight.LineUp.SubstitutionPlayerInLineUp(lineUp,subjectPlayer,objectPlayer);
 		}else{
-			noty({type: 'warning', maxVisible: 1, text: "HATTRICK CHPP Data error! Missing info about a substitution, sorry, we are waiting a fix from hattrick. Details: " + match.home.team.shortName + " - " + match.away.team.shortName + ' ' + event.minute + '\''});	
+			new Noty({type: 'warning', maxVisible: 1, text: "HATTRICK CHPP Data error! Missing info about a substitution, sorry, we are waiting a fix from hattrick. Details: " + match.home.team.shortName + " - " + match.away.team.shortName + ' ' + event.minute + '\''}).show();	
 			lineUp=htlivesight.LineUp.InjurySubstitution(lineUp,subjectPlayer,objectPlayer);
 		}
 		var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
@@ -431,7 +431,7 @@ htlivesight.LineUp.IndividualOrderEvent= function(event, match){
 			lineUp=htlivesight.LineUp.SubstitutionPlayerInLineUp(lineUp,subjectPlayer,objectPlayer);
 		}else{
 		    //alert("CHPP Data error! Individual order data missing. Individual orders shown are wrong, please restart HTLivesight");
-		    noty({type: 'warning', maxVisible: 1, text: "HATTRICK CHPP Data error! Individual order data missing. Individual orders shown are wrong, sorry, we are waiting a fix from hattrick. Details: " + match.home.team.shortName + " - " + match.away.team.shortName + ' ' + event.minute + '\''});
+		    new Noty({type: 'warning', maxVisible: 1, text: "HATTRICK CHPP Data error! Individual order data missing. Individual orders shown are wrong, sorry, we are waiting a fix from hattrick. Details: " + match.home.team.shortName + " - " + match.away.team.shortName + ' ' + event.minute + '\''}).show();
 		}
 		var stringLineUp=htlivesight.LineUp.FromArrayToString(lineUp);
 		var side;

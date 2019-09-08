@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
 <MenuItemValue>HTLiveSight</MenuItemValue>
-<MenuStart>Start</MenuStart>
-<MenuOptions>Options</MenuOptions>
-<TooltipButton>Click to open HTLiveSight menu</TooltipButton>
+<MenuStart>Başlat</MenuStart>
+<MenuOptions>Seçimlər</MenuOptions>
+<TooltipButton>HTLiveSight menyusunu açmaq üçün klikləyin</TooltipButton>
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Server:</MenuServer>
-<MenuDisconnected>Disconnected</MenuDisconnected>
-<MenuAbout>About HTLiveSight</MenuAbout>
-<LoginLabel>Login</LoginLabel>
-<LoginTeamId>Insert TeamId of your team</LoginTeamId>
-<LoginUsername>Username</LoginUsername>
-<LoginRememberMe>Remember me</LoginRememberMe>
-<LoginButton>Login</LoginButton>
-<LoginReLive>Re-Live</LoginReLive>
-<LoginSpeed>Speed</LoginSpeed>
-<LoginByEvent>Per event</LoginByEvent>
-<LeagueMatches>League Matches</LeagueMatches>
-<LeagueLiveTable>Live Table</LeagueLiveTable>
+<MenuDisconnected>Bağlantı kəsildi</MenuDisconnected>
+<MenuAbout>HTLiveSight Haqqında</MenuAbout>
+<LoginLabel>Giriş</LoginLabel>
+<LoginTeamId>Komanda nömrənizi daxil edin</LoginTeamId>
+<LoginUsername>İstifadəçi adı</LoginUsername>
+<LoginRememberMe>Məni xatırla</LoginRememberMe>
+<LoginButton>Giriş</LoginButton>
+<LoginReLive>Yenidən oynat</LoginReLive>
+<LoginSpeed>Sürət</LoginSpeed>
+<LoginByEvent>Hər tədbir</LoginByEvent>
+<LeagueMatches>Liqa Matçları</LeagueMatches>
+<LeagueLiveTable>Canlı Xal Cədvəli</LeagueLiveTable>
 <LeaguePosition>#</LeaguePosition>
-<LeagueTeam>Team</LeagueTeam>
-<LeaguePlayed>P</LeaguePlayed>
-<LeagueGoals>G</LeagueGoals>
-<LeagueGoalDiff>GD</LeagueGoalDiff>
-<LeaguePoints>PTS</LeaguePoints>
-<MatchesList>Match List</MatchesList>
-<MatchesAdd>Add match</MatchesAdd>
-<MatchesByMatch>By MatchID</MatchesByMatch>
-<MatchesByTeam>By TeamID</MatchesByTeam>
-<MatchesYouth>Youth?</MatchesYouth>
-<FriendsTitle>Friends</FriendsTitle>
-<FriendsRemove>Remove</FriendsRemove>
-<FriendsOpen>Open</FriendsOpen>
+<LeagueTeam>Komanda</LeagueTeam>
+<LeaguePlayed>Oyn</LeaguePlayed>
+<LeagueGoals>VrQ</LeagueGoals>
+<LeagueGoalDiff>QolFə</LeagueGoalDiff>
+<LeaguePoints>Xal</LeaguePoints>
+<MatchesList>Matç Siyahısı</MatchesList>
+<MatchesAdd>Matç əlavə et</MatchesAdd>
+<MatchesByMatch>Matç kimliyindən</MatchesByMatch>
+<MatchesByTeam>Komanda kimliyindən</MatchesByTeam>
+<MatchesYouth>Gənc?</MatchesYouth>
+<FriendsTitle>Dostlar</FriendsTitle>
+<FriendsRemove>Çıxart</FriendsRemove>
+<FriendsOpen>Aç</FriendsOpen>
 <Introduction>You will be redirected to chpp page to get authorizazion code. If not, please remove temporarely pop up block or grant HTlivesight in the exception list.</Introduction>
 <Insert>Insert your authorization code here:</Insert>
 <Ending>Now HTlivesight is authorized. Click OK to restart application.</Ending>
-<Error>Error</Error>
-<ServerON>Connected</ServerON>
-<ServerOFF>Disconnected</ServerOFF>
+<Error>Xəta</Error>
+<ServerON>Bağlantı qurulanda</ServerON>
+<ServerOFF>Bağlantı kəsildi</ServerOFF>
 <ResetToken>Authorization code has been deleted. Restart HTLS or wait for the next update (less than 1 minute).</ResetToken>
 <NoHTServer>You didn't select correct Hattrick server that you are currently logged on, right click anywhere on background and click on - options - general and set the correct Hattrick server number.</NoHTServer>
 <MatchesMaximum>You can't watch more than 20 matches!</MatchesMaximum>
-<LeagueRound>Round</LeagueRound>
+<LeagueRound>Həftə</LeagueRound>
 <MessageHattrickError>Hattrick server returned an error.</MessageHattrickError>
-<MessageAlreadyFriend>Already your friend!</MessageAlreadyFriend>
-<MessageErrorReading>Error reading data from</MessageErrorReading>
-<MessageLoginNotSuccessful>Login not successful.</MessageLoginNotSuccessful>
+<MessageAlreadyFriend>Artıq dostunuzdur!</MessageAlreadyFriend>
+<MessageErrorReading>Verilənlərin oxunmasında xəta</MessageErrorReading>
+<MessageLoginNotSuccessful>Giriş uğursuz oldu.</MessageLoginNotSuccessful>
 <TacticPressing>Pressing</TacticPressing>
-<TacticCA>Counter-attack</TacticCA>
-<TacticAIM>Attack in the middle</TacticAIM>
-<TacticAOW>Attack on the wings</TacticAOW>
+<TacticCA>Əks hücum</TacticCA>
+<TacticAIM>Ortadan hücum</TacticAIM>
+<TacticAOW>Cinahdan hücum</TacticAOW>
 <TacticPlayCreative>Play creatively</TacticPlayCreative>
 <TacticLongShots>Long shots</TacticLongShots>
 <TimeFirstHalf>1st half</TimeFirstHalf>
@@ -92,16 +92,16 @@
 <EventSidePenalty>Penalty</EventSidePenalty>
 <EventSpecialUnpredictable>SE Unpredictable</EventSpecialUnpredictable>
 <EventSpecialLongShot>SE Long Shot</EventSpecialLongShot>
-<EventSpecialQuick>SE Quick</EventSpecialQuick>
+<EventSpecialQuick>SE Cəld</EventSpecialQuick>
 <EventSpecialLowStamina>Low stamina</EventSpecialLowStamina>
 <EventSpecialSetPieces>Set piece</EventSpecialSetPieces>
-<EventSpecialHead>Head</EventSpecialHead>
-<EventSpecialExperience>Experience</EventSpecialExperience>
-<EventSpecialLowExperience>Low experience</EventSpecialLowExperience>
-<EventSpecialWinger>+ Winger</EventSpecialWinger>
-<EventSpecialTechnical>Technical vs Head</EventSpecialTechnical>
-<EventSpecialCounterAttack>Counter-attack</EventSpecialCounterAttack>
-<EventSpecialCornerKick>Corner kick</EventSpecialCornerKick>
+<EventSpecialHead>Baş</EventSpecialHead>
+<EventSpecialExperience>Təcrübə</EventSpecialExperience>
+<EventSpecialLowExperience>Aşağı təcrübə</EventSpecialLowExperience>
+<EventSpecialWinger>+ Cinah</EventSpecialWinger>
+<EventSpecialTechnical>Texnika</EventSpecialTechnical>
+<EventSpecialCounterAttack>Əks hücum</EventSpecialCounterAttack>
+<EventSpecialCornerKick>Künc zərbəsi</EventSpecialCornerKick>
 <EventSpecialIndirect>Indirect free kick</EventSpecialIndirect>
 <EventSpecialUnpredictableLongPass>+ Unpredictable: long pass</EventSpecialUnpredictableLongPass>
 <EventSpecialUnpredictableScoresOnHisOwn>+ Unpredictable: shot</EventSpecialUnpredictableScoresOnHisOwn>
@@ -437,4 +437,8 @@
 <SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
 <SupportBoostFailed>support: boost failed</SupportBoostFailed>
 <SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
+<PathSoundsInfo>Sound about other events</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>Sound my favourite players goal</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>My favourite players id list</MyFavouritePlayerList>
+<TabPlayers>Players</TabPlayers>
 </Htlivesight>

@@ -1880,7 +1880,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable=function(league) {
 	}catch(e){
 		if(htlivesight.League.teams3.length == 0){ // no table available hiding live table
 			document.getElementById("winbox_leaguetable").setAttribute("style", "display:none");
-			noty({type: 'warning', maxVisible: 1, text: "HATTRICK CHPP Data error! Missing info about league table of your first team"});
+			new Noty({type: 'warning', maxVisible: 1, text: "HATTRICK CHPP Data error! Missing info about league table of your first team"}).show();
 			if(document.getElementById("league_grid_rows").innerHTML.replace(/\s/g, '').length == 0){
 				document.getElementById("winboxcontent_leaguematches").setAttribute("style", "display:none");
 				document.getElementById("LeagueMatches").setAttribute("style", "display:none");
@@ -2028,7 +2028,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable2=function(league) {
 	}catch(e){
 		if(htlivesight.League.teams3.length == 0){ // no table available hiding live table
 			document.getElementById("winbox_leaguetableBis").setAttribute("style", "display:none");
-			noty({type: 'warning', maxVisible: 1, text: "HATTRICK CHPP Data error! Missing info about league table of your second team"});
+			new Noty({type: 'warning', maxVisible: 1, text: "HATTRICK CHPP Data error! Missing info about league table of your second team"}).show();
 			if(document.getElementById("league_grid_rowsBis").innerHTML.replace(/\s/g, '').length == 0){
 				document.getElementById("winboxcontent_leaguematchesBis").setAttribute("style", "display:none");
 				document.getElementById("LeagueMatchesBis").setAttribute("style", "display:none");
@@ -2176,7 +2176,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable3=function(league) {
 	}catch(e){
 		if(htlivesight.League.teams3.length == 0){ // no table available hiding live table
 			document.getElementById("winbox_leaguetableTer").setAttribute("style", "display:none");
-			noty({type: 'warning', maxVisible: 1, text: "HATTRICK CHPP Data error! Missing info about league table of your third team"});
+			new Noty({type: 'warning', maxVisible: 1, text: "HATTRICK CHPP Data error! Missing info about league table of your third team"}).show();
 			if(document.getElementById("league_grid_rowsTer").innerHTML.replace(/\s/g, '').length == 0){
 				document.getElementById("winboxcontent_leaguematchesTer").setAttribute("style", "display:none");
 				document.getElementById("LeagueMatchesTer").setAttribute("style", "display:none");

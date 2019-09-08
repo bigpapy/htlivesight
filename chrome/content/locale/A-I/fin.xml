@@ -437,4 +437,8 @@
 <SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
 <SupportBoostFailed>support: boost failed</SupportBoostFailed>
 <SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
+<PathSoundsInfo>Sound about other events</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>Sound my favourite players goal</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>My favourite players id list</MyFavouritePlayerList>
+<TabPlayers>Players</TabPlayers>
 </Htlivesight>

@@ -431,10 +431,14 @@
 <YouthSoundEqualSenior>Mitt juniorlags ljud är detsamma som seniorlagets</YouthSoundEqualSenior>
 <ThirdTeamIdLabel>LagID (Seniorlag 3)</ThirdTeamIdLabel>
 <SeniorTeamIdAutomatically>Hämta mitt/mina andra lagID automatiskt från Hattrick</SeniorTeamIdAutomatically>
-<Support>Support</Support>
-<EventSpecialPowerfulForward>powerful, extra chance</EventSpecialPowerfulForward>
-<PowerfulPressing>powerful: pressing</PowerfulPressing>
-<SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
-<SupportBoostFailed>support: boost failed</SupportBoostFailed>
-<SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
+<Support>Vattenbärare</Support>
+<EventSpecialPowerfulForward>kraftfull: extra möjlighet</EventSpecialPowerfulForward>
+<PowerfulPressing>kraftfull: press</PowerfulPressing>
+<SupportBoostSucceeded>vattenbärare: boost lyckades</SupportBoostSucceeded>
+<SupportBoostFailed>vattenbärare: boost misslyckades</SupportBoostFailed>
+<SupportOrganizationDropped>vattenbärare: organisationsnivå sjönk</SupportOrganizationDropped>
+<PathSoundsInfo>Ljud - Andra händelser</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>Ljud - Favoritspelare gör mål</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>Mina favoritspelare - lista (ID)</MyFavouritePlayerList>
+<TabPlayers>Spelare</TabPlayers>
 </Htlivesight>
