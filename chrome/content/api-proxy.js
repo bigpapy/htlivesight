@@ -17,7 +17,7 @@ htlivesight.ApiProxy = {
 	 * tokenSecret are saved.
 	 */
 
-	authorized : function(teamId) { 
+	authorized : function(teamId) {
 	    return htlivesight.ApiProxy.getAccessToken(teamId)	&& htlivesight.ApiProxy.getAccessTokenSecret(teamId);
 	},
 
@@ -29,7 +29,7 @@ htlivesight.ApiProxy = {
 
 	authorize : function(doc) {
 	    var firstTime = true;
-	    var teamId =""+document.getElementById("teamId").value;
+	    var teamId = (htlivesight.prefs.general.teamId?htlivesight.prefs.general.teamId:document.getElementById("teamId").value);
 	    var accessor = {
 		    consumerSecret : htlivesight.ApiProxy.consumerSecret,
 		    tokenSecret : null
@@ -52,6 +52,7 @@ htlivesight.ApiProxy = {
 	    htlivesight.load(requestTokenUrl, function(text, status) {
 		if (status != 200) { // failed to fetch link
 		    alert("status: "+ status);
+		    console.log("status: "+ status + " text: " + text);
 		    return;
 		}
 		var requestToken = text.split(/&/)[0].split(/=/)[1];
@@ -132,8 +133,9 @@ htlivesight.ApiProxy = {
 	retrieve : function(doc, parameters, callback) {
 	    var serverOFF;
 	    var l10nData= htlivesight.data;
-	    var teamId = document.getElementById("teamId").value;
+	    var teamId = (htlivesight.prefs.general.teamId?htlivesight.prefs.general.teamId:document.getElementById("teamId").value);
 	    if (!htlivesight.ApiProxy.authorized(teamId)) { // if not authorized...
+	    console.log("Not Authorized");
 		htlivesight.ApiProxy.authorize(doc); // ...get authorization
 		callback(null);
 		return;

@@ -16,6 +16,7 @@
     <link href="static/css/adsense.css" rel="stylesheet"/>
     <link href="static/css/footable.core.min.css" rel="stylesheet" type="text/css" />
     <link href="static/css/footable.standalone.min.css" rel="stylesheet" type="text/css" />
+    <<link href="../themes/dataTables.css" rel="stylesheet" type="text/css" />
     <!--<link href="static/noUiSlider/jquery.nouislider.min.css" rel="stylesheet"/> -->
 
 <!-- fav and touch icons -->
@@ -51,7 +52,7 @@
     </div>
 
     <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
-      <table class="table bordered centered" id="resultstable" style="background-color:#fff">
+      <table class="table bordered centered display" id="resultstable" style="background-color:#fff" >
         <thead>
           <tr style="background-color: #277F31; color:#fff">
             <th data-sort-initial="true">country</th>
@@ -62,18 +63,12 @@
           </tr>
         </thead>
         <tbody>
-          {% for i in param["program"] %}
-            <tr>
-              <td><img src='{{"static/images/flags/"~i~".gif"}}'> {{htlang["leagueNames"][i]}}</td>
-              <td>{{param["program"][i][0]}}</td>
-              <td>{{param["program"][i][1]}}</td>
-              <td>{{param["program"][i][2]}}</td>
-              <td>{{param["program"][i][3]}}</td>
-            </tr>
-          {% endfor %}
+          <!--  or i in param["program"] %}-->
+
+         <!--  endfor %}-->
         </tbody>
     </table>
-
+    <div id ="test"></div>
     </div>
   
     <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
@@ -83,8 +78,6 @@
       </div>
     </div>
 
-    </div>
-  </div>
    
 </main>
 
@@ -96,27 +89,65 @@
 <script type="text/javascript" src="static/js/footable.js"></script>
 <script type="text/javascript" src="static/js/footable.sort.js"></script>
 
-<script type="text/javascript">
+<script type="text/javascript" src="static/js/hattrickweek.js"></script>
+<script type="text/javascript" src="../env.js"></script>
+<script type="text/javascript" src="../api-proxy.js"></script>
+<script type="text/javascript" src="../util.js"></script>
+<script type="text/javascript" src="../prefs.js"></script>
+<script type="text/javascript" src="../util/misc.js"></script>
+<script type="text/javascript" src="../lib/oauth.js"></script>
+<script type="text/javascript" src="../lib/sha1.js"></script>
+<script type="text/javascript" src="../preferences.js"></script>
+<script type="text/javascript" src="../settings.js"></script>
+<script type="text/javascript" src="../log.js"></script>
+<script type="text/javascript" src="../lang.js"></script>
+<script type="text/javascript" src="../dom.js"></script>
+<script type="text/javascript" src="../lib/dataTables.js"></script>
+<!-- <script type="text/javascript">
+/*
+if (!htlivesight) let htlivesight = {};
+htlivesight.WorldDetails = {};
     $(document).ready(function(){
       $('.button-collapse').sideNav({menuWidth: 340, activationWidth: 70, edge: 'right'});
       $('.collapsible').collapsible();
       $('ul.tabs').tabs();
+      $('#test').text( htlivesight.WorldDetails.getWorldDetails());
+      
     });
-</script>
+    htlivesight.WorldDetails.getWorldDetails = function () {
+		var parameters=[["file","worlddetails"],
+		                ["version", "1.8"]];
+		//console.log("Parameters: ");console.log(parameters);
+		htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.WorldDetails.ParseGet(xml);});
+	};
+    htlivesight.WorldDetails.ParseGet = function(xml) { //console.log("htlivesight.YouthLeague.ParseGet response");
+    	if (xml) {
+    		leaguesNode = xml.getElementsByTagName("League");
+    		let leagues = [];
+    		for(let i = 0; i< leaguesNode.length; i++){
+    			leagues[i].country = htlivesight.Util.Parse("LeagueName", leaguesNode[i]);
+    			leagues[i].training = htlivesight.Util.Parse("TrainingDate", leaguesNode[i]);
+    			leagues[i].economy = htlivesight.Util.Parse("EconomyDate", leaguesNode[i]);
+    			leagues[i].series = htlivesight.Util.Parse("SeriesMatchDate", leaguesNode[i]);
+    			leagues[i].cup = htlivesight.Util.Parse("CupMatchDate", leaguesNode[i]);
+    		}
+    	}
+    	return leagues;
+    }*/
+</script>-->
 
 
-<script type="text/javascript">
-  $(function () {
-    $('#resultstable').footable({
+<!-- <script type="text/javascript">
+/*    $('#resultstable').footable({
       breakpoints: {
         phone: 700
     }
 });
-  });
-</script>
+  });*/
+</script>-->
 
-<script type="text/javascript">
-  
+<!-- <script type="text/javascript">
+/* 
   $("#resultstable tbody tr").each(function () {
     $("td", this).slice(1).each(function (i) {
       $(this).text(function(index, text) {return text.replace('Monday,', 'monday, ');})
@@ -127,11 +158,11 @@
       $(this).text(function(index, text) {return text.replace('Saturday,', 'saturday, ');})
       $(this).text(function(index, text) {return text.replace('Sunday,', 'sunday, ');})
     });
-});
+});*/
 
 
 
-</script>
+</script>-->
 
 
 </body>

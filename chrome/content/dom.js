@@ -630,7 +630,7 @@ htlivesight.DOM = {
 		},
 		
 		addServerToPopup: function(server) {
-			document.getElementById("ServerStatus").textContent=server;
+			if(document.getElementById("ServerStatus"))	document.getElementById("ServerStatus").textContent = server;
 		},
 		createTextElement: function (text, doClean) {
 			try{//added by bigpapy to debug from XUL to HTML
