@@ -27,7 +27,10 @@ htlivesight.WorldDetails.ParseGet = function(xml) {
 			leagues[i].economy = htlivesight.Util.Parse("EconomyDate", leaguesNode[i]);
 			leagues[i].series = htlivesight.Util.Parse("SeriesMatchDate", leaguesNode[i]);
 			leagues[i].cup = htlivesight.Util.Parse("CupMatchDate", leaguesNode[i]);
-			$('#resultstable > tbody:last-child').append('<tr><td>'+leagues[i].country+'</td>'+
+			leagues[i].id = htlivesight.Util.Parse("LeagueID", leaguesNode[i]);
+			leagues[i].englishName = htlivesight.Util.Parse("EnglishName", leaguesNode[i]);
+			$('#resultstable > tbody:last-child').append('<tr><td data-sort="'+leagues[i].id+'"><img src="'+htlivesightEnv.contentPath+'ht-tools/static/images/flags/'+leagues[i].id+'.gif" alt="'+leagues[i].id+'" title="'+leagues[i].id+'" \></td><td data-sort="'+leagues[i].country+'">'+leagues[i].country+'</td>'+
+															'<td data-sort="'+leagues[i].englishName+'">'+leagues[i].englishName+'</td>'+
 															'<td data-sort="'+leagues[i].training+'">' + weekday[new Date(leagues[i].training).getDay()] + ' ' +leagues[i].training.split(" ")[1].slice(0,-3) + '</td>'+
 															'<td data-sort="'+leagues[i].economy+'">' + weekday[new Date(leagues[i].economy).getDay()] + ' ' +leagues[i].economy.split(" ")[1].slice(0,-3) + '</td>'+
 															'<td data-sort="'+leagues[i].series+'">' + weekday[new Date(leagues[i].series).getDay()] + ' ' +leagues[i].series.split(" ")[1].slice(0,-3) + '</td>'+

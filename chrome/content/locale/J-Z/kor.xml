@@ -51,7 +51,7 @@
 <TacticAIM>중앙에서 공격</TacticAIM>
 <TacticAOW>측면에서 공격</TacticAOW>
 <TacticPlayCreative>창조적으로 플레이</TacticPlayCreative>
-<TacticLongShots>장거리슛</TacticLongShots>
+<TacticLongShots>중거리슛</TacticLongShots>
 <TimeFirstHalf>전반전</TimeFirstHalf>
 <TimeHalfTime>하프타임</TimeHalfTime>
 <TimeSecondHalf>후반전</TimeSecondHalf>
@@ -91,7 +91,7 @@
 <EventSideFreeKick>프리킥</EventSideFreeKick>
 <EventSidePenalty>페널티</EventSidePenalty>
 <EventSpecialUnpredictable>SE 예측할수 없음</EventSpecialUnpredictable>
-<EventSpecialLongShot>SE 장거리슛</EventSpecialLongShot>
+<EventSpecialLongShot>SE 중거리슛</EventSpecialLongShot>
 <EventSpecialQuick>SE 빠름</EventSpecialQuick>
 <EventSpecialLowStamina>체력 부족</EventSpecialLowStamina>
 <EventSpecialSetPieces>세트피스</EventSpecialSetPieces>
@@ -127,9 +127,9 @@
 <ExperiencedForward>경험이 높은 포워드</ExperiencedForward>
 <InexperiencedDefender>수비수의 경험 부족</InexperiencedDefender>
 <WingerHead>윙어: 헤딩 선수에게 크로스</WingerHead>
-<EventSpecialLongShotDefended>빗나간 장거리슛</EventSpecialLongShotDefended>
+<EventSpecialLongShotDefended>중거리 슛 차단됨</EventSpecialLongShotDefended>
 <EventSpecialQuickVsQuick>빠름 vs 빠름</EventSpecialQuickVsQuick>
-<LongShot>장거리슛</LongShot>
+<LongShot>중거리슛</LongShot>
 <MeteoSpecialTechnicalRain>-공마술사 (-득점력, -플레이메이킹 감소)</MeteoSpecialTechnicalRain>
 <MeteoSpecialPowerfulRain>+힘있음 (+득점력, +수비력, +플레이메이킹 증가)</MeteoSpecialPowerfulRain>
 <MeteoSpecialTechnicalSun>+공마술사 (+득점력, +플레이메이킹 증가)</MeteoSpecialTechnicalSun>
@@ -437,8 +437,9 @@
 <SupportBoostSucceeded>조력자: 경기력 버프 성공</SupportBoostSucceeded>
 <SupportBoostFailed>조력자: 경기력 버프 실패</SupportBoostFailed>
 <SupportOrganizationDropped>조력자: 팀 조직력 하락</SupportOrganizationDropped>
-<PathSoundsInfo>Sound about other events</PathSoundsInfo>
-<PathSoundsMyFavouriteGoal>Sound my favourite players goal</PathSoundsMyFavouriteGoal>
-<MyFavouritePlayerList>My favourite players id list</MyFavouritePlayerList>
-<TabPlayers>Players</TabPlayers>
+<PathSoundsInfo>기타 이벤트 사운드</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>내가 좋아하는 선수들의 득점 사운드</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>내가 좋아하는 선수들 id 목록</MyFavouritePlayerList>
+<TabPlayers>선수</TabPlayers>
+<TechnicalCounterAttack>Counter attack triggered by technical wingback or defender</TechnicalCounterAttack>
 </Htlivesight>

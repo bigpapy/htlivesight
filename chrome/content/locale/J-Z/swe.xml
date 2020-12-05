@@ -441,4 +441,5 @@
 <PathSoundsMyFavouriteGoal>Ljud - Favoritspelare gör mål</PathSoundsMyFavouriteGoal>
 <MyFavouritePlayerList>Mina favoritspelare - lista (ID)</MyFavouritePlayerList>
 <TabPlayers>Spelare</TabPlayers>
+<TechnicalCounterAttack>Counter attack triggered by technical wingback or defender</TechnicalCounterAttack>
 </Htlivesight>

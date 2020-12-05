@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Htlivesight>
-<MenuItemValue>HTLiveSight</MenuItemValue>
+<MenuItemValue>goal</MenuItemValue>
 <MenuStart>Start</MenuStart>
 <MenuOptions>Επιλογές</MenuOptions>
 <TooltipButton>Click to open HTLiveSight menu</TooltipButton>
@@ -441,4 +441,5 @@
 <PathSoundsMyFavouriteGoal>Sound my favourite players goal</PathSoundsMyFavouriteGoal>
 <MyFavouritePlayerList>My favourite players id list</MyFavouritePlayerList>
 <TabPlayers>Players</TabPlayers>
+<TechnicalCounterAttack>Counter attack triggered by technical wingback or defender</TechnicalCounterAttack>
 </Htlivesight>

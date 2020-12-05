@@ -441,4 +441,5 @@
 <PathSoundsMyFavouriteGoal>Sonido para goles de jugadores favoritos</PathSoundsMyFavouriteGoal>
 <MyFavouritePlayerList>IDs de mis jugadores favoritos</MyFavouritePlayerList>
 <TabPlayers>Jugadores</TabPlayers>
+<TechnicalCounterAttack>Counter attack triggered by technical wingback or defender</TechnicalCounterAttack>
 </Htlivesight>

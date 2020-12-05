@@ -206,20 +206,20 @@
 <PathSoundsMyGoal>So per a gol en pròpia porta</PathSoundsMyGoal>
 <PathSoundsOpGoal>So per a gol del meu contrincant</PathSoundsOpGoal>
 <PathSoundsFrGoal>So per a gol d'amic</PathSoundsFrGoal>
-<PathSoundsOpFrGoal>Sound for goal of friend's opponent</PathSoundsOpFrGoal>
-<PathSoundsOtGoal>Other team goal sound</PathSoundsOtGoal>
-<PathSoundsMiss>Missed goal sound</PathSoundsMiss>
-<PathSoundsSun>Sound for sunny weather</PathSoundsSun>
-<PathSoundsRain>Sound for rainy weather</PathSoundsRain>
-<PathSoundsOvercast>Sound for overcast weather</PathSoundsOvercast>
-<PathSoundsFewClouds>Sound for few clouds weather</PathSoundsFewClouds>
-<PathSoundsMyBoo>Sound for own team injury</PathSoundsMyBoo>
-<PathSoundsOpBoo>Sound for opponent team injury</PathSoundsOpBoo>
-<PathSoundsWhistleStart>Start of 1st/2nd half whistle</PathSoundsWhistleStart>
-<PathSoundsWhistle>Yellow card sound</PathSoundsWhistle>
-<PathSoundsHattrick>Hattrick sound</PathSoundsHattrick>
-<PathSoundsRestore>Restore</PathSoundsRestore>
-<PathSoundsPlay>Play</PathSoundsPlay>
+<PathSoundsOpFrGoal>So per a l'objectiu del rival de l'amic</PathSoundsOpFrGoal>
+<PathSoundsOtGoal>Un altre objectiu sonor</PathSoundsOtGoal>
+<PathSoundsMiss>S'ha perdut el so de l'objectiu</PathSoundsMiss>
+<PathSoundsSun>So per a temps assolellat</PathSoundsSun>
+<PathSoundsRain>So per a temps plujós</PathSoundsRain>
+<PathSoundsOvercast>So per a temps ennuvolat</PathSoundsOvercast>
+<PathSoundsFewClouds>So per pocs núvols</PathSoundsFewClouds>
+<PathSoundsMyBoo>So per lesió del propi equip</PathSoundsMyBoo>
+<PathSoundsOpBoo>So per lesió a l'equip rival</PathSoundsOpBoo>
+<PathSoundsWhistleStart>Inici de la 1a / 2a part del xiulet</PathSoundsWhistleStart>
+<PathSoundsWhistle>So per targeta groga</PathSoundsWhistle>
+<PathSoundsHattrick>So de Hattrick</PathSoundsHattrick>
+<PathSoundsRestore>Restaurar</PathSoundsRestore>
+<PathSoundsPlay>Jugar</PathSoundsPlay>
 <LanguageSelect>Seleccionar idioma</LanguageSelect>
 <LanguageNote>Nota: Reiniciar HTLiveSight per fer efectius els canvis.</LanguageNote>
 <ButtonCancel>Cancel·lar</ButtonCancel>
@@ -245,8 +245,8 @@
 <TextHelpOf>amb l'ajuda de</TextHelpOf>
 <TextThanksTo>Moltes gràcies a:</TextThanksTo>
 <ButtonClose>Tancar</ButtonClose>
-<NonExistent>Non existent</NonExistent>
-<Disastrous>Disastrous</Disastrous>
+<NonExistent>Inexistent</NonExistent>
+<Disastrous>Desastrós</Disastrous>
 <Wretched>Horrible</Wretched>
 <Poor>Pobre</Poor>
 <Weak>Dèbil</Weak>
@@ -291,43 +291,43 @@
 <EventBackground>Color del fons de l'esdeveniment</EventBackground>
 <FriendHome>Color del local (propis i amics): #</FriendHome>
 <FriendAway>Color del visitant (propis i amics): #</FriendAway>
-<FoeHome>Home foreign color: #</FoeHome>
-<FoeAway>Away foreign color: #</FoeAway>
+<FoeHome>Color estranger: #</FoeHome>
+<FoeAway>Allunyat color estranger: #</FoeAway>
 <Neutral>Color neutre: #</Neutral>
 <EventColorTitle>Color del text de l'esdeveniment</EventColorTitle>
 <EventTextColor>Color del text de l'esdeveniment: #</EventTextColor>
-<SETextColor>Special event text color: #</SETextColor>
+<SETextColor>Color del text d'esdeveniments especials: #</SETextColor>
 <Colors>Colors</Colors>
-<SchemaTip>Click to show Lineup</SchemaTip>
-<StatisticTip>Click to show Statistics at the end of the match</StatisticTip>
-<Youth>Youth</Youth>
-<Senior>Senior</Senior>
-<Tournament>Tournament</Tournament>
-<FreeKicks>Free kicks</FreeKicks>
-<RedCards>Red cards</RedCards>
-<YellowCards>Yellow cards</YellowCards>
-<Injuries>Injuries</Injuries>
-<Goals>Goals</Goals>
+<SchemaTip>Feu clic per mostrar la línia</SchemaTip>
+<StatisticTip>Feu clic per mostrar les estadístiques al final del partit</StatisticTip>
+<Youth>Joventut</Youth>
+<Senior>Major</Senior>
+<Tournament>Torneig</Tournament>
+<FreeKicks>Tirades lliures</FreeKicks>
+<RedCards>Targeta roja</RedCards>
+<YellowCards>Targeta groga</YellowCards>
+<Injuries>Lesions</Injuries>
+<Goals>Metes</Goals>
 <Total>Total</Total>
-<Terraces>Terraces</Terraces>
-<Basic>Basic seating</Basic>
-<Roof>Seats under roof</Roof>
-<VIP>Seats in VIP boxes</VIP>
-<CrowdinHelp>Help translating! With Crowdin is supereasy and very funny! Click here!</CrowdinHelp>
-<Error401>Error 401: unauthorized access. You have to get authorization again. Click ok to continue.</Error401>
-<Error404>Error 404: requested resource could not be found. If this error appear again control if chpp service is down.</Error404>
-<Error0>Error 0: not connected to internet.</Error0>
-<Error500>Error 500: internal server error (of Hattrick)</Error500>
-<Error503>Error 503: CHPP service unavailable (temporary overload or maintenance)</Error503>
-<PathSoundsNote1>Insert file:/// before the path of the sound in .ogg format</PathSoundsNote1>
-<PathSoundsNote2>Example: file:///c:path\to\thesound.ogg</PathSoundsNote2>
-<PathSoundsWhistle2>End of 1st half whistle</PathSoundsWhistle2>
-<PathSoundsWhistle3>End of match whistle</PathSoundsWhistle3>
-<EventYellow2>Second yellow card</EventYellow2>
-<LoggedIn>Logged in as</LoggedIn>
-<latestNews>Check latest news on</latestNews>
-<HTLSThread>Hattrick Forum</HTLSThread>
-<ProjectWebsite>Website project</ProjectWebsite>
+<Terraces>Terrasses</Terraces>
+<Basic>Aforament bàsic</Basic>
+<Roof>Seients sota sostre</Roof>
+<VIP>Seients en caixes VIP</VIP>
+<CrowdinHelp>Ajuda a traduir! Amb Crowdin és molt fàcil i molt divertit! Clica aquí!</CrowdinHelp>
+<Error401>Error 401: accés no autoritzat. Heu de tornar a obtenir l’autorització. Feu clic a D'acord per continuar.</Error401>
+<Error404>Error 404: no s'ha trobat el recurs sol·licitat Si es torna a aparèixer aquest error, control if chpp sevei de baixa.</Error404>
+<Error0>Error 0: No està connectat a internet.</Error0>
+<Error500>Error 500: error del servidor intern (de Hattrick)</Error500>
+<Error503>Error 503: CHPP servei no disponible (sobrecàrrega o manteniment temporal)</Error503>
+<PathSoundsNote1>Insereix fitxer:/// abans de la ruta del so en format .ogg</PathSoundsNote1>
+<PathSoundsNote2>Exemple: arxiu:////c:path\to\thesound.ogg</PathSoundsNote2>
+<PathSoundsWhistle2>Fi de la 1a part del xiulet</PathSoundsWhistle2>
+<PathSoundsWhistle3>Xiulet de final de partit</PathSoundsWhistle3>
+<EventYellow2>Segona targeta groga</EventYellow2>
+<LoggedIn>Sessió iniciada com</LoggedIn>
+<latestNews>Consulteu les darreres novetats a</latestNews>
+<HTLSThread>Fòrum de Hattrick\n</HTLSThread>
+<ProjectWebsite>Projecte del lloc web</ProjectWebsite>
 <GooglePlusPage>Google+ page</GooglePlusPage>
 <TwitterPage>Twitter page</TwitterPage>
 <FacebookPage>Facebook page</FacebookPage>
@@ -378,67 +378,68 @@
 <TabWeather>Weather</TabWeather>
 <TabWhistleCard>Whistles and Cards</TabWhistleCard>
 <PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
-<PathSoundsMissOther>Other team missed goal sound</PathSoundsMissOther>
-<TabChances>Chances</TabChances>
-<Agreeability>Agreeability</Agreeability>
-<Aggressiveness>Aggressiveness</Aggressiveness>
-<Honesty>Honesty</Honesty>
-<BelovedTeamMember>Beloved team member</BelovedTeamMember>
-<PopularGuy>Popular guy</PopularGuy>
-<SympatheticGuy>Sympathetic guy</SympatheticGuy>
-<PleasantGuy>Pleasant guy</PleasantGuy>
-<ControversialPerson>Controversial Person</ControversialPerson>
-<NastyFellow>Nasty fellow</NastyFellow>
-<Saintly>Saintly</Saintly>
-<Righteous>Righteous</Righteous>
-<Upright>Upright</Upright>
-<Honest>Honest</Honest>
-<Dishonest>Dishonest</Dishonest>
-<Infamous>Infamous</Infamous>
-<Unstable>Unstable</Unstable>
-<Fiery>Fiery</Fiery>
+<PathSoundsMissOther>Un altre equip va desaprofitar el so dels objectius</PathSoundsMissOther>
+<TabChances>Possibilitats\n</TabChances>
+<Agreeability>L’acordabilitat</Agreeability>
+<Aggressiveness>Agressivitat</Aggressiveness>
+<Honesty>Honestedat\n</Honesty>
+<BelovedTeamMember>Estimat membre de l’equip</BelovedTeamMember>
+<PopularGuy>Noi popular</PopularGuy>
+<SympatheticGuy>Noi simpàtic</SympatheticGuy>
+<PleasantGuy>Noi agradable</PleasantGuy>
+<ControversialPerson>Persona controvertida</ControversialPerson>
+<NastyFellow>Company desagradable</NastyFellow>
+<Saintly>Sant</Saintly>
+<Righteous>Just\n</Righteous>
+<Upright>Vertical</Upright>
+<Honest>Sincerament</Honest>
+<Dishonest>Desestimar</Dishonest>
+<Infamous>Infame</Infamous>
+<Unstable>Inestable\n</Unstable>
+<Fiery>Ardent</Fiery>
 <Temperamental>Temperamental</Temperamental>
-<Balanced>Balanced</Balanced>
-<Calm>Calm</Calm>
+<Balanced>Equilibrat</Balanced>
+<Calm>Tranquil</Calm>
 <Tranquil>Tranquil</Tranquil>
-<VisitOurSoundCollection>Visit our sound collection</VisitOurSoundCollection>
-<SafariWarning>If HTLivesight panel isn't focused, notifications sounds will be blocked. Please open a new window if you want to browse on internet during a match</SafariWarning>
-<OnlyHTTPFiles>Only http URL works</OnlyHTTPFiles>
-<Warning>Warning</Warning>
-<Testers>Testers</Testers>
-<BasedOn>Based on</BasedOn>
-<AndroidWarning>If HTLiveSight tab isn't focused, notifications will be blocked, they will appear at first update after you're back on its tab</AndroidWarning>
-<SafariClipboardTitle>press ctrl/cmd + c to copy selected text</SafariClipboardTitle>
-<License>Our License</License>
-<Tech>Our Technology</Tech>
-<Supporter>Project support</Supporter>
-<HeaderBarColor>Header bar color</HeaderBarColor>
-<HeaderBarTextColor>Header bar text color</HeaderBarTextColor>
-<Volume>Volume</Volume>
-<PlayVolumeSetting>Play sound after volume setting</PlayVolumeSetting>
-<Import>Import</Import>
-<Export>Export</Export>
-<ExportOauth>Export Oauth</ExportOauth>
-<ExportBackground>Export Background</ExportBackground>
-<ExportSounds>Export Sounds</ExportSounds>
-<ImportOk>Preferences imported successfully!</ImportOk>
-<PrefsRestart>Some preferences need a restart!</PrefsRestart>
-<ClickToSave>Click OK on preferences window to save them.</ClickToSave>
-<TooltipWindowSpeech>Enable and disable text to speech event match notifications</TooltipWindowSpeech>
-<YouthMatches>Youth Matches</YouthMatches>
-<GetYouthNearestMatch>Load automatically your youth team matches</GetYouthNearestMatch>
-<MatchesYouthLeague>Youth League Matches</MatchesYouthLeague>
-<YouthSoundEqualSenior>My youth team sounds equal to my senior one</YouthSoundEqualSenior>
-<ThirdTeamIdLabel>Insert a third team ID</ThirdTeamIdLabel>
-<SeniorTeamIdAutomatically>Get my other senior team id automatically</SeniorTeamIdAutomatically>
-<Support>Support</Support>
-<EventSpecialPowerfulForward>powerful, extra chance</EventSpecialPowerfulForward>
-<PowerfulPressing>powerful: pressing</PowerfulPressing>
-<SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
-<SupportBoostFailed>support: boost failed</SupportBoostFailed>
-<SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
-<PathSoundsInfo>Sound about other events</PathSoundsInfo>
-<PathSoundsMyFavouriteGoal>Sound my favourite players goal</PathSoundsMyFavouriteGoal>
-<MyFavouritePlayerList>My favourite players id list</MyFavouritePlayerList>
-<TabPlayers>Players</TabPlayers>
+<VisitOurSoundCollection>Visita la nostra col·lecció de sons</VisitOurSoundCollection>
+<SafariWarning>Si el tauler HTLivesight no està focalitzat, els sons de les notificacions es bloquejaran. Obriu una finestra nova si voleu navegar per internet durant un partit</SafariWarning>
+<OnlyHTTPFiles>Només funciona l’URL http</OnlyHTTPFiles>
+<Warning>Avís</Warning>
+<Testers>Testadores</Testers>
+<BasedOn>Basat en</BasedOn>
+<AndroidWarning>Si la pestanya HTLiveSight no està focalitzada, les notificacions es bloquejaran, apareixeran a la primera actualització després de tornar a la pestanya</AndroidWarning>
+<SafariClipboardTitle>Pressiona ctrl/cmd + c per copiar el text seleccionat</SafariClipboardTitle>
+<License>La nostra llicència</License>
+<Tech>La nostra tecnologia</Tech>
+<Supporter>Suport al projecte</Supporter>
+<HeaderBarColor>Color de la barra de la capçalera</HeaderBarColor>
+<HeaderBarTextColor>Color de text de la barra de capçalera</HeaderBarTextColor>
+<Volume>Volum</Volume>
+<PlayVolumeSetting>Reprodueix el so després de la configuració de volum\n</PlayVolumeSetting>
+<Import>Importa</Import>
+<Export>Exporta</Export>
+<ExportOauth>Exporta el servei propi\n</ExportOauth>
+<ExportBackground>Exportació de fons\n</ExportBackground>
+<ExportSounds>Exporta sons\n</ExportSounds>
+<ImportOk>Les preferències s'han importat correctament!</ImportOk>
+<PrefsRestart>Algunes preferències necessiten un reinici.</PrefsRestart>
+<ClickToSave>Feu clic a D'acord a la finestra de preferències per desar-les.</ClickToSave>
+<TooltipWindowSpeech>Habilita i desactiva les notificacions de concordança d'esdeveniments de veu a text\n</TooltipWindowSpeech>
+<YouthMatches>Partits juvenils\n</YouthMatches>
+<GetYouthNearestMatch>Carregueu automàticament els partits de l'equip juvenil\n</GetYouthNearestMatch>
+<MatchesYouthLeague>Partits de Lliga Juvenil\n</MatchesYouthLeague>
+<YouthSoundEqualSenior>El meu equip juvenil sona igual al meu sènior\n</YouthSoundEqualSenior>
+<ThirdTeamIdLabel>Inseriu un identificador de tercer equip\n</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>Obteniu automàticament l'identificador del meu equip sènior\n</SeniorTeamIdAutomatically>
+<Support>Assistència</Support>
+<EventSpecialPowerfulForward>potent, fort casualitat</EventSpecialPowerfulForward>
+<PowerfulPressing>poderós: prement\n</PowerfulPressing>
+<SupportBoostSucceeded>suport: impuls ha tingut èxit\n</SupportBoostSucceeded>
+<SupportBoostFailed>suport: impuls fracassat</SupportBoostFailed>
+<SupportOrganizationDropped>suport: organització caiguda</SupportOrganizationDropped>
+<PathSoundsInfo>So sobre altres esdeveniments</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>Sona l’objectiu dels meus jugadors favorits</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>Llista d'identificadors dels meus jugadors preferits</MyFavouritePlayerList>
+<TabPlayers>Jugadors</TabPlayers>
+<TechnicalCounterAttack>Counter attack triggered by technical wingback or defender</TechnicalCounterAttack>
 </Htlivesight>
