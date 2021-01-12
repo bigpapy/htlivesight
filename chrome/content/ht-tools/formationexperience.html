@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{pagestr["formationexperience"]|safe}}</title>
+    <title>formationexperience</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HT-Tools is a database of helper functions for the online Hattrick Football manager. Training estimation, health estimation and many other tools are available">
@@ -11,13 +11,13 @@
     <link rel="shortcut icon" type="image/png" href="http://www.ht-tools.eu/static/images/favicon.png"/>
 
 <!-- Bootstrap style --> 
-    <link href="/static/css/materialize.min.css" rel="stylesheet"/>
-    <link href="/static/css/ht-tools.css" rel="stylesheet"/>
-    <link href="/static/css/adsense.css" rel="stylesheet"/>
+    <link href="./static/css/materialize.min.css" rel="stylesheet"/>
+    <link href="./static/css/ht-tools.css" rel="stylesheet"/>
+    <link href="./static/css/adsense.css" rel="stylesheet"/>
     <!--<link href="/static/noUiSlider/jquery.nouislider.min.css" rel="stylesheet"/> -->
 
 <!-- fav and touch icons -->
-    <link rel="shortcut icon" href="themes/images/ico/favicon.ico">
+    <!--<link rel="shortcut icon" href="themes/images/ico/favicon.ico">-->
 
   </head>
 
@@ -31,7 +31,7 @@
 	</navbar>
 <main style="margin-left:200px">
 
-  <div>
+  <!--<div>
     <div class="row">
 
       <div class="col s12 m12 l2">
@@ -40,19 +40,19 @@
       {% endif %}
 
       <div id="ad1" class="adslot1" style="margin-top:35px;text-align:center">{% include "responsive_left.html" %}</div>
-    </div>
+    </div>-->
 
       <div class="col s12 m12 l10">
 
     
-      <div id="ad1" class="col s12 m12 l10 adslot2" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "responsive_banner.html" %}</div>
-      <div id="ad1" class="col s12 m12 l12 adslot3" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "links.html" %}</div>
+      <!--<div id="ad1" class="col s12 m12 l10 adslot2" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "responsive_banner.html" %}</div>
+      <div id="ad1" class="col s12 m12 l12 adslot3" style="margin-top:15px;margin-bottom:15px;text-align:center">{% include "links.html" %}</div>-->
 
       <div class="row">
         <div class="col s12" style="padding:0">
       <ul class="tabs">
-        <li class="tab col s6" style="background-color:#277F31"><a class="active" style="color:#ffffff" href="#tool">{{pagestr["formationexperience"]|safe}}</a></li>
-        <li class="tab col s6" style="background-color:#277F31"><a  style="color:#ffffff" href="#info">{{pagestr["info"]|safe}}</a></li>
+        <li class="tab col s6" style="background-color:#277F31"><a class="active" style="color:#ffffff" href="#tool">formation experience</a></li>
+        <li class="tab col s6" style="background-color:#277F31"><a  style="color:#ffffff" href="#info">info</a></li>
         
       </ul>
     </div>
@@ -65,193 +65,277 @@
         
           <div class="col s12 input_fields_wrap">
             <div class="col l3 m6 s12">
-               <h5>{{pagestr["match"]}} 1</h5>
+               <h5>match 1</h5>
 
-                <b><span class="col s7">{{pagestr["formation"]}}</span></b>
+                <b><span class="col s7">formation</span></b>
                 <div class="row" style="margin-bottom: 0">
                   <div class="col s6" style="margin-top: 15px">
                   <select class="browser-default" name="formation">   
-                  {% for line in ["5-5-0", "5-4-1", "5-3-2", "5-2-3", "4-5-1", "4-4-2", "4-3-3", "3-5-2", "3-4-3", "2-5-3"] %}
-                    <option>{{line}}</option>
-                  {% endfor %}
+					  <option>5-5-0</option>
+					  <option>5-4-1</option>
+					  <option>5-3-2</option>
+					  <option>5-2-3</option>
+					  <option>4-5-1</option>
+					  <option>4-4-2</option>
+					  <option>4-3-3</option>
+					  <option>3-5-2</option>
+					  <option>3-4-3</option>
+					  <option>2-5-3</option>
                   </select>
                   </div>
                   <div class="input-field  col s6">
                     <input name="minutes" id="minutes11" type="number" min="1" max="90" class="validate">
-                    <label for="minutes11">{{pagestr["minutes"]}}</label>
+                    <label for="minutes11">minutes</label>
                   </div>
                 
                 </div>
                  <div class="row" style="margin-bottom: 0">
                   <div class="col s6" style="margin-top: 15px">
                   <select class="browser-default" name="formation">   
-                  {% for line in ["5-5-0", "5-4-1", "5-3-2", "5-2-3", "4-5-1", "4-4-2", "4-3-3", "3-5-2", "3-4-3", "2-5-3"] %}
-                    <option>{{line}}</option>
-                  {% endfor %}
+					  <option>5-5-0</option>
+					  <option>5-4-1</option>
+					  <option>5-3-2</option>
+					  <option>5-2-3</option>
+					  <option>4-5-1</option>
+					  <option>4-4-2</option>
+					  <option>4-3-3</option>
+					  <option>3-5-2</option>
+					  <option>3-4-3</option>
+					  <option>2-5-3</option>
                   </select>
                   </div>
                   <div class="input-field  col s6">
                     <input name="minutes" id="minutes12" type="number" min="1" max="90" class="validate">
-                    <label for="minutes12">{{pagestr["minutes"]}}</label>
+                    <label for="minutes12">minutes</label>
                   </div>
                 
                 </div>
                  <div class="row" style="margin-bottom: 0">
                   <div class="col s6" style="margin-top: 15px">
                   <select class="browser-default" name="formation">   
-                  {% for line in ["5-5-0", "5-4-1", "5-3-2", "5-2-3", "4-5-1", "4-4-2", "4-3-3", "3-5-2", "3-4-3", "2-5-3"] %}
-                    <option>{{line}}</option>
-                  {% endfor %}
+					  <option>5-5-0</option>
+					  <option>5-4-1</option>
+					  <option>5-3-2</option>
+					  <option>5-2-3</option>
+					  <option>4-5-1</option>
+					  <option>4-4-2</option>
+					  <option>4-3-3</option>
+					  <option>3-5-2</option>
+					  <option>3-4-3</option>
+					  <option>2-5-3</option>
                   </select>
                   </div>
                   <div class="input-field  col s6">
                     <input name="minutes" id="minutes13" type="number" min="1" max="90" class="validate">
-                    <label for="minutes13">{{pagestr["minutes"]}}</label>
+                    <label for="minutes13">minutes</label>
                   </div>
                 
                 </div>
             </div>
 
             <div class="col l3 m6 s12">
-               <h5>{{pagestr["match"]}} 2</h5>
+               <h5>match 2</h5>
 
-                <b><span class="col s7">{{pagestr["formation"]}}</span></b>
+                <b><span class="col s7">formation</span></b>
                 <div class="row" style="margin-bottom: 0">
                   <div class="col s6" style="margin-top: 15px">
                   <select class="browser-default" name="formation">   
-                  {% for line in ["5-5-0", "5-4-1", "5-3-2", "5-2-3", "4-5-1", "4-4-2", "4-3-3", "3-5-2", "3-4-3", "2-5-3"] %}
-                    <option>{{line}}</option>
-                  {% endfor %}
+					  <option>5-5-0</option>
+					  <option>5-4-1</option>
+					  <option>5-3-2</option>
+					  <option>5-2-3</option>
+					  <option>4-5-1</option>
+					  <option>4-4-2</option>
+					  <option>4-3-3</option>
+					  <option>3-5-2</option>
+					  <option>3-4-3</option>
+					  <option>2-5-3</option>
                   </select>
                   </div>
                   <div class="input-field  col s6">
                     <input name="minutes" id="minutes21" type="number" min="1" max="90" class="validate">
-                    <label for="minutes21">{{pagestr["minutes"]}}</label>
+                    <label for="minutes21">minutes</label>
                   </div>
                 </div>
                 <div class="row" style="margin-bottom: 0">
                   <div class="col s6" style="margin-top: 15px">
                   <select class="browser-default" name="formation">   
-                  {% for line in ["5-5-0", "5-4-1", "5-3-2", "5-2-3", "4-5-1", "4-4-2", "4-3-3", "3-5-2", "3-4-3", "2-5-3"] %}
-                    <option>{{line}}</option>
-                  {% endfor %}
+					  <option>5-5-0</option>
+					  <option>5-4-1</option>
+					  <option>5-3-2</option>
+					  <option>5-2-3</option>
+					  <option>4-5-1</option>
+					  <option>4-4-2</option>
+					  <option>4-3-3</option>
+					  <option>3-5-2</option>
+					  <option>3-4-3</option>
+					  <option>2-5-3</option>
                   </select>
                   </div>
                   <div class="input-field  col s6">
                     <input name="minutes" id="minutes22" type="number" min="1" max="90" class="validate">
-                    <label for="minutes22">{{pagestr["minutes"]}}</label>
+                    <label for="minutes22">minutes</label>
                   </div>
                 </div>
                 <div class="row" style="margin-bottom: 0">
                   <div class="col s6" style="margin-top: 15px">
                   <select class="browser-default" name="formation">   
-                  {% for line in ["5-5-0", "5-4-1", "5-3-2", "5-2-3", "4-5-1", "4-4-2", "4-3-3", "3-5-2", "3-4-3", "2-5-3"] %}
-                    <option>{{line}}</option>
-                  {% endfor %}
+					  <option>5-5-0</option>
+					  <option>5-4-1</option>
+					  <option>5-3-2</option>
+					  <option>5-2-3</option>
+					  <option>4-5-1</option>
+					  <option>4-4-2</option>
+					  <option>4-3-3</option>
+					  <option>3-5-2</option>
+					  <option>3-4-3</option>
+					  <option>2-5-3</option>
                   </select>
                   </div>
                   <div class="input-field  col s6">
                     <input name="minutes" id="minutes23" type="number" min="1" max="90" class="validate">
-                    <label for="minutes23">{{pagestr["minutes"]}}</label>
+                    <label for="minutes23">minutes</label>
                   </div>
                 </div>
             </div>
 
             <div class="col l3 m6 s12">
-               <h5>{{pagestr["match"]}} 3</h5>
+               <h5>match 3</h5>
 
-                <b><span class="col s7">{{pagestr["formation"]}}</span></b>
+                <b><span class="col s7">formation</span></b>
                 <div class="row" style="margin-bottom: 0">
                   <div class="col s6" style="margin-top: 15px">
                   <select class="browser-default" name="formation">   
-                  {% for line in ["5-5-0", "5-4-1", "5-3-2", "5-2-3", "4-5-1", "4-4-2", "4-3-3", "3-5-2", "3-4-3", "2-5-3"] %}
-                    <option>{{line}}</option>
-                  {% endfor %}
+					  <option>5-5-0</option>
+					  <option>5-4-1</option>
+					  <option>5-3-2</option>
+					  <option>5-2-3</option>
+					  <option>4-5-1</option>
+					  <option>4-4-2</option>
+					  <option>4-3-3</option>
+					  <option>3-5-2</option>
+					  <option>3-4-3</option>
+					  <option>2-5-3</option>
                   </select>
                   </div>
                   <div class="input-field  col s6">
                     <input name="minutes" id="minutes31" type="number" min="1" max="90" class="validate">
-                    <label for="minutes31">{{pagestr["minutes"]}}</label>
+                    <label for="minutes31">minutes</label>
                   </div>
                 </div>
                 <div class="row" style="margin-bottom: 0">
                   <div class="col s6" style="margin-top: 15px">
                   <select class="browser-default" name="formation">   
-                  {% for line in ["5-5-0", "5-4-1", "5-3-2", "5-2-3", "4-5-1", "4-4-2", "4-3-3", "3-5-2", "3-4-3", "2-5-3"] %}
-                    <option>{{line}}</option>
-                  {% endfor %}
+					  <option>5-5-0</option>
+					  <option>5-4-1</option>
+					  <option>5-3-2</option>
+					  <option>5-2-3</option>
+					  <option>4-5-1</option>
+					  <option>4-4-2</option>
+					  <option>4-3-3</option>
+					  <option>3-5-2</option>
+					  <option>3-4-3</option>
+					  <option>2-5-3</option>
                   </select>
                   </div>
                   <div class="input-field  col s6">
                     <input name="minutes" id="minutes32" type="number" min="1" max="90" class="validate">
-                    <label for="minutes32">{{pagestr["minutes"]}}</label>
+                    <label for="minutes32">minutes</label>
                   </div>
                 </div>
                 <div class="row" style="margin-bottom: 0">
                   <div class="col s6" style="margin-top: 15px">
                   <select class="browser-default" name="formation">   
-                  {% for line in ["5-5-0", "5-4-1", "5-3-2", "5-2-3", "4-5-1", "4-4-2", "4-3-3", "3-5-2", "3-4-3", "2-5-3"] %}
-                    <option>{{line}}</option>
-                  {% endfor %}
+					  <option>5-5-0</option>
+					  <option>5-4-1</option>
+					  <option>5-3-2</option>
+					  <option>5-2-3</option>
+					  <option>4-5-1</option>
+					  <option>4-4-2</option>
+					  <option>4-3-3</option>
+					  <option>3-5-2</option>
+					  <option>3-4-3</option>
+					  <option>2-5-3</option>
                   </select>
                   </div>
                   <div class="input-field  col s6">
                     <input name="minutes" id="minutes33" type="number" min="1" max="90" class="validate">
-                    <label for="minutes33">{{pagestr["minutes"]}}</label>
+                    <label for="minutes33">minutes</label>
                   </div>
                 </div>
             </div>
 
             <div class="col l3 m6 s12">
-               <h5>{{pagestr["match"]}} 4</h5>
+               <h5>match 4</h5>
 
-                <b><span class="col s7">{{pagestr["formation"]}}</span></b>
+                <b><span class="col s7">formation</span></b>
                 <div class="row" style="margin-bottom: 0">
                   <div class="col s6" style="margin-top: 15px">
                   <select class="browser-default" name="formation">   
-                  {% for line in ["5-5-0", "5-4-1", "5-3-2", "5-2-3", "4-5-1", "4-4-2", "4-3-3", "3-5-2", "3-4-3", "2-5-3"] %}
-                    <option>{{line}}</option>
-                  {% endfor %}
+					  <option>5-5-0</option>
+					  <option>5-4-1</option>
+					  <option>5-3-2</option>
+					  <option>5-2-3</option>
+					  <option>4-5-1</option>
+					  <option>4-4-2</option>
+					  <option>4-3-3</option>
+					  <option>3-5-2</option>
+					  <option>3-4-3</option>
+					  <option>2-5-3</option>
                   </select>
                   </div>
                   <div class="input-field col s6">
                     <input name="minutes" id="minutes41" type="number" min="1" max="90" class="validate">
-                    <label for="minutes41">{{pagestr["minutes"]}}</label>
+                    <label for="minutes41">minutes</label>
                   </div>
                   
                 </div>
                 <div class="row" style="margin-bottom: 0">
                   <div class="col s6" style="margin-top: 15px">
                   <select class="browser-default" name="formation">   
-                  {% for line in ["5-5-0", "5-4-1", "5-3-2", "5-2-3", "4-5-1", "4-4-2", "4-3-3", "3-5-2", "3-4-3", "2-5-3"] %}
-                    <option>{{line}}</option>
-                  {% endfor %}
+					  <option>5-5-0</option>
+					  <option>5-4-1</option>
+					  <option>5-3-2</option>
+					  <option>5-2-3</option>
+					  <option>4-5-1</option>
+					  <option>4-4-2</option>
+					  <option>4-3-3</option>
+					  <option>3-5-2</option>
+					  <option>3-4-3</option>
+					  <option>2-5-3</option>
                   </select>
                   </div>
                   <div class="input-field col s6">
                     <input name="minutes" id="minutes42" type="number" min="1" max="90" class="validate">
-                    <label for="minutes42">{{pagestr["minutes"]}}</label>
+                    <label for="minutes42">minutes</label>
                   </div>
                   
                 </div>
                 <div class="row" style="margin-bottom: 0">
                   <div class="col s6" style="margin-top: 15px">
                   <select class="browser-default" name="formation">   
-                  {% for line in ["5-5-0", "5-4-1", "5-3-2", "5-2-3", "4-5-1", "4-4-2", "4-3-3", "3-5-2", "3-4-3", "2-5-3"] %}
-                    <option>{{line}}</option>
-                  {% endfor %}
+					  <option>5-5-0</option>
+					  <option>5-4-1</option>
+					  <option>5-3-2</option>
+					  <option>5-2-3</option>
+					  <option>4-5-1</option>
+					  <option>4-4-2</option>
+					  <option>4-3-3</option>
+					  <option>3-5-2</option>
+					  <option>3-4-3</option>
+					  <option>2-5-3</option>
                   </select>
                   </div>
                   <div class="input-field col s6">
                     <input name="minutes" id="minutes43" type="number" min="1" max="90" class="validate">
-                    <label for="minutes43">{{pagestr["minutes"]}}</label>
+                    <label for="minutes43">minutes</label>
                   </div>
                   
                 </div>
             </div>
           </div>
         <div class="col s12" style="margin-top:10px">
-          <button class="btn green waves-effect waves-light" style="float:left" type="submit">{{pagestr["Submit"]|safe}}</button>
+          <button class="btn green waves-effect waves-light" style="float:left" type="submit">Submit</button>
         </div>
       </form>
         
@@ -259,35 +343,36 @@
     
     <div class="col l12 m12 s12">
       <div class="col m6 s12">
-        {% if login %}
-              <select class="browser-default" name="players" id="teams" onchange="getValue(this)">
-                <option value="" disabled selected>{{pagestr["chooseyourteam"]|safe}}</option>
-                  {% for i in teams %}
-                     <option value="{{i[0]}}">{{i[1]}}</option>
-                  {% endfor %}
-               </select>
+		  <select class="browser-default" name="players" id="teams" >
+			<option value="" disabled selected>chooseyourteam</option>
+		   </select>
            <br>
           <div class="progress" id="progress" style="display:none">
             <div class="indeterminate"></div>
           </div> 
-        
-       {% endif %}
-       <h5>{{pagestr["addformationmanually"]}}</h5>
+       <h5>add formation manually</h5>
        <div class="row">
         <div class="col s4">
           <select class="browser-default" id="addform" style="float:left;margin-right:5px;margin-top:15px">
-        {% for line in ["5-5-0", "5-4-1", "5-3-2", "5-2-3", "4-5-1", "4-4-2", "4-3-3", "3-5-2", "3-4-3", "2-5-3"] %}
-          <option>{{line}}</option>
-        {% endfor %}
+          <option>5-5-0</option>
+		  <option>5-4-1</option>
+		  <option>5-3-2</option>
+		  <option>5-2-3</option>
+		  <option>4-5-1</option>
+		  <option>4-4-2</option>
+		  <option>4-3-3</option>
+		  <option>3-5-2</option>
+		  <option>3-4-3</option>
+		  <option>2-5-3</option>
           </select>
         </div>
         <div class="input-field  col s4">
           <input name="addlevel" id="addlevel" type="number" min="3" max="10" class="validate">
-          <label for="addlevel">{{pagestr["level"]}}</label>
+          <label for="addlevel">level</label>
         </div>
         </div>
-        <button class="btn green waves-effect waves-light" style="float:left;margin:3px" onclick="addformation()">{{pagestr["addformationlevel"]}}</button>
-        <button class="btn green waves-effect waves-light" style="float:left;margin:3px" onclick="resetformation()">{{pagestr["resetformation"]}}</button>
+        <button class="btn green waves-effect waves-light" style="float:left;margin:3px" id="addformation" >add formation level</button>
+        <button class="btn green waves-effect waves-light" style="float:left;margin:3px" id="resetformation" >reset formation</button>
       </div>
       <div class="col m6 s12">
 
@@ -343,14 +428,14 @@
 
     </div>
 
-        <div id="ad3" class="col s12 m12 l12" style="margin-top:35px;text-align:center">{% include "responsive_banner.html" %}</div>
+        <!--<div id="ad3" class="col s12 m12 l12" style="margin-top:35px;text-align:center">{% include "responsive_banner.html" %}</div>-->
     </div>
 
   </div>
   
     <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
-        <h5><b>{{pagestr["formationexperience"]|safe}}</b></h5>
-        <img src="/static/images/formexp.png" style="float:left;margin-right:15px"><span><b>{{pagestr["info"]|safe}}:</b> {{pagestr["description"]|safe}}</span>
+        <h5><b>formation experience</b></h5>
+        <img src="./static/images/formexp.png" style="float:left;margin-right:15px"><span><b>info:</b> This tool can calculate the increase and decrease of the formation experience after a match (up to 4 matches), in base of the number of minutes each one has been trained</span>
 
       </div>
     </div>
@@ -358,7 +443,6 @@
     </div>
   </div>
 
-  {% include "language-selector.html" %}
    
 </main>
 
@@ -372,33 +456,47 @@
 
 
 <script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="/static/noUiSlider/jquery.nouislider.all.js"></script>
-<script type="text/javascript" src="/static/js/materialize.js"></script>
+<script type="text/javascript" src="./static/noUiSlider/jquery.nouislider.all.js"></script>
+<script type="text/javascript" src="./static/js/materialize.js"></script>
 <!-- <script type="text/javascript" src="/static/js/cookies.js"></script>-->
 
-<script type="text/javascript" src="/static/js/formationexperience.js"></script>
+<script type="text/javascript" src="./static/js/formationexperience.js"></script>
 
-<script type="text/javascript">
+<script type="text/javascript" src="../env.js"></script>
+<script type="text/javascript" src="../api-proxy.js"></script>
+<script type="text/javascript" src="../util.js"></script>
+<script type="text/javascript" src="../prefs.js"></script>
+<script type="text/javascript" src="../util/misc.js"></script>
+<script type="text/javascript" src="../lib/oauth.js"></script>
+<script type="text/javascript" src="../lib/sha1.js"></script>
+<script type="text/javascript" src="../preferences.js"></script>
+<script type="text/javascript" src="../settings.js"></script>
+<script type="text/javascript" src="../log.js"></script>
+<script type="text/javascript" src="../lang.js"></script>
+<script type="text/javascript" src="../dom.js"></script>
+<script type="text/javascript" src="../manager_compendium.js"></script>
+
+<!--<script type="text/javascript" ></script>
     $(document).ready(function(){
       $('.button-collapse').sideNav({menuWidth: 340, activationWidth: 70, edge: 'right'});
       $('.collapsible').collapsible();
       $('ul.tabs').tabs();
     });
-</script>
+</script>-->
 
 {% include "analytics.html" %}
 
 
-<script type="text/javascript">
+<!--<script type="text/javascript"></script>
 $('#my-form-1').on('submit', function () {
     formationexperiencecalc();
     return false;
 });
 
-</script>
+</script>-->
 
 
-<script type="text/javascript">
+<!--<script type="text/javascript"></script>
 
        function getValue(value)  {
            $("#progress").show();
@@ -432,7 +530,7 @@ $('#my-form-1').on('submit', function () {
 
          };
 
-    </script>
+    </script>-->
 
 
 </body>

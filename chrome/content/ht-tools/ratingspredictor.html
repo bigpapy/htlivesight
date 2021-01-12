@@ -120,7 +120,7 @@
 		margin-bottom:0px;
 	}
 	</style>
-	<script type="text/javascript">
+	<!--<script type="text/javascript">
 	/************************************************************************************************************
 	(C) www.dhtmlgoodies.com, November 2005
 
@@ -463,7 +463,7 @@
 	}
 
 	window.onload = initDragDropScript;
-	</script>
+	</script>-->
   </head>
 
   
@@ -506,20 +506,17 @@
     	
         <div class="col l5 m6 s12">
           <form id="my-form">
-        {% if login %}
+
           <div class="col s12">
-              <select class="browser-default" name="players" id="teams" onchange="getValue(this)">
+              <select class="browser-default" name="players" id="teams" >
                 <option value="" disabled selected>choose your team</option>
-                  {% for i in teams %}
-                     <option value="{{i[0]}}">{{i[1]}}</option>
-                  {% endfor %}
                </select>
              </div>
            <br><br><br>
           <div class="progress" id="progress" style="display:none">
             <div class="indeterminate"></div>
           </div>          
-       {% endif %}
+
        	<div class="row slidercls"><b>coach level</b><span id="coachlevelval" style="float:right;text-align:right;font-weight:bold"></span></div>
         <div class="col l12 m12 s12 slidercls">
           <div id="slider-coachlevel" class="slider-success" style="width:80%;float:left"></div><input type="text" id="coachlevel-value" style="float:right;width:40px;height:25px;text-align:right" value="0"/>
@@ -572,9 +569,9 @@
 		<div>
 			<p>Players</p>
 		<ul id="allItems">
-			<li id="node1">Student A</li>
+			<!--<li id="node1">Student A</li>
 			<li id="node2">Student B</li>
-			<li id="node3">Student C</li>
+			<li id="node3">Student C</li>-->
 		</ul>
 		</div>
 		</div>
@@ -614,7 +611,7 @@
 </div>
 
 <ul id="dragContent"></ul>
-<div id="dragDropIndicator"><img src="static/images/insert.gif"></div>
+<div id="dragDropIndicator"><img src="./static/images/insert.gif"></div>
 
   </div>
   
@@ -639,24 +636,39 @@
 <!-- <script type="text/javascript" src="static/js/cookies.js"></script>-->
 
 <script type="text/javascript" src="static/js/training.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="static/js/ratingspredictor.js"></script>
+
+<script type="text/javascript" src="../env.js"></script>
+<script type="text/javascript" src="../api-proxy.js"></script>
+<script type="text/javascript" src="../util.js"></script>
+<script type="text/javascript" src="../prefs.js"></script>
+<script type="text/javascript" src="../util/misc.js"></script>
+<script type="text/javascript" src="../lib/oauth.js"></script>
+<script type="text/javascript" src="../lib/sha1.js"></script>
+<script type="text/javascript" src="../preferences.js"></script>
+<script type="text/javascript" src="../settings.js"></script>
+<script type="text/javascript" src="../log.js"></script>
+<script type="text/javascript" src="../lang.js"></script>
+<script type="text/javascript" src="../dom.js"></script>
+<script type="text/javascript" src="../manager_compendium.js"></script>
+<!--<script type="text/javascript">
     $(document).ready(function(){
       $('.button-collapse').sideNav({menuWidth: 340, activationWidth: 70, edge: 'right'});
       $('.collapsible').collapsible();
       $('ul.tabs').tabs();
     });
-</script>
+</script>-->
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 $('#my-form').on('submit', function () {
     var totalweeks = "{{pagestr['totalweeks']|safe}}";
     var chooseaskill = "{{pagestr['chooseaskill']|safe}}";
     trainingcalc(totalweeks, chooseaskill);
     return false;
 });
-</script>
+</script>-->
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
    var names = ['non-existent','disastrous','wretched','poor','weak','inadequate','passable','solid','excellent','formidable','outstanding','brilliant','magnificent','world class','supernatural','titanic','extra-terrestrial','mythical','magical','utopian','divine'];
 
 
@@ -729,9 +741,9 @@ $( "#slider-coachlevel" ).Link().to($( "#coachlevelval" ), function ( value ) {
   
 
 
-</script>
+</script>-->
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 
        function getValue(value)  {
           $("#progress").show();
@@ -754,7 +766,7 @@ $( "#slider-coachlevel" ).Link().to($( "#coachlevelval" ), function ( value ) {
           return false
 
          };
-</script>
+</script>-->
 
 </body>
 </html>

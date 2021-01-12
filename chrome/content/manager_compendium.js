@@ -37,51 +37,26 @@ htlivesight.ManagerCompendium.ParseMyData = function (xml) {
 				youthTeams[i].youthLeagueName = htlivesight.Util.Parse("YouthLeagueName", teamsNode[i]);
 			}
 			htlivesight.ManagerCompendium.data = new htlivesight.ManagerCompendium(userId, loginName, languageId, languageName, teams, youthTeams);
-				/*if(teams[0] && teams[0].teamId){
-					document.getElementById("teamId").value = teams[0].teamId;
-				}*/
-				// Test:
-				/*teams[1] = {};
-				teams[1].teamId = '2015476';
-				teams[2] = {};
-				teams[2].teamId = '2056795';*/
-				var checked  = document.getElementById("getMyDataAutomatically").checked;
+
+				var checked;
+				if(document.getElementById("getMyDataAutomatically")){
+					checked  = document.getElementById("getMyDataAutomatically").checked;
+				}
+				
 				if(checked && teams[1] && teams[1].teamId){
 					document.getElementById("secondTeamId").value = teams[1].teamId;
 				}
 				if(checked && teams[2] && teams[2].teamId){
 					document.getElementById("thirdTeamId").value = teams[2].teamId;
 				}
-			//just to test second youth team, because I don't get one:
-			//htlivesight.ManagerCompendium.data.youthTeams[0] = {};
-			//htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId='2100512';
-			//htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamName='davidirkikipouspous';
-			//htlivesight.ManagerCompendium.data.youthTeams[0].youthLegueId='536557';
-			//htlivesight.ManagerCompendium.data.youthTeams[0].youthLeagueName='Les minis FHJ-NJistes';
-			
-			/*htlivesight.ManagerCompendium.data.youthTeams[2] = {};
-			htlivesight.ManagerCompendium.data.youthTeams[2].youthTeamId='2316836';
-			htlivesight.ManagerCompendium.data.youthTeams[2].youthTeamName='daviboudchou';
-			htlivesight.ManagerCompendium.data.youthTeams[2].youthLegueId='592681';
-			htlivesight.ManagerCompendium.data.youthTeams[2].youthLeagueName='bonanivfiloo';
-			htlivesight.ManagerCompendium.data.youthTeams[1] = {};
-			htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId='2606405';
-			htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamName='davidirkikipouspous';
-			htlivesight.ManagerCompendium.data.youthTeams[1].youthLegueId='517253';
-			htlivesight.ManagerCompendium.data.youthTeams[1].youthLeagueName='303';*/
-		/*	htlivesight.ManagerCompendium.data.youthTeams[1] = {};
-			htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamId=htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId;
-			htlivesight.ManagerCompendium.data.youthTeams[1].youthTeamName=htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamName;
-			htlivesight.ManagerCompendium.data.youthTeams[1].youthLegueId=htlivesight.ManagerCompendium.data.youthTeams[0].youthLegueId;
-			htlivesight.ManagerCompendium.data.youthTeams[1].youthLeagueName=htlivesight.ManagerCompendium.data.youthTeams[0].youthLeagueName;
-			
-			htlivesight.ManagerCompendium.data.youthTeams[0] = {};
-			htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamId='1485283';
-			htlivesight.ManagerCompendium.data.youthTeams[0].youthTeamName='IFK GM';
-			htlivesight.ManagerCompendium.data.youthTeams[0].youthLegueId='207696';
-			htlivesight.ManagerCompendium.data.youthTeams[0].youthLeagueName='Delphi B';*/
-			// end injecting second youth team data: to be removed after tests.
-			htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.LOGIN);
+			if(htlivesight.EventSystem){
+				htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.LOGIN);
+			}else{
+				console.log(htlivesight.ManagerCompendium.data.ManagerCompendium);
+				for(var team in htlivesight.ManagerCompendium.data.teams){
+					$("#teams").append('<option value="'+htlivesight.ManagerCompendium.data.teams[team].teamId+'">'+htlivesight.ManagerCompendium.data.teams[team].teamName+'</option>');
+				}
+			}
 		}
 	} catch(e) {
 		alert("ParseMyData: " + e);

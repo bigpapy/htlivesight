@@ -78,7 +78,7 @@ $(document).ready(function() {
 });
 //
 $('#my-form-1').on('submit', function() {
-	var exptolow = "{{pagestr['experienceistolow']|safe}}";
+	var exptolow = "Experience is too low!";
 	futurecoach(exptolow);
 	return false;
 });

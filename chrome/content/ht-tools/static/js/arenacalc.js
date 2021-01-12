@@ -181,18 +181,129 @@ var constructioncost = function(terraces,basic,roof,vip) {
 
 // adding arena.html inline js here:
 $('#arenas').change(function(){
-	var data = JSON.parse(localStorage['extensions.Htlivesight.data.' + this.value]);
-	var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
-	tableobj.rows[0].cells[1].innerText = data.terraces; //terraces
-    tableobj.rows[1].cells[1].innerText = data.basic; //basic
-    tableobj.rows[2].cells[1].innerText = data.roof; //roof
-    tableobj.rows[3].cells[1].innerText = data.vip; //vip
-    tableobj.rows[4].cells[1].innerText = data.total; //total
-    tableobj.rows[5].cells[1].innerText = 7*data.terraces + 10*data.basic + 19*data.roof + 35*data.vip + "€"
-    tableobj.rows[6].cells[1].innerText = 0.5*parseFloat(data.terraces) + 0.7*parseFloat(data.basic) + parseFloat(data.roof) + 2.5*parseFloat(data.vip) + "€"
+	
+	$("#lastMatches > tbody").empty();
+	
+	var arenaId = this.value;
+	console.log(arenaId);
+	
+	var teamId = $("select option:selected").attr("teamId")
+	console.log(teamId);
+	
+	arenaDetailsHTTPGet(this.value, $("select option:selected").attr("teamId"));
 })
 
+var arenaDetailsHTTPGet = function (arenaId, teamId) {
+//	console.log(htlivesight.Player.List["_"+playerId+"_"+youth].specialty);
+	var parameters = [["file","arenadetails"],["version", "1.5"],["arenaID",arenaId]];
+	if(arenaId){
+		htlivesight.ApiProxy.retrieve(document, parameters, function(xml){arenaDetailsParseGet(xml,arenaId, teamId);});
+	}
+};
+var arenaDetailsParseGet = function(xml,arenaId, teamId){
+	console.log(xml);
+	var terraces = parseInt(htlivesight.Util.Parse("Terraces", xml));
+	var basic = parseInt(htlivesight.Util.Parse("Basic", xml));//data.basic; //basic
+    var roof = parseInt(htlivesight.Util.Parse("Roof", xml));//data.roof; //roof
+    var vip = parseInt(htlivesight.Util.Parse("VIP", xml));//data.vip; //vip
+    var total = parseInt(htlivesight.Util.Parse("Total", xml));//data.total; //total
+    
+	var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
+	tableobj.rows[0].cells[1].innerText = terraces;//data.terraces; //terraces
+    tableobj.rows[1].cells[1].innerText = basic;//data.basic; //basic
+    tableobj.rows[2].cells[1].innerText = roof;//data.roof; //roof
+    tableobj.rows[3].cells[1].innerText = vip;//data.vip; //vip
+    tableobj.rows[4].cells[1].innerText = total;//data.total; //total
+    tableobj.rows[5].cells[1].innerText = 7*terraces + 10*basic + 19*roof + 35*vip + "€"
+    tableobj.rows[6].cells[1].innerText = 0.5*parseFloat(terraces) + 0.7*parseFloat(basic) + parseFloat(roof) + 2.5*parseFloat(vip) + "€"
+	console.log('calling fans');
+	fansHTTPGet(teamId);
+	//$("#progress").hide();
+}
 
+var fansHTTPGet = function (teamId) {
+//	console.log(htlivesight.Player.List["_"+playerId+"_"+youth].specialty);
+	var parameters = [["file","fans"],["version", "1.3"],["teamId",teamId]];
+	console.log('calling fans again');
+	if(teamId){
+		htlivesight.ApiProxy.retrieve(document, parameters, function(xml){fansParseGet(xml, teamId);});
+	}
+};
+
+var fansParseGet = function(xml,teamId){
+	console.log(xml);
+	var fanMood = htlivesight.Util.Parse("FanMood", xml);
+	console.log(' fanMood = '+ fanMood);
+	var members = htlivesight.Util.Parse("Members", xml);
+	console.log(' members = '+ members);
+	$("#fansmood-value").val(fanMood);
+	$("#fans").val(members).focus().blur();
+	var percent = ""+(parseInt(fanMood)/11)*100 + "%";
+	console.log(percent);
+	$("#slider-fansmood > div > div").css("left", percent);
+	//parsing matches:
+	var matches = xml.getElementsByTagName("Match");
+	var matchesId = [];
+	for(i = 0; i < matches.length; i++){
+		var homeTeamId = htlivesight.Util.Parse("HomeTeamID", matches[i]);
+		if(homeTeamId == teamId){
+			var matchId = htlivesight.Util.Parse("MatchID", matches[i]);
+			//call matchdetails to add stats to last matches
+			matchesId.push(matchId);
+			console.log("matchId = " + matchId);
+			
+		}
+	}
+	matchDetailsHTTPGet(matchesId);
+	//setTimeout(function(){ $('#lastMatches').DataTable({searching: false,paging: false}); $("#progress").hide();}, 3000);
+}
+
+var matchDetailsHTTPGet = function (matchesId) {
+//	console.log(htlivesight.Player.List["_"+playerId+"_"+youth].specialty);
+	var matchId = matchesId.shift();//check if shift is better
+	var parameters = [["file","matchdetails"],["version", "3.0"],["matchID",matchId],["sourceSystem","hattrick"]];
+	console.log('calling matchdetails again');
+	if(matchId){
+		htlivesight.ApiProxy.retrieve(document, parameters, function(xml){matchDetailsParseGet(xml, matchId, matchesId);});
+	}
+};
+
+var matchDetailsParseGet = function(xml, matchId, matchesId){
+	console.log(xml);
+	var weatherString = ["../img/rain22.png","../img/overcast22.png","../img/few_clouds22.png","../img/sun22.png"];
+	
+	var AwayTeamName = htlivesight.Util.Parse("AwayTeamName", xml);
+	var Date = htlivesight.Util.Parse("MatchDate", xml).split(" ")[0];
+	var weatherID = htlivesight.Util.Parse("WeatherID", xml);
+	
+	var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
+	var terraces = parseInt(tableobj.rows[0].cells[1].innerText); //terraces
+    var basic = parseInt(tableobj.rows[1].cells[1].innerText);//basic
+    var roof = parseInt(tableobj.rows[2].cells[1].innerText);//roof
+    var vip = parseInt(tableobj.rows[3].cells[1].innerText);//vip
+    var total = parseInt(tableobj.rows[4].cells[1].innerText);//total
+    
+	var soldTerraces = parseInt(htlivesight.Util.Parse("SoldTerraces", xml));
+	var soldBasic = parseInt(htlivesight.Util.Parse("SoldBasic", xml)); //basic
+    var soldRoof = parseInt(htlivesight.Util.Parse("SoldRoof", xml));//roof
+    var soldVip = parseInt(htlivesight.Util.Parse("SoldVIP", xml));//vip
+    var soldTotal = parseInt(htlivesight.Util.Parse("SoldTotal", xml));; //total
+	
+	var soldTerracesPercent = " ("+parseInt((soldTerraces/terraces)*10000)/100+"%)";
+	var soldBasicPercent = " ("+parseInt((soldBasic/basic)*10000)/100+"%)"; //basic
+    var soldRoofPercent = " ("+parseInt((soldRoof/roof)*10000)/100+"%)";//roof
+    var soldVipPercent = " ("+parseInt((soldVip/vip)*10000)/100+"%)";//vip
+    var soldTotalPercent = " ("+parseInt((soldTotal/total)*10000)/100+"%)"; //total
+
+	$("#lastMatches > tbody").append("<tr><td>"+Date+"</td><td>"+AwayTeamName+"</td><td><img src='"+weatherString[weatherID]+"'></td><td>"+soldTerraces+soldTerracesPercent+"</td><td>"+soldBasic+soldBasicPercent+"</td><td>"+soldRoof+soldRoofPercent+"</td><td>"+soldVip+soldVipPercent+"</td><td>"+soldTotal+soldTotalPercent+"</td>");
+	if(matchesId.length >0){
+		matchDetailsHTTPGet(matchesId);
+	}else{
+		//$('#lastMatches').DataTable({searching: false,paging: false}); 
+		$("#progress").hide();
+	}
+	
+};
 
 $(document).ready(function() {
 	$('.button-collapse').sideNav({
@@ -203,20 +314,33 @@ $(document).ready(function() {
 	$('.collapsible').collapsible();
 	$('ul.tabs').tabs();
 
-	if(localStorage['extensions.Htlivesight.data.myFirstTeamArena']){
-		var myFirstTeamArena = JSON.parse(localStorage['extensions.Htlivesight.data.myFirstTeamArena']);
-		$('#arenas').append($('<option>', {value:'myFirstTeamArena', text: myFirstTeamArena.name}));
-	}
-	if(localStorage['extensions.Htlivesight.data.mySecondTeamArena']){
-		var mySecondTeamArena = JSON.parse(localStorage['extensions.Htlivesight.data.mySecondTeamArena']);
-		$('#arenas').append($('<option>', {value:'mySecondTeamArena', text: mySecondTeamArena.name}));
-	}
-	if(localStorage['extensions.Htlivesight.data.myThirdTeamArena']){
-		var myThirdTeamArena = JSON.parse(localStorage['extensions.Htlivesight.data.myThirdTeamArena']);
-		$('#arenas').append($('<option>', {value:'myThirdTeamArena', text: myThirdTeamArena.name}));
-	}
+	htlivesight.generateFromSeed();
+	htlivesight.prefs=htlivesight.Preferences.get();
+	htlivesight.url=htlivesightEnv.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
+	htlivesight.loadXml(htlivesight.url, function(xml, status){
+		if(status != 200){return}
+		var data=xml.getElementsByTagName("Htlivesight");
+		htlivesight.data=data;
+		managerCompendiumHTTPGet();
+	});
 });
 
+var managerCompendiumHTTPGet = function () {
+//	console.log(htlivesight.Player.List["_"+playerId+"_"+youth].specialty);
+	var parameters = [["file","managercompendium"],["version", "1.3"]];
+	htlivesight.ApiProxy.retrieve(document, parameters, function(xml){managerCompendiumParseGet(xml);});
+};
+
+var managerCompendiumParseGet = function(xml){
+	console.log(xml);
+	var teams = xml.getElementsByTagName("Team");
+	for(i = 0; i < teams.length; i++){
+		var arenaName = htlivesight.Util.Parse("ArenaName", teams[i]);
+		var arenaId = htlivesight.Util.Parse("ArenaId", teams[i]);
+		var teamId = htlivesight.Util.Parse("TeamId", teams[i]);
+		$('#arenas').append('<option value="'+arenaId+'" teamId="'+teamId+'">'+arenaName+'</option>');
+	}
+};
 //
 
 $('#my-form-1').on('submit', function() {

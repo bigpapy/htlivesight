@@ -46,3 +46,53 @@ function totalexperiencecalc(){
 
         return false;
 }
+////
+$(document).ready(function(){
+	$('.button-collapse').sideNav({menuWidth: 340, activationWidth: 70, edge: 'right'});
+	$('.collapsible').collapsible();
+	$('ul.tabs').tabs();
+	$('#teams').change(function getValue()  {
+		$("#progress").show();
+		$('#players').empty();
+		var teamId = $( "#teams option:selected" ).val();
+		httpGet(teamId);
+	});
+	htlivesight.generateFromSeed();
+	htlivesight.prefs=htlivesight.Preferences.get();
+	htlivesight.url=htlivesightEnv.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
+	htlivesight.loadXml(htlivesight.url, function(xml, status){
+	if(status != 200){return}
+	var data=xml.getElementsByTagName("Htlivesight");
+	htlivesight.data=data;
+	htlivesight.ManagerCompendium.HTTPGetMyData();
+	});
+});
+////
+$('#my-form-1').on('submit', function () {
+    totalexperiencecalc();
+    return false;
+});
+////
+
+ ////
+var httpGet = function (teamId) {
+//	console.log(htlivesight.Player.List["_"+playerId+"_"+youth].specialty);
+	var parameters = [["file","players"],["version", "2.4"],["teamID",teamId]];
+	if(teamId){
+		htlivesight.ApiProxy.retrieve(document, parameters, function(xml){parseGet(xml,teamId);});
+	}
+};
+var parseGet = function(xml,teamId){
+	console.log(xml);
+	var players = xml.getElementsByTagName("Player");
+	for(i = 0; i < players.length; i++){
+		console.log(i);
+		console.log(players[i]);
+		var playerName = htlivesight.Util.Parse("FirstName", players[i])+ " " + htlivesight.Util.Parse("LastName", players[i]);
+		var playerID = htlivesight.Util.Parse("PlayerID", players[i]);
+		var experience = htlivesight.Util.Parse("Experience", players[i]);
+		var leadership = htlivesight.Util.Parse("Leadership", players[i]);
+		$('#players').append('<input type="checkbox" id="'+playerID+'" name="'+playerID+'" experience="'+experience+'" leadership="'+leadership+'" playername="'+playerName+'"><label for="'+playerID+'">' + playerName + '</label><br>');
+	}
+	$("#progress").hide();
+}

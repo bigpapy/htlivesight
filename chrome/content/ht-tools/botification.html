@@ -36,24 +36,31 @@
     <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
         
       <div class="col l5 m6 s12" style="background: none repeat scroll 0% 0% #FFF; border-radius: 15px; padding: 20px; margin-bottom: 5px">
-      <!--{% if login %}
+      
         <form id="my-form-1" style="overflow:hidden" class="col s12">
           <div class="input-field col s12 m6 l8">
-              <input id="teamid" type="text" class="validate" value="{{param['teamid']}}">
-              <label for="teamid">{{pagestr["searchbyteamid"]|safe}}</label>
+              <input id="teamid" type="text" class="validate" value="">
+              <label for="teamid">search by teamid</label>
           </div>
-            <button class="btn green waves-effect waves-light" style="float:right" type="submit">{{pagestr["Submit"]|safe}}</button>
+            <button class="btn green waves-effect waves-light" style="float:right" type="submit">Submit</button>
           <div class="progress" id="progress" style="display:none">
             <div class="indeterminate"></div>
           </div>    
         </form>      
        <br>
-      {% endif %} -->
+
       <form id="my-form-2" style="overflow:hidden" class="col s12">
         
         <div class="input-field col s12 m6 l8">
-          <label for="date">search by last login</label>
-          <input type="text" id="date" class="datepicker" value="last login">
+          <label for="date">search by last login</label><br/><br/>
+          <!--<input type="text" id="date" class="datepicker" value="">-->
+		  <input type="date" id="date" name="date" class="validate" value="">
+        </div>
+		<div class="input-field col s12 m6 l8">
+		  
+          <input type="checkbox" id="moreThanOneYear" name="moreThanOneYear" >
+		  <label for="moreThanOneYear">Playing more than 1 year</label>
+		  </input>
         </div>
             <button class="btn green waves-effect waves-light" style="float:right" type="submit">Submit</button>
       </form>        
@@ -85,7 +92,7 @@
   
     <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
         <h5><b>botification</b></h5>
-        <img src="static/images/botification.png" style="float:left;margin-right:15px"><span><b>info:</b> description</span>
+        <img src="static/images/botification.png" style="float:left;margin-right:15px"><span><b>info:</b> Calculate when a team becomes ownerless or a bot team. Just by filling in the date of last login. Please note that a team only become ownerless when the owner didn't log-in on the second exactly 49 days (14 weeks if play HT since more than one year). Therefore it could seem to take 50 days. A second team will turn to ownerless in 7 days from supporter package expiration instead of 49 days. This tool owned to GM-Noortje and HagOnline.</span>
 
       </div>
     </div>
@@ -95,14 +102,26 @@
 </main>
 
 
-<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="static/noUiSlider/jquery.nouislider.all.js"></script>
 <script type="text/javascript" src="static/js/materialize.js"></script>
 <!-- <script type="text/javascript" src="static/js/cookies.js"></script>-->
 
 <script type="text/javascript" src="static/js/botification.js"></script>
 
-
+<!-- files needed to make call on chpp -->
+<script type="text/javascript" src="../env.js"></script>
+<script type="text/javascript" src="../api-proxy.js"></script>
+<script type="text/javascript" src="../util.js"></script>
+<script type="text/javascript" src="../prefs.js"></script>
+<script type="text/javascript" src="../util/misc.js"></script>
+<script type="text/javascript" src="../lib/oauth.js"></script>
+<script type="text/javascript" src="../lib/sha1.js"></script>
+<script type="text/javascript" src="../preferences.js"></script>
+<script type="text/javascript" src="../settings.js"></script>
+<script type="text/javascript" src="../log.js"></script>
+<script type="text/javascript" src="../lang.js"></script>
+<script type="text/javascript" src="../dom.js"></script>
 
 </body>
 </html>

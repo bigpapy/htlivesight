@@ -64,11 +64,14 @@ var botificationcalc = function(ownerless) {
 
 var botification = function() {
 
-	$input = $('.datepicker').pickadate();
+	/*$input = $('.datepicker').pickadate();
 	var picker = $input.pickadate('picker');
-	var lastlogin = picker.get('select').pick;
-
-	var ownerless = lastlogin + (1000 * 60 * 60 * 24 * 49);
+	var lastlogin = picker.get('select').pick;*/
+	var lastlogin = new Date($("#date").val()).getTime();
+	var moreThanOneYear = $('#moreThanOneYear').is(":checked");
+	var daysToOwnerless = 49;
+	if(moreThanOneYear) daysToOwnerless = 98;
+	var ownerless = lastlogin + (1000 * 60 * 60 * 24 * daysToOwnerless);
 	var res1 = new Date(ownerless);
 
 	var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
@@ -80,15 +83,21 @@ var botification = function() {
 	tableobj.rows[0].cells[2].innerText = botificationcalc( ownerless );
 }
 
-var botification2 = function(last,ownerlesstr) {
-	if (last === "0001-01-01") {
+var botification2 = function(last,ownerlesstr, signupDate) {
+	if (last === "0001-01-01 00:00:00") {
 		var ownerless = new Date()
 		var res1 = ownerlesstr;
 		last = "";
 
 	} else {
 		var lastlogin = new Date(last).getTime();
-		var ownerless = lastlogin + (1000 * 60 * 60 * 24 * 49);
+		var daysToOwnerless = 49;
+		////
+		if(new Date().setFullYear(new Date().getFullYear()-1) > new Date(signupDate).getTime()){//if user signup more than 1 year ago
+			daysToOwnerless = 98;
+		}
+		////
+		var ownerless = lastlogin + (1000 * 60 * 60 * 24 * daysToOwnerless);
 		var res1 = new Date(ownerless);
 		res1 = res1.getDate() + "/" + (res1.getMonth() + 1) + "/" + res1.getFullYear();
 
@@ -131,46 +140,96 @@ $(document).ready(function(){
 
 
 $('#my-form-1').on('submit', function() {
-	value = $("#teamid").val();
-	getValue(value);
+	$("#progress").show();
+	var teamId = $("#teamid").val();
+	//getValue(value);
+	
+	htlivesight.generateFromSeed();
+	htlivesight.prefs=htlivesight.Preferences.get();
+	htlivesight.url=htlivesightEnv.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
+	htlivesight.loadXml(htlivesight.url, function(xml, status){
+		if(status != 200){return}
+		var data=xml.getElementsByTagName("Htlivesight");
+		htlivesight.data=data;
+		httpGet(teamId);
+	});
 
 	return false;
 });
 
 $('#my-form-2').on('submit', function() {
+	if(!$("#date").val()){
+		alert("Please set last login date.");
+		return false;
+	} 
 	botification();
 	return false;
 });
 
+var httpGet = function (teamId) {
+//	console.log(htlivesight.Player.List["_"+playerId+"_"+youth].specialty);
+	var parameters = [["file","teamdetails"],["version", "3.5"],["teamID",teamId]];
+	if(teamId){
+		htlivesight.ApiProxy.retrieve(document, parameters, function(xml){parseGet(xml,teamId);});
+	}
+};
+
+var parseGet = function(xml,teamId){
+	console.log(xml);
+	var lastlogin = htlivesight.Util.Parse("LastLoginDate", xml);
+	console.log('lastlogin:' + lastlogin);
+	var supporterTier = htlivesight.Util.Parse("SupporterTier", xml);
+	console.log('supporterTier:' + supporterTier);
+	var botSince = htlivesight.Util.Parse("BotSince", xml);
+	console.log('botSince:' + botSince);
+	var signupDate = htlivesight.Util.Parse("SignupDate",xml);
+	console.log();
+	
+	if (supporterTier === "platinum" || supporterTier === "diamond" ) {
+		toast(supporterTier, 3000, 'rounded');
+		
+		var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
+		last = new Date(lastlogin);
+		tableobj.rows[0].cells[0].innerText = last.getDate() + "/" + (last.getMonth() + 1) + "/" + last.getFullYear();
+		tableobj.rows[0].cells[1].innerText = "";
+		tableobj.rows[0].cells[2].innerText = "";
+
+	  } else {
+		botification2(lastlogin,botSince, signupDate); 
+	  }
+	  
+	  $("#progress").hide();
+}
+
 //
 
+/*
+function getValue(value)  {
+   $("#progress").show();
+   
+   $.getJSON('/_jquerydownloaddata', 
+   {'name':'botification','team':value}
+   ,
 
-   function getValue(value)  {
-       $("#progress").show();
-       
-       $.getJSON('/_jquerydownloaddata', 
-       {'name':'botification','team':value}
-       ,
+   function(data) {
+	  if (data.supporter === "platinum" || data.supporter === "diamond" ) {
+		toast('supporterinfo', 3000, 'rounded');
+		
+		var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
+		last = new Date(data.lastlogin);
+		tableobj.rows[0].cells[0].innerText = last.getDate() + "/" + (last.getMonth() + 1) + "/" + last.getFullYear();
+		tableobj.rows[0].cells[1].innerText = "";
+		tableobj.rows[0].cells[2].innerText = "";
 
-       function(data) {
-          if (data.supporter === "platinum" || data.supporter === "diamond" ) {
-            toast('supporterinfo', 3000, 'rounded');
-            
-            var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
-            last = new Date(data.lastlogin);
-            tableobj.rows[0].cells[0].innerText = last.getDate() + "/" + (last.getMonth() + 1) + "/" + last.getFullYear();
-            tableobj.rows[0].cells[1].innerText = "";
-            tableobj.rows[0].cells[2].innerText = "";
+	  } else {
+		botification2(data.lastlogin,'ownerlessmessage') 
+	  }
+	  
+	  $("#progress").hide();
 
-          } else {
-            botification2(data.lastlogin,'ownerlessmessage') 
-          }
-          
-          $("#progress").hide();
+   });
 
-       });
+  return false;
 
-      return false;
-
-     };
+ };*/
 

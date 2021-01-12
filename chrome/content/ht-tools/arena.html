@@ -67,19 +67,19 @@
           <label for="arenasize">arena size</label>
         </div>
         <div class="input-field col s12 m7 l6">
-          <input id="terper" type="text" class="validate" value="">
+          <input id="terper" type="text" class="validate" value="60">
           <label for="terper">terraces (%)</label>
         </div>
         <div class="input-field col s12 m7 l6">
-          <input id="basper" type="text" class="validate" value="">
+          <input id="basper" type="text" class="validate" value="23.5">
           <label for="basper">basic (%)</label>
         </div>
         <div class="input-field col s12 m7 l6">
-          <input id="roofper" type="text" class="validate" value="">
+          <input id="roofper" type="text" class="validate" value="14">
           <label for="roofper">roof (%)</label>
         </div>
         <div class="input-field col s12 m7 l6">
-          <input id="vipper" type="text" class="validate" value="">
+          <input id="vipper" type="text" class="validate" value="2.5">
           <label for="vipper">vip (%)</label>
         </div>
         <br>
@@ -148,15 +148,32 @@
               <td></td>
             </tr>
           </tbody>
-        </table>
+        </table><br/>
 
     </div>
-
+	<div class="col l12 m12 s12">
+		<table class="table bordered centered" id="lastMatches" style="background-color:#fff">
+			<thead>
+				<tr style="background-color:#dddddd">
+					<th>Date</th>
+					<th>Opponent</th>
+					<th>Weather</th>
+					<th>Terraces</th>
+					<th>Basics</th>
+					<th>Roof</th>
+					<th>VIP</th>
+					<th>Total</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>	
+		</div>
   </div>
   
     <div id="info" class="col s12" style="padding:30px;background-color:#FFF">
         <h5><b>arena calc</b></h5>
-        <img src="static/images/arena.png" style="float:left;margin-right:15px"><span><b>info:</b> description</span>
+        <img src="static/images/arena.png" style="float:left;margin-right:15px"><span><b>info:</b> This tool will help you to identify the ideal or desired size of your arena. You may use the fan members and the fan mood or just your desired arena size with the default or your own percentages. The time of construction can vary by up to one day in base of the daily updates.</span>
 
       </div>
     </div>
@@ -174,7 +191,20 @@
 
 <script type="text/javascript" src="static/js/arenacalc.js"></script>
 
+<script type="text/javascript" src="../env.js"></script>
+<script type="text/javascript" src="../api-proxy.js"></script>
+<script type="text/javascript" src="../util.js"></script>
+<script type="text/javascript" src="../prefs.js"></script>
+<script type="text/javascript" src="../util/misc.js"></script>
+<script type="text/javascript" src="../lib/oauth.js"></script>
+<script type="text/javascript" src="../lib/sha1.js"></script>
+<script type="text/javascript" src="../preferences.js"></script>
+<script type="text/javascript" src="../settings.js"></script>
+<script type="text/javascript" src="../log.js"></script>
+<script type="text/javascript" src="../lang.js"></script>
+<script type="text/javascript" src="../dom.js"></script>
 
+<script type="text/javascript" src="../lib/datatables.js"></script>
 
 
 
