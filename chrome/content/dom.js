@@ -2967,7 +2967,7 @@ htlivesight.DOM.addTeamLogo=function(){
 
 			if(htlivesight.Teams.list[teamIndex].logoURL === undefined){
 				if(teamId[2] == 'True'){htlivesight.Teams.list[teamIndex].logoURL = htlivesight.Image.window.link.ON;} 
-				if(teamIdNumber >= 3000 && teamIdNumber <= 3261){
+				if(teamIdNumber >= 3000 && teamIdNumber <= 3300){
 					htlivesight.Teams.list[teamIndex].logoURL = htlivesight.Image.getFlagPathFromTeamId(teamId[1]);
 				}else{
 					htlivesight.Team.HTTPGetMyData(teamId[1], null);	
