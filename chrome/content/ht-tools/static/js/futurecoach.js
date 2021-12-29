@@ -75,7 +75,62 @@ $(document).ready(function() {
 	});
 	$('.collapsible').collapsible();
 	$('ul.tabs').tabs();
+	////
+	$('#teams').change(function getValue()  {
+		$("#progress").show();
+		$('#players').empty();
+		var teamId = $( "#teams option:selected" ).val();
+		httpGet(teamId);
+	});
+	htlivesight.generateFromSeed();
+	htlivesight.prefs=htlivesight.Preferences.get();
+	htlivesight.url=htlivesightEnv.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
+	htlivesight.loadXml(htlivesight.url, function(xml, status){
+	if(status != 200){return}
+	var data=xml.getElementsByTagName("Htlivesight");
+	htlivesight.data=data;
+	htlivesight.ManagerCompendium.HTTPGetMyData();
+	});
+	$('#players').change(function(){
+		$('#slider-experience').val($("#players option:selected").attr("experience"));
+		$('#slider-leadership').val($("#players option:selected").attr("leadership"));
+	})
+	////
 });
+
+var httpGet = function (teamId) {
+//	console.log(htlivesight.Player.List["_"+playerId+"_"+youth].specialty);
+	var parameters = [["file","players"],["version", "2.4"],["teamID",teamId]];
+	if(teamId){
+		htlivesight.ApiProxy.retrieve(document, parameters, function(xml){parseGet(xml,teamId);});
+	}
+};
+
+var parseGet = function(xml,teamId){
+	console.log(xml);
+	var limitDate = new Date();
+	limitDate.setDate(limitDate.getDate() - 16*7);
+	var players = xml.getElementsByTagName("Player");
+	$('#players').append('<option value="" disabled selected>choose your player</option>');
+	for(i = 0; i < players.length; i++){
+		var playerName = htlivesight.Util.Parse("FirstName", players[i])+ " " + htlivesight.Util.Parse("LastName", players[i]);
+		var playerID = htlivesight.Util.Parse("PlayerID", players[i]);
+		var experience = htlivesight.Util.Parse("Experience", players[i]);
+		if(experience < 6) continue;
+		var leadership = htlivesight.Util.Parse("Leadership", players[i]);
+		if(leadership < 3) continue;
+		var transferListed = htlivesight.Util.Parse("TransferListed", players[i]);
+		if(transferListed == '1') continue;
+		var arrivalDate = Date.parse(htlivesight.Util.Parse("ArrivalDate", players[i]));
+		if(arrivalDate > limitDate) continue;
+		var trainerSkill = htlivesight.Util.Parse("TrainerSkill", players[i]);
+		if(parseInt(trainerSkill) > 0) continue;
+		$('#players').append('<option value="'+playerID+'" experience="'+experience+'" leadership="'+leadership+'">' + playerName + '</option><br>');
+	}
+	$("#progress").hide();
+	$("#playersDiv").show();
+}
+
 //
 $('#my-form-1').on('submit', function() {
 	var exptolow = "Experience is too low!";
