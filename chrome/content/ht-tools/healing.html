@@ -45,7 +45,24 @@
     <div id="tool" class="col s12" style="padding:30px;background-color:#FFF">
         
       <div class="col l5 m6 s12" style="background: none repeat scroll 0% 0% #FFF; border-radius: 15px; padding: 20px; margin-bottom: 5px">
-
+		  <div class="col s12">
+              <select class="browser-default" name="players" id="teams" >
+                <option value="" disabled selected>choose your team</option>
+               </select>
+             </div>
+           <br><br><br>
+          <div class="progress" id="progress" style="display:none">
+            <div class="indeterminate"></div>
+          </div>
+		  <div class="col s12" style="display:none" id="playersDiv">
+              <select class="browser-default" name="players" id="players" >
+                <option value="" disabled selected>choose your player</option>
+               </select>
+             </div>
+           <br><br><br>
+          <div class="progress" id="progress" style="display:none">
+            <div class="indeterminate"></div>
+          </div>
 <!--        {% if login %}
           <div class="col s12">
               <select class="browser-default" name="players" id="teams" onchange="getValue(this)">
@@ -147,7 +164,19 @@
 
 <script type="text/javascript" src="static/js/healing.js"></script>
 
-
+<script type="text/javascript" src="../env.js"></script>
+<script type="text/javascript" src="../api-proxy.js"></script>
+<script type="text/javascript" src="../util.js"></script>
+<script type="text/javascript" src="../prefs.js"></script>
+<script type="text/javascript" src="../util/misc.js"></script>
+<script type="text/javascript" src="../lib/oauth.js"></script>
+<script type="text/javascript" src="../lib/sha1.js"></script>
+<script type="text/javascript" src="../preferences.js"></script>
+<script type="text/javascript" src="../settings.js"></script>
+<script type="text/javascript" src="../log.js"></script>
+<script type="text/javascript" src="../lang.js"></script>
+<script type="text/javascript" src="../dom.js"></script>
+<script type="text/javascript" src="../manager_compendium.js"></script>
 
 </body>
 </html>

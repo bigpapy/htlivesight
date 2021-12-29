@@ -121,7 +121,68 @@ $(document).ready(function(){
   $('.button-collapse').sideNav({menuWidth: 340, activationWidth: 70, edge: 'right'});
   $('.collapsible').collapsible();
   $('ul.tabs').tabs();
+  	$('#teams').change(function getValue()  {
+		$("#progress").show();
+		$('#players').empty();
+		var teamId = $( "#teams option:selected" ).val();
+		httpGet(teamId);
+	});
+	htlivesight.generateFromSeed();
+	htlivesight.prefs=htlivesight.Preferences.get();
+	htlivesight.url=htlivesightEnv.contentPath+"locale/"+ htlivesight.prefs.language.locale +".xml";
+	htlivesight.loadXml(htlivesight.url, function(xml, status){
+	if(status != 200){return}
+	var data=xml.getElementsByTagName("Htlivesight");
+	htlivesight.data=data;
+	htlivesight.ManagerCompendium.HTTPGetMyData();
+	});
+	$('#players').change(function(){
+		console.log($("#players option:selected").attr("age"));
+		console.log($("#players option:selected").attr("injuryLevel"));
+		//$("#age-value").val($("#players option:selected").attr("age"));
+		//$("#weeks-value").val($("#players option:selected").attr("injuryLevel"));
+		$('#slider-age').val($("#players option:selected").attr("age"));
+		$('#slider-weeks').val($("#players option:selected").attr("injuryLevel"));
+	})
 });
+
+var httpGet = function (teamId) {
+//	console.log(htlivesight.Player.List["_"+playerId+"_"+youth].specialty);
+	var parameters = [["file","players"],["version", "2.4"],["teamID",teamId]];
+	let parametersStaff = [["file","stafflist"],["version", "1.1"],["teamId",teamId]];
+	if(teamId){
+		htlivesight.ApiProxy.retrieve(document, parameters, function(xml){parseGet(xml,teamId);});
+		htlivesight.ApiProxy.retrieve(document, parametersStaff, function(xml){parseGetStaff(xml,teamId);});
+	}
+};
+
+var parseGet = function(xml,teamId){
+	console.log(xml);
+	var players = xml.getElementsByTagName("Player");
+	$('#players').append('<option value="" disabled selected>choose your player</option>');
+	for(i = 0; i < players.length; i++){
+		var playerName = htlivesight.Util.Parse("FirstName", players[i])+ " " + htlivesight.Util.Parse("LastName", players[i]);
+		var playerID = htlivesight.Util.Parse("PlayerID", players[i]);
+		//var experience = htlivesight.Util.Parse("Experience", players[i]);
+		//var leadership = htlivesight.Util.Parse("Leadership", players[i]);
+		let age = htlivesight.Util.Parse("Age", players[i]);
+		let injuryLevel = htlivesight.Util.Parse("InjuryLevel", players[i]);
+		if(injuryLevel == -1) continue;
+		$('#players').append('<option value="'+playerID+'" age="'+age+'" injuryLevel="'+injuryLevel+'">' + playerName + '</option><br>');
+	}
+	$("#progress").hide();
+	$("#playersDiv").show();
+}
+var parseGetStaff = function(xml,teamId){
+	console.log(xml);
+	var staff = xml.getElementsByTagName("Staff");
+	for(i = 0; i < staff.length; i++){
+		var staffType = htlivesight.Util.Parse("StaffType", staff[i]);
+		if(staffType == '2'){
+			$('#slider-medic').val(htlivesight.Util.Parse("StaffLevel", staff[i])); 
+		}
+	}
+}
 
 //
 

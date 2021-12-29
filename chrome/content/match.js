@@ -334,11 +334,39 @@ htlivesight.Match.setMatchTypeImage = function (match) {
 		break;
 
 	case "50": //Tournament
-		img = htlivesight.Image.matchType.tournament;
+		if(match.matchContextId == '4892549'){
+			img = htlivesight.Image.matchType.u21WorlCup;
+		}else if(match.matchContextId == '4878492'){
+			img = htlivesight.Image.matchType.u21AfricaCup;
+		}else if(match.matchContextId == '4878490'){
+			img = htlivesight.Image.matchType.u21AmericaCup;
+		}else if(match.matchContextId == '4878493'){
+			img = htlivesight.Image.matchType.u21AsiaAndOceaniaCup;
+		}else if(match.matchContextId == '4878483'){
+			img = htlivesight.Image.matchType.u21EuropeCup;
+		}else if(match.matchContextId == '4892615'){
+			img = htlivesight.Image.matchType.u21NationsCup;
+		}else {
+			img = htlivesight.Image.matchType.tournament;
+		}
 		break;
 		
 	case "51": //Tournament
-		img = htlivesight.Image.matchType.tournament;
+		if(match.matchContextId == '4892549'){
+			img = htlivesight.Image.matchType.u21WorlCup;
+		}else if(match.matchContextId == '4878492'){
+			img = htlivesight.Image.matchType.u21AfricaCup;
+		}else if(match.matchContextId == '4878490'){
+			img = htlivesight.Image.matchType.u21AmericaCup;
+		}else if(match.matchContextId == '4878493'){
+			img = htlivesight.Image.matchType.u21AsiaAndOceaniaCup;
+		}else if(match.matchContextId == '4878483'){
+			img = htlivesight.Image.matchType.u21EuropeCup;
+		}else if(match.matchContextId == '4892615'){
+			img = htlivesight.Image.matchType.u21NationsCup;
+		}else {
+			img = htlivesight.Image.matchType.tournament;
+		}
 		break;
 		
 	case "61": //Single match
