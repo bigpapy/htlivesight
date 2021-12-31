@@ -18,6 +18,13 @@ htlivesight.Tournaments.HTTPTournamentFixtures = function (tournamentsId) {
 	htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.Tournaments.ParseTournamentFixtures(xml);});
 };
 
+htlivesight.Tournaments.HTTPTournamentDetails = function (match) {
+	var parameters=[["file","tournamentdetails"],
+	                ["version", "1.0"],
+	                ["tournamentId", match.matchContextId]];
+	htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.Tournaments.ParseTournamentDetails(xml, match);});
+};
+
 
 htlivesight.Tournaments.ParseTournamentList = function(xml,teamId,teamKind) {
 	var fetchDate = htlivesight.Time.parseFetchDate(xml);
@@ -63,5 +70,17 @@ htlivesight.Tournaments.ParseTournamentFixtures = function(xml) {
 			}
 			
 		}
+	}catch(e){alert("error in htlivesight.Tournament.ParseTournamentList: "+e)}
+}
+htlivesight.Tournaments.ParseTournamentDetails = function(xml, match) {
+	try {
+		var name = htlivesight.Util.Parse("Name", xml);
+			if(name == 'Division Battle'){
+				img = htlivesight.Image.matchType.divisionBattle;
+			}else{
+				img = htlivesight.Image.matchType.tournament;
+			}
+			document.getElementById("match_type_image_" + match.id + "_" + match.sourceSystem).src = img;
+			document.getElementById("short_match_type_image_" + match.id + "_" + match.sourceSystem).src = img;
 	}catch(e){alert("error in htlivesight.Tournament.ParseTournamentList: "+e)}
 }

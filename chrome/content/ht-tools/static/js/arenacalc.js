@@ -241,8 +241,10 @@ var fansParseGet = function(xml,teamId){
 	var percent = ""+(parseInt(fanMood)/11)*100 + "%";
 	console.log(percent);
 	$("#slider-fansmood > div > div").css("left", percent);
+	//replacing fans matches list with matchesArchive
+	matchesArchiveHTTPGet(teamId);
 	//parsing matches:
-	var matches = xml.getElementsByTagName("Match");
+	/*var matches = xml.getElementsByTagName("Match");
 	var matchesId = [];
 	for(i = 0; i < matches.length; i++){
 		var homeTeamId = htlivesight.Util.Parse("HomeTeamID", matches[i]);
@@ -254,7 +256,7 @@ var fansParseGet = function(xml,teamId){
 			
 		}
 	}
-	matchDetailsHTTPGet(matchesId);
+	matchDetailsHTTPGet(matchesId);*/
 	//setTimeout(function(){ $('#lastMatches').DataTable({searching: false,paging: false}); $("#progress").hide();}, 3000);
 }
 
@@ -271,10 +273,15 @@ var matchDetailsHTTPGet = function (matchesId) {
 var matchDetailsParseGet = function(xml, matchId, matchesId){
 	console.log(xml);
 	var weatherString = ["../img/rain22.png","../img/overcast22.png","../img/few_clouds22.png","../img/sun22.png"];
+	var match = {};
 	
 	var AwayTeamName = htlivesight.Util.Parse("AwayTeamName", xml);
 	var Date = htlivesight.Util.Parse("MatchDate", xml).split(" ")[0];
 	var weatherID = htlivesight.Util.Parse("WeatherID", xml);
+	match.matchType = htlivesight.Util.Parse("MatchType", xml);
+	match.cupLevel = htlivesight.Util.Parse("CupLevel", xml);
+	match.cupLevelIndex = htlivesight.Util.Parse("CupLevelIndex", xml);
+	var img = getMatchTypeImage(match);
 	
 	var tableobj = document.getElementById('resultstable').getElementsByTagName('tbody')[0];
 	var terraces = parseInt(tableobj.rows[0].cells[1].innerText); //terraces
@@ -295,7 +302,7 @@ var matchDetailsParseGet = function(xml, matchId, matchesId){
     var soldVipPercent = " ("+parseInt((soldVip/vip)*10000)/100+"%)";//vip
     var soldTotalPercent = " ("+parseInt((soldTotal/total)*10000)/100+"%)"; //total
 
-	$("#lastMatches > tbody").append("<tr><td>"+Date+"</td><td>"+AwayTeamName+"</td><td><img src='"+weatherString[weatherID]+"'></td><td>"+soldTerraces+soldTerracesPercent+"</td><td>"+soldBasic+soldBasicPercent+"</td><td>"+soldRoof+soldRoofPercent+"</td><td>"+soldVip+soldVipPercent+"</td><td>"+soldTotal+soldTotalPercent+"</td>");
+	$("#lastMatches > tbody").append("<tr><td>"+Date+"</td><td>"+AwayTeamName+"</td><td><img src='"+weatherString[weatherID]+"'></td><td><img src='"+img+"'</td><td>"+soldTerraces+soldTerracesPercent+"</td><td>"+soldBasic+soldBasicPercent+"</td><td>"+soldRoof+soldRoofPercent+"</td><td>"+soldVip+soldVipPercent+"</td><td>"+soldTotal+soldTotalPercent+"</td>");
 	if(matchesId.length >0){
 		matchDetailsHTTPGet(matchesId);
 	}else{
@@ -304,6 +311,36 @@ var matchDetailsParseGet = function(xml, matchId, matchesId){
 	}
 	
 };
+
+var matchesArchiveHTTPGet = function (teamId) {
+//	console.log(htlivesight.Player.List["_"+playerId+"_"+youth].specialty);
+	var parameters = [["file","matchesarchive"],["version", "1.4"],["teamId",teamId]];
+	console.log('calling matchesarchive');
+	if(teamId){
+		htlivesight.ApiProxy.retrieve(document, parameters, function(xml){matchesArchiveParseGet(xml, teamId);});
+	}
+};
+
+var matchesArchiveParseGet = function(xml,teamId){
+	console.log(xml);
+	var matches = xml.getElementsByTagName("Match");
+	var matchesId = [];
+	for(i = 0; i < matches.length; i++){
+		var homeTeamId = htlivesight.Util.Parse("HomeTeamID", matches[i]);
+		var matchType = htlivesight.Util.Parse("MatchType", matches[i]);
+		if(homeTeamId == teamId &&(matchType == 1 || matchType == 2 || matchType == 3 || matchType == 7)){
+			var matchId = htlivesight.Util.Parse("MatchID", matches[i]);
+			//call matchdetails to add stats to last matches
+			matchesId.push(matchId);
+			console.log("matchId = " + matchId);
+			
+		}
+	}
+	matchDetailsHTTPGet(matchesId);
+	//setTimeout(function(){ $('#lastMatches').DataTable({searching: false,paging: false}); $("#progress").hide();}, 3000);
+}
+
+
 
 $(document).ready(function() {
 	$('.button-collapse').sideNav({
@@ -386,6 +423,53 @@ $("#slider-fansmood").Link().to($("#fansmood"), function(value) {
 	$(this).html(names[value]);
 });
 
+
+getMatchTypeImage = function (match) {
+	var img;
+	switch (match.matchType) {
+
+	case "1": // League match
+	    img = "../img/matchLeague.png";//htlivesight.Image.matchType.league;
+	    break;
+	    
+	case "2": // Qualification match
+	    img = "../img/matchQualification.png";//htlivesight.Image.matchType.qualification;
+	    break;
+	    
+	case "3": // Cup match
+		switch (match.cupLevel) {
+		case "1": //National Cup
+			img = "../img/matchCup.png";//htlivesight.Image.matchType.cup;
+			break;
+			
+		case "2": //Challenger Cup
+			switch (match.cupLevelIndex){
+			case "1": //Emerald
+				img = "../img/matchCupEmerald.png";//htlivesight.Image.matchType.cupEmerald;
+				break;
+				
+			case "2": //Ruby
+				img = "../img/matchCupRuby.png";//htlivesight.Image.matchType.cupRuby;
+				break;
+				
+			case "3": //Sapphire
+				img = "../img/matchCupSapphire.png";//htlivesight.Image.matchType.cupSapphire;
+				break;
+			};
+			break;
+			
+		case "3": //Consolation Cup
+			img = "../img/matchCupConsolation.png";//htlivesight.Image.matchType.cupConsolation;
+			break;	
+		}
+		break;
+	
+	default: 
+	    img = htlivesight.Image.transparent;
+		break;
+	}
+	return img;
+}
 
 //old on select stadium
 /* 

@@ -551,6 +551,17 @@ htlivesight.DOM = {
 				label_number.textContent=long_shot_goal+" / "+long_shot;
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
+				popup.appendChild(hbox);
+				
+				hbox = document.createElement("tr");
+				var opponent_own_goal_chance = match.getSideById(event.subjectTeamId).opponent_own_goal_chance;
+				var opponent_own_goal = match.getSideById(event.subjectTeamId).opponent_own_goal;
+				label = document.createElement("td");
+				label.textContent="Opponent own goals" //htlivesight.Util.capitalize(htlivesight.Util.Parse("LongShot",htlivesight.data[0]));
+				label_number = document.createElement("td");
+				label_number.textContent = opponent_own_goal + " / " + opponent_own_goal_chance;
+				hbox.appendChild(label);
+				hbox.appendChild(label_number);
 				
 				popup.appendChild(hbox);
 				hbox = document.createElement("tr");
@@ -563,6 +574,18 @@ htlivesight.DOM = {
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
+				
+				hbox = document.createElement("tr");
+				var own_goal_chance = match.getSideById(event.subjectTeamId).own_goal_chance;
+				var own_goal = match.getSideById(event.subjectTeamId).own_goal;
+				label = document.createElement("td");
+				label.textContent="(Own goals" //htlivesight.Util.capitalize(htlivesight.Util.Parse("LongShot",htlivesight.data[0]));
+				label_number = document.createElement("td");
+				label_number.textContent = own_goal + " / " + own_goal_chance + ")";
+				hbox.appendChild(label);
+				hbox.appendChild(label_number);
+				popup.appendChild(hbox);
+			
 				hbox = document.createElement("tr");
 				var yellow=match.getSideById(event.subjectTeamId).yellow;
 				label = document.createElement("td");
