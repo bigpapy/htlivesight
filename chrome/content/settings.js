@@ -39,6 +39,20 @@ htlivesight.Settings = {
 			document.getElementById("chkRepeatBackground").checked = prefs.general.repeatBackground;
 			
 			document.getElementById("hattrickServer").value = prefs.general.hattrickServer;
+			if (prefs.matches.senior.get) {
+				document.getElementById("chkGetSenior").checked=true;
+				if (prefs.matches.senior.within) {
+					document.getElementById("txtGetSeniorWithinHours").disabled=false;
+				} else {
+					document.getElementById("txtGetSeniorWithinHours").disabled=true;
+				}
+			} else {
+				document.getElementById("chkGetSenior").checked=false;
+				document.getElementById("chkGetSeniorWithin").disabled=true;
+				document.getElementById("txtGetSeniorWithinHours").disabled=true;
+			}
+			document.getElementById("chkGetSeniorWithin").checked=prefs.matches.senior.within;
+			document.getElementById("txtGetSeniorWithinHours").value=prefs.matches.senior.withinHours;
 			if (prefs.matches.league.get) {
 				document.getElementById("chkGetLeague").checked=true;
 				if (prefs.matches.league.within) {
@@ -594,6 +608,38 @@ htlivesight.Settings = {
 			txtfixhattrickserver: function() {
 				var value = document.getElementById("hattrickServer").value;
 				htlivesight.Settings.preferences.general.hattrickServer = value;
+			},
+			chkgetsenior: function() {
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("chkGetSenior").checked) {
+					document.getElementById("chkGetSeniorWithin").disabled = false;
+					htlivesight.Settings.click.chkgetseniorwithin();
+					prefs.matches.senior.get = true;
+				} else {
+					document.getElementById("chkGetSeniorWithin").disabled = true;
+					document.getElementById("txtGetSeniorWithinHours").disabled = true;
+					prefs.matches.senior.get = false;
+				}
+			},
+			chkgetseniorwithin: function() {
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("chkGetSeniorWithin").checked) {
+					document.getElementById("txtGetSeniorWithinHours").disabled = false;
+					prefs.matches.senior.within = true;
+				} else {
+					document.getElementById("txtGetSeniorWithinHours").disabled = true;
+					prefs.matches.senior.within = false;
+				};
+			},
+			txtfixseniorhours: function() {
+				var prefs = htlivesight.Settings.preferences;
+				var value = document.getElementById("txtGetSeniorWithinHours").value.replace(/\D/g, "");
+				if(value===""){
+					value = prefs.matches.senior.withinHours;
+				}
+				value = Math.max(0,Math.min(84,parseInt(value,10)));
+				document.getElementById("txtGetSeniorWithinHours").value = value;
+				prefs.matches.senior.withinHours = value;
 			},
 			chkgetleague: function() {
 				var prefs = htlivesight.Settings.preferences;

@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("openin_window").addEventListener('click',function(){htlivesight.Settings.click.radopenin(false);});
 	document.getElementById("hattrickServer").addEventListener('change',function(){htlivesight.Settings.click.txtfixhattrickserver();});
 	/* tab 2 */
+	document.getElementById("chkGetSenior").addEventListener('click',function(){htlivesight.Settings.click.chkgetsenior();});
+	document.getElementById("chkGetSeniorWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgetseniorwithin();});
+	document.getElementById("txtGetSeniorWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixseniorhours();});
 	document.getElementById("chkGetLeague").addEventListener('click',function(){htlivesight.Settings.click.chkgetleague();});
 	document.getElementById("chkGetLeagueWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgetleaguewithin();});
 	document.getElementById("txtGetLeagueWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixleaguehours();});
