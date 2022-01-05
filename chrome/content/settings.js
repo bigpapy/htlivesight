@@ -1565,6 +1565,11 @@ htlivesight.Settings = {
 							htlivesight.Settings.preferences.personalization.myFavouriteGoalSoundPath = old_prefs.personalization.myFavouriteGoalSoundPath;
 							htlivesight.Settings.preferences.personalization.myFavouritePlayersId = old_prefs.personalization.myFavouritePlayersId;
 						}
+						//avoid TypeError loading default value for added preferences:
+						if(!htlivesight.Settings.preferences.matches.senior){
+							htlivesight.Settings.preferences.matches.senior = new htlivesight.Preferences.matches.senior();
+						}
+						
 					
 						htlivesight.Settings.save();
 						if(htlivesight.Settings.preferences.oauth){
