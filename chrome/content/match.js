@@ -69,6 +69,8 @@ htlivesight.Match.side = function(team, goals, formation, tactic) {
 	this.own_goal_chance = 0;
 	this.opponent_own_goal = 0;
 	this.opponent_own_goal_chance = 0;
+	this.ca = 0;
+	this.ca_goal = 0;
 };
 htlivesight.Match.events = function(evList) {
 	this.list = evList;

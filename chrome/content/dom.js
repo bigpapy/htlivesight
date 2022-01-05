@@ -554,6 +554,17 @@ htlivesight.DOM = {
 				popup.appendChild(hbox);
 				
 				hbox = document.createElement("tr");
+				var counter_attack = match.getSideById(event.subjectTeamId).ca;
+				var counter_attack_goal = match.getSideById(event.subjectTeamId).ca_goal;
+				label = document.createElement("td");
+				label.textContent = "CounterAttack";//htlivesight.Util.capitalize(htlivesight.Util.Parse("CounterAttack",htlivesight.data[0]));
+				label_number = document.createElement("td");
+				label_number.textContent = counter_attack_goal+" / " + counter_attack;
+				hbox.appendChild(label);
+				hbox.appendChild(label_number);
+				popup.appendChild(hbox);
+				
+				hbox = document.createElement("tr");
 				var opponent_own_goal_chance = match.getSideById(event.subjectTeamId).opponent_own_goal_chance;
 				var opponent_own_goal = match.getSideById(event.subjectTeamId).opponent_own_goal;
 				label = document.createElement("td");
