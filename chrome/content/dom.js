@@ -96,7 +96,7 @@ htlivesight.DOM = {
 			}
 			// fix to avoid link as a text in stats dialog title header
 			//title = teamName;
-			$("#"+id+"_statistics").dialog({ autoOpen: true, width: 350, height: 220, title: title, position: {my: my, at: at, of: $('#'+id), collision: 'fit' } });
+			$("#divStats_"+id+"_statistics").dialog({ autoOpen: true, width: 350, height: 'auto', title: title, position: {my: my, at: at, of: $('#'+id), collision: 'fit' } });
 			$("span:contains(" + title + ")").html(title);
 			return false;
 		},
@@ -475,11 +475,47 @@ htlivesight.DOM = {
 			try{
 				var label, hbox;
 				var popupset = document.getElementById("live_box");
+				
+				var mainDiv = document.createElement("div");
+				mainDiv.setAttribute("id", "divStats_" + id);
+				mainDiv.style.display = 'none';
+				
+				popupset.appendChild(mainDiv);
+				
+				var ul = document.createElement("ul");
+				var liMatch = document.createElement("li");
+				ul.appendChild(liMatch);
+				var anchorMatch = document.createElement("a");
+				anchorMatch.setAttribute("href", "#match_" + id);
+				anchorMatch.innerHTML = 'Match';
+				liMatch.appendChild(anchorMatch);
+				
+				var liPlayers = document.createElement("li");
+				ul.appendChild(liPlayers);
+				var anchorPlayers = document.createElement("a");
+				anchorPlayers.setAttribute("href", "#players_" + id);
+				anchorPlayers.innerHTML = 'Players';
+				liPlayers.appendChild(anchorPlayers);
+				
+				mainDiv.appendChild(ul);
+				
+				var matchDiv = document.createElement("div");
+				matchDiv.setAttribute("id", "match_" + id);
+				mainDiv.appendChild(matchDiv);
+				
+				var playersDiv = document.createElement("div");
+				playersDiv.setAttribute("id", "players_" + id);
+				var playersTable = document.createElement("table");
+				playersDiv.appendChild(playersTable);
+				playersTable.setAttribute("id", "players_table_" + id);
+				playersTable.setAttribute("class", "formationpopup");
+				mainDiv.appendChild(playersDiv);
+				
 				var popup = document.createElement("table");
-				popupset.appendChild(popup);
+				matchDiv.appendChild(popup);
 				popup.setAttribute("id", id);
 				popup.setAttribute("class", "formationpopup");
-				popup.style.display = 'none';
+				//popup.style.display = 'none';
 				hbox = document.createElement("tr");
 				var occasion=match.getSideById(event.subjectTeamId).occasion;
 				var goals=match.getSideById(event.subjectTeamId).goals;
@@ -642,6 +678,7 @@ htlivesight.DOM = {
 				hbox.appendChild(label);
 				hbox.appendChild(label_number);
 				popup.appendChild(hbox);
+				$( "#divStats_" + id).tabs();
 				return popup;
 				}catch(e){alert("createStatisticElement: "+e);}
 		},
@@ -2977,8 +3014,8 @@ htlivesight.DOM.closeMatchRelatedWindows=function(id){
 	if ($("#home_team_name_"+id+"_statistics").dialog("instance") && $("#home_team_name_"+id+"_statistics").dialog("isOpen")){
 	  $("#home_team_name_"+id+"_statistics").dialog("close");
 	};
-	if ($("#away_team_name_"+id+"_statistics").dialog("instance") && $("#away_team_name_"+id+"_statistics").dialog("isOpen")){
-  $("#away_team_name_"+id+"_statistics").dialog("close");
+	if ($("#divStats_away_team_name_"+id+"_statistics").dialog("instance") && $("#divStats_away_team_name_"+id+"_statistics").dialog("isOpen")){
+  $("#divStats_away_team_name_"+id+"_statistics").dialog("close");
 	};
 };
 htlivesight.DOM.setHeaderColor=function(){

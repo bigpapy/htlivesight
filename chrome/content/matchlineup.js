@@ -1,5 +1,55 @@
 htlivesight.matchLineup=  {
 };
+htlivesight.matchLineup.matchRole = {	"100" : "Keeper",
+										"101" : "Right back",
+										"102" : "Right central defender",
+										"103" : "Middle central defender",
+										"104" : "Left central defender",
+										"105" : "Left back",
+										"106" : "Right winger",
+										"107" : "Right inner midfield",
+										"108" : "Middle inner midfield",
+										"109" : "Left inner midfield",
+										"110" : "Left winger",
+										"111" : "Right forward",
+										"112" : "Middle forward",
+										"113" : "Left forward",
+										"114" :	"Substitution (Keeper)",
+										"115"	:"Substitution (Defender)",
+										"116"	:"Substitution (Inner midfield)",
+										"117"	:"Substitution (Winger)",
+										"118"	:"Substitution (Forward)",
+										"200"	:"Substitution (Keeper)",
+										"201"	:"Substitution (Central defender)",
+										"202"	:"Substitution (Wing back)",
+										"203"	:"Substitution (Inner midfielder)",
+										"204"	:"Substitution (Forward)",
+										"205"	:"Substitution (Winger)",
+										"206"	:"Substitution (Extra)",
+										"207"	:"Backup (Keeper)",
+										"208"	:"Backup (Central defender)",
+										"209"	:"Backup (Wing back)",
+										"210"	:"Backup (Inner midfielder)",
+										"211"	:"Backup (Forward)",
+										"212"	:"Backup (Winger)",
+										"213"	:"Backup (Extra)",
+										"17"	:"Set pieces",
+										"18"	:"Captain",
+										"19"	:"Replaced Player #1",
+										"20"	:"Replaced Player #2",
+										"21"	:"Replaced Player #3",
+										"22"	:"Penalty taker (1)",
+										"23"	:"Penalty taker (2)",
+										"24"	:"Penalty taker (3)",
+										"25"	:"Penalty taker (4)",
+										"26"	:"Penalty taker (5)",
+										"27"	:"Penalty taker (6)",
+										"28"	:"Penalty taker (7)",
+										"29"	:"Penalty taker (8)",
+										"30"	:"Penalty taker (9)",
+										"31"	:"Penalty taker (10)",
+										"32"	:"Penalty taker (11)"
+									}
 htlivesight.matchLineup.view= function(){
 	for (var key in htlivesight.Match.List) {
 		var match=htlivesight.Match.List[key];
@@ -60,6 +110,33 @@ htlivesight.matchLineup.ParseGet = function(xml, match, side) {
 					$(this).addClass("withRating withSpecialty");
 				}
 			});
+			////
+			let playerFirstName = playerNodes[j].getElementsByTagName("FirstName")[0].textContent;
+			let playerLastName = playerNodes[j].getElementsByTagName("LastName")[0].textContent;
+			let playerRole = playerNodes[j].getElementsByTagName("RoleID")[0].textContent;
+			if(playerRole == '17' || playerRole == '18') continue;
+			let hbox = document.createElement("tr");
+			let role = document.createElement("td");
+			role.textContent = htlivesight.matchLineup.matchRole[playerRole];
+			role.style = "display: inline-block;white-space:nowrap;";//TODO: MOVE TO CSS!!!
+			let name = document.createElement("td");
+			name.textContent= playerFirstName + " " + playerLastName;
+			//name.style = "display: inline-block;white-space:nowrap;padding-right:7px;";//TODO: MOVE TO CSS!!!
+			let stars = document.createElement("td");
+			let divStars = document.createElement("div");
+			divStars.style = "display: inline-block;white-space:nowrap;";//TODO: MOVE TO CSS!!!
+			stars.appendChild(divStars);
+			hbox.appendChild(name);
+			hbox.appendChild(role);
+			hbox.appendChild(stars);
+			if(match.sourceSystem.toLowerCase()=='youth'){
+				htlivesight.matchLineup.YouthStar($(stars), ratingStars);
+			}else{
+				htlivesight.matchLineup.SeniorStar($(stars), ratingStars, ratingStarsEnd);
+			}
+			//htlivesight.matchLineup.SeniorStar($(stars), ratingStars, ratingStarsEnd);
+			let playerTable = document.getElementById("players_table_"+side+"_team_name_"+match.id+"_"+match.sourceSystem+"_statistics");
+			playerTable.appendChild(hbox);
 		}
 
 	} catch(e) {

@@ -296,13 +296,13 @@ var matchDetailsParseGet = function(xml, matchId, matchesId){
     var soldVip = parseInt(htlivesight.Util.Parse("SoldVIP", xml));//vip
     var soldTotal = parseInt(htlivesight.Util.Parse("SoldTotal", xml));; //total
 	
-	var soldTerracesPercent = " ("+parseInt((soldTerraces/terraces)*10000)/100+"%)";
-	var soldBasicPercent = " ("+parseInt((soldBasic/basic)*10000)/100+"%)"; //basic
-    var soldRoofPercent = " ("+parseInt((soldRoof/roof)*10000)/100+"%)";//roof
-    var soldVipPercent = " ("+parseInt((soldVip/vip)*10000)/100+"%)";//vip
-    var soldTotalPercent = " ("+parseInt((soldTotal/total)*10000)/100+"%)"; //total
+	var soldTerracesPercent = " ("+(parseInt((soldTerraces/terraces)*10000)/100).toFixed(2)+"%)";
+	var soldBasicPercent = " ("+(parseInt((soldBasic/basic)*10000)/100).toFixed(2)+"%)"; //basic
+    var soldRoofPercent = " ("+(parseInt((soldRoof/roof)*10000)/100).toFixed(2)+"%)";//roof
+    var soldVipPercent = " ("+(parseInt((soldVip/vip)*10000)/100).toFixed(2)+"%)";//vip
+    var soldTotalPercent = " ("+(parseInt((soldTotal/total)*10000)/100).toFixed(2)+"%)"; //total
 
-	$("#lastMatches > tbody").append("<tr><td>"+Date+"</td><td>"+AwayTeamName+"</td><td><img src='"+weatherString[weatherID]+"'></td><td><img src='"+img+"'</td><td>"+soldTerraces+soldTerracesPercent+"</td><td>"+soldBasic+soldBasicPercent+"</td><td>"+soldRoof+soldRoofPercent+"</td><td>"+soldVip+soldVipPercent+"</td><td>"+soldTotal+soldTotalPercent+"</td>");
+	$("#lastMatches > tbody").append("<tr><td>"+Date+"</td><td>"+AwayTeamName+"</td><td><img src='"+weatherString[weatherID]+"'></td><td><img src='"+img+"'</td><td style='text-align:right'>"+soldTerraces+"</td><td>"+soldTerracesPercent+"</td><td style='text-align:right'>"+soldBasic+"</td><td>"+soldBasicPercent+"</td><td style='text-align:right'>"+soldRoof+"</td><td>"+soldRoofPercent+"</td><td style='text-align:right'>"+soldVip+"</td><td>"+soldVipPercent+"</td><td style='text-align:right'>"+soldTotal+"</td><td>"+soldTotalPercent+"</td>");
 	if(matchesId.length >0){
 		matchDetailsHTTPGet(matchesId);
 	}else{
