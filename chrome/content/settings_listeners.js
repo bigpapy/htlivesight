@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("openin_window").addEventListener('click',function(){htlivesight.Settings.click.radopenin(false);});
 	document.getElementById("hattrickServer").addEventListener('change',function(){htlivesight.Settings.click.txtfixhattrickserver();});
 	/* tab 2 */
-	document.getElementById("chkGetSenior").addEventListener('click',function(){htlivesight.Settings.click.chkgetsenior();});
-	document.getElementById("chkGetSeniorWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgetseniorwithin();});
-	document.getElementById("txtGetSeniorWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixseniorhours();});
+	//document.getElementById("chkGetAllMine").addEventListener('click',function(){htlivesight.Settings.click.chkgetallmine();});
+	document.getElementById("chkGetAllMineWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgetallminewithin();});
+	document.getElementById("txtGetAllMineWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixallminehours();});
 	document.getElementById("chkGetLeague").addEventListener('click',function(){htlivesight.Settings.click.chkgetleague();});
 	document.getElementById("chkGetLeagueWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgetleaguewithin();});
 	document.getElementById("txtGetLeagueWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixleaguehours();});
@@ -283,6 +283,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("chkExportOauth").addEventListener('click',function(){htlivesight.Settings.click.exportOauth();});
 	document.getElementById("chkExportBackground").addEventListener('click',function(){htlivesight.Settings.click.exportBackground();});
 	document.getElementById("chkExportSounds").addEventListener('click',function(){htlivesight.Settings.click.exportSounds();});
+	document.getElementById("useLiveEventsAndTextsInput").addEventListener('click',function(){htlivesight.Settings.click.useLiveEventsAndTexts();});
 	
 	
 	/* ok cancel buttons*/

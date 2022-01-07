@@ -49,6 +49,12 @@ htlivesight.players.ParseGet = function(xml,playerId, youth){
 
 	var ageDays = xml.getElementsByTagName("AgeDays")[0].textContent;
 	htlivesight.Player.List["_"+playerId+"_"+youth].ageDays = ageDays;
+	
+	var aggressiveness = xml.getElementsByTagName("Aggressiveness")[0].textContent;
+	htlivesight.Player.List["_"+playerId+"_"+youth].aggressiveness = aggressiveness;
+	
+	var honesty = xml.getElementsByTagName("Honesty")[0].textContent;
+	htlivesight.Player.List["_"+playerId+"_"+youth].honesty = honesty;
 
 	if(youth!="true"){
 

@@ -76,3 +76,12 @@ htlivesight.ManagerCompendium.isMyYouthTeam = function (id) {
 	}
 	return false;
 };
+
+htlivesight.ManagerCompendium.isMySeniorTeam = function (id) {
+	for(var i = 0; i< htlivesight.ManagerCompendium.data.teams.length; i++){
+		if(htlivesight.ManagerCompendium.data.teams[i] && (id == htlivesight.ManagerCompendium.data.teams[i].teamId)){
+			return true;
+		}
+	}
+	return false;
+};

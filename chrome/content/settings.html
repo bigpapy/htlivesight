@@ -176,11 +176,11 @@
 		<div id="otabs-2">
 			<!--TAB2-->
 			<fieldset>
-				<legend id="MatchesSenior"> Senior Matches</legend>
-				<input type="checkbox" id="chkGetSenior" /><label for="chkGetSenior" id="label_chkGetSenior">Load automatically senior matches</label><br />
-				<input type="checkbox" id="chkGetSeniorWithin" /><label for="chkGetSeniorWithin" id="label_chkGetSeniorWithin">If played in </label> <input type="number"
-					min="0" max="84" step="1" value="24" size="3" id="txtGetSeniorWithinHours" class="text ui-widget-content ui-corner-all" /> <label id="MatchesHours"
-					for="txtGetSeniorWithinHours">hours</label><br />
+				<legend id="MatchesAllMine"> All My Matches</legend>
+				<!--<input type="checkbox" id="chkGetAllMine" /><label for="chkGetAllMine" id="label_chkGetAllMine">Load automatically all my teams matches</label><br />-->
+				<input type="checkbox" id="chkGetAllMineWithin" /><label for="chkGetAllMineWithin" id="label_chkGetAllMineWithin">Load automatically all my teams matches if played in </label> <input type="number"
+					min="0" max="84" step="1" value="24" size="3" id="txtGetAllMineWithinHours" class="text ui-widget-content ui-corner-all" /> <label id="MatchesHours"
+					for="txtGetAllMineWithinHours">hours</label><br />
 			</fieldset>
 			<fieldset>
 				<legend id="MatchesLeague"> League Matches</legend>
@@ -263,6 +263,10 @@
 			<fieldset>
 				<legend id="OtherEventKey"></legend>
 				<input type="checkbox" id="printEventKey" /><label for="printEventKey" id="label_printEventKey">Show eventkey in the commentary</label><br />
+			</fieldset>
+			<fieldset>
+				<legend id="useLiveEventsAndTextsLegend">Event and Text</legend>
+				<input type="checkbox" id="useLiveEventsAndTextsInput" /><label for="useLiveEventsAndTextsInput" id="useLiveEventsAndTextsLabel">Should the events and texts be as on the live page on the site?</label><br />
 			</fieldset>
 			<fieldset>
 				<legend id="CustomIcons">Icons</legend>
