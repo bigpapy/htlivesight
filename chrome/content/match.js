@@ -276,10 +276,22 @@ htlivesight.Match.setTournamentImage = function (match) {
 		img = htlivesight.Image.matchType.u21AmericaCup;
 	}else if(match.matchContextId == '4878493'){
 		img = htlivesight.Image.matchType.u21AsiaAndOceaniaCup;
-	}else if(match.matchContextId == '4878483'){
+	}else if(match.matchContextId == '4878483' ){
 		img = htlivesight.Image.matchType.u21EuropeCup;
 	}else if(match.matchContextId == '4892615'){
 		img = htlivesight.Image.matchType.u21NationsCup;
+	}else if(match.matchContextId == '5001315'){
+		img = htlivesight.Image.matchType.ntWorlCup;//change to NT image
+	}else if(match.matchContextId == '5001278'){
+		img = htlivesight.Image.matchType.ntAfricaCup;//change to NT image
+	}else if(match.matchContextId == '5001277'){
+		img = htlivesight.Image.matchType.ntAmericaCup;//change to NT image
+	}else if(match.matchContextId == '5001279'){
+		img = htlivesight.Image.matchType.ntAsiaAndOceaniaCup;//change to NT image
+	}else if(match.matchContextId == '5001273' ){
+		img = htlivesight.Image.matchType.ntEuropeCup;//change to NT image
+	}else if(match.matchContextId == '5001319'){
+		img = htlivesight.Image.matchType.ntNationsCup;//change to NT image
 	}else {
 		//call for torunamentDetails
 		img = document.getElementById("short_match_type_image_" + match.id + "_" + match.sourceSystem).src;
