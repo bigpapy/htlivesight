@@ -442,4 +442,8 @@
 <MyFavouritePlayerList>Liste des id des joueurs favoris</MyFavouritePlayerList>
 <TabPlayers>Joueurs</TabPlayers>
 <TechnicalCounterAttack>Contre-attaque déclenchée par un défenseur technique</TechnicalCounterAttack>
+<MatchesAllMine>Tous mes matchs</MatchesAllMine>
+<ChkGetAllMineWithin>Afficher tous mes matchs si joué depuis ou dans</ChkGetAllMineWithin>
+<UseLiveEventsAndTextsLegend>Événements et textes</UseLiveEventsAndTextsLegend>
+<UseLiveEventsAndTextsLabel>Afficher événements et textes comme sur le direct (live) du site</UseLiveEventsAndTextsLabel>
 </Htlivesight>

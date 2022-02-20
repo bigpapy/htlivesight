@@ -356,6 +356,10 @@ htlivesight.Settings = {
 				document.getElementById("GeneralServer").textContent=htlivesight.Util.Parse("GeneralServer",data[0]);
 				document.getElementById("GeneralNote").textContent=htlivesight.Util.Parse("GeneralNote",data[0]);
 				document.getElementById("CrowdinHelp").textContent=htlivesight.Util.Parse("CrowdinHelp",data[0]);
+				
+				document.getElementById("MatchesAllMine").textContent=htlivesight.Util.Parse("MatchesAllMine",data[0]);
+				document.getElementById("label_chkGetAllMineWithin").textContent=htlivesight.Util.Parse("ChkGetAllMineWithin",data[0]);".Load automatically all my teams matches if played in";
+				document.getElementById("allMyMatchesHours").textContent=htlivesight.Util.Parse("MatchesHours",data[0]);
 				document.getElementById("MatchesLeague").textContent=htlivesight.Util.Parse("MatchesLeague",data[0]);
 				document.getElementById("label_chkGetLeague").textContent=htlivesight.Util.Parse("MatchesGetLeague",data[0]);
 				document.getElementById("label_chkGetLeagueWithin").textContent=htlivesight.Util.Parse("MatchesPlayed",data[0]);
@@ -389,6 +393,8 @@ htlivesight.Settings = {
 				document.getElementById("OtherReverseNote").textContent=htlivesight.Util.Parse("OtherReverseNote",data[0]);
 				document.getElementById("OtherEventKey").textContent=htlivesight.Util.Parse("OtherEventKey",data[0]);
 				document.getElementById("label_printEventKey").textContent=htlivesight.Util.Parse("OtherEventKeyNote",data[0]);
+				document.getElementById("useLiveEventsAndTextsLegend").textContent=htlivesight.Util.Parse("UseLiveEventsAndTextsLegend",data[0]);
+				document.getElementById("useLiveEventsAndTextsLabel").textContent=htlivesight.Util.Parse("UseLiveEventsAndTextsLabel",data[0]);
 				// customization
 				document.getElementById("CustomIcons").textContent=htlivesight.Util.Parse("CustomIcons",data[0]);
 				document.getElementById("label_oldIcons").textContent=htlivesight.Util.Parse("CustomIconsOld",data[0]);
@@ -622,13 +628,13 @@ htlivesight.Settings = {
 			},*/
 			chkgetallminewithin: function() {
 				var prefs = htlivesight.Settings.preferences;
-				//if(document.getElementById("chkGetAllMineWithin").checked) {
+				if(document.getElementById("chkGetAllMineWithin").checked) {
 					document.getElementById("txtGetAllMineWithinHours").disabled = false;
 					prefs.matches.allMine.within = true;
-				/*} else {
+				} else {
 					document.getElementById("txtGetAllMineWithinHours").disabled = true;
 					prefs.matches.allMine.within = false;
-				};*/
+				};
 			},
 			txtfixallminehours: function() {
 				var prefs = htlivesight.Settings.preferences;

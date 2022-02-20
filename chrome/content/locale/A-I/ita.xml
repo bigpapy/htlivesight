@@ -442,4 +442,8 @@
 <MyFavouritePlayerList>Lista dei miei giocatori preferiti</MyFavouritePlayerList>
 <TabPlayers>Giocatori</TabPlayers>
 <TechnicalCounterAttack>Contropiede innescato da un difensore o terzino tecnico</TechnicalCounterAttack>
+<MatchesAllMine>Tutte le mie partite</MatchesAllMine>
+<ChkGetAllMineWithin>Carica tutte le mie partite se giocate entro</ChkGetAllMineWithin>
+<UseLiveEventsAndTextsLegend>Eventi e testi</UseLiveEventsAndTextsLegend>
+<UseLiveEventsAndTextsLabel>Gli eventi e i testi devono essere gli stessi della pagina HT-Live?</UseLiveEventsAndTextsLabel>
 </Htlivesight>

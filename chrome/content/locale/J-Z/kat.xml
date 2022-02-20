@@ -429,17 +429,21 @@
 <GetYouthNearestMatch>თქვენი ახალგაზრდული გნდის მატჩბის ხელით ჩატვირთვა</GetYouthNearestMatch>
 <MatchesYouthLeague>ახალგაზრდული ლიგის მატჩები</MatchesYouthLeague>
 <YouthSoundEqualSenior>ჩემი ახალგაზრდული გუნდის ხმება ტოლია ჩემი უფროს გუნდის</YouthSoundEqualSenior>
-<ThirdTeamIdLabel>Insert a third team ID</ThirdTeamIdLabel>
-<SeniorTeamIdAutomatically>Get my other senior team id automatically</SeniorTeamIdAutomatically>
-<Support>Support</Support>
-<EventSpecialPowerfulForward>powerful, extra chance</EventSpecialPowerfulForward>
-<PowerfulPressing>powerful: pressing</PowerfulPressing>
-<SupportBoostSucceeded>support: boost succeeded</SupportBoostSucceeded>
-<SupportBoostFailed>support: boost failed</SupportBoostFailed>
-<SupportOrganizationDropped>support: organization dropped</SupportOrganizationDropped>
-<PathSoundsInfo>Sound about other events</PathSoundsInfo>
-<PathSoundsMyFavouriteGoal>Sound my favourite players goal</PathSoundsMyFavouriteGoal>
-<MyFavouritePlayerList>My favourite players id list</MyFavouritePlayerList>
-<TabPlayers>Players</TabPlayers>
-<TechnicalCounterAttack>Counter attack triggered by technical wingback or defender</TechnicalCounterAttack>
+<ThirdTeamIdLabel>შეიყვანეთ დამატებითი გუნდის ID</ThirdTeamIdLabel>
+<SeniorTeamIdAutomatically>დამატებითი კლუბის ნომრის ავტომატურად მიღება</SeniorTeamIdAutomatically>
+<Support>მხარდაჭერა</Support>
+<EventSpecialPowerfulForward>ძლიერი, დამატებითი შანსი</EventSpecialPowerfulForward>
+<PowerfulPressing>ძლიერი: პრესინგი</PowerfulPressing>
+<SupportBoostSucceeded>მხარდამჭერი: წარმატებულია</SupportBoostSucceeded>
+<SupportBoostFailed>მხარდაჭერა: არ შესრულდა</SupportBoostFailed>
+<SupportOrganizationDropped>მხარდაჭერა: ორგანიზებულობა დაეცა</SupportOrganizationDropped>
+<PathSoundsInfo>ხმა სხვა მოვლენების შესახებ</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>ხმა ჩემი რჩეული ფეხბურთელის მიერ გატანილი გოლისას</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>ჩემი ფავორიტი მოთამაშეების სია</MyFavouritePlayerList>
+<TabPlayers>მოთამაშეები</TabPlayers>
+<TechnicalCounterAttack>კონტრშეტევა შეჩერებულ იქნა ტექნიკური მცველის მიერ</TechnicalCounterAttack>
+<MatchesAllMine>All my Matches</MatchesAllMine>
+<ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
+<UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
+<UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
 </Htlivesight>

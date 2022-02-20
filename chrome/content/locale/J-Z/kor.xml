@@ -441,5 +441,9 @@
 <PathSoundsMyFavouriteGoal>내가 좋아하는 선수들의 득점 사운드</PathSoundsMyFavouriteGoal>
 <MyFavouritePlayerList>내가 좋아하는 선수들 id 목록</MyFavouritePlayerList>
 <TabPlayers>선수</TabPlayers>
-<TechnicalCounterAttack>Counter attack triggered by technical wingback or defender</TechnicalCounterAttack>
+<TechnicalCounterAttack>공 마술사 윙백 또는 수비수에 의해 역습 발생</TechnicalCounterAttack>
+<MatchesAllMine>나의 모든 경기</MatchesAllMine>
+<ChkGetAllMineWithin>종료된 나의 모든 팀들의 경기를 자동으로 불러오기</ChkGetAllMineWithin>
+<UseLiveEventsAndTextsLegend>이벤트 및 텍스트</UseLiveEventsAndTextsLegend>
+<UseLiveEventsAndTextsLabel>이벤트 및 텍스트는 사이트의 라이브 페이지와 같아야 합니까?</UseLiveEventsAndTextsLabel>
 </Htlivesight>

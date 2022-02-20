@@ -74,9 +74,12 @@ htlivesight.matchLineup.HTTPGet = function (match,teamId, side) {
 htlivesight.matchLineup.ParseGet = function(xml, match, side) {
 	try {
 		var lineup = xml.getElementsByTagName("Lineup")[0]; //
+		let substitutions = xml.getElementsByTagName("Substitutions")[0];
 		var playerNodes = lineup.getElementsByTagName("Player");
 		htlivesight.matchLineup.addRatingTab(match, side, lineup);
 		var ratingStars="";
+		let separatorAdded = false;
+		let playerIdToFullName = {};
 		for(var j = 0, len = playerNodes.length; j< len ;j++){
 			var ratingString = "";
 			try{
@@ -114,10 +117,46 @@ htlivesight.matchLineup.ParseGet = function(xml, match, side) {
 			let playerFirstName = playerNodes[j].getElementsByTagName("FirstName")[0].textContent;
 			let playerLastName = playerNodes[j].getElementsByTagName("LastName")[0].textContent;
 			let playerRole = playerNodes[j].getElementsByTagName("RoleID")[0].textContent;
+			playerIdToFullName[playerID] = playerFirstName + ' ' + playerLastName;
 			if(playerRole == '17' || playerRole == '18') continue;
+			if(parseInt(playerRole) >= 114 && !separatorAdded){//add hr to separate field from bench
+				let hboxRow = document.createElement("tr");
+				let separator = document.createElement("td");
+				let hr = document.createElement("hr");
+				separator.setAttribute("colspan", "3");
+				separator.appendChild(hr);
+				hboxRow.appendChild(separator);
+				let playerTable = document.getElementById("players_table_"+side+"_team_name_"+match.id+"_"+match.sourceSystem+"_statistics");
+				playerTable.appendChild(hboxRow);
+				separatorAdded = true;
+			}
 			let hbox = document.createElement("tr");
 			let role = document.createElement("td");
-			role.textContent = htlivesight.matchLineup.matchRole[playerRole];
+			if(playerRole == '19' || playerRole == '20' || playerRole == '21'){
+				var substitutionNodes = substitutions.getElementsByTagName("Substitution");
+				if(substitutionNodes){
+					for(var k = 0, leng = substitutionNodes.length; k< leng ;k++){
+						let subjectPlayerID = substitutionNodes[k].getElementsByTagName("SubjectPlayerID")[0].textContent;
+						console.log("subjectPlayerID = " + subjectPlayerID);
+						console.log("PlayerID = " + playerID);
+						if(subjectPlayerID == playerID){
+							let objectPlayerID = substitutionNodes[k].getElementsByTagName("ObjectPlayerID")[0].textContent;
+							if(playerIdToFullName[objectPlayerID]){
+								role.textContent = "Replaced Player " + playerIdToFullName[objectPlayerID];
+							}else{
+								var youth = match.sourceSystem=="youth";
+								role.textContent = "Replaced Player " + htlivesight.Player.List["_"+objectPlayerID+"_"+youth].firstName;
+							}
+							
+						}
+					}
+				}
+				
+				//role.textContent = "Replaced Player";
+				//htlivesight.Player.List["_"+playerId+"_"+youth]
+			}else{
+				role.textContent = htlivesight.matchLineup.matchRole[playerRole];
+			}			
 			role.style = "display: inline-block;white-space:nowrap;";//TODO: MOVE TO CSS!!!
 			let name = document.createElement("td");
 			name.textContent= playerFirstName + " " + playerLastName;

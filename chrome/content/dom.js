@@ -1723,7 +1723,7 @@ htlivesight.DOM.CreateElementRowLiveEvent= function(match, event) {
 			empty_img = document.createElement("img");
 			l.setAttribute("class","event_icon");
 			l1.setAttribute("class","event_icon");
-			if(event.key.BC == "25" && (event.key.A == "1" || event.key.A == "2")){ //own goal should switch icon position
+			if((event.key.BC == "25" || event.key.BC == "09") && (event.key.A == "1" || event.key.A == "2")){ //own goal should switch icon position
 				if(match.isHomeTeam(event.subjectTeamId)){
 					l.appendChild(empty_img);
 					l1.appendChild(img);

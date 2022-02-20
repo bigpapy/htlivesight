@@ -442,4 +442,8 @@
 <MyFavouritePlayerList>Listă ID-uri jucatori favoriți</MyFavouritePlayerList>
 <TabPlayers>Jucători</TabPlayers>
 <TechnicalCounterAttack>Counter attack triggered by technical wingback or defender</TechnicalCounterAttack>
+<MatchesAllMine>All my Matches</MatchesAllMine>
+<ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
+<UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
+<UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
 </Htlivesight>
