@@ -363,7 +363,7 @@ animation-timing-function:ease-in-out;
 text-decoration:none;
 }
 
-#htlivesight-body  table.ev_rows, #htlivesight-body  #leaguetable_grid_rows, #htlivesight-body  #leaguetable_grid_rowsBis, #htlivesight-body  #leaguetable_grid_rowsTer{
+#htlivesight-body  table.ev_rows, #htlivesight-body  #leaguetable_grid_rows, #htlivesight-body #leaguetablescorer_grid_rows, #htlivesight-body #leaguetablescorer_grid_rows_bis, #htlivesight-body #leaguetablescorer_grid_rows_ter, #htlivesight-body  #leaguetable_grid_rowsBis, #htlivesight-body  #leaguetable_grid_rowsTer{
 border-collapse: collapse;
 }
 
@@ -947,4 +947,118 @@ color: red;
 }
 .ui-sortable-helper {
     display: table;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#htlivesight-body  #leaguetablescorer_grid_rows th{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows{width:100%;}
+#htlivesight-body  #leaguetablescorer_grid_rows tr:last-child td:first-child{
+	border-radius:0 0 0 4px;
+	-moz-border-radius:0 0 0 4px;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows tr:last-child td:last-child{
+	border-radius:0 0 4px 0;
+	-moz-border-radius:0 0 4px 0;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows td:first-child, #htlivesight-body  #leaguetablescorer_grid_rows td:first-child th:first-child{
+	padding-right:2px;
+	padding-left:2px;
+	width: 8px;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows td:nth-child(2), #htlivesight-body  #leaguetablescorer_grid_rows td:first-child th:nth-child(2){
+	text-align:left;
+	padding-left:6px;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 205px;
+}
+
+#htlivesight-body  #leaguetablescorer_grid_rows td:last-child, #htlivesight-body  #leaguetablescorer_grid_rows td:first-child th:last-child{
+	text-align:right;
+	padding-right:3px;
+	width: 16px;
+}
+
+#htlivesight-body  #leaguetablescorer_grid_rows_bis td{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#htlivesight-body  #leaguetablescorer_grid_rows_bis th{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows_bis{width:100%;}
+#htlivesight-body  #leaguetablescorer_grid_rows_bis tr:last-child td:first-child{
+	border-radius:0 0 0 4px;
+	-moz-border-radius:0 0 0 4px;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows_bis tr:last-child td:last-child{
+	border-radius:0 0 4px 0;
+	-moz-border-radius:0 0 4px 0;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows_bis td:first-child, #htlivesight-body  #leaguetablescorer_grid_rows_bis td:first-child th:first-child{
+	padding-right:2px;
+	padding-left:2px;
+	width: 8px;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows_bis td:nth-child(2), #htlivesight-body  #leaguetablescorer_grid_rows_bis td:first-child th:nth-child(2){
+	text-align:left;
+	padding-left:6px;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 205px;
+}
+
+#htlivesight-body  #leaguetablescorer_grid_rows_bis td:last-child, #htlivesight-body  #leaguetablescorer_grid_rows_bis td:first-child th:last-child{
+	text-align:right;
+	padding-right:3px;
+	width: 16px;
+}
+
+
+#htlivesight-body  #leaguetablescorer_grid_rows_ter td{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#htlivesight-body  #leaguetablescorer_grid_rows_ter th{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows_ter{width:100%;}
+#htlivesight-body  #leaguetablescorer_grid_rows_ter tr:last-child td:first-child{
+	border-radius:0 0 0 4px;
+	-moz-border-radius:0 0 0 4px;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows_ter tr:last-child td:last-child{
+	border-radius:0 0 4px 0;
+	-moz-border-radius:0 0 4px 0;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows_ter td:first-child, #htlivesight-body  #leaguetablescorer_grid_rows_ter td:first-child th:first-child{
+	padding-right:2px;
+	padding-left:2px;
+	width: 8px;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows_ter td:nth-child(2), #htlivesight-body  #leaguetablescorer_grid_rows_ter td:first-child th:nth-child(2){
+	text-align:left;
+	padding-left:6px;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 205px;
+}
+
+#htlivesight-body  #leaguetablescorer_grid_rows_ter td:last-child, #htlivesight-body  #leaguetablescorer_grid_rows_ter td:first-child th:last-child{
+	text-align:right;
+	padding-right:3px;
+	width: 16px;
 }

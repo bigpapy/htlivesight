@@ -787,3 +787,23 @@ color: #FF0F03!important;
  */
 #htlivesight-body .ui-progressbar { height:2em; text-align: left; overflow: hidden; }
 #htlivesight-body .ui-progressbar .ui-progressbar-value {margin: -1px; height:100%; }
+#htlivesight-body  #leaguetablescorer_grid_rows td:nth-child(2), #htlivesight-body  #leaguetablescorer_grid_rows th:nth-child(2){
+	border-left: 1px solid black;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows td:last-child, #htlivesight-body  #leaguetablescorer_grid_rows th:last-child{
+	border-left: 1px solid black;
+}
+
+#htlivesight-body  #leaguetablescorer_grid_rows_bis td:nth-child(2), #htlivesight-body  #leaguetablescorer_grid_rows_bis th:nth-child(2){
+	border-left: 1px solid black;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows_bis td:last-child, #htlivesight-body  #leaguetablescorer_grid_rows_bis th:last-child{
+	border-left: 1px solid black;
+}
+
+#htlivesight-body  #leaguetablescorer_grid_rows_ter td:nth-child(2), #htlivesight-body  #leaguetablescorer_grid_rows_ter th:nth-child(2){
+	border-left: 1px solid black;
+}
+#htlivesight-body  #leaguetablescorer_grid_rows_ter td:last-child, #htlivesight-body  #leaguetablescorer_grid_rows_ter th:last-child{
+	border-left: 1px solid black;
+}

@@ -77,6 +77,11 @@ $(function() {
 		collapsible : true,
 		heightStyle : "content"
 	}).hide();
+	$("#winbox_leaguetablescorer").accordion({
+		header : "h3",
+		collapsible : true,
+		heightStyle : "content"
+	}).hide();
 	$("#winbox_leaguematchesBis").accordion({
 		header : "h3",
 		collapsible : true,
@@ -87,12 +92,22 @@ $(function() {
 		collapsible : true,
 		heightStyle : "content"
 	}).hide();
+	$("#winbox_leaguetablescorer_bis").accordion({
+		header : "h3",
+		collapsible : true,
+		heightStyle : "content"
+	}).hide();
 	$("#winbox_leaguematchesTer").accordion({
 		header : "h3",
 		collapsible : true,
 		heightStyle : "content"
 	}).hide();
 	$("#winbox_leaguetableTer").accordion({
+		header : "h3",
+		collapsible : true,
+		heightStyle : "content"
+	}).hide();
+	$("#winbox_leaguetablescorer_ter").accordion({
 		header : "h3",
 		collapsible : true,
 		heightStyle : "content"

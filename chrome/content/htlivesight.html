@@ -284,6 +284,7 @@
 					<input type="checkbox" id="chkGetLeagueWithin" /><label for="chkGetLeagueWithin" id="label_chkGetLeagueWithin">Played in </label> <input type="number"
 						min="0" max="84" step="1" value="24" size="3" id="txtGetLeagueWithinHours" class="text ui-widget-content ui-corner-all" /> <label id="MatchesHours"
 						for="txtGetLeagueWithinHours">hours</label><br />
+						<input type="checkbox" id="chkGetLeagueScorers" /><label for="chkGetLeagueScorers" id="label_chkGetLeagueScorers">Load automatically League Top Scorers</label><br />
 				</fieldset>
 				<fieldset>
 					<legend id="MatchesYouth"> Youth Matches</legend>
@@ -965,8 +966,60 @@
 					</div>
 				</div>
 			</div>
-
-
+			<!-- scorers start -->
+			<div id="winbox_leaguetablescorer" style="display: none">
+				<h3>
+					<!-- <a href="#" id="LeagueLiveTable"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="LeagueLiveTableScorer"></span>
+				</h3>
+				<div id="winboxcontent_leaguetablescorer">
+					<div id="contentbody_leaguetablescorer" class="live_league_table">
+						<table id="leaguetablescorer_grid_rows" cellpadding="0">
+							<thead>
+								<tr>
+									<th class="header_league_table"><span id="LeagueScorerPosition">#</span></th>
+									<th class="header_league_table"><span id="LeagueScorerName">Name</span></th>
+									<th class="header_league_table"></th>
+									<th class="header_league_table"><span id="LeagueScorerGoals">G</span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="leaguetablescorer_1">
+									<td><span>1</span></td>
+									<td><span id="leaguetablescorer_1_name"></span></td>
+									<td><img id="leaguetablescorer_1_change" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_1_goals"></span></td>
+								</tr>
+								<tr id="leaguetablescorer_2">
+									<td><span>2</span></td>
+									<td><span id="leaguetablescorer_2_name"></span></td>
+									<td><img id="leaguetablescorer_2_change" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_2_goals"></span></td>
+								</tr>
+								<tr id="leaguetablescorer_3">
+									<td><span>3</span></td>
+									<td><span id="leaguetablescorer_3_name"></span></td>
+									<td><img id="leaguetablescorer_3_change" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_3_goals"></span></td>
+								</tr>
+								<tr id="leaguetablescorer_4">
+									<td><span>4</span></td>
+									<td><span id="leaguetablescorer_4_name"></span></td>
+									<td><img id="leaguetablescorer_4_change" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_4_goals"></span></td>
+								</tr>
+								<tr id="leaguetablescorer_5">
+									<td><span>5</span></td>
+									<td><span id="leaguetablescorer_5_name"></span></td>
+									<td><img id="leaguetablescorer_5_change" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_5_goals"></span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- scorers end -->
 			<div id="winbox_leaguematchesBis">
 				<h3 id="h3LeagueMatchesBis" style="display: none">
 					<!-- <a href="#" id="LeagueMatchesBis" style="display: none"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
@@ -1105,8 +1158,62 @@
 				</div>
 			</div>
 			
+			<!-- scorers start -->
+			<div id="winbox_leaguetablescorer_bis" style="display: none">
+				<h3>
+					<!-- <a href="#" id="LeagueLiveTable"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="LeagueLiveTableScorer_bis"></span>
+				</h3>
+				<div id="winboxcontent_leaguetablescorer_bis">
+					<div id="contentbody_leaguetablescorer_bis" class="live_league_table">
+						<table id="leaguetablescorer_grid_rows_bis" cellpadding="0">
+							<thead>
+								<tr>
+									<th class="header_league_table"><span id="LeagueScorerPositionBis">#</span></th>
+									<th class="header_league_table"><span id="LeagueScorerNameBis">Name</span></th>
+									<th class="header_league_table"></th>
+									<th class="header_league_table"><span id="LeagueScorerGoalsBis">G</span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="leaguetablescorer_1_bis">
+									<td><span>1</span></td>
+									<td><span id="leaguetablescorer_1_name_bis"></span></td>
+									<td><img id="leaguetablescorer_1_change_bis" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_1_goals_bis"></span></td>
+								</tr>
+								<tr id="leaguetablescorer_2_bis">
+									<td><span>2</span></td>
+									<td><span id="leaguetablescorer_2_name_bis"></span></td>
+									<td><img id="leaguetablescorer_2_change_bis" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_2_goals_bis"></span></td>
+								</tr>
+								<tr id="leaguetablescorer_3_bis">
+									<td><span>3</span></td>
+									<td><span id="leaguetablescorer_3_name_bis"></span></td>
+									<td><img id="leaguetablescorer_3_change_bis" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_3_goals_bis"></span></td>
+								</tr>
+								<tr id="leaguetablescorer_4_bis">
+									<td><span>4</span></td>
+									<td><span id="leaguetablescorer_4_name_bis"></span></td>
+									<td><img id="leaguetablescorer_4_change_bis" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_4_goals_bis"></span></td>
+								</tr>
+								<tr id="leaguetablescorer_5_bis">
+									<td><span>5</span></td>
+									<td><span id="leaguetablescorer_5_name_bis"></span></td>
+									<td><img id="leaguetablescorer_5_change_bis" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_5_goals_bis"></span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- scorers end -->
 			
-					<div id="winbox_leaguematchesTer">
+			<div id="winbox_leaguematchesTer">
 				<h3 id="h3LeagueMatchesTer" style="display: none">
 					<!-- <a href="#" id="LeagueMatchesTer" style="display: none"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
 					<span id="LeagueMatchesTer" style="display: none"></span>
@@ -1244,6 +1351,60 @@
 				</div>
 			</div>
 
+			<!-- scorers start -->
+			<div id="winbox_leaguetablescorer_ter" style="display: none">
+				<h3>
+					<!-- <a href="#" id="LeagueLiveTable"></a>--><!-- upgrade from jqueryUI 1.8.23 to 1.9.2 no a needed anymore -->
+					<span id="LeagueLiveTableScorer_ter"></span>
+				</h3>
+				<div id="winboxcontent_leaguetablescorer_ter">
+					<div id="contentbody_leaguetablescorer_ter" class="live_league_table">
+						<table id="leaguetablescorer_grid_rows_ter" cellpadding="0">
+							<thead>
+								<tr>
+									<th class="header_league_table"><span id="LeagueScorerPositionTer">#</span></th>
+									<th class="header_league_table"><span id="LeagueScorerNameTer">Name</span></th>
+									<th class="header_league_table"></th>
+									<th class="header_league_table"><span id="LeagueScorerGoalsTer">G</span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="leaguetablescorer_1_ter">
+									<td><span>1</span></td>
+									<td><span id="leaguetablescorer_1_name_ter"></span></td>
+									<td><img id="leaguetablescorer_1_change_ter" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_1_goals_ter"></span></td>
+								</tr>
+								<tr id="leaguetablescorer_2_ter">
+									<td><span>2</span></td>
+									<td><span id="leaguetablescorer_2_name_ter"></span></td>
+									<td><img id="leaguetablescorer_2_change_ter" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_2_goals_ter"></span></td>
+								</tr>
+								<tr id="leaguetablescorer_3_ter">
+									<td><span>3</span></td>
+									<td><span id="leaguetablescorer_3_name_ter"></span></td>
+									<td><img id="leaguetablescorer_3_change_ter" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_3_goals_ter"></span></td>
+								</tr>
+								<tr id="leaguetablescorer_4_ter">
+									<td><span>4</span></td>
+									<td><span id="leaguetablescorer_4_name_ter"></span></td>
+									<td><img id="leaguetablescorer_4_change_ter" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_4_goals_ter"></span></td>
+								</tr>
+								<tr id="leaguetablescorer_5_ter">
+									<td><span>5</span></td>
+									<td><span id="leaguetablescorer_5_name_ter"></span></td>
+									<td><img id="leaguetablescorer_5_change_ter" class="leaguetable_equal" /></td>
+									<td><span id="leaguetablescorer_5_goals_ter"></span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- scorers end -->
 
 			<div id="winbox_youthleaguematches">
 				<h3 id="h3YouthLeagueMatches" style="display: none">

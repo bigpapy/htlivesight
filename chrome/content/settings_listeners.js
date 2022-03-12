@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById("chkGetLeague").addEventListener('click',function(){htlivesight.Settings.click.chkgetleague();});
 	document.getElementById("chkGetLeagueWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgetleaguewithin();});
 	document.getElementById("txtGetLeagueWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixleaguehours();});
-
+	document.getElementById("chkGetLeagueScorers").addEventListener('click',function(){htlivesight.Settings.click.chkgetleaguescorers();});
+	
 	document.getElementById("chkGetYouthLeague").addEventListener('click',function(){htlivesight.Settings.click.chkgetyouthleague();});
 	document.getElementById("chkGetYouthLeagueWithin").addEventListener('click',function(){htlivesight.Settings.click.chkgetyouthleaguewithin();});
 	document.getElementById("txtGetYouthLeagueWithinHours").addEventListener('change',function(){htlivesight.Settings.click.txtfixyouthleaguehours();});

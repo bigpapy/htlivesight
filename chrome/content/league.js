@@ -179,6 +179,7 @@ htlivesight.League.ParseFixtures = function(xml,teamKind) {
 				htlivesight.AddLiveMatch(matchId, "False");
 			}*/
 		}
+		if(htlivesight.prefs.matches.league.getScorers) htlivesight.League.getAllScorers(rounds, currentRound, teamKind);
 		htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE2);
 		}else if(teamKind=="mySecondTeam"){
 			
@@ -215,6 +216,7 @@ htlivesight.League.ParseFixtures = function(xml,teamKind) {
 //					htlivesight.AddLiveMatch(matchId, "False");
 //				}
 			}
+			if(htlivesight.prefs.matches.league.getScorers) htlivesight.League.getAllScorers(rounds, currentRound, teamKind);
 			htlivesight.EventSystem.Declare(htlivesight.EventSystem.ev.MY_LEAGUE3);
 		}else if(teamKind=="myThirdTeam"){
 			
@@ -251,6 +253,7 @@ htlivesight.League.ParseFixtures = function(xml,teamKind) {
 //					htlivesight.AddLiveMatch(matchId, "False");
 //				}
 			}
+			if(htlivesight.prefs.matches.league.getScorers) htlivesight.League.getAllScorers(rounds, currentRound, teamKind);
 			htlivesight.EventSystem.Declare(/*htlivesight.EventSystem.ev.MY_TOURNAMENTS*/htlivesight.EventSystem.ev.MY_YOUTHTEAM);//disabled tournaments
 		}
 		
@@ -399,3 +402,17 @@ htlivesight.League.parseHomeTeam = function(xml) {
 htlivesight.League.parseAwayTeam = function(xml) {
 	return htlivesight.Util.Parse("AwayTeam", xml);
 };
+htlivesight.League.getAllScorers = function(rounds, currentRound, teamKind) {
+	let matchidList = [];
+	for(var i=1; i < currentRound; i++){
+		console.log(rounds[i]);
+		for(var j =0; j < rounds[i].id.length; j++){		
+			matchidList.push(rounds[i].id[j]);
+		}	
+	}
+	console.log(matchidList);
+	let scorers = {};
+	console.log('scorers: calling matchedetails.getAllScorers');
+	htlivesight.matchDetails.getAllScorers(matchidList, scorers, teamKind);
+	console.log('scorers: called matchedetails.getAllScorers');
+}

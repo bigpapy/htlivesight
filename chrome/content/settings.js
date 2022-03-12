@@ -67,6 +67,7 @@ htlivesight.Settings = {
 			}
 			document.getElementById("chkGetLeagueWithin").checked=prefs.matches.league.within;
 			document.getElementById("txtGetLeagueWithinHours").value=prefs.matches.league.withinHours;
+			document.getElementById("chkGetLeagueScorers").checked=prefs.matches.league.getScorers;
 			document.getElementById("chkGetYouthNearestMatch").checked=prefs.matches.myYouthMatch;
 			if (prefs.matches.youthLeague.get) {
 				document.getElementById("chkGetYouthLeague").checked=true;
@@ -656,6 +657,14 @@ htlivesight.Settings = {
 					document.getElementById("chkGetLeagueWithin").disabled = true;
 					document.getElementById("txtGetLeagueWithinHours").disabled = true;
 					prefs.matches.league.get = false;
+				}
+			},
+			chkgetleaguescorers: function() {
+				var prefs = htlivesight.Settings.preferences;
+				if(document.getElementById("chkGetLeagueScorers").checked) {
+					prefs.matches.league.getScorers = true;
+				} else {
+					prefs.matches.league.getScorers = false;
 				}
 			},
 			chkgetleaguewithin: function() {
