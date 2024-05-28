@@ -308,7 +308,7 @@
 <YellowCards>Cartellini gialli</YellowCards>
 <Injuries>Infortunati</Injuries>
 <Goals>Reti</Goals>
-<Total>Totale</Total>
+<Total> Totale</Total>
 <Terraces>Gradinate</Terraces>
 <Basic>Tribune</Basic>
 <Roof>Tribune coperte</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Resistenza</Stamina>
 <Experience>Esperienza</Experience>
 <Loyalty>Fedeltà</Loyalty>
-<PathSoundsPressing>Suono Pressing</PathSoundsPressing>
+<PathSoundsPressing> Suono Pressing</PathSoundsPressing>
 <PathSoundsMyBruised>Suono per un mio giocatore acciaccato</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Suono giocatore di altre squadre acciaccato</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Suono espulsione giocatore della mia squadra</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Carica tutte le mie partite se giocate entro</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Eventi e testi</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Gli eventi e i testi devono essere gli stessi della pagina HT-Live?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Classifica marcatori</LeagueScorerLiveTable>
 </Htlivesight>

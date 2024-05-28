@@ -41,7 +41,7 @@ htlivesight.Lang = {
 				//todo: add android warning text localization.
 		//			ABOUT
 				doc.getElementById("TabInfo").textContent=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
-				doc.getElementById("creationDate").textContent="20 "+htlivesight.Util.Parse("MonthFebruary",htlivesight.data[0])+" 2022";
+				doc.getElementById("creationDate").textContent="28 "+htlivesight.Util.Parse("MonthMay",htlivesight.data[0])+" 2024";
 				doc.getElementById("createdBy").textContent=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
 				doc.getElementById("testers").textContent=htlivesight.Util.Parse("Testers",htlivesight.data[0]);
 				doc.getElementById("BasedOn").textContent=htlivesight.Util.Parse("BasedOn",htlivesight.data[0]);
@@ -202,6 +202,7 @@ htlivesight.Lang = {
 		//			SIDEBAR
 				doc.getElementById("LeagueMatches").textContent=htlivesight.Util.Parse("LeagueMatches",htlivesight.data[0]);				
 				doc.getElementById("LeagueLiveTable").textContent=htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0]);
+				doc.getElementById("LeagueScorerLiveTable").textContent=htlivesight.Util.Parse("LeagueScorerLiveTable",htlivesight.data[0]);
 				doc.getElementById("LeaguePosition").textContent=htlivesight.Util.Parse("LeaguePosition",htlivesight.data[0]);
 				doc.getElementById("LeagueTeam").textContent=htlivesight.Util.Parse("LeagueTeam",htlivesight.data[0]);
 				doc.getElementById("LeaguePlayed").textContent=htlivesight.Util.Parse("LeaguePlayed",htlivesight.data[0]);

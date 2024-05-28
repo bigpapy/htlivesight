@@ -308,7 +308,7 @@
 <YellowCards>Yellow cards</YellowCards>
 <Injuries>Injuries</Injuries>
 <Goals>أهداف</Goals>
-<Total>مجموع</Total>
+<Total> مجموع</Total>
 <Terraces>Terraces</Terraces>
 <Basic>Basic seating</Basic>
 <Roof>Seats under roof</Roof>
@@ -369,7 +369,7 @@
 <Stamina>لياقة بدنية</Stamina>
 <Experience>خبرة</Experience>
 <Loyalty>ولاء</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
+<PathSoundsPressing> Pressing sound</PathSoundsPressing>
 <PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
 <PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

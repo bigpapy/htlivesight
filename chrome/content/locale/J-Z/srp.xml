@@ -308,7 +308,7 @@
 <YellowCards>Жути картони</YellowCards>
 <Injuries>Повреде</Injuries>
 <Goals>Голови</Goals>
-<Total>Укупно</Total>
+<Total> Укупно</Total>
 <Terraces>Стајаћа места</Terraces>
 <Basic>Седећа места</Basic>
 <Roof>Покривена седишта</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Кондиција</Stamina>
 <Experience>Искуство</Experience>
 <Loyalty>Оданост</Loyalty>
-<PathSoundsPressing>Звук за пресинг</PathSoundsPressing>
+<PathSoundsPressing> Звук за пресинг</PathSoundsPressing>
 <PathSoundsMyBruised>Звук за мог угруваног играча</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Звук за противничког угруваног играча</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Црвени картон за мог играча</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

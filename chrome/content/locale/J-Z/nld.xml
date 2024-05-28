@@ -308,7 +308,7 @@
 <YellowCards>Gele kaarten</YellowCards>
 <Injuries>Blessures</Injuries>
 <Goals>Doelpunten</Goals>
-<Total>Totaal</Total>
+<Total> Totaal</Total>
 <Terraces>Staanplaatsen</Terraces>
 <Basic>Gewone zitplaatsen</Basic>
 <Roof>Overdekte zitplaatsen</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Conditie</Stamina>
 <Experience>Ervaring</Experience>
 <Loyalty>Clubtrouw</Loyalty>
-<PathSoundsPressing>Geluid bij pressie</PathSoundsPressing>
+<PathSoundsPressing> Geluid bij pressie</PathSoundsPressing>
 <PathSoundsMyBruised>Geluid bij blessure mijn speler</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Geluid bij blessure speler ander team</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Geluid bij rode kaart mijn speler</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

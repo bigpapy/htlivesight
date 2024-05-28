@@ -308,7 +308,7 @@
 <YellowCards>Жовті картки</YellowCards>
 <Injuries>Травми</Injuries>
 <Goals>Голи</Goals>
-<Total>Усього</Total>
+<Total> Усього</Total>
 <Terraces>Тераси</Terraces>
 <Basic>Звичайні місця</Basic>
 <Roof>Місця під дахом</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Витривалість</Stamina>
 <Experience>Досвід</Experience>
 <Loyalty>Вірність</Loyalty>
-<PathSoundsPressing>Звук для пресингу</PathSoundsPressing>
+<PathSoundsPressing> Звук для пресингу</PathSoundsPressing>
 <PathSoundsMyBruised>Звук для ушкодження свого гравця</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Звук для ушкодження чужого гравця</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Звук для вилучення мого гравця</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

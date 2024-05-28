@@ -37,6 +37,7 @@ htlivesight.Team.ParseMyData = function (xml, teamKind, teamId) {
 	try {
 		if (xml) {
 			myTeam = htlivesight.Team.ParseTeamData(xml, teamId); // return team
+			console.log(myTeam);
 			if(teamKind=="myFirstTeam"){
 				htlivesight.Teams.myTeam = myTeam;
 				document.getElementById("teamName").textContent = myTeam.name;

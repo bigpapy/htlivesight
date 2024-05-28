@@ -106,8 +106,8 @@
 <EventSpecialUnpredictableLongPass>+ Unpredictable: long pass</EventSpecialUnpredictableLongPass>
 <EventSpecialUnpredictableScoresOnHisOwn>+ Unpredictable: shot</EventSpecialUnpredictableScoresOnHisOwn>
 <EventSpecialUnpredictableSpecialAction>+ Unpredictable: special action</EventSpecialUnpredictableSpecialAction>
-<EventSpecialUnpredictableMistake>- Unpredictable: mistake</EventSpecialUnpredictableMistake>
-<EventSpecialUnpredictableOwnGoal>- Unpredictable: own goal</EventSpecialUnpredictableOwnGoal>
+<EventSpecialUnpredictableMistake>- Непредвидим: греши</EventSpecialUnpredictableMistake>
+<EventSpecialUnpredictableOwnGoal>- Непредвидим: автогол</EventSpecialUnpredictableOwnGoal>
 <EventSpecialQuickScoresAfterRush>+ Quick: rush and score</EventSpecialQuickScoresAfterRush>
 <EventSpecialQuickAssist>+ Quick: rush and assist</EventSpecialQuickAssist>
 <Pullback>Pullback</Pullback>
@@ -129,7 +129,7 @@
 <WingerHead>Winger: cross for head specialist</WingerHead>
 <EventSpecialLongShotDefended>Long shot stopped</EventSpecialLongShotDefended>
 <EventSpecialQuickVsQuick>Quick vs Quick</EventSpecialQuickVsQuick>
-<LongShot>Long Shot</LongShot>
+<LongShot>Далечни удари</LongShot>
 <MeteoSpecialTechnicalRain>Техничен (Голов нюх -, Разиграване -)</MeteoSpecialTechnicalRain>
 <MeteoSpecialPowerfulRain>Силен (Голов нюх +, Защита +, Разиграване+)</MeteoSpecialPowerfulRain>
 <MeteoSpecialTechnicalSun>Техничен (Голов нюх +, Разиграване +)</MeteoSpecialTechnicalSun>
@@ -308,7 +308,7 @@
 <YellowCards>Yellow cards</YellowCards>
 <Injuries>Injuries</Injuries>
 <Goals>Goals</Goals>
-<Total>Total</Total>
+<Total> Total</Total>
 <Terraces>Terraces</Terraces>
 <Basic>Basic seating</Basic>
 <Roof>Seats under roof</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Издръжливост</Stamina>
 <Experience>Опит</Experience>
 <Loyalty>Лоялност</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
+<PathSoundsPressing> Pressing sound</PathSoundsPressing>
 <PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
 <PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

@@ -308,7 +308,7 @@
 <YellowCards>ყვითელი ბარათები</YellowCards>
 <Injuries>ტრავმები</Injuries>
 <Goals>გოლები</Goals>
-<Total>მთლიანობაში</Total>
+<Total> მთლიანობაში</Total>
 <Terraces>ტერასები</Terraces>
 <Basic>ჩვეულებრივი ადგილები</Basic>
 <Roof>გადახურული ადგილები</Roof>
@@ -369,7 +369,7 @@
 <Stamina>გამძლეობა</Stamina>
 <Experience>გამოცდილება</Experience>
 <Loyalty>ლოიალურობა</Loyalty>
-<PathSoundsPressing>ხმა პრესინგისთვის</PathSoundsPressing>
+<PathSoundsPressing> ხმა პრესინგისთვის</PathSoundsPressing>
 <PathSoundsMyBruised>ხმა ჩემი მოთამაშის ტრავმისას</PathSoundsMyBruised>
 <PathSoundsOtherBruised>ხმა სხვისი მოთამაშის ტრავმისას</PathSoundsOtherBruised>
 <PathSoundsMySentOff>ხმა ჩემი მოთამაშის გაძევებისას</PathSoundsMySentOff>
@@ -442,8 +442,9 @@
 <MyFavouritePlayerList>ჩემი ფავორიტი მოთამაშეების სია</MyFavouritePlayerList>
 <TabPlayers>მოთამაშეები</TabPlayers>
 <TechnicalCounterAttack>კონტრშეტევა შეჩერებულ იქნა ტექნიკური მცველის მიერ</TechnicalCounterAttack>
-<MatchesAllMine>All my Matches</MatchesAllMine>
-<ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
-<UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
+<MatchesAllMine>ჩემი ყველა მატჩი</MatchesAllMine>
+<ChkGetAllMineWithin>ჩემი გუნდის მიერ ჩატარებული ყველა მატჩის ავტომატურ რეჟიმში ჩატვირთვა</ChkGetAllMineWithin>
+<UseLiveEventsAndTextsLegend>მოვლენები და ტექსტები</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

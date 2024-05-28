@@ -6,9 +6,9 @@
 <TooltipButton>Feu clic per obrir el menú HTLiveSight</TooltipButton>
 <WindowMainTitle>HTLiveSight</WindowMainTitle>
 <MenuServer>Servidor:</MenuServer>
-<MenuDisconnected>desconnectat</MenuDisconnected>
+<MenuDisconnected>Desconnectat</MenuDisconnected>
 <MenuAbout>Sobre HTLiveSight</MenuAbout>
-<LoginLabel>Connexió</LoginLabel>
+<LoginLabel>Inici de sessió</LoginLabel>
 <LoginTeamId>Introdueix el TeamID del teu equip</LoginTeamId>
 <LoginUsername>Nom d'usuari</LoginUsername>
 <LoginRememberMe>Recordar-me</LoginRememberMe>
@@ -25,15 +25,15 @@
 <LeagueGoalDiff>DG</LeagueGoalDiff>
 <LeaguePoints>Punts</LeaguePoints>
 <MatchesList>Llista de partits</MatchesList>
-<MatchesAdd>Afegir partit</MatchesAdd>
+<MatchesAdd>Afegeix partit</MatchesAdd>
 <MatchesByMatch>Per ID de partit</MatchesByMatch>
 <MatchesByTeam>Per ID d'equip</MatchesByTeam>
 <MatchesYouth>Juvenil?</MatchesYouth>
 <FriendsTitle>Amics</FriendsTitle>
 <FriendsRemove>El·liminar</FriendsRemove>
 <FriendsOpen>Obrir</FriendsOpen>
-<Introduction>Se't redirigeix a la pàgina CHPP per tal d'obtenir el codi d'autorització. Si no fos el cas, desactiva momentàniament el bloqueig dels "pop-up" o posa l'HTlivesight a la llista d'excepcions.</Introduction>
-<Insert>Introdueix el codi d'autorització aquí:</Insert>
+<Introduction>Seràs redirigit a la pàgina CHPP per tal d'obtenir un codi d'autorització. Si no fos el cas, desactiva momentàniament el bloqueig dels "pop-up" o posa l'HTlivesight a la llista d'excepcions.</Introduction>
+<Insert>Introdueix el teu codi d'autorització aquí:</Insert>
 <Ending>L'HTlivesight ja està autoritzat. Clica OK per reiniciar l'aplicació.</Ending>
 <Error>Error</Error>
 <ServerON>Connectat</ServerON>
@@ -164,33 +164,33 @@
 <GeneralNewTab>En un nou tabulador</GeneralNewTab>
 <GeneralNewWindow>En una nova finestra</GeneralNewWindow>
 <GeneralServer>Configuració del servidor</GeneralServer>
-<GeneralNote>Inserte el servidor de Hattrick on estàs connectat (p.ex. www96).</GeneralNote>
+<GeneralNote>Inserta el servidor de Hattrick on estàs connectat (p.ex. www96).</GeneralNote>
 <MatchesLeague>Partits de lliga</MatchesLeague>
-<MatchesGetLeague>Obtenir partits de llige</MatchesGetLeague>
-<MatchesPlayed>Si jugat fa</MatchesPlayed>
+<MatchesGetLeague>Obtenir partits de lliga</MatchesGetLeague>
+<MatchesPlayed>Si s'està jugant</MatchesPlayed>
 <MatchesHours>hores.</MatchesHours>
 <MatchesFriends>Amics</MatchesFriends>
 <MatchesGetFriends>Obtenir partits d'amics</MatchesGetFriends>
 <MatchesHeader>Capçalera</MatchesHeader>
 <MatchesScorers>Anotadors</MatchesScorers>
 <ScorersList>Llistar anotadors</ScorersList>
-<MatchesBooked>Amonestat</MatchesBooked>
-<BookedList>Llistar amonestat a la capçalera</BookedList>
+<MatchesBooked>Reservat</MatchesBooked>
+<BookedList>Llistar reservats a la capçalera</BookedList>
 <MatchesSentOff>Expulsat</MatchesSentOff>
 <SentOffList>Llistat expolsats a la capçalera</SentOffList>
 <MatchesInjured>Lesionats</MatchesInjured>
 <InjuredList>Llistar lesionats a la capçalera</InjuredList>
 <MatchesWindow>Finestra completa</MatchesWindow>
-<MatchesLines>Mostrar línies en detall en minimitzar</MatchesLines>
+<MatchesLines>Línies a mostrar en mode minimitzat</MatchesLines>
 <NotifyNotify>Notificacions</NotifyNotify>
-<NotifyEnableSound>Habil·litar notificacions sonores</NotifyEnableSound>
+<NotifyEnableSound>Habil·lita les notificacions sonores</NotifyEnableSound>
 <NotifyOnly>Només a partits oberts</NotifyOnly>
 <NotifyFlash>Ressaltar capçaleres</NotifyFlash>
 <NotifyStatus>Barra d'estats lliscant</NotifyStatus>
 <OtherAuthorization>Codi d'autorització</OtherAuthorization>
 <OtherReset>Elimina autorització</OtherReset>
 <OtherResetButton>Restablir</OtherResetButton>
-<OtherReverse>Mostrar esdeveniments del partit d'a baix cap amunt</OtherReverse>
+<OtherReverse>Mostrar esdeveniments del partit de baix cap amunt</OtherReverse>
 <OtherReverseNote>Actualitza la pàgina per veure l'efecte dels canvis.</OtherReverseNote>
 <OtherEvents>Seqüència d'esdeveniments</OtherEvents>
 <OtherEventKey>Clau d'esdeveniment</OtherEventKey>
@@ -219,9 +219,9 @@
 <PathSoundsWhistle>So per targeta groga</PathSoundsWhistle>
 <PathSoundsHattrick>So de Hattrick</PathSoundsHattrick>
 <PathSoundsRestore>Restaurar</PathSoundsRestore>
-<PathSoundsPlay>Jugar</PathSoundsPlay>
+<PathSoundsPlay>Reprodueix</PathSoundsPlay>
 <LanguageSelect>Seleccionar idioma</LanguageSelect>
-<LanguageNote>Nota: Reiniciar HTLiveSight per fer efectius els canvis.</LanguageNote>
+<LanguageNote>Nota: Reinicia HTLiveSight per fer efectius els canvis.</LanguageNote>
 <ButtonCancel>Cancel·lar</ButtonCancel>
 <ButtonOk>Acceptar</ButtonOk>
 <WindowAboutTitle>Sobre HTLiveSight</WindowAboutTitle>
@@ -300,15 +300,15 @@
 <Colors>Colors</Colors>
 <SchemaTip>Feu clic per mostrar la línia</SchemaTip>
 <StatisticTip>Feu clic per mostrar les estadístiques al final del partit</StatisticTip>
-<Youth>Joventut</Youth>
-<Senior>Major</Senior>
+<Youth>Juvenils</Youth>
+<Senior>Sènior</Senior>
 <Tournament>Torneig</Tournament>
 <FreeKicks>Tirades lliures</FreeKicks>
 <RedCards>Targeta roja</RedCards>
 <YellowCards>Targeta groga</YellowCards>
 <Injuries>Lesions</Injuries>
-<Goals>Metes</Goals>
-<Total>Total</Total>
+<Goals>Gols</Goals>
+<Total> Total</Total>
 <Terraces>Terrasses</Terraces>
 <Basic>Aforament bàsic</Basic>
 <Roof>Seients sota sostre</Roof>
@@ -328,58 +328,58 @@
 <latestNews>Consulteu les darreres novetats a</latestNews>
 <HTLSThread>Fòrum de Hattrick\n</HTLSThread>
 <ProjectWebsite>Projecte del lloc web</ProjectWebsite>
-<GooglePlusPage>Google+ page</GooglePlusPage>
-<TwitterPage>Twitter page</TwitterPage>
-<FacebookPage>Facebook page</FacebookPage>
-<chatLink>Open chat</chatLink>
-<hidesidebar>Hide Sidebar</hidesidebar>
-<addFriend>Click to add this team to friends</addFriend>
-<TooltipCopyLineUp>Click to copy lineup in the clipboard</TooltipCopyLineUp>
-<Dark>Dark</Dark>
-<Light>Light</Light>
-<Themes>Themes</Themes>
-<NoTournament>Don't load single and tournament matches for friends</NoTournament>
-<DefHatStats>HatStats Defending</DefHatStats>
-<MidHatStats>HatStats Midfield</MidHatStats>
-<AttHatStats>HatStats Attacking</AttHatStats>
+<GooglePlusPage>Pàgina de Google+</GooglePlusPage>
+<TwitterPage>Pàgina de Twitter (X)</TwitterPage>
+<FacebookPage>Pàgina de Facebook</FacebookPage>
+<chatLink>Obrir xat</chatLink>
+<hidesidebar>Oculta la barra lateral</hidesidebar>
+<addFriend>Fes clic per afegir aquest equip als amics</addFriend>
+<TooltipCopyLineUp>Fes clic per copiar l'alineació al porta-retalls</TooltipCopyLineUp>
+<Dark>Fosc</Dark>
+<Light>Clar</Light>
+<Themes>Temes</Themes>
+<NoTournament>No carreguis els partits individuals i de torneig per als amics</NoTournament>
+<DefHatStats>Defensa HatStats</DefHatStats>
+<MidHatStats>Mig centre HatStats</MidHatStats>
+<AttHatStats>Atac HatStats</AttHatStats>
 <TotHatStats>Total HatStats</TotHatStats>
-<CopiedToClipboard>Copied to clipboard!</CopiedToClipboard>
-<ReLiveControls>Relive Controls</ReLiveControls>
-<ExtendImage>Extend image</ExtendImage>
-<RepeatImage>Repeat image</RepeatImage>
-<Background>Background</Background>
-<MuteAll>Sound switch</MuteAll>
-<Technical>Technical</Technical>
-<Quick>Quick</Quick>
-<Powerful>Powerful</Powerful>
-<Unpredictable>Unpredictable</Unpredictable>
-<Header>Header</Header>
-<Regainer>Regainer</Regainer>
-<SecondTeamIdLabel>Insert a second team ID</SecondTeamIdLabel>
-<SecondSoundEqualFirst>Second team sounds equal to first ones</SecondSoundEqualFirst>
-<Keeper>Keeper</Keeper>
-<Defending>Defending</Defending>
-<Playmaking>Playmaking</Playmaking>
-<Winger>Winger</Winger>
-<Passing>Passing</Passing>
-<Scoring>Scoring</Scoring>
-<SetPieces>Set Pieces</SetPieces>
-<Age>Age</Age>
-<Form>Form</Form>
-<Stamina>Stamina</Stamina>
-<Experience>Experience</Experience>
-<Loyalty>Loyalty</Loyalty>
-<PathSoundsPressing>Pressing sound</PathSoundsPressing>
-<PathSoundsMyBruised>My player bruised sound</PathSoundsMyBruised>
-<PathSoundsOtherBruised>Other team player bruised sound</PathSoundsOtherBruised>
-<PathSoundsMySentOff>My player sent off sound</PathSoundsMySentOff>
-<PathSoundsOtherSentOff>Other team player sent off sound</PathSoundsOtherSentOff>
-<TabInjuries>Injuries</TabInjuries>
-<TabWeather>Weather</TabWeather>
-<TabWhistleCard>Whistles and Cards</TabWhistleCard>
-<PathSoundsMissFriend>Friend team missed goal sound</PathSoundsMissFriend>
+<CopiedToClipboard>\nS'ha copiat al porta-retalls!</CopiedToClipboard>
+<ReLiveControls>Controls de re-live</ReLiveControls>
+<ExtendImage>Amplia la imatge</ExtendImage>
+<RepeatImage>Repeteix imatge</RepeatImage>
+<Background>Fons</Background>
+<MuteAll>Interruptor del so</MuteAll>
+<Technical>Tècnic</Technical>
+<Quick>Ràpid</Quick>
+<Powerful>Potent</Powerful>
+<Unpredictable>Imprevisible</Unpredictable>
+<Header>Joc aeri</Header>
+<Regainer>Recuperador</Regainer>
+<SecondTeamIdLabel>Afegeix un segon ID d'equip</SecondTeamIdLabel>
+<SecondSoundEqualFirst>El segon equip sona igual que els primers\n</SecondSoundEqualFirst>
+<Keeper>Porteria</Keeper>
+<Defending>Defensa</Defending>
+<Playmaking>Creativitat</Playmaking>
+<Winger>Extrem</Winger>
+<Passing>Passades</Passing>
+<Scoring>Anotació</Scoring>
+<SetPieces>Pilota aturada</SetPieces>
+<Age>Edat</Age>
+<Form>Forma</Form>
+<Stamina>Resistència</Stamina>
+<Experience>Experiència</Experience>
+<Loyalty>Fidelitat</Loyalty>
+<PathSoundsPressing> So de pressió</PathSoundsPressing>
+<PathSoundsMyBruised>El meu jugador ha fet un so sobtat</PathSoundsMyBruised>
+<PathSoundsOtherBruised>Un altre jugador de l'equip ha fet un so sobtat\n</PathSoundsOtherBruised>
+<PathSoundsMySentOff>So, el meu jugador expulsat</PathSoundsMySentOff>
+<PathSoundsOtherSentOff>So, jugador de un altre equip expulsat</PathSoundsOtherSentOff>
+<TabInjuries>Lesions</TabInjuries>
+<TabWeather>Clima</TabWeather>
+<TabWhistleCard>Sancions i targetes</TabWhistleCard>
+<PathSoundsMissFriend>So; l'equip d'un altre amic ha fallat un gol</PathSoundsMissFriend>
 <PathSoundsMissOther>Un altre equip va desaprofitar el so dels objectius</PathSoundsMissOther>
-<TabChances>Possibilitats\n</TabChances>
+<TabChances>Ocasions</TabChances>
 <Agreeability>L’acordabilitat</Agreeability>
 <Aggressiveness>Agressivitat</Aggressiveness>
 <Honesty>Honestedat\n</Honesty>
@@ -441,9 +441,10 @@
 <PathSoundsMyFavouriteGoal>Sona l’objectiu dels meus jugadors favorits</PathSoundsMyFavouriteGoal>
 <MyFavouritePlayerList>Llista d'identificadors dels meus jugadors preferits</MyFavouritePlayerList>
 <TabPlayers>Jugadors</TabPlayers>
-<TechnicalCounterAttack>Counter attack triggered by technical wingback or defender</TechnicalCounterAttack>
-<MatchesAllMine>All my Matches</MatchesAllMine>
-<ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
-<UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
-<UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<TechnicalCounterAttack>Contraatac provocat per l'extrem tècnic o el defensa\n</TechnicalCounterAttack>
+<MatchesAllMine>Tots els meus Partits</MatchesAllMine>
+<ChkGetAllMineWithin>Carrega automàticament els partits dels meus equips si s'estan jugant</ChkGetAllMineWithin>
+<UseLiveEventsAndTextsLegend>Esdeveniment i Text</UseLiveEventsAndTextsLegend>
+<UseLiveEventsAndTextsLabel>Els esdeveniments i els textos han de ser com a la pàgina live del lloc?\n</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

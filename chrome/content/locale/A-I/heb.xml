@@ -308,7 +308,7 @@
 <YellowCards>כרטיסים צהובים</YellowCards>
 <Injuries>פציעות</Injuries>
 <Goals>שערים</Goals>
-<Total>סך הכל</Total>
+<Total> סך הכל</Total>
 <Terraces>מקומות עמידה</Terraces>
 <Basic>מושבים בסיסיים</Basic>
 <Roof>מושבים מקורים</Roof>
@@ -369,7 +369,7 @@
 <Stamina>כושר גופני</Stamina>
 <Experience>ניסיון</Experience>
 <Loyalty>נאמנות</Loyalty>
-<PathSoundsPressing>צליל לאירוע לחץ</PathSoundsPressing>
+<PathSoundsPressing> צליל לאירוע לחץ</PathSoundsPressing>
 <PathSoundsMyBruised>צליל לשחקן חבול שלי</PathSoundsMyBruised>
 <PathSoundsOtherBruised>צליל לשחקן חבול של קבוצה אחרת</PathSoundsOtherBruised>
 <PathSoundsMySentOff>צליל להרחקה של שחקן שלי</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

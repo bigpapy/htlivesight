@@ -308,7 +308,7 @@
 <YellowCards>Gelbe Karten</YellowCards>
 <Injuries>Verletzungen</Injuries>
 <Goals>Tore</Goals>
-<Total>Insgesamt</Total>
+<Total> Insgesamt</Total>
 <Terraces>Stehplätze</Terraces>
 <Basic>Nicht überdachte Sitzplätze</Basic>
 <Roof>Überdachte Sitzplätze</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Kondition</Stamina>
 <Experience>Erfahrung</Experience>
 <Loyalty>Treue</Loyalty>
-<PathSoundsPressing>Ton für Pressing</PathSoundsPressing>
+<PathSoundsPressing> Ton für Pressing</PathSoundsPressing>
 <PathSoundsMyBruised>Ton für Verletzung eines eigenen Spielers</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Ton für Verletzung eines gegnerischen Spielers</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Ton bei Platzverweis für eigenen Spieler</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

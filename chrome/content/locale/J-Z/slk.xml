@@ -308,7 +308,7 @@
 <YellowCards>Žlté karty</YellowCards>
 <Injuries>Zranenia</Injuries>
 <Goals>Góly</Goals>
-<Total>Spolu</Total>
+<Total> Spolu</Total>
 <Terraces>Na státie</Terraces>
 <Basic>Na sedenie</Basic>
 <Roof>Krytá tribúna</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Kondícia</Stamina>
 <Experience>Skúsenosti</Experience>
 <Loyalty>Vernosť</Loyalty>
-<PathSoundsPressing>Zvuk pri Pressingu</PathSoundsPressing>
+<PathSoundsPressing> Zvuk pri Pressingu</PathSoundsPressing>
 <PathSoundsMyBruised>Zvuk pri poranení môjho hráča</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Zvuk pri poranení hráča iného tímu</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Zvuk pri vylúčení môjho hráča</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

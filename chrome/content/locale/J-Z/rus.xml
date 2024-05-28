@@ -308,7 +308,7 @@
 <YellowCards>Желтые карточки</YellowCards>
 <Injuries>Травмы</Injuries>
 <Goals>Голы</Goals>
-<Total>Всего</Total>
+<Total> Всего</Total>
 <Terraces>Террасы</Terraces>
 <Basic>Обычные места</Basic>
 <Roof>Сидения под крышей</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Выносливость</Stamina>
 <Experience>Опыт</Experience>
 <Loyalty>Преданность</Loyalty>
-<PathSoundsPressing>Звук для прессинга</PathSoundsPressing>
+<PathSoundsPressing> Звук для прессинга</PathSoundsPressing>
 <PathSoundsMyBruised>Звук для повреждения моего игрока</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Звук для повреждения чужого игрока</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Звук для удаления моего игрока</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

@@ -308,7 +308,7 @@
 <YellowCards>Dzeltenās kartītes</YellowCards>
 <Injuries>Savainojumi</Injuries>
 <Goals>Vārti</Goals>
-<Total>Kopā</Total>
+<Total> Kopā</Total>
 <Terraces>Soli</Terraces>
 <Basic>Krēsli</Basic>
 <Roof>Krēsli zem jumta</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Izturība</Stamina>
 <Experience>Pieredze</Experience>
 <Loyalty>Lojalitāte</Loyalty>
-<PathSoundsPressing>Presinga skaņa</PathSoundsPressing>
+<PathSoundsPressing> Presinga skaņa</PathSoundsPressing>
 <PathSoundsMyBruised>Manas komandas spēlētāja ievainošanas skaņa</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Citas komandas spēlētāja ievainošanas skaņa</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Manas komandas spēlētāja noraidīšanas skaņa</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

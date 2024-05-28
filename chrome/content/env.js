@@ -2,7 +2,7 @@ if (!htlivesight)	var htlivesight={}; //check this file again to find unused cod
 if (typeof(chrome) == "object") {
     htlivesight.arch = "Sandboxed";
     htlivesight.platform = "Chrome";
-    htlivesight.internalPath = htlivesight.resourcePath = chrome.extension.getURL("content/");
+    htlivesight.internalPath = htlivesight.resourcePath = chrome.runtime.getURL("content/");
     htlivesight.chromeContext = function() {
 	try {
 	    if (chrome.bookmarks) {

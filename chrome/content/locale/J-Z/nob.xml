@@ -308,7 +308,7 @@
 <YellowCards>Gule kort</YellowCards>
 <Injuries>Skader</Injuries>
 <Goals>Mål</Goals>
-<Total>Total</Total>
+<Total> Total</Total>
 <Terraces>Ståplasser</Terraces>
 <Basic>Sitteplasser</Basic>
 <Roof>Sitteplasser under tak</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Kondisjon</Stamina>
 <Experience>Rutine</Experience>
 <Loyalty>Lojalitet</Loyalty>
-<PathSoundsPressing>Viktig beskjed lyd</PathSoundsPressing>
+<PathSoundsPressing> Viktig beskjed lyd</PathSoundsPressing>
 <PathSoundsMyBruised>Lyd for min spiller småskadet</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Lyd for motstanders spiller småskadet</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Min spiller sendt av banen lyd</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

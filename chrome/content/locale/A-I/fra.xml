@@ -308,7 +308,7 @@
 <YellowCards>Cartons jaunes</YellowCards>
 <Injuries>Blessures</Injuries>
 <Goals>Buts</Goals>
-<Total>Total</Total>
+<Total> Total</Total>
 <Terraces>Places debout</Terraces>
 <Basic>Places assises</Basic>
 <Roof>Places assises couvertes</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Endurance</Stamina>
 <Experience>Expérience</Experience>
 <Loyalty>Fidélité</Loyalty>
-<PathSoundsPressing>Pressing</PathSoundsPressing>
+<PathSoundsPressing> Pressing</PathSoundsPressing>
 <PathSoundsMyBruised>Pansement de nos joueurs</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Pansement des autres joueurs</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Mes cartons rouges</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Afficher tous mes matchs si joué depuis ou dans</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Événements et textes</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Afficher événements et textes comme sur le direct (live) du site</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

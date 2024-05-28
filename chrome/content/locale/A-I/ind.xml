@@ -308,7 +308,7 @@
 <YellowCards>Kartu kuning</YellowCards>
 <Injuries>Cedera</Injuries>
 <Goals>Tujuan</Goals>
-<Total>Total</Total>
+<Total> Total</Total>
 <Terraces>Teras</Terraces>
 <Basic>Dasar tempat duduk</Basic>
 <Roof>Kursi di bawah atap</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Stamina</Stamina>
 <Experience>Pengalaman</Experience>
 <Loyalty>Kesetiaan</Loyalty>
-<PathSoundsPressing>Menekan suara</PathSoundsPressing>
+<PathSoundsPressing> Menekan suara</PathSoundsPressing>
 <PathSoundsMyBruised>Pemainan saya suara memar</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Pemain tim lainnya suara memar</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Pemain saya mengirim suara</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

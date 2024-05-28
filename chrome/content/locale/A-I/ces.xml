@@ -308,7 +308,7 @@
 <YellowCards>Žluté karty</YellowCards>
 <Injuries>Zranění</Injuries>
 <Goals>Góly</Goals>
-<Total>Celkem</Total>
+<Total> Celkem</Total>
 <Terraces>Místa k stání</Terraces>
 <Basic>Běžná sedadla</Basic>
 <Roof>Krytá sedadla</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Kondice</Stamina>
 <Experience>Zkušenosti</Experience>
 <Loyalty>Oddanost klubu</Loyalty>
-<PathSoundsPressing>Zvuk událostí týkající se taktiky pressing</PathSoundsPressing>
+<PathSoundsPressing> Zvuk událostí týkající se taktiky pressing</PathSoundsPressing>
 <PathSoundsMyBruised>Zvuk poranění mého hráče (náplast)</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Zvuk zranění hráče jiného týmu</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Zvuk červené karty mého hráče</PathSoundsMySentOff>
@@ -441,9 +441,10 @@
 <PathSoundsMyFavouriteGoal>Zvuk gólu mého oblíbeného hráče</PathSoundsMyFavouriteGoal>
 <MyFavouritePlayerList>Můj seznam oblíbených hráčů podle jejich ID</MyFavouritePlayerList>
 <TabPlayers>Hráči</TabPlayers>
-<TechnicalCounterAttack>Counter attack triggered by technical wingback or defender</TechnicalCounterAttack>
-<MatchesAllMine>All my Matches</MatchesAllMine>
-<ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
-<UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
-<UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<TechnicalCounterAttack>Protiútok vyvolaný technickým krajním nebo středním obráncem</TechnicalCounterAttack>
+<MatchesAllMine>Všechny moje zápasy</MatchesAllMine>
+<ChkGetAllMineWithin>Načíst automaticky všechny zápasy mých týmů</ChkGetAllMineWithin>
+<UseLiveEventsAndTextsLegend>Událost a text</UseLiveEventsAndTextsLegend>
+<UseLiveEventsAndTextsLabel>Mají být události a texty jako na HT live přímo na stránkách Hattricku?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

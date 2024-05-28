@@ -308,7 +308,7 @@
 <YellowCards>Geltonos kortelės</YellowCards>
 <Injuries>Traumos</Injuries>
 <Goals>Įvarčiai</Goals>
-<Total>Iš viso</Total>
+<Total> Iš viso</Total>
 <Terraces>Terasose</Terraces>
 <Basic>Paprastose sėdimosiose vietose</Basic>
 <Roof>Sėdimose vietose po stogu</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Ištvermė</Stamina>
 <Experience>Patirtis</Experience>
 <Loyalty>Lojalumas</Loyalty>
-<PathSoundsPressing>Spaudimas</PathSoundsPressing>
+<PathSoundsPressing> Spaudimas</PathSoundsPressing>
 <PathSoundsMyBruised>Mano žaidėjas susižeidė</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Kitos komandos žaidėjas susižeidė</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Mano žaidėjas gavo raudoną kortelę</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

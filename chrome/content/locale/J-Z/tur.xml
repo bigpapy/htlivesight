@@ -308,7 +308,7 @@
 <YellowCards>Sarı kartlar</YellowCards>
 <Injuries>Sakatlanmalar</Injuries>
 <Goals>Goller</Goals>
-<Total>Toplam</Total>
+<Total> Toplam</Total>
 <Terraces>Teraslar</Terraces>
 <Basic>Temel oturuş</Basic>
 <Roof>Çatı altındaki koltuklar</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Dayanma gücü</Stamina>
 <Experience>Deneyim</Experience>
 <Loyalty>Sadakat</Loyalty>
-<PathSoundsPressing>Ses tuşuna basarak</PathSoundsPressing>
+<PathSoundsPressing> Ses tuşuna basarak</PathSoundsPressing>
 <PathSoundsMyBruised>Oyuncu çürük ses</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Diğer takım oyuncusu çürük ses</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Oynatıcım sesi kapalı olarak gönderdi</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

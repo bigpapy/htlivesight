@@ -308,7 +308,7 @@
 <YellowCards>Keltaiset kortit</YellowCards>
 <Injuries>Loukkaantumiset</Injuries>
 <Goals>Maalit</Goals>
-<Total>Yhteensä</Total>
+<Total> Yhteensä</Total>
 <Terraces>Seisomapaikat</Terraces>
 <Basic>Istumapaikat</Basic>
 <Roof>Katetut istumapaikat</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Kestävyys</Stamina>
 <Experience>Kokemus</Experience>
 <Loyalty>Uskollisuus</Loyalty>
-<PathSoundsPressing>Painostus -ääni</PathSoundsPressing>
+<PathSoundsPressing> Painostus -ääni</PathSoundsPressing>
 <PathSoundsMyBruised>Oma pelaaja kolhiintuu</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Muun joukkueen pelaaja kolhiintuu</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Oma pelaaja ulosajo</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

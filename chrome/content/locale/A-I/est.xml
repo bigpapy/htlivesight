@@ -308,7 +308,7 @@
 <YellowCards>Kollased kaardid</YellowCards>
 <Injuries>Vigastused</Injuries>
 <Goals>Väravad</Goals>
-<Total>Kokku</Total>
+<Total> Kokku</Total>
 <Terraces>Terrass</Terraces>
 <Basic>Tavaistmed</Basic>
 <Roof>Katusealused istmed</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Vastupidavus</Stamina>
 <Experience>Kogemus</Experience>
 <Loyalty>Lojaalsus</Loyalty>
-<PathSoundsPressing>Surumise heli</PathSoundsPressing>
+<PathSoundsPressing> Surumise heli</PathSoundsPressing>
 <PathSoundsMyBruised>Minu mängija vigastuse heli</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Teise meeskonna mängija vigastuse heli</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Minu mängija eemaldamise heli</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

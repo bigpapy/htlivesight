@@ -308,7 +308,7 @@
 <YellowCards>Cartonașe galbene</YellowCards>
 <Injuries>Accidentări</Injuries>
 <Goals>Goluri</Goals>
-<Total>Total</Total>
+<Total> Total</Total>
 <Terraces>Locuri la peluze</Terraces>
 <Basic>Locuri obișnuite</Basic>
 <Roof>Locuri acoperite</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Rezistență</Stamina>
 <Experience>Experiență</Experience>
 <Loyalty>Loialitate</Loyalty>
-<PathSoundsPressing>Sunet eveniment pressing</PathSoundsPressing>
+<PathSoundsPressing> Sunet eveniment pressing</PathSoundsPressing>
 <PathSoundsMyBruised>Sunet accidentare jucător propriu</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Sunet accidentare jucător advers</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Sunet eliminare jucător propriu</PathSoundsMySentOff>
@@ -441,9 +441,10 @@
 <PathSoundsMyFavouriteGoal>Sunet la golul jucatorului meu favorit</PathSoundsMyFavouriteGoal>
 <MyFavouritePlayerList>Listă ID-uri jucatori favoriți</MyFavouritePlayerList>
 <TabPlayers>Jucători</TabPlayers>
-<TechnicalCounterAttack>Counter attack triggered by technical wingback or defender</TechnicalCounterAttack>
-<MatchesAllMine>All my Matches</MatchesAllMine>
-<ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
-<UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
-<UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<TechnicalCounterAttack>Contra-atac pornit de la un fundaș lateral sau central tehnic</TechnicalCounterAttack>
+<MatchesAllMine>Toate meciurile mele</MatchesAllMine>
+<ChkGetAllMineWithin>Încarcă automat meciurile echipelor mele dacă sunt jucate</ChkGetAllMineWithin>
+<UseLiveEventsAndTextsLegend>Eveniment și text</UseLiveEventsAndTextsLegend>
+<UseLiveEventsAndTextsLabel>Ar trebui să fie toate evenimentele si textul la fel ca pe pagina live de pe site?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

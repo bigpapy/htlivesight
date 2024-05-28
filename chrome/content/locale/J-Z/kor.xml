@@ -308,7 +308,7 @@
 <YellowCards>옐로우 카드</YellowCards>
 <Injuries>부상</Injuries>
 <Goals>득점</Goals>
-<Total>총</Total>
+<Total> 총</Total>
 <Terraces>입석</Terraces>
 <Basic>일반 좌석</Basic>
 <Roof>지붕 밑 좌석</Roof>
@@ -369,7 +369,7 @@
 <Stamina>체력</Stamina>
 <Experience>경험</Experience>
 <Loyalty>충성도</Loyalty>
-<PathSoundsPressing>압박 이벤트 사운드</PathSoundsPressing>
+<PathSoundsPressing> 압박 이벤트 사운드</PathSoundsPressing>
 <PathSoundsMyBruised>내 선수가 부상을 입을 때 사운드</PathSoundsMyBruised>
 <PathSoundsOtherBruised>다른 팀 선수가 부상을 입을 때 사운드</PathSoundsOtherBruised>
 <PathSoundsMySentOff>내 선수가 퇴장되었을 때 사운드</PathSoundsMySentOff>
@@ -446,4 +446,5 @@
 <ChkGetAllMineWithin>종료된 나의 모든 팀들의 경기를 자동으로 불러오기</ChkGetAllMineWithin>
 <UseLiveEventsAndTextsLegend>이벤트 및 텍스트</UseLiveEventsAndTextsLegend>
 <UseLiveEventsAndTextsLabel>이벤트 및 텍스트는 사이트의 라이브 페이지와 같아야 합니까?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

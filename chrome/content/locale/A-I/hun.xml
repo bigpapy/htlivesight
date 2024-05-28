@@ -308,7 +308,7 @@
 <YellowCards>Sárga lapok</YellowCards>
 <Injuries>Sérülések</Injuries>
 <Goals>Gólok</Goals>
-<Total>Összesen</Total>
+<Total> Összesen</Total>
 <Terraces>Állóhelyek</Terraces>
 <Basic>Ülőhelyek</Basic>
 <Roof>Fedett ülőhelyek</Roof>
@@ -369,7 +369,7 @@
 <Stamina>Erőnlét</Stamina>
 <Experience>Tapasztalat</Experience>
 <Loyalty>Hűség</Loyalty>
-<PathSoundsPressing>Tördelés hangjelzése</PathSoundsPressing>
+<PathSoundsPressing> Tördelés hangjelzése</PathSoundsPressing>
 <PathSoundsMyBruised>Saját játékos sérülésének hangjelzése</PathSoundsMyBruised>
 <PathSoundsOtherBruised>Más csapat játékosának sérülés hangjelzése</PathSoundsOtherBruised>
 <PathSoundsMySentOff>Saját játékos kiállítva hangjelzés</PathSoundsMySentOff>
@@ -437,13 +437,14 @@
 <SupportBoostSucceeded>csapatjátékos: sikeres támogatás</SupportBoostSucceeded>
 <SupportBoostFailed>csapatjátékos: támogatás sikertelen</SupportBoostFailed>
 <SupportOrganizationDropped>csapatjátékos: szervezettség csökkent</SupportOrganizationDropped>
-<PathSoundsInfo>Sound about other events</PathSoundsInfo>
-<PathSoundsMyFavouriteGoal>Sound my favourite players goal</PathSoundsMyFavouriteGoal>
-<MyFavouritePlayerList>My favourite players id list</MyFavouritePlayerList>
-<TabPlayers>Players</TabPlayers>
-<TechnicalCounterAttack>Counter attack triggered by technical wingback or defender</TechnicalCounterAttack>
-<MatchesAllMine>All my Matches</MatchesAllMine>
-<ChkGetAllMineWithin>Load automatically all my teams matches if played in</ChkGetAllMineWithin>
-<UseLiveEventsAndTextsLegend>Event and Text</UseLiveEventsAndTextsLegend>
-<UseLiveEventsAndTextsLabel>Should the events and texts be as on the live page on the site?</UseLiveEventsAndTextsLabel>
+<PathSoundsInfo>Egyéb események hangja</PathSoundsInfo>
+<PathSoundsMyFavouriteGoal>Hang a kedvenc játékosomhoz</PathSoundsMyFavouriteGoal>
+<MyFavouritePlayerList>Kedvenc játékosaim ID lista</MyFavouritePlayerList>
+<TabPlayers>Játékosok</TabPlayers>
+<TechnicalCounterAttack>Technikás szélsőhátvéd, vagy védő által nyert ellentámadás</TechnicalCounterAttack>
+<MatchesAllMine>Minden mérkőzésem</MatchesAllMine>
+<ChkGetAllMineWithin>Az összes csapatom mérkőzéseinke automatikus betöltése, ha az megy</ChkGetAllMineWithin>
+<UseLiveEventsAndTextsLegend>Esemény és Szöveg</UseLiveEventsAndTextsLegend>
+<UseLiveEventsAndTextsLabel>Az eseményeknek és a szövegeknek olyanok legyenek, mint a live oldalán?</UseLiveEventsAndTextsLabel>
+<LeagueScorerLiveTable>Live Scorer Table</LeagueScorerLiveTable>
 </Htlivesight>

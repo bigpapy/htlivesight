@@ -1895,6 +1895,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable=function(league) {
 			htlivesight.Util.RemoveClass(document.getElementById("leaguetable_"+j+""),['league_title','league_promote','league_demote','league_qualify','league_own']);
 		}
 		document.getElementById("LeagueLiveTable").textContent = htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0])+" ("+league.levelUnitName+")";
+		document.getElementById("LeagueScorerLiveTable").textContent = htlivesight.Util.Parse("LeagueScorerLiveTable",htlivesight.data[0])+" ("+league.levelUnitName+")";
 		if(league.level == 1){
 			//title holder
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_1"),'league_title');
@@ -2045,6 +2046,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable2=function(league) {
 			htlivesight.Util.RemoveClass(document.getElementById("leaguetable_"+j+"Bis"),['league_title','league_promote','league_demote','league_qualify','league_own']);
 		}
 		document.getElementById("LeagueLiveTableBis").textContent = htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0])+" ("+league.levelUnitName2+")";
+		document.getElementById("LeagueScorerLiveTableBis").textContent = htlivesight.Util.Parse("LeagueScorerLiveTable",htlivesight.data[0])+" ("+league.levelUnitName2+")";
 		if(league.level2 == 1){
 			//title holder
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_1Bis"),'league_title');
@@ -2193,6 +2195,7 @@ htlivesight.DOM.UpdateElementBoxLeagueTable3=function(league) {
 			htlivesight.Util.RemoveClass(document.getElementById("leaguetable_"+j+"Ter"),['league_title','league_promote','league_demote','league_qualify','league_own']);
 		}
 		document.getElementById("LeagueLiveTableTer").textContent = htlivesight.Util.Parse("LeagueLiveTable",htlivesight.data[0])+" ("+league.levelUnitName3+")";
+		document.getElementById("LeagueScorerLiveTableTer").textContent = htlivesight.Util.Parse("LeagueScorerLiveTable",htlivesight.data[0])+" ("+league.levelUnitName3+")";
 		if(league.level3 == 1){
 			//title holder
 			htlivesight.Util.AddClass(document.getElementById("leaguetable_1Ter"),'league_title');
