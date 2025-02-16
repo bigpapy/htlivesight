@@ -164,34 +164,34 @@ htlivesight.Preferences.personalization = function() {
 		this.myFavouriteGoalSoundPath = "https://sourceforge.net/projects/htlivesight/files/Sounds/default/mp3/tarzan.mp3";
 
 	}else{
-		this.myGoalSoundPath = htlivesightEnv.contentPath+"sound/cheer_8k.ogg";
-		this.opGoalSoundPath = htlivesightEnv.contentPath+"sound/cheer1.ogg";
-		this.frGoalSoundPath = htlivesightEnv.contentPath+"sound/goal.ogg";
-		this.opfrGoalSoundPath = htlivesightEnv.contentPath+"sound/applause.ogg";
-		this.otGoalSoundPath = htlivesightEnv.contentPath+"sound/ovation.ogg";
-		this.missGoalSoundPath = htlivesightEnv.contentPath+"sound/miss.ogg";
-		this.sunSoundPath = htlivesightEnv.contentPath+"sound/sun.ogg";
-		this.rainSoundPath = htlivesightEnv.contentPath+"sound/rain.ogg";
-		this.overcastSoundPath = htlivesightEnv.contentPath+"sound/overcast.ogg";
-		this.fewCloudsSoundPath = htlivesightEnv.contentPath+"sound/few_clouds.ogg";
-		this.myBooSoundPath = htlivesightEnv.contentPath+"sound/boo.ogg";
-		this.opBooSoundPath = htlivesightEnv.contentPath+"sound/OpBoo.ogg";
-		this.whistleStartSoundPath = htlivesightEnv.contentPath+"sound/whistle_start.ogg";
-		this.whistle2SoundPath = htlivesightEnv.contentPath+"sound/whistle2.ogg";
-		this.whistle3SoundPath = htlivesightEnv.contentPath+"sound/whistle3.ogg";
-		this.whistleSoundPath = htlivesightEnv.contentPath+"sound/whistle.ogg";
-		this.hattrickSoundPath = htlivesightEnv.contentPath+"sound/tarzan.ogg";
+		this.myGoalSoundPath = htlivesightEnv.contentPath+"sound/cheer_8k.mp3";
+		this.opGoalSoundPath = htlivesightEnv.contentPath+"sound/cheer1.mp3";
+		this.frGoalSoundPath = htlivesightEnv.contentPath+"sound/goal.mp3";
+		this.opfrGoalSoundPath = htlivesightEnv.contentPath+"sound/applause.mp3";
+		this.otGoalSoundPath = htlivesightEnv.contentPath+"sound/ovation.mp3";
+		this.missGoalSoundPath = htlivesightEnv.contentPath+"sound/miss.mp3";
+		this.sunSoundPath = htlivesightEnv.contentPath+"sound/sun.mp3";
+		this.rainSoundPath = htlivesightEnv.contentPath+"sound/rain.mp3";
+		this.overcastSoundPath = htlivesightEnv.contentPath+"sound/overcast.mp3";
+		this.fewCloudsSoundPath = htlivesightEnv.contentPath+"sound/few_clouds.mp3";
+		this.myBooSoundPath = htlivesightEnv.contentPath+"sound/boo.mp3";
+		this.opBooSoundPath = htlivesightEnv.contentPath+"sound/OpBoo.mp3";
+		this.whistleStartSoundPath = htlivesightEnv.contentPath+"sound/whistle_start.mp3";
+		this.whistle2SoundPath = htlivesightEnv.contentPath+"sound/whistle2.mp3";
+		this.whistle3SoundPath = htlivesightEnv.contentPath+"sound/whistle3.mp3";
+		this.whistleSoundPath = htlivesightEnv.contentPath+"sound/whistle.mp3";
+		this.hattrickSoundPath = htlivesightEnv.contentPath+"sound/tarzan.mp3";
 
-		this.pressingSoundPath = htlivesightEnv.contentPath+"sound/pressing.ogg";
-		this.myBruisedSoundPath = htlivesightEnv.contentPath+"sound/my_bruised.ogg";
-		this.otherBruisedSoundPath = htlivesightEnv.contentPath+"sound/other_bruised.ogg";
-		this.mySentOffSoundPath = htlivesightEnv.contentPath+"sound/my_sent_off.ogg";
-		this.otherSentOffSoundPath = htlivesightEnv.contentPath+"sound/other_sent_off.ogg";
+		this.pressingSoundPath = htlivesightEnv.contentPath+"sound/pressing.mp3";
+		this.myBruisedSoundPath = htlivesightEnv.contentPath+"sound/my_bruised.mp3";
+		this.otherBruisedSoundPath = htlivesightEnv.contentPath+"sound/other_bruised.mp3";
+		this.mySentOffSoundPath = htlivesightEnv.contentPath+"sound/my_sent_off.mp3";
+		this.otherSentOffSoundPath = htlivesightEnv.contentPath+"sound/other_sent_off.mp3";
 
-		this.missFriendSoundPath = htlivesightEnv.contentPath+"sound/miss_friend.ogg";
-		this.missOtherSoundPath = htlivesightEnv.contentPath+"sound/miss_other.ogg";
-		this.infoSoundPath = htlivesightEnv.contentPath+"sound/crowd.ogg";
-		this.myFavouriteGoalSoundPath = htlivesightEnv.contentPath+"sound/tarzan.ogg";
+		this.missFriendSoundPath = htlivesightEnv.contentPath+"sound/miss_friend.mp3";
+		this.missOtherSoundPath = htlivesightEnv.contentPath+"sound/miss_other.mp3";
+		this.infoSoundPath = htlivesightEnv.contentPath+"sound/crowd.mp3";
+		this.myFavouriteGoalSoundPath = htlivesightEnv.contentPath+"sound/tarzan.mp3";
 	}
 
 	this.myGoalCheck = true;

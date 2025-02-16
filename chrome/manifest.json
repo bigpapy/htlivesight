@@ -1,7 +1,7 @@
 {  
    "manifest_version":3,
    "name":"HTLiveSightDEV",
-   "version":"0.9.927",
+   "version":"0.9.928",
    "description":"A Hattrick Live Match Viewer",
    "icons":{  
       "16":"skin/16dev.png",
@@ -17,7 +17,7 @@
    },
    "homepage_url":"http://htlivesight.sourceforge.net",
    "incognito":"spanning",
-   "minimum_chrome_version":"13",
+   "minimum_chrome_version":"88",
    "options_page":"content/settings.html",
    "permissions":[  
       "notifications",

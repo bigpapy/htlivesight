@@ -219,12 +219,12 @@ var htlivesight = {
 							//if((!document.getElementById("chkSound").checked && ui.value!=0)||(document.getElementById("chkSound").checked && ui.value==0)){
 							//	htlivesight.Click.MuteAll();
 							//}
-							//htlivesight.Settings.click.soundPlay(htlivesight.Sound.samplePath+'whistle.ogg');
+							//htlivesight.Settings.click.soundPlay(htlivesight.Sound.samplePath+'whistle.mp3');
 							if(htlivesightPrefs.getBool("personalization.settingVolumeSound")){
 								if(htlivesight.platform == "Safari"){
 									htlivesight.Sound.play("http://sourceforge.net/projects/htlivesight/files/Sounds/default/mp3/whistle.mp3", document);
 								}else{
-									htlivesight.Sound.play(htlivesight.Sound.samplePath+'whistle.ogg', document);
+									htlivesight.Sound.play(htlivesight.Sound.samplePath+'whistle.mp3', document);
 								}
 							}
 
