@@ -92,7 +92,7 @@ htlivesight.matchDetails.HTTPGet = function (match, key) {
 };
 htlivesight.matchDetails.HTTPGetArena = function (arenaID, teamID) {
 	var parameters=[["file","arenadetails"],
-	                ["version", "1.5"],
+	                ["version", "1.7"],
 	                ["arenaID", ""+arenaID]];
 	//console.log("arenaID=" + arenaID);
 	htlivesight.ApiProxy.retrieve(document, parameters, function(xml){htlivesight.matchDetails.ParseGetArenaDetails(xml,arenaID, teamID);});

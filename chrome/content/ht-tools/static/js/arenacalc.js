@@ -195,7 +195,7 @@ $('#arenas').change(function(){
 
 var arenaDetailsHTTPGet = function (arenaId, teamId) {
 //	console.log(htlivesight.Player.List["_"+playerId+"_"+youth].specialty);
-	var parameters = [["file","arenadetails"],["version", "1.5"],["arenaID",arenaId]];
+	var parameters = [["file","arenadetails"],["version", "1.7"],["arenaID",arenaId]];
 	if(arenaId){
 		htlivesight.ApiProxy.retrieve(document, parameters, function(xml){arenaDetailsParseGet(xml,arenaId, teamId);});
 	}
