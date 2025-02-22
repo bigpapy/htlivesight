@@ -9,7 +9,7 @@ htlivesight.ManagerCompendium = function ManagerCompendium(userId, loginName, la
 };
 
 htlivesight.ManagerCompendium.HTTPGetMyData = function () {
-	var parameters=[["file","managercompendium"],["version", "1.0"]/*,["userId", "9100817"]*/];
+	var parameters=[["file","managercompendium"],["version", "1.5"]/*,["userId", "9100817"]*/];
 	htlivesight.ApiProxy.retrieve(document, parameters, function (xml){htlivesight.ManagerCompendium.ParseMyData(xml);});
 };
 htlivesight.ManagerCompendium.ParseMyData = function (xml) {
