@@ -103,6 +103,7 @@ htlivesight.ApiProxy = {
 				              ["oauth_verifier", oauthVerifier]
 				              ]
 			};
+			if(oauthVerifier == null) return;
 			OAuth.setTimestampAndNonce(msg);
 			OAuth.SignatureMethod.sign(msg, accessor);
 			var query = OAuth.formEncode(msg.parameters);

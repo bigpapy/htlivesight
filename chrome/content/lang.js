@@ -41,7 +41,7 @@ htlivesight.Lang = {
 				//todo: add android warning text localization.
 		//			ABOUT
 				doc.getElementById("TabInfo").textContent=htlivesight.Util.Parse("TabInfo",htlivesight.data[0]);
-				doc.getElementById("creationDate").textContent="16 "+htlivesight.Util.Parse("MonthFebruary",htlivesight.data[0])+" 2025";
+				doc.getElementById("creationDate").textContent="04 "+htlivesight.Util.Parse("MonthJuly",htlivesight.data[0])+" 2026";
 				doc.getElementById("createdBy").textContent=htlivesight.Util.Parse("TextCreatedBy",htlivesight.data[0]);
 				doc.getElementById("testers").textContent=htlivesight.Util.Parse("Testers",htlivesight.data[0]);
 				doc.getElementById("BasedOn").textContent=htlivesight.Util.Parse("BasedOn",htlivesight.data[0]);
